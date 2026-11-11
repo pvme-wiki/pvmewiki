@@ -39,9 +39,15 @@ export function loadConfig(env = process.env) {
       if (createPrivateKey(env.GITHUB_APP_PRIVATE_KEY.replace(/\\n/g, '\n')).asymmetricKeyType !== 'rsa') throw Error();
     } catch { errors.push('GITHUB_APP_PRIVATE_KEY must be an RSA private key.'); }
   }
+  // Vercel cron targets this deployment's hostname, not APP_ORIGIN. Never
+  // derive this exception from request headers or enable it for previews.
+  const deploymentHost = env.VERCEL_URL || '';
+  const productionCronOrigin = env.VERCEL_ENV === 'production' &&
+    /^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.vercel\.app$/.test(deploymentHost)
+    ? `https://${deploymentHost}` : null;
   const configured = !missing.length && !errors.length;
   return {
-    configured, errors, missing, accessMode, allowedDiscordIds, origin,
+    configured, errors, missing, accessMode, allowedDiscordIds, origin, productionCronOrigin,
     databaseUrl: env.DATABASE_URL, sessionSecret: env.SESSION_SECRET,
     discord: { clientId: env.DISCORD_CLIENT_ID, clientSecret: env.DISCORD_CLIENT_SECRET, redirectUri: `${origin}/api/editor/auth/discord/callback` },
     github: configured && githubValid ? {

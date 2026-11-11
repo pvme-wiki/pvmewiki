@@ -67,7 +67,11 @@ export function createHandler({ db, config, identityProvider, publisher, logErro
         if (method === 'GET' && route === 'session') return json(200, unavailable());
         fail(503, 'service_unavailable', 'Hosted editing has not been configured yet. Your browser draft is unchanged.');
       }
-      if (url.origin !== config.origin) fail(403, 'invalid_host', 'Use the configured editor address.');
+      // This exact production deployment host is only an ingress exception for
+      // Vercel's GET cron. The job's bearer authentication below still applies.
+      const deploymentCron = method === 'GET' && route === 'jobs/publication' &&
+        config.productionCronOrigin && url.origin === config.productionCronOrigin;
+      if (url.origin !== config.origin && !deploymentCron) fail(403, 'invalid_host', 'Use the configured editor address.');
       const oauthCallback = route === 'auth/discord/callback' && method === 'GET';
       const machineRoute = ['jobs/publication', 'webhooks/github'].includes(route);
       const origin = request.headers.get('origin');
