@@ -1,0 +1,3655 @@
+{
+  "id": "arch-glacor-basic",
+  "title": "Arch Glacor Basic",
+  "blocks": [
+    {
+      "id": "arch-glacor-basic:b:0000",
+      "node": {
+        "id": "arch-glacor-basic:n:0000",
+        "tag": "span",
+        "type": "element",
+        "attrs": {
+          "id": "arch-glacor-boss-guide"
+        },
+        "children": []
+      },
+      "type": "preserved",
+      "label": "Source anchor or spacing",
+      "reason": "Original media, anchors and spacing are preserved read-only.",
+      "editable": false,
+      "sourcePath": "root/*[1]",
+      "editableTextNodeIds": []
+    },
+    {
+      "id": "arch-glacor-basic:b:0001",
+      "node": {
+        "id": "arch-glacor-basic:n:0001",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0001.0",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "Guide illustration",
+              "src": "https://img.pvme.io/images/nRwTsLjidK.png",
+              "class": "media",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0001.0.tail",
+            "text": "\n​",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0001.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "media",
+      "label": "Original guide media",
+      "reason": "Original media, anchors and spacing are preserved read-only.",
+      "editable": false,
+      "sourcePath": "root/*[2]",
+      "editableTextNodeIds": []
+    },
+    {
+      "id": "arch-glacor-basic:b:0002",
+      "node": {
+        "id": "arch-glacor-basic:n:0002",
+        "tag": "h2",
+        "type": "element",
+        "attrs": {
+          "id": "general-information"
+        },
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0002.0",
+            "tag": "ins",
+            "type": "element",
+            "attrs": {},
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0002.0.t",
+                "text": "General Information",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0002.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "heading",
+      "label": "General Information",
+      "editable": true,
+      "sourcePath": "root/*[3]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0002.0.t"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0003",
+      "node": {
+        "id": "arch-glacor-basic:n:0003",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0003.t",
+            "text": "⬥ Arch-Glacor can be fought in Normal Mode (NM) or Hard Mode (HM)",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0003.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "⬥ Arch-Glacor can be fought in Normal Mode (NM) or Hard Mode (HM)",
+      "editable": true,
+      "sourcePath": "root/*[4]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0003.t"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0004",
+      "node": {
+        "id": "arch-glacor-basic:n:0004",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0004.t",
+            "text": "‎ ‎ ‎ ‎• NM can be fought in a group, but HM can only be fought solo",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0004.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "‎ ‎ ‎ ‎• NM can be fought in a group, but HM can only be fought solo",
+      "editable": true,
+      "sourcePath": "root/*[5]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0004.t"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0005",
+      "node": {
+        "id": "arch-glacor-basic:n:0005",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0005.t",
+            "text": "⬥ Arch-Glacor's life points and mechanics vary based on mode and enrage",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0005.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "⬥ Arch-Glacor's life points vary based on mode and enrage",
+      "editable": true,
+      "sourcePath": "root/*[6]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0005.t"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0006",
+      "node": {
+        "id": "arch-glacor-basic:n:0006",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0006.t",
+            "text": "⬥ Glacor ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0006.0",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "glacor",
+              "src": "https://cdn.discordapp.com/emojis/1004107344935923743.png?v=1",
+              "class": "d-emoji",
+              "title": "glacor",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0006.0.tail",
+            "text": " slayer assignment applies to NM only",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0006.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "⬥ Glacor slayer assignment applies to NM only",
+      "editable": true,
+      "sourcePath": "root/*[7]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0006.t",
+        "arch-glacor-basic:n:0006.0.tail"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0007",
+      "node": {
+        "id": "arch-glacor-basic:n:0007",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0007.t",
+            "text": "​",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0007.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "Source anchor or spacing",
+      "reason": "Original media, anchors and spacing are preserved read-only.",
+      "editable": false,
+      "sourcePath": "root/*[8]",
+      "editableTextNodeIds": []
+    },
+    {
+      "id": "arch-glacor-basic:b:0008",
+      "node": {
+        "id": "arch-glacor-basic:n:0008",
+        "tag": "h2",
+        "type": "element",
+        "attrs": {
+          "id": "gear-relics-and-familiars"
+        },
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0008.0",
+            "tag": "ins",
+            "type": "element",
+            "attrs": {},
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0008.0.t",
+                "text": "Gear, Relics and Familiars",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0008.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "heading",
+      "label": "Gear, Relics and Familiars",
+      "editable": true,
+      "sourcePath": "root/*[9]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0008.0.t"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0009",
+      "node": {
+        "id": "arch-glacor-basic:n:0009",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0009.0",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "magic",
+              "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1",
+              "class": "d-emoji",
+              "title": "magic",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0009.0.tail",
+            "text": " ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0009.1",
+            "tag": "a",
+            "type": "element",
+            "attrs": {
+              "rel": "noopener noreferrer",
+              "href": "https://presets.pvme.io/?id=JcJmj9NbUDRmzDhkYOZ1",
+              "target": "_blank"
+            },
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0009.1.t",
+                "text": "Example Preset",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0009.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "Example Preset",
+      "editable": true,
+      "sourcePath": "root/*[10]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0009.1.t"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0010",
+      "node": {
+        "id": "arch-glacor-basic:n:0010",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0010.0",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "melee",
+              "src": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1",
+              "class": "d-emoji",
+              "title": "melee",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0010.0.tail",
+            "text": " ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0010.1",
+            "tag": "a",
+            "type": "element",
+            "attrs": {
+              "rel": "noopener noreferrer",
+              "href": "https://presets.pvme.io/?id=rPkAfi2w9CZJYxyKK7V0",
+              "target": "_blank"
+            },
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0010.1.t",
+                "text": "Example Preset",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0010.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "Example Preset",
+      "editable": true,
+      "sourcePath": "root/*[11]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0010.1.t"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0011",
+      "node": {
+        "id": "arch-glacor-basic:n:0011",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0011.0",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "range",
+              "src": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1",
+              "class": "d-emoji",
+              "title": "range",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0011.0.tail",
+            "text": " ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0011.1",
+            "tag": "a",
+            "type": "element",
+            "attrs": {
+              "rel": "noopener noreferrer",
+              "href": "https://presets.pvme.io/?id=MhE8Umpw79WhIYuJPIz9",
+              "target": "_blank"
+            },
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0011.1.t",
+                "text": "Example Preset",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0011.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "Example Preset",
+      "editable": true,
+      "sourcePath": "root/*[12]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0011.1.t"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0012",
+      "node": {
+        "id": "arch-glacor-basic:n:0012",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0012.0",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "necromancy",
+              "src": "https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1",
+              "class": "d-emoji",
+              "title": "necromancy",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0012.0.tail",
+            "text": " ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0012.1",
+            "tag": "a",
+            "type": "element",
+            "attrs": {
+              "rel": "noopener noreferrer",
+              "href": "https://presets.pvme.io/?id=CYtiJmWEAZwOVNam77oN",
+              "target": "_blank"
+            },
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0012.1.t",
+                "text": "Example Preset",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0012.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "Example Preset",
+      "editable": true,
+      "sourcePath": "root/*[13]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0012.1.t"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0013",
+      "node": {
+        "id": "arch-glacor-basic:n:0013",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0013.t",
+            "text": "​\n",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0013.0",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "Guide illustration",
+              "src": "https://firebasestorage.googleapis.com/v0/b/preset-images/o/images%2FCYtiJmWEAZwOVNam77oN.png?alt=media",
+              "class": "media",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0013.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "media",
+      "label": "Original guide media",
+      "reason": "Original media, anchors and spacing are preserved read-only.",
+      "editable": false,
+      "sourcePath": "root/*[14]",
+      "editableTextNodeIds": []
+    },
+    {
+      "id": "arch-glacor-basic:b:0014",
+      "node": {
+        "id": "arch-glacor-basic:n:0014",
+        "tag": "h2",
+        "type": "element",
+        "attrs": {
+          "id": "fight-mechanics"
+        },
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0014.0",
+            "tag": "ins",
+            "type": "element",
+            "attrs": {},
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0014.0.t",
+                "text": "Fight Mechanics",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0014.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "heading",
+      "label": "Fight Mechanics",
+      "editable": true,
+      "sourcePath": "root/*[15]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0014.0.t"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0015",
+      "node": {
+        "id": "arch-glacor-basic:n:0015",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0015.t",
+            "text": "⬥ Arch-Glacor randomly cycles through the 5 mechanics listed below",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0015.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "⬥ Arch-Glacor randomly cycles through the 5 mechanics listed below",
+      "editable": true,
+      "sourcePath": "root/*[16]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0015.t"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0016",
+      "node": {
+        "id": "arch-glacor-basic:n:0016",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0016.t",
+            "text": "‎ ‎ ‎ ‎• Each mechanic can only occur once per cycle, meaning a mechanic can ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0016.0",
+            "tag": "em",
+            "type": "element",
+            "attrs": {},
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0016.0.t",
+                "text": "only",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "id": "arch-glacor-basic:n:0016.0.tail",
+            "text": " occur back-to-back if it is the last mechanic of a cycle and the first mechanic of the next",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0016.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "‎ ‎ ‎ ‎• Each mechanic can only occur once per cycle, meaning a mechanic can only occur back-to-",
+      "editable": true,
+      "sourcePath": "root/*[17]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0016.t",
+        "arch-glacor-basic:n:0016.0.t",
+        "arch-glacor-basic:n:0016.0.tail"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0017",
+      "node": {
+        "id": "arch-glacor-basic:n:0017",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0017.t",
+            "text": "⬥ In NM, mechanics can be toggled on or off to learn the fight, except for Creeping Ice",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0017.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "⬥ In NM, mechanics can be toggled on or off to learn the fight, except for Creeping Ice",
+      "editable": true,
+      "sourcePath": "root/*[18]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0017.t"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0018",
+      "node": {
+        "id": "arch-glacor-basic:n:0018",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0018.t",
+            "text": "⬥ In HM, all mechanics are enabled and enrage increases with every kill, with difficulty increasing too",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0018.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "⬥ In HM, all mechanics are enabled and enrage increases with every kill, with difficulty increas",
+      "editable": true,
+      "sourcePath": "root/*[19]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0018.t"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0019",
+      "node": {
+        "id": "arch-glacor-basic:n:0019",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0019.t",
+            "text": "​",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0019.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "Source anchor or spacing",
+      "reason": "Original media, anchors and spacing are preserved read-only.",
+      "editable": false,
+      "sourcePath": "root/*[20]",
+      "editableTextNodeIds": []
+    },
+    {
+      "id": "arch-glacor-basic:b:0020",
+      "node": {
+        "id": "arch-glacor-basic:n:0020",
+        "tag": "h3",
+        "type": "element",
+        "attrs": {
+          "id": "auto-attacks-ranged-example-magic-example"
+        },
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0020.0",
+            "tag": "ins",
+            "type": "element",
+            "attrs": {},
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0020.0.t",
+                "text": "Auto Attacks",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "id": "arch-glacor-basic:n:0020.0.tail",
+            "text": " (",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0020.1",
+            "tag": "a",
+            "type": "element",
+            "attrs": {
+              "rel": "noopener noreferrer",
+              "href": "https://img.pvme.io/images/XZgiuE5XNB.mp4",
+              "target": "_blank"
+            },
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0020.1.t",
+                "text": "Ranged example",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "id": "arch-glacor-basic:n:0020.1.tail",
+            "text": " / ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0020.2",
+            "tag": "video",
+            "type": "element",
+            "attrs": {
+              "src": "https://img.pvme.io/images/XZgiuE5XNB.mp4",
+              "class": "source-media-player",
+              "preload": "none",
+              "controls": ""
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0020.3",
+            "tag": "a",
+            "type": "element",
+            "attrs": {
+              "rel": "noopener noreferrer",
+              "href": "https://img.pvme.io/images/BtHNY8ND13.mp4",
+              "target": "_blank"
+            },
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0020.3.t",
+                "text": "Magic example",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "id": "arch-glacor-basic:n:0020.3.tail",
+            "text": ")",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0020.4",
+            "tag": "video",
+            "type": "element",
+            "attrs": {
+              "src": "https://img.pvme.io/images/BtHNY8ND13.mp4",
+              "class": "source-media-player",
+              "preload": "none",
+              "controls": ""
+            },
+            "children": []
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0020.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "heading",
+      "label": "Auto Attacks (Ranged example / Magic example)",
+      "reason": "Rich structure is preserved read-only in this prototype.",
+      "editable": false,
+      "sourcePath": "root/*[21]",
+      "editableTextNodeIds": []
+    },
+    {
+      "id": "arch-glacor-basic:b:0021",
+      "node": {
+        "id": "arch-glacor-basic:n:0021",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0021.0",
+            "tag": "strong",
+            "type": "element",
+            "attrs": {},
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0021.0.t",
+                "text": "Mechanic:",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "id": "arch-glacor-basic:n:0021.0.tail",
+            "text": " Arch-Glacor primarily uses Magic and Ranged auto-attacks, with stronger style-swapping auto-attacks during ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0021.1",
+            "tag": "strong",
+            "type": "element",
+            "attrs": {},
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0021.1.t",
+                "text": "Flurry",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "id": "arch-glacor-basic:n:0021.1.tail",
+            "text": ".",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0021.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "Mechanic: Arch-Glacor primarily uses Magic and Ranged auto-attacks, with stronger style-swapping",
+      "editable": true,
+      "sourcePath": "root/*[22]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0021.0.t",
+        "arch-glacor-basic:n:0021.0.tail",
+        "arch-glacor-basic:n:0021.1.t",
+        "arch-glacor-basic:n:0021.1.tail"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0022",
+      "node": {
+        "id": "arch-glacor-basic:n:0022",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0022.0",
+            "tag": "strong",
+            "type": "element",
+            "attrs": {},
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0022.0.t",
+                "text": "Solution:",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0022.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "Solution:",
+      "editable": true,
+      "sourcePath": "root/*[23]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0022.0.t"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0023",
+      "node": {
+        "id": "arch-glacor-basic:n:0023",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0023.t",
+            "text": "⬥ Pray against the correct attack style ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0023.0",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "deflectmage",
+              "src": "https://cdn.discordapp.com/emojis/544195487926845462.png?v=1",
+              "class": "d-emoji",
+              "title": "deflectmage",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0023.0.tail",
+            "text": " ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0023.1",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "deflectrange",
+              "src": "https://cdn.discordapp.com/emojis/544195488317046812.png?v=1",
+              "class": "d-emoji",
+              "title": "deflectrange",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0023.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "⬥ Pray against the correct attack style",
+      "editable": true,
+      "sourcePath": "root/*[24]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0023.t"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0024",
+      "node": {
+        "id": "arch-glacor-basic:n:0024",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0024.t",
+            "text": "⬥ Use ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0024.0",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "debil",
+              "src": "https://cdn.discordapp.com/emojis/535541278264393729.png?v=1",
+              "class": "d-emoji",
+              "title": "debil",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0024.0.tail",
+            "text": " if taking heavy damage",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0024.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "⬥ Use if taking heavy damage",
+      "editable": true,
+      "sourcePath": "root/*[25]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0024.t",
+        "arch-glacor-basic:n:0024.0.tail"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0025",
+      "node": {
+        "id": "arch-glacor-basic:n:0025",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0025.t",
+            "text": "​",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0025.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "Source anchor or spacing",
+      "reason": "Original media, anchors and spacing are preserved read-only.",
+      "editable": false,
+      "sourcePath": "root/*[26]",
+      "editableTextNodeIds": []
+    },
+    {
+      "id": "arch-glacor-basic:b:0026",
+      "node": {
+        "id": "arch-glacor-basic:n:0026",
+        "tag": "h3",
+        "type": "element",
+        "attrs": {
+          "id": "glacyte-minions-example"
+        },
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0026.0",
+            "tag": "ins",
+            "type": "element",
+            "attrs": {},
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0026.0.t",
+                "text": "Glacyte Minions",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "id": "arch-glacor-basic:n:0026.0.tail",
+            "text": " ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0026.1",
+            "tag": "a",
+            "type": "element",
+            "attrs": {
+              "rel": "noopener noreferrer",
+              "href": "https://img.pvme.io/images/kSB6UcI.mp4",
+              "target": "_blank"
+            },
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0026.1.t",
+                "text": "(Example)",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "id": "arch-glacor-basic:n:0026.2",
+            "tag": "video",
+            "type": "element",
+            "attrs": {
+              "src": "https://img.pvme.io/images/kSB6UcI.mp4",
+              "class": "source-media-player",
+              "preload": "none",
+              "controls": ""
+            },
+            "children": []
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0026.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "heading",
+      "label": "Glacyte Minions (Example)",
+      "reason": "Rich structure is preserved read-only in this prototype.",
+      "editable": false,
+      "sourcePath": "root/*[27]",
+      "editableTextNodeIds": []
+    },
+    {
+      "id": "arch-glacor-basic:b:0027",
+      "node": {
+        "id": "arch-glacor-basic:n:0027",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0027.0",
+            "tag": "strong",
+            "type": "element",
+            "attrs": {},
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0027.0.t",
+                "text": "Mechanic:",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "id": "arch-glacor-basic:n:0027.0.tail",
+            "text": " Arch-Glacor becomes immune and summons 4 Glacyte minions. Each minion drops an unstable core on death.",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0027.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "Mechanic: Arch-Glacor becomes immune and summons 4 Glacyte minions. Each minion drops an unstabl",
+      "editable": true,
+      "sourcePath": "root/*[28]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0027.0.t",
+        "arch-glacor-basic:n:0027.0.tail"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0028",
+      "node": {
+        "id": "arch-glacor-basic:n:0028",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0028.t",
+            "text": "​",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0028.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "Source anchor or spacing",
+      "reason": "Original media, anchors and spacing are preserved read-only.",
+      "editable": false,
+      "sourcePath": "root/*[29]",
+      "editableTextNodeIds": []
+    },
+    {
+      "id": "arch-glacor-basic:b:0029",
+      "node": {
+        "id": "arch-glacor-basic:n:0029",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0029.t",
+            "text": "At 250%+ HM enrage, a tougher Bolstered Glacyte also spawns (however, if this is the first mechanic in the fight, this Bolstered Glacyte does ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0029.0",
+            "tag": "em",
+            "type": "element",
+            "attrs": {},
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0029.0.t",
+                "text": "not",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "id": "arch-glacor-basic:n:0029.0.tail",
+            "text": " spawn).",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0029.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "At 250%+ HM enrage, a tougher Bolstered Glacyte also spawns (however, if this is the first mecha",
+      "editable": true,
+      "sourcePath": "root/*[30]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0029.t",
+        "arch-glacor-basic:n:0029.0.t",
+        "arch-glacor-basic:n:0029.0.tail"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0030",
+      "node": {
+        "id": "arch-glacor-basic:n:0030",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0030.t",
+            "text": "​",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0030.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "Source anchor or spacing",
+      "reason": "Original media, anchors and spacing are preserved read-only.",
+      "editable": false,
+      "sourcePath": "root/*[31]",
+      "editableTextNodeIds": []
+    },
+    {
+      "id": "arch-glacor-basic:b:0031",
+      "node": {
+        "id": "arch-glacor-basic:n:0031",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0031.0",
+            "tag": "strong",
+            "type": "element",
+            "attrs": {},
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0031.0.t",
+                "text": "Solution:",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0031.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "Solution:",
+      "editable": true,
+      "sourcePath": "root/*[32]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0031.0.t"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0032",
+      "node": {
+        "id": "arch-glacor-basic:n:0032",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0032.t",
+            "text": "⬥ Use area of effect attacks to clear the minions ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0032.0",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "spectralscythe2",
+              "src": "https://cdn.discordapp.com/emojis/1137809149690916945.png?v=1",
+              "class": "d-emoji",
+              "title": "spectralscythe2",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0032.0.tail",
+            "text": " ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0032.1",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "threadsoffate",
+              "src": "https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1",
+              "class": "d-emoji",
+              "title": "threadsoffate",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0032.1.tail",
+            "text": " / ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0032.2",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "gchain",
+              "src": "https://cdn.discordapp.com/emojis/1478063106914779166.png?v=1",
+              "class": "d-emoji",
+              "title": "gchain",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0032.2.tail",
+            "text": " ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0032.3",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "magmatemptest",
+              "src": "https://cdn.discordapp.com/emojis/1478063454173532242.png?v=1",
+              "class": "d-emoji",
+              "title": "magmatemptest",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0032.3.tail",
+            "text": " / ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0032.4",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "cane",
+              "src": "https://cdn.discordapp.com/emojis/535532878969438210.png?v=1",
+              "class": "d-emoji",
+              "title": "cane",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0032.4.tail",
+            "text": " ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0032.5",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "gflurry",
+              "src": "https://cdn.discordapp.com/emojis/535532879283879977.png?v=1",
+              "class": "d-emoji",
+              "title": "gflurry",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0032.5.tail",
+            "text": " / ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0032.6",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "ricochet",
+              "src": "https://cdn.discordapp.com/emojis/1478061867288100885.png?v=1",
+              "class": "d-emoji",
+              "title": "ricochet",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0032.6.tail",
+            "text": " ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0032.7",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "bombard",
+              "src": "https://cdn.discordapp.com/emojis/535541306391265284.png?v=1",
+              "class": "d-emoji",
+              "title": "bombard",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0032.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "⬥ Use area of effect attacks to clear the minions / / /",
+      "editable": true,
+      "sourcePath": "root/*[33]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0032.t",
+        "arch-glacor-basic:n:0032.1.tail",
+        "arch-glacor-basic:n:0032.3.tail",
+        "arch-glacor-basic:n:0032.5.tail"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0033",
+      "node": {
+        "id": "arch-glacor-basic:n:0033",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0033.t",
+            "text": "⬥ Click the unstable cores only once ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0033.0",
+            "tag": "strong",
+            "type": "element",
+            "attrs": {},
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0033.0.t",
+                "text": "all",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "id": "arch-glacor-basic:n:0033.0.tail",
+            "text": " minions are dead",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0033.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "⬥ Click the unstable cores only once all minions are dead",
+      "editable": true,
+      "sourcePath": "root/*[34]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0033.t",
+        "arch-glacor-basic:n:0033.0.t",
+        "arch-glacor-basic:n:0033.0.tail"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0034",
+      "node": {
+        "id": "arch-glacor-basic:n:0034",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0034.t",
+            "text": "​",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0034.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "Source anchor or spacing",
+      "reason": "Original media, anchors and spacing are preserved read-only.",
+      "editable": false,
+      "sourcePath": "root/*[35]",
+      "editableTextNodeIds": []
+    },
+    {
+      "id": "arch-glacor-basic:b:0035",
+      "node": {
+        "id": "arch-glacor-basic:n:0035",
+        "tag": "h3",
+        "type": "element",
+        "attrs": {
+          "id": "flurry-example"
+        },
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0035.0",
+            "tag": "ins",
+            "type": "element",
+            "attrs": {},
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0035.0.t",
+                "text": "Flurry",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "id": "arch-glacor-basic:n:0035.0.tail",
+            "text": " ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0035.1",
+            "tag": "a",
+            "type": "element",
+            "attrs": {
+              "rel": "noopener noreferrer",
+              "href": "https://img.pvme.io/images/0CU0qXf.mp4",
+              "target": "_blank"
+            },
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0035.1.t",
+                "text": "(Example)",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "id": "arch-glacor-basic:n:0035.2",
+            "tag": "video",
+            "type": "element",
+            "attrs": {
+              "src": "https://img.pvme.io/images/0CU0qXf.mp4",
+              "class": "source-media-player",
+              "preload": "none",
+              "controls": ""
+            },
+            "children": []
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0035.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "heading",
+      "label": "Flurry (Example)",
+      "reason": "Rich structure is preserved read-only in this prototype.",
+      "editable": false,
+      "sourcePath": "root/*[36]",
+      "editableTextNodeIds": []
+    },
+    {
+      "id": "arch-glacor-basic:b:0036",
+      "node": {
+        "id": "arch-glacor-basic:n:0036",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0036.0",
+            "tag": "strong",
+            "type": "element",
+            "attrs": {},
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0036.0.t",
+                "text": "Mechanic:",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "id": "arch-glacor-basic:n:0036.0.tail",
+            "text": " Arch-Glacor's auto-attacks hit harder and rotate combat styles, with its Melee hit the strongest.",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0036.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "Mechanic: Arch-Glacor's auto-attacks hit harder and rotate combat styles, with its Melee hit the",
+      "editable": true,
+      "sourcePath": "root/*[37]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0036.0.t",
+        "arch-glacor-basic:n:0036.0.tail"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0037",
+      "node": {
+        "id": "arch-glacor-basic:n:0037",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0037.0",
+            "tag": "strong",
+            "type": "element",
+            "attrs": {},
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0037.0.t",
+                "text": "Solution:",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0037.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "Solution:",
+      "editable": true,
+      "sourcePath": "root/*[38]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0037.0.t"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0038",
+      "node": {
+        "id": "arch-glacor-basic:n:0038",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0038.t",
+            "text": "⬥ Pray against each combat style accordingly ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0038.0",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "DeflectMage",
+              "src": "https://cdn.discordapp.com/emojis/544195487926845462.png?v=1",
+              "class": "d-emoji",
+              "title": "DeflectMage",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0038.0.tail",
+            "text": " / ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0038.1",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "DeflectRange",
+              "src": "https://cdn.discordapp.com/emojis/544195488317046812.png?v=1",
+              "class": "d-emoji",
+              "title": "DeflectRange",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0038.1.tail",
+            "text": " / ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0038.2",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "DeflectMelee",
+              "src": "https://cdn.discordapp.com/emojis/544195488447201300.png?v=1",
+              "class": "d-emoji",
+              "title": "DeflectMelee",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0038.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "⬥ Pray against each combat style accordingly / /",
+      "editable": true,
+      "sourcePath": "root/*[39]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0038.t",
+        "arch-glacor-basic:n:0038.0.tail",
+        "arch-glacor-basic:n:0038.1.tail"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0039",
+      "node": {
+        "id": "arch-glacor-basic:n:0039",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0039.t",
+            "text": "⬥ Use ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0039.0",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "debil",
+              "src": "https://cdn.discordapp.com/emojis/535541278264393729.png?v=1",
+              "class": "d-emoji",
+              "title": "debil",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0039.0.tail",
+            "text": " for additional damage reduction",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0039.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "⬥ Use for additional damage reduction",
+      "editable": true,
+      "sourcePath": "root/*[40]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0039.t",
+        "arch-glacor-basic:n:0039.0.tail"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0040",
+      "node": {
+        "id": "arch-glacor-basic:n:0040",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0040.t",
+            "text": "⬥ Use ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0040.0",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "res",
+              "src": "https://cdn.discordapp.com/emojis/535541258844635148.png?v=1",
+              "class": "d-emoji",
+              "title": "res",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0040.0.tail",
+            "text": " or ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0040.1",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "divert",
+              "src": "https://cdn.discordapp.com/emojis/787904334377648130.png?v=1",
+              "class": "d-emoji",
+              "title": "divert",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0040.1.tail",
+            "text": " on melee swipes where appropriate",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0040.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "⬥ Use or on melee swipes where appropriate",
+      "editable": true,
+      "sourcePath": "root/*[41]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0040.t",
+        "arch-glacor-basic:n:0040.0.tail",
+        "arch-glacor-basic:n:0040.1.tail"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0041",
+      "node": {
+        "id": "arch-glacor-basic:n:0041",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0041.t",
+            "text": "​",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0041.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "Source anchor or spacing",
+      "reason": "Original media, anchors and spacing are preserved read-only.",
+      "editable": false,
+      "sourcePath": "root/*[42]",
+      "editableTextNodeIds": []
+    },
+    {
+      "id": "arch-glacor-basic:b:0042",
+      "node": {
+        "id": "arch-glacor-basic:n:0042",
+        "tag": "h3",
+        "type": "element",
+        "attrs": {
+          "id": "pillars-of-ice-example"
+        },
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0042.0",
+            "tag": "ins",
+            "type": "element",
+            "attrs": {},
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0042.0.t",
+                "text": "Pillars of Ice",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "id": "arch-glacor-basic:n:0042.0.tail",
+            "text": " ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0042.1",
+            "tag": "a",
+            "type": "element",
+            "attrs": {
+              "rel": "noopener noreferrer",
+              "href": "https://img.pvme.io/images/omGXX0a.mp4",
+              "target": "_blank"
+            },
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0042.1.t",
+                "text": "(Example)",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "id": "arch-glacor-basic:n:0042.2",
+            "tag": "video",
+            "type": "element",
+            "attrs": {
+              "src": "https://img.pvme.io/images/omGXX0a.mp4",
+              "class": "source-media-player",
+              "preload": "none",
+              "controls": ""
+            },
+            "children": []
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0042.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "heading",
+      "label": "Pillars of Ice (Example)",
+      "reason": "Rich structure is preserved read-only in this prototype.",
+      "editable": false,
+      "sourcePath": "root/*[43]",
+      "editableTextNodeIds": []
+    },
+    {
+      "id": "arch-glacor-basic:b:0043",
+      "node": {
+        "id": "arch-glacor-basic:n:0043",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0043.0",
+            "tag": "strong",
+            "type": "element",
+            "attrs": {},
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0043.0.t",
+                "text": "Mechanic:",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "id": "arch-glacor-basic:n:0043.0.tail",
+            "text": " Creeping Ice forces you to one end of the arena, then moving beams cross the arena. Contact with a beam deals heavy damage and stuns you ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0043.1",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "stunicon",
+              "src": "https://cdn.discordapp.com/emojis/841419289428492369.png?v=1",
+              "class": "d-emoji",
+              "title": "stunicon",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0043.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "Mechanic: Creeping Ice forces you to one end of the arena, then moving beams cross the arena. Co",
+      "editable": true,
+      "sourcePath": "root/*[44]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0043.0.t",
+        "arch-glacor-basic:n:0043.0.tail"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0044",
+      "node": {
+        "id": "arch-glacor-basic:n:0044",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0044.0",
+            "tag": "strong",
+            "type": "element",
+            "attrs": {},
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0044.0.t",
+                "text": "Solution:",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0044.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "Solution:",
+      "editable": true,
+      "sourcePath": "root/*[45]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0044.0.t"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0045",
+      "node": {
+        "id": "arch-glacor-basic:n:0045",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0045.t",
+            "text": "⬥ Move around the beams using ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0045.0",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "dive",
+              "src": "https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1",
+              "class": "d-emoji",
+              "title": "dive",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0045.0.tail",
+            "text": " and ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0045.1",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "surge",
+              "src": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+              "class": "d-emoji",
+              "title": "surge",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0045.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "⬥ Move around the beams using and",
+      "editable": true,
+      "sourcePath": "root/*[46]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0045.t",
+        "arch-glacor-basic:n:0045.0.tail"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0046",
+      "node": {
+        "id": "arch-glacor-basic:n:0046",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0046.t",
+            "text": "⬥ Watch the example above for one safe path through the mechanic",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0046.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "⬥ Watch the example above for one safe path through the mechanic",
+      "editable": true,
+      "sourcePath": "root/*[47]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0046.t"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0047",
+      "node": {
+        "id": "arch-glacor-basic:n:0047",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0047.t",
+            "text": "⬥ In HM, an additional beam appears after the second beam",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0047.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "⬥ In HM, an additional beam appears after the second beam",
+      "editable": true,
+      "sourcePath": "root/*[48]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0047.t"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0048",
+      "node": {
+        "id": "arch-glacor-basic:n:0048",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0048.t",
+            "text": "​",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0048.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "Source anchor or spacing",
+      "reason": "Original media, anchors and spacing are preserved read-only.",
+      "editable": false,
+      "sourcePath": "root/*[49]",
+      "editableTextNodeIds": []
+    },
+    {
+      "id": "arch-glacor-basic:b:0049",
+      "node": {
+        "id": "arch-glacor-basic:n:0049",
+        "tag": "h3",
+        "type": "element",
+        "attrs": {
+          "id": "exposed-core-example"
+        },
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0049.0",
+            "tag": "ins",
+            "type": "element",
+            "attrs": {},
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0049.0.t",
+                "text": "Exposed Core",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "id": "arch-glacor-basic:n:0049.0.tail",
+            "text": " ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0049.1",
+            "tag": "a",
+            "type": "element",
+            "attrs": {
+              "rel": "noopener noreferrer",
+              "href": "https://img.pvme.io/images/j3d2YIxcr7.mp4",
+              "target": "_blank"
+            },
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0049.1.t",
+                "text": "(Example)",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "id": "arch-glacor-basic:n:0049.2",
+            "tag": "video",
+            "type": "element",
+            "attrs": {
+              "src": "https://img.pvme.io/images/j3d2YIxcr7.mp4",
+              "class": "source-media-player",
+              "preload": "none",
+              "controls": ""
+            },
+            "children": []
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0049.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "heading",
+      "label": "Exposed Core (Example)",
+      "reason": "Rich structure is preserved read-only in this prototype.",
+      "editable": false,
+      "sourcePath": "root/*[50]",
+      "editableTextNodeIds": []
+    },
+    {
+      "id": "arch-glacor-basic:b:0050",
+      "node": {
+        "id": "arch-glacor-basic:n:0050",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0050.0",
+            "tag": "strong",
+            "type": "element",
+            "attrs": {},
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0050.0.t",
+                "text": "Mechanic:",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "id": "arch-glacor-basic:n:0050.0.tail",
+            "text": " Arch-Glacor traps you in the centre of the arena, between its arms. The core deals increasing Magic ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0050.1",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "magic",
+              "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1",
+              "class": "d-emoji",
+              "title": "magic",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0050.1.tail",
+            "text": " damage.",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0050.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "Mechanic: Arch-Glacor traps you in the centre of the arena, between its arms. The core deals inc",
+      "editable": true,
+      "sourcePath": "root/*[51]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0050.0.t",
+        "arch-glacor-basic:n:0050.0.tail",
+        "arch-glacor-basic:n:0050.1.tail"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0051",
+      "node": {
+        "id": "arch-glacor-basic:n:0051",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0051.0",
+            "tag": "strong",
+            "type": "element",
+            "attrs": {},
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0051.0.t",
+                "text": "Solution:",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0051.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "Solution:",
+      "editable": true,
+      "sourcePath": "root/*[52]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0051.0.t"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0052",
+      "node": {
+        "id": "arch-glacor-basic:n:0052",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0052.t",
+            "text": "⬥ Kill ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0052.0",
+            "tag": "em",
+            "type": "element",
+            "attrs": {},
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0052.0.t",
+                "text": "either",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "id": "arch-glacor-basic:n:0052.0.tail",
+            "text": " arm to escape",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0052.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "⬥ Kill either arm to escape",
+      "editable": true,
+      "sourcePath": "root/*[53]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0052.t",
+        "arch-glacor-basic:n:0052.0.t",
+        "arch-glacor-basic:n:0052.0.tail"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0053",
+      "node": {
+        "id": "arch-glacor-basic:n:0053",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0053.t",
+            "text": "⬥ Use strong damaging abilities to break the arm quickly",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0053.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "⬥ Use strong damaging abilities to break the arm quickly",
+      "editable": true,
+      "sourcePath": "root/*[54]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0053.t"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0054",
+      "node": {
+        "id": "arch-glacor-basic:n:0054",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0054.t",
+            "text": "⬥ Pray ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0054.0",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "DeflectMage",
+              "src": "https://cdn.discordapp.com/emojis/544195487926845462.png?v=1",
+              "class": "d-emoji",
+              "title": "DeflectMage",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0054.0.tail",
+            "text": " to reduce damage if needed",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0054.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "⬥ Pray to reduce damage if needed",
+      "editable": true,
+      "sourcePath": "root/*[55]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0054.t",
+        "arch-glacor-basic:n:0054.0.tail"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0055",
+      "node": {
+        "id": "arch-glacor-basic:n:0055",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0055.t",
+            "text": "​",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0055.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "Source anchor or spacing",
+      "reason": "Original media, anchors and spacing are preserved read-only.",
+      "editable": false,
+      "sourcePath": "root/*[56]",
+      "editableTextNodeIds": []
+    },
+    {
+      "id": "arch-glacor-basic:b:0056",
+      "node": {
+        "id": "arch-glacor-basic:n:0056",
+        "tag": "h3",
+        "type": "element",
+        "attrs": {
+          "id": "frost-cannon-example"
+        },
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0056.0",
+            "tag": "ins",
+            "type": "element",
+            "attrs": {},
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0056.0.t",
+                "text": "Frost Cannon",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "id": "arch-glacor-basic:n:0056.0.tail",
+            "text": " ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0056.1",
+            "tag": "a",
+            "type": "element",
+            "attrs": {
+              "rel": "noopener noreferrer",
+              "href": "https://img.pvme.io/images/20mFMPA.mp4",
+              "target": "_blank"
+            },
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0056.1.t",
+                "text": "(Example)",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "id": "arch-glacor-basic:n:0056.2",
+            "tag": "video",
+            "type": "element",
+            "attrs": {
+              "src": "https://img.pvme.io/images/20mFMPA.mp4",
+              "class": "source-media-player",
+              "preload": "none",
+              "controls": ""
+            },
+            "children": []
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0056.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "heading",
+      "label": "Frost Cannon (Example)",
+      "reason": "Rich structure is preserved read-only in this prototype.",
+      "editable": false,
+      "sourcePath": "root/*[57]",
+      "editableTextNodeIds": []
+    },
+    {
+      "id": "arch-glacor-basic:b:0057",
+      "node": {
+        "id": "arch-glacor-basic:n:0057",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0057.0",
+            "tag": "strong",
+            "type": "element",
+            "attrs": {},
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0057.0.t",
+                "text": "Mechanic:",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "id": "arch-glacor-basic:n:0057.0.tail",
+            "text": " Creeping Ice traps you at one end of the arena, then Arch-Glacor fires a beam dealing heavy Magic damage. In HM, the beam hits 3 times and the first hit stuns you ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0057.1",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "stunicon",
+              "src": "https://cdn.discordapp.com/emojis/841419289428492369.png?v=1",
+              "class": "d-emoji",
+              "title": "stunicon",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0057.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "Mechanic: Creeping Ice traps you at one end of the arena, then Arch-Glacor fires a beam dealing ",
+      "editable": true,
+      "sourcePath": "root/*[58]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0057.0.t",
+        "arch-glacor-basic:n:0057.0.tail"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0058",
+      "node": {
+        "id": "arch-glacor-basic:n:0058",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0058.0",
+            "tag": "strong",
+            "type": "element",
+            "attrs": {},
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0058.0.t",
+                "text": "Solution:",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0058.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "Solution:",
+      "editable": true,
+      "sourcePath": "root/*[59]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0058.0.t"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0059",
+      "node": {
+        "id": "arch-glacor-basic:n:0059",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0059.t",
+            "text": "⬥ Prioritise blocking the Magic attack(s) with ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0059.0",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "devo",
+              "src": "https://cdn.discordapp.com/emojis/513190158728953857.png?v=1",
+              "class": "d-emoji",
+              "title": "devo",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0059.0.tail",
+            "text": " or ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0059.1",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "reflect",
+              "src": "https://cdn.discordapp.com/emojis/535541258786177064.png?v=1",
+              "class": "d-emoji",
+              "title": "reflect",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0059.1.tail",
+            "text": " + ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0059.2",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "res",
+              "src": "https://cdn.discordapp.com/emojis/535541258844635148.png?v=1",
+              "class": "d-emoji",
+              "title": "res",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0059.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "⬥ Prioritise blocking the Magic attack(s) with or +",
+      "editable": true,
+      "sourcePath": "root/*[60]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0059.t",
+        "arch-glacor-basic:n:0059.0.tail",
+        "arch-glacor-basic:n:0059.1.tail"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0060",
+      "node": {
+        "id": "arch-glacor-basic:n:0060",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0060.t",
+            "text": "⬥ Use ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0060.0",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "anti",
+              "src": "https://cdn.discordapp.com/emojis/535541306475151390.png?v=1",
+              "class": "d-emoji",
+              "title": "anti",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0060.0.tail",
+            "text": " before the beam in HM to prevent the stun",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0060.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "⬥ Use before the beam in HM to prevent the stun",
+      "editable": true,
+      "sourcePath": "root/*[61]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0060.t",
+        "arch-glacor-basic:n:0060.0.tail"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0061",
+      "node": {
+        "id": "arch-glacor-basic:n:0061",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0061.t",
+            "text": "‎ ‎ ‎ ‎• If you miss this, don't panic and use ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0061.0",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "freedom",
+              "src": "https://cdn.discordapp.com/emojis/535541258240786434.png?v=1",
+              "class": "d-emoji",
+              "title": "freedom",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0061.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "‎ ‎ ‎ ‎• If you miss this, don't panic and use",
+      "editable": true,
+      "sourcePath": "root/*[62]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0061.t"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0062",
+      "node": {
+        "id": "arch-glacor-basic:n:0062",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0062.t",
+            "text": "⬥ Example rotations:",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0062.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "⬥ Example rotations:",
+      "editable": true,
+      "sourcePath": "root/*[63]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0062.t"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0063",
+      "node": {
+        "id": "arch-glacor-basic:n:0063",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0063.t",
+            "text": "‎ ‎ ‎ ‎• In NM: use ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0063.0",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "res",
+              "src": "https://cdn.discordapp.com/emojis/535541258844635148.png?v=1",
+              "class": "d-emoji",
+              "title": "res",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0063.0.tail",
+            "text": " to heal from the single hit",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0063.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "‎ ‎ ‎ ‎• In NM: use to heal from the single hit",
+      "editable": true,
+      "sourcePath": "root/*[64]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0063.t",
+        "arch-glacor-basic:n:0063.0.tail"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0064",
+      "node": {
+        "id": "arch-glacor-basic:n:0064",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0064.t",
+            "text": "‎ ‎ ‎ ‎• In HM:",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0064.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "‎ ‎ ‎ ‎• In HM:",
+      "editable": true,
+      "sourcePath": "root/*[65]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0064.t"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0065",
+      "node": {
+        "id": "arch-glacor-basic:n:0065",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0065.t",
+            "text": "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0065.0",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "anti",
+              "src": "https://cdn.discordapp.com/emojis/535541306475151390.png?v=1",
+              "class": "d-emoji",
+              "title": "anti",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0065.0.tail",
+            "text": " → ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0065.1",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "devo",
+              "src": "https://cdn.discordapp.com/emojis/513190158728953857.png?v=1",
+              "class": "d-emoji",
+              "title": "devo",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0065.1.tail",
+            "text": " + ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0065.2",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "DeflectMage",
+              "src": "https://cdn.discordapp.com/emojis/544195487926845462.png?v=1",
+              "class": "d-emoji",
+              "title": "DeflectMage",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0065.2.tail",
+            "text": " ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0065.3",
+            "tag": "a",
+            "type": "element",
+            "attrs": {
+              "rel": "noopener noreferrer",
+              "href": "https://img.pvme.io/images/9t9EdxK.mp4",
+              "target": "_blank"
+            },
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0065.3.t",
+                "text": "(Example)",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "id": "arch-glacor-basic:n:0065.4",
+            "tag": "video",
+            "type": "element",
+            "attrs": {
+              "src": "https://img.pvme.io/images/9t9EdxK.mp4",
+              "class": "source-media-player",
+              "preload": "none",
+              "controls": ""
+            },
+            "children": []
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0065.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ → + (Example)",
+      "reason": "Rich structure is preserved read-only in this prototype.",
+      "editable": false,
+      "sourcePath": "root/*[66]",
+      "editableTextNodeIds": []
+    },
+    {
+      "id": "arch-glacor-basic:b:0066",
+      "node": {
+        "id": "arch-glacor-basic:n:0066",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0066.t",
+            "text": "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0066.0",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "anti",
+              "src": "https://cdn.discordapp.com/emojis/535541306475151390.png?v=1",
+              "class": "d-emoji",
+              "title": "anti",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0066.0.tail",
+            "text": " → ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0066.1",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "reflect",
+              "src": "https://cdn.discordapp.com/emojis/535541258786177064.png?v=1",
+              "class": "d-emoji",
+              "title": "reflect",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0066.1.tail",
+            "text": " + ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0066.2",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "DeflectMage",
+              "src": "https://cdn.discordapp.com/emojis/544195487926845462.png?v=1",
+              "class": "d-emoji",
+              "title": "DeflectMage",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0066.2.tail",
+            "text": " → ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0066.3",
+            "tag": "img",
+            "type": "element",
+            "attrs": {
+              "alt": "res",
+              "src": "https://cdn.discordapp.com/emojis/535541258844635148.png?v=1",
+              "class": "d-emoji",
+              "title": "res",
+              "width": "24",
+              "height": "24",
+              "loading": "lazy",
+              "decoding": "async",
+              "referrerpolicy": "no-referrer"
+            },
+            "children": []
+          },
+          {
+            "id": "arch-glacor-basic:n:0066.3.tail",
+            "text": " the final hit ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0066.4",
+            "tag": "a",
+            "type": "element",
+            "attrs": {
+              "rel": "noopener noreferrer",
+              "href": "https://img.pvme.io/images/9PyGvb4.mp4",
+              "target": "_blank"
+            },
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0066.4.t",
+                "text": "(Example)",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "id": "arch-glacor-basic:n:0066.5",
+            "tag": "video",
+            "type": "element",
+            "attrs": {
+              "src": "https://img.pvme.io/images/9PyGvb4.mp4",
+              "class": "source-media-player",
+              "preload": "none",
+              "controls": ""
+            },
+            "children": []
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0066.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ → + → the final hit (Example)",
+      "reason": "Rich structure is preserved read-only in this prototype.",
+      "editable": false,
+      "sourcePath": "root/*[67]",
+      "editableTextNodeIds": []
+    },
+    {
+      "id": "arch-glacor-basic:b:0067",
+      "node": {
+        "id": "arch-glacor-basic:n:0067",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0067.t",
+            "text": "​",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0067.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "Source anchor or spacing",
+      "reason": "Original media, anchors and spacing are preserved read-only.",
+      "editable": false,
+      "sourcePath": "root/*[68]",
+      "editableTextNodeIds": []
+    },
+    {
+      "id": "arch-glacor-basic:b:0068",
+      "node": {
+        "id": "arch-glacor-basic:n:0068",
+        "tag": "h2",
+        "type": "element",
+        "attrs": {
+          "id": "videos"
+        },
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0068.0",
+            "tag": "ins",
+            "type": "element",
+            "attrs": {},
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0068.0.t",
+                "text": "Videos",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0068.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "heading",
+      "label": "Videos",
+      "editable": true,
+      "sourcePath": "root/*[69]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0068.0.t"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0069",
+      "node": {
+        "id": "arch-glacor-basic:n:0069",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0069.t",
+            "text": "⬥ ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0069.0",
+            "tag": "a",
+            "type": "element",
+            "attrs": {
+              "rel": "noopener noreferrer",
+              "href": "https://youtu.be/GwvDvSY3xm0",
+              "target": "_blank"
+            },
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0069.0.t",
+                "text": "5-mechanic Normal Mode, Ranged, Revo Basics",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0069.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "⬥ 5-mechanic Normal Mode, Ranged, Revo Basics",
+      "editable": true,
+      "sourcePath": "root/*[70]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0069.t",
+        "arch-glacor-basic:n:0069.0.t"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0070",
+      "node": {
+        "id": "arch-glacor-basic:n:0070",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0070.t",
+            "text": "⬥ ",
+            "type": "text"
+          },
+          {
+            "id": "arch-glacor-basic:n:0070.0",
+            "tag": "a",
+            "type": "element",
+            "attrs": {
+              "rel": "noopener noreferrer",
+              "href": "https://youtu.be/jfFi1YM6Q-M",
+              "target": "_blank"
+            },
+            "children": [
+              {
+                "id": "arch-glacor-basic:n:0070.0.t",
+                "text": "5-mechanic Normal Mode, Magic, Revo Basics",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0070.tail",
+        "text": "\n",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "⬥ 5-mechanic Normal Mode, Magic, Revo Basics",
+      "editable": true,
+      "sourcePath": "root/*[71]",
+      "editableTextNodeIds": [
+        "arch-glacor-basic:n:0070.t",
+        "arch-glacor-basic:n:0070.0.t"
+      ]
+    },
+    {
+      "id": "arch-glacor-basic:b:0071",
+      "node": {
+        "id": "arch-glacor-basic:n:0071",
+        "tag": "p",
+        "type": "element",
+        "attrs": {},
+        "children": [
+          {
+            "id": "arch-glacor-basic:n:0071.t",
+            "text": "​",
+            "type": "text"
+          }
+        ]
+      },
+      "tail": {
+        "id": "arch-glacor-basic:n:0071.tail",
+        "text": "\n      \n    ",
+        "type": "text"
+      },
+      "type": "paragraph",
+      "label": "Source anchor or spacing",
+      "reason": "Original media, anchors and spacing are preserved read-only.",
+      "editable": false,
+      "sourcePath": "root/*[72]",
+      "editableTextNodeIds": []
+    }
+  ],
+  "source": {
+    "url": "https://pvme.io/pvme-guides/basic-guides/arch-glacor-basic/",
+    "route": "/archive/pvme-guides/basic-guides/arch-glacor-basic/",
+    "stats": {
+      "icons": 41,
+      "links": 15,
+      "media": 11,
+      "nodes": 376,
+      "blocks": 72,
+      "textNodes": 210,
+      "elementNodes": 166,
+      "editableBlocks": 50,
+      "preservedBlocks": 22
+    },
+    "title": "Arch Glacor Basic",
+    "license": "CC BY-NC-SA 4.0",
+    "articleId": "arch-glacor",
+    "rawSha256": "6fd2cd940f3e0df5809267228b26153969f5a317e1b9b87dc2048dd5deb6dd28",
+    "retrieved": "2026-11-10T14:22:50Z",
+    "importNote": "Complete web-adapted corpus body imported as safe structured nodes. Original normalized HTML and corpus metadata are retained in the immutable provenance snapshot. Text-leaf editing does not replace rich structures.",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "sourcePath": "/pvme-guides/basic-guides/arch-glacor-basic/",
+    "attribution": "PvME contributors",
+    "contentMode": "full-guide",
+    "snapshotFile": "sources/arch-glacor-basic.json",
+    "importVersion": 1,
+    "modifications": "Navigation and typography adapted. Original sanitized source HTML and its text hash are retained separately. Source channel and message references are repaired using the pinned guide repository and public directory/identity evidence; navigation wording is adapted for the web. Every change is recorded in the reference repair ledger. Unverified destinations and contributor names remain explicitly unavailable. Legitimate external community and attribution links are preserved and labeled. Original media is embedded from providers; media rights are separate from guide-text rights.",
+    "webAdaptation": {
+      "version": 1,
+      "repairIds": [],
+      "unresolvedIds": []
+    },
+    "webTextSha256": "292d501eb56389cef338a6028f503893ec2098f580873401f358b7c7b75b2a46",
+    "sourceLicenseUrl": "https://github.com/pvme/pvme-guides/blob/master/LICENSE",
+    "sourceTextSha256": "292d501eb56389cef338a6028f503893ec2098f580873401f358b7c7b75b2a46",
+    "importedHtmlSha256": "2f54113d0f7f42066b3c7119ce3523a072e4c9d1cf3c792c1b8a00d313e1af30",
+    "unresolvedReferences": [],
+    "normalizedSourceHtmlSha256": "dd9a1fd3d56e99a035ff8093e3dcd868c0adf41f07b6072e32b5b14a214bc464"
+  },
+  "schemaVersion": 1
+}
