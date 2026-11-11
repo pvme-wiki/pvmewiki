@@ -1,5 +1,6 @@
 import { approvedFiles } from './github.mjs';
 import { canonical, documentHash } from './core.mjs';
+import { approvalEventsSql, hasValidApproval } from './approval.mjs';
 
 export class PublicationGateError extends Error {
   constructor(code, message) {
@@ -31,6 +32,7 @@ export async function verifyPublicationGate(db, published, { expectedBaselines =
     snapshot = (await db.query(`SELECT
       (SELECT COALESCE(jsonb_agg(a), '[]'::jsonb) FROM (
         SELECT s.*,j.state AS job_state,j.provider AS job_provider,
+          ${approvalEventsSql('s')} AS approval_events,
           g.revision AS current_revision,r.content_hash AS current_hash,r.publication_id AS current_publication_id,
           EXISTS (SELECT 1 FROM audit_events e WHERE e.subject_id=s.id::text AND e.action='submission.resubmitted') AS superseded
         FROM submissions s
@@ -63,7 +65,7 @@ export async function verifyPublicationGate(db, published, { expectedBaselines =
   const approvals = new Map(snapshot.approvals.map(row => [row.id, row]));
   for (const entry of entries) {
     const receipt = entry.receipt, row = approvals.get(receipt.submissionId);
-    if (!row || !['approved', 'publishing', 'published'].includes(row.status) || !row.reviewed_at || !row.reviewer_id || row.owner_id === row.reviewer_id) reject('approval_not_verified', 'An overlay does not have an independently approved immutable submission.');
+    if (!row || !['approved', 'publishing', 'published'].includes(row.status) || !hasValidApproval(row)) reject('approval_not_verified', 'An overlay does not have a verified immutable approval.');
     if (row.superseded || row.job_provider?.replacementId) reject('approval_superseded', 'A production overlay has been superseded and needs its replacement review.');
     if (!['queued', 'working', 'retry', 'awaiting_merge', 'awaiting_deployment', 'published'].includes(row.job_state)) reject('publication_blocked', 'An overlay has no active approved publication request.');
 

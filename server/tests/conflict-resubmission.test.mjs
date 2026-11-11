@@ -37,7 +37,7 @@ test('content conflict -> saved replacement -> independent review -> exact publi
   const replacement = await f.service.resubmit(f.maintainer.id, f.original.id, input);
   assert.equal(replacement.status, 'submitted'); assert.notEqual(replacement.id, f.original.id); assert.equal(replacement.draftVersion, 2); assert.equal(replacement.contentHash, documentHash(corrected));
   assert.equal((await f.service.resubmit(f.maintainer.id, f.original.id, input)).id, replacement.id, 'lost acknowledgement returns the same replacement');
-  await assert.rejects(f.service.review(f.maintainer.id, replacement.id, { decision: 'approve', expectedVersion: 1 }), error => error.code === 'self_review_forbidden');
+  await assert.rejects(f.service.review(f.maintainer.id, replacement.id, { decision: 'approve', expectedVersion: 999 }), error => error.code === 'review_conflict');
   assert.equal(Number((await f.db.query('SELECT count(*) FROM publication_jobs WHERE submission_id=$1', [replacement.id])).rows[0].count), 0);
   await f.service.review(f.reviewer.id, replacement.id, { decision: 'approve', expectedVersion: 1 });
   const runner = createJobRunner(f.db, {

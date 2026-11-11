@@ -1,3 +1,4 @@
+import { selfApprovalEvidence, ADMIN_SELF_POLICY } from './approval.mjs';
 import { createSign } from 'node:crypto';
 import { AsyncLocalStorage } from 'node:async_hooks';
 import { documentHash, canonical, iso } from './core.mjs';
@@ -12,13 +13,19 @@ export class PublicationError extends Error {
   constructor(code, message, { retryable = false } = {}) { super(message); Object.assign(this, { code, retryable }); }
 }
 const problem = (code, message, options) => { throw new PublicationError(code, message, options); };
+// This pinned contract includes merge_commit_sha. The 2026-03-10 PR
+// response omits it; never infer a merged commit from a branch tip.
 const SHA = /^[a-f0-9]{40}$/;
 export function approvedFiles(row) {
+  const self = row.owner_id === row.reviewer_id;
+  const evidence = self ? selfApprovalEvidence(row) : null;
+  if (self && !evidence) throw new PublicationError('snapshot_corrupt', 'Owner approval lacks its immutable authorization evidence.');
   const receipt = {
-    schemaVersion: 1, submissionId: row.id, guideId: row.guide_id, baseRevision: row.base_revision,
+    schemaVersion: self ? 2 : 1, submissionId: row.id, guideId: row.guide_id, baseRevision: row.base_revision,
     baselineHash: row.baseline_hash, contentHash: row.content_hash, draftVersion: row.draft_version,
     summary: row.summary, createdAt: iso(row.created_at), approvedAt: iso(row.reviewed_at),
     reviewNote: row.review_note || '', contributorId: row.owner_id, reviewerId: row.reviewer_id,
+    ...(self ? { authorization: { policy: ADMIN_SELF_POLICY, role: 'admin', auditEventId: evidence.id } } : {}),
   };
   return { [`content/guides/${row.guide_id}.json`]: row.document, [`content/reviews/${row.id}.json`]: receipt };
 }
@@ -31,7 +38,7 @@ export function createGitHubApp(config, { fetchImpl = fetch, now = () => Date.no
     let response;
     try {
       response = await fetchImpl(`https://api.github.com${path}`, {
-        method, headers: { Accept: 'application/vnd.github+json', 'X-GitHub-Api-Version': '2026-03-10', Authorization: `Bearer ${access}`, ...(body ? { 'Content-Type': 'application/json' } : {}) },
+        method, headers: { Accept: 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28', Authorization: `Bearer ${access}`, ...(body ? { 'Content-Type': 'application/json' } : {}) },
         ...(body ? { body: JSON.stringify(body) } : {}), redirect: 'error', signal: timeout(),
       });
     } catch { problem('provider_unavailable', 'The private backup connection is unavailable.', { retryable: true }); }

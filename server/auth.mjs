@@ -16,7 +16,7 @@ export function cookies(header = '') {
 }
 // Only guide routes may cross OAuth; no arbitrary URL, query or account data.
 export function safeEditorReturn(value) {
-  return typeof value === 'string' && /^\/edit\/#\/guide\/[a-z0-9][a-z0-9-]{0,100}\/(?:edit|preview|review)$/.test(value) ? value : '/edit/';
+  return typeof value === 'string' && value === value.trim() && /^\/edit\/#\/guide\/[a-z0-9][a-z0-9-]{0,100}\/(?:edit|preview|review)$/.test(value) ? value : '/edit/';
 }
 function returnFromState(state) {
   const encoded = state.split('.')[1];

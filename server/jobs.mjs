@@ -1,3 +1,4 @@
+import { approvalEventsSql, hasValidApproval } from './approval.mjs';
 import { randomUUID } from 'node:crypto';
 import { validateDocument } from '../editor/shared/model.mjs';
 import { documentHash, fail } from './core.mjs';
@@ -69,9 +70,9 @@ export function createJobRunner(db, provider, { origin } = {}) {
       let snapshot = null;
       try {
         return await withProviderBudget(async () => {
-          const row = (await db.query('SELECT * FROM submissions WHERE id=$1', [job.submission_id])).rows[0];
+          const row = (await db.query(`SELECT s.*, ${approvalEventsSql('s')} AS approval_events FROM submissions s WHERE s.id=$1`, [job.submission_id])).rows[0];
           snapshot = row;
-          const validSnapshot = row && ['approved', 'publishing'].includes(row.status) && row.reviewer_id && row.reviewed_at && row.owner_id !== row.reviewer_id && documentHash(row.document) === row.content_hash && documentHash(row.baseline_document) === row.baseline_hash && validateDocument(row.document, { baseline: row.baseline_document }).valid;
+          const validSnapshot = row && ['approved', 'publishing'].includes(row.status) && hasValidApproval(row) && documentHash(row.document) === row.content_hash && documentHash(row.baseline_document) === row.baseline_hash && validateDocument(row.document, { baseline: row.baseline_document }).valid;
           if (!validSnapshot) throw new PublicationError('snapshot_corrupt', 'The approval failed integrity verification.');
           const info = job.provider?.number ? job.provider : await provider.ensurePullRequest(row);
           await checkpointProvider(job, info);
@@ -98,7 +99,7 @@ export function createJobRunner(db, provider, { origin } = {}) {
         if (row.state === 'working' && new Date(row.lease_until) > new Date()) fail(409, 'publication_running', 'Publication is already being checked.');
         if (row.state === 'published') return { state: 'published' };
         if (row.provider?.replacementId) fail(409, 'publication_superseded', 'This publication has a fresh replacement submission.');
-        if (needsFreshReview(row.last_error)) fail(409, 'fresh_review_required', 'Save a reconciled draft and submit it for fresh independent review. The original approval cannot be reused for changed content.');
+        if (needsFreshReview(row.last_error)) fail(409, 'fresh_review_required', 'Save a reconciled draft and submit it for fresh review. The original approval cannot be reused for changed content.');
         await q.query("UPDATE publication_jobs SET state='queued',attempts=0,available_at=now(),lease_token=NULL,lease_until=NULL,updated_at=now() WHERE submission_id=$1", [id]);
         await audit(q, actor, 'publication.retry_requested', id);
         return { state: 'queued' };

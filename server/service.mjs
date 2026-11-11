@@ -1,3 +1,4 @@
+import { ADMIN_SELF_POLICY } from './approval.mjs';
 import { randomUUID } from 'node:crypto';
 import { validateDocument } from '../editor/shared/model.mjs';
 import { fail, fields, integer, boundedText, documentHash, iso, HOSTED_DOCUMENT_LIMIT_BYTES } from './core.mjs';
@@ -168,7 +169,7 @@ export function createService(db, { publicationEnabled = false, repository = nul
         const found = await submission(q, id);
         const current = await guide(q, found.guide_id, { lock: true });
         const row = await submission(q, id, { lock: true });
-        if (row.owner_id === actor) fail(403, 'self_review_forbidden', 'Another reviewer must review your contribution.');
+        if (row.owner_id === actor && user.role !== 'admin') fail(403, 'self_review_forbidden', 'Another reviewer must review your contribution.');
         if (row.status !== 'submitted' || input.expectedVersion !== row.version) fail(409, 'review_conflict', 'This submission has already changed. Reload it before reviewing.', { submission: submissionView(row, user, { detail: true }) });
         if (input.decision === 'approve') {
           if (!publicationEnabled) fail(503, 'publication_unavailable', 'The publishing connection is not configured yet. This submission remains safely queued for review.');
@@ -178,7 +179,9 @@ export function createService(db, { publicationEnabled = false, repository = nul
         }
         const status = input.decision === 'approve' ? 'approved' : 'rejected';
         const updated = (await q.query('UPDATE submissions SET status=$2,version=version+1,reviewer_id=$3,review_note=$4,reviewed_at=now() WHERE id=$1 RETURNING *', [id, status, actor, note])).rows[0];
-        await audit(q, actor, `submission.${status}`, id, { contentHash: row.content_hash, note });
+        await audit(q, actor, `submission.${status}`, id, { contentHash: row.content_hash, note,
+          ...(status === 'approved' && row.owner_id === actor ? { reviewerRole: user.role, approvalPolicy: ADMIN_SELF_POLICY, reviewedAt: iso(updated.reviewed_at) } : {}),
+        });
         if (status === 'approved') await q.query('INSERT INTO publication_jobs(submission_id) VALUES($1) ON CONFLICT DO NOTHING', [id]);
         return submissionView(updated, user, { detail: true });
       });

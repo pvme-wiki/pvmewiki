@@ -191,3 +191,25 @@ test('native default fetch retains the Window/global receiver rather than the ad
   try { const adapter = new HostedAdapter(); await adapter.connect(); assert.equal(adapter.session.user.id, session.user.id); }
   finally { globalThis.fetch = original; }
 });
+
+test('admin approval adapter keeps CSRF and exact snapshot version for own submission', async () => {
+  const snapshot = { id: 'admin-own-snapshot', isMine: true, status: 'approved', version: 4 };
+  const { adapter, calls } = fixture(() => response({ submission: snapshot }));
+  await adapter.connect();
+  adapter.session.user.role = 'admin'; adapter.session.capabilities.review = true;
+  const result = await adapter.reviewSubmission(snapshot.id, { decision: 'approve', expectedVersion: 3, note: 'Checked snapshot' });
+  assert.deepEqual(result, snapshot);
+  assert.equal(calls.at(-1).url, '/api/editor/submissions/admin-own-snapshot/review');
+  assert.equal(calls.at(-1).headers['X-CSRF-Token'], session.csrfToken);
+  assert.deepEqual(calls.at(-1).body, { decision: 'approve', expectedVersion: 3, note: 'Checked snapshot' });
+  adapter.session.capabilities.review = false;
+  await assert.rejects(adapter.reviewSubmission(snapshot.id, { decision: 'approve', expectedVersion: 3, note: '' }), { status: 403 });
+  assert.equal(calls.length, 2);
+});
+
+test('adapter preserves server denial for moderator self-review without retry', async () => {
+  const { adapter, calls } = fixture(() => response({ error: { code: 'self_review', message: 'Another reviewer is required.' } }, 403));
+  await adapter.connect(); adapter.session.user.role = 'moderator'; adapter.session.capabilities.review = true;
+  await assert.rejects(adapter.reviewSubmission('moderator-own-snapshot', { decision: 'approve', expectedVersion: 1, note: '' }), { status: 403, code: 'self_review' });
+  assert.equal(calls.filter(call => call.method === 'POST').length, 1);
+});
