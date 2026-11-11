@@ -1,6 +1,6 @@
 import { createHmac } from 'node:crypto';
 import { ServiceError, fail, equalSecret } from './core.mjs';
-import { createAuth, cookie, STATE_COOKIE } from './auth.mjs';
+import { createAuth, cookie, STATE_COOKIE, safeEditorReturn } from './auth.mjs';
 import { createService, isReviewer } from './service.mjs';
 import { createJobRunner } from './jobs.mjs';
 export const MAX_BODY_BYTES = 4 * 1024 * 1024;
@@ -100,7 +100,7 @@ export function createHandler({ db, config, identityProvider, publisher, logErro
         const ip = request.headers.get('x-vercel-forwarded-for') || 'unknown';
         const key = createHmac('sha256', config.sessionSecret).update(`login:${ip.slice(0, 200)}`).digest('hex');
         await rate(db, `login:${key}`, 10, 600); await rate(db, 'login:global', 60, 60);
-        const result = await auth.start(); return redirect(result.location, [result.cookie]);
+        const result = await auth.start(url.searchParams.get('returnTo')); return redirect(result.location, [result.cookie]);
       }
       if (oauthCallback) {
         const result = await auth.callback(url.searchParams, request.headers.get('cookie') || '');
@@ -158,7 +158,9 @@ export function createHandler({ db, config, identityProvider, publisher, logErro
       if (!(error instanceof ServiceError)) logError({ code: 'editor_request_failed', route });
       if (route === 'auth/discord/callback') {
         const code = error instanceof ServiceError ? error.code : 'identity_unavailable';
-        return redirect(`${config.origin}/edit/?authError=${encodeURIComponent(code)}`, [cookie(STATE_COOKIE, '', 0)]);
+        const target = new URL(safeEditorReturn(error.authReturnTo), config.origin);
+        target.searchParams.set('authError', code);
+        return redirect(target.href, [cookie(STATE_COOKIE, '', 0)]);
       }
       if (route === 'session' && !(error instanceof ServiceError)) return json(200, unavailable());
       return json(error instanceof ServiceError ? error.status : 503, { error: {

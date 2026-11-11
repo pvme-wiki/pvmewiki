@@ -1,3 +1,30 @@
+import { EMOJI_ASSETS } from './emoji-catalog.mjs';
+export { EMOJI_ASSETS };
+const emojiById = new Map(EMOJI_ASSETS.map(asset => [asset.id, asset]));
+const emojiByAttributes = new Map(EMOJI_ASSETS.map(asset => [JSON.stringify([asset.src, asset.alt, asset.title]), asset]));
+export function emojiAsset(node) {
+  if (node?.type !== 'element' || node.tag !== 'img' || !node.attrs?.class?.split(/\s+/).includes('d-emoji')) return null;
+  return emojiByAttributes.get(JSON.stringify([node.attrs.src, node.attrs.alt, node.attrs.title])) || null;
+}
+export function getEditableEmojiNodes(block) {
+  const nodes = [];
+  const walk = node => { const asset = emojiAsset(node); if (asset) nodes.push({ id: node.id, asset }); node.children?.forEach(walk); };
+  walk(block.node); return nodes;
+}
+function allowedEmojiReplacement(node, original) {
+  if (!emojiAsset(original) || !emojiAsset(node)) return false;
+  const unchanged = attrs => Object.fromEntries(Object.entries(attrs).filter(([key]) => !['src', 'alt', 'title'].includes(key)));
+  return same(unchanged(node.attrs), unchanged(original.attrs));
+}
+export function updateEmojiNode(document, blockId, nodeId, assetId) {
+  assertDocument(document);
+  const asset = emojiById.get(assetId), block = document.blocks.find(candidate => candidate.id === blockId);
+  if (!asset || !block || !getEditableEmojiNodes(block).some(node => node.id === nodeId)) throw new Error('Unknown or protected emoji');
+  const updated = clone(document);
+  const walk = node => { if (node.id === nodeId) Object.assign(node.attrs, { src: asset.src, alt: asset.alt, title: asset.title }); else node.children?.forEach(walk); };
+  walk(updated.blocks.find(candidate => candidate.id === blockId).node);
+  assertDocument(updated, { baseline: document }); return updated;
+}
 /**
  * PvME structured guide model v1. Pure browser/Node code, no HTML ingestion API.
  *
@@ -128,7 +155,7 @@ function checkBlock(block, path, state) {
 }
 function compareNode(node, original, path, editableIds, errors) {
   if (!isObject(node) || !isObject(original)) return;
-  for (const key of ['id','type','tag','attrs']) if (!same(node[key],original[key])) errors.push(`${path}: original ${key} must be preserved`);
+  for (const key of ['id','type','tag','attrs']) if (!same(node[key],original[key]) && !(key === 'attrs' && allowedEmojiReplacement(node, original))) errors.push(`${path}: original ${key} must be preserved`);
   if (original.type === 'text') {
     // Empty/formatting-only original leaves are preserved, not silently made editable.
     if (!editableIds.has(original.id) && node.text !== original.text) errors.push(`${path}: read-only text must be preserved`);

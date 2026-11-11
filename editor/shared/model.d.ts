@@ -66,3 +66,9 @@ export function updateTextNode(document: GuideDocument, blockId: string, nodeId:
 export function renderDocument(document: GuideDocument, options?: RenderOptions): string;
 export function renderBlock(block: GuideBlock, options?: RenderOptions): string;
 export function renderAttribution(document: GuideDocument): string;
+
+export interface EmojiAsset { readonly id:string; readonly src:string; readonly alt:string; readonly title:string; }
+export const EMOJI_ASSETS: readonly EmojiAsset[];
+export function emojiAsset(node: GuideNode): EmojiAsset | null;
+export function getEditableEmojiNodes(block: GuideBlock): Array<{id:string;asset:EmojiAsset}>;
+export function updateEmojiNode(document: GuideDocument, blockId:string, nodeId:string, assetId:string): GuideDocument;

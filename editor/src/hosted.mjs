@@ -1,7 +1,7 @@
 import { HostedAdapter } from './adapter.mjs';
 import { canReview, submissionStatus, authNotice, findGuides, guideCategories, canPrepareReplacement, moderatorReviewUrl } from './hosted-workflow.mjs';
 import { themeOptions } from './theme.mjs';
-import { renderDocument, renderBlock, textContent, updateTextNode, assertDocument } from '../shared/model.mjs';
+import { renderDocument, renderBlock, textContent, updateTextNode, updateEmojiNode, getEditableEmojiNodes, EMOJI_ASSETS, assertDocument } from '../shared/model.mjs';
 import { escapeHTML as e, sectionsOf, changedBlocks, conflictPlan, resolveConflict, timeLabel } from './document.mjs';
 import { download } from './export.mjs';
 import { icon, rune, art } from './icons.mjs';
@@ -71,7 +71,7 @@ function recoveryFor(id) {
 }
 function clearRecovery(id) { try { sessionStorage.removeItem(recoveryKey(id)); } catch {} }
 function signInLink(label = 'Sign in with Discord') {
-  return `<a class="button primary" href="/api/editor/auth/discord">${icon('lock')}${label}</a>`;
+  return `<a class="button primary" href="/api/editor/auth/discord?returnTo=${encodeURIComponent(`/edit/${location.hash}`)}">${icon('lock')}${label}</a>`;
 }
 function availability() {
   if (state.connectionError) return `<div class="mode-banner unavailable" role="status">${icon('warning')}<span><strong>Cloud connection unavailable.</strong> ${e(state.connectionError)}</span>${button('reconnect', 'Try again', 'small')}</div>`;
@@ -99,7 +99,7 @@ function gate(label = 'Continue editing') {
   app.innerHTML = shell(`<section class="access-panel"><span class="access-rune">${rune}</span><h1>${unavailable ? 'Editing is not open yet.' : 'Sign in to edit.'}</h1><p>${unavailable ? 'You can browse the guides while contributor accounts are being connected. Saving and sending edits are unavailable here for now.' : 'The editing pilot is open to invited contributors. Sign in with Discord to save drafts and send finished edits to a moderator.'}</p>${unavailable ? button('reconnect', 'Check connection', 'primary') : signInLink(label === 'Continue editing' ? 'Sign in to edit' : 'Sign in with Discord')}<a class="text-button" href="#/">Browse editable guides ${icon('arrow')}</a><a class="text-button" href="/">Read the field guide ${icon('arrow')}</a></section>`);
 }
 function howItWorks() {
-  showDialog(`<div class="dialog-heading"><h2>From draft to guide</h2></div><ol class="how-steps"><li><strong>Edit and save</strong><span>Your text autosaves to your account. Use Save draft whenever you want, then find it under My drafts.</span></li><li><strong>Send for review</strong><span>Check the preview and explain the change. A fixed copy goes to a moderator; later draft edits do not change it.</span></li><li><strong>Check My submissions</strong><span>See the decision and any notes. Approved edits wait for publication; Published means publication has been confirmed.</span></li></ol><p class="dialog-note">If two edits meet, you choose which wording to keep. Icons, links, media and other protected blocks stay intact.</p>${button('close-dialog', 'Back to the editor', 'primary full')}`);
+  showDialog(`<div class="dialog-heading"><h2>From draft to guide</h2></div><ol class="how-steps"><li><strong>Edit and save</strong><span>Your text autosaves to your account. Use Save draft whenever you want, then find it under My drafts.</span></li><li><strong>Send for review</strong><span>Check the preview and explain the change. A fixed copy goes to a moderator; later draft edits do not change it.</span></li><li><strong>Check My submissions</strong><span>See the decision and any notes. Approved edits wait for publication; Published means publication has been confirmed.</span></li></ol><p class="dialog-note">If two edits meet, you choose which wording to keep. Known icons can be replaced using the picker. Links, media and other protected formatting stay intact.</p>${button('close-dialog', 'Back to the editor', 'primary full')}`);
 }
 function libraryResults() {
   const filtered = findGuides(state.catalog, { query: state.query, category: state.filter });
@@ -145,18 +145,46 @@ function guideHeader(view) {
   const [type, tone] = visuals[state.guide.id] || ['frost', 'ice'];
   return `<a class="back-link" href="#/">${icon('back')}Guide library</a><div class="guide-heading"><div><div class="eyebrow">${e(state.guide.category)}</div><h1>${e(nameOf(state.guide.id))}</h1><div class="guide-meta"><span class="save-status" data-save-status role="status" aria-live="polite">${statusMarkup()}</span></div></div><div class="heading-art ${tone}">${art(type)}</div></div><div id="save-alert">${alertMarkup()}</div><nav class="guide-tabs" aria-label="Guide workflow">${[['edit', 'pen', 'Edit'], ['preview', 'eye', 'Preview'], ['review', 'review', 'Review changes']].map(([key, symbol, title]) => `<a href="${guideHref(key)}" class="${view === key ? 'active' : ''}" ${view === key ? 'aria-current="page"' : ''}>${icon(symbol)}${title}${key === 'review' ? `<span class="tab-count" data-change-count>${changes().length}</span>` : ''}</a>`).join('')}</nav>`;
 }
+let emojiSelection = null;
+function emojiControls(block) {
+  const nodes = getEditableEmojiNodes(block);
+  return nodes.length ? '<div class="emoji-controls" aria-label="Change guide icons">' + nodes.map(node => '<button type="button" class="button small quiet" data-action="choose-emoji" data-block="' + e(block.id) + '" data-emoji-node="' + e(node.id) + '"><img src="' + e(node.asset.src) + '" alt="" width="24" height="24" loading="lazy" referrerpolicy="no-referrer">Change ' + e(node.asset.alt) + '</button>').join('') + '</div>' : '';
+}
+function emojiResults(query = '') {
+  const matches = EMOJI_ASSETS.filter(asset => asset.id.toLowerCase().includes(query.trim().toLowerCase()));
+  return '<p role="status">' + matches.length + ' known icons. Showing up to 60; search to narrow the list.</p><div class="emoji-grid">' + matches.slice(0,60).map(asset => '<button type="button" class="button quiet" data-action="replace-emoji" data-emoji-asset="' + e(asset.id) + '"><img src="' + e(asset.src) + '" alt="" width="28" height="28" loading="lazy" referrerpolicy="no-referrer"><span>' + e(asset.alt) + '</span></button>').join('') + '</div>';
+}
+function chooseEmoji(target) {
+  if (!canSave() || state.conflict || state.view !== 'edit') throw new Error('Sign in and resolve any draft conflict before changing an icon.');
+  const block = state.document?.blocks.find(item => item.id === target.dataset.block);
+  const node = block && getEditableEmojiNodes(block).find(item => item.id === target.dataset.emojiNode);
+  if (!node) throw new Error('This icon is no longer available.');
+  emojiSelection = { block: block.id, node: node.id, guide: state.guide.id, generation: identityGeneration, route: routeVersion };
+  showDialog('<div class="dialog-heading"><h2>Replace guide icon</h2></div><p>Current icon: <img src="' + e(node.asset.src) + '" alt="" width="28" height="28" referrerpolicy="no-referrer"> ' + e(node.asset.alt) + '</p><p>Choose a known PvME icon. Preview and review the change before submitting.</p><label for="emoji-search">Search icons</label><input id="emoji-search" type="search" autocomplete="off" placeholder="Try magic, overload, or glacor"><div id="emoji-results">' + emojiResults() + '</div>' + button('close-dialog', 'Cancel', 'quiet'), 'emoji-dialog');
+  document.querySelector('#emoji-search')?.focus();
+}
+function replaceEmoji(target) {
+  const selected = emojiSelection;
+  if (!selected || !dialog.open || !canSave() || state.conflict || state.view !== 'edit' || selected.generation !== identityGeneration || selected.route !== routeVersion || selected.guide !== state.guide?.id) throw new Error('Reopen the icon picker for the current guide and account.');
+  state.document = updateEmojiNode(state.document, selected.block, selected.node, target.dataset.emojiAsset);
+  state.editVersion++; state.dirty = true; saveRecovery(); emojiSelection = null;
+  dialog.close(); renderEditor(); updateStatus(); clearTimeout(saveTimer);
+  if (!state.saveError) saveTimer = setTimeout(flushSave, 3000);
+  toast('Icon changed. Check Preview or Review changes before sending.');
+}
+
 function visibleBlock(block) { return textContent(block).replace(/[\s\u200b\u200e]/g, '') || /img|video|iframe|table/.test(JSON.stringify(block.node)); }
 function blockHTML(block, index) {
   const edited = changes().some(change => change.id === block.id);
-  if (!block.editable) return `<details class="locked-block"><summary><span class="locked-symbol">${icon(block.type === 'media' ? 'eye' : 'lock')}</span><span><strong>${block.type === 'media' ? 'Original media' : 'Protected formatting'}</strong><small>Included unchanged in your draft and submission</small></span><span class="lock-expand">+</span></summary><div class="locked-content guide-content">${renderBlock(block, readerOptions)}</div><p class="locked-note">This block stays intact. Mention any needed change in your review note.</p></details>`;
-  return `<div class="edit-block ${block.type === 'heading' ? 'heading-block' : ''} ${edited ? 'changed' : ''}" data-block-id="${e(block.id)}" data-label="${e(block.type === 'heading' ? 'Section heading' : `Paragraph ${index + 1}`)}"><div class="block-meta"><span>${block.type === 'heading' ? 'HEADING' : 'TEXT'}</span><span class="block-state">${edited ? 'Edited' : icon('pen')}</span></div><div class="guide-content editable-content">${renderBlock(block, { ...readerOptions, textNodeAttributes: true })}</div></div>`;
+  if (!block.editable) return `<details class="locked-block"><summary><span class="locked-symbol">${icon(block.type === 'media' ? 'eye' : 'lock')}</span><span><strong>${block.type === 'media' ? 'Original media' : 'Protected formatting'}</strong><small>Structure and media stay protected</small></span><span class="lock-expand">+</span></summary><div class="locked-content guide-content">${renderBlock(block, readerOptions)}</div><p class="locked-note">Text and formatting stay intact. Known icons can be replaced below.</p>${emojiControls(block)}</details>`;
+  return `<div class="edit-block ${block.type === 'heading' ? 'heading-block' : ''} ${edited ? 'changed' : ''}" data-block-id="${e(block.id)}" data-label="${e(block.type === 'heading' ? 'Section heading' : `Paragraph ${index + 1}`)}"><div class="block-meta"><span>${block.type === 'heading' ? 'HEADING' : 'TEXT'}</span><span class="block-state">${edited ? 'Edited' : icon('pen')}</span></div><div class="guide-content editable-content">${renderBlock(block, { ...readerOptions, textNodeAttributes: true })}</div>${emojiControls(block)}</div>`;
 }
 function renderEditor() {
   const sections = sectionsOf(state.document);
   const selected = sections.find(section => section.id === state.section) || sections.find(section => section.blocks.some(block => block.editable)) || sections[0];
   state.section = selected.id;
   const index = sections.indexOf(selected);
-  app.innerHTML = shell(`${guideHeader('edit')}${replacementNotice()}<div class="editor-layout"><aside class="section-sidebar"><div class="section-sidebar-title"><span class="eyebrow">IN THIS GUIDE</span></div><nav aria-label="Guide sections">${sections.map((section, i) => `<button class="section-link ${section.id === selected.id ? 'selected' : ''}" data-section="${e(section.id)}" ${section.id === selected.id ? 'aria-current="true"' : ''}><span>${String(i + 1).padStart(2, '0')}</span><strong>${e(section.title)}</strong>${section.blocks.some(block => changes().some(change => change.id === block.id)) ? '<i class="edited-dot" aria-label="Edited"></i>' : ''}</button>`).join('')}</nav><p class="section-hint">Drafts autosave as you write.<br>Find them under My drafts.</p></aside><section class="editing-panel" aria-label="Edit guide section"><div class="mobile-section"><label for="section-select">SECTION ${index + 1} OF ${sections.length}</label><select id="section-select">${sections.map((section, i) => `<option value="${e(section.id)}" ${section.id === selected.id ? 'selected' : ''}>${i + 1}. ${e(section.title)}</option>`).join('')}</select></div><div class="editor-section-top"><div><span class="eyebrow">SECTION ${index + 1} OF ${sections.length}</span><h2>${e(selected.title)}</h2></div></div><div class="editing-tip">${icon('info')}<p>Tap the text to edit. Icons, links and formatting stay intact.</p></div><div class="editable-blocks">${selected.blocks.filter(visibleBlock).map(blockHTML).join('')}</div><div class="section-pagination"><button class="text-button" data-action="previous-section" ${index === 0 ? 'disabled' : ''}>${icon('back')}Previous</button><span>${index + 1} / ${sections.length}</span><button class="text-button" data-action="next-section" ${index === sections.length - 1 ? 'disabled' : ''}>Next section${icon('arrow')}</button></div></section></div><div class="editor-bottom"><span class="save-status bottom-save" data-save-status>${statusMarkup()}</span>${button('save-draft', `${icon('check')}Save draft`, 'quiet')}<a class="button primary" href="${guideHref('review')}">Review changes${icon('arrow')}</a></div>`, { wide: true });
+  app.innerHTML = shell(`${guideHeader('edit')}${replacementNotice()}<div class="editor-layout"><aside class="section-sidebar"><div class="section-sidebar-title"><span class="eyebrow">IN THIS GUIDE</span></div><nav aria-label="Guide sections">${sections.map((section, i) => `<button class="section-link ${section.id === selected.id ? 'selected' : ''}" data-section="${e(section.id)}" ${section.id === selected.id ? 'aria-current="true"' : ''}><span>${String(i + 1).padStart(2, '0')}</span><strong>${e(section.title)}</strong>${section.blocks.some(block => changes().some(change => change.id === block.id)) ? '<i class="edited-dot" aria-label="Edited"></i>' : ''}</button>`).join('')}</nav><p class="section-hint">Drafts autosave as you write.<br>Find them under My drafts.</p></aside><section class="editing-panel" aria-label="Edit guide section"><div class="mobile-section"><label for="section-select">SECTION ${index + 1} OF ${sections.length}</label><select id="section-select">${sections.map((section, i) => `<option value="${e(section.id)}" ${section.id === selected.id ? 'selected' : ''}>${i + 1}. ${e(section.title)}</option>`).join('')}</select></div><div class="editor-section-top"><div><span class="eyebrow">SECTION ${index + 1} OF ${sections.length}</span><h2>${e(selected.title)}</h2></div></div><div class="editing-tip">${icon('info')}<p>Tap the text to edit. Use Change icon buttons to replace known emojis. Links and formatting stay intact.</p></div><div class="editable-blocks">${selected.blocks.filter(visibleBlock).map(blockHTML).join('')}</div><div class="section-pagination"><button class="text-button" data-action="previous-section" ${index === 0 ? 'disabled' : ''}>${icon('back')}Previous</button><span>${index + 1} / ${sections.length}</span><button class="text-button" data-action="next-section" ${index === sections.length - 1 ? 'disabled' : ''}>Next section${icon('arrow')}</button></div></section></div><div class="editor-bottom"><span class="save-status bottom-save" data-save-status>${statusMarkup()}</span>${button('save-draft', `${icon('check')}Save draft`, 'quiet')}<a class="button primary" href="${guideHref('review')}">Review changes${icon('arrow')}</a></div>`, { wide: true });
   document.querySelectorAll('.edit-block [data-node-id]').forEach((span, i) => {
     span.contentEditable = 'plaintext-only';
     span.setAttribute('role', 'textbox');
@@ -387,13 +415,15 @@ function resolveDialog() {
   state.conflictPlan = conflictPlan(base, state.document, latest.document);
   state.conflictChoices = {};
   const overlaps = state.conflictPlan.filter(change => change.overlap);
-  showDialog(`<div class="dialog-heading"><h2>Choose the wording to keep</h2></div><p>${overlaps.length ? 'Some text was changed in both versions. Choose each version below. Edits to different text will be kept together.' : 'Your edits affect different text. Both sets of changes can be combined.'}</p><div class="conflict-list">${overlaps.map((change, index) => `<fieldset><legend>Changed text ${index + 1}</legend><label class="conflict-option"><input type="radio" name="conflict-${e(change.id)}" data-conflict-id="${e(change.id)}" value="local"><span><strong>My wording</strong><span>${e(change.after)}</span></span></label><label class="conflict-option"><input type="radio" name="conflict-${e(change.id)}" data-conflict-id="${e(change.id)}" value="remote"><span><strong>${latest.sourceConflict ? 'Current guide' : 'Saved account draft'}</strong><span>${e(change.remote)}</span></span></label></fieldset>`).join('')}</div><div id="conflict-error" role="alert"></div><div class="dialog-actions">${button('apply-resolution', overlaps.length ? 'Save selected wording' : 'Combine and save', 'primary')}${button('download-draft', 'Keep my recovery copy', 'quiet')}</div><p class="dialog-note">Nothing is overwritten until you choose. If another edit arrives, we will compare again.</p>`, 'conflict-dialog');
+  showDialog(`<div class="dialog-heading"><h2>Choose the edits to keep</h2></div><p>${overlaps.length ? 'Some text or icons changed in both versions. Choose each version below. Separate edits will be kept together.' : 'Your edits affect different text or icons. Both sets of changes can be combined.'}</p><div class="conflict-list">${overlaps.map((change, index) => `<fieldset><legend>Changed ${change.kind === 'emoji' ? 'icon' : 'text'} ${index + 1}</legend><label class="conflict-option"><input type="radio" name="conflict-${e(change.id)}" data-conflict-id="${e(change.id)}" value="local"><span><strong>My edit</strong><span>${e(change.after)}</span></span></label><label class="conflict-option"><input type="radio" name="conflict-${e(change.id)}" data-conflict-id="${e(change.id)}" value="remote"><span><strong>${latest.sourceConflict ? 'Current guide' : 'Saved account draft'}</strong><span>${e(change.remote)}</span></span></label></fieldset>`).join('')}</div><div id="conflict-error" role="alert"></div><div class="dialog-actions">${button('apply-resolution', overlaps.length ? 'Save selected edits' : 'Combine and save', 'primary')}${button('download-draft', 'Keep my recovery copy', 'quiet')}</div><p class="dialog-note">Nothing is overwritten until you choose. If another edit arrives, we will compare again.</p>`, 'conflict-dialog');
 }
 
 async function action(name, target) {
   const version = routeVersion;
   const generation = identityGeneration;
   switch (name) {
+    case 'choose-emoji': chooseEmoji(target); break;
+    case 'replace-emoji': replaceEmoji(target); break;
     case 'prepare-replacement': {
       const review = state.activeReview;
       if (!canPrepareReplacement(review, state.session)) throw new Error('This snapshot cannot be replaced from this account. Refresh its status.');
@@ -592,7 +622,8 @@ document.addEventListener('click', async event => {
   } finally { if (target.isConnected) target.disabled = false; }
 });
 document.addEventListener('input', event => {
-  if (event.target.matches('[data-node-id]')) editField(event.target);
+  if (event.target.id === 'emoji-search') document.querySelector('#emoji-results').innerHTML = emojiResults(event.target.value);
+  else if (event.target.matches('[data-node-id]')) editField(event.target);
   else if (event.target.id === 'review-summary') state.summary = event.target.value;
   else if (event.target.id === 'guide-search') {
     state.query = event.target.value;

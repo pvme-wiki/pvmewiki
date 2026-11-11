@@ -173,3 +173,11 @@ html[data-theme="dark"] .rose{--tone:#d4a397;--tint:#7a494233}
   .catalog-grid .card-copy{padding:19px 15px 0 6px}
   .catalog-grid .card-copy h3{font-size:21px}
 }
+
+/* Known-asset icon picker: keyboard-native buttons, bounded search results. */
+.emoji-controls { display:flex; flex-wrap:wrap; gap:.5rem; padding:.75rem 0; }
+.emoji-controls img, .emoji-grid img { object-fit:contain; flex-shrink:0; }
+.emoji-dialog { max-width:680px; }
+.emoji-dialog input { width:100%; margin:.5rem 0; padding:.75rem; }
+.emoji-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(130px,1fr)); gap:.5rem; max-height:45vh; overflow:auto; padding:.25rem; }
+.emoji-grid .button { white-space:normal; overflow-wrap:anywhere; text-align:left; justify-content:flex-start; }

@@ -105,7 +105,7 @@ test('two-device conflict keeps local text and does not force overwrite', async 
   h.setAdapter({ saveDraft: async () => { calls++; throw Object.assign(new Error('Newer draft'), { status: 409, latest: { ...draft(firstId, 2), document: edit(seed, 'Other wording') } }); } });
   await h.flushSave(); await h.flushSave();
   assert.equal(calls, 1); assert.deepEqual(h.state.document, local); assert.equal(h.state.dirty, true); assert.equal(h.state.revision, 0);
-  h.resolveDialog(); assert.match(h.dialog.innerHTML, /Choose the wording/); assert.equal(h.state.conflictPlan[0].overlap, true);
+  h.resolveDialog(); assert.match(h.dialog.innerHTML, /Choose the edits/); assert.equal(h.state.conflictPlan[0].overlap, true);
 });
 test('reopening a stale draft uses its original baseline to preserve unrelated approved changes', async () => {
   const h = await harness();
@@ -292,4 +292,36 @@ test('corrected snapshot uses resubmit and reloads the advanced saved-draft vers
   assert.deepEqual(calls, [{ id: 'old-submission', expectedVersion: 2, expectedDraftVersion: 4, summary: 'Reconciled the wording' }]);
   assert.equal(h.state.revision, 5); assert.equal(h.state.replacement, null);
   assert.equal(h.location.hash, '#/submission/fresh-submission');
+});
+
+test('signed-out guide gates encode current guide and tab in every Discord sign-in link', async () => {
+  const h = await harness({ realRender: true });
+  h.state.session = { configured: true, user: null, capabilities: {} };
+  for (const view of ['edit', 'preview', 'review']) {
+    h.location.hash = `#/guide/${firstId}/${view}`;
+    await h.renderRoute();
+    const links = [...h.app.innerHTML.matchAll(/href="(\/api\/editor\/auth\/discord[^" ]*)"/g)];
+    assert.ok(links.length);
+    for (const [, href] of links) assert.equal(new URL(href, h.location.origin).searchParams.get('returnTo'), `/edit/${h.location.hash}`);
+  }
+});
+
+test('icon picker replaces only known assets, previews diff and schedules account-owned draft save', async () => {
+ const firstId='arch-glacor-basic', seed=seeds.get(firstId);const h=await harness({realRender:true});h.setAdapter({getDraft:async()=>draft(firstId),getGuide:async()=>({document:clone(seed),revision:'guide-1'})});
+ h.location.hash=`#/guide/${firstId}/edit`;await h.renderRoute();
+ const block=seed.blocks.find(b=>model.getEditableEmojiNodes(b).length),node=model.getEditableEmojiNodes(block)[0],asset=model.EMOJI_ASSETS.find(a=>a.id!==node.asset.id);
+ await h.action('choose-emoji',{dataset:{block:block.id,emojiNode:node.id}});
+ assert.match(h.dialog.innerHTML,/Replace guide icon/);assert.match(h.dialog.innerHTML,/id="emoji-search"/);assert.ok((h.dialog.innerHTML.match(/data-emoji-asset=/g)||[]).length<=60);
+ await h.action('replace-emoji',{dataset:{emojiAsset:asset.id}});
+ assert.equal(h.dialog.open,false);assert.equal(h.state.dirty,true);assert.equal(documentHelpers.changedBlocks(seed,h.state.document)[0].fields[0].kind,'emoji');
+ assert.equal(model.getEditableEmojiNodes(h.state.document.blocks.find(b=>b.id===block.id))[0].asset.id,asset.id);
+ assert.ok([...h.stored.keys()].some(key=>key.includes(session.user.id)));
+});
+test('cancelled icon picker cannot apply and account switch cannot reuse a stale selection', async () => {
+ const firstId='arch-glacor-basic', seed=seeds.get(firstId);const h=await harness();dirty(h);Object.assign(h.state,{guide:clone(catalog.find(g=>g.id===firstId)),document:clone(seed),baseline:clone(seed),savedDocument:clone(seed)});const block=seed.blocks.find(b=>model.getEditableEmojiNodes(b).length),node=model.getEditableEmojiNodes(block)[0];
+ const choose=()=>h.action('choose-emoji',{dataset:{block:block.id,emojiNode:node.id}});
+ const replace=()=>h.action('replace-emoji',{dataset:{emojiAsset:model.EMOJI_ASSETS[0].id}});
+ await choose();await h.action('close-dialog',{});await assert.rejects(replace(),/Reopen the icon picker/);
+ await choose();h.setAdapter({connect:async()=>({...clone(session),user:{...session.user,id:'different-account'}}),listDrafts:async()=>[]});
+ await h.connect();await assert.rejects(replace(),/Reopen the icon picker/);assert.equal(h.state.document,null);
 });

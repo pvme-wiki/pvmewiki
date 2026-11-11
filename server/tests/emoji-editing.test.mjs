@@ -1,0 +1,21 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { fixture } from './harness.mjs';
+import { createService } from '../service.mjs';
+import { documentHash } from '../core.mjs';
+import { EMOJI_ASSETS, getEditableEmojiNodes, updateEmojiNode } from '../../editor/shared/model.mjs';
+test('emoji saves retain CAS, immutable submission hash and exact approval snapshot',async t=>{
+ const f=await fixture();t.after(()=>f.db.close());const user=await f.user(),mod=await f.user('moderator'),service=createService(f.db,{publicationEnabled:true});
+ const block=f.guide.blocks.find(b=>getEditableEmojiNodes(b).length),node=getEditableEmojiNodes(block)[0],asset=EMOJI_ASSETS.find(a=>a.id!==node.asset.id);
+ const document=updateEmojiNode(f.guide,block.id,node.id,asset.id);
+ await service.saveDraft(user.id,f.guide.id,{document,expectedVersion:0,baseRevision:1});
+ await assert.rejects(service.saveDraft(user.id,f.guide.id,{document,expectedVersion:0,baseRevision:1}),e=>e.code==='revision_conflict');
+ const submission=await service.submit(user.id,f.guide.id,{expectedVersion:1,summary:'Replace existing known icon'});
+ await service.saveDraft(user.id,f.guide.id,{document:f.guide,expectedVersion:1,baseRevision:1});
+ const snapshot=await service.getSubmission(user.id,submission.id);assert.equal(documentHash(snapshot.document),documentHash(document));assert.deepEqual(snapshot.document,document);
+ await service.review(mod.id,submission.id,{decision:'approve',expectedVersion:1,note:'Checked icon'});
+ const row=(await f.db.query('SELECT document,content_hash FROM submissions WHERE id=$1',[submission.id])).rows[0];assert.equal(row.content_hash,documentHash(document));assert.deepEqual(row.document,document);
+ const invalid=structuredClone(document);const walk=n=>{if(n.id===node.id)n.attrs.src='https://evil.example/icon.png';n.children?.forEach(walk);};invalid.blocks.forEach(b=>walk(b.node));
+ await assert.rejects(service.saveDraft(user.id,f.guide.id,{document:invalid,expectedVersion:2,baseRevision:1}));
+ assert.equal((await service.getDraft(user.id,f.guide.id)).version,2);
+});
