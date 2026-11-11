@@ -59,7 +59,7 @@ function githubFake(row) {
     if (url.hostname === 'pvme.example') return release ? response(release) : response({}, 404);
     assert.equal(url.origin, 'https://api.github.com');
     assert.equal(options.redirect, 'error');
-    assert.equal(options.headers['X-GitHub-Api-Version'], '2026-03-10');
+    assert.equal(options.headers['X-GitHub-Api-Version'], '2022-11-28');
     if (url.pathname === '/app/installations/5678/access_tokens') {
       assert.deepEqual(body, { repositories: ['private-guides'], permissions: { contents: 'write', pull_requests: 'write' } });
       assert.match(options.headers.Authorization, /^Bearer ey/);
@@ -172,4 +172,19 @@ test('unrelated main updates are allowed; merge alone is not published; deleted 
   fake.refs.delete(pull.branch);
   assert.equal((await provider.ensurePullRequest(row)).mergeSha, merge);
   assert.equal(fake.pulls.length, 1);
+});
+
+
+test('pinned GitHub contract requires an explicit valid merge SHA, never a branch-tip fallback', async () => {
+  const row = snapshot(), fake = githubFake(row), provider = createGitHubApp(config, fake);
+  const pull = await provider.ensurePullRequest(row), merge = fake.merge();
+  for (const invalid of [undefined, null, '', 'not-a-sha', 'a'.repeat(39), 'g'.repeat(40)]) {
+    if (invalid === undefined) delete fake.pulls[0].merge_commit_sha;
+    else fake.pulls[0].merge_commit_sha = invalid;
+    await assert.rejects(provider.reconcile(row, pull, 'https://pvme.example'), error => error.code === 'invalid_merge');
+  }
+  fake.pulls[0].merge_commit_sha = merge;
+  fake.release({ commit: merge, guides: { example: { submissionId: row.id, contentHash: row.content_hash } } });
+  assert.equal((await provider.reconcile(row, pull, 'https://pvme.example')).state, 'published');
+  assert.ok(fake.calls.filter(call => call.headers?.Authorization).every(call => call.headers['X-GitHub-Api-Version'] === '2022-11-28'));
 });

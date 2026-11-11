@@ -5,6 +5,16 @@ import { documentHash } from '../server/core.mjs';
 
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 const HASH = /^[0-9a-f]{64}$/;
+// Offline validation checks receipt shape and lineage only. Production must also
+// verify the referenced immutable approval audit event against its database.
+function validApprovalShape(receipt) {
+  if (receipt.schemaVersion === 1) return receipt.contributorId !== receipt.reviewerId && !Object.hasOwn(receipt, 'authorization');
+  if (receipt.schemaVersion !== 2 || receipt.contributorId !== receipt.reviewerId) return false;
+  const authorization = receipt.authorization;
+  return authorization !== null && typeof authorization === 'object' && !Array.isArray(authorization) &&
+    Object.keys(authorization).sort().join(',') === 'auditEventId,policy,role' &&
+    authorization.policy === 'admin-self-v1' && authorization.role === 'admin' && UUID.test(authorization.auditEventId || '');
+}
 const read = file => JSON.parse(fs.readFileSync(file, 'utf8'));
 function jsonFiles(dir) {
   if (!fs.existsSync(dir)) return [];
@@ -23,11 +33,10 @@ export function loadHostedContent(root, commit = null) {
     return [item.id, doc];
   }));
   const receipts = jsonFiles(path.join(root, 'content/reviews')).map(({ name, value: r }) => {
-    if (r.schemaVersion !== 1 || !UUID.test(r.submissionId || '') || name !== `${r.submissionId}.json` ||
+    if (!validApprovalShape(r) || !UUID.test(r.submissionId || '') || name !== `${r.submissionId}.json` ||
         !baseline.has(r.guideId) || !HASH.test(r.contentHash || '') || !HASH.test(r.baselineHash || '') ||
         !Number.isSafeInteger(r.baseRevision) || r.baseRevision < 1 || !Number.isSafeInteger(r.draftVersion) || r.draftVersion < 1 ||
-        !Number.isFinite(Date.parse(r.approvedAt)) || !UUID.test(r.contributorId || '') || !UUID.test(r.reviewerId || '') ||
-        r.contributorId === r.reviewerId) throw Error(`Invalid approval receipt: ${name}`);
+        !Number.isFinite(Date.parse(r.approvedAt)) || !UUID.test(r.contributorId || '') || !UUID.test(r.reviewerId || '')) throw Error(`Invalid approval receipt: ${name}`);
     return r;
   });
   const published = new Map();

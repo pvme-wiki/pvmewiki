@@ -10,6 +10,10 @@ export function editorMode(location) {
 export function canReview(session) {
   return session?.configured === true && ['moderator', 'admin'].includes(session?.user?.role) && session?.capabilities?.review === true;
 }
+export function canReviewSubmission(review, session) {
+  return canReview(session) && review?.status === 'submitted' &&
+    (!review.isMine || session.user.role === 'admin');
+}
 export const submissionStatus = (status, publication) => publication?.replacementId || publication?.state === 'superseded' ? ['Replaced', 'This publication job is closed. The corrected snapshot needs a new review.'] : publication?.state === 'blocked' ? ['Publication paused', publication.requiresFreshReview ? 'This snapshot cannot be published as it stands. Update a saved draft and send a corrected snapshot for a fresh review.' : 'Publication needs a maintainer’s attention. This snapshot is not live.'] : ({
   submitted: ['Awaiting review', 'A moderator will check this snapshot. You can keep working on your draft without changing what you sent.'],
   approved: ['Approved', 'A moderator approved this snapshot. It is waiting for publication and is not live yet.'],

@@ -3,9 +3,10 @@
 An independent RuneScape 3 guide reader and phone-first contributor prototype.
 
 - The reader preserves 323 locally hosted PvME guides and their attribution.
-- All 323 guides support protected text editing. The editor supports private autosaved drafts, immutable submissions, independent review, and Git-backed publication.
+- All 323 guides support protected text editing. The editor supports private autosaved drafts, immutable submissions, reviewer approval, and Git-backed publication.
 - Discord authenticates contributors without giving them GitHub accounts or repository access.
 - PostgreSQL stores accounts, drafts, reviews, and the audit trail. Approved content and review receipts go to the private repository.
+- Administrators may approve their own submitted snapshots. Moderators need another reviewer for their own contributions. Admin self-approvals retain immutable approval-time role evidence.
 - GitHub pull requests require a maintainer merge. A merged change is shown as published only after its matching deployed manifest is verified.
 
 The shared editor fails closed until its database and authentication are configured. A successful static build is not evidence that these integrations work.

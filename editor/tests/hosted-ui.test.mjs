@@ -138,7 +138,7 @@ test('contributor and own-submission moderator cannot execute approval action', 
   h.setAdapter({ reviewSubmission: async () => { calls++; } });
   h.state.activeReview = { id: 'snapshot', status: 'submitted', isMine: true, version: 1 };
   await assert.rejects(h.action('approve-submission', {}), /cannot be reviewed/);
-  h.state.session.user.role = 'admin'; h.state.session.capabilities.review = true;
+  h.state.session.user.role = 'moderator'; h.state.session.capabilities.review = true;
   await assert.rejects(h.action('approve-submission', {}), /cannot be reviewed/);
   assert.equal(calls, 0);
 });
@@ -292,4 +292,47 @@ test('corrected snapshot uses resubmit and reloads the advanced saved-draft vers
   assert.deepEqual(calls, [{ id: 'old-submission', expectedVersion: 2, expectedDraftVersion: 4, summary: 'Reconciled the wording' }]);
   assert.equal(h.state.revision, 5); assert.equal(h.state.replacement, null);
   assert.equal(h.location.hash, '#/submission/fresh-submission');
+});
+test('admin can review own frozen snapshot without changing its content or version', async () => {
+  const h = await harness({ realRender: true });
+  h.state.session.user.role = 'admin';
+  Object.assign(h.state.session.capabilities, { review: true, publication: true });
+  const review = { id: 'own-snapshot', guideId: firstId, status: 'submitted', isMine: true, version: 7, summary: 'Clarify guide', createdAt: '2026-11-10T12:00:00Z', baselineDocument: clone(seed), document: edit(seed, 'Frozen wording') };
+  const original = clone(review), calls = [];
+  h.setAdapter({ getReview: async () => review, reviewSubmission: async (id, body) => { calls.push({ id, ...body }); } });
+  h.location.hash = '#/submission/own-snapshot';
+  await h.renderRoute();
+  assert.match(h.app.innerHTML, /data-action="approve-submission"/);
+  assert.match(h.app.innerHTML, /data-action="reject-submission"/);
+  assert.doesNotMatch(h.app.innerHTML, /must review your own submission/);
+  h.element('#moderator-note').value = 'Checked frozen wording';
+  await h.action('approve-submission', {});
+  assert.deepEqual(calls, [{ id: review.id, decision: 'approve', expectedVersion: 7, note: 'Checked frozen wording' }]);
+  assert.deepEqual(review, original);
+  h.state.session.capabilities.publication = false;
+  await h.renderRoute();
+  assert.match(h.app.innerHTML, /data-action="approve-submission"[^>]*disabled/);
+});
+
+test('moderator own-submission UI and contributor UI keep review controls unavailable', async () => {
+  for (const role of ['moderator', 'contributor']) {
+    const h = await harness({ realRender: true });
+    h.state.session.user.role = role;
+    Object.assign(h.state.session.capabilities, { review: true, publication: true });
+    h.setAdapter({ getReview: async () => ({ id: 'own-snapshot', guideId: firstId, status: 'submitted', isMine: true, version: 1, summary: 'Own edit', createdAt: '2026-11-10T12:00:00Z', baselineDocument: clone(seed) }) });
+    h.location.hash = '#/submission/own-snapshot'; await h.renderRoute();
+    assert.doesNotMatch(h.app.innerHTML, /data-action="(?:approve|reject)-submission"/);
+    if (role === 'moderator') assert.match(h.app.innerHTML, /Another moderator or an admin/);
+    await assert.rejects(h.action('reject-submission', {}), /cannot be reviewed/);
+  }
+});
+
+test('submission review helper restricts admin exception to submitted snapshots and authorized sessions', () => {
+  const admin = { ...session, user: { role: 'admin' }, capabilities: { review: true } };
+  assert.equal(workflow.canReviewSubmission({ status: 'submitted', isMine: true }, admin), true);
+  for (const status of ['approved', 'publishing', 'published', 'rejected']) assert.equal(workflow.canReviewSubmission({ status, isMine: true }, admin), false);
+  assert.equal(workflow.canReviewSubmission(null, admin), false);
+  assert.equal(workflow.canReviewSubmission({ status: 'submitted', isMine: true }, { ...admin, configured: false }), false);
+  assert.equal(workflow.canReviewSubmission({ status: 'submitted', isMine: true }, { ...admin, capabilities: { review: false } }), false);
+  assert.equal(workflow.canReviewSubmission({ status: 'submitted', isMine: false }, { ...admin, user: { role: 'moderator' } }), true);
 });

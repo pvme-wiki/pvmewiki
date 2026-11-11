@@ -55,12 +55,12 @@ test('stale baselines stop save/approve and require explicit valid rebase', asyn
   assert.equal(saved.baseRevision, 2); assert.equal(saved.baselineDocument.title, 'New canonical title');
   await service.submit(a.id, id, { expectedVersion: 2, summary: 'Reconciled latest source' }); assert.equal((await service.listSubmissions(a.id)).length, 2);
 });
-test('self approval, missing publication config and role escalation fail closed', async t => {
+test('contributor approval, missing publication config and role escalation fail closed', async t => {
   const f = await fixture(); t.after(() => f.db.close());
   const admin = await f.user('admin'), mod = await f.user('moderator'), user = await f.user(), service = createService(f.db, { publicationEnabled: true });
   await service.saveDraft(admin.id, id, { document: f.changed(), expectedVersion: 0, baseRevision: 1 });
   const sub = await service.submit(admin.id, id, { expectedVersion: 1, summary: 'Own admin contribution' });
-  await assert.rejects(service.review(admin.id, sub.id, { decision: 'approve', expectedVersion: 1 }), fails('self_review_forbidden'));
+  await assert.rejects(service.review(user.id, sub.id, { decision: 'approve', expectedVersion: 1 }), fails('forbidden'));
   await assert.rejects(createService(f.db).review(mod.id, sub.id, { decision: 'approve', expectedVersion: 1 }), fails('publication_unavailable'));
   assert.equal((await service.getSubmission(admin.id, sub.id)).status, 'submitted');
   await assert.rejects(service.changeRole(user.id, user.id, { role: 'admin', expectedVersion: 1 }), fails('forbidden'));
