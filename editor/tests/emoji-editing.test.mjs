@@ -16,7 +16,7 @@ test('known emoji replacements preserve schema, identities, media and exact rend
  const changes=changedBlocks(baseline,doc); assert.equal(changes.length,1); assert.equal(changes[0].fields[0].kind,'emoji'); assert.notEqual(changes[0].before,changes[0].after);
 });
 test('emoji mutations reject arbitrary URLs, mismatched labels, attrs, structure and ordinary media', () => {
- for(const mutate of [n=>n.attrs.src='https://evil.example/icon.png',n=>n.attrs.src='javascript:alert(1)',n=>n.attrs.src='//evil.example/icon.png',n=>n.attrs.alt='unreviewed label',n=>n.attrs.title='unreviewed title',n=>n.attrs.width='99',n=>n.attrs.class='d-emoji injected',n=>n.attrs.onclick='alert(1)',n=>n.children.push({id:'injected',type:'text',text:'bad'}),n=>n.id='new-icon']) {
+ for(const mutate of [n=>n.attrs.src='https://evil.example/icon.png',n=>n.attrs.src='javascript:alert(1)',n=>n.attrs.src='//evil.example/icon.png',n=>n.attrs.alt='unreviewed label',n=>n.attrs.title='unreviewed title',n=>n.attrs.width='99',n=>n.attrs.class='d-emoji injected',n=>n.attrs.class=123,n=>n.attrs.onclick='alert(1)',n=>n.children.push({id:'injected',type:'text',text:'bad'}),n=>n.id='new-icon']) {
   const doc=replace(alternatives[0]); mutate(find(doc)); assert.equal(validateDocument(doc,{baseline}).valid,false);
  }
  assert.throws(()=>updateEmojiNode(baseline,block.id,node.id,'https://evil.example/icon.png'));

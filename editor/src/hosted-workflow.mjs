@@ -14,9 +14,15 @@ export function canReviewSubmission(review, session) {
   return canReview(session) && review?.status === 'submitted' &&
     (!review.isMine || session.user.role === 'admin');
 }
-export const submissionStatus = (status, publication) => publication?.replacementId || publication?.state === 'superseded' ? ['Replaced', 'This publication job is closed. The corrected snapshot needs a new review.'] : publication?.state === 'blocked' ? ['Publication paused', publication.requiresFreshReview ? 'This snapshot cannot be published as it stands. Update a saved draft and send a corrected snapshot for a fresh review.' : 'Publication needs a maintainer’s attention. This snapshot is not live.'] : ({
+export function canCheckPublication(review, session) {
+  return canReview(session) && session.capabilities.publication === true &&
+    ['approved', 'publishing'].includes(review?.status) &&
+    ['queued', 'working', 'retry', 'awaiting_merge', 'awaiting_deployment'].includes(review?.publication?.state) &&
+    !review?.publication?.requiresFreshReview && !review?.publication?.replacementId;
+}
+export const submissionStatus = (status, publication) => publication?.replacementId || publication?.state === 'superseded' ? ['Replaced', 'This publication job is closed. The corrected snapshot needs a new review.'] : publication?.state === 'blocked' ? ['Publication paused', publication.requiresFreshReview ? 'This snapshot cannot be published as it stands. Update a saved draft and send a corrected snapshot for a fresh review.' : 'Publication needs a maintainer’s attention. Live status has not been verified.'] : ({
   submitted: ['Awaiting review', 'A moderator will check this snapshot. You can keep working on your draft without changing what you sent.'],
-  approved: ['Approved', 'A moderator approved this snapshot. It is waiting for publication and is not live yet.'],
+  approved: ['Approved', 'A moderator approved this snapshot. Live publication has not been verified yet.'],
   publishing: ['Publishing', 'The approved snapshot is being published. It is not confirmed live yet.'],
   published: ['Published', 'This approved snapshot has been published.'],
   rejected: ['Changes requested', 'Read the moderator’s note, update your draft, and send a new snapshot when it is ready.'],

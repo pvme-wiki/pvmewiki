@@ -3,7 +3,7 @@ export { EMOJI_ASSETS };
 const emojiById = new Map(EMOJI_ASSETS.map(asset => [asset.id, asset]));
 const emojiByAttributes = new Map(EMOJI_ASSETS.map(asset => [JSON.stringify([asset.src, asset.alt, asset.title]), asset]));
 export function emojiAsset(node) {
-  if (node?.type !== 'element' || node.tag !== 'img' || !node.attrs?.class?.split(/\s+/).includes('d-emoji')) return null;
+  if (node?.type !== 'element' || node.tag !== 'img' || typeof node.attrs?.class !== 'string' || !node.attrs.class.split(/\s+/).includes('d-emoji')) return null;
   return emojiByAttributes.get(JSON.stringify([node.attrs.src, node.attrs.alt, node.attrs.title])) || null;
 }
 export function getEditableEmojiNodes(block) {
@@ -30,7 +30,8 @@ export function updateEmojiNode(document, blockId, nodeId, assetId) {
  *
  * Documents contain a constrained AST, never editable HTML. Original element and
  * text node identities are stable. This slice permits title edits and text-leaf
- * edits within supported paragraph/heading blocks. Always pass the canonical
+ * edits within supported paragraph/heading blocks, plus replacement of existing
+ * known emoji assets. Other attributes and structure stay protected. Pass the canonical
  * baseline to validation at storage/review/publication boundaries.
  */
 export const SCHEMA_VERSION = 1;

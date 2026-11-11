@@ -39,7 +39,7 @@ async function harness({ realRender = false } = {}) {
   vm.runInContext(`${source}\n${realRender ? '' : "renderEditor = () => { app.innerHTML = 'guide:' + state.document.id; }; previewView = renderEditor; reviewView = renderEditor; library = () => { app.innerHTML = 'library'; };"}\nglobalThis.qa = { state, renderRoute, flushSave, action, resolveDialog, checkUncertainSave, statusMarkup, navigate, connect, revalidateSession, saveRecovery, recoveryFor, setAdapter: value => { adapter = value; } };`, context);
   context.qa.state.catalog = clone(catalog);
   context.qa.state.session = clone(session);
-  return { ...context.qa, location, stored, events, element, app: element('#app'), dialog: element('#dialog') };
+  return { ...context.qa, dom: context.document, location, stored, events, element, app: element('#app'), dialog: element('#dialog') };
 }
 function dirty(h, value = 'My edit') {
   Object.assign(h.state, { guide: clone(catalog[0]), baseline: clone(seed), document: edit(seed, value), savedDocument: clone(seed), revision: 0, baseRevision: 'guide-1', editVersion: 1, dirty: true, view: 'edit' });
@@ -367,4 +367,88 @@ test('submission review helper restricts admin exception to submitted snapshots 
   assert.equal(workflow.canReviewSubmission({ status: 'submitted', isMine: true }, { ...admin, configured: false }), false);
   assert.equal(workflow.canReviewSubmission({ status: 'submitted', isMine: true }, { ...admin, capabilities: { review: false } }), false);
   assert.equal(workflow.canReviewSubmission({ status: 'submitted', isMine: false }, { ...admin, user: { role: 'moderator' } }), true);
+});
+
+const publicationSession = () => ({...clone(session), user:{...session.user,role:'moderator'},capabilities:{...session.capabilities,review:true,publication:true}});
+const publicationReview = (status='approved') => ({id:'status-test',guideId:firstId,status,isMine:false,version:2,summary:'Exact approved snapshot',createdAt:'2026-11-10T12:00:00Z',baselineDocument:clone(seed),document:clone(seed),publication:{state:'queued'}});
+async function publicationHarness({review=publicationReview(),identity=publicationSession(),check,connect}={}) {
+ const h=await harness({realRender:true});h.state.session=clone(identity);let current=clone(review),checks=0,connections=0;
+ const adapter={session:clone(identity),connect:async()=>{connections++;if(connect)await connect(adapter);},listDrafts:async()=>({drafts:[]}),getReview:async()=>clone(current),checkPublication:async id=>{checks++;assert.equal(id,review.id);return check ? check() : clone(current);}};
+ h.setAdapter(adapter);h.location.hash='#/submission/'+review.id;
+ return {...h,adapter,setReview:value=>{current=clone(value);},checks:()=>checks,connections:()=>connections};
+}
+async function hiddenReturn(h){h.dom.hidden=true;await h.events.get('visibilitychange')();h.dom.hidden=false;await h.events.get('visibilitychange')();}
+test('publication refresh eligibility excludes unapproved, blocked, replaced, published and nonreviewers',()=>{
+ const account=publicationSession();assert.equal(workflow.canCheckPublication(publicationReview(),account),true);
+ for(const status of ['submitted','rejected','published'])assert.equal(workflow.canCheckPublication(publicationReview(status),account),false);
+ for(const publication of [{state:'blocked'},{state:'superseded'},{state:'published'},{requiresFreshReview:true},{replacementId:'replacement'}])assert.equal(workflow.canCheckPublication({...publicationReview(),publication},account),false);
+ for(const identity of [session,{...account,user:null},{...account,configured:false},{...account,capabilities:{review:true,publication:false}}])assert.equal(workflow.canCheckPublication(publicationReview(),identity),false);
+ assert.match(workflow.submissionStatus('approved',{state:'blocked'})[1],/Live status has not been verified/);
+ assert.doesNotMatch(workflow.submissionStatus('approved',{state:'blocked'})[1],/not live/);
+ assert.match(workflow.submissionStatus('approved')[1],/Live publication has not been verified/);
+ assert.doesNotMatch(workflow.submissionStatus('approved')[1],/not live/);
+});
+test('submission return performs one entry and one genuine visibility check, no refresh/focus loops',async()=>{
+ const h=await publicationHarness();await h.renderRoute();assert.equal(h.checks(),1);assert.equal(h.connections(),1);
+ await h.renderRoute();await h.events.get('focus')();await h.events.get('visibilitychange')();assert.equal(h.checks(),1);
+ await hiddenReturn(h);assert.equal(h.checks(),2);
+ await hiddenReturn(h);await h.renderRoute();assert.equal(h.checks(),2);
+ h.location.hash='#/';await h.renderRoute();h.location.hash='#/submission/status-test';await h.renderRoute();assert.equal(h.checks(),3);
+});
+test('return refresh skips hidden pages and ineligible states, including approval rerenders',async()=>{
+ for(const review of [publicationReview('submitted'),publicationReview('published'),{...publicationReview(),publication:{state:'blocked'}}]) {
+  const h=await publicationHarness({review});await h.renderRoute();await hiddenReturn(h);assert.equal(h.checks(),0);
+ }
+ const contributor=await publicationHarness({identity:session});await contributor.renderRoute();await hiddenReturn(contributor);assert.equal(contributor.checks(),0);
+ const h=await publicationHarness({review:publicationReview('submitted')});await h.renderRoute();h.setReview(publicationReview());await h.renderRoute();assert.equal(h.checks(),0);
+ const hidden=await publicationHarness();hidden.dom.hidden=true;await hidden.renderRoute();assert.equal(hidden.checks(),0);
+});
+test('failed automatic checks do not retry on rerenders and manual check remains available',async()=>{
+ const h=await publicationHarness({check:async()=>{throw Error('Temporary failure');}});await h.renderRoute();assert.equal(h.checks(),1);assert.match(h.element('#toast').textContent,/not been verified/);
+ await h.renderRoute();await h.renderRoute();assert.equal(h.checks(),1);
+ await assert.rejects(h.action('check-publication',{}),/Temporary failure/);assert.equal(h.checks(),2);
+ await h.renderRoute();assert.equal(h.checks(),2);
+});
+test('session revalidation stops automatic check on account or role change',async()=>{
+ for(const next of [{...publicationSession(),user:{...session.user,id:'another-account',role:'moderator'}},session]){
+  const h=await publicationHarness({connect:async adapter=>{adapter.session=clone(next);}});await h.renderRoute();assert.equal(h.checks(),0);assert.equal(h.state.session.user.id,next.user.id);assert.equal(h.state.session.user.role,next.user.role);
+ }
+});
+test('navigation during session refresh fences automatic publication request',async()=>{
+ const pending=deferred();const h=await publicationHarness({connect:async()=>pending.promise});const opening=h.renderRoute();await settle();h.location.hash='#/';await h.renderRoute();pending.resolve();await opening;assert.equal(h.checks(),0);assert.equal(h.state.view,'library');
+});
+test('concurrent manual checks coalesce and a late response cannot restore a departed route',async()=>{
+ const pending=deferred();const h=await publicationHarness();await h.renderRoute();h.adapter.checkPublication=async()=>pending.promise;
+ let calls=0;h.adapter.checkPublication=async()=>{calls++;return pending.promise;};const one=h.action('check-publication',{}),two=h.action('check-publication',{});await settle();assert.equal(calls,1);
+ h.location.hash='#/';await h.renderRoute();pending.resolve(publicationReview('published'));await Promise.all([one,two]);assert.equal(h.state.view,'library');assert.doesNotMatch(h.app.innerHTML,/Published/);
+});
+test('fresh blocked read and late hidden state prevent publication mutation',async()=>{
+ const h=await publicationHarness();let reads=0;h.adapter.getReview=async()=>++reads===1?publicationReview():{...publicationReview(),publication:{state:'blocked'}};await h.renderRoute();assert.equal(h.checks(),0);assert.match(h.app.innerHTML,/Live status has not been verified/);
+ const pending=deferred();const hidden=await publicationHarness({connect:async()=>pending.promise});const opening=hidden.renderRoute();await settle();hidden.dom.hidden=true;pending.resolve();await opening;assert.equal(hidden.checks(),0);
+});
+
+test('tab hiding while the fresh exact-submission read is pending prevents the check POST',async()=>{
+ const pending=deferred(),h=await publicationHarness();let reads=0;
+ h.adapter.getReview=async()=>++reads===1?publicationReview():pending.promise;
+ const opening=h.renderRoute();await settle();assert.equal(reads,2);
+ h.dom.hidden=true;await h.events.get('visibilitychange')();pending.resolve(publicationReview());await opening;
+ assert.equal(h.checks(),0);
+ h.dom.hidden=false;await h.events.get('visibilitychange')();assert.equal(h.checks(),1);
+ await h.renderRoute();await hiddenReturn(h);assert.equal(h.checks(),1);
+});
+
+test('account and CSRF changes cannot replenish automatic checks on the same route visit',async()=>{
+ const h=await publicationHarness();await h.renderRoute();await hiddenReturn(h);assert.equal(h.checks(),2);
+ h.adapter.session={...publicationSession(),user:{...session.user,id:'other-reviewer',role:'moderator'},csrfToken:'new-session-token'};
+ await h.events.get('focus')();await h.renderRoute();await hiddenReturn(h);assert.equal(h.checks(),2);
+ h.adapter.session={...h.adapter.session,csrfToken:'rotated-token'};
+ await h.events.get('focus')();await h.renderRoute();await hiddenReturn(h);assert.equal(h.checks(),2);
+ h.location.hash='#/';await h.renderRoute();h.location.hash='#/submission/status-test';await h.renderRoute();assert.equal(h.checks(),3);
+});
+test('publication checks require a known active job state',async()=>{
+ for(const state of ['queued','working','retry','awaiting_merge','awaiting_deployment'])assert.equal(workflow.canCheckPublication({...publicationReview(),publication:{state}},publicationSession()),true);
+ for(const publication of [undefined,null,{}, {state:null},{state:123},{state:'unknown'},{state:'queued ',requiresFreshReview:false}]){
+  const review={...publicationReview(),publication};assert.equal(workflow.canCheckPublication(review,publicationSession()),false);
+  const h=await publicationHarness({review});await h.renderRoute();await hiddenReturn(h);assert.equal(h.checks(),0);
+ }
 });

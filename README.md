@@ -3,8 +3,8 @@
 An independent RuneScape 3 guide reader and phone-first contributor prototype.
 
 - The reader preserves 323 locally hosted PvME guides and their attribution.
-- All 323 guides support protected text editing. The editor supports private autosaved drafts, immutable submissions, reviewer approval, and Git-backed publication.
-- Discord authenticates contributors without giving them GitHub accounts or repository access.
+- All 323 guides support protected text editing and replacement of existing known emoji icons. The editor supports private autosaved drafts, immutable submissions, reviewer approval, and Git-backed publication.
+- Discord authenticates contributors without giving them GitHub accounts or repository access. Sign-in returns to the same guide and editor tab, including after a cancelled attempt.
 - PostgreSQL stores accounts, drafts, reviews, and the audit trail. Approved content and review receipts go to the private repository.
 - Administrators may approve their own submitted snapshots. Moderators need another reviewer for their own contributions. Admin self-approvals retain immutable approval-time role evidence.
 - GitHub pull requests require a maintainer merge. A merged change is shown as published only after its matching deployed manifest is verified.
@@ -22,3 +22,7 @@ Runtime credentials belong in the hosting provider's server-side environment, ne
 Guide content is adapted from [PvME](https://pvme.io/) and [pvme-guides](https://github.com/pvme/pvme-guides) under CC BY-NC-SA 4.0. Preserve the attribution and modifications recorded for each guide. Asset rights are separate. This project is not an official PvME or Jagex product. RuneScape Wiki import compatibility requires a separate rights and template review.
 
 The reader baseline was recovered byte-for-byte from the existing authorized preview after its local development checkout became unavailable. The provenance manifest records that snapshot; the build layers reviewed content and shared UI changes over it. It is not a new upstream-content sync.
+
+## Guide icon editing
+
+Use the Change icon buttons beside existing guide emojis to search the known-asset picker. Preview and review the replacement before submitting. The checked-in catalog contains exact assets already present in the canonical guides; arbitrary URLs, new image nodes, labels, attributes, links and structural changes remain prohibited. Icon changes use the same account-owned autosave, version conflicts, frozen submissions and approval receipts as text edits. Catalog changes require a code review; they are not editable by contributors.

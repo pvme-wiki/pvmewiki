@@ -1,5 +1,5 @@
 import { HostedAdapter } from './adapter.mjs';
-import { canReview, canReviewSubmission, submissionStatus, authNotice, findGuides, guideCategories, canPrepareReplacement, moderatorReviewUrl } from './hosted-workflow.mjs';
+import { canReview, canReviewSubmission, canCheckPublication, submissionStatus, authNotice, findGuides, guideCategories, canPrepareReplacement, moderatorReviewUrl } from './hosted-workflow.mjs';
 import { themeOptions } from './theme.mjs';
 import { renderDocument, renderBlock, textContent, updateTextNode, updateEmojiNode, getEditableEmojiNodes, EMOJI_ASSETS, assertDocument } from '../shared/model.mjs';
 import { escapeHTML as e, sectionsOf, changedBlocks, conflictPlan, resolveConflict, timeLabel } from './document.mjs';
@@ -25,6 +25,35 @@ const state = {
   summary: '', editVersion: 0, query: '', filter: 'all', libraryLimit: 24, activeReview: null, replacement: null,
 };
 let routeVersion = 0;
+let publicationRoute = null, publicationVisit = 0, publicationHiddenRoute = null;
+const publicationAttempts = new Set(), publicationChecks = new Map();
+const publicationKey = id => JSON.stringify([state.session?.user?.id, state.session?.csrfToken, id]);
+function onSubmissionRoute(id, version, generation) {
+  return version === routeVersion && generation === identityGeneration && location.hash === '#/submission/' + id;
+}
+async function checkReturnedPublication(review, version, { automatic = true, trigger = 'entry' } = {}) {
+  if (document.hidden) return review;
+  const generation = identityGeneration, id = review.id, key = publicationKey(id);
+  if (!onSubmissionRoute(id, version, generation)) return review;
+  const visitKey = publicationVisit + ':' + trigger;
+  if (automatic && publicationAttempts.has(visitKey)) return review;
+  if (!canCheckPublication(review, state.session)) { publicationAttempts.add(visitKey); return review; }
+  if (publicationChecks.has(key)) { publicationAttempts.add(visitKey); return publicationChecks.get(key); }
+  // Reserve before any await: refresh, re-render and concurrent clicks cannot retry.
+  publicationAttempts.add(visitKey);
+  const pending = Promise.resolve().then(async () => {
+    await connect();
+    if (generation !== identityGeneration || state.waitingForSession) { await renderRoute({ publicationCheck: false }); return null; }
+    if (document.hidden || !onSubmissionRoute(id, version, generation) || state.sessionChecking || !canCheckPublication(review, state.session)) return null;
+    const latest = await adapter.getReview(id);
+    if (document.hidden || !onSubmissionRoute(id, version, generation) || state.sessionChecking || !canCheckPublication(latest, state.session)) return latest;
+    const checked = await adapter.checkPublication(id);
+    return onSubmissionRoute(id, version, generation) ? checked : null;
+  });
+  publicationChecks.set(key, pending);
+  try { return await pending; }
+  finally { if (publicationChecks.get(key) === pending) publicationChecks.delete(key); }
+}
 let identityGeneration = 0, connectionSequence = 0, reconnectPromise;
 let activeHash = location.hash;
 let saveTimer, savePromise, toastTimer;
@@ -169,6 +198,7 @@ function replaceEmoji(target) {
   state.document = updateEmojiNode(state.document, selected.block, selected.node, target.dataset.emojiAsset);
   state.editVersion++; state.dirty = true; saveRecovery(); emojiSelection = null;
   dialog.close(); renderEditor(); updateStatus(); clearTimeout(saveTimer);
+  [...document.querySelectorAll('[data-emoji-node]')].find(element => element.dataset.block === selected.block && element.dataset.emojiNode === selected.node)?.focus();
   if (!state.saveError) saveTimer = setTimeout(flushSave, 3000);
   toast('Icon changed. Check Preview or Review changes before sending.');
 }
@@ -227,15 +257,22 @@ async function submissionsView(version, queue = false) {
   const title = queue ? 'Approval queue' : 'My submissions';
   app.innerHTML = shell(`<div class="queue-hero"><h1>${title}</h1><p>${queue ? 'Check the exact submitted copy and leave a decision for its contributor.' : 'Track your edits from review to publication. Draft changes do not alter these snapshots.'}</p></div><div class="queue-header"><h2>${queue ? 'Submitted edits' : 'Your submissions'}</h2>${button('refresh', 'Refresh status', 'small')}</div>${reviews.length ? `<div class="review-list">${reviews.map(review => `<a class="review-row" href="#/submission/${e(review.id)}"><div class="review-row-icon ${visuals[review.guideId]?.[1] || ''}">${icon(review.status === 'published' ? 'check' : 'review')}</div><div class="review-row-copy"><span class="submission-state ${e(review.status)}">${e(submissionStatus(review.status, review.publication)[0])}</span><h3>${e(nameOf(review.guideId))}</h3><p>${e(review.summary)}</p><small>Sent ${timeLabel(review.createdAt).toLowerCase()}${review.isMine ? ' · Your submission' : ''}</small></div>${icon('arrow')}</a>`).join('')}</div>` : `<div class="empty-state large">${icon('review')}<h2>${queue ? 'No submissions yet' : 'Nothing sent for review yet'}</h2><p>${queue ? 'New submissions will appear here.' : 'Open a draft, review your changes, and send it to the moderators.'}</p><a class="button primary" href="#/drafts">My drafts</a></div>`}`, { active: queue ? 'queue' : 'submissions' });
 }
-async function submissionDetail(id, version) {
-  const review = await adapter.getReview(id);
+async function submissionDetail(id, version, publicationCheck = true) {
+  let review = await adapter.getReview(id);
+  if (version !== routeVersion) return;
+  try { if (publicationCheck) review = await checkReturnedPublication(review, version) || review; }
+  catch (error) {
+    if (version !== routeVersion) return;
+    toast('Publication check could not be confirmed. Live status has not been verified. Use Check publication to try again.');
+  }
+  if (!review || version !== routeVersion) return;
   const baseline = review.baselineDocument || (await adapter.getGuide(review.guideId)).document;
   if (version !== routeVersion) return;
   state.activeReview = review;
   const [label, description] = submissionStatus(review.status, review.publication);
   const reviewUrl = moderatorReviewUrl(review, state.session);
   const reviewable = canReviewSubmission(review, state.session);
-  app.innerHTML = shell(`<a class="back-link" href="${moderator() && !review.isMine ? '#/queue' : '#/submissions'}">${icon('back')}${moderator() && !review.isMine ? 'Approval queue' : 'My submissions'}</a><div class="review-detail-heading"><h1>${e(nameOf(review.guideId))}</h1><p class="review-quote">${e(review.summary)}</p><div class="review-detail-meta"><span class="submission-state ${e(review.status)}">${e(label)}</span><span>Sent ${timeLabel(review.createdAt).toLowerCase()}</span></div></div><div class="review-layout"><div>${review.document ? changeList(review.document, baseline) : '<p>The submitted copy could not be loaded.</p>'}${review.document ? `<details class="submission-preview"><summary>Read the full submitted guide</summary><article class="reading-paper"><div class="guide-content">${renderDocument(review.document, readerOptions)}</div>${sourceFoot(review.document)}</article></details>` : ''}</div><aside class="review-summary"><h3>${e(label)}</h3><p>${e(description)}</p>${review.publicationIssue ? `<div class="publication-issue" role="status">${e(review.publicationIssue)}</div>` : ''}${reviewUrl ? `<a class="button full" href="${e(reviewUrl)}" target="_blank" rel="noopener noreferrer">Open maintainer review ${icon('arrow')}</a><p>Changes made there must be reconciled into a saved editor draft and sent for a fresh review.</p>` : ''}${canPrepareReplacement(review, state.session) ? button('prepare-replacement', 'Prepare corrected submission', 'primary full') : ''}${review.reviewNote ? `<div class="moderator-note"><strong>Moderator’s note</strong><p>${e(review.reviewNote)}</p></div>` : ''}${reviewable ? `<label for="moderator-note">Review note</label><textarea id="moderator-note" maxlength="2000" rows="4" placeholder="Explain any changes needed. Required when returning an edit."></textarea>${button('approve-submission', 'Approve snapshot', 'primary full', state.session.capabilities.publication ? '' : 'disabled')}${!state.session.capabilities.publication ? '<p>Approval is unavailable until the publishing connection is ready. This submission remains queued.</p>' : ''}${button('reject-submission', 'Request changes', 'full')}<p>Approval does not mean the guide is live yet.</p>` : moderator() && state.session.user.role !== 'admin' && review.isMine && review.status === 'submitted' ? '<p>Another moderator or an admin must review your own submission.</p>' : ''}${moderator() && ['approved', 'publishing'].includes(review.status) && review.publication?.state !== 'blocked' && !review.publication?.replacementId ? button('check-publication', 'Check publication', 'full') : ''}${button('refresh', 'Refresh status', 'quiet full')}<a class="text-button full" href="#/guide/${e(review.guideId)}/edit">${review.isMine ? 'Continue my draft' : 'Open guide editor'}</a></aside></div>`, { active: moderator() && !review.isMine ? 'queue' : 'submissions' });
+  app.innerHTML = shell(`<a class="back-link" href="${moderator() && !review.isMine ? '#/queue' : '#/submissions'}">${icon('back')}${moderator() && !review.isMine ? 'Approval queue' : 'My submissions'}</a><div class="review-detail-heading"><h1>${e(nameOf(review.guideId))}</h1><p class="review-quote">${e(review.summary)}</p><div class="review-detail-meta"><span class="submission-state ${e(review.status)}">${e(label)}</span><span>Sent ${timeLabel(review.createdAt).toLowerCase()}</span></div></div><div class="review-layout"><div>${review.document ? changeList(review.document, baseline) : '<p>The submitted copy could not be loaded.</p>'}${review.document ? `<details class="submission-preview"><summary>Read the full submitted guide</summary><article class="reading-paper"><div class="guide-content">${renderDocument(review.document, readerOptions)}</div>${sourceFoot(review.document)}</article></details>` : ''}</div><aside class="review-summary"><h3>${e(label)}</h3><p>${e(description)}</p>${review.publicationIssue ? `<div class="publication-issue" role="status">${e(review.publicationIssue)}</div>` : ''}${reviewUrl ? `<a class="button full" href="${e(reviewUrl)}" target="_blank" rel="noopener noreferrer">Open maintainer review ${icon('arrow')}</a><p>Changes made there must be reconciled into a saved editor draft and sent for a fresh review.</p>` : ''}${canPrepareReplacement(review, state.session) ? button('prepare-replacement', 'Prepare corrected submission', 'primary full') : ''}${review.reviewNote ? `<div class="moderator-note"><strong>Moderator’s note</strong><p>${e(review.reviewNote)}</p></div>` : ''}${reviewable ? `<label for="moderator-note">Review note</label><textarea id="moderator-note" maxlength="2000" rows="4" placeholder="Explain any changes needed. Required when returning an edit."></textarea>${button('approve-submission', 'Approve snapshot', 'primary full', state.session.capabilities.publication ? '' : 'disabled')}${!state.session.capabilities.publication ? '<p>Approval is unavailable until the publishing connection is ready. This submission remains queued.</p>' : ''}${button('reject-submission', 'Request changes', 'full')}<p>Approval does not mean the guide is live yet.</p>` : moderator() && state.session.user.role !== 'admin' && review.isMine && review.status === 'submitted' ? '<p>Another moderator or an admin must review your own submission.</p>' : ''}${canCheckPublication(review, state.session) ? button('check-publication', 'Check publication', 'full') : ''}${button('refresh', 'Refresh status', 'quiet full')}<a class="text-button full" href="#/guide/${e(review.guideId)}/edit">${review.isMine ? 'Continue my draft' : 'Open guide editor'}</a></aside></div>`, { active: moderator() && !review.isMine ? 'queue' : 'submissions' });
   fixPreviewLinks();
 }
 function fixPreviewLinks() {
@@ -283,8 +320,9 @@ async function openGuide(id, version) {
     }, 20);
   }
 }
-async function renderRoute() {
+async function renderRoute({ publicationCheck = true } = {}) {
   const version = ++routeVersion;
+  if (publicationRoute !== location.hash) { publicationRoute = location.hash; publicationVisit++; publicationAttempts.clear(); }
   const parts = location.hash.replace(/^#\/?/, '').split('/');
   const page = parts[0] || 'library';
   activeHash = location.hash;
@@ -300,7 +338,7 @@ async function renderRoute() {
       else { state.view = 'edit'; renderEditor(); }
     } else if (page === 'drafts') await draftsView(version);
     else if (page === 'submissions' || page === 'queue') await submissionsView(version, page === 'queue');
-    else if (page === 'submission') await submissionDetail(parts[1], version);
+    else if (page === 'submission') await submissionDetail(parts[1], version, publicationCheck);
     else library();
     if (version !== routeVersion) return;
     document.title = `${page === 'guide' ? nameOf(parts[1]) : page === 'drafts' ? 'My drafts' : page === 'submissions' ? 'My submissions' : page === 'queue' ? 'Approval queue' : 'Guide editor'} · PvME`;
@@ -581,9 +619,9 @@ async function action(name, target) {
       break;
     }
     case 'check-publication': {
-      if (!moderator() || !['approved', 'publishing'].includes(state.activeReview?.status)) throw new Error('This publication cannot be checked by this account.');
-      await adapter.checkPublication(state.activeReview.id);
-      if (version === routeVersion) await renderRoute();
+      if (!canCheckPublication(state.activeReview, state.session)) throw new Error('This publication cannot be checked by this account.');
+      await checkReturnedPublication(state.activeReview, version, { automatic: false });
+      if (version === routeVersion && generation === identityGeneration) await renderRoute();
       break;
     }
     case 'approve-submission':
@@ -662,7 +700,26 @@ document.addEventListener('keydown', event => {
 window.addEventListener('beforeunload', event => {
   if (state.dirty || state.saving) { saveRecovery(); event.preventDefault(); event.returnValue = ''; }
 });
-document.addEventListener('visibilitychange', () => { if (document.hidden && state.dirty) flushSave(); else if (!document.hidden) revalidateSession(); });
+async function publicationVisibilityChanged() {
+  if (document.hidden) {
+    publicationHiddenRoute = { hash: location.hash, visit: publicationVisit, generation: identityGeneration };
+    if (state.dirty) flushSave();
+    return;
+  }
+  const previous = publicationHiddenRoute;
+  publicationHiddenRoute = null; // Duplicate visible/focus events do not replenish the allowance.
+  await revalidateSession();
+  if (!previous || previous.hash !== location.hash || previous.visit !== publicationVisit || previous.generation !== identityGeneration || document.hidden) return;
+  const review = state.activeReview, version = routeVersion, generation = identityGeneration;
+  if (!review || !onSubmissionRoute(review.id, version, generation) || !canCheckPublication(review, state.session)) return;
+  try {
+    await checkReturnedPublication(review, version, { trigger: 'return' });
+    if (onSubmissionRoute(review.id, version, generation)) await submissionDetail(review.id, version, false);
+  } catch {
+    if (onSubmissionRoute(review.id, version, generation)) toast('Publication check could not be confirmed. Live status has not been verified. Use Check publication to try again.');
+  }
+}
+document.addEventListener('visibilitychange', publicationVisibilityChanged);
 window.addEventListener('focus', () => revalidateSession());
 window.addEventListener('hashchange', async () => {
   if (state.dirty || state.saving) {
@@ -727,7 +784,7 @@ async function revalidateSession() {
   reconnectPromise = (async () => {
     const generation = identityGeneration;
     await connect();
-    if (generation !== identityGeneration || !signedIn() || state.waitingForSession) await renderRoute();
+    if (generation !== identityGeneration || !signedIn() || state.waitingForSession) await renderRoute({ publicationCheck: false });
   })();
   try { await reconnectPromise; } finally { reconnectPromise = null; }
 }

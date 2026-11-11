@@ -107,7 +107,7 @@ test('contributor cannot use moderator adapter operation', async () => {
   assert.equal(calls.length, 1);
 });
 test('approved and publishing are not represented as published', () => {
-  assert.match(submissionStatus('approved')[1], /not live yet/);
+  assert.match(submissionStatus('approved')[1], /has not been verified yet/);
   assert.match(submissionStatus('publishing')[1], /not confirmed live/);
   assert.equal(submissionStatus('submitted')[0], 'Awaiting review');
   assert.equal(submissionStatus('published')[0], 'Published');
