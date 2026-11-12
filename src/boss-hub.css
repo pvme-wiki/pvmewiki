@@ -48,3 +48,22 @@ body{font-size:15px}.sidebar{width:224px;padding-inline:22px}.workspace{margin-l
 .article-tabs{overflow-x:auto;overflow-y:hidden;scrollbar-width:thin}.reader-directory{gap:14px;flex-wrap:wrap}.reader-directory .encounter-return{font-weight:600}.toc nav{scrollbar-width:thin}
 .directory-shortcuts{display:flex;flex-direction:column;align-items:flex-end;gap:4px}.guidance-restore{background:none;border:0;padding-block:6px;min-height:40px;color:var(--theme-accent);font-size:12px}.guidance-card{position:relative}.guidance-link{display:block}.guidance-card .eyebrow{padding-right:38px}.guidance-dismiss{position:absolute;top:6px;right:8px;min-height:44px;min-width:44px;background:none;border:0;color:var(--muted);font-size:11px}.guidance-dismiss:hover{color:var(--ink);text-decoration:underline}.guidance-card[hidden]{display:none!important}.discovery-links[data-guidance-hidden=true]{grid-template-columns:1fr}
 @media(max-width:580px){.directory-shortcuts{align-items:flex-start}.guidance-card .eyebrow{padding-right:32px}.guidance-dismiss{top:2px;right:2px;font-size:10px;min-width:40px}.guidance-restore{font-size:12px}}
+
+/* Individual geometric marks, with a consistent line grammar across all 45 encounters. */
+[data-palette="ruin"]{--specimen:light-dark(#813b68,#e8afcf);--specimen-wash:light-dark(#f4e8ef,#30212b)}
+[data-palette="charcoal"]{--specimen:light-dark(#424f60,#bdc9db);--specimen-wash:light-dark(#e7ebf0,#202831)}
+.bespoke-sigil .creature{stroke:var(--specimen);fill:var(--specimen);fill-opacity:.11;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.bespoke-sigil .glyph-detail{stroke:var(--specimen);fill:none;stroke-width:1.7;stroke-linejoin:round;stroke-linecap:round}
+.bespoke-sigil .orbit{stroke:var(--specimen);stroke-width:.7;opacity:.2;stroke-dasharray:2 7}
+.boss-hero-art{position:relative;padding-bottom:34px;box-sizing:border-box}
+.boss-hero-art .glyph-source{position:absolute;bottom:0;right:14px;min-height:34px;display:flex;align-items:center;color:var(--specimen);font-size:11px;text-decoration:underline;text-underline-offset:3px;z-index:2}
+.artwork-intro{max-width:780px}.artwork-intro p{max-width:70ch}.artwork-intro p:last-child{font-size:13px;color:var(--muted);line-height:1.8}
+.artwork-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:36px}
+.artwork-card{padding:22px;border:1px solid color-mix(in srgb,var(--specimen) 30%,var(--line));border-radius:7px;background:linear-gradient(155deg,var(--specimen-wash),var(--paper) 80%);scroll-margin-top:90px}
+.artwork-drawing{height:210px;display:flex;align-items:center;justify-content:center}.artwork-drawing .sigil{width:200px;height:200px;position:static;transform:none;color:var(--specimen)}
+.artwork-card h2{font-size:22px;line-height:1.35;margin:12px 0}.artwork-card h2 a{color:var(--ink)}.artwork-card p{font-size:13px;line-height:1.8;color:var(--muted);margin:0 0 16px}
+.artwork-card ul{padding:0;margin:0;list-style:none}.artwork-card li{display:flex;flex-direction:column;gap:4px;margin-top:12px}.artwork-card li a{font-size:12px;line-height:1.6;color:var(--specimen);text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere;min-height:28px;display:flex;align-items:center}.artwork-card li a:last-child{font-size:11px}
+.artwork-rights{padding:28px;border-top:1px solid var(--line);margin-top:40px;max-width:850px}.artwork-rights h2{font-size:24px}.artwork-rights p{font-size:13px;line-height:1.8;color:var(--muted)}.artwork-rights a{color:var(--theme-accent);text-decoration:underline;text-underline-offset:3px}
+@media(max-width:1150px){.artwork-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:580px){.artwork-grid{grid-template-columns:1fr}.artwork-card{padding:20px}.artwork-card li a{min-height:36px}.artwork-intro h1{font-size:40px}.artwork-rights{padding:24px 0}.boss-hero-art .glyph-source{right:12px}}
+@media(forced-colors:active){.bespoke-sigil .creature,.bespoke-sigil .glyph-detail,.bespoke-sigil .orbit{stroke:CanvasText;fill:none}.artwork-card{border-color:CanvasText}}

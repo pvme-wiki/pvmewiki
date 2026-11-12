@@ -1,56 +1,57 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { guideSpans } from './patch-reader-html.mjs';
+import { glyph } from './boss-glyphs.mjs';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const arrow='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5"/></svg>';
 const free='/archive/pvme-guides/upgrading-info/upgrade-order/free-upgrades/';
 // These are encounter traits, never player tiers. Original guide bodies remain protected.
 const traits={
- 'arch-glacor':['Arch-Glacor','Glacial ice & frozen core','ice','crystal'],
- vindicta:['Vindicta & Gorvek','Zarosian armour & dragonfire','violet','dragon'],
- rasial:['Rasial','The First Necromancer','spectral','mask'],
- kerapac:['Kerapac','Golden wings & lightning','gold','hourglass'],
- nex:['Nex','Blood, ice & ancient shadow','blood','ancient'],
- raksha:['Raksha','The shadow colossus','shadow','raptor'],
- araxxor:['Araxxor','Silk, venom & chitin','venom','spider'],
- helwyr:['Helwyr','The blue shapeshifter','teal','wolf'],
- telos:['Telos','Stone & green anima','anima','stone'],
- solak:['Solak','Living bark & blight','bark','tree'],
- 'tzkal-zuk':['TzKal-Zuk','Obsidian & molten fire','lava','volcano'],
- zamorak:['Zamorak','Crimson skin & chaos','crimson','chaos'],
- amascut:['Amascut','The Devourer','sand','mask'],
- 'angel-of-death':['Nex: Angel of Death','Ancient armour & shadow','shadow','wings'],
- barrows:['Barrows brothers','Burial armour & spectral forms','spectral','mask'],
- 'beastmaster-durzag':['Beastmaster Durzag','Armour, chains & tusks','rust','mask'],
- 'chaos-elemental':['Chaos Elemental','Shifting violet form','shadow','cloud'],
- 'corporeal-beast':['Corporeal Beast','Spectral hide & claws','spectral','claws'],
- croesus:['Croesus','Fungal growth & golden spores','fungal','fungus'],
- 'dagannoth-kings':['Dagannoth Kings','Three crowns of Waterbirth','teal','crown'],
- 'ed1-temple-of-aminishi':['Temple of Aminishi','Seiryu & the azure sea','ice','serpent'],
- 'ed2-dragonkin-laboratory':['Dragonkin Laboratory','Dragons & red stone','crimson','dragon'],
- 'ed3-shadow-reef':['The Shadow Reef','Deep water & shadow','teal','serpent'],
- 'fight-kiln':['Fight Kiln','TokHaar & volcanic glass','lava','stone'],
- 'flesh-hatcher-mhekarnahz':['Flesh-hatcher Mhekarnahz','Flesh & bone','blood','claws'],
- 'gate-of-elidinis':['Gate of Elidinis','Stone gateway & corruption','ice','gate'],
- 'ghrazi-blood-knights':['Ghrazi blood knights','Blood-red armour','blood','mask'],
- 'giant-mole':['Giant Mole','Earth & digging claws','earth','claws'],
- gregorovic:['Gregorovic','Pale mask & shadow','spectral','mask'],
- hermod:['Hermod','Armoured spirit','spectral','mask'],
- 'kalphite-king':['Kalphite King','Golden carapace & mandibles','gold','beetle'],
- 'kalphite-queen':['Kalphite Queen','Green carapace & wings','venom','beetle'],
- 'king-black-dragon':['King Black Dragon','Black scales & three heads','rust','hydra'],
- 'general-graardor':['General Graardor','Green skin & Bandos armour','earth','mask'],
- 'kree-arra':["Kree’arra",'Blue feathers & sweeping wings','ice','wings'],
- legiones:['Legiones','Ascension crystal','teal','crystal'],
- magister:['The Magister','Dark robes & spectral magic','shadow','mask'],
- 'queen-black-dragon':['Queen Black Dragon','Dark scales & dragonfire','rust','dragon'],
- 'rex-matriarchs':['Rex Matriarchs','Three elemental dinosaurs','venom','dragon'],
- 'rise-of-the-six':['Rise of the Six','Spectral Barrows armour','spectral','mask'],
- sanctum:['Sanctum of Rebirth','Sandstone & spectral guardians','sand','gate'],
- 'twin-furies':['Twin Furies','Crimson wings & fire','crimson','wings'],
- vorago:['Vorago','Living stone & blue energy','ice','stone'],
- vorkath:['Vorkath','Frost & undead dragonbone','spectral','dragon'],
- yakamaru:['Yakamaru','Water & serpentine forms','teal','serpent'],
+ 'arch-glacor':['Arch-Glacor','Glacial ice & frozen core','ice'],
+ vindicta:['Vindicta & Gorvek','Zarosian armour & dragonfire','teal'],
+ rasial:['Rasial','The First Necromancer','spectral'],
+ kerapac:['Kerapac','Golden armour & lightning','gold'],
+ nex:['Nex','Blood, ice & ancient shadow','blood'],
+ raksha:['Raksha','The shadow colossus','shadow'],
+ araxxor:['Araxxor','Silk, venom & chitin','venom'],
+ helwyr:['Helwyr','The blue shapeshifter','teal'],
+ telos:['Telos','Stone & green anima','anima'],
+ solak:['Solak','Living bark & blight','bark'],
+ 'tzkal-zuk':['TzKal-Zuk','Obsidian & molten fire','lava'],
+ zamorak:['Zamorak','Crimson skin & chaos','crimson'],
+ amascut:['Amascut','Green robes & golden crown','anima'],
+ 'angel-of-death':['Nex: Angel of Death','Ancient armour & shadow','shadow'],
+ barrows:['Barrows brothers','Burial armour & spectral forms','spectral'],
+ 'beastmaster-durzag':['Beastmaster Durzag','Armour, chains & tusks','rust'],
+ 'chaos-elemental':['Chaos Elemental','Shifting violet form','shadow'],
+ 'corporeal-beast':['Corporeal Beast','Pale hide & spiked limbs','charcoal'],
+ croesus:['Croesus','Fungal growth & golden spores','fungal'],
+ 'dagannoth-kings':['Dagannoth Kings','Three crowns of Waterbirth','teal'],
+ 'ed1-temple-of-aminishi':['Temple of Aminishi','Seiryu & the azure sea','ice'],
+ 'ed2-dragonkin-laboratory':['Dragonkin Laboratory','Black stone & dragonkin experiments','shadow'],
+ 'ed3-shadow-reef':['The Shadow Reef','The Ambassador & black stone','shadow'],
+ 'fight-kiln':['Fight Kiln','TokHaar & volcanic glass','lava'],
+ 'flesh-hatcher-mhekarnahz':['Flesh-hatcher Mhekarnahz','A watchful eye & reaching tendrils','blood'],
+ 'gate-of-elidinis':['Gate of Elidinis','Fractured stone & pink corruption','ruin'],
+ 'ghrazi-blood-knights':['Ghrazi blood knights','Blood-red armour','blood'],
+ 'giant-mole':['Giant Mole','Earth & digging claws','earth'],
+ gregorovic:['Gregorovic','Ivory mask & curved blades','sand'],
+ hermod:['Hermod','Armoured spirit','spectral'],
+ 'kalphite-king':['Kalphite King','Golden carapace & mandibles','gold'],
+ 'kalphite-queen':['Kalphite Queen','Green carapace & wings','venom'],
+ 'king-black-dragon':['King Black Dragon','Black scales & three heads','charcoal'],
+ 'general-graardor':['General Graardor','Green skin & Bandos armour','earth'],
+ 'kree-arra':["Kree’arra",'Blue feathers & sweeping wings','ice'],
+ legiones:['Legiones','Ascension crystal','teal'],
+ magister:['The Magister','Dark robes & spectral magic','shadow'],
+ 'queen-black-dragon':['Queen Black Dragon','Dark scales & dragonfire','rust'],
+ 'rex-matriarchs':['Rex Matriarchs','Four elemental dinosaurs','venom'],
+ 'rise-of-the-six':['Rise of the Six','Spectral Barrows armour','spectral'],
+ sanctum:['Sanctum of Rebirth','Soul-fire & underworld guardians','teal'],
+ 'twin-furies':['Twin Furies','Crimson wings & fire','crimson'],
+ vorago:['Vorago','Living stone & blue energy','ice'],
+ vorkath:['Vorkath','Frost & undead dragonbone','ice'],
+ yakamaru:['Yakamaru','Water & serpentine forms','teal'],
 };
 const canonical=s=>({'angel-of-death-7s':'angel-of-death','angel-of-death-small-teams':'angel-of-death','vorago-hm':'vorago','giant-mole-hm':'giant-mole','bm':'beastmaster-durzag','aod':'angel-of-death','kbd':'king-black-dragon','kerapac-hm':'kerapac','ed1':'ed1-temple-of-aminishi','ed2':'ed2-dragonkin-laboratory','ed3':'ed3-shadow-reef','orikalka':'rex-matriarchs','osseous':'rex-matriarchs','pthentraken':'rex-matriarchs','rathis':'rex-matriarchs'}[s]||s);
 function guideBoss(g){
@@ -66,11 +67,7 @@ export function makeDirectory(catalog,original){
  for(const g of catalog){let id=guideBoss(g);if(!id&&g.boss&&traits[g.boss])id=g.boss;if(!id)continue;
   if(!map.has(id))map.set(id,{id,name:traits[id][0],subtitle:traits[id][1],focus:traits[id][1],party:'See guides',guides:[]});map.get(id).guides.push(g);
  }
- return [...map.values()].filter(b=>b.guides.length).map(b=>({...b,partyOptions:[...new Set([/solo/i.test(b.party)||b.guides.some(g=>/\bsolo\b/i.test(g.displayTitle||g.title))?'solo':null,/group|duo/i.test(b.party)||b.guides.some(g=>/\b(?:duo|trio|group|4man|7s)\b/i.test(g.displayTitle||g.title))?'group':null].filter(Boolean))],name:traits[b.id][0],subtitle:traits[b.id][1],palette:traits[b.id][2],motif:traits[b.id][3],type:['croesus','gate-of-elidinis'].includes(b.id)?'skilling':'combat',style:[...new Set(b.guides.flatMap(styles))],guide:[...new Set(b.guides.map(kind))],url:'/bosses/'+b.id+'/'})).sort((a,b)=>a.name.localeCompare(b.name,'en'));
-}
-function glyph(b){
- const paths={hourglass:'M120 29v182M87 49h66l-13 51-20 20 20 20 13 51H87l13-51 20-20-20-20ZM87 71 40 36 25 100 69 153 99 140m54-69 47-35 15 64-44 53-30-13M100 88h40m-40 68h40',ancient:'M120 36 146 97 206 46 187 151 152 192 120 215 88 192 53 151 34 46 94 97ZM94 97l26 32 26-32M120 129v86M75 120l19 14m71-14-19 14M53 151l45 16m89-16-45 16',raptor:'M47 188 58 139 101 111 90 61 133 82 161 42 175 92 207 117 183 149 154 145 136 179 132 211ZM133 82l20 39 30 2M102 153l34 26M162 112l12 4M47 188l59-5',wolf:'M77 100 64 61 37 42m27 19 6-36m93 75 13-39 27-19m-27 19-6-36M77 100 56 139 91 157 120 209 149 157 184 139 163 100 120 121ZM83 133l20 8m54-8-20 8M103 169h34',tree:'M120 30v174M120 79 79 59 59 31m61 69 42-29 23-39M79 59l-7 43-39 17m129-48 12 42 32 21M120 133 78 145 57 171m63-38 43 15 23 27M120 167l-28 31-31 17m59-48 27 32 31 16M120 204l-16 19m16-19 16 19M94 95l26 17 26-17',volcano:'M49 196 72 166 70 97 99 117 120 38 141 117 170 97 168 166 191 196ZM72 166h96M99 117l21 40 21-40M120 157v39M97 66l-8-26m54 26 8-26M49 196v17h142v-17',chaos:'M70 96 44 35 98 66 120 42 142 66 196 35 170 96 174 149 142 173 120 213 98 173 66 149ZM70 96l50 36 50-36M120 132v81M86 119l17 8m51-8-17 8M98 173l22-15 22 15',crystal:'M120 25 62 92 80 168 120 218 160 168 178 92ZM120 25v193M62 92l58 26 58-26M80 168l40-50 40 50',dragon:'M50 173 30 74 89 111 120 39 151 111 210 74 190 173 145 159 120 207 95 159ZM89 111l31 32 31-32M99 139l10 7m32-7-10 7',mask:'M64 43 120 23 176 43 189 118 163 183 120 215 77 183 51 118ZM75 101l31 12-17 18m76-30-31 12 17 18M101 166h38',wings:'M120 43v160M120 112 45 40 28 106 70 173 120 143 170 173 212 106 195 40ZM120 112 63 81m57 31 57-31M95 173l25 30 25-30',spider:'M120 77 144 111 144 151 120 176 96 151 96 111ZM96 111 54 77 29 35m67 88-56-2-23 34m79-16-40 39-5 38m93-105 42-34 25-42m-67 88 56-2 23 34m-79-16 40 39 5 38',antlers:'M90 114 74 71 45 39m29 32 6-43m10 86-43-9-21-25m124 34 16-43 29-32m-29 32-6-43m-10 86 43-9 21-25M90 114 82 159 120 208 158 159 150 114 120 142ZM102 151h8m20 0h8',stone:'M120 25 74 51 47 105 67 174 120 217 173 174 193 105 166 51ZM74 51l46 61 46-61M47 105l73 7 73-7M67 174l53-62 53 62M120 25v192',crown:'M51 89 84 123 120 38 156 123 189 89 168 184H72ZM72 184v22h96v-22M97 150h46',fungus:'M35 117c5-67 165-117 175 0ZM120 55v143m-22 0h44M63 94h9m36-22h10m33 18h12M51 135c-25 10-25 39 5 43m128-43c25 10 25 39-5 43',gate:'M48 211V83l32-44h80l32 44v128M80 211V83h80v128M80 39v44m80-44v44M105 118l15-17 15 17-15 28ZM105 176h30',serpent:'M48 188c101 56 179-27 105-62S39 83 95 40l62 10-21 39-41-49M153 126c24 27 0 48-38 40M136 60h8',beetle:'M120 60 84 84 68 130 83 183 120 213 157 183 172 130 156 84ZM120 60V213M84 84 67 39m89 45 17-45M68 130 28 100m144 30 40-30M83 183l-38 26m112-26 38 26M68 146H28m144 0h40',claws:'M48 66 70 118 45 167 82 194 120 157 158 194 195 167 170 118 192 66 149 101 120 65 91 101ZM83 135l17 12m57-12-17 12',hydra:'M120 206V99l-25-43-35-15-21 33 39 38 42 94 42-94 39-38-21-33-35 15-25 43M96 60l24-35 24 35',cloud:'M48 138c-40-38 8-93 49-67 17-58 103-33 86 19 59 14 31 87-18 72-23 54-100 38-98-7Z'};
- return `<svg class="sigil bespoke-sigil" viewBox="0 0 240 240" fill="none" aria-hidden="true"><circle class="orbit" cx="120" cy="120" r="106"/><path class="creature" d="${paths[b.motif]||paths.mask}"/><path class="eyes" d="M112 118h16"/></svg>`;
+ return [...map.values()].filter(b=>b.guides.length).map(b=>({...b,partyOptions:[...new Set([/solo/i.test(b.party)||b.guides.some(g=>/\bsolo\b/i.test(g.displayTitle||g.title))?'solo':null,/group|duo/i.test(b.party)||b.guides.some(g=>/\b(?:duo|trio|group|4man|7s)\b/i.test(g.displayTitle||g.title))?'group':null].filter(Boolean))],name:traits[b.id][0],subtitle:traits[b.id][1],palette:traits[b.id][2],type:['croesus','gate-of-elidinis'].includes(b.id)?'skilling':'combat',style:[...new Set(b.guides.flatMap(styles))],guide:[...new Set(b.guides.map(kind))],url:'/bosses/'+b.id+'/'})).sort((a,b)=>a.name.localeCompare(b.name,'en'));
 }
 function card(b,art){return `<article class="boss-card" data-boss="${b.id}" data-palette="${b.palette}" data-type="${b.type}" data-party="${b.partyOptions.join('|')}" data-style="${b.style.join('|')}" data-guide="${b.guide.join('|')}" data-name="${esc(b.name+' '+b.subtitle+' '+b.focus)}" data-saved-id="${b.id}"><a class="boss-card-link" href="${b.url}"><div class="card-top"><span class="catalog-number">${b.type==='skilling'?'SKILLING':'COMBAT'}</span>${arrow}</div><div class="card-art">${art||glyph(b)}</div><div class="card-copy"><h3>${esc(b.name)}</h3><p>${esc(b.subtitle)}</p><div class="card-foot"><span>${b.guides.length} guide${b.guides.length===1?'':'s'}</span><span>Open hub →</span></div></div></a><button class="save-button" type="button" data-save="${b.id}" aria-label="Save ${esc(b.name)}" aria-pressed="false"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4Z"/></svg><span>Save</span></button></article>`}
 const options=(label,values)=>`<option value="">${label}</option>`+values.map(([v,l])=>`<option value="${v}">${l}</option>`).join('');
@@ -93,10 +90,13 @@ function chrome(html){return html.replace(/>([^<]+)</g,(_,text)=>'>'+text.replac
  .replace('</head>','<link rel="stylesheet" href="/assets/boss-hub.css"><noscript><style>.boss-filters,.boss-card .save-button,[data-guidance-action]{display:none!important}</style></noscript></head>');}
 export function polishReader(files,root){
  const catalog=JSON.parse(files.get('data/catalog.json')),original=JSON.parse(files.get('data/bosses.json')),bosses=makeDirectory(catalog,original);
+ const visuals=JSON.parse(fs.readFileSync(path.join(root,'src/boss-visuals.json'),'utf8'));
+ for(const b of bosses)if(!visuals.bosses.some(v=>v.id===b.id))throw new Error('Missing visual provenance: '+b.id);
+ files.set('data/boss-visuals.json',Buffer.from(JSON.stringify(visuals)));
  const art=new Map();for(const b of bosses){const hub=files.get(`bosses/${b.id}/index.html`)?.toString();if(hub)art.set(b.id,hub.match(/<div class="boss-hero-art[^\"]*">([\s\S]*?)<\/div>/)?.[1]?.replace(/<svg class="sigil\b[^>]*>[\s\S]*?<\/svg>/,glyph(b)));}
  const cards=bosses.map(b=>card(b,art.get(b.id))).join('');
  const originalHome=files.get('index.html').toString();
- const home=`<main id="main" tabindex="-1"><div class="page-kicker"><span>THE GIELINOR FIELD GUIDE</span><span>RS3 / PVM</span></div><header class="directory-heading"><div><div class="eyebrow">ENCOUNTERS, IN ONE PLACE</div><h1>Boss hubs<span>.</span></h1><p>Find the fight. Choose the guide.</p></div><div class="directory-shortcuts"><a class="quiet-link" href="/guides/">All ${catalog.length} guides →</a><button class="quiet-link guidance-restore" type="button" data-guidance-action="show" aria-controls="guided-start-hint" aria-expanded="true" hidden>Show guided start</button></div></header>${entryLinks()}<section class="boss-section" id="boss-index" data-boss-browser aria-label="Boss directory">${filters()}<div class="boss-grid">${cards}</div><div class="empty-state" id="boss-empty" hidden><h2>No bosses match these filters.</h2><p>Remove a filter or search for another name.</p><button class="button" type="button" data-clear-boss-filters>Clear filters</button></div></section><p class="directory-note">${bosses.length} hubs link the boss guides in this edition. Content is a local source snapshot; game-version review is not verified. <a href="/about/#sources">Sources & content status →</a></p></main>`;
+ const home=`<main id="main" tabindex="-1"><div class="page-kicker"><span>THE GIELINOR FIELD GUIDE</span><span>RS3 / PVM</span></div><header class="directory-heading"><div><div class="eyebrow">ENCOUNTERS, IN ONE PLACE</div><h1>Boss hubs<span>.</span></h1><p>Find the fight. Choose the guide.</p></div><div class="directory-shortcuts"><a class="quiet-link" href="/guides/">All ${catalog.length} guides →</a><button class="quiet-link guidance-restore" type="button" data-guidance-action="show" aria-controls="guided-start-hint" aria-expanded="true" hidden>Show guided start</button></div></header>${entryLinks()}<section class="boss-section" id="boss-index" data-boss-browser aria-label="Boss directory">${filters()}<div class="boss-grid">${cards}</div><div class="empty-state" id="boss-empty" hidden><h2>No bosses match these filters.</h2><p>Remove a filter or search for another name.</p><button class="button" type="button" data-clear-boss-filters>Clear filters</button></div></section><p class="directory-note">${bosses.length} hubs link the boss guides in this edition. Content is a local source snapshot; game-version review is not verified. <a href="/about/#sources">Sources & content status →</a> · <a href="/about/artwork/">Artwork & references →</a></p></main>`;
  files.set('index.html',Buffer.from(originalHome.replace(/<main\b[\s\S]*?<\/main>/,home).replace('<title>Explore ·','<title>Boss hubs ·')));
  const template=files.get('bosses/arch-glacor/index.html').toString();
  for(const b of bosses){const name=`bosses/${b.id}/index.html`;if(!files.has(name)){
@@ -104,12 +104,16 @@ export function polishReader(files,root){
   const main=`<main id="main" tabindex="-1"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Boss hubs</a><span>/</span><span>${esc(b.name)}</span></nav><section class="boss-hero"><div><div class="eyebrow">${b.type.toUpperCase()} ENCOUNTER</div><h1>${esc(b.name)}</h1><p>${esc(b.subtitle)}. Compare the available guides and their requirements.</p><div class="hero-actions"><a class="button primary" href="#approaches">Browse ${b.guides.length} guides →</a><button class="button" data-save="${b.id}" aria-pressed="false"><span>Save</span></button></div></div><div class="boss-hero-art">${glyph(b)}</div></section><section id="approaches"><div class="section-heading"><h2>Guides for ${esc(b.name)}</h2></div><div class="guide-groups">${rows}</div></section><p class="directory-note">Source snapshot from PvME. Each guide retains its author, source, licensing and review status. <a href="/about/#sources">Content status →</a></p></main>`;
   files.set(name,Buffer.from(template.replace(/<main\b[\s\S]*?<\/main>/,main).replace(/<title>[\s\S]*?<\/title>/,`<title>${esc(b.name)} · PvME Field Guide</title>`).replace('data-boss="arch-glacor"',`data-boss="${b.id}"`)));
  }}
+ const artworkCards=bosses.map(b=>{const v=visuals.bosses.find(v=>v.id===b.id);return `<article class="artwork-card" data-palette="${b.palette}" id="${b.id}"><div class="artwork-drawing">${glyph(b)}</div><h2><a href="${b.url}">${esc(b.name)}</a></h2><p>${esc(v.identity)}</p><ul>${v.references.map(r=>`<li><a href="${esc(r.url)}" target="_blank" rel="noreferrer">${esc(r.title)} · Wiki</a><a href="${esc(r.filePage)}" target="_blank" rel="noreferrer">Visual reference →</a></li>`).join('')}</ul></article>`}).join('');
+ const artworkMain=`<main id="main" tabindex="-1"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Boss hubs</a><span>/</span><a href="/about/">About</a><span>/</span><span>Artwork</span></nav><header class="page-intro artwork-intro"><span class="eyebrow">45 ENCOUNTERS · 45 INDIVIDUAL MARKS</span><h1>Artwork & references<span>.</span></h1><p>Each abstract mark takes its shape from the encounter it represents. Explore the RuneScape Wiki references to see the original characters and settings.</p><p>These are original geometric illustrations, not official game icons. RuneScape and its characters belong to Jagex Limited. This project is not affiliated with or endorsed by Jagex.</p></header><div class="artwork-grid">${artworkCards}</div><aside class="artwork-rights"><h2>About the references</h2><p>The references were checked on 12 November 2026. Linked Wiki images remain at their source; this artwork layer imports no game images or symbols. A Wiki link is not a licence to reuse an image. Jagex’s <a href="https://legal.jagex.com/docs/policies/fan-content-policy" target="_blank" rel="noreferrer">Fan Content Policy</a> has specific restrictions for companion and guide apps.</p><a class="quiet-link" href="/">Back to all boss hubs →</a></aside></main>`;
+ files.set('about/artwork/index.html',Buffer.from(files.get('about/index.html').toString().replace(/<main\b[\s\S]*?<\/main>/,artworkMain).replace(/<title>[\s\S]*?<\/title>/,'<title>Artwork & references · PvME Field Guide</title>')));
  let saved=files.get('saved/index.html').toString();saved=saved.replace(/<div class="boss-grid saved-grid">[\s\S]*<\/main>/,`<div class="boss-grid saved-grid">${cards}</div></main>`).replaceAll('Saved guides','Saved bosses').replaceAll('Tap the bookmark on any encounter to keep it here.','Use Save on any boss hub to keep it here.');files.set('saved/index.html',Buffer.from(saved));
  for(const [name,bytes] of files){if(!name.endsWith('.html'))continue;let html=outside(bytes.toString(),chrome).replace(/Search (\d+) guides and 12 boss hubs/g,`Search $1 guides and ${bosses.length} boss hubs`);
+ if(name==='about/index.html')html=html.replace('</main>','<p class="directory-note"><a href="/about/artwork/">Explore the boss artwork & references →</a></p></main>');
  const guide=catalog.find(g=>g.local?.slice(1)+'index.html'===name);
  const id=/^bosses\/([^/]+)\//.exec(name)?.[1]||(guide&&(guideBoss(guide)||guide.boss))||/<body\b[^>]*\bdata-boss="([^"]+)"/.exec(html)?.[1];
  const b=bosses.find(b=>b.id===id);if(b&&name.startsWith('archive/')&&!html.includes('href="'+b.url+'"'))html=html.replace('<div class="reader-directory">',`<div class="reader-directory"><a class="encounter-return" href="${b.url}">← All ${esc(b.name)} guides</a>`);
- if(b&&name.startsWith('bosses/'))html=html.replace(/<svg class="sigil\b[^>]*>[\s\S]*?<\/svg>/,glyph(b));if(b){html=html.replace(/(<body\b[^>]*)(>)/,`$1 data-palette="${b.palette}"$2`);if(name.startsWith('bosses/'))html=html.replace(/(<section class="boss-hero">[\s\S]*?<p>)[\s\S]*?<\/p>/,`$1${esc(b.name)} guides for ${esc(b.focus.toLowerCase())}. Compare the methods and their source requirements.</p>`)}
+ if(b&&name.startsWith('bosses/'))html=html.replace(/<svg class="sigil\b[^>]*>[\s\S]*?<\/svg>/,glyph(b)+`<a class="glyph-source" href="/about/artwork/#${b.id}">Artwork & references →</a>`);if(b){html=html.replace(/(<body\b[^>]*)(>)/,`$1 data-palette="${b.palette}"$2`);if(name.startsWith('bosses/'))html=html.replace(/(<section class="boss-hero">[\s\S]*?<p>)[\s\S]*?<\/p>/,`$1${esc(b.name)} guides for ${esc(b.focus.toLowerCase())}. Compare the methods and their source requirements.</p>`)}
  if(name==='index.html'||name.startsWith('bosses/'))html=html.replace(/<a class="nav-item[^"]*" href="\/"[^>]*>/,'<a class="nav-item active" href="/" aria-current="'+(name==='index.html'?'page':'location')+'">');
  if(name.startsWith('bosses/')||name==='gear/index.html'||name==='learn/index.html'||(/^(read|styles)\//.test(name))||(b&&name.startsWith('archive/'))){
   if(b?.type!=='skilling')html=html.replace('</main>',`<aside class="context-cta"><div><span class="eyebrow">FREE UPGRADES</span><h2>More to explore before buying gear.</h2><p>Browse free unlocks and improvements, with their requirements.</p></div><a class="button" href="${free}">Explore free upgrades →</a></aside></main>`);

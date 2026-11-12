@@ -18,7 +18,7 @@ The build layers these changes over the recovered reader. All 352 protected sour
 ## Verification and limits
 
 - Existing backend, content, authentication, review, conflict and publication tests remain in place.
-- Eight new tests cover the 45-hub directory, ordering, source and export preservation, routes, rating removal, all 16 pigment families' day/night contrast, explicit intersecting filters, URL restoration, saved-only behavior and storage failure semantics.
+- Eleven new tests cover the 45-hub directory, ordering, source and export preservation, routes, rating removal, all 18 pigment families' day/night contrast, explicit intersecting filters, URL restoration, saved-only behavior and storage failure semantics.
 - Manual browser cohort: Arch-Glacor, Vindicta, Nex, Rasial, Telos, Zamorak and Croesus; included full reader pages and hub navigation. Desktop and phone-width checks cover the directory, collapsed/expanded filters, empty states, local saving/reload, navigation, source links and day/night switching. Local storage changes also synchronized between the two review tabs.
 - No physical-device or Safari test. External provider media and every individual guide were not exhaustively revalidated. No live contributor submission, review or publication was created for this UI change; those flows are covered by the existing tests.
 - The local 390px harness is temporary, excluded from Git and hosted builds. The Vercel preview retains its existing access protection. No production branch, domain, database, secret, access setting or publication workflow is changed.
@@ -28,3 +28,7 @@ The build layers these changes over the recovered reader. All 352 protected sour
 A guided start and direct exploration remain equally reachable. The homepage hint can be hidden and restored by an explicit browser preference; reading progress never classifies a player or silently removes guidance. The guided page links directly back to the complete directory. Free upgrades stay visible independently because they are useful beyond a player's first encounters. Contributor entry now states that reading needs no account and offers a direct public-reading route. Its roles, invitation policy, draft ownership, review and publication safeguards are unchanged. Empty results offer a way forward instead of judging the user's choices.
 
 The original Croesus source contains explicit expired-Imgur placeholders. These remain part of the preserved source snapshot rather than being misrepresented as repaired media.
+
+## Complete glyph identity audit
+
+The follow-up replaces every shared motif with one explicit drawing per encounter, researches all 45 bosses on the RuneScape Wiki and provides a public artwork/reference gallery. Three additional tests reject repeated geometry, inconsistent rendering and missing provenance. See [BOSS-GLYPH-AUDIT.md](BOSS-GLYPH-AUDIT.md) for the full duplicate audit, reference list and direct-game-asset licensing limitation.

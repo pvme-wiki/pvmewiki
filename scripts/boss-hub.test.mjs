@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
+import { bossGlyphs, glyph, glyphGeometry } from './boss-glyphs.mjs';
 import { readSnapshot } from './reader-snapshot.mjs';
 import { guideSpans } from './patch-reader-html.mjs';
 import { makeDirectory, polishReader } from './boss-hub.mjs';
@@ -32,7 +33,7 @@ test('no authored difficulty label, rating field, tier filter or disguised repla
  const app=files.get('assets/app.js').toString();assert.doesNotMatch(app,/selectedStage|b\.level|data\.level/);
 });
 test('every internal directory, CTA and hub link points to a built target',()=>{
- for(const n of ['index.html','saved/index.html',...bosses.map(b=>b.url.slice(1)+'index.html')]){
+ for(const n of ['index.html','saved/index.html','about/artwork/index.html',...bosses.map(b=>b.url.slice(1)+'index.html')]){
   for(const[,href]of files.get(n).toString().matchAll(/href="(\/[^"#?]*)(?:[?#][^"]*)?"/g)){
    const decoded=decodeURI(href);const target=decoded==='/'?'index.html':decoded.slice(1)+(decoded.endsWith('/')?'index.html':'');assert.ok(files.has(target)||(target==='edit/index.html'&&fs.existsSync(path.join(root,'editor/index.html'))),`${n}: ${href}`);
   }
@@ -40,7 +41,8 @@ test('every internal directory, CTA and hub link points to a built target',()=>{
 });
 test('encounter pigments have at least 4.5:1 text contrast in day and night',()=>{
  const css=files.get('assets/boss-hub.css').toString();const lum=h=>h.slice(1).match(/../g).map(x=>parseInt(x,16)/255).map(x=>x<=.04045?x/12.92:((x+.055)/1.055)**2.4).reduce((s,v,i)=>s+v*[.2126,.7152,.0722][i],0);
- let n=0;for(const m of css.matchAll(/\[data-palette="([^"]+)"\]\{--specimen:light-dark\((#[a-f0-9]+),(#[a-f0-9]+)\);--specimen-wash:light-dark\((#[a-f0-9]+),(#[a-f0-9]+)\)/g)){n++;for(const[a,b]of [[m[2],m[4]],[m[3],m[5]]])assert.ok((Math.max(lum(a),lum(b))+.05)/(Math.min(lum(a),lum(b))+.05)>=4.5,m[1]);}assert.equal(n,16);
+ let n=0;for(const m of css.matchAll(/\[data-palette="([^"]+)"\]\{--specimen:light-dark\((#[a-f0-9]+),(#[a-f0-9]+)\);--specimen-wash:light-dark\((#[a-f0-9]+),(#[a-f0-9]+)\)/g)){n++;for(const[a,b]of [[m[2],m[4]],[m[3],m[5]]])assert.ok((Math.max(lum(a),lum(b))+.05)/(Math.min(lum(a),lum(b))+.05)>=4.5,m[1]);}assert.equal(n,18);
+ for(const b of bosses)assert.ok(css.includes(`[data-palette="${b.palette}"]`),b.id);
 });
 function browserDouble(search=''){
  const cards=bosses.map(b=>({dataset:{boss:b.id,name:b.name+' '+b.subtitle,type:b.type,party:b.partyOptions.join('|'),style:b.style.join('|'),guide:b.guide.join('|')},hidden:false}));
@@ -78,4 +80,32 @@ test('guidance is optional, explicitly persistent and restorable without reading
  first.buttons[1].click();assert.equal(first.card.hidden,true);assert.equal(first.buttons[0].hidden,false);assert.deepEqual(first.writes,[['guidance-visible',false]]);
  const returning=setup(false);assert.equal(returning.card.hidden,true);returning.buttons[0].click();assert.equal(returning.card.hidden,false);assert.equal(returning.buttons[0].attrs['aria-expanded'],'true');
  assert.deepEqual(returning.reads,['guidance-visible']);
+});
+
+test('every boss owns a unique silhouette and internal drawing, with no generic fallback',()=>{
+ const ids=bosses.map(b=>b.id).sort();assert.deepEqual(Object.keys(bossGlyphs).sort(),ids);
+ const normal=d=>d.replace(/\s+/g,'').toLowerCase();
+ assert.equal(new Set(ids.map(id=>normal(glyphGeometry(id).form))).size,45);
+ assert.equal(new Set(ids.map(id=>normal(glyphGeometry(id).detail))).size,45);
+ for(const id of ids){const {form,detail}=glyphGeometry(id);assert.match(form,/^M/);assert.match(detail,/^M/);assert.match(form+detail,/^[MmLlHhVvCcSsQqTtAaZz0-9., +\-]+$/);assert.doesNotMatch(glyph({id}),/<image|href=|<script|onload|<foreignObject/);}
+ assert.throws(()=>glyph({id:'unknown-boss'}),/Missing encounter glyph/);
+ assert.throws(()=>glyph({id:'toString'}),/Missing encounter glyph/);
+ assert.ok(JSON.parse(files.get('data/bosses.json')).every(b=>!Object.hasOwn(b,'motif')));
+});
+test('home, saved, all hubs and the reference gallery use the same individually registered geometry',()=>{
+ const drawings=n=>[...files.get(n).toString().matchAll(/<svg class="sigil bespoke-sigil" data-glyph="([^"]+)"[\s\S]*?<\/svg>/g)];
+ for(const n of ['index.html','saved/index.html','about/artwork/index.html']){
+  const marks=drawings(n);assert.equal(marks.length,45,n);
+  assert.equal(new Set(marks.map(m=>m[1])).size,45,n);
+  for(const [svg,id]of marks)assert.equal(svg,glyph({id}),`${n}: ${id}`);
+ }
+ for(const b of bosses){const n=b.url.slice(1)+'index.html';assert.deepEqual(drawings(n).map(m=>m[1]),[b.id]);assert.ok(files.get(n).toString().includes(`href="/about/artwork/#${b.id}"`),b.id);}
+});
+test('all 45 glyphs have revisioned Wiki provenance and explicit asset-reuse limitations',()=>{
+ const data=JSON.parse(files.get('data/boss-visuals.json'));
+ assert.equal(data.researchedAt,'2026-11-12');assert.equal(data.bosses.length,45);
+ assert.deepEqual(data.bosses.map(b=>b.id).sort(),bosses.map(b=>b.id).sort());
+ for(const b of data.bosses){assert.ok(b.identity.length>30);assert.equal(b.gameAssetImported,false);assert.equal(b.artwork,'original-geometric-svg');assert.ok(b.references.length);for(const r of b.references){assert.ok(r.revision>0);assert.equal(new URL(r.url).hostname,'runescape.wiki');assert.ok(new URL(r.filePage).pathname.startsWith('/w/File:'));}}
+ assert.match(data.rights.limitation,/6\.1\.3/);assert.ok(![...files.keys()].some(n=>n.startsWith('assets/boss-references/')));
+ const gallery=files.get('about/artwork/index.html').toString();assert.match(gallery,/not official game icons/);assert.match(gallery,/imports no game images or symbols/);
 });
