@@ -6,6 +6,7 @@ import { readSnapshot, writeFiles, sha256 } from './reader-snapshot.mjs';
 import { loadHostedContent, documentText } from './hosted-content.mjs';
 import { checkProductionPublication } from './check-publication.mjs';
 import { patchHtml } from './patch-reader-html.mjs';
+import { polishReader } from './boss-hub.mjs';
 import { mediaWikiDraft } from './mediawiki.mjs';
 import { escapeHtml, textContent } from '../editor/shared/model.mjs';
 
@@ -83,6 +84,7 @@ for (const { document } of hosted.published.values()) {
   if (!files.has(exportPath)) throw Error(`Missing original export: ${exportPath}`);
   files.set(exportPath, Buffer.from(mediaWikiDraft(document)));
 }
+polishReader(files, root);
 fs.rmSync(out, { recursive: true, force: true });
 writeFiles(files, out);
 execFileSync(process.execPath, ['build.mjs'], { cwd: path.join(root, 'editor'), stdio: 'inherit' });
