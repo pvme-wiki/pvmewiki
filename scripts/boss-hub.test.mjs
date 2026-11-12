@@ -19,7 +19,7 @@ test('all 45 source-backed boss hubs are alphabetical, unique and available with
  for(const b of bosses){const reader=files.get(`read/${b.id}/index.html`);if(reader)assert.ok(reader.toString().includes(`data-palette="${b.palette}"`),b.id);assert.ok(b.guides.length);assert.ok(files.has(b.url.slice(1)+'index.html'));assert.ok(b.guides.every(g=>catalog.some(c=>c.local===g.local)));}
  const home=files.get('index.html').toString();assert.equal((home.match(/class="boss-card"/g)||[]).length,45);
  assert.match(home,/<h1>Boss hubs/);assert.match(home,/data-boss-filter="type"/);assert.match(home,/<details class="more-filters">/);
- assert.match(home,/\.boss-filters,.boss-card \.save-button\{display:none!important\}/);
+ assert.match(home,/\.boss-filters,.boss-card \.save-button,\[data-guidance-action\]\{display:none!important\}/);
  assert.doesNotMatch(home,/<script[^>]*>[^<]+|\son(?:click|submit|change)=/);
 });
 test('polish preserves all 352 protected article bodies, source exports and editorial files',()=>{
@@ -65,4 +65,17 @@ test('local shortlist tolerates unavailable and malformed storage without claimi
  const app=files.get('assets/app.js').toString();const helpers=app.slice(app.indexOf('let volatile='),app.indexOf('let toastTimeout'));
  for(const stored of ['42','{}','null','broken JSON']){const c=vm.createContext({localStorage:{getItem(){return stored},setItem(){}}});vm.runInContext(helpers,c);assert.equal(vm.runInContext('saved.size',c),0);}
  const c=vm.createContext({localStorage:{getItem(){throw Error('Blocked')},setItem(){throw Error('Blocked')}}});vm.runInContext(helpers,c);assert.equal(vm.runInContext("writeStore('saved',['croesus'])",c),false);assert.equal(vm.runInContext("readStore('saved',[])[0]",c),'croesus');assert.match(app,/Saved on this page only\. Browser storage is unavailable\./);
+});
+test('guidance is optional, explicitly persistent and restorable without reading player progress',()=>{
+ const code=fs.readFileSync(path.join(root,'src/boss-browser.js'),'utf8').split('// Guidance recedes')[1];
+ function setup(stored=true){
+  const container={dataset:{}},card={hidden:false,closest:()=>container},writes=[],reads=[];
+  const buttons=['show','hide'].map(action=>({dataset:{guidanceAction:action},hidden:false,attrs:{},setAttribute(k,v){this.attrs[k]=v},addEventListener(k,fn){this.click=fn}}));
+  const c=vm.createContext({document:{querySelector:s=>s==='[data-guidance-card]'?card:{focus(){}},querySelectorAll:()=>buttons},readStore:(k,f)=>{reads.push(k);return stored??f},writeStore:(k,v)=>{writes.push([k,v]);return true},toast(){}});
+  vm.runInContext('// Guidance recedes'+code,c);return {card,container,buttons,writes,reads};
+ }
+ const first=setup();assert.equal(first.card.hidden,false);assert.equal(first.writes.length,0);
+ first.buttons[1].click();assert.equal(first.card.hidden,true);assert.equal(first.buttons[0].hidden,false);assert.deepEqual(first.writes,[['guidance-visible',false]]);
+ const returning=setup(false);assert.equal(returning.card.hidden,true);returning.buttons[0].click();assert.equal(returning.card.hidden,false);assert.equal(returning.buttons[0].attrs['aria-expanded'],'true');
+ assert.deepEqual(returning.reads,['guidance-visible']);
 });

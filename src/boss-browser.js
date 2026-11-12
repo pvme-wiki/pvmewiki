@@ -50,3 +50,16 @@ if(browser){
  document.querySelectorAll('[data-clear-boss-filters]').forEach(b=>b.addEventListener('click',()=>{for(const c of Object.values(controls))if(c){if(c.type==='checkbox')c.checked=false;else c.value=''}commitBossFilters(false);controls.q?.focus()}));
  restoreBossFilters();
 }
+// Guidance recedes only by an explicit choice, never by scoring a player.
+const guidanceCard=document.querySelector('[data-guidance-card]');
+if(guidanceCard){
+ const guidanceButtons=[...document.querySelectorAll('[data-guidance-action]')];
+ function showGuidance(visible,persist=false){
+  guidanceCard.hidden=!visible;
+  guidanceCard.closest('.discovery-links').dataset.guidanceHidden=String(!visible);
+  for(const button of guidanceButtons){button.hidden=button.dataset.guidanceAction==='show'?visible:!visible;button.setAttribute('aria-expanded',String(visible));}
+  if(persist&&!writeStore('guidance-visible',visible))toast('This choice applies on this page. Browser storage is unavailable.');
+ }
+ for(const button of guidanceButtons)button.addEventListener('click',()=>{const show=button.dataset.guidanceAction==='show';showGuidance(show,true);document.querySelector(show?'.guidance-link':'.guidance-restore')?.focus()});
+ showGuidance(readStore('guidance-visible',true)!==false);
+}
