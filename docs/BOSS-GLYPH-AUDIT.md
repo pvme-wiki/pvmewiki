@@ -6,7 +6,7 @@ Every catalogued encounter now has an individually drawn geometric SVG. No share
 
 Research used the RuneScape Wiki’s supported MediaWiki API: introductions, current page revisions, page-image and file metadata, followed by visual inspection of all 45 primary reference thumbnails and 11 additional references for collection encounters. Human-readable article routes were unavailable to the web reader; the supported API worked normally. The machine-readable evidence is `src/boss-visuals.json`; the built `/about/artwork/` page links each encounter’s articles and visual-reference file pages. Article revision IDs pin the research, while live reference links may change. No Wiki prose was copied.
 
-The imagery informed traits rather than tracing: for example, Durzag has a tusked airut silhouette; Barrows uses burial mounds and helms; Mhekarnahz has a central eye and tendrils; Rex Matriarchs includes Osseous as the fourth dinosaur. Palettes corrected from the references include Amascut’s green and gold, Gate’s stone and pink corruption, and black/grey dragon and beast pigments. These are visual cues, not new gameplay advice.
+The imagery informed traits rather than tracing: for example, Durzag has a tusked airut silhouette; Barrows uses burial mounds and helms; Mhekarnahz has a central eye and tendrils; Rex Matriarchs includes Osseous as the fourth dinosaur. Palettes corrected from the references include Amascut’s green and gold, Gate’s stone and pink corruption, black/grey dragon and beast pigments, and the Furies’ violet/blue forms. These are visual cues, not new gameplay advice.
 
 ## Asset rights and limitations
 

@@ -48,7 +48,7 @@ const traits={
  'rex-matriarchs':['Rex Matriarchs','Four elemental dinosaurs','venom'],
  'rise-of-the-six':['Rise of the Six','Spectral Barrows armour','spectral'],
  sanctum:['Sanctum of Rebirth','Soul-fire & underworld guardians','teal'],
- 'twin-furies':['Twin Furies','Crimson wings & fire','crimson'],
+ 'twin-furies':['Twin Furies','Violet wings & twin forms','violet'],
  vorago:['Vorago','Living stone & blue energy','ice'],
  vorkath:['Vorkath','Frost & undead dragonbone','ice'],
  yakamaru:['Yakamaru','Water & serpentine forms','teal'],
