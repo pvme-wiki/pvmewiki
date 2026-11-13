@@ -80,3 +80,8 @@ export function moderatorReviewUrl(review, session) {
     return url.origin + url.pathname;
   } catch { return ''; }
 }
+
+export function sameGuideView(hash,guideId) {
+  const match=/^#\/guide\/([a-z0-9-]+)\/(edit|preview|review)$/.exec(hash||'');
+  return !!guideId && match?.[1]===guideId;
+}

@@ -1,4 +1,4 @@
-# Search, navigation and editor review draft
+# Search, navigation and editor review draft\n\nHistorical record for PR #4. The later [feedback completion](editor-feedback-completion.md) expands the editing limits described here.
 
 Review branch: `codex/search-navigation`. Base: `a6a71e953d4003876f87599a0aa08f9d0725f58c`.
 Production promotion is not part of this change.

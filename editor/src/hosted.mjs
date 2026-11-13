@@ -1,8 +1,9 @@
+import { createImageEditor } from './image-editor.mjs';
 import { sectionIconChoices } from "./icon-picker.mjs";
 import { mountWriter } from './writer.mjs';
-import { reviewChangesHTML, iconChangePreview } from './review-changes.mjs';
+import { reviewChangesHTML, iconChangePreview, changePreviewHTML } from './review-changes.mjs';
 import { HostedAdapter } from './adapter.mjs';
-import { canReview, canReviewSubmission, canCheckPublication, submissionStatus, authNotice, findGuides, guideCategories, canPrepareReplacement, moderatorReviewUrl } from './hosted-workflow.mjs';
+import { sameGuideView, canReview, canReviewSubmission, canCheckPublication, submissionStatus, authNotice, findGuides, guideCategories, canPrepareReplacement, moderatorReviewUrl } from './hosted-workflow.mjs';
 import { themeOptions } from './theme.mjs';
 import { renderDocument, textContent, updateEmojiNode, getEditableEmojiNodes, EMOJI_ASSETS, assertDocument } from '../shared/model.mjs';
 import { escapeHTML as e, sectionsOf, changedBlocks, conflictPlan, resolveConflict, timeLabel } from './document.mjs';
@@ -61,6 +62,8 @@ async function checkReturnedPublication(review, version, { automatic = true, tri
 let identityGeneration = 0, connectionSequence = 0, reconnectPromise;
 let activeHash = location.hash;
 let saveTimer, savePromise, toastTimer, writer, writerKey;
+let imageEditor;
+function imageTools(){return imageEditor ||= createImageEditor({dialog,getWriter:()=>writer,show:showDialog,notice:toast});}
 const writerHistories = new Map();
 let tabId;
 try {
@@ -133,7 +136,7 @@ function gate(label = 'Continue editing') {
   app.innerHTML = shell(`<section class="access-panel"><span class="access-rune">${rune}</span><h1>${unavailable ? 'Editing is unavailable.' : 'Sign in to edit.'}</h1><p>${unavailable ? 'Read the guides while contributor access is unavailable.' : 'Editing is available to invited contributors. Sign in with Discord to save drafts.'}</p>${unavailable ? button('reconnect', 'Check connection', 'primary') : signInLink(label === 'Continue editing' ? 'Sign in to edit' : 'Sign in with Discord')}<a class="text-button" href="#/">Browse editable guides ${icon('arrow')}</a><a class="text-button" href="/">Read without signing in ${icon('arrow')}</a></section>`);
 }
 function howItWorks() {
-  showDialog(`<div class="dialog-heading"><h2>How editing works</h2></div><ol class="how-steps"><li><strong>Edit and save</strong><span>Drafts autosave to your account. You can also use Save draft.</span></li><li><strong>Send for review</strong><span>Check the preview and explain your change. Reviewers receive the version you send; later draft edits stay in your draft.</span></li><li><strong>Check My submissions</strong><span>My submissions shows review decisions, notes and publication status.</span></li></ol><p class="dialog-note">If versions conflict, compare them before saving. Original links, media and layout are preserved. Writing tools explain supported Markdown and icon shortcuts.</p>${button('close-dialog', 'Back to the editor', 'primary full')}`);
+  showDialog(`<div class="dialog-heading"><h2>How editing works</h2></div><ol class="how-steps"><li><strong>Edit and save</strong><span>Drafts autosave to your account. You can also use Save draft.</span></li><li><strong>Send for review</strong><span>Check the preview and explain your change. Reviewers receive the version you send; later draft edits stay in your draft.</span></li><li><strong>Check My submissions</strong><span>My submissions shows review decisions, notes and publication status.</span></li></ol><p class="dialog-note">If versions conflict, compare them before saving. Edit text, lists, links and images in Markdown, then check Preview. Original source credits and account permissions stay protected. <a href="/contribute/" target="_blank" rel="noopener noreferrer">Read the contribution guide</a>.</p>${button('close-dialog', 'Back to the editor', 'primary full')}`);
 }
 function libraryResults() {
   const filtered = findGuides(state.catalog, { query: state.query, category: state.filter });
@@ -209,9 +212,9 @@ function renderEditor() {
   const selected = sections.find(section => section.id === state.section) || sections.find(section => section.blocks.some(block => block.editable)) || sections[0];
   state.section = selected.id;
   const index = sections.indexOf(selected);
-  app.innerHTML = shell(`${guideHeader('edit')}${replacementNotice()}<section class="writing-workspace editing-panel" aria-label="Edit guide section"><div class="writer-bar"><label class="writer-section-picker" for="section-select"><span>Section</span><select id="section-select">${sections.map((section,i)=>`<option value="${e(section.id)}" ${section.id===selected.id?'selected':''}>${i+1}. ${e(section.title)}</option>`).join('')}</select></label><details class="writer-tools"><summary>Writing tools</summary><div><p id="writer-help">Use **bold**, *italic*, __underline__ and :icon: shortcuts. Start typing an icon name after a colon.</p><button type="button" class="button small" data-action="insert-icon">Insert icon</button><button type="button" class="button small" data-action="section-icons">Replace an icon</button><button type="button" class="button small" data-action="writer-bold">Bold</button><button type="button" class="button small" data-action="writer-italic">Italic</button><p>Original links, images and layout stay intact. Select an existing icon to replace it. Unknown shortcuts stay as text.</p><a href="https://pvme.io/pvme-guides/editor-resources/editor-references/rotation-builder/" target="_blank" rel="noopener noreferrer">PvME rotation builder ↗</a><a href="https://pvme.github.io/preset-maker/" target="_blank" rel="noopener noreferrer">PvME preset maker ↗</a><p>These tools create upstream rotations and preset images. This editor does not upload or replace preset images.</p></div></details></div><div id="writer" class="guide-writer"></div><div class="section-pagination"><button class="text-button" data-action="previous-section" ${index===0?'disabled':''}>${icon('back')}Previous</button><span>${index+1} / ${sections.length}</span><button class="text-button" data-action="next-section" ${index===sections.length-1?'disabled':''}>Next section${icon('arrow')}</button></div></section><div class="editor-bottom"><span class="save-status bottom-save" data-save-status>${statusMarkup()}</span><a class="button primary" href="${guideHref('review')}">Review changes${icon('arrow')}</a></div>`,{wide:true});
+  app.innerHTML = shell(`${guideHeader('edit')}${replacementNotice()}${state.guide.id==='pvme-guides--get-involved--making-suggestions'?'<p class="guide-help-note">This captured guide describes upstream PvME. <a href="/contribute/" target="_blank" rel="noopener noreferrer">Read how to contribute to this website.</a> Existing submissions keep their original source.</p>':''}<section class="writing-workspace editing-panel" aria-label="Edit guide section"><div class="writer-bar"><label class="writer-section-picker" for="section-select"><span>Section</span><select id="section-select">${sections.map((section,i)=>`<option value="${e(section.id)}" ${section.id===selected.id?'selected':''}>${i+1}. ${e(section.title)}</option>`).join('')}</select></label><details class="writer-tools"><summary>Writing tools</summary><div><p id="writer-help">Use Markdown for headings, lists, links and tables; **bold**, *italic*, __underline__ and :icon: shortcuts. Start typing an icon name after a colon.</p><button type="button" class="button small" data-action="insert-icon">Insert icon</button><button type="button" class="button small" data-action="section-images">Replace image</button><button type="button" class="button small" data-action="insert-image">Add image</button><button type="button" class="button small" data-action="writer-bold">Bold</button><button type="button" class="button small" data-action="writer-italic">Italic</button><p>Edit or remove bullets and formatting directly. Click an image to replace it, or use Add image. Known icon shortcuts render in Preview; unknown shortcuts stay as text.</p><a href="https://pvme.io/pvme-guides/editor-resources/editor-references/rotation-builder/" target="_blank" rel="noopener noreferrer">PvME rotation builder ↗</a><a href="https://pvme.github.io/preset-maker/" target="_blank" rel="noopener noreferrer">PvME preset maker ↗</a><p>Build a rotation or preset there, then add its image here. Include any required credit beside the image and explain the change for your reviewer.</p></div></details></div><div id="writer" class="guide-writer"></div><div class="section-pagination"><button class="text-button" data-action="previous-section" ${index===0?'disabled':''}>${icon('back')}Previous</button><span>${index+1} / ${sections.length}</span><button class="text-button" data-action="next-section" ${index===sections.length-1?'disabled':''}>Next section${icon('arrow')}</button></div></section><div class="editor-bottom"><span class="save-status bottom-save" data-save-status>${statusMarkup()}</span><a class="button primary" href="${guideHref('review')}">Review changes${icon('arrow')}</a></div>`,{wide:true});
   writerKey = `${identityGeneration}:${state.guide.id}:${selected.id}`;
-  writer = mountWriter(document.querySelector('#writer'), {historySnapshot:writerHistories.get(writerKey),document:state.document, baseline:state.baseline, blocks:selected.blocks, readerOptions, onNotice:toast, onChange: document => {
+  writer = mountWriter(document.querySelector('#writer'), {historySnapshot:writerHistories.get(writerKey),document:state.document, baseline:state.baseline, blocks:selected.blocks, readerOptions, onChooseImage:item=>imageTools().choose(item), onNotice:toast, onChange: document => {
     state.document=document; state.editVersion++; state.dirty=true; saveRecovery(); updateStatus(); clearTimeout(saveTimer);
     if (!state.saveError && !state.conflict) saveTimer=setTimeout(flushSave,3000);
   }});
@@ -344,7 +347,7 @@ function renderCurrent() {
 }
 async function navigate(hash) {
   if (hash === location.hash) return;
-  if (state.dirty || state.saving) {
+  if (!sameGuideView(hash,state.guide?.id) && (state.dirty || state.saving)) {
     await flushSave();
     if (state.dirty) { showLeaveDialog(hash); return; }
   }
@@ -429,7 +432,7 @@ function resolveDialog() {
   state.conflictPlan = conflictPlan(base, state.document, latest.document);
   state.conflictChoices = {};
   const overlaps = state.conflictPlan.filter(change => change.overlap);
-  showDialog(`<div class="dialog-heading"><h2>Choose the edits to keep</h2></div><p>${overlaps.length ? 'Some text or icons changed in both versions. Choose each version below. Separate edits will be kept together.' : 'Your edits affect different text or icons. Both sets of changes can be combined.'}</p><div class="conflict-list">${overlaps.map((change, index) => `<fieldset><legend>Changed ${change.kind === 'emoji' ? 'icon' : 'text'} ${index + 1}</legend><label class="conflict-option"><input type="radio" name="conflict-${e(change.id)}" data-conflict-id="${e(change.id)}" value="local"><span><strong>My edit</strong><span>${change.kind === 'emoji' ? iconChangePreview(change.after) : e(change.after)}</span></span></label><label class="conflict-option"><input type="radio" name="conflict-${e(change.id)}" data-conflict-id="${e(change.id)}" value="remote"><span><strong>${latest.sourceConflict ? 'Current guide' : 'Saved account draft'}</strong><span>${change.kind === 'emoji' ? iconChangePreview(change.remote) : e(change.remote)}</span></span></label></fieldset>`).join('')}</div><div id="conflict-error" role="alert"></div><div class="dialog-actions">${button('apply-resolution', overlaps.length ? 'Save selected edits' : 'Combine and save', 'primary')}${button('download-draft', 'Keep my recovery copy', 'quiet')}</div><p class="dialog-note">Nothing is overwritten until you choose. If another edit arrives, we will compare again.</p>`, 'conflict-dialog');
+  showDialog(`<div class="dialog-heading"><h2>Choose the edits to keep</h2></div><p>${overlaps.length ? 'Some text or icons changed in both versions. Choose each version below. Separate edits will be kept together.' : 'Your edits affect different text or icons. Both sets of changes can be combined.'}</p><div class="conflict-list">${overlaps.map((change, index) => `<fieldset><legend>Changed ${change.kind === 'emoji' ? 'icon' : 'text'} ${index + 1}</legend><label class="conflict-option"><input type="radio" name="conflict-${e(change.id)}" data-conflict-id="${e(change.id)}" value="local"><span><strong>My edit</strong><span>${changePreviewHTML(change,change.after)}</span></span></label><label class="conflict-option"><input type="radio" name="conflict-${e(change.id)}" data-conflict-id="${e(change.id)}" value="remote"><span><strong>${latest.sourceConflict ? 'Current guide' : 'Saved account draft'}</strong><span>${changePreviewHTML(change,change.remote)}</span></span></label></fieldset>`).join('')}</div><div id="conflict-error" role="alert"></div><div class="dialog-actions">${button('apply-resolution', overlaps.length ? 'Save selected edits' : 'Combine and save', 'primary')}${button('download-draft', 'Keep my recovery copy', 'quiet')}</div><p class="dialog-note">Nothing is overwritten until you choose. If another edit arrives, we will compare again.</p>`, 'conflict-dialog');
 }
 
 async function action(name, target) {
@@ -467,6 +470,8 @@ async function action(name, target) {
       showDialog(`<h2>Choose an icon to replace</h2><label for="section-icon-search">Find an icon in this section</label><input id="section-icon-search" type="search" autocomplete="off"><div id="section-icon-results">${sectionIconChoices(blocks)}</div>`);
       document.querySelector('#section-icon-search').focus();break;
     }
+    case 'section-images': imageTools().list(); break;
+    case 'insert-image': imageTools().choose(); break;
     case 'insert-icon': writer?.complete(); break;
     case 'writer-bold': writer?.format('**'); break;
     case 'writer-italic': writer?.format('*'); break;
@@ -689,7 +694,7 @@ async function publicationVisibilityChanged() {
 document.addEventListener('visibilitychange', publicationVisibilityChanged);
 window.addEventListener('focus', () => revalidateSession());
 window.addEventListener('hashchange', async () => {
-  if (state.dirty || state.saving) {
+  if (!sameGuideView(location.hash,state.guide?.id) && (state.dirty || state.saving)) {
     await flushSave();
     if (state.dirty) {
       const next = location.hash;

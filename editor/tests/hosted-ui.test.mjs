@@ -7,7 +7,7 @@ import * as workflow from '../src/hosted-workflow.mjs';
 import * as documentHelpers from '../src/document.mjs';
 import * as model from '../shared/model.mjs';
 import { sectionIconChoices } from '../src/icon-picker.mjs';
-import { reviewChangesHTML, iconChangePreview } from '../src/review-changes.mjs';
+import { reviewChangesHTML, iconChangePreview, changePreviewHTML } from '../src/review-changes.mjs';
 const catalog = JSON.parse(await readFile(new URL('../content/catalog.json', import.meta.url)));
 const seeds = new Map(await Promise.all(catalog.map(async guide => [guide.id, JSON.parse(await readFile(new URL(`../content/${guide.file}`, import.meta.url)))])));
 const clone = structuredClone;
@@ -34,7 +34,7 @@ async function harness({ realRender = false } = {}) {
     sessionStorage: storage, localStorage: storage, location, history: { replaceState: noop },
     document: { querySelector: element, querySelectorAll: () => [], addEventListener: (name, fn) => events.set(name, fn), getElementById: element, title: '' },
     window: { addEventListener: (name, fn) => events.set(name, fn), scrollTo: noop }, icon: () => '', rune: '', art: () => '', themeOptions: () => '',
-    mountWriter: () => ({destroy:noop,snapshot:()=>({})}), reviewChangesHTML, iconChangePreview, sectionIconChoices, ...workflow, ...documentHelpers, ...model, e: documentHelpers.escapeHTML,
+    mountWriter: () => ({destroy:noop,snapshot:()=>({})}), reviewChangesHTML, iconChangePreview, changePreviewHTML, sectionIconChoices, ...workflow, ...documentHelpers, ...model, e: documentHelpers.escapeHTML,
   });
   let source = await readFile(new URL('../src/hosted.mjs', import.meta.url), 'utf8');
   source = source.replace(/^import .*?;\s*$/gm, '').replace('const adapter = new HostedAdapter();', 'let adapter;').replace(/\nstart\(\)\.catch[\s\S]*$/, '').replaceAll('import.meta.url', JSON.stringify(new URL('../src/hosted.mjs', import.meta.url).href));
@@ -503,4 +503,19 @@ test('global Save checks an uncertain result before retrying a mutation', async(
   h.setAdapter({getDraft:async()=>{reads++;return {...draft(firstId,1),document:clone(h.state.document)};},saveDraft:async()=>{writes++;throw Error('Must read before retry');}});
   await h.action('save-draft');
   assert.equal(reads,1);assert.equal(writes,0);assert.equal(h.state.uncertain,false);assert.equal(h.state.dirty,false);
+});
+
+test('Preview and review stay available for the same unsaved guide without waiting for a cloud mutation', async () => {
+ const h=await harness();dirty(h,'Unsaved preview text');
+ const id=h.state.guide.id;h.location.hash='#/guide/'+id+'/edit';
+ h.setAdapter({saveDraft:async()=>{throw Error('Preview must not require a save');}});
+ const before=clone(h.state.document);
+ await h.navigate('#/guide/'+id+'/preview');await h.renderRoute();
+ assert.equal(h.location.hash,'#/guide/'+id+'/preview');assert.equal(h.state.dirty,true);assert.deepEqual(h.state.document,before);assert.equal(h.state.saveError,'');
+ await h.navigate('#/guide/'+id+'/review');await h.renderRoute();assert.deepEqual(h.state.document,before);assert.equal(h.state.dirty,true);
+});
+test('leaving a guide still requires a confirmed save and preserves a rejected edit',async()=>{
+ const h=await harness();dirty(h,'Keep this rejected save');h.location.hash='#/guide/'+h.state.guide.id+'/edit';const before=h.location.hash;
+ h.setAdapter({saveDraft:async()=>{throw Error('Connection unavailable');}});
+ await h.navigate('#/');assert.equal(h.location.hash,before);assert.equal(h.state.dirty,true);assert.equal(h.dialog.open,true);assert.match(h.dialog.innerHTML,/Changes not saved to your account/);
 });

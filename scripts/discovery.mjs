@@ -116,7 +116,7 @@ export function applyDiscovery(files, root, bosses) {
         )
         .replaceAll(
           "Text and known icons can be edited; media, links, tables and other formatting remain protected.",
-          "Text supports inline Markdown and known icon shortcuts. Original media, link URLs and layout are preserved.",
+          "Guide content supports Markdown, lists, links, tables, images and known ability icons. Source records and account permissions remain protected.",
         )
         .replaceAll(
           "Saved bosses and reading progress",

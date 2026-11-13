@@ -1,3 +1,5 @@
+import { sectionTitle } from "./document.mjs";
+import { createWritingHistory } from "./writing-history.mjs";
 import { EditorState, StateField } from "@codemirror/state";
 import {
   EditorView,
@@ -23,93 +25,81 @@ import {
   searchKeymap,
   highlightSelectionMatches,
 } from "@codemirror/search";
-import { emojiCompletions } from "../shared/markdown.mjs";
+import { emojiCompletions, shortcodeAsset } from "../shared/markdown.mjs";
 import {
-  renderBlock,
-  escapeHtml,
-  getEditableEmojiNodes,
-} from "../shared/model.mjs";
-import {
-  projectSection,
-  editableChanges,
-  applyProjection,
-  mapProjection,
-  projectedClipboard,
-} from "./projection.mjs";
+  projectWriting,
+  mapWritingFields,
+  applyWriting,
+  writingImageRanges,
+} from "./writing-projection.mjs";
+import { imageMarkdown } from "../shared/block-markdown.mjs";
+import { isSafeImageSource } from "../shared/image-source.mjs";
 
-class SourceWidget extends WidgetType {
-  constructor(item, readerOptions) {
+class ImageWidget extends WidgetType {
+  constructor(item, choose) {
     super();
     this.item = item;
-    this.readerOptions = readerOptions;
+    this.choose = choose;
   }
   eq(other) {
-    return this.item === other.item;
+    return (
+      this.item.text === other.item.text && this.item.from === other.item.from
+    );
   }
   toDOM() {
-    const item = this.item,
-      el = document.createElement(item.kind === "block" ? "div" : "span");
-    el.className = `writer-source writer-${item.kind}`;
-    el.contentEditable = "false";
-    if (item.kind === "block") {
-      el.classList.add("guide-content");
-      el.innerHTML = renderBlock(item.block, this.readerOptions);
-      // Keep Tab on the writing tools; full media/link keyboard navigation is available in Preview.
-      el.querySelectorAll("a,video,audio,iframe").forEach((node) => {
-        node.tabIndex = -1;
-        if (node.tagName === "A") {
-          node.target = "_blank";
-          node.rel = "noopener noreferrer";
-        }
-      });
-      const icons = getEditableEmojiNodes(item.block);
-      el.querySelectorAll("img.d-emoji").forEach((img, index) => {
-        const node = icons[index];
-        if (!node) return;
-        const button = document.createElement("button");
-        button.type = "button";
-        button.tabIndex = -1;
-        button.className = "writer-icon";
-        button.dataset.action = "choose-emoji";
-        button.dataset.block = item.block.id;
-        button.dataset.emojiNode = node.id;
-        button.setAttribute("aria-label", `Replace ${node.asset.alt} icon`);
-        img.replaceWith(button);
-        button.append(img);
-      });
-      el.setAttribute("aria-label", "Original content; layout preserved");
-    } else if (item.kind === "emoji") {
-      const button = document.createElement("button");
-      button.type = "button";
-      button.tabIndex = -1;
-      button.className = "writer-icon";
-      button.dataset.action = "choose-emoji";
-      button.dataset.block = item.blockId;
-      button.dataset.emojiNode = item.nodeId;
-      button.setAttribute("aria-label", `Replace ${item.asset.alt} icon`);
-      button.title = `Replace :${item.asset.alt}:`;
-      button.innerHTML = `<img src="${escapeHtml(item.asset.src)}" alt="" width="26" height="26" loading="lazy" referrerpolicy="no-referrer">`;
-      el.append(button);
-    } else if (item.kind === "literal") el.textContent = item.text;
-    else if (item.kind === "break") el.append(document.createElement("br"));
-    else if (item.kind === "node")
-      el.innerHTML = renderBlock(
-        {
-          id: "writer-image",
-          type: "media",
-          editable: false,
-          label: "Image",
-          sourcePath: "",
-          editableTextNodeIds: [],
-          node: item.node,
-        },
-        this.readerOptions,
-      );
-    return el;
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "writer-image";
+    button.setAttribute(
+      "aria-label",
+      "Replace image: " + (this.item.alt || "Guide image"),
+    );
+    const img = document.createElement("img");
+    img.src = this.item.src;
+    img.alt = this.item.alt;
+    img.loading = "lazy";
+    img.referrerPolicy = "no-referrer";
+    button.append(img);
+    button.addEventListener("click", () => this.choose?.(this.item));
+    return button;
   }
   ignoreEvent() {
     return true;
   }
+}
+class IconWidget extends WidgetType {
+  constructor(asset) {
+    super();
+    this.asset = asset;
+  }
+  eq(other) {
+    return this.asset.id === other.asset.id;
+  }
+  toDOM() {
+    const img = document.createElement("img");
+    img.src = this.asset.src;
+    img.alt = this.asset.alt;
+    img.title = ":" + this.asset.alt + ":";
+    img.className = "writer-inline-icon";
+    img.referrerPolicy = "no-referrer";
+    return img;
+  }
+  ignoreEvent() {
+    return false;
+  }
+}
+function iconRanges(source) {
+  const result = [];
+  for (const match of source.matchAll(/:([a-zA-Z0-9_]+):/g)) {
+    const asset = shortcodeAsset(match[1]);
+    if (asset)
+      result.push({
+        from: match.index,
+        to: match.index + match[0].length,
+        asset,
+      });
+  }
+  return result;
 }
 function iconCompletion(context) {
   const word = context.matchBefore(/:[a-zA-Z0-9_]*:?/);
@@ -167,106 +157,108 @@ export function mountWriter(
     onChange,
     onNotice,
     historySnapshot,
+    onChooseImage,
   },
 ) {
   let current = guide;
-  const initial = projectSection(guide, blocks);
+  let initial = projectWriting(guide, blocks);
+  if (
+    historySnapshot?.projection &&
+    Array.isArray(historySnapshot.projection) &&
+    historySnapshot.projection.length === initial.fields.length
+  ) {
+    const restored = historySnapshot.projection;
+    const clean = (value) =>
+      value.endsWith("\n\n") ? value.slice(0, -2) : value;
+    if (
+      typeof historySnapshot.doc === "string" &&
+      restored.every(
+        (f, i) =>
+          f.id === initial.fields[i].id &&
+          f.from >= 0 &&
+          f.to >= f.from &&
+          f.to <= historySnapshot.doc.length &&
+          clean(historySnapshot.doc.slice(f.from, f.to)) ===
+            clean(initial.fields[i].text),
+      )
+    )
+      initial = {
+        source: historySnapshot.doc,
+        fields: structuredClone(restored),
+      };
+  }
   const validated = new WeakMap();
-  const positions = StateField.define({
-    create: () => initial,
-    update(value, transaction) {
-      if (!transaction.docChanged) return value;
-      return mapProjection(value, transaction.changes);
-    },
-  });
+  const writingHistory = createWritingHistory(initial);
+  const { positions, positionsFor } = writingHistory;
   const decorations = StateField.define({
     create: (state) => decorate(state.field(positions)),
     update: (value, transaction) =>
       transaction.docChanged
-        ? decorate(transaction.state.field(positions))
+        ? decorate(
+            transaction.state.field(positions),
+            transaction.newDoc.toString(),
+          )
         : value,
     provide: (field) => EditorView.decorations.from(field),
   });
-  function decorate(projection) {
-    const values = projection.widgets.map((item) =>
+  function decorate(projection, source = projection.source) {
+    const images = writingImageRanges(source).filter((item) =>
+      isSafeImageSource(item.src),
+    );
+    const ranges = images.map((item) =>
       Decoration.replace({
-        widget: new SourceWidget(item, readerOptions),
-        block: item.kind === "block",
+        widget: new ImageWidget(item, onChooseImage),
       }).range(item.from, item.to),
     );
-    for (const mark of projection.marks)
-      if (mark.to > mark.from)
-        values.push(
-          Decoration.mark({ class: `writer-original-${mark.tag}` }).range(
-            mark.from,
-            mark.to,
+    for (const item of iconRanges(source))
+      if (!images.some((img) => item.from >= img.from && item.to <= img.to))
+        ranges.push(
+          Decoration.replace({ widget: new IconWidget(item.asset) }).range(
+            item.from,
+            item.to,
           ),
         );
-    return Decoration.set(values, true);
+    return Decoration.set(ranges, true);
   }
   const guard = EditorState.transactionFilter.of((transaction) => {
     if (!transaction.docChanged) return transaction;
-    const changes = [];
-    transaction.changes.iterChanges((from, to, _a, _b, insert) =>
-      changes.push({ from, to, insert: insert.toString() }),
-    );
-    if (editableChanges(transaction.startState.field(positions), changes)) {
-      try {
-        const projection = mapProjection(
-          transaction.startState.field(positions),
-          transaction.changes,
-        );
-        validated.set(
-          transaction,
-          applyProjection(
-            current,
-            baseline,
-            projection.fields,
-            transaction.newDoc.toString(),
-          ),
-        );
-        return transaction;
-      } catch (error) {
-        onNotice?.(error.message);
-        return [];
-      }
+    try {
+      const projection = positionsFor(transaction);
+      validated.set(
+        transaction,
+        applyWriting(
+          current,
+          baseline,
+          projection.fields,
+          transaction.newDoc.toString(),
+        ),
+      );
+      return transaction;
+    } catch (error) {
+      onNotice?.(error.message);
+      return [];
     }
-    onNotice?.(
-      "That selection includes original formatting or media. Edit the text beside it, or select an icon to replace it.",
-    );
-    return [];
   });
   const extensions = [
-    positions,
+    ...writingHistory.extensions,
     decorations,
+    EditorView.atomicRanges.of((view) => view.state.field(decorations)),
+    EditorView.clipboardOutputFilter.of((text) =>
+      text.replace(/:([a-zA-Z0-9_]+):/g, (token, name) => {
+        const asset = shortcodeAsset(name);
+        return asset
+          ? "<:" +
+              asset.alt.replace(/[^a-zA-Z0-9_]/g, "_") +
+              ":" +
+              asset.id.match(/\[(\d+)\]/)?.[1] +
+              ">"
+          : token;
+      }),
+    ),
     guard,
-    history(),
     drawSelection(),
     highlightActiveLine(),
     EditorView.lineWrapping,
-    EditorView.clipboardOutputFilter.of((text, state) => {
-      let ranges = state.selection.ranges.filter((range) => !range.empty);
-      if (!ranges.length) {
-        const lines = new Map(
-          state.selection.ranges.map((range) => {
-            const line = state.doc.lineAt(range.from);
-            return [line.number, { from: line.from, to: line.to }];
-          }),
-        );
-        ranges = [...lines.values()];
-      }
-      const raw = ranges
-        .map((range) => state.sliceDoc(range.from, range.to))
-        .join(state.lineBreak);
-      return raw === text
-        ? projectedClipboard(
-            state.field(positions),
-            state.doc.toString(),
-            ranges,
-            state.lineBreak,
-          )
-        : text;
-    }),
     EditorView.scrollMargins.of(() => ({
       top:
         Math.ceil(
@@ -327,39 +319,50 @@ export function mountWriter(
       const projection = update.state.field(positions);
       current =
         validated.get(update.transactions.at(-1)) ||
-        applyProjection(
+        applyWriting(
           current,
           baseline,
           projection.fields,
           update.state.doc.toString(),
         );
       onChange(current);
+      const picker = document.querySelector("#section-select");
+      if (picker?.options)
+        for (const option of picker.options) {
+          const block = current.blocks.find((b) => b.id === option.value);
+          if (block?.type === "heading") {
+            const prefix = option.textContent.match(/^\d+\. /)?.[0] || "";
+            option.textContent = prefix + sectionTitle(block);
+          }
+        }
       // Each update starts from the current text, while the canonical baseline stays untouched.
       projection.fields.forEach((field) => {
         field.text = update.state.doc.sliceString(field.from, field.to);
       });
     }),
   ];
-  let state = EditorState.create({
+  const config = {
     doc: initial.source,
     selection: { anchor: initial.fields[0]?.from || 0 },
     extensions,
-  });
-  if (historySnapshot?.doc === initial.source) {
-    try {
-      state = EditorState.fromJSON(
-        historySnapshot,
-        { extensions },
-        { history: historyField },
-      );
-    } catch {
-      /* A stale history never prevents opening the saved guide. */
-    }
+  };
+  if (historySnapshot?.doc === initial.source && historySnapshot.historyValue) {
+    config.selection = historySnapshot.selection;
+    config.extensions = [
+      extensions,
+      historyField.init(() => historySnapshot.historyValue),
+    ];
   }
+  const state = EditorState.create(config);
   const view = new EditorView({ parent, state });
   return {
     view,
-    snapshot: () => view.state.toJSON({ history: historyField }),
+    snapshot: () => ({
+      doc: view.state.doc.toString(),
+      selection: view.state.selection,
+      historyValue: view.state.field(historyField),
+      projection: structuredClone(view.state.field(positions).fields),
+    }),
     destroy: () => view.destroy(),
     focus: () => view.focus(),
     format(marker) {
@@ -371,6 +374,43 @@ export function mountWriter(
         changes: { from: selection.from, to: selection.to, insert: text },
         selection: { anchor: selection.from + text.length },
       });
+      view.focus();
+    },
+    images() {
+      return writingImageRanges(view.state.doc.toString());
+    },
+    replaceImage(item, src, alt) {
+      if (view.state.sliceDoc(item.from, item.to) !== item.text)
+        throw Error(
+          "The image changed while this dialog was open. Close it and select the image again.",
+        );
+      const insert = imageMarkdown(src, alt);
+      view.dispatch({ changes: { from: item.from, to: item.to, insert } });
+      if (view.state.sliceDoc(item.from, item.from + insert.length) !== insert)
+        throw Error(
+          "The image could not be added. Your previous edit is unchanged.",
+        );
+      view.focus();
+    },
+    removeImage(item) {
+      if (view.state.sliceDoc(item.from, item.to) !== item.text)
+        throw Error("The image changed. Select it again.");
+      view.dispatch({ changes: { from: item.from, to: item.to, insert: "" } });
+      view.focus();
+    },
+    insertImage(src, alt) {
+      const selection = view.state.selection.main,
+        insert = "\n\n" + imageMarkdown(src, alt) + "\n\n";
+      view.dispatch({
+        changes: { from: selection.from, to: selection.to, insert },
+      });
+      if (
+        view.state.sliceDoc(selection.from, selection.from + insert.length) !==
+        insert
+      )
+        throw Error(
+          "The image could not be added. Your previous edit is unchanged.",
+        );
       view.focus();
     },
     complete() {
