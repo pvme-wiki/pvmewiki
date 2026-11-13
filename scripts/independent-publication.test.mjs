@@ -7,7 +7,7 @@ import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { randomUUID } from 'node:crypto';
 import { documentHash } from '../server/core.mjs';
-import { updateTextNode, textContent, escapeHtml } from '../editor/shared/model.mjs';
+import { updateTextNode, textContent, escapeHtml, renderDocument } from '../editor/shared/model.mjs';
 
 const repository = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = file => JSON.parse(fs.readFileSync(file, 'utf8'));
@@ -42,6 +42,21 @@ test('independent: approved dollar syntax renders literally and release output e
     createdAt: '2026-11-11T08:00:00.000Z', approvedAt: '2026-11-11T09:00:00.000Z',
     contributorId, reviewerId,
   });
+  // Exercise a title-only metadata change in the same isolated build. Its
+  // body must remain identical, while the public page title/h1 and manifest
+  // preserve the exact approved string rather than Markdown interpretation.
+  const titleOnlyBaseline = read(path.join(root, 'editor/content/interface-guide.json'));
+  const titleOnly = { ...structuredClone(titleOnlyBaseline), title: 'Title-only $1 / $& / <safe> ![literal](data:image/png;base64,AAAA)' };
+  const titleOnlySubmissionId = randomUUID(), titleOnlyHash = documentHash(titleOnly);
+  assert.equal(renderDocument(titleOnly), renderDocument(titleOnlyBaseline));
+  write(path.join(root, `content/guides/${titleOnly.id}.json`), titleOnly);
+  write(path.join(root, `content/reviews/${titleOnlySubmissionId}.json`), {
+    schemaVersion: 1, submissionId: titleOnlySubmissionId, guideId: titleOnly.id, baseRevision: 1,
+    baselineHash: documentHash(titleOnlyBaseline), contentHash: titleOnlyHash, draftVersion: 1,
+    summary: 'pvme-audit-private-summary', reviewNote: 'pvme-audit-private-note',
+    createdAt: '2026-11-11T08:00:00.000Z', approvedAt: '2026-11-11T09:00:00.000Z',
+    contributorId, reviewerId,
+  });
   const commit = 'a'.repeat(40);
   // This isolated build deliberately uses synthetic receipts. Even when CI is
   // building production, the fixture must not contact a real approval database.
@@ -59,8 +74,16 @@ test('independent: approved dollar syntax renders literally and release output e
     assert.ok(links.length, 'The reader should preserve its table of contents');
     for (const match of links) assert.equal(match[1].replace(/<svg[\s\S]*?<\/svg>/g, ''), escapeHtml(textContent(document.blocks.find(block => block.id === heading.id))));
   }
+  const titleOnlySlots = read(path.join(root, 'reader/reader-slots.json')).pages.filter(slot => slot.sourcePath === titleOnly.source.sourcePath && slot.slotKind !== 'inline');
+  assert.ok(titleOnlySlots.length);
+  for (const slot of titleOnlySlots) {
+    const html = fs.readFileSync(path.join(root, 'dist', slot.pagePath), 'utf8');
+    assert.equal(html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/)?.[1], escapeHtml(titleOnly.title), slot.pagePath);
+    assert.equal(html.match(/<title>([\s\S]*?) · PvME Field Guide<\/title>/)?.[1], escapeHtml(titleOnly.title), slot.pagePath);
+    assert.doesNotMatch(html, /<img[^>]+src="data:image\/png;base64,AAAA/);
+  }
   const release = read(path.join(root, 'dist/data/release.json'));
-  assert.deepEqual(release, { commit, guides: { [document.id]: { submissionId, contentHash } } });
+  assert.deepEqual(release, { commit, guides: { [document.id]: { submissionId, contentHash }, [titleOnly.id]: { submissionId: titleOnlySubmissionId, contentHash: titleOnlyHash } } });
   for (const name of ['server', 'api', '.git', '.env', '.runtime', 'content/reviews', 'content/guides', 'edit/server']) assert.equal(fs.existsSync(path.join(root, 'dist', name)), false, name);
   function checkOutput(directory) {
     for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {

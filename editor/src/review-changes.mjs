@@ -73,6 +73,10 @@ export function changePreviewHTML(change, value) {
 export function reviewChangesHTML(baseline, document) {
   return changedBlocks(baseline, document)
     .map((change, index) => {
+      // Titles are bounded plain metadata. Show both exact values without a
+      // disclosure or Markdown interpretation before a reviewer can approve.
+      if (change.kind === "title")
+        return `<section class="change-card concise-change"><div class="change-heading"><span class="change-number">${index + 1}</span><h3>Guide title</h3></div><div class="diff-before"><span class="diff-label">Before</span><p>${e(change.before)}</p></div><div class="diff-after"><span class="diff-label">After</span><p>${e(change.after)}</p></div></section>`;
       const before = markdownReviewText(change.before),
         after = markdownReviewText(change.after);
       const diff = diffWordsWithSpace(before, after, {

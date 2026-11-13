@@ -8,6 +8,7 @@ import {
   getEditableImageNodes,
   updateImageNode,
   updateBlockMarkdown,
+  assertDocument,
 } from "../shared/model.mjs";
 import {
   sourceBlockMarkdown,
@@ -58,7 +59,18 @@ export function sectionsOf(document) {
   );
 }
 export function textMap(document) {
-  const map = new Map();
+  const map = new Map([
+    [
+      "@document:title",
+      {
+        id: "@document:title",
+        blockId: null,
+        kind: "title",
+        label: "Guide title",
+        text: document.title,
+      },
+    ],
+  ]);
   for (const block of document.blocks)
     for (const node of getEditableTextNodes(block))
       map.set(node.id, {
@@ -133,6 +145,16 @@ function diffContent(block) {
 export function changedBlocks(baseline, document) {
   const fields = changedFields(baseline, document),
     blocks = [];
+  const title = fields.find((field) => field.kind === "title");
+  if (title)
+    blocks.push({
+      id: title.id,
+      kind: "title",
+      label: title.label,
+      before: title.before,
+      after: title.after,
+      fields: [title],
+    });
   for (const block of document.blocks) {
     const changes = fields.filter((field) => field.blockId === block.id);
     if (changes.length)
@@ -223,6 +245,11 @@ export function conflictPlan(base, local, latest) {
   return plan;
 }
 function applyField(document, field, value, format) {
+  if (field.kind === "title") {
+    const result = { ...document, title: value };
+    assertDocument(result, { baseline: document });
+    return result;
+  }
   if (field.kind === "markdown")
     return updateBlockMarkdown(document, field.blockId, format ? value : null);
   if (field.kind === "emoji")

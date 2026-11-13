@@ -307,6 +307,7 @@ body:has(.guide-tabs) .workspace.wide {
   min-height: 32px;
 }
 .concise-change .word-diff {
+  overflow-wrap: anywhere;
   padding: 18px 22px;
   margin: 0;
   white-space: pre-wrap;
@@ -338,7 +339,9 @@ body:has(.guide-tabs) .workspace.wide {
   color: var(--green);
   cursor: pointer;
 }
-.change-versions p {
+.change-versions p,
+.concise-change > .diff-before p,
+.concise-change > .diff-after p {
   white-space: pre-wrap;
   overflow-wrap: anywhere;
 }
@@ -782,3 +785,10 @@ body:has(.guide-tabs) .editor-bottom {
 @media(max-width:600px){ .review-image-change, .review-markdown-images { grid-template-columns:1fr; } .writer-image img { max-height:300px; } }
 
 .review-markdown-source { white-space:pre-wrap; overflow-wrap:anywhere; }
+
+/* Accepted guide titles can be long, including unbroken literal syntax. */
+.guide-heading h1,
+.review-detail-heading h1,
+.submission-preview .reading-paper > h2 {
+  overflow-wrap: anywhere;
+}
