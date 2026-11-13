@@ -7,6 +7,7 @@ import { bossGlyphs, glyph, glyphGeometry } from './boss-glyphs.mjs';
 import { readSnapshot } from './reader-snapshot.mjs';
 import { guideSpans } from './patch-reader-html.mjs';
 import { sourceArticles } from './interface-copy.mjs';
+import { createSearchIndex, normalizeQuery } from '../src/search-engine.mjs';
 import { makeDirectory, polishReader } from './boss-hub.mjs';
 const root=path.resolve(import.meta.dirname,'..');
 const original=readSnapshot(root),files=new Map(original);
@@ -51,7 +52,7 @@ function browserDouble(search=''){
  const fields=Object.fromEntries(['q','type','party','style','guide','saved'].map(k=>[k,{value:'',type:k==='saved'?'checkbox':'',checked:false,tagName:opts[k]?'SELECT':'INPUT',options:(opts[k]||[]).map(([value,text])=>({value,text})),get selectedIndex(){return this.options.findIndex(o=>o.value===this.value)},addEventListener(){},focus(){}}]));
  const result={textContent:''},empty={hidden:true},chips={children:[],replaceChildren(){this.children=[]},append(x){this.children.push(x)}},badge={textContent:''},clear={hidden:true,addEventListener(){}};
  const doc={querySelector(q){if(q==='[data-boss-browser]')return {querySelectorAll(){return cards}};const k=/data-boss-filter="([^"]+)"/.exec(q)?.[1];if(k)return fields[k];return {'#boss-results':result,'#boss-empty':empty,'#active-boss-filters':chips,'[data-filter-count]':badge,'.boss-filters':{addEventListener(){}}}[q]||null},querySelectorAll(){return[clear]},createElement(){return {setAttribute(){},addEventListener(){}}}};
- const saved=new Set(),url={search},updates=[];const context=vm.createContext({document:doc,location:url,URLSearchParams,normalize:s=>s.toLowerCase().replace(/[^a-z0-9]+/g,' ').trim(),aliases:{ag:'arch glacor'},saved,updateUrl:(v,o)=>updates.push([v,o]),queueMicrotask:fn=>fn()});
+ const saved=new Set(),url={search},updates=[];const context=vm.createContext({document:doc,location:url,URLSearchParams,createSearchIndex,normalizeQuery,normalize:s=>s.toLowerCase().replace(/[^a-z0-9]+/g,' ').trim(),aliases:{ag:'arch glacor'},saved,updateUrl:(v,o)=>updates.push([v,o]),queueMicrotask:fn=>fn()});
  vm.runInContext(fs.readFileSync(path.join(root,'src/boss-browser.js'),'utf8'),context);
  return {cards,fields,result,empty,saved,url,updates,visible:()=>cards.filter(c=>!c.hidden),run:s=>vm.runInContext(s,context)};
 }
@@ -67,7 +68,7 @@ test('filters intersect explicit choices, restore shared URLs and back navigatio
 test('local shortlist tolerates unavailable and malformed storage without claiming durable persistence',()=>{
  const app=files.get('assets/app.js').toString();const helpers=app.slice(app.indexOf('let volatile='),app.indexOf('let toastTimeout'));
  for(const stored of ['42','{}','null','broken JSON']){const c=vm.createContext({localStorage:{getItem(){return stored},setItem(){}}});vm.runInContext(helpers,c);assert.equal(vm.runInContext('saved.size',c),0);}
- const c=vm.createContext({localStorage:{getItem(){throw Error('Blocked')},setItem(){throw Error('Blocked')}}});vm.runInContext(helpers,c);assert.equal(vm.runInContext("writeStore('saved',['croesus'])",c),false);assert.equal(vm.runInContext("readStore('saved',[])[0]",c),'croesus');assert.match(app,/Saved for this page only\./);
+ const c=vm.createContext({localStorage:{getItem(){throw Error('Blocked')},setItem(){throw Error('Blocked')}}});vm.runInContext(helpers,c);assert.equal(vm.runInContext("writeStore('saved',['croesus'])",c),false);assert.equal(vm.runInContext("readStore('saved',[])[0]",c),'croesus');assert.match(app,/for this page only/);
 });
 test('guidance is optional, explicitly persistent and restorable without reading player progress',()=>{
  const code=fs.readFileSync(path.join(root,'src/boss-browser.js'),'utf8').split('// Guidance recedes')[1];

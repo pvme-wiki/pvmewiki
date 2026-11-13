@@ -22,6 +22,9 @@ test('independent: approved dollar syntax renders literally and release output e
       filter: source => !['node_modules', 'dist', '.runtime'].includes(path.basename(source)),
     });
   }
+  // The isolated build uses the same installed, locked build dependencies.
+  fs.copyFileSync(path.join(repository, 'package-lock.json'), path.join(root, 'package-lock.json'));
+  fs.symlinkSync(path.join(repository, 'node_modules'), path.join(root, 'node_modules'), 'dir');
   fs.mkdirSync(path.join(root, 'server'), { recursive: true });
   fs.copyFileSync(path.join(repository, 'server/core.mjs'), path.join(root, 'server/core.mjs'));
   const baseline = read(path.join(root, 'editor/content/arch-glacor-basic.json'));
@@ -54,7 +57,7 @@ test('independent: approved dollar syntax renders literally and release output e
     const escapedId = heading.node.attrs.id.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     const links = [...html.matchAll(new RegExp(`<a[^>]*href="#${escapedId}"[^>]*>([\\s\\S]*?)</a>`, 'g'))];
     assert.ok(links.length, 'The reader should preserve its table of contents');
-    for (const match of links) assert.equal(match[1], escapeHtml(textContent(document.blocks.find(block => block.id === heading.id))));
+    for (const match of links) assert.equal(match[1].replace(/<svg[\s\S]*?<\/svg>/g, ''), escapeHtml(textContent(document.blocks.find(block => block.id === heading.id))));
   }
   const release = read(path.join(root, 'dist/data/release.json'));
   assert.deepEqual(release, { commit, guides: { [document.id]: { submissionId, contentHash } } });
