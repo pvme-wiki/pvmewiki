@@ -14,8 +14,8 @@ export function sectionsOf(document) {
 }
 export function textMap(document) {
   const map = new Map();
-  for (const block of document.blocks) for (const node of getEditableTextNodes(block)) map.set(node.id, { ...node, blockId: block.id, label: block.label || block.type });
-  for (const block of document.blocks) for (const node of getEditableEmojiNodes(block)) map.set(node.id, { id: node.id, text: node.asset.id, kind: 'emoji', blockId: block.id, label: block.label || block.type });
+  for (const block of document.blocks) for (const node of getEditableTextNodes(block)) map.set(node.id, { ...node, blockId: block.id, label: block.type === 'heading' ? 'Heading' : 'Text' });
+  for (const block of document.blocks) for (const node of getEditableEmojiNodes(block)) map.set(node.id, { id: node.id, text: node.asset.id, kind: 'emoji', blockId: block.id, label: 'Icon' });
   return map;
 }
 export function changedFields(baseline, document) {

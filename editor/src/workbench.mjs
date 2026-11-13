@@ -18,7 +18,7 @@ import {
   escapeHTML as e,
 } from "./document.mjs";
 import { mountWriter } from "./writer.mjs";
-import { reviewChangesHTML } from "./review-changes.mjs";
+import { reviewChangesHTML, iconChangePreview } from "./review-changes.mjs";
 import { download } from "./export.mjs";
 import MiniSearch from "minisearch";
 
@@ -117,7 +117,7 @@ function shell(content) {
     writer.destroy();
     writer = null;
   }
-  app.innerHTML = `<header class="topbar"><a class="brand" href="#/">PvME <small>EDITOR REVIEW DRAFT</small></a><div class="top-actions">${themeOptions()}<a class="text-button" href="/">Read guides</a></div></header><div class="workspace wide"><main id="main" tabindex="-1"><div class="writer-banner"><strong>Local review draft.</strong> Saves stay in this browser. Nothing is sent or published.</div>${content}</main></div>`;
+  app.innerHTML = `<header class="topbar"><a class="brand" href="#/">PvME <small>EDITOR REVIEW DRAFT</small></a><div class="top-actions">${themeOptions()}${guide ? '<button class="button small top-save" data-action="save" aria-label="Save draft"><span class="save-label-wide">Save draft</span><span class="save-label-short" aria-hidden="true">Save</span><span class="top-save-status" data-save-status aria-hidden="true">' + e(status()) + "</span></button>" : ""}<a class="text-button draft-reader-link" href="/">Read guides</a></div></header><div class="workspace wide"><main id="main" tabindex="-1"><div class="writer-banner"><strong>Local review draft.</strong> Saves stay in this browser. Nothing is sent or published.</div>${content}</main></div>`;
 }
 function header(mode) {
   return `<a class="back-link" href="#/">← Guide library</a><div class="guide-heading"><div><div class="eyebrow">${e(guide.category)}</div><h1>${e(guide.title)}</h1><div class="guide-meta"><span class="save-status" data-save-status role="status">${status()}</span></div></div></div><div id="save-alert"></div><nav class="guide-tabs" aria-label="Guide workflow">${[
@@ -152,7 +152,7 @@ function render() {
     section = selected.id;
     const index = sections.indexOf(selected);
     shell(
-      `${header("edit")}<section class="writing-workspace editing-panel"><div class="writer-bar"><label class="writer-section-picker" for="section-select"><span>Section</span><select id="section-select">${sections.map((s, i) => `<option value="${e(s.id)}" ${section === s.id ? "selected" : ""}>${i + 1}. ${e(s.title)}</option>`).join("")}</select></label>${tools()}</div><div id="writer" class="guide-writer"></div><div class="section-pagination"><button class="text-button" data-action="previous" ${index === 0 ? "disabled" : ""}>← Previous</button><span>${index + 1} / ${sections.length}</span><button class="text-button" data-action="next" ${index === sections.length - 1 ? "disabled" : ""}>Next section →</button></div></section><div class="editor-bottom"><span class="save-status bottom-save" data-save-status>${status()}</span><button class="button quiet" data-action="save">Save draft</button><a class="button primary" href="${href("review")}">Review changes →</a></div>`,
+      `${header("edit")}<section class="writing-workspace editing-panel"><div class="writer-bar"><label class="writer-section-picker" for="section-select"><span>Section</span><select id="section-select">${sections.map((s, i) => `<option value="${e(s.id)}" ${section === s.id ? "selected" : ""}>${i + 1}. ${e(s.title)}</option>`).join("")}</select></label>${tools()}</div><div id="writer" class="guide-writer"></div><div class="section-pagination"><button class="text-button" data-action="previous" ${index === 0 ? "disabled" : ""}>← Previous</button><span>${index + 1} / ${sections.length}</span><button class="text-button" data-action="next" ${index === sections.length - 1 ? "disabled" : ""}>Next section →</button></div></section><div class="editor-bottom"><span class="save-status bottom-save" data-save-status>${status()}</span><a class="button primary" href="${href("review")}">Review changes →</a></div>`,
     );
     writerKey = `${guide.id}:${section}`;
     writer = mountWriter(document.querySelector("#writer"), {
@@ -343,9 +343,14 @@ document.addEventListener("click", async (event) => {
   }
   const target = event.target.closest("[data-action]");
   if (!target || target.disabled) return;
-  const action = target.dataset.action;
+  let action = target.dataset.action;
+  if (action === "save" && conflict) action = "compare";
   if (action === "save") {
     await save(true);
+    if (saveError)
+      document
+        .querySelector("#save-alert")
+        ?.scrollIntoView({ block: "center" });
     if (!dirty && !saveError && savedAt) notice("Draft saved in this browser.");
   } else if (action === "download") downloadDraft();
   else if (action === "close") dialog.close();
@@ -396,7 +401,7 @@ document.addEventListener("click", async (event) => {
   } else if (action === "compare" && conflict) {
     const plan = conflictPlan(saved, current, conflict.document);
     showDialog(
-      `<h2>Compare saved versions</h2><p>Your version stays here until you choose.</p><div>${plan.map((c) => `<fieldset><legend>${e(c.label)}</legend><label><input type="radio" name="${e(c.id)}" value="local">Keep my edit: ${e(c.after)}</label><label><input type="radio" name="${e(c.id)}" value="remote">Use saved version: ${e(c.remote)}</label></fieldset>`).join("")}</div><button class="button primary" data-action="resolve">Use selected versions</button>`,
+      `<h2>Compare saved versions</h2><p>Your version stays here until you choose.</p><div>${plan.map((c) => `<fieldset><legend>${e(c.label)}</legend><label><input type="radio" name="${e(c.id)}" value="local">Keep my edit: ${c.kind === "emoji" ? iconChangePreview(c.after) : e(c.after)}</label><label><input type="radio" name="${e(c.id)}" value="remote">Use saved version: ${c.kind === "emoji" ? iconChangePreview(c.remote) : e(c.remote)}</label></fieldset>`).join("")}</div><button class="button primary" data-action="resolve">Use selected versions</button>`,
     );
   } else if (action === "resolve" && conflict) {
     const plan = conflictPlan(saved, current, conflict.document),

@@ -7,7 +7,7 @@ import * as workflow from '../src/hosted-workflow.mjs';
 import * as documentHelpers from '../src/document.mjs';
 import * as model from '../shared/model.mjs';
 import { sectionIconChoices } from '../src/icon-picker.mjs';
-import { reviewChangesHTML } from '../src/review-changes.mjs';
+import { reviewChangesHTML, iconChangePreview } from '../src/review-changes.mjs';
 const catalog = JSON.parse(await readFile(new URL('../content/catalog.json', import.meta.url)));
 const seeds = new Map(await Promise.all(catalog.map(async guide => [guide.id, JSON.parse(await readFile(new URL(`../content/${guide.file}`, import.meta.url)))])));
 const clone = structuredClone;
@@ -34,7 +34,7 @@ async function harness({ realRender = false } = {}) {
     sessionStorage: storage, localStorage: storage, location, history: { replaceState: noop },
     document: { querySelector: element, querySelectorAll: () => [], addEventListener: (name, fn) => events.set(name, fn), getElementById: element, title: '' },
     window: { addEventListener: (name, fn) => events.set(name, fn), scrollTo: noop }, icon: () => '', rune: '', art: () => '', themeOptions: () => '',
-    mountWriter: () => ({destroy:noop,snapshot:()=>({})}), reviewChangesHTML, sectionIconChoices, ...workflow, ...documentHelpers, ...model, e: documentHelpers.escapeHTML,
+    mountWriter: () => ({destroy:noop,snapshot:()=>({})}), reviewChangesHTML, iconChangePreview, sectionIconChoices, ...workflow, ...documentHelpers, ...model, e: documentHelpers.escapeHTML,
   });
   let source = await readFile(new URL('../src/hosted.mjs', import.meta.url), 'utf8');
   source = source.replace(/^import .*?;\s*$/gm, '').replace('const adapter = new HostedAdapter();', 'let adapter;').replace(/\nstart\(\)\.catch[\s\S]*$/, '').replaceAll('import.meta.url', JSON.stringify(new URL('../src/hosted.mjs', import.meta.url).href));
@@ -488,4 +488,19 @@ test('editor library uses reader category labels and shows one connection explan
   assert.match(h.app.innerHTML, /value="Advanced boss guides"[^>]*>Boss methods/);
   assert.doesNotMatch(h.app.innerHTML, />Advanced boss guides<|Original encyclopedia|guides in the editor/);
   assert.equal(h.state.filter, 'Advanced boss guides');
+});
+
+test('global Save opens comparison instead of overwriting a known draft conflict', async()=>{
+  const h=await harness();dirty(h,'My wording');const before=clone(h.state.document);let writes=0;
+  h.state.conflict={...draft(firstId,2),document:edit(seed,'Other wording')};
+  h.setAdapter({saveDraft:async()=>{writes++;throw Error('Must not overwrite');}});
+  await h.action('save-draft');
+  assert.equal(writes,0);assert.deepEqual(h.state.document,before);assert.equal(h.state.dirty,true);assert.match(h.dialog.innerHTML,/Choose the edits/);
+});
+test('global Save checks an uncertain result before retrying a mutation', async()=>{
+  const h=await harness();dirty(h,'My wording');let writes=0,reads=0;
+  h.state.uncertain=true;h.state.saveError='Could not confirm the result';
+  h.setAdapter({getDraft:async()=>{reads++;return {...draft(firstId,1),document:clone(h.state.document)};},saveDraft:async()=>{writes++;throw Error('Must read before retry');}});
+  await h.action('save-draft');
+  assert.equal(reads,1);assert.equal(writes,0);assert.equal(h.state.uncertain,false);assert.equal(h.state.dirty,false);
 });

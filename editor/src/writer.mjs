@@ -268,12 +268,17 @@ export function mountWriter(
         : text;
     }),
     EditorView.scrollMargins.of(() => ({
-      top: 96,
-      bottom:
+      top:
         Math.ceil(
-          document.querySelector(".editor-bottom")?.getBoundingClientRect()
-            .height || 80,
-        ) + 24,
+          document.querySelector(".topbar")?.getBoundingClientRect().height ||
+            78,
+        ) +
+        Math.ceil(
+          document.querySelector(".writer-bar")?.getBoundingClientRect()
+            .height || 64,
+        ) +
+        16,
+      bottom: 24,
     })),
     highlightSelectionMatches(),
     search({ top: true }),

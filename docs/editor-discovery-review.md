@@ -7,7 +7,7 @@ Production promotion is not part of this change.
 
 The supplied navigation screenshot says “on this page” should become “jump to…” because the expanded table of contents looked like the guide. It now has a distinct **Jump to section** disclosure, searchable heading links, arrow affordances and a collapsed mobile default. Existing anchors and article bodies are preserved.
 
-The two editor screenshots show several boxes splitting text, uncertainty about protected bullets/media, technical labels (`p`, `h2`) in review, and confusion between save, review and sending. The editor now uses one CodeMirror canvas per section, with original content in place and tools behind a disclosure. Save status remains visible. Review shows word changes, named icon previews and human labels; full before/after versions remain expandable. Account saving and frozen submissions retain their existing server boundaries.
+The two editor screenshots show several boxes splitting text, uncertainty about protected bullets/media, technical labels (`p`, `h2`) in review, and confusion between save, review and sending. The editor now uses one CodeMirror canvas per section, with original content in place and tools behind a disclosure. Save status remains visible. Save stays in the app bar and section navigation remains available while scrolling; bottom actions do not cover guide text. Review shows word changes, named icon previews and human labels; full before/after versions remain expandable. Account saving and frozen submissions retain their existing server boundaries.
 
 No separate filtering issue, PR comment or Vercel feedback thread was found. The implementation follows the explicit user request and supplied screenshot; it does not invent additional feedback.
 
@@ -51,4 +51,4 @@ Verification includes all 323 no-op projections; exact edit/undo; safe Markdown 
 
 Dependencies are pinned and self-hosted. Bundles retain legal comments; full installed-package notices are built into `/edit/assets/THIRD-PARTY-NOTICES.txt`. Guide and game asset rights remain separate.
 
-Local review gate: build completed; 107 reader/server tests and 88 editor tests passed, plus the existing theme lifecycle and contrast checks. The built reader search module is imported without npm resolution in a separate artifact check. Remote deployment status and the exact review head are reported in the pull request.
+Local review gate: build completed; 107 reader/server tests and 90 editor tests passed, plus the existing theme lifecycle and contrast checks. The built reader search module is imported without npm resolution in a separate artifact check. Remote deployment status and the exact review head are reported in the pull request.

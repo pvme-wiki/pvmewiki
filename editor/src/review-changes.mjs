@@ -2,7 +2,7 @@ import { EMOJI_ASSETS } from "../shared/model.mjs";
 import { diffWordsWithSpace } from "diff";
 import { changedBlocks, escapeHTML as e } from "./document.mjs";
 const assets = new Map(EMOJI_ASSETS.map((asset) => [asset.id, asset]));
-const previewIcon = (id) => {
+export const iconChangePreview = (id) => {
   const asset = assets.get(id);
   return asset
     ? `<span><img src="${e(asset.src)}" alt="" width="28" height="28" loading="lazy" referrerpolicy="no-referrer">${e(asset.alt)}</span>`
@@ -32,7 +32,7 @@ export function reviewChangesHTML(baseline, document) {
       const iconRows = icons
         .map(
           (field) =>
-            `<div class="review-icon-change"><span>Before ${previewIcon(field.before)}</span><span aria-hidden="true">→</span><span>After ${previewIcon(field.after)}</span></div>`,
+            `<div class="review-icon-change"><span>Before ${iconChangePreview(field.before)}</span><span aria-hidden="true">→</span><span>After ${iconChangePreview(field.after)}</span></div>`,
         )
         .join("");
       const label =
