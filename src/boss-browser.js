@@ -26,7 +26,7 @@ function filterBosses(){
   card.hidden=!match;if(match)count++;
  });
  const active=fields.filter(key=>value(key));
- const countEl=document.querySelector('#boss-results');if(countEl)countEl.textContent=`${count} of ${browser.querySelectorAll('.boss-card').length} boss hubs`;
+ const countEl=document.querySelector('#boss-results');if(countEl)countEl.textContent=`${count} of ${browser.querySelectorAll('.boss-card').length} bosses`;
  const empty=document.querySelector('#boss-empty');if(empty)empty.hidden=count>0;
  const chips=document.querySelector('#active-boss-filters');if(chips){
   chips.replaceChildren();
@@ -58,8 +58,15 @@ if(guidanceCard){
   guidanceCard.hidden=!visible;
   guidanceCard.closest('.discovery-links').dataset.guidanceHidden=String(!visible);
   for(const button of guidanceButtons){button.hidden=button.dataset.guidanceAction==='show'?visible:!visible;button.setAttribute('aria-expanded',String(visible));}
-  if(persist&&!writeStore('guidance-visible',visible))toast('This choice applies on this page. Browser storage is unavailable.');
+  if(persist&&!writeStore('guidance-visible',visible))toast('Couldn’t save that preference. It applies to this page.');
  }
  for(const button of guidanceButtons)button.addEventListener('click',()=>{const show=button.dataset.guidanceAction==='show';showGuidance(show,true);document.querySelector(show?'.guidance-link':'.guidance-restore')?.focus()});
  showGuidance(readStore('guidance-visible',true)!==false);
+}
+
+// Search result context describes the listed guides, not a suggested player path.
+function bossSearchSummary(boss){
+ const type=boss.type==='skilling'?'Skilling':'Combat';
+ const count=boss.guideCount;
+ return Number.isInteger(count)&&count>0?`${count} guide${count===1?'':'s'} · ${type}`:`${type} guides`;
 }

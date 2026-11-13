@@ -20,12 +20,12 @@ export function canCheckPublication(review, session) {
     ['queued', 'working', 'retry', 'awaiting_merge', 'awaiting_deployment'].includes(review?.publication?.state) &&
     !review?.publication?.requiresFreshReview && !review?.publication?.replacementId;
 }
-export const submissionStatus = (status, publication) => publication?.replacementId || publication?.state === 'superseded' ? ['Replaced', 'This publication job is closed. The corrected snapshot needs a new review.'] : publication?.state === 'blocked' ? ['Publication paused', publication.requiresFreshReview ? 'This snapshot cannot be published as it stands. Update a saved draft and send a corrected snapshot for a fresh review.' : 'Publication needs a maintainer’s attention. Live status has not been verified.'] : ({
-  submitted: ['Awaiting review', 'A moderator will check this snapshot. You can keep working on your draft without changing what you sent.'],
-  approved: ['Approved', 'A moderator approved this snapshot. Live publication has not been verified yet.'],
-  publishing: ['Publishing', 'The approved snapshot is being published. It is not confirmed live yet.'],
-  published: ['Published', 'This approved snapshot has been published.'],
-  rejected: ['Changes requested', 'Read the moderator’s note, update your draft, and send a new snapshot when it is ready.'],
+export const submissionStatus = (status, publication) => publication?.replacementId || publication?.state === 'superseded' ? ['Replaced', 'This submission was replaced. The corrected version needs review.'] : publication?.state === 'blocked' ? ['Publication paused', publication.requiresFreshReview ? 'Edit a saved draft and send a corrected version for review.' : 'Publication needs a maintainer. Live status has not been verified.'] : ({
+  submitted: ['Awaiting review', 'A reviewer will check this version. Later draft edits do not change it.'],
+  approved: ['Approved', 'Approved for publication. Live publication has not been verified yet.'],
+  publishing: ['Publishing', 'Publication is in progress. This version is not confirmed live.'],
+  published: ['Published', 'This approved version is live.'],
+  rejected: ['Changes requested', 'Read the reviewer’s note, edit your draft and send it for review again.'],
 }[status] || ['Status unavailable', 'Refresh to check this submission.']);
 export function normalizeDraft(draft, guideId, guide) {
   return draft ? { ...draft, id: draft.guideId || guideId, revision: draft.version, mode: 'hosted' }
@@ -37,15 +37,15 @@ export function resolveTheme(preference, systemDark) { return preference === 'sy
 export function authNotice(code) {
   if (!code) return '';
   return ({
-    pilot_access_required: 'This editing pilot is open to invited contributors. Ask a PvME maintainer for access, then sign in again.',
-    oauth_cancelled: 'Sign-in was cancelled. You can try again when you are ready.',
-    invalid_oauth_state: 'That sign-in attempt expired or was already used. Start a new sign-in from this page.',
-    invalid_oauth_response: 'Sign-in could not be completed. Please start again from this page.',
-    invalid_cookie: 'The sign-in session could not be read. Please start sign-in again.',
+    pilot_access_required: 'Access is limited to invited contributors. Ask a PvME maintainer for access.',
+    oauth_cancelled: 'Sign-in cancelled.',
+    invalid_oauth_state: 'That sign-in attempt expired or was already used. Sign in again.',
+    invalid_oauth_response: 'Couldn’t complete sign-in. Start again from this page.',
+    invalid_cookie: 'Couldn’t read your sign-in session. Sign in again.',
     account_disabled: 'This editor account is not active. Ask a maintainer to check your access.',
-    identity_unavailable: 'Discord sign-in is temporarily unavailable. Please try again in a little while.',
+    identity_unavailable: 'Couldn’t complete Discord sign-in. Try again.',
     service_unavailable: 'Contributor accounts are temporarily unavailable. Your saved drafts have not changed.',
-  })[code] || 'Sign-in could not be completed. Please try again.';
+  })[code] || 'Couldn’t complete sign-in. Try again.';
 }
 
 /** Search catalog metadata, never account drafts or hidden guide content. */

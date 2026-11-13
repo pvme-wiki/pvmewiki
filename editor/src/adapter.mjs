@@ -181,7 +181,7 @@ export class HostedAdapter {
       response = await this.fetcher(`${this.base}${path}`, { method, credentials: 'same-origin', cache: 'no-store', headers: { Accept: 'application/json', ...(mutation ? { 'Content-Type': 'application/json', 'X-CSRF-Token': this.session.csrfToken } : {}) }, ...(body !== undefined ? { body: JSON.stringify(body) } : {}) });
       data = await response.json();
     } catch {
-      const error = new AdapterError(mutation ? 'Could not confirm the result. Keep this tab open, then check the saved draft or submissions before trying again.' : 'The editor service could not be reached. Please try again.');
+      const error = new AdapterError(mutation ? 'Could not confirm the result. Keep this tab open. Check My drafts or My submissions before trying again.' : 'Couldn’t connect to the editor. Try again.');
       error.uncertain = mutation; throw error;
     }
     if (path !== '/session') this.assertGeneration(generation);

@@ -49,7 +49,7 @@ test('unconfigured hosted UI offers no login, editing or fake publication', asyn
   h.state.session = { configured: false, user: null, capabilities: {} };
   h.location.hash = `#/guide/${firstId}/edit`;
   await h.renderRoute();
-  assert.match(h.app.innerHTML, /Editing is not open yet/);
+  assert.match(h.app.innerHTML, /Editing is unavailable/);
   assert.doesNotMatch(h.app.innerHTML, /contenteditable|data-action="submit-review"|auth\/discord|Publish demo|Git-ready/);
 });
 test('configured signed-out UI offers Discord login and explains invite-only pilot', async () => {
@@ -155,7 +155,8 @@ test('OAuth denial and cancellation use fixed safe messages, not query content',
   assert.match(workflow.authNotice('pilot_access_required'), /invited contributors/);
   assert.match(workflow.authNotice('oauth_cancelled'), /cancelled/);
   assert.match(workflow.authNotice('invalid_oauth_state'), /expired/);
-  assert.match(workflow.authNotice('identity_unavailable'), /temporarily unavailable/);
+  assert.match(workflow.authNotice('identity_unavailable'), /Couldn’t complete Discord sign-in/);
+  assert.match(workflow.authNotice('identity_unavailable'), /Try again/);
   assert.equal(workflow.authNotice(''), '');
   assert.doesNotMatch(workflow.authNotice('<script>alert(1)</script>'), /<script>|alert/);
 });
@@ -223,7 +224,7 @@ test('large catalog renders a bounded first page and reports actual coverage', a
   h.state.catalog = Array.from({ length: 323 }, (_, index) => ({ id: `guide-${index}`, title: `Guide ${index}`, category: index % 2 ? 'Bosses' : 'Combat', summary: 'Guide text' }));
   await h.renderRoute();
   assert.equal((h.app.innerHTML.match(/class="guide-card /g) || []).length, 24);
-  assert.match(h.app.innerHTML, /323 guides in the editor/);
+  assert.match(h.app.innerHTML, /class="library-result-count"[^>]*>323 guides<\/p>/);
   assert.match(h.app.innerHTML, /All categories \(323\)/);
   assert.match(h.app.innerHTML, /Show 24 more guides/);
   assert.doesNotMatch(h.app.innerHTML, /Five guides/);
@@ -451,4 +452,38 @@ test('publication checks require a known active job state',async()=>{
   const review={...publicationReview(),publication};assert.equal(workflow.canCheckPublication(review,publicationSession()),false);
   const h=await publicationHarness({review});await h.renderRoute();await hiddenReturn(h);assert.equal(h.checks(),0);
  }
+});
+
+test('save recovery copy distinguishes an unknown result from a rejected save and names the safe action', async () => {
+  for (const uncertain of [true, false]) {
+    const h = await harness({ realRender: true }); dirty(h);
+    h.setAdapter({ saveDraft: async () => { throw Object.assign(new Error(uncertain ? 'Keep this tab open. Check My drafts before trying again.' : 'Try again.'), { uncertain, status: uncertain ? 0 : 503 }); } });
+    await h.flushSave();
+    h.location.hash = `#/guide/${firstId}/edit`;
+    await h.renderRoute();
+    assert.equal(h.state.dirty, true);
+    assert.equal(h.state.uncertain, uncertain);
+    assert.match(h.app.innerHTML, /data-action="download-draft"[^>]*>Download recovery file/);
+    if (uncertain) {
+      assert.match(h.app.innerHTML, /Save not confirmed/);
+      assert.match(h.app.innerHTML, /data-action="retry-save"[^>]*>Check saved draft/);
+      assert.doesNotMatch(h.app.innerHTML, /Try saving again/);
+    } else {
+      assert.match(h.app.innerHTML, /Changes not saved to your account/);
+      assert.match(h.app.innerHTML, /data-action="retry-save"[^>]*>Try saving again/);
+    }
+  }
+});
+
+
+test('editor library uses reader category labels and shows one connection explanation', async () => {
+  const h = await harness({ realRender: true });
+  h.state.connectionError = 'Couldn’t connect to the editor. Try again.';
+  h.state.filter = 'Advanced boss guides';
+  h.location.hash = '#/';
+  await h.renderRoute();
+  assert.equal((h.app.innerHTML.match(/Couldn’t connect to the editor/g) || []).length, 1);
+  assert.match(h.app.innerHTML, /value="Advanced boss guides"[^>]*>Boss methods/);
+  assert.doesNotMatch(h.app.innerHTML, />Advanced boss guides<|Original encyclopedia|guides in the editor/);
+  assert.equal(h.state.filter, 'Advanced boss guides');
 });

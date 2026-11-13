@@ -6,12 +6,13 @@ import vm from 'node:vm';
 import { bossGlyphs, glyph, glyphGeometry } from './boss-glyphs.mjs';
 import { readSnapshot } from './reader-snapshot.mjs';
 import { guideSpans } from './patch-reader-html.mjs';
+import { sourceArticles } from './interface-copy.mjs';
 import { makeDirectory, polishReader } from './boss-hub.mjs';
 const root=path.resolve(import.meta.dirname,'..');
 const original=readSnapshot(root),files=new Map(original);
 const catalog=JSON.parse(original.get('data/catalog.json'));
 const bosses=polishReader(files,root);
-const articleBodies=html=>guideSpans(html).map(([s,e])=>html.slice(s,e));
+const articleBodies=sourceArticles;
 const chromeOnly=html=>{for(const[s,e]of guideSpans(html).reverse())html=html.slice(0,s)+html.slice(e);return html};
 test('all 45 source-backed boss hubs are alphabetical, unique and available without JavaScript',()=>{
  assert.equal(bosses.length,45);assert.equal(new Set(bosses.map(b=>b.id)).size,45);
@@ -19,11 +20,11 @@ test('all 45 source-backed boss hubs are alphabetical, unique and available with
  assert.deepEqual(bosses.filter(b=>b.type==='skilling').map(b=>b.id),['croesus','gate-of-elidinis']);
  for(const b of bosses){const reader=files.get(`read/${b.id}/index.html`);if(reader)assert.ok(reader.toString().includes(`data-palette="${b.palette}"`),b.id);assert.ok(b.guides.length);assert.ok(files.has(b.url.slice(1)+'index.html'));assert.ok(b.guides.every(g=>catalog.some(c=>c.local===g.local)));}
  const home=files.get('index.html').toString();assert.equal((home.match(/class="boss-card"/g)||[]).length,45);
- assert.match(home,/<h1>Boss hubs/);assert.match(home,/data-boss-filter="type"/);assert.match(home,/<details class="more-filters">/);
+ assert.match(home,/<h1>Bosses/);assert.match(home,/data-boss-filter="type"/);assert.match(home,/<details class="more-filters">/);
  assert.match(home,/\.boss-filters,.boss-card \.save-button,\[data-guidance-action\]\{display:none!important\}/);
  assert.doesNotMatch(home,/<script[^>]*>[^<]+|\son(?:click|submit|change)=/);
 });
-test('polish preserves all 352 protected article bodies, source exports and editorial files',()=>{
+test('polish preserves all 352 imported bodies, source exports and editorial files',()=>{
  let count=0;for(const[n,bytes]of original){if(n.endsWith('.html')){const before=articleBodies(bytes.toString());count+=before.length;assert.deepEqual(articleBodies(files.get(n).toString()),before,n);}if(n.endsWith('.wiki'))assert.deepEqual(files.get(n),bytes,n);}
  assert.equal(count,352);assert.ok(![...files.keys()].some(n=>n.startsWith('server/')));
 });
@@ -66,7 +67,7 @@ test('filters intersect explicit choices, restore shared URLs and back navigatio
 test('local shortlist tolerates unavailable and malformed storage without claiming durable persistence',()=>{
  const app=files.get('assets/app.js').toString();const helpers=app.slice(app.indexOf('let volatile='),app.indexOf('let toastTimeout'));
  for(const stored of ['42','{}','null','broken JSON']){const c=vm.createContext({localStorage:{getItem(){return stored},setItem(){}}});vm.runInContext(helpers,c);assert.equal(vm.runInContext('saved.size',c),0);}
- const c=vm.createContext({localStorage:{getItem(){throw Error('Blocked')},setItem(){throw Error('Blocked')}}});vm.runInContext(helpers,c);assert.equal(vm.runInContext("writeStore('saved',['croesus'])",c),false);assert.equal(vm.runInContext("readStore('saved',[])[0]",c),'croesus');assert.match(app,/Saved on this page only\. Browser storage is unavailable\./);
+ const c=vm.createContext({localStorage:{getItem(){throw Error('Blocked')},setItem(){throw Error('Blocked')}}});vm.runInContext(helpers,c);assert.equal(vm.runInContext("writeStore('saved',['croesus'])",c),false);assert.equal(vm.runInContext("readStore('saved',[])[0]",c),'croesus');assert.match(app,/Saved for this page only\./);
 });
 test('guidance is optional, explicitly persistent and restorable without reading player progress',()=>{
  const code=fs.readFileSync(path.join(root,'src/boss-browser.js'),'utf8').split('// Guidance recedes')[1];
