@@ -112,7 +112,7 @@ export function createJobRunner(db, provider, { origin } = {}) {
       if (row.state === 'blocked') fail(409, 'publication_blocked', 'A maintainer must resolve the publication issue before retrying.');
       await db.query("UPDATE publication_jobs SET available_at=now() WHERE submission_id=$1 AND state IN ('queued','retry','awaiting_merge','awaiting_deployment')", [id]);
     },
-    async wake() { await db.query("UPDATE publication_jobs SET available_at=now() WHERE state IN ('awaiting_merge','awaiting_deployment','retry')"); },
+    async wake(q = db) { await q.query("UPDATE publication_jobs SET available_at=now() WHERE state IN ('awaiting_merge','awaiting_deployment','retry')"); },
     async prune() {
       await db.query('DELETE FROM oauth_states WHERE expires_at<now()');
       await db.query('DELETE FROM sessions WHERE expires_at<now()');

@@ -88,9 +88,13 @@ export function createHandler({ db, config, identityProvider, publisher, logErro
         try { payload = JSON.parse(raw.toString('utf8')); } catch { fail(400, 'invalid_json', 'Invalid webhook body.'); }
         const sameRepository = payload.repository?.full_name?.toLowerCase() === `${config.github.owner}/${config.github.repo}`.toLowerCase();
         if (!sameRepository || payload.repository?.private !== true || String(payload.installation?.id) !== config.github.installationId) fail(403, 'invalid_repository', 'Unexpected webhook repository or installation.');
-        const inserted = await db.query('INSERT INTO webhook_deliveries(id) VALUES($1) ON CONFLICT DO NOTHING RETURNING id', [delivery]);
-        if (inserted.rows.length && ['pull_request', 'push', 'deployment_status', 'check_suite'].includes(request.headers.get('x-github-event'))) await jobs.wake();
-        return json(200, { accepted: true, duplicate: !inserted.rows.length });
+        const inserted = await db.transaction(async q => {
+          const result = await q.query('INSERT INTO webhook_deliveries(id) VALUES($1) ON CONFLICT DO NOTHING RETURNING id', [delivery]);
+          // A failed wake must leave this delivery retryable on redelivery.
+          if (result.rows.length && ['pull_request', 'push', 'deployment_status', 'check_suite'].includes(request.headers.get('x-github-event'))) await jobs.wake(q);
+          return result.rows.length > 0;
+        });
+        return json(200, { accepted: true, duplicate: !inserted });
       }
       if (route === 'jobs/publication' && ['GET', 'POST'].includes(method)) {
         if (!config.github || !equalSecret(request.headers.get('authorization'), `Bearer ${config.github.cronSecret}`)) fail(401, 'unauthorized_job', 'Invalid publication runner authorization.');
