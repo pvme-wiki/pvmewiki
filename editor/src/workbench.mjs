@@ -1,3 +1,5 @@
+import {sameGuideView} from './hosted-workflow.mjs';
+import { createImageEditor } from './image-editor.mjs';
 import { restoreLocalRecovery } from "./workbench-state.mjs";
 import { sectionIconChoices } from "./icon-picker.mjs";
 import "./theme.mjs";
@@ -18,7 +20,7 @@ import {
   escapeHTML as e,
 } from "./document.mjs";
 import { mountWriter } from "./writer.mjs";
-import { reviewChangesHTML, iconChangePreview } from "./review-changes.mjs";
+import { reviewChangesHTML, iconChangePreview, changePreviewHTML } from "./review-changes.mjs";
 import { download } from "./export.mjs";
 import MiniSearch from "minisearch";
 
@@ -49,6 +51,8 @@ let catalog = [],
 const seeds = new Map(),
   databaseName = "pvme-editor-review-v2";
 const adapter = new DeviceAdapter({ loadSeed, databaseName });
+let imageEditor;
+function imageTools(){return imageEditor ||= createImageEditor({dialog,getWriter:()=>writer,show:showDialog,notice});}
 let tabId;
 try {
   tabId = sessionStorage.getItem("pvme-review-tab") || crypto.randomUUID();
@@ -132,7 +136,7 @@ function header(mode) {
     .join("")}</nav>`;
 }
 function tools() {
-  return `<details class="writer-tools"><summary>Writing tools</summary><div><p id="writer-help">Use **bold**, *italic*, __underline__ and :icon: shortcuts. Type a colon to find icons. Ctrl/Cmd+F searches this section; Ctrl/Cmd+S saves.</p><button class="button small" data-action="insert-icon">Insert icon</button><button class="button small" data-action="section-icons">Replace an icon</button><button class="button small" data-action="bold">Bold</button><button class="button small" data-action="italic">Italic</button><p>Original links, images and layout are preserved. Select an existing icon to replace it. Unknown shortcuts stay as text.</p><a href="https://pvme.io/pvme-guides/editor-resources/editor-references/rotation-builder/" target="_blank" rel="noopener noreferrer">PvME rotation builder ↗</a><a href="https://pvme.github.io/preset-maker/" target="_blank" rel="noopener noreferrer">PvME preset maker ↗</a><p>Preset images are displayed as captured. Uploading or replacing them needs the original tools.</p></div></details>`;
+  return `<details class="writer-tools"><summary>Writing tools</summary><div><p id="writer-help">Use Markdown for headings, lists, links and tables; **bold**, *italic*, __underline__ and :icon: shortcuts. Type a colon to find icons. Ctrl/Cmd+F searches this section; Ctrl/Cmd+S saves.</p><button class="button small" data-action="insert-icon">Insert icon</button><button class="button small" data-action="section-images">Replace image</button><button class="button small" data-action="insert-image">Add image</button><button class="button small" data-action="bold">Bold</button><button class="button small" data-action="italic">Italic</button><p>Edit or remove bullets and formatting directly. Click an image to replace it, or use Add image. Unknown icon shortcuts stay as text.</p><a href="https://pvme.io/pvme-guides/editor-resources/editor-references/rotation-builder/" target="_blank" rel="noopener noreferrer">PvME rotation builder ↗</a><a href="https://pvme.github.io/preset-maker/" target="_blank" rel="noopener noreferrer">PvME preset maker ↗</a><p>Build a rotation or preset there, then add its image here. Include any required credit beside the image.</p></div></details>`;
 }
 function render() {
   if (!guide) return;
@@ -162,6 +166,7 @@ function render() {
       blocks: selected.blocks,
       readerOptions: { readerBaseUrl: location.origin },
       onNotice: notice,
+      onChooseImage:item=>imageTools().choose(item),
       onChange: (next) => {
         current = next;
         dirty = true;
@@ -333,6 +338,8 @@ document.addEventListener("click", async (event) => {
   const link = event.target.closest('a[href^="#/"]');
   if (link) {
     event.preventDefault();
+    const next=link.getAttribute('href');
+    if(sameGuideView(next,guide?.id)){location.hash=next;return;}
     await save();
     if (dirty) {
       notice("Save or download your draft before leaving.");
@@ -398,10 +405,12 @@ document.addEventListener("click", async (event) => {
     render();
     writer?.focus();
     timer = setTimeout(save, 1500);
+  } else if (action === "section-images") { imageTools().list();
+  } else if (action === "insert-image") { imageTools().choose();
   } else if (action === "compare" && conflict) {
     const plan = conflictPlan(saved, current, conflict.document);
     showDialog(
-      `<h2>Compare saved versions</h2><p>Your version stays here until you choose.</p><div>${plan.map((c) => `<fieldset><legend>${e(c.label)}</legend><label><input type="radio" name="${e(c.id)}" value="local">Keep my edit: ${c.kind === "emoji" ? iconChangePreview(c.after) : e(c.after)}</label><label><input type="radio" name="${e(c.id)}" value="remote">Use saved version: ${c.kind === "emoji" ? iconChangePreview(c.remote) : e(c.remote)}</label></fieldset>`).join("")}</div><button class="button primary" data-action="resolve">Use selected versions</button>`,
+      `<h2>Compare saved versions</h2><p>Your version stays here until you choose.</p><div>${plan.map((c) => `<fieldset><legend>${e(c.label)}</legend><label><input type="radio" name="${e(c.id)}" value="local">Keep my edit: ${changePreviewHTML(c,c.after)}</label><label><input type="radio" name="${e(c.id)}" value="remote">Use saved version: ${changePreviewHTML(c,c.remote)}</label></fieldset>`).join("")}</div><button class="button primary" data-action="resolve">Use selected versions</button>`,
     );
   } else if (action === "resolve" && conflict) {
     const plan = conflictPlan(saved, current, conflict.document),
@@ -455,7 +464,7 @@ document.addEventListener("keydown", (event) => {
   }
 });
 window.addEventListener("hashchange", () => {
-  if (dirty || saving) {
+  if (!sameGuideView(location.hash,guide?.id) && (dirty || saving)) {
     notice("Your edit remains on screen. Save before changing guides.");
     history.replaceState(null, "", href(view));
     return;

@@ -763,3 +763,22 @@ body:has(.guide-tabs) .editor-bottom {
     max-width: 92px;
   }
 }
+
+/* Images are ordinary Markdown, shown as actionable previews while writing. */
+.writer-image { display:block; width:100%; max-width:100%; border:1px solid transparent; border-radius:8px; background:none; padding:6px; cursor:pointer; text-align:left; }
+.writer-image img { max-width:100%; max-height:440px; height:auto; object-fit:contain; display:block; }
+.writer-image:hover, .writer-image:focus-visible { border-color:var(--green); outline-offset:3px; }
+.writer-inline-icon { display:inline-block; width:26px; height:26px; vertical-align:middle; object-fit:contain; }
+.image-replacement-preview { display:block; max-width:100%; max-height:260px; object-fit:contain; margin:16px auto; }
+#image-replacement-form input, #image-replacement-form textarea { box-sizing:border-box; max-width:100%; width:100%; }
+#image-replacement-error { color:var(--error,var(--ink)); overflow-wrap:anywhere; }
+.section-image-choices { display:grid; gap:10px; margin:14px 0; max-height:55vh; overflow:auto; }
+.image-choice { display:flex; gap:14px; align-items:center; min-height:60px; text-align:left; background:var(--surface); color:var(--ink); border:1px solid var(--line); border-radius:8px; padding:10px; cursor:pointer; }
+.image-choice img { width:96px; height:72px; object-fit:contain; }
+.image-choice span, .review-image-source { overflow-wrap:anywhere; }
+.review-image img { display:block; max-width:100%; max-height:240px; object-fit:contain; margin:10px 0; }
+.review-image-change, .review-markdown-images { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; padding:16px 22px; }
+.guide-help-note { line-height:1.7; padding:14px 18px; border-left:3px solid var(--green); background:var(--accent-soft); }
+@media(max-width:600px){ .review-image-change, .review-markdown-images { grid-template-columns:1fr; } .writer-image img { max-height:300px; } }
+
+.review-markdown-source { white-space:pre-wrap; overflow-wrap:anywhere; }

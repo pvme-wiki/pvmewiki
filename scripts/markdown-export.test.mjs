@@ -1,0 +1,32 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import { updateBlockMarkdown, getEditableTextNodes } from '../editor/shared/model.mjs';
+import { mediaWikiDraft } from './mediawiki.mjs';
+const baseline = JSON.parse(fs.readFileSync(new URL('../editor/content/arch-glacor-basic.json', import.meta.url)));
+const block = baseline.blocks.find(item => item.type === 'paragraph' && getEditableTextNodes(item).length);
+test('MediaWiki draft includes the visible block override with lists, tables, links and known icons', () => {
+  const markdown = '# New passage\n\n**Rewritten** __underlined__ :dragonbreath:\n\n- First item\n- Second item\n\n| Ability | Action |\n| --- | --- |\n| Dragon breath | Use |\n\n[Details](https://example.com/reference)\n\n![Preset](https://images.example/preset.png)';
+  const changed = updateBlockMarkdown(baseline, block.id, markdown);
+  const wiki = mediaWikiDraft(changed);
+  assert.match(wiki, /== <nowiki>New passage<\/nowiki> ==/);
+  assert.match(wiki, /<strong><nowiki>Rewritten<\/nowiki><\/strong>/);
+  assert.match(wiki, /<u><nowiki>underlined<\/nowiki><\/u>/);
+  assert.match(wiki, /535533833391702017/);
+  assert.match(wiki, /<ul>/);
+  assert.match(wiki, /First item/);
+  assert.match(wiki, /<table>/);
+  assert.match(wiki, /https:\/\/example.com\/reference/);
+  assert.match(wiki, /https:\/\/images.example\/preset.png/);
+  assert.match(wiki, /Source and licence/);
+});
+test('MediaWiki image export is an explicit upload note for embedded data and keeps literal markup inert', () => {
+  const payload = 'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+j7X8AAAAASUVORK5CYII=';
+  const markdown = `![My {{preset}}](data:image/png;base64,${payload})\n\n{{Template}} <script>alert(1)</script>`;
+  const wiki = mediaWikiDraft(updateBlockMarkdown(baseline, block.id, markdown));
+  assert.match(wiki, /Uploaded image: My \{\{preset\}\}/);
+  assert.match(wiki, /Upload the image to the target wiki before importing/);
+  assert.doesNotMatch(wiki, /iVBORw0KGgo|base64,/);
+  assert.match(wiki, /<nowiki>\{\{Template\}\}/);
+  assert.doesNotMatch(wiki, /<script>/);
+});
