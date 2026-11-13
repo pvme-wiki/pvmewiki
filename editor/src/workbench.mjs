@@ -136,7 +136,7 @@ function header(mode) {
     .join("")}</nav>`;
 }
 function tools() {
-  return `<details class="writer-tools"><summary>Writing tools</summary><div><p id="writer-help">Use Markdown for headings, lists, links and tables; **bold**, *italic*, __underline__ and :icon: shortcuts. Type a colon to find icons. Ctrl/Cmd+F searches this section; Ctrl/Cmd+S saves.</p><button class="button small" data-action="insert-icon">Insert icon</button><button class="button small" data-action="section-images">Replace image</button><button class="button small" data-action="insert-image">Add image</button><button class="button small" data-action="bold">Bold</button><button class="button small" data-action="italic">Italic</button><p>Edit or remove bullets and formatting directly. Click an image to replace it, or use Add image. Unknown icon shortcuts stay as text.</p><a href="https://pvme.io/pvme-guides/editor-resources/editor-references/rotation-builder/" target="_blank" rel="noopener noreferrer">PvME rotation builder ↗</a><a href="https://pvme.github.io/preset-maker/" target="_blank" rel="noopener noreferrer">PvME preset maker ↗</a><p>Build a rotation or preset there, then add its image here. Include any required credit beside the image.</p></div></details>`;
+  return `<details class="writer-tools"><summary>Writing tools</summary><div><p id="writer-help">Readable formats text as you write; Markdown shows the syntax. Split lets you edit either view. Type a colon to find icons. Ctrl/Cmd+K edits a link; Ctrl/Cmd+F searches this section; Ctrl/Cmd+S saves.</p><button class="button small" data-action="insert-icon">Insert icon</button><button class="button small" data-action="section-images">Replace image</button><button class="button small" data-action="insert-image">Add image</button><button class="button small" data-action="bold">Bold</button><button class="button small" data-action="italic">Italic</button><button class="button small" data-action="link">Link</button><p>Edit or remove bullets and formatting directly. Click an image to replace it, or use Add image. Unknown icon shortcuts stay as text.</p><a href="https://pvme.io/pvme-guides/editor-resources/editor-references/rotation-builder/" target="_blank" rel="noopener noreferrer">PvME rotation builder ↗</a><a href="https://pvme.github.io/preset-maker/" target="_blank" rel="noopener noreferrer">PvME preset maker ↗</a><p>Use PvME’s builders for rotations and presets. Paste rotation text, or add the resulting link or image. Include any required credit beside the image.</p></div></details>`;
 }
 function render() {
   if (!guide) return;
@@ -369,6 +369,7 @@ document.addEventListener("click", async (event) => {
   } else if (action === "insert-icon") writer?.complete();
   else if (action === "bold") writer?.format("**");
   else if (action === "italic") writer?.format("*");
+  else if (action === "link") writer?.link();
   else if (action === "previous" || action === "next") {
     const sections = sectionsOf(current),
       i = sections.findIndex((s) => s.id === section);

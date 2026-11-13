@@ -1,0 +1,321 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Representative source fixtures for readable-editor verification. These are not player categories, progression advice or completed-test evidence.",
+  "inventory": {
+    "capturedGuides": 323,
+    "guidesContainingTableElements": 0,
+    "tableElements": 0
+  },
+  "guides": [
+    {
+      "id": "arch-glacor-basic",
+      "title": "Arch Glacor Basic",
+      "file": "editor/content/arch-glacor-basic.json",
+      "fixtureSha256": "013895d08a35ad857461adeca17d3708911b93eb48e2e2f86a7f196af111f14f",
+      "sourceUrl": "https://pvme.io/pvme-guides/basic-guides/arch-glacor-basic/",
+      "readerRoute": "/archive/pvme-guides/basic-guides/arch-glacor-basic/",
+      "reviewRoute": "/edit/draft.html#/guide/arch-glacor-basic/edit",
+      "metrics": {
+        "blocks": 72,
+        "sections": 5,
+        "textCharacters": 2948,
+        "images": 2,
+        "icons": 41,
+        "iframes": 0,
+        "links": 15,
+        "tables": 0
+      },
+      "sections": [
+        {
+          "id": "arch-glacor-basic:b:0002",
+          "title": "General Information",
+          "blockCount": 6,
+          "firstBlockIds": [
+            "arch-glacor-basic:b:0002",
+            "arch-glacor-basic:b:0003",
+            "arch-glacor-basic:b:0004"
+          ]
+        },
+        {
+          "id": "arch-glacor-basic:b:0014",
+          "title": "Fight Mechanics",
+          "blockCount": 54,
+          "firstBlockIds": [
+            "arch-glacor-basic:b:0014",
+            "arch-glacor-basic:b:0015",
+            "arch-glacor-basic:b:0016"
+          ]
+        }
+      ],
+      "focus": [
+        "short mixed-format baseline",
+        "format selected prose",
+        "heading update",
+        "no-op and existing published overlay preservation"
+      ]
+    },
+    {
+      "id": "kerapac",
+      "title": "Kerapac HM Basic",
+      "file": "editor/content/kerapac.json",
+      "fixtureSha256": "32b6b6fa260b43423fbc63a1b87ba55aad0e952accf33a6f62d9d09fe36f627f",
+      "sourceUrl": "https://pvme.io/pvme-guides/basic-guides/kerapac-hm-basic/",
+      "readerRoute": "/archive/pvme-guides/basic-guides/kerapac-hm-basic/",
+      "reviewRoute": "/edit/draft.html#/guide/kerapac/edit",
+      "metrics": {
+        "blocks": 101,
+        "sections": 8,
+        "textCharacters": 4710,
+        "images": 2,
+        "icons": 94,
+        "iframes": 0,
+        "links": 4,
+        "tables": 0
+      },
+      "sections": [
+        {
+          "id": "kerapac:b:000003",
+          "title": "Presets and Relics",
+          "blockCount": 4,
+          "firstBlockIds": [
+            "kerapac:b:000003",
+            "kerapac:b:000005",
+            "kerapac:b:000007"
+          ]
+        },
+        {
+          "id": "kerapac:b:000127",
+          "title": "Basic Rotations",
+          "blockCount": 11,
+          "firstBlockIds": [
+            "kerapac:b:000127",
+            "kerapac:b:000129",
+            "kerapac:b:000131"
+          ]
+        }
+      ],
+      "focus": [
+        "preset links",
+        "ability icons",
+        "rotation punctuation",
+        "cursor and selection around icons"
+      ]
+    },
+    {
+      "id": "dpm-advice-mage",
+      "title": "DPM Advice Mage",
+      "file": "editor/content/dpm-advice-mage.json",
+      "fixtureSha256": "8e679b598385fff75d892d64c5c168d94a343f39d3768b293c82f0ac58f4868e",
+      "sourceUrl": "https://pvme.io/pvme-guides/dpm-advice/dpm-advice-mage/",
+      "readerRoute": "/archive/pvme-guides/dpm-advice/dpm-advice-mage/",
+      "reviewRoute": "/edit/draft.html#/guide/dpm-advice-mage/edit",
+      "metrics": {
+        "blocks": 255,
+        "sections": 6,
+        "textCharacters": 17336,
+        "images": 0,
+        "icons": 575,
+        "iframes": 0,
+        "links": 10,
+        "tables": 0
+      },
+      "sections": [
+        {
+          "id": "dpm-advice-mage:b:0007",
+          "title": "> Core Magic Rotation",
+          "blockCount": 69,
+          "firstBlockIds": [
+            "dpm-advice-mage:b:0007",
+            "dpm-advice-mage:b:0008",
+            "dpm-advice-mage:b:0009"
+          ]
+        },
+        {
+          "id": "dpm-advice-mage:b:0161",
+          "title": "> Advanced Magic Rotations",
+          "blockCount": 89,
+          "firstBlockIds": [
+            "dpm-advice-mage:b:0161",
+            "dpm-advice-mage:b:0162",
+            "dpm-advice-mage:b:0163"
+          ]
+        }
+      ],
+      "focus": [
+        "dense icons",
+        "long sections",
+        "typing and selection performance",
+        "undo and source-position retention"
+      ]
+    },
+    {
+      "id": "interface-guide",
+      "title": "Interface Guide",
+      "file": "editor/content/interface-guide.json",
+      "fixtureSha256": "d961fdb6a26ab9d94414b0f76daed326ae81a6de17a98bae8500b1a2c4503122",
+      "sourceUrl": "https://pvme.io/pvme-guides/getting-started/interface-guide/",
+      "readerRoute": "/archive/pvme-guides/getting-started/interface-guide/",
+      "reviewRoute": "/edit/draft.html#/guide/interface-guide/edit",
+      "metrics": {
+        "blocks": 366,
+        "sections": 9,
+        "textCharacters": 28304,
+        "images": 18,
+        "icons": 88,
+        "iframes": 1,
+        "links": 22,
+        "tables": 0
+      },
+      "sections": [
+        {
+          "id": "interface-guide:b:0099",
+          "title": "Settings Menu",
+          "blockCount": 114,
+          "firstBlockIds": [
+            "interface-guide:b:0099",
+            "interface-guide:b:0100",
+            "interface-guide:b:0101"
+          ]
+        },
+        {
+          "id": "interface-guide:b:0310",
+          "title": "Banking & Presets",
+          "blockCount": 56,
+          "firstBlockIds": [
+            "interface-guide:b:0310",
+            "interface-guide:b:0311",
+            "interface-guide:b:0312"
+          ]
+        }
+      ],
+      "focus": [
+        "nested instructions",
+        "images",
+        "embedded media",
+        "long instructional sections"
+      ]
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--croesus--croesus",
+      "title": "Croesus",
+      "file": "editor/content/pvme-guides--rs3-full-boss-guides--croesus--croesus.json",
+      "fixtureSha256": "78cf6dbd2221ee70c900d3240e4443e08a45a025c1fee099fb4adfcff72d17b7",
+      "sourceUrl": "https://pvme.io/pvme-guides/rs3-full-boss-guides/croesus/croesus/",
+      "readerRoute": "/archive/pvme-guides/rs3-full-boss-guides/croesus/croesus/",
+      "reviewRoute": "/edit/draft.html#/guide/pvme-guides--rs3-full-boss-guides--croesus--croesus/edit",
+      "metrics": {
+        "blocks": 265,
+        "sections": 7,
+        "textCharacters": 16814,
+        "images": 10,
+        "icons": 49,
+        "iframes": 0,
+        "links": 9,
+        "tables": 0
+      },
+      "sections": [
+        {
+          "id": "pvme-guides--rs3-full-boss-guides--croesus--croesus:b:000333",
+          "title": "The Fight",
+          "blockCount": 9,
+          "firstBlockIds": [
+            "pvme-guides--rs3-full-boss-guides--croesus--croesus:b:000333",
+            "pvme-guides--rs3-full-boss-guides--croesus--croesus:b:000335",
+            "pvme-guides--rs3-full-boss-guides--croesus--croesus:b:000337"
+          ]
+        },
+        {
+          "id": "pvme-guides--rs3-full-boss-guides--croesus--croesus:b:000351",
+          "title": "Strategy",
+          "blockCount": 87,
+          "firstBlockIds": [
+            "pvme-guides--rs3-full-boss-guides--croesus--croesus:b:000351",
+            "pvme-guides--rs3-full-boss-guides--croesus--croesus:b:000353",
+            "pvme-guides--rs3-full-boss-guides--croesus--croesus:b:000355"
+          ]
+        }
+      ],
+      "focus": [
+        "skilling content",
+        "multi-part lists",
+        "images",
+        "no combat/player assumptions"
+      ]
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--vorago--overview",
+      "title": "Overview",
+      "file": "editor/content/pvme-guides--rs3-full-boss-guides--vorago--overview.json",
+      "fixtureSha256": "a8711cc7bbcda9f496505822a7958a5924221362eae58cb11dec30889bd3bc3d",
+      "sourceUrl": "https://pvme.io/pvme-guides/rs3-full-boss-guides/vorago/overview/",
+      "readerRoute": "/archive/pvme-guides/rs3-full-boss-guides/vorago/overview/",
+      "reviewRoute": "/edit/draft.html#/guide/pvme-guides--rs3-full-boss-guides--vorago--overview/edit",
+      "metrics": {
+        "blocks": 1067,
+        "sections": 27,
+        "textCharacters": 68480,
+        "images": 37,
+        "icons": 508,
+        "iframes": 2,
+        "links": 17,
+        "tables": 0
+      },
+      "sections": [
+        {
+          "id": "pvme-guides--rs3-full-boss-guides--vorago--overview:b:000229",
+          "title": "General Fight Mechanics",
+          "blockCount": 59,
+          "firstBlockIds": [
+            "pvme-guides--rs3-full-boss-guides--vorago--overview:b:000229",
+            "pvme-guides--rs3-full-boss-guides--vorago--overview:b:000231",
+            "pvme-guides--rs3-full-boss-guides--vorago--overview:b:000233"
+          ]
+        },
+        {
+          "id": "pvme-guides--rs3-full-boss-guides--vorago--overview:b:000347",
+          "title": "Phase 1",
+          "blockCount": 95,
+          "firstBlockIds": [
+            "pvme-guides--rs3-full-boss-guides--vorago--overview:b:000347",
+            "pvme-guides--rs3-full-boss-guides--vorago--overview:b:000349",
+            "pvme-guides--rs3-full-boss-guides--vorago--overview:b:000351"
+          ]
+        },
+        {
+          "id": "pvme-guides--rs3-full-boss-guides--vorago--overview:b:001745",
+          "title": "Phase 5",
+          "blockCount": 110,
+          "firstBlockIds": [
+            "pvme-guides--rs3-full-boss-guides--vorago--overview:b:001745",
+            "pvme-guides--rs3-full-boss-guides--vorago--overview:b:001747",
+            "pvme-guides--rs3-full-boss-guides--vorago--overview:b:001749"
+          ]
+        }
+      ],
+      "focus": [
+        "largest captured text example",
+        "long-section navigation",
+        "retained scroll and undo",
+        "multiple media kinds"
+      ]
+    }
+  ],
+  "synthetic": [
+    {
+      "id": "readable-formatting-and-table-v1",
+      "purpose": "Disposable formatting fixture, not gameplay guidance. Required because the captured corpus has zero actual table AST elements.",
+      "applyTo": "A complete body passage in a disposable draft or test clone; never submit this fixture to production.",
+      "markdown": "## __Formatting fixture__\n\n**Bold** and *italic* and __underline__ and ~~strike~~.\n\n__**Nested underline and bold**__ with \\*literal stars\\*.\n\n- First fixture item\n  - Nested fixture item\n1. Ordered fixture item\n\n:dragonbreath: + :surge: → (2t) :fixture_unknown_20261113:\n\n[Fixture link](https://example.invalid/guide?section=one&mode=two)\n\n| Field | Value | Note |\n| :--- | ---: | :---: |\n| Icon | :dragonbreath: | fixture only |\n| Pipe | a\\|b | `literal` |\n\n```text\n**not bold inside code**\n:dragonbreath: stays source in code\n<script>fixture text, never executable</script>\n```\n\nIncomplete marker: **",
+      "checks": [
+        "Readable/Markdown/Split share the same exact draft",
+        "active formatting selection stays editable",
+        "escaped pipes and table alignment",
+        "known and unknown icons",
+        "literal code fence contents",
+        "incomplete delimiters remain visible/editable",
+        "HTML remains literal/inert",
+        "undo and no-op round trip"
+      ]
+    }
+  ]
+}

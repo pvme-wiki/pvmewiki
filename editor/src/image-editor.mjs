@@ -183,10 +183,15 @@ export function createImageEditor({ dialog, getWriter, show, notice }) {
       return;
     }
     try {
-      if (active.item) active.writer.replaceImage(active.item, src, alt);
-      else active.writer.insertImage(src, alt);
+      const changed = active.item
+        ? active.writer.replaceImage(active.item, src, alt) !== false
+        : (active.writer.insertImage(src, alt), true);
       dialog.close();
-      notice("Image changed. Check Preview before sending for review.");
+      notice(
+        changed
+          ? "Image changed. Check Preview before sending for review."
+          : "Image unchanged.",
+      );
       active = null;
       sequence++;
     } catch (ex) {
