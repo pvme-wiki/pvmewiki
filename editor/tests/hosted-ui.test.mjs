@@ -519,3 +519,69 @@ test('leaving a guide still requires a confirmed save and preserves a rejected e
  h.setAdapter({saveDraft:async()=>{throw Error('Connection unavailable');}});
  await h.navigate('#/');assert.equal(h.location.hash,before);assert.equal(h.state.dirty,true);assert.equal(h.dialog.open,true);assert.match(h.dialog.innerHTML,/Changes not saved to your account/);
 });
+
+// These cases start at the real hosted HTTP boundary: the UI receives the same
+// immutable snapshot that an authenticated moderator would load in production.
+for (const scenario of [
+  { name: 'title-only', title: 'A clearer title for this guide', body: false },
+  { name: 'title and body with a hostile literal title', title: '<img src=x onerror=alert(1)> ![title](data:image/png;base64,AAAA) **Exact title**', body: true },
+]) {
+  test(`HTTP-accepted ${scenario.name} is visible in moderator review before approval`, async t => {
+    const { fixture, request } = await import('../../server/tests/harness.mjs');
+    const { createHandler } = await import('../../server/http.mjs');
+    const { documentHash } = await import('../../server/core.mjs');
+    const f = await fixture(); t.after(() => f.db.close());
+    const author = await f.user(), reviewer = await f.user('moderator');
+    const handler = createHandler({ db: f.db, config: f.config, publisher: {} });
+    const call = async (route, user, method = 'GET', body) => {
+      const response = await handler(request(route, { user, method, ...(body ? { body } : {}) }));
+      const result = await response.json();
+      assert.equal(response.status, 200, JSON.stringify(result));
+      return result;
+    };
+    let submitted = { ...clone(f.guide), title: scenario.title };
+    if (scenario.body) {
+      const block = submitted.blocks.find(item => item.type === 'paragraph' && model.getEditableTextNodes(item).length);
+      submitted = model.updateBlockMarkdown(submitted, block.id, 'A separately reviewed **body change**.');
+    }
+    const route = `drafts/${f.guide.id}`;
+    await call(route, author, 'PUT', { document: submitted, expectedVersion: 0, baseRevision: 1 });
+    const sent = await call(`${route}/submit`, author, 'POST', { expectedVersion: 1, summary: 'Clarify the guide title and review this frozen version' });
+    const laterTitle = 'UNSENT TITLE — this must never enter moderator review';
+    const laterDraft = { ...clone(submitted), title: laterTitle };
+    await call(route, author, 'PUT', { document: laterDraft, expectedVersion: 1, baseRevision: 1 });
+    const frozen = (await call(`submissions/${sent.submission.id}`, reviewer)).submission;
+    assert.equal(frozen.status, 'submitted');
+    assert.equal(frozen.title, scenario.title);
+    assert.equal(frozen.contentHash, documentHash(submitted));
+    assert.deepEqual(frozen.document, submitted);
+    assert.deepEqual(frozen.baselineDocument, f.guide);
+    assert.equal((await call(route, author)).draft.document.title, laterTitle);
+    const h = await harness({ realRender: true });
+    h.state.session = await call('session', reviewer);
+    // An unrelated unsent edit already open in the same client must not supply
+    // either the moderator header or the title-change comparison.
+    h.state.document = clone(laterDraft);
+    h.setAdapter({
+      getReview: async id => (await call(`submissions/${id}`, reviewer)).submission,
+      getGuide: async id => await call(`guides/${id}`, reviewer),
+    });
+    h.location.hash = `#/submission/${sent.submission.id}`;
+    await h.renderRoute();
+    const html = h.app.innerHTML;
+    const changeArea = html.split('<details class="submission-preview">')[0];
+    const titleRow = changeArea.match(/<section\b[^>]*class="[^"]*change-card[^"]*"[^>]*>[\s\S]*?<h3>Guide title<\/h3>[\s\S]*?<\/section>/)?.[0];
+    assert.ok(titleRow, 'The expanded change list must include a Guide title row');
+    assert.ok(titleRow.includes(documentHelpers.escapeHTML(f.guide.title)), 'The exact previous title is visible');
+    assert.ok(titleRow.includes(documentHelpers.escapeHTML(scenario.title)), 'The exact submitted title is visible as literal text');
+    assert.ok(html.indexOf('Guide title') < html.indexOf('data-action="approve-submission"'), 'Title evidence precedes approval controls');
+    assert.ok(html.includes(`<h1>${documentHelpers.escapeHTML(scenario.title)}</h1>`), 'The review header names the frozen submitted version');
+    assert.ok(html.includes('data-action="approve-submission"'));
+    assert.doesNotMatch(html, /UNSENT TITLE|<img src=x|<script\b/);
+    if (scenario.body) assert.match(changeArea, /body change/);
+    else assert.equal((changeArea.match(/class="change-card/g) || []).length, 1, 'A title-only submission has one visible metadata change');
+    const unchanged = (await call(`submissions/${sent.submission.id}`, reviewer)).submission;
+    assert.equal(unchanged.status, 'submitted', 'Rendering a review never approves it');
+    assert.equal(unchanged.contentHash, documentHash(submitted));
+  });
+}

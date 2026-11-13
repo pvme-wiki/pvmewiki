@@ -28,7 +28,7 @@ captured guides contain zero table elements, so table tests are synthetic.
 
 ## Evidence
 
-- `npm run verify`: 123 reader/server tests and 172 editor tests pass; theme,
+- `npm run verify`: 123 reader/server tests and 182 editor tests pass; theme,
   contrast and blocked-storage checks pass.
 - `npm run build`: 323 editable guides, 352 verified source slots, 749 reader
   files and the existing one approved overlay. No canonical guide or receipt
@@ -52,6 +52,35 @@ The existing authenticated HTTP/CAS/CSRF, draft/submission/reviewer and exact
 publication contract tests run as part of the suite. Browser changes used only
 local review storage. No live editorial submission, review, publication,
 permission or production deployment was performed.
+
+## Title-review audit follow-up
+
+The [architecture audit](https://chatgpt.com/space/page_67c3367ee2b08191856534d5eb2ee520)
+reproduced API-accepted document titles being absent from moderator review. The
+shared comparison previously inspected only body fields. Titles are now a
+first-class review and conflict field. A Guide title card always shows the
+complete exact Before and After values, escaped as plain text, before approval
+controls. No disclosure needs to be opened. Headers, queue rows and expanded
+submitted previews name the frozen submitted version rather than a catalog
+alias or a later private draft.
+
+Eight independent title tests cover exact literal strings, title/body counts,
+no-op restoration, conflict choices, independent body/title merges and model
+validation. Two actual authenticated HTTP fixture cases save and submit a
+title-only or hostile title-plus-body change, then render the actual moderator
+controller; later unsent titles remain absent and rendering does not approve.
+The existing publication flow now carries a hostile title through exact
+approval/Git/manifest hashes. A second title-only guide in the static build
+fixture proves escaped reader title/h1 output and unchanged body bytes.
+
+A local 390px component check (375px client width) verifies a complete
+500-character title in the header and Before/After card without horizontal
+overflow or a hidden disclosure. This is component-level responsive evidence,
+not an authenticated production review.
+
+No new title-edit control or backend mutation policy was introduced. The
+isolated webhook-atomicity fix documented in the audit is separate; this
+follow-up does not modify server/http.mjs, server/jobs.mjs or server/service.mjs.
 
 ## Practical limits
 

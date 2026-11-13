@@ -24,7 +24,7 @@ test('a Markdown passage and uploaded image travel through hosted review and exa
   const bytes = Uint8Array.from(Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+j7X8AAAAASUVORK5CYII=', 'base64'));
   const uploaded = await rasterFileSource({ type: 'image/png', size: bytes.length, arrayBuffer: async () => bytes.buffer });
   const markdown = '### Reviewed strategy\n\nReplace the old bullet with **clear wording** and :dragonbreath:.\n\n- Preserve the source\n- Review before publication\n\n' + imageMarkdown(uploaded, 'A contributed preset');
-  const document = updateBlockMarkdown(f.guide, block.id, markdown);
+  const document = updateBlockMarkdown({ ...structuredClone(f.guide), title: 'Reviewed title <literal> **plain title text**' }, block.id, markdown);
   const contentHash = documentHash(document);
   let provider;
   const proxy = {
@@ -57,6 +57,7 @@ test('a Markdown passage and uploaded image travel through hosted review and exa
   const approved = await call(`submissions/${submission.id}/review`, { user: reviewer, method: 'POST', body: { decision: 'approve', expectedVersion: 1, note: 'Checked wording, image and source attribution' } });
   assert.equal(approved.submission.status, 'publishing');
   assert.equal(approved.submission.publication.state, 'awaiting_merge');
+  assert.equal(approved.submission.title, document.title);
   assert.equal(approved.submission.contentHash, contentHash);
   assert.deepEqual(approved.submission.document, document);
   assert.equal((await call(`guides/${f.guide.id}`, { user: owner })).revision, 1);
@@ -73,6 +74,7 @@ test('a Markdown passage and uploaded image travel through hosted review and exa
   write('editor/content/catalog.json', JSON.stringify([{ id: f.guide.id, file: `${f.guide.id}.json` }]));
   for (const [file, text] of Object.entries(github.fileContents(merge))) write(file, text);
   const built = loadHostedContent(root, merge), overlay = built.published.get(f.guide.id);
+  assert.equal(overlay.document.title, document.title);
   assert.equal(overlay.contentHash, contentHash);
   assert.deepEqual(overlay.document, document);
   assert.deepEqual(overlay.document.source, f.guide.source);
@@ -104,6 +106,7 @@ test('a Markdown passage and uploaded image travel through hosted review and exa
   assert.equal(published.submission.contentHash, contentHash);
   const canonical = await call(`guides/${f.guide.id}`, { user: owner });
   assert.equal(canonical.revision, 2);
+  assert.equal(canonical.document.title, document.title);
   assert.deepEqual(canonical.document, document);
   assert.equal(canonical.contentHash, contentHash);
   assert.equal((await call(route, { user: owner })).draft.document.blocks.find(item => item.id === block.id).markdown, 'Later unsubmitted wording');
