@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "status": "unsubmitted-editorial-proposal",
+  "guideId": "low-effort-rasial",
+  "sourceUrl": "https://pvme.io/pvme-guides/afk/low-effort-rasial/",
+  "sourceLicence": "CC BY-NC-SA 4.0",
+  "baselineHash": "5f955026aa22ac32ca89ab2e05bef855a8f16fdf902c77dae76eb15af6bd994c",
+  "summary": "Remove blame from method-support instructions while retaining the creators’ contact boundary and the existing help link.",
+  "patches": [
+    {
+      "blockId": "low-effort-rasial:b:0004",
+      "nodeId": "low-effort-rasial:n:0004.0.t",
+      "before": "IF YOU CANNOT GET A METHOD TO WORK ",
+      "after": "For help with this method, "
+    },
+    {
+      "blockId": "low-effort-rasial:b:0004",
+      "nodeId": "low-effort-rasial:n:0004.0.0.t",
+      "before": "DO NOT",
+      "after": "use PvM help"
+    },
+    {
+      "blockId": "low-effort-rasial:b:0004",
+      "nodeId": "low-effort-rasial:n:0004.0.0.tail",
+      "before": " MESSAGE THE CREATOR(S)",
+      "after": " rather than messaging the creators directly."
+    },
+    {
+      "blockId": "low-effort-rasial:b:0005",
+      "nodeId": "low-effort-rasial:n:0005.t",
+      "before": "‎ ‎ ‎ ‎• It is ",
+      "after": "‎ ‎ ‎ ‎• If the method is not working, ask in "
+    },
+    {
+      "blockId": "low-effort-rasial:b:0005",
+      "nodeId": "low-effort-rasial:n:0005.0.t",
+      "before": "more than likely ",
+      "after": ""
+    },
+    {
+      "blockId": "low-effort-rasial:b:0005",
+      "nodeId": "low-effort-rasial:n:0005.0.0.t",
+      "before": "user error",
+      "after": ""
+    },
+    {
+      "blockId": "low-effort-rasial:b:0005",
+      "nodeId": "low-effort-rasial:n:0005.0.0.tail",
+      "before": " or ",
+      "after": ""
+    },
+    {
+      "blockId": "low-effort-rasial:b:0005",
+      "nodeId": "low-effort-rasial:n:0005.0.1.t",
+      "before": "cutting corners",
+      "after": ""
+    },
+    {
+      "blockId": "low-effort-rasial:b:0005",
+      "nodeId": "low-effort-rasial:n:0005.0.tail",
+      "before": ", use ",
+      "after": ""
+    },
+    {
+      "blockId": "low-effort-rasial:b:0005",
+      "nodeId": "low-effort-rasial:n:0005.1.tail",
+      "before": " if you cannot get it to work",
+      "after": "."
+    }
+  ],
+  "notApplied": [
+    "Reader source body and editor baseline remain unchanged.",
+    "The separate sentence “Cutting corners will result in failure” is inside a protected rich block. Its proposed replacement, “Use the full required setup listed below”, needs upstream or rich-block editorial review. No requirement, item, perk, ability, rate or timing is changed."
+  ],
+  "changedParagraphs": [
+    {
+      "blockId": "low-effort-rasial:b:0004",
+      "before": "⬥ IF YOU CANNOT GET A METHOD TO WORK DO NOT MESSAGE THE CREATOR(S)",
+      "after": "⬥ For help with this method, use PvM help rather than messaging the creators directly."
+    },
+    {
+      "blockId": "low-effort-rasial:b:0005",
+      "before": "‎ ‎ ‎ ‎• It is more than likely user error or cutting corners, use PvM help (external Discord) if you cannot get it to work",
+      "after": "‎ ‎ ‎ ‎• If the method is not working, ask in PvM help (external Discord)."
+    }
+  ]
+}
