@@ -1,8 +1,20 @@
+import { MARKDOWN_FORMAT, inlineMarkdownTokens } from '../editor/shared/markdown.mjs';
 import { assertDocument, escapeHtml } from '../editor/shared/model.mjs';
 // Conservative draft conversion: preserve literal text and source attribution.
 // MediaWiki templates and asset import rights still require target-side review.
 function nodeWiki(node) {
-  if (node.type === 'text') return `<nowiki>${escapeHtml(node.text)}</nowiki>`;
+  if (node.type === 'text') {
+    if (node.format !== MARKDOWN_FORMAT) return `<nowiki>${escapeHtml(node.text)}</nowiki>`;
+    return inlineMarkdownTokens(node.text).map(token => {
+      if (token.type === 'text') return `<nowiki>${escapeHtml(token.content)}</nowiki>`;
+      if (token.type === 'code_inline') return `<code><nowiki>${escapeHtml(token.content)}</nowiki></code>`;
+      if (token.type === 'pvme_emoji') return `[${token.meta.src} ${escapeHtml(token.meta.alt)}]`;
+      if (['softbreak','hardbreak'].includes(token.type)) return '<br>\n';
+      const tag = token.markup === '__' ? 'u' : token.tag;
+      if (['strong','em','u','s'].includes(tag)) return token.nesting === 1 ? `<${tag}>` : `</${tag}>`;
+      return `<nowiki>${escapeHtml(token.content)}</nowiki>`;
+    }).join('');
+  }
   const body = node.children.map(nodeWiki).join('');
   const tag = node.tag;
   if (/^h[1-6]$/.test(tag)) { const marks = '='.repeat(Math.max(2, Number(tag[1]))); return `\n\n${marks} ${body} ${marks}\n`; }

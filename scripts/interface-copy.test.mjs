@@ -104,7 +104,7 @@ test('search context describes catalogued guides and does not recommend the arbi
   const app = files.get('assets/app.js').toString();
   assert.doesNotMatch(app, /Suggested encounters|START WITH AN ENCOUNTER|A short, trackable path/);
   assert.match(app, /Bosses A–Z/);
-  assert.match(app, /addResult\(b\.name,bossSearchSummary\(b\)/);
+  assert.match(app, /bossSearchSummary\(record\.boss\)/);
   const data = JSON.parse(files.get('data/bosses.json'));
   for (const boss of bosses) assert.equal(data.find(b => b.id === boss.id).guideCount, boss.guides.length);
 });

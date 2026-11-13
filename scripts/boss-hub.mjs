@@ -3,6 +3,7 @@ import path from 'node:path';
 import { guideSpans } from './patch-reader-html.mjs';
 import { glyph } from './boss-glyphs.mjs';
 import { applyInterfaceCopy } from './interface-copy.mjs';
+import { applyDiscovery } from './discovery.mjs';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const arrow='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5"/></svg>';
 const free='/archive/pvme-guides/upgrading-info/upgrade-order/free-upgrades/';
@@ -146,5 +147,6 @@ export function polishReader(files,root){
  app=app.replace(' restoreBossFilters();\n}'," queueMicrotask(restoreBossFilters);\n}");
  files.set('assets/app.js',Buffer.from(app));files.set('assets/boss-hub.css',fs.readFileSync(path.join(root,'src/boss-hub.css')));
  applyInterfaceCopy(files);
+ applyDiscovery(files,root,bosses);
  return bosses;
 }
