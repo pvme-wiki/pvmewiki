@@ -1,3 +1,4 @@
+import { renderInlineMarkdown, inlineMarkdownText, MARKDOWN_FORMAT } from './markdown.mjs';
 import { EMOJI_ASSETS } from './emoji-catalog.mjs';
 export { EMOJI_ASSETS };
 const emojiById = new Map(EMOJI_ASSETS.map(asset => [asset.id, asset]));
@@ -110,8 +111,9 @@ function checkNode(node, path, state, depth = 0) {
   if (ids.has(node.id)) errors.push(`${path}: duplicate node id ${node.id}`);
   ids.add(node.id);
   if (node.type === 'text') {
-    ownKeys(node, new Set(['id','type','text']), path, errors);
+    ownKeys(node, new Set(['id','type','text','format']), path, errors);
     if (typeof node.text !== 'string' || node.text.length > MODEL_LIMITS.text || /\u0000/.test(node.text)) errors.push(`${path}: invalid text`);
+    if ('format' in node && node.format !== MARKDOWN_FORMAT) errors.push(`${path}: unsupported text format`);
     return;
   }
   if (node.type !== 'element') { errors.push(`${path}: unsupported node type`); return; }
@@ -159,7 +161,7 @@ function compareNode(node, original, path, editableIds, errors) {
   for (const key of ['id','type','tag','attrs']) if (!same(node[key],original[key]) && !(key === 'attrs' && allowedEmojiReplacement(node, original))) errors.push(`${path}: original ${key} must be preserved`);
   if (original.type === 'text') {
     // Empty/formatting-only original leaves are preserved, not silently made editable.
-    if (!editableIds.has(original.id) && node.text !== original.text) errors.push(`${path}: read-only text must be preserved`);
+    if (!editableIds.has(original.id) && (node.text !== original.text || node.format !== original.format)) errors.push(`${path}: read-only text must be preserved`);
   } else if (!Array.isArray(node.children) || node.children.length !== original.children?.length) errors.push(`${path}: original child nodes must be preserved`);
   else node.children.forEach((child,index) => compareNode(child,original.children[index],`${path}.children[${index}]`,editableIds,errors));
 }
@@ -208,30 +210,30 @@ export function assertDocument(document, options = {}) {
 }
 export function textContent(nodeOrBlock) {
   const node = nodeOrBlock?.node ?? nodeOrBlock;
-  if (node?.type === 'text') return typeof node.text === 'string' ? node.text : '';
+  if (node?.type === 'text') return typeof node.text === 'string' ? node.format === MARKDOWN_FORMAT ? inlineMarkdownText(node.text) : node.text : '';
   return Array.isArray(node?.children) ? node.children.map(textContent).join('') : '';
 }
 export function getEditableTextNodes(block) {
   if (!block?.editable) return [];
   const nodes=[], editableIds = new Set(block.editableTextNodeIds || []);
   const walk = node => {
-    if (node.type === 'text') { if (editableIds.has(node.id)) nodes.push({id:node.id,text:node.text}); }
+    if (node.type === 'text') { if (editableIds.has(node.id)) nodes.push({id:node.id,text:node.text,...(node.format ? {format:node.format} : {})}); }
     else node.children.forEach(walk);
   };
   walk(block.node); return nodes;
 }
-export function updateTextNode(document, blockId, nodeId, text) {
+export function updateTextNode(document, blockId, nodeId, text, options = {}) {
   assertDocument(document);
   if (typeof text !== 'string' || text.length > MODEL_LIMITS.text || /\u0000/.test(text)) throw new Error('Invalid text edit');
   const block=document.blocks.find(candidate => candidate.id === blockId);
   if (!block || !getEditableTextNodes(block).some(node => node.id === nodeId)) throw new Error('This source node is read-only or unavailable');
   const updated=clone(document), target=updated.blocks.find(candidate => candidate.id === blockId);
-  const walk = node => { if (node.id === nodeId && node.type === 'text') node.text=text; else node.children?.forEach(walk); };
+  const walk = node => { if (node.id === nodeId && node.type === 'text') { node.text=text; if ('format' in options) { if (options.format === null) delete node.format; else if (options.format === MARKDOWN_FORMAT) node.format = options.format; else throw new Error('Unsupported text format'); } } else node.children?.forEach(walk); };
   walk(target.node); return updated;
 }
 function htmlNode(node, textNodeIds, options = {}) {
   if (node.type === 'text') {
-    const text=escapeHtml(node.text);
+    const text=node.format === MARKDOWN_FORMAT ? renderInlineMarkdown(node.text) : escapeHtml(node.text);
     return textNodeIds?.has(node.id) ? `<span data-node-id="${escapeHtml(node.id)}">${text}</span>` : text;
   }
   const attrs={...node.attrs};

@@ -1,0 +1,653 @@
+/* Writing-first section view. The same canvas is used by hosted and local review modes. */
+body:has(.guide-tabs) .guide-heading {
+  padding-block: 14px 18px;
+  min-height: 0;
+}
+body:has(.guide-tabs) .guide-heading h1 {
+  font-size: clamp(26px, 3.2vw, 38px);
+  line-height: 1.2;
+  margin: 8px 0 12px;
+}
+body:has(.guide-tabs) .heading-art {
+  display: none;
+}
+body:has(.guide-tabs) .guide-heading .eyebrow {
+  font-size: 10px;
+}
+body:has(.guide-tabs) .back-link {
+  margin-bottom: 0;
+}
+body:has(.guide-tabs) .guide-tabs {
+  margin-bottom: 20px;
+}
+body:has(.guide-tabs) .workspace.wide {
+  max-width: 1220px;
+}
+.writing-workspace {
+  max-width: 850px;
+  margin: 0 auto 24px;
+  min-width: 0;
+}
+.writer-bar {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 1px solid var(--line);
+  padding: 8px 0 16px;
+  margin-bottom: 8px;
+}
+.writer-section-picker {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  flex: 1;
+}
+.writer-section-picker > span {
+  font-size: 12px;
+  color: var(--muted);
+}
+.writer-section-picker select {
+  min-height: 44px;
+  max-width: 100%;
+  min-width: 0;
+  width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink);
+  padding: 8px 28px 8px 12px;
+  font: inherit;
+  font-size: 14px;
+  text-overflow: ellipsis;
+}
+.writer-tools {
+  position: relative;
+  flex-shrink: 0;
+  font-size: 13px;
+}
+.writer-tools > summary {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--green);
+  font-weight: 650;
+  background: var(--surface);
+}
+.writer-tools > summary::after {
+  content: "+";
+  font-size: 18px;
+}
+.writer-tools[open] > summary::after {
+  content: "−";
+}
+.writer-tools > div {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  z-index: 30;
+  width: min(350px, 85vw);
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  box-shadow: 0 10px 30px #0002;
+}
+.writer-tools p {
+  line-height: 1.6;
+  margin: 0 0 14px;
+  color: var(--muted);
+}
+.writer-tools .button {
+  margin: 0 4px 12px 0;
+}
+.writer-tools a {
+  display: block;
+  padding: 9px 0;
+  text-decoration: underline;
+  color: var(--green);
+  min-height: 44px;
+}
+.guide-writer {
+  min-width: 0;
+  position: relative;
+}
+.guide-writer .cm-editor {
+  background: transparent;
+  color: var(--ink);
+  font: 16px/1.85 var(--font-body, "Manrope", sans-serif);
+  min-height: 340px;
+}
+.guide-writer .cm-scroller {
+  font: inherit;
+  overflow: visible !important;
+}
+.guide-writer .cm-content {
+  padding: 14px 4px 40px;
+  caret-color: var(--green);
+  min-width: 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.guide-writer .cm-line {
+  padding: 0 8px;
+  overflow-wrap: anywhere;
+}
+.guide-writer .cm-focused {
+  outline: 0;
+}
+.guide-writer .cm-editor:focus-within {
+  box-shadow: inset 2px 0 0 var(--line);
+}
+.guide-writer .cm-activeLine {
+  background: color-mix(in srgb, var(--green) 4%, transparent);
+}
+.guide-writer .cm-cursor {
+  border-left-color: var(--ink);
+}
+.guide-writer .cm-selectionBackground,
+.guide-writer .cm-content ::selection {
+  background: color-mix(in srgb, var(--green) 22%, transparent) !important;
+}
+.guide-writer .writer-original-h1,
+.guide-writer .writer-original-h2 {
+  font-size: 1.45em;
+  font-weight: 750;
+  line-height: 1.5;
+}
+.guide-writer .writer-original-h3,
+.guide-writer .writer-original-h4 {
+  font-size: 1.15em;
+  font-weight: 700;
+}
+.guide-writer .writer-original-strong,
+.guide-writer .writer-original-b {
+  font-weight: 750;
+}
+.guide-writer .writer-original-em,
+.guide-writer .writer-original-i {
+  font-style: italic;
+}
+.guide-writer .writer-original-u {
+  text-decoration: underline;
+}
+.guide-writer .writer-original-a {
+  color: var(--green);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.guide-writer .writer-original-code {
+  font-family: monospace;
+  font-size: 0.9em;
+  background: var(--accent-soft);
+}
+.writer-boundary,
+.writer-separator {
+  display: inline-block;
+  width: 0;
+  overflow: hidden;
+}
+.writer-block {
+  padding: 8px 12px;
+  max-width: 100%;
+  overflow-x: auto;
+  font-size: 15px;
+  line-height: 1.75;
+}
+.writer-block img:not(.d-emoji) {
+  max-width: 100%;
+  height: auto;
+}
+.writer-icon {
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  min-width: 30px;
+  min-height: 32px;
+  padding: 1px 2px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background: none;
+  cursor: pointer;
+}
+.writer-icon:hover,
+.writer-icon:focus-visible {
+  border-color: var(--green);
+  background: var(--accent-soft);
+  outline-offset: 2px;
+}
+.writer-icon img {
+  max-width: 30px;
+  height: 26px;
+  object-fit: contain;
+  margin: 0 !important;
+}
+.writer-source-note {
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--muted);
+  border: 0 !important;
+  background: none !important;
+  padding: 0 !important;
+  margin: 12px 0;
+}
+.writer-source-note summary {
+  width: fit-content;
+  min-height: 36px;
+  cursor: pointer;
+  color: var(--muted);
+  font-weight: 500 !important;
+}
+.writer-source-note p {
+  max-width: 56ch;
+  font-size: 12px;
+}
+.guide-writer .cm-tooltip {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px #0002;
+  font-size: 14px;
+}
+.guide-writer .cm-tooltip-autocomplete > ul {
+  max-height: 280px;
+  max-width: min(400px, 85vw);
+  font-family: inherit;
+}
+.guide-writer .cm-tooltip-autocomplete ul li {
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 4px 12px;
+}
+.guide-writer .cm-tooltip-autocomplete ul li[aria-selected] {
+  background: var(--green);
+  color: var(--paper);
+}
+.writer-completion-icon {
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.cm-completionDetail {
+  font-size: 11px;
+  opacity: 0.8;
+}
+.writer-completion-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+}
+.guide-writer .cm-search {
+  padding: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  background: var(--surface);
+  font-size: 13px;
+}
+.guide-writer .cm-search input {
+  font: inherit;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  padding: 6px;
+  max-width: 200px;
+}
+.guide-writer .cm-search button {
+  min-height: 32px;
+}
+.concise-change .word-diff {
+  padding: 18px 22px;
+  margin: 0;
+  white-space: pre-wrap;
+  line-height: 1.9;
+  font-size: 15px;
+}
+.word-diff ins {
+  background: var(--after-bg, #e3ebdf);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  padding: 1px 2px;
+}
+.word-diff del {
+  background: var(--before-bg, #f2e5df);
+  padding: 1px 2px;
+}
+.format-change {
+  padding: 0 22px 14px;
+  font-size: 12px !important;
+  color: var(--muted);
+}
+.change-versions {
+  border-top: 1px solid var(--line);
+}
+.change-versions > summary {
+  padding: 14px 22px;
+  min-height: 44px;
+  font-size: 13px;
+  color: var(--green);
+  cursor: pointer;
+}
+.change-versions p {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.writer-banner {
+  font-size: 13px;
+  padding: 12px 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  line-height: 1.6;
+  background: var(--accent-soft);
+  margin-bottom: 20px;
+}
+.writer-banner strong {
+  color: var(--ink);
+}
+.draft-guide-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+.draft-guide-list a {
+  display: block;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  min-height: 80px;
+}
+.draft-guide-list small {
+  display: block;
+  color: var(--muted);
+  margin-top: 8px;
+}
+.draft-guide-search {
+  display: block;
+  width: 100%;
+  min-height: 46px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  padding: 12px;
+  font: inherit;
+}
+@media (max-width: 680px) {
+  .writer-bar {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .writer-section-picker {
+    width: 100%;
+    flex-basis: 100%;
+  }
+  .writer-tools > div {
+    left: 0;
+    right: auto;
+  }
+  .writer-tools > summary {
+    padding: 8px 12px;
+    font-size: 12px;
+    min-height: 40px;
+  }
+  .writer-section-picker select {
+    font-size: 14px;
+  }
+  body:has(.guide-tabs) .guide-tabs {
+    gap: 18px;
+  }
+  body:has(.guide-tabs) .guide-tabs a {
+    font-size: 12px;
+  }
+  .guide-writer .cm-editor {
+    font-size: 16px;
+    line-height: 1.85;
+  }
+  .guide-writer .cm-line {
+    padding-inline: 2px;
+  }
+  .writer-block {
+    padding-inline: 2px;
+  }
+  .editor-bottom {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .editor-bottom .bottom-save {
+    flex: 1 0 100%;
+    font-size: 11px;
+  }
+  .editor-bottom .button {
+    min-height: 44px;
+  }
+  .concise-change .word-diff {
+    font-size: 14px;
+    padding: 16px;
+  }
+  .writer-source-note {
+    font-size: 11px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .guide-writer * {
+    scroll-behavior: auto !important;
+  }
+}
+@media (forced-colors: active) {
+  .writer-icon {
+    border-color: ButtonText;
+  }
+  .word-diff ins,
+  .word-diff del {
+    border: 1px solid CanvasText;
+  }
+  .guide-writer .cm-cursor {
+    border-color: CanvasText;
+  }
+}
+
+html[data-editor-mode="review-draft"] .workspace {
+  margin: 0 auto;
+  max-width: 1080px;
+  padding-top: 24px;
+}
+html[data-editor-mode="review-draft"] .guide-heading h1 {
+  font-size: clamp(26px, 3.2vw, 38px);
+}
+html[data-editor-mode="review-draft"] .guide-tabs a {
+  min-height: 44px;
+  padding-block: 12px;
+}
+
+body:has(.guide-tabs) .guide-heading {
+  margin: 0 !important;
+  padding-block: 12px !important;
+}
+body:has(.guide-tabs) .guide-heading h1 {
+  margin: 4px 0 10px !important;
+}
+body:has(.guide-tabs) .guide-heading .eyebrow {
+  display: none;
+}
+body:has(.guide-tabs) .guide-tabs {
+  margin-block: 8px 16px !important;
+}
+body:has(.guide-tabs) .back-link {
+  padding-block: 6px;
+}
+body:has(.guide-tabs) .writer-banner {
+  font-size: 12px;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+}
+@media (max-width: 680px) {
+  body:has(.guide-tabs) .guide-heading h1 {
+    font-size: 26px !important;
+  }
+  .writer-bar {
+    padding-top: 0;
+  }
+  .guide-writer .cm-content {
+    padding-top: 4px;
+  }
+}
+
+.section-icon-choices {
+  display: grid;
+  gap: 8px;
+  max-height: 55vh;
+  overflow: auto;
+  margin-top: 12px;
+}
+.section-icon-choices button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px;
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+  min-height: 64px;
+}
+.section-icon-choices button:hover {
+  border-color: var(--green);
+  background: var(--accent-soft);
+}
+.section-icon-choices strong,
+.section-icon-choices small {
+  display: block;
+}
+.section-icon-choices small {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--muted);
+  margin-top: 5px;
+}
+
+dialog:has(#section-icon-search),
+dialog:has(#emoji-search) {
+  width: min(680px, calc(100vw - 32px));
+}
+dialog #section-icon-search,
+dialog #emoji-search {
+  display: block;
+  width: 100%;
+  min-height: 46px;
+  padding: 10px 12px;
+  font: inherit;
+  font-size: 15px;
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  margin: 10px 0 16px;
+}
+.writer-tools summary:focus-visible,
+.writer-section-picker select:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 3px;
+}
+
+/* Keep the first passage close to the title, with explicit workflow navigation. */
+body:has(.guide-tabs) .workspace {
+  padding-top: 0;
+}
+body:has(.guide-tabs) .workspace main {
+  padding-top: 20px;
+}
+body:has(.guide-tabs) .guide-heading > div:first-child {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px 24px;
+  align-items: center;
+  width: 100%;
+}
+body:has(.guide-tabs) .guide-meta {
+  margin-top: 0;
+  font-size: 11px;
+  max-width: 220px;
+}
+body:has(.guide-tabs) .guide-tabs {
+  gap: 8px;
+  padding: 8px 0 12px;
+}
+body:has(.guide-tabs) .guide-tabs > a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 9px 14px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.3;
+  text-decoration: none;
+}
+body:has(.guide-tabs) .guide-tabs > a[aria-current] {
+  border-color: var(--green);
+  background: var(--accent-soft);
+  color: var(--green);
+}
+body:has(.guide-tabs) .guide-tabs > a::after {
+  display: none;
+}
+body:has(.guide-tabs) .guide-tabs > a:hover {
+  border-color: var(--green);
+}
+body:has(.guide-writer) .editor-bottom .button.quiet {
+  border-color: var(--line);
+  background: var(--surface);
+}
+@media (max-width: 680px) {
+  body:has(.guide-tabs) .workspace main {
+    padding-top: 14px;
+  }
+  body:has(.guide-tabs) .guide-heading > div:first-child {
+    display: block;
+  }
+  body:has(.guide-tabs) .guide-meta {
+    margin-top: 8px;
+  }
+  body:has(.guide-tabs) .guide-tabs > a {
+    font-size: 12px;
+    padding-inline: 12px;
+  }
+}
+
+.review-icon-change {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 22px;
+  border-top: 1px solid var(--line);
+  font-size: 13px;
+  flex-wrap: wrap;
+}
+.review-icon-change > span,
+.review-icon-change span span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.review-icon-change img {
+  object-fit: contain;
+  vertical-align: middle;
+}

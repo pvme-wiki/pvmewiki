@@ -1,7 +1,10 @@
+import { sectionIconChoices } from "./icon-picker.mjs";
+import { mountWriter } from './writer.mjs';
+import { reviewChangesHTML } from './review-changes.mjs';
 import { HostedAdapter } from './adapter.mjs';
 import { canReview, canReviewSubmission, canCheckPublication, submissionStatus, authNotice, findGuides, guideCategories, canPrepareReplacement, moderatorReviewUrl } from './hosted-workflow.mjs';
 import { themeOptions } from './theme.mjs';
-import { renderDocument, renderBlock, textContent, updateTextNode, updateEmojiNode, getEditableEmojiNodes, EMOJI_ASSETS, assertDocument } from '../shared/model.mjs';
+import { renderDocument, textContent, updateEmojiNode, getEditableEmojiNodes, EMOJI_ASSETS, assertDocument } from '../shared/model.mjs';
 import { escapeHTML as e, sectionsOf, changedBlocks, conflictPlan, resolveConflict, timeLabel } from './document.mjs';
 import { download } from './export.mjs';
 import { icon, rune, art } from './icons.mjs';
@@ -57,7 +60,8 @@ async function checkReturnedPublication(review, version, { automatic = true, tri
 }
 let identityGeneration = 0, connectionSequence = 0, reconnectPromise;
 let activeHash = location.hash;
-let saveTimer, savePromise, toastTimer;
+let saveTimer, savePromise, toastTimer, writer, writerKey;
+const writerHistories = new Map();
 let tabId;
 try {
   tabId = sessionStorage.getItem('pvme-tab') || crypto.randomUUID();
@@ -109,6 +113,7 @@ function availability() {
   return '';
 }
 function shell(content, { active = 'library', wide = false } = {}) {
+  if (writer) { writerHistories.set(writerKey,writer.snapshot()); if (writerHistories.size>20) writerHistories.delete(writerHistories.keys().next().value); writer.destroy(); writer=null; }
   const nav = [
     ['library', '#/', 'book', 'Guide library'],
     ['drafts', '#/drafts', 'pen', 'My drafts'],
@@ -128,7 +133,7 @@ function gate(label = 'Continue editing') {
   app.innerHTML = shell(`<section class="access-panel"><span class="access-rune">${rune}</span><h1>${unavailable ? 'Editing is unavailable.' : 'Sign in to edit.'}</h1><p>${unavailable ? 'Read the guides while contributor access is unavailable.' : 'Editing is available to invited contributors. Sign in with Discord to save drafts.'}</p>${unavailable ? button('reconnect', 'Check connection', 'primary') : signInLink(label === 'Continue editing' ? 'Sign in to edit' : 'Sign in with Discord')}<a class="text-button" href="#/">Browse editable guides ${icon('arrow')}</a><a class="text-button" href="/">Read without signing in ${icon('arrow')}</a></section>`);
 }
 function howItWorks() {
-  showDialog(`<div class="dialog-heading"><h2>How editing works</h2></div><ol class="how-steps"><li><strong>Edit and save</strong><span>Drafts autosave to your account. You can also use Save draft.</span></li><li><strong>Send for review</strong><span>Check the preview and explain your change. Reviewers receive the version you send; later draft edits stay in your draft.</span></li><li><strong>Check My submissions</strong><span>My submissions shows review decisions, notes and publication status.</span></li></ol><p class="dialog-note">If versions conflict, compare them before saving. Links, media and formatting remain protected.</p>${button('close-dialog', 'Back to the editor', 'primary full')}`);
+  showDialog(`<div class="dialog-heading"><h2>How editing works</h2></div><ol class="how-steps"><li><strong>Edit and save</strong><span>Drafts autosave to your account. You can also use Save draft.</span></li><li><strong>Send for review</strong><span>Check the preview and explain your change. Reviewers receive the version you send; later draft edits stay in your draft.</span></li><li><strong>Check My submissions</strong><span>My submissions shows review decisions, notes and publication status.</span></li></ol><p class="dialog-note">If versions conflict, compare them before saving. Original links, media and layout are preserved. Writing tools explain supported Markdown and icon shortcuts.</p>${button('close-dialog', 'Back to the editor', 'primary full')}`);
 }
 function libraryResults() {
   const filtered = findGuides(state.catalog, { query: state.query, category: state.filter });
@@ -175,10 +180,6 @@ function guideHeader(view) {
   return `<a class="back-link" href="#/">${icon('back')}Guide library</a><div class="guide-heading"><div><div class="eyebrow">${e(categoryLabel(state.guide.category))}</div><h1>${e(nameOf(state.guide.id))}</h1><div class="guide-meta"><span class="save-status" data-save-status role="status" aria-live="polite">${statusMarkup()}</span></div></div><div class="heading-art ${tone}">${art(type)}</div></div><div id="save-alert">${alertMarkup()}</div><nav class="guide-tabs" aria-label="Guide workflow">${[['edit', 'pen', 'Edit'], ['preview', 'eye', 'Preview'], ['review', 'review', 'Review changes']].map(([key, symbol, title]) => `<a href="${guideHref(key)}" class="${view === key ? 'active' : ''}" ${view === key ? 'aria-current="page"' : ''}>${icon(symbol)}${title}${key === 'review' ? `<span class="tab-count" data-change-count>${changes().length}</span>` : ''}</a>`).join('')}</nav>`;
 }
 let emojiSelection = null;
-function emojiControls(block) {
-  const nodes = getEditableEmojiNodes(block);
-  return nodes.length ? '<div class="emoji-controls" aria-label="Change guide icons">' + nodes.map(node => '<button type="button" class="button small quiet" data-action="choose-emoji" data-block="' + e(block.id) + '" data-emoji-node="' + e(node.id) + '"><img src="' + e(node.asset.src) + '" alt="" width="24" height="24" loading="lazy" referrerpolicy="no-referrer">Change ' + e(node.asset.alt) + '</button>').join('') + '</div>' : '';
-}
 function emojiResults(query = '') {
   const matches = EMOJI_ASSETS.filter(asset => asset.id.toLowerCase().includes(query.trim().toLowerCase()));
   return '<p role="status">' + matches.length + ' icons. Showing up to 60. Search for an icon name.</p><div class="emoji-grid">' + matches.slice(0,60).map(asset => '<button type="button" class="button quiet" data-action="replace-emoji" data-emoji-asset="' + e(asset.id) + '"><img src="' + e(asset.src) + '" alt="" width="28" height="28" loading="lazy" referrerpolicy="no-referrer"><span>' + e(asset.alt) + '</span></button>').join('') + '</div>';
@@ -200,48 +201,37 @@ function replaceEmoji(target) {
   dialog.close(); renderEditor(); updateStatus(); clearTimeout(saveTimer);
   [...document.querySelectorAll('[data-emoji-node]')].find(element => element.dataset.block === selected.block && element.dataset.emojiNode === selected.node)?.focus();
   if (!state.saveError) saveTimer = setTimeout(flushSave, 3000);
-  toast('Icon changed.');
+  toast('Icon changed.'); writer?.focus?.();
 }
 
-function visibleBlock(block) { return textContent(block).replace(/[\s\u200b\u200e]/g, '') || /img|video|iframe|table/.test(JSON.stringify(block.node)); }
-function blockHTML(block, index) {
-  const edited = changes().some(change => change.id === block.id);
-  if (!block.editable) return `<details class="locked-block"><summary><span class="locked-symbol">${icon(block.type === 'media' ? 'eye' : 'lock')}</span><span><strong>${block.type === 'media' ? 'Original media' : 'Protected formatting'}</strong><small>View media and formatting</small></span><span class="lock-expand">+</span></summary><div class="locked-content guide-content">${renderBlock(block, readerOptions)}</div><p class="locked-note">This block’s layout is read-only. Available icon controls appear below.</p>${emojiControls(block)}</details>`;
-  return `<div class="edit-block ${block.type === 'heading' ? 'heading-block' : ''} ${edited ? 'changed' : ''}" data-block-id="${e(block.id)}" data-label="${e(block.type === 'heading' ? 'Section heading' : `Paragraph ${index + 1}`)}"><div class="block-meta"><span>${block.type === 'heading' ? 'HEADING' : 'TEXT'}</span><span class="block-state">${edited ? 'Edited' : icon('pen')}</span></div><div class="guide-content editable-content">${renderBlock(block, { ...readerOptions, textNodeAttributes: true })}</div>${emojiControls(block)}</div>`;
-}
 function renderEditor() {
   const sections = sectionsOf(state.document);
   const selected = sections.find(section => section.id === state.section) || sections.find(section => section.blocks.some(block => block.editable)) || sections[0];
   state.section = selected.id;
   const index = sections.indexOf(selected);
-  app.innerHTML = shell(`${guideHeader('edit')}${replacementNotice()}<div class="editor-layout"><aside class="section-sidebar"><div class="section-sidebar-title"><span class="eyebrow">IN THIS GUIDE</span></div><nav aria-label="Guide sections">${sections.map((section, i) => `<button class="section-link ${section.id === selected.id ? 'selected' : ''}" data-section="${e(section.id)}" ${section.id === selected.id ? 'aria-current="true"' : ''}><span>${String(i + 1).padStart(2, '0')}</span><strong>${e(section.title)}</strong>${section.blocks.some(block => changes().some(change => change.id === block.id)) ? '<i class="edited-dot" aria-label="Edited"></i>' : ''}</button>`).join('')}</nav><p class="section-hint">Drafts autosave to your account.</p></aside><section class="editing-panel" aria-label="Edit guide section"><div class="mobile-section"><label for="section-select">SECTION ${index + 1} OF ${sections.length}</label><select id="section-select">${sections.map((section, i) => `<option value="${e(section.id)}" ${section.id === selected.id ? 'selected' : ''}>${i + 1}. ${e(section.title)}</option>`).join('')}</select></div><div class="editor-section-top"><div><span class="eyebrow">SECTION ${index + 1} OF ${sections.length}</span><h2>${e(selected.title)}</h2></div></div><div class="editing-tip">${icon('info')}<p>Edit the text directly. Icon buttons open the icon picker.</p></div><div class="editable-blocks">${selected.blocks.filter(visibleBlock).map(blockHTML).join('')}</div><div class="section-pagination"><button class="text-button" data-action="previous-section" ${index === 0 ? 'disabled' : ''}>${icon('back')}Previous</button><span>${index + 1} / ${sections.length}</span><button class="text-button" data-action="next-section" ${index === sections.length - 1 ? 'disabled' : ''}>Next section${icon('arrow')}</button></div></section></div><div class="editor-bottom"><span class="save-status bottom-save" data-save-status>${statusMarkup()}</span>${button('save-draft', `${icon('check')}Save draft`, 'quiet')}<a class="button primary" href="${guideHref('review')}">Review changes${icon('arrow')}</a></div>`, { wide: true });
-  document.querySelectorAll('.edit-block [data-node-id]').forEach((span, i) => {
-    span.contentEditable = 'plaintext-only';
-    span.setAttribute('role', 'textbox');
-    span.setAttribute('aria-multiline', 'true');
-    span.setAttribute('aria-label', `${span.closest('.edit-block').dataset.label}, text ${i + 1}`);
-    span.setAttribute('spellcheck', 'true');
-  });
-  document.querySelectorAll('.edit-block a').forEach(link => { link.tabIndex = -1; });
+  app.innerHTML = shell(`${guideHeader('edit')}${replacementNotice()}<section class="writing-workspace editing-panel" aria-label="Edit guide section"><div class="writer-bar"><label class="writer-section-picker" for="section-select"><span>Section</span><select id="section-select">${sections.map((section,i)=>`<option value="${e(section.id)}" ${section.id===selected.id?'selected':''}>${i+1}. ${e(section.title)}</option>`).join('')}</select></label><details class="writer-tools"><summary>Writing tools</summary><div><p id="writer-help">Use **bold**, *italic*, __underline__ and :icon: shortcuts. Start typing an icon name after a colon.</p><button type="button" class="button small" data-action="insert-icon">Insert icon</button><button type="button" class="button small" data-action="section-icons">Replace an icon</button><button type="button" class="button small" data-action="writer-bold">Bold</button><button type="button" class="button small" data-action="writer-italic">Italic</button><p>Original links, images and layout stay intact. Select an existing icon to replace it. Unknown shortcuts stay as text.</p><a href="https://pvme.io/pvme-guides/editor-resources/editor-references/rotation-builder/" target="_blank" rel="noopener noreferrer">PvME rotation builder ↗</a><a href="https://pvme.github.io/preset-maker/" target="_blank" rel="noopener noreferrer">PvME preset maker ↗</a><p>These tools create upstream rotations and preset images. This editor does not upload or replace preset images.</p></div></details></div><div id="writer" class="guide-writer"></div><div class="section-pagination"><button class="text-button" data-action="previous-section" ${index===0?'disabled':''}>${icon('back')}Previous</button><span>${index+1} / ${sections.length}</span><button class="text-button" data-action="next-section" ${index===sections.length-1?'disabled':''}>Next section${icon('arrow')}</button></div></section><div class="editor-bottom"><span class="save-status bottom-save" data-save-status>${statusMarkup()}</span>${button('save-draft',`${icon('check')}Save draft`,'quiet')}<a class="button primary" href="${guideHref('review')}">Review changes${icon('arrow')}</a></div>`,{wide:true});
+  writerKey = `${identityGeneration}:${state.guide.id}:${selected.id}`;
+  writer = mountWriter(document.querySelector('#writer'), {historySnapshot:writerHistories.get(writerKey),document:state.document, baseline:state.baseline, blocks:selected.blocks, readerOptions, onNotice:toast, onChange: document => {
+    state.document=document; state.editVersion++; state.dirty=true; saveRecovery(); updateStatus(); clearTimeout(saveTimer);
+    if (!state.saveError && !state.conflict) saveTimer=setTimeout(flushSave,3000);
+  }});
   updateStatus();
 }
 function sourceFoot(document) {
   return `<div class="source-foot"><strong>By ${e(document.source.attribution || 'PvME contributors')}</strong><span><a href="${e(document.source.url)}" target="_blank" rel="noopener noreferrer">Original guide</a> · <a href="${e(document.source.licenseUrl)}" target="_blank" rel="noopener noreferrer">${e(document.source.license)}</a></span></div>`;
 }
 function previewView() {
-  app.innerHTML = shell(`${guideHeader('preview')}${replacementNotice()}<div class="preview-notice">${icon('eye')}<span>Draft preview · unpublished</span></div><article class="reading-paper"><h1>${e(nameOf(state.guide.id))}</h1><div class="guide-content reading-content">${renderDocument(state.document, readerOptions)}</div>${sourceFoot(state.document)}</article><div class="editor-bottom"><a class="button quiet" href="${guideHref('edit')}">${icon('back')}Keep editing</a><a class="button primary" href="${guideHref('review')}">Review changes${icon('arrow')}</a></div>`);
+  app.innerHTML = shell(`${guideHeader('preview')}${replacementNotice()}<div class="preview-notice">${icon('eye')}<span>Draft preview · unpublished</span></div><article class="reading-paper"><div class="guide-content reading-content">${renderDocument(state.document, readerOptions)}</div>${sourceFoot(state.document)}</article><div class="editor-bottom"><a class="button quiet" href="${guideHref('edit')}">${icon('back')}Keep editing</a><a class="button primary" href="${guideHref('review')}">Review changes${icon('arrow')}</a></div>`);
   fixPreviewLinks();
 }
-function changeList(document, baseline) {
-  return changedBlocks(baseline, document).map((change, index) => `<section class="change-card"><div class="change-heading"><span class="change-number">${String(index + 1).padStart(2, '0')}</span><h3>${e(change.label.replace(/[\u200b\u200e]/g, '').slice(0, 85))}</h3></div><div class="diff-before"><span class="diff-label">BEFORE</span><p>${e(change.before)}</p></div><div class="diff-after"><span class="diff-label">AFTER</span><p>${e(change.after)}</p></div></section>`).join('');
-}
+function changeList(document, baseline) { return reviewChangesHTML(baseline,document); }
 function replacementNotice() {
   if (state.replacement?.guideId !== state.guide?.id) return '';
   return `<div class="save-alert replacement-notice"><div><strong>Preparing a corrected submission</strong><p>Edit your draft and send a corrected version for review. The earlier submission stays unchanged.</p></div>${button('cancel-replacement', 'Use normal draft', 'small')}</div>`;
 }
 function reviewView() {
   const list = changes();
-  app.innerHTML = shell(`${guideHeader('review')}${replacementNotice()}<div class="review-intro"><h2>Check your changes</h2><p>${list.length ? `${list.length} ${list.length === 1 ? 'block' : 'blocks'} changed. A reviewer will check the version you send.` : 'No changes yet. Return to Edit to make an update.'}</p></div><div class="review-layout"><div>${list.length ? changeList(state.document, state.baseline) : `<div class="empty-state">${icon('pen')}<h3>Nothing to send yet</h3><a class="button primary" href="${guideHref('edit')}">Back to editing</a></div>`}</div><aside class="review-summary"><h3>Send for review</h3><label for="review-summary">What changed, and why?</label><textarea id="review-summary" rows="4" maxlength="1000" placeholder="e.g. Clarified when to use a defensive during the frost cannon">${e(state.summary)}</textarea><p>Reviewers receive the version you send. Later edits stay in your draft.</p>${button('submit-review', `${state.replacement ? 'Send corrected version' : 'Send for review'}${icon('arrow')}`, 'primary full', !list.length || !canSubmit() || state.conflict ? 'disabled' : '')}${!canSubmit() ? '<p>Submissions are not available for this account right now.</p>' : ''}${button('save-draft', 'Save draft', 'quiet full')}</aside></div><div class="editor-bottom"><a class="button quiet" href="${guideHref('edit')}">${icon('back')}Keep editing</a><a class="button" href="${guideHref('preview')}">${icon('eye')}Read the preview</a></div>`);
+  app.innerHTML = shell(`${guideHeader('review')}${replacementNotice()}<div class="review-intro"><h2>Check your changes</h2><p>${list.length ? `${list.length} ${list.length === 1 ? 'passage' : 'passages'} changed. A reviewer will check the version you send.` : 'No changes yet. Return to Edit to make an update.'}</p></div><div class="review-layout"><div>${list.length ? changeList(state.document, state.baseline) : `<div class="empty-state">${icon('pen')}<h3>Nothing to send yet</h3><a class="button primary" href="${guideHref('edit')}">Back to editing</a></div>`}</div><aside class="review-summary"><h3>Send for review</h3><label for="review-summary">What changed, and why?</label><textarea id="review-summary" rows="4" maxlength="1000" placeholder="e.g. Clarified when to use a defensive during the frost cannon">${e(state.summary)}</textarea><p>Reviewers receive the version you send. Later edits stay in your draft.</p>${button('submit-review', `${state.replacement ? 'Send corrected version' : 'Send for review'}${icon('arrow')}`, 'primary full', !list.length || !canSubmit() || state.conflict ? 'disabled' : '')}${!canSubmit() ? '<p>Submissions are not available for this account right now.</p>' : ''}${button('save-draft', 'Save draft', 'quiet full')}</aside></div><div class="editor-bottom"><a class="button quiet" href="${guideHref('edit')}">${icon('back')}Keep editing</a><a class="button" href="${guideHref('preview')}">${icon('eye')}Read the preview</a></div>`);
 }
 async function draftsView(version) {
   const result = await adapter.listDrafts();
@@ -428,20 +418,6 @@ async function checkUncertainSave() {
   } else await flushSave();
   updateStatus();
 }
-function editField(target) {
-  const block = target.closest('[data-block-id]');
-  if (!block) return;
-  const value = target.innerText.replace(/\r\n/g, '\n');
-  state.document = updateTextNode(state.document, block.dataset.blockId, target.dataset.nodeId, value);
-  state.editVersion++;
-  state.dirty = true;
-  saveRecovery();
-  block.classList.add('changed');
-  block.querySelector('.block-state').textContent = 'Edited';
-  updateStatus();
-  clearTimeout(saveTimer);
-  if (!state.saveError && !state.conflict) saveTimer = setTimeout(flushSave, 3000);
-}
 function downloadDraft() {
   if (!state.document) return;
   download(new Blob([JSON.stringify({ document: state.document, baseRevision: state.baseRevision, draftVersion: state.revision, exportedAt: new Date().toISOString() }, null, 2)], { type: 'application/json' }), `pvme-${state.guide.id}-recovery.json`);
@@ -486,6 +462,14 @@ async function action(name, target) {
       updateLibraryResults(); search.focus();
       break;
     }
+    case 'section-icons': {
+      const blocks=sectionsOf(state.document).find(section=>section.id===state.section)?.blocks||[];
+      showDialog(`<h2>Choose an icon to replace</h2><label for="section-icon-search">Find an icon in this section</label><input id="section-icon-search" type="search" autocomplete="off"><div id="section-icon-results">${sectionIconChoices(blocks)}</div>`);
+      document.querySelector('#section-icon-search').focus();break;
+    }
+    case 'insert-icon': writer?.complete(); break;
+    case 'writer-bold': writer?.format('**'); break;
+    case 'writer-italic': writer?.format('*'); break;
     case 'how': howItWorks(); break;
     case 'dismiss-auth': state.authNotice = ''; history.replaceState(null, '', `${location.pathname}${location.hash}`); await renderRoute(); break;
     case 'close-dialog': dialog.close(); break;
@@ -660,8 +644,8 @@ document.addEventListener('click', async event => {
   } finally { if (target.isConnected) target.disabled = false; }
 });
 document.addEventListener('input', event => {
-  if (event.target.id === 'emoji-search') document.querySelector('#emoji-results').innerHTML = emojiResults(event.target.value);
-  else if (event.target.matches('[data-node-id]')) editField(event.target);
+  if (event.target.id === 'section-icon-search') document.querySelector('#section-icon-results').innerHTML=sectionIconChoices(sectionsOf(state.document).find(section=>section.id===state.section)?.blocks||[],event.target.value);
+  else if (event.target.id === 'emoji-search') document.querySelector('#emoji-results').innerHTML = emojiResults(event.target.value);
   else if (event.target.id === 'review-summary') state.summary = event.target.value;
   else if (event.target.id === 'guide-search') {
     state.query = event.target.value;
@@ -674,28 +658,8 @@ document.addEventListener('change', event => {
   if (event.target.id === 'section-select') { state.section = event.target.value; renderEditor(); }
   if (event.target.matches('[data-conflict-id]')) state.conflictChoices[event.target.dataset.conflictId] = event.target.value;
 });
-document.addEventListener('beforeinput', event => {
-  if (!event.target.matches('[data-node-id]')) return;
-  const selection = window.getSelection();
-  if (selection.rangeCount && !event.target.contains(selection.getRangeAt(0).commonAncestorContainer)) { event.preventDefault(); toast('Edit one text field at a time to keep icons and links intact.'); }
-});
-document.addEventListener('drop', event => { if (event.target.closest('.edit-block')) event.preventDefault(); });
-document.addEventListener('paste', event => {
-  if (!event.target.matches('[data-node-id]')) return;
-  event.preventDefault();
-  const selection = window.getSelection();
-  if (!selection.rangeCount) return;
-  const range = selection.getRangeAt(0);
-  if (!event.target.contains(range.commonAncestorContainer)) { toast('Paste into one text field at a time.'); return; }
-  range.deleteContents();
-  const node = document.createTextNode(event.clipboardData.getData('text/plain'));
-  range.insertNode(node); range.setStartAfter(node); range.collapse(true);
-  selection.removeAllRanges(); selection.addRange(range);
-  editField(event.target);
-});
 document.addEventListener('keydown', event => {
   if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 's') { event.preventDefault(); flushSave(true); }
-  if (event.target.matches('[data-node-id]') && (event.metaKey || event.ctrlKey) && ['b', 'i', 'u'].includes(event.key.toLowerCase())) event.preventDefault();
 });
 window.addEventListener('beforeunload', event => {
   if (state.dirty || state.saving) { saveRecovery(); event.preventDefault(); event.returnValue = ''; }

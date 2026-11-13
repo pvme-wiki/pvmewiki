@@ -6,6 +6,8 @@ import { webcrypto } from 'node:crypto';
 import * as workflow from '../src/hosted-workflow.mjs';
 import * as documentHelpers from '../src/document.mjs';
 import * as model from '../shared/model.mjs';
+import { sectionIconChoices } from '../src/icon-picker.mjs';
+import { reviewChangesHTML } from '../src/review-changes.mjs';
 const catalog = JSON.parse(await readFile(new URL('../content/catalog.json', import.meta.url)));
 const seeds = new Map(await Promise.all(catalog.map(async guide => [guide.id, JSON.parse(await readFile(new URL(`../content/${guide.file}`, import.meta.url)))])));
 const clone = structuredClone;
@@ -32,7 +34,7 @@ async function harness({ realRender = false } = {}) {
     sessionStorage: storage, localStorage: storage, location, history: { replaceState: noop },
     document: { querySelector: element, querySelectorAll: () => [], addEventListener: (name, fn) => events.set(name, fn), getElementById: element, title: '' },
     window: { addEventListener: (name, fn) => events.set(name, fn), scrollTo: noop }, icon: () => '', rune: '', art: () => '', themeOptions: () => '',
-    ...workflow, ...documentHelpers, ...model, e: documentHelpers.escapeHTML,
+    mountWriter: () => ({destroy:noop,snapshot:()=>({})}), reviewChangesHTML, sectionIconChoices, ...workflow, ...documentHelpers, ...model, e: documentHelpers.escapeHTML,
   });
   let source = await readFile(new URL('../src/hosted.mjs', import.meta.url), 'utf8');
   source = source.replace(/^import .*?;\s*$/gm, '').replace('const adapter = new HostedAdapter();', 'let adapter;').replace(/\nstart\(\)\.catch[\s\S]*$/, '').replaceAll('import.meta.url', JSON.stringify(new URL('../src/hosted.mjs', import.meta.url).href));
