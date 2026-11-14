@@ -24,9 +24,10 @@ test('independent: approved dollar syntax renders literally and release output e
   }
   // The isolated build uses the same installed, locked build dependencies.
   fs.copyFileSync(path.join(repository, 'package-lock.json'), path.join(root, 'package-lock.json'));
-  fs.symlinkSync(path.join(repository, 'node_modules'), path.join(root, 'node_modules'), 'dir');
+  fs.symlinkSync(path.join(repository, 'node_modules'), path.join(root, 'node_modules'), process.platform === 'win32' ? 'junction' : 'dir');
   fs.mkdirSync(path.join(root, 'server'), { recursive: true });
   fs.copyFileSync(path.join(repository, 'server/core.mjs'), path.join(root, 'server/core.mjs'));
+  fs.copyFileSync(path.join(repository, 'server/public-release.mjs'), path.join(root, 'server/public-release.mjs'));
   const baseline = read(path.join(root, 'editor/content/arch-glacor-basic.json'));
   const heading = baseline.blocks.find(block => block.type === 'heading' && block.editable && block.node.attrs.id && block.editableTextNodeIds.length);
   assert.ok(heading);

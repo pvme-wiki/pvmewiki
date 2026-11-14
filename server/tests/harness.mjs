@@ -7,6 +7,7 @@ import { csrfToken, SESSION_COOKIE } from '../auth.mjs';
 export async function fixture() {
   const pg = new PGlite();
   await pg.exec(await readFile(new URL('../migrations/001_initial.sql', import.meta.url), 'utf8'));
+  await pg.exec(await readFile(new URL('../migrations/002_public_publications.sql', import.meta.url), 'utf8'));
   const db = {
     query: (sql, params = []) => pg.query(sql, params),
     transaction: fn => pg.transaction(q => fn({ query: (sql, params = []) => q.query(sql, params) })),

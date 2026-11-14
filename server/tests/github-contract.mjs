@@ -80,7 +80,12 @@ export function githubFake(row) {
       for (const item of body.tree) files[item.path] = item.sha;
       return response({ sha: buildTree(files) }, 201);
     }
-    if (path.startsWith('/git/trees/')) return response(trees.get(path.split('/').at(-1)));
+    if (path.startsWith('/git/trees/')) {
+      const tree = trees.get(path.split('/').at(-1));
+      if (url.searchParams.get('recursive') === '1' && tree?.files) return response({ truncated: false,
+        tree: Object.entries(tree.files).map(([path, sha]) => ({ path, sha, type: 'blob', mode: '100644', size: Buffer.byteLength(blobs.get(sha)) })) });
+      return response(tree);
+    }
     if (path === '/git/commits' && method === 'POST') {
       assert.equal(body.author.email, 'pvme-editor@users.noreply.github.com');
       const id = createCommit(trees.get(body.tree).files, body.parents); return response({ sha: id }, 201);
