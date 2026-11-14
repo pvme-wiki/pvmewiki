@@ -9,6 +9,7 @@ function timeout() {
   if (remaining < 100) throw new PublicationError('provider_timeout', 'Publication will resume on the next check.', { retryable: true });
   return AbortSignal.timeout(Math.floor(remaining));
 }
+export const requestBudgetSignal = timeout;
 export class PublicationError extends Error {
   constructor(code, message, { retryable = false } = {}) { super(message); Object.assign(this, { code, retryable }); }
 }

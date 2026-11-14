@@ -48,6 +48,6 @@ test('malformed, self-reviewed, unknown and symlinked receipts fail closed', t =
   const f = fixture(t); f.receipt.reviewerId = f.receipt.contributorId; f.save();
   assert.throws(() => loadHostedContent(f.dir), /Invalid approval receipt/);
   fs.unlinkSync(path.join(f.dir, 'content/reviews', `${f.receipt.submissionId}.json`));
-  fs.symlinkSync(path.join(f.dir, 'editor/content/arch-glacor-basic.json'), path.join(f.dir, 'content/reviews/link.json'));
+  fs.symlinkSync(path.join(f.dir, process.platform === 'win32' ? 'editor/content' : 'editor/content/arch-glacor-basic.json'), path.join(f.dir, 'content/reviews/link.json'), process.platform === 'win32' ? 'junction' : 'file');
   assert.throws(() => loadHostedContent(f.dir), /regular content file/);
 });

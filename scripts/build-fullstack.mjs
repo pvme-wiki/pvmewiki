@@ -6,6 +6,7 @@ import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { readSnapshot, writeFiles, sha256 } from './reader-snapshot.mjs';
 import { loadHostedContent, documentText } from './hosted-content.mjs';
+import { loadPublicHostedContent } from './public-hosted-content.mjs';
 import { checkProductionPublication } from './check-publication.mjs';
 import { patchHtml } from './patch-reader-html.mjs';
 import { polishReader } from './boss-hub.mjs';
@@ -16,7 +17,9 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const out = path.join(root, 'dist');
 let commit = process.env.VERCEL_GIT_COMMIT_SHA;
 if (!commit) { try { commit = execFileSync('git', ['rev-parse', 'HEAD'], { cwd: root, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).trim(); } catch {} }
-const hosted = loadHostedContent(root, commit);
+const mode = process.env.PVME_PUBLICATION_MODE || 'private';
+if (!['private', 'public'].includes(mode)) throw Error('Invalid publication mode.');
+const hosted = mode === 'public' ? loadPublicHostedContent(root, commit) : loadHostedContent(root, commit);
 await checkProductionPublication(root, hosted.published, hosted.baseline);
 const files = readSnapshot(root);
 const originalSuggestionsPage = files.get(originalSuggestionsPagePath);
@@ -65,6 +68,7 @@ for (const [name, bytes] of files) {
     html = html.replace('<section id="privacy">', '<section id="privacy"><h2>Contributor accounts and drafts</h2><p>The reader remains public. The contributor pilot uses Discord identity-only sign-in and invitation-only access. Drafts and review records are stored privately in PostgreSQL. Approved guide snapshots and review receipts are backed up in a private Git repository. A reviewer approves the snapshot, a maintainer merges it, and the site verifies publication. The editor stays unavailable until those services are configured.</p><p>All 323 guide documents are available in this contributor prototype. Markdown passages, lists, links, tables and images can be edited and reviewed. Source provenance and account permissions remain protected. Existing game and source licences still apply.</p>');
     html = html.replace('This public, independent prototype does not ask for an account or collect game data.', 'Reading does not require an account or game data. Contributor sign-in is separate.');
   }
+  if (mode === 'public') html = html.replace('Approved guide snapshots and review receipts are backed up in a private Git repository.', 'Approved guide content and its public history are stored in Git. Drafts, review notes and approval evidence remain private in PostgreSQL.');
   files.set(name, Buffer.from(html));
 }
 for (const asset of ['night-mode.js', 'night-mode.css', 'themes.css']) files.set(`assets/${asset}`, fs.readFileSync(path.join(root, 'src', asset)));

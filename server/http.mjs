@@ -1,3 +1,4 @@
+import { publicationTarget } from './publication-target.mjs';
 import { createHmac } from 'node:crypto';
 import { ServiceError, fail, equalSecret } from './core.mjs';
 import { createAuth, cookie, STATE_COOKIE, safeEditorReturn } from './auth.mjs';
@@ -56,7 +57,7 @@ async function rate(db, key, max, seconds) {
 export function createHandler({ db, config, identityProvider, publisher, logError = () => {} }) {
   const auth = config.configured ? createAuth(db, config, identityProvider ? { provider: identityProvider } : {}) : null;
   const service = config.configured ? createService(db, { publicationEnabled: Boolean(publisher), repository: config.github }) : null;
-  const jobs = config.configured ? createJobRunner(db, publisher, { origin: config.origin }) : null;
+  const jobs = config.configured ? createJobRunner(db, publisher, { origin: config.origin, target: publicationTarget(config.github) }) : null;
   const unavailable = () => ({ configured: false, user: null, csrfToken: null, capabilities: { save: false, submit: false, review: false, publication: false }, message: 'Hosted saving and review are not available yet. No changes have been sent.' });
   return async request => {
     let route = '';
@@ -87,7 +88,7 @@ export function createHandler({ db, config, identityProvider, publisher, logErro
         let payload;
         try { payload = JSON.parse(raw.toString('utf8')); } catch { fail(400, 'invalid_json', 'Invalid webhook body.'); }
         const sameRepository = payload.repository?.full_name?.toLowerCase() === `${config.github.owner}/${config.github.repo}`.toLowerCase();
-        if (!sameRepository || payload.repository?.private !== true || String(payload.installation?.id) !== config.github.installationId) fail(403, 'invalid_repository', 'Unexpected webhook repository or installation.');
+        if (!sameRepository || payload.repository?.private !== (config.github.mode !== 'public') || String(payload.installation?.id) !== config.github.installationId) fail(403, 'invalid_repository', 'Unexpected webhook repository or installation.');
         const inserted = await db.transaction(async q => {
           const result = await q.query('INSERT INTO webhook_deliveries(id) VALUES($1) ON CONFLICT DO NOTHING RETURNING id', [delivery]);
           // A failed wake must leave this delivery retryable on redelivery.

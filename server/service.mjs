@@ -1,10 +1,11 @@
+import { publicationTarget } from './publication-target.mjs';
 import { ADMIN_SELF_POLICY } from './approval.mjs';
 import { randomUUID } from 'node:crypto';
 import { validateDocument } from '../editor/shared/model.mjs';
 import { fail, fields, integer, boundedText, documentHash, iso, HOSTED_DOCUMENT_LIMIT_BYTES } from './core.mjs';
 const guideIdPattern = /^[a-z0-9][a-z0-9-]{0,100}$/;
 const uuidPattern = /^[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/;
-export const needsFreshReview = code => ['source_conflict', 'branch_conflict', 'pull_request_conflict', 'merge_conflict', 'snapshot_corrupt'].includes(code);
+export const needsFreshReview = code => ['source_conflict', 'branch_conflict', 'pull_request_conflict', 'merge_conflict', 'snapshot_corrupt', 'private_material_in_publication'].includes(code);
 export const isReviewer = user => ['moderator', 'admin'].includes(user?.role);
 export const draftView = row => row ? {
   guideId: row.guide_id, version: row.version, baseRevision: row.base_revision,
@@ -15,9 +16,12 @@ export const guideView = row => ({ document: row.document, revision: row.revisio
 export function submissionView(row, user, { detail = false, repository = null } = {}) {
   const reviewer = isReviewer(user);
   const prNumber = row.job_provider?.number || row.job_provider?.diagnosticPrNumber;
-  const safeRepository = repository && /^[A-Za-z0-9_.-]+$/.test(repository.owner) && /^[A-Za-z0-9_.-]+$/.test(repository.repo);
+  const frozenRepository = row.job_target?.mode === 'public' ? row.job_target.repository : null;
+  const legacyRepository = (!repository?.mode || repository.mode === 'private') && repository && /^[A-Za-z0-9_.-]+$/.test(repository.owner) && /^[A-Za-z0-9_.-]+$/.test(repository.repo) ? `${repository.owner}/${repository.repo}` : null;
+  const reviewRepository = frozenRepository || legacyRepository;
+  const safeRepository = /^[A-Za-z0-9][A-Za-z0-9_.-]*\/[A-Za-z0-9][A-Za-z0-9_.-]*$/.test(reviewRepository || '');
   const reviewUrl = reviewer && safeRepository && Number.isSafeInteger(prNumber) && prNumber > 0
-    ? `https://github.com/${repository.owner}/${repository.repo}/pull/${prNumber}` : null;
+    ? `https://github.com/${reviewRepository}/pull/${prNumber}` : null;
   return {
     id: row.id, guideId: row.guide_id, title: row.document.title, version: row.version,
     baseRevision: row.base_revision, draftVersion: row.draft_version, summary: row.summary,
@@ -56,7 +60,7 @@ function baselineConflict(current, draftVersion) {
 }
 async function submission(q, id, { lock = false } = {}) {
   if (!uuidPattern.test(id)) fail(404, 'submission_not_found', 'Submission not found.');
-  const row = (await q.query(`SELECT s.*,j.state AS job_state,j.provider AS job_provider,j.last_error AS job_error FROM submissions s LEFT JOIN publication_jobs j ON j.submission_id=s.id WHERE s.id=$1 ${lock ? 'FOR UPDATE OF s' : ''}`, [id])).rows[0];
+  const row = (await q.query(`SELECT s.*,j.state AS job_state,j.provider AS job_provider,j.target AS job_target,j.last_error AS job_error FROM submissions s LEFT JOIN publication_jobs j ON j.submission_id=s.id WHERE s.id=$1 ${lock ? 'FOR UPDATE OF s' : ''}`, [id])).rows[0];
   if (!row) fail(404, 'submission_not_found', 'Submission not found.');
   return row;
 }
@@ -152,7 +156,7 @@ export function createService(db, { publicationEnabled = false, repository = nul
     async listSubmissions(actor, { mine = false } = {}) {
       const user = await requireUser(db, actor);
       const onlyMine = mine || !isReviewer(user);
-      return (await db.query(`SELECT s.*,j.state AS job_state,j.provider AS job_provider,j.last_error AS job_error FROM submissions s LEFT JOIN publication_jobs j ON j.submission_id=s.id ${onlyMine ? 'WHERE s.owner_id=$1' : ''} ORDER BY s.created_at DESC LIMIT 100`, onlyMine ? [actor] : [])).rows.map(row => submissionView(row, user, { repository }));
+      return (await db.query(`SELECT s.*,j.state AS job_state,j.provider AS job_provider,j.target AS job_target,j.last_error AS job_error FROM submissions s LEFT JOIN publication_jobs j ON j.submission_id=s.id ${onlyMine ? 'WHERE s.owner_id=$1' : ''} ORDER BY s.created_at DESC LIMIT 100`, onlyMine ? [actor] : [])).rows.map(row => submissionView(row, user, { repository }));
     },
     async getSubmission(actor, id) {
       const user = await requireUser(db, actor);
@@ -182,7 +186,7 @@ export function createService(db, { publicationEnabled = false, repository = nul
         await audit(q, actor, `submission.${status}`, id, { contentHash: row.content_hash, note,
           ...(status === 'approved' && row.owner_id === actor ? { reviewerRole: user.role, approvalPolicy: ADMIN_SELF_POLICY, reviewedAt: iso(updated.reviewed_at) } : {}),
         });
-        if (status === 'approved') await q.query('INSERT INTO publication_jobs(submission_id) VALUES($1) ON CONFLICT DO NOTHING', [id]);
+        if (status === 'approved') await q.query('INSERT INTO publication_jobs(submission_id,target) VALUES($1,$2) ON CONFLICT DO NOTHING', [id, JSON.stringify(publicationTarget(repository))]);
         return submissionView(updated, user, { detail: true });
       });
     },

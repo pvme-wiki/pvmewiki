@@ -1,19 +1,21 @@
+import { samePublicationTarget } from './publication-target.mjs';
 import { approvalEventsSql, hasValidApproval } from './approval.mjs';
 import { randomUUID } from 'node:crypto';
 import { validateDocument } from '../editor/shared/model.mjs';
 import { documentHash, fail } from './core.mjs';
 import { audit, requireUser, needsFreshReview } from './service.mjs';
 import { PublicationError, withProviderBudget } from './github.mjs';
-export function createJobRunner(db, provider, { origin } = {}) {
+export function createJobRunner(db, provider, { origin, target = provider?.target || { mode: 'private' } } = {}) {
   async function claim(submissionId = null) {
     return db.transaction(async q => {
       // FIFO per guide, durable cross-process leases, and optimistic lease fencing.
       const row = (await q.query(`SELECT j.*,s.guide_id FROM publication_jobs j JOIN submissions s ON s.id=j.submission_id
         WHERE ($1::uuid IS NULL OR j.submission_id=$1) AND ((j.state IN ('queued','retry','awaiting_merge','awaiting_deployment') AND j.available_at<=now()) OR (j.state='working' AND j.lease_until<now()))
+        AND j.target=$2::jsonb
         AND NOT EXISTS (SELECT 1 FROM publication_jobs earlier JOIN submissions es ON es.id=earlier.submission_id
-          WHERE es.guide_id=s.guide_id AND earlier.state NOT IN ('published','blocked')
+          WHERE es.guide_id=s.guide_id AND earlier.target=j.target AND earlier.state NOT IN ('published','blocked')
           AND (earlier.created_at,earlier.submission_id)<(j.created_at,j.submission_id))
-        ORDER BY j.available_at,j.created_at,j.submission_id LIMIT 1 FOR UPDATE OF j SKIP LOCKED`, [submissionId])).rows[0];
+        ORDER BY j.available_at,j.created_at,j.submission_id LIMIT 1 FOR UPDATE OF j SKIP LOCKED`, [submissionId, JSON.stringify(target)])).rows[0];
       if (!row) return null;
       const lease = randomUUID();
       await q.query("UPDATE publication_jobs SET state='working',lease_token=$2,lease_until=now()+interval '5 minutes',attempts=attempts+1,updated_at=now() WHERE submission_id=$1", [row.submission_id, lease]);
@@ -72,6 +74,7 @@ export function createJobRunner(db, provider, { origin } = {}) {
         return await withProviderBudget(async () => {
           const row = (await db.query(`SELECT s.*, ${approvalEventsSql('s')} AS approval_events FROM submissions s WHERE s.id=$1`, [job.submission_id])).rows[0];
           snapshot = row;
+          if (!samePublicationTarget(job.target, target) || (job.provider?.mode && job.provider.mode !== target.mode) || (job.provider?.repository && job.provider.repository !== target.repository) || (job.provider?.baseBranch && job.provider.baseBranch !== target.baseBranch)) throw new PublicationError('publication_target_conflict', 'This publication belongs to a different release target.');
           const validSnapshot = row && ['approved', 'publishing'].includes(row.status) && hasValidApproval(row) && documentHash(row.document) === row.content_hash && documentHash(row.baseline_document) === row.baseline_hash && validateDocument(row.document, { baseline: row.baseline_document }).valid;
           if (!validSnapshot) throw new PublicationError('snapshot_corrupt', 'The approval failed integrity verification.');
           const info = job.provider?.number ? job.provider : await provider.ensurePullRequest(row);
@@ -96,6 +99,7 @@ export function createJobRunner(db, provider, { origin } = {}) {
         await requireUser(q, actor, { admin: true, lock: true });
         const row = (await q.query('SELECT * FROM publication_jobs WHERE submission_id=$1 FOR UPDATE', [id])).rows[0];
         if (!row) fail(404, 'publication_not_found', 'Publication not found.');
+        if (!samePublicationTarget(row.target, target)) fail(409, 'publication_target_conflict', 'This publication belongs to another release target.');
         if (row.state === 'working' && new Date(row.lease_until) > new Date()) fail(409, 'publication_running', 'Publication is already being checked.');
         if (row.state === 'published') return { state: 'published' };
         if (row.provider?.replacementId) fail(409, 'publication_superseded', 'This publication has a fresh replacement submission.');
@@ -107,12 +111,13 @@ export function createJobRunner(db, provider, { origin } = {}) {
     },
     async check(actor, id) {
       await requireUser(db, actor, { review: true });
-      const row = (await db.query('SELECT state FROM publication_jobs WHERE submission_id=$1', [id])).rows[0];
+      const row = (await db.query('SELECT state,target FROM publication_jobs WHERE submission_id=$1', [id])).rows[0];
       if (!row) fail(404, 'publication_not_found', 'There is no approved publication to check.');
+      if (!samePublicationTarget(row.target, target)) fail(409, 'publication_target_conflict', 'This publication belongs to another release target.');
       if (row.state === 'blocked') fail(409, 'publication_blocked', 'A maintainer must resolve the publication issue before retrying.');
       await db.query("UPDATE publication_jobs SET available_at=now() WHERE submission_id=$1 AND state IN ('queued','retry','awaiting_merge','awaiting_deployment')", [id]);
     },
-    async wake(q = db) { await q.query("UPDATE publication_jobs SET available_at=now() WHERE state IN ('awaiting_merge','awaiting_deployment','retry')"); },
+    async wake(q = db) { await q.query("UPDATE publication_jobs SET available_at=now() WHERE state IN ('awaiting_merge','awaiting_deployment','retry') AND target=$1::jsonb", [JSON.stringify(target)]); },
     async prune() {
       await db.query('DELETE FROM oauth_states WHERE expires_at<now()');
       await db.query('DELETE FROM sessions WHERE expires_at<now()');

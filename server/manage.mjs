@@ -11,9 +11,15 @@ export async function migrate(db) {
   return db.transaction(async q => {
     await q.query('SELECT pg_advisory_xact_lock(1844674407)');
     const existing = (await q.query("SELECT to_regclass('public.schema_migrations') AS name")).rows[0].name;
-    if (existing && (await q.query('SELECT version FROM schema_migrations WHERE version=1')).rows.length) return { applied: false };
-    await q.query(await readFile(path.join(ROOT, 'server/migrations/001_initial.sql'), 'utf8'));
-    return { applied: true };
+    const versions = existing ? new Set((await q.query('SELECT version FROM schema_migrations')).rows.map(row => row.version)) : new Set();
+    let applied = false;
+    for (const [version, file] of [[1, '001_initial.sql'], [2, '002_public_publications.sql']]) {
+      if (versions.has(version)) continue;
+      const sql = await readFile(path.join(ROOT, 'server/migrations', file), 'utf8');
+      if (q.exec) await q.exec(sql); else await q.query(sql);
+      applied = true;
+    }
+    return { applied };
   });
 }
 export async function loadSeedDocuments({ contentRoot = path.join(ROOT, 'editor/content'), guideIds = null } = {}) {

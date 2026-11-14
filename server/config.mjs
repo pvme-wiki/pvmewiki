@@ -3,6 +3,8 @@ const baseFields = ['APP_ORIGIN', 'DATABASE_URL', 'SESSION_SECRET', 'DISCORD_CLI
 const githubFields = ['GITHUB_APP_ID', 'GITHUB_INSTALLATION_ID', 'GITHUB_APP_PRIVATE_KEY', 'GITHUB_OWNER', 'GITHUB_REPO', 'GITHUB_BASE_BRANCH', 'GITHUB_WEBHOOK_SECRET', 'CRON_SECRET'];
 export function loadConfig(env = process.env) {
   const errors = [];
+  const publicationMode = env.PVME_PUBLICATION_MODE || 'private';
+  if (!['private', 'public'].includes(publicationMode)) errors.push('Invalid publication mode.');
   const missing = baseFields.filter(key => !env[key]);
   const accessMode = env.PVME_ACCESS_MODE || 'allowlist';
   const allowedDiscordIds = (env.PVME_CONTRIBUTOR_DISCORD_IDS || '').split(',').map(value => value.trim()).filter(Boolean);
@@ -47,11 +49,11 @@ export function loadConfig(env = process.env) {
     ? `https://${deploymentHost}` : null;
   const configured = !missing.length && !errors.length;
   return {
-    configured, errors, missing, accessMode, allowedDiscordIds, origin, productionCronOrigin,
+    configured, errors, missing, publicationMode, accessMode, allowedDiscordIds, origin, productionCronOrigin,
     databaseUrl: env.DATABASE_URL, sessionSecret: env.SESSION_SECRET,
     discord: { clientId: env.DISCORD_CLIENT_ID, clientSecret: env.DISCORD_CLIENT_SECRET, redirectUri: `${origin}/api/editor/auth/discord/callback` },
     github: configured && githubValid ? {
-      appId: env.GITHUB_APP_ID, installationId: env.GITHUB_INSTALLATION_ID,
+      mode: publicationMode, appId: env.GITHUB_APP_ID, installationId: env.GITHUB_INSTALLATION_ID,
       privateKey: env.GITHUB_APP_PRIVATE_KEY.replace(/\\n/g, '\n'), owner: env.GITHUB_OWNER,
       repo: env.GITHUB_REPO, base: env.GITHUB_BASE_BRANCH, webhookSecret: env.GITHUB_WEBHOOK_SECRET,
       cronSecret: env.CRON_SECRET,

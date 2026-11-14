@@ -1,0 +1,144 @@
+/* A boss owns its guides; a method is a choice within that encounter. */
+.library-boss-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+.library-boss-heading h2 {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+.library-boss-heading h2 a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 5px;
+}
+.boss-all-guides {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 8px;
+  min-height: 44px;
+  font-size: 12px;
+  color: var(--theme-accent);
+}
+.library-boss-group .library-row {
+  gap: 16px;
+  padding: 16px 10px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.library-boss-group .library-row small {
+  flex-shrink: 0;
+  max-width: 45%;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: right;
+}
+.boss-method-navigation {
+  max-width: 100%;
+  margin-block: 0 24px;
+  padding: 4px 16px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--theme-pale);
+}
+.boss-method-navigation > summary {
+  min-height: 48px;
+  padding-block: 12px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink);
+  cursor: pointer;
+}
+.boss-method-navigation > summary > span {
+  display: inline-block;
+  margin-inline-start: 10px;
+  padding-inline: 6px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  font: 12px/1.6 var(--mono);
+  color: var(--muted);
+}
+.boss-method-navigation nav {
+  max-height: 60vh;
+  max-height: 60svh;
+  overflow-y: auto;
+  border-top: 1px solid var(--line);
+}
+.boss-method-navigation .guide-row {
+  min-height: 56px;
+  gap: 16px;
+  padding: 14px 10px;
+}
+.boss-method-navigation .guide-row[aria-current="page"] {
+  border-inline-start: 3px solid var(--theme-accent);
+  background: var(--theme-wash);
+}
+.search-boss-group {
+  margin-block: 4px 14px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+}
+.search-boss-heading {
+  margin: 0;
+  font: inherit;
+}
+.search-boss-heading > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 48px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--line);
+  background: var(--theme-pale);
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.search-boss-heading > a > span {
+  flex-shrink: 0;
+  color: var(--theme-accent);
+  font-size: 11px;
+  font-weight: 500;
+}
+.search-boss-group .search-result {
+  margin-inline: 8px;
+}
+.boss-method-navigation :focus-visible,
+.library-boss-heading a:focus-visible,
+.search-boss-group a:focus-visible {
+  outline: 2px solid var(--focus, var(--theme-accent));
+  outline-offset: 2px;
+}
+@media (max-width: 680px) {
+  .library-boss-heading {
+    gap: 10px;
+  }
+  .library-boss-heading h2 {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .library-boss-group .library-row {
+    align-items: flex-start;
+    padding-inline: 2px;
+  }
+  .boss-method-navigation {
+    padding-inline: 12px;
+  }
+  .search-boss-heading > a {
+    padding-inline: 12px;
+    font-size: 14px;
+  }
+  .search-boss-group .search-result {
+    margin-inline: 2px;
+    padding-inline: 10px;
+  }
+}

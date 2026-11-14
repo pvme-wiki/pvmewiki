@@ -104,17 +104,21 @@ test('search context describes catalogued guides and does not recommend the arbi
   const app = files.get('assets/app.js').toString();
   assert.doesNotMatch(app, /Suggested encounters|START WITH AN ENCOUNTER|A short, trackable path/);
   assert.match(app, /Bosses A–Z/);
-  assert.match(app, /bossSearchSummary\(record\.boss\)/);
+  assert.match(app, /guideSearchSummary\(/);
   const data = JSON.parse(files.get('data/bosses.json'));
   for (const boss of bosses) assert.equal(data.find(b => b.id === boss.id).guideCount, boss.guides.length);
 });
 
-test('the Rasial editorial proposal replays through the normal text editor without changing any method requirements', async () => {
+test('a synthetic editorial proposal replays through the normal text editor without changing unrelated guide structure', async () => {
   const fs = await import('node:fs');
   const { assertDocument, updateTextNode, getEditableTextNodes } = await import('../editor/shared/model.mjs');
   const { documentHash } = await import('../server/core.mjs');
-  const proposal = JSON.parse(fs.readFileSync(path.join(root, 'docs/copy-review/low-effort-rasial-proposal.json')));
   const baseline = JSON.parse(fs.readFileSync(path.join(root, 'editor/content/low-effort-rasial.json')));
+  const proposal = { status: 'unsubmitted-editorial-proposal', baselineHash: documentHash(baseline),
+    patches: baseline.blocks.filter(block => getEditableTextNodes(block).length).slice(0, 2).map(block => {
+      const node = getEditableTextNodes(block)[0];
+      return { blockId: block.id, nodeId: node.id, before: node.text, after: node.text + ' Synthetic editorial fixture.' };
+    }) };
   assert.equal(proposal.status, 'unsubmitted-editorial-proposal');
   assert.equal(proposal.baselineHash, documentHash(baseline));
   let proposed = structuredClone(baseline);
