@@ -279,7 +279,36 @@
       "primary": null,
       "portraits": [],
       "missing": [],
-      "note": "No standard Barrows pet mapping. The crafted bobbleheads belong to Rise of the Six."
+      "note": "Owner-requested encounter portrait: Ahrim the Blighted, Normal variant. No standard Barrows pet mapping. The crafted bobbleheads belong to Rise of the Six.",
+      "encounterPortrait": {
+        "kind": "encounter",
+        "subjectName": "Ahrim the Blighted",
+        "canonicalNpcTitle": "Ahrim the Blighted",
+        "npcPage": "https://runescape.wiki/w/Ahrim_the_Blighted",
+        "npcPageRevision": 37229165,
+        "variant": "Normal",
+        "selectionEvidence": "|image1 = [[File:Ahrim the Blighted.png|Ahrim the Blighted|150px]]",
+        "variantEvidence": "|version1 = Normal",
+        "fileTitle": "File:Ahrim the Blighted.png",
+        "filePage": "https://runescape.wiki/w/File:Ahrim_the_Blighted.png",
+        "filePageRevision": 35397066,
+        "originalUrl": "https://runescape.wiki/images/Ahrim_the_Blighted.png?99b03",
+        "originalWidth": 629,
+        "originalHeight": 969,
+        "originalBytes": 304128,
+        "originalSha1": "fabee5a024bd01f5ddf1d41bf40e5bcbe4d98f13",
+        "fileTimestamp": "2018-05-02T00:48:33Z",
+        "src": "https://runescape.wiki/images/thumb/Ahrim_the_Blighted.png/320px-Ahrim_the_Blighted.png?99b03",
+        "width": 320,
+        "height": 493,
+        "thumbnailBytes": null,
+        "thumbnailBytesNote": "Not downloaded; original file bytes and API thumbnail dimensions are measured source metadata.",
+        "licensingTemplate": "{{Monster license|Ahrim the Blighted|id=2025}}",
+        "uploader": "Coelacanth0794",
+        "credit": "Jagex Ltd. · Wiki upload: Coelacanth0794",
+        "attributionSource": "https://runescape.wiki/w/Template:License",
+        "attributionMeaning": "The file uses the Wiki Monster license template. Its underlying License template identifies Jagex copyright and use with permission on the Wiki; this is not an independently verified app-wide grant."
+      }
     },
     {
       "id": "beastmaster-durzag",
@@ -3140,7 +3169,9 @@
     "bosses": 45,
     "withPrimaryPortrait": 44,
     "resolvedPetFiles": 64,
-    "unresolvedPets": 0
+    "unresolvedPets": 0,
+    "withEncounterPortrait": 1,
+    "withPortrait": 45
   },
   "licensingTemplateRevision": 35984506
 }

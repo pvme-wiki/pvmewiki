@@ -40,7 +40,7 @@ test('guide CTA has exact guide identity, explicit production label and no previ
 });
 test('pet registry separates multiple pets and rights from image coverage',()=>{
  const data=JSON.parse(files.get('data/boss-pets.json'));
- assert.equal(data.imageCoverage,44);assert.equal(data.illustrationCoverage,0);assert.equal(data.officialPetPortraitCoverage,44);assert.equal(data.unillustratedBosses,1);assert.equal(data.bosses.length,45);
+ assert.equal(data.imageCoverage,45);assert.equal(data.illustrationCoverage,0);assert.equal(data.officialPetPortraitCoverage,44);assert.equal(data.encounterPortraitCoverage,1);assert.equal(data.unillustratedBosses,0);assert.equal(data.bosses.length,45);
  const boss=id=>data.bosses.find(record=>record.id===id);
  assert.deepEqual(boss('arch-glacor').pets.map(p=>p.name),['Gladys']);
  assert.deepEqual(boss('beastmaster-durzag').pets.map(p=>p.name),['Diddyzag',"Lil' Tuzzy"]);
@@ -51,10 +51,10 @@ test('pet registry separates multiple pets and rights from image coverage',()=>{
   assert.doesNotMatch(html,/<image|data-glyph=/,name);
  }
 });
-test('only confirmed Wiki pet portraits render, with source credits, measured dimensions and no local image binaries',()=>{
+test('only confirmed Wiki portraits render, with source credits, measured dimensions and no local image binaries',()=>{
  const registry=JSON.parse(files.get('data/boss-pets.json'));
  const manifest=validateWikiPortraits(JSON.parse(files.get('data/wiki-pet-portraits.json')),registry);
- assert.deepEqual(manifest.coverage,{bosses:45,withPrimaryPortrait:44,resolvedPetFiles:64,unresolvedPets:0});
+ assert.deepEqual(manifest.coverage,{bosses:45,withPrimaryPortrait:44,resolvedPetFiles:64,unresolvedPets:0,withEncounterPortrait:1,withPortrait:45});
  const byBoss=new Map(manifest.bosses.map(record=>[record.id,record]));
  for(const [id,file] of [['amascut','File:Amaskitty pet.png'],['araxxor','File:Barry pet.png'],['arch-glacor','File:Gladys pet.png']])assert.equal(byBoss.get(id).primary.fileTitle,file);
  for(const [id,uploader] of [['amascut','Reaver43'],['araxxor','TyA'],['arch-glacor','BlackHawk']])assert.equal(byBoss.get(id).primary.uploader,uploader);
@@ -64,8 +64,8 @@ test('only confirmed Wiki pet portraits render, with source credits, measured di
  assert.equal(byBoss.get('ed3-shadow-reef').primary.fileTitle,'File:Ambi pet.png');
  for(const boss of manifest.bosses){
   const hub=files.get(`bosses/${boss.id}/index.html`).toString();
-  if(boss.primary){
-   const p=boss.primary;assert.ok(hub.includes(`src="${p.src.replaceAll('&','&amp;')}"`));
+  if(boss.primary||boss.encounterPortrait){
+   const p=boss.primary||boss.encounterPortrait;assert.ok(hub.includes(`src="${p.src.replaceAll('&','&amp;')}"`));
    assert.ok(hub.includes(`width="${p.width}" height="${p.height}"`));
    assert.ok(hub.includes(`href="${p.filePage}"`));assert.match(hub,/Jagex Ltd./);
    assert.match(hub,/loading="lazy" decoding="async" referrerpolicy="no-referrer"/);
@@ -73,13 +73,31 @@ test('only confirmed Wiki pet portraits render, with source credits, measured di
  }
  for(const name of ['index.html','saved/index.html']){
   const html=files.get(name).toString();assert.equal([...html.matchAll(/data-wiki-pet-portrait=/g)].length,44,name);
-  assert.equal([...html.matchAll(/compact-boss-card/g)].length,1,name);
+  assert.equal([...html.matchAll(/data-wiki-encounter-portrait=/g)].length,1,name);
+  assert.equal([...html.matchAll(/data-wiki-portrait=/g)].length,45,name);
+  assert.equal([...html.matchAll(/compact-boss-card/g)].length,0,name);
   assert.doesNotMatch(html,/pet-panel|pet-names|Original illustration|data-boss-illustration=/);
-  for(const [card] of html.matchAll(/<a class="boss-card-link"[^>]*>[\s\S]*?<\/a>/g))assert.equal([...card.matchAll(/<a /g)].length,1,'Card must not contain nested source links');
+  for(const [card] of html.matchAll(/<a class="boss-card-link"[^>]*>[\s\S]*?<\/a>/g)){
+   assert.equal([...card.matchAll(/<a /g)].length,1,'Card must not contain nested source links');
+   assert.doesNotMatch(card,/<button/,'Save must remain outside the card navigation link');
+  }
  }
  assert.ok(![...files.keys()].some(name=>name.startsWith('assets/boss-illustrations/')));
  assert.ok(!fs.existsSync(path.join(root,'src/boss-illustrations')) || !fs.readdirSync(path.join(root,'src/boss-illustrations')).length);
 });
+test('standard Barrows uses only the Normal Ahrim encounter portrait and preserves the separate ROTS pet',()=>{
+ const manifest=JSON.parse(files.get('data/wiki-pet-portraits.json'));
+ const barrows=manifest.bosses.find(b=>b.id==='barrows'),rots=manifest.bosses.find(b=>b.id==='rise-of-the-six');
+ assert.equal(barrows.primary,null);assert.deepEqual(barrows.portraits,[]);
+ assert.equal(barrows.encounterPortrait.kind,'encounter');assert.equal(barrows.encounterPortrait.subjectName,'Ahrim the Blighted');
+ assert.equal(barrows.encounterPortrait.fileTitle,'File:Ahrim the Blighted.png');assert.equal(barrows.encounterPortrait.variant,'Normal');
+ assert.equal(rots.primary.petName,'Ahrim the Bobbled');assert.equal(rots.encounterPortrait,undefined);
+ const hub=files.get('bosses/barrows/index.html').toString();
+ assert.match(hub,/standard Barrows encounter NPC portrait/);assert.match(hub,/Encounter portrait/);
+ assert.doesNotMatch(hub,/data-wiki-pet-portrait=/);assert.match(hub,/data-wiki-encounter-portrait="barrows"/);
+ assert.match(files.get('about/artwork/index.html').toString(),/44 pet portraits and one encounter portrait/);
+});
+
 test('portrait gate blocks production and ordinary local builds, even with a smoke flag',()=>{
  assert.equal(wikiPortraitsEnabled({}),false);
  assert.equal(wikiPortraitsEnabled({VERCEL_ENV:'production',PVME_WIKI_PORTRAITS_SMOKE:'1'}),false);
@@ -106,7 +124,12 @@ test('portrait provenance rejects wrong pets, fabricated source hosts and unsupp
   m=>{m.bosses[0].portraits[0].petName='An unrelated pet';},
   m=>{m.bosses[0].portraits[0].src='https://example.invalid/images/fake.png';},
   m=>{m.approval.independentlyVerified=true;},
-  m=>{m.bosses.find(b=>b.id==='barrows').primary=m.bosses.find(b=>b.id==='rise-of-the-six').primary;}
+  m=>{m.bosses.find(b=>b.id==='barrows').primary=m.bosses.find(b=>b.id==='rise-of-the-six').primary;},
+  m=>{m.bosses.find(b=>b.id==='barrows').encounterPortrait.petName='Ahrim the Bobbled';},
+  m=>{m.bosses.find(b=>b.id==='barrows').encounterPortrait.variant='Rise of the Six';},
+  m=>{m.bosses.find(b=>b.id==='barrows').encounterPortrait.fileTitle='File:Ahrim the Blighted (Shadow).png';},
+  m=>{m.bosses.find(b=>b.id==='barrows').encounterPortrait.src='https://runescape.wiki/images/Ahrim_the_Bobbled.png';},
+  m=>{m.bosses[0].encounterPortrait=m.bosses.find(b=>b.id==='barrows').encounterPortrait;}
  ]){const copy=structuredClone(original);mutate(copy);assert.throws(()=>validateWikiPortraits(copy,registry));}
 });
 test('unknown and changed published overlays never borrow upstream dates',()=>{
@@ -123,6 +146,10 @@ test('unknown and changed published overlays never borrow upstream dates',()=>{
 });
 test('history recovery follows moved guides and rejects mass edits, unrelated edits and formatter churn',()=>{
  execFileSync('python3',['scripts/test-guide-history.py'],{cwd:root,stdio:'pipe'});
+});
+
+test('encounter resolver reproduces the exact verified NPC and rejects pet, ROTS and icon fixtures offline',()=>{
+ execFileSync('python3',['scripts/test-wiki-encounter.py'],{cwd:root,stdio:'pipe'});
 });
 test('preview API initializes no configured service or publisher',()=>{
  const api=fs.readFileSync(path.join(root,'api/editor.mjs'),'utf8');

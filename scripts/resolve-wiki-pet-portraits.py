@@ -14,6 +14,21 @@ def query(params):
  with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'PvME-Design-Preview/1.0 (source attribution check)'}),timeout=30) as response:return json.load(response)
 def batches(values):
  for start in range(0,len(values),40):yield values[start:start+40]
+def resolve_encounter():
+ # Owner-selected Normal monster infobox; never pet, equipment or ROTS fallback.
+ page=next(iter(query({'titles':'Ahrim the Blighted','prop':'revisions','rvprop':'ids|content','rvslots':'main'})['query']['pages'].values()))
+ revision=page['revisions'][0];text=revision['slots']['main']['*']
+ image=re.search(r'(?m)^\|image1\s*=\s*(.*)$',text)
+ variant=re.search(r'(?m)^\|version1\s*=\s*Normal\s*$',text)
+ if page['title']!='Ahrim the Blighted' or '{{Infobox Monster' not in text or not variant or not image or not image.group(1).startswith('[[File:Ahrim the Blighted.png|'):
+  raise ValueError('Standard Ahrim encounter portrait requires source review.')
+ file=next(iter(query({'titles':'File:Ahrim the Blighted.png','prop':'imageinfo|revisions','iiprop':'url|size|sha1|mime|timestamp|user','iiurlwidth':320,'rvprop':'ids|content','rvslots':'main'})['query']['pages'].values()))
+ info=file['imageinfo'][0];file_revision=file['revisions'][0]
+ licence=re.search(r'\{\{Monster licen[cs]e\|Ahrim the Blighted\|id=2025\}\}',file_revision['slots']['main']['*'],re.I)
+ if not licence or info.get('mime')!='image/png' or min(info.get('width',0),info.get('height',0))<100:
+  raise ValueError('Ahrim monster file metadata requires source review.')
+ return {'kind':'encounter','subjectName':'Ahrim the Blighted','canonicalNpcTitle':page['title'],'npcPage':'https://runescape.wiki/w/Ahrim_the_Blighted','npcPageRevision':revision['revid'],'variant':'Normal','selectionEvidence':image.group(0).strip(),'variantEvidence':variant.group(0).strip(),'fileTitle':file['title'],'filePage':info['descriptionurl'],'filePageRevision':file_revision['revid'],'originalUrl':info['url'],'originalWidth':info['width'],'originalHeight':info['height'],'originalBytes':info['size'],'originalSha1':info['sha1'],'fileTimestamp':info['timestamp'],'src':info.get('thumburl',info['url']),'width':info.get('thumbwidth',info['width']),'height':info.get('thumbheight',info['height']),'thumbnailBytes':None,'thumbnailBytesNote':'Not downloaded; original file bytes and API thumbnail dimensions are measured source metadata.','licensingTemplate':licence.group(0),'uploader':info.get('user'),'credit':'Jagex Ltd. · Wiki upload: '+info.get('user','see file history'),'attributionSource':'https://runescape.wiki/w/Template:License','attributionMeaning':'The file uses the Wiki Monster license template. Its underlying License template identifies Jagex copyright and use with permission on the Wiki; this is not an independently verified app-wide grant.'}
+
 def resolve():
  registry=json.loads((ROOT/'src/boss-pets.json').read_text())
  names=list(dict.fromkeys(pet['name'] for boss in registry['bosses'] for pet in boss['pets']))
@@ -53,9 +68,14 @@ def resolve():
   # Do not swap in a different pet when the selected mapping lacks a portrait.
   primary=portraits.get(boss['pets'][0]['name']) if boss['pets'] else None
   result['bosses'].append({'id':boss['id'],'primary':primary,'portraits':resolved,'missing':[{'petName':pet['name'],'reason':missing[pet['name']]} for pet in boss['pets'] if pet['name'] in missing],'note':boss['note'] if boss['pets'] else 'No standard Barrows pet mapping. The crafted bobbleheads belong to Rise of the Six.'})
+ barrows=next(b for b in result['bosses'] if b['id']=='barrows')
+ barrows['encounterPortrait']=resolve_encounter()
+ barrows['note']='Owner-requested encounter portrait: Ahrim the Blighted, Normal variant. No standard Barrows pet mapping. The crafted bobbleheads belong to Rise of the Six.'
  license_page=next(iter(query({'titles':'Template:License','prop':'revisions','rvprop':'ids'})['query']['pages'].values()))
  result['licensingTemplateRevision']=license_page['revisions'][0]['revid']
  result['coverage']={'bosses':len(result['bosses']),'withPrimaryPortrait':sum(bool(b['primary']) for b in result['bosses']),'resolvedPetFiles':len(portraits),'unresolvedPets':len(missing)}
+ result['coverage']['withEncounterPortrait']=sum(bool(b.get('encounterPortrait')) for b in result['bosses'])
+ result['coverage']['withPortrait']=result['coverage']['withPrimaryPortrait']+result['coverage']['withEncounterPortrait']
  (ROOT/'src/wiki-pet-portraits.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
  print(json.dumps({'coverage':result['coverage'],'missing':missing},ensure_ascii=False))
 if __name__=='__main__':resolve()
