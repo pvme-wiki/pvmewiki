@@ -8,6 +8,11 @@ The feature is **off by default**. Do not configure it in production until the
 implementation and the intended repository target have been reviewed. This
 change does not activate or deploy it.
 
+Automatic Vercel deployment is disabled only for the
+`codex/public-bootstrap-review-flow` review branch in `vercel.json`. Other
+branches retain their default behavior. Use the isolated local fixture rehearsal
+for this branch; no production credentials belong in a review preview.
+
 ## Configuration and hold
 
 `PVME_PUBLIC_BOOTSTRAP_TARGET` is server-only JSON with exactly four string fields:
