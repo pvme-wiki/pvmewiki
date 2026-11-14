@@ -8,6 +8,7 @@ import { readSnapshot } from './reader-snapshot.mjs';
 import { guideSpans } from './patch-reader-html.mjs';
 import { polishReader } from './boss-hub.mjs';
 import { applyReadingDraft, guideFreshness, previewEditorOrigin } from './reading-draft.mjs';
+import { loadConfig } from '../server/config.mjs';
 const root=path.resolve(import.meta.dirname,'..');
 const original=readSnapshot(root),files=new Map(original);
 polishReader(files,root);const before=new Map(files);
@@ -114,7 +115,7 @@ test('standard Barrows uses only the Normal Ahrim encounter portrait and preserv
  assert.match(files.get('about/artwork/index.html').toString(),/44 pet portraits and one encounter portrait/);
 });
 
-test('portrait gate blocks production and ordinary local builds, even with a smoke flag',()=>{
+test('portrait gate defaults off in production and ordinary local builds, even with a smoke flag',()=>{
  assert.equal(wikiPortraitsEnabled({}),false);
  assert.equal(wikiPortraitsEnabled({VERCEL_ENV:'production',PVME_WIKI_PORTRAITS_SMOKE:'1'}),false);
  assert.equal(wikiPortraitsEnabled({VERCEL_ENV:'development',PVME_WIKI_PORTRAITS_SMOKE:'1'}),false);
@@ -131,6 +132,30 @@ test('portrait gate blocks production and ordinary local builds, even with a smo
    assert.doesNotMatch(html,/data-wiki-pet-portrait=|https:\/\/runescape\.wiki\/images\//,name);
   }
   assert.doesNotMatch(disabled.get('data/boss-pets.json').toString(),/https:\/\/runescape\.wiki\/images\//);
+ }
+});
+
+test('the exact production visual flag enables audited portraits without changing auth or publishing',()=>{
+ const flag={VERCEL_ENV:'production',PVME_WIKI_PORTRAITS_PRODUCTION:'enabled'};
+ assert.equal(wikiPortraitsEnabled(flag),true);
+ for(const value of ['', 'true', '1', 'ENABLED', 'public'])assert.equal(wikiPortraitsEnabled({...flag,PVME_WIKI_PORTRAITS_PRODUCTION:value}),false);
+ for(const env of [{PVME_WIKI_PORTRAITS_PRODUCTION:'enabled'},{VERCEL_ENV:'development',PVME_WIKI_PORTRAITS_PRODUCTION:'enabled'},{VERCEL_ENV:'production',PVME_PUBLICATION_MODE:'public',PVME_OWNER_PUBLIC_DISPATCH:'enabled'}])assert.equal(wikiPortraitsEnabled(env),false);
+ const config=loadConfig(flag);
+ assert.deepEqual(config,loadConfig({VERCEL_ENV:'production'}));
+ assert.equal(config.configured,false);assert.equal(config.publicationMode,'private');assert.equal(config.github,null);assert.equal(config.ownerPublicGithub,null);
+ const production=new Map(before);applyReadingDraft(production,root,{env:flag});
+ const html=production.get('index.html').toString();
+ assert.equal([...html.matchAll(/data-wiki-pet-portrait=/g)].length,44);
+ assert.equal([...html.matchAll(/data-wiki-encounter-portrait=/g)].length,1);
+ assert.ok(production.has('data/wiki-pet-portraits.json'));
+ assert.match(production.get('bosses/barrows/index.html').toString(),/standard Barrows encounter NPC portrait/);
+ assert.match(production.get('about/artwork/index.html').toString(),/explicitly enabled release/);
+ assert.doesNotMatch(html,/preview-ribbon/);
+ const guide=production.get('archive/pvme-guides/basic-guides/arch-glacor-basic/index.html').toString();
+ assert.match(guide,/href="\/edit\/#\/guide\/arch-glacor-basic\/edit"/);
+ for(const [name,bytes] of before)if(name.endsWith('.html')){
+  const result=production.get(name).toString();
+  assert.deepEqual(guideSpans(result).map(([s,e])=>result.slice(s,e)),guideSpans(bytes.toString()).map(([s,e])=>bytes.toString().slice(s,e)),name);
  }
 });
 test('portrait provenance rejects wrong pets, fabricated source hosts and unsupported approval claims',()=>{
