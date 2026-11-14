@@ -51,6 +51,22 @@ as a private publication. UI status explicitly says publishing is held.
 
 ## Later activation is a separate operation
 
+The publisher selects a complete identity by publication mode:
+
+- Private mode (the default) uses only the existing `GITHUB_*` namespace.
+- Public mode uses only `PVME_ORG_GITHUB_APP_ID`,
+  `PVME_ORG_GITHUB_INSTALLATION_ID`, `PVME_ORG_GITHUB_APP_PRIVATE_KEY`,
+  `PVME_ORG_GITHUB_OWNER`, `PVME_ORG_GITHUB_REPO`,
+  `PVME_ORG_GITHUB_BASE_BRANCH`, and `PVME_ORG_GITHUB_WEBHOOK_SECRET`.
+- `CRON_SECRET` remains the existing runner credential in either mode.
+
+The separate org variables can be staged as Production-only Secrets without
+changing private behavior, even if staging is incomplete. Public activation
+requires every org field and validates the selected key/identity. It never falls
+back to the private key, installation or webhook secret. Keep the original
+`GITHUB_*` values for the existing private path and rollback. Private mode ignores
+staged org variables; it does not decrypt or test them against a provider.
+
 This branch does not merge, deploy, configure credentials, activate a webhook,
 change publication mode, or publish a guide. Before a later activation:
 
