@@ -24,7 +24,7 @@ export const makingSuggestionsGuidance = Object.freeze({
       title: "Start an edit",
       paragraphs: [
         "Choose Edit this guide on a reader page, or choose Contribute and find a guide in the library.",
-        "The contributor pilot uses Discord sign-in and invitation-only access. Signing in does not grant editing or review permissions by itself.",
+        "The contribution beta uses Discord sign-in. Anyone can save their own drafts and send suggestions; only maintainers can review and approve changes. Signing in never grants maintainer or publishing permissions.",
         "Choose a section and edit its content. Use Preview to check how the guide will read. Writing tools contain the available formatting, ability icons and image controls.",
       ],
     },

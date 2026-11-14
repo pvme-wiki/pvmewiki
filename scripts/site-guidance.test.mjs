@@ -4,7 +4,8 @@ import { makingSuggestionsGuidance, makingSuggestionsHTML } from './site-guidanc
 
 test('site guidance names the actual contributor actions and separates draft, review and publication', () => {
   const html = makingSuggestionsHTML();
-  for (const text of ['Edit this guide', 'Contribute', 'Discord sign-in', 'invitation-only', 'Save draft', 'My drafts', 'Review changes', 'Send for review', 'My submissions']) assert.ok(html.includes(text), text);
+  for (const text of ['Edit this guide', 'Contribute', 'Discord sign-in', 'only maintainers', 'Save draft', 'My drafts', 'Review changes', 'Send for review', 'My submissions']) assert.ok(html.includes(text), text);
+  assert.doesNotMatch(html, /invitation-only/);
   assert.match(html, /Saving a draft does not send it for review or change the public guide/);
   assert.match(html, /Later edits stay in your draft/);
   assert.match(html, /Approval does not mean the guide is live yet/);
