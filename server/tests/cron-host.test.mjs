@@ -4,7 +4,7 @@ import { loadConfig } from '../config.mjs';
 import { createHandler } from '../http.mjs';
 
 const host = 'pvme-platform-abc123-zarnab.vercel.app';
-const origin = 'https://pvme.shin86.dev';
+const origin = 'https://editor.example.test';
 const secret = 'test-only-cron-secret-abcdefghijklmnopqrstuvwxyz';
 function setup(env = { VERCEL_ENV: 'production', VERCEL_URL: host }) {
   const config = { ...loadConfig(env), configured: true, origin,

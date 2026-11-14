@@ -31,6 +31,14 @@ export function guideFreshness(record, { overlay = false } = {}) {
   const date = new Date(record.date+'T00:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'});
   return `<div class="guide-freshness"><span class="freshness-label">LAST KNOWN CONTENT CHANGE</span><strong><time datetime="${esc(record.date)}">${date}</time></strong><span>Upstream source history · game accuracy unverified</span><a href="${esc(record.sourceUrl)}" rel="noreferrer">View content change ↗</a><a href="/about/guide-history/">How dates work</a></div>`;
 }
+export function previewEditorOrigin(env) {
+  if (env.VERCEL_ENV!=='preview' || !env.PVME_PREVIEW_EDITOR_ORIGIN) return '';
+  try {
+    const url=new URL(env.PVME_PREVIEW_EDITOR_ORIGIN);
+    if (url.protocol==='https:' && url.origin===env.PVME_PREVIEW_EDITOR_ORIGIN && !url.username && !url.password) return url.origin;
+  } catch {}
+  throw Error('Preview editor origin must be an exact HTTPS origin.');
+}
 export function applyReadingDraft(files, root, { publishedSources = new Set(), env = process.env, now = new Date() } = {}) {
   const pets=JSON.parse(fs.readFileSync(path.join(root,'src/boss-pets.json')));
   const manifest=validateWikiPortraits(JSON.parse(fs.readFileSync(path.join(root,'src/wiki-pet-portraits.json'))),pets);
@@ -49,6 +57,7 @@ export function applyReadingDraft(files, root, { publishedSources = new Set(), e
   const byPage=new Map();
   for(const slot of slots) if(slot.slotKind!=='inline') byPage.set(slot.pagePath,slot.sourcePath);
   const preview=env.VERCEL_ENV==='preview';
+  const editorOrigin=previewEditorOrigin(env);
   // Historical glyph research remains in Git; it is not active visual provenance.
   files.delete('data/boss-visuals.json');
   for(const [name,bytes] of files){
@@ -82,8 +91,9 @@ export function applyReadingDraft(files, root, { publishedSources = new Set(), e
       html=html.replace(/(<header class="reader-heading[^\"]*"[^>]*>[\s\S]*?<\/h1>)/,`$1${guideAgeBadge(history.guides[source],{overlay:publishedSources.has(source),now})}`);
       html=html.replace(/<div class="reader-byline">[\s\S]*?<\/div>/,`<div class="reader-byline">PvME contributors <span>·</span> <a href="#source-record">Source & attribution</a></div>${guideFreshness(history.guides[source],{overlay:publishedSources.has(source)})}`);
       if(guideId){
-        const href=`${preview?'https://pvme.shin86.dev':''}/edit/#/guide/${guideId}/edit`;
-        const cta=`<a class="suggest-edit" href="${href}">${pencil}<span>Suggest an edit${preview?'<small>Continue on production · Discord sign-in</small>':''}</span><span class="edit-arrow" aria-hidden="true">↗</span></a>`;
+        const href=`${editorOrigin}/edit/#/guide/${guideId}/edit`;
+        const hint=preview?(editorOrigin?'Continue on production · Discord sign-in':'Preview editor · saving disabled'):'';
+        const cta=`<a class="suggest-edit" href="${href}">${pencil}<span>Suggest an edit${hint?`<small>${hint}</small>`:''}</span><span class="edit-arrow" aria-hidden="true">↗</span></a>`;
         html=html.replace(/<a class="button secondary edit-guide-link"[^>]*>[\s\S]*?<\/a>/, '');
         html=html.replace(/(<\/header>)(?=<nav class="article-tabs")/,`<div class="reader-edit-slot">${cta}</div>$1`);
       }
@@ -91,8 +101,8 @@ export function applyReadingDraft(files, root, { publishedSources = new Set(), e
       html=html.replace('</head>','<link rel="stylesheet" href="/assets/reader-guide-ui.css"><script type="module" src="/assets/reader-guide-ui.mjs"></script></head>');
     }
     if(preview) {
-      html=outside(html,fragment=>fragment.replaceAll('href="/edit/','href="https://pvme.shin86.dev/edit/'));
-      html=html.replace('<main ', '<div class="preview-ribbon">Design preview · reading only. Contribution links open production.</div><main ');
+      if(editorOrigin) html=outside(html,fragment=>fragment.replaceAll('href="/edit/',`href="${editorOrigin}/edit/`));
+      html=html.replace('<main ', `<div class="preview-ribbon">Design preview · reading only. ${editorOrigin?'Contribution links open production.':'Preview editor saving is disabled.'}</div><main `);
     }
     html=html.replace('</head>','<link rel="stylesheet" href="/assets/reading-draft.css"></head>');
     files.set(name,Buffer.from(html));

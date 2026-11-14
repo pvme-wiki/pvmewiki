@@ -7,12 +7,12 @@ import { execFileSync } from 'node:child_process';
 import { readSnapshot } from './reader-snapshot.mjs';
 import { guideSpans } from './patch-reader-html.mjs';
 import { polishReader } from './boss-hub.mjs';
-import { applyReadingDraft, guideFreshness } from './reading-draft.mjs';
+import { applyReadingDraft, guideFreshness, previewEditorOrigin } from './reading-draft.mjs';
 const root=path.resolve(import.meta.dirname,'..');
 const original=readSnapshot(root),files=new Map(original);
 polishReader(files,root);const before=new Map(files);
 const previous=process.env.VERCEL_ENV;process.env.VERCEL_ENV='preview';
-applyReadingDraft(files,root);if(previous===undefined)delete process.env.VERCEL_ENV;else process.env.VERCEL_ENV=previous;
+applyReadingDraft(files,root,{env:{VERCEL_ENV:'preview',PVME_PREVIEW_EDITOR_ORIGIN:'https://editor.example.test'}});if(previous===undefined)delete process.env.VERCEL_ENV;else process.env.VERCEL_ENV=previous;
 test('reader draft preserves every source article and export, with no active boss glyphs',()=>{
  for(const [name,bytes] of before){
   if(name.endsWith('.html')){
@@ -31,13 +31,29 @@ test('guide CTA has exact guide identity, explicit production label and no previ
   const doc=JSON.parse(fs.readFileSync(path.join(root,'editor/content',item.file)));
   for(const slot of slots.filter(slot=>slot.sourcePath===doc.source.sourcePath&&slot.slotKind!=='inline')){
    const html=files.get(slot.pagePath).toString();if(!html.includes('class="reader-heading'))continue;
-   assert.ok(html.includes(`href="https://pvme.shin86.dev/edit/#/guide/${doc.id}/edit"`),slot.pagePath);
+   assert.ok(html.includes(`href="https://editor.example.test/edit/#/guide/${doc.id}/edit"`),slot.pagePath);
    assert.match(html,/Suggest an edit/);assert.match(html,/Continue on production/);assert.match(html,/guide-favorite-top/);
    assert.doesNotMatch(html,/href="\/edit\//);checked++;
   }
  }
  assert.ok(checked>=323,`Expected all guide routes; checked ${checked}`);
 });
+test('production editor links remain same-origin while preview routing is explicit and fail-closed',()=>{
+ const origin='https://editor.example.test';
+ assert.equal(previewEditorOrigin({VERCEL_ENV:'production',PVME_PREVIEW_EDITOR_ORIGIN:origin}),'');
+ assert.equal(previewEditorOrigin({VERCEL_ENV:'preview'}),'');
+ assert.equal(previewEditorOrigin({VERCEL_ENV:'preview',PVME_PREVIEW_EDITOR_ORIGIN:origin}),origin);
+ for(const value of ['http://editor.example.test','https://editor.example.test/path','https://editor.example.test/','https://user:pass@editor.example.test','javascript:alert(1)'])assert.throws(()=>previewEditorOrigin({VERCEL_ENV:'preview',PVME_PREVIEW_EDITOR_ORIGIN:value}));
+ for(const env of [{VERCEL_ENV:'production',PVME_PREVIEW_EDITOR_ORIGIN:origin},{VERCEL_ENV:'preview'}]){
+  const rendered=new Map(before);applyReadingDraft(rendered,root,{env});
+  const html=rendered.get('archive/pvme-guides/basic-guides/arch-glacor-basic/index.html').toString();
+  assert.match(html,/href="\/edit\/#\/guide\/arch-glacor-basic\/edit"/);
+  assert.doesNotMatch(html,/href="https:\/\/editor\.example\.test\/edit\//);
+  if(env.VERCEL_ENV==='preview')assert.match(html,/Preview editor · saving disabled/);
+  else assert.doesNotMatch(html,/Continue on production|Preview editor/);
+ }
+});
+
 test('pet registry separates multiple pets and rights from image coverage',()=>{
  const data=JSON.parse(files.get('data/boss-pets.json'));
  assert.equal(data.imageCoverage,45);assert.equal(data.illustrationCoverage,0);assert.equal(data.officialPetPortraitCoverage,44);assert.equal(data.encounterPortraitCoverage,1);assert.equal(data.unillustratedBosses,0);assert.equal(data.bosses.length,45);

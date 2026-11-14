@@ -57,7 +57,7 @@ function fixture({date='2026-11-08',collapsed=false,blockedStorage=false}={}) {
     return node;
   }
   doc.body=element('body');const slot=element('div'),anchor=element('a'),badge=element('div');
-  anchor.href='https://pvme.shin86.dev/edit/#/guide/example/edit';slot.append(anchor);doc.body.append(slot);
+  anchor.href='https://editor.example.test/edit/#/guide/example/edit';slot.append(anchor);doc.body.append(slot);
   badge.dataset.guideUpdated=date;
   const fields=Object.fromEntries(['[data-guide-age-label]','[data-guide-age-detail]','.guide-age-icon'].map(s=>[s,element('span')]));
   badge.querySelector=s=>fields[s];
@@ -73,7 +73,7 @@ function fixture({date='2026-11-08',collapsed=false,blockedStorage=false}={}) {
 test('enhancement moves the single exact edit anchor, collapse/restore updates focus and local preference', () => {
   const f=fixture();const cleanup=enhanceReaderGuideUI({document:f.doc,storage:f.storage,now:()=>new Date('2026-11-14'),schedule:f.schedule,cancel:f.cancel});
   const dock=f.doc.querySelector('.reader-edit-dock'),[anchor,collapse,restore]=dock.children;
-  assert.equal(anchor,f.anchor);assert.equal(f.slot.children.length,0);assert.equal(anchor.href,'https://pvme.shin86.dev/edit/#/guide/example/edit');
+  assert.equal(anchor,f.anchor);assert.equal(f.slot.children.length,0);assert.equal(anchor.href,'https://editor.example.test/edit/#/guide/example/edit');
   assert.equal(collapse.attributes['aria-label'],'Collapse guide edit action');assert.equal(restore.hidden,true);
   collapse.listeners.get('click')();assert.equal(anchor.hidden,true);assert.equal(collapse.hidden,true);assert.equal(restore.hidden,false);
   assert.equal(f.doc.activeElement,restore);assert.equal(f.values.get('pvme-guide-edit-collapsed'),'1');
@@ -102,14 +102,14 @@ test('stored collapse and blocked storage preserve a reachable action, and clien
 
 test('reader integration retains the full freshness block and ships only one in-flow edit action before enhancement', () => {
   const root=path.resolve(import.meta.dirname,'..');const files=readSnapshot(root);polishReader(files,root);
-  applyReadingDraft(files,root,{env:{VERCEL_ENV:'preview'},now:new Date('2026-11-14T12:00:00Z')});
+  applyReadingDraft(files,root,{env:{VERCEL_ENV:'preview',PVME_PREVIEW_EDITOR_ORIGIN:'https://editor.example.test'},now:new Date('2026-11-14T12:00:00Z')});
   const history=JSON.parse(fs.readFileSync(path.join(root,'src/guide-history.json')));
   const html=files.get('archive/pvme-guides/slayer/vile-blooms/index.html').toString();
   assert.match(html,/6 days since last update/);
   assert.ok(html.includes(guideFreshness(history.guides['/pvme-guides/slayer/vile-blooms/'])),'Retain the complete existing date, evidence link and caveat block');
   assert.match(html,/<\/h1><div class="guide-update-age/);
   assert.equal([...html.matchAll(/class="suggest-edit"/g)].length,1);
-  assert.match(html,/<div class="reader-edit-slot"><a class="suggest-edit" href="https:\/\/pvme.shin86.dev\/edit\/#\/guide\/[^" ]+\/edit"/);
+  assert.match(html,/<div class="reader-edit-slot"><a class="suggest-edit" href="https:\/\/editor.example.test\/edit\/#\/guide\/[^" ]+\/edit"/);
   for(const asset of ['guide-age.mjs','reader-guide-ui.mjs','reader-guide-ui.css'])assert.ok(files.has(`assets/${asset}`));
   assert.match(html,/type="module" src="\/assets\/reader-guide-ui.mjs"/);
 });
