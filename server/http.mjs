@@ -69,7 +69,9 @@ export function createHandler({ db, config, identityProvider, publisher, ownerPu
       const url = new URL(request.url); route = routeOf(url);
       const method = request.method.toUpperCase();
       if (route === 'feedback') {
-        const exact=url.pathname==='/api/editor/feedback' && !url.search || url.pathname==='/api/editor' && url.searchParams.size===1 && url.searchParams.get('route')==='feedback';
+        // Vercel can retain the original pathname while appending its route query.
+        const rewritten=url.searchParams.size===1 && url.searchParams.get('route')==='feedback';
+        const exact=url.pathname==='/api/editor/feedback' && (!url.search || rewritten) || url.pathname==='/api/editor' && rewritten;
         if(!exact)fail(400,'invalid_feedback_route','Use the exact website feedback route.');
         if(!['GET','POST'].includes(method))fail(405,'method_not_allowed','Use GET or POST for website feedback.');
         if(!config.configured || !config.feedback){

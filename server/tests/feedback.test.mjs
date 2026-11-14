@@ -42,7 +42,7 @@ test('only the exact reviewed text is posted; no identity, contact, query, IP or
   assert.deepEqual(posted,{content:feedbackMessage(input.category,input.context,input.message),allowed_mentions:{parse:[]},flags:4,tts:false});
   for(const secret of [user.id,user.discordId,user.token,user.csrf,input.requestId,'203.0.113.22','private-query',endpoint])assert.ok(!init.body.includes(secret));
   return ack();
- })(request('feedback',{user,method:'POST',body:input,headers:{'x-vercel-forwarded-for':'203.0.113.22',referer:'https://pvme.example/edit/?private-query'}}));
+ })(request('feedback?route=feedback',{user,method:'POST',body:input,headers:{'x-vercel-forwarded-for':'203.0.113.22',referer:'https://pvme.example/edit/?private-query'}}));
  assert.equal(response.status,200);assert.deepEqual(await response.json(),{posted:true});assert.equal(calls,1);
  const rows=(await f.db.query("SELECT key FROM rate_limits WHERE key LIKE 'feedback:%'")).rows;
  assert.equal(rows.length,4);for(const row of rows){assert.ok(!row.key.includes(user.id));assert.ok(!row.key.includes(input.message));}
@@ -56,6 +56,9 @@ test('feedback uses the existing session, origin and CSRF checks; route/method/b
   ['feedback',{user,method:'POST',body:payload(),headers:{'X-CSRF-Token':'wrong'}},403],
   ['feedback/',{user,method:'POST',body:payload()},400],
   ['feedback?private=value',{user,method:'POST',body:payload()},400],
+  ['feedback?route=feedback&private=value',{user,method:'POST',body:payload()},400],
+  ['feedback?route=feedback&route=feedback',{user,method:'POST',body:payload()},400],
+  ['feedback?route=other',{user,method:'POST',body:payload()},400],
   ['feedback',{user,method:'PUT',body:payload()},405],
   ['feedback',{user,method:'POST',body:payload(),headers:{'Content-Type':'text/plain'}},415],
   ['feedback',{user,method:'POST',body:JSON.stringify({message:'x'.repeat(9000)})},413],
@@ -67,7 +70,7 @@ test('disabled and read-only Preview feedback never touches Discord, even with c
  const f=await fixture();t.after(()=>f.db.close());const user=await f.user();let calls=0;
  for(const config of [{...f.config,feedback:null},{configured:false,feedback:null}]){
   const run=createHandler({db:f.db,config,feedbackFetch:async()=>{calls++;return ack();}});
-  assert.deepEqual(await(await run(request('feedback'))).json(),{enabled:false});
+  for(const url of ['https://pvme.example/api/editor/feedback','https://pvme.example/api/editor/feedback?route=feedback','https://pvme.example/api/editor?route=feedback'])assert.deepEqual(await(await run(new Request(url))).json(),{enabled:false});
   assert.equal((await run(request('feedback',{user,method:'POST',body:payload()}))).status,503);
  }
  assert.equal(calls,0);
