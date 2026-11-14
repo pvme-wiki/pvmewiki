@@ -1,4 +1,5 @@
-import { selfApprovalEvidence, ADMIN_SELF_POLICY } from './approval.mjs';
+import { selfApprovalEvidence, ownerApprovalEvidence, ADMIN_SELF_POLICY } from './approval.mjs';
+import { OWNER_PUBLIC_POLICY } from './owner-approval.mjs';
 import { createSign } from 'node:crypto';
 import { AsyncLocalStorage } from 'node:async_hooks';
 import { documentHash, canonical, iso } from './core.mjs';
@@ -19,14 +20,15 @@ const problem = (code, message, options) => { throw new PublicationError(code, m
 const SHA = /^[a-f0-9]{40}$/;
 export function approvedFiles(row) {
   const self = row.owner_id === row.reviewer_id;
-  const evidence = self ? selfApprovalEvidence(row) : null;
+  const owner = self ? ownerApprovalEvidence(row) : null;
+  const evidence = self ? (owner || selfApprovalEvidence(row)) : null;
   if (self && !evidence) throw new PublicationError('snapshot_corrupt', 'Owner approval lacks its immutable authorization evidence.');
   const receipt = {
-    schemaVersion: self ? 2 : 1, submissionId: row.id, guideId: row.guide_id, baseRevision: row.base_revision,
+    schemaVersion: owner ? 3 : self ? 2 : 1, submissionId: row.id, guideId: row.guide_id, baseRevision: row.base_revision,
     baselineHash: row.baseline_hash, contentHash: row.content_hash, draftVersion: row.draft_version,
     summary: row.summary, createdAt: iso(row.created_at), approvedAt: iso(row.reviewed_at),
     reviewNote: row.review_note || '', contributorId: row.owner_id, reviewerId: row.reviewer_id,
-    ...(self ? { authorization: { policy: ADMIN_SELF_POLICY, role: 'admin', auditEventId: evidence.id } } : {}),
+    ...(self ? { authorization: { policy: owner ? OWNER_PUBLIC_POLICY : ADMIN_SELF_POLICY, role: owner ? 'owner' : 'admin', auditEventId: evidence.id } } : {}),
   };
   return { [`content/guides/${row.guide_id}.json`]: row.document, [`content/reviews/${row.id}.json`]: receipt };
 }

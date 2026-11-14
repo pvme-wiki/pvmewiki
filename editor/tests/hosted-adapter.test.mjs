@@ -32,6 +32,18 @@ test('bootstrap adapter requires opted-in admin and sends exact binding with CSR
   assert.equal(call.headers['X-CSRF-Token'], session.csrfToken); assert.equal(call.credentials, 'same-origin');
   assert.deepEqual(Object.keys(call.body).sort(), ['expectedHash', 'expectedRevision', 'reason', 'requestId']);
 });
+test('owner adapter sends only exact snapshot and reason with CSRF and never sends a principal or grant', async () => {
+  const f = fixture(() => response({ submission: { id: 'owner-pilot', status: 'approved' } }));
+  await f.adapter.connect();
+  const review = { id: 'owner-pilot', version: 1, baseRevision: 2, contentHash: 'a'.repeat(64), publicBootstrap: { ownerApprovalAvailable: true }, actorId: 'ignored', target: 'ignored' };
+  await assert.rejects(f.adapter.approveOwnerSnapshot({ ...review, publicBootstrap: {} }, 'Explicit owner authorization'), /unavailable/);
+  await f.adapter.approveOwnerSnapshot(review, 'Explicit owner authorization');
+  const call = f.calls.at(-1);
+  assert.equal(call.url, '/api/editor/submissions/owner-pilot/owner-approval');
+  assert.equal(call.headers['X-CSRF-Token'], session.csrfToken); assert.equal(call.credentials, 'same-origin');
+  assert.deepEqual(call.body, { expectedVersion: 1, expectedRevision: 2, expectedHash: 'a'.repeat(64), reason: 'Explicit owner authorization' });
+});
+
 test('hosted path cannot be downgraded into a demo or local service through queries', () => {
   for (const pathname of ['/edit', '/edit/', '/edit/anything']) for (const search of ['', '?demo=1', '?service=local', '?demo=1&service=local']) assert.equal(editorMode({ pathname, search }), 'hosted');
   assert.equal(editorMode({ pathname: '/', search: '' }), 'device-only');

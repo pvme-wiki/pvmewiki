@@ -4,6 +4,12 @@ This opt-in preparation flow requests a new independent review of an unchanged
 canonical guide previously published through the private pipeline. It does not
 copy old approvals, relabel legacy jobs, or start a public publisher.
 
+The separate [scoped owner authorization policy](owner-public-snapshot.md)
+supports an explicitly authorized owner pilot without claiming independent
+review. It requires a protected grant for the verified immutable owner identity,
+one revision/hash and one target. The normal review endpoint and every ungranted
+account retain the independent bootstrap rules described here.
+
 The feature is **off by default**. Do not configure it in production until the
 implementation and the intended repository target have been reviewed. This
 change does not activate or deploy it.

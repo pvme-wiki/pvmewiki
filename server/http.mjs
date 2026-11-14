@@ -55,10 +55,11 @@ async function rate(db, key, max, seconds) {
     expires_at=CASE WHEN rate_limits.expires_at<=now() THEN now()+($2 * interval '1 second') ELSE rate_limits.expires_at END RETURNING count`, [key, seconds])).rows[0];
   if (row.count > max) fail(429, 'rate_limited', 'Too many requests. Wait a minute before trying again.');
 }
-export function createHandler({ db, config, identityProvider, publisher, logError = () => {} }) {
+export function createHandler({ db, config, identityProvider, publisher, ownerPublisher = null, logError = () => {} }) {
   const auth = config.configured ? createAuth(db, config, identityProvider ? { provider: identityProvider } : {}) : null;
-  const service = config.configured ? createService(db, { publicationEnabled: Boolean(publisher), repository: config.github, bootstrapTarget: config.publicBootstrap }) : null;
+  const service = config.configured ? createService(db, { publicationEnabled: Boolean(publisher), repository: config.github, bootstrapTarget: config.publicBootstrap, ownerGrant: config.ownerPublicApproval, ownerDispatchReady: Boolean(config.ownerPublicGithub && ownerPublisher) }) : null;
   const jobs = config.configured ? createJobRunner(db, publisher, { origin: config.origin, target: publicationTarget(config.github) }) : null;
+  const ownerJobs = config.configured && config.ownerPublicGithub && ownerPublisher ? createJobRunner(db, ownerPublisher, { origin: config.origin, target: publicationTarget(config.ownerPublicGithub) }) : null;
   const unavailable = () => ({ configured: false, user: null, csrfToken: null, capabilities: { save: false, submit: false, review: false, publication: false }, message: 'Hosted saving and review are not available yet. No changes have been sent.' });
   return async request => {
     let route = '';
@@ -125,6 +126,7 @@ export function createHandler({ db, config, identityProvider, publisher, logErro
         auth.checkCsrf(session, request.headers.get('x-csrf-token'));
       }
       if (route === 'logout' && method === 'POST') { await body(request); return json(200, { ok: true }, { 'Set-Cookie': await auth.logout(session) }); }
+      if (route === 'admin/account-binding' && method === 'GET') return json(200, { binding: await service.accountBinding(session.user.id) });
       if (route === 'guides' && method === 'GET') return json(200, { guides: await service.listGuides() });
       let match = route.match(/^guides\/([a-z0-9-]+)$/);
       if (match && method === 'GET') return json(200, await service.getGuide(match[1]));
@@ -142,6 +144,21 @@ export function createHandler({ db, config, identityProvider, publisher, logErro
         const result = await service.review(session.user.id, match[1], await body(request));
         if (result.status === 'approved' && !result.publicBootstrap?.held) await jobs.runOne({ submissionId: result.id });
         return json(200, { submission: await service.getSubmission(session.user.id, result.id) });
+      }
+      match = route.match(/^submissions\/([a-f0-9-]+)\/owner-approval$/);
+      if (match && method === 'POST') {
+        const result = await service.approveOwnerSnapshot(session.user.id, match[1], await body(request));
+        // Approval records a held public-target job. It cannot dispatch a
+        // provider or change the existing private publication path.
+        return json(200, { submission: result });
+      }
+      match = route.match(/^submissions\/([a-f0-9-]+)\/owner-publication$/);
+      if (match && method === 'POST') {
+        await service.ownerPublication(session.user.id, match[1], await body(request));
+        if (!ownerJobs) fail(503, 'owner_publication_unavailable', 'The scoped owner publisher is not configured.');
+        await ownerJobs.check(session.user.id, match[1]);
+        await ownerJobs.runOne({ submissionId: match[1] });
+        return json(200, { submission: await service.getSubmission(session.user.id, match[1]) });
       }
       match = route.match(/^submissions\/([a-f0-9-]+)\/resubmit$/);
       if (match && method === 'POST') return json(200, { submission: await service.resubmit(session.user.id, match[1], await body(request)) });

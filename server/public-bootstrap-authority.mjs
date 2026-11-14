@@ -1,6 +1,6 @@
 // Private database authority shared by request, review and publication checks.
 import { canonical, documentHash, fail } from './core.mjs';
-import { approvalEventsSql, hasValidApproval } from './approval.mjs';
+import { approvalEventsSql, hasValidApproval, ownerApprovalEvidence } from './approval.mjs';
 import { publicationTarget, samePublicationTarget } from './publication-target.mjs';
 const UUID = /^[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/;
 const SHA = /^[a-f0-9]{40}$/;
@@ -30,7 +30,13 @@ export async function verifyPublicBootstrap(q, row, config) {
   const target = publicationTarget(config);
   const events = (await q.query('SELECT * FROM audit_events WHERE action=$1 AND subject_id=$2', [action, row.id])).rows;
   const event = events[0], data = event?.data;
-  if (events.length !== 1 || event.actor_id !== row.owner_id || row.owner_id === row.reviewer_id ||
+  let ownerEvidence = null;
+  if (row.owner_id === row.reviewer_id) {
+    const approval_events = (await q.query("SELECT * FROM audit_events WHERE action='submission.approved' AND subject_id=$1", [row.id])).rows;
+    ownerEvidence = ownerApprovalEvidence({ ...row, approval_events });
+  }
+  if (events.length !== 1 || event.actor_id !== row.owner_id || (row.owner_id === row.reviewer_id &&
+      (!ownerEvidence || !samePublicationTarget(ownerEvidence.data.target, target))) ||
       data?.schemaVersion !== 1 || data.requesterRole !== 'admin' || !UUID.test(data.requestId || '') || !UUID.test(data.legacySubmissionId || '') ||
       !samePublicationTarget(data.target, target) || target.mode !== 'public' || data.guideId !== row.guide_id ||
       data.baseRevision !== row.base_revision || data.contentHash !== row.content_hash || data.reason !== row.summary ||

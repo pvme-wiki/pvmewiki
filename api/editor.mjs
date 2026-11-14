@@ -5,6 +5,7 @@ import { createPublisher } from '../server/publisher.mjs';
 const config = loadConfig();
 const db = config.configured ? createDatabase(config) : null;
 const publisher = createPublisher(config.github, db);
-const handler = createHandler({ config, db, publisher });
+const ownerPublisher = createPublisher(config.ownerPublicGithub, db);
+const handler = createHandler({ config, db, publisher, ownerPublisher });
 // Vercel standalone Node fetch API preserves the original webhook bytes.
 export default { fetch: handler };
