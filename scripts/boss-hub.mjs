@@ -4,6 +4,7 @@ import { guideSpans } from './patch-reader-html.mjs';
 import { glyph } from './boss-glyphs.mjs';
 import { applyInterfaceCopy } from './interface-copy.mjs';
 import { applyDiscovery } from './discovery.mjs';
+import { normalizeBossCatalog, applyBossNavigation } from './boss-navigation.mjs';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const arrow='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5"/></svg>';
 const free='/archive/pvme-guides/upgrading-info/upgrade-order/free-upgrades/';
@@ -55,14 +56,16 @@ const traits={
  vorkath:['Vorkath','Frost & undead dragonbone','ice'],
  yakamaru:['Yakamaru','Water & serpentine forms','teal'],
 };
-const canonical=s=>({'angel-of-death-7s':'angel-of-death','angel-of-death-small-teams':'angel-of-death','vorago-hm':'vorago','giant-mole-hm':'giant-mole','bm':'beastmaster-durzag','aod':'angel-of-death','kbd':'king-black-dragon','kerapac-hm':'kerapac','ed1':'ed1-temple-of-aminishi','ed2':'ed2-dragonkin-laboratory','ed3':'ed3-shadow-reef','orikalka':'rex-matriarchs','osseous':'rex-matriarchs','pthentraken':'rex-matriarchs','rathis':'rex-matriarchs'}[s]||s);
+const canonical=s=>({'angel-of-death-7s':'angel-of-death','angel-of-death-small-teams':'angel-of-death','vorago-hm':'vorago','giant-mole-hm':'giant-mole','bm':'beastmaster-durzag','aod':'angel-of-death','kbd':'king-black-dragon','kerapac-hm':'kerapac','ed1':'ed1-temple-of-aminishi','ed2':'ed2-dragonkin-laboratory','ed3':'ed3-shadow-reef','orikalka':'rex-matriarchs','osseous':'rex-matriarchs','pthentraken':'rex-matriarchs','rathis':'rex-matriarchs','ambassador':'ed3-shadow-reef','black-stone-dragon':'ed2-dragonkin-laboratory','seiryu':'ed1-temple-of-aminishi','beastmaster':'beastmaster-durzag'}[s]||s);
 function guideBoss(g){
  const p=(g.local||'').split('/').filter(Boolean);let slug;
  if(p[2]==='rs3-full-boss-guides'||p[2]==='basic-guides')slug=p[3]?.replace(/-basic$/,'');
+ if(p[2]==='combat-achievements')slug=p[3]?.replace(/-ca$/,'');
+ if(p[2]==='one-tick-guides')slug=p[3];
  if(p[2]==='afk')slug=p[3]?.replace(/^(?:afk-|low-effort-)/,'').replace(/-hardmode$/,'');
  const id=canonical(slug);return traits[id]?id:null;
 }
-const kind=g=>g.category==='Boss fundamentals'?'overview':g.category==='Lower-effort methods'?'afk':g.category==='Combat achievements'?'achievements':'methods';
+const kind=g=>g.guideType|| (g.category==='Boss fundamentals'?'overview':g.category==='Lower-effort methods'?'afk':g.category==='Combat achievements'?'achievements':'methods');
 const styles=g=>{const title=(g.displayTitle||g.title).toLowerCase();return [['magic',/mage|magic/],['melee',/melee/],['ranged',/range|bolg/],['necromancy',/necro/]].filter(([,rx])=>rx.test(title)).map(([s])=>s)};
 export function makeDirectory(catalog,original){
  const map=new Map(original.map(({level,...b})=>[b.id,{...b,guides:[]} ]));
@@ -88,10 +91,11 @@ function chrome(html){return html.replace(/>([^<]+)</g,(_,text)=>'>'+text.replac
  .replaceAll('<h1>The first four steps<span>.</span></h1>','<h1>New to PvM?<span> Start anywhere.</span></h1>')
  .replaceAll('<p>Your progress stays on this device.</p>','<p>Pick the topics you want to explore. There is no required order. Optional reading progress stays on this device.</p><a class="quiet-link" href="/">Browse boss hubs directly →</a>')
  .replace(/<span class="eyebrow">STEP [1-4] \/ [A-Z]+<\/span>/g,'')
- 
+
  .replace('</head>','<link rel="stylesheet" href="/assets/boss-hub.css"><noscript><style>.boss-filters,.boss-card .save-button,[data-guidance-action]{display:none!important}</style></noscript></head>');}
 export function polishReader(files,root){
  const catalog=JSON.parse(files.get('data/catalog.json')),original=JSON.parse(files.get('data/bosses.json')),bosses=makeDirectory(catalog,original);
+ normalizeBossCatalog(catalog,bosses);
  const visuals=JSON.parse(fs.readFileSync(path.join(root,'src/boss-visuals.json'),'utf8'));
  for(const b of bosses)if(!visuals.bosses.some(v=>v.id===b.id))throw new Error('Missing visual provenance: '+b.id);
  files.set('data/boss-visuals.json',Buffer.from(JSON.stringify(visuals)));
@@ -148,5 +152,6 @@ export function polishReader(files,root){
  files.set('assets/app.js',Buffer.from(app));files.set('assets/boss-hub.css',fs.readFileSync(path.join(root,'src/boss-hub.css')));
  applyInterfaceCopy(files);
  applyDiscovery(files,root,bosses);
+ applyBossNavigation(files,root,catalog,bosses);
  return bosses;
 }

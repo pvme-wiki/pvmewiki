@@ -2,13 +2,14 @@ const dialog = $("#search-dialog"),
   input = $("#global-search"),
   results = $("#search-results");
 let searchVersion = 0;
+let preferredSearchHref = null;
 const make = (tag, className, text) => {
   const element = document.createElement(tag);
   if (className) element.className = className;
   if (text) element.textContent = text;
   return element;
 };
-function addResult(title, description, href, type) {
+function addResult(title, description, href, type, container = results) {
   const link = make("a", "search-result");
   link.href = href;
   if (href.startsWith("https:")) {
@@ -18,7 +19,7 @@ function addResult(title, description, href, type) {
   const text = make("div");
   text.append(make("strong", "", title), make("small", "", description));
   link.append(text, make("span", "result-type", type));
-  results.append(link);
+  container.append(link);
 }
 function searchExcerpt(text, terms) {
   text = String(text || "");
@@ -38,6 +39,7 @@ function searchExcerpt(text, terms) {
 }
 async function renderSearch() {
   const version = ++searchVersion;
+  preferredSearchHref = null;
   results.replaceChildren();
   $("#search-status").textContent = "Loading search…";
   results.setAttribute("aria-busy", "true");
@@ -68,17 +70,30 @@ async function renderSearch() {
       );
     const found = data.index.search(query),
       visible = found.slice(0, help ? 11 : 12);
-    for (const { record, terms, titleMatch } of visible) {
-      addResult(
-        record.title,
-        record.kind === "boss"
-          ? bossSearchSummary(record.boss)
-          : titleMatch
-            ? record.category
-            : searchExcerpt(record.body, terms),
-        record.href,
-        record.kind === "boss" ? "BOSS" : "GUIDE",
-      );
+    preferredSearchHref = help ? "/learn/" : visible[0]?.record.href;
+    for (const group of groupSearchResults(visible, data.bosses)) {
+      const container = group.boss ? make("section", "search-boss-group") : results;
+      if (group.boss) {
+        const id = "search-boss-" + group.boss.id;
+        container.setAttribute("aria-labelledby", id);
+        const heading = make("h2", "search-boss-heading");
+        heading.id = id;
+        const parent = make("a", "", group.boss.name);
+        parent.href = group.boss.url;
+        parent.append(make("span", "", "All guides →"));
+        heading.append(parent); container.append(heading);
+        if (!group.results.length) addResult("Browse " + group.boss.name + " guides", bossSearchSummary(group.boss), group.boss.url, "BOSS", container);
+        results.append(container);
+      }
+      for (const { record, terms, titleMatch } of group.results) {
+        addResult(
+          record.title,
+          titleMatch ? guideSearchSummary(record.guide) : searchExcerpt(record.body, terms),
+          record.href,
+          "GUIDE",
+          container,
+        );
+      }
     }
     $("#search-status").textContent =
       found.length || help
@@ -155,7 +170,8 @@ dialog?.addEventListener("keydown", (event) => {
     links.length
   ) {
     event.preventDefault();
-    links[0].click();
+    const preferred = links.find(link => link.getAttribute("href") === preferredSearchHref);
+    (preferred || links[0]).click();
   }
 });
 document.addEventListener("keydown", (event) => {

@@ -180,8 +180,9 @@ export function applyDiscovery(files, root, bosses) {
     /const dialog=\$\('#search-dialog'\)[\s\S]*?(?=document.addEventListener\('keydown',e=>\{if\(e.key==='Tab')/,
     () => read("global-search.js"),
   );
+  app = app.replace("validValue(params.get('category'),", "validValue(canonicalGuideCategory(params.get('category')),");
   app =
-    "import { createSearchIndex, normalizeQuery, bossDocument, guideDocument } from '/assets/search-engine.mjs';\n" +
+    "import { createSearchIndex, normalizeQuery, bossDocument, guideDocument, canonicalGuideCategory, groupSearchResults, guideSearchSummary } from '/assets/search-engine.mjs';\n" +
     read("search-data.js") +
     "\n" +
     app +

@@ -22,9 +22,28 @@ const aliases = {
   rots: "rise of the six",
   vindi: "vindicta",
   ambi: "ambassador",
+  gbk: "ghrazi blood knights",
   nm: "normal",
   hm: "hard",
 };
+export function canonicalGuideCategory(value) {
+  return ["Advanced boss guides", "Boss methods", "Boss fundamentals"].includes(value)
+    ? "Boss guides" : value;
+}
+export function groupSearchResults(results, bosses) {
+  const byBoss = new Map(bosses.map(boss => [boss.id, boss]));
+  const groups = [], grouped = new Map();
+  for (const result of results) {
+    const id = result.record.kind === "boss" ? result.record.boss.id : result.record.guide?.boss;
+    if (!byBoss.has(id)) { groups.push({ boss: null, results: [result] }); continue; }
+    if (!grouped.has(id)) {
+      const group = { boss: byBoss.get(id), results: [] };
+      grouped.set(id, group); groups.push(group);
+    }
+    if (result.record.kind !== "boss") grouped.get(id).results.push(result);
+  }
+  return groups;
+}
 export function expandQuery(value) {
   return normalizeQuery(String(value || "").slice(0, 200))
     .split(" ")
@@ -106,6 +125,8 @@ const bossAliases = {
   "arch-glacor": "ag archglacor",
   "dagannoth-kings": "dks",
   "rise-of-the-six": "rots",
+  "ghrazi-blood-knights": "gbk",
+  "rex-matriarchs": "orikalka osseous pthentraken rathis",
 };
 export function bossDocument(boss) {
   return {
@@ -124,14 +145,17 @@ export function bossDocument(boss) {
     boss,
   };
 }
+export function guideSearchSummary(guide) {
+  return ({ overview: "Fight overview", methods: "Combat method", afk: "AFK & lower effort", achievements: "Combat achievements", reference: "Reference guide" })[guide?.guideType] || guide?.category || "";
+}
 export function guideDocument(guide) {
   return {
     id: "guide:" + guide.id,
     kind: "guide",
-    title: guide.displayTitle || guide.title,
+    title: guide.navigationTitle || guide.displayTitle || guide.title,
     href: guide.local || guide.url,
     category: guide.category,
-    aliases: "",
+    aliases: [guide.bossName, bossAliases[guide.boss]].filter(Boolean).join(" "),
     body: guide.searchText || "",
     guide,
   };

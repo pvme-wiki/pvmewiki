@@ -5,7 +5,7 @@ async function filterLibrary() {
   if (!search) return;
   const version = ++librarySearchVersion,
     query = search.value.trim(),
-    category = $("#category-filter")?.value || "all";
+    category = canonicalGuideCategory($("#category-filter")?.value || "all");
   syncTopicPicker();
   const groups = $$(".library-group"),
     rows = $$(".library-row"),
@@ -45,7 +45,7 @@ async function filterLibrary() {
       (row) => row.closest(".library-group") === group,
     )) {
       const visible =
-        (category === "all" || category === group.dataset.category) &&
+        (category === "all" || category === group.dataset.category || category === row.dataset.topic) &&
         (!matches || matches.has(row.getAttribute("href")));
       row.hidden = !visible;
       if (visible) count++;
