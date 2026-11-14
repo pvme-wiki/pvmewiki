@@ -1,10 +1,20 @@
 import { createPrivateKey } from 'node:crypto';
+import { publicationTarget } from './publication-target.mjs';
 const baseFields = ['APP_ORIGIN', 'DATABASE_URL', 'SESSION_SECRET', 'DISCORD_CLIENT_ID', 'DISCORD_CLIENT_SECRET'];
 const githubFields = ['GITHUB_APP_ID', 'GITHUB_INSTALLATION_ID', 'GITHUB_APP_PRIVATE_KEY', 'GITHUB_OWNER', 'GITHUB_REPO', 'GITHUB_BASE_BRANCH', 'GITHUB_WEBHOOK_SECRET', 'CRON_SECRET'];
 export function loadConfig(env = process.env) {
   const errors = [];
   const publicationMode = env.PVME_PUBLICATION_MODE || 'private';
   if (!['private', 'public'].includes(publicationMode)) errors.push('Invalid publication mode.');
+  let publicBootstrap = null;
+  if (env.PVME_PUBLIC_BOOTSTRAP_TARGET) {
+    try {
+      const value = JSON.parse(env.PVME_PUBLIC_BOOTSTRAP_TARGET);
+      if (!value || Object.keys(value).sort().join(',') !== 'base,installationId,owner,repo' || Object.values(value).some(item => typeof item !== 'string') || publicationMode !== 'private') throw Error();
+      publicBootstrap = { ...value, mode: 'public' };
+      publicationTarget(publicBootstrap);
+    } catch { errors.push('Bootstrap review requires an exact public target and private publication mode.'); publicBootstrap = null; }
+  }
   const missing = baseFields.filter(key => !env[key]);
   const accessMode = env.PVME_ACCESS_MODE || 'allowlist';
   const allowedDiscordIds = (env.PVME_CONTRIBUTOR_DISCORD_IDS || '').split(',').map(value => value.trim()).filter(Boolean);
@@ -49,7 +59,7 @@ export function loadConfig(env = process.env) {
     ? `https://${deploymentHost}` : null;
   const configured = !missing.length && !errors.length;
   return {
-    configured, errors, missing, publicationMode, accessMode, allowedDiscordIds, origin, productionCronOrigin,
+    configured, errors, missing, publicationMode, publicBootstrap, accessMode, allowedDiscordIds, origin, productionCronOrigin,
     databaseUrl: env.DATABASE_URL, sessionSecret: env.SESSION_SECRET,
     discord: { clientId: env.DISCORD_CLIENT_ID, clientSecret: env.DISCORD_CLIENT_SECRET, redirectUri: `${origin}/api/editor/auth/discord/callback` },
     github: configured && githubValid ? {

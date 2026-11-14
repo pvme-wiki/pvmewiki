@@ -1,4 +1,5 @@
 import { publicationTarget } from './publication-target.mjs';
+import { bootstrapRequestSql, verifyPublicBootstrap } from './public-bootstrap-authority.mjs';
 import { ADMIN_SELF_POLICY } from './approval.mjs';
 import { randomUUID } from 'node:crypto';
 import { validateDocument } from '../editor/shared/model.mjs';
@@ -29,6 +30,7 @@ export function submissionView(row, user, { detail = false, repository = null } 
     reviewNote: row.review_note || '', isMine: row.owner_id === user.id, contentHash: row.content_hash,
     ...(detail ? { document: row.document, baselineDocument: row.baseline_document } : {}),
     publication: row.job_state ? { state: row.job_provider?.replacementId ? 'superseded' : row.job_state, requiresFreshReview: row.job_state === 'blocked' && needsFreshReview(row.job_error) && !row.job_provider?.replacementId, replacementId: row.job_provider?.replacementId || null, ...(reviewer ? { errorCode: row.job_error || null, reviewUrl } : {}) } : null,
+    publicBootstrap: row.bootstrap_request ? { target: row.bootstrap_request.target, requiresIndependentReview: true, held: repository?.mode !== 'public' } : null,
     publicationIssue: row.job_provider?.replacementId ? 'A fresh submission replaces this publication attempt.' : row.job_state === 'blocked' ? (needsFreshReview(row.job_error) ? 'Publication is blocked. Save a reconciled draft and submit it for fresh review.' : 'Publication needs a maintainer to repair the publishing connection before retrying.') : row.job_state === 'retry' ? 'Publication will retry. Your approved submission is safe.' : null,
   };
 }
@@ -60,7 +62,7 @@ function baselineConflict(current, draftVersion) {
 }
 async function submission(q, id, { lock = false } = {}) {
   if (!uuidPattern.test(id)) fail(404, 'submission_not_found', 'Submission not found.');
-  const row = (await q.query(`SELECT s.*,j.state AS job_state,j.provider AS job_provider,j.target AS job_target,j.last_error AS job_error FROM submissions s LEFT JOIN publication_jobs j ON j.submission_id=s.id WHERE s.id=$1 ${lock ? 'FOR UPDATE OF s' : ''}`, [id])).rows[0];
+  const row = (await q.query(`SELECT s.*,${bootstrapRequestSql('s')} AS bootstrap_request,j.state AS job_state,j.provider AS job_provider,j.target AS job_target,j.last_error AS job_error FROM submissions s LEFT JOIN publication_jobs j ON j.submission_id=s.id WHERE s.id=$1 ${lock ? 'FOR UPDATE OF s' : ''}`, [id])).rows[0];
   if (!row) fail(404, 'submission_not_found', 'Submission not found.');
   return row;
 }
@@ -81,7 +83,7 @@ async function submitSavedSnapshot(q, actor, id, input, summary) {
   await audit(q, actor, 'submission.created', row.id, { contentHash: row.content_hash, baseRevision: row.base_revision });
   return submissionView(row, user, { detail: true });
 }
-export function createService(db, { publicationEnabled = false, repository = null } = {}) {
+export function createService(db, { publicationEnabled = false, repository = null, bootstrapTarget = null } = {}) {
   return {
     async listGuides() {
       return (await db.query("SELECT g.id,r.document->>'title' AS title,g.category,g.summary,g.revision,r.content_hash AS \"contentHash\" FROM guides g JOIN guide_revisions r ON r.guide_id=g.id AND r.revision=g.revision ORDER BY g.id")).rows;
@@ -156,7 +158,7 @@ export function createService(db, { publicationEnabled = false, repository = nul
     async listSubmissions(actor, { mine = false } = {}) {
       const user = await requireUser(db, actor);
       const onlyMine = mine || !isReviewer(user);
-      return (await db.query(`SELECT s.*,j.state AS job_state,j.provider AS job_provider,j.target AS job_target,j.last_error AS job_error FROM submissions s LEFT JOIN publication_jobs j ON j.submission_id=s.id ${onlyMine ? 'WHERE s.owner_id=$1' : ''} ORDER BY s.created_at DESC LIMIT 100`, onlyMine ? [actor] : [])).rows.map(row => submissionView(row, user, { repository }));
+      return (await db.query(`SELECT s.*,${bootstrapRequestSql('s')} AS bootstrap_request,j.state AS job_state,j.provider AS job_provider,j.target AS job_target,j.last_error AS job_error FROM submissions s LEFT JOIN publication_jobs j ON j.submission_id=s.id ${onlyMine ? 'WHERE s.owner_id=$1' : ''} ORDER BY s.created_at DESC LIMIT 100`, onlyMine ? [actor] : [])).rows.map(row => submissionView(row, user, { repository }));
     },
     async getSubmission(actor, id) {
       const user = await requireUser(db, actor);
@@ -174,9 +176,15 @@ export function createService(db, { publicationEnabled = false, repository = nul
         const current = await guide(q, found.guide_id, { lock: true });
         const row = await submission(q, id, { lock: true });
         if (row.owner_id === actor && user.role !== 'admin') fail(403, 'self_review_forbidden', 'Another reviewer must review your contribution.');
+        if (row.bootstrap_request && row.owner_id === actor) fail(403, 'self_review_forbidden', 'A different reviewer must review the public snapshot.');
         if (row.status !== 'submitted' || input.expectedVersion !== row.version) fail(409, 'review_conflict', 'This submission has already changed. Reload it before reviewing.', { submission: submissionView(row, user, { detail: true }) });
+        let target = publicationTarget(repository);
         if (input.decision === 'approve') {
-          if (!publicationEnabled) fail(503, 'publication_unavailable', 'The publishing connection is not configured yet. This submission remains safely queued for review.');
+          if (row.bootstrap_request) {
+            if (!bootstrapTarget) fail(503, 'bootstrap_review_unavailable', 'Public snapshot review is not enabled.');
+            if (!await verifyPublicBootstrap(q, row, bootstrapTarget)) fail(409, 'public_bootstrap_unverified', 'The public snapshot request does not match its frozen content.');
+            target = publicationTarget(bootstrapTarget);
+          } else if (!publicationEnabled) fail(503, 'publication_unavailable', 'The publishing connection is not configured yet. This submission remains safely queued for review.');
           if (row.base_revision !== current.revision || row.baseline_hash !== current.content_hash) baselineConflict(current, row.draft_version);
           validate(row.document, current.document);
           if (documentHash(row.document) !== row.content_hash || documentHash(row.baseline_document) !== row.baseline_hash) fail(500, 'snapshot_corrupt', 'The stored review failed its integrity check.');
@@ -186,8 +194,8 @@ export function createService(db, { publicationEnabled = false, repository = nul
         await audit(q, actor, `submission.${status}`, id, { contentHash: row.content_hash, note,
           ...(status === 'approved' && row.owner_id === actor ? { reviewerRole: user.role, approvalPolicy: ADMIN_SELF_POLICY, reviewedAt: iso(updated.reviewed_at) } : {}),
         });
-        if (status === 'approved') await q.query('INSERT INTO publication_jobs(submission_id,target) VALUES($1,$2) ON CONFLICT DO NOTHING', [id, JSON.stringify(publicationTarget(repository))]);
-        return submissionView(updated, user, { detail: true });
+        if (status === 'approved') await q.query('INSERT INTO publication_jobs(submission_id,target) VALUES($1,$2) ON CONFLICT DO NOTHING', [id, JSON.stringify(target)]);
+        return submissionView({ ...updated, bootstrap_request: row.bootstrap_request }, user, { detail: true, repository });
       });
     },
     async changeRole(actor, id, input) {

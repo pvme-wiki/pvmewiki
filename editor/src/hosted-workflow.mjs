@@ -12,10 +12,19 @@ export function canReview(session) {
 }
 export function canReviewSubmission(review, session) {
   return canReview(session) && review?.status === 'submitted' &&
-    (!review.isMine || session.user.role === 'admin');
+    (!review.isMine || (!review.publicBootstrap && session.user.role === 'admin'));
+}
+export function canRequestPublicBootstrap(session) {
+  return session?.configured === true && session?.user?.role === 'admin' &&
+    session?.capabilities?.publicBootstrapTarget?.mode === 'public';
+}
+export function canApproveSubmission(review, session) {
+  return canReviewSubmission(review, session) && (review.publicBootstrap
+    ? session?.capabilities?.publicBootstrapReview === true : session?.capabilities?.publication === true);
 }
 export function canCheckPublication(review, session) {
   return canReview(session) && session.capabilities.publication === true &&
+    !review?.publicBootstrap?.held &&
     ['approved', 'publishing'].includes(review?.status) &&
     ['queued', 'working', 'retry', 'awaiting_merge', 'awaiting_deployment'].includes(review?.publication?.state) &&
     !review?.publication?.requiresFreshReview && !review?.publication?.replacementId;

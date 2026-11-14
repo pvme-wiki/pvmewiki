@@ -46,6 +46,68 @@ async function harness({ realRender = false } = {}) {
 function dirty(h, value = 'My edit') {
   Object.assign(h.state, { guide: clone(catalog[0]), baseline: clone(seed), document: edit(seed, value), savedDocument: clone(seed), revision: 0, baseRevision: 'guide-1', editVersion: 1, dirty: true, view: 'edit' });
 }
+
+const bootstrapTarget = { mode: 'public', repository: 'test/guides', baseBranch: 'main', installationId: '5678' };
+const bootstrapSession = role => ({ ...clone(session), user: { ...session.user, role }, capabilities: { ...session.capabilities, review: true, publication: false, publicBootstrapReview: true, publicBootstrapTarget: role === 'admin' ? bootstrapTarget : null } });
+
+test('admin requests exact current snapshot without sending local document, actor or target; uncertain retry retains key', async () => {
+  const h = await harness({ realRender: true }); dirty(h); h.state.dirty = false;
+  h.state.session = bootstrapSession('admin');
+  const current = { document: clone(seed), revision: 2, contentHash: 'a'.repeat(64) }, sent = [];
+  h.setAdapter({ getGuide: async (id, refresh) => { assert.equal(refresh, true); return current; }, requestPublicBootstrap: async (id, body) => {
+    sent.push({ id, body: clone(body) });
+    if (sent.length === 1) { const error = new Error('Acknowledgement lost'); error.uncertain = true; throw error; }
+    return { id: 'new-pending-bootstrap' };
+  } });
+  h.location.hash = `#/guide/${firstId}/review`; await h.renderRoute();
+  assert.match(h.app.innerHTML, /data-action="prepare-public-bootstrap"/);
+  await h.action('prepare-public-bootstrap', {});
+  assert.match(h.dialog.innerHTML, /test\/guides/); assert.match(h.dialog.innerHTML, /Public publishing stays held/);
+  assert.match(h.dialog.innerHTML, /revision 2/);
+  h.element('#bootstrap-reason').value = 'Request a fresh public carry-forward review';
+  await assert.rejects(h.action('request-public-bootstrap', {}), /Acknowledgement lost/);
+  h.element('#bootstrap-reason').value = 'Changed input after uncertain request';
+  await h.action('request-public-bootstrap', {});
+  assert.deepEqual(sent[0], sent[1]);
+  assert.equal(sent[0].body.expectedHash, current.contentHash); assert.equal(sent[0].body.expectedRevision, 2);
+  for (const field of ['document', 'actorId', 'target']) assert.equal(sent[0].body[field], undefined);
+  assert.equal(h.location.hash, '#/submission/new-pending-bootstrap');
+});
+
+test('bootstrap action stays hidden by default and rejects dirty drafts or a late account change', async () => {
+  const h = await harness({ realRender: true }); dirty(h);
+  h.location.hash = `#/guide/${firstId}/review`; await h.renderRoute();
+  assert.doesNotMatch(h.app.innerHTML, /data-action="prepare-public-bootstrap"/);
+  await assert.rejects(h.action('prepare-public-bootstrap', {}), /unavailable/);
+  h.state.session = bootstrapSession('admin');
+  await assert.rejects(h.action('prepare-public-bootstrap', {}), /Preserve and resolve/);
+  h.state.dirty = false;
+  let resolve;
+  h.setAdapter({ getGuide: () => new Promise(done => { resolve = done; }), connect: async () => {} });
+  const pending = h.action('prepare-public-bootstrap', {});
+  while (!resolve) await Promise.resolve();
+  h.state.session = { ...session, user: null };
+  // Revalidation is the normal boundary that clears account-owned state.
+  h.setAdapter({ getGuide: async () => null, connect: async function () { this.session = { ...session, user: null }; } });
+  await h.revalidateSession();
+  resolve({ document: seed, revision: 2, contentHash: 'a'.repeat(64) }); await pending;
+  assert.equal(h.state.bootstrapRequest, null);
+  assert.doesNotMatch(h.dialog.innerHTML, /Send current snapshot for review/);
+});
+
+test('normal queue exposes bootstrap target and full frozen guide, permits only different reviewer and keeps held status', async () => {
+  for (const own of [false, true]) {
+    const h = await harness({ realRender: true }); h.state.session = bootstrapSession('admin');
+    const review = { id: 'pending-public', guideId: firstId, document: seed, baselineDocument: seed, title: seed.title, summary: 'Fresh public request', baseRevision: 2,
+      contentHash: 'a'.repeat(64), status: 'submitted', version: 1, isMine: own, createdAt: new Date().toISOString(), publicBootstrap: { target: bootstrapTarget, held: true } };
+    h.setAdapter({ getReview: async () => review }); h.location.hash = '#/submission/pending-public'; await h.renderRoute();
+    assert.match(h.app.innerHTML, /First public snapshot review/); assert.match(h.app.innerHTML, /test\/guides/);
+    assert.match(h.app.innerHTML, /<details class="submission-preview" open>/); assert.match(h.app.innerHTML, /Approval only queues this exact target/);
+    assert.equal(h.app.innerHTML.includes('data-action="approve-submission"'), !own);
+    assert.equal(workflow.canApproveSubmission(review, h.state.session), !own);
+    assert.equal(workflow.canCheckPublication({ ...review, status: 'approved', publication: { state: 'queued' } }, { ...h.state.session, capabilities: { ...h.state.session.capabilities, publication: true } }), false);
+  }
+});
 test('unconfigured hosted UI offers no login, editing or fake publication', async () => {
   const h = await harness({ realRender: true });
   h.state.session = { configured: false, user: null, capabilities: {} };

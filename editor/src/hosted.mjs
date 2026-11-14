@@ -3,7 +3,7 @@ import { sectionIconChoices } from "./icon-picker.mjs";
 import { mountWriter } from './writer.mjs';
 import { reviewChangesHTML, iconChangePreview, changePreviewHTML } from './review-changes.mjs';
 import { HostedAdapter } from './adapter.mjs';
-import { sameGuideView, canReview, canReviewSubmission, canCheckPublication, submissionStatus, authNotice, findGuides, guideCategories, canPrepareReplacement, moderatorReviewUrl } from './hosted-workflow.mjs';
+import { sameGuideView, canReview, canReviewSubmission, canRequestPublicBootstrap, canApproveSubmission, canCheckPublication, submissionStatus, authNotice, findGuides, guideCategories, canPrepareReplacement, moderatorReviewUrl } from './hosted-workflow.mjs';
 import { themeOptions } from './theme.mjs';
 import { renderDocument, textContent, updateEmojiNode, getEditableEmojiNodes, EMOJI_ASSETS, assertDocument } from '../shared/model.mjs';
 import { escapeHTML as e, sectionsOf, changedBlocks, conflictPlan, resolveConflict, timeLabel } from './document.mjs';
@@ -27,7 +27,7 @@ const state = {
   guide: null, baseline: null, document: null, savedDocument: null,
   revision: 0, baseRevision: null, savedAt: null, section: null, view: 'library',
   dirty: false, saving: false, saveError: '', uncertain: false, authExpired: false, conflict: null,
-  summary: '', editVersion: 0, query: '', filter: 'all', libraryLimit: 24, activeReview: null, replacement: null,
+  bootstrapRequest: null, summary: '', editVersion: 0, query: '', filter: 'all', libraryLimit: 24, activeReview: null, replacement: null,
 };
 let routeVersion = 0;
 let publicationRoute = null, publicationVisit = 0, publicationHiddenRoute = null;
@@ -232,9 +232,12 @@ function replacementNotice() {
   if (state.replacement?.guideId !== state.guide?.id) return '';
   return `<div class="save-alert replacement-notice"><div><strong>Preparing a corrected submission</strong><p>Edit your draft and send a corrected version for review. The earlier submission stays unchanged.</p></div>${button('cancel-replacement', 'Use normal draft', 'small')}</div>`;
 }
+function bootstrapRequestAction() {
+  return canRequestPublicBootstrap(state.session) ? '<section class="review-summary"><h3>First public snapshot</h3><p>Request an independent review of the current published guide. Unsaved edits are not included. Public publishing stays held.</p>' + button('prepare-public-bootstrap', 'Request public snapshot review', 'quiet') + '</section>' : '';
+}
 function reviewView() {
   const list = changes();
-  app.innerHTML = shell(`${guideHeader('review')}${replacementNotice()}<div class="review-intro"><h2>Check your changes</h2><p>${list.length ? `${list.length} ${list.length === 1 ? 'change' : 'changes'} to review. A reviewer will check the version you send.` : 'No changes yet. Return to Edit to make an update.'}</p></div><div class="review-layout"><div>${list.length ? changeList(state.document, state.baseline) : `<div class="empty-state">${icon('pen')}<h3>Nothing to send yet</h3><a class="button primary" href="${guideHref('edit')}">Back to editing</a></div>`}</div><aside class="review-summary"><h3>Send for review</h3><label for="review-summary">What changed, and why?</label><textarea id="review-summary" rows="4" maxlength="1000" placeholder="e.g. Clarified when to use a defensive during the frost cannon">${e(state.summary)}</textarea><p>Reviewers receive the version you send. Later edits stay in your draft.</p>${button('submit-review', `${state.replacement ? 'Send corrected version' : 'Send for review'}${icon('arrow')}`, 'primary full', !list.length || !canSubmit() || state.conflict ? 'disabled' : '')}${!canSubmit() ? '<p>Submissions are not available for this account right now.</p>' : ''}${button('save-draft', 'Save draft', 'quiet full')}</aside></div><div class="editor-bottom"><a class="button quiet" href="${guideHref('edit')}">${icon('back')}Keep editing</a><a class="button" href="${guideHref('preview')}">${icon('eye')}Read the preview</a></div>`);
+  app.innerHTML = shell(`${guideHeader('review')}${replacementNotice()}${bootstrapRequestAction()}<div class="review-intro"><h2>Check your changes</h2><p>${list.length ? `${list.length} ${list.length === 1 ? 'change' : 'changes'} to review. A reviewer will check the version you send.` : 'No changes yet. Return to Edit to make an update.'}</p></div><div class="review-layout"><div>${list.length ? changeList(state.document, state.baseline) : `<div class="empty-state">${icon('pen')}<h3>Nothing to send yet</h3><a class="button primary" href="${guideHref('edit')}">Back to editing</a></div>`}</div><aside class="review-summary"><h3>Send for review</h3><label for="review-summary">What changed, and why?</label><textarea id="review-summary" rows="4" maxlength="1000" placeholder="e.g. Clarified when to use a defensive during the frost cannon">${e(state.summary)}</textarea><p>Reviewers receive the version you send. Later edits stay in your draft.</p>${button('submit-review', `${state.replacement ? 'Send corrected version' : 'Send for review'}${icon('arrow')}`, 'primary full', !list.length || !canSubmit() || state.conflict ? 'disabled' : '')}${!canSubmit() ? '<p>Submissions are not available for this account right now.</p>' : ''}${button('save-draft', 'Save draft', 'quiet full')}</aside></div><div class="editor-bottom"><a class="button quiet" href="${guideHref('edit')}">${icon('back')}Keep editing</a><a class="button" href="${guideHref('preview')}">${icon('eye')}Read the preview</a></div>`);
 }
 async function draftsView(version) {
   const result = await adapter.listDrafts();
@@ -265,7 +268,9 @@ async function submissionDetail(id, version, publicationCheck = true) {
   const [label, description] = submissionStatus(review.status, review.publication);
   const reviewUrl = moderatorReviewUrl(review, state.session);
   const reviewable = canReviewSubmission(review, state.session);
-  app.innerHTML = shell(`<a class="back-link" href="${moderator() && !review.isMine ? '#/queue' : '#/submissions'}">${icon('back')}${moderator() && !review.isMine ? 'Approval queue' : 'My submissions'}</a><div class="review-detail-heading"><h1>${e(review.document?.title || review.title || nameOf(review.guideId))}</h1><p class="review-quote">${e(review.summary)}</p><div class="review-detail-meta"><span class="submission-state ${e(review.status)}">${e(label)}</span><span>Sent ${timeLabel(review.createdAt).toLowerCase()}</span></div></div><div class="review-layout"><div>${review.document ? changeList(review.document, baseline) : '<p>The submitted copy could not be loaded.</p>'}${review.document ? `<details class="submission-preview"><summary>Read the full submitted guide</summary><article class="reading-paper"><h2>${e(review.document.title)}</h2><div class="guide-content">${renderDocument(review.document, readerOptions)}</div>${sourceFoot(review.document)}</article></details>` : ''}</div><aside class="review-summary"><h3>${e(label)}</h3><p>${e(description)}</p>${review.publicationIssue ? `<div class="publication-issue" role="status">${e(review.publicationIssue)}</div>` : ''}${reviewUrl ? `<a class="button full" href="${e(reviewUrl)}" target="_blank" rel="noopener noreferrer">View pull request ${icon('arrow')}</a><p>If the pull request changes, update a saved draft and send it for review again.</p>` : ''}${canPrepareReplacement(review, state.session) ? button('prepare-replacement', 'Prepare corrected submission', 'primary full') : ''}${review.reviewNote ? `<div class="moderator-note"><strong>Moderator’s note</strong><p>${e(review.reviewNote)}</p></div>` : ''}${reviewable ? `<label for="moderator-note">Review note</label><textarea id="moderator-note" maxlength="2000" rows="4" placeholder="Explain the changes needed. Required for Request changes."></textarea>${button('approve-submission', 'Approve submission', 'primary full', state.session.capabilities.publication ? '' : 'disabled')}${!state.session.capabilities.publication ? '<p>Approval is unavailable while publishing is disconnected. This submission remains queued.</p>' : ''}${button('reject-submission', 'Request changes', 'full')}<p>Approval does not mean the guide is live yet.</p>` : moderator() && state.session.user.role !== 'admin' && review.isMine && review.status === 'submitted' ? '<p>Another moderator or an admin must review your own submission.</p>' : ''}${canCheckPublication(review, state.session) ? button('check-publication', 'Check publication', 'full') : ''}${button('refresh', 'Refresh status', 'quiet full')}<a class="text-button full" href="#/guide/${e(review.guideId)}/edit">${review.isMine ? 'Continue my draft' : 'Open guide editor'}</a></aside></div>`, { active: moderator() && !review.isMine ? 'queue' : 'submissions' });
+  const approvable = canApproveSubmission(review, state.session);
+  const bootstrapNotice = review.publicBootstrap ? `<section class="publication-issue"><h2>First public snapshot review</h2><p>Review this entire frozen guide for publication to <strong>${e(review.publicBootstrap.target.repository)}</strong>, branch ${e(review.publicBootstrap.target.baseBranch)}. This is unchanged current content; a different reviewer must approve it.</p><p>Revision ${e(review.baseRevision)} · Content hash <code>${e(review.contentHash)}</code></p>${review.publicBootstrap.held ? '<p>Public publishing is held. Approval only queues this exact target.</p>' : ''}</section>` : '';
+  app.innerHTML = shell(`<a class="back-link" href="${moderator() && !review.isMine ? '#/queue' : '#/submissions'}">${icon('back')}${moderator() && !review.isMine ? 'Approval queue' : 'My submissions'}</a><div class="review-detail-heading"><h1>${e(review.document?.title || review.title || nameOf(review.guideId))}</h1><p class="review-quote">${e(review.summary)}</p><div class="review-detail-meta"><span class="submission-state ${e(review.status)}">${e(label)}</span><span>Sent ${timeLabel(review.createdAt).toLowerCase()}</span></div></div>${bootstrapNotice}<div class="review-layout"><div>${review.document ? changeList(review.document, baseline) : '<p>The submitted copy could not be loaded.</p>'}${review.document ? `<details class="submission-preview" ${review.publicBootstrap ? 'open' : ''}><summary>Read the full submitted guide</summary><article class="reading-paper"><h2>${e(review.document.title)}</h2><div class="guide-content">${renderDocument(review.document, readerOptions)}</div>${sourceFoot(review.document)}</article></details>` : ''}</div><aside class="review-summary"><h3>${e(label)}</h3><p>${e(description)}</p>${review.publicationIssue ? `<div class="publication-issue" role="status">${e(review.publicationIssue)}</div>` : ''}${reviewUrl ? `<a class="button full" href="${e(reviewUrl)}" target="_blank" rel="noopener noreferrer">View pull request ${icon('arrow')}</a><p>If the pull request changes, update a saved draft and send it for review again.</p>` : ''}${canPrepareReplacement(review, state.session) ? button('prepare-replacement', 'Prepare corrected submission', 'primary full') : ''}${review.reviewNote ? `<div class="moderator-note"><strong>Moderator’s note</strong><p>${e(review.reviewNote)}</p></div>` : ''}${reviewable ? `<label for="moderator-note">Review note</label><textarea id="moderator-note" maxlength="2000" rows="4" placeholder="Explain the changes needed. Required for Request changes."></textarea>${button('approve-submission', 'Approve submission', 'primary full', approvable ? '' : 'disabled')}${!approvable ? '<p>Approval is unavailable while publishing is disconnected. This submission remains queued.</p>' : ''}${button('reject-submission', 'Request changes', 'full')}<p>Approval does not mean the guide is live yet.</p>` : moderator() && (state.session.user.role !== 'admin' || review.publicBootstrap) && review.isMine && review.status === 'submitted' ? '<p>Another moderator or an admin must review your own submission.</p>' : ''}${canCheckPublication(review, state.session) ? button('check-publication', 'Check publication', 'full') : ''}${button('refresh', 'Refresh status', 'quiet full')}<a class="text-button full" href="#/guide/${e(review.guideId)}/edit">${review.isMine ? 'Continue my draft' : 'Open guide editor'}</a></aside></div>`, { active: moderator() && !review.isMine ? 'queue' : 'submissions' });
   fixPreviewLinks();
 }
 function fixPreviewLinks() {
@@ -439,6 +444,27 @@ async function action(name, target) {
   const version = routeVersion;
   const generation = identityGeneration;
   switch (name) {
+    case 'prepare-public-bootstrap': {
+      if (!canRequestPublicBootstrap(state.session) || !state.guide) throw new Error('Public snapshot review is unavailable.');
+      if (state.dirty || state.saving || state.conflict || state.uncertain) throw new Error('Preserve and resolve your draft before requesting a current snapshot review.');
+      const guideId = state.guide.id, source = await adapter.getGuide(guideId, true);
+      if (generation !== identityGeneration || version !== routeVersion) return;
+      const target = state.session.capabilities.publicBootstrapTarget;
+      if (!Number.isSafeInteger(source.revision) || source.revision < 2) throw new Error('This guide has no legacy publication to carry forward.');
+      state.bootstrapRequest = { guideId, expectedRevision: source.revision, expectedHash: source.contentHash, requestId: crypto.randomUUID() };
+      showDialog('<h2>Request first public snapshot review</h2><p>Request review of the current published guide: <strong>' + e(source.document.title) + '</strong>, revision ' + e(source.revision) + '.</p><p>Target: <strong>' + e(target.repository) + '</strong>, branch ' + e(target.baseBranch) + '. Public publishing stays held. A different reviewer must approve the entire guide.</p><p>Content hash: <code>' + e(source.contentHash) + '</code></p><label for="bootstrap-reason">Why should this guide be carried forward publicly?</label><textarea id="bootstrap-reason" maxlength="1000" rows="4"></textarea>' + button('request-public-bootstrap', 'Send current snapshot for review', 'primary'));
+      break;
+    }
+    case 'request-public-bootstrap': {
+      if (!canRequestPublicBootstrap(state.session) || !state.bootstrapRequest) throw new Error('Reopen the current snapshot review request.');
+      const pending = state.bootstrapRequest;
+      pending.reason ||= document.querySelector('#bootstrap-reason').value.trim();
+      if (!pending.reason) throw new Error('Explain why this guide should be carried forward publicly.');
+      const review = await adapter.requestPublicBootstrap(pending.guideId, pending);
+      if (generation !== identityGeneration || version !== routeVersion) return;
+      state.bootstrapRequest = null; dialog.close(); location.hash = '#/submission/' + review.id;
+      break;
+    }
     case 'choose-emoji': chooseEmoji(target); break;
     case 'replace-emoji': replaceEmoji(target); break;
     case 'prepare-replacement': {
@@ -649,7 +675,7 @@ document.addEventListener('click', async event => {
   catch (error) {
     if (version !== routeVersion) return;
     if (error.status === 409 && error.latest && state.guide) { state.conflict = error.latest; updateStatus(); resolveDialog(); }
-    else showDialog(`<div class="dialog-heading"><h2>${error.uncertain ? 'The result is not confirmed.' : 'That action could not be completed.'}</h2></div><p>${e(error.message)}</p>${error.uncertain && ['submit-review', 'approve-submission', 'reject-submission'].includes(target.dataset.action) ? '<p>Check the current status before sending again.</p><a class="button primary" href="#/submissions">Check My submissions</a>' : button('close-dialog', 'Back to my work', 'primary')}`);
+    else showDialog(`<div class="dialog-heading"><h2>${error.uncertain ? 'The result is not confirmed.' : 'That action could not be completed.'}</h2></div><p>${e(error.message)}</p>${error.uncertain && target.dataset.action === 'request-public-bootstrap' ? button('request-public-bootstrap', 'Check or retry this same request', 'primary') : error.uncertain && ['submit-review', 'approve-submission', 'reject-submission'].includes(target.dataset.action) ? '<p>Check the current status before sending again.</p><a class="button primary" href="#/submissions">Check My submissions</a>' : button('close-dialog', 'Back to my work', 'primary')}`);
   } finally { if (target.isConnected) target.disabled = false; }
 });
 document.addEventListener('input', event => {
@@ -714,7 +740,7 @@ function clearAccountState() {
   clearTimeout(saveTimer);
   savePromise = null;
   state.guide = state.document = state.savedDocument = state.baseline = null;
-  state.drafts = new Map(); state.reviews = []; state.activeReview = null; state.replacement = null;
+  state.drafts = new Map(); state.reviews = []; state.activeReview = null; state.replacement = null; state.bootstrapRequest = null;
   state.revision = 0; state.baseRevision = null; state.savedAt = null; state.section = null;
   state.dirty = false; state.saving = false; state.saveError = ''; state.uncertain = false;
   state.authExpired = false; state.conflict = null; state.conflictPlan = null; state.conflictChoices = null;

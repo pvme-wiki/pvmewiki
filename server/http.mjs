@@ -1,9 +1,10 @@
 import { publicationTarget } from './publication-target.mjs';
 import { createHmac } from 'node:crypto';
-import { ServiceError, fail, equalSecret } from './core.mjs';
+import { ServiceError, fail, equalSecret, fields } from './core.mjs';
 import { createAuth, cookie, STATE_COOKIE, safeEditorReturn } from './auth.mjs';
 import { createService, isReviewer } from './service.mjs';
 import { createJobRunner } from './jobs.mjs';
+import { preparePublicBootstrap } from './public-bootstrap.mjs';
 export const MAX_BODY_BYTES = 4 * 1024 * 1024;
 const headers = {
   'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'private, no-store',
@@ -56,7 +57,7 @@ async function rate(db, key, max, seconds) {
 }
 export function createHandler({ db, config, identityProvider, publisher, logError = () => {} }) {
   const auth = config.configured ? createAuth(db, config, identityProvider ? { provider: identityProvider } : {}) : null;
-  const service = config.configured ? createService(db, { publicationEnabled: Boolean(publisher), repository: config.github }) : null;
+  const service = config.configured ? createService(db, { publicationEnabled: Boolean(publisher), repository: config.github, bootstrapTarget: config.publicBootstrap }) : null;
   const jobs = config.configured ? createJobRunner(db, publisher, { origin: config.origin, target: publicationTarget(config.github) }) : null;
   const unavailable = () => ({ configured: false, user: null, csrfToken: null, capabilities: { save: false, submit: false, review: false, publication: false }, message: 'Hosted saving and review are not available yet. No changes have been sent.' });
   return async request => {
@@ -114,7 +115,7 @@ export function createHandler({ db, config, identityProvider, publisher, logErro
       const session = await auth.session(request.headers.get('cookie') || '');
       if (route === 'session' && method === 'GET') {
         await db.query('SELECT version FROM schema_migrations WHERE version=1');
-        return json(200, { configured: true, user: session?.user || null, csrfToken: session?.csrfToken || null, capabilities: { save: Boolean(session), submit: Boolean(session), review: isReviewer(session?.user), publication: Boolean(publisher) }, message: publisher ? null : 'Drafts and submissions are available. Publishing is awaiting setup.' });
+        return json(200, { configured: true, user: session?.user || null, csrfToken: session?.csrfToken || null, capabilities: { save: Boolean(session), submit: Boolean(session), review: isReviewer(session?.user), publication: Boolean(publisher), publicBootstrapReview: Boolean(config.publicBootstrap), publicBootstrapTarget: session?.user?.role === 'admin' && config.publicBootstrap ? publicationTarget(config.publicBootstrap) : null }, message: publisher ? null : 'Drafts and submissions are available. Publishing is awaiting setup.' });
       }
       if (!session) fail(401, 'authentication_required', 'Sign in to save drafts or review submissions.');
       const mutation = ['POST', 'PUT', 'PATCH', 'DELETE'].includes(method);
@@ -139,7 +140,7 @@ export function createHandler({ db, config, identityProvider, publisher, logErro
       match = route.match(/^submissions\/([a-f0-9-]+)\/review$/);
       if (match && method === 'POST') {
         const result = await service.review(session.user.id, match[1], await body(request));
-        if (result.status === 'approved') await jobs.runOne({ submissionId: result.id });
+        if (result.status === 'approved' && !result.publicBootstrap?.held) await jobs.runOne({ submissionId: result.id });
         return json(200, { submission: await service.getSubmission(session.user.id, result.id) });
       }
       match = route.match(/^submissions\/([a-f0-9-]+)\/resubmit$/);
@@ -153,6 +154,15 @@ export function createHandler({ db, config, identityProvider, publisher, logErro
       }
       match = route.match(/^admin\/users\/([a-f0-9-]+)\/role$/);
       if (match && method === 'POST') return json(200, { user: await service.changeRole(session.user.id, match[1], await body(request)) });
+      match = route.match(/^admin\/public-bootstrap\/([a-z0-9-]+)$/);
+      if (match && method === 'POST') {
+        if (session.user.role !== 'admin') fail(403, 'forbidden', 'Administrator access is required.');
+        if (!config.publicBootstrap || config.publicationMode === 'public' || config.github?.mode === 'public') fail(503, 'bootstrap_review_unavailable', 'Public snapshot review is not enabled.');
+        const input = await body(request);
+        fields(input, ['expectedRevision', 'expectedHash', 'requestId', 'reason']);
+        const result = await preparePublicBootstrap(db, { ...input, actorId: session.user.id, guideId: match[1] }, config.publicBootstrap);
+        return json(200, { submission: await service.getSubmission(session.user.id, result.id), reused: result.reused });
+      }
       if (route === 'admin/publication/run' && method === 'POST') {
         await body(request);
         if (session.user.role !== 'admin') fail(403, 'forbidden', 'Administrator access is required.');
