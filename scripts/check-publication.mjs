@@ -2,22 +2,20 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadHostedContent } from './hosted-content.mjs';
 import { loadPublicHostedContent } from './public-hosted-content.mjs';
-export async function checkProductionPublication(root, published, expectedBaselines, env = process.env, { sourceFiles } = {}) {
-  const mode = env.PVME_PUBLICATION_MODE || 'private';
-  if (!['private', 'public'].includes(mode)) throw Error('Invalid publication mode.');
+import { readerPublicationMode, publicReaderConfig } from './reader-publication.mjs';
+export async function checkProductionPublication(root, published, expectedBaselines, env = process.env, { sourceFiles, databaseFactory, publicProviderFactory } = {}) {
+  const mode = readerPublicationMode(root, env);
   if (env.VERCEL_ENV !== 'production') return { verifiedCount: 0 };
   if (!env.DATABASE_URL) throw Error('Production publication requires its approval database. Deployment stopped.');
   const { createDatabase } = await import('../server/db.mjs');
   let db;
   try {
-    db = createDatabase({ databaseUrl: env.DATABASE_URL });
+    db = (databaseFactory || createDatabase)({ databaseUrl: env.DATABASE_URL });
     if (mode === 'public') {
-      const { loadConfig } = await import('../server/config.mjs');
       const { createPublicGitHubApp } = await import('../server/public-github.mjs');
       const { verifyPublicBuildGate } = await import('../server/public-build-gate.mjs');
-      const config = loadConfig(env);
-      if (!config.github) throw Error('Public build source configuration is incomplete.');
-      const provider = createPublicGitHubApp(config.github, { db });
+      const config = publicReaderConfig(env);
+      const provider = (publicProviderFactory || createPublicGitHubApp)(config.github, { db });
       return await verifyPublicBuildGate(db, published, {
         expectedBaselines, repository: `${config.github.owner}/${config.github.repo}`.toLowerCase(),
         baseBranch: config.github.base, commit: env.VERCEL_GIT_COMMIT_SHA,
@@ -33,7 +31,7 @@ export async function checkProductionPublication(root, published, expectedBaseli
 }
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const root = path.resolve(import.meta.dirname, '..');
-  const loader = process.env.PVME_PUBLICATION_MODE === 'public' ? loadPublicHostedContent : loadHostedContent;
+  const loader = readerPublicationMode(root) === 'public' ? loadPublicHostedContent : loadHostedContent;
   const hosted = loader(root, process.env.VERCEL_GIT_COMMIT_SHA);
   const result = await checkProductionPublication(root, hosted.published, hosted.baseline, process.env, { sourceFiles: hosted.sourceFiles });
   console.log(`Publication authority check completed for ${result.verifiedCount} guide overlays.`);

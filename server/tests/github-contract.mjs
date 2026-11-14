@@ -10,7 +10,7 @@ export function githubFake(row) {
   let privateRepo = true, release = null, loseAck = null;
   function blob(value) {
     const text = typeof value === 'string' ? value : `${JSON.stringify(value, null, 2)}\n`;
-    const id = sha(text); blobs.set(id, text); return id;
+    const id = createHash('sha1').update(`blob ${Buffer.byteLength(text)}\0`).update(text).digest('hex'); blobs.set(id, text); return id;
   }
   function buildTree(files) {
     const nested = {};
@@ -31,8 +31,9 @@ export function githubFake(row) {
   }
   const original = createCommit({ [`editor/content/${row.guide_id}.json`]: blob(row.baseline_document) });
   refs.set('main', original);
-  function commitOnMain(changes = {}) {
+  function commitOnMain(changes = {}, removed = []) {
     const files = { ...commits.get(refs.get('main')).files };
+    for (const path of removed) delete files[path];
     for (const [path, value] of Object.entries(changes)) files[path] = blob(value);
     const id = createCommit(files, [refs.get('main')]); refs.set('main', id); return id;
   }
