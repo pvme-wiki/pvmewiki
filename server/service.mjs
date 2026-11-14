@@ -1,13 +1,13 @@
 import { publicationTarget } from './publication-target.mjs';
 import { bootstrapRequestSql, verifyPublicBootstrap } from './public-bootstrap-authority.mjs';
-import { ADMIN_SELF_POLICY, approvalEventsSql, ownerApprovalEvidence } from './approval.mjs';
+import { ADMIN_SELF_POLICY, MAINTAINER_PUBLIC_POLICY, approvalEventsSql, ownerApprovalEvidence, maintainerApprovalEvidence } from './approval.mjs';
 import { OWNER_PUBLIC_POLICY, matchesOwner, matchesOwnerSnapshot, requireOwnerSnapshot } from './owner-approval.mjs';
 import { randomUUID } from 'node:crypto';
 import { validateDocument } from '../editor/shared/model.mjs';
 import { fail, fields, integer, boundedText, documentHash, hash, iso, HOSTED_DOCUMENT_LIMIT_BYTES } from './core.mjs';
 const guideIdPattern = /^[a-z0-9][a-z0-9-]{0,100}$/;
 const uuidPattern = /^[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/;
-export const needsFreshReview = code => ['source_conflict', 'branch_conflict', 'pull_request_conflict', 'merge_conflict', 'snapshot_corrupt', 'private_material_in_publication'].includes(code);
+export const needsFreshReview = code => ['source_conflict', 'branch_conflict', 'pull_request_conflict', 'merge_conflict', 'snapshot_corrupt', 'private_material_in_publication', 'maintainer_approval_required'].includes(code);
 export const isReviewer = user => ['moderator', 'admin'].includes(user?.role);
 export const draftView = row => row ? {
   guideId: row.guide_id, version: row.version, baseRevision: row.base_revision,
@@ -26,15 +26,17 @@ export function submissionView(row, user, { detail = false, repository = null, o
     ? `https://github.com/${reviewRepository}/pull/${prNumber}` : null;
   const ownerAvailable = row.status === 'submitted' && matchesOwner(user, ownerGrant) && matchesOwnerSnapshot(row, ownerGrant, publicationTarget(bootstrapTarget));
   const ownerApproved = Boolean(ownerApprovalEvidence(row));
+  const publicHeld = repository?.mode === 'public' && row.job_state && row.job_state !== 'published' &&
+    (row.job_target?.mode !== 'public' || !maintainerApprovalEvidence(row, row.job_target));
   return {
     id: row.id, guideId: row.guide_id, title: row.document.title, version: row.version,
     baseRevision: row.base_revision, draftVersion: row.draft_version, summary: row.summary,
     status: row.status, createdAt: iso(row.created_at), reviewedAt: iso(row.reviewed_at),
     reviewNote: row.review_note || '', isMine: row.owner_id === user.id, contentHash: row.content_hash,
     ...(detail ? { document: row.document, baselineDocument: row.baseline_document } : {}),
-    publication: row.job_state ? { state: row.job_provider?.replacementId ? 'superseded' : row.job_state, requiresFreshReview: row.job_state === 'blocked' && needsFreshReview(row.job_error) && !row.job_provider?.replacementId, replacementId: row.job_provider?.replacementId || null, ...(reviewer ? { errorCode: row.job_error || null, reviewUrl } : {}) } : null,
+    publication: row.job_state ? { state: row.job_provider?.replacementId ? 'superseded' : row.job_state, ...(publicHeld ? { held: true } : {}), requiresFreshReview: row.job_state === 'blocked' && needsFreshReview(row.job_error) && !row.job_provider?.replacementId, replacementId: row.job_provider?.replacementId || null, ...(reviewer ? { errorCode: row.job_error || null, reviewUrl } : {}) } : null,
     publicBootstrap: row.bootstrap_request ? { target: row.bootstrap_request.target, requiresIndependentReview: !(ownerAvailable || ownerApproved), held: repository?.mode !== 'public' && !(ownerApproved && row.status === 'published'), ...(ownerAvailable ? { ownerApprovalAvailable: true } : {}), ...(ownerApproved ? { approvalPolicy: OWNER_PUBLIC_POLICY } : {}), ...(ownerApproved && ownerDispatchReady && ['approved','publishing'].includes(row.status) && matchesOwner(user, ownerGrant) && matchesOwnerSnapshot(row, ownerGrant, publicationTarget(bootstrapTarget)) ? { ownerPublicationAvailable: true } : {}) } : null,
-    publicationIssue: row.job_provider?.replacementId ? 'A fresh submission replaces this publication attempt.' : row.job_state === 'blocked' ? (needsFreshReview(row.job_error) ? 'Publication is blocked. Save a reconciled draft and submit it for fresh review.' : 'Publication needs a maintainer to repair the publishing connection before retrying.') : row.job_state === 'retry' ? 'Publication will retry. Your approved submission is safe.' : null,
+    publicationIssue: row.job_provider?.replacementId ? 'A fresh submission replaces this publication attempt.' : publicHeld ? 'This historical publication is held outside the active public workflow. Preserve its record and submit a current draft for fresh independent review.' : row.job_state === 'blocked' ? (needsFreshReview(row.job_error) ? 'Publication is blocked. Save a reconciled draft and submit it for fresh review.' : 'Publication needs a maintainer to repair the publishing connection before retrying.') : row.job_state === 'retry' ? 'Publication will retry. Your approved submission is safe.' : null,
   };
 }
 export async function audit(q, actor, action, subject, data = {}) {
@@ -165,7 +167,7 @@ export function createService(db, { publicationEnabled = false, repository = nul
     async listSubmissions(actor, { mine = false } = {}) {
       const user = await requireUser(db, actor);
       const onlyMine = mine || !isReviewer(user);
-      return (await db.query(`SELECT s.*,${bootstrapRequestSql('s')} AS bootstrap_request,j.state AS job_state,j.provider AS job_provider,j.target AS job_target,j.last_error AS job_error FROM submissions s LEFT JOIN publication_jobs j ON j.submission_id=s.id ${onlyMine ? 'WHERE s.owner_id=$1' : ''} ORDER BY s.created_at DESC LIMIT 100`, onlyMine ? [actor] : [])).rows.map(row => submissionView(row, user, { repository }));
+      return (await db.query(`SELECT s.*,${approvalEventsSql('s')} AS approval_events,${bootstrapRequestSql('s')} AS bootstrap_request,j.state AS job_state,j.provider AS job_provider,j.target AS job_target,j.last_error AS job_error FROM submissions s LEFT JOIN publication_jobs j ON j.submission_id=s.id ${onlyMine ? 'WHERE s.owner_id=$1' : ''} ORDER BY s.created_at DESC LIMIT 100`, onlyMine ? [actor] : [])).rows.map(row => submissionView(row, user, { repository }));
     },
     async getSubmission(actor, id) {
       const user = await requireUser(db, actor);
@@ -215,7 +217,7 @@ export function createService(db, { publicationEnabled = false, repository = nul
         const found = await submission(q, id);
         const current = await guide(q, found.guide_id, { lock: true });
         const row = await submission(q, id, { lock: true });
-        if (row.owner_id === actor && user.role !== 'admin') fail(403, 'self_review_forbidden', 'Another reviewer must review your contribution.');
+        if (row.owner_id === actor && (user.role !== 'admin' || repository?.mode === 'public')) fail(403, 'self_review_forbidden', 'Another reviewer must review your contribution.');
         if (row.bootstrap_request && row.owner_id === actor) fail(403, 'self_review_forbidden', 'A different reviewer must review the public snapshot.');
         if (row.status !== 'submitted' || input.expectedVersion !== row.version) fail(409, 'review_conflict', 'This submission has already changed. Reload it before reviewing.', { submission: submissionView(row, user, { detail: true }) });
         let target = publicationTarget(repository);
@@ -232,6 +234,9 @@ export function createService(db, { publicationEnabled = false, repository = nul
         const status = input.decision === 'approve' ? 'approved' : 'rejected';
         const updated = (await q.query('UPDATE submissions SET status=$2,version=version+1,reviewer_id=$3,review_note=$4,reviewed_at=now() WHERE id=$1 RETURNING *', [id, status, actor, note])).rows[0];
         await audit(q, actor, `submission.${status}`, id, { contentHash: row.content_hash, note,
+          ...(status === 'approved' && target.mode === 'public' && !row.bootstrap_request ? { approvalPolicy: MAINTAINER_PUBLIC_POLICY,
+            reviewerRole: user.role, guideId: row.guide_id, baseRevision: row.base_revision, baselineHash: row.baseline_hash,
+            target, reviewedAt: iso(updated.reviewed_at) } : {}),
           ...(status === 'approved' && row.owner_id === actor ? { reviewerRole: user.role, approvalPolicy: ADMIN_SELF_POLICY, reviewedAt: iso(updated.reviewed_at) } : {}),
         });
         if (status === 'approved') await q.query('INSERT INTO publication_jobs(submission_id,target) VALUES($1,$2) ON CONFLICT DO NOTHING', [id, JSON.stringify(target)]);

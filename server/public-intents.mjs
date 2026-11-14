@@ -1,5 +1,5 @@
 import { canonical, documentHash } from './core.mjs';
-import { approvalEventsSql, hasValidApproval } from './approval.mjs';
+import { approvalEventsSql, hasValidApproval, maintainerApprovalEvidence } from './approval.mjs';
 import { PublicationError } from './github.mjs';
 import { publicationTarget, samePublicationTarget } from './publication-target.mjs';
 import { publicProof, publicProofKey } from './public-release.mjs';
@@ -20,6 +20,7 @@ async function approved(q, row, config) {
     try { await verifyPublicBootstrap(q, current, config); }
     catch (error) { if (error.code !== 'public_bootstrap_unverified') throw error; reject('public_bootstrap_unverified', 'A fresh independent or explicitly owner-authorized carry-forward approval is required.'); }
   }
+  else if (!maintainerApprovalEvidence(current, target)) reject('maintainer_approval_required', 'A fresh independent maintainer approval is required for this public edit.');
   const proof = publicProof(current), proofKey = publicProofKey(proof);
   return { target, proof, proofKey, submissionId: current.id };
 }
