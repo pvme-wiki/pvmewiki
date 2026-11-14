@@ -72,7 +72,13 @@ export function createHandler({ db, config, identityProvider, publisher, ownerPu
         // Vercel can retain the original pathname while appending its route query.
         const rewritten=url.searchParams.size===1 && url.searchParams.get('route')==='feedback';
         const exact=url.pathname==='/api/editor/feedback' && (!url.search || rewritten) || url.pathname==='/api/editor' && rewritten;
-        if(!exact)fail(400,'invalid_feedback_route','Use the exact website feedback route.');
+        if(!exact)fail(400,'invalid_feedback_route','Use the exact website feedback route.',process.env.VERCEL_ENV==='preview' && method==='GET' ? {
+          routeShape: {
+            path:['/api/editor','/api/editor.mjs','/api/editor/feedback','/api/editor/feedback/'].includes(url.pathname)?url.pathname:'other',
+            parameters:[...url.searchParams.keys()].map(key=>['route','path'].includes(key)?key:'other'),
+            routeValues:url.searchParams.getAll('route').map(value=>['feedback','feedback/','/feedback'].includes(value)?value:'other'),
+          },
+        }:undefined);
         if(!['GET','POST'].includes(method))fail(405,'method_not_allowed','Use GET or POST for website feedback.');
         if(!config.configured || !config.feedback){
           if(method==='GET')return json(200,{enabled:false});
