@@ -117,10 +117,12 @@ function availability() {
 }
 function shell(content, { active = 'library', wide = false } = {}) {
   if (writer) { writerHistories.set(writerKey,writer.snapshot()); if (writerHistories.size>20) writerHistories.delete(writerHistories.keys().next().value); writer.destroy(); writer=null; }
+  const feedbackContext=state.guide && ['edit','preview','review'].includes(state.view) ? state.baseline?.source?.route || '/edit/' : '/edit/';
   const nav = [
     ['library', '#/', 'book', 'Guide library'],
     ['drafts', '#/drafts', 'pen', 'My drafts'],
     ['submissions', '#/submissions', 'review', 'My submissions'],
+    ['feedback', '/feedback/?context='+encodeURIComponent(feedbackContext), 'help', 'Website feedback'],
     ...(moderator() ? [['queue', '#/queue', 'review', 'Approval queue']] : []),
   ];
   return `<header class="topbar"><a class="brand" href="#/" aria-label="PvME editor home">${rune}<span>PvME<small>GUIDE EDITOR</small></span></a><div class="top-actions">${themeOptions()}${state.guide && ['edit','preview','review'].includes(state.view) ? button('save-draft', '<span class="save-label-wide">Save draft</span><span class="save-label-short" aria-hidden="true">Save</span><span class="top-save-status" data-save-status aria-hidden="true">'+statusMarkup()+'</span>', 'small top-save', 'aria-label="Save draft"') : ''}<button class="text-button top-help" data-action="how" aria-label="How it works">${icon('help')}<span>How it works</span></button>${signedIn() ? `<button class="text-button account-button" data-action="account">${icon('device')}<span>${e(state.session.user.displayName)}</span></button>` : state.session?.configured ? signInLink('Sign in') : ''}</div></header>

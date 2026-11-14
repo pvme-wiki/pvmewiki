@@ -14,8 +14,9 @@ export function cookies(header = '') {
   }
   return result;
 }
-// Only guide routes may cross OAuth; no arbitrary URL, query or account data.
+// Only guide routes and the fixed feedback page may cross OAuth; no arbitrary URL, query or account data.
 export function safeEditorReturn(value) {
+  if(value === '/feedback/')return value;
   return typeof value === 'string' && value === value.trim() && /^\/edit\/#\/guide\/[a-z0-9][a-z0-9-]{0,100}\/(?:edit|preview|review)$/.test(value) ? value : '/edit/';
 }
 function returnFromState(state) {

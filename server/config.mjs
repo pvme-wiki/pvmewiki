@@ -3,6 +3,14 @@ import { publicationTarget, samePublicationTarget } from './publication-target.m
 import { validateOwnerGrant } from './owner-approval.mjs';
 const baseFields = ['APP_ORIGIN', 'DATABASE_URL', 'SESSION_SECRET', 'DISCORD_CLIENT_ID', 'DISCORD_CLIENT_SECRET'];
 const githubSuffixes = { appId: 'APP_ID', installationId: 'INSTALLATION_ID', privateKey: 'APP_PRIVATE_KEY', owner: 'OWNER', repo: 'REPO', base: 'BASE_BRANCH', webhookSecret: 'WEBHOOK_SECRET' };
+export function feedbackConfig(env={}) {
+  if (env.VERCEL_ENV!=='production' || env.PVME_FEEDBACK_DISCORD_ENABLED!=='1') return null;
+  const url=env.PVME_FEEDBACK_DISCORD_WEBHOOK_URL;
+  // Exact HTTPS Discord incoming-webhook endpoint, with no redirect host,
+  // credentials, query, fragment, escaped path, custom port or user destination.
+  if (typeof url!=='string' || !/^https:\/\/discord\.com\/api\/(?:v10\/)?webhooks\/[0-9]{17,22}\/[A-Za-z0-9_-]{60,120}$/.test(url)) return null;
+  return { webhookUrl:url };
+}
 export function loadConfig(env = process.env) {
   const errors = [];
   const publicationMode = env.PVME_PUBLICATION_MODE || 'private';
@@ -82,7 +90,7 @@ export function loadConfig(env = process.env) {
   }
   const ready = configured && !errors.length;
   return {
-    configured: ready, errors, missing, publicationMode, publicBootstrap, ownerPublicApproval, ownerPublicGithub: ready ? ownerPublicGithub : null, accessMode, allowedDiscordIds, origin, productionCronOrigin,
+    configured: ready, errors, missing, feedback: ready ? feedbackConfig(env) : null, publicationMode, publicBootstrap, ownerPublicApproval, ownerPublicGithub: ready ? ownerPublicGithub : null, accessMode, allowedDiscordIds, origin, productionCronOrigin,
     databaseUrl: env.DATABASE_URL, sessionSecret: env.SESSION_SECRET,
     discord: { clientId: env.DISCORD_CLIENT_ID, clientSecret: env.DISCORD_CLIENT_SECRET, redirectUri: `${origin}/api/editor/auth/discord/callback` },
     github: ready && githubValid ? {
