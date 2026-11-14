@@ -48,9 +48,14 @@ test('canonical legacy guide overlay stays intact and cannot silently enter a pu
     assert.equal(hosted.baseline.size, 323); assert.equal(hosted.published.size, 1);
     assert.deepEqual(hosted.published.get(stored.id).document, stored);
     assert.throws(() => loadPublicHostedContent(root), /private review receipts/);
+  } else if (fs.existsSync(path.join(root, 'content/publications/arch-glacor-basic.json'))) {
+    const hosted = loadPublicHostedContent(root);
+    assert.equal(hosted.baseline.size, 323); assert.equal(hosted.published.size, 1);
+    assert.deepEqual(hosted.published.get(stored.id).document, stored);
+    assert.equal(hosted.release.schemaVersion, 2);
+    assert.throws(() => loadHostedContent(root), /review receipt/);
   } else {
-    // A separately reviewed history scrub may remove private receipts. Keeping
-    // the guide file is not permission to infer a new approval or release proof.
+    // Removing a receipt is not permission to invent a proof or approval.
     assert.throws(() => loadHostedContent(root), /review receipt/);
     assert.throws(() => loadPublicHostedContent(root), /matching proof/);
   }
