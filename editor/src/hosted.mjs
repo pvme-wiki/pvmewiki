@@ -233,7 +233,7 @@ function replacementNotice() {
   return `<div class="save-alert replacement-notice"><div><strong>Preparing a corrected submission</strong><p>Edit your draft and send a corrected version for review. The earlier submission stays unchanged.</p></div>${button('cancel-replacement', 'Use normal draft', 'small')}</div>`;
 }
 function bootstrapRequestAction() {
-  return canRequestPublicBootstrap(state.session) ? '<section class="review-summary"><h3>First public snapshot</h3><p>Request an independent review of the current published guide. Unsaved edits are not included. Public publishing stays held.</p>' + button('prepare-public-bootstrap', 'Request public snapshot review', 'quiet') + '</section>' : '';
+  return canRequestPublicBootstrap(state.session) ? '<section class="review-summary"><h3>First public snapshot</h3><p>Request approval of the current published guide. Unsaved edits are not included. Public publishing stays held.</p>' + button('prepare-public-bootstrap', 'Request public snapshot review', 'quiet') + '</section>' : '';
 }
 function ownerApprovalAction(review) {
   if (review.publicBootstrap?.ownerPublicationAvailable) return `<section class="review-summary"><h2>Owner-authorized publication</h2><p>Your approval covers this exact snapshot and public destination. This explicit action runs only its public publication job; the private publisher remains unchanged. A pull request and verified deployment are still required.</p>${button('owner-publish-snapshot', 'Publish or check owner-authorized snapshot', 'primary')}</section>`;
@@ -457,7 +457,7 @@ async function action(name, target) {
       const target = state.session.capabilities.publicBootstrapTarget;
       if (!Number.isSafeInteger(source.revision) || source.revision < 2) throw new Error('This guide has no legacy publication to carry forward.');
       state.bootstrapRequest = { guideId, expectedRevision: source.revision, expectedHash: source.contentHash, requestId: crypto.randomUUID() };
-      showDialog('<h2>Request first public snapshot review</h2><p>Request review of the current published guide: <strong>' + e(source.document.title) + '</strong>, revision ' + e(source.revision) + '.</p><p>Target: <strong>' + e(target.repository) + '</strong>, branch ' + e(target.baseBranch) + '. Public publishing stays held. A different reviewer must approve the entire guide.</p><p>Content hash: <code>' + e(source.contentHash) + '</code></p><label for="bootstrap-reason">Why should this guide be carried forward publicly?</label><textarea id="bootstrap-reason" maxlength="1000" rows="4"></textarea>' + button('request-public-bootstrap', 'Send current snapshot for review', 'primary'));
+      showDialog('<h2>Request first public snapshot review</h2><p>Request review of the current published guide: <strong>' + e(source.document.title) + '</strong>, revision ' + e(source.revision) + '.</p><p>Target: <strong>' + e(target.repository) + '</strong>, branch ' + e(target.baseBranch) + '. Public publishing stays held. The frozen request will show the approval actions available to your account.</p><p>Content hash: <code>' + e(source.contentHash) + '</code></p><label for="bootstrap-reason">Why should this guide be carried forward publicly?</label><textarea id="bootstrap-reason" maxlength="1000" rows="4"></textarea>' + button('request-public-bootstrap', 'Send current snapshot for review', 'primary'));
       break;
     }
     case 'request-public-bootstrap': {
