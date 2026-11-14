@@ -1,3 +1,4 @@
+import { applyReadingDraft } from './reading-draft.mjs';
 import { refreshGuideContents } from './guide-headings.mjs';
 import { applySiteGuidance, originalSuggestionsPagePath, makingSuggestionsGuidance } from './site-guidance.mjs';
 import fs from 'node:fs';
@@ -89,6 +90,7 @@ for (const { document } of hosted.published.values()) {
 }
 polishReader(files, root);
 applySiteGuidance(files, {originalPage: originalSuggestionsPage, reviewed: hosted.published.has(makingSuggestionsGuidance.originalGuideId)});
+applyReadingDraft(files, root, { publishedSources: new Set(hosted.bySource.keys()) });
 fs.rmSync(out, { recursive: true, force: true });
 writeFiles(files, out);
 execFileSync(process.execPath, ['build.mjs'], { cwd: path.join(root, 'editor'), stdio: 'inherit' });
