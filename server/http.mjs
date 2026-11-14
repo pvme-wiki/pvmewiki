@@ -1,3 +1,4 @@
+import { createFeedback } from './feedback.mjs';
 import { publicationTarget } from './publication-target.mjs';
 import { createHmac } from 'node:crypto';
 import { ServiceError, fail, equalSecret, fields } from './core.mjs';
@@ -37,10 +38,10 @@ async function rawBody(request, limit = MAX_BODY_BYTES) {
   }
   return Buffer.concat(chunks);
 }
-async function body(request) {
+async function body(request, limit = MAX_BODY_BYTES) {
   if (!/^application\/json(?:\s*;|$)/i.test(request.headers.get('content-type') || '')) fail(415, 'json_required', 'Send application/json.');
   try {
-    const parsed = JSON.parse((await rawBody(request)).toString('utf8'));
+    const parsed = JSON.parse((await rawBody(request, limit)).toString('utf8'));
     if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) throw Error();
     return parsed;
   } catch (error) {
@@ -55,7 +56,8 @@ async function rate(db, key, max, seconds) {
     expires_at=CASE WHEN rate_limits.expires_at<=now() THEN now()+($2 * interval '1 second') ELSE rate_limits.expires_at END RETURNING count`, [key, seconds])).rows[0];
   if (row.count > max) fail(429, 'rate_limited', 'Too many requests. Wait a minute before trying again.');
 }
-export function createHandler({ db, config, identityProvider, publisher, ownerPublisher = null, logError = () => {} }) {
+export function createHandler({ db, config, identityProvider, publisher, ownerPublisher = null, logError = () => {}, feedbackFetch }) {
+  const sendFeedback = config.configured && config.feedback ? createFeedback({db,config,...(feedbackFetch ? {fetchImpl:feedbackFetch} : {})}) : null;
   const auth = config.configured ? createAuth(db, config, identityProvider ? { provider: identityProvider } : {}) : null;
   const service = config.configured ? createService(db, { publicationEnabled: Boolean(publisher), repository: config.github, bootstrapTarget: config.publicBootstrap, ownerGrant: config.ownerPublicApproval, ownerDispatchReady: Boolean(config.ownerPublicGithub && ownerPublisher) }) : null;
   const jobs = config.configured ? createJobRunner(db, publisher, { origin: config.origin, target: publicationTarget(config.github), requireMaintainerApproval: config.github?.mode === 'public' }) : null;
@@ -66,6 +68,15 @@ export function createHandler({ db, config, identityProvider, publisher, ownerPu
     try {
       const url = new URL(request.url); route = routeOf(url);
       const method = request.method.toUpperCase();
+      if (route === 'feedback') {
+        const exact=url.pathname==='/api/editor/feedback' && !url.search || url.pathname==='/api/editor' && url.searchParams.size===1 && url.searchParams.get('route')==='feedback';
+        if(!exact)fail(400,'invalid_feedback_route','Use the exact website feedback route.');
+        if(!['GET','POST'].includes(method))fail(405,'method_not_allowed','Use GET or POST for website feedback.');
+        if(!config.configured || !config.feedback){
+          if(method==='GET')return json(200,{enabled:false});
+          fail(503,'feedback_disabled','Website feedback is unavailable here. Nothing was posted.');
+        }
+      }
       if (!config.configured) {
         if (method === 'GET' && route === 'session') return json(200, unavailable());
         fail(503, 'service_unavailable', 'Hosted editing has not been configured yet. Your browser draft is unchanged.');
@@ -79,6 +90,7 @@ export function createHandler({ db, config, identityProvider, publisher, ownerPu
       const machineRoute = ['jobs/publication', 'webhooks/github'].includes(route);
       const origin = request.headers.get('origin');
       if (!machineRoute && !oauthCallback && ((origin && origin !== config.origin) || request.headers.get('sec-fetch-site') === 'cross-site')) fail(403, 'invalid_origin', 'Cross-origin access is not allowed.');
+      if(route==='feedback' && method==='GET')return json(200,{enabled:true});
       if (route === 'webhooks/github' && method === 'POST') {
         if (!config.github || !publisher) fail(503, 'publication_unavailable', 'Publication is not configured.');
         const raw = await rawBody(request, 1000000);
@@ -125,6 +137,7 @@ export function createHandler({ db, config, identityProvider, publisher, ownerPu
         if (origin !== config.origin) fail(403, 'invalid_origin', 'A same-origin request is required.');
         auth.checkCsrf(session, request.headers.get('x-csrf-token'));
       }
+      if(route==='feedback' && method==='POST')return json(200,await sendFeedback(session.user.id,await body(request,8192)));
       if (route === 'logout' && method === 'POST') { await body(request); return json(200, { ok: true }, { 'Set-Cookie': await auth.logout(session) }); }
       if (route === 'admin/account-binding' && method === 'GET') return json(200, { binding: await service.accountBinding(session.user.id) });
       if (route === 'guides' && method === 'GET') return json(200, { guides: await service.listGuides() });
@@ -199,7 +212,7 @@ export function createHandler({ db, config, identityProvider, publisher, ownerPu
         code: error instanceof ServiceError ? error.code : 'service_unavailable',
         message: error instanceof ServiceError ? error.message : 'Hosted editing is temporarily unavailable. Your local draft is unchanged.',
         ...(error instanceof ServiceError && error.details ? { details: error.details } : {}),
-      } }, error.status === 429 ? { 'Retry-After': '60' } : {});
+      } }, error.status === 429 ? { 'Retry-After': error.code==='feedback_rate_limited' ? '3600' : '60' } : {});
     }
   };
 }
