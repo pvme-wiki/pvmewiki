@@ -120,7 +120,7 @@ test('configured signed-out UI offers Discord login and explains invite-only pil
   const h = await harness({ realRender: true });
   h.state.session = { configured: true, user: null, capabilities: {} };
   h.location.hash = '#/drafts'; await h.renderRoute();
-  assert.match(h.app.innerHTML, /invited contributors/); assert.match(h.app.innerHTML, /\/api\/editor\/auth\/discord/);
+assert.match(h.app.innerHTML, /own drafts and suggest changes/); assert.match(h.app.innerHTML, /Maintainers review suggestions/); assert.match(h.app.innerHTML, /\/api\/editor\/auth\/discord/);
   assert.doesNotMatch(h.app.innerHTML, /data-action="submit-review"/);
 });
 test('failed account draft load does not substitute a bundled guide or mark it saved', async () => {
