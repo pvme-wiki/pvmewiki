@@ -411,6 +411,28 @@ test('admin can review own frozen snapshot without changing its content or versi
   assert.match(h.app.innerHTML, /data-action="approve-submission"[^>]*disabled/);
 });
 
+test('scoped owner approval is presented truthfully without ordinary self-review controls', async () => {
+  const h = await harness({ realRender: true });
+  h.state.session.user.role = 'admin';
+  Object.assign(h.state.session.capabilities, { review: true, publication: true });
+  const review = { id:'owner-snapshot', guideId:firstId, status:'submitted', isMine:true, version:1, baseRevision:2,
+    contentHash:'a'.repeat(64), summary:'Synthetic owner snapshot', createdAt:'2026-11-14T05:00:00Z', baselineDocument:clone(seed), document:clone(seed),
+    publicBootstrap:{target:{repository:'synthetic-org/guides',baseBranch:'main'},held:true,requiresIndependentReview:false,ownerApprovalAvailable:true} };
+  const calls=[];
+  h.setAdapter({getReview:async()=>review,approveOwnerSnapshot:async(snapshot,reason)=>{
+    calls.push({id:snapshot.id,reason}); review.status='approved'; review.publicBootstrap.ownerApprovalAvailable=false;
+    review.publicBootstrap.approvalPolicy='owner-public-snapshot-v1'; review.reviewNote='Synthetic explicit owner authorization';
+  }});
+  h.location.hash='#/submission/owner-snapshot'; await h.renderRoute();
+  assert.match(h.app.innerHTML,/Record owner approval/);
+  assert.doesNotMatch(h.app.innerHTML,/data-action="approve-submission"|data-action="reject-submission"|A different reviewer must approve it/);
+  h.element('#owner-approval-reason').value='Explicit owner authorization for the fixture';
+  await h.action('owner-approve-snapshot',{});
+  assert.deepEqual(calls,[{id:review.id,reason:'Explicit owner authorization for the fixture'}]);
+  assert.match(h.app.innerHTML,/<strong>Owner authorization<\/strong>/);
+  assert.doesNotMatch(h.app.innerHTML,/<strong>Moderator's note<\/strong>|Record owner approval/);
+});
+
 test('moderator own-submission UI and contributor UI keep review controls unavailable', async () => {
   for (const role of ['moderator', 'contributor']) {
     const h = await harness({ realRender: true });
