@@ -1,13 +1,13 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 3,
   "checkedOn": "2026-11-14",
-  "treatment": "editorial-no-image",
+  "treatment": "confirmed-wiki-portraits-in-preview-only",
   "imageCoverage": 0,
   "rights": {
     "jagex": "https://legal.jagex.com/docs/policies/fan-content-policy",
     "wiki": "https://runescape.wiki/w/RuneScape:Copyrights",
     "wikiMediaExample": "https://runescape.wiki/w/File:Light_animica.png",
-    "decision": "No permission for game renders in this guide app established. Jagex Fan Content Policy 6.1.3 restricts this use; Wiki text licensing does not sublicense Jagex imagery. No game image is copied, embedded or hotlinked by this design layer."
+    "decision": "Owner reports Wiki-admin approval, not independently verified. Exact confirmed Wiki portraits may be linked only in protected preview or explicit local smoke mode. No Jagex waiver is claimed; no game-image binaries are rehosted or committed. Production renders no Wiki portraits."
   },
   "bosses": [
     {
@@ -145,17 +145,17 @@
       "pets": [
         {
           "name": "Rex Hatchling",
-          "url": "https://runescape.wiki/w/Rex_Hatchling",
+          "url": "https://runescape.wiki/w/Rex_hatchling",
           "evidence": "https://runescape.wiki/w/Combat_achievements#Boss_Pets"
         },
         {
           "name": "Prime Hatchling",
-          "url": "https://runescape.wiki/w/Prime_Hatchling",
+          "url": "https://runescape.wiki/w/Prime_hatchling",
           "evidence": "https://runescape.wiki/w/Combat_achievements#Boss_Pets"
         },
         {
           "name": "Supreme Hatchling",
-          "url": "https://runescape.wiki/w/Supreme_Hatchling",
+          "url": "https://runescape.wiki/w/Supreme_hatchling",
           "evidence": "https://runescape.wiki/w/Combat_achievements#Boss_Pets"
         }
       ],
@@ -281,7 +281,7 @@
       "pets": [
         {
           "name": "Molly",
-          "url": "https://runescape.wiki/w/Molly",
+          "url": "https://runescape.wiki/w/Molly_(pet)",
           "evidence": "https://runescape.wiki/w/Combat_achievements#Boss_Pets"
         }
       ],
@@ -626,7 +626,7 @@
       "pets": [
         {
           "name": "Ava",
-          "url": "https://runescape.wiki/w/Ava",
+          "url": "https://runescape.wiki/w/Ava_(pet)",
           "evidence": "https://runescape.wiki/w/Combat_achievements#Boss_Pets"
         },
         {
@@ -678,7 +678,7 @@
       "pets": [
         {
           "name": "Vitalis",
-          "url": "https://runescape.wiki/w/Vitalis",
+          "url": "https://runescape.wiki/w/Vitalis_(pet)",
           "evidence": "https://runescape.wiki/w/Combat_achievements#Boss_Pets"
         },
         {
@@ -734,5 +734,9 @@
       "coverage": "verified-names",
       "evidence": null
     }
-  ]
+  ],
+  "illustrationCoverage": 0,
+  "officialPetPortraitCoverage": 0,
+  "unillustratedBosses": 45,
+  "verifiedPortraitSourceCoverage": 44
 }
