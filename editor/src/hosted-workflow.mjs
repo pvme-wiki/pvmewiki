@@ -12,7 +12,7 @@ export function canReview(session) {
 }
 export function canReviewSubmission(review, session) {
   return canReview(session) && review?.status === 'submitted' &&
-    (!review.isMine || (!review.publicBootstrap && session.user.role === 'admin'));
+    (!review.isMine || (!review.publicBootstrap && session.user.role === 'admin' && session.capabilities.publicationMode !== 'public'));
 }
 export function canRequestPublicBootstrap(session) {
   return session?.configured === true && session?.user?.role === 'admin' &&
@@ -25,11 +25,12 @@ export function canApproveSubmission(review, session) {
 export function canCheckPublication(review, session) {
   return canReview(session) && session.capabilities.publication === true &&
     !review?.publicBootstrap?.held &&
+    !review?.publication?.held &&
     ['approved', 'publishing'].includes(review?.status) &&
     ['queued', 'working', 'retry', 'awaiting_merge', 'awaiting_deployment'].includes(review?.publication?.state) &&
     !review?.publication?.requiresFreshReview && !review?.publication?.replacementId;
 }
-export const submissionStatus = (status, publication) => publication?.replacementId || publication?.state === 'superseded' ? ['Replaced', 'This submission was replaced. The corrected version needs review.'] : publication?.state === 'blocked' ? ['Publication paused', publication.requiresFreshReview ? 'Edit a saved draft and send a corrected version for review.' : 'Publication needs a maintainer. Live status has not been verified.'] : ({
+export const submissionStatus = (status, publication) => publication?.replacementId || publication?.state === 'superseded' ? ['Replaced', 'This submission was replaced. The corrected version needs review.'] : publication?.held ? ['Publication held', 'This older publication is outside the active public workflow. A maintainer must reconcile it without replaying the old job.'] : publication?.state === 'blocked' ? ['Publication paused', publication.requiresFreshReview ? 'Edit a saved draft and send a corrected version for review.' : 'Publication needs a maintainer. Live status has not been verified.'] : ({
   submitted: ['Awaiting review', 'A reviewer will check this version. Later draft edits do not change it.'],
   approved: ['Approved', 'Approved for publication. Live publication has not been verified yet.'],
   publishing: ['Publishing', 'Publication is in progress. This version is not confirmed live.'],

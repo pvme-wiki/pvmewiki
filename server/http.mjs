@@ -58,7 +58,7 @@ async function rate(db, key, max, seconds) {
 export function createHandler({ db, config, identityProvider, publisher, ownerPublisher = null, logError = () => {} }) {
   const auth = config.configured ? createAuth(db, config, identityProvider ? { provider: identityProvider } : {}) : null;
   const service = config.configured ? createService(db, { publicationEnabled: Boolean(publisher), repository: config.github, bootstrapTarget: config.publicBootstrap, ownerGrant: config.ownerPublicApproval, ownerDispatchReady: Boolean(config.ownerPublicGithub && ownerPublisher) }) : null;
-  const jobs = config.configured ? createJobRunner(db, publisher, { origin: config.origin, target: publicationTarget(config.github) }) : null;
+  const jobs = config.configured ? createJobRunner(db, publisher, { origin: config.origin, target: publicationTarget(config.github), requireMaintainerApproval: config.github?.mode === 'public' }) : null;
   const ownerJobs = config.configured && config.ownerPublicGithub && ownerPublisher ? createJobRunner(db, ownerPublisher, { origin: config.origin, target: publicationTarget(config.ownerPublicGithub) }) : null;
   const unavailable = () => ({ configured: false, user: null, csrfToken: null, capabilities: { save: false, submit: false, review: false, publication: false }, message: 'Hosted saving and review are not available yet. No changes have been sent.' });
   return async request => {
@@ -116,7 +116,7 @@ export function createHandler({ db, config, identityProvider, publisher, ownerPu
       const session = await auth.session(request.headers.get('cookie') || '');
       if (route === 'session' && method === 'GET') {
         await db.query('SELECT version FROM schema_migrations WHERE version=1');
-        return json(200, { configured: true, user: session?.user || null, csrfToken: session?.csrfToken || null, capabilities: { save: Boolean(session), submit: Boolean(session), review: isReviewer(session?.user), publication: Boolean(publisher), publicBootstrapReview: Boolean(config.publicBootstrap), publicBootstrapTarget: session?.user?.role === 'admin' && config.publicBootstrap ? publicationTarget(config.publicBootstrap) : null }, message: publisher ? null : 'Drafts and submissions are available. Publishing is awaiting setup.' });
+        return json(200, { configured: true, user: session?.user || null, csrfToken: session?.csrfToken || null, capabilities: { save: Boolean(session), submit: Boolean(session), review: isReviewer(session?.user), publication: Boolean(publisher), publicationMode: config.github?.mode || null, publicBootstrapReview: Boolean(config.publicBootstrap), publicBootstrapTarget: session?.user?.role === 'admin' && config.publicBootstrap ? publicationTarget(config.publicBootstrap) : null }, message: publisher ? null : 'Drafts and submissions are available. Publishing is awaiting setup.' });
       }
       if (!session) fail(401, 'authentication_required', 'Sign in to save drafts or review submissions.');
       const mutation = ['POST', 'PUT', 'PATCH', 'DELETE'].includes(method);
