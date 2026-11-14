@@ -2,11 +2,12 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
+import { fileURLToPath } from 'node:url';
 import { randomUUID } from 'node:crypto';
 import { applyFeedbackPage } from './feedback-page.mjs';
 import { feedbackMessage,feedbackTextError } from '../editor/shared/feedback.mjs';
 import { feedbackContexts } from './feedback-contexts.mjs';
-const root=new URL('..',import.meta.url).pathname;
+const root=fileURLToPath(new URL('..',import.meta.url));
 function browser(fetchImpl,{query='?context=%2Fread%2Farch-glacor%2F'}={}){
  const nodes=new Map();
  function node(id){if(!nodes.has(id))nodes.set(id,{hidden:true,value:id==='#feedback-category'?'bug':'',checked:false,disabled:false,textContent:'',events:{},children:[],addEventListener(type,fn){this.events[type]=fn;},append(option){this.children.push(option);if(!this.value)this.value=option.value;},querySelectorAll(){return ['#feedback-context','#feedback-category','#feedback-message','#feedback-confirmed'].map(node);}});return nodes.get(id);}
