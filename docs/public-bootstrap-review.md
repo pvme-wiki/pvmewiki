@@ -1,0 +1,108 @@
+# First public snapshot review
+
+This opt-in preparation flow requests a new independent review of an unchanged
+canonical guide previously published through the private pipeline. It does not
+copy old approvals, relabel legacy jobs, or start a public publisher.
+
+The feature is **off by default**. Do not configure it in production until the
+implementation and the intended repository target have been reviewed. This
+change does not activate or deploy it.
+
+Automatic Vercel deployment is disabled only for the
+`codex/public-bootstrap-review-flow` review branch in `vercel.json`. Other
+branches retain their default behavior. Use the isolated local fixture rehearsal
+for this branch; no production credentials belong in a review preview.
+
+## Configuration and hold
+
+`PVME_PUBLIC_BOOTSTRAP_TARGET` is server-only JSON with exactly four string fields:
+
+```json
+{"owner":"example","repo":"guides","base":"main","installationId":"12345"}
+```
+
+It contains no credentials. It requires `PVME_PUBLICATION_MODE=private` (also the
+default). Configuring it together with public mode fails configuration validation.
+Keep the existing publisher configuration unchanged during review preparation.
+No new migration, seed, identity, or role grant is needed by this flow.
+
+An authenticated administrator uses **Review changes → Request public snapshot
+review**. The dialog fetches the current canonical revision/hash, shows the
+target, and asks for an explicit carry-forward reason. Local edits are excluded;
+dirty, unresolved, or uncertain drafts must first be preserved. The protected
+POST `/api/editor/admin/public-bootstrap/:guideId` derives its actor from the
+session and enforces same origin, CSRF, enabled administrator role, exact revision
+and hash, and immutable legacy PostgreSQL authority. The body cannot supply an
+actor, document, target, proof, or approval.
+
+Only one active bootstrap review per guide is allowed. Retrying the same request
+ID acknowledges the original result without creating another request. An
+unrelated existing administrator draft is preserved and blocks preparation.
+
+## Independent review
+
+The new pending submission appears in **My submissions** and the normal
+**Approval queue**. Its detail shows the public repository, branch, revision and
+content hash, with the full frozen guide expanded. A different enabled moderator
+or administrator must read the entire guide and record their own decision through
+their own signed-in session. Bootstrap self-review is rejected even for an
+administrator; the ordinary administrator self-review policy is unchanged.
+
+Approval revalidates the frozen target, canonical revision/hash, bootstrap audit
+record and legacy authority in the transaction, then queues a **new** job bound to
+that public target. It does not run a public provider. Private-mode workers filter
+claims by immutable target, so review, retry/check and cron cannot claim this job
+as a private publication. UI status explicitly says publishing is held.
+
+The held review needs no org webhook secret, event subscription or GitHub call.
+Private-mode cron/admin runs cannot claim a public-target job, and retry/check
+requests reject the target mismatch. An existing private webhook can only wake
+eligible jobs; it does not run a publisher. The private build gate verifies the
+existing overlay using a read-only PostgreSQL query and leaves canonical content
+and private publication records unchanged. Existing unrelated private publishing
+retains its normal behavior. The hold applies to the new public target.
+
+## Later activation is a separate operation
+
+The publisher selects a complete identity by publication mode:
+
+- Private mode (the default) uses only the existing `GITHUB_*` namespace.
+- Public mode uses only `PVME_ORG_GITHUB_APP_ID`,
+  `PVME_ORG_GITHUB_INSTALLATION_ID`, `PVME_ORG_GITHUB_APP_PRIVATE_KEY`,
+  `PVME_ORG_GITHUB_OWNER`, `PVME_ORG_GITHUB_REPO`,
+  `PVME_ORG_GITHUB_BASE_BRANCH`, and `PVME_ORG_GITHUB_WEBHOOK_SECRET`.
+- `CRON_SECRET` remains the existing runner credential in either mode.
+
+The separate org variables can be staged as Production-only Secrets without
+changing private behavior, even if staging is incomplete. Public activation
+requires every org field and validates the selected key/identity. It never falls
+back to the private key, installation or webhook secret. Keep the original
+`GITHUB_*` values for the existing private path and rollback. Private mode does
+not select, validate or test the staged org identity against a provider.
+
+Public-mode configuration deliberately fails closed if the org webhook secret is
+missing, even if events will later be polled manually or by cron. Configuring that
+separate secret and any events is a later coordinated action, not a prerequisite
+for held review. The eventual hook endpoint is `/api/editor/webhooks/github` on
+the configured HTTPS application origin. Push and pull-request events are enough
+to wake the existing polling flow; no checks/deployments permission expansion is
+needed. Webhooks do not by themselves execute the publication runner.
+
+This branch does not merge, deploy, configure credentials, activate a webhook,
+change publication mode, or publish a guide. Before a later activation:
+
+1. Complete the approved private App's protected signing-key configuration and
+   verify its repository-only installation. Never place credentials in Git or chat.
+2. Obtain the fresh independent approval described above.
+3. Verify the public provider's target matches the queued immutable job exactly,
+   including installation ID; remove the preparation-only config when switching
+   modes. A target change requires new review.
+4. Verify the sanitized proof PR and PostgreSQL mapping. Coordinate current-tree
+   legacy receipt cleanup with the genuine matching proof and unchanged approved
+   guide overlay. Do not remove the overlay or relax public build checks.
+5. Use normal merge protections and serialized deployment, then verify the
+   schema-2 release, guide content, provider status and retained rollback.
+
+All automated rehearsal uses isolated PGlite and fake identity/provider fixtures.
+Passing it does not attest a real human review, production App authentication or
+a completed public publication.

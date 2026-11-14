@@ -1,4 +1,4 @@
-import { canReview, normalizeDraft } from './hosted-workflow.mjs';
+import { canReview, canRequestPublicBootstrap, normalizeDraft } from './hosted-workflow.mjs';
 import { assertDocument } from '../shared/model.mjs';
 
 export class AdapterError extends Error {
@@ -260,6 +260,10 @@ export class HostedAdapter {
   async reviewSubmission(id, { decision, expectedVersion, note }) {
     if (!canReview(this.session)) throw new AdapterError('Only moderators can review submissions.', 403);
     return (await this.request(`/submissions/${encodeURIComponent(id)}/review`, { decision, expectedVersion, note })).submission;
+  }
+  async requestPublicBootstrap(id, { expectedRevision, expectedHash, requestId, reason }) {
+    if (!canRequestPublicBootstrap(this.session)) throw new AdapterError('Public snapshot review is unavailable for this account.', 403);
+    return (await this.request(`/admin/public-bootstrap/${encodeURIComponent(id)}`, { expectedRevision, expectedHash, requestId, reason })).submission;
   }
   async checkPublication(id) {
     if (!canReview(this.session)) throw new AdapterError('Only moderators can check publication.', 403);

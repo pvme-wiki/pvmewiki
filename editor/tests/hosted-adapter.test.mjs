@@ -19,6 +19,19 @@ function fixture(handler = () => response({})) {
   } });
   return { adapter, calls };
 }
+
+test('bootstrap adapter requires opted-in admin and sends exact binding with CSRF but no actor or target override', async () => {
+  const f = fixture(() => response({ submission: { id: 'fresh-pending', status: 'submitted' } }));
+  await f.adapter.connect();
+  const input = { expectedRevision: 2, expectedHash: 'a'.repeat(64), requestId: 'fixture-request', reason: 'Fresh independent public snapshot review', actorId: 'ignored', target: 'ignored', document: seed };
+  await assert.rejects(f.adapter.requestPublicBootstrap(id, input), /unavailable/);
+  f.adapter.session = { ...session, user: { ...session.user, role: 'admin' }, capabilities: { ...session.capabilities, publicBootstrapTarget: { mode: 'public' } } };
+  await f.adapter.requestPublicBootstrap(id, input);
+  const call = f.calls.at(-1);
+  assert.equal(call.url, `/api/editor/admin/public-bootstrap/${id}`);
+  assert.equal(call.headers['X-CSRF-Token'], session.csrfToken); assert.equal(call.credentials, 'same-origin');
+  assert.deepEqual(Object.keys(call.body).sort(), ['expectedHash', 'expectedRevision', 'reason', 'requestId']);
+});
 test('hosted path cannot be downgraded into a demo or local service through queries', () => {
   for (const pathname of ['/edit', '/edit/', '/edit/anything']) for (const search of ['', '?demo=1', '?service=local', '?demo=1&service=local']) assert.equal(editorMode({ pathname, search }), 'hosted');
   assert.equal(editorMode({ pathname: '/', search: '' }), 'device-only');
