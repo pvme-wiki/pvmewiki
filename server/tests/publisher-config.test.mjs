@@ -27,6 +27,7 @@ test('private mode preserves the legacy identity despite absent, partial, invali
 test('public mode selects only the complete org identity and never the retained private key or webhook', () => {
   const selected = loadConfig({ ...base, ...legacy, ...org, PVME_PUBLICATION_MODE: 'public' });
   assert.equal(selected.configured, true);
+  assert.equal(selected.databaseUrl, base.DATABASE_URL, 'selecting an identity cannot select a different database');
   assert.deepEqual(selected.github, { mode: 'public', appId: '333', installationId: '444', privateKey: orgKey, owner: 'synthetic-org', repo: 'public-guides', base: 'main', webhookSecret: 'o'.repeat(40), cronSecret: base.CRON_SECRET });
   const target = { mode: 'public', repository: 'synthetic-org/public-guides', baseBranch: 'main', installationId: '444' };
   assert.deepEqual(publicationTarget(selected.github), target); assert.deepEqual(createPublisher(selected.github, {}).target, target);
@@ -63,4 +64,13 @@ test('rollback to private mode returns exactly the original configuration withou
   const rolledBack = loadConfig({ ...env, PVME_PUBLICATION_MODE: 'private' });
   assert.deepEqual(rolledBack, loadConfig({ ...base, ...legacy }));
   assert.equal(env.PVME_ORG_GITHUB_APP_PRIVATE_KEY, orgKey);
+});
+
+test('missing webhook secrets cannot fall back across private and org identities', () => {
+  const noOrgHook = { ...base, ...legacy, ...org, PVME_ORG_GITHUB_WEBHOOK_SECRET: undefined };
+  assert.equal(loadConfig(noOrgHook).configured, true, 'private mode ignores missing staged org webhook');
+  assert.equal(loadConfig({ ...noOrgHook, PVME_PUBLICATION_MODE: 'public' }).github, null);
+  const noPrivateHook = { ...base, ...legacy, ...org, GITHUB_WEBHOOK_SECRET: undefined };
+  assert.equal(loadConfig(noPrivateHook).github, null, 'private mode cannot borrow the org webhook secret');
+  assert.equal(loadConfig({ ...noPrivateHook, PVME_PUBLICATION_MODE: 'public' }).configured, true);
 });

@@ -54,6 +54,14 @@ that public target. It does not run a public provider. Private-mode workers filt
 claims by immutable target, so review, retry/check and cron cannot claim this job
 as a private publication. UI status explicitly says publishing is held.
 
+The held review needs no org webhook secret, event subscription or GitHub call.
+Private-mode cron/admin runs cannot claim a public-target job, and retry/check
+requests reject the target mismatch. An existing private webhook can only wake
+eligible jobs; it does not run a publisher. The private build gate verifies the
+existing overlay using a read-only PostgreSQL query and leaves canonical content
+and private publication records unchanged. Existing unrelated private publishing
+retains its normal behavior. The hold applies to the new public target.
+
 ## Later activation is a separate operation
 
 The publisher selects a complete identity by publication mode:
@@ -69,8 +77,16 @@ The separate org variables can be staged as Production-only Secrets without
 changing private behavior, even if staging is incomplete. Public activation
 requires every org field and validates the selected key/identity. It never falls
 back to the private key, installation or webhook secret. Keep the original
-`GITHUB_*` values for the existing private path and rollback. Private mode ignores
-staged org variables; it does not decrypt or test them against a provider.
+`GITHUB_*` values for the existing private path and rollback. Private mode does
+not select, validate or test the staged org identity against a provider.
+
+Public-mode configuration deliberately fails closed if the org webhook secret is
+missing, even if events will later be polled manually or by cron. Configuring that
+separate secret and any events is a later coordinated action, not a prerequisite
+for held review. The eventual hook endpoint is `/api/editor/webhooks/github` on
+the configured HTTPS application origin. Push and pull-request events are enough
+to wake the existing polling flow; no checks/deployments permission expansion is
+needed. Webhooks do not by themselves execute the publication runner.
 
 This branch does not merge, deploy, configure credentials, activate a webhook,
 change publication mode, or publish a guide. Before a later activation:

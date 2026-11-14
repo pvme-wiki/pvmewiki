@@ -1,10 +1,12 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { randomUUID } from 'node:crypto';
+import { randomUUID, createHmac } from 'node:crypto';
 import { fixture, request } from './harness.mjs';
 import { createHandler } from '../http.mjs';
 import { loadConfig } from '../config.mjs';
 import { publicationTarget } from '../publication-target.mjs';
+import { approvedFiles } from '../github.mjs';
+import { verifyPublicationGate } from '../publication-gate.mjs';
 import { createService } from '../service.mjs';
 import { createJobRunner } from '../jobs.mjs';
 import { preparePublicBootstrap } from '../public-bootstrap.mjs';
@@ -243,4 +245,56 @@ test('bootstrap configuration defaults off, accepts no credentials and cannot co
     assert.equal(loadConfig({ ...env, PVME_PUBLIC_BOOTSTRAP_TARGET: input }).configured, false);
   }
   assert.equal(loadConfig({ ...env, PVME_PUBLICATION_MODE: 'public', PVME_PUBLIC_BOOTSTRAP_TARGET: JSON.stringify(value) }).configured, false);
+});
+
+test('held rollout needs no org webhook and cannot publish through review, cron, admin run, webhook wake or private build', async t => {
+  t.mock.method(globalThis, 'fetch', async () => assert.fail('Held rollout or private build attempted external HTTP'));
+  const f = await legacy(t);
+  // Complete the synthetic legacy lifecycle first, matching the existing live
+  // overlay. The old private job must stay terminal and byte-for-byte unchanged.
+  const oldProvider = f.oldJob.provider;
+  const oldRunner = createJobRunner(f.db, { reconcile: async () => ({ state: 'published', provider: oldProvider }) });
+  await oldRunner.wake(); assert.equal((await oldRunner.runOne({ submissionId: f.legacyId })).state, 'published');
+  const oldJob = (await f.db.query('SELECT * FROM publication_jobs WHERE submission_id=$1', [f.legacyId])).rows[0];
+  const canonicalBefore = await f.service.getGuide(f.guide.id);
+  const loaded = loadConfig({ APP_ORIGIN: f.config.origin, DATABASE_URL: 'postgres://fixture:fixture@db.example/fixture', SESSION_SECRET: f.config.sessionSecret,
+    DISCORD_CLIENT_ID: '123456', DISCORD_CLIENT_SECRET: 'fixture-only', PVME_ACCESS_MODE: 'open',
+    GITHUB_APP_ID: config.appId, GITHUB_INSTALLATION_ID: config.installationId, GITHUB_APP_PRIVATE_KEY: config.privateKey,
+    GITHUB_OWNER: 'synthetic-private', GITHUB_REPO: 'private-guides', GITHUB_BASE_BRANCH: 'main', GITHUB_WEBHOOK_SECRET: 'p'.repeat(40), CRON_SECRET: 'c'.repeat(40),
+    PVME_ORG_GITHUB_APP_ID: '333', PVME_ORG_GITHUB_INSTALLATION_ID: '444', PVME_ORG_GITHUB_APP_PRIVATE_KEY: config.privateKey,
+    // Deliberately no PVME_ORG_GITHUB_WEBHOOK_SECRET; org staging is incomplete.
+    PVME_PUBLIC_BOOTSTRAP_TARGET: JSON.stringify({ owner: target.owner, repo: target.repo, base: target.base, installationId: target.installationId }),
+  });
+  assert.equal(loaded.configured, true); assert.equal(loaded.github.mode, 'private');
+  let providerCalls = 0;
+  const publisher = createPublisher(loaded.github, f.db, { fetchImpl: async () => { providerCalls++; assert.fail('Held rollout reached a provider'); } });
+  const handler = createHandler({ db: f.db, config: loaded, publisher });
+  const response = await handler(request(`admin/public-bootstrap/${f.guide.id}`, { method: 'POST', user: f.admin, body: requestInput(f) }));
+  assert.equal(response.status, 200); const { submission: pending } = await response.json();
+  const approved = await handler(request(`submissions/${pending.id}/review`, { method: 'POST', user: f.reviewer, body: { decision: 'approve', expectedVersion: 1, note: 'Synthetic independent held review' } }));
+  assert.equal(approved.status, 200); assert.equal((await approved.json()).submission.publicBootstrap.held, true);
+  for (const action of ['check', 'retry']) {
+    assert.equal((await handler(request(`submissions/${pending.id}/${action}`, { method: 'POST', user: f.admin, body: {} }))).status, 409);
+  }
+  const cron = await handler(request('jobs/publication', { headers: { authorization: `Bearer ${loaded.github.cronSecret}` } }));
+  assert.equal(cron.status, 200); assert.deepEqual(await cron.json(), { state: 'idle' });
+  const admin = await handler(request('admin/publication/run', { method: 'POST', user: f.admin, body: {} }));
+  assert.equal(admin.status, 200); assert.deepEqual(await admin.json(), { state: 'idle' });
+  const payload = { repository: { full_name: `${loaded.github.owner}/${loaded.github.repo}`, private: true }, installation: { id: loaded.github.installationId } };
+  const signed = createHmac('sha256', loaded.github.webhookSecret).update(JSON.stringify(payload)).digest('hex');
+  const hook = await handler(request('webhooks/github', { method: 'POST', body: payload, headers: { 'x-hub-signature-256': `sha256=${signed}`, 'x-github-delivery': randomUUID(), 'x-github-event': 'push' } }));
+  assert.equal(hook.status, 200);
+  assert.deepEqual(await createJobRunner(f.db, publisher, { target: { mode: 'private' } }).runOne(), { state: 'idle' });
+  const legacyRow = (await f.db.query('SELECT * FROM submissions WHERE id=$1', [f.legacyId])).rows[0];
+  const receipt = approvedFiles(legacyRow)[`content/reviews/${f.legacyId}.json`];
+  const baselines = (await f.db.query('SELECT guide_id,document FROM guide_revisions WHERE revision=1')).rows;
+  let queries = 0;
+  const readOnly = { query: (sql, args) => { queries++; assert.match(sql.trim(), /^SELECT\b/); return f.db.query(sql, args); } };
+  const gate = await verifyPublicationGate(readOnly, [{ document: f.current.document, receipt }], { expectedBaselines: new Map(baselines.map(r => [r.guide_id, r.document])) });
+  assert.equal(gate.verifiedCount, 1); assert.equal(queries, 1);
+  const job = (await f.db.query('SELECT * FROM publication_jobs WHERE submission_id=$1', [pending.id])).rows[0];
+  assert.equal(job.state, 'queued'); assert.equal(job.attempts, 0); assert.deepEqual(job.target, publicationTarget(target));
+  assert.equal(providerCalls, 0); assert.equal((await f.db.query('SELECT count(*) FROM public_publications')).rows[0].count, 0);
+  assert.deepEqual(await f.service.getGuide(f.guide.id), canonicalBefore);
+  assert.deepEqual((await f.db.query('SELECT * FROM publication_jobs WHERE submission_id=$1', [f.legacyId])).rows[0], oldJob);
 });
