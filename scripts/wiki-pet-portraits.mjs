@@ -1,5 +1,6 @@
 // Source metadata is checked in; no Wiki fetch or image download occurs at build.
 export function wikiPortraitsEnabled(env = {}) {
+  if (env.VERCEL_ENV === 'production') return env.PVME_WIKI_PORTRAITS_PRODUCTION === 'enabled';
   return env.VERCEL_ENV === 'preview' || (!env.VERCEL_ENV && env.PVME_WIKI_PORTRAITS_SMOKE === '1');
 }
 function wikiUrl(value, prefix) {
