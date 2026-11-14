@@ -1,5 +1,6 @@
 import { createPrivateKey } from 'node:crypto';
-import { publicationTarget } from './publication-target.mjs';
+import { publicationTarget, samePublicationTarget } from './publication-target.mjs';
+import { validateOwnerGrant } from './owner-approval.mjs';
 const baseFields = ['APP_ORIGIN', 'DATABASE_URL', 'SESSION_SECRET', 'DISCORD_CLIENT_ID', 'DISCORD_CLIENT_SECRET'];
 const githubSuffixes = { appId: 'APP_ID', installationId: 'INSTALLATION_ID', privateKey: 'APP_PRIVATE_KEY', owner: 'OWNER', repo: 'REPO', base: 'BASE_BRANCH', webhookSecret: 'WEBHOOK_SECRET' };
 export function loadConfig(env = process.env) {
@@ -16,6 +17,11 @@ export function loadConfig(env = process.env) {
     } catch { errors.push('Bootstrap review requires an exact public target and private publication mode.'); publicBootstrap = null; }
   }
   const missing = baseFields.filter(key => !env[key]);
+  let ownerPublicApproval = null;
+  if (env.PVME_OWNER_PUBLICATION_GRANT) {
+    try { ownerPublicApproval = validateOwnerGrant(JSON.parse(env.PVME_OWNER_PUBLICATION_GRANT), publicationTarget(publicBootstrap)); }
+    catch { errors.push('Owner publication requires an exact protected identity, snapshot and bootstrap target grant.'); }
+  }
   const accessMode = env.PVME_ACCESS_MODE || 'allowlist';
   const allowedDiscordIds = (env.PVME_CONTRIBUTOR_DISCORD_IDS || '').split(',').map(value => value.trim()).filter(Boolean);
   if (!['allowlist', 'open'].includes(accessMode)) errors.push('PVME_ACCESS_MODE must be allowlist or open.');
@@ -64,11 +70,22 @@ export function loadConfig(env = process.env) {
     /^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.vercel\.app$/.test(deploymentHost)
     ? `https://${deploymentHost}` : null;
   const configured = !missing.length && !errors.length;
+  let ownerPublicGithub = null;
+  if (env.PVME_OWNER_PUBLIC_DISPATCH) {
+    if (env.PVME_OWNER_PUBLIC_DISPATCH !== 'enabled' || publicationMode !== 'private' || !ownerPublicApproval) errors.push('Owner public dispatch requires its exact protected grant and private mode.');
+    else {
+      const org = loadConfig({ ...env, PVME_PUBLICATION_MODE: 'public', PVME_PUBLIC_BOOTSTRAP_TARGET: undefined,
+        PVME_OWNER_PUBLICATION_GRANT: undefined, PVME_OWNER_PUBLIC_DISPATCH: undefined });
+      if (!org.configured || !org.github || !samePublicationTarget(publicationTarget(org.github), ownerPublicApproval.target)) errors.push('Owner public dispatch requires the complete matching org publisher identity.');
+      else ownerPublicGithub = org.github;
+    }
+  }
+  const ready = configured && !errors.length;
   return {
-    configured, errors, missing, publicationMode, publicBootstrap, accessMode, allowedDiscordIds, origin, productionCronOrigin,
+    configured: ready, errors, missing, publicationMode, publicBootstrap, ownerPublicApproval, ownerPublicGithub: ready ? ownerPublicGithub : null, accessMode, allowedDiscordIds, origin, productionCronOrigin,
     databaseUrl: env.DATABASE_URL, sessionSecret: env.SESSION_SECRET,
     discord: { clientId: env.DISCORD_CLIENT_ID, clientSecret: env.DISCORD_CLIENT_SECRET, redirectUri: `${origin}/api/editor/auth/discord/callback` },
-    github: configured && githubValid ? {
+    github: ready && githubValid ? {
       mode: publicationMode, ...githubValues, privateKey: githubValues.privateKey.replace(/\\n/g, '\n'),
       cronSecret: env.CRON_SECRET,
     } : null,

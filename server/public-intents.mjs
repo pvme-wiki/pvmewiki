@@ -18,7 +18,7 @@ async function approved(q, row, config) {
   if (['owner_id','reviewer_id','summary','review_note'].some(key => (current[key] ?? null) !== (row[key] ?? null))) reject('snapshot_corrupt', 'Publication metadata differs from its immutable approval.');
   if (current.content_hash === current.baseline_hash) {
     try { await verifyPublicBootstrap(q, current, config); }
-    catch (error) { if (error.code !== 'public_bootstrap_unverified') throw error; reject('public_bootstrap_unverified', 'A fresh independent carry-forward approval is required.'); }
+    catch (error) { if (error.code !== 'public_bootstrap_unverified') throw error; reject('public_bootstrap_unverified', 'A fresh independent or explicitly owner-authorized carry-forward approval is required.'); }
   }
   const proof = publicProof(current), proofKey = publicProofKey(proof);
   return { target, proof, proofKey, submissionId: current.id };

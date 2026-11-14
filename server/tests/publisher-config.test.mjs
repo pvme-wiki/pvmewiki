@@ -23,6 +23,24 @@ test('private mode preserves the legacy identity despite absent, partial, invali
     assert.deepEqual(createPublisher(selected.github).target, { mode: 'private' });
   }
 });
+test('owner pilot selects a second complete org identity explicitly and preserves the private identity', () => {
+  const target = { mode:'public', repository:'synthetic-org/public-guides', baseBranch:'main', installationId:'444' };
+  const grant = { userId:'11111111-1111-4111-8111-111111111111', discordHash:'a'.repeat(64), guideId:'arch-glacor-basic', baseRevision:2, contentHash:'b'.repeat(64), target };
+  const flags = { PVME_PUBLIC_BOOTSTRAP_TARGET:JSON.stringify({owner:'synthetic-org',repo:'public-guides',base:'main',installationId:'444'}), PVME_OWNER_PUBLICATION_GRANT:JSON.stringify(grant), PVME_OWNER_PUBLIC_DISPATCH:'enabled' };
+  const baseline=loadConfig({...base,...legacy});
+  const selected=loadConfig({...base,...legacy,...org,...flags});
+  assert.equal(selected.configured,true); assert.equal(selected.publicationMode,'private');
+  assert.deepEqual(selected.github,baseline.github); assert.equal(selected.ownerPublicGithub.mode,'public');
+  assert.deepEqual(publicationTarget(selected.ownerPublicGithub),target);
+  assert.equal(loadConfig({...base,...legacy,...org,...flags,PVME_OWNER_PUBLIC_DISPATCH:undefined}).ownerPublicGithub,null);
+  for(const name of Object.keys(org)) {
+    const partial={...base,...legacy,...org,...flags}; delete partial[name];
+    const invalid=loadConfig(partial); assert.equal(invalid.configured,false,name); assert.equal(invalid.ownerPublicGithub,null,name);
+  }
+  for (const overrides of [{PVME_OWNER_PUBLICATION_GRANT:undefined},{PVME_OWNER_PUBLIC_DISPATCH:'true'},{PVME_PUBLICATION_MODE:'public'},{PVME_ORG_GITHUB_INSTALLATION_ID:'555'}]) {
+    const invalid=loadConfig({...base,...legacy,...org,...flags,...overrides}); assert.equal(invalid.configured,false); assert.equal(invalid.ownerPublicGithub,null);
+  }
+});
 
 test('public mode selects only the complete org identity and never the retained private key or webhook', () => {
   const selected = loadConfig({ ...base, ...legacy, ...org, PVME_PUBLICATION_MODE: 'public' });

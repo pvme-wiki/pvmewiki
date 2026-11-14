@@ -265,6 +265,19 @@ export class HostedAdapter {
     if (!canRequestPublicBootstrap(this.session)) throw new AdapterError('Public snapshot review is unavailable for this account.', 403);
     return (await this.request(`/admin/public-bootstrap/${encodeURIComponent(id)}`, { expectedRevision, expectedHash, requestId, reason })).submission;
   }
+  async approveOwnerSnapshot(review, reason) {
+    if (!review?.publicBootstrap?.ownerApprovalAvailable || !this.session?.user) throw new AdapterError('Owner approval is unavailable for this snapshot.', 403);
+    return (await this.request(`/submissions/${encodeURIComponent(review.id)}/owner-approval`, {
+      expectedVersion: review.version, expectedRevision: review.baseRevision, expectedHash: review.contentHash, reason,
+    })).submission;
+  }
+  async accountBinding() { return (await this.request('/admin/account-binding')).binding; }
+  async publishOwnerSnapshot(review) {
+    if (!review?.publicBootstrap?.ownerPublicationAvailable || !this.session?.user) throw new AdapterError('Owner publication is unavailable for this snapshot.', 403);
+    return (await this.request(`/submissions/${encodeURIComponent(review.id)}/owner-publication`, {
+      expectedVersion: review.version, expectedRevision: review.baseRevision, expectedHash: review.contentHash,
+    })).submission;
+  }
   async checkPublication(id) {
     if (!canReview(this.session)) throw new AdapterError('Only moderators can check publication.', 403);
     return (await this.request(`/submissions/${encodeURIComponent(id)}/check`, {})).submission;

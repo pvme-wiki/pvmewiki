@@ -1,9 +1,10 @@
 import { publicationTarget } from './publication-target.mjs';
 import { bootstrapRequestSql, verifyPublicBootstrap } from './public-bootstrap-authority.mjs';
-import { ADMIN_SELF_POLICY } from './approval.mjs';
+import { ADMIN_SELF_POLICY, approvalEventsSql, ownerApprovalEvidence } from './approval.mjs';
+import { OWNER_PUBLIC_POLICY, matchesOwner, matchesOwnerSnapshot, requireOwnerSnapshot } from './owner-approval.mjs';
 import { randomUUID } from 'node:crypto';
 import { validateDocument } from '../editor/shared/model.mjs';
-import { fail, fields, integer, boundedText, documentHash, iso, HOSTED_DOCUMENT_LIMIT_BYTES } from './core.mjs';
+import { fail, fields, integer, boundedText, documentHash, hash, iso, HOSTED_DOCUMENT_LIMIT_BYTES } from './core.mjs';
 const guideIdPattern = /^[a-z0-9][a-z0-9-]{0,100}$/;
 const uuidPattern = /^[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/;
 export const needsFreshReview = code => ['source_conflict', 'branch_conflict', 'pull_request_conflict', 'merge_conflict', 'snapshot_corrupt', 'private_material_in_publication'].includes(code);
@@ -14,7 +15,7 @@ export const draftView = row => row ? {
   ...(row.baseline_document ? { baselineDocument: row.baseline_document } : {}),
 } : null;
 export const guideView = row => ({ document: row.document, revision: row.revision, contentHash: row.content_hash });
-export function submissionView(row, user, { detail = false, repository = null } = {}) {
+export function submissionView(row, user, { detail = false, repository = null, ownerGrant = null, bootstrapTarget = null, ownerDispatchReady = false } = {}) {
   const reviewer = isReviewer(user);
   const prNumber = row.job_provider?.number || row.job_provider?.diagnosticPrNumber;
   const frozenRepository = row.job_target?.mode === 'public' ? row.job_target.repository : null;
@@ -23,6 +24,8 @@ export function submissionView(row, user, { detail = false, repository = null } 
   const safeRepository = /^[A-Za-z0-9][A-Za-z0-9_.-]*\/[A-Za-z0-9][A-Za-z0-9_.-]*$/.test(reviewRepository || '');
   const reviewUrl = reviewer && safeRepository && Number.isSafeInteger(prNumber) && prNumber > 0
     ? `https://github.com/${reviewRepository}/pull/${prNumber}` : null;
+  const ownerAvailable = row.status === 'submitted' && matchesOwner(user, ownerGrant) && matchesOwnerSnapshot(row, ownerGrant, publicationTarget(bootstrapTarget));
+  const ownerApproved = Boolean(ownerApprovalEvidence(row));
   return {
     id: row.id, guideId: row.guide_id, title: row.document.title, version: row.version,
     baseRevision: row.base_revision, draftVersion: row.draft_version, summary: row.summary,
@@ -30,7 +33,7 @@ export function submissionView(row, user, { detail = false, repository = null } 
     reviewNote: row.review_note || '', isMine: row.owner_id === user.id, contentHash: row.content_hash,
     ...(detail ? { document: row.document, baselineDocument: row.baseline_document } : {}),
     publication: row.job_state ? { state: row.job_provider?.replacementId ? 'superseded' : row.job_state, requiresFreshReview: row.job_state === 'blocked' && needsFreshReview(row.job_error) && !row.job_provider?.replacementId, replacementId: row.job_provider?.replacementId || null, ...(reviewer ? { errorCode: row.job_error || null, reviewUrl } : {}) } : null,
-    publicBootstrap: row.bootstrap_request ? { target: row.bootstrap_request.target, requiresIndependentReview: true, held: repository?.mode !== 'public' } : null,
+    publicBootstrap: row.bootstrap_request ? { target: row.bootstrap_request.target, requiresIndependentReview: !(ownerAvailable || ownerApproved), held: repository?.mode !== 'public', ...(ownerAvailable ? { ownerApprovalAvailable: true } : {}), ...(ownerApproved ? { approvalPolicy: OWNER_PUBLIC_POLICY } : {}), ...(ownerApproved && ownerDispatchReady && ['approved','publishing'].includes(row.status) && matchesOwner(user, ownerGrant) && matchesOwnerSnapshot(row, ownerGrant, publicationTarget(bootstrapTarget)) ? { ownerPublicationAvailable: true } : {}) } : null,
     publicationIssue: row.job_provider?.replacementId ? 'A fresh submission replaces this publication attempt.' : row.job_state === 'blocked' ? (needsFreshReview(row.job_error) ? 'Publication is blocked. Save a reconciled draft and submit it for fresh review.' : 'Publication needs a maintainer to repair the publishing connection before retrying.') : row.job_state === 'retry' ? 'Publication will retry. Your approved submission is safe.' : null,
   };
 }
@@ -62,7 +65,7 @@ function baselineConflict(current, draftVersion) {
 }
 async function submission(q, id, { lock = false } = {}) {
   if (!uuidPattern.test(id)) fail(404, 'submission_not_found', 'Submission not found.');
-  const row = (await q.query(`SELECT s.*,${bootstrapRequestSql('s')} AS bootstrap_request,j.state AS job_state,j.provider AS job_provider,j.target AS job_target,j.last_error AS job_error FROM submissions s LEFT JOIN publication_jobs j ON j.submission_id=s.id WHERE s.id=$1 ${lock ? 'FOR UPDATE OF s' : ''}`, [id])).rows[0];
+  const row = (await q.query(`SELECT s.*,${approvalEventsSql('s')} AS approval_events,${bootstrapRequestSql('s')} AS bootstrap_request,j.state AS job_state,j.provider AS job_provider,j.target AS job_target,j.last_error AS job_error FROM submissions s LEFT JOIN publication_jobs j ON j.submission_id=s.id WHERE s.id=$1 ${lock ? 'FOR UPDATE OF s' : ''}`, [id])).rows[0];
   if (!row) fail(404, 'submission_not_found', 'Submission not found.');
   return row;
 }
@@ -83,8 +86,12 @@ async function submitSavedSnapshot(q, actor, id, input, summary) {
   await audit(q, actor, 'submission.created', row.id, { contentHash: row.content_hash, baseRevision: row.base_revision });
   return submissionView(row, user, { detail: true });
 }
-export function createService(db, { publicationEnabled = false, repository = null, bootstrapTarget = null } = {}) {
+export function createService(db, { publicationEnabled = false, repository = null, bootstrapTarget = null, ownerGrant = null, ownerDispatchReady = false } = {}) {
   return {
+    async accountBinding(actor) {
+      const user = await requireUser(db, actor, { admin: true });
+      return { userId: user.id, discordHash: hash(user.discord_id) };
+    },
     async listGuides() {
       return (await db.query("SELECT g.id,r.document->>'title' AS title,g.category,g.summary,g.revision,r.content_hash AS \"contentHash\" FROM guides g JOIN guide_revisions r ON r.guide_id=g.id AND r.revision=g.revision ORDER BY g.id")).rows;
     },
@@ -164,7 +171,40 @@ export function createService(db, { publicationEnabled = false, repository = nul
       const user = await requireUser(db, actor);
       const row = await submission(db, id);
       if (row.owner_id !== actor && !isReviewer(user)) fail(404, 'submission_not_found', 'Submission not found.');
-      return submissionView(row, user, { detail: true, repository });
+      return submissionView(row, user, { detail: true, repository, ownerGrant, bootstrapTarget, ownerDispatchReady });
+    },
+    async ownerPublication(actor, id, input) {
+      fields(input, ['expectedVersion','expectedRevision','expectedHash']); integer(input.expectedVersion);
+      const user = await requireUser(db, actor, { admin: true });
+      const row = await submission(db, id);
+      requireOwnerSnapshot(user, row, ownerGrant, publicationTarget(bootstrapTarget));
+      if (!ownerDispatchReady || !ownerApprovalEvidence(row)) fail(403, 'owner_publication_forbidden', 'A verified owner approval and complete org connection are required.');
+      if (row.version !== input.expectedVersion || row.base_revision !== input.expectedRevision || row.content_hash !== input.expectedHash) fail(409, 'owner_snapshot_conflict', 'Reload the exact owner-authorized snapshot before publishing.');
+      await verifyPublicBootstrap(db, row, bootstrapTarget);
+      return row;
+    },
+    async approveOwnerSnapshot(actor, id, input) {
+      fields(input, ['expectedVersion', 'expectedRevision', 'expectedHash', 'reason']); integer(input.expectedVersion);
+      const reason = boundedText(input.reason, 1000, 'Owner approval reason');
+      const note = 'Owner explicitly authorized publication of this exact current snapshot. ' + reason;
+      return db.transaction(async q => {
+        const user = await requireUser(q, actor, { admin: true, lock: true });
+        const found = await submission(q, id);
+        const current = await guide(q, found.guide_id, { lock: true });
+        const row = await submission(q, id, { lock: true });
+        const target = publicationTarget(bootstrapTarget);
+        requireOwnerSnapshot(user, row, ownerGrant, target);
+        if (input.expectedRevision !== row.base_revision || input.expectedHash !== row.content_hash ||
+            current.revision !== row.base_revision || current.content_hash !== row.content_hash) fail(409, 'owner_snapshot_conflict', 'The exact owner-authorized snapshot is no longer current.');
+        if (row.status !== 'submitted' || input.expectedVersion !== row.version) fail(409, 'review_conflict', 'Reload this snapshot before approving it.');
+        await verifyPublicBootstrap(q, row, bootstrapTarget);
+        const updated = (await q.query("UPDATE submissions SET status='approved',version=version+1,reviewer_id=$2,review_note=$3,reviewed_at=now() WHERE id=$1 RETURNING *", [id, actor, note])).rows[0];
+        await audit(q, actor, 'submission.approved', id, { approvalPolicy: OWNER_PUBLIC_POLICY, reviewerRole: 'owner',
+          ownerDiscordHash: ownerGrant.discordHash, guideId: row.guide_id, baseRevision: row.base_revision,
+          contentHash: row.content_hash, target, note, reviewedAt: iso(updated.reviewed_at) });
+        await q.query('INSERT INTO publication_jobs(submission_id,target) VALUES($1,$2)', [id, JSON.stringify(target)]);
+        return submissionView(await submission(q, id), user, { detail: true, repository, ownerGrant, bootstrapTarget });
+      });
     },
     async review(actor, id, input) {
       fields(input, ['decision', 'expectedVersion', 'note']); integer(input.expectedVersion);
