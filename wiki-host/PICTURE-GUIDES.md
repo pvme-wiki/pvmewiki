@@ -36,4 +36,4 @@ Published on 15 November 2026 from private commit `925b3e147436232b721c07543fdbd
 - [Picture flow, revision 386](https://pvmewiki.sanji3.dev/index.php?title=Template:PvME_picture_flow&oldid=386)
 - [Arena picture, revision 387](https://pvmewiki.sanji3.dev/index.php?title=Template:PvME_arena_picture&oldid=387)
 
-The existing service now uses the private repository; its Docker paths, manual deploy setting, database and custom domain are retained. Chrome review covered the deployed desktop guide and 390px mobile prayer/map layouts. ResourceLoader's existing stylesheet URL may remain cached for five minutes after a release.
+The existing service now uses the private repository; its Docker paths, manual deploy setting, database and custom domain are retained. Chrome review covered the deployed desktop guide and 390px mobile prayer/map layouts. Presentation release `0.2.0` uses new ResourceLoader module identities to refresh existing browser caches. The follow-up deployment `dep-dbt49vt6e07s73bcvi90`, commit `f47686a3b6f164a15e8353347d000ceb9e2085d8`, preserved all five content revisions above and passed normal-URL desktop/mobile review.
