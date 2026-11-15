@@ -555,3 +555,27 @@ body:not(.pvme-visual-mode) #pvme-visual-reader,
         overflow: visible;
     }
 }
+.pvme-visual-content a.pvme-ability-image{display:inline-flex;align-items:center;gap:.3rem;vertical-align:middle;white-space:normal;max-width:100%;border-radius:4px;padding:2px 4px;background:#f3f5f7}
+.pvme-ability-image img{display:inline-block;width:32px;height:32px;object-fit:contain;flex-shrink:0}
+.pvme-climber-panel{margin:1.5rem 0;padding:1rem;border:1px solid #c8b689;border-left:4px solid #8b6a28;background:#fcfaf4;border-radius:8px;color:#222}
+.pvme-climber-panel h4{margin:0 0 .5rem;font-size:1.25rem}
+.pvme-sequence-key{font-size:.9rem;color:#46505a}
+.pvme-climber-sequence{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;padding:0!important;margin:1rem 0!important;list-style:none;counter-reset:step}
+.pvme-climber-sequence>li{position:relative;display:flex;gap:8px;align-items:flex-start;min-width:0;border:1px solid #b6bec7;border-radius:7px;background:white;padding:10px;line-height:1.5;overflow-wrap:anywhere}
+.pvme-sequence-number{display:inline-grid;place-items:center;flex:0 0 26px;height:26px;border-radius:50%;background:#263c51;color:white;font-weight:700}
+.pvme-climber-sequence>li>div{min-width:0}
+.pvme-climber-sequence .pvme-ability-image{margin:2px 0}
+.pvme-amascut-preset{margin:1.5rem 0!important;padding:1rem;background:#f1f4f7;border:1px solid #b7c2ce;border-radius:8px;color:#222}
+.pvme-amascut-preset figcaption{font-size:1.15rem;font-weight:700;margin-bottom:.5rem}
+.pvme-amascut-preset button{margin-bottom:.75rem;min-height:44px;padding:8px 14px;border:1px solid #687889;border-radius:5px;background:white;color:#23394c;font:inherit;cursor:pointer}
+.pvme-preset-image-viewport{overflow:auto;max-width:100%;border-radius:5px;background:#18212b}
+.pvme-preset-image-viewport img{display:block;width:100%;height:auto;max-width:none!important}
+.pvme-preset-image-viewport.pvme-image-enlarged img{width:944px}
+.pvme-amascut-preset p{font-size:.9rem}
+.pvme-preset-comparison{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:1rem;align-items:start}
+.pvme-amascut-loadout h5{font-size:1rem;margin:0 0 .5rem}
+.pvme-amascut-equipment{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;padding:0!important;list-style:none;margin:.5rem 0!important}
+.pvme-amascut-equipment li{border:1px solid #c3cbd4;border-radius:4px;background:white;padding:6px;font-size:.9rem;overflow-wrap:anywhere}
+.pvme-amascut-loadout details{margin-top:.75rem}.pvme-preset-full-notes{white-space:pre-line;font-size:.95rem;padding:.5rem 0}
+@media(max-width:850px){.pvme-preset-comparison{grid-template-columns:1fr}}
+@media(max-width:600px){.pvme-climber-panel,.pvme-amascut-preset{padding:.7rem}.pvme-climber-sequence{grid-template-columns:repeat(2,minmax(0,1fr))}.pvme-climber-sequence .pvme-ability-image{flex-wrap:wrap}.pvme-climber-sequence .pvme-ability-image img{width:36px;height:36px}.pvme-climber-sequence .pvme-sequence-group{grid-column:1/-1}}

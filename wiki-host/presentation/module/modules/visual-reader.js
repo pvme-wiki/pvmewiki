@@ -1,4 +1,5 @@
 'use strict';
+const { enhanceAmascut } = require('./amascut-visuals.js');
 
 function isDuplicateLabel(label, previousText) {
     const normalize = text => text.replace(/[\u200b-\u200f]/g, '').replace(/_/g, ' ').replace(/\s+/g, ' ').trim().toLowerCase();
@@ -124,6 +125,7 @@ function createVisualReader(article, title, presets, actionBars = {}) {
         for (const note of preset.notes.filter(note => note.item === null)) { const p = doc.createElement('p'); p.textContent = note.text; panel.append(p); }
         anchor.closest('p')?.after(panel);
     }
+    enhanceAmascut(reader, title);
     return { reader, anchors };
 }
 module.exports = { createVisualReader, isDuplicateLabel };
