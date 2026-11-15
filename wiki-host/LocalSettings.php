@@ -40,6 +40,10 @@ wfLoadSkin('Vector');
 wfLoadExtension('VisualEditor');
 wfLoadExtension('WikiEditor');
 wfLoadExtension('TemplateData');
+// Read-only reader presentation; explicit false opts out without changing the seed import.
+if (getenv('MW_PRESENTATION_ENABLED') !== 'false') {
+    wfLoadExtension('PvmePresentation');
+}
 wfLoadExtension('Moderation');
 // Bootstrap maintenance processes import the checksum-verified corpus before HTTP starts.
 $wgModerationEnable = getenv('MW_BOOTSTRAP') !== '1';

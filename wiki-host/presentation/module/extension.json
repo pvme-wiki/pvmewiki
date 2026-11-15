@@ -1,0 +1,34 @@
+{
+  "name": "PvmePresentation",
+  "version": "0.1.0",
+  "author": "PvME Wiki contributors",
+  "url": "https://github.com/pvme-wiki/pvme",
+  "description": "Scoped presentation styles for the standalone PvME guide corpus.",
+  "license-name": "GPL-2.0-or-later",
+  "type": "other",
+  "requires": {
+    "MediaWiki": ">= 1.43.0"
+  },
+  "AutoloadNamespaces": {
+    "MediaWiki\\Extension\\PvmePresentation\\": "includes/"
+  },
+  "Hooks": {
+    "BeforePageDisplay": "MediaWiki\\Extension\\PvmePresentation\\Hooks::onBeforePageDisplay"
+  },
+  "ResourceFileModulePaths": {
+    "localBasePath": "",
+    "remoteExtPath": "PvmePresentation"
+  },
+  "ResourceModules": {
+    "ext.pvmePresentation.reader": {
+      "packageFiles": ["modules/reader.js", "modules/navigation.json"],
+      "dependencies": ["mediawiki.util"]
+    },
+    "ext.pvmePresentation.styles": {
+      "styles": [
+        "modules/presentation.css"
+      ]
+    }
+  },
+  "manifest_version": 2
+}
