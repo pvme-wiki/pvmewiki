@@ -1,4 +1,17 @@
 /* Only the BeforePageDisplay title gate adds this body class. */
+.pvme-presentation .pvme-action-bar-panel { margin-block: 1rem 1.6rem; padding: 1rem; border: 1px solid #d8b78b; border-radius: .5rem; color: #262a2e; background: #fbf6ec; }
+.pvme-presentation .pvme-action-bar-panel h4 { margin: 0 0 .8rem; }
+.pvme-presentation .pvme-action-bar { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: .6rem; margin: 0; padding: 0; list-style: none; }
+.pvme-presentation .pvme-action-bar li { display: flex; align-items: flex-start; gap: .6rem; padding: .8rem; border: 1px solid #c7c2b8; border-radius: .3rem; background: #fff; list-style: none; min-width: 0; }
+.pvme-presentation .pvme-action-number { flex: 0 0 1.8rem; text-align: center; line-height: 1.8rem; border-radius: 50%; background: #81501f; color: #fff; font-weight: 700; }
+.pvme-presentation .pvme-action-bar strong { min-width: 0; line-height: 1.45; }
+@media (max-width: 600px) {
+    .pvme-presentation .pvme-action-bar-panel { padding: .7rem; }
+    .pvme-presentation .pvme-action-bar { grid-template-columns: repeat(2,minmax(0,1fr)); gap: .45rem; }
+    .pvme-presentation .pvme-action-bar li { display: block; padding: .6rem; }
+    .pvme-presentation .pvme-action-number { display: block; width: 1.8rem; margin-block-end: .35rem; }
+    .pvme-presentation .pvme-action-bar strong { font-size: .95rem; }
+}
 html:not(.ve-active):not(.ve-activating) body.pvme-visual-mode:not(.ve-active):not(.ve-activating) #mw-content-text > .mw-parser-output { display: none; }
 body:not(.pvme-visual-mode) #pvme-visual-reader,
 .ve-active #pvme-visual-reader,

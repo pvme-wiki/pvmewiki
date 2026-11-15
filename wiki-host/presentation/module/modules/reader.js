@@ -4,6 +4,7 @@ const registry = require('./navigation.json');
 const { convertRevision } = require('./wiki-export.js');
 const { createVisualReader } = require('./visual-reader.js');
 const presets = require('./presets.json');
+const actionBars = require('./action-bars.json');
 function enhance() {
     if (mw.config.get('wgAction') !== 'view' || document.querySelector('.ve-active, .ve-activating')) return;
     const title = mw.config.get('wgPageName').replace(/_/g, ' ');
@@ -60,7 +61,7 @@ function enhance() {
                 if (published?.title !== title || !revision?.slots?.main || revision.slots.main.contentmodel !== 'wikitext') throw new Error('A complete published wikitext revision was not returned.');
                 const exported = convertRevision(revision.slots.main.content, { title, revisionId: revision.revid,
                     timestamp: revision.timestamp, source: page.source,
-                    revisionUrl: new URL(mw.util.getUrl(title, { oldid: revision.revid }), location.origin).href }, registry);
+                    revisionUrl: new URL(mw.util.getUrl(title, { oldid: revision.revid }), location.origin).href }, registry, actionBars);
                 fallback.value = exported.text;
                 manual.hidden = false;
                 try {
@@ -136,7 +137,7 @@ function enhance() {
         }
     }
     if (page.source) {
-        const { reader, anchors } = createVisualReader(article, title, presets);
+        const { reader, anchors } = createVisualReader(article, title, presets, actionBars);
         content.before(reader);
         const toggle = element('button', 'Show original wiki view', 'pvme-reader-toggle'); toggle.type = 'button';
         toggle.setAttribute('aria-pressed', 'false');

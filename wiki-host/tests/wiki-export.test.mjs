@@ -8,13 +8,14 @@ vm.runInNewContext(fs.readFileSync(new URL('presentation/module/modules/wiki-exp
 const { convertRevision } = context.module.exports;
 const registry = JSON.parse(fs.readFileSync(new URL('presentation/module/modules/navigation.json', root)));
 const manifest = JSON.parse(fs.readFileSync(new URL('corpus/manifest.json', root)));
+const actionBars = JSON.parse(fs.readFileSync(new URL('presentation/module/modules/action-bars.json', root)));
 const meta = { title: 'PvME/Test/Guide', revisionId: 902, timestamp: '2026-11-15T18:00:00Z', source: 'https://pvme.io/', revisionUrl: 'https://example.org/index.php?oldid=902' };
 
 test('all 323 complete pinned guide bodies convert without HTML layout or lost prose', () => {
     let count = 0, literals = 0;
     for (const page of manifest.pages.filter(p => p.kind === 'guide')) {
         const source = fs.readFileSync(new URL('corpus/' + page.file, root), 'utf8');
-        const result = convertRevision(source, { ...meta, title: page.title }, registry);
+        const result = convertRevision(source, { ...meta, title: page.title }, registry, actionBars);
         assert.equal(result.sourceLength, source.length);
         assert(result.text.includes('revision 902'));
         assert(!/<\/?(?:html|body|div|p|h[1-6]|table|tr|td|th)\b/i.test(result.text), page.title);
@@ -66,4 +67,26 @@ test('preformatted first line and explicit line breaks keep their rendering sema
     const text = convertRevision('<pre>First\nSecond</pre><p>Before<br>After</p>', meta, registry).text;
     assert(text.includes('\n\n First\n Second'));
     assert(text.includes('Before<br />After'));
+});
+
+test('verified numbered bars retain every source slot and the original image reference', () => {
+    const page=manifest.pages.find(p=>p.title==='PvME/Dagannoth Kings/AFK Dagannoth Kings');
+    const source=fs.readFileSync(new URL('corpus/'+page.file,root),'utf8');
+    const exported=convertRevision(source,{...meta,title:page.title},registry,actionBars).text;
+    const expected=[
+        ['Meteor Strike','Rend','Dismember','Adaptive Strike','Reflect','Hurricane','Punish','Greater Fury','Overpower (Igneous icon shown)'],
+        ['Imbue: Shadows','Greater Ricochet','Corruption Shot','Reflect','Deadshot','Piercing Shot','Galeshot','Snap Shot','Sacrifice']
+    ];
+    for(const [index,[url,bar]]of Object.entries(actionBars).entries()){
+        assert.deepEqual(bar.slots,expected[index]);
+        assert.equal(bar.slots.length,9);
+        assert.match(bar.imageSha256,/^[0-9a-f]{64}$/);
+        assert(exported.includes(bar.slots.map(name=>'# '+name).join('\n')));
+        assert(exported.includes(url));
+    }
+    const wrongGuide=convertRevision(source,meta,registry,actionBars).text;
+    assert(!wrongGuide.includes('# Meteor Strike\n# Rend'));
+    const changedSource=source.replace('hACwpQKeK9.png','different-source.png');
+    const changedExport=convertRevision(changedSource,{...meta,title:page.title},registry,actionBars).text;
+    assert(!changedExport.includes('# Meteor Strike\n# Rend'));
 });

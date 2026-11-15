@@ -6,7 +6,7 @@ function isDuplicateLabel(label, previousText) {
 }
 
 // A disposable reader view outside #mw-content-text. Native edit HTML is untouched.
-function createVisualReader(article, title, presets) {
+function createVisualReader(article, title, presets, actionBars = {}) {
     const doc = article.ownerDocument;
     const reader = article.cloneNode(true);
     reader.classList.remove('mw-parser-output');
@@ -67,6 +67,25 @@ function createVisualReader(article, title, presets) {
         let previous = table.previousElementSibling;
         while (previous?.tagName === 'P' && !previous.querySelector('[id],a,img') && !previous.textContent.replace(/[\s\u200b-\u200f]/g, '')) previous = previous.previousElementSibling;
         if (previous?.matches('table.pvme-visual-cue')) { previous.append(doc.createTextNode('\n'), ...Array.from(table.rows)); table.remove(); }
+    }
+    for (const anchor of reader.querySelectorAll('a[href]')) {
+        const bar = actionBars[anchor.getAttribute('href')];
+        if (!bar || bar.guide !== title) continue;
+        const panel = doc.createElement('section'); panel.className = 'pvme-action-bar-panel';
+        panel.setAttribute('aria-label', bar.label + ' numbered source order');
+        const heading = doc.createElement('h4'); heading.textContent = bar.label + ' - source order 1–9';
+        const list = doc.createElement('ol'); list.className = 'pvme-action-bar';
+        for (const [index, name] of bar.slots.entries()) {
+            const slot = doc.createElement('li');
+            const number = doc.createElement('span'); number.className = 'pvme-action-number';
+            number.textContent = String(index + 1); number.setAttribute('aria-hidden', 'true');
+            const label = doc.createElement('strong'); label.textContent = name;
+            slot.setAttribute('aria-label', 'Source slot ' + (index + 1) + ': ' + name);
+            slot.append(number, label); list.append(slot);
+        }
+        const date = doc.createElement('p'); date.className = 'pvme-reader-provenance';
+        date.textContent = 'Numbered left-to-right order from the source image added ' + bar.sourceAdded + '. Labels checked ' + bar.verified + '. Guide requirements are unchanged.';
+        panel.append(heading, list, date); anchor.closest('p')?.after(panel);
     }
     for (const anchor of reader.querySelectorAll('a[href]')) {
         const preset = presets[anchor.getAttribute('href')];

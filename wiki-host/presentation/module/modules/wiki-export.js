@@ -2,7 +2,7 @@
 
 // Export the fetched published revision, never substitute a pinned corpus body.
 // Reuses the port's native headings/lists/tables and conservative link policy.
-function convertRevision(source, metadata, registry) {
+function convertRevision(source, metadata, registry, actionBars = {}) {
     if (typeof source !== 'string' || !source.trim()) throw new Error('The published guide is empty.');
     if (/[\uF000\uF001]/.test(source)) throw new Error('This revision contains unsupported reserved characters.');
     const held = [];
@@ -80,6 +80,13 @@ function convertRevision(source, metadata, registry) {
         const title = decodeURIComponent(target.pathname.slice(3)).replace(/_/g, ' ');
         if (/^(?:User|User talk):/i.test(title)) throw new Error('A user-namespace link needs a reviewed export mapping.');
         return '[[' + title + '|' + label + ']]';
+    });
+    body = body.replace(/\[(https:\/\/img\.pvme\.io\/images\/[^\s\]]+)\s+([^\]]+)\]/g, (reference, url) => {
+        const bar = actionBars[url];
+        if (!bar || bar.guide !== metadata.title) return reference;
+        return reference + '\n\n' + "'''" + bar.label + ' — numbered source order' + "'''\n" +
+            bar.slots.map(name => '# ' + name).join('\n') + '\n\n' +
+            'Source image added ' + bar.sourceAdded + '; labels checked ' + bar.verified + '. Guide requirements are unchanged.\n';
     });
     let quoteDepth = 0;
     body = body.replace(/<\/?([a-z][\w-]*)\b[^>]*>/gi, (tag, rawName) => {
