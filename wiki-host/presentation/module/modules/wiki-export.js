@@ -2,7 +2,7 @@
 
 // Export the fetched published revision, never substitute a pinned corpus body.
 // Reuses the port's native headings/lists/tables and conservative link policy.
-function convertRevision(source, metadata, registry, actionBars = {}) {
+function convertRevision(source, metadata, registry, actionBars = {}, visualContent = {}) {
     if (typeof source !== 'string' || !source.trim()) throw new Error('The published guide is empty.');
     if (/[\uF000\uF001]/.test(source)) throw new Error('This revision contains unsupported reserved characters.');
     const held = [];
@@ -10,6 +10,9 @@ function convertRevision(source, metadata, registry, actionBars = {}) {
     const restore = text => text.replace(/\uF000(\d+)\uF001/g, (_, id) => held[Number(id)]);
     const plain = text => restore(text).replace(/<\/?nowiki>/g, '').replace(/'''|''/g, '').trim();
     let body = source.replace(/\r\n?/g, '\n').replace(/<nowiki>([\s\S]*?)<\/nowiki>/gi, match => hold(match));
+    const amascut = visualContent.guide === metadata.title ? visualContent : {};
+    // A current revision must still link this exact preset. Never add removed setups.
+    const sourcePresets = Object.entries(amascut.presets || {}).filter(([url]) => body.includes('[' + url + ' '));
     if (/\{\{|<!--/.test(body)) throw new Error('This revision contains templates or comments that need a reviewed export mapping. No partial guide was copied.');
     // Emit one contiguous native line per list item. Blank lines reset ordered
     // counters in MediaWiki, so paragraph/layout whitespace cannot leak here.
@@ -69,7 +72,7 @@ function convertRevision(source, metadata, registry, actionBars = {}) {
         return '[[' + rawTarget + (label === undefined ? '' : '|' + label) + ']]';
     });
     body = body.replace(/\[(https:\/\/cdn\.discordapp\.com\/emojis\/(\d+)\.[^\s\]]+)\s+([^\]]+)\]/g, (_, url, id, original) => {
-        const label = registry.labels[id];
+        const label = amascut.icons?.[url]?.label || registry.labels[id];
         // Exact existing factual map only; no guessed file names or image imports.
         const title = label && registry.wikiTitles?.[label];
         return title ? '[[' + title + '|' + label + ']]' : '[' + url + ' ' + (label || original) + ']';
@@ -118,6 +121,26 @@ function convertRevision(source, metadata, registry, actionBars = {}) {
     if (quoteDepth) throw new Error('This revision has unbalanced quotations. No partial guide was copied.');
     body = restore(body.replace(/\n[ \t]*\n(?:[ \t]*\n)+/g, '\n\n').replace(/^\n+/, '').trimEnd());
     if (!body) throw new Error('No guide body was produced.');
+    const visualGaps = [];
+    if (amascut.guide) {
+        visualGaps.push('Ability and preset artwork remains linked: destination File names and image/template mappings have not been verified.');
+        const literal = value => '<nowiki>' + String(value).replace(/<\/nowiki>/gi, '&lt;/nowiki&gt;') + '</nowiki>';
+        body += '\n\n== Portable visual references ==\n\n' +
+            'Ability identities, source sequence order, + groups, targeting, movement and click cues are retained in the guide above. ' +
+            'Artwork remains linked rather than using unverified destination File names or templates. No image import or official-wiki publication was performed.\n';
+        for (const [url, preset] of sourcePresets) {
+            body += '\n=== ' + preset.label + ' ===\n\n' +
+                '[' + url + ' Original preset and full source notes]\n\n' +
+                '[' + preset.image + ' Preset illustration: ' + preset.label + ']\n\n' +
+                'Illustration caption: ' + literal(preset.label) + '. Preset-maker selections and notes captured ' + preset.sourceCapture +
+                '; these supplemental source references are separate from the published guide revision above. Follow its requirements and qualifications.\n\n' +
+                "'''Equipment shown'''\n" + preset.equipment.map(item => '* ' + literal(item)).join('\n') + '\n\n' +
+                "'''Inventory: all 28 source positions, in source order'''\n" + preset.inventory.map(slot => '# ' + literal(slot.item)).join('\n') + '\n\n' +
+                "'''Other pictured selections'''\n" + preset.other.map(item => '* ' + literal(item)).join('\n') + '\n\n' +
+                "'''Alternatives, upgrades and source notes'''\n" + preset.notes.split('\n').filter(line => line.trim() && line.trim() !== 'Open on Wiki')
+                    .map(line => ': ' + literal(line)).join('\n') + '\n';
+        }
+    }
     const revisionUrl = new URL(metadata.revisionUrl);
     if ((revisionUrl.protocol !== 'https:' && !(revisionUrl.protocol === 'http:' && ['127.0.0.1', 'localhost'].includes(revisionUrl.hostname))) || revisionUrl.username || revisionUrl.password) throw new Error('A public revision permalink is required.');
     const header = "'''" + metadata.title.split('/').pop().replace(/'/g, '&#39;') + "'''\n\n" +
@@ -126,6 +149,6 @@ function convertRevision(source, metadata, registry, actionBars = {}) {
         'PvME contributors; [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]. ' +
         (metadata.source ? '[' + metadata.source + ' Original PvME source]. ' : '') +
         'Source history dates do not verify current-game accuracy.\n\n';
-    return { text: header + body + '\n', revisionId: metadata.revisionId, sourceLength: source.length, bodyLength: body.length };
+    return { text: header + body + '\n', revisionId: metadata.revisionId, sourceLength: source.length, bodyLength: body.length, visualGaps };
 }
 module.exports = { convertRevision };

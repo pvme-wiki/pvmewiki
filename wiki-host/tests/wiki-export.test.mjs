@@ -9,13 +9,14 @@ const { convertRevision } = context.module.exports;
 const registry = JSON.parse(fs.readFileSync(new URL('presentation/module/modules/navigation.json', root)));
 const manifest = JSON.parse(fs.readFileSync(new URL('corpus/manifest.json', root)));
 const actionBars = JSON.parse(fs.readFileSync(new URL('presentation/module/modules/action-bars.json', root)));
+const amascutAssets = JSON.parse(fs.readFileSync(new URL('presentation/module/modules/amascut-assets.json', root)));
 const meta = { title: 'PvME/Test/Guide', revisionId: 902, timestamp: '2026-11-15T18:00:00Z', source: 'https://pvme.io/', revisionUrl: 'https://example.org/index.php?oldid=902' };
 
 test('all 323 complete pinned guide bodies convert without HTML layout or lost prose', () => {
     let count = 0, literals = 0;
     for (const page of manifest.pages.filter(p => p.kind === 'guide')) {
         const source = fs.readFileSync(new URL('corpus/' + page.file, root), 'utf8');
-        const result = convertRevision(source, { ...meta, title: page.title }, registry, actionBars);
+        const result = convertRevision(source, { ...meta, title: page.title }, registry, actionBars, amascutAssets);
         assert.equal(result.sourceLength, source.length);
         assert(result.text.includes('revision 902'));
         assert(!/<\/?(?:html|body|div|p|h[1-6]|table|tr|td|th)\b/i.test(result.text), page.title);
@@ -39,6 +40,37 @@ test('community prose, native tables and exact fetched revision survive', () => 
     assert(result.text.includes('| 2 || Keep both choices'));
     assert(result.text.includes('[[#Setup|Back to setup]]'));
     assert.equal(result.revisionId, 902);
+});
+
+test('Amascut export carries portable identities, both illustrated preset references and complete source selections',()=>{
+    const page=manifest.pages.find(page=>page.title===amascutAssets.guide);
+    const source=fs.readFileSync(new URL('corpus/'+page.file,root),'utf8')+'\n<p>Community correction: changed starting cue remains authoritative.</p>';
+    const result=convertRevision(source,{...meta,title:page.title},registry,actionBars,amascutAssets);
+    assert(result.text.includes('Community correction: changed starting cue remains authoritative.'));
+    assert(result.text.includes('Meteor Strike'));
+    assert(result.text.includes('Adaptive Strike'));
+    assert(result.text.includes('click the Path of Tumeken'));
+    assert(result.text.includes("click Tumeken's light"));
+    assert(result.text.includes(' + '));assert(result.text.includes('→'));assert(result.text.includes('(tc)'));
+    for(const [url,preset] of Object.entries(amascutAssets.presets)){
+        assert(result.text.includes(url));assert(result.text.includes(preset.image));
+        assert(result.text.includes('=== '+preset.label+' ==='));
+        const section=result.text.split('=== '+preset.label+' ===')[1].split('\n=== ')[0];
+        assert.equal(section.split('\n').filter(line=>line.startsWith('# ')).length,28);
+        for(const item of preset.equipment)assert(section.includes(item));
+        for(const line of preset.notes.split('\n').filter(line=>line.trim()&&line.trim()!=='Open on Wiki'))assert(section.includes(line));
+    }
+    assert.equal(result.visualGaps.length,1);
+    assert(!result.text.includes('[[File:'));assert(!result.text.includes('{{'));
+    assert(!/pvme-climber|pvme-amascut|<script|<img|<iframe/.test(result.text));
+    assert(result.text.includes('CC BY-NC-SA 4.0'));
+});
+
+test('Amascut portable supplement never resurrects a preset removed by a community revision',()=>{
+    const result=convertRevision('<p>Community replacement: no presets prescribed.</p>',{...meta,title:amascutAssets.guide},registry,actionBars,amascutAssets);
+    for(const preset of Object.values(amascutAssets.presets))assert(!result.text.includes(preset.image));
+    assert(!result.text.includes('Stage 1'));
+    assert(result.text.includes('Community replacement: no presets prescribed.'));
 });
 
 test('unreviewed markup fails closed instead of copying a partial or pinned replacement', () => {

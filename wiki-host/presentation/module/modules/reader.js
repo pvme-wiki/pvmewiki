@@ -5,6 +5,7 @@ const { convertRevision } = require('./wiki-export.js');
 const { createVisualReader } = require('./visual-reader.js');
 const presets = require('./presets.json');
 const actionBars = require('./action-bars.json');
+const amascutAssets = require('./amascut-assets.json');
 function enhance() {
     if (mw.config.get('wgAction') !== 'view' || document.querySelector('.ve-active, .ve-activating')) return;
     const title = mw.config.get('wgPageName').replace(/_/g, ' ');
@@ -61,7 +62,7 @@ function enhance() {
                 if (published?.title !== title || !revision?.slots?.main || revision.slots.main.contentmodel !== 'wikitext') throw new Error('A complete published wikitext revision was not returned.');
                 const exported = convertRevision(revision.slots.main.content, { title, revisionId: revision.revid,
                     timestamp: revision.timestamp, source: page.source,
-                    revisionUrl: new URL(mw.util.getUrl(title, { oldid: revision.revid }), location.origin).href }, registry, actionBars);
+                    revisionUrl: new URL(mw.util.getUrl(title, { oldid: revision.revid }), location.origin).href }, registry, actionBars, amascutAssets);
                 fallback.value = exported.text;
                 manual.hidden = false;
                 try {
@@ -72,6 +73,7 @@ function enhance() {
                     manual.open = true; fallback.focus(); fallback.select();
                     status.textContent = 'Clipboard unavailable. Select and copy the complete published revision ' + revision.revid + ' below. Nothing was published.';
                 }
+                if (exported.visualGaps.length) status.textContent += ' Visual transfer: ' + exported.visualGaps.join(' ');
             } catch (error) {
                 status.textContent = 'Export stopped: ' + (error instanceof Error ? error.message : 'The published revision could not be read.') + ' No partial guide was copied.';
             } finally { copy.disabled = false; }
