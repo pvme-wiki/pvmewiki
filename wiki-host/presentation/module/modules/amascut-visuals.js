@@ -37,7 +37,7 @@ function enhanceAmascut(reader, title) {
         anchor.classList.add('pvme-ability-image');
         anchor.classList.remove('pvme-icon-fallback', 'pvme-visual-redundant-icon');
         anchor.dataset.pvmeLabel = asset.label;
-        anchor.setAttribute('aria-label', anchor.dataset.pvmeLabel + ' (source image)');
+        anchor.setAttribute('aria-label', anchor.dataset.pvmeLabel + ' (image)');
         // The existing, always-visible accessible label survives image failures.
         anchor.prepend(image);
     }
@@ -51,9 +51,9 @@ function enhanceAmascut(reader, title) {
         if (!fragments.length) continue;
         const panel = doc.createElement('section'); panel.className = 'pvme-climber-panel';
         const heading = doc.createElement('h4');
-        heading.textContent = style.match(/^(Necromancy|Melee)\b/)[1] + ' — climber sequence';
+        heading.textContent = style.match(/^(Necromancy|Melee)\b/)[1] + ' climber rotation';
         const hint = doc.createElement('p'); hint.className = 'pvme-sequence-key';
-        hint.textContent = 'Read numbered steps in order. + stays together in its source step; (tc), movement and click instructions are retained. Follow starting conditions in the current guide above.';
+        hint.textContent = 'Keep abilities joined by + in the same step. Use the starting conditions listed above.';
         const list = doc.createElement('ol'); list.className = 'pvme-climber-sequence'; list.setAttribute('role', 'list');
         fragments.forEach((fragment, index) => {
             const item = doc.createElement('li');
@@ -64,7 +64,7 @@ function enhanceAmascut(reader, title) {
             item.append(number, body); list.append(item);
         });
         const original = doc.createElement('details'), summary = doc.createElement('summary');
-        summary.textContent = 'Continuous source wording'; original.append(summary, node.cloneNode(true));
+        summary.textContent = 'Full rotation'; original.append(summary, node.cloneNode(true));
         panel.append(heading, hint, list, original); node.replaceWith(panel);
     }
     const presetInsertions = new Map();
@@ -77,34 +77,34 @@ function enhanceAmascut(reader, title) {
         image.alt = preset.alt; image.width = 944; image.height = 512;
         image.loading = 'lazy'; image.decoding = 'async'; image.referrerPolicy = 'no-referrer';
         const viewport = doc.createElement('div'); viewport.className = 'pvme-preset-image-viewport';
-        viewport.tabIndex = 0; viewport.setAttribute('aria-label', preset.label + ' image; enlarge to inspect slots');
+        viewport.tabIndex = 0; viewport.setAttribute('aria-label', preset.label + ' image');
         viewport.append(image);
-        const zoom = doc.createElement('button'); zoom.type = 'button'; zoom.textContent = 'Enlarge preset';
+        const zoom = doc.createElement('button'); zoom.type = 'button'; zoom.textContent = 'Enlarge image';
         zoom.setAttribute('aria-expanded', 'false');
         zoom.addEventListener('click', () => {
             const enlarged = viewport.classList.toggle('pvme-image-enlarged');
             zoom.setAttribute('aria-expanded', String(enlarged));
-            zoom.textContent = enlarged ? 'Fit preset to page' : 'Enlarge preset';
+            zoom.textContent = enlarged ? 'Fit to page' : 'Enlarge image';
         });
         const note = doc.createElement('p');
         const source = doc.createElement('a'); source.href = anchor.getAttribute('href');
-        source.textContent = 'Open original preset and full item notes';
-        note.append(source, doc.createTextNode('. Published PvME preset-maker image, checked ' + assets.checked + '. Enlarge and scroll to inspect; source requirements and alternatives still apply.'));
+        source.textContent = 'Preset and item notes';
+        note.append(source, doc.createTextNode('. Image checked ' + assets.checked + '.'));
         const failure = doc.createElement('p'); failure.hidden = true;
-        failure.textContent = 'Preset image could not load. Use the original preset link and its item notes.';
+        failure.textContent = 'Image unavailable. Open the preset for the item list.';
         image.addEventListener('error', () => { failure.hidden = false; }, { once: true });
         const loadout = doc.createElement('div'); loadout.className = 'pvme-amascut-loadout';
-        const equipmentHeading = doc.createElement('h5'); equipmentHeading.textContent = 'Equipment shown in the source preset';
+        const equipmentHeading = doc.createElement('h5'); equipmentHeading.textContent = 'Equipment';
         const equipment = doc.createElement('ul'); equipment.className = 'pvme-amascut-equipment';
         for (const name of preset.equipment) { const item = doc.createElement('li'); item.textContent = name; equipment.append(item); }
-        const other = doc.createElement('p'); other.textContent = 'Other pictured selections: ' + preset.other.join('; ') + '.';
+        const other = doc.createElement('p'); other.textContent = 'Other selections: ' + preset.other.join('; ') + '.';
         const inventory = doc.createElement('details'), inventoryLabel = doc.createElement('summary');
-        inventoryLabel.textContent = 'Inventory — all 28 source positions';
+        inventoryLabel.textContent = 'Inventory (28 slots)';
         const inventoryList = doc.createElement('ol');
         for (const slot of preset.inventory) { const item = doc.createElement('li'); item.textContent = slot.item; inventoryList.append(item); }
         inventory.append(inventoryLabel, inventoryList);
         const notes = doc.createElement('details'), notesLabel = doc.createElement('summary'), notesBody = doc.createElement('div');
-        notesLabel.textContent = 'Alternatives, upgrades and source notes'; notesBody.className = 'pvme-preset-full-notes';
+        notesLabel.textContent = 'Alternatives and notes'; notesBody.className = 'pvme-preset-full-notes';
         notesBody.textContent = preset.notes.split('\n').filter(line => line.trim() !== 'Open on Wiki').join('\n');
         notes.append(notesLabel, notesBody);
         loadout.append(equipmentHeading, equipment, other, inventory, notes);

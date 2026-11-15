@@ -13,7 +13,7 @@ function convertRevision(source, metadata, registry, actionBars = {}, visualCont
     const amascut = visualContent.guide === metadata.title ? visualContent : {};
     // A current revision must still link this exact preset. Never add removed setups.
     const sourcePresets = Object.entries(amascut.presets || {}).filter(([url]) => body.includes('[' + url + ' '));
-    if (/\{\{|<!--/.test(body)) throw new Error('This revision contains templates or comments that need a reviewed export mapping. No partial guide was copied.');
+    if (/\{\{|<!--/.test(body)) throw new Error('Templates or comments must be converted before this page can be copied.');
     // Emit one contiguous native line per list item. Blank lines reset ordered
     // counters in MediaWiki, so paragraph/layout whitespace cannot leak here.
     const root = { tag: 'root', children: [] }, stack = [root];
@@ -22,10 +22,10 @@ function convertRevision(source, metadata, registry, actionBars = {}, visualCont
         if (!tag) { stack.at(-1).children.push(token); continue; }
         const name = tag[2].toLowerCase();
         if (tag[1]) {
-            if (stack.at(-1).tag !== name) throw new Error('Unbalanced list markup. No partial guide was copied.');
+            if (stack.at(-1).tag !== name) throw new Error('Unbalanced list markup.');
             stack.pop();
         } else {
-            if (/\b(?:start|type|reversed|value)\b/i.test(tag[3])) throw new Error('Custom list numbering needs a reviewed export mapping. No partial guide was copied.');
+            if (/\b(?:start|type|reversed|value)\b/i.test(tag[3])) throw new Error('Custom list numbering cannot be copied yet.');
             const parent = stack.at(-1).tag;
             if ((name === 'li' && !['ol', 'ul'].includes(parent)) || (name !== 'li' && ['ol', 'ul'].includes(parent))) throw new Error('Malformed list structure.');
             const node = { tag: name, children: [] }; stack.at(-1).children.push(node); stack.push(node);
@@ -68,7 +68,7 @@ function convertRevision(source, metadata, registry, actionBars = {}, visualCont
             // Other guides are not assumed to exist on the official wiki.
             return page?.source ? '[' + page.source + (fragment ? '#' + encodeURIComponent(fragment) : '') + ' ' + display + ']' : display;
         }
-        if (/^(?:User|User talk):/i.test(target)) throw new Error('A user-namespace link needs a reviewed export mapping. No partial guide was copied.');
+        if (/^(?:User|User talk):/i.test(target)) throw new Error('User-page links cannot be copied yet.');
         return '[[' + rawTarget + (label === undefined ? '' : '|' + label) + ']]';
     });
     body = body.replace(/\[(https:\/\/cdn\.discordapp\.com\/emojis\/(\d+)\.[^\s\]]+)\s+([^\]]+)\]/g, (_, url, id, original) => {
@@ -81,15 +81,15 @@ function convertRevision(source, metadata, registry, actionBars = {}, visualCont
         const target = new URL(url);
         if (target.search || target.hash) return '[' + url + ' ' + label + ']';
         const title = decodeURIComponent(target.pathname.slice(3)).replace(/_/g, ' ');
-        if (/^(?:User|User talk):/i.test(title)) throw new Error('A user-namespace link needs a reviewed export mapping.');
+        if (/^(?:User|User talk):/i.test(title)) throw new Error('User-page links cannot be copied yet.');
         return '[[' + title + '|' + label + ']]';
     });
     body = body.replace(/\[(https:\/\/img\.pvme\.io\/images\/[^\s\]]+)\s+([^\]]+)\]/g, (reference, url) => {
         const bar = actionBars[url];
         if (!bar || bar.guide !== metadata.title) return reference;
-        return reference + '\n\n' + "'''" + bar.label + ' — numbered source order' + "'''\n" +
+        return reference + '\n\n' + "'''" + bar.label + "'''\n" +
             bar.slots.map(name => '# ' + name).join('\n') + '\n\n' +
-            'Source image added ' + bar.sourceAdded + '; labels checked ' + bar.verified + '. Guide requirements are unchanged.\n';
+            'Source image added ' + bar.sourceAdded + '; labels checked ' + bar.verified + '.\n';
     });
     let quoteDepth = 0;
     body = body.replace(/<\/?([a-z][\w-]*)\b[^>]*>/gi, (tag, rawName) => {
@@ -116,39 +116,36 @@ function convertRevision(source, metadata, registry, actionBars = {}, visualCont
             return close ? '\n' : '\n' + (name === 'th' ? '!' : '|') + ' ' + (attrs ? attrs + ' | ' : '');
         }
         if (name === 'caption') return close ? '\n' : '\n|+ ';
-        throw new Error('Unsupported published markup <' + name + '>. No partial guide was copied.');
+        throw new Error('Unsupported published markup <' + name + '>.');
     });
-    if (quoteDepth) throw new Error('This revision has unbalanced quotations. No partial guide was copied.');
+    if (quoteDepth) throw new Error('This revision has unbalanced quotations.');
     body = restore(body.replace(/\n[ \t]*\n(?:[ \t]*\n)+/g, '\n\n').replace(/^\n+/, '').trimEnd());
     if (!body) throw new Error('No guide body was produced.');
     const visualGaps = [];
     if (amascut.guide) {
-        visualGaps.push('Ability and preset artwork remains linked: destination File names and image/template mappings have not been verified.');
+        visualGaps.push('Images remain linked. RuneScape Wiki file names have not been checked.');
         const literal = value => '<nowiki>' + String(value).replace(/<\/nowiki>/gi, '&lt;/nowiki&gt;') + '</nowiki>';
-        body += '\n\n== Portable visual references ==\n\n' +
-            'Ability identities, source sequence order, + groups, targeting, movement and click cues are retained in the guide above. ' +
-            'Artwork remains linked rather than using unverified destination File names or templates. No image import or official-wiki publication was performed.\n';
+        body += '\n\n== Preset references ==\n\n' +
+            'Images are linked below; RuneScape Wiki file names have not been checked.\n';
         for (const [url, preset] of sourcePresets) {
             body += '\n=== ' + preset.label + ' ===\n\n' +
-                '[' + url + ' Original preset and full source notes]\n\n' +
-                '[' + preset.image + ' Preset illustration: ' + preset.label + ']\n\n' +
-                'Illustration caption: ' + literal(preset.label) + '. Preset-maker selections and notes captured ' + preset.sourceCapture +
-                '; these supplemental source references are separate from the published guide revision above. Follow its requirements and qualifications.\n\n' +
+                '[' + url + ' Preset and notes]\n\n' +
+                '[' + preset.image + ' ' + preset.label + ' image]\n\n' +
+                'Preset captured ' + preset.sourceCapture + '; it may differ from the current guide.\n\n' +
                 "'''Equipment shown'''\n" + preset.equipment.map(item => '* ' + literal(item)).join('\n') + '\n\n' +
-                "'''Inventory: all 28 source positions, in source order'''\n" + preset.inventory.map(slot => '# ' + literal(slot.item)).join('\n') + '\n\n' +
+                "'''Inventory (28 slots, in source order)'''\n" + preset.inventory.map(slot => '# ' + literal(slot.item)).join('\n') + '\n\n' +
                 "'''Other pictured selections'''\n" + preset.other.map(item => '* ' + literal(item)).join('\n') + '\n\n' +
-                "'''Alternatives, upgrades and source notes'''\n" + preset.notes.split('\n').filter(line => line.trim() && line.trim() !== 'Open on Wiki')
+                "'''Alternatives and notes'''\n" + preset.notes.split('\n').filter(line => line.trim() && line.trim() !== 'Open on Wiki')
                     .map(line => ': ' + literal(line)).join('\n') + '\n';
         }
     }
     const revisionUrl = new URL(metadata.revisionUrl);
     if ((revisionUrl.protocol !== 'https:' && !(revisionUrl.protocol === 'http:' && ['127.0.0.1', 'localhost'].includes(revisionUrl.hostname))) || revisionUrl.username || revisionUrl.password) throw new Error('A public revision permalink is required.');
-    const header = "'''" + metadata.title.split('/').pop().replace(/'/g, '&#39;') + "'''\n\n" +
-        'Export of [' + revisionUrl.href + ' published standalone-wiki revision ' + metadata.revisionId + '] (' + metadata.timestamp + '). ' +
-        'This includes that revision\'s community edits; it is not a replacement from the pinned seed.\n\n' +
+    const heading = "'''" + metadata.title.split('/').pop().replace(/'/g, '&#39;') + "'''\n\n";
+    const attribution = '\n\n== Source ==\n\n' +
+        'Copied from [' + revisionUrl.href + ' revision ' + metadata.revisionId + '] (' + metadata.timestamp + ').\n\n' +
         'PvME contributors; [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]. ' +
-        (metadata.source ? '[' + metadata.source + ' Original PvME source]. ' : '') +
-        'Source history dates do not verify current-game accuracy.\n\n';
-    return { text: header + body + '\n', revisionId: metadata.revisionId, sourceLength: source.length, bodyLength: body.length, visualGaps };
+        (metadata.source ? '[' + metadata.source + ' Original PvME guide].' : '');
+    return { text: heading + body + attribution + '\n', revisionId: metadata.revisionId, sourceLength: source.length, bodyLength: body.length, visualGaps };
 }
 module.exports = { convertRevision };

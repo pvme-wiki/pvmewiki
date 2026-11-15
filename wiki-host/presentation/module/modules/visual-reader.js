@@ -14,7 +14,7 @@ function createVisualReader(article, title, presets, actionBars = {}) {
     reader.classList.add('pvme-visual-content');
     reader.id = 'pvme-visual-reader';
     reader.setAttribute('role', 'article');
-    reader.setAttribute('aria-label', 'Visual guide reader');
+    reader.setAttribute('aria-label', 'Guide');
     for (const icon of reader.querySelectorAll('a.pvme-icon-fallback')) {
         let previous = icon.previousSibling;
         while (previous?.nodeType === 3 && !previous.textContent.trim()) previous = previous.previousSibling;
@@ -59,7 +59,7 @@ function createVisualReader(article, title, presets, actionBars = {}) {
         const after = doc.createRange(); after.selectNodeContents(paragraph); after.setStartAfter(code);
         if (!/^[\s\u200b-\u200f\u2b25\u2b29\u2022]*$/.test(before.toString()) || !/^\s*:/.test(after.toString())) continue;
         const table = doc.createElement('table'); table.className = 'pvme-visual-cue';
-        const caption = doc.createElement('caption'); caption.textContent = 'Cue and response - source wording';
+        const caption = doc.createElement('caption'); caption.textContent = 'Attack and response';
         const row = doc.createElement('tr'), cue = doc.createElement('th'), response = doc.createElement('td');
         cue.scope = 'row'; cue.append(before.cloneContents(), code.cloneNode(true)); response.append(after.cloneContents());
         row.append(cue, response); table.append(caption, row); paragraph.replaceWith(table);
@@ -73,36 +73,35 @@ function createVisualReader(article, title, presets, actionBars = {}) {
         const bar = actionBars[anchor.getAttribute('href')];
         if (!bar || bar.guide !== title) continue;
         const panel = doc.createElement('section'); panel.className = 'pvme-action-bar-panel';
-        panel.setAttribute('aria-label', bar.label + ' numbered source order');
-        const heading = doc.createElement('h4'); heading.textContent = bar.label + ' - source order 1–9';
+        panel.setAttribute('aria-label', bar.label);
+        const heading = doc.createElement('h4'); heading.textContent = bar.label;
         const list = doc.createElement('ol'); list.className = 'pvme-action-bar';
         for (const [index, name] of bar.slots.entries()) {
             const slot = doc.createElement('li');
             const number = doc.createElement('span'); number.className = 'pvme-action-number';
             number.textContent = String(index + 1); number.setAttribute('aria-hidden', 'true');
             const label = doc.createElement('strong'); label.textContent = name;
-            slot.setAttribute('aria-label', 'Source slot ' + (index + 1) + ': ' + name);
+            slot.setAttribute('aria-label', 'Slot ' + (index + 1) + ': ' + name);
             slot.append(number, label); list.append(slot);
         }
         const date = doc.createElement('p'); date.className = 'pvme-reader-provenance';
-        date.textContent = 'Numbered left-to-right order from the source image added ' + bar.sourceAdded + '. Labels checked ' + bar.verified + '. Guide requirements are unchanged.';
+        date.textContent = 'Source image added ' + bar.sourceAdded + '. Labels checked ' + bar.verified + '.';
         panel.append(heading, list, date); anchor.closest('p')?.after(panel);
     }
     for (const anchor of reader.querySelectorAll('a[href]')) {
         const preset = presets[anchor.getAttribute('href')];
         if (!preset || preset.guide !== title) continue;
         const panel = doc.createElement('section'); panel.className = 'pvme-preset-panel';
-        const heading = doc.createElement('h4'); heading.textContent = preset.name + ' - linked preset'; panel.append(heading);
+        const heading = doc.createElement('h4'); heading.textContent = preset.name; panel.append(heading);
         const provenance = doc.createElement('p');
-        provenance.textContent = 'Source preset captured ' + preset.captured + '. Labels and positions come from that preset; tiles reflow on phones. Follow the guide requirements and notes below.';
-        panel.append(provenance);
+        provenance.textContent = 'Preset captured ' + preset.captured + '. Rows and columns refer to the source image.';
         for (const kind of ['equipment', 'inventory']) {
             const slots = preset.slots.filter(slot => slot.kind === kind);
             const xs = [...new Set(slots.map(slot => slot.x))].sort((a, b) => a - b);
             const ys = [...new Set(slots.map(slot => slot.y))].sort((a, b) => a - b);
             const name = doc.createElement('h5'); name.textContent = kind === 'equipment' ? 'Equipment' : 'Inventory'; panel.append(name);
             const grid = doc.createElement('ol'); grid.className = 'pvme-preset-grid pvme-preset-' + kind;
-            grid.setAttribute('aria-label', name.textContent + ' source positions');
+            grid.setAttribute('aria-label', name.textContent + ' slots');
             for (const slot of slots) {
                 const cell = doc.createElement('li');
                 const position = doc.createElement('small'); position.textContent = 'R' + (ys.indexOf(slot.y) + 1) + ' C' + (xs.indexOf(slot.x) + 1);
@@ -118,11 +117,12 @@ function createVisualReader(article, title, presets, actionBars = {}) {
             }
             if (kind === 'inventory') {
                 const inventory = doc.createElement('details'), summary = doc.createElement('summary');
-                summary.textContent = 'Inventory - ' + slots.filter(slot => slot.item).length + ' filled source positions';
+                summary.textContent = 'Inventory (' + slots.filter(slot => slot.item).length + ' items)';
                 inventory.append(summary, grid, itemNotes); panel.append(inventory);
             } else panel.append(grid, itemNotes);
         }
         for (const note of preset.notes.filter(note => note.item === null)) { const p = doc.createElement('p'); p.textContent = note.text; panel.append(p); }
+        panel.append(provenance);
         anchor.closest('p')?.after(panel);
     }
     enhanceAmascut(reader, title);

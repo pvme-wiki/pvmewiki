@@ -44,39 +44,39 @@ function enhance() {
         edit.href = nativeEdit.href;
         actions.append(edit);
     }
-    const historyLink = link(title, 'Page history');
+    const historyLink = link(title, 'History');
     historyLink.href = mw.util.getUrl(title, { action: 'history' });
     actions.append(historyLink);
     tools.append(actions);
+    let sourceFooter;
     if (page.source) {
         const sourceDetails = element('details', '', 'pvme-reader-source');
-        sourceDetails.append(element('summary', 'Source, licence & export'));
+        sourceDetails.append(element('summary', 'Source and export'));
         const provenance = element('p', 'PvME contributors. CC BY-NC-SA 4.0. ', 'pvme-reader-provenance');
         const source = element('a', 'Original guide'); source.href = page.source;
-        provenance.append(source, document.createTextNode(' | Snapshot: ' + page.retrieved + '. '));
-        if (page.date) provenance.append(document.createTextNode('Pinned upstream content change: ' + page.date + '. '));
-        provenance.append(document.createTextNode('Source dates are not a current-game accuracy review.'));
-        if (page.historyUrl) { const history = element('a', ' View source change'); history.href = page.historyUrl; provenance.append(history); }
+        provenance.append(source, document.createTextNode(' | Imported ' + page.retrieved + '. '));
+        if (page.date) provenance.append(document.createTextNode('Last source edit: ' + page.date + '. '));
+        if (page.historyUrl) { const history = element('a', 'Source revision'); history.href = page.historyUrl; provenance.append(history); }
         sourceDetails.append(provenance);
         const exportArea = element('div', '', 'pvme-reader-export');
         const copy = element('button', 'Copy for RuneScape Wiki');
         copy.type = 'button';
-        const status = element('p', 'Copies the complete latest published revision as wikitext, including community edits. Does not publish anywhere.', 'pvme-reader-provenance');
+        const status = element('p', 'Copy the latest published revision as wikitext.', 'pvme-reader-provenance');
         status.setAttribute('role', 'status'); status.setAttribute('aria-live', 'polite');
         const fallback = element('textarea');
         fallback.readOnly = true;
-        fallback.setAttribute('aria-label', 'Complete RuneScape Wiki wikitext export');
+        fallback.setAttribute('aria-label', 'RuneScape Wiki wikitext');
         const manual = element('details'); manual.hidden = true;
-        manual.append(element('summary', 'Show complete export / copy manually'), fallback);
+        manual.append(element('summary', 'Copy manually'), fallback);
         copy.addEventListener('click', async () => {
             copy.disabled = true; manual.hidden = true; manual.open = false; fallback.value = '';
-            status.textContent = 'Reading the complete published guide revision...';
+            status.textContent = 'Loading wikitext...';
             try {
                 const result = await new mw.Api().get({ action: 'query', prop: 'revisions', titles: title,
                     rvprop: 'ids|timestamp|content', rvslots: 'main', formatversion: 2 });
                 const published = result.query?.pages?.[0];
                 const revision = published?.revisions?.[0];
-                if (published?.title !== title || !revision?.slots?.main || revision.slots.main.contentmodel !== 'wikitext') throw new Error('A complete published wikitext revision was not returned.');
+                if (published?.title !== title || !revision?.slots?.main || revision.slots.main.contentmodel !== 'wikitext') throw new Error('Could not load the published wikitext.');
                 const exported = convertRevision(revision.slots.main.content, { title, revisionId: revision.revid,
                     timestamp: revision.timestamp, source: page.source,
                     revisionUrl: new URL(mw.util.getUrl(title, { oldid: revision.revid }), location.origin).href }, registry, actionBars, amascutAssets);
@@ -85,26 +85,26 @@ function enhance() {
                 try {
                     if (!navigator.clipboard?.writeText) throw new Error('Clipboard unavailable');
                     await navigator.clipboard.writeText(exported.text);
-                    status.textContent = 'Copied the complete published revision ' + revision.revid + ' (' + revision.timestamp + ') for RuneScape Wiki. Nothing was published.';
+                    status.textContent = 'Copied revision ' + revision.revid + ' for RuneScape Wiki.';
                 } catch (_) {
                     manual.open = true; fallback.focus(); fallback.select();
-                    status.textContent = 'Clipboard unavailable. Select and copy the complete published revision ' + revision.revid + ' below. Nothing was published.';
+                    status.textContent = 'Clipboard unavailable. Copy revision ' + revision.revid + ' from the box below.';
                 }
-                if (exported.visualGaps.length) status.textContent += ' Visual transfer: ' + exported.visualGaps.join(' ');
+                if (exported.visualGaps.length) status.textContent += ' ' + exported.visualGaps.join(' ');
             } catch (error) {
-                status.textContent = 'Export stopped: ' + (error instanceof Error ? error.message : 'The published revision could not be read.') + ' No partial guide was copied.';
+                status.textContent = 'Copy failed. ' + (error instanceof Error ? error.message : 'Could not load the published wikitext.');
             } finally { copy.disabled = false; }
         });
         exportArea.append(copy, status, manual); sourceDetails.append(exportArea);
-        tools.append(sourceDetails);
-    }
-    if (title === 'PvME/Barrows') {
-        tools.append(element('p', 'Encounter portrait: Ahrim the Blighted (normal Barrows). Image omitted pending independent-use permission.', 'pvme-reader-provenance'));
+        sourceFooter = element('aside', '', 'pvme-reader-tools');
+        sourceFooter.setAttribute('aria-label', 'Source and export');
+        sourceFooter.append(sourceDetails);
+        content.after(sourceFooter);
     }
     const headings = Array.from(article.querySelectorAll('h2,h3')).filter(h => h.id || h.querySelector('[id]'));
     if (headings.length) {
         const jumps = element('details', '', 'pvme-reader-jumps');
-        jumps.append(element('summary', 'Jump to a section'));
+        jumps.append(element('summary', 'Contents'));
         const list = element('ul');
         for (const heading of headings) {
             const anchor = heading.id || heading.querySelector('[id]').id;
@@ -116,24 +116,24 @@ function enhance() {
     if (page.children.length) {
         const directory = element('details', '', 'pvme-reader-directory');
         directory.open = page.children.length <= 12;
-        directory.append(element('summary', 'Browse ' + page.children.length + ' guides and indexes'));
-        const label = element('label', 'Filter these ' + page.children.length + ' guides and indexes');
+        directory.append(element('summary', 'Pages (' + page.children.length + ')'));
+        const label = element('label', 'Search guides');
         const filter = element('input'); filter.type = 'search'; filter.id = 'pvme-guide-filter';
-        filter.placeholder = 'Search within this index';
+        filter.placeholder = 'Page title';
         filter.setAttribute('aria-controls', 'pvme-guide-grid');
         filter.setAttribute('aria-describedby', 'pvme-guide-count');
         label.htmlFor = filter.id; directory.append(label, filter);
         const grid = element('div', '', 'pvme-reader-grid');
         grid.id = 'pvme-guide-grid';
         for (const child of page.children) grid.append(link(child, child.split('/').pop()));
-        const count = element('p', page.children.length + ' entries', 'pvme-reader-provenance');
+        const count = element('p', page.children.length + ' pages', 'pvme-reader-provenance');
         count.id = 'pvme-guide-count';
         count.setAttribute('role', 'status');
         count.setAttribute('aria-atomic', 'true');
         filter.addEventListener('input', () => {
             const query = filter.value.trim().toLocaleLowerCase(); let visible = 0;
             for (const card of grid.children) { card.hidden = !card.textContent.toLocaleLowerCase().includes(query); if (!card.hidden) visible++; }
-            count.textContent = visible ? visible + ' of ' + page.children.length + ' entries' : 'No matching guides. Try a different search.';
+            count.textContent = visible ? visible + ' of ' + page.children.length + ' pages' : 'No matching pages.';
         });
         directory.append(count, grid);
         tools.append(directory);
@@ -159,23 +159,23 @@ function enhance() {
         if (match) {
             anchor.classList.add('pvme-icon-fallback');
             const label = registry.labels[match[1]];
-            if (label) { anchor.title = label; anchor.dataset.pvmeLabel = label; anchor.setAttribute('aria-label', label + ' (source icon link)'); }
+            if (label) { anchor.title = label; anchor.dataset.pvmeLabel = label; anchor.setAttribute('aria-label', label + ' (icon)'); }
         } else if (/^https:\/\/(?:img\.pvme\.io|cdn\.discordapp\.com\/attachments\/)/.test(anchor.href) && /^(?:Guide illustration|Image|Video reference)$/i.test(anchor.textContent.trim())) {
             const headingsBefore = Array.from(article.querySelectorAll('h2,h3,h4')).filter(h => h.compareDocumentPosition(anchor) & Node.DOCUMENT_POSITION_FOLLOWING);
             const context = headingsBefore.at(-1)?.textContent.trim() || title.split('/').pop();
             anchor.classList.add('pvme-reader-illustration');
-            anchor.dataset.pvmeLabel = context + ' - source illustration';
-            anchor.setAttribute('aria-label', anchor.dataset.pvmeLabel + ' (external reference; not embedded)');
+            anchor.dataset.pvmeLabel = context + ' - image';
+            anchor.setAttribute('aria-label', anchor.dataset.pvmeLabel + ' (external link)');
         }
     }
     if (page.source) {
         const { reader, anchors } = createVisualReader(article, title, presets, actionBars);
         content.before(reader);
-        const toggle = element('button', 'Show original wiki view', 'pvme-reader-toggle'); toggle.type = 'button';
+        const toggle = element('button', 'Show wiki view', 'pvme-reader-toggle'); toggle.type = 'button';
         toggle.setAttribute('aria-pressed', 'false');
         toggle.addEventListener('click', () => {
             const visual = document.body.classList.toggle('pvme-visual-mode');
-            toggle.textContent = visual ? 'Show original wiki view' : 'Show visual reader';
+            toggle.textContent = visual ? 'Show wiki view' : 'Show guide view';
             toggle.setAttribute('aria-pressed', String(!visual));
         });
         toggle.setAttribute('aria-controls', 'pvme-visual-reader mw-content-text');
@@ -202,12 +202,12 @@ function enhance() {
         function retireReader() {
             if (retired) return; retired = true;
             document.body.classList.remove('pvme-visual-mode');
-            reader.remove(); tools.remove();
+            reader.remove(); tools.remove(); sourceFooter?.remove();
             document.removeEventListener('click', fragmentClick);
             editorObserver.disconnect(); contentObserver.disconnect();
-            const notice = element('p', 'Guide view updated. ', 'pvme-reader-provenance');
+            const notice = element('p', '', 'pvme-reader-provenance');
             notice.id = 'pvme-reader-update-notice';
-            notice.append(link(title, 'Reload the guide for its current visual reader and export controls.'));
+            notice.append(link(title, 'Reload page'));
             content.before(notice);
         }
         const editorObserver = new MutationObserver(() => { if (document.querySelector('.ve-active, .ve-activating')) retireReader(); });
