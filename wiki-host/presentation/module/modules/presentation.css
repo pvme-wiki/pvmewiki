@@ -579,3 +579,4 @@ body:not(.pvme-visual-mode) #pvme-visual-reader,
 .pvme-amascut-loadout details{margin-top:.75rem}.pvme-preset-full-notes{white-space:pre-line;font-size:.95rem;padding:.5rem 0}
 @media(max-width:850px){.pvme-preset-comparison{grid-template-columns:1fr}}
 @media(max-width:600px){.pvme-climber-panel,.pvme-amascut-preset{padding:.7rem}.pvme-climber-sequence{grid-template-columns:repeat(2,minmax(0,1fr))}.pvme-climber-sequence .pvme-ability-image{flex-wrap:wrap}.pvme-climber-sequence .pvme-ability-image img{width:36px;height:36px}.pvme-climber-sequence .pvme-sequence-group{grid-column:1/-1}}
+@media(max-width:360px){.pvme-climber-sequence{grid-template-columns:1fr}}
