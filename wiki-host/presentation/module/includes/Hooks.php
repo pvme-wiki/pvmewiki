@@ -23,9 +23,10 @@ final class Hooks {
         // Vector otherwise emits a fixed 1120px viewport on this installation.
         // Keep browser zoom available and let the skin's responsive layout work.
         $out->addMeta('viewport', 'width=device-width, initial-scale=1');
-        $out->addModuleStyles(['ext.pvmePresentation.styles']);
+        // New module names also invalidate pre-release browser stylesheet caches.
+        $out->addModuleStyles(['ext.pvmePresentation.styles.v2']);
         if ($out->getContext()->getActionName() === 'view') {
-            $out->addModules(['ext.pvmePresentation.reader']);
+            $out->addModules(['ext.pvmePresentation.reader.v2']);
         }
         if ($key !== 'PvME' && $out->getContext()->getActionName() === 'view') {
             $browserTitle = $out->getHTMLTitle();

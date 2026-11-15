@@ -1,6 +1,6 @@
 {
   "name": "PvmePresentation",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "PvME Wiki contributors",
   "url": "https://github.com/pvme-wiki/pvme",
   "description": "Scoped presentation styles for the standalone PvME guide corpus.",
@@ -20,7 +20,7 @@
     "remoteExtPath": "PvmePresentation"
   },
   "ResourceModules": {
-    "ext.pvmePresentation.reader": {
+    "ext.pvmePresentation.reader.v2": {
       "packageFiles": [
         "modules/reader.js",
         "modules/navigation.json",
@@ -36,7 +36,7 @@
         "mediawiki.api"
       ]
     },
-    "ext.pvmePresentation.styles": {
+    "ext.pvmePresentation.styles.v2": {
       "styles": [
         "modules/presentation.css",
         "modules/amascut-pictures.css"
