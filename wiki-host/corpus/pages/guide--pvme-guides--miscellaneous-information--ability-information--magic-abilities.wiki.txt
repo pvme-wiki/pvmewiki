@@ -1,0 +1,1997 @@
+[[PvME|PvME guide index]]
+
+<h2 id="introduction"><ins><nowiki>Introduction</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><em><nowiki>Note: Use the </nowiki><ins><strong><nowiki>Table of Contents</nowiki></strong></ins><nowiki> in this page’s contents navigation to find the information you are looking for.</nowiki></em></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Some general notes:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The game runs on an internal tick system: </nowiki><strong><nowiki>1t (tick) = 0.6s (seconds)</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The minimum time between abilities is called the global cooldown: </nowiki><strong><nowiki>1 gcd = 3t = 1.8s</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Debuff spells like Vuln </nowiki>[https://cdn.discordapp.com/emojis/537349530551582720.png?v=1 <nowiki>Vuln</nowiki>]<nowiki> or Enfeeble </nowiki>[https://cdn.discordapp.com/emojis/567727986409734145.png?v=1 <nowiki>Enfeeble</nowiki>]<nowiki> or Smoke Cloud </nowiki>[https://cdn.discordapp.com/emojis/856635090641879050.png?v=1 <nowiki>smokecloud</nowiki>]<nowiki> do not give adrenaline.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Some useful sheets and resources are given below.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+
+
+</nowiki><div><div><div><u><nowiki>Ability Damage Maths</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>To calculate your ability hit damage in detail, </nowiki>[https://tools.runescape.wiki/rs-rot/magic <nowiki>click here</nowiki>]<nowiki>.
+This is affected by factors such as your gear and other boosts.
+</nowiki></div>
+</div>
+<div><div><u><nowiki>Ability Hit Timings</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>To see detailed breakdowns on ability hit timings, </nowiki>[https://docs.google.com/spreadsheets/d/1rK7u17JN6I-vf3dKBKg6tm9IPWje9EWSe_r8KPdsxoc/edit?usp=sharing <nowiki>click here</nowiki>]<nowiki>.
+This refers to when hitsplats appear on your target.
+</nowiki></div>
+</div>
+<div><div><u><nowiki>Auto-attack Adren Gain</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>To see adrenaline gained with different auto attacks, </nowiki>[https://runescape.wiki/w/Invigorating <nowiki>click here</nowiki>]<nowiki>.
+</nowiki></div>
+</div>
+</div>
+<nowiki>
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><em><nowiki>Note: If you have any difficulties in using the tools or understanding what the information means, you can always ask in </nowiki>[https://discord.com/channels/534508796639182860/656898197561802760 <nowiki>PvM help (external Discord)</nowiki>]</em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="magic"><ins><nowiki>Magic </nowiki>[https://cdn.discordapp.com/emojis/689504724159823906.png?v=1 <nowiki>Magic</nowiki>]</ins></h2>
+<nowiki>
+</nowiki><p><nowiki>This section covers auto attacks and spells, basic abilities, enhanced abilities, ultimate abilities, utility abilities and special attacks for Magic.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="autos-and-spells"><nowiki>Autos and Spells</nowiki></h3>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-barrages"><u><nowiki>Barrages</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537338981747261446.png?v=1 <nowiki>bloodbarrage</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ It is an AoE:
+    • 3x3 AoE
+    • Secondary targets take reduced damage (0.7x)
+⬥ Each element has different effects when cast:
+    • Smoke: Enemy hit chance reduced by 5% for 16t (9.6s)
+    • Shadow: Enemy damage reduced by 5% for 16t (9.6s)
+    • Blood: Heals you for 5% of damage dealt
+    • Ice: Enemy is bound for 16t (9.6s)
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-blitzes"><u><nowiki>Blitzes</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535616247807868938.png?v=1 <nowiki>bloodblitz</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Single target version of Barrages
+⬥ Effects last for 12t (7.2s)
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-vulnerability"><u><nowiki>Vulnerability</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537349530551582720.png?v=1 <nowiki>Vuln</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Increases damage dealt by 10%
+⬥ Lasts 60s
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-incitefear"><u><nowiki>Incite Fear</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/856635090783567902.png?v=1 <nowiki>incitefear</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Every ability cast applies a stack:
+    • Caps at 5 stacks, and at max stacks uses no runes on ability casts
+    • Stacks are lost after 20s, refreshed upon applying another stack
+    • Each stack reduces Tsunami's </nowiki>[https://cdn.discordapp.com/emojis/535533809995874304.png?v=1 <nowiki>tsunami</nowiki>]<nowiki> cast cost by -12% adrenaline
+⬥ Frost Surge:
+    • At 5 stacks, ability casts trigger Frost Surge; deals 10-50% ability damage
+    • Triggering it costs runes even at max stacks
+    • Frost Surge is a 5x5 AoE around your primary target which hits up to 8 extra targets in range for 10-50% ability damage each
+    • Frost Surge has a 12s cooldown, after an ability cast can trigger it again
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-exsanguinate"><u><nowiki>Exsanguinate</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/856635090745950258.png?v=1 <nowiki>exsanguinate</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Every ability cast applies a stack:
+    • Caps at 12 stacks, and at max stacks uses no runes on ability casts
+    • Stacks are lost after 20s, refreshed upon applying another stack
+    • Each stack increases basic ability damage by +1%
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-smokecloud"><u><nowiki>Smoke Cloud</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/856635090641879050.png?v=1 <nowiki>smokecloud</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Increases damage dealt with critical hits by 15% for Magic, 6% otherwise
+⬥ Lasts 120s
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-animatedead"><u><nowiki>Animate Dead</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/856635090453135382.png?v=1 <nowiki>animatedead</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Applies a flat damage reduction:
+    • Reduction based on 10% of equipped magic tank gear's armour + 25% of your current Defence </nowiki>[https://cdn.discordapp.com/emojis/689509250979987525.png?v=1 <nowiki>Defence</nowiki>]<nowiki> level after any buffs or debuffs
+    • Damage reduced cannot exceed 60% of the damage taken
+    • 60% cap is based off the damage after all other damage reductions such as deflect prayers (</nowiki>[https://cdn.discordapp.com/emojis/544195488447201300.png?v=1 <nowiki>DeflectMelee</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/544195488317046812.png?v=1 <nowiki>DeflectRange</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/544195487926845462.png?v=1 <nowiki>DeflectMage</nowiki>]<nowiki>) on the hit
+⬥ Lasts 12 minutes
+⬥ Does not reduce </nowiki>[https://cdn.discordapp.com/emojis/535541258844635148.png?v=1 <nowiki>res</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/787904334377648130.png?v=1 <nowiki>divert</nowiki>]<nowiki> HP / adrenaline gain
+⬥ A calculator can be found </nowiki>[https://runescape.wiki/w/Calculator:Combat/Animate_Dead <nowiki>here</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="basic-abilities"><nowiki>Basic Abilities</nowiki></h3>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-magic"><u><nowiki>Magic</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478063104146411713.png?v=1 <nowiki>magic_basic</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 0t (0s)
+⬥ Applies auto-cast spell effect
+⬥ Auto triggered during combat
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-sonicwave"><u><nowiki>Sonic Wave</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478063115709972651.png?v=1 <nowiki>sonic</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 25t (15s)
+⬥ Applies Flow to self for 15t (9s)
+⬥ Next Magic ability uses 10% less adrenaline
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-greatersonicwave"><u><nowiki>Greater Sonic Wave</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478063117211668584.png?v=1 <nowiki>gsonic</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 25t (15s)
+⬥ Applies Greater Flow to self for 15t (9s)
+⬥ Next Magic ability uses 20% less adrenaline
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-dragonbreath"><u><nowiki>Dragon Breath</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535533833391702017.png?v=1 <nowiki>dbreath</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 12t (7.2s)
+⬥ It is an AoE:
+    • AoE is straight line to target + 3x3 around it
+    • Hits 5 targets, inclusive of main
+⬥ It is affected by Kerapac's wrist wraps </nowiki>[https://cdn.discordapp.com/emojis/869286640722513940.png?v=1 <nowiki>kerapacswristwraps</nowiki>]<nowiki>:
+    • Next </nowiki>[https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1 <nowiki>combust</nowiki>]<nowiki> to hit within 10t of the </nowiki>[https://cdn.discordapp.com/emojis/535533833391702017.png?v=1 <nowiki>dbreath</nowiki>]<nowiki> cast will have remaining hits instantly hit at 25% more damage
+    • Within 10t means: if </nowiki>[https://cdn.discordapp.com/emojis/535533833391702017.png?v=1 <nowiki>dbreath</nowiki>]<nowiki> is cast t0, </nowiki>[https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1 <nowiki>combust</nowiki>]<nowiki> has to hit within t0-9
+        ⬩ Latest you can cast </nowiki>[https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1 <nowiki>combust</nowiki>]<nowiki> is t7
+⬥ It is affected by the Dragonrider Amulet </nowiki>[https://cdn.discordapp.com/emojis/656785090994503700.png?v=1 <nowiki>drider</nowiki>]<nowiki>
+    • Boosts damage by 10%
+    • Has a 10% chance of applying a 3-hit DoT, each for 10% of </nowiki>[https://cdn.discordapp.com/emojis/535533833391702017.png?v=1 <nowiki>dbreath</nowiki>]<nowiki> max hit, rounded down (excludes boosts that do not normally boost bleeds)
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-impact"><u><nowiki>Impact</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535533809655873556.png?v=1 <nowiki>impact</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 25t (15s)
+    • Charges: 2
+⬥ Stuns and binds for 3t (1.8s)
+⬥ It is affected by </nowiki>[https://cdn.discordapp.com/emojis/841419289755385866.png?v=1 <nowiki>flankicon</nowiki>]<nowiki>:
+    • Increases Max by 40% per </nowiki>[https://cdn.discordapp.com/emojis/841419289755385866.png?v=1 <nowiki>flankicon</nowiki>]<nowiki> rank
+    • Increases Minimum by 8% per </nowiki>[https://cdn.discordapp.com/emojis/841419289755385866.png?v=1 <nowiki>flankicon</nowiki>]<nowiki> Rank
+    • No longer stuns or binds
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-combust"><u><nowiki>Combust</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1 <nowiki>combust</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 30t (18s)
+⬥ It is a Burn:
+    • Not affected by </nowiki>[https://cdn.discordapp.com/emojis/1005204971886743572.png?v=1 <nowiki>precise</nowiki>]<nowiki>
+    • Hits every 3t (1.8s), for a total of 10 times
+⬥ Affected by </nowiki>[https://cdn.discordapp.com/emojis/1009423860875153559.png?v=1 <nowiki>lunging</nowiki>]<nowiki>:
+    • Increases damage by 10% + 3% per </nowiki>[https://cdn.discordapp.com/emojis/1009423860875153559.png?v=1 <nowiki>lunging</nowiki>]<nowiki> rank
+⬥ Affected by </nowiki>[https://cdn.discordapp.com/emojis/535533833391702017.png?v=1 <nowiki>dbreath</nowiki>]<nowiki> modified by Kerapac's wrist wraps </nowiki>[https://cdn.discordapp.com/emojis/869286640722513940.png?v=1 <nowiki>kerapacswristwraps</nowiki>]<nowiki>
+    • Next </nowiki>[https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1 <nowiki>combust</nowiki>]<nowiki> to hit within 10t of the </nowiki>[https://cdn.discordapp.com/emojis/535533833391702017.png?v=1 <nowiki>dbreath</nowiki>]<nowiki> cast will have remaining hits instantly hit at 25% more damage
+    • Within 10t means: if </nowiki>[https://cdn.discordapp.com/emojis/535533833391702017.png?v=1 <nowiki>dbreath</nowiki>]<nowiki> is cast t0, </nowiki>[https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1 <nowiki>combust</nowiki>]<nowiki> has to hit within t0-9
+        ⬩ Latest you can cast </nowiki>[https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1 <nowiki>combust</nowiki>]<nowiki> is t7
+⬥ Deals 40% increased damage if used within 15 seconds of </nowiki>[https://cdn.discordapp.com/emojis/1266417538045317121.png?v=1 <nowiki>roarofawakening</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-chain"><u><nowiki>Chain</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478063105182269460.png?v=1 <nowiki>chain</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 17t (10.2s)
+⬥ It is an AoE:
+    • Hits within a 5 square radius from SW tile of initial target
+    • Hits 3 targets, inclusive of main
+    • Does not hit things on initial target's SW tile
+⬥ Secondary targets hit by </nowiki>[https://cdn.discordapp.com/emojis/1478063105182269460.png?v=1 <nowiki>chain</nowiki>]<nowiki> take the next ability cast on your main target within 6s at 30% 
+⬥ Affected by Caroming </nowiki>[https://cdn.discordapp.com/emojis/791281588792590336.png?v=1 <nowiki>caroming4</nowiki>]<nowiki>
+    • </nowiki>[https://cdn.discordapp.com/emojis/1478063105182269460.png?v=1 <nowiki>chain</nowiki>]<nowiki> secondary target damage increased by 5% + 5% per Caroming rank
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-greaterchain"><u><nowiki>Greater Chain</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478063106914779166.png?v=1 <nowiki>gchain</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 17t (10.2s)
+⬥ It is an AoE:
+    • Hits within a 5 square radius from SW tile of initial target
+    • Hits 7 targets, inclusive of main
+    • Does not hit things on initial target's SW tile
+⬥ Secondary targets hit by </nowiki>[https://cdn.discordapp.com/emojis/1478063106914779166.png?v=1 <nowiki>gchain</nowiki>]<nowiki> take the next ability cast on your main target within 6s at 50% 
+⬥ Affected by Caroming </nowiki>[https://cdn.discordapp.com/emojis/791281588792590336.png?v=1 <nowiki>caroming4</nowiki>]<nowiki>
+    • </nowiki>[https://cdn.discordapp.com/emojis/1478063106914779166.png?v=1 <nowiki>gchain</nowiki>]<nowiki> secondary target damage increased by 5% + 5% per Caroming rank
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-concentratedblast"><u><nowiki>Concentrated Blast</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478063109712121856.png?v=1 <nowiki>conc</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 9t (5.4s)
+⬥ Provides a passive critical hit buff
+    • 5% increased crit chance for each hit
+⬥ Channelled ability
+    • Hits a maximum of 3 times over 5t (3s)
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-greaterconcentratedblast"><u><nowiki>Greater Concentrated Blast</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1 <nowiki>gconc</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 9t (5.4s)
+⬥ Provides a passive critical hit buff
+    • 7% increased crit chance for each hit
+⬥ Channelled ability
+    • Hits a maximum of 3 times over 5t (3s)
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="enhanced-abilities"><nowiki>Enhanced Abilities</nowiki></h3>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-wildmagic"><u><nowiki>Wild Magic</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535533809978966037.png?v=1 <nowiki>wm</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 9t (5.4s)
+⬥ Adrenaline Cost: 25%
+⬥ Two separate, strong hits
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-asphyxiate"><u><nowiki>Asphyxiate</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535533833072672778.png?v=1 <nowiki>asphyx</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 34t (20.4s)
+⬥ Adrenaline Cost: 25%
+⬥ Stuns for 6t (3.6s)
+⬥ Channelled ability, 4 hits at full channel duration (7t, 4.2s)
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-smoketendrils"><u><nowiki>Smoke Tendrils</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/536257336130404372.png?v=1 <nowiki>Smoke_Tendrils</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 75t (45s)
+⬥ Adrenaline Cost: 0%
+⬥ Channelled ability, 4 hits at full channel duration (7t, 4.2s)
+⬥ Inflicts self-damage each hit
+⬥ Each hit is a guaranteed critical hit
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-magmatempest"><u><nowiki>Magma Tempest</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/902209626509025290.png?v=1 <nowiki>magmatempest</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/924741973858996284.png?v=1 <nowiki>magmatempesttarget</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 35t (21s)
+⬥ Adrenaline Cost: 20%
+⬥ Is a 5x5 area-of-effect
+⬥ Hits every 1.2s (2t) over 9.6s for a total of 8 hits
+⬥ Cannot critical hit
+⬥ Has two variants, see differences using </nowiki><code><nowiki>!magma</nowiki></code><nowiki>
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-corruptionblast"><u><nowiki>Corruption Blast</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478063113659093075.png?v=1 <nowiki>corruption_blast</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 25t (15s)
+⬥ Adrenaline Cost: 20%
+⬥ It is a DoT:
+    • Not affected by </nowiki>[https://cdn.discordapp.com/emojis/1005204971886743572.png?v=1 <nowiki>precise</nowiki>]<nowiki>
+    • Hits every 2t (1.2s), for a total of 5 times
+⬥ It is an AoE:
+    • Spreads to targets within 2 tiles each hit
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="special-attacks"><nowiki>Special Attacks</nowiki></h3>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-guthixstaff"><u><nowiki>Guthix Staff</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/513203008608141314.png?v=1 <nowiki>gstaff</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Adrenaline Cost: 25% (22.5% with </nowiki>[https://cdn.discordapp.com/emojis/513201065877831680.png?v=1 <nowiki>rov</nowiki>]<nowiki>)
+⬥ Applies an affinity and defence reduction:
+    • +2 affinity
+    • Reduces </nowiki>[https://cdn.discordapp.com/emojis/689509250979987525.png?v=1 <nowiki>Defence</nowiki>]<nowiki> level by 5% of base
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-armadylbattlestaff"><u><nowiki>Armadyl Battlestaff</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/881962727705280512.png?v=1 <nowiki>armadylbattlestaff</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Adrenaline Cost: 50% (45% with </nowiki>[https://cdn.discordapp.com/emojis/513201065877831680.png?v=1 <nowiki>rov</nowiki>]<nowiki>)
+⬥ Channelled ability, 5 hits at full channel duration (5t, 3s)
+⬥ Subsequent hits deal increasing damage
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-ibansstaff"><u><nowiki>Iban's Staff</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1215929543068618752.png?v=1 <nowiki>ibansstaff</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Adrenaline Cost: 50% (45% with </nowiki>[https://cdn.discordapp.com/emojis/513201065877831680.png?v=1 <nowiki>rov</nowiki>]<nowiki>)
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-legatussemberstaff"><u><nowiki>Legatus's Emberstaff</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1451134746280329357.png?v=1 <nowiki>legatusemberstaff</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Adrenaline Cost: 35% (31.5% with </nowiki>[https://cdn.discordapp.com/emojis/513201065877831680.png?v=1 <nowiki>rov</nowiki>]<nowiki>)
+⬥  Deals 1% increased damage for each 1% life points the target is missing
+    • Up to a maximum of 75%
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-roarofawakening"><u><nowiki>Roar of Awakening</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1266417538045317121.png?v=1 <nowiki>roarofawakening</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Special Attack: Soulfire
+⬥ Cooldown: 75t (45s)
+⬥ Adrenaline Cost: 35% (31.5% with </nowiki>[https://cdn.discordapp.com/emojis/513201065877831680.png?v=1 <nowiki>rov</nowiki>]<nowiki>)
+⬥ Hits every 1.8s (3t) over 12.6s for a total of 7 hits.
+ ⬥ Gain Conflagrate buff for 15s (25t).
+     • Next </nowiki>[https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1 <nowiki>combust</nowiki>]<nowiki> deals 40% increased damage.
+⬥ Can get reset while having at least 1 </nowiki>[https://cdn.discordapp.com/emojis/1266418936820404295.png?v=1 <nowiki>essencecorruption</nowiki>]<nowiki>
+    • For more information on </nowiki>[https://cdn.discordapp.com/emojis/1266418936820404295.png?v=1 <nowiki>essencecorruption</nowiki>]<nowiki>, use </nowiki><code><nowiki>!essencecorruption</nowiki></code><nowiki> in </nowiki>[https://discord.com/channels/534508796639182860/534563158304620564 <nowiki>Bot commands (external Discord)</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-fracturedstaffofarmadyl"><u><nowiki>Fractured Staff of Armadyl</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/869284271595069451.png?v=1 <nowiki>soa</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Special Attack: Instability
+⬥ Cooldown: 100t (60s)
+⬥ Adrenaline Cost: 50% (45% with </nowiki>[https://cdn.discordapp.com/emojis/513201065877831680.png?v=1 <nowiki>rov</nowiki>]<nowiki>)
+⬥ Lasts 50t (30s)
+⬥ Whenever a magic critical hit is inflicted on primary target, an additional </nowiki><em><nowiki>Time Strike</nowiki></em><nowiki> will be fired
+    • </nowiki><em><nowiki>Time Strike</nowiki></em><nowiki> deals 90%-110% damage to your current target
+⬥ For more information on how to use the special attack, use </nowiki><code><nowiki>!fsoa</nowiki></code><nowiki> in </nowiki>[https://discord.com/channels/534508796639182860/534563158304620564 <nowiki>Bot commands (external Discord)</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="ultimate-abilities"><nowiki>Ultimate Abilities</nowiki></h3>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-omnipower"><u><nowiki>Omnipower</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535533809664262179.png?v=1 <nowiki>omni</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 50t (30s)
+⬥ Adrenaline Cost: 60%
+⬥ Affected by the Igneous Kal-Mej </nowiki>[https://cdn.discordapp.com/emojis/1153772938252787793.png?v=1 <nowiki>igneouskalmej</nowiki>]<nowiki> and Igneous Kal-Zuk </nowiki>[https://cdn.discordapp.com/emojis/902209626479685734.png?v=1 <nowiki>igneouskalzuk</nowiki>]<nowiki>
+    • Fires 4 hits
+    • Increases average ability damage from 460% to 540%
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-sunshine"><u><nowiki>Sunshine</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/994921119381463070.png?v=1 <nowiki>sunshine</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 100t (60s)
+⬥ Adrenaline Cost: 100%
+⬥ It is an on cast buff
+⬥ Increases damage by 50% from t0→t51 (52t/31.2s duration); buff starts t1
+⬥ 7x7 buff radius
+⬥ Does not incur the auto cooldown
+⬥ Planted Feet </nowiki>[https://cdn.discordapp.com/emojis/689501925770919981.png?v=1 <nowiki>pf</nowiki>]<nowiki> increases duration to t0→t64 (65t/39s)); buff starts t1
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-greatersunshine"><u><nowiki>Greater Sunshine</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/994644352871714836.png?v=1 <nowiki>gsunshine</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 100t (60s)
+⬥ Adrenaline Cost: 100%
+⬥ Duration becomes t0→t64 (65t/39s duration); buff starts t1
+    • Using </nowiki>[https://cdn.discordapp.com/emojis/689501925770919981.png?v=1 <nowiki>pf</nowiki>]<nowiki> does not extend this further
+⬥ </nowiki>[https://cdn.discordapp.com/emojis/994644352871714836.png?v=1 <nowiki>gsunshine</nowiki>]<nowiki> retains the DoT effect of </nowiki>[https://cdn.discordapp.com/emojis/994921119381463070.png?v=1 <nowiki>sunshine</nowiki>]<nowiki>
+    • Using </nowiki>[https://cdn.discordapp.com/emojis/689501925770919981.png?v=1 <nowiki>pf</nowiki>]<nowiki> will cancel this
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-tsunami"><u><nowiki>Tsunami</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535533809995874304.png?v=1 <nowiki>tsunami</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 100t (60s)
+⬥ Adrenaline Cost: 100%
+⬥ It is an AoE
+⬥ Provides a Critical Adrenaline buff:
+    • For the next 30s, </nowiki>[https://cdn.discordapp.com/emojis/689504724159823906.png?v=1 <nowiki>magic</nowiki>]<nowiki> critical hits give 8% adrenaline
+    • This buff is applied on release of the ability
+⬥ Adrenaline cost can be reduced through auto-casting Incite Fear </nowiki>[https://cdn.discordapp.com/emojis/856635090783567902.png?v=1 <nowiki>incitefear</nowiki>]<nowiki>
+    • Each stack reduces </nowiki>[https://cdn.discordapp.com/emojis/535533809995874304.png?v=1 <nowiki>tsunami</nowiki>]<nowiki> adrenaline cost by 12, down to 40% at 5 stacks
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="utility-abilities"><nowiki>Utility Abilities</nowiki></h3>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-surge"><u><nowiki>Surge</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 34t (20.4s)
+⬥ It is a Mobility ability:
+    • Moves you forward 10 tiles
+⬥ Affected by Mobile </nowiki>[https://cdn.discordapp.com/emojis/689501908628799488.png?v=1 <nowiki>mob</nowiki>]<nowiki>
+    • Reduces cooldown to 17t (10.2s)
+⬥ Can be upgraded with a Double Surge codex: </nowiki>[https://cdn.discordapp.com/emojis/602561894414417944.png?v=1 <nowiki>surgecodex</nowiki>]<nowiki>
+    • Gives you a second </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> on its own 34t (17t </nowiki>[https://cdn.discordapp.com/emojis/689501908628799488.png?v=1 <nowiki>mob</nowiki>]<nowiki>) internal cooldown that is used after the first
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-runiccharge"><u><nowiki>Runic Charge</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1 <nowiki>runic_charge</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 50t (30s)
+⬥ Applies Anima Charged to self for 25t (15s), consumed once used
+⬥ Anima Charged
+    • </nowiki>[https://cdn.discordapp.com/emojis/1478063115709972651.png?v=1 <nowiki>sonic</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/1478063117211668584.png?v=1 <nowiki>gsonic</nowiki>]<nowiki> Next Magic Ability costs 35%/45% less adrenaline
+    • </nowiki>[https://cdn.discordapp.com/emojis/535533833391702017.png?v=1 <nowiki>dbreath</nowiki>]<nowiki> Increased damaged
+    • </nowiki>[https://cdn.discordapp.com/emojis/1478063109712121856.png?v=1 <nowiki>conc</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1 <nowiki>gconc</nowiki>]<nowiki> Each channel grants an additional 10% crit chance
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-magicabilityindex">[https://cdn.discordapp.com/emojis/689504724159823906.png?v=1 <nowiki>Magic</nowiki>]<nowiki> </nowiki><u><nowiki>Magic Ability Index</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/689504724159823906.png?v=1 <nowiki>Magic</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Click the links to quickly navigate to that ability's information.
+⬥ General notes can be found in the introduction </nowiki>[[PvME/Combat reference/Magic Abilities#introduction|<nowiki>here</nowiki>]]<nowiki>.
+</nowiki></div>
+<nowiki>
+</nowiki><div><div><div><u><nowiki>Spells and Basic</nowiki></u><nowiki> (1/3)
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ </nowiki>[[PvME/Combat reference/Magic Abilities#block-barrages|<nowiki>Barrage Spells</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Magic Abilities#block-blitzes|<nowiki>Blitz Spells</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Magic Abilities#block-vulnerability|<nowiki>Vulnerability</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Magic Abilities#block-incitefear|<nowiki>Incite Fear</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Magic Abilities#block-exsanguinate|<nowiki>Exsanguinate</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Magic Abilities#block-smokecloud|<nowiki>Smoke Cloud</nowiki>]]<nowiki>
+</nowiki></div>
+</div>
+<div><div><u><nowiki>Spells and Basic</nowiki></u><nowiki> (2/3)
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ </nowiki>[[PvME/Combat reference/Magic Abilities#block-animatedead|<nowiki>Animate Dead</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Magic Abilities#block-magic|<nowiki>Magic</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Magic Abilities#block-sonicwave|<nowiki>Sonic Wave</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Magic Abilities#block-greatersonicwave|<nowiki>G. Sonic Wave</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Magic Abilities#block-dragonbreath|<nowiki>Dragon Breath</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Magic Abilities#block-impact|<nowiki>Impact</nowiki>]]<nowiki>
+</nowiki></div>
+</div>
+<div><div><u><nowiki>Spells and Basic</nowiki></u><nowiki> (3/3)
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ </nowiki>[[PvME/Combat reference/Magic Abilities#block-combust|<nowiki>Combust</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Magic Abilities#block-chain|<nowiki>Chain</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Magic Abilities#block-greaterchain|<nowiki>G. Chain</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Magic Abilities#block-concentratedblast|<nowiki>Conc. Blast</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Magic Abilities#block-greaterconcentratedblast|<nowiki>G. Conc. Blast</nowiki>]]<nowiki>
+</nowiki></div>
+</div>
+<div><div><u><nowiki>Enhanced</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ </nowiki>[[PvME/Combat reference/Magic Abilities#block-wildmagic|<nowiki>Wild Magic</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Magic Abilities#block-asphyxiate|<nowiki>Asphyxiate</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Magic Abilities#block-smoketendrils|<nowiki>Smoke Tendrils</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Magic Abilities#block-magmatempest|<nowiki>Magma Tempest</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Magic Abilities#block-corruptionblast|<nowiki>Corr. Blast</nowiki>]]<nowiki>
+</nowiki></div>
+</div>
+<div><div><u><nowiki>Special Attacks</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ </nowiki>[[PvME/Combat reference/Magic Abilities#block-guthixstaff|<nowiki>Guthix Staff</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Magic Abilities#block-armadylbattlestaff|<nowiki>Arma. Battlestaff</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Magic Abilities#block-ibansstaff|<nowiki>Iban's Staff</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Magic Abilities#block-legatussemberstaff|<nowiki>Legatus's Emberstaff</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Magic Abilities#block-roarofawakening|<nowiki>Roar of Awakening</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Magic Abilities#block-fracturedstaffofarmadyl|<nowiki>F. Staff of Armadyl</nowiki>]]<nowiki>
+</nowiki></div>
+</div>
+<div><div><u><nowiki>Ultimate</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ </nowiki>[[PvME/Combat reference/Magic Abilities#block-omnipower|<nowiki>Omnipower</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Magic Abilities#block-sunshine|<nowiki>Sunshine</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Magic Abilities#block-greatersunshine|<nowiki>G. Sunshine</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Magic Abilities#block-tsunami|<nowiki>Tsunami</nowiki>]]<nowiki>
+</nowiki></div>
+</div>
+<div><div><u><nowiki>Utility</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ </nowiki>[[PvME/Combat reference/Magic Abilities#block-surge|<nowiki>Surge</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Magic Abilities#block-runiccharge|<nowiki>Runic Charge</nowiki>]]<nowiki>
+</nowiki></div>
+</div>
+</div>
+<nowiki>
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+      
+    </nowiki>
+== Attribution and source history ==
+Adapted from [https://pvme.io/pvme-guides/miscellaneous-information/ability-information/magic-abilities/ <nowiki>Magic Abilities</nowiki>] by PvME contributors. [https://github.com/pvme/pvme-guides/commits/master/miscellaneous-information/ability-information/magic-abilities.txt Upstream source history]. Licensed [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]. Snapshot 074a9438f79d10fba75735791be0030734db8b5e. Formatting adapted for standalone MediaWiki; media and third-party references remain external links.

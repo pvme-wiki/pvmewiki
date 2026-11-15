@@ -2,6 +2,25 @@
 declare(strict_types=1);
 
 final class RuntimeConfig {
+    public static function server(): string {
+        $origin = getenv('MW_SERVER');
+        if ($origin === false || $origin === '') {
+            throw new RuntimeException('MW_SERVER is required');
+        }
+        $parts = parse_url($origin);
+        $host = is_array($parts) ? ($parts['host'] ?? '') : '';
+        $validHost = strlen($host) <= 253 && preg_match(
+            '/^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?(?:\.[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?)*$/D', $host
+        );
+        if (!$validHost || ($parts['scheme'] ?? '') !== 'https' ||
+            array_intersect(['user', 'pass', 'path', 'query', 'fragment'], array_keys($parts ?: [])) ||
+            (isset($parts['port']) && $parts['port'] < 1) ||
+            $origin !== 'https://' . $host . (isset($parts['port']) ? ':' . $parts['port'] : '')) {
+            throw new RuntimeException('MW_SERVER must be an HTTPS origin');
+        }
+        return $origin;
+    }
+
     public static function database(): array {
         $url = getenv('MW_DATABASE_URL');
         if (!$url) {

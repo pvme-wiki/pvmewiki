@@ -1,0 +1,417 @@
+[[PvME|PvME guide index]]
+
+<span id="pvme-style-guide"></span><p><nowiki>Consistency makes guides easier to read and maintain. This guide covers formatting, structure, and PvME-specific conventions.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="sections-templates"><ins><nowiki>Sections &amp; Templates</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>⬥ We have various types of guides, each of which has a unique structure and sections within</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Most templates you will require can be found on the </nowiki>[https://pvme.io/guide-editor/ <nowiki>Guide Editor</nowiki>]<nowiki>:</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/By04eu9tkH.png <nowiki>Guide illustration</nowiki>]<nowiki>
+​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="language-formatting"><ins><nowiki>Language &amp; Formatting</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>⬥ Use UK English (e.g. armour, not armour; defence, not defense)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Date format: 22nd July 2013</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Do not end lines with blank space (this is referred to as &quot;trailing whitespace&quot;)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="styling-punctuation"><ins><nowiki>Styling &amp; Punctuation</nowiki></ins></h3>
+<nowiki>
+</nowiki><p><nowiki>Always end full sentences with a full stop / period</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Exceptions:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• bullet points should </nowiki><ins><nowiki>not</nowiki></ins><nowiki> end in a full stop</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Any sentence ending in an emoji should </nowiki><ins><nowiki>not</nowiki></ins><nowiki> end in a full stop 🚀</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Text styles:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><code><nowiki>**Bold**</nowiki></code><nowiki> ‎– Key items or emphases</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><code><nowiki>*Italic*</nowiki></code><nowiki> ‎– Inline notes or footnotes</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><code><nowiki>__Underline__</nowiki></code><nowiki> ‎– Optional emphasis</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="emojis"><ins><nowiki>Emojis</nowiki></ins></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Spacing</nowiki></strong><nowiki>: Emojis require a space before </nowiki><strong><nowiki>and</nowiki></strong><nowiki> after:</nowiki></p>
+<nowiki>
+</nowiki><pre>❌ Detonate&lt;:deto:123&gt; is a spell.
+❌ Spellbook Swap &lt;:SBS:543875425055670275&gt;is a spell.
+✅ Spellbook Swap &lt;:SBS:543875425055670275&gt; is a spell.
+</pre>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ There are a few </nowiki><strong><nowiki>exceptions</nowiki></strong><nowiki> where spaces are not needed:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Letter prefixes (</nowiki><code><nowiki>r</nowiki></code><nowiki>, </nowiki><code><nowiki>s</nowiki></code><nowiki>, </nowiki><code><nowiki>_</nowiki></code><nowiki>)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Punctuation/backslash/backtick prefixes</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Trailing punctuation or underscore</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Inside backticks (embeds)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Invisible characters</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Allowed examples:</nowiki></p>
+<nowiki>
+</nowiki><pre>r&lt;:emoji:1&gt; &lt;:emoji:7&gt;. &quot;… &lt;:emoji:4&gt; …&quot; &lt;:emoji:7&gt;! `…&lt;:emoji:11&gt;…` &lt;emoji:73&gt;\n\u00a0
+</pre>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="notes"><ins><nowiki>Notes</nowiki></ins></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Use sparingly to highlight key info</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Put notes </nowiki><em><nowiki>below</nowiki></em><nowiki> their related content</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ For a single note, show it in-line and italic:</nowiki></p>
+<nowiki>
+</nowiki><pre>*Note: This is a note.*
+</pre>
+<nowiki>
+</nowiki><p><nowiki>⬥ For multiple notes, show as bullets and italic:</nowiki></p>
+<nowiki>
+</nowiki><pre>*Notes:*
+⬥ *This is a note*
+⬥ *This is another note*
+</pre>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="headings"><ins><nowiki>Headings</nowiki></ins></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Headings represent sections and sub-sections</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Always put a </nowiki><code><nowiki>.</nowiki></code><nowiki> ‎on the line before any heading (ignore the backslash </nowiki><code><nowiki>\</nowiki></code><nowiki> ‎in the below example)</nowiki></p>
+<nowiki>
+</nowiki><pre>&lt;End of previous section&gt;
+
+\.
+## __Section 2__
+This is the new section
+</pre>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Use </nowiki><code><nowiki>#</nowiki></code><nowiki> ‎and underline the title</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Use </nowiki><code><nowiki>##</nowiki></code><nowiki> ‎/ </nowiki><code><nowiki>###</nowiki></code><nowiki> ‎and underline level 1 and 2 headings</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Level 3 headings:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Discord doesn't allow </nowiki><code><nowiki>####</nowiki></code><nowiki> ‎for level 3 headings</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Therefore remove the underline to distinguish</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><pre># Title
+## __Section 1__
+### __Sub-section 1.1__
+### Sub-sub-section 1.1.1
+
+## __Section 2__
+
+## __Section 3__
+### __Sub-section 3.1__
+</pre>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Headings should be capitalised following the Oxford style:</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+
+
+</nowiki><div><div><div><nowiki>✅ Capitalise
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ First and last word
+⬥ Nouns
+⬥ Pronouns
+⬥ Verbs
+⬥ Adjectives
+⬥ Adverbs
+⬥ Any word over four letters
+</nowiki></div>
+</div>
+<div><div><nowiki>❌ Don’t capitalise
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ Articles (a, an, the)
+⬥ Prepositions (to, on, in, for, with, etc.)
+⬥ Conjunctions (and, but, or, nor, etc.)
+</nowiki></div>
+</div>
+</div>
+<nowiki>
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="lists"><ins><nowiki>Lists</nowiki></ins></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Bulleted lists use different characters depending on the level</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Level 2 bullets should be indented 4 spaces</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Level 3 bullets should be indented 8 spaces</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>1) Numbered Lists follow the same rules with indentation</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎a) Level 2 should use letters</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Level 3 should be bullets</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Where visually dense, you may add line breaks between list items (like above this bullet)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="links-and-embedded-content"><ins><nowiki>Links and Embedded Content</nowiki></ins></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Only use content from </nowiki><code><nowiki>https://runescape.wiki/</nowiki></code><nowiki>, </nowiki><code><nowiki>https://www.youtube.com/</nowiki></code><nowiki> ‎or </nowiki><code><nowiki>https://img.pvme.io/</nowiki></code><nowiki> ‎(via </nowiki>[https://discord.com/channels/534508796639182860/771436827214086154 <nowiki>Guide media upload and request (external Discord)</nowiki>]<nowiki>)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Add angled brackets </nowiki><code><nowiki>&lt;&gt;</nowiki></code><nowiki> ‎around links to prevent them showing inline</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• For example, </nowiki><code><nowiki>[Greater Fury](&lt;https://runescape.wiki/w/Greater_Fury&gt;)</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="useful-markdown-github-syntax"><ins><nowiki>Useful Markdown &amp; GitHub Syntax</nowiki></ins></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><code><nowiki>‎`code` ‎</nowiki></code><nowiki> ‎for inline code</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><code><nowiki>.img:&lt;url&gt;</nowiki></code><nowiki> ‎for images</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><code><nowiki>.tag:sectionName</nowiki></code><nowiki> ‎for ToC section targets</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><code><nowiki>$linkmsg_sectionName$</nowiki></code><nowiki> ‎for linking to that section</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="filenames"><ins><nowiki>Filenames</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>⬥ Filenames should follow these naming patterns:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Basic guides: </nowiki><code><nowiki>{bossName}-basic.txt</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Combat Achievements: </nowiki><code><nowiki>{bossName}-ca.txt</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Commands: </nowiki><code><nowiki>{commandName}.txt</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• DPM Advice: </nowiki><code><nowiki>dpm-advice-{style}.txt</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• One-tick guides: </nowiki><code><nowiki>{bossName}-one-tick.txt</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Full Boss guides: </nowiki><code><nowiki>{bossName}-{difficulty}-{style}.txt</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ </nowiki><code><nowiki>{difficulty}</nowiki></code><nowiki> ‎is optional; either </nowiki><code><nowiki>hm</nowiki></code><nowiki> ‎or </nowiki><code><nowiki>nm</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ </nowiki><code><nowiki>{style}</nowiki></code><nowiki> ‎is optional; either </nowiki><code><nowiki>ranged</nowiki></code><nowiki>, </nowiki><code><nowiki>magic</nowiki></code><nowiki>, </nowiki><code><nowiki>melee</nowiki></code><nowiki>, </nowiki><code><nowiki>necromancy</nowiki></code><nowiki>, </nowiki><code><nowiki>hybrid</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Slayer: </nowiki><code><nowiki>{monsterName}.txt</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ If not listed above, hyphenate the title:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• e.g., </nowiki><code><nowiki>interface-guide.txt</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ These naming patterns should also apply if the file is inside the boss folder, e.g. </nowiki><code><nowiki>/sanctum/sanctum-hm-ranged.txt</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="presets"><ins><nowiki>Presets</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>⬥ Create and link to presets in our Preset Maker tool (</nowiki>[[PvME/Contributing/Preset Maker|<nowiki>Preset Maker</nowiki>]]<nowiki>)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Multiple presets may be created for different situations</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Links to presets should be in the following pattern:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><code><nowiki>{Combat style} - {Basic/Advanced/Tier}</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ e.g., </nowiki>[[PvME/Contributing/Style Guide|<nowiki>Necromancy - Basic</nowiki>]]<nowiki> / </nowiki>[[PvME/Contributing/Style Guide|<nowiki>Necromancy - T95/100</nowiki>]]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Only the last link should be shown - the rest should be hidden by wrapping the link in </nowiki><code><nowiki>&lt;&gt;</nowiki></code><nowiki>:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ e.g., </nowiki>[https://presets.pvme.io/?id=presetID <nowiki>https://presets.pvme.io?id=presetID</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Avoid dyed gear or overpriced items which do not feature in </nowiki>[https://pvme.io/gear/ <nowiki>Upgrade guides</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Be consistent with:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Rune pouch colours (</nowiki>[[PvME/Gear upgrades/Armour And Weapons|<nowiki>Armour And Weapons</nowiki>]]<nowiki>)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• EoF emojis (</nowiki>[[PvME/Combat reference/Eof Specs|<nowiki>Eof Specs</nowiki>]]<nowiki>)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="using-notes-in-presets"><ins><nowiki>Using Notes in Presets</nowiki></ins></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Notes relating to specific preset gear/items should be added to the Preset Maker</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Do not add notes to the guide, for example below the Preset image</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Add a note for any non-standard gear or niche items</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Add a note on any gear where perks differ from standard ones listed in </nowiki>[[PvME/Invention perks/Perks|<nowiki>Perks</nowiki>]]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ For AFK guides, notes may be added to the </nowiki><code><nowiki>Mandatory AFK Requirements</nowiki></code><nowiki> ‎embed for:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Required ability unlocks (including </nowiki>[https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1 <nowiki>necromancy</nowiki>]<nowiki> Talent Tree)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Mandatory gear/items differing from those listed in </nowiki>[[PvME/Lower-effort methods/AFK Overview|<nowiki>AFK Overview</nowiki>]]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="rotations"><ins><nowiki>Rotations</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>⬥ Use </nowiki>[https://raw.githubusercontent.com/pvme/pvme-settings/master/emojis/emojis.json <nowiki>full emoji codes</nowiki>]<nowiki>, e.g., </nowiki><code><nowiki>&lt;:emoji:ID&gt;</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Use </nowiki><code><nowiki>+</nowiki></code><nowiki> ‎to combine same-tick actions, e.g., </nowiki>[https://cdn.discordapp.com/emojis/655341074235129858.png?v=1 <nowiki>vulnbomb</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1 <nowiki>deathskulls</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Use </nowiki><code><nowiki>→</nowiki></code><nowiki> ‎to separate ticks and GCDs, e.g., </nowiki>[https://cdn.discordapp.com/emojis/535541270521708566.png?v=1 <nowiki>rapid</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535534127131394088.png?v=1 <nowiki>snap</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Use </nowiki><code><nowiki>()</nowiki></code><nowiki> ‎for:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Target cycle (tc)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Auto attacks (auto)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Waiting (2t) - ticks are from previous action</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Channel durations (3 hit)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Weapon types (DW) / (2H)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Autocasting (</nowiki>[https://cdn.discordapp.com/emojis/856635090745950258.png?v=1 <nowiki>exsanguinate</nowiki>]<nowiki>)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Include non-ability actions, e.g., </nowiki>[https://cdn.discordapp.com/emojis/655341074235129858.png?v=1 <nowiki>vulnbomb</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/736298121704767538.png?v=1 <nowiki>adrenrenewal</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/641339922019516416.png?v=1 <nowiki>undeadslayer</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/641339921814126594.png?v=1 <nowiki>dragonslayer</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/641339921675845633.png?v=1 <nowiki>demonslayer</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537336877900890135.png?v=1 <nowiki>nip</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Use </nowiki><code><nowiki>s</nowiki></code><nowiki> ‎and </nowiki><code><nowiki>r</nowiki></code><nowiki> ‎to represent stall &amp; release, e.g.:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><code><nowiki>s&lt;ability&gt; → r&lt;ability&gt; + &lt;nextability&gt;</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Use </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> and </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki> properly, e.g.:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Weapon specs: </nowiki><code><nowiki>&lt;:sgb&gt; &lt;:spec&gt;</nowiki></code><nowiki> ‎</nowiki>[https://cdn.discordapp.com/emojis/626466665848242186.png?v=1 <nowiki>sgb</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• EOF specs: </nowiki><code><nowiki>&lt;:sgb&gt; &lt;:eofspec&gt;</nowiki></code><nowiki> ‎</nowiki>[https://cdn.discordapp.com/emojis/626466665848242186.png?v=1 <nowiki>sgb</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Show ammo swaps before and after abilities, e.g.:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Single ammo switch: </nowiki>[https://cdn.discordapp.com/emojis/867678153966878740.png?v=1 <nowiki>gricocaroming</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/971025696958853180.png?v=1 <nowiki>fularrow</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/626466665848242186.png?v=1 <nowiki>sgb</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki> → etc.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Includes off-style abilities: </nowiki>[https://cdn.discordapp.com/emojis/550834403136503822.png?v=1 <nowiki>hydrixbakri</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/867678153966878740.png?v=1 <nowiki>gricocaroming</nowiki>]<nowiki> → etc.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Multiple ammo switch (like &quot;wensporing&quot;): </nowiki>[https://cdn.discordapp.com/emojis/867678153966878740.png?v=1 <nowiki>gricocaroming</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/971025697046925362.png?v=1 <nowiki>wenarrow</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/643848618553507843.png?v=1 <nowiki>dbow</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/900758234527301642.png?v=1 <nowiki>deathsporearrows</nowiki>]<nowiki> → etc.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ 0-tick abilities should follow this pattern:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/1266417538045317121.png?v=1 <nowiki>roarofawakening</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> (0tick)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Add a note pointing to the </nowiki><code><nowiki>!0tick</nowiki></code><nowiki> ‎command</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="table-of-contents-toc"><ins><nowiki>Table of Contents (ToC)</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>⬥ Each guide ends with a pinned ToC section</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ ToC is always within a Discord embed</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Must be pinned – add </nowiki><code><nowiki>.pin:delete</nowiki></code><nowiki> ‎under it</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The easiest way to create a ToC is to add a </nowiki><code><nowiki>.tag:</nowiki></code><nowiki> ‎after all relevant headings, then auto-generate your ToC using the </nowiki><code><nowiki>Table of Contents</nowiki></code><nowiki> ‎feature on the </nowiki>[https://pvme.io/guide-editor/ <nowiki>Guide Editor</nowiki>]<nowiki> (see image below)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If using this method, you should check the words displayed as they may be abbreviated</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/mhO3jajZIa.png <nowiki>Guide illustration</nowiki>]<nowiki>
+​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Example:</nowiki></p>
+<nowiki>
+      
+    </nowiki>
+== Attribution and source history ==
+Adapted from [https://pvme.io/pvme-guides/editor-resources/editor-references/style-guide/ <nowiki>Style Guide</nowiki>] by PvME contributors. [https://github.com/pvme/pvme-guides/commits/master/editor-resources/editor-references/style-guide.txt Upstream source history]. Licensed [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]. Snapshot 074a9438f79d10fba75735791be0030734db8b5e. Formatting adapted for standalone MediaWiki; media and third-party references remain external links.

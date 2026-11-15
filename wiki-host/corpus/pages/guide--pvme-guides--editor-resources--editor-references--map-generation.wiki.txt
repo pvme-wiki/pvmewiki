@@ -1,0 +1,252 @@
+[[PvME|PvME guide index]]
+
+<h2 id="introduction"><ins><nowiki>Introduction</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>This guide will cover creating tile-based maps for our guides, such as the below examples:</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/8tY6vB0VH7.png <nowiki>Guide illustration</nowiki>]<nowiki>
+​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="method-1-creating-using-web-app"><ins><nowiki>Method 1: Creating using web app</nowiki></ins></h2>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+
+
+</nowiki><div><div><div><u><nowiki>Link to the tool</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ </nowiki>[https://pvme.io/tilemap-maker <nowiki>https://pvme.io/tilemap-maker</nowiki>]<nowiki>
+</nowiki></div>
+</div>
+<div><div><u><nowiki>Finding problems?</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ If you have any issues, contact Nick (@neonx222)
+⬥ Do not sit struggling alone!
+</nowiki></div>
+</div>
+</div>
+<nowiki>
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="method-2-creating-via-coding"><ins><nowiki>Method 2: Creating via coding</nowiki></ins></h2>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+
+
+</nowiki><div><div><div><u><nowiki>Link to the tool</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ </nowiki>[https://colab.research.google.com/drive/1OfiHQwIhKCfCJxgHCjXNiteoMJqVX6Yr?usp=sharing <nowiki>Map Generator on Google Colab</nowiki>]<nowiki>
+</nowiki></div>
+</div>
+<div><div><u><nowiki>Finding problems?</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ If you have any issues, contact Chrash (@chrash.)
+⬥ Do not sit struggling alone!
+</nowiki></div>
+</div>
+</div>
+<nowiki>
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="step-1"><nowiki>Step 1</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>1.1 Run the first code section by clicking the first play button</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/iSHbmxoSrX.png <nowiki>Guide illustration</nowiki>]<nowiki>
+​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="step-2"><nowiki>Step 2</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>2.1. Scroll down to the second code section and edit the variables between the two lines of </nowiki><code><nowiki>#########</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/fCvNMZwNGs.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><p><em><nowiki>Notes:</nowiki></em></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎a. Check </nowiki><span><nowiki>Referenced guide unavailable in this snapshot</nowiki></span><nowiki> first for already created maps and variables sets to save you time</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎b. You can find map chunks by visiting </nowiki>[https://mejrs.github.io/ <nowiki>https://mejrs.github.io/</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Turn on the </nowiki><strong><nowiki>grid layer</nowiki></strong><nowiki> by hovering over the icon in the bottom-right</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ If you struggle to find a specific area the RS Wiki has a </nowiki>[https://runescape.wiki/w/RuneScape:Map/mapIDs <nowiki>page listing common locations</nowiki>]<nowiki> - simply replace the </nowiki><code><nowiki>-1</nowiki></code><nowiki> ‎in the mej URL to the corresponding map ID</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>2.2. If unsure about the coloured tile markings, enter a number around where you think for player/cannon etc, then tweak and re-run the code</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>2.3. Choose how many tiles to trim off each side of the image (left,upper,right,bottom)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>2.4. Select which legend to use from the listed options</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>2.5. Remove the </nowiki><code><nowiki>#</nowiki></code><nowiki> ‎from any lines you have set (any lines with a </nowiki><code><nowiki>#</nowiki></code><nowiki> ‎will not be executed)</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/88RSQ8Bnvb.png <nowiki>Guide illustration</nowiki>]<nowiki>
+​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="step-3"><nowiki>Step 3</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>3.1. Run the main code</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/hN8YQKzJWk.png <nowiki>Guide illustration</nowiki>]<nowiki>
+3.2. Wait for the code to execute - you can track its progress at the bottom of your browser</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/JOBeROCphO.png <nowiki>Guide illustration</nowiki>]<nowiki>
+​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="step-4"><nowiki>Step 4</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>4.1. Scroll to the very bottom of the page to view your created map and </nowiki><code><nowiki>right click &gt; save</nowiki></code><nowiki> ‎when happy, or scroll back up and tweak the variables if it's not right</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="real-example"><ins><nowiki>Real example</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="the-objective-make-a-player-position-map-for-the-new-osseous-afk-guide"><nowiki>The objective: make a player position map for the new Osseous AFK guide.</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>First we find the Rex Matriarch arena (we've had to scroll across Mej's map to find it):</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/4bOVcYUEIk.png <nowiki>Guide illustration</nowiki>]<nowiki>
+​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Next, we add map gridlines on so we know which map chunks to reference:</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/XwdQIAu7uv.png <nowiki>Guide illustration</nowiki>]<nowiki>
+​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Now we want to reduce the map to just the Osseous arena (highlighted by the yellow box), which crosses multiple map chunks.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/EJXkK2pB4r.png <nowiki>Guide illustration</nowiki>]<nowiki>
+​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>First we set the x and y values to be of the top tile (63,153)</nowiki></p>
+<nowiki>
+</nowiki><pre>mej_x = 63
+mej_y = 153
+</pre>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Next let's make it so 2 tiles are shown vertically</nowiki></p>
+<nowiki>
+</nowiki><pre>mej_height = 2
+mej_width = 1
+</pre>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>If we ran the code now, it would give us this:</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/UDpjeF4nPZ.png <nowiki>Guide illustration</nowiki>]<nowiki>
+​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Let's trim off the sides and press the run button to check our map:</nowiki></p>
+<nowiki>
+</nowiki><pre>left = 1
+upper = 43
+right = 21
+lower = 43
+</pre>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/xb7wjGpZut.png <nowiki>Guide illustration</nowiki>]<nowiki>
+​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>It's almost there! Let's cut off some of that excess map, put a coloured tile for the player position, and set the legend to show just 'player position':</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/A76Rk7HV0P.png <nowiki>Guide illustration</nowiki>]<nowiki>
+​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Now let's hit the run button again... we did it!</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/Dys4yLDFqW.png <nowiki>Guide illustration</nowiki>]<nowiki>
+​</nowiki></p>
+<nowiki>
+      
+    </nowiki>
+== Attribution and source history ==
+Adapted from [https://pvme.io/pvme-guides/editor-resources/editor-references/map-generation/ <nowiki>Map Generation</nowiki>] by PvME contributors. [https://github.com/pvme/pvme-guides/commits/master/editor-resources/editor-references/map-generation.txt Upstream source history]. Licensed [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]. Snapshot 074a9438f79d10fba75735791be0030734db8b5e. Formatting adapted for standalone MediaWiki; media and third-party references remain external links.

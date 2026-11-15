@@ -5,6 +5,7 @@ RUN set -eux; \
     apt-get install -y --no-install-recommends libpq-dev git ca-certificates; \
     docker-php-ext-install pgsql; \
     a2enmod rewrite; \
+    a2disconf short-url; \
     git clone https://github.com/edwardspec/mediawiki-moderation.git /var/www/html/extensions/Moderation; \
     cd /var/www/html/extensions/Moderation; \
     git checkout --detach 5135f2dee492b9f2f85f896f9a699ce753c53f4e; \
@@ -19,7 +20,7 @@ RUN set -eux; \
 COPY LocalSettings.php /opt/pvme/LocalSettings.php
 COPY runtime/ /opt/pvme/runtime/
 COPY runtime/health.php /var/www/html/healthz.php
-COPY runtime/wiki.conf /etc/apache2/conf-enabled/pvme-wiki.conf
+COPY runtime/wiki.conf /etc/apache2/sites-available/000-default.conf
 COPY corpus/pages.xml /opt/pvme/corpus/pages.xml
 COPY corpus/manifest.json /opt/pvme/corpus/manifest.json
 COPY corpus/SHA256SUMS /opt/pvme/corpus/SHA256SUMS

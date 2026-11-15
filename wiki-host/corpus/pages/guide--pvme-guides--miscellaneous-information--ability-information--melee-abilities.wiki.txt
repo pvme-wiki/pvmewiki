@@ -1,0 +1,1744 @@
+[[PvME|PvME guide index]]
+
+<h2 id="introduction"><ins><nowiki>Introduction</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><em><nowiki>Note: Use the </nowiki><ins><strong><nowiki>Table of Contents</nowiki></strong></ins><nowiki> in this page’s contents navigation to find the information you are looking for.</nowiki></em></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Some general notes:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The game runs on an internal tick system: </nowiki><strong><nowiki>1t (tick) = 0.6s (seconds)</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The minimum time between abilities is called the global cooldown: </nowiki><strong><nowiki>1 gcd = 3t = 1.8s</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Auto attacks will only give adrenaline if they hit (splash = no adrenaline gain).</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Debuff spells like Vuln </nowiki>[https://cdn.discordapp.com/emojis/537349530551582720.png?v=1 <nowiki>Vuln</nowiki>]<nowiki> or Enfeeble </nowiki>[https://cdn.discordapp.com/emojis/567727986409734145.png?v=1 <nowiki>Enfeeble</nowiki>]<nowiki> or Smoke Cloud </nowiki>[https://cdn.discordapp.com/emojis/856635090641879050.png?v=1 <nowiki>smokecloud</nowiki>]<nowiki> do not give adrenaline.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Some useful sheets and resources are given below.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+
+
+</nowiki><div><div><div><u><nowiki>Ability Damage Maths</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>To calculate your ability hit damage in detail, </nowiki>[https://tools.runescape.wiki/rs-rot/melee <nowiki>click here</nowiki>]<nowiki>.
+This is affected by factors such as your gear and other boosts.
+</nowiki></div>
+</div>
+<div><div><u><nowiki>Ability Hit Timings</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>To see detailed breakdowns on ability hit timings, </nowiki>[https://docs.google.com/spreadsheets/d/1rK7u17JN6I-vf3dKBKg6tm9IPWje9EWSe_r8KPdsxoc/edit?usp=sharing <nowiki>click here</nowiki>]<nowiki>.
+This refers to when hitsplats appear on your target.
+</nowiki></div>
+</div>
+<div><div><u><nowiki>Auto-attack Adren Gain</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>To see adrenaline gained with different auto attacks, </nowiki>[https://runescape.wiki/w/Invigorating <nowiki>click here</nowiki>]<nowiki>.
+</nowiki></div>
+</div>
+</div>
+<nowiki>
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><em><nowiki>Note: If you have any difficulties in using the tools or understanding what the information means, you can always ask in </nowiki>[https://discord.com/channels/534508796639182860/656898197561802760 <nowiki>PvM help (external Discord)</nowiki>]</em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="melee"><ins><nowiki>Melee </nowiki>[https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1 <nowiki>melee</nowiki>]</ins></h2>
+<nowiki>
+</nowiki><p><nowiki>This section covers basic abilities, enhanced abilities, ultimate abilities, utility abilities and special attacks for Melee.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="basic-abilities"><nowiki>Basic Abilities</nowiki></h3>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-attack"><u><nowiki>Attack</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478062907295010906.png?v=1 <nowiki>meleebasic</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 0t (0s)
+⬥ Generates 1 </nowiki>[https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1 <nowiki>bloodlust</nowiki>]<nowiki> Bloodlust stack
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-adaptivestrike"><u><nowiki>Adaptive Strike</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478062906057949417.png?v=1 <nowiki>adaptivestrike</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 9t (5.4s)
+⬥ Generates 1 </nowiki>[https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1 <nowiki>bloodlust</nowiki>]<nowiki> Bloodlust stack
+⬥ Generates 12 Adrenaline
+⬥ Depends on weapon used:
+    • 2H: AoE in a cone of attack direction, hitting up to 9 targets, inclusive of main
+    • DW: 2 hits on target
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-rend"><u><nowiki>Rend</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478166426190741584.png?v=1 <nowiki>rend</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 17t (10.2s)
+⬥ Generates 2 </nowiki>[https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1 <nowiki>bloodlust</nowiki>]<nowiki> Bloodlust stacks
+⬥ Affected by Gloves of Passage </nowiki>[https://cdn.discordapp.com/emojis/556588694862037012.png?v=1 <nowiki>Glovesofpassage</nowiki>]<nowiki>, details in </nowiki>[[PvME/Gear upgrades/Armour And Weapons|<nowiki>Armour And Weapons</nowiki>]]<nowiki>
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-fury"><u><nowiki>Fury</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532879510372352.png?v=1 <nowiki>fury</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 25t (15s)
+⬥ Generates 1 </nowiki>[https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1 <nowiki>bloodlust</nowiki>]<nowiki> Bloodlust stack
+⬥ Next melee attack has +25% increased crit chance
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-greaterfury"><u><nowiki>Greater Fury</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532879334080527.png?v=1 <nowiki>gfury</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 25t (15s)
+⬥ Generates 1 </nowiki>[https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1 <nowiki>bloodlust</nowiki>]<nowiki> Bloodlust stack
+⬥ Next non-bleed melee hit within 15s is guaranteed to crit
+    • Only affects first hit of a combo ability
+    • Is applied only to 1 target in AoE
+    • Bleeds do not consume buff
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-backhand"><u><nowiki>Backhand</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532854302605333.png?v=1 <nowiki>backhand</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 25t (15s)
+    • Charges: 2
+⬥ Generates 1 </nowiki>[https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1 <nowiki>bloodlust</nowiki>]<nowiki> Bloodlust stack
+⬥ Stuns for 3t (1.8s)
+⬥ It is affected by </nowiki>[https://cdn.discordapp.com/emojis/841419289755385866.png?v=1 <nowiki>flankicon</nowiki>]<nowiki>
+    • Increases Max by 40% per </nowiki>[https://cdn.discordapp.com/emojis/841419289755385866.png?v=1 <nowiki>flankicon</nowiki>]<nowiki> rank
+    • Increases Minimum by 8% per </nowiki>[https://cdn.discordapp.com/emojis/841419289755385866.png?v=1 <nowiki>flankicon</nowiki>]<nowiki> rank
+    • No longer stuns or binds
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-punish"><u><nowiki>Punish</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532879439069184.png?v=1 <nowiki>punish</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 40t (24s)
+⬥ Generates 1 </nowiki>[https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1 <nowiki>bloodlust</nowiki>]<nowiki> Bloodlust stack
+⬥ Damage boosted by 2.5x when target is &lt;50% health
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-barge"><u><nowiki>Barge</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532853916860437.png?v=1 <nowiki>barge</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 34t (20.4s)
+⬥ Generates 1 </nowiki>[https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1 <nowiki>bloodlust</nowiki>]<nowiki> Bloodlust stack
+⬥ It is a Mobility ability:
+    • Will move you to Melee Distance
+⬥ It is affected by Mobile </nowiki>[https://cdn.discordapp.com/emojis/689501908628799488.png?v=1 <nowiki>mob</nowiki>]<nowiki>
+    • Reduces cooldown to 17t (10.2s)
+⬥ Binds for 11t (6.6s)
+⬥ Clears Bound debuff
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-greaterbarge"><u><nowiki>Greater Barge</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532879250456578.png?v=1 <nowiki>gbarge</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 34t (20.4s)
+⬥ Generates 1 </nowiki>[https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1 <nowiki>bloodlust</nowiki>]<nowiki> Bloodlust stack
+⬥ All normal </nowiki>[https://cdn.discordapp.com/emojis/535532853916860437.png?v=1 <nowiki>barge</nowiki>]<nowiki> things apply
+⬥ It has additional effects:
+    • Every tick (0.6s) since the player stopped attacking their target, </nowiki>[https://cdn.discordapp.com/emojis/535532879250456578.png?v=1 <nowiki>gbarge</nowiki>]<nowiki> gains +7% to its max range and +5% to its min, capping at 10t (6s) for a total of 100% and 20%. Damage range go from 75%-95% to 125%-165%
+    • After 8t (4.8s) pass since you stopped attacking, when you </nowiki>[https://cdn.discordapp.com/emojis/535532879250456578.png?v=1 <nowiki>gbarge</nowiki>]<nowiki>, if you cast </nowiki>[https://cdn.discordapp.com/emojis/864492981763702834.png?v=1 <nowiki>flurry</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535532879283879977.png?v=1 <nowiki>gflurry</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535532855191928842.png?v=1 <nowiki>assault</nowiki>]<nowiki> within 10t (6s), it will convert the first one done into a damage over time
+⬥ For details on how to use it, use </nowiki><code><nowiki>!gbarge</nowiki></code><nowiki>
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-chaosroar"><u><nowiki>Chaos Roar</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478062908767211640.png?v=1 <nowiki>chaosroar</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 100t (60s)
+⬥ Unlocked using a Chaos Roar ability codex </nowiki>[https://cdn.discordapp.com/emojis/994189286960287764.png?v=1 <nowiki>chaosroarcodex</nowiki>]<nowiki>
+⬥ Next Melee ability within 7.2s does 1.75x damage
+    • So, it doubles all hits of bleeds (e.g. </nowiki>[https://cdn.discordapp.com/emojis/1478062910113714297.png?v=1 <nowiki>dismember</nowiki>]<nowiki>) and multi-hit attacks (e.g. </nowiki>[https://cdn.discordapp.com/emojis/535532878969438210.png?v=1 <nowiki>cane</nowiki>]<nowiki>)
+    • Channels have multiple casts, so only doubles the first cast (e.g </nowiki>[https://cdn.discordapp.com/emojis/535532855191928842.png?v=1 <nowiki>assault</nowiki>]<nowiki> hit 1)
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="enhanced-abilities"><nowiki>Enhanced Abilities</nowiki></h3>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-assault"><u><nowiki>Assault</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532855191928842.png?v=1 <nowiki>assault</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 10t (6s)
+⬥ Adrenaline Cost: 25%
+⬥ Channelled ability, can move while channelling
+⬥ Bloodlust Assault (consumes 4 </nowiki>[https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1 <nowiki>bloodlust</nowiki>]<nowiki> Bloodlust)
+    • Increases damage from 140% AVG/hit to 180% AVG/hit
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-hurricane"><u><nowiki>Hurricane</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532878969438210.png?v=1 <nowiki>cane</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 34t (20.4s)
+⬥ Adrenaline Cost: 25%
+⬥ It is an AoE hitting up to 10 targets, inclusive of main:
+    • 3x3 with player as centre
+    • 5x5 with player as centre with Halberd-type weapon
+⬥ Reduces the cooldown of Hurricane </nowiki>[https://cdn.discordapp.com/emojis/535532878969438210.png?v=1 <nowiki>cane</nowiki>]<nowiki> by 3s for each enemy hit
+⬥ Bloodlust Hurricane (consumes 4 </nowiki>[https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1 <nowiki>bloodlust</nowiki>]<nowiki> Bloodlust)
+    • Third AoE hitting up to 10 targets, inclusive of main
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-flurry"><u><nowiki>Flurry</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/864492981763702834.png?v=1 <nowiki>flurry</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 34t (20.4s)
+⬥ Adrenaline Cost: 25%
+⬥ Channelled Ability, can move while channelling
+⬥ Stuns and Binds the target for 6t (3.6s)
+⬥ It is an AoE:
+    • 3x3 with player as centre
+⬥ Bloodlust Flurry (consumes 4 </nowiki>[https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1 <nowiki>bloodlust</nowiki>]<nowiki> Bloodlust)
+    • Deals 1% increased damage per % hp target is missing up to 65%
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-greaterflurry"><u><nowiki>Greater Flurry</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532879283879977.png?v=1 <nowiki>gflurry</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 34t (20.4s)
+⬥ Adrenaline Cost: 25%
+⬥ All normal </nowiki>[https://cdn.discordapp.com/emojis/864492981763702834.png?v=1 <nowiki>flurry</nowiki>]<nowiki> things apply
+⬥ Each hit extends </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>zerk</nowiki>]<nowiki> by 1t/hit (0.6s/hit) for up to 8t (4.8s)
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-dismember"><u><nowiki>Dismember</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478062910113714297.png?v=1 <nowiki>dismember</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 40t (24s)
+⬥ Adrenaline Cost: 0%
+⬥ It is a damage over time:
+    • Not affected by </nowiki>[https://cdn.discordapp.com/emojis/1005204971886743572.png?v=1 <nowiki>precise</nowiki>]<nowiki> 
+⬥ Can be extended:
+    • Strength skillcape </nowiki>[https://cdn.discordapp.com/emojis/1172654837616353320.png?v=1 <nowiki>strcape</nowiki>]<nowiki> passive adds 3 hits
+    • Masterwork Spear of Annihilation </nowiki>[https://cdn.discordapp.com/emojis/694566917456789554.png?v=1 <nowiki>mwspear</nowiki>]<nowiki> adds 50% more hits
+⬥ It is affected by </nowiki>[https://cdn.discordapp.com/emojis/1009423860875153559.png?v=1 <nowiki>lunging</nowiki>]<nowiki>
+    • Max hit increases by 10% + 3% per </nowiki>[https://cdn.discordapp.com/emojis/1009423860875153559.png?v=1 <nowiki>lunging</nowiki>]<nowiki> rank
+⬥ Can be recast 2 additional times within 24s of previous cast:
+    • 1st cast: Hits every 2t (1.2s) for 8 (11 </nowiki>[https://cdn.discordapp.com/emojis/1172654837616353320.png?v=1 <nowiki>strcape</nowiki>]<nowiki> , 15 </nowiki>[https://cdn.discordapp.com/emojis/1172654837616353320.png?v=1 <nowiki>strcape</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/694566917456789554.png?v=1 <nowiki>mwspear</nowiki>]<nowiki> ) times, heals for 4% of damage
+    • 2nd cast: Hits every 3t (1.8s) for 6 (9 </nowiki>[https://cdn.discordapp.com/emojis/1172654837616353320.png?v=1 <nowiki>strcape</nowiki>]<nowiki> , 12 </nowiki>[https://cdn.discordapp.com/emojis/1172654837616353320.png?v=1 <nowiki>strcape</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/694566917456789554.png?v=1 <nowiki>mwspear</nowiki>]<nowiki> ) times, heals for 6% of damage
+    • 3rd cast: Hits every 3t (1.8s) for 7 (10 </nowiki>[https://cdn.discordapp.com/emojis/1172654837616353320.png?v=1 <nowiki>strcape</nowiki>]<nowiki> , 13 </nowiki>[https://cdn.discordapp.com/emojis/1172654837616353320.png?v=1 <nowiki>strcape</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/694566917456789554.png?v=1 <nowiki>mwspear</nowiki>]<nowiki> ) times, heals for 12% of damage
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="special-attacks"><nowiki>Special Attacks</nowiki></h3>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-ekzekkil"><u><nowiki>Ek-Zekkil</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/903244090953588787.png?v=1 <nowiki>ezk</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 100t (60s)
+⬥ Adrenaline Cost: 50% (45% with </nowiki>[https://cdn.discordapp.com/emojis/513201065877831680.png?v=1 <nowiki>rov</nowiki>]<nowiki>)
+⬥ Marks target as Flamebound Rival, then deals damage
+    • Only applicable to one target at a time
+        ⬩ Effects only apply to Flamebound Rival
+⬥ If wielding the Ek-Zekkil, fighting your Flamebound Rival will grant:
+    • 12% increased damage dealt on attacks (except bleeds)
+    • 12% reduced damage taken (from Flamebound Rival)
+    • Igneous Showdown an additional 3 (simultaneous) hits
+        ⬩ Refunds 15% adrenaline
+⬥ Switching to Ek-ZekKil will reapply Flamebound Rival to initial target
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-zarosgodsword"><u><nowiki>Zaros Godsword</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/626465964325601290.png?v=1 <nowiki>zgs</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 100t (60s)
+⬥ Adrenaline Cost: 50% (45% with </nowiki>[https://cdn.discordapp.com/emojis/513201065877831680.png?v=1 <nowiki>rov</nowiki>]<nowiki>)
+⬥ On cast buff
+⬥ 7x7 area (enemy you cast spec on takes damage every 3t (1.8s) while in it)
+⬥ Increases damage by 25% from t0→34t (35t/21s duration)
+    • Buff starts t1 for autos, t2 for everything
+⬥ Does not incur the auto cooldown, but will still attempt to force an auto
+⬥ Can take weapon off and retain spec effect
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-dragonbattleaxe"><u><nowiki>Dragon Battleaxe</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/603979368850653216.png?v=1 <nowiki>DBA</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Adrenaline Cost: 100% (90% with </nowiki>[https://cdn.discordapp.com/emojis/513201065877831680.png?v=1 <nowiki>rov</nowiki>]<nowiki>)
+⬥ Drains 10% (rounded down) of your </nowiki>[https://cdn.discordapp.com/emojis/689509250472476758.png?v=1 <nowiki>Attack</nowiki>]<nowiki>, </nowiki>[https://cdn.discordapp.com/emojis/580168050121113623.png?v=1 <nowiki>range</nowiki>]<nowiki>, </nowiki>[https://cdn.discordapp.com/emojis/689504724159823906.png?v=1 <nowiki>Magic</nowiki>]<nowiki>, and </nowiki>[https://cdn.discordapp.com/emojis/689509250979987525.png?v=1 <nowiki>Defence</nowiki>]<nowiki> levels and gain a </nowiki>[https://cdn.discordapp.com/emojis/689509250879324165.png?v=1 <nowiki>Strength</nowiki>]<nowiki> level boost of 10 + 1 level for every 4 drained from your other stats
+⬥ Boosts damage by </nowiki><code><nowiki>1.2</nowiki><em></em></code><nowiki> (stacks with </nowiki>[https://cdn.discordapp.com/emojis/626465964325601290.png?v=1 <nowiki>zgs</nowiki>]<nowiki> for a </nowiki><code><nowiki>1.25 * 1.2 = 1.5</nowiki></code><nowiki> boost), or </nowiki><code><nowiki>1.1</nowiki><em></em></code><nowiki> when using </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>zerk</nowiki>]<nowiki>, making it a </nowiki><code><nowiki>2 * 1.1 = 2.2</nowiki></code><nowiki> boost
+⬥ Multiplicative 10% reduction to hitchance debuff
+⬥ These effects lasts 1 minute
+⬥ Can take weapon off and retain spec effect
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-varanussmercy"><u><nowiki>Varanus's Mercy</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1448697873603498045.png?v=1 <nowiki>varanussmercy</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Adrenaline Cost: 50% (45% with </nowiki>[https://cdn.discordapp.com/emojis/513201065877831680.png?v=1 <nowiki>rov</nowiki>]<nowiki>)
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-dragonclaws"><u><nowiki>Dragon Claws</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/779048041088024606.png?v=1 <nowiki>dragonclaw</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Adrenaline Cost: 50% (45% with </nowiki>[https://cdn.discordapp.com/emojis/513201065877831680.png?v=1 <nowiki>rov</nowiki>]<nowiki>)
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-statiusswarhammer"><u><nowiki>Statius's Warhammer</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/641670143197446182.png?v=1 <nowiki>swh</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Adrenaline Cost: 35% (31.5% with </nowiki>[https://cdn.discordapp.com/emojis/513201065877831680.png?v=1 <nowiki>rov</nowiki>]<nowiki>)
+⬥ Applies an affinity and </nowiki>[https://cdn.discordapp.com/emojis/689509250979987525.png?v=1 <nowiki>Defence</nowiki>]<nowiki> reduction:
+    • +5 affinity
+    • Reduces </nowiki>[https://cdn.discordapp.com/emojis/689509250979987525.png?v=1 <nowiki>Defence</nowiki>]<nowiki> level by 30% of base
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-dragonscimitar"><u><nowiki>Dragon Scimitar</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1048592044731400252.png?v=1 <nowiki>dragonscimitar</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Adrenaline Cost: 25% (22.5% with </nowiki>[https://cdn.discordapp.com/emojis/513201065877831680.png?v=1 <nowiki>rov</nowiki>]<nowiki>)
+⬥ Increases accuracy with slash weapons by 25% for 100t (60s)
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-granitemaul"><u><nowiki>Granite Maul</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/796989663051120640.png?v=1 <nowiki>gmaul</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Adrenaline Cost: 50% (45% with </nowiki>[https://cdn.discordapp.com/emojis/513201065877831680.png?v=1 <nowiki>rov</nowiki>]<nowiki>)
+⬥ Can be used during the GCD
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-darkshardofleng"><u><nowiki>Dark Shard of Leng</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/883134308146098227.png?v=1 <nowiki>lengmh</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 25t (15s)
+⬥ Adrenaline Cost: 30% (27% with </nowiki>[https://cdn.discordapp.com/emojis/513201065877831680.png?v=1 <nowiki>rov</nowiki>]<nowiki>)
+⬥ It is an AoE
+⬥ Consumes all </nowiki>[https://cdn.discordapp.com/emojis/1219291285358120990.png?v=1 <nowiki>primordialice</nowiki>]<nowiki> stacks
+⬥ For every stack consumed
+    • Adrenaline Cost is reduced by 12%
+    • Each hit increased by 18-22%
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="ultimate-abilities"><nowiki>Ultimate Abilities</nowiki></h3>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-overpower"><u><nowiki>Overpower</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532879334080517.png?v=1 <nowiki>overpower</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 50t (30s)
+⬥ Adrenaline Cost: 60%
+⬥ Affected by the Igneous Kal-Ket </nowiki>[https://cdn.discordapp.com/emojis/902209626404192316.png?v=1 <nowiki>igneouskalket</nowiki>]<nowiki> and the Igneous Kal-Zuk </nowiki>[https://cdn.discordapp.com/emojis/902209626479685734.png?v=1 <nowiki>igneouskalzuk</nowiki>]<nowiki>:
+    • The ability has two hits.
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-pulverise"><u><nowiki>Pulverise</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532879053062146.png?v=1 <nowiki>pulverise</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 100t (60s)
+⬥ Adrenaline Cost: 60%
+⬥ Applies Pulverised debuff to target
+    • Reduces damage dealt by target by 25%
+    • If target dies with debuff, you gain 50% adrenaline
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-berserk"><u><nowiki>Berserk</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>zerk</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 100t (60s)
+⬥ Adrenaline Cost: 100%
+⬥ It is an on cast buff
+⬥ It increases damage by 75% from t0→t33 (34t/20.4s duration)
+⬥ Wearing 3+ pieces of Vestments </nowiki>[https://cdn.discordapp.com/emojis/994189295592161291.png?v=1 <nowiki>vestmentsofhavoctop</nowiki>]<nowiki> extends the duration from t0→t33 (34t/20.4s) to t0→t43 (44t/26.6s)
+⬥ It increases damage taken by 25%
+⬥ Maximum Bloodlust </nowiki>[https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1 <nowiki>bloodlust</nowiki>]<nowiki> increased by 4
+⬥ Basic attacks and basic abilities generate 2x Bloodlust </nowiki>[https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1 <nowiki>bloodlust</nowiki>]<nowiki>
+⬥ Overpower </nowiki>[https://cdn.discordapp.com/emojis/535532879334080517.png?v=1 <nowiki>overpower</nowiki>]<nowiki> cooldown reduced to 15t (9s)
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-meteorstrike"><u><nowiki>Meteor Strike</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478070401702821938.png?v=1 <nowiki>meteorstrike</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 100t (60s)
+⬥ Adrenaline Cost: 60%
+⬥ It is an AoE hitting up to 9 targets, inclusive of main:
+    • 3x3 with player as centre
+    • 5x5 with player as centre with Halberd-type weapon
+⬥ Provides an Adrenaline buff for the next 30s:
+    • Melee basic abilities generate 1.5x Adrenaline
+    • Generate 4.5% every 1t you have a Melee weapon equipped
+    • This buff is applied on release of the ability
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="utility-abilities"><nowiki>Utility Abilities</nowiki></h3>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-bladeddive"><u><nowiki>Bladed Dive</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532854281764884.png?v=1 <nowiki>bd</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 34t (20.4s)
+⬥ It is a Mobility ability:
+    • If you use it on a tile, it will </nowiki>[https://cdn.discordapp.com/emojis/535532854281764884.png?v=1 <nowiki>bd</nowiki>]<nowiki> you to that tile
+    • If you use it on a target it will </nowiki>[https://cdn.discordapp.com/emojis/535532854281764884.png?v=1 <nowiki>bd</nowiki>]<nowiki> you some point at Melee Distance of the target (the movement is accounted 1t later than had you clicked a tile)
+⬥ It is affected by Mobile </nowiki>[https://cdn.discordapp.com/emojis/689501908628799488.png?v=1 <nowiki>mob</nowiki>]<nowiki>
+    • Reduces cooldown to 17t (10.2s)
+⬥ It is an AoE:
+    • Hits 3x3 around where you land if used on a target
+    • This becomes 5x5 with </nowiki>[https://cdn.discordapp.com/emojis/602581988599398400.png?v=1 <nowiki>Laceration</nowiki>]<nowiki> Halberd </nowiki>[https://cdn.discordapp.com/emojis/535532854281764884.png?v=1 <nowiki>bd</nowiki>]<nowiki>
+⬥ If you use it on a target and it dies within 10t (6s), the cooldown ends
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-meleeabilityindex">[https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1 <nowiki>melee</nowiki>]<nowiki> </nowiki><u><nowiki>Melee Ability Index</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1 <nowiki>melee</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Click the links to quickly navigate to that ability's information.
+⬥ General notes can be found in the introduction </nowiki>[[PvME/Combat reference/Melee Abilities#introduction|<nowiki>here</nowiki>]]<nowiki>.
+</nowiki></div>
+<nowiki>
+</nowiki><div><div><div><u><nowiki>Basic</nowiki></u><nowiki> (1/2)
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ </nowiki>[[PvME/Combat reference/Melee Abilities#block-attack|<nowiki>Attack</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Melee Abilities#block-adaptivestrike|<nowiki>Adaptive Strike</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Melee Abilities#block-rend|<nowiki>Rend</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Melee Abilities#block-fury|<nowiki>Fury</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Melee Abilities#block-greaterfury|<nowiki>G. Fury</nowiki>]]<nowiki>
+</nowiki></div>
+</div>
+<div><div><u><nowiki>Basic</nowiki></u><nowiki> (2/2)
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ </nowiki>[[PvME/Combat reference/Melee Abilities#block-backhand|<nowiki>Backhand</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Melee Abilities#block-punish|<nowiki>Punish</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Melee Abilities#block-barge|<nowiki>Barge</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Melee Abilities#block-greaterbarge|<nowiki>G. Barge</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Melee Abilities#block-chaosroar|<nowiki>Chaos Roar</nowiki>]]<nowiki>
+</nowiki></div>
+</div>
+<div><div><u><nowiki>Enhanced</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ </nowiki>[[PvME/Combat reference/Melee Abilities#block-assault|<nowiki>Assault</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Melee Abilities#block-hurricane|<nowiki>Hurricane</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Melee Abilities#block-flurry|<nowiki>Flurry</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Melee Abilities#block-greaterflurry|<nowiki>G. Flurry</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Melee Abilities#block-dismember|<nowiki>Dismember</nowiki>]]<nowiki>
+</nowiki></div>
+</div>
+<div><div><u><nowiki>Special Attacks</nowiki></u><nowiki> (1/2)
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ </nowiki>[[PvME/Combat reference/Melee Abilities#block-ekzekkil|<nowiki>Ek-Zekkil</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Melee Abilities#block-zarosgodsword|<nowiki>Zaros Godsword</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Melee Abilities#block-dragonbattleaxe|<nowiki>D. Battleaxe</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Melee Abilities#block-varanussmercy|<nowiki>Varanus's Mercy</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Melee Abilities#block-dragonscimitar|<nowiki>D. Scimitar</nowiki>]]<nowiki>
+</nowiki></div>
+</div>
+<div><div><u><nowiki>Special Attacks (2/2)</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ </nowiki>[[PvME/Combat reference/Melee Abilities#block-dragonclaws|<nowiki>D. Claws</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Melee Abilities#block-statiusswarhammer|<nowiki>Stat. Warhammer</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Melee Abilities#block-granitemaul|<nowiki>Granite Maul</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Melee Abilities#block-darkshardofleng|<nowiki>Dark Shard of Leng</nowiki>]]<nowiki>
+</nowiki></div>
+</div>
+<div><div><u><nowiki>Ultimate</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ </nowiki>[[PvME/Combat reference/Melee Abilities#block-overpower|<nowiki>Overpower</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Melee Abilities#block-pulverise|<nowiki>Pulverize</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Melee Abilities#block-berserk|<nowiki>Berserk</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Melee Abilities#block-meteorstrike|<nowiki>Meteor Strike</nowiki>]]<nowiki>
+</nowiki></div>
+</div>
+<div><div><u><nowiki>Utility</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ </nowiki>[[PvME/Combat reference/Melee Abilities#block-bladeddive|<nowiki>Bladed Dive</nowiki>]]<nowiki>
+</nowiki></div>
+</div>
+</div>
+<nowiki>
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+      
+    </nowiki>
+== Attribution and source history ==
+Adapted from [https://pvme.io/pvme-guides/miscellaneous-information/ability-information/melee-abilities/ <nowiki>Melee Abilities</nowiki>] by PvME contributors. [https://github.com/pvme/pvme-guides/commits/master/miscellaneous-information/ability-information/melee-abilities.txt Upstream source history]. Licensed [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]. Snapshot 074a9438f79d10fba75735791be0030734db8b5e. Formatting adapted for standalone MediaWiki; media and third-party references remain external links.

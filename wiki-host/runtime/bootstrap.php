@@ -128,6 +128,7 @@ function verifyPages(PgSql\Connection $conn, array $titles, bool $exact): void {
 }
 
 try {
+    $server = RuntimeConfig::server();
     $db = RuntimeConfig::database();
     RuntimeConfig::requiredSecret('MW_SECRET_KEY');
     RuntimeConfig::requiredSecret('MW_UPGRADE_KEY');
@@ -165,7 +166,6 @@ try {
     file_put_contents($dbPasswordFile, $db['password']);
     chmod($passwordFile, 0600);
     chmod($dbPasswordFile, 0600);
-    $server = getenv('MW_SERVER') ?: 'https://pvmewiki.sanji3.dev';
     try {
         run(['php', 'maintenance/run.php', 'install', '--dbtype=postgres', '--dbserver=' . $db['host'],
             '--dbport=' . $db['port'], '--dbname=' . $db['dbname'], '--dbschema=mediawiki',

@@ -4,7 +4,8 @@
     "deploymentEnabled": {
       "codex/public-bootstrap-review-flow": false,
       "codex/owner-public-snapshot": false,
-      "codex/owner-request-copy": false
+      "codex/owner-request-copy": false,
+      "wiki": false
     }
   },
   "buildCommand": "npm run build && npm run verify && node scripts/check-publication.mjs",

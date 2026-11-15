@@ -1,0 +1,351 @@
+[[PvME|PvME guide index]]
+
+<h2 id="introduction"><ins><nowiki>Introduction</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><em><nowiki>Note: a </nowiki></em><em><nowiki>Table of Contents</nowiki></em><em><nowiki> can be found in the pinned messages.</nowiki></em></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Runescape has 3 different combat modes: </nowiki><strong><nowiki>revolution (revo)</nowiki></strong><nowiki>, </nowiki><strong><nowiki>revolution++ (revo++)</nowiki></strong><nowiki> and </nowiki><strong><nowiki>full manual (FM)</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>This guide aims to cover what these different game modes are, what a player just starting out might want to use, and how to transition to using full manual.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Combat modes can be configured by going to </nowiki><strong><nowiki>Esc &gt; Gameplay Settings &gt; Combat &amp; Action Bar &gt; Combat Mode</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="related-channels"><ins><nowiki>Related guides</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>For further information and reading, you can refer to the following resources.</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-quicknavigationlinks"><u><nowiki>Quick Navigation Links</nowiki></u><nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>Links to related guides and resources for more info about PvM and DPS.
+Use the </nowiki><strong><nowiki>Community help (external Discord)</nowiki></strong><nowiki> if you want to ask any questions, or post clips/videos for review and feedback.
+</nowiki></div>
+<nowiki>
+</nowiki><div><div><div><u><nowiki>Getting Started</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ </nowiki>[[PvME/Learning to boss/Bossing Path|<nowiki>Bossing Path</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Getting started/Interface Guide|<nowiki>Interface Guide</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Learning to boss/Learning PvM|<nowiki>Learning PvM</nowiki>]]<nowiki>
+</nowiki></div>
+</div>
+<div><div><u><nowiki>Damage guides</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ </nowiki>[[PvME/Damage rotations/Damage rotations FAQ|<nowiki>DPM Advice Faq</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Damage rotations/Magic damage guide|<nowiki>DPM Advice Mage</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Damage rotations/Melee damage guide|<nowiki>DPM Advice Melee</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Damage rotations/Necromancy damage guide|<nowiki>DPM Advice Necro</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Damage rotations/Ranged damage guide|<nowiki>DPM Advice Range</nowiki>]]<nowiki>
+</nowiki></div>
+</div>
+<div><div><u><nowiki>Community help (external Discord)</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ </nowiki>[https://discord.com/channels/534508796639182860/656898197561802760 <nowiki>PvM help (external Discord)</nowiki>]<nowiki>
+⬥ </nowiki>[https://discord.com/channels/534508796639182860/1021152606455873686 <nowiki>PvM help forums (external Discord)</nowiki>]<nowiki>
+⬥ </nowiki>[https://discord.com/channels/534508796639182860/1019648841965916220 <nowiki>VOD reviews (external Discord)</nowiki>]<nowiki>
+</nowiki></div>
+</div>
+</div>
+<nowiki>
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="revolution-revo"><ins><nowiki>Revolution (Revo)</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><em><nowiki>Note: For a list of of revo/revo++bars, see </nowiki><code><nowiki>!revo</nowiki></code><nowiki>, </nowiki><code><nowiki>!revo++</nowiki></code><nowiki> ‎and </nowiki><code><nowiki>!aoe</nowiki></code><nowiki>.</nowiki></em></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Revolution lets the game automatically activate abilities on your ability bar in sequential order</nowiki></strong><nowiki> (based on adrenaline and cooldowns).</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Revo can be configured to activate any combination of:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Basic abilities</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Threshold abilities</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Enhanced abilities</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Ultimate abilities</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ If configured to also use enhanced and ultimate abilities for you, it is referred to as </nowiki><strong><nowiki>revo++</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Remember, you can still provide user input to override revo/revo++ when you want</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• This may be easier with ability queueing on.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="is-revolution-good"><nowiki>Is Revolution Good?</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ It gives up some control over using your basics but also means less user input is required.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Some reasons revo can helpful include:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• You're just getting into PvM</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Combat seems to have too much to focus on</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• You want the game to use basics but still have control over stronger abilities.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>For most combat situations, you </nowiki><em><nowiki>can</nowiki></em><nowiki> get away with using Revo</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ There are helpful guides and ability bar setups that can make it work.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="is-revolution-good_1"><nowiki>Is Revolution++ Good?</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Revo++ makes the game far more AFK, by reducing user input significantly.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ This comes at the cost of flexibility and adaptability to different combat situations.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Places where Revo++ is useful:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• AFK tasks like Slayer </nowiki>[https://cdn.discordapp.com/emojis/797896049548066857.png?v=1 <nowiki>slayer</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Special Revo++ bars </nowiki><em><nowiki>specifically designed for a particular boss</nowiki></em></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Ideally avoid Revo++ </nowiki><em><nowiki>outside the above scenarios</nowiki></em><nowiki> → prefer normal Revo everywhere else.</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="full-manual"><nowiki>Full Manual</nowiki></h3>
+<nowiki>
+</nowiki><h3 id="what-is-full-manual"><nowiki>What Is Full Manual</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>In full manual, you must use every ability you want yourself - the game activates nothing for you.</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ If no inputs are given, full manual will only use auto attacks.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ It has a higher skill floor, but also rewards the player for the effort they put into it.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="is-full-manual-required"><nowiki>Is Full Manual Required?</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Full manual is not required to play or enjoy the game, but progressively harder content will benefit from using it.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>It is recommended to learn full manual </nowiki><em><nowiki>at some point</nowiki></em><nowiki>.</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Full manual offers more control over what you use:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• You can slow down or burst your DPS at important times in a boss fight</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• You can save abilities for specific scenarios (e.g. stuns for when you need them, or AoE abilities</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="revo-vs-full-manual-why-you-should-switch"><ins><nowiki>Revo vs. Full Manual - Why You Should Switch!</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>In this section, we cover some reasons why full manual is preferable. Afterwards, in </nowiki><ins><strong><nowiki>How to Switch to Full Manual</nowiki></strong></ins><nowiki>, we discuss how you can progress there.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="ultimate-abilities"><nowiki>Ultimate Abilities</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>You should use ultimates manually even if using Revo</nowiki></strong><nowiki> (except for stuff like full AFK slayer, etc.)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Good Revo bars will have stronger abilities near the front of the bar so they get used more frequently.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ This is good for general usage but detrimental for damage-boosting ultimates.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• e.g. Sunshine </nowiki>[https://cdn.discordapp.com/emojis/994921119381463070.png?v=1 <nowiki>sunshine</nowiki>]<nowiki> / Death's Swiftness </nowiki>[https://cdn.discordapp.com/emojis/994921434633744455.png?v=1 <nowiki>deathsswift</nowiki>]<nowiki> / Berserk </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>zerk</nowiki>]<nowiki> / Living Death </nowiki>[https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1 <nowiki>livingdeath</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Stronger abilities will likely be on cooldown at the when you use your ultimate, due to being at the front of the revo bar.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Some of the best abilities are bleeds which will be near the front of the revo bar, but bleeds are NOT boosted by damage boosting ultimates.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Whereas if you use full manual, you have full control:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Strong abilities can be saved until you are within the ultimate to get more out of them.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Use of bleeds can be reduced/avoided in damage boosting ultimates since you can just choose to not press them.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• You can even choose the right time to use your ultimate (e.g. don't use it before the boss becomes immune, etc.)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The clip below will demonstrate how Revo can make someone use bad abilities in a damage-boosting ultimate. See what abilities were used right after Sunshine </nowiki>[https://cdn.discordapp.com/emojis/994921119381463070.png?v=1 <nowiki>sunshine</nowiki>]<nowiki>:</nowiki></p>
+<nowiki>
+</nowiki>[https://img.pvme.io/images/iwArsuMX77.mp4 <nowiki>Source media</nowiki>]<nowiki>
+</nowiki><p><nowiki>⬥ If using full manual instead, they could have better planned out what abilities to use before using </nowiki>[https://cdn.discordapp.com/emojis/994921119381463070.png?v=1 <nowiki>sunshine</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• They could have made sure the good abilities like Dragon Breath </nowiki>[https://cdn.discordapp.com/emojis/535533833391702017.png?v=1 <nowiki>dbreath</nowiki>]<nowiki> are off cooldown and ready immediately after </nowiki>[https://cdn.discordapp.com/emojis/994921119381463070.png?v=1 <nowiki>sunshine</nowiki>]<nowiki>, by using other abilities to build adrenaline like Combust </nowiki>[https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1 <nowiki>combust</nowiki>]<nowiki> or the Basic Attack </nowiki>[https://cdn.discordapp.com/emojis/1478063104146411713.png?v=1 <nowiki>magicbasic</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="boss-mechanics"><nowiki>Boss Mechanics</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>As you progress in PvM and face tougher and tougher bosses, you will encounter bosses with mechanics where revolution could greatly hinder your combat ability. Here are a few scenarios where Revo could cause more harm than good:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Araxxor</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/513213019543699466.png?v=1 <nowiki>Araxxi</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• During his web shield, players must manually input to stop attacking, otherwise all damage dealt gets reflected onto the player, potentially killing them.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Vorago</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/572867742613635082.png?v=1 <nowiki>vorago</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• During his reflect mechanic, similar to Araxxor, players must manually stop attacking to prevent killing themselves or another person via reflect damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Telos</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/513212949033123840.png?v=1 <nowiki>Telos</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• For his &quot;Hold Still, Invader&quot; attack, you Anticipate </nowiki>[https://cdn.discordapp.com/emojis/535541306475151390.png?v=1 <nowiki>anti</nowiki>]<nowiki> and use Resonance </nowiki>[https://cdn.discordapp.com/emojis/535541258844635148.png?v=1 <nowiki>res</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• This requires somewhat precise timing and there's a chance Revolution activates an ability while you are waiting to Resonance </nowiki>[https://cdn.discordapp.com/emojis/535541258844635148.png?v=1 <nowiki>res</nowiki>]<nowiki>, triggering the global cooldown which can mess up the timing.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Kalphite King</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/513212971409866765.png?v=1 <nowiki>KalphiteKing</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• During his 'Green' attack, a player needs to provoke </nowiki>[https://cdn.discordapp.com/emojis/535541259465392143.png?v=1 <nowiki>voke</nowiki>]<nowiki> the boss and use either Devotion </nowiki>[https://cdn.discordapp.com/emojis/513190158728953857.png?v=1 <nowiki>devo</nowiki>]<nowiki> or Resonance </nowiki>[https://cdn.discordapp.com/emojis/535541258844635148.png?v=1 <nowiki>res</nowiki>]<nowiki> to avoid dying</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If Revolution uses something else and delays the defensives, it might kill them.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Nex</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/513213159071547395.png?v=1 <nowiki>Nex</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Any attacks during her 'Blood Siphon' will heal Nex rather than hurt her, requiring manual input to prevent Revolution from attacking her.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• During Blood Phase, Nex heals from bleeds, requiring manual input to avoid using bleeds.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Helwyr</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/513213019635843100.png?v=1 <nowiki>Helwyr</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• A common way to deal with his 'You Will Bleed!' swipe attack is to Resonance </nowiki>[https://cdn.discordapp.com/emojis/535541258844635148.png?v=1 <nowiki>res</nowiki>]<nowiki> it to heal some HP.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• This needs somewhat precise timing and there's a chance that Revolution activates an ability while you are waiting to Resonance </nowiki>[https://cdn.discordapp.com/emojis/535541258844635148.png?v=1 <nowiki>res</nowiki>]<nowiki>, triggering the global cooldown which can mess up the timing.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Arch-Glacor</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/891948878583189514.png?v=1 <nowiki>archglacor</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• During his 'Arms' mechanic, players must quickly deal damage on one of his arms to break free.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Revolution might waste a strong ability on the boss (who is immune at this point) before you switch to target his arms, lowering your DPS output.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Zamorak</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/994914159969976440.png?v=1 <nowiki>zamorak</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• During his Infernal Tomb mechanic, players must Anticipate </nowiki>[https://cdn.discordapp.com/emojis/535541306475151390.png?v=1 <nowiki>anti</nowiki>]<nowiki> and then stun on a specific tick.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Missing this stun could cost you the kill or force you to use Immortality </nowiki>[https://cdn.discordapp.com/emojis/535541258538582017.png?v=1 <nowiki>immort</nowiki>]<nowiki> at higher enrages.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="revo-with-mostly-manual-inputs"><nowiki>Revo with (Mostly) Manual Inputs</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ There is not much difference between using Full Manual </nowiki><em><nowiki>without</nowiki></em><nowiki> Revolution, vs. Full Manual </nowiki><em><nowiki>with</nowiki></em><nowiki> Revolution </nowiki><em><nowiki>as a backup</nowiki></em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The main difference is it ensures you don't suddenly use an ability that you didn't intend to.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="how-to-switch-from-revolution-to-full-manual"><ins><nowiki>How to Switch from Revolution to Full Manual</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><strong><nowiki>Learning full manual can take time - this is normal.</nowiki></strong><nowiki> However, just like with any other game, its not unreasonable to expect players to pick up the required skill over time.</nowiki></p>
+<nowiki>
+</nowiki><h3 id="step-by-step"><nowiki>Step by Step</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Set good keybinds.</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• It is very important that your </nowiki><strong><nowiki>keybinds are comfortable to reach</nowiki></strong><nowiki> and </nowiki><strong><nowiki>make sense to you</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• It is up to you to decide what works best for you.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• See the </nowiki><strong><nowiki>Action Bars</nowiki></strong><nowiki> and </nowiki><strong><nowiki>Keybinds</nowiki></strong><nowiki> sections in </nowiki>[[PvME/Getting started/Interface Guide|<nowiki>Interface Guide</nowiki>]]<nowiki> for some ideas.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Practice the keybinds.</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• You need to be able to use your keybinds effectively - </nowiki><strong><nowiki>this means committing them to muscle memory.</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Your goal is to not need to think about what keybind does what ability - you should know what ability you want to do, and the muscle memory should do the rest for you.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>It is normal for this to take some time</nowiki></strong><nowiki>, but trust the process!</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Choose - gradual transition, or full sending it.</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Some players find it easier to start to keep Revo on for backup, but focus on using more manual inputs until they can turn off Revo entirely.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Others may just jump in and turn off Revo, and practice until they can effectively use their binds, and not lose time trying to use abilities.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>It is up to you to decide what works best for you.</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Focused practice</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• When practicing keybinds, </nowiki><em><nowiki>make sure the focus is practicing keybinds</nowiki></em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• This means you shouldn't try to learn too many other things at the same time, such as prayer flicking or new boss mechanics, etc.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Get used to full manual doing PvM you're already familiar with.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Good places to practice keybinds:</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Combat Dummies</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/656844963522281473.png?v=1 <nowiki>dummy</nowiki>]<nowiki> - to initially learn your keybinds.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Full manual slayer</nowiki></strong><nowiki> - makes you think about prioritising abilities and using AoEs properly.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>GWD2</nowiki></strong><nowiki> - relatively easy bosses with few mechanics and high health to practice rotations on (plus decent </nowiki>[https://cdn.discordapp.com/emojis/698816156961603654.png?v=1 <nowiki>coins</nowiki>]<nowiki> profit!)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Arch-Glacor</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/891948878583189514.png?v=1 <nowiki>archglacor</nowiki>]<nowiki> - toggleable mechanics for a customised fight to practice movement, defensives, and DPS checks.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Check out </nowiki>[[PvME/Learning to boss/Bossing Path|<nowiki>Bossing Path</nowiki>]]<nowiki> for more ideas.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="keybinds-guide"><nowiki>Keybinds Guide</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ As a reference, check out this very well thought out guide to setting up your keybinds that can help you plan your own keybinds.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://www.youtube.com/watch?v=zn_y-_2giZg <nowiki>https://www.youtube.com/watch?v=zn_y-_2giZg</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>[https://www.youtube-nocookie.com/embed/zn_y-_2giZg <nowiki>Embedded guide video</nowiki>]<nowiki>
+      
+    </nowiki>
+== Attribution and source history ==
+Adapted from [https://pvme.io/pvme-guides/new-to-bossing/revo-to-full-manual/ <nowiki>Revo To Full Manual</nowiki>] by PvME contributors. [https://github.com/pvme/pvme-guides/commits/master/new-to-bossing/revo-to-full-manual.txt Upstream source history]. Licensed [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]. Snapshot 074a9438f79d10fba75735791be0030734db8b5e. Formatting adapted for standalone MediaWiki; media and third-party references remain external links.

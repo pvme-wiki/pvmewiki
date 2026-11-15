@@ -1,0 +1,122 @@
+[[PvME|PvME guide index]]
+
+<h2 id="introduction"><ins><nowiki>Introduction</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>The PVMe Spreadsheet is a Google Sheet document that is used to store dynamic information for use in guides. This includes things like prices of items, values of invention components, calculating boss revenue, etc. which can change over time. This guide is a brief overview of the sheet, and how you can use data from it in your guides.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>The spreadsheet can be found at the following link.</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-pvmespreadsheet"><u><nowiki>PvME Spreadsheet</nowiki></u><nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>Check out the PvME Spreadsheet </nowiki>[https://docs.google.com/spreadsheets/d/1OGM9MBUG2bQVbHxlm86Xfs60soFcjINSOrPv1WL3Vgw/ <nowiki>here</nowiki>]<nowiki>.
+You </nowiki><em><nowiki>can</nowiki></em><nowiki> make a copy for own use, but it will </nowiki><em><nowiki>not</nowiki></em><nowiki> affect any PvME guides.
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><em><nowiki>Note: Data in guides is only pulled from the </nowiki></em><em><nowiki>master</nowiki></em><em><nowiki> copy of the sheet. To modify existing data, or add new data, use </nowiki>[https://discord.com/channels/534508796639182860/771436827214086154 <nowiki>Guide media upload and request (external Discord)</nowiki>]<nowiki>.</nowiki></em></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="pvme-spreadsheet-layout"><ins><nowiki>PvME Spreadsheet Layout</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>⬥ When you open the spreadsheet, you will see the following sheets at the bottom:</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/u0WjDXv.png <nowiki>Guide illustration</nowiki>]<nowiki>
+⬥ These tabs correspond to different categories of items/etc. within the game for data is present/calculated for use in the guides:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Prices</nowiki></strong><nowiki>: sheet that contains and periodically fetches/updates GE prices of items.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Bosses</nowiki></strong><nowiki>: used to calculate earnings for </nowiki>[[PvME/Combat reference/Boss Revenue|<nowiki>Boss Revenue</nowiki>]]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Slayer</nowiki></strong><nowiki>: used to calculate earnings for </nowiki>[https://pvme.io/guides/?category=Slayer <nowiki>Slayer guides</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Perks</nowiki></strong><nowiki>: used to calculate cost of Invention components and perks for </nowiki>[[PvME/Invention perks/Perks|<nowiki>Perks</nowiki>]]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Unlocks</nowiki></strong><nowiki>: prices of unlockable items found in </nowiki>[[PvME/Gear upgrades/Permanent Unlocks|<nowiki>Permanent Unlocks</nowiki>]]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Miscellaneous</nowiki></strong><nowiki>: some misc. prices and calculations.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Consumables</nowiki></strong><nowiki>: prices of consumable items found in </nowiki>[[PvME/Gear upgrades/Consumables|<nowiki>Consumables</nowiki>]]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Mastery</nowiki></strong><nowiki>: outdated sheet, kept for historic/reference purposes.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ To access a specific piece of information, only two things are required: the </nowiki><strong><nowiki>sheet name</nowiki></strong><nowiki> and </nowiki><strong><nowiki>named range</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="using-spreadsheet-data-in-guides"><ins><nowiki>Using Spreadsheet Data In Guides</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>⬥ Using data from the spreadsheet in a guide is very straightforward.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Values from the sheet can be accessed using the following command: </nowiki><code><nowiki>data_pvme:&lt;sheet&gt;_&lt;namedrange&gt;</nowiki></code><nowiki>, replacing the contents of </nowiki><code><nowiki>&lt;sheet&gt;</nowiki></code><nowiki> ‎and </nowiki><code><nowiki>&lt;namedrange&gt;</nowiki></code><nowiki> ‎with the </nowiki><strong><nowiki>sheet name</nowiki></strong><nowiki> and </nowiki><strong><nowiki>named range</nowiki></strong><nowiki> respectively.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><em><nowiki>When posted (by the PvME Bot), the command text will get replaced by the value present in that cell</nowiki></em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ For example, the following sentence might be in a guide:</nowiki></p>
+<nowiki>
+</nowiki><pre>Greater Chain &lt;:gchain:1257440278512537740&gt; is a very powerful ability, but is also quite expensive, costing &lt;:coins:698816156961603654&gt; $data_pvmе:unlock_gchain$.
+</pre>
+<nowiki>
+</nowiki><p><nowiki>⬥ When posted by the bot, it will look like the following:</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/KQeL5Dq.png <nowiki>Guide illustration</nowiki>]<nowiki>
+</nowiki><em><nowiki>Note: The command syntax can also be found in the </nowiki></em><em><nowiki>Commands</nowiki></em><em><nowiki> dropdown menu in the web guide editor tool</nowiki></em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="requesting-changesadditions"><ins><nowiki>Requesting Changes/Additions</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>⬥ Anyone can make a copy of the sheet for personal use, but only data from the master sheet will be referenced by the bot.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ To request any changes or additions to the sheet, use the </nowiki>[https://discord.com/channels/534508796639182860/771436827214086154 <nowiki>Guide media upload and request (external Discord)</nowiki>]<nowiki> channel.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+      
+    </nowiki>
+== Attribution and source history ==
+Adapted from [https://pvme.io/pvme-guides/editor-resources/editor-references/pvme-spreadsheet/ <nowiki>Pvme Spreadsheet</nowiki>] by PvME contributors. [https://github.com/pvme/pvme-guides/commits/master/editor-resources/editor-references/pvme-spreadsheet.txt Upstream source history]. Licensed [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]. Snapshot 074a9438f79d10fba75735791be0030734db8b5e. Formatting adapted for standalone MediaWiki; media and third-party references remain external links.

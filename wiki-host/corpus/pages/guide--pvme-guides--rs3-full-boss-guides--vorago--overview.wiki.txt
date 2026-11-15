@@ -1,0 +1,2138 @@
+[[PvME|PvME guide index]]
+
+<span id="vorago"></span><p>[https://img.pvme.io/images/sY7JVkg9No.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="introduction"><nowiki>Introduction</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Vorago is a high level group boss. He boasts high defence and complex mechanics that challenge even the best players. His unique drops include Tectonic Energies and Seismic equipment.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>This guide is only an introduction + mechanics guide. For a beginner guide ‎ ‎use </nowiki>[[PvME/Vorago/Overview|<nowiki>Vorago Basic</nowiki>]]<nowiki>, for DPS rotations, see </nowiki>[[PvME/Vorago/Vorago — Rotations|<nowiki>Rotations</nowiki>]]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="presets-general"><ins><nowiki>Presets - General</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="general-notes"><nowiki>General Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ New players </nowiki><em><nowiki>must</nowiki></em><nowiki> talk to Vorago and go through his dialogue options first before they can enter the fight.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Select &quot;What are you doing here?&quot;, followed by &quot;Can I face you?&quot;</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Once players reach the &quot;So, do we fight?&quot; dialogue, they are eligible to fight Vorago.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The default familiar is </nowiki>[https://cdn.discordapp.com/emojis/854475442169053194.png?v=1 <nowiki>bloodnihil</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/854475441946230855.png?v=1 <nowiki>shadownihil</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/854475442227642388.png?v=1 <nowiki>smokenihil</nowiki>]<nowiki> for all combat styles.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• A Beast of Burden can be used, but is highly discouraged due to Vorago's massive defensive stats.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Vorago is immune to familiar damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/655341074235129858.png?v=1 <nowiki>vulnbomb</nowiki>]<nowiki> are primarily used only once, during phase 5. They can also be spammed during damage-based phases.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="picking-a-combat-style"><nowiki>Picking A Combat Style</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>All three combat styles are viable at Vorago.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Ranged and Melee are the strongest styles.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Magic is not far behind, and performs similarly to Ranged if Ranged does not have its expensive best-in-slot gear.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Melee can be difficult to use. Its range limitation applies several restrictions.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Not recommended for beginners</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Melee distance can cause less experienced players to take more damage</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Unable to Bomb Tank in conventional teams</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="preset-notes"><nowiki>Preset Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ A 1-dose </nowiki>[https://cdn.discordapp.com/emojis/654618235097972737.png?v=1 <nowiki>powerburstofvitality</nowiki>]<nowiki> can be used on most weeks for entry damage alone.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Multiple doses are required for Green Bomb, and highly recommended for Ceiling Collapse, Teamsplit, and The End.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/656844963522281473.png?v=1 <nowiki>dummy</nowiki>]<nowiki> can be used to build adrenaline between phases for more damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Optional</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Often used with </nowiki>[https://cdn.discordapp.com/emojis/535541258131865633.png?v=1 <nowiki>nat</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ A </nowiki>[https://cdn.discordapp.com/emojis/689528927928188963.png?v=1 <nowiki>greatgunkan</nowiki>]<nowiki> is eaten after taking entry damage to free up an inventory space for equipping 2H weapons.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/643505116347105290.png?v=1 <nowiki>berserker</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/643505153709965322.png?v=1 <nowiki>mani</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/643505179378974748.png?v=1 <nowiki>reckless</nowiki>]<nowiki> are highly recommended due to Vorago's high defensive parameters.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Other auras are discouraged, though supreme accuracy auras can be used.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Putting Turtling 3 over Turtling 4 </nowiki>[https://cdn.discordapp.com/emojis/712073737377284146.png?v=1 <nowiki>turt4</nowiki>]<nowiki> on your t90 shield is recommended.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The extra tick of Barricade </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> from </nowiki>[https://cdn.discordapp.com/emojis/712073737377284146.png?v=1 <nowiki>turt4</nowiki>]<nowiki> is irrelevant, and it can cause issues primarily with </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> cooldown on The End P4 if mistimed.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="rune-pouch-setup"><nowiki>Rune Pouch Setup</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/656786565359599626.png?v=1 <nowiki>blackpouch</nowiki>]<nowiki> </nowiki><strong><nowiki>Rune Pouch</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/536252658986647589.png?v=1 <nowiki>Airrune</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/536252659586433024.png?v=1 <nowiki>Deathrune</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/536252659808731137.png?v=1 <nowiki>Earthrune</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/656786565527502858.png?v=1 <nowiki>bluepouch</nowiki>]<nowiki> </nowiki><strong><nowiki>Rune Pouch</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/536252658970001409.png?v=1 <nowiki>Bloodrune</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/536252658961481769.png?v=1 <nowiki>Astralrune</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/536252659301089280.png?v=1 <nowiki>Bodyrune</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/690848914638766082.png?v=1 <nowiki>greenpouch</nowiki>]<nowiki> </nowiki><strong><nowiki>Rune Pouch</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/536252660165115905.png?v=1 <nowiki>Waterrune</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/536252659850674186.png?v=1 <nowiki>Firerune</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/536252659422855188.png?v=1 <nowiki>Chaosrune</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/690848915020447745.png?v=1 <nowiki>redpouch</nowiki>]<nowiki> </nowiki><strong><nowiki>Rune Pouch</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/536252661406760970.png?v=1 <nowiki>Lawrune</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/536252659615924258.png?v=1 <nowiki>Cosmicrune</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/536252660333019136.png?v=1 <nowiki>Soulrune</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/656786565397348361.png?v=1 <nowiki>pinkpouch</nowiki>]<nowiki> </nowiki><strong><nowiki>Rune Pouch</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/536252660165115905.png?v=1 <nowiki>Waterrune</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/536252659808731137.png?v=1 <nowiki>Earthrune</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/536252658986647589.png?v=1 <nowiki>Airrune</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/656786565397348361.png?v=1 <nowiki>pinkpouch</nowiki>]<nowiki> is used for non-magic setups, and does not include </nowiki>[https://cdn.discordapp.com/emojis/856635090641879050.png?v=1 <nowiki>smokecloud</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• To include </nowiki>[https://cdn.discordapp.com/emojis/856635090641879050.png?v=1 <nowiki>smokecloud</nowiki>]<nowiki> for Scopulus, combine </nowiki>[https://cdn.discordapp.com/emojis/536252660165115905.png?v=1 <nowiki>Waterrune</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/536252659808731137.png?v=1 <nowiki>Earthrune</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/536252660286881832.png?v=1 <nowiki>Mudrune</nowiki>]<nowiki>, and add </nowiki>[https://cdn.discordapp.com/emojis/536252659422855188.png?v=1 <nowiki>Chaosrune</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Magic-specific spells: </nowiki>[https://cdn.discordapp.com/emojis/537338981747261446.png?v=1 <nowiki>bloodbarrage</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/856635090783567902.png?v=1 <nowiki>incitefear</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/856635090745950258.png?v=1 <nowiki>exsanguinate</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Spells for all styles: </nowiki>[https://cdn.discordapp.com/emojis/856635090641879050.png?v=1 <nowiki>smokecloud</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/859483781395120129.png?v=1 <nowiki>sbsancients</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/565726489467682816.png?v=1 <nowiki>SBSLunars</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535614336207552523.png?v=1 <nowiki>disrupt</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537341954392850442.png?v=1 <nowiki>sd</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/543478434509357098.png?v=1 <nowiki>Cept</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/567727985851891715.png?v=1 <nowiki>HealOther</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/657248051190300682.png?v=1 <nowiki>borrowedpower</nowiki>]<nowiki> (</nowiki>[https://cdn.discordapp.com/emojis/537349530551582720.png?v=1 <nowiki>Vuln</nowiki>]<nowiki> or </nowiki>[https://cdn.discordapp.com/emojis/567727987274022924.png?v=1 <nowiki>ent</nowiki>]<nowiki>)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Only the Base Tank and Bomb Tank are required to bring these spells.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ For everyone else these spells are optional, but recommended in case of emergency</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><em><nowiki>Note: Presets may change slightly between weekly rotations.</nowiki></em></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="presets-and-relics"><ins><nowiki>Presets and Relics</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="basic-magic-preset"><nowiki>Basic Magic Preset</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/643161591571021824.png?v=1 <nowiki>cywirwand</nowiki>]<nowiki> </nowiki><strong><nowiki>Wand of the Cywir Elders</nowiki></strong><nowiki> - </nowiki><code><nowiki>Planted feet</nowiki></code><nowiki> ‎</nowiki>[https://cdn.discordapp.com/emojis/689501925770919981.png?v=1 <nowiki>pf</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/656785078160195615.png?v=1 <nowiki>vbook</nowiki>]<nowiki> </nowiki><strong><nowiki>Virtus Book</nowiki></strong><nowiki> - </nowiki><code><nowiki>Flanking 4</nowiki></code><nowiki> ‎</nowiki>[https://cdn.discordapp.com/emojis/712073088296157185.png?v=1 <nowiki>flank4</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/626466665848242186.png?v=1 <nowiki>sgb</nowiki>]<nowiki> </nowiki><strong><nowiki>Seren Godbow</nowiki></strong><nowiki> is used with </nowiki>[https://cdn.discordapp.com/emojis/641339234111848463.png?v=1 <nowiki>ingen</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• This is optional and can be omitted.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/641670143197446182.png?v=1 <nowiki>swh</nowiki>]<nowiki> </nowiki><strong><nowiki>Superior Statius Warhammer</nowiki></strong><nowiki> is used on certain phases.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• This is optional, and can be replaced with any main hand melee weapon for </nowiki>[https://cdn.discordapp.com/emojis/535532854281764884.png?v=1 <nowiki>bd</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• An augmented main hand melee weapon with </nowiki>[https://cdn.discordapp.com/emojis/689502339891331093.png?v=1 <nowiki>as1</nowiki>]<nowiki> should be used to avoid losing stacks, if applicable.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/544200033847869443.png?v=1 <nowiki>aosor</nowiki>]<nowiki> </nowiki><strong><nowiki>Amulet of Souls</nowiki></strong><nowiki> is a suitable alternative to </nowiki>[https://cdn.discordapp.com/emojis/544200033390690335.png?v=1 <nowiki>reaperor</nowiki>]<nowiki> </nowiki><strong><nowiki>Reaper Necklace</nowiki></strong></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/PsNY0gx.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="advanced-magic-preset"><nowiki>Advanced Magic Preset</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/643161591571021824.png?v=1 <nowiki>cywirwand</nowiki>]<nowiki> </nowiki><strong><nowiki>Wand of the Cywir Elders</nowiki></strong><nowiki> - </nowiki><code><nowiki>Planted feet</nowiki></code><nowiki> ‎</nowiki>[https://cdn.discordapp.com/emojis/689501925770919981.png?v=1 <nowiki>pf</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/780401412936040478.png?v=1 <nowiki>eofpurple</nowiki>]<nowiki> with Guthix Staff </nowiki>[https://cdn.discordapp.com/emojis/513203008608141314.png?v=1 <nowiki>gstaff</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/1260022289731158146.png?v=1 <nowiki>eofblacku</nowiki>]<nowiki> with Statius Warhammer </nowiki>[https://cdn.discordapp.com/emojis/641670143197446182.png?v=1 <nowiki>swh</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/756236265472524418.png?v=1 <nowiki>powerburstofacceleration</nowiki>]<nowiki> </nowiki><strong><nowiki>Powerburst of Acceleration</nowiki></strong><nowiki> and </nowiki>[https://cdn.discordapp.com/emojis/852939844007231508.png?v=1 <nowiki>phoenixnecklace</nowiki>]<nowiki> </nowiki><strong><nowiki>Phoenix Necklace</nowiki></strong><nowiki> are used for accel climbs only.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• They are optional.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ An augmented main hand melee weapon with </nowiki>[https://cdn.discordapp.com/emojis/689502339891331093.png?v=1 <nowiki>as1</nowiki>]<nowiki> should be used to avoid losing stacks, if applicable.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/PlJjgnB.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="basic-ranged-preset"><nowiki>Basic Ranged Preset</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/643161561988595782.png?v=1 <nowiki>glaivemh</nowiki>]<nowiki> </nowiki><strong><nowiki>Shadow Glaive</nowiki></strong><nowiki> - </nowiki><code><nowiki>Planted feet</nowiki></code><nowiki> ‎</nowiki>[https://cdn.discordapp.com/emojis/689501925770919981.png?v=1 <nowiki>pf</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/851514430633803786.png?v=1 <nowiki>chaoticcbowoh</nowiki>]<nowiki> </nowiki><strong><nowiki>off-hand Chaotic Crossbow</nowiki></strong><nowiki> - </nowiki><code><nowiki>Flanking 4</nowiki></code><nowiki> ‎</nowiki>[https://cdn.discordapp.com/emojis/712073088296157185.png?v=1 <nowiki>flank4</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/641670143197446182.png?v=1 <nowiki>swh</nowiki>]<nowiki> </nowiki><strong><nowiki>Superior Statius Warhammer</nowiki></strong><nowiki> is used on certain phases.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• This is optional, and can be replaced with any main hand melee weapon for </nowiki>[https://cdn.discordapp.com/emojis/535532854281764884.png?v=1 <nowiki>bd</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• An augmented weapon with </nowiki>[https://cdn.discordapp.com/emojis/689502339891331093.png?v=1 <nowiki>as1</nowiki>]<nowiki> should be used to avoid losing stacks, if applicable.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/626466665848242186.png?v=1 <nowiki>sgb</nowiki>]<nowiki> </nowiki><strong><nowiki>Seren Godbow</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• This is optional and can be omitted.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/544200033847869443.png?v=1 <nowiki>aosor</nowiki>]<nowiki> </nowiki><strong><nowiki>Amulet of Souls</nowiki></strong><nowiki> is a suitable alternative to </nowiki>[https://cdn.discordapp.com/emojis/544200033390690335.png?v=1 <nowiki>reaperor</nowiki>]<nowiki> </nowiki><strong><nowiki>Reaper Necklace</nowiki></strong></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/APcu3Ey.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="advanced-ranged-preset"><nowiki>Advanced Ranged Preset</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/643161561988595782.png?v=1 <nowiki>glaivemh</nowiki>]<nowiki> </nowiki><strong><nowiki>Shadow Glaive</nowiki></strong><nowiki> - </nowiki><code><nowiki>Planted feet</nowiki></code><nowiki> ‎</nowiki>[https://cdn.discordapp.com/emojis/689501925770919981.png?v=1 <nowiki>pf</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/780401412906680330.png?v=1 <nowiki>eofblue</nowiki>]<nowiki> with Seren Godbow </nowiki>[https://cdn.discordapp.com/emojis/626466665848242186.png?v=1 <nowiki>sgb</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/1260022280046645349.png?v=1 <nowiki>eofyellowu</nowiki>]<nowiki> with Dark Bow </nowiki>[https://cdn.discordapp.com/emojis/643848618553507843.png?v=1 <nowiki>dbow</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/1260022289731158146.png?v=1 <nowiki>eofblacku</nowiki>]<nowiki> with Statius Warhammer </nowiki>[https://cdn.discordapp.com/emojis/641670143197446182.png?v=1 <nowiki>swh</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/756236265472524418.png?v=1 <nowiki>powerburstofacceleration</nowiki>]<nowiki> </nowiki><strong><nowiki>Powerburst of Acceleration</nowiki></strong><nowiki> and </nowiki>[https://cdn.discordapp.com/emojis/852939844007231508.png?v=1 <nowiki>phoenixnecklace</nowiki>]<nowiki> </nowiki><strong><nowiki>Phoenix Necklace</nowiki></strong><nowiki> are used for accel climbs only.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• They are optional.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ An augmented main hand melee weapon with </nowiki>[https://cdn.discordapp.com/emojis/689502339891331093.png?v=1 <nowiki>as1</nowiki>]<nowiki> should be used to avoid losing stacks, if applicable.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/mUtfXvX.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="basic-melee-preset"><nowiki>Basic Melee Preset</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/626466665848242186.png?v=1 <nowiki>sgb</nowiki>]<nowiki> </nowiki><strong><nowiki>Seren Godbow</nowiki></strong><nowiki> is used with </nowiki>[https://cdn.discordapp.com/emojis/641339234111848463.png?v=1 <nowiki>ingen</nowiki>]<nowiki> </nowiki><strong><nowiki>Ingenuity of the Humans</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• This is optional and can be omitted.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/641670143197446182.png?v=1 <nowiki>swh</nowiki>]<nowiki> </nowiki><strong><nowiki>Superior Statius Warhammer</nowiki></strong><nowiki> is an integral part of melee.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• While it is optional, it is heavily recommended.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/544200033847869443.png?v=1 <nowiki>aosor</nowiki>]<nowiki> </nowiki><strong><nowiki>Amulet of Souls</nowiki></strong><nowiki> is a suitable alternative to </nowiki>[https://cdn.discordapp.com/emojis/544200033390690335.png?v=1 <nowiki>reaperor</nowiki>]<nowiki> </nowiki><strong><nowiki>Reaper Necklace</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/513201294262009874.png?v=1 <nowiki>VampScrim</nowiki>]<nowiki> </nowiki><strong><nowiki>Vampyrism Scrimshaw</nowiki></strong><nowiki> can be used on time gated phases to preserve food. </nowiki>[https://cdn.discordapp.com/emojis/574290439482638346.png?v=1 <nowiki>SaraBook</nowiki>]<nowiki> </nowiki><strong><nowiki>Saradomin Book</nowiki></strong><nowiki> should be used for damage-based phases.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/574290439482638346.png?v=1 <nowiki>SaraBook</nowiki>]<nowiki> has a cooldown upon activation, and should be activated at face, the end of phase 2, and the end of p4.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/KnqLp9P.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="advanced-melee-preset"><nowiki>Advanced Melee Preset</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/852939843767369783.png?v=1 <nowiki>drygorelongoh</nowiki>]<nowiki> </nowiki><strong><nowiki>off-hand Drygore</nowiki></strong><nowiki> - </nowiki><code><nowiki>Flanking 4</nowiki></code><nowiki> ‎</nowiki>[https://cdn.discordapp.com/emojis/712073088296157185.png?v=1 <nowiki>flank4</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/1260022289731158146.png?v=1 <nowiki>eofblacku</nowiki>]<nowiki> with Statius Warhammer </nowiki>[https://cdn.discordapp.com/emojis/641670143197446182.png?v=1 <nowiki>swh</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/780401412839833601.png?v=1 <nowiki>eofred</nowiki>]<nowiki> with Dragon Claws </nowiki>[https://cdn.discordapp.com/emojis/779048041088024606.png?v=1 <nowiki>dragonclaw</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/787526151978614824.png?v=1 <nowiki>eof</nowiki>]<nowiki> with Dragon Halberd </nowiki>[https://cdn.discordapp.com/emojis/841409589261238282.png?v=1 <nowiki>dragonhalberd</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/643848618553507843.png?v=1 <nowiki>dbow</nowiki>]<nowiki> </nowiki><strong><nowiki>Darkbow</nowiki></strong><nowiki> - </nowiki><code><nowiki>Invigorating 4</nowiki></code><nowiki> ‎</nowiki>[https://cdn.discordapp.com/emojis/712073087859949570.png?v=1 <nowiki>invig4</nowiki>]<nowiki> + </nowiki><code><nowiki>Aftershock 1</nowiki></code><nowiki> ‎</nowiki>[https://cdn.discordapp.com/emojis/689502339891331093.png?v=1 <nowiki>as1</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Used for building adrenaline on </nowiki>[https://cdn.discordapp.com/emojis/656844963522281473.png?v=1 <nowiki>dummy</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/643161561988595782.png?v=1 <nowiki>glaivemh</nowiki>]<nowiki> </nowiki><strong><nowiki>Shadow Glaive</nowiki></strong><nowiki> - </nowiki><code><nowiki>Energising 4</nowiki></code><nowiki> ‎</nowiki>[https://cdn.discordapp.com/emojis/851514466818457640.png?v=1 <nowiki>energising4</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Used for building adrenaline on </nowiki>[https://cdn.discordapp.com/emojis/656844963522281473.png?v=1 <nowiki>dummy</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/785031580149743617.png?v=1 <nowiki>blackstonearrow</nowiki>]<nowiki> </nowiki><strong><nowiki>Black Stone Arrows</nowiki></strong><nowiki> are used to add a </nowiki>[https://cdn.discordapp.com/emojis/785031580149743617.png?v=1 <nowiki>blackstonearrow</nowiki>]<nowiki> stack with </nowiki>[https://cdn.discordapp.com/emojis/626466665848242186.png?v=1 <nowiki>sgb</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/626465964325601290.png?v=1 <nowiki>zgs</nowiki>]<nowiki> </nowiki><strong><nowiki>Zaros Godsword</nowiki></strong><nowiki> - </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> is situationally used and can be omitted.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/FkhsEFg.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h2 id="general-fight-mechanics"><ins><nowiki>General Fight Mechanics</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="before-the-fight"><nowiki>Before The Fight</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ There are 6 weekly rotations that cycle every Wednesday at 00:00 Game Time.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The six rotations are, in order: Ceiling Collapse (Ceiling) → Scopulus (Scop/Scops) → Vitalis (Vit) → Green Bomb (GB) → Teamsplit (TS) → The End (Purple Bomb/PB)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ There are three roles at Vorago.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Base Tank: Takes melee damage, positions Vorago, and handles various mechanics throughout the fight</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Bomb Tank: Often abbreviated &quot;bt&quot;. Tanks magic damage blue bombs and handles various mechanics throughout the fight.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Not to be confused with other &quot;bt&quot; abbreviations, like Yakamaru's base tank</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Top Lure Voke 5: Often abbreviated as TL5/TLV5, or referred to as the &quot;jump/jumper&quot;. Climbs Vorago on phase 1 and handles the 5th bleed during phases 2 and 4.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Entry damage is 70% of your max life points regardless of team size.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• This damage also cancels defensive abilities, and the </nowiki>[https://cdn.discordapp.com/emojis/513200949016264727.png?v=1 <nowiki>EnhancedExcalibur</nowiki>]<nowiki> healing effect.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Use </nowiki>[https://cdn.discordapp.com/emojis/535614336207552523.png?v=1 <nowiki>disrupt</nowiki>]<nowiki> and </nowiki>[https://cdn.discordapp.com/emojis/513200949016264727.png?v=1 <nowiki>EnhancedExcalibur</nowiki>]<nowiki> after taking the entry damage</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ There are 12s between challenge and entry damage. Advanced players can use this time to use </nowiki>[https://cdn.discordapp.com/emojis/535541258131865633.png?v=1 <nowiki>nat</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• There are 36 ticks from challenging Vorago to Target Cycle, and 35 ticks from the Accept Challenge message to Target Cycle.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Drop down damage is 20 ticks after challenging Vorago.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Sample </nowiki>[https://cdn.discordapp.com/emojis/535541258131865633.png?v=1 <nowiki>nat</nowiki>]<nowiki> rotation:</nowiki></p>
+<nowiki>
+</nowiki>[https://img.pvme.io/images/JycYCl7.mp4 <nowiki>Source media</nowiki>]<nowiki>
+
+</nowiki><p><nowiki>⬥ To time </nowiki>[https://cdn.discordapp.com/emojis/654618235097972737.png?v=1 <nowiki>powerburstofvitality</nowiki>]<nowiki>, use it 20 ticks after challenging Vorago/accepting challenge.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• This can be done by counting each tick from when you challenge by looking at prayer point drain</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• It can also be done by looking at the bar above Vorago and clicking on it when it is about to fill, as in the following clip:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p>[https://www.youtube.com/watch?v=MG00fhlSnKA <nowiki>https://www.youtube.com/watch?v=MG00fhlSnKA</nowiki>]</p>
+<nowiki>
+</nowiki>[https://www.youtube-nocookie.com/embed/MG00fhlSnKA <nowiki>Embedded guide video</nowiki>]<nowiki>
+
+</nowiki><h3 id="during-the-fight"><nowiki>During The Fight</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Vorago has two basic auto attacks: </nowiki><strong><nowiki>Melee Swipes</nowiki></strong><nowiki> and </nowiki><strong><nowiki>Blue Bombs</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Melee swipes target the base tank. They are AoE 1 square around Vorago, and have additional range around the base tank.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Blue bombs are thrown at the furthest player from Vorago, typically the bomb tank. These are homing, deal high magic damage, don't splash, and have a three tile range (7x7) AoE.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Vorago can also do both attacks simultaneously. He will use the animation for a blue bomb.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Because all of Vorago's attacks are AoE, all members of the team must be conscious of their positioning at all times to prevent unnecessary and unintended damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Diagram of Vorago's attack radii:</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/OF84Vp9.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ During phases 1-4, Vorago clears </nowiki>[https://cdn.discordapp.com/emojis/537349530551582720.png?v=1 <nowiki>Vuln</nowiki>]<nowiki>, and regenerates stats almost instantly.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• This includes defence drains, such as </nowiki>[https://cdn.discordapp.com/emojis/641670143197446182.png?v=1 <nowiki>swh</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Affinity debuffs will last their full one minute duration.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Advanced players can spam </nowiki>[https://cdn.discordapp.com/emojis/655341074235129858.png?v=1 <nowiki>vulnbomb</nowiki>]<nowiki> to maintain </nowiki>[https://cdn.discordapp.com/emojis/537349530551582720.png?v=1 <nowiki>Vuln</nowiki>]<nowiki> uptime.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Phases 1 and 2 are the same regardless of the weekly rotation.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Vorago's click box spawns in with the boss's animation. As such, Target Cycle can be used to attack Vorago one tick sooner than clicking at the start of every phase.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• This can be used to damage Vorago before he uses his first attack, including Teamsplits, Waterfalls, and Purple Bombs.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ In cases where Vorago becomes invulnerable after his first attack, a fast-hitting ability must be used. Slow-hitting abilities will be nulled.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ There is a one tick window between phases during which </nowiki>[https://cdn.discordapp.com/emojis/567727985851891715.png?v=1 <nowiki>HealOther</nowiki>]<nowiki> can be used without taking damage. This can be used to mitigate food usage for the team.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• This tick is often referred to as the &quot;crack tick&quot;, as it occurs as the floor is cracking/breaking into the next phase</nowiki></p>
+<nowiki>
+</nowiki>[https://img.pvme.io/images/uWBArh4.mp4 <nowiki>Source media</nowiki>]<nowiki>
+
+</nowiki><p><nowiki>⬥ There are 17 ticks from the crack tick to the Target Cycle tick.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Target Cycle can be timed by using an ability with a 10s cooldown ability, such as </nowiki>[https://cdn.discordapp.com/emojis/689501908628799488.png?v=1 <nowiki>mob</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Ensure they are not on cooldown when avoiding Vorago's jumps at the end of each phase.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Three maul pieces are obtained throughout the fight. The three pieces are combined to create the Maul of Omens. This is used at the end of phase 5 to finish Vorago off.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Maul pieces are dropped during phases 1, 2, and 4.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Maul pieces can be left on the floor until the end of phase 4 if inventory space is an issue.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Do </nowiki><em><nowiki>not</nowiki></em><nowiki> drop the maul piece on a crack tick. This causes the maul piece to disappear entirely, failing the kill.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="phase-1"><ins><nowiki>Phase 1</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="new-special-mechanics"><nowiki>New Special Mechanics</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ New special attack: </nowiki><strong><nowiki>Red Bomb</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Thrown at the furthest player away from Vorago.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Deals 2k damage in a 2 tile range (5x5)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Cancels defensive abilities and puts them on a short cooldown.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Damage cannot be blocked or reduced with anything other than </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Damage is increased by 1k for any player standing within a 5 tile radius (11x11) of the target</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Comes with a non homing blue bomb that can be dodged by moving.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Non homing blue has a 3 tile radius (7x7)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Can hit any nearby player, not just the player with the Red Bomb</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="voragos-attack-rotation"><nowiki>Vorago's Attack Rotation</nowiki></h3>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/EOpDHbN.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="base-tank"><nowiki>Base Tank</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ There are two ways to lure Vorago on this phase. The beginner method in trio+ teams is to lure Vorago towards the northeast corner so that the TL5 does not receive bombs.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• In this lure method, because the Base Tank is expected to move after the TL5 repositions Vorago, </nowiki>[https://cdn.discordapp.com/emojis/994921119381463070.png?v=1 <nowiki>sunshine</nowiki>]<nowiki> and </nowiki>[https://cdn.discordapp.com/emojis/994921434633744455.png?v=1 <nowiki>deathsswift</nowiki>]<nowiki> are less effective. Consider using </nowiki>[https://cdn.discordapp.com/emojis/535533811304497183.png?v=1 <nowiki>meta</nowiki>]<nowiki> or </nowiki>[https://cdn.discordapp.com/emojis/615618531937222657.png?v=1 <nowiki>ecb</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> instead.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/VT5GQZX.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The advanced method is to lure Vorago near the northwest corner to give the TL5 bombs. This is typical in trios, and expected in duos. Care must be taken not to lure Vorago too far west so that the TL5 can provoke Vorago into the right position.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• There is a precise </nowiki>[https://cdn.discordapp.com/emojis/994921119381463070.png?v=1 <nowiki>sunshine</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/994921434633744455.png?v=1 <nowiki>deathsswift</nowiki>]<nowiki> spot which can be used to line Vorago up with the cliff in case of a bad lure.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Stand at the west edge of the ultimate if Vorago walks east, and vice versa.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Note that in duos, Vorago can throw Blue Bombs at the Base Tank. This chance is increased if Vorago is east of the jump spot.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Sample Advanced Mage/Ranged Lure P1:</nowiki></strong><nowiki> </nowiki>[https://clips.twitch.tv/CourageousPiercingStarPhilosoraptor <nowiki>https://clips.twitch.tv/CourageousPiercingStarPhilosoraptor</nowiki>]</p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/HORprJx.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ In trio+ teams, the Base Tank should use provoke after the TL5 enters the cliff.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If the Bomb Tank is damaging Vorago on the Target Cycle tick, the Base Tank should account for the one tick later entry into the cliff.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ In duos, the Base Tank can use </nowiki>[https://cdn.discordapp.com/emojis/567727985851891715.png?v=1 <nowiki>HealOther</nowiki>]<nowiki> on the Bomb Tank during the jump animation to help the Bomb Tank survive.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The Bomb Tank's click box will remain at the top of the cliff until the end of the animation.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Advanced melee Base Tanks may opt to position Vorago into the proper position for the TL5.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Referred to as &quot;solo lure&quot;</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• See </nowiki>[[PvME/Vorago/Vorago — Tips And Tricks|<nowiki>Tips And Tricks</nowiki>]]<nowiki> for a detailed explanation</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Not used by mage and ranged Base Tanks due to </nowiki>[https://cdn.discordapp.com/emojis/994921119381463070.png?v=1 <nowiki>sunshine</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/994921434633744455.png?v=1 <nowiki>deathsswift</nowiki>]<nowiki> area limitation</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="bomb-tank"><nowiki>Bomb Tank</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ In trio+ teams, confirm with the Base Tank on which lure will be used.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If tanking bombs, make sure to keep HP high after entry damage</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Position </nowiki>[https://cdn.discordapp.com/emojis/994921119381463070.png?v=1 <nowiki>sunshine</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/994921434633744455.png?v=1 <nowiki>deathsswift</nowiki>]<nowiki> accordingly.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The positions are not precise, and have a large margin for error.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/j97kY7v.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ In duos, the Bomb Tank is expected to climb while tanking bombs.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The damage taken during climb can be extremely high. This is further exacerbated by the inability to eat during climbing animations.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Try to eat to full HP before starting the climb, and eat accordingly.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ A fast climb is imperative to mitigating damage. See the TL5 section for the expected climbs.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Because the Bomb Tank also tanks bombs during the jump animation, the Bomb Tank should eat to high HP before jumping.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Pray </nowiki>[https://cdn.discordapp.com/emojis/544195487926845462.png?v=1 <nowiki>DeflectMage</nowiki>]<nowiki> to block Blue Bombs.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Deflect Prayer can be changed once during the jump animation by clicking on the appropriate Deflect Prayer </nowiki><em><nowiki>from the prayer book</nowiki></em><nowiki>. The Deflect Prayer will change as soon as the player hits the ground, and will block damage accordingly.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ In duos, the Bomb Tank can also apply a </nowiki>[https://cdn.discordapp.com/emojis/641670143197446182.png?v=1 <nowiki>swh</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> using the Target Cycle mechanic. This alleviates the Base Tank's rotation.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• An additional </nowiki>[https://cdn.discordapp.com/emojis/537338981747261446.png?v=1 <nowiki>bloodbarrage</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535533833358016512.png?v=1 <nowiki>deto</nowiki>]<nowiki>, or stalled </nowiki>[https://cdn.discordapp.com/emojis/535534127131394088.png?v=1 <nowiki>snap</nowiki>]<nowiki> can be used to deal more damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Damage dealt during climbing animations is nulled. Make sure to delay entry into the cliff by 1 tick to make sure that the damage lands.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Should the damage be nulled, the affinity debuff from </nowiki>[https://cdn.discordapp.com/emojis/641670143197446182.png?v=1 <nowiki>swh</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> will still apply.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="tl5"><nowiki>TL5</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Position next to the cliff on the west side of the arena, and spam click to enter.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Vorago does not move until someone enters the cliff. Entering the cliff on time is important to ensuring the Base Tank's lure.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Because the TL5 receives a Red Bomb at the start of the fight, </nowiki>[https://cdn.discordapp.com/emojis/535614336207552523.png?v=1 <nowiki>disrupt</nowiki>]<nowiki> should be used during the climb instead of on entry.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Climbing quickly is an important, but often overlooked skill.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• In trio+ teams, the limiting factor in the phase is often how quickly the TL5 can position Vorago.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• In duo teams, fast climbs are required to mitigate damage</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ There are three climbs.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532854281764884.png?v=1 <nowiki>bd</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Slowest, but easiest of the three climbs</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532854281764884.png?v=1 <nowiki>bd</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> Climb Demonstration: </nowiki>[https://youtu.be/of6PdOdQBpw <nowiki>https://youtu.be/of6PdOdQBpw</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532854281764884.png?v=1 <nowiki>bd</nowiki>]<nowiki> using the corner cut method</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ More difficult than the previous climb due to the precision of the corner cut Bladed Dive, but faster</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> → Corner Cut </nowiki>[https://cdn.discordapp.com/emojis/535532854281764884.png?v=1 <nowiki>bd</nowiki>]<nowiki> Climb Demonstration: </nowiki>[https://youtu.be/tXqfyJwBIyk <nowiki>https://youtu.be/tXqfyJwBIyk</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/756236265472524418.png?v=1 <nowiki>powerburstofacceleration</nowiki>]<nowiki> is used. </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532854281764884.png?v=1 <nowiki>bd</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532854281764884.png?v=1 <nowiki>bd</nowiki>]<nowiki> using the corner cut method</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Most difficult, but fastest climb. Forgoes Powerburst of Vitality, so ample healing is required.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Accel Climb Demonstration: </nowiki>[https://youtu.be/fI0yN5-8HtM <nowiki>https://youtu.be/fI0yN5-8HtM</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎‎ ‎ ‎ ‎• Optional: If Vorago is solo lured, </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> or </nowiki>[https://cdn.discordapp.com/emojis/535532854281764884.png?v=1 <nowiki>bd</nowiki>]<nowiki> can be used to move directly from the last gap to the jump spot</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Duo Bomb Tank Climb Demonstration with stalled </nowiki>[https://cdn.discordapp.com/emojis/535534127131394088.png?v=1 <nowiki>snap</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/641670143197446182.png?v=1 <nowiki>swh</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki>:</nowiki></strong><nowiki> </nowiki>[https://youtu.be/2peWQMtrukQ <nowiki>https://youtu.be/2peWQMtrukQ</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Duo Bomb Tank Climb Demonstration with stalled </nowiki>[https://cdn.discordapp.com/emojis/641670143197446182.png?v=1 <nowiki>swh</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/535534127131394088.png?v=1 <nowiki>snap</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/756236265472524418.png?v=1 <nowiki>powerburstofacceleration</nowiki>]<nowiki>:</nowiki></strong><nowiki> </nowiki>[https://www.youtube.com/watch?v=BSwkMG0o5QU <nowiki>https://www.youtube.com/watch?v=BSwkMG0o5QU</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="general-phase-notes"><nowiki>General Phase Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Vorago's HP can be lowered to about 13k, but the phase does not end until the jumper jumps.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• HP will &quot;reset&quot; to 80k if it goes under about 13k.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Try to stop attacking at about 25k HP.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• This mechanic also exists on phase 2 before the end of Bring Him Down, and on phase 4 before the final waterfall.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The jumper will receive a maul piece in their inventory once they reach the ground. Therefore, a free inventory space is required to jump.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Once the jumper jumps, reduce Vorago's HP to 0 to finish the phase.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Vorago will jump three times, dealing significant damage any players caught on the landing. Use </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> and </nowiki>[https://cdn.discordapp.com/emojis/535532854281764884.png?v=1 <nowiki>bd</nowiki>]<nowiki> to avoid the jumps.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Vorago can regenerate 1 HP during the jumps. This happens when the instance timer reaches 1:09. While Vorago can be attacked if he regenerates 1 HP, doing so is heavily discouraged.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Some of the unintended consequences include receiving blue bombs during the jumps, and an invisible red bomb that lands at the start of phase 2.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The first player to tag Vorago at 1 HP will also hold aggro for the first bleed on phase 2</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="phase-2"><ins><nowiki>Phase 2</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="new-special-mechanics_1"><nowiki>New Special Mechanics</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ New special attack: </nowiki><strong><nowiki>Smash</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Commonly referred to as &quot;</nowiki><em><nowiki>Bleeds</nowiki></em><nowiki>&quot;.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Vorago smashes the ground five times, applying a strong Destroy Tank bleed onto his current target.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Bleed hits deal melee damage</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Bleeds can be seen as a </nowiki>[https://cdn.discordapp.com/emojis/535532879376023572.png?v=1 <nowiki>dismember</nowiki>]<nowiki> icon on the player's debuff bar.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Each tick of bleed damage cancels defensive abilities, and thus cannot be used to block damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Tanking a second bleed without clearing a previous bleed results in a 6k typeless hit.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Bleeds can be cleared with </nowiki>[https://cdn.discordapp.com/emojis/535541258240786434.png?v=1 <nowiki>freedom</nowiki>]<nowiki>, and distance from Vorago. Distance can be created using </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki>, </nowiki>[https://cdn.discordapp.com/emojis/535541258832052231.png?v=1 <nowiki>escape</nowiki>]<nowiki>, and </nowiki>[https://cdn.discordapp.com/emojis/535532854281764884.png?v=1 <nowiki>bd</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Bleeds are cleared at 7+ tiles away from Vorago.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Distance Bleed clears should be done as close to tick perfect as possible, just before taking damage from the first Bleed tick. This maximizes the amount of time the next player has to use </nowiki>[https://cdn.discordapp.com/emojis/535541259465392143.png?v=1 <nowiki>voke</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Bleeds can be distance cleared with a simultaneous </nowiki>[https://cdn.discordapp.com/emojis/535541258832052231.png?v=1 <nowiki>escape</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/535532854281764884.png?v=1 <nowiki>bd</nowiki>]<nowiki> to prevent Vorago from moving.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ The </nowiki>[https://cdn.discordapp.com/emojis/535541258832052231.png?v=1 <nowiki>escape</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/535532854281764884.png?v=1 <nowiki>bd</nowiki>]<nowiki> is tick perfect, just before taking damage from the first Bleed tick.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ </nowiki>[https://cdn.discordapp.com/emojis/535532854281764884.png?v=1 <nowiki>bd</nowiki>]<nowiki> should be aimed with Vorago as the target, not the ground.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Clearing Bleeds with a diagonal </nowiki>[https://cdn.discordapp.com/emojis/535541258832052231.png?v=1 <nowiki>escape</nowiki>]<nowiki> may cause Vorago to move.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Vorago always throws a blue bomb with his third Bleed, but otherwise does not attack during this time.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ New special attack: </nowiki><strong><nowiki>Reflect</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Also known as &quot;Link&quot;, and is used interchangeably with Reflect</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Vorago targets one player for 15 ticks. Any damage dealt to Vorago during this time is instead redirected to the targeted player.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Abilities do not deal their normal damage, and instead tend to deal more damage than usual.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ e.g. </nowiki>[https://cdn.discordapp.com/emojis/535532879359377439.png?v=1 <nowiki>meteorstrike</nowiki>]<nowiki> can hit over 20k damage</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Most bleeds and abilities activated before Reflect that would hit into Reflect are nulled instead.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Abilities that would land on the tick the Reflect message appears still deal damage to Vorago.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ An ability bled with the </nowiki>[https://cdn.discordapp.com/emojis/535532879250456578.png?v=1 <nowiki>gbarge</nowiki>]<nowiki> special effect will </nowiki><em><nowiki>not</nowiki></em><nowiki> be nulled, and instead will damage players during reflect.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ If you currently have the FSOA </nowiki>[https://cdn.discordapp.com/emojis/869284271595069451.png?v=1 <nowiki>soa</nowiki>]<nowiki> spec active, equip your </nowiki>[https://cdn.discordapp.com/emojis/535532854281764884.png?v=1 <nowiki>bd</nowiki>]<nowiki> switch to ensure no autos are fired during reflect.</nowiki></p>
+<nowiki>
+</nowiki><h3 id="voragos-attack-rotation_1"><nowiki>Vorago's Attack Rotation</nowiki></h3>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/pPNE2a2.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="general-phase-notes_1"><nowiki>General Phase Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Phase 2 is time gated. In order to progress the phase, Vorago must absorb at least two Gravity Orbs, which spawn on Reflect. Thus, at least two Reflect special attacks are required.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Since this phase is time gated, use as many defensives as necessary to avoid using food at all during this phase.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Because this phase is time gated, damage dealt is largely irrelevant. The only notable damage benchmark is to reduce Vorago's HP to under 25k before the final Reflect.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• DPS ultimates can be skipped. However, they can be used for anyone competing for drops.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Stack </nowiki>[https://cdn.discordapp.com/emojis/536256663641128971.png?v=1 <nowiki>stormshards</nowiki>]<nowiki>, and use affinity-increasing abilities to increase hit chance.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Up to 4 </nowiki>[https://cdn.discordapp.com/emojis/536256663641128971.png?v=1 <nowiki>stormshards</nowiki>]<nowiki> can be thrown per player. An additional one can be thrown during Bring Him Down.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="smash-bleed-notes"><nowiki>Smash Bleed Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ At the start of the phase, the Base Tank should still hold aggro from phase 1. He should receive the first Bleed.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If someone else tagged Vorago at 1 HP from the previous phase, that person will instead receive the first bleed.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• 1 HP aggro can be overridden with Target Cycle. Because a properly-timed Target Cycle ability will attack Vorago before he uses his first Bleed, aggro will shift to the Target Cycling player.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ The Base Tank should always Target Cycle this phase to ensure the first bleed if possible.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ A Vulnerability Bomb can be used in place of Target Cycle to allow for more lenient timing.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ All other players should avoid Target Cycle.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The first Bleed of this phase does not have an animation. It occurs as soon as Vorago's feet touch the floor.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Vorago will then randomly aggro any member of the team, including the Base Tank. The Base Tank should use Provoke after Freedom to ensure aggro for the second Bleed.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The Base Tank should clear the first two Bleeds using </nowiki>[https://cdn.discordapp.com/emojis/535541258240786434.png?v=1 <nowiki>freedom</nowiki>]<nowiki> and </nowiki>[https://cdn.discordapp.com/emojis/535541258832052231.png?v=1 <nowiki>escape</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The Bomb Tank should use </nowiki>[https://cdn.discordapp.com/emojis/535541259465392143.png?v=1 <nowiki>voke</nowiki>]<nowiki> after the second bleed, and clear the third and fourth Bleeds with </nowiki>[https://cdn.discordapp.com/emojis/535541258240786434.png?v=1 <nowiki>freedom</nowiki>]<nowiki> and </nowiki>[https://cdn.discordapp.com/emojis/535541258832052231.png?v=1 <nowiki>escape</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Vorago always throws a Blue Bomb with the third Bleed. Because the Base Tank just used </nowiki>[https://cdn.discordapp.com/emojis/535541258832052231.png?v=1 <nowiki>escape</nowiki>]<nowiki>, this Blue Bomb should always go to the Base Tank. Save </nowiki>[https://cdn.discordapp.com/emojis/535541258844635148.png?v=1 <nowiki>res</nowiki>]<nowiki> for this Blue Bomb, as it is a guaranteed heal.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The TL5 should use </nowiki>[https://cdn.discordapp.com/emojis/535541259465392143.png?v=1 <nowiki>voke</nowiki>]<nowiki> after the fourth Bleed and clear the fifth Bleed with </nowiki>[https://cdn.discordapp.com/emojis/535541258240786434.png?v=1 <nowiki>freedom</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ In duos, the Bomb Tank takes the fifth bleed.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Either the third or fourth bleed should be cleared with an </nowiki>[https://cdn.discordapp.com/emojis/535541258832052231.png?v=1 <nowiki>escape</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/535532854281764884.png?v=1 <nowiki>bd</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki>[https://img.pvme.io/images/qDzuH08.mp4 <nowiki>Source media</nowiki>]<nowiki>
+
+</nowiki><p><nowiki>‎‎ ‎ ‎ ‎• Otherwise, the Bomb Tank should </nowiki>[https://cdn.discordapp.com/emojis/535541258240786434.png?v=1 <nowiki>freedom</nowiki>]<nowiki> the third Bleed, </nowiki>[https://cdn.discordapp.com/emojis/535541258832052231.png?v=1 <nowiki>escape</nowiki>]<nowiki> the fourth Bleed, and:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Step one tile forward if </nowiki>[https://cdn.discordapp.com/emojis/535541258832052231.png?v=1 <nowiki>escape</nowiki>]<nowiki> was used with a magic weapon (8-tile range).</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Step two tiles forward if </nowiki>[https://cdn.discordapp.com/emojis/535541258832052231.png?v=1 <nowiki>escape</nowiki>]<nowiki> was used with most 2H ranged weapons (9-tile range).</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Stand still if </nowiki>[https://cdn.discordapp.com/emojis/535541258832052231.png?v=1 <nowiki>escape</nowiki>]<nowiki> was used with dual wield ranged weapons (7-tile range).</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Optionally, the Base Tank can </nowiki>[https://cdn.discordapp.com/emojis/535541258832052231.png?v=1 <nowiki>escape</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/535532854281764884.png?v=1 <nowiki>bd</nowiki>]<nowiki> clear the fifth Bleed.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Useful if the Bomb Tank uses </nowiki>[https://cdn.discordapp.com/emojis/535541259465392143.png?v=1 <nowiki>voke</nowiki>]<nowiki> early and tanks Bleeds 2-4 instead</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Players should stand melee distance when using </nowiki>[https://cdn.discordapp.com/emojis/535541259465392143.png?v=1 <nowiki>voke</nowiki>]<nowiki> to avoid moving Vorago from Base Spot.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Players can easily move to melee distance by:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Stepping under Vorago, then using a non-channeled ability</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Equipping a melee weapon and clicking on Vorago</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Barging in</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="gravity-orb-notes"><nowiki>Gravity Orb Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>At the start of every Reflect, Vorago will spawn a Gravity Orb.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Clicking on a Gravity Orb will cause Vorago to absorb it.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ A total of 2 Gravity Orbs are required to finish the phase.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ If a Gravity Orb is not clicked before the next Reflect, a second Gravity Orb will not spawn. Vorago must use an additional Reflect to spawn the required 2 Gravity orbs. This should be avoided.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Gravity Orbs have limited range. Vorago must be close enough to each Gravity Orb, or the orb will not be absorbed.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ There are two positions in the middle of the arena referred to as &quot;Base Spot&quot;. In these spots, Vorago is close enough to every Gravity Orb spawn such that he does not have to move at all during the phase.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The Base Tank should lure Vorago into Base Spot on the first or second bleed by standing two or three squares south of the L crack.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The Base Spot three south of the L crack is slightly better, as it allows a north side Base Tank to tag the middle Gravity Orb without moving Vorago.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/SnxgXKm.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ See </nowiki>[[PvME/Vorago/Vorago — Tips And Tricks|<nowiki>Tips And Tricks</nowiki>]]<nowiki> for instructions on how to recenter Vorago if he moves from Base Spot.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="red-bomb-notes"><nowiki>Red Bomb Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Because Red Bombs cancel defensive abilities and put them on cooldown, the Bomb Tank can take significant damage during this phase.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/543478434509357098.png?v=1 <nowiki>Cept</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/567727985851891715.png?v=1 <nowiki>HealOther</nowiki>]<nowiki> is commonly used during Red Bombs to mitigate damage and food usage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Either the Base Tank or the Bomb Tank will use </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> on the Red Bomb</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The Bomb Tank can force the Red Bomb onto someone else if they are going to use </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ To force a Red Bomb, the Bomb Tank should move closer to Vorago so that someone else is the furthest player from Vorago. Start moving immediately after the third attack during Reflect.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ In duos, the Bomb Tank will need to move either melee distance or underneath Vorago to force the Red Bomb onto the Base Tank.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="bring-him-down-and-transition-into-p3"><nowiki>Bring Him Down And Transition Into P3</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/535532854281764884.png?v=1 <nowiki>bd</nowiki>]<nowiki> to the last Gravity Orb.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/689501908628799488.png?v=1 <nowiki>mob</nowiki>]<nowiki> must be used during the final Bleed clears to ensure that </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> and </nowiki>[https://cdn.discordapp.com/emojis/535532854281764884.png?v=1 <nowiki>bd</nowiki>]<nowiki> are off cooldown for the final Gravity Orb.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The phase will progress into Bring Him Down (BHD), during which all players spam click Vorago.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Once the bar at the top fills, Vorago will stumble. The team must deal a collective 50k damage to free the next maul piece.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• This portion is 20 ticks long.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Vorago is blocking during this time. </nowiki>[https://cdn.discordapp.com/emojis/626466665848242186.png?v=1 <nowiki>sgb</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> is guaranteed to land 5 arrows.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Rangers should switch to bolts other than </nowiki>[https://cdn.discordapp.com/emojis/565726489413287956.png?v=1 <nowiki>RubyBakri</nowiki>]<nowiki>, as </nowiki>[https://cdn.discordapp.com/emojis/565726489413287956.png?v=1 <nowiki>RubyBakri</nowiki>]<nowiki> procs will deal damage based on Vorago's low HP.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Reequip </nowiki>[https://cdn.discordapp.com/emojis/565726489413287956.png?v=1 <nowiki>RubyBakri</nowiki>]<nowiki> before the start of phase 3.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Vorago's defence is significantly reduced during this time, allowing players to reach 100% hit chance quite easily.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Damage dealt during this time does not affect Vorago's HP.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/615618531937222657.png?v=1 <nowiki>ecb</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> damage does not count towards the 50k damage threshold, and instead will damage Vorago's HP bar instead.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ This is useful if Vorago's HP is still high.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Failing the 50k damage threshold causes Vorago to regenerate a large amount of HP. An additional 2 Gravity Orbs are required to progress the phase.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• A </nowiki>[https://cdn.discordapp.com/emojis/656844963522281473.png?v=1 <nowiki>dummy</nowiki>]<nowiki> can be dropped in either the southwest corner or north side of the arena during this time to prep for phase 3.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ </nowiki>[https://cdn.discordapp.com/emojis/535541258131865633.png?v=1 <nowiki>nat</nowiki>]<nowiki> is commonly used to aid building adrenaline during phase 3.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The second maul piece will appear on the floor after succeeding BHD.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/536256673904328704.png?v=1 <nowiki>shatter</nowiki>]<nowiki> to finish the phase.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• A properly-timed </nowiki>[https://cdn.discordapp.com/emojis/536256673904328704.png?v=1 <nowiki>shatter</nowiki>]<nowiki> can take advantage of BHD's 100% hit chance while still damaging Vorago's HP bar.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="sample-bhd-rotations"><nowiki>Sample BHD Rotations</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Mage</nowiki></strong></p>
+<nowiki>
+</nowiki><p>[https://cdn.discordapp.com/emojis/535533809978966037.png?v=1 <nowiki>wm</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/869285393223254107.png?v=1 <nowiki>gconc</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535533833072672778.png?v=1 <nowiki>asphyx</nowiki>]<nowiki> (2-hit) → </nowiki>[https://cdn.discordapp.com/emojis/513190159194259467.png?v=1 <nowiki>corruptblast</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/869285393223254107.png?v=1 <nowiki>gconc</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535533833391702017.png?v=1 <nowiki>dbreath</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/536256663641128971.png?v=1 <nowiki>StormShards</nowiki>]<nowiki> → (slow/far) </nowiki>[https://cdn.discordapp.com/emojis/536256673904328704.png?v=1 <nowiki>Shatter</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Ranged</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>(unequip </nowiki>[https://cdn.discordapp.com/emojis/565726489413287956.png?v=1 <nowiki>RubyBakri</nowiki>]<nowiki>) </nowiki>[https://cdn.discordapp.com/emojis/626466665848242186.png?v=1 <nowiki>sgb</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535541259033378827.png?v=1 <nowiki>mds</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/536256663641128971.png?v=1 <nowiki>StormShards</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535541306294796299.png?v=1 <nowiki>corruptshot</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/787904334812807238.png?v=1 <nowiki>grico</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535541259033378827.png?v=1 <nowiki>mds</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535541259108876293.png?v=1 <nowiki>needle</nowiki>]<nowiki> → (slow/far) </nowiki>[https://cdn.discordapp.com/emojis/536256673904328704.png?v=1 <nowiki>Shatter</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Melee</nowiki></strong></p>
+<nowiki>
+</nowiki><p>[https://cdn.discordapp.com/emojis/535532879250456578.png?v=1 <nowiki>gbarge</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532855191928842.png?v=1 <nowiki>assault</nowiki>]<nowiki> → (</nowiki>[https://cdn.discordapp.com/emojis/694566917456789554.png?v=1 <nowiki>mwspear</nowiki>]<nowiki>) </nowiki>[https://cdn.discordapp.com/emojis/535532879376023572.png?v=1 <nowiki>dismember</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532878969438210.png?v=1 <nowiki>cane</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532879325822986.png?v=1 <nowiki>deci</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532878616985610.png?v=1 <nowiki>cleave</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/536256663641128971.png?v=1 <nowiki>StormShards</nowiki>]<nowiki> → (4t) </nowiki>[https://cdn.discordapp.com/emojis/536256673904328704.png?v=1 <nowiki>Shatter</nowiki>]</p>
+<nowiki>
+</nowiki><p><em><nowiki>Note: assuming you are not using </nowiki>[https://cdn.discordapp.com/emojis/536256673904328704.png?v=1 <nowiki>Shatter</nowiki>]<nowiki>, end BHD with </nowiki>[https://cdn.discordapp.com/emojis/535532879334080527.png?v=1 <nowiki>gfury</nowiki>]<nowiki> before he stands so you get a boosted 188 / </nowiki>[https://cdn.discordapp.com/emojis/535532878969438210.png?v=1 <nowiki>cane</nowiki>]<nowiki> on stand</nowiki></em></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="advanced-concept-natural-instinct"><ins><nowiki>Advanced Concept: Natural Instinct </nowiki>[https://cdn.discordapp.com/emojis/535541258131865633.png?v=1 <nowiki>nat</nowiki>]</ins></h2>
+<nowiki>
+</nowiki><p><nowiki>Because there is a large amount of time between phases, </nowiki>[https://cdn.discordapp.com/emojis/535541258131865633.png?v=1 <nowiki>nat</nowiki>]<nowiki> can be used to build additional adrenaline for phase 3, and later, phase 5.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="timing-your-natural-instinct"><nowiki>Timing your Natural Instinct </nowiki>[https://cdn.discordapp.com/emojis/535541258131865633.png?v=1 <nowiki>nat</nowiki>]</h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ There are 40 ticks from Vorago's death to the Target Cycle tick of the next phase.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Common notations are:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• t0: Target Cycle tick</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• t-x: Number of ticks before Target Cycle tick. t-33 would mean 33 ticks before Target Cycle.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ A common strategy is to use Natural Instinct on a tick that is a multiple of 3, and continuously use abilities. This allows players to build the maximum amount of adrenaline, and time Target Cycle at the same time.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The most common </nowiki>[https://cdn.discordapp.com/emojis/535541258131865633.png?v=1 <nowiki>nat</nowiki>]<nowiki> ticks are t-33, t-30, and t-27.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• t-33 is when Vorago lands from his first jump.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• t-33 can also be found by timing a slow-hitting </nowiki>[https://cdn.discordapp.com/emojis/536256673904328704.png?v=1 <nowiki>shatter</nowiki>]<nowiki>, then using 2 abilities. Make sure </nowiki>[https://cdn.discordapp.com/emojis/536256673904328704.png?v=1 <nowiki>shatter</nowiki>]<nowiki> is strong enough to finish the phase.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• t-30 can be timed by using an ability using the t-33 visual cue.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• t-27 is when Vorago lands from his second jump.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If a different </nowiki>[https://cdn.discordapp.com/emojis/535541258131865633.png?v=1 <nowiki>nat</nowiki>]<nowiki> tick is required, a combination of abilities and lost ticks from t-33 can be used to find a certain tick.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Sample Natural Instict Rotation:</nowiki></strong><nowiki> </nowiki>[https://youtu.be/z1Q1e2dY-F8 <nowiki>https://youtu.be/z1Q1e2dY-F8</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="phase-3"><ins><nowiki>Phase 3</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="general-phase-notes_2"><nowiki>General Phase Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Phase 3 introduces the weekly rotation.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ This phase is purely DPS based. Players should make sure they start this phase with full adrenaline, and all relevant cooldowns.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/535541258131865633.png?v=1 <nowiki>nat</nowiki>]<nowiki> can be used on a combat dummy from phase 2 to aid building adrenaline.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• An additional </nowiki>[https://cdn.discordapp.com/emojis/656844963522281473.png?v=1 <nowiki>dummy</nowiki>]<nowiki> can be dropped immediately at the start of the phase to aid adrenaline building and stalling abilities.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Avoid dropping this </nowiki>[https://cdn.discordapp.com/emojis/656844963522281473.png?v=1 <nowiki>dummy</nowiki>]<nowiki> in the middle of the arena, as it can make Target Cycle unreliable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="p3-ceiling-collapse"><ins><nowiki>P3: Ceiling Collapse</nowiki></ins></h2>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/tLW0Bl9.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="new-special-mechanics_2"><nowiki>New Special Mechanics</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ New special attack: </nowiki><strong><nowiki>Ceiling Collapse</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Vorago smashes the ceiling, causing a large rock to fall on 1/9th of the arena.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Any players crushed by the rock will be pushed away and dealt 8000, divided between everyone who was crushed (e.g. two players crushed will be dealt 4000 damage each)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ The rock renders the area underneath untraversable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Rocks can be right-clicked and destroyed at the cost of 4000 HP</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• After the rock falls, Vorago will jump to a random 1/9th of the arena, including his current location.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Vorago cannot jump to an area that is already covered by rocks, or will be covered by the imminent rocks</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/kzF35PY.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="voragos-attack-rotation_2"><nowiki>Vorago's Attack Rotation</nowiki></h3>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/YSSxmPI.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="phase-notes"><nowiki>Phase Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Falling rocks can be difficult to spot. Shadows enabled and high lighting detail are recommended to better distinguish falling rocks.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Using Medium Shadows + no skybox is the recommended minimum to distinguish falling rocks.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ This phase poses several unique challenges due to the random jump locations.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Because the distance to Vorago cannot be guaranteed for any player, this phase is often free-for-all Bomb Tank for all non-melee players.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Be prepared to Deflect Magic at a moment's notice.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Vorago can also jump on top of the player with aggro, giving the player little to no time to </nowiki>[https://cdn.discordapp.com/emojis/544195488447201300.png?v=1 <nowiki>DeflectMelee</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/994921119381463070.png?v=1 <nowiki>sunshine</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/994921434633744455.png?v=1 <nowiki>deathsswift</nowiki>]<nowiki> should be placed melee distance or under Vorago's spawn position so that players can receive the damage buff regardless of Vorago's position.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Floor markings can be used to find the correct spot. The L crack is melee distance of Vorago on the south side during this phase.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Make sure to move out of melee distance after placing the ultimate.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/51q6sAP.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎‎ ‎ ‎ ‎• A rock in the middle of the arena often breaks line-of-sight with Vorago, and interferes heavily with DPS.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Use </nowiki>[https://cdn.discordapp.com/emojis/654618235097972737.png?v=1 <nowiki>powerburstofvitality</nowiki>]<nowiki> and destroy the rock ASAP.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="p3-scopulus"><ins><nowiki>P3: Scopulus</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="new-special-mechanics_3"><nowiki>New Special Mechanics</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ New special enemy: </nowiki><strong><nowiki>Scopulus</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Two scopuli are spawned at the start of the phase, in the southwest and southeast sections of the arena.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Each Scopulus has 150k HP.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• They are melee enemies, and have typical properties of melee enemies</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Attacks with melee</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Weak to </nowiki>[https://cdn.discordapp.com/emojis/694566917553520680.png?v=1 <nowiki>inquisitorstaff</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Affinities heavily skewed in favour of magic, and heavily against ranged/melee</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/544195488447201300.png?v=1 <nowiki>DeflectMelee</nowiki>]<nowiki> blocks more than the typical 50%/60% damage. Failure to use </nowiki>[https://cdn.discordapp.com/emojis/544195488447201300.png?v=1 <nowiki>DeflectMelee</nowiki>]<nowiki> will result in heavy damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• No special attacks</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Immune to familiar damage</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Does not clear </nowiki>[https://cdn.discordapp.com/emojis/537349530551582720.png?v=1 <nowiki>Vuln</nowiki>]<nowiki>, </nowiki>[https://cdn.discordapp.com/emojis/856635090641879050.png?v=1 <nowiki>smokecloud</nowiki>]<nowiki>, or stat drains</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• When one Scopulus dies, the other becomes enraged</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Enraged Scopulus heals 15k instantly, and doubles its attack speed</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="phase-notes_1"><nowiki>Phase Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Widely regarded as the easiest weekly rotation.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Vorago is invulnerable during this phase. The players will be damaging two Scopuli instead.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ During this phase, Vorago will still throw Blue Bombs. He will not use any other attacks.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Because Scopuli deal heavy melee damage, the Base Tank must hold Scopuli aggro to prevent the Bomb Tank from receiving heavy, unprotected damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Scopuli have unique aggro mechanics.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Unlike most enemies, Scopuli are prone to changing targets.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Scopuli are more likely to target the first player to tag each scopulus.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ The Base Tank must tag both Scopuli ASAP, while the Bomb Tank should avoid attacking until both Scopuli are tagged.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Scopuli will frequently change targets the further apart they are.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Scopuli should be stacked on top of each other to prevent this.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Scopuli will frequently change targets if they are not tagged often by the person with aggro.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ The Base Tank should use AoE abilities often to prevent this.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ </nowiki>[https://cdn.discordapp.com/emojis/655341074235129858.png?v=1 <nowiki>vulnbomb</nowiki>]<nowiki> count as attacks for holding Scopuli aggro.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Ice Nihils </nowiki>[https://cdn.discordapp.com/emojis/854475442164334592.png?v=1 <nowiki>icenihil</nowiki>]<nowiki> in particular are notorious for aggroing Scopuli. Mages should use Smoke Nihils </nowiki>[https://cdn.discordapp.com/emojis/854475442227642388.png?v=1 <nowiki>smokenihil</nowiki>]<nowiki> instead.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Scopuli can be consistently stacked with the use of Target Cycle.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Stand melee distance on the west side of the southwestern Scopulus, and use backward Target Cycle with an AoE ability to tag both Scopuli at once.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ The southeastern Scopulus will walk towards the Base Tank and stack directly on top of the southwestern Scopulus.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Scopuli can be flanked.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Use the Scopuli lure listed above, then walk to the north side of the Scopuli once they are stacked.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Clip example of how to lure Scopuli and move into a flanking position</nowiki></strong><nowiki> - </nowiki>[https://www.youtube.com/watch?v=UtBBbOpRx84 <nowiki>https://www.youtube.com/watch?v=UtBBbOpRx84</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>[https://www.youtube-nocookie.com/embed/UtBBbOpRx84 <nowiki>Embedded guide video</nowiki>]<nowiki>
+
+</nowiki><h2 id="p3-vitalis"><ins><nowiki>P3: Vitalis</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="new-special-mechanics_4"><nowiki>New Special Mechanics</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ New special attack: </nowiki><strong><nowiki>Vitalis Orb</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Vorago will throw a Vitalis Orb in one of eight directions (north, northeast, east, southeast, south, southwest, west, northwest)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ If Vorago hasn't moved from his spawn position, the Vitalis Orb can only be thrown in one of three directions (north, northeast, east).</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• After travelling a short distance, the Vitalis Orb explodes.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ The explosion deals 2000 typeless damage, and is affected by damage modifiers. This includes the Berserker auras and defensive abilities.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ The Vitalis Orb explosion spawns 5 Vitalis. Each player that tanks the typeless damage from the explosion reduces the number of Vitalis spawn by one.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ New special enemy: </nowiki><strong><nowiki>Vitalis</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• 20k HP each</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Deals moderate melee damage</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Blocking</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Also blocks line-of-sight</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Inexplicably forces players to target away from Vitalis, if Vitalis is targeted</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="voragos-attack-rotation_3"><nowiki>Vorago's Attack Rotation</nowiki></h3>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/tCOmJ6a.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="phase-notes_2"><nowiki>Phase Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Vitalis is considered the hardest weekly rotation</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The difficulty of this rotation comes from the Vitali that spawn during this phase.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Because they block line-of-sight, attacking Vorago can be difficult, or even impossible at times.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ In 4 man+ teams, three members should stand melee distance, while the Bomb Tank stands further out to tank Blue Bombs.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Melee distance players will always have line-of-sight to Vorago. They are responsible for the majority of the damage during this phase.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The Bomb Tank may end up being completely surrounded by Vitali, stopping all attacks completely.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ This is okay, as long as the Bomb Tank is still alive and tanking Blue Bombs</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ The rest of the team must deal the remaining damage required to finish the phase</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The other three players should pray </nowiki>[https://cdn.discordapp.com/emojis/544195488447201300.png?v=1 <nowiki>DeflectMelee</nowiki>]<nowiki> to block damage from Vorago's melee swipes.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ In trio and duo teams, everyone should stand melee distance.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Players besides the Base Tank can stand halberd distance for the first two auto attacks at the start of the phase to help mitigate damage and maximize damage from </nowiki>[https://cdn.discordapp.com/emojis/615618531937222657.png?v=1 <nowiki>ecb</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Blue Bombs will be sent to one player at random.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Prayer flicking is required to stay alive during this phase. Blue Bombs land one tick prior to the next potential melee swipe. These attacks do not overlap.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Prayer flicks are only required if Vorago uses his bomb launching animation.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Players should stand away from each other to prevent Blue Bomb AoE damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/535541258844635148.png?v=1 <nowiki>res</nowiki>]<nowiki> can be used to heal from Blue Bomb damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Risky. Players will receive damage from Vitali, so a tick perfect </nowiki>[https://cdn.discordapp.com/emojis/535541258844635148.png?v=1 <nowiki>res</nowiki>]<nowiki> is required.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Blue Bombs are still random, so the heal is not guaranteed.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Finishing the phase ASAP is imperative, as the damage from the Vitali, melee swipes, and blue bombs adds up.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Try to finish before Bleeds, as clearing Bleeds with blocking Vitali can be difficult.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Duo teams may opt for the safer, albeit slower strategy of standing adjacent with each other.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• This allows players to support each other with the use of defensive abilities + </nowiki>[https://cdn.discordapp.com/emojis/543478434509357098.png?v=1 <nowiki>Cept</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Bleeds can be handled with </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/543478434509357098.png?v=1 <nowiki>Cept</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ The Bleed tanking player should use </nowiki>[https://cdn.discordapp.com/emojis/535541258240786434.png?v=1 <nowiki>freedom</nowiki>]<nowiki> on the fourth Bleed, not the first.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ The Barricading player should </nowiki>[https://cdn.discordapp.com/emojis/535541259465392143.png?v=1 <nowiki>voke</nowiki>]<nowiki> after the fourth Bleed, and </nowiki>[https://cdn.discordapp.com/emojis/535541258240786434.png?v=1 <nowiki>freedom</nowiki>]<nowiki> the fifth.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Blue Bombs are no longer random, as they will always deal AoE damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ </nowiki>[https://cdn.discordapp.com/emojis/535541258844635148.png?v=1 <nowiki>res</nowiki>]<nowiki> can be used reliably.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Do not stand on top of each other. Players that do so will not have line-of-sight with each other, and thus be unable to </nowiki>[https://cdn.discordapp.com/emojis/543478434509357098.png?v=1 <nowiki>Cept</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Adrenaline permitting, players can use </nowiki>[https://cdn.discordapp.com/emojis/513190158728953857.png?v=1 <nowiki>devo</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/543478434509357098.png?v=1 <nowiki>Cept</nowiki>]<nowiki> during Reflect, and after Bleeds.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ </nowiki>[https://cdn.discordapp.com/emojis/543478434509357098.png?v=1 <nowiki>Cept</nowiki>]<nowiki> delays damage by one tick, but damage calculation occurs at the same time as if </nowiki>[https://cdn.discordapp.com/emojis/543478434509357098.png?v=1 <nowiki>Cept</nowiki>]<nowiki> was not used. Thus, the prayer flick timing does not change.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="p3-green-bomb"><ins><nowiki>P3: Green Bomb</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="new-special-mechanics_5"><nowiki>New Special Mechanics</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ New special attack: </nowiki><strong><nowiki>Green Bomb</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Most complex special attack, with many different and often detrimental outcomes depending on how it's handled</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The Green Bomb will first pick 1/9th of the arena to cover in a green mist.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Mist deals negligible damage every few ticks</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Each tick of mist damage drains 10% adrenaline.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Mists do not disappear until the end of the phase.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• After the mist, the Green Bomb will then home in on a player at random.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Targeted player receives a notification</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• All Green Bomb hits cannot be blocked, cancel defensive abilities, and puts them on cooldown.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If no player is within a 5x5 area of the targeted player, the Green Bomb will deal 10k damage, drain 10% adrenaline, and dissipate</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Additionally, Vorago will immediately skip to his next special attack, regardless of where he is in his current attack rotation.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If a player is within a 5x5 area of the targeted player, the Green Bomb will deal 1k damage, drain 10% adrenaline, and will home in on the nearby player.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ If multiple players are nearby, one is chosen at random.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ If the nearby players are also in a 3x3 area of the targeted player, the nearby player will take 1k damage and lose 10% adrenaline.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ The Green Bomb will dissipate once it deals damage 4 times. There will be a bounce animation after the 4th damage tick, but will not deal damage to the nearby player.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ If a Green Bomb bounces to a player twice, it will deal ~8k damage if there is another player nearby to receive the bomb, or ~11k if not. The Green Bomb will then dissipate if there is no other player to receive.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If the phase ends after a Green Bomb launch but before landing, the Green Bomb will not deal damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="voragos-attack-rotation_4"><nowiki>Vorago's Attack Rotation</nowiki></h3>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/0aIVWlV.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="phase-notes_3"><nowiki>Phase Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Green Bomb is often considered to be the second hardest weekly rotation.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The preferred method of dealing with the Green Bomb in any team size is to free-for-all tank the 10k damage without passing.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/654618235097972737.png?v=1 <nowiki>powerburstofvitality</nowiki>]<nowiki> is required for the Bomb Tank, while heavily recommended for the rest of the team.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• While there are normally 5 auto attacks after a Green Bomb, tanking the Green Bomb forces Vorago to skip to his next special attack. This reduces the number of auto attacks to 3.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Passing the Green Bomb, then tanking the 10k or 8-11k is not recommended. It can cause some unforeseen circumstances, such as the second Green Bomb launch at the start of Reflect.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If players receive a second Green Bomb, note that the Bomb Tank cannot tank two Green Bombs in a single phase.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Onus falls upon the Base Tank to protect their Bomb Tank from death.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Players can either use </nowiki>[https://cdn.discordapp.com/emojis/513190158728953857.png?v=1 <nowiki>devo</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/543478434509357098.png?v=1 <nowiki>Cept</nowiki>]<nowiki>, or </nowiki>[https://cdn.discordapp.com/emojis/535532854281764884.png?v=1 <nowiki>bd</nowiki>]<nowiki> to the Bomb Tank and pass the Green Bomb.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The team should spread out, and drop their </nowiki>[https://cdn.discordapp.com/emojis/994921119381463070.png?v=1 <nowiki>sunshine</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/994921434633744455.png?v=1 <nowiki>deathsswift</nowiki>]<nowiki> such that a single green mist does not cover the entire area.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/xa5nF4i.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h2 id="p3-teamsplit"><ins><nowiki>P3: Teamsplit</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="new-special-mechanics_6"><nowiki>New Special Mechanics</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ New special attack: </nowiki><strong><nowiki>Teamsplit</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Vorago paints the entire team either red or blue.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Teamsplit cancels defensives and puts them on a short cooldown.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Two 2x2 squares will spawn in the arena, red and blue.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Players can run to the colour square that corresponds with their colour.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• All players not standing in the correct square when Vorago explodes will take 8000 typeless damage that cannot be blocked by defensive abilities.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Vorago is invulnerable before he explodes.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="voragos-attack-rotation_5"><nowiki>Vorago's Attack Rotation</nowiki></h3>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/Hrg0ysD.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="phase-notes_4"><nowiki>Phase Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Teamsplit is a simple and slow-paced mechanic, which makes it easy for beginners to grasp.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The difficulty of this weekly rotation lies in trying to deal damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Because Teamsplit and Reflect both prevent damage to Vorago, players will need to maximize their damage in what little time Vorago is vulnerable.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Because Teamsplit spawn locations are random, players will need to tank the damage from at least one Teamsplit to maximize time in </nowiki>[https://cdn.discordapp.com/emojis/994921119381463070.png?v=1 <nowiki>sunshine</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/994921434633744455.png?v=1 <nowiki>deathsswift</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ </nowiki>[https://cdn.discordapp.com/emojis/654618235097972737.png?v=1 <nowiki>powerburstofvitality</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/513190159462694912.png?v=1 <nowiki>Reprisal</nowiki>]<nowiki> can be used to increase survivability and deal more damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Bomb Tanks that choose to tank the second Teamsplit should be aware that a long phase can be difficult to survive. Be prepared to eat upon the Red Bomb release.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Beginners may find it easier to forgo </nowiki>[https://cdn.discordapp.com/emojis/994921119381463070.png?v=1 <nowiki>sunshine</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/994921434633744455.png?v=1 <nowiki>deathsswift</nowiki>]<nowiki> entirely and only use thresholds + special attacks instead</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Abilites bled with the </nowiki>[https://cdn.discordapp.com/emojis/535532879250456578.png?v=1 <nowiki>gbarge</nowiki>]<nowiki> effect can hit into Vorago's invulnerability during Teamsplits. While they don't deal damage, they force Vorago to continue attacking during Teamsplit.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• This is often called a &quot;Broken Teamsplit&quot;.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Very detrimental on this phase, as it severely reduces the amount of time the team has to DPS. It can also kill unsuspecting players.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The duration between the first Teamsplit explosion and Reflect is one tick shorter if players used an ability on the Target Cycle tick.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The Base Tank should move to melee distance and </nowiki>[https://cdn.discordapp.com/emojis/535541259465392143.png?v=1 <nowiki>voke</nowiki>]<nowiki> to reduce the damage the Bomb Tank receives during this phase. This should be done during Reflect, or rotation permitting, the entire phase.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="p3-the-end"><ins><nowiki>P3: The End</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="new-special-mechanics_7"><nowiki>New Special Mechanics</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ New special attack: </nowiki><strong><nowiki>The End</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Vorago slams his arms down, sectioning off a quarter of the arena</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Anyone caught outside the arms will take a typeless bleed that can only be blocked by </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki>. This bleed deals damage every other tick.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ It ramps up quickly if players don't move back into the arms.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Vorago spawns 1 Purple Bomb per player, and 5 Blue Bombs + 3 Red Bombs regardless of team size. One type of bomb spawns in each of the other three quadrants.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Red and Blue Bombs are always second and third, though the order in which they appear is random.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Purple Bombs are always last.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Vorago will rotate his arms anticlockwise until he reaches the Purple Bomb quadrant.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Anyone caught outside the arms who wish to reenter must be in a quadrant before the arms reach that area.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Bombs can be individually launched while Vorago's arms are in the appropriate quadrant. This is often called &quot;tagging&quot;.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• During the first 21 ticks, Vorago takes full damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• In the Blue Bomb quadrant, Vorago takes 1/2 damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• In the Red Bomb quadrant, Vorago takes 1/3 damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• In the Purple Bomb quadrant, Vorago takes 1/4 damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Once Vorago reaches the Purple Bomb quadrant, Vorago will stand up and launch any bombs that weren't tagged.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Bombs are evenly distributed among the team.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Each player will receive ceiling(number of bombs/team size)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ In duos, leaving the 5 Blue Bombs and 3 Red Bombs means each player takes 3 Blue Bombs and 2 Red Bombs.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Before standing, Vorago is a blocking entity. </nowiki>[https://cdn.discordapp.com/emojis/626466665848242186.png?v=1 <nowiki>sgb</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> will always land five arrows.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ New special attack: </nowiki><strong><nowiki>Purple Bomb</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Occurs only during The End special attack</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Deals 2k damage, and is unaffected by defensive abilities except </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Deals AoE damage to any players in a 5x5 radius, and drains 5% adrenaline from any secondary targets</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Transforms the player, cancelling and preventing the use of </nowiki>[https://cdn.discordapp.com/emojis/535533811304497183.png?v=1 <nowiki>meta</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Does not affect defensive abilities, and does not increase in damage</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="voragos-attack-rotation_6"><nowiki>Vorago's attack rotation</nowiki></h3>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/thsFIBw.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="phase-notes_5"><nowiki>Phase Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Often called &quot;Purple Bomb&quot;</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ This rotation, like Teamsplit, is easy to learn, but difficult to master. There is a limited amount of time to DPS.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ There are several ways to handle the bombs.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Safest Method: </nowiki>[https://cdn.discordapp.com/emojis/513190158728953857.png?v=1 <nowiki>devo</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/543478434509357098.png?v=1 <nowiki>Cept</nowiki>]<nowiki> Blue Bombs. One player tags 2 Red Bombs, while the other player tags 1 Red Bomb.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ This ensures players do not receive a heavy amount of burst damage when Vorago stands.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ One player must tag the Blue Bombs, while the other player must </nowiki>[https://cdn.discordapp.com/emojis/513190158728953857.png?v=1 <nowiki>devo</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/543478434509357098.png?v=1 <nowiki>Cept</nowiki>]<nowiki> on the entire team. The tagging player will have his defensive abilities cancelled and put on a short cooldown.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Slowest method, as it requires players to use adrenaline on </nowiki>[https://cdn.discordapp.com/emojis/513190158728953857.png?v=1 <nowiki>devo</nowiki>]<nowiki>, and sustain the adrenaline loss from the Red Bombs.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ The Base should move melee distance and </nowiki>[https://cdn.discordapp.com/emojis/535541259465392143.png?v=1 <nowiki>voke</nowiki>]<nowiki> on stand to reduce the damage taken by the Bomb Tank.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Middle Ground Method: </nowiki>[https://cdn.discordapp.com/emojis/513190158728953857.png?v=1 <nowiki>devo</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/543478434509357098.png?v=1 <nowiki>Cept</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Like the previous method, one player tags Blue Bombs while the other player uses </nowiki>[https://cdn.discordapp.com/emojis/513190158728953857.png?v=1 <nowiki>devo</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/543478434509357098.png?v=1 <nowiki>Cept</nowiki>]<nowiki> on the entire team.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Red Bombs are left alone to be tanked upon stand.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ The Base should move melee distance and </nowiki>[https://cdn.discordapp.com/emojis/535541259465392143.png?v=1 <nowiki>voke</nowiki>]<nowiki> on stand to reduce the damage taken by the Bomb Tank.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Fastest, Riskiest Method: Tag nothing.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Maximizes adrenaline and DPS</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Players will receive heavy burst damage on stand.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ </nowiki>[https://cdn.discordapp.com/emojis/654618235097972737.png?v=1 <nowiki>powerburstofvitality</nowiki>]<nowiki> should be used to help tank some damage on stand, if the phase reaches that point.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ The Bomb Tank should use </nowiki>[https://cdn.discordapp.com/emojis/535541259465392143.png?v=1 <nowiki>voke</nowiki>]<nowiki> on stand to prevent the Base Tank from tanking melee swipes and Blue Bombs at the same time.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Bomb tagging roles fall upon the Base Tank and Bomb Tank, unless otherwise specified.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Either player can do either tagging or </nowiki>[https://cdn.discordapp.com/emojis/513190158728953857.png?v=1 <nowiki>devo</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/543478434509357098.png?v=1 <nowiki>Cept</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Confirm with the team which method is to be used.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ While Vorago is normally invulnerable during the arm slam animation, he will continue to take damage from any abilities bled using </nowiki>[https://cdn.discordapp.com/emojis/535532879250456578.png?v=1 <nowiki>gbarge</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Players can escape from the arms without taking the bleed damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Often called &quot;glitching out&quot;.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If Vorago is focused on the southwest or southeast quadrant, players can stand on where the arms would close into the next quadrant. The arm will be on top of the player. From there, players can freely move around the arena.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Only works on the south and east arms.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Only recommended if using the no tag method, or the player is not responsible for handling the bombs.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Glitching out prevents players from tagging bombs.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Can be used to spread out DPS ultimates, preventing bombs from dealing AoE damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Diagram on glitching out</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/g3utKRo.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h2 id="phase-4"><ins><nowiki>Phase 4</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="new-special-mechanics_8"><nowiki>New Special Mechanics</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ New special attack: </nowiki><strong><nowiki>Waterfall</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Vorago spawns a waterfall in a random corner of the arena. Players must run behind the waterfall before Vorago explodes.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Players not behind the waterfall when Vorago explodes will be dealt ~10k damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Vorago is invulnerable and does not attack during the waterfall.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ New special attack: </nowiki><strong><nowiki>Stone Clone Spawn</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Vorago does a melee swipe animation, but this is not a damaging attack.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• One player at random receives a Stone Clone.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The player who has Vorago's aggro cannot receive a Stone Clone. This is usually the Base Tank.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ New special enemy: </nowiki><strong><nowiki>Stone Clone</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• 10k HP</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Uses the same combat style as the targeted player</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Has an adrenaline bar and uses abilities like players</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Follows a set ability rotation (e.g. Magic clone always starts with </nowiki>[https://cdn.discordapp.com/emojis/535533833098100745.png?v=1 <nowiki>comb</nowiki>]<nowiki>)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Not very threatening since it can be killed quickly</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Can pose a large threat if left unchecked. It can use thresholds like </nowiki>[https://cdn.discordapp.com/emojis/535533809978966037.png?v=1 <nowiki>wm</nowiki>]<nowiki> and </nowiki>[https://cdn.discordapp.com/emojis/535533833072672778.png?v=1 <nowiki>asphyx</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ New technique: </nowiki><strong><nowiki>Clone Skip</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The Stone Clone and the 7 auto attacks following it can be skipped. This is a massive 33.6s time save per kill if done both times.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The Stone Clone can only spawn if Vorago has a valid target in range that is not the Base Tank (the person with aggro).</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The Base Tank should walk Vorago to the edge of the arena. All other team members should move to the opposite side of the arena.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ The other team members can use </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> and </nowiki>[https://cdn.discordapp.com/emojis/535532854281764884.png?v=1 <nowiki>bd</nowiki>]<nowiki> to move away from the Base Tank quickly.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Vorago will use the Stone Clone melee swipe animation, but no Stone Clone will spawn because there is no one in range. The 7 following auto attacks will be skipped.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The rest of the phase continues as normal, with Vorago proceeding to his weekly special attack.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Clone Skip Demonstration</nowiki></strong><nowiki>: </nowiki>[https://www.youtube.com/watch?v=maGhYnPa92w <nowiki>https://www.youtube.com/watch?v=maGhYnPa92w</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The shorter phases have a ripple effect on the difficulty of the phase.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Most notably, the Bomb Tank's </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> will not be off cooldown for the second weekly special attack.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ The onus falls upon the Base Tank to cover any relevant mechanics, if necessary.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ See each week's sections for additional issues related to Clone Skip.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="general-phase-notes_3"><nowiki>General Phase Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Phase 4, like phase 2, is time gated. The phase does not end until three Waterfall special attacks.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• As such, the same principles from phase 2 apply.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ DPS ultimates are not necessary, but can be used to compete for DPS drops.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Stack Storm Shards and use affinity-increasing abilities.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Phase 4 always starts with Waterfall → 3 auto attacks → Stone Clone → 7 auto attacks* → weekly special attack.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The Bomb Tank can use </nowiki>[https://cdn.discordapp.com/emojis/535541258844635148.png?v=1 <nowiki>res</nowiki>]<nowiki> on the first or second Blue Bomb for a quick heal.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Do not use </nowiki>[https://cdn.discordapp.com/emojis/535541258844635148.png?v=1 <nowiki>res</nowiki>]<nowiki> on the third Blue Bomb, as it can be sniped by a Stone Clone.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• *The Stone Clone and the following 7 auto attacks can be skipped. For more information, see the Clone Skip section below.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If the team is not using Clone Skip, the Bomb Tank should save </nowiki>[https://cdn.discordapp.com/emojis/513190158728953857.png?v=1 <nowiki>devo</nowiki>]<nowiki> for the 7 auto attacks after the Stone Clone spawn.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Bomb Tanks with a Stone Clone can also get a </nowiki>[https://cdn.discordapp.com/emojis/513190158728953857.png?v=1 <nowiki>devo</nowiki>]<nowiki> extension by killing the clone.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If the team is using Clone Skip, defensive abilities are largely unnecessary. Use them at the Bomb Tank's discretion.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The Bomb Tank usually </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> the weekly special attack. See each week's section for additional information.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="p4-ceiling-collapse"><ins><nowiki>P4: Ceiling Collapse</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="voragos-attack-rotation_7"><nowiki>Vorago's Attack Rotation</nowiki></h3>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/KklN0Ua.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="phase-notes_6"><nowiki>Phase Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Rocks remaining from phase 3 will fall into phase 4.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The positions of these rocks carry over. Thus, remembering a safe spot from phase 3 is important to avoiding unnecessary damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Falling rocks from the phase transition deal 4k damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Corner rocks can block waterfalls. Additionally, two adjacent cardinal direction rocks can block a waterfall (e.g. a south and east rock block the southeast waterfall)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Destroying rocks deals 4k damage. Be prepared to eat and destroy rocks at the start of phase 4.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ A waterfall can be blocked by two cardinal direction rocks and a corner rock, so players may have to destroy two rocks to access a waterfall.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ When Vorago starts his Ceiling Collapse special attack, the Bomb Tank should use </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/543478434509357098.png?v=1 <nowiki>Cept</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Every member of the team should aim to destroy any remaining rocks that haven't been cleared while </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/543478434509357098.png?v=1 <nowiki>Cept</nowiki>]<nowiki> is active. This includes the imminent rock.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Bleeds occur shortly after Vorago lands from the Ceiling Collapse special attack. The team may still be spread out clearing rocks. Move melee distance ASAP to handle Bleeds and prevent Vorago from stalling his attack rotation.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="clone-skip-notes"><nowiki>Clone Skip Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ The Bomb Tank cannot </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> both Ceiling Collapse rocks. The Base Tank should </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> one of them.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• However, if no form of Turtling is used (e.g., </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> with </nowiki>[https://cdn.discordapp.com/emojis/643150658891153428.png?v=1 <nowiki>ancientrepriser</nowiki>]<nowiki>) then the Bomb Tank can do both </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Take caution if you do not have Malletops </nowiki>[https://cdn.discordapp.com/emojis/690136117374484508.png?v=1 <nowiki>malletops</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> extension as it may mean your </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> would be shorter than Intercept </nowiki>[https://cdn.discordapp.com/emojis/543478434509357098.png?v=1 <nowiki>Cept</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Rocks from phase 3 that are east, south, or west must be cleared before the first Waterfall.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Vorago will never walk north.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="p4-scopulus"><ins><nowiki>P4: Scopulus</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="voragos-attack-rotation_8"><nowiki>Vorago's Attack Rotation</nowiki></h3>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/hVrOm2k.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="phase-notes_7"><nowiki>Phase Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Scopulus does not have a weekly special attack for phases 4 and 5. For phase 4, a Red Bomb takes the place where the weekly special attack would occur.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Handle the Red Bomb in the same manner as phase 2. Either the Base Tank or the Bomb Tank can </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The Bomb Tank can surge from max attack range to move underneath Vorago to force the Red Bomb.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="clone-skip-notes_1"><nowiki>Clone Skip Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ The Bomb Tank cannot </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> both Red Bombs. The Base Tank should </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> one of them.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• However, if no form of Turtling is used (e.g., </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> with </nowiki>[https://cdn.discordapp.com/emojis/643150658891153428.png?v=1 <nowiki>ancientrepriser</nowiki>]<nowiki>) then the Bomb Tank can do both </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Take caution if you do not have Malletops </nowiki>[https://cdn.discordapp.com/emojis/690136117374484508.png?v=1 <nowiki>malletops</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> extension as it may mean your </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> would be shorter than Intercept </nowiki>[https://cdn.discordapp.com/emojis/543478434509357098.png?v=1 <nowiki>Cept</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="p4-vitalis"><ins><nowiki>P4: Vitalis</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="voragos-attack-rotation_9"><nowiki>Vorago's Attack Rotation</nowiki></h3>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/fbsKV1l.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="phase-notes_8"><nowiki>Phase Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Vitalis Orbs will always be north, east, or northeast if not doing Clone Skip, assuming Vorago does not move from the centre of the arena.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The team should move to the northeast during the 7 auto attacks after the Stone Clone to prepare for the Vitalis Orb.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Killing the Vitali that spawn is top priority, as they cause a number of pathing problems.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/662249620579155968.png?v=1 <nowiki>dommine</nowiki>]<nowiki> can be used to help with Vitali, though they only deal 4k damage each.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="clone-skip-notes_2"><nowiki>Clone Skip Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ The Bomb Tank cannot </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> both Vitalis Orbs. The Base Tank should </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> one of them.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• However, if no form of Turtling is used (e.g., </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> with </nowiki>[https://cdn.discordapp.com/emojis/643150658891153428.png?v=1 <nowiki>ancientrepriser</nowiki>]<nowiki>) then the Bomb Tank can do both </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Take caution if you do not have Malletops </nowiki>[https://cdn.discordapp.com/emojis/690136117374484508.png?v=1 <nowiki>malletops</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> extension as it may mean your </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> would be shorter than Intercept </nowiki>[https://cdn.discordapp.com/emojis/543478434509357098.png?v=1 <nowiki>Cept</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Due to the alternating </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki>, ample DPS on both Vorago and Vitali are required from both the Base and Bomb Tanks.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Because Vorago moves from the centre of the room, the direction of the Vitalis orbs are random.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="p4-green-bomb"><ins><nowiki>P4: Green Bomb</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="voragos-attack-rotation_10"><nowiki>Vorago's Attack Rotation</nowiki></h3>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/P7qduyh.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="phase-notes_9"><nowiki>Phase Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ The Green Bomb principles from phase 3 apply to phase 4.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Tanking the Green Bomb instead of passing it is preferable.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• While there are normally five auto attacks after a Green Bomb, tanking the Green Bomb shortens this to three auto attacks.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Passing before tanking the Green Bomb leads to a longer phase, and can have undesirable effects.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Since this is a time gated phase, use </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/543478434509357098.png?v=1 <nowiki>Cept</nowiki>]<nowiki> to block the 10k damage from the Green Bomb.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If the Green Bomb is NOT on the Bomb Tank: the Bomb Tank should </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/543478434509357098.png?v=1 <nowiki>Cept</nowiki>]<nowiki> the team.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If the Green Bomb IS on the Bomb Tank: the Base Tank should </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/543478434509357098.png?v=1 <nowiki>Cept</nowiki>]<nowiki> the team.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="clone-skip-notes_3"><nowiki>Clone Skip Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Neither the Base Tank nor the Bomb Tank can </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> both Green Bombs assuming the use of Turtling 4.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The Base Tank should be prepared to tank a 10k with </nowiki>[https://cdn.discordapp.com/emojis/513190158728953857.png?v=1 <nowiki>devo</nowiki>]<nowiki> and/or </nowiki>[https://cdn.discordapp.com/emojis/654618235097972737.png?v=1 <nowiki>powerburstofvitality</nowiki>]<nowiki> if either role receives both Green Bombs.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• However, if no form of Turtling is used (e.g., </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> with </nowiki>[https://cdn.discordapp.com/emojis/643150658891153428.png?v=1 <nowiki>ancientrepriser</nowiki>]<nowiki>) then the a player can </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> both if needed.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Take caution if you do not have Malletops </nowiki>[https://cdn.discordapp.com/emojis/690136117374484508.png?v=1 <nowiki>malletops</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> extension as it may mean your </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> would be shorter than Intercept </nowiki>[https://cdn.discordapp.com/emojis/543478434509357098.png?v=1 <nowiki>Cept</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="p4-teamsplit"><ins><nowiki>P4: Teamsplit</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="voragos-attack-rotation_11"><nowiki>Vorago's Attack Rotation</nowiki></h3>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/qj6rlQa.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="phase-notes_10"><nowiki>Phase Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> after Teamsplit if the additional damage reduction + Heal Other are required. Otherwise, this can be skipped.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Like phase 3, Teamsplits can be broken during this phase.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Unlike phase 3, Broken Teamsplits are beneficial during this phase because they alleviate some of the time gate.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Bleed a melee ability using the </nowiki>[https://cdn.discordapp.com/emojis/535532879250456578.png?v=1 <nowiki>gbarge</nowiki>]<nowiki> effect just before the Teamsplit.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Any melee ability affected by </nowiki>[https://cdn.discordapp.com/emojis/535532879250456578.png?v=1 <nowiki>gbarge</nowiki>]<nowiki> works.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Splashing does not matter, so anyone can break Teamsplits regardless of primary combat style.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The optimal timing is to </nowiki>[https://cdn.discordapp.com/emojis/535532879250456578.png?v=1 <nowiki>gbarge</nowiki>]<nowiki> one tick after the 6th Blue Bomb, then bleeding an ability immediately after.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Make sure the team is aware of this strategy's use, as it can kill unsuspecting players.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Vorago will throw Blue Bombs during Teamsplit with no animation. In addition, if Vorago is standing next to a player, he can also melee swipe.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="clone-skip-notes_4"><nowiki>Clone Skip Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Since </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> is optional this week, </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> cooldown does not play a large factor during this week.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ If Clone Skip is paired with Broken Teamsplits, the amount of time the team has to DPS is much shorter than normal. Make sure the team has enough DPS to clear the phase on time.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The optimal timing for Broken Teamsplit with Clone Skip is </nowiki>[https://cdn.discordapp.com/emojis/689501908628799488.png?v=1 <nowiki>mob</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532879250456578.png?v=1 <nowiki>gbarge</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532879250456578.png?v=1 <nowiki>gbarge</nowiki>]<nowiki> immediately off cooldown → wait 1 tick → </nowiki>[https://cdn.discordapp.com/emojis/535532879283879977.png?v=1 <nowiki>gflurry</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="p4-the-end"><ins><nowiki>P4: The End</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="voragos-attack-rotation_12"><nowiki>Vorago's Attack Rotation</nowiki></h3>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/REPpAAF.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="phase-notes_11"><nowiki>Phase Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Because this phase is time gated, defensive abilities can be used to mitigate most or all of the damage during this phase.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The Base Tank should tag all of the Red Bombs during this phase, while the Bomb Tank should use </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/543478434509357098.png?v=1 <nowiki>Cept</nowiki>]<nowiki> + Heal Other on the team.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ On Vorago's stand, the Base Tank should use </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/543478434509357098.png?v=1 <nowiki>Cept</nowiki>]<nowiki> on the team.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ When Vorago throws his Red Bomb, the Base Tank should do one of the following:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/543478434509357098.png?v=1 <nowiki>Cept</nowiki>]<nowiki> the Bomb Tank again using the remaining </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> duration (Malletops + T90 Shield </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> + Turtling 3 only)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/513190158728953857.png?v=1 <nowiki>devo</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/543478434509357098.png?v=1 <nowiki>Cept</nowiki>]<nowiki> the Bomb Tank.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Move melee distance and use </nowiki>[https://cdn.discordapp.com/emojis/535541259465392143.png?v=1 <nowiki>voke</nowiki>]<nowiki> to reduce the number of Blue Bombs the Bomb Tank receives.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ If the Base Tank and Bomb Tank reverse their </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> order, the Bomb Tank's </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> may be on cooldown at the start of phase 5.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="clone-skip-notes_5"><nowiki>Clone Skip Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Due to phase length, Clone Skip is largely unaffected by </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> timing. The </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> strategy without Clone Skip still applies.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Turtling 4 prevents players from using </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> on time. Turtling 3 is recommended.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="transition-into-phase-5"><ins><nowiki>Transition into Phase 5</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="end-of-p4"><nowiki>End of P4</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Vorago's HP should be lowered before the third Waterfall. Ideally, </nowiki>[https://cdn.discordapp.com/emojis/536256673904328704.png?v=1 <nowiki>shatter</nowiki>]<nowiki> should finish Vorago off.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• A </nowiki>[https://cdn.discordapp.com/emojis/655341074235129858.png?v=1 <nowiki>vulnbomb</nowiki>]<nowiki> can be thrown to aid this.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/641670143197446182.png?v=1 <nowiki>swh</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> can be used some time before the last Waterfall to aid with hit chance.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Rangers should use bolts other than </nowiki>[https://cdn.discordapp.com/emojis/565726489413287956.png?v=1 <nowiki>RubyBakri</nowiki>]<nowiki> for </nowiki>[https://cdn.discordapp.com/emojis/536256673904328704.png?v=1 <nowiki>shatter</nowiki>]<nowiki>. Reequip </nowiki>[https://cdn.discordapp.com/emojis/565726489413287956.png?v=1 <nowiki>RubyBakri</nowiki>]<nowiki> before the start of phase 5.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The mauler should pick up the first two maul pieces </nowiki><em><nowiki>before</nowiki></em><nowiki> the third waterfall.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The default maul player, unless otherwise specified, is: any melee player → TL5 (trio+) → Bomb Tank (duo)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Like the transition from phase 2 to phase 3, </nowiki>[https://cdn.discordapp.com/emojis/535541258131865633.png?v=1 <nowiki>nat</nowiki>]<nowiki> can be used to build additional adrenaline from a dummy.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The ideal dummy position is close to the center of the arena.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/535541258131865633.png?v=1 <nowiki>nat</nowiki>]<nowiki> timing is largely the same as the phase 2 → phase 3 transition</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Facing direction is preserved between phases. The Bomb Tank can start a </nowiki>[https://cdn.discordapp.com/emojis/535541258131865633.png?v=1 <nowiki>nat</nowiki>]<nowiki> rotation facing east, and </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> during global cooldown on phase 5 to place a melee distance </nowiki>[https://cdn.discordapp.com/emojis/994921434633744455.png?v=1 <nowiki>deathsswift</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Avoid using </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> on t-15, as it causes some strange loading issues.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The third maul piece spawns on the floor near Vorago after the third Waterfall. A red dot on the minimap can be used to help find the maul piece.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="phase-5"><ins><nowiki>Phase 5</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="new-special-mechanics_9"><nowiki>New Special Mechanics</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>New special arena: </nowiki><strong><nowiki>Pushing Vorago</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Vorago spawns in the middle of a long and narrow phase 5 arena.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Vorago covers the width of the arena and is blocking, preventing access to the eastern side of Vorago.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/626466665848242186.png?v=1 <nowiki>sgb</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> hits Vorago as if he were a blocking entity.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Players must push Vorago eight tiles east from his starting position, then use the Maul of Omens.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Players can push Vorago one tile east by dealing about 20k damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Commonly referred to as &quot;push&quot;.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The damage threshold is more complex than this. For a detailed explanation, see </nowiki>[[PvME/Vorago/Vorago — Tips And Tricks|<nowiki>Tips And Tricks</nowiki>]]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Vorago will push players backward by dealing damage to the team.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Commonly referred to as &quot;push back&quot;.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Push back is not relative to the amount of damage players receive.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Each attack has its own value push back value.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Melee Swipes and Blue Bombs push back the team.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• In duos and trios, this number is always one tile of push back for every successful hit.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• In teams of 4+, this may not always hold true.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Melee swipes only occur if at least one player is standing within melee distance.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Because Vorago can use both his melee swipe and Blue Bomb in a single auto attack, players may receive two squares of push back in a single auto attack.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• AoE damage can affect push back.*</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Only a limited number of defensive options can prevent push back from auto attacks.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> (Blocks all push back from auto attacks during its duration)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/535614336207552523.png?v=1 <nowiki>disrupt</nowiki>]<nowiki> (Blocks all push back from a single auto attack)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/537341954392850442.png?v=1 <nowiki>sd</nowiki>]<nowiki> (Blocks half a tile of push back per auto attack while </nowiki>[https://cdn.discordapp.com/emojis/537341954392850442.png?v=1 <nowiki>sd</nowiki>]<nowiki> is active. Only occurs at 50% damage reduction. Recommended only during Reflect.)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/535541278264393729.png?v=1 <nowiki>debil</nowiki>]<nowiki> (Blocks half a tile of push back per auto attack while </nowiki>[https://cdn.discordapp.com/emojis/535541278264393729.png?v=1 <nowiki>debil</nowiki>]<nowiki> is active. Not recommended.)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• All other defensive options (</nowiki>[https://cdn.discordapp.com/emojis/535541258844635148.png?v=1 <nowiki>res</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/513190158728953857.png?v=1 <nowiki>devo</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535541258786177064.png?v=1 <nowiki>reflect</nowiki>]<nowiki> etc) do not affect push back.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Some of Vorago's special attacks push back the team.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Damage from PKing on Reflect will cause push back. The amount of push back varies on the ability and damage dealt.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Tanking melee bleed ticks from Vorago's Smash will cause push back. The amount of push back per tick of damage is 1/team size (e.g. duos is 1/2 tile per tick of damage)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• See the weekly rotation sections below for other sources of push back.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Only one tile of push and push back per tick can occur.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Push and push back can occur on the same tick.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Because only one tile of push back can occur, an auto attack hitting multiple players will still only push back one tile.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• An auto attack that hits multiple players can only be blocked if </nowiki><em><nowiki>all</nowiki></em><nowiki> players are under the effects of </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki>. If even one person receives damage, the auto attack will cause push back.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Vorago will slightly raise his defence level for each tile Vorago is pushed east past the starting point.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/b5itISX.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="general-phase-notes_4"><nowiki>General Phase Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ The Maul of Omens can be created by clicking any of the maul pieces while all three are in the mauler's inventory.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Once Vorago is at the eastern edge of the arena, use the Maul of Omens within halberd range by clicking on the maul.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ After the first auto attack, Vorago's attack speed changes to once every three ticks.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Vorago no longer clears </nowiki>[https://cdn.discordapp.com/emojis/537349530551582720.png?v=1 <nowiki>Vuln</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/856635090641879050.png?v=1 <nowiki>smokecloud</nowiki>]<nowiki> after this point.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Vorago cannot attack on the same tick he is pushed.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The next Blue Bomb will be at least 3 ticks after he is pushed.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Players can stall Vorago's attack rotation indefinitely by pushing Vorago at least once every three ticks.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ This is commonly known as &quot;stall&quot; and &quot;stalling&quot;.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ With a strong, well-timed rotation, teams can completely prevent Vorago from attacking.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Finishing this phase before Reflect, or even the first special attack is possible. These are known as 0 link and 0 spec phases respectively.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ These strategies employ more aggressive rotations, which usually include the Bomb Tank skipping </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> for a damage boosting ultimate. However, these strategies can be slower if the phase does not finish before Reflect.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ List of stall durations:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Vorago is pushed: 3 ticks</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Vorago pushes back (any source): 6 ticks</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Vorago uses a special attack:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Purple Bomb: 5 ticks</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Green Bomb: 10 ticks</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Teamsplit: 4 ticks</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Vitalis: 4 ticks</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Stall duration is overwritten by the most recent cause of stall.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• e.g. If Vorago throws a Green Bomb on tick 1, and Vorago is pushed on tick 2, Vorago will throw a blue bomb on tick 5. The push stall duration overwrites the Green Bomb stall duration.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Because the arena is narrow, players must be careful about preventing AoE damage from Blue Bombs.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The Bomb Tank should be on the northern edge of the arena, while the rest of the team should be on the southern edge. This prevents Blue Bombs from dealing AoE damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ While </nowiki>[https://cdn.discordapp.com/emojis/535541278264393729.png?v=1 <nowiki>debil</nowiki>]<nowiki> can mitigate some push back, players are highly recommended avoiding it. See </nowiki>[[PvME/Vorago/Vorago — Tips And Tricks#skipping-debilitate-on-p5|<nowiki>this page</nowiki>]]<nowiki> for a detailed explanation.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Vorago's aggro is random and cannot be controlled.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/535541259465392143.png?v=1 <nowiki>voke</nowiki>]<nowiki> cannot be activated on Vorago during this phase.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Vorago's Smash attack is only three smashes long, rather than five.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Because aggro is random, all players must be ready to clear Bleeds.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Distance Bleed clears on this phase are determined by distance from where the player received the bleed, not distance from Vorago.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Using </nowiki>[https://cdn.discordapp.com/emojis/535532853916860437.png?v=1 <nowiki>barge</nowiki>]<nowiki> or </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> towards Vorago from the far west is an option for Bleed clears.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ If a Bleed is received in an undesirable spot (roughly half way between Vorago and the west side of the arena), there may not be enough distance in either direction to clear the bleed. If this happens, use </nowiki>[https://cdn.discordapp.com/emojis/544195488447201300.png?v=1 <nowiki>DeflectMelee</nowiki>]<nowiki>, tank the entire Bleed duration, and DPS as much as possible.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Dual crossbow range </nowiki>[https://cdn.discordapp.com/emojis/535541258832052231.png?v=1 <nowiki>escape</nowiki>]<nowiki> is occasionally not enough to clear Bleeds.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Players should </nowiki>[https://cdn.discordapp.com/emojis/535541258832052231.png?v=1 <nowiki>escape</nowiki>]<nowiki> with a 2-handed ranged weapon, or </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535532854281764884.png?v=1 <nowiki>bd</nowiki>]<nowiki> instead.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ There are three ways to clear a triple Bleed.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Standard Method: </nowiki>[https://cdn.discordapp.com/emojis/535541258240786434.png?v=1 <nowiki>freedom</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535541258832052231.png?v=1 <nowiki>escape</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532853916860437.png?v=1 <nowiki>barge</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Easier to execute</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Spends two abilities that deal little damage (</nowiki>[https://cdn.discordapp.com/emojis/535541258240786434.png?v=1 <nowiki>freedom</nowiki>]<nowiki>, </nowiki>[https://cdn.discordapp.com/emojis/535532853916860437.png?v=1 <nowiki>barge</nowiki>]<nowiki>)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Advanced Method: </nowiki>[https://cdn.discordapp.com/emojis/535532854281764884.png?v=1 <nowiki>bd</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535541258240786434.png?v=1 <nowiki>freedom</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Difficult to execute losslessly</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Spends only one ability that deals little damage (</nowiki>[https://cdn.discordapp.com/emojis/535541258240786434.png?v=1 <nowiki>freedom</nowiki>]<nowiki>), and only if a player receives all three Bleeds.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Mages will need to turn their run off after </nowiki>[https://cdn.discordapp.com/emojis/535532854281764884.png?v=1 <nowiki>bd</nowiki>]<nowiki> to ensure enough distance to </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Rangers will need to camp a 2H weapon to ensure enough distance to </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Alternative Advanced Method: </nowiki>[https://cdn.discordapp.com/emojis/535541258832052231.png?v=1 <nowiki>escape</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/535532854281764884.png?v=1 <nowiki>bd</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535541258832052231.png?v=1 <nowiki>escape</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535541258240786434.png?v=1 <nowiki>freedom</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Difficult to execute losslessly</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Helps meleers stay melee distance during Bleed clears</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The primary </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> timing is when the first Blue Bomb lands, after Vorago's weekly special attacks.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• This can be delayed to the second Blue Bomb if using </nowiki>[https://cdn.discordapp.com/emojis/535614336207552523.png?v=1 <nowiki>disrupt</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ If the team expects more than one weekly special attack, the Bomb Tank and Base Tank swap positions immediately after Vorago's third Bleed.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The time between weekly special attacks is too short for one player to </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> two consecutive weekly special attacks.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ There is an earlier Base Tank </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> timing, after Smash but before Vorago's weekly special attack.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Commonly referred to as &quot;early cade&quot;</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Used if the team can finish the phase before or on the weekly special attack release.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="p5-ceiling-collapseteamsplit"><ins><nowiki>P5: Ceiling Collapse/Teamsplit</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="voragos-attack-rotation_13"><nowiki>Vorago's Attack Rotation</nowiki></h3>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/g3Cgab3.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="phase-notes_12"><nowiki>Phase Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Ceiling Collapse does not have its own unique phase 5 mechanic, and instead uses the Teamsplit phase 5 mechanic.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Tanking the 8k damage from Teamsplit does not cause push back, and can be used as a reliable source of </nowiki>[https://cdn.discordapp.com/emojis/513190159462694912.png?v=1 <nowiki>Reprisal</nowiki>]<nowiki> damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Because Teamsplits cancel defensive abilities and put them on cooldown, the last Blue Bomb before Teamsplit usually cannot be blocked.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Unaware players may try to </nowiki>[https://cdn.discordapp.com/emojis/535541258844635148.png?v=1 <nowiki>res</nowiki>]<nowiki> this Blue Bomb at low HP without Deflect Magic, potentially receiving fatal damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Early </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> is not used on this rotation.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="p5-scopulusthe-end"><ins><nowiki>P5: Scopulus/The End</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="voragos-attack-rotation_14"><nowiki>Vorago's Attack Rotation</nowiki></h3>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/gg1VugJ.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="phase-notes_13"><nowiki>Phase Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Scopulus does not have its own unique phase 5 mechanic, and instead uses the &quot;The End&quot; phase 5 mechanic.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Purple Bombs do not cause push back if they only hit their designated targets.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Each Purple Bomb causes one tile of push back if they deal AoE damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Purple Bomb timers are counted in ticks, not seconds.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Purple Bomb timers are always at least 5 ticks apart. Two Purple Bombs will never explode at the same time.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ In duos, the Purple Bomb can largely be ignored since players are already separated from each other.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ In trios, the Base Tank does not stand near south edge like usual. The Base Tank instead stands near the north edge, and close to Vorago.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Since the Bomb Tank is also north, the Base Tank and Bomb Tank should watch their distance from each other.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Trio positioning:</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/HBbgO5g.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ In teams of 4+, all members except the Bomb Tank stand on the south wall. Each player should run north when the timer reaches 5 ticks, wait for the Purple Bomb to explode, then run back south.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The number of Purple Bombs is capped, so not every person may receive one in large teams.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="p5-vitalis"><ins><nowiki>P5: Vitalis</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="voragos-attack-rotation_15"><nowiki>Vorago's Attack Rotation</nowiki></h3>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/46qliKG.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="phase-notes_14"><nowiki>Phase Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Vitalis Orbs always cause push back if at least one player is standing in the Vitalis Orb explosion.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Vitalis Orbs do not cause push back if no one is standing in the Vitalis Orb explosion.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ During this phase, Vitalis Orbs spawn 2-4 Vitali instead of 5.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Vitali melee attacks cause push back. The amount of push back per Vitali melee attack is 1/team size.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Players will inexplicably change targets to Vorago when targeting Vitali. This can be especially detrimental during Reflect.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/662249620579155968.png?v=1 <nowiki>dommine</nowiki>]<nowiki> can be preplaced to help deal with Vitali.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/662249620579155968.png?v=1 <nowiki>dommine</nowiki>]<nowiki> are mutually exclusive with most </nowiki>[https://cdn.discordapp.com/emojis/535541258131865633.png?v=1 <nowiki>nat</nowiki>]<nowiki> rotations because </nowiki>[https://cdn.discordapp.com/emojis/656844963522281473.png?v=1 <nowiki>dummy</nowiki>]<nowiki> count as valid targets.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ This phase can be extremely difficult in duos. Teams without sufficient DPS will struggle to generate enough push to counteract the guaranteed Vitalis Orb push back, and the push back from Vitali.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="p5-green-bomb"><ins><nowiki>P5: Green Bomb</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="voragos-attack-rotation_16"><nowiki>Vorago's Attack Rotation</nowiki></h3>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/GXSm3mQ.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="phase-notes_15"><nowiki>Phase Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ The 10k hit from tanking Green Bombs without passing causes push back.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The 1k AoE damage from passing Green Bombs causes push back.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Passing a Green Bomb without dealing AoE damage does not cause push back.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Because tanking Green Bombs forces Vorago into Reflect, and Vorago's attacks can be stalled for an indeterminate amount of time, the number of Blue Bombs between the Green Bomb launch and reflect can be anywhere from 0 to 5.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Because this is the only week during which Blue Bombs can be skipped with more DPS, </nowiki>[https://cdn.discordapp.com/emojis/535541258131865633.png?v=1 <nowiki>nat</nowiki>]<nowiki> is highly recommended.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ As with previous phases, the preferred method of handling the Green Bomb is to tank the 10k damage with a </nowiki>[https://cdn.discordapp.com/emojis/654618235097972737.png?v=1 <nowiki>powerburstofvitality</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• In duos, players should already be on opposite sides of the arena.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• In trios, the TL5 should be on the south edge, while the Bomb Tank and Base Tank should be on the north edge.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ The Base and Bomb Tanks should take extra care not to pass the Green Bomb between each other, as they are both on the north edge of the arena.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Trio positioning:</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/HBbgO5g.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎‎ ‎ ‎ ‎• In teams of 4+, everyone but the Bomb Tank should stand on the south edge. The player with the Green Bomb should run to the north edge, tank the 10k hit, and run back south.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ While the Green Bomb is normally followed by a long delay in Vorago's attacks, this only happens for the first Green Bomb. Subsequent Green Bombs will be followed by Blue Bombs in quick succession.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The Bomb Tank must be at a higher HP than usual to tank subsequent Green Bombs with a </nowiki>[https://cdn.discordapp.com/emojis/654618235097972737.png?v=1 <nowiki>powerburstofvitality</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• A Bomb Tank cannot survive subsequent Green Bombs on his own without a </nowiki>[https://cdn.discordapp.com/emojis/654618235097972737.png?v=1 <nowiki>powerburstofvitality</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Should the phase last this long, the onus lies on the Base Tank to save the Bomb Tank.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ The preferred method to deal with this situation is </nowiki>[https://cdn.discordapp.com/emojis/513190158728953857.png?v=1 <nowiki>devo</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/543478434509357098.png?v=1 <nowiki>Cept</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>For those interested in reading up on more Vorago-related information and theorycrafting, take a look at Rago Hub and their wealth of knowledge: </nowiki>[https://discord.gg/uqGJbKH <nowiki>PvME community (external Discord)</nowiki>]</p>
+<nowiki>
+      
+    </nowiki>
+== Attribution and source history ==
+Adapted from [https://pvme.io/pvme-guides/rs3-full-boss-guides/vorago/overview/ <nowiki>Overview</nowiki>] by PvME contributors. [https://github.com/pvme/pvme-guides/commits/master/rs3-full-boss-guides/vorago/overview.txt Upstream source history]. Licensed [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]. Snapshot 074a9438f79d10fba75735791be0030734db8b5e. Formatting adapted for standalone MediaWiki; media and third-party references remain external links.

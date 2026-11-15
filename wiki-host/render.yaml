@@ -21,7 +21,7 @@ services:
       - key: MW_ADMIN_PASSWORD
         sync: false
       - key: MW_SERVER
-        value: https://pvmewiki.sanji3.dev
+        sync: false
       - key: MW_ALLOW_RENDER_PRIVATE_TLS
         value: "true"
       - key: PORT

@@ -1,0 +1,829 @@
+[[PvME|PvME guide index]]
+
+<span id="solak-mechanics"></span><p>[https://img.pvme.io/images/gmrKIcfK2P.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="introduction"><nowiki>Introduction</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Solak is an anima guardian, enslaved by the dark elf Erethdor to siphon energy from the Lost Grove. The player is tasked with freeing Solak from Erethdor's grasp, aided by his sister, Merethiel, who provides aid during the fight. Solak is a high-level boss, boasting a variety of dangerous mechanics, and can be found in The Lost Grove. The encounter scales according to the number of players, ranging from 2-7 man. The mechanics and life point thresholds change across team size, which is detailed in a table below, with the loot droprates remaining constant. The boss is recommended to be fought in team sizes of 2-4, where the boss can be easily co-ordinated to avoid any issues. However, team sizes above 4 are also viable, just requiring more co-ordination and differing strategies.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>This guide is intended to be the overall guide to the Solak bossfight, listed below are the complete overview of each mechanic, the recommended methods of dealing with them, advanced mechanics for players more comfortable with the fight, a guide to hybridding, realming, and benchmarks for the boss fight. The </nowiki><span><nowiki>Referenced guide unavailable in this snapshot</nowiki></span><nowiki>, </nowiki><span><nowiki>Referenced guide unavailable in this snapshot</nowiki></span><nowiki> and </nowiki><span><nowiki>Referenced guide unavailable in this snapshot</nowiki></span><nowiki> guides contain optimal rotations for those strategies.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="general-overview"><nowiki>General Overview</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>Solak is a mechanically heavy boss, broken up over the 4 phases, with various targets. Some of these mechanics are optional, such as killing Erethdor. The boss makes use of the Extra Action Button multiple times during the fight, make sure to make it accessible in a suitable area of your screen.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Solak attacks the main target (Base) with Melee auto-attacks, and secondary targets (DPS) with Ranged auto-attacks. Solak's melee autos cannot splash on the base, however ranged attacks are affected by the player's defence.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ These autos have travel time, so splashes can be seen preemptively via the shield icon on the player.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Solak has a 5-tick auto-attack speed, which speeds up to 4-tick at certain parts of the fight.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>The Solak boss fight has many stationary targets, such as Volatile Rootlings and Anima Eruptions. All stationary targets in this fight face </nowiki><strong><nowiki>south</nowiki></strong><nowiki> by default, and can therefore be flanked </nowiki>[https://cdn.discordapp.com/emojis/841419289755385866.png?v=1 <nowiki>flankicon</nowiki>]<nowiki> from the </nowiki><strong><nowiki>north</nowiki></strong><nowiki>. Movable targets must be positioned correctly relative to the target as per usual.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Over the fight, players can receive Blight Stacks from various mechanics, these increase the player's damage taken by 1% per stack, and can be cleansed via Merethiel in phases 2 and 3.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>The use of Storm Shards </nowiki>[https://cdn.discordapp.com/emojis/536256663641128971.png?v=1 <nowiki>StormShards</nowiki>]<nowiki> is heavily recommended throughout the fight, as the Shatter </nowiki>[https://cdn.discordapp.com/emojis/536256673904328704.png?v=1 <nowiki>Shatter</nowiki>]<nowiki> on P4 is vital to the success of the kill. Typical times to shard are as follows:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ P1 after HP cap</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ P2 during Eruptions</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ P2 after HP cap</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ P4 during invulnerability</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="fight-information"><ins><nowiki>Fight Information</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="scaling-hp-chart"><nowiki>Scaling HP chart</nowiki></h3>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/Yy4cVos.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="auras"><nowiki>Auras</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>Players have 100% hit chance on Solak using the recommended gear, so accuracy auras are useless.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ For hybridding: </nowiki>[https://cdn.discordapp.com/emojis/643148943856762890.png?v=1 <nowiki>mahj</nowiki>]<nowiki> &gt; </nowiki>[https://cdn.discordapp.com/emojis/643505652634746881.png?v=1 <nowiki>inspiration</nowiki>]<nowiki> (If Ranging) &gt; </nowiki>[https://cdn.discordapp.com/emojis/643505652571963417.png?v=1 <nowiki>dm</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ For camping one style: </nowiki>[https://cdn.discordapp.com/emojis/643505153709965322.png?v=1 <nowiki>mani</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/643505116347105290.png?v=1 <nowiki>berserker</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/643505179378974748.png?v=1 <nowiki>reckless</nowiki>]<nowiki> are always the strongest auras</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="dominion-mines"><nowiki>Dominion Mines</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>Dominion mines </nowiki>[https://cdn.discordapp.com/emojis/662249620579155968.png?v=1 <nowiki>dommine</nowiki>]<nowiki> are particularly useful for dealing damage to the Roots, dealing 10k damage per mine. These can be pre-placed before starting the fight, and then again after the cooldown has ended. In Duo, two mines can kill a root alone, but they </nowiki><strong><nowiki>must be placed on the same tick</nowiki></strong><nowiki> in order to kill a target. The images below shows the location of the 8 Root spawns and the locations that players should pre-place mines.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="duo"><nowiki>Duo</nowiki></h3>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/yaXjCJH.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="4-man"><nowiki>4-Man</nowiki></h3>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/rl5rOp6.png <nowiki>Guide illustration</nowiki>]<nowiki>
+The orange squares represent pre-placed mines, the red squares represent the next set of mines placed during the kill.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="phase-1"><ins><nowiki>Phase 1</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="solak-attack-rotation"><nowiki>Solak Attack Rotation</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>2 Autos → Green Pads → 3 Autos → Bombs Explode &amp; Roots Spawn → 13 Autos → Root Arrows → 7 Autos → Blight Bomb 1 → 7 Autos → Blight Bomb 2 → 3 Autos → Arms and Legs → Core → 7 Autos → Green Pads + repeat from there</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="phase-1-notes"><nowiki>Phase 1 Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ The rotation will restart from green pads until core is dead.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ When Solak reaches his hp cap for the phase, he will phase into Arms instead of his next special attack</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ After the Blight Bomb 1, Solak increases his attack speed from 5 ticks to 4 ticks, for 10 auto-attacks.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="green-pads"><nowiki>Green Pads</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>2 auto-attacks into P1, Solak will throw toxic spores into the air and Green Pads will spawn scattered around the arena. These can spawn in any location, even on top of each other, and occupy </nowiki><strong><nowiki>3x3</nowiki></strong><nowiki> squares. </nowiki><strong><nowiki>1</nowiki></strong><nowiki> pad is spawned for each player in the instance, and must be stood on by a player within 6s (10t) seconds of their spawn. For every pad that is missed, the players are dealt ~7k+ damage, and 5 blight stacks are applied to the player. It is recommended that the player uses Bladed Dive </nowiki>[https://cdn.discordapp.com/emojis/535532854281764884.png?v=1 <nowiki>bd</nowiki>]<nowiki> to move to these pads. Once absorbed, they reset </nowiki>[https://cdn.discordapp.com/emojis/535532854281764884.png?v=1 <nowiki>bd</nowiki>]<nowiki>, allowing you to quickly move back to where you were.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ For advanced players, this can be done in 1 tick, and abilities can be stalled for release on Solak. An example clip can be seen below in the advanced section.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="blight-bombs"><nowiki>Blight Bombs</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>2 individual Blight Bombs (Bomb 1 and Bomb 2) are spawned in P1, with a third as part of the Pads mechanic. The timings for these bombs are set in the attack rotation above. These are indicated by a green bar above the player's head, and take 10 seconds to charge, after which they explode for ~7k+ damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Bombs 1 and 2 are AoE, in a 3x3 area, and deal reduced damage based on the player's proximity to their team-mates.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ There are a few ways to deal with the bomb from the green pads</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Using disruption shield </nowiki>[https://cdn.discordapp.com/emojis/535614336207552523.png?v=1 <nowiki>disrupt</nowiki>]<nowiki> is the most optimal way as it is lossless.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Resonance </nowiki>[https://cdn.discordapp.com/emojis/535541258844635148.png?v=1 <nowiki>res</nowiki>]<nowiki>: This will fully negate the bomb’s damage at the cost of a GCD.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Debilitate </nowiki>[https://cdn.discordapp.com/emojis/535541278264393729.png?v=1 <nowiki>debil</nowiki>]<nowiki> / Reflect </nowiki>[https://cdn.discordapp.com/emojis/535541258786177064.png?v=1 <nowiki>reflect</nowiki>]<nowiki>. This is not recommended at all, but is a safe method.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Tank it. You will take maximum ~8k damage with a zerk aura. A Vitality powerburst </nowiki>[https://cdn.discordapp.com/emojis/654618235097972737.png?v=1 <nowiki>powerburstofvitality</nowiki>]<nowiki> may be helpful here.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><em><nowiki>Note: The melee hit will land 1 tick before the bomb damage, so use Resonance </nowiki>[https://cdn.discordapp.com/emojis/535541258844635148.png?v=1 <nowiki>res</nowiki>]<nowiki> / Disruption Shield </nowiki>[https://cdn.discordapp.com/emojis/535614336207552523.png?v=1 <nowiki>disrupt</nowiki>]<nowiki> as you see the melee hit. Depending on how far away you are from Solak, the bomb will hit before the range attack.</nowiki></em></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="volatile-rootlings-and-blightbound-lashers"><nowiki>Volatile Rootlings and Blightbound Lashers</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>After the Green pads mechanic ends, 26 seconds into the fight, Solak spawns 8 Volatile Rootlings, with differing HP depending on team size. These are important to deal with, as if left unchecked for 1 minute, they will begin to transform into Blightbound Lashers. These Lashers deal highly accurate, highly damaging ranged hits, and as they spawn, turn other roots into lashers and heal other spawns up to a maximum of 660,000 HP. Multiple spawns must be avoided at all costs, as they are almost guaranteed to kill you.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ If 1 lasher is left alive, it can be ignored whilst dealing with other mechanics, and killed during downtime.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Solak will also spawn 2 Blightbound Lashers, with 50,000 HP, if the player fails to kill both of his arms or legs.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="root-arrows"><nowiki>Root Arrows</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>13 auto-attacks after the Volatile Rootlings spawn, arrows will spawn on the map for players on the team, with varying timers based on ordering, indicated with an arrow and a chat message &quot;Roots are preparing to rush you from the edge of the arena! Look out! [#] (seconds)&quot;. These arrows indicate the spawn location of the centre of 3 Root lines, which converge on the marked player. If caught in this attack, it deals ~2,000 damage per tick, and stuns the player, and damages anybody in it's path. As such, these arrows must be dealt with to avoid killing teammates.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The player does not have to go directly to the arrow, just ensure the direction is clear of any teammates, and then take 1 step away from the arrow as the timer hits 0. Use Anticipate </nowiki>[https://cdn.discordapp.com/emojis/535541306475151390.png?v=1 <nowiki>anti</nowiki>]<nowiki> or Freedom </nowiki>[https://cdn.discordapp.com/emojis/535541258240786434.png?v=1 <nowiki>freedom</nowiki>]<nowiki> beforehand to avoid any chance of being stunned.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="solaks-arms"><nowiki>Solak's Arms</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>Solak punches his arms into the ground, these spawn with varying HP and must be killed in ~30 seconds to progress. Both arms can be damaged by the Dragon Breath </nowiki>[https://cdn.discordapp.com/emojis/535533833391702017.png?v=1 <nowiki>dbreath</nowiki>]<nowiki> ability, if standing on the correct spot.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="solaks-legs"><nowiki>Solak's Legs</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>After the arms are killed, Solak's legs become attackable, requiring less damage but must be killed faster, in ~25 seconds, to release the Blighted Core. These are 3x3 targets with 2 squares space in between them, allowing a fully charged Detonate </nowiki>[https://cdn.discordapp.com/emojis/535533833358016512.png?v=1 <nowiki>deto</nowiki>]<nowiki> to hit both legs, but requiring the use of a halberd or a dummy for Melee and Ranged respectively. A non-halberd weapon can be used, but requires precise positioning, blocked by Solak's hitbox.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="blighted-core"><nowiki>Blighted Core</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>Solak's Core is required to be killed to progress into Phase 2, with varying HP based on teamsize, 125k HP per player in the arena. The core is attackable for exactly 29 ticks, and is a 3x3, rotating target.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>In order to consistently flank the core, players must step underneath it, as it rotates towards attacking players.</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="phase-1-advanced-mechanics"><ins><nowiki>Phase 1 Advanced Mechanics</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>With increased DPS, many of Solak's mechanics can be avoided entirely. As such, there are many advanced mechanics and strategies to deal with these skips:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="skips"><nowiki>Skips</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Bomb Skips - If Solak reaches his P1 HP cap within 1:31, he will phase into arms.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Root Skips - If Solak reaches his P1 HP cap within 1:06, he will phase into arms.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ 1-cycle core (1cc) - Killing Solak's Core in one rotation, skipping the repeat P1 rotation.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="ability-stalling-on-pads"><nowiki>Ability Stalling on Pads</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>As mentioned above, due to the ability of the Pads to reset Bladed Dive </nowiki>[https://cdn.discordapp.com/emojis/535532854281764884.png?v=1 <nowiki>bd</nowiki>]<nowiki>, the player can use this to stall an ability as they deal with the mechanic, releasing it in their ultimate to increase damage. This is done by bladed diving whilst the GCD is active, casting an ability, then bladed diving back to your original position and clicking Solak to release it before the next ability.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://youtu.be/X8RKn_xw6Ak <nowiki>https://youtu.be/X8RKn_xw6Ak</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="chin-legs"><nowiki>Chin Legs</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>As the legs are 3 squares apart, a correctly placed MKII Invention Dummy </nowiki>[https://cdn.discordapp.com/emojis/656844963522281473.png?v=1 <nowiki>dummy</nowiki>]<nowiki> can be used to attack both legs at the same time with Mechanical Chinchompas. Video examples of how to place the dummy correctly can be found below.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://youtu.be/4b7ZJg1WZG4 <nowiki>https://youtu.be/4b7ZJg1WZG4</nowiki>]</p>
+<nowiki>
+</nowiki><p>[https://youtu.be/Wv3Taq-OBe8 <nowiki>https://youtu.be/Wv3Taq-OBe8</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="sunshine-spot"><nowiki>Sunshine Spot</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>Both of Solak's arms can be hit with the Dragon Breath </nowiki>[https://cdn.discordapp.com/emojis/535533833391702017.png?v=1 <nowiki>dbreath</nowiki>]<nowiki> ability, which requires the player to be standing on specific squares. This is shown in an image below, marked by the dirt circle directly west of the middle of the arena. When achieving the meta skips, this </nowiki>[https://cdn.discordapp.com/emojis/994921119381463070.png?v=1 <nowiki>sunshine</nowiki>]<nowiki> should be pre-placed on these squares, to deal with the arms and legs faster.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/7jOBiFh.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h2 id="phase-2"><ins><nowiki>Phase 2</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="phase-2-rotation"><nowiki>Phase 2 Rotation</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>Eruptions → Anima Bombs → 12 Autos → Blight Rain → 7 Autos → Binding Crush (Arm Climb) → 4 Autos → Blight Rain → 7 Autos → Hurricane → 7 Autos → Blight bomb → 4 Autos → Root Arrow → 4 Autos → Blight Bomb → 4 Autos → Blight Rain</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="phase-2-notes"><nowiki>Phase 2 Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Upon killing the Blighted Core, P2 starts, and all players are granted 5 blight stacks. From this point onwards, Merethiel can be interacted with to clear blight stacks, with a 25 second cooldown.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The secondary mechanic, Corruption, is required to reach 0% to begin phase 3. Solak will phase on the next special attack when the bar hits 0%.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The rotation will restart from anima bombs if not at 0% corruption</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="corruption"><nowiki>Corruption</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>Corruption is the over-arching mechanic of P2, displayed as a secondary bar underneath Solak's HP bar, shown below. This bar must be completely drained in order to phase into P3, and is drained by a variety of factors.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The first factor is Solak's HP, draining HP directly drains the Corruption %</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• However, in Duo and Trio teamsizes, draining his HP to hit the HP cap will not lead to him phasing until a special attack, it will end on the first hit of the 2nd Blight Rain in Duo, or after the Arm Climb in Trio. He must be healed via a Calorie Bomb </nowiki>[https://cdn.discordapp.com/emojis/656790558177755169.png?v=1 <nowiki>caloriebomb</nowiki>]<nowiki> or damaged through the use of the ECB </nowiki>[https://cdn.discordapp.com/emojis/615618531937222657.png?v=1 <nowiki>ecb</nowiki>]<nowiki> special attack in order to drain the bar enough, or a combination of both in Trio. The Split Soul special attack drains the corruption % directly.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The Corruption bar is also drained via the mechanics, each Blight Rain and Hurricane will drain the bar by 2% per hit, and successfully climbing the arm drains 20% Corruption.</nowiki></p>
+<nowiki>
+</nowiki><h3 id="anima-eruptions"><nowiki>Anima Eruptions</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>The beginning of P2 starts as Solak's Blighted Core dies. 4 eruptions spawn, which must be killed in order to progress into the rest of P2, as he gets capped HP until all Eruptions die. Upon killing an eruption, a blue circle appears in it's place, which teleports the player up to deal with the Blight Storm. This takes 7.2 seconds from the death of the Eruption, leaving time to cleanse your blight stacks with Merethiel and Bladed Dive </nowiki>[https://cdn.discordapp.com/emojis/535532854281764884.png?v=1 <nowiki>bd</nowiki>]<nowiki> or Surge </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> into the circle. These are the only secondary target aside from Erethdor that are not affected by the effect of the Inquisitor's Staff </nowiki>[https://cdn.discordapp.com/emojis/694566917553520680.png?v=1 <nowiki>inquisitorstaff</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="blight-storm"><nowiki>Blight Storm</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Directly linked to the Anima Eruptions, the Blight Storm is a secondary target in P2. Across the phase, it constantly drops anima bombs, applying 1 blight stack and hitting for ~1500-2000 base damage, every 10 seconds that the storm is alive. These bombs also increase the size of the blight pool on the floor of arena, starting small in the centre and increasing in size as more bombs drop. This deals low damage and grants blight stacks, so avoid stepping in it. It is cleared with the first Blight Rain attack.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The storm has varying health, and can only be directly damaged by teleporting using the blue circles spawned by Eruptions. The player deals damage to the storm based on the number of blight stacks they have, dealing 10k damage per click with 0 stacks, 0 damage at 10 blight stacks, and any stacks after 10 will cause the player to heal the storm. After teleporting up, the player can use defensive abilities and move around on the platform, but the main focus is to spam click the storm until it dies.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The recommended method of dealing with the storm involves cleansing with Merethiel as you kill the first Eruption, click her as you cast your last ability and move to her cleansing pad. Surge or Bladed Dive can be used to get back into the blue circle, and allows you to deal 10k damage per click. Doing this only requires a total of (team size + 1) people to go up to damage the storm, i,e: for Duos, the base should go up once with the DPS together, and DPS once more on their own to deal with the remaining HP, and only requires you to cleanse once at the start.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="anima-bombs-minefield"><nowiki>Anima bombs (Minefield)</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>After killing the Eruptions, Solak turns the arena into a minefield, with Anima Bombs appearing in random positions for 30 seconds. These damage in a 5x5 area, and are marked by a purple ball rising from the floor, before slamming back down into the ground after 5 seconds. They start off dealing ~750 damage, and increase in damage over the course of the special attack ending around ~8k+.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The &quot;safest&quot; place to stand is directly north, between the two northernmost torches. This does not guarantee safety from the bombs, so you will have to make sure to keep an eye out.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="blight-rain-natures-blessing"><nowiki>Blight Rain + Nature's Blessing</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>As the final Anima Bombs fall, an interactable Nature's Blessing will spawn in the north of the arena. This gives 3 players a 7x7 blessing shield that can be activated via the Extra Action button. 2 auto-attacks after the blessing spawns, Solak calls a Blight Rain special, where 5 highly damaging blight hits rain down on the player. These each hit for ~8k+ damage, which is reduced to ~2k when inside the blessing, and drain the Corruption bar by 2%.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Each hit of the rain grants 5 blight stacks, reduced to 2 when inside the blessing.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ It is recommended to use Debilitate </nowiki>[https://cdn.discordapp.com/emojis/535541278264393729.png?v=1 <nowiki>debil</nowiki>]<nowiki> to reduce the damage taken by the rain hits, then uses Resonance </nowiki>[https://cdn.discordapp.com/emojis/535541258844635148.png?v=1 <nowiki>res</nowiki>]<nowiki> to heal up once at low HP, by stepping out of the blessing, being careful to not snipe it with Solak's auto-attacks.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• For the player intending to climb the arm, make sure to use </nowiki>[https://cdn.discordapp.com/emojis/535541258844635148.png?v=1 <nowiki>res</nowiki>]<nowiki> on an earlier hit, in order for it to be off cooldown later.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The interactable Nature's Blessing can be taken 3 times, regardless of team size, and it is recommended that one is taken by the Base and one DPSer first, then after the first Rain is finished, the Base takes the second.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• This allows players to make use of Flanking </nowiki>[https://cdn.discordapp.com/emojis/841419289755385866.png?v=1 <nowiki>flankicon</nowiki>]<nowiki> during the mechanic, in order to speed up the phase.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ A second Blight Rain is called 4 auto-attacks after the Arm Climb special, which follows the same mechanics.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• As you will have used 2 shields for the first Rain, the players should all stand together under the same blessing.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ A third Blight Rain is called after the second Root Arrow, after which the P2 rotation will restart.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• It is extremely unlikely that you will ever see this attack, however if you expect to get this, use one shield per Rain, in order to have one for this attack.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="arm-climb"><nowiki>Arm Climb</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>After the first Blight Rain finishes, Solak will root a random target to the floor, and slam his arm down on their location shortly after. This will deal an instakill to any players standing on the direct square, and a ~3.5k melee hit to players in the area around it.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Through the use of Anticipate </nowiki>[https://cdn.discordapp.com/emojis/535541306475151390.png?v=1 <nowiki>anti</nowiki>]<nowiki> or Freedom </nowiki>[https://cdn.discordapp.com/emojis/535541258240786434.png?v=1 <nowiki>freedom</nowiki>]<nowiki> before the rooting, the rooted player can move away freely. If these cannot be used, another player can click at their feet to free them.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>If Solak misses his slam, his arm remains stuck in the floor for a player to climb upon and greatly reduce the Corruption by 20% with a cutscene-style attack, after which Solak retaliates with a hard-hitting melee attack.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ During this climb, the player can continue to attack if using Magic or Ranged, but not with Melee.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ You can use Resonance </nowiki>[https://cdn.discordapp.com/emojis/535541258844635148.png?v=1 <nowiki>res</nowiki>]<nowiki> to heal or Divert </nowiki>[https://cdn.discordapp.com/emojis/787904334377648130.png?v=1 <nowiki>divert</nowiki>]<nowiki> to gain a large amount of adrenaline from the melee hit.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="hurricane"><nowiki>Hurricane</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>After the </nowiki><strong><nowiki>second</nowiki></strong><nowiki> Blight Rain, Solak becomes surrounded by purple swirling rings, and he spins into a hurricane which releases 5 hits in quick succession, similar to the Blight Rain. Each hit deals around ~8k+ damage, and is impossible to survive without the use of defensive abilities.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ If the player expects this attack, they should build to Barricade </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> before the attack starts, and it will last the duration of the special attack.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ By this point, the player will have amassed a large amount of blight stacks, which can be cleansed with Merethiel to reduce damage taken.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="root-arrows_1"><nowiki>Root Arrows</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>This attack is similar to the Root Arrows in Phase 1, two of these follow the Hurricane special attack. The player's screen shakes, Solak slams his arms into the ground, and an arrow of roots will spawn 7 squares behind the Base and converge on their location when the mechanic started, moving towards Solak. To avoid these, simply move away from where you were standing.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ A Blight Bomb occurs between the two root arrows, to up to 3 players without Solak's aggro. When the bomb explodes, the second arrow will start.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="blight-bomb"><nowiki>Blight Bomb</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>This is directly linked to the Root Arrows mechanic, where players without Solak's aggro will be given a blight bar above their head, the same as the bombs in P1.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="phase-2-advanced-mechanics"><ins><nowiki>Phase 2 Advanced Mechanics</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>In Duo and Trio teamsizes, Phase 2 is timegated by the Arm Climb mechanic, and the Anima Eruptions are a vital part of fast kills. As such, advanced strategies for dealing with them are detailed below:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="anima-eruptions_1"><nowiki>Anima Eruptions</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>As mentioned, dealing with Anima Eruptions quickly is a determinant for fast kills. Two examples of quickly clearing eruptions are shown below.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Advanced players can also choose to kill the Eruptions but avoid going up to deal with the storm, and instead tank the bombs until the fight ends. This is known as Storm-tanking, and can save ~10s per kill. This significantly increases your food consumption and is only recommended as one of the very last ways to improve time.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>4-man South Eruptions - </nowiki>[https://youtu.be/KQcYpoxf0mo <nowiki>https://youtu.be/KQcYpoxf0mo</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>Melee north Eruptions - </nowiki>[https://youtu.be/dESMelseYF0 <nowiki>https://youtu.be/dESMelseYF0</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="natural-instinct"><nowiki>Natural Instinct</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>Due to the timegated nature of P2 in duo and trio, the time can be utilised wisely to speed up P3, through the use of Natural Instinct </nowiki>[https://cdn.discordapp.com/emojis/535541258131865633.png?v=1 <nowiki>nat</nowiki>]<nowiki> at the end of the phase. With a well timed </nowiki>[https://cdn.discordapp.com/emojis/535541258131865633.png?v=1 <nowiki>nat</nowiki>]<nowiki>, players can save their </nowiki>[https://cdn.discordapp.com/emojis/736298121704767538.png?v=1 <nowiki>adrenrenewal</nowiki>]<nowiki> for use later in P3. Two examples of the correct timing are shown below.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Base - </nowiki>[https://youtu.be/ab51E7Y3fIg <nowiki>https://youtu.be/ab51E7Y3fIg</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>DPS - </nowiki>[https://youtu.be/EGDinCAECB0 <nowiki>https://youtu.be/EGDinCAECB0</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="phase-3"><ins><nowiki>Phase 3</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="solak-attack-rotation_1"><nowiki>Solak Attack Rotation</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>8 Autos → Stun → 5 Autos → Blight Bomb → 2 autos → Stun</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="phase-3-notes"><nowiki>Phase 3 Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>As this phase starts, 8 sigils spawn on the floor around the arena, 4 in the cardinal directions and 4 in between those. Alongside these, the mind realm becomes accessible through the Extra Action button, where the players can fight Erethdor. The phase ends when either all 8 sigils are filled, or Erethdor dies, and the fight progresses on to P4. As each Blight Bomb spawns, Solak increases his attack speed to 4 ticks until the stun mechanic.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="sigils-pads"><nowiki>Sigils (Pads)</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>These sigils charge as Solak is stepping on them, indicated by a circular progress bar surrounding them, which takes 15s. Once charged, they turn purple, a blight bomb falls from the sky onto the sigil, and Solak is immobilised and shakes violently, unable to attack for 15 seconds. During this time, Solak cannot attack, and the Extra Action button can be used to enter the Mind Realm, where Erethdor can be fought.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ This is a good point to regenerate a lot of HP via Soulsplit </nowiki>[https://cdn.discordapp.com/emojis/615613924506599497.png?v=1 <nowiki>soulsplit</nowiki>]<nowiki> and position yourself to use Flanking </nowiki>[https://cdn.discordapp.com/emojis/841419289755385866.png?v=1 <nowiki>flankicon</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ As Erethdor has quite low HP, it is recommended to end the phase by killing him instead of charging all 8 pads, as this takes significantly longer.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="blight-bombs_1"><nowiki>Blight Bombs</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>There are two types of Blight Bombs in P3</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ One type are dropped by Erethdor from the Mind Realm, which land on the sigils both randomly and when they finish charging. These deal ~2k damage per hit. Reflect </nowiki>[https://cdn.discordapp.com/emojis/535541258786177064.png?v=1 <nowiki>reflect</nowiki>]<nowiki> or Vengeance </nowiki>[https://cdn.discordapp.com/emojis/543478434953822208.png?v=1 <nowiki>Veng</nowiki>]<nowiki> reflects the damage directly to Erethdor, helpful to finish him off if he has very little HP remaining.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The second bomb spawns throughout P3, tied to the Stun special attack. Up to 3 players that do not have Solak's aggro will receive a bar above their head, the same as bombs in P1. However, when these explode, a line of roots directly connect all players with the bomb, which can stun and deal large damage to players caught within. These do not affect the players who receive the bomb, but position yourself carefully to avoid killing teammates, away from the boss.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="stun"><nowiki>Stun</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>After the first 8 autos of the fight, Solak raises his arm into the air, stuns the player, and inflicts a blight bleed on every player in the fight until he is stunned back. This bleed hits every 2 ticks, and starts off with a low damaging hit of only ~200 damage, but increases by the same amount for every hit, which builds up very quickly. Following this, he will repeat this attack every 7 autos.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Solak requires multiple stuns to stop the bleed, X-2 stuns for all teamsizes, capping at 1, where X is the number of players not in the Mind Realm when the attack begins.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Solak only checks for stun abilities, so your stuns can be flanked </nowiki>[https://cdn.discordapp.com/emojis/841419289755385866.png?v=1 <nowiki>flankicon</nowiki>]<nowiki> and still work.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ This blight bleed starts off dealing low damage, but scales up rapidly and can even hit players who teleport to the Mind Realm, so make sure to stun immediately.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>It is recommended to use Anticipate or Freedom beforehand in order to avoid getting stunned by Solak, and then use stuns naturally as part of your rotation, taking into account this mechanic. These abilities are: (</nowiki>[https://cdn.discordapp.com/emojis/535533833072672778.png?v=1 <nowiki>asphyx</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535533833139912724.png?v=1 <nowiki>deep</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535533809655873556.png?v=1 <nowiki>impact</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535532879330148352.png?v=1 <nowiki>destroy</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535532879346794516.png?v=1 <nowiki>fbackhand</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535532854302605333.png?v=1 <nowiki>backhand</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535541275957657600.png?v=1 <nowiki>tight</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535541306563231790.png?v=1 <nowiki>bindingshot</nowiki>]<nowiki>)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Standing in the very north of the arena, by the stairs, allows you to avoid being stunned, however due to the placement of the pads, this is usually not feasible.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="erethdor"><nowiki>Erethdor</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>Erethdor is the Elf controlling Solak's mind, and is a secondary mechanic for the boss fight, offered as an alternative to charging all sigils. Killing Erethdor rewards the player by reducing the damage Shadow Manifestations deal to Solak on P4, alongside significantly faster kills. </nowiki><ins><nowiki>This is the recommended method of ending P3</nowiki></ins><nowiki>. When the sigils are charged, the Extra Action button can be used to enter the mind realm, where the player can fight Erethdor, a ranger who uses EoC abilities. When Erethdor dies, P3 ends, regardless of Solak's HP.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Erethdor can use these abilities, in random order: </nowiki>[https://cdn.discordapp.com/emojis/535541258538450944.png?v=1 <nowiki>piercing</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535541273755385885.png?v=1 <nowiki>frag</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535541306294796299.png?v=1 <nowiki>corruptshot</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535541258425204770.png?v=1 <nowiki>snipe</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535541306391265284.png?v=1 <nowiki>bombard</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535534127131394088.png?v=1 <nowiki>snap</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535541258429661215.png?v=1 <nowiki>incend</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535541307666595870.png?v=1 <nowiki>deadshot</nowiki>]<nowiki> and uses </nowiki>[https://cdn.discordapp.com/emojis/535541258240786434.png?v=1 <nowiki>freedom</nowiki>]<nowiki> quickly after being bled with </nowiki>[https://cdn.discordapp.com/emojis/535541273755385885.png?v=1 <nowiki>frag</nowiki>]<nowiki>, </nowiki>[https://cdn.discordapp.com/emojis/535532879237873666.png?v=1 <nowiki>slaughter</nowiki>]<nowiki> or </nowiki>[https://cdn.discordapp.com/emojis/535533833098100745.png?v=1 <nowiki>comb</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The player is allowed to be in the Mind Realm for ~20s, before being teleported back to Solak's arena. The animation for leaving begins around ~17s, however abilities can still be cast on Erethdor in that transition.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Inside the Mind Realm, the player cannot heal from any direct sources, such as foods, potions, and portents. This will be covered in more detail in P4.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Up to 2 players can enter the Mind Realm at once, regardless of teamsize.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>More advanced players will require less ventures into the Mind Realm in order to kill Erethdor, as in duo they will aim to kill him in 1 &quot;cycle&quot;. Rotations for both Magic and Ranged Elf kills can be found in </nowiki><span><nowiki>Referenced guide unavailable in this snapshot</nowiki></span><nowiki> and </nowiki><span><nowiki>Referenced guide unavailable in this snapshot</nowiki></span><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="phase-4"><ins><nowiki>Phase 4</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="phase-4-notes"><nowiki>Phase 4 Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>In this phase, Solak is solely focused on Merethiel, and is unable to attack the players. This part of the fight is kill or be killed, similar to Vorago P5, and Solak must be defeated before his mind is consumed by Erethdor's manifestations. As such, there are few mechanics outside of the over-arching mechanic, Solak's Mind.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="burst-of-nature"><nowiki>Burst of Nature</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>During P4, Solak gains the ability to deal a large blight hit to all players in the arena, dealing upwards of ~12k damage if not dealt with. Solak takes time to charge this attack, it is released every ~28 seconds, marked by a purple hurricane surrounding him. The damage he deals with this attack can be reduced to ~3k via the use of several stuns, which are as follows: (</nowiki>[https://cdn.discordapp.com/emojis/535533833072672778.png?v=1 <nowiki>asphyx</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535533833139912724.png?v=1 <nowiki>deep</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535533809655873556.png?v=1 <nowiki>impact</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535532879330148352.png?v=1 <nowiki>destroy</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535532879346794516.png?v=1 <nowiki>fbackhand</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535532854302605333.png?v=1 <nowiki>backhand</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535541275957657600.png?v=1 <nowiki>tight</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535541306563231790.png?v=1 <nowiki>bindingshot</nowiki>]<nowiki>). These abilities should therefore be used early into the phase, as part of your DPS rotation, and flanked abilities still work to reduce the damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="blight-bomb_1"><nowiki>Blight Bomb</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>Exactly the same as the P1 Blight Bombs, these are given to 2 random players in the arena, with the bar beginning shortly before the Burst of Nature is fully charged.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ If a player enters the Mind Realm after receiving a blight bomb, upon detonation, they will take no damage from it.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="mind-realm"><nowiki>Mind Realm</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>In the final Phase of Solak, Erethdor attempts to consume Solak's mind, through his manifestations inside of the Mind Realm. The player's job is to defeat Solak before the manifestations consume Solak. The Mind Realm can be entered in order to protect him, known as &quot;realming&quot;, and completely avoiding this mechanic and killing Solak is known as &quot;no-realm&quot; and requires strong damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Solak's Mind has 100k HP, regardless of teamsize. This is damaged by manifestations, their damage increases over time and will kill Solak in ~18-24 seconds from when he becomes attackable if left unchecked. The player's health can be sacrificed to heal Solak's mind, healing the equivalent damage taken, each click dealing ~2k damage to the player. This damage is blocked by Barricade </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki>, which can be used to safely heal Solak's mind.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ If Solak's mind is consumed, all players are insta-killed, bypassing the Sign of Life.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ If the player dies at the same time as Solak, Merethiel will revive them, avoiding their death mechanics. This will still clear the effects of Incense Sticks.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Mind Realm Mechanics</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Accessed via the Extra Action button, available from the start of the phase, with a short cooldown.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The Mind Realm blocks direct forms of healing such as eating food </nowiki>[https://cdn.discordapp.com/emojis/537336701933060106.png?v=1 <nowiki>sailfishsoup</nowiki>]<nowiki>, drinking potions </nowiki>[https://cdn.discordapp.com/emojis/565726489400573962.png?v=1 <nowiki>Brew</nowiki>]<nowiki>, or healing portents. Other forms of healing, such as Soulsplit </nowiki>[https://cdn.discordapp.com/emojis/615613924506599497.png?v=1 <nowiki>soulsplit</nowiki>]<nowiki>, Excalibur </nowiki>[https://cdn.discordapp.com/emojis/513200949016264727.png?v=1 <nowiki>EnhancedExcalibur</nowiki>]<nowiki>, Phoenix Necklaces </nowiki>[https://cdn.discordapp.com/emojis/852939844007231508.png?v=1 <nowiki>phoenixnecklace</nowiki>]<nowiki>, or healing familiars can be used, and are recommended to be used to heal if available.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Up to 2 people can be in the Mind Realm at once, and unlike in P3, players can remain indefinitely.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Manifestations</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If Erethdor was killed to progress from P3, Manifestations will deal reduced damage to Solak and targeted players.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Erethdor's Manifestations continuously damage Solak's mind, when not aggro'd to a player. Upon being tagged, they shift their focus to the player, and deal weak ~1k magic hits to the player. The longer they are alive, the more damage they deal.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Manifestations have 2 spawn mechanics, they spawn on a set interval timer of 11.4s, and also spawn as Solak takes damage, in consistent intervals depending on team size. They spawn every 50k damage dealt for duo teamsizes, and the damage required increases by 10k for </nowiki><ins><nowiki>every player that enters P4</nowiki></ins><nowiki>, up to 110k for 7 man. If struggling with no-realming, delay large damage such as </nowiki>[https://cdn.discordapp.com/emojis/536256673904328704.png?v=1 <nowiki>Shatter</nowiki>]<nowiki> in order to back-load the damage and reduce spawns.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• These have 25,000 HP regardless of team size, and if killed in the Mind Realm, become transported to the overworld, where they begin to attack all players in the arena.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="attack-timing"><nowiki>Attack Timing</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>The timing to barge Solak before he's vulnerable can be gauged, you should be barging as he flies back from Merethiel (Assuming the animation does not glitch out for you)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Barge timing - </nowiki>[https://youtu.be/c1wbZZQX7yI <nowiki>https://youtu.be/c1wbZZQX7yI</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Pre-Barge timing - </nowiki>[https://youtu.be/DXUujotIZKU <nowiki>https://youtu.be/DXUujotIZKU</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="realming"><ins><nowiki>Realming</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="overview"><nowiki>Overview</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>When learning or in the case of missing teammates, correctly dealing with the Mind Realm is vital to securing the kill. This can be done effectively in one of two ways, entering immediately or entering late:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ When in the Mind Realm, make sure to always be praying </nowiki>[https://cdn.discordapp.com/emojis/544195487926845462.png?v=1 <nowiki>DeflectMage</nowiki>]<nowiki>, activate </nowiki>[https://cdn.discordapp.com/emojis/641337999170207763.png?v=1 <nowiki>excal</nowiki>]<nowiki> to heal when needed, and use Fortitude </nowiki>[https://cdn.discordapp.com/emojis/537341748180025365.png?v=1 <nowiki>fortitude</nowiki>]<nowiki> to reduce damage taken.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="immediate-entering"><nowiki>Immediate Entering</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Entering immediately gives the largest amount of control over the manifestations, as you can easily tag them as they spawn and focus on defensives. This is slower than entering late, but is worthwhile depending on team DPS.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ As you won't be dealing damage to Solak or Manifestations, all of your adrenaline can be utilised for defensives.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Start with Immortality </nowiki>[https://cdn.discordapp.com/emojis/535541258538582017.png?v=1 <nowiki>immort</nowiki>]<nowiki>, for the 25% damage reduction for 30s. If the manifestations do not proc immortality before it ends, heal Solak until it procs, to make the most out of it. Whilst building adren, use Reflect </nowiki>[https://cdn.discordapp.com/emojis/535541258786177064.png?v=1 <nowiki>reflect</nowiki>]<nowiki> and Devotion </nowiki>[https://cdn.discordapp.com/emojis/513190158728953857.png?v=1 <nowiki>devo</nowiki>]<nowiki> at low HP to reduce more damage, building for Barricade </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> as the final defensive. Once barricaded, spam click Solak to heal him, whilst tagging new spawns to take their aggro.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="entering-late"><nowiki>Entering Late</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ This method is employed if you feel team DPS is lacking, and is a high-risk high-reward strategy. This involves dealing large amounts of damage early into the phase, then entering the Mind Realm to tag manifestations whilst your team finishes the rest of the fight.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ After dumping thresholds outside, enter the realm and immediately tag every Manifestation available, focusing old before new, making use of Chain </nowiki>[https://cdn.discordapp.com/emojis/1257440278512537740.png?v=1 <nowiki>gchain</nowiki>]<nowiki> and auto-attacks with defensives. Make sure to pray </nowiki>[https://cdn.discordapp.com/emojis/544195487926845462.png?v=1 <nowiki>DeflectMage</nowiki>]<nowiki>, use Reflect </nowiki>[https://cdn.discordapp.com/emojis/535541258786177064.png?v=1 <nowiki>reflect</nowiki>]<nowiki> until low HP, then Devo </nowiki>[https://cdn.discordapp.com/emojis/513190158728953857.png?v=1 <nowiki>devo</nowiki>]<nowiki> and Barricade </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> as it runs out. As before, spam heal Solak when caded, whilst tagging new manifestations.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ For Hybrid - </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>zerk</nowiki>]<nowiki> → Build until attackable → </nowiki>[https://cdn.discordapp.com/emojis/535532879250456578.png?v=1 <nowiki>gbarge</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532855191928842.png?v=1 <nowiki>assault</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/536256673904328704.png?v=1 <nowiki>Shatter</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532854302605333.png?v=1 <nowiki>backhand</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/841419289755385866.png?v=1 <nowiki>flankicon</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532878969438210.png?v=1 <nowiki>cane</nowiki>]<nowiki> → Enter</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ For Mage - (pre) </nowiki>[https://cdn.discordapp.com/emojis/535541258131865633.png?v=1 <nowiki>nat</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535533811304497183.png?v=1 <nowiki>meta</nowiki>]<nowiki> before attackable → </nowiki>[https://cdn.discordapp.com/emojis/535533833391702017.png?v=1 <nowiki>dbreath</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/736298121704767538.png?v=1 <nowiki>adrenrenewal</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/641339233638023179.png?v=1 <nowiki>limitless</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/537338981747261446.png?v=1 <nowiki>bloodbarrage</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535533809978966037.png?v=1 <nowiki>wm</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535533809655873556.png?v=1 <nowiki>impact</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/841419289755385866.png?v=1 <nowiki>flankicon</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/537338981747261446.png?v=1 <nowiki>bloodbarrage</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535533833072672778.png?v=1 <nowiki>asphyx</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535533833391702017.png?v=1 <nowiki>dbreath</nowiki>]<nowiki> → Enter</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="examples"><nowiki>Examples</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>The rotations aren't set in stone, and are entirely dependent on the team DPS. Some teams may find their damage is higher, as such less thresholds must be used in the late method, and Reflect </nowiki>[https://cdn.discordapp.com/emojis/535541258786177064.png?v=1 <nowiki>reflect</nowiki>]<nowiki> can be skipped in favour of Devo </nowiki>[https://cdn.discordapp.com/emojis/513190158728953857.png?v=1 <nowiki>devo</nowiki>]<nowiki> → Cade </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Immediate realming - </nowiki>[https://youtu.be/HeOJVdY5Ibk <nowiki>https://youtu.be/HeOJVdY5Ibk</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Late realming - </nowiki>[https://youtu.be/NicaCm-FxAo <nowiki>https://youtu.be/NicaCm-FxAo</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="introduction-to-hybrid"><ins><nowiki>Introduction to Hybrid</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>Solak is a boss with low defence and low damage output, allowing for the use of hybrid strategies in order to maintain as much uptime in ultimate abilities as possible, greatly increasing the player's damage output. However, starting off with hybrid can be unfamiliar, and is taxing on inventory space, since it greatly reduces the amount of food you can take.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>It is recommended to be comfortable with both Solak as a boss and with multiple combat styles before learning to hybrid.</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>hybridding assumes the player starts from a mage or ranged setup, adding in melee gear in order to make use of Berserk </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>zerk</nowiki>]<nowiki>, the ZGS </nowiki>[https://cdn.discordapp.com/emojis/626465964325601290.png?v=1 <nowiki>zgs</nowiki>]<nowiki> special attack, and the effect of the MW Spear of Annihilation </nowiki>[https://cdn.discordapp.com/emojis/694566917456789554.png?v=1 <nowiki>mwspear</nowiki>]<nowiki>. As such, the most important switches to add are listed below, in order of priority:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="mage-hybrid"><nowiki>Mage Hybrid</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Base Magic setup (DW+2H, Flank, Planted Feet)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Melee Legs+Body + Melee DW</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Melee 2H</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Masterwork Spear</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Melee Flanking</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Melee Helmet</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ EoF Gstaff</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Melee Boots</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Borrowed Power Smoke Cloud </nowiki>[https://cdn.discordapp.com/emojis/657248051190300682.png?v=1 <nowiki>borrowedpower</nowiki>]<nowiki> (</nowiki>[https://cdn.discordapp.com/emojis/856635090641879050.png?v=1 <nowiki>smokecloud</nowiki>]<nowiki>)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>The presets below give a rough idea of how presets adapt from a base Magic setup, to a learner Hybrid setup, to an advanced Hybrid Setup. Some items are more or less useful depending on the role, Base vs DPS:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Mage Camp</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/DCgmYwq.png <nowiki>Guide illustration</nowiki>]<nowiki>
+Learner Brid</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/wxObbrF.png <nowiki>Guide illustration</nowiki>]<nowiki>
+Full Mage Brid</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/mllVTJS.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="ranged-hybrid"><nowiki>Ranged Hybrid</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Base Ranged setup (DW+2H, Flank, Planted Feet, EoF Dbow)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Melee Legs+Body + Melee DW</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Melee 2H</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Masterwork Spear</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Melee Flanking</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Melee Helmet</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ EoF ECB</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ EoF SGB</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Melee Boots</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Borrowed Power Smoke Cloud </nowiki>[https://cdn.discordapp.com/emojis/657248051190300682.png?v=1 <nowiki>borrowedpower</nowiki>]<nowiki> (</nowiki>[https://cdn.discordapp.com/emojis/856635090641879050.png?v=1 <nowiki>smokecloud</nowiki>]<nowiki>)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>The presets below give a rough idea of how presets adapt from a base Ranged setup, to a learner Hybrid setup, to an advanced Hybrid Setup. Some items are more or less useful depending on the role, Base vs DPS:</nowiki></p>
+<nowiki>
+</nowiki><h3 id="ranged-camp"><nowiki>Ranged Camp</nowiki></h3>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/snoYZeV.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="learner-brid"><nowiki>Learner Brid</nowiki></h3>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/APsB3lo.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="full-ranged-brid"><nowiki>Full Ranged Brid</nowiki></h3>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/5QvrF6Y.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="explanation"><nowiki>Explanation</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>These switches typically replace food, however as you bring more switches for the hybrid setup, you will have to employ more advanced strategies, such as pre-potting at the bank for inventory spaces.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>hybridding isn't just about bringing gear with you, making effective use out of the gear requires well-thought out strategies and optimal ultimate usage to increase damage output. To start off, this can be quite overwhelming, so the strategies below list how to make the most use out of your hybrid setup.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="mage-hybrid_1"><nowiki>Mage Hybrid</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>Start out with the 2 most important Zerks, which are on Solak's Core and P4. These are low risk, as you are not being damaged so you can enjoy the full damage increase without any worry. After this, the next zerks to work into your rotation are listed below, in order of priority:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Zerk Core + P4</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Zerk Erethdor (If going in solo)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Zerk P3 start</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ ZGS Erethdor (If going in duo)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Zerk+ZGS Start</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Zerk P2 start</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Once you get more comfortable, making more use of the ZGS </nowiki>[https://cdn.discordapp.com/emojis/626465964325601290.png?v=1 <nowiki>zgs</nowiki>]<nowiki> special attack such as in P1 and on Erethdor is recommended. However, when starting out in larger teams, or for lower DPS teams, using Berserk </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>zerk</nowiki>]<nowiki> on Erethdor to start off may find more success, until better strategies are learned.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="ranged-hybrid_1"><nowiki>Ranged Hybrid</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>Due to the effectiveness of the ECB special attack, the ZGS special attack sees no use in Ranged Hybrid. However, the damage from Berserk and the effect of the MW Spear of Annihilation are highly useful for damage output. The next zerks to work into your rotation are listed below, in order of priority:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Zerk Core + P4</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Zerk Erethdor (If going in solo)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Zerk P3 start</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Zerk Start</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Zerk P2 start</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Ranged Hybrid is quite different to Mage Hybrid, as the ECB special attack is so strong. As such, only critical zerks are recommended, and unless the player finds their team DPS lacking, ECB is recommended to use on Erethdor</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="benchmarks"><ins><nowiki>Benchmarks</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="what-times-mean"><nowiki>What Times Mean</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>Learning a boss requires practice and time, and learning happens at different speeds for everyone. As such, listed below are the benchmarks of killspeeds with certain skips taken into account, and how to transition between them.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>12+ mins</nowiki></strong><nowiki> - 3 or 2 cycle core (3/2cc), Hurricane P2, Charging pads P3, Realming P4</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>10+ mins</nowiki></strong><nowiki> - 2 cycle core (2cc), 2nd Rain P2, 2 cycle Erethdor, Realming P4</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>8+ mins</nowiki></strong><nowiki> - 2 or 1cc (with Bomb skips), 2nd Rain P2, Erethdor, No Realm</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>6+ mins</nowiki></strong><nowiki> - 1cc (with Root skips), Arm Climb, 1-cycle Erethdor, No realm</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="improving-with-your-kill-times"><nowiki>Improving with your Kill Times</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>Starting off, players are expected to take the boss slowly, and focus more on mechanics. As they become more comfortable, then they can focus more on damage, and obtaining faster kills.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>12-10 mins</nowiki></strong><nowiki> - At this point, players are expecting to take it slowly. To improve from here, spend less time dealing with Roots and other mechanics on P1, and aim to make good use of the flank shield for the first Rain attack. Aim to reach the P2 HP cap by the 2nd Rain attack in order to avoid having to use Barricade to deal with the Hurricane. Transition from charging all pads p3 to dealing with erethdor, as this saves easily 2 minutes if the phase can be done in 4 pads. At this point, becoming more comfortable with mechanics is the main focus.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>10-8 mins</nowiki></strong><nowiki> - Here you will be working on refining your kills from the 10 min range, getting consistency in your 1 cycle cores, and implementing advanced skips like Bomb skips in P1. After this, phasing Solak in P2 consistently with the first hit of the second rain attack, killing Erethdor in 2 cycles and making efficient use of pads. Starting P3 without cleansing is expected by this point. With the use of Berserk </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>zerk</nowiki>]<nowiki> or Death's Swiftness </nowiki>[https://cdn.discordapp.com/emojis/994921434633744455.png?v=1 <nowiki>deathsswift</nowiki>]<nowiki> and strong damage, No Realm kills are expected to be implemented here, saving 10-15+ seconds.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>8-6 mins</nowiki></strong><nowiki> - Here you will be working on consistent 1 cycle cores with advanced skips, Bomb or Root skips. Aim to end P2 with the Arm Climb attack, killing Erethdor in 1 cycle, and consistent, quick No Realm kills.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>6 mins</nowiki></strong><nowiki> - At this point, speeding up is a matter of consistency, reaching the timegates of each phase. Fast P1s end around ~1:50, Storm tanking can be used to save ~10s per kill, P2 is timegated to the Arm Climb attack. Aim to finish P3 in 2 pads which are charged immediately, and P4 is a quick No Realm kill.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+      
+    </nowiki>
+== Attribution and source history ==
+Adapted from [https://pvme.io/pvme-guides/rs3-full-boss-guides/solak/mechanics/ <nowiki>Mechanics</nowiki>] by PvME contributors. [https://github.com/pvme/pvme-guides/commits/master/rs3-full-boss-guides/solak/mechanics.txt Upstream source history]. Licensed [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]. Snapshot 074a9438f79d10fba75735791be0030734db8b5e. Formatting adapted for standalone MediaWiki; media and third-party references remain external links.

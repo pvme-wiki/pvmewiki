@@ -1,0 +1,423 @@
+[[PvME|PvME guide index]]
+
+<h2 id="introduction"><ins><nowiki>Introduction</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>This guide will cover creating and editing:</nowiki></p>
+<nowiki>
+</nowiki><ol><nowiki>
+</nowiki><li><nowiki>
+</nowiki><p><nowiki>Emojis used in PvME's guides - </nowiki>[https://pvme.io/pvme-settings/#emojis <nowiki>https://pvme.io/pvme-settings/#emojis</nowiki>]</p>
+<nowiki>
+</nowiki></li><nowiki>
+</nowiki><li><nowiki>
+</nowiki><p><nowiki>Icons used in the Preset Maker - </nowiki>[https://pvme.github.io/preset-maker/ <nowiki>https://pvme.github.io/preset-maker/</nowiki>]</p>
+<nowiki>
+</nowiki></li><nowiki>
+</nowiki></ol>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-requirements"><u><nowiki>Requirements</nowiki></u><nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>Take note of these before you start.
+</nowiki></div>
+<nowiki>
+</nowiki><div><div><div><u><nowiki>Interface scaling</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ Ensure both system and RuneScape interface scaling are set to </nowiki><strong><nowiki>100%</nowiki></strong><nowiki>.
+    • System display scaling can be found under </nowiki>[https://img.pvme.io/images/XspEfnR9K5.png <nowiki>System &gt; Display &gt; Scale</nowiki>]<nowiki> for Windows users.
+    • RuneScape interface scaling can be found under </nowiki>[https://img.pvme.io/images/4wusRQznyv.png <nowiki>Settings &gt; Graphics &gt; Interface Scaling</nowiki>]<nowiki>.
+​
+</nowiki></div>
+</div>
+<div><div><u><nowiki>Manual emoji creation/Image editing</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ </nowiki>[https://www.getpaint.net/download.html#download <nowiki>Paint.net</nowiki>]<nowiki> or better image editing software downloaded.
+​
+</nowiki></div>
+</div>
+<div><div><u><nowiki>Emoji/icon creation by script</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ </nowiki>[https://www.python.org/downloads/ <nowiki>Python</nowiki>]<nowiki> installed.
+⬥ Internet connection.
+⬥ </nowiki>[https://www.getpaint.net/download.html#download <nowiki>Paint.net</nowiki>]<nowiki> is still highly recommended to manually edit or make icons where the script fails.
+​
+</nowiki></div>
+</div>
+<div><div><u><nowiki>Raw input picture requirements</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ In game interfaces MUST have 0% transparency.
+⬥ Must </nowiki>[https://img.pvme.io/images/DneowCezKn.png <nowiki>look clear when zoomed in</nowiki>]<nowiki> (affected by interface scaling)​
+</nowiki></div>
+</div>
+</div>
+<nowiki>
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><h2 id="icon-formatting"><ins><nowiki>Icon formatting</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>Every icon consists of 4 parts:</nowiki></p>
+<nowiki>
+</nowiki><ol><nowiki>
+</nowiki><li><nowiki>
+</nowiki><p><nowiki>The </nowiki><strong><nowiki>main item</nowiki></strong><nowiki> - Colour varies, never contains the same shade as the </nowiki><strong><nowiki>outline</nowiki></strong><nowiki> and </nowiki><strong><nowiki>shadow</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki></li><nowiki>
+</nowiki><li><nowiki>
+</nowiki><p><nowiki>The </nowiki><strong><nowiki>outline</nowiki></strong><nowiki> - A black border that immediately surrounds the main item (RGB value 0,0,2).</nowiki></p>
+<nowiki>
+</nowiki></li><nowiki>
+</nowiki><li><nowiki>
+</nowiki><p><nowiki>The </nowiki><strong><nowiki>shadow</nowiki></strong><nowiki> - A black border that appears bottom-right of the outline where applicable (RGB value 0,0,1).</nowiki></p>
+<nowiki>
+</nowiki></li><nowiki>
+</nowiki><li><nowiki>
+</nowiki><p><nowiki>(Only for stackable items) The number (RGB value 255,255,0).</nowiki></p>
+<nowiki>
+</nowiki></li><nowiki>
+</nowiki></ol>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎a. Numbers have their own shadows.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Image showing different regions selected:</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/tHGKxIrkby.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><p><strong><nowiki>Preset icons</nowiki></strong><nowiki> are extracted from inventory slots pictures (38x34) and contains all icon parts.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/Yv2AN2KqdH.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><p><strong><nowiki>Emojis</nowiki></strong><nowiki> are extracted from bank pictures and have </nowiki><strong><nowiki>shadows</nowiki></strong><nowiki> and </nowiki><strong><nowiki>numbers</nowiki></strong><nowiki> removed. They are also cropped to size.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/ZlC9E1hWBh.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h2 id="rswiki-icons"><ins><nowiki>RSWiki icons</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>All preset icons should be made via the script or manually, and not based on RSWiki icons.</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Emojis can be made from RSWiki icons based on conditions below.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The source of the icon determines whether you can use the RSWiki icon as an </nowiki><strong><nowiki>emoji</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Icons which are prepared by users and accurately reflects how they appear in the game </nowiki><strong><nowiki>can be used.</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If the icon is prepared by a bot. It is most likely a </nowiki><strong><nowiki>Java icon</nowiki></strong><nowiki> which do not reflect how the icon looks like in the live game.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/TgSLjZRTq9.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h2 id="icon-creation-script"><ins><nowiki>Icon creation (script)</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>Currently, the script only works for screen grabs </nowiki><strong><nowiki>of the inventory section when banking</nowiki></strong><nowiki> or </nowiki><strong><nowiki>of the GE buy interface</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Setting up</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Download the script here: </nowiki>[https://drive.google.com/file/d/1lLI6X3hAx-IebShGFe1jxbCZgGOzJ60-/view?usp=sharing <nowiki>https://drive.google.com/file/d/1lLI6X3hAx-IebShGFe1jxbCZgGOzJ60-/view?usp=sharing</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Move the script to a desired directory.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Run the script to set up the folders required.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Let the script to install the </nowiki><strong><nowiki>Pillow</nowiki></strong><nowiki> Python package if not installed (required for Python to manipulate images).</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• DO NOT RENAME THE CREATED FOLDERS.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://youtu.be/PG19o3AzfCc <nowiki>https://youtu.be/PG19o3AzfCc</nowiki>]</p>
+<nowiki>
+</nowiki>[https://www.youtube-nocookie.com/embed/PG19o3AzfCc <nowiki>Embedded guide video</nowiki>]<nowiki>
+
+</nowiki><p><strong><nowiki>Making icons/emojis</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Take screen grabs of items from the inventory section of the banking interface (example below) and save it in </nowiki><strong><nowiki>&quot;Inventory screengrabs&quot;</nowiki></strong><nowiki> as a </nowiki><strong><nowiki>.png</nowiki></strong><nowiki> file.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• To make emojis instead of preset icons: add a &quot;_emoji&quot; suffix to the name of the screengrab.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/0nBdPW5cuc.png <nowiki>Guide illustration</nowiki>]<nowiki>
+⬥ Navigate back and run </nowiki><strong><nowiki>&quot;Make icon.py&quot;</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Check that the quantities printed in the terminal are correct.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Check </nowiki><strong><nowiki>&quot;Generated emojis&quot;</nowiki></strong><nowiki> for emojis and </nowiki><strong><nowiki>&quot;Generated preset icons&quot;</nowiki></strong><nowiki> for preset icons.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Use </nowiki><strong><nowiki>&quot;Archive images.py&quot;</nowiki></strong><nowiki> to archive all images after they have been added.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Example video of basic/icon creation:</nowiki></p>
+<nowiki>
+</nowiki><p>[https://youtu.be/81FjnkxgNoQ <nowiki>https://youtu.be/81FjnkxgNoQ</nowiki>]</p>
+<nowiki>
+</nowiki>[https://www.youtube-nocookie.com/embed/81FjnkxgNoQ <nowiki>Embedded guide video</nowiki>]<nowiki>
+
+</nowiki><h2 id="icon-creation-manual"><ins><nowiki>Icon creation (manual)</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>⬥ Take a screen grab of an item from an </nowiki><strong><nowiki>opaque bank interface (for emojis)</nowiki></strong><nowiki> or </nowiki><strong><nowiki>opaque inventory slot (for preset icons)</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Your bank background should be uniformly coloured to facilitate background removal.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Items on the </nowiki><strong><nowiki>Grand Exchange</nowiki></strong><nowiki> and </nowiki><strong><nowiki>preset interface</nowiki></strong><nowiki> have their outlines removed and cannot be used as a source for emojis.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Manual icon creation</nowiki></strong></p>
+<nowiki>
+</nowiki><ol><nowiki>
+</nowiki><li><nowiki>
+</nowiki><p><nowiki>Open the item you want to make an icon of in </nowiki><strong><nowiki>Paint.net</nowiki></strong><nowiki>, crop it as nicely as possible.</nowiki></p>
+<nowiki>
+</nowiki></li><nowiki>
+</nowiki><li><nowiki>
+</nowiki><p><nowiki>Zoom in and crop the inventory slot exactly using rectangle select (this should give you a 38x34 area).</nowiki></p>
+<nowiki>
+</nowiki></li><nowiki>
+</nowiki><li><nowiki>
+</nowiki><p><nowiki>Use the crop to selection option under </nowiki><strong><nowiki>Image</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki></li><nowiki>
+</nowiki></ol>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎a. Shortcut: </nowiki><strong><nowiki>Ctrl + Shift + X</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><ol><nowiki>
+</nowiki><li><nowiki>Select the </nowiki><strong><nowiki>Magic Wand</nowiki></strong><nowiki> and </nowiki><strong><nowiki>Rectangle select</nowiki></strong><nowiki>/</nowiki><strong><nowiki>Lasso select</nowiki></strong><nowiki> tools to select and delete regions until the background is completely removed.</nowiki></li><nowiki>
+</nowiki></ol>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎a. Use </nowiki><strong><nowiki>Shift + Click</nowiki></strong><nowiki> with the </nowiki><strong><nowiki>Magic Wand</nowiki></strong><nowiki> on 0% tolerance on the background to quickly select chunks of regions.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://youtu.be/ZjdWPbp4YUo <nowiki>https://youtu.be/ZjdWPbp4YUo</nowiki>]</p>
+<nowiki>
+</nowiki>[https://www.youtube-nocookie.com/embed/ZjdWPbp4YUo <nowiki>Embedded guide video</nowiki>]<nowiki>
+
+</nowiki><p><strong><nowiki>Manual emoji creation</nowiki></strong></p>
+<nowiki>
+</nowiki><ol><nowiki>
+</nowiki><li><nowiki>
+</nowiki><p><nowiki>Open the item you want to make an icon of in </nowiki><strong><nowiki>Paint.net</nowiki></strong><nowiki>, crop it as nicely as possible.</nowiki></p>
+<nowiki>
+</nowiki></li><nowiki>
+</nowiki><li><nowiki>
+</nowiki><p><nowiki>Select the </nowiki><strong><nowiki>Magic Wand</nowiki></strong><nowiki> tool on 0% tolerance and use </nowiki><strong><nowiki>Shift + Click</nowiki></strong><nowiki> followed by </nowiki><strong><nowiki>Delete</nowiki></strong><nowiki> on the background.</nowiki></p>
+<nowiki>
+</nowiki></li><nowiki>
+</nowiki><li><nowiki>
+</nowiki><p><nowiki>Repeat the previous step for shadow and number pixels.</nowiki></p>
+<nowiki>
+</nowiki></li><nowiki>
+</nowiki><li><nowiki>
+</nowiki><p><nowiki>If removing number pixels, ensure that the number or its shadow do not cover the icon.</nowiki></p>
+<nowiki>
+</nowiki></li><nowiki>
+</nowiki></ol>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎a. Post in </nowiki>[https://discord.com/channels/534508796639182860/771436827214086154 <nowiki>Guide media upload and request (external Discord)</nowiki>]<nowiki> if there is no way to get the complete unnumbered icon or visit the </nowiki><strong><nowiki>Image stacking</nowiki></strong><nowiki> section below.</nowiki></p>
+<nowiki>
+</nowiki><ol><nowiki>
+</nowiki><li><nowiki>Use the </nowiki><strong><nowiki>Magic Wand</nowiki></strong><nowiki> again to select the transparent background, press </nowiki><strong><nowiki>Ctrl + I</nowiki></strong><nowiki> followed by </nowiki><strong><nowiki>Ctrl + Shift + X</nowiki></strong><nowiki> to crop the image to size</nowiki></li><nowiki>
+</nowiki></ol>
+<nowiki>
+</nowiki><p>[https://youtu.be/9oiHOuCO89U <nowiki>https://youtu.be/9oiHOuCO89U</nowiki>]</p>
+<nowiki>
+</nowiki>[https://www.youtube-nocookie.com/embed/9oiHOuCO89U <nowiki>Embedded guide video</nowiki>]<nowiki>
+
+</nowiki><h2 id="image-stacking"><ins><nowiki>Image stacking</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>If you're trying to emoji-fy a </nowiki><strong><nowiki>stackable</nowiki></strong><nowiki> item (check if icon is available on wiki first) and cannot get a whole icon due to the number partially covering it, you can stack multiple incomplete images (made by removing different numbers) to form a complete image.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The most efficient quantities you can use for stacking are not yet known, but generally:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Items without varying icons based on quantity (e.g. teleport tabs), use quantities 1, 7 and 9.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Items with varying icons throughout numbers 1-5 (e.g. Bakriminel bolts), use quantities 11, 44, 77 and 99.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Items with varying icons throughout 1-1000 (e.g. congealed blood), use numbers 1111, 2222, 7777 and 9999.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Stacking with the script</nowiki></strong></p>
+<nowiki>
+</nowiki><ol><nowiki>
+</nowiki><li><nowiki>
+</nowiki><p><nowiki>Save an image consisting multiple inventories with different quantities of the same item(s) you want stacked.</nowiki></p>
+<nowiki>
+</nowiki></li><nowiki>
+</nowiki><li><nowiki>
+</nowiki><p><nowiki>Run </nowiki><strong><nowiki>&quot;Make icon.py&quot;</nowiki></strong><nowiki> to generate the incomplete emojis.</nowiki></p>
+<nowiki>
+</nowiki></li><nowiki>
+</nowiki><li><nowiki>
+</nowiki><p><nowiki>Create respective folders starting with &quot;stack&quot; followed by the item name and sort the incomplete emojis into their respective folders.</nowiki></p>
+<nowiki>
+</nowiki></li><nowiki>
+</nowiki><li><nowiki>
+</nowiki><p><nowiki>Run </nowiki><strong><nowiki>&quot;Stack.py&quot;</nowiki></strong><nowiki> to create the stacked icons.</nowiki></p>
+<nowiki>
+</nowiki></li><nowiki>
+</nowiki></ol>
+<nowiki>
+</nowiki><p>[https://youtu.be/MCmgf2WiOeY <nowiki>https://youtu.be/MCmgf2WiOeY</nowiki>]</p>
+<nowiki>
+</nowiki>[https://www.youtube-nocookie.com/embed/MCmgf2WiOeY <nowiki>Embedded guide video</nowiki>]<nowiki>
+
+</nowiki><p><strong><nowiki>Manual stacking</nowiki></strong></p>
+<nowiki>
+</nowiki><ol><nowiki>
+</nowiki><li><nowiki>
+</nowiki><p><nowiki>Have images consisting different quantities of the item(s) you want stacked open in different windows.</nowiki></p>
+<nowiki>
+</nowiki></li><nowiki>
+</nowiki><li><nowiki>
+</nowiki><p><nowiki>Carry out removal of background, shadows, and quantities.</nowiki></p>
+<nowiki>
+</nowiki></li><nowiki>
+</nowiki><li><nowiki>
+</nowiki><p><nowiki>Paste the incomplete emojis </nowiki><strong><nowiki>onto different layers</nowiki></strong><nowiki> and merge them to get the complete emoji(s).</nowiki></p>
+<nowiki>
+</nowiki></li><nowiki>
+</nowiki></ol>
+<nowiki>
+</nowiki><p>[https://youtu.be/yM61GooZZco <nowiki>https://youtu.be/yM61GooZZco</nowiki>]</p>
+<nowiki>
+</nowiki>[https://www.youtube-nocookie.com/embed/yM61GooZZco <nowiki>Embedded guide video</nowiki>]<nowiki>
+
+</nowiki><h2 id="known-issues"><ins><nowiki>Known issues</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>⬥ Currently, there is not a standardised method for auras and other icons (e.g. buffs, debuffs).</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ If your inventory slots (from the banking interface) are not completely uniform, the script will not be able to recognise them as inventory slots.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The script uses the complete frames of the inventory slot to identify them: </nowiki>[https://imgur.com/CCfr7dG <nowiki>https://imgur.com/CCfr7dG</nowiki>]<nowiki>, </nowiki>[https://imgur.com/ypnZCL3 <nowiki>https://imgur.com/ypnZCL3</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If an item has its shadow and/or outline invading the inventory slot, the frame will not be recognised and the item will not be extracted.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Examples:</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/MmKQxc25gA.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h2 id="submitting-completed-icons"><ins><nowiki>Submitting completed icons</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><strong><nowiki>Preset icons</nowiki></strong><nowiki> - Upload the icon to </nowiki><code><nowiki>https://img.pvme.io/</nowiki></code><nowiki> ‎(via </nowiki>[https://discord.com/channels/534508796639182860/771436827214086154 <nowiki>Guide media upload and request (external Discord)</nowiki>]<nowiki>), copy the item link, and fill in this template for each item to submit via pasting it to </nowiki><span><nowiki>Referenced guide unavailable in this snapshot</nowiki></span><nowiki>:</nowiki></p>
+<nowiki>
+</nowiki><pre>name:
+image:
+slot:
+label:
+breakdownNotes:
+wikiLink:
+
+</pre>
+<nowiki>
+</nowiki><p><nowiki>Fields explanations:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><code><nowiki>name:</nowiki></code><nowiki> ‎The item name as displayed </nowiki><strong><nowiki>on the RSWiki</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><code><nowiki>image:</nowiki></code><nowiki> ‎The raw </nowiki><code><nowiki>https://img.pvme.io/</nowiki></code><nowiki> ‎link.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><code><nowiki>slot:</nowiki></code><nowiki> ‎Numbers 0 to 13 which decides where the item can be equipped.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>INVENTORY = 0</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>HELM = 1</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>BODY = 2</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>LEGS = 3</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>MH_WEAPON = 4</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>OH_WEAPON = 5</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>GLOVES = 6</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>BOOTS = 7</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>AURA = 8</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>AMMO = 9</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>NECKLACE = 10</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>RING = 11</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>CAPE = 12</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>POCKET = 13</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><code><nowiki>label:</nowiki></code><nowiki> ‎The </nowiki><code><nowiki>name:</nowiki></code><nowiki> ‎of the item with all lower-case and no spacing OR an acceptable abbreviation.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><code><nowiki>breakdownNotes:</nowiki></code><nowiki> ‎Default text that appears in item breakdown when an item is picked. This is usually left blank.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><code><nowiki>wikiLink:</nowiki></code><nowiki> ‎Link to the item on RSWiki.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Make sure the link is valid.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Examples:</nowiki></p>
+<nowiki>
+</nowiki><pre>name: Abyssal scourge
+image: https://img.pvme.io/images/Moh9yya.png
+slot: 4
+label: abyssalscourge
+breakdownNotes:
+wikiLink: https://runescape.wiki/w/Abyssal_scourge
+</pre>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><pre>name: Black stone arrows
+image: https://img.pvme.io/images/uBbMQoy.png
+slot: 9
+label: bsa100
+breakdownNotes:
+wikiLink: https://runescape.wiki/w/Black_stone_arrows
+</pre>
+<nowiki>
+</nowiki><p><strong><nowiki>Emojis</nowiki></strong><nowiki> - Once done creating the emoji(s), use </nowiki><strong><nowiki>Ctrl + A</nowiki></strong><nowiki> + </nowiki><strong><nowiki>Ctrl + C</nowiki></strong><nowiki> to copy the cropped image (if made manually) or drag and drop saved emojis into </nowiki><span><nowiki>Referenced guide unavailable in this snapshot</nowiki></span><nowiki> along with the item names.</nowiki></p>
+<nowiki>
+      
+    </nowiki>
+== Attribution and source history ==
+Adapted from [https://pvme.io/pvme-guides/editor-resources/editor-references/icon-creation/ <nowiki>Icon Creation</nowiki>] by PvME contributors. [https://github.com/pvme/pvme-guides/commits/master/editor-resources/editor-references/icon-creation.txt Upstream source history]. Licensed [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]. Snapshot 074a9438f79d10fba75735791be0030734db8b5e. Formatting adapted for standalone MediaWiki; media and third-party references remain external links.

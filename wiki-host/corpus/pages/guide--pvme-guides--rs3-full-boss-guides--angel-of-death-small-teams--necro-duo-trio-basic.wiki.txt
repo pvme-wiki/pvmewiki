@@ -1,0 +1,425 @@
+[[PvME|PvME guide index]]
+
+<blockquote><nowiki>
+</nowiki><h2 id="disclaimer"><nowiki>⚠️ Disclaimer</nowiki></h2>
+<nowiki>
+</nowiki><p><strong><nowiki>Some methods in this guide may not work after the combat beta changes in March 2026</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>Know of a newer method/rotation? Got a video? Share it in </nowiki>[https://discord.com/channels/534508796639182860/1020853673317908500 <nowiki>Suggestions (external Discord)</nowiki>]<nowiki>!</nowiki></p>
+<nowiki>
+</nowiki></blockquote>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><span id="necromancy-duotrio-aod-basic"></span><p>[https://img.pvme.io/images/JChZfA1i4S.png <nowiki>Guide illustration</nowiki>]<nowiki>
+​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="introduction"><ins><nowiki>Introduction</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>Nex, Angel of Death can be done in small Necromancy </nowiki>[https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1 <nowiki>necromancy</nowiki>]<nowiki> teams with relatively low requirements due to the strong multi-target damage and sustain tools available to the combat style. This guide will cover strategies applicable to duo and trio Necromancy teams that will work both for getting your first kill and for consistent farming of the boss.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="presets-and-relics"><ins><nowiki>Presets and Relics</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://presets.pvme.io/?id=rCepvqR0quPCbcRKqfDq <nowiki>Advanced Preset</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1 <nowiki>necromancy</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://presets.pvme.io/?id=yWAydOcln6bSkHBcYk7b <nowiki>Basic Preset</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1 <nowiki>necromancy</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​
+</nowiki>[https://firebasestorage.googleapis.com/v0/b/preset-images/o/images%2FyWAydOcln6bSkHBcYk7b.png?alt=media <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+
+
+</nowiki><div><div><div><u><nowiki>Checklist and Unlocks</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/1260022289731158146.png?v=1 <nowiki>eofblacku</nowiki>]<nowiki> EoF with Statius Warhammer </nowiki>[https://cdn.discordapp.com/emojis/641670143197446182.png?v=1 <nowiki>swh</nowiki>]<nowiki> and/or </nowiki>[https://cdn.discordapp.com/emojis/1176968330582700174.png?v=1 <nowiki>invokelordofbones</nowiki>]<nowiki>
+⬥ </nowiki>[https://cdn.discordapp.com/emojis/780401412915855380.png?v=1 <nowiki>eofblack</nowiki>]<nowiki> EoF with Death guard </nowiki>[https://cdn.discordapp.com/emojis/1138809243143766118.png?v=1 <nowiki>deathguard90</nowiki>]<nowiki>
+⬥ </nowiki>[https://cdn.discordapp.com/emojis/513201065877831680.png?v=1 <nowiki>rov</nowiki>]<nowiki> Passive Ring of Vigour unlocked 
+⬥ </nowiki>[https://cdn.discordapp.com/emojis/1137809209782698024.png?v=1 <nowiki>darkness</nowiki>]<nowiki> Darkness active
+⬥ </nowiki>[https://cdn.discordapp.com/emojis/642708657825644554.png?v=1 <nowiki>restore</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/928221126360969226.png?v=1 <nowiki>powderofpenance</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/659122178704408598.png?v=1 <nowiki>blessedflask</nowiki>]<nowiki> Available ways to restore prayer points
+⬥ Bonfire + thermal spa HP boosts are active
+</nowiki></div>
+</div>
+</div>
+<nowiki>
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="rotation-and-strategies"><ins><nowiki>Rotation and Strategies</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="phase-1"><nowiki>Phase 1</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ In phase 1 the base will apply the defence level reduction from Statius's Warhammer </nowiki>[https://cdn.discordapp.com/emojis/641670143197446182.png?v=1 <nowiki>swh</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki>, which will last until pillars begins</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Invoke Lord of Bones </nowiki>[https://cdn.discordapp.com/emojis/1176968330582700174.png?v=1 <nowiki>invokelordofbones</nowiki>]<nowiki> may also be used for a slower-ramping defence reduction</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ One player (the base in this rotation) will use Invoke Death </nowiki>[https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1 <nowiki>invokedeath</nowiki>]<nowiki> and Threads of Fate </nowiki>[https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1 <nowiki>threadsoffate</nowiki>]<nowiki> to clear out the reavers </nowiki>[https://cdn.discordapp.com/emojis/929773044296216666.png?v=1 <nowiki>bloodreaver</nowiki>]<nowiki>, utilising the stun from Death Guard special attack </nowiki>[https://cdn.discordapp.com/emojis/1138809243143766118.png?v=1 <nowiki>deathguard90</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki> to keep them from reaching Nex</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Note that the </nowiki><strong><nowiki>reavers must be close enough</nowiki></strong><nowiki> for threads </nowiki>[https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1 <nowiki>threadsoffate</nowiki>]<nowiki> to reach them all, this can be timed as the reavers reach the set of green-rune tiles surrounding the center of the arena</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ </nowiki><em><nowiki>Refer to </nowiki><ins><nowiki>Example Kills</nowiki></ins><nowiki> to see this in action</nowiki></em></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Base</nowiki></strong></p>
+<nowiki>
+</nowiki><p>[https://cdn.discordapp.com/emojis/1166094935066423348.png?v=1 <nowiki>conjurearmy</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809128136388819.png?v=1 <nowiki>lifetransfer</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1159434409913634816.png?v=1 <nowiki>commandghost</nowiki>]<nowiki> → (3.0) </nowiki>[https://cdn.discordapp.com/emojis/1137809168368148490.png?v=1 <nowiki>splitsoul</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1 <nowiki>commandskeleton</nowiki>]<nowiki> → (tc) + </nowiki>[https://cdn.discordapp.com/emojis/856635090641879050.png?v=1 <nowiki>smokecloud</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/641670143197446182.png?v=1 <nowiki>swh</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1 <nowiki>touchofdeath</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1138809234922934282.png?v=1 <nowiki>omniguard</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1 <nowiki>necrobasic</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1 <nowiki>deathskulls</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1 <nowiki>bloat</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1 <nowiki>soulsap</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1 <nowiki>necrobasic</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1 <nowiki>commandskeleton</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1 <nowiki>touchofdeath</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1 <nowiki>necrobasic</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1 <nowiki>fingerofdeath</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1 <nowiki>necrobasic</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1 <nowiki>invokedeath</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1 <nowiki>threadsoffate</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/641339921675845633.png?v=1 <nowiki>demonslayer</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/929773044296216666.png?v=1 <nowiki>bloodreaver</nowiki>]<nowiki> on green tiles → </nowiki>[https://cdn.discordapp.com/emojis/1138809243143766118.png?v=1 <nowiki>deathguard90</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1 <nowiki>soulsap</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1 <nowiki>volleyofsouls</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1 <nowiki>touchofdeath</nowiki>]<nowiki> → continue until phased</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Minion Tank</nowiki></strong></p>
+<nowiki>
+</nowiki><p>[https://cdn.discordapp.com/emojis/1166094935066423348.png?v=1 <nowiki>conjurearmy</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809128136388819.png?v=1 <nowiki>lifetransfer</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1159434409913634816.png?v=1 <nowiki>commandghost</nowiki>]<nowiki> → (3.0) </nowiki>[https://cdn.discordapp.com/emojis/1137809168368148490.png?v=1 <nowiki>splitsoul</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1 <nowiki>commandskeleton</nowiki>]<nowiki> → (tc) + </nowiki>[https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1 <nowiki>deathskulls</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1 <nowiki>soulsap</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1 <nowiki>touchofdeath</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1 <nowiki>necrobasic</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1 <nowiki>soulsap</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1 <nowiki>livingdeath</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/736298121704767538.png?v=1 <nowiki>adrenrenewal</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1 <nowiki>touchofdeath</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1 <nowiki>deathskulls</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1 <nowiki>soulsap</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1 <nowiki>necrobasic</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1 <nowiki>necrobasic</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1 <nowiki>soulsap</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1 <nowiki>fingerofdeath</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1 <nowiki>commandskeleton</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1 <nowiki>deathskulls</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1 <nowiki>touchofdeath</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1 <nowiki>soulsap</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1 <nowiki>fingerofdeath</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1 <nowiki>volleyofsouls</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1 <nowiki>soulsap</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1 <nowiki>necrobasic</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1 <nowiki>deathskulls</nowiki>]<nowiki> → continue until phased</nowiki></p>
+<nowiki>
+</nowiki><p><em><nowiki>Use </nowiki>[https://cdn.discordapp.com/emojis/1138809234922934282.png?v=1 <nowiki>omniguard</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> if adren is available</nowiki></em></p>
+<nowiki>
+</nowiki><p><em><nowiki>These rotations serve as a guideline to begin the fight with and don't have to be followed precisely</nowiki></em></p>
+<nowiki>
+</nowiki><p><em><nowiki>Note: Replace </nowiki>[https://cdn.discordapp.com/emojis/1138809234922934282.png?v=1 <nowiki>omniguard</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> with </nowiki>[https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1 <nowiki>soulsap</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1 <nowiki>necrobasic</nowiki>]<nowiki> if not owned</nowiki></em></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Stay within 1 tile away from Nex (2 tiles away from the center tile) to ensure </nowiki>[https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1 <nowiki>threadsoffate</nowiki>]<nowiki> hits every reaver.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ If the reavers </nowiki>[https://cdn.discordapp.com/emojis/929773044296216666.png?v=1 <nowiki>bloodreaver</nowiki>]<nowiki> are 1 tile away from Nex after you stun them due to late threads </nowiki>[https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1 <nowiki>threadsoffate</nowiki>]<nowiki> timing, then walk 2 tiles away from Nex diagonally and continue the rotation. Relure after reavers die.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• To relure you </nowiki>[https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1 <nowiki>dive</nowiki>]<nowiki> to the center and walk 2 tiles diagonal away from Nex </nowiki>[https://cdn.discordapp.com/emojis/580167371365548042.png?v=1 <nowiki>aod</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="phase-2"><nowiki>Phase 2</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Phase 2 will begin as Nex hits 2.1 million health </nowiki>[https://cdn.discordapp.com/emojis/689509250887712902.png?v=1 <nowiki>constitution</nowiki>]<nowiki> and will be shortly followed by amalgamation </nowiki>[https://cdn.discordapp.com/emojis/878739232447938670.png?v=1 <nowiki>bloodamalg</nowiki>]<nowiki> spawns, which will be cleared with Invoke Death </nowiki>[https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1 <nowiki>invokedeath</nowiki>]<nowiki> and threads </nowiki>[https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1 <nowiki>threadsoffate</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Depending on team size, minion lures will differ but the </nowiki><strong><nowiki>objective will be to pull them into the center</nowiki></strong><nowiki> such that scythe combo </nowiki>[https://cdn.discordapp.com/emojis/1137809145706319892.png?v=1 <nowiki>spectralscythe</nowiki>]<nowiki> and threads </nowiki>[https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1 <nowiki>threadsoffate</nowiki>]<nowiki> will hit them all as well as Nex</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ In the meantime, </nowiki><strong><nowiki>all players should focus on getting Nex down to 1.8 million health </nowiki>[https://cdn.discordapp.com/emojis/689509250887712902.png?v=1 <nowiki>constitution</nowiki>]<nowiki> to avoid getting another elements special attack</nowiki></strong><nowiki>, which will spawn blocking tiles that will prevent the minions from being lured properly</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If your team is having trouble skipping this elements special attack, ideally try to phase Nex during an elements special attack on phase 1 (</nowiki><strong><nowiki>on the jump but before reavers spawn</nowiki></strong><nowiki>)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>All players</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1 <nowiki>deathskulls</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1 <nowiki>bloat</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/1138809234922934282.png?v=1 <nowiki>omniguard</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1 <nowiki>fingerofdeath</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/1138809243143766118.png?v=1 <nowiki>deathguard90</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki> on Nex to deal as much damage as possible to phase</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Minion Tank(s) as amalgs spawn</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Duo: </nowiki>[https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1 <nowiki>invokedeath</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1 <nowiki>threadsoffate</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1 <nowiki>volleyofsouls</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1 <nowiki>soulsap</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1 <nowiki>volleyofsouls</nowiki>]</p>
+<nowiki>
+</nowiki><p><em><nowiki>Note: Replace first </nowiki>[https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1 <nowiki>volleyofsouls</nowiki>]<nowiki> with 8+ stack </nowiki>[https://cdn.discordapp.com/emojis/1138809243143766118.png?v=1 <nowiki>deathguard90</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> if </nowiki>[https://cdn.discordapp.com/emojis/1138809230573441064.png?v=1 <nowiki>soulboundlantern</nowiki>]<nowiki> is not owned</nowiki></em></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Trio MT 1: </nowiki>[https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1 <nowiki>invokedeath</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1 <nowiki>threadsoffate</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1 <nowiki>volleyofsouls</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1 <nowiki>soulsap</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1 <nowiki>volleyofsouls</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Trio MT 2: Focus on doing single-target damage to Nex</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Minion Lures</nowiki></strong></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+
+
+</nowiki><div><div><div><u><nowiki>Trio Lure</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ </nowiki><strong><nowiki>Base</nowiki></strong><nowiki> can stand cardinal MD to Nex and stay there for the entire phase
+⬥ Minion tanks lure two minions each, starting east and west on the green tiles
+⬥ (1): Dive </nowiki>[https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1 <nowiki>dive</nowiki>]<nowiki> as minions spawn and automatically aggro
+⬥ (2): Surge </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> as the </nowiki><u><nowiki>minion you dove away from</nowiki></u><nowiki> reaches the mid-line
+</nowiki></div>
+</div>
+</div>
+<nowiki>
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+</nowiki>[[PvME/Nex: Angel of Death/Angel Of Death Small Teams — Necro Duo Trio Overview|<nowiki>Guide illustration</nowiki>]] ([https://img.pvme.io/images/yn8KMojB97.png <nowiki>Guide illustration</nowiki>])<nowiki>
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+
+
+</nowiki><div><div><div><u><nowiki>Duo Lure</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ </nowiki><strong><nowiki>Base</nowiki></strong><nowiki> starts diagonal to Nex and will have to move partway through the lure to avoid blocking a minion
+⬥ Minion tank starts directly center
+⬥ (1): Dive </nowiki>[https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1 <nowiki>dive</nowiki>]<nowiki> into the base quadrant as minions spawn and Provoke </nowiki>[https://cdn.discordapp.com/emojis/535541259465392143.png?v=1 <nowiki>voke</nowiki>]<nowiki> the minion there
+⬥ (2): Base dives </nowiki>[https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1 <nowiki>dive</nowiki>]<nowiki> as the minion gets provoked </nowiki>[https://cdn.discordapp.com/emojis/535541259465392143.png?v=1 <nowiki>voke</nowiki>]<nowiki>
+⬥ (3): Surge </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> as the </nowiki><u><nowiki>minion you dove away from</nowiki></u><nowiki> reaches the center of the arena
+</nowiki></div>
+</div>
+</div>
+<nowiki>
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+</nowiki>[[PvME/Nex: Angel of Death/Angel Of Death Small Teams — Necro Duo Trio Overview|<nowiki>Guide illustration</nowiki>]] ([https://img.pvme.io/images/KogPRNBend.png <nowiki>Guide illustration</nowiki>])<nowiki>
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><strong><nowiki>Killing minions</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>The recommended abilities are </nowiki>[https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1 <nowiki>invokedeath</nowiki>]<nowiki> + 2x </nowiki>[https://cdn.discordapp.com/emojis/1137809145706319892.png?v=1 <nowiki>spectralscythe</nowiki>]<nowiki> + 2x </nowiki>[https://cdn.discordapp.com/emojis/1137809149690916945.png?v=1 <nowiki>spectralscythe2</nowiki>]<nowiki> + 2x </nowiki>[https://cdn.discordapp.com/emojis/1137809152043925505.png?v=1 <nowiki>spectralscythe3</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1 <nowiki>threadsoffate</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1 <nowiki>volleyofsouls</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1 <nowiki>soulsap</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1 <nowiki>volleyofsouls</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Duo</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Minion tank: </nowiki>[https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1 <nowiki>invokedeath</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809145706319892.png?v=1 <nowiki>spectralscythe</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809149690916945.png?v=1 <nowiki>spectralscythe2</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809152043925505.png?v=1 <nowiki>spectralscythe3</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Base: </nowiki>[https://cdn.discordapp.com/emojis/1137809145706319892.png?v=1 <nowiki>spectralscythe</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809149690916945.png?v=1 <nowiki>spectralscythe2</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1 <nowiki>threadsoffate</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1 <nowiki>volleyofsouls</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1 <nowiki>soulsap</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1 <nowiki>volleyofsouls</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809152043925505.png?v=1 <nowiki>spectralscythe3</nowiki>]</p>
+<nowiki>
+</nowiki><p><em><nowiki>Optional: </nowiki>[https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1 <nowiki>bloat</nowiki>]<nowiki> the minion you want to kill first, typically U or G to avoid prolonging their respective mechanics in phase 4</nowiki></em></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Trio</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Base: </nowiki>[https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1 <nowiki>invokedeath</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1 <nowiki>threadsoffate</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1 <nowiki>volleyofsouls</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1 <nowiki>soulsap</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1 <nowiki>volleyofsouls</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ MT 2: </nowiki>[https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1 <nowiki>threadsoffate</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1 <nowiki>volleyofsouls</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1 <nowiki>soulsap</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1 <nowiki>volleyofsouls</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ MT 1, who used </nowiki>[https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1 <nowiki>threadsoffate</nowiki>]<nowiki> on </nowiki>[https://cdn.discordapp.com/emojis/878739232447938670.png?v=1 <nowiki>bloodamalg</nowiki>]<nowiki>: focus on doing single-target damage to Nex, </nowiki>[https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1 <nowiki>threadsoffate</nowiki>]<nowiki> for single-target damage if it comes up before minions are finished</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Minion tanks can use </nowiki>[https://cdn.discordapp.com/emojis/513190158728953857.png?v=1 <nowiki>devo</nowiki>]<nowiki> and </nowiki>[https://cdn.discordapp.com/emojis/535541306475151390.png?v=1 <nowiki>anti</nowiki>]<nowiki> to reduce damage and prevent their rotations from being disrupted</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="phase-3"><nowiki>Phase 3</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Phase 3 involves using Necromancy's </nowiki>[https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1 <nowiki>necromancy</nowiki>]<nowiki> strong multi-target damage to clear out the minions while still keeping up damage on Nex</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ If minions are handled properly they should die early in phase 3. If not, continue using AoE abilities until they're finished.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Utilise </nowiki>[https://cdn.discordapp.com/emojis/615613924506599497.png?v=1 <nowiki>soulsplit</nowiki>]<nowiki> flicking on minions to heal up on AoE attacks</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Use </nowiki>[https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1 <nowiki>livingdeath</nowiki>]<nowiki>, </nowiki>[https://cdn.discordapp.com/emojis/1138809234922934282.png?v=1 <nowiki>omniguard</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki>, and </nowiki>[https://cdn.discordapp.com/emojis/1137809168368148490.png?v=1 <nowiki>splitsoul</nowiki>]<nowiki> as they come up to finish phasing Nex to 600k health </nowiki>[https://cdn.discordapp.com/emojis/689509250887712902.png?v=1 <nowiki>constitution</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Mechanic solutions are fairly similar between duo and trio teams and any differences will be covered below</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="phase-3-mechanics"><nowiki>Phase 3 Mechanics</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>Mechanics in phase 3 will happen in a semi-random order, with the primary restriction being that ice cannot happen first and the same mechanic cannot happen back-to-back</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Smoke Lines</nowiki></strong><nowiki>: Simply place these away from the base and walk out</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Ice</nowiki></strong><nowiki>: You go into a 'stasis' mode where </nowiki>[https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1 <nowiki>deathskulls</nowiki>]<nowiki> will get cancelled if it returns to you and conjures don't attack anymore</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Use </nowiki>[https://cdn.discordapp.com/emojis/535541258240786434.png?v=1 <nowiki>freedom</nowiki>]<nowiki> and place the ice where the team can reach it but be careful not to hit others</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Use abilities such as </nowiki>[https://cdn.discordapp.com/emojis/1138809243143766118.png?v=1 <nowiki>deathguard90</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki>, </nowiki>[https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1 <nowiki>fingerofdeath</nowiki>]<nowiki> to quickly destroy the ice</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Can still use conjure abilities during ice but as said before conjures won't attack</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Pool</nowiki></strong><nowiki>: There must be &gt;14k combined health </nowiki>[https://cdn.discordapp.com/emojis/689509250887712902.png?v=1 <nowiki>constitution</nowiki>]<nowiki> split amongst all players standing in the pool, heal up as the special attack begins to meet this requirement</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• 4.7k health each </nowiki>[https://cdn.discordapp.com/emojis/689509250887712902.png?v=1 <nowiki>constitution</nowiki>]<nowiki> in trio, 7k health </nowiki>[https://cdn.discordapp.com/emojis/689509250887712902.png?v=1 <nowiki>constitution</nowiki>]<nowiki> each in duo</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Can use </nowiki>[https://cdn.discordapp.com/emojis/654618235097972737.png?v=1 <nowiki>powerburstofvitality</nowiki>]<nowiki> to boost life points to take it solo or take it with others if unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="phase-4"><nowiki>Phase 4</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ All mechanics are straightforward from here on. Make sure to use </nowiki>[https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1 <nowiki>invokedeath</nowiki>]<nowiki> on each pillar and keep cycling strong abilities such as </nowiki>[https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1 <nowiki>commandskeleton</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1 <nowiki>volleyofsouls</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/1138809234922934282.png?v=1 <nowiki>omniguard</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/1138809243143766118.png?v=1 <nowiki>deathguard90</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1 <nowiki>bloat</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1 <nowiki>fingerofdeath</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/641670143197446182.png?v=1 <nowiki>swh</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki> can be optionally reapplied at any time after pillars begins</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Bombs can be placed at max range on a wall next to a pillar or as close to the pillar as possible to leave as much open space as possible</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Conjures will continue attacking when you go middle </nowiki>[https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1 <nowiki>commandskeleton</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/1137809191231295549.png?v=1 <nowiki>commandzombie</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/535541258844635148.png?v=1 <nowiki>res</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/513190158728953857.png?v=1 <nowiki>devo</nowiki>]<nowiki> can be used to deal with the constant autoattacks from Nex</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ After all pillars have been defeated, the team can all reposition to the middle, only surging out to place bombs</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Continue to use </nowiki>[https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1 <nowiki>deathskulls</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/1137809168368148490.png?v=1 <nowiki>splitsoul</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/1138809234922934282.png?v=1 <nowiki>omniguard</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1 <nowiki>volleyofsouls</nowiki>]<nowiki> until Nex is defeated</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Invoke Lord of Bones </nowiki>[https://cdn.discordapp.com/emojis/1176968330582700174.png?v=1 <nowiki>invokelordofbones</nowiki>]<nowiki> stacks will carry over into phase 4, with the following amounts being required to maximise hit chance:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• ~50 </nowiki>[https://cdn.discordapp.com/emojis/1176968330582700174.png?v=1 <nowiki>invokelordofbones</nowiki>]<nowiki> stacks if no </nowiki>[https://cdn.discordapp.com/emojis/839903943018283050.png?v=1 <nowiki>reaverring</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• ~100 </nowiki>[https://cdn.discordapp.com/emojis/1176968330582700174.png?v=1 <nowiki>invokelordofbones</nowiki>]<nowiki> stacks if </nowiki>[https://cdn.discordapp.com/emojis/839903943018283050.png?v=1 <nowiki>reaverring</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="example-kills"><ins><nowiki>Example Kills</nowiki></ins></h2>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-examplekills"><u><nowiki>Example Kills</nowiki></u><nowiki>
+</nowiki></div>
+<nowiki>
+
+</nowiki><div><div><div><u><nowiki>Duo: Base</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ </nowiki>[https://youtu.be/qzjKiR4_XkU <nowiki>Link</nowiki>]<nowiki>
+</nowiki></div>
+</div>
+<div><div><u><nowiki>Duo: Minion Tank</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ </nowiki>[https://youtu.be/jNHn5FSJDxM <nowiki>Link</nowiki>]<nowiki>
+</nowiki></div>
+</div>
+</div>
+<nowiki>
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+      
+    </nowiki>
+== Attribution and source history ==
+Adapted from [https://pvme.io/pvme-guides/rs3-full-boss-guides/angel-of-death-small-teams/Necro_Duo_Trio_Basic/ <nowiki>Necro Duo Trio Basic</nowiki>] by PvME contributors. [https://github.com/pvme/pvme-guides/commits/master/rs3-full-boss-guides/angel-of-death-small-teams/Necro_Duo_Trio_Basic.txt Upstream source history]. Licensed [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]. Snapshot 074a9438f79d10fba75735791be0030734db8b5e. Formatting adapted for standalone MediaWiki; media and third-party references remain external links.

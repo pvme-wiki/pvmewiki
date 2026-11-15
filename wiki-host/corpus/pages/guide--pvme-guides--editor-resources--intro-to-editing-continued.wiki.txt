@@ -1,0 +1,164 @@
+[[PvME|PvME guide index]]
+
+<span id="intro-to-editing-continued"></span><p><nowiki>Now that you are more familiar with the most basic and essential tools used for editing, this guide will outline the other tools commonly used in creating new guides from start to finish.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/WlrWVGRvQC.png <nowiki>Guide illustration</nowiki>]<nowiki>
+​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="essential-tools"><ins><nowiki>Essential Tools</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>These are tools that are used in almost every guide:</nowiki></p>
+<nowiki>
+</nowiki><p><em><nowiki>Note: Tutorials for all tools can be found in their respective forums in </nowiki>[https://pvme.io/guides/?category=Contributing <nowiki>Contributor guides</nowiki>]</em></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://pvme.io/guide-editor/ <nowiki>Guide Editor</nowiki>]<nowiki> - Has all text formatting tools built in, as well as the style guide rule set integrated.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[[PvME/Contributing/Style Guide|<nowiki>Style Guide</nowiki>]]<nowiki> - Has all of our formatting rules explained in great detail. This is built into the Guide Editor and will display any broken styling rules in the bottom-left window of the Guide Editor website.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎‎ ‎ ‎ ‎• Example: </nowiki>[https://img.pvme.io/images/hKXqQoi3fs.png <nowiki>https://img.pvme.io/images/hKXqQoi3fs.png</nowiki>]<nowiki>
+</nowiki>[https://img.pvme.io/images/hKXqQoi3fs.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ There was an empty space after the last word on line 12, so the Guide Editor informed me to delete it.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[[PvME/Contributing/Templates|<nowiki>Templates</nowiki>]]<nowiki> - Has the skeleton structure for various guides/embeds pre-made so you can just copy paste and fill in blanks as needed to give you a head start on guide creation. This guide also has information on how to format text within embeds.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><em><nowiki>Note: There are tools built into the Guide Editor that offer the same functionality</nowiki></em></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://pvme.io/preset-maker/ <nowiki>Preset Maker</nowiki>]<nowiki> - Used to provide a standardized UI so the layout looks the same across all guides.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Click an inventory slot and type the name of an item to see it populate the slot.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://pvme.io/ability-bar-builder/ <nowiki>Ability Bar Builder</nowiki>]<nowiki> - Used for creating Revolution bars for AFK and Slayer guides.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Click a slot on the bar and select an ability from the popup.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://pvme.io/rotation-builder/ <nowiki>Rotation Builder</nowiki>]<nowiki> - Has built-in autoformatting tools to turn common ability names into emoji code output which you can copy/paste into the guide editor.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Example: gbarge automatically becomes </nowiki>[https://cdn.discordapp.com/emojis/535532879250456578.png?v=1 <nowiki>gbarge</nowiki>]<nowiki> when typed into the rotation builder.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="niche-tools"><ins><nowiki>Niche Tools</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>These are the extra tools that editors can use to make their guides more pretty and refined:</nowiki></p>
+<nowiki>
+</nowiki><p><em><nowiki>Note: Tutorials for all tools can be found in their respective forums in </nowiki>[https://pvme.io/guides/?category=Contributing <nowiki>Contributor guides</nowiki>]<nowiki>. If you are not comfortable using these tools, do your best to explain what is needed in </nowiki>[https://discord.com/channels/534508796639182860/724129126314803230 <nowiki>Editors chat (external Discord)</nowiki>]<nowiki> and ask someone else to make them for you to add to the guide later.</nowiki></em></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[[PvME/Contributing/Map Generation|<nowiki>Map Generation</nowiki>]]<nowiki> - Used for making map pictures with gridlines on them to mark exact tiles to place cannons/player standing spots/boss spawn locations.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://pvme.io/banner-builder/ <nowiki>Banner Builder</nowiki>]<nowiki> - Used for creating banners for every boss guide that describes their size and susceptibilities to things like poison or familiar damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://raw.githubusercontent.com/pvme/pvme-guides/master/editor-resources/editor-references/hyperlinked-emojis.txt <nowiki>Hyperlinked Emojis</nowiki>]<nowiki> - A raw document of emoji codes that link the emoji item to the appropriate wiki page for the item.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Example: Opening the website and using </nowiki><code><nowiki>ctrl + F</nowiki></code><nowiki> ‎to search for </nowiki><code><nowiki>Ascension Crossbow</nowiki></code><nowiki> ‎will show you a line that has this text: </nowiki><code><nowiki>[Ascension crossbow](&lt;https://runescape.wiki/w/Ascension_crossbow&gt;) &lt;:ascmh:513190158468775936&gt;</nowiki></code><nowiki>. If you copy paste that whole line and post it into the Guide Editor, it will display as </nowiki>[https://runescape.wiki/w/Ascension_crossbow <nowiki>Ascension crossbow</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/513190158468775936.png?v=1 <nowiki>ascmh</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://discord.com/channels/534508796639182860/1250465610903585000 <nowiki>Emoji Combinations (external Discord)</nowiki>]<nowiki> - A channel with content similar to Hyperlinked Emojis. It has quick access copy paste text for common combinations of emojis such as </nowiki><code><nowiki>&lt;:graspingpouchblack:1390439136875253810&gt; &lt;:bloodrune:536252658970001409&gt; &lt;:astralrune:536252658961481769&gt; &lt;:bodyrune:536252659301089280&gt; &lt;:soulrune:536252660333019136&gt;</nowiki></code><nowiki>, which will display in the Guide Editor as </nowiki>[https://cdn.discordapp.com/emojis/1390439136875253810.png?v=1 <nowiki>graspingpouchblack</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/536252658970001409.png?v=1 <nowiki>bloodrune</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/536252658961481769.png?v=1 <nowiki>astralrune</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/536252659301089280.png?v=1 <nowiki>bodyrune</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/536252660333019136.png?v=1 <nowiki>soulrune</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://pvme.io/forum-icon-builder/ <nowiki>Forum Icon Builder</nowiki>]<nowiki> - Used for creating icons for our Discord forums.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="making-a-guide-from-start-to-finish"><ins><nowiki>Making a Guide From Start to Finish</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>Here's a quick overview of the steps taken to make guides from scratch:</nowiki></p>
+<nowiki>
+</nowiki><ol><nowiki>
+</nowiki><li><nowiki>
+</nowiki><p><nowiki>Open the Guide Editor.</nowiki></p>
+<nowiki>
+</nowiki></li><nowiki>
+</nowiki><li><nowiki>
+</nowiki><p><nowiki>Click </nowiki><code><nowiki>Templates</nowiki></code><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki></li><nowiki>
+</nowiki><li><nowiki>
+</nowiki><p><nowiki>Select the guide you want to make. For this, I'll choose a standard guide.</nowiki></p>
+<nowiki>
+</nowiki></li><nowiki>
+</nowiki><li><nowiki>
+</nowiki><p><nowiki>Create a banner for the boss using the </nowiki>[https://pvme.io/banner-builder/ <nowiki>Banner Builder</nowiki>]<nowiki>, or ask someone in </nowiki>[https://discord.com/channels/534508796639182860/724129126314803230 <nowiki>Editors chat (external Discord)</nowiki>]<nowiki> to create one for you.</nowiki></p>
+<nowiki>
+</nowiki></li><nowiki>
+</nowiki></ol>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎a. These are archived in the </nowiki>[https://docs.google.com/spreadsheets/d/1OGM9MBUG2bQVbHxlm86Xfs60soFcjINSOrPv1WL3Vgw/edit?gid=1657882095#gid=1657882095 <nowiki>PvME Spreadsheet</nowiki>]<nowiki> in the </nowiki><code><nowiki>Art Resources</nowiki></code><nowiki> ‎tab.</nowiki></p>
+<nowiki>
+</nowiki><ol><nowiki>
+</nowiki><li><nowiki>
+</nowiki><p><nowiki>Intro: Describe the boss where the template requests the info.</nowiki></p>
+<nowiki>
+</nowiki></li><nowiki>
+</nowiki><li><nowiki>
+</nowiki><p><nowiki>Presets and Relics: Use the </nowiki>[https://pvme.io/preset-maker/ <nowiki>Preset Maker</nowiki>]<nowiki>, or post your preset from in-game, describe the relics/niche items used, and ask someone in </nowiki>[https://discord.com/channels/534508796639182860/724129126314803230 <nowiki>Editors chat (external Discord)</nowiki>]<nowiki> to create the preset for you.</nowiki></p>
+<nowiki>
+</nowiki></li><nowiki>
+</nowiki><li><nowiki>
+</nowiki><p><nowiki>Mechanics: Describe the mechanics where the template requests the info.</nowiki></p>
+<nowiki>
+</nowiki></li><nowiki>
+</nowiki><li><nowiki>
+</nowiki><p><nowiki>The Fight: Describe an overview of the fight where the template requests the info.</nowiki></p>
+<nowiki>
+</nowiki></li><nowiki>
+</nowiki><li><nowiki>
+</nowiki><p><nowiki>Rotations: Utilise the </nowiki>[https://pvme.io/rotation-builder/ <nowiki>Rotation Builder</nowiki>]<nowiki> to get your rotations written down quickly, then hit the </nowiki><code><nowiki>copy discord</nowiki></code><nowiki> ‎button. Then paste that copied output into this section of the guide editor.</nowiki></p>
+<nowiki>
+</nowiki></li><nowiki>
+</nowiki><li><nowiki>
+</nowiki><p><nowiki>Example Kills: Put a couple youtube video links showcasing quality kills here</nowiki></p>
+<nowiki>
+</nowiki></li><nowiki>
+</nowiki><li><nowiki>
+</nowiki><p><nowiki>Table of Contents: Click the </nowiki><code><nowiki>Table of Contents</nowiki></code><nowiki> ‎dropdown button and select </nowiki><code><nowiki>Categorized</nowiki></code><nowiki>. Click </nowiki><code><nowiki>Copy</nowiki></code><nowiki>, then paste that copied output at the bottom of the guide.</nowiki></p>
+<nowiki>
+</nowiki></li><nowiki>
+</nowiki><li><nowiki>
+</nowiki><p><nowiki>Click </nowiki><code><nowiki>Export to .txt file</nowiki></code><nowiki> ‎and paste the copied output into </nowiki>[https://discord.com/channels/534508796639182860/1020853673317908500 <nowiki>Suggestions (external Discord)</nowiki>]<nowiki> which will upload as a file. Describe your guide in the suggestion and ask that someone uploads it to GitHub for you.</nowiki></p>
+<nowiki>
+</nowiki></li><nowiki>
+</nowiki></ol>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="github"><ins><nowiki>GitHub</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>If you want to learn about github to edit or upload guides directly on the source code, check out </nowiki>[https://pvme.io/guides/?q=github <nowiki>GitHub tutorials</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="asking-for-help"><ins><nowiki>Asking for Help</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>Asking your editing questions in </nowiki>[https://discord.com/channels/534508796639182860/724129126314803230 <nowiki>Editors chat (external Discord)</nowiki>]<nowiki> is never a bad idea, but if you find yourself not getting answered, these are the people to ping:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><ins><nowiki>Lead Editor</nowiki></ins></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• @chrash.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><ins><nowiki>Editing Staff</nowiki></ins></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• @ferroric</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• @rcm37</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• @mionee.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• @tinky1</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• @.ndy</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Linie</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• @neonx222</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Cris</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• @porfy</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+      
+    </nowiki>
+== Attribution and source history ==
+Adapted from [https://pvme.io/pvme-guides/editor-resources/intro-to-editing-continued/ <nowiki>Intro To Editing Continued</nowiki>] by PvME contributors. [https://github.com/pvme/pvme-guides/commits/master/editor-resources/intro-to-editing-continued.txt Upstream source history]. Licensed [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]. Snapshot 074a9438f79d10fba75735791be0030734db8b5e. Formatting adapted for standalone MediaWiki; media and third-party references remain external links.

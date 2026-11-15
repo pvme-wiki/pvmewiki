@@ -1,0 +1,891 @@
+[[PvME|PvME guide index]]
+
+<blockquote><nowiki>
+</nowiki><h2 id="disclaimer"><nowiki>⚠️ Disclaimer</nowiki></h2>
+<nowiki>
+</nowiki><p><strong><nowiki>Some methods in this guide may not work after the combat beta changes in March 2026</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>Know of a newer method/rotation? Got a video? Share it in </nowiki>[https://discord.com/channels/534508796639182860/1020853673317908500 <nowiki>Suggestions (external Discord)</nowiki>]<nowiki>!</nowiki></p>
+<nowiki>
+</nowiki></blockquote>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><span id="yakamaru"></span><p>[https://img.pvme.io/images/NhlRG0hm04.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h2 id="introduction"><ins><nowiki>Introduction</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Yakamaru is the second boss in the Liberation of Mazcab raid, with up to 10 players in a single encounter. While the fight itself does have many mechanics and sections that require coordination between players, with just a little knowledge and practice and communication between your teammates, it can become a relatively smooth and fun boss encounter.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>This guide aims to cover the basic mechanics of Yakamaru, and cover some of strategies, tips and tricks that will help you get your first kills and beyond. As this is a mechanically intensive group fight with a longer guide, it is broken into a few sections (all linked in the Table of Contents) for easier navigation:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ To see what roles there are and what each one does, see </nowiki><ins><strong><nowiki>Roles at Yakamaru</nowiki></strong></ins><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ To learn about Yakamaru's attacks and pool mechanics, see </nowiki><ins><strong><nowiki>Auto Attacks</nowiki></strong></ins><nowiki>, </nowiki><ins><strong><nowiki>Special Attacks</nowiki></strong></ins><nowiki> and </nowiki><ins><strong><nowiki>Pool Mechanics</nowiki></strong></ins><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ See </nowiki><ins><strong><nowiki>Fight Overview</nowiki></strong></ins><nowiki> for a brief description of the fight, and </nowiki><ins><strong><nowiki>Fight Phases</nowiki></strong></ins><nowiki> for more in-depth information.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="drop-rates"><ins><nowiki>Drop Rates</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><strong>[https://www.runescape.com/drop-rates <nowiki>Click here</nowiki>]</strong><nowiki> to see how drop rates for Raids uniques are calculated (scroll down to </nowiki><em><nowiki>Liberation of Mazcab</nowiki></em><nowiki>).</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="presets-and-relics"><ins><nowiki>Presets and Relics</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>Given that Yakamaru is a fairly advanced boss and that its a </nowiki><em><nowiki>group boss</nowiki></em><nowiki>, it is reasonable (and ideal) to have a sufficient level of gear before attempting the boss. </nowiki><strong><nowiki>This helps both make the fight easier and make it easier for you to get into teams.</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>A guideline set of recommendations might this include:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ T80+ power armour + T90+ weapons, perked with </nowiki><strong><nowiki>Starter Perks</nowiki></strong><nowiki> from </nowiki>[[PvME/Invention perks/Perks|<nowiki>Perks</nowiki>]]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ 95+ Prayer </nowiki>[https://cdn.discordapp.com/emojis/1005450651347730533.png?v=1 <nowiki>prayer</nowiki>]<nowiki> for curses </nowiki>[https://cdn.discordapp.com/emojis/583429936606347280.png?v=1 <nowiki>turmoil</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/583429936665198592.png?v=1 <nowiki>anguish</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/583429936958930964.png?v=1 <nowiki>torment</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/615613924506599497.png?v=1 <nowiki>soulsplit</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ 99+ Herblore </nowiki>[https://cdn.discordapp.com/emojis/689554435583508558.png?v=1 <nowiki>Herblore</nowiki>]<nowiki> for overloads </nowiki>[https://cdn.discordapp.com/emojis/689554436179361864.png?v=1 <nowiki>ovl</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/648976643687317532.png?v=1 <nowiki>elderovlsalve</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Berserker auras </nowiki>[https://cdn.discordapp.com/emojis/643505116347105290.png?v=1 <nowiki>berserker</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/643505179378974748.png?v=1 <nowiki>reckless</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/643505153709965322.png?v=1 <nowiki>mani</nowiki>]</p>
+<nowiki>
+</nowiki><p><strong><nowiki>As always, feel free to adjust the presets according to what you have available.</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://presets.pvme.io/?id=yk1Gpp9iDn0X0xX21oSQ <nowiki>Magic | Basic DPS / Free</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://presets.pvme.io/?id=SZME3sjYOMDBby7M6LGA <nowiki>Melee | Basic DPS / Free</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://presets.pvme.io/?id=i5WO2DTuiWD1z0BNGMK9 <nowiki>Ranged | Basic DPS / Free</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://presets.pvme.io/?id=0qcPZuWuWeO2UqVkKHy4 <nowiki>Magic | Tank</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​
+</nowiki>[https://firebasestorage.googleapis.com/v0/b/preset-images/o/images%2F0qcPZuWuWeO2UqVkKHy4.png?alt=media <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="standard-preset-notes"><nowiki>Standard Preset Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Prefer a DPS familiar</nowiki></strong><nowiki> like </nowiki>[https://cdn.discordapp.com/emojis/703581275453128714.png?v=1 <nowiki>ripperpouch</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/703581275155464203.png?v=1 <nowiki>ripperscroll</nowiki>]<nowiki> or </nowiki>[https://cdn.discordapp.com/emojis/921410226484301925.png?v=1 <nowiki>kalgpouch</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/841409588954923049.png?v=1 <nowiki>kalgscroll</nowiki>]<nowiki>, but if required, use a Hellhound </nowiki>[https://cdn.discordapp.com/emojis/921410226475925514.png?v=1 <nowiki>hellhoundpouch</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/922417969731088435.png?v=1 <nowiki>hellhoundscroll</nowiki>]<nowiki> or Reaver </nowiki>[https://cdn.discordapp.com/emojis/839903693837959228.png?v=1 <nowiki>reaverpouch</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1022562484378419284.png?v=1 <nowiki>reaverscroll</nowiki>]<nowiki> for better survivability.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• See </nowiki><code><nowiki>!familiar</nowiki></code><nowiki> ‎for more info.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Melee is not very learner-friendly, and without sufficient gear will lack DPS compared to other styles - </nowiki><strong><nowiki>avoid it if you are a learner, or if a low budget.</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ As Melee, The Zaros Godsword spec </nowiki>[https://cdn.discordapp.com/emojis/626465964325601290.png?v=1 <nowiki>zgs</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> can be used on alternate pools when Berserk </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>zerk</nowiki>]<nowiki> is on cooldown to increase DPS.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="tank-preset-notes"><nowiki>Tank Preset Notes</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>This preset is built around survivability</nowiki></strong><nowiki> - the most important thing as a tank is to stay alive - a Reaver </nowiki>[https://cdn.discordapp.com/emojis/839903693837959228.png?v=1 <nowiki>reaverpouch</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1022562484378419284.png?v=1 <nowiki>reaverscroll</nowiki>]<nowiki> autofiring its scrolls with a short delay can be a significant source of sustain.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Remember to use Prism of Restoration </nowiki>[https://cdn.discordapp.com/emojis/938475261366784070.png?v=1 <nowiki>prismofrestoration</nowiki>]<nowiki> to prevent it from dying.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If this is not sufficient, or you have difficulties using it, a BoB </nowiki>[https://cdn.discordapp.com/emojis/1499293961364308059.png?v=1 <nowiki>mammothpouch</nowiki>]<nowiki> can be an alternative.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Raids armour </nowiki>[https://cdn.discordapp.com/emojis/641344704939819028.png?v=1 <nowiki>achtoprimevaltop</nowiki>]<nowiki> defensive resets can make tanking a lot easier</nowiki></strong><nowiki>, alternatively Seasingers </nowiki>[https://cdn.discordapp.com/emojis/1501858060010913792.png?v=1 <nowiki>supseasingersrobetop</nowiki>]<nowiki>, Ganodermic </nowiki>[https://cdn.discordapp.com/emojis/1003947805611655208.png?v=1 <nowiki>ganobody</nowiki>]<nowiki> etc. will also benefit from using Animate Dead </nowiki>[https://cdn.discordapp.com/emojis/856635090453135382.png?v=1 <nowiki>animatedead</nowiki>]<nowiki> if not owned.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Once you are more comfortable tanking, you can switch to power armour and reduce/avoid shield-camping.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="fight-overview"><ins><nowiki>Fight Overview</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>⬥ Yakamaru is the second boss in Liberation of Mazcab raid, fought after Beastmaster Durzag is killed, and the puzzle section afterwards is completed.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>The loot lock can be reset every 2 days at reset (00:00 UTC)</nowiki></strong><nowiki>, but the boss can be fought more often for KC.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• This gives no loot, but </nowiki><em><nowiki>does</nowiki></em><nowiki> give chance at pet drops.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Yakamaru fight takes place at the Mazcab beach, where there are 5 pools located.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The arena looks like the following:</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/A9OBq6m.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>The fight consists of two phases</nowiki></strong><nowiki>:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Pools phase</nowiki></strong><nowiki> - Yakamaru jumps between different pools using different mechanics and must be killed in each one.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Mirage phase</nowiki></strong><nowiki> - After killing it once in each pool, Yakamaru spawns in all pools simultaneously and must be killed in all the pools and 'closed' permanently, to finish the fight.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ During the pools phase, there will be a special mechanic for each pool - this is covered in the </nowiki><ins><strong><nowiki>Pool Mechanics</nowiki></strong></ins><nowiki> section.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Yakamaru attacks with auto attacks (Ranged if out of MD, Magic if in MD) and special attacks.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The default attack cycle uses a number of auto attacks followed by a special attack, and then repeats.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The number of autos varies from pool to pool.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><em><nowiki>The attack cycle starts at a random point in the cycle</nowiki></em><nowiki> (i.e. Yakamaru could begin with a spec, and then continue from there.)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="roles-at-yakamaru"><ins><nowiki>Roles at Yakamaru</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>As it is a group fight, a number of players are assigned roles to make the encounter smoother and faster. Here we cover what they are and their basic responsibilities.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-yakamaruroles"><u><nowiki>Yakamaru Roles</nowiki></u><nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>The following roles may be assigned to players at Yakamaru.
+Players without a dedicated role are just DPSers.
+Roles are roughly sorted by difficulty, for new players.
+</nowiki></div>
+<nowiki>
+</nowiki><div><div><div><u><nowiki>Easy Roles</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ CPR
+⬥ Stun 0 (ST0)
+</nowiki></div>
+</div>
+<div><div><u><nowiki>Medium Roles</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ Jelly Wrangler (JW)
+⬥ Stun 5 (ST5)
+⬥ Poison Tank (PT)
+⬥ Double
+</nowiki></div>
+</div>
+<div><div><u><nowiki>Advanced Roles</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ Base Tank
+⬥ North Tank (NT)
+⬥ Shark 10 (SH10)
+⬥ Main Stun (MS)
+</nowiki></div>
+</div>
+</div>
+<nowiki>
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><em><strong><nowiki>Note</nowiki></strong><nowiki>: A single player can have more than 1 role, depending on what roles they take.</nowiki></em></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="base-tank-base"><nowiki>Base Tank / Base</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Primary tasks</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Tank Yakamaru during each pool until Mirage phase.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Tank Tendrils pool during Mirage phase until it is dead.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Other tasks</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Avoid standing near other players, allow them to flank the boss.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><em><nowiki>Do not die</nowiki></em><nowiki> - prioritise staying alive even at the expense of DPS.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Notable info</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Yakamaru's enrage mechanic affects the base - they will take the most damage during the fight.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• This role can help do more DPS on faster teams, or go full tank/shield camp route. This depends on the player and expected killtimes for the team. </nowiki><em><nowiki>If in doubt - focus on surviving.</nowiki></em></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="poison-tank-pt"><nowiki>Poison Tank / PT</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Primary tasks</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Stand on the correct tile and absorb the poison that Yakamaru spawns after each pool reaches 100k HP left.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Move into MD of Yakamaru after absorbing poison, then help defeat the pool.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Notable info</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The tile the poison will land on looks is indicated by </nowiki><em><nowiki>green arrows</nowiki></em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• There is no poison to absorb during Mirage phase - only during the first phase with the 4 pools.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Bladed Dive </nowiki>[https://cdn.discordapp.com/emojis/535532854281764884.png?v=1 <nowiki>bd</nowiki>]<nowiki> helps get to the poison ASAP, and Barge </nowiki>[https://cdn.discordapp.com/emojis/535532853916860437.png?v=1 <nowiki>barge</nowiki>]<nowiki> can be used to get into MD quickly and consistently.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Teams will typically assign a </nowiki><em><nowiki>Double</nowiki></em><nowiki> role - if the first pool is </nowiki><em><nowiki>not</nowiki></em><nowiki> Stun pool, then the Double will absorb the poison required for stun pool </nowiki><em><nowiki>during the sand pool's poison</nowiki></em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ This is to save time and lower chances of failing poison on Stun pool as it can die very quickly.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ If this happens, the Poison Tank only ends up absorbing 3 sets of poison instead of 4.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• After a successful pool, the PT will be washed up on the beach near the south. </nowiki><em><nowiki>The CPR role is expected to revive the player in time</nowiki></em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="north-tank-nt"><nowiki>North Tank / NT</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Primary tasks</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Tank Sand pool (and also usually Stun pool) during Mirage phase until the other 3 pools are dead.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Stand </nowiki><em><nowiki>north</nowiki></em><nowiki> of the pool when tanking it.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ To aggro both pools: tag Sand pool, then use </nowiki>[https://cdn.discordapp.com/emojis/535541259465392143.png?v=1 <nowiki>voke</nowiki>]<nowiki> on Stun pool.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Notable info</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><em><nowiki>Sand pool is almost always the last to die during Mirage phase</nowiki></em><nowiki> - on slower teams, this can be a tank test. Use defensives if you have to.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Jellies may spawn while tanking the pool - dodge them and let the Jelly Wrangler handle them, or freeze/stun them and move away.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="cpr"><nowiki>CPR</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Primary tasks</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Click on the washed-up player on the beach after each pool to prevent them being instakilled.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Notable info</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Once Mirage phase starts, there are no more players to revive.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="double"><nowiki>Double</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Primary tasks</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Absorb poison on the Sand pool and take the place of the Poison Tank during Stun pool instead.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ The Double will stand on the same tile as the Poison Tank during the Sand pool to do this.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Notable info</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><em><nowiki>Stand in MD of the Stun pool the entire time</nowiki></em><nowiki>. This is because the Stun pool dies very quickly.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If Stun pool is the first pool, this role has no responsibilities.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Be sure to bring extra food to compensate for the extra damage taken, </nowiki><em><nowiki>especially on slower teams</nowiki></em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="main-stun"><nowiki>Main Stun</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Primary tasks</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Stun Yakamaru </nowiki><em><nowiki>at the appropriate time</nowiki></em><nowiki> during the Stun pool, when his damage reduction is too high.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Notable info</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Do NOT accidentally kill the team by stunning too early or multiple times.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• A correctly timed stun will only deal 1000 damage to all players, which can rise up to 5000 damage if stunned too early (stun when Yakamaru's health begins to drop very slowly).</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• It is preferred to use non-channeled abilities to stun.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• On newer/inexperienced teams, a warning that you are about to stun may let players eat up before stunning.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="stun-0-st0"><nowiki>Stun 0 / ST0</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Primary tasks</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• On Mirage phase, help kill the Stun pool first </nowiki><em><nowiki>ASAP</nowiki></em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Then help kill the other pools in order (Shark &gt; Tendrils &gt; Sand).</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Notable info</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• This role may not always be assigned, especially on more experienced teams where two Stun 5 roles are sufficient.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If a Stun 5 role dies, you can easily take their place.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><em><nowiki>Do not randomly use stuns during Mirage phase</nowiki></em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="stun-5-st5"><nowiki>Stun 5 / ST5</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Primary tasks</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Kill the Stun pool </nowiki><em><nowiki>ASAP</nowiki></em><nowiki> after Mirage phase starts and use </nowiki><em><nowiki>5 planks</nowiki></em><nowiki> on it by clicking on the pool.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Then help kill the other pools in order (Shark &gt; Tendrils &gt; Sand).</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Notable info</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><em><nowiki>Use your strongest abilities to burst the pool down</nowiki></em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Pick up your planks </nowiki><em><nowiki>before</nowiki></em><nowiki> Mirage phase starts to make it easier and prevent issues.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><em><nowiki>Do not randomly use stuns during Mirage phase</nowiki></em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The pool only needs to be tanked for a short amount of time as it dies quickly.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="shark-10-sh10"><nowiki>Shark 10 / SH10</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Primary tasks</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Tank the Shark pool during Mirage phase, and use </nowiki><em><nowiki>10 planks</nowiki></em><nowiki> on it by clicking the pool after it dies.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Notable info</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Stand behind the Shark pool to prevent other players from getting enrage stacks.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Pick up your planks </nowiki><em><nowiki>before</nowiki></em><nowiki> Mirage phase starts to make it easier and prevent issues (area loot can help).</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><em><nowiki>If inventory space is an issue, ask another player to help with planks when assigning roles</nowiki></em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Be sure to bring extra food to compensate for the extra damage taken, </nowiki><em><nowiki>especially on slower teams</nowiki></em><nowiki>. Defensives </nowiki>[https://cdn.discordapp.com/emojis/513190158728953857.png?v=1 <nowiki>devo</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535541258844635148.png?v=1 <nowiki>res</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535541258786177064.png?v=1 <nowiki>reflect</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> are useful to mitigate damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Setting up an Ultimate ability </nowiki>[https://cdn.discordapp.com/emojis/994921119381463070.png?v=1 <nowiki>sunshine</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>zerk</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/994921434633744455.png?v=1 <nowiki>deathsswift</nowiki>]<nowiki> before Mirage phase starts can help make this a lot quicker.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="jelly-wrangler-jw"><nowiki>Jelly Wrangler / JW</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Primary tasks</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><em><nowiki>Quickly</nowiki></em><nowiki> tag and aggro all Jellyfish spawned during Mirage phase and keep them away from other players.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Keep Jellyfish alive after tagging them.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Notable info</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><em><nowiki>Yakamaru will not attack the Jelly Wrangler if they are attacking Jellies, so praying against Melee </nowiki>[https://cdn.discordapp.com/emojis/544195488447201300.png?v=1 <nowiki>DeflectMelee</nowiki>]<nowiki> works</nowiki></em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• A maximum of 10 Jellyfish may be alive at once, so avoid killing them.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If JW moves too far away, Jellies will lose aggro, so be careful with </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535541258832052231.png?v=1 <nowiki>escape</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Use of Ice Barrage </nowiki>[https://cdn.discordapp.com/emojis/537340400185245701.png?v=1 <nowiki>icebarrage</nowiki>]<nowiki> or Entangle </nowiki>[https://cdn.discordapp.com/emojis/567727987274022924.png?v=1 <nowiki>ent</nowiki>]<nowiki> can help, as well as the Provoke </nowiki>[https://cdn.discordapp.com/emojis/535541259465392143.png?v=1 <nowiki>voke</nowiki>]<nowiki> ability to gain aggro.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Keep moving around to avoid being surrounded by jellies. Defensives </nowiki>[https://cdn.discordapp.com/emojis/513190158728953857.png?v=1 <nowiki>devo</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535541258786177064.png?v=1 <nowiki>reflect</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> are useful to mitigate damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="auto-attacks"><ins><nowiki>Auto-attacks</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>⬥ Yakamaru uses </nowiki><strong><nowiki>AoE auto attacks</nowiki></strong><nowiki>, and the attack style changes based on location:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Within halberd range (≤2 tiles)</nowiki></strong><nowiki>: Magic attacks</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Outside halberd range (≥3 tiles)</nowiki></strong><nowiki>: Ranged attacks</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Yakamaru has </nowiki><strong><nowiki>100% hitchance on all auto attacks.</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Attacks that 'miss' deal 50% damage instead.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Each auto-attack on the primary target (base) applies 1 enrage stack ('Drenched' debuff)</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• This also applies to any player within 7 tiles of the base.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Each stack increases damage taken by +20% additively.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Using Freedom </nowiki>[https://cdn.discordapp.com/emojis/535541258240786434.png?v=1 <nowiki>freedom</nowiki>]<nowiki> halves the number of stacks.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="jellyfish"><ins><nowiki>Jellyfish</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Yakamaru spawns Jellyfish of different colours during the fight</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ There are 6 different types of Jellyfish:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Normal/Orange</nowiki></strong><nowiki>: deals melee damage and spawns as part of Yakamaru's 'Jellyfish Spawn' special attack (see </nowiki><ins><strong><nowiki>Special Attacks</nowiki></strong></ins><nowiki>).</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Durable</nowiki></strong><nowiki>: heals other nearby Jellies and Yakamaru while alive.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Magical</nowiki></strong><nowiki>: deals Magic damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Meleefish</nowiki></strong><nowiki>: deals Melee damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Piercing</nowiki></strong><nowiki>: deals Ranged damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Reflecting</nowiki></strong><nowiki>: causes all other Jellies to take less damage, and reflect damage taken onto players - these will die on their own.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Except before Sand Pool and Mirage, first phase Yakamaru in the center pool, </nowiki><em><nowiki>then</nowiki></em><nowiki> kill the colourful jellies.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="special-attacks"><ins><nowiki>Special Attacks</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>The following 2 special attacks are generic and common to all pools.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Pool-specific special attacks are covered in the </nowiki><ins><strong><nowiki>Pool Mechanics</nowiki></strong></ins><nowiki> section.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="jellyfish-spawn"><nowiki>Jellyfish Spawn</nowiki></h3>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/qdrWMC0.gif <nowiki>Guide illustration</nowiki>]<nowiki>
+⬥ Yakamaru spawns one orange jellyfish and 5 'cracks' on the floor.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>The jellyfish should be killed ASAP</nowiki></strong><nowiki> as it deals high AoE melee damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Standing on the cracks will shortly deal 10000 damage to the jellyfish, but also deal 1500-2000 Magic damage to the player.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Defensives </nowiki>[https://cdn.discordapp.com/emojis/535541258844635148.png?v=1 <nowiki>res</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535614336207552523.png?v=1 <nowiki>disrupt</nowiki>]<nowiki> will mitigate this.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Stuns/binds (like </nowiki>[https://cdn.discordapp.com/emojis/537340400185245701.png?v=1 <nowiki>icebarrage</nowiki>]<nowiki>) are useful here.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="blue"><nowiki>Blue</nowiki></h3>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/Ncu3Fpt.gif <nowiki>Guide illustration</nowiki>]<nowiki>
+⬥ This attack is typically referred to as '</nowiki><strong><nowiki>blue</nowiki></strong><nowiki>'.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ A random player will be turned blue (similar to the Metamorphosis </nowiki>[https://cdn.discordapp.com/emojis/535533811304497183.png?v=1 <nowiki>meta</nowiki>]<nowiki> ability) and take up to </nowiki><strong><nowiki>4 increasing typeless damage hits</nowiki></strong><nowiki> (1500 → 2500 → 3500 → 4500).</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Standing next to someone else will pass the effect to them with no damage taken.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Passing it to other players is the recommended way of dealing with it.</nowiki></strong><nowiki> Otherwise, just spam eat.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><em><nowiki>Note: If this occurs during mirage phase, it will deal a </nowiki></em><em><nowiki>single hit of 2000 damage</nowiki></em><em><nowiki>, so avoid panicking and running around should it occur to you.</nowiki></em></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="pool-mechanics"><ins><nowiki>Pool Mechanics</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>Here we go over what each pool at Yakamaru does and how to deal with them. Then we cover the actual fight in the </nowiki><ins><strong><nowiki>Fight Phases</nowiki></strong></ins><nowiki> section.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="tendrils-pool-south-most"><nowiki>Tendrils Pool (south-most)</nowiki></h3>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/l1etI6A.gif <nowiki>Guide illustration</nowiki>]<nowiki>
+⬥ Yakamaru gains access to </nowiki><strong><nowiki>two new special attacks</nowiki></strong><nowiki> (both used at the same time):</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Choking Tendrils</nowiki></strong><nowiki>: Yakamaru chokes top 5 DPS, dealing increasing damage per tick. </nowiki><em><nowiki>Players must free themselves by doing damage.</nowiki></em></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Damage Tendrils</nowiki></strong><nowiki>: Summons a large pile of tendrils on Yakamaru's current target that hit 2000 damage per tick for several ticks. Players should move away or use Barricade </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> / Immort </nowiki>[https://cdn.discordapp.com/emojis/535541258538582017.png?v=1 <nowiki>immort</nowiki>]<nowiki> to deal with it.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Attack cycle for this pool is as follows</nowiki></strong><nowiki>:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• 4 autos → Jellyfish → 4 autos → Blue → 4 autos → Tendrils → repeat</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Let the base tag the pool first</nowiki></strong><nowiki> - prevents the Damage Tendrils randomly spawning on the DPS pile.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ If poison tank gets choked when poison spawns.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Someone else can get it.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ This pool is relatively straightforward - </nowiki><strong><nowiki>just avoid the tendrils</nowiki></strong><nowiki> and it'll go smoothly.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="shark-pool-south-west"><nowiki>Shark Pool (south-west)</nowiki></h3>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/RaWF56G.gif <nowiki>Guide illustration</nowiki>]<nowiki>
+⬥ Yakamaru gains access to </nowiki><strong><nowiki>one new special attack</nowiki></strong><nowiki>:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Sharknado</nowiki></strong><nowiki>: Yakamaru spins in a whirlpool and throws out sharks on the floor randomly, which explode for 2k damage </nowiki><em><nowiki>each</nowiki></em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Attack cycle for this pool is as follows</nowiki></strong><nowiki>:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• 4 autos → Jellyfish → 4 autos → Blue → 4 autos → Sharknado → repeat</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Sharks can be clicked to kick them away, or simply move away from them.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>The sharks spawned are blocking</nowiki></strong><nowiki> - be careful of getting stuck!</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The poison tank should be careful and use Barricade </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> if necessary, if Sharknado occurs during the last 100k HP.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• This can also be helpful when basing or getting hit by multiple sharks.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Note that sharks will follow the player while being thrown out - </nowiki><strong><nowiki>move away from the sharks </nowiki><ins><nowiki>after</nowiki></ins><nowiki> they have landed</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ A Jellyfish will spawn</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ This pool is relatively straightforward - just avoid the shark spawns and it'll go smoothly.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="sand-pool-north-west"><nowiki>Sand Pool **(north-west)</nowiki></h3>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/NzqhNcQ.gif <nowiki>Guide illustration</nowiki>]<nowiki>
+⬥ Yakamaru gains access to </nowiki><strong><nowiki>one new special attack</nowiki></strong><nowiki>:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Sand</nowiki></strong><nowiki>: All but 1-2 players are 'sanded'/stuck and cannot move. Players not stuck must rescue others by </nowiki><strong><nowiki>clicking on them</nowiki></strong><nowiki>. If not freed in time, they are instakilled.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Attack cycle for this pool is as follows</nowiki></strong><nowiki>:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• 4 autos → Blue → 4 autos → Jelly → 4 autos → Sand → repeat</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Players </nowiki><strong><nowiki>can</nowiki></strong><nowiki> continue to eat, attack targets, etc. while sanded, but cannot move.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ If Yakamaru is about to sand, </nowiki><em><nowiki>delay phasing it to 100k HP</nowiki></em><nowiki> to ensure the Poison Tank does not get stuck and miss poison.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ One person should go and free the base ASAP as they are usually stuck further away.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ As long as players don't panic, and click on each other to be freed, this pool can be finished quickly. </nowiki><strong><nowiki>Just don't miss the poison.</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="stun-pool-north-most"><nowiki>Stun Pool (north-most)</nowiki></h3>
+<nowiki>
+</nowiki><p><em><nowiki>Note: If using Revo/Revo++, remove all stuns from your bar!</nowiki></em></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/wPhGTHF.gif <nowiki>Guide illustration</nowiki>]<nowiki>
+⬥ Yakamaru gains access to </nowiki><strong><nowiki>two new mechanics</nowiki></strong><nowiki>:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Defence Gain</nowiki></strong><nowiki>: Yakamaru takes reduced damage as players continue to attack him. This must be reset by stunning him.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Stun Reflect Damage</nowiki></strong><nowiki>: When Yakamaru is stunned, he reflects 1000-5000 typeless damage to </nowiki><em><nowiki>all</nowiki></em><nowiki> players on the team.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Attack cycle for this pool is as follows</nowiki></strong><nowiki>:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• 6 autos → Blue → 7 autos → Jelly → repeat</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The damage from stunning The higher his damage reduction, the less the reflected damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>In other words, don't stun him more than once quickly</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Multi-hit abilities like Asphyxiate </nowiki>[https://cdn.discordapp.com/emojis/535533833072672778.png?v=1 <nowiki>asphyx</nowiki>]<nowiki> / Destroy </nowiki>[https://cdn.discordapp.com/emojis/535532879330148352.png?v=1 <nowiki>destroy</nowiki>]<nowiki> will almost certainly wipe your team.</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Damage ranges from 1000 (lowest) to 5000 (highest).</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Yakamaru takes increased damage this pool, and poison can be easily missed.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Assigning a Double to take double poison on Sand pool is </nowiki><em><nowiki>strongly</nowiki></em><nowiki> recommended.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>The following count as stuns</nowiki></strong><nowiki>:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Impact </nowiki>[https://cdn.discordapp.com/emojis/535533809655873556.png?v=1 <nowiki>impact</nowiki>]<nowiki> / Deep Impact </nowiki>[https://cdn.discordapp.com/emojis/535533833139912724.png?v=1 <nowiki>deep</nowiki>]<nowiki> / Asphyxiate </nowiki>[https://cdn.discordapp.com/emojis/535533833072672778.png?v=1 <nowiki>asphyx</nowiki>]<nowiki> / Shock </nowiki>[https://cdn.discordapp.com/emojis/535533809932697610.png?v=1 <nowiki>shock</nowiki>]<nowiki> / Horror </nowiki>[https://cdn.discordapp.com/emojis/535533833261547520.png?v=1 <nowiki>horror</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Binding Shot </nowiki>[https://cdn.discordapp.com/emojis/535541306563231790.png?v=1 <nowiki>bindingshot</nowiki>]<nowiki> / Tight Bindings </nowiki>[https://cdn.discordapp.com/emojis/535541275957657600.png?v=1 <nowiki>tight</nowiki>]<nowiki> / Rout </nowiki>[https://cdn.discordapp.com/emojis/535541259268521994.png?v=1 <nowiki>rout</nowiki>]<nowiki> / Demoralise </nowiki>[https://cdn.discordapp.com/emojis/535541258559553546.png?v=1 <nowiki>demoralise</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Backhand </nowiki>[https://cdn.discordapp.com/emojis/535532854302605333.png?v=1 <nowiki>backhand</nowiki>]<nowiki> / F. Backhand </nowiki>[https://cdn.discordapp.com/emojis/535532879346794516.png?v=1 <nowiki>fbackhand</nowiki>]<nowiki> / Destroy </nowiki>[https://cdn.discordapp.com/emojis/535532879330148352.png?v=1 <nowiki>destroy</nowiki>]<nowiki> / Stomp </nowiki>[https://cdn.discordapp.com/emojis/535532879552315412.png?v=1 <nowiki>stomp</nowiki>]<nowiki> / Kick </nowiki>[https://cdn.discordapp.com/emojis/535532879132885025.png?v=1 <nowiki>kick</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>The following do </nowiki><ins><nowiki>not</nowiki></ins><nowiki> count as stuns:</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Rapid Fire </nowiki>[https://cdn.discordapp.com/emojis/535541270521708566.png?v=1 <nowiki>rapid</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• (Greater) Barge </nowiki>[https://cdn.discordapp.com/emojis/535532879250456578.png?v=1 <nowiki>gbarge</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535532853916860437.png?v=1 <nowiki>barge</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Ice Spells </nowiki>[https://cdn.discordapp.com/emojis/537340400185245701.png?v=1 <nowiki>icebarrage</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Dreadnips </nowiki>[https://cdn.discordapp.com/emojis/537336877900890135.png?v=1 <nowiki>nip</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Dominion Gloves </nowiki>[https://cdn.discordapp.com/emojis/643214402169864213.png?v=1 <nowiki>spellcaster</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1030084069939232778.png?v=1 <nowiki>goliathgloves</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1023132419597008906.png?v=1 <nowiki>swiftgloves</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="fight-phases"><ins><nowiki>Fight Phases</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>In this section we go over how the fight flows, general recommendations/rotations for DPS, and so on. It is broadly broken up into </nowiki><strong><nowiki>two phases</nowiki></strong><nowiki>: pools phase (i.e. before mirage) and mirage phase.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="phase-1-pools"><nowiki>Phase 1 - Pools</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Start the fight. Yakamaru will start in the middle pool.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Reduce Yakamaru's health in the center pool to 800k using thresholds, making him randomly choose the first pool to jump to.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Fight Yakamaru in the new pool and reduce his health to 100k</nowiki></strong><nowiki>:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If your ultimate </nowiki>[https://cdn.discordapp.com/emojis/994921119381463070.png?v=1 <nowiki>sunshine</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>zerk</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/994921434633744455.png?v=1 <nowiki>deathsswift</nowiki>]<nowiki> is available you can use it, assuming you're not saving it for anything else.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If cannot ult (due to cooldown or adren issues), use thresholds/strong specs to help phase.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• When he does special attacks, or spawns jellies, deal with them if needed before attacking Yakamaru again.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>At 100k health left, Yakamaru spawns a 'poison' that a player must absorb and then stand in MD of Yakamaru</nowiki></strong><nowiki>, then players will finish off Yakamaru to 0 HP.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><em><nowiki>If this is missed, the pool will not advance</nowiki></em><nowiki> and must be re-completed.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Yakamaru will jump back to the middle pool. </nowiki><strong><nowiki>Phase the middle pool (200k damage) while Yakamaru is still green</nowiki></strong><nowiki>, </nowiki><em><nowiki>then</nowiki></em><nowiki> focus on Jellies.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Place dominion mines if you brought them at this point to help with the Jellies.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The following image shows where roughly where to stand during pools:</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/HCiIUtO.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Repeat the above process until all 4 pools have been dealt with.</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The first pool is random, but after that it is always in the following order:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Sand Pool → Stun Pool</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Stun Pool → Tendrils Pool</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Tendrils Pool → Shark Pool</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Shark Pool → Sand Pool</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="phase-2-mirage"><nowiki>Phase 2 - Mirage</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ This is a </nowiki><em><nowiki>fast-paced phase</nowiki></em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ After Yakamaru returns to the middle after the 4th pool, </nowiki><strong><nowiki>prepare for mirage phase</nowiki></strong><nowiki>:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Stun 5 and Shark 10 roles should pick up their planks.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Poison tank should be revived.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Base and Northtank should get ready to tank their pools.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• On less experienced teams: kill all remaining Jellies.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Begin by reducing Yakamaru's health in the middle pool to 50k HP</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• All 4 pools will again simultaneously spawn with 150k HP each.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• They must all be killed and the </nowiki><em><nowiki>pools must be closed by spam clicking the pools after clearing them</nowiki></em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>At this point, the Jelly Wrangler begins tagging and provoking jellies off the rest of the team.</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The following image shows where to stand when mirage starts:</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/KWDTNoa.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Usual kill order for pools is: </nowiki><strong><nowiki>Stun → Shark → Tendrils → Sand</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Base Tank</nowiki></strong><nowiki>: voke Tendrils pool and run south and tank the pool until it is dead and help close it, then follow along with the DPSers</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Stun 0/Stun 5</nowiki></strong><nowiki>: use strong thresholds/special attacks to kill the pool quickly and close with 10 planks, then help DPSers after it is closed.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>North Tank</nowiki></strong><nowiki>: voke Sand pool and run </nowiki><em><nowiki>north</nowiki></em><nowiki>, and tank the pool until the other pools are dead and team comes to help kill and close pool.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Shark 10</nowiki></strong><nowiki>: voke Shark pool and stay away from DPS; use your ultimate as mirage starts to help make the process quicker, and join the DPSers after it is closed.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>All other players</nowiki></strong><nowiki>:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Use your ultimates (if available) before mirage starts and help kill and close Tendrils pool.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Then finish off Shark pool (ultimate should still be up) and move to Sand pool.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Kill Sand pool and help close it.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Finally Yakamaru will respawn with 50k HP in the middle pool, and can be killed to finish the fight.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="general-tips-for-mirage-phase"><nowiki>General Tips for Mirage Phase</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>DPSers (i.e. players with no other roles) should try to drop their ultimate </nowiki>[https://cdn.discordapp.com/emojis/994921119381463070.png?v=1 <nowiki>sunshine</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>zerk</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/994921434633744455.png?v=1 <nowiki>deathsswift</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/736298121704767538.png?v=1 <nowiki>adrenrenewal</nowiki>]<nowiki> as the phase starts</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Ideally near </nowiki><em><nowiki>both</nowiki></em><nowiki> the Tendrils and Shark pools.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• This lets them attack both pools from their ultimate.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Players focused on tanking a pool should make use of Resonance </nowiki>[https://cdn.discordapp.com/emojis/535541258844635148.png?v=1 <nowiki>res</nowiki>]<nowiki>, Debilitate </nowiki>[https://cdn.discordapp.com/emojis/535541278264393729.png?v=1 <nowiki>debil</nowiki>]<nowiki>, Freedom </nowiki>[https://cdn.discordapp.com/emojis/535541258240786434.png?v=1 <nowiki>freedom</nowiki>]<nowiki> and Devotion </nowiki>[https://cdn.discordapp.com/emojis/513190158728953857.png?v=1 <nowiki>devo</nowiki>]<nowiki> to help reduce incoming damage.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><em><nowiki>Except the North tank</nowiki></em><nowiki>, prefer to avoid camping shields and focus on damage.</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Faster phase → less mechanics → easier kill.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Ignore Jellies - let the Jelly Wrangler focus on them</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Tips for Jelly Wranglers:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Keep Camera zoomed out and pay attention to other players.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Use of binding spells </nowiki>[https://cdn.discordapp.com/emojis/537340400185245701.png?v=1 <nowiki>icebarrage</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/567727987274022924.png?v=1 <nowiki>ent</nowiki>]<nowiki> can be helpful as well as the </nowiki>[https://cdn.discordapp.com/emojis/535541259465392143.png?v=1 <nowiki>voke</nowiki>]<nowiki> ability.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Keep the Jellies away from other players - going east of the middle pool after aggro'ing all jellies is a good option.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="learning-raids"><ins><nowiki>Learning Raids</nowiki></ins></h2>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-learningraids"><u><nowiki>Learning Raids</nowiki></u><nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>If you're interested in learning raids, join one of the teaching servers listed in </nowiki>[https://discord.com/channels/534508796639182860/944775418844688464 <nowiki>Affiliates (external Discord)</nowiki>]<nowiki>!
+</nowiki></div>
+<nowiki>
+</nowiki><div><div><div><u><nowiki>Discord Servers</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ </nowiki>[https://discord.gg/88ru2vd <nowiki>Boss School (external Discord)</nowiki>]<nowiki>
+⬥ </nowiki>[https://discord.gg/egQBwuM <nowiki>Mazcab Academy (external Discord)</nowiki>]<nowiki>
+⬥ </nowiki>[https://discord.gg/vfXXTBE <nowiki>Raids School (external Discord)</nowiki>]<nowiki>
+</nowiki></div>
+</div>
+</div>
+<nowiki>
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="example-kills"><ins><nowiki>Example Kills</nowiki></ins></h2>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-examplekills"><u><nowiki>Example Kills</nowiki></u><nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>Some example kills to compare and improve your own kills with.
+</nowiki></div>
+<nowiki>
+</nowiki><div><div><div><u><nowiki>Ranged</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/580168050121113623.png?v=1 <nowiki>range</nowiki>]<nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ </nowiki>[https://www.youtube.com/watch?v=jOvHWU8Q_hE <nowiki>DPS Role</nowiki>]<nowiki>
+</nowiki></div>
+</div>
+</div>
+<nowiki>
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+      
+    </nowiki>
+== Attribution and source history ==
+Adapted from [https://pvme.io/pvme-guides/rs3-full-boss-guides/yakamaru/ <nowiki>Yakamaru</nowiki>] by PvME contributors. [https://github.com/pvme/pvme-guides/commits/master/rs3-full-boss-guides/yakamaru.txt Upstream source history]. Licensed [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]. Snapshot 074a9438f79d10fba75735791be0030734db8b5e. Formatting adapted for standalone MediaWiki; media and third-party references remain external links.

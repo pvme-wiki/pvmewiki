@@ -1,0 +1,428 @@
+[[PvME|PvME guide index]]
+
+<span id="hardmode-zuk-melee-ranged"></span><p>[https://img.pvme.io/images/zURz0KcXrt.png <nowiki>Guide illustration</nowiki>]<nowiki>
+​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="introduction-and-preface"><ins><nowiki>Introduction and preface</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>This guide is targeted towards players with a strong understanding of the encounter, players attempting hardmode Zuk for the first time should read </nowiki>[[PvME/TzKal-Zuk/Tzkal Zuk Overview|<nowiki>Tzkal Zuk Basic</nowiki>]]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Time save breakdown:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Players should focus on wave clear and try to follow this guide as best as possible.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Note that movements are specific for certain waves, and </nowiki><strong><nowiki>stepping on the wrong tiles may lead to failed lures</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>As such, it is strongly recommended to follow the guide alongside the video examples. The rotations are constructed to allow for continuous usage. If followed correctly, players should not lose ticks between abilities unless otherwise stated.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="presets-and-relics"><ins><nowiki>Presets and Relics</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://presets.pvme.io/?id=b6bbf927-136b-4b7d-8045-2c785fa55f01 <nowiki>Melee/Ranged</nowiki>]<nowiki>
+</nowiki>[https://firebasestorage.googleapis.com/v0/b/preset-images/o/images%2Fb6bbf927-136b-4b7d-8045-2c785fa55f01.png?alt=media <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Preset Notes</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Powder at bank </nowiki>[https://cdn.discordapp.com/emojis/928221126360969226.png?v=1 <nowiki>powderofpenance</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/933079947419983912.png?v=1 <nowiki>powderofprotection</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/745279787471470713.png?v=1 <nowiki>eof</nowiki>]<nowiki> w/ </nowiki>[https://cdn.discordapp.com/emojis/615618531937222657.png?v=1 <nowiki>ecb</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/643848618477879328.png?v=1 <nowiki>decimation</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/626466665848242186.png?v=1 <nowiki>sgb</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1446178203608809472.png?v=1 <nowiki>gloomfirebow</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1048592040507744257.png?v=1 <nowiki>dragon2hsword</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1448697873603498045.png?v=1 <nowiki>varanussmercy</nowiki>]<nowiki> (</nowiki>[https://cdn.discordapp.com/emojis/779048041088024606.png?v=1 <nowiki>dragonclaw</nowiki>]<nowiki> if </nowiki>[https://cdn.discordapp.com/emojis/1005205003893485638.png?v=1 <nowiki>equilibrium</nowiki>]<nowiki>)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/902209626450296892.png?v=1 <nowiki>pernixsquiver</nowiki>]<nowiki> w/ </nowiki>[https://cdn.discordapp.com/emojis/971025696958853180.png?v=1 <nowiki>fularrow</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/900758234527301642.png?v=1 <nowiki>deathsporearrows</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/1390439139400224849.png?v=1 <nowiki>graspingpouch</nowiki>]<nowiki> w/ runes for </nowiki>[https://cdn.discordapp.com/emojis/535614336207552523.png?v=1 <nowiki>disrupt</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/856635090641879050.png?v=1 <nowiki>smokecloud</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="the-fight"><nowiki>The Fight</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Waves are generally broken down into alternating between melee and ranged unless otherwise specified, using melee for all igneous + challenge waves and ranged for all jad waves</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Wars: (optional </nowiki>[https://cdn.discordapp.com/emojis/603979368850653216.png?v=1 <nowiki>dba</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki>) → s</nowiki>[https://cdn.discordapp.com/emojis/903244090953588787.png?v=1 <nowiki>ezk</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="wave-1"><nowiki>Wave 1</nowiki></h3>
+<nowiki>
+</nowiki><p><strong><nowiki>General pointers</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Apply </nowiki>[https://cdn.discordapp.com/emojis/903244090953588787.png?v=1 <nowiki>ezk</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> to </nowiki>[https://cdn.discordapp.com/emojis/931175752651653121.png?v=1 <nowiki>tzkalzuk</nowiki>]<nowiki>, use </nowiki>[https://cdn.discordapp.com/emojis/1478070401702821938.png?v=1 <nowiki>meteorstrike</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> as TzekHaar-Hurs are clumping up, then </nowiki>[https://cdn.discordapp.com/emojis/1400511651014250596.png?v=1 <nowiki>tumekenslight</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> to finish</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Aim to clear through wave 2 with </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]</p>
+<nowiki>
+</nowiki><p><strong><nowiki>Specific rotations</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (1) Zuk: </nowiki>[https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1 <nowiki>dive</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/903244090953588787.png?v=1 <nowiki>ezk</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ West Hur: </nowiki>[https://cdn.discordapp.com/emojis/535541258240786434.png?v=1 <nowiki>freedom</nowiki>]<nowiki> → s</nowiki>[https://cdn.discordapp.com/emojis/1478070401702821938.png?v=1 <nowiki>meteorstrike</nowiki>]<nowiki> → r</nowiki>[https://cdn.discordapp.com/emojis/1478070401702821938.png?v=1 <nowiki>meteorstrike</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/1478062906057949417.png?v=1 <nowiki>adaptivestrike</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (2) All Hurs: </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> + wait 2 ticks → </nowiki>[https://cdn.discordapp.com/emojis/535532879250456578.png?v=1 <nowiki>gbarge</nowiki>]<nowiki> → target </nowiki>[https://cdn.discordapp.com/emojis/931175752651653121.png?v=1 <nowiki>tzkalzuk</nowiki>]<nowiki> + far-cast </nowiki>[https://cdn.discordapp.com/emojis/535532879283879977.png?v=1 <nowiki>gflurry</nowiki>]<nowiki> → target Hur + </nowiki>[https://cdn.discordapp.com/emojis/1400511651014250596.png?v=1 <nowiki>tumekenslight</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (3) South Kihs: </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/535532878969438210.png?v=1 <nowiki>cane</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/RtUs5sm00f.png <nowiki>Guide illustration</nowiki>]<nowiki>
+</nowiki><em><nowiki>Note: Provided diagrams only cover the most important abilities and movements, some amount of improvisation may be required in general</nowiki></em></p>
+<nowiki>
+</nowiki><h3 id="wave-2"><nowiki>Wave 2</nowiki></h3>
+<nowiki>
+</nowiki><p><strong><nowiki>General pointers</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Clear all spawns of northern enemies, then </nowiki>[https://cdn.discordapp.com/emojis/535532878969438210.png?v=1 <nowiki>cane</nowiki>]<nowiki> to clear the southern enemies, ideally all before </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> runs out</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Specific rotations</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (1) West Xil + Hur: </nowiki>[https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1 <nowiki>dive</nowiki>]<nowiki> from </nowiki>[https://cdn.discordapp.com/emojis/931175752651653121.png?v=1 <nowiki>tzkalzuk</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/535532879334080517.png?v=1 <nowiki>overpower</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532879053062146.png?v=1 <nowiki>pulverise</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (2) East Xil + Hurs: wait for second spawn of Hurs → </nowiki>[https://cdn.discordapp.com/emojis/535532879250456578.png?v=1 <nowiki>gbarge</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1048592040507744257.png?v=1 <nowiki>dragon2hsword</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki> → target far Hur + far-cast </nowiki>[https://cdn.discordapp.com/emojis/535532855191928842.png?v=1 <nowiki>assault</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (3) Yt-Mejkot: </nowiki>[https://cdn.discordapp.com/emojis/535532879334080527.png?v=1 <nowiki>gfury</nowiki>]<nowiki> → position yourself in the middle of the enemies + </nowiki>[https://cdn.discordapp.com/emojis/535532878969438210.png?v=1 <nowiki>cane</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/quySn0GqIh.png <nowiki>Guide illustration</nowiki>]<nowiki>
+​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="wave-3"><nowiki>Wave 3</nowiki></h3>
+<nowiki>
+</nowiki><p><strong><nowiki>General pointers</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Set up </nowiki>[https://cdn.discordapp.com/emojis/994644354536837121.png?v=1 <nowiki>gdeathsswift</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/1478061866193518744.png?v=1 <nowiki>imbueshadows</nowiki>]<nowiki>, clear all Yt-Mejkot with </nowiki>[https://cdn.discordapp.com/emojis/643848618477879328.png?v=1 <nowiki>decimation</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/1478061860371828929.png?v=1 <nowiki>deadshot</nowiki>]<nowiki>, then pick off remaining enemies with single-target abilities</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Entering the next wave is somewhat timelocked to </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> cooldown, so there is some amount of leeway on this wave</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Specific rotations</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (1) Zuk: </nowiki>[https://cdn.discordapp.com/emojis/900758234527301642.png?v=1 <nowiki>deathsporearrows</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478061863723073636.png?v=1 <nowiki>piercingshot</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/787904334812807238.png?v=1 <nowiki>grico</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478061863723073636.png?v=1 <nowiki>piercingshot</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/994644354536837121.png?v=1 <nowiki>gdeathsswift</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478061866193518744.png?v=1 <nowiki>imbueshadows</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/643848618477879328.png?v=1 <nowiki>decimation</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• A Wall of Flame will occur around this time, make sure that all Yt-Mejkot have walked around any obstacles before moving away</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (2) Center-Most Yt-Mejkot: </nowiki>[https://cdn.discordapp.com/emojis/971025696958853180.png?v=1 <nowiki>fularrow</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478061863723073636.png?v=1 <nowiki>piercingshot</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478061860371828929.png?v=1 <nowiki>deadshot</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Remaining Enemies: Pick off using </nowiki>[https://cdn.discordapp.com/emojis/994189289623662702.png?v=1 <nowiki>bolg</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/1478061855732666439.png?v=1 <nowiki>snapshot</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/642713547142332416.png?v=1 <nowiki>shadowtend</nowiki>]<nowiki> → end on 100 adren</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/HytPNxCaD4.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="wave-4-igneous-wave"><nowiki>Wave 4 (Igneous wave)</nowiki></h3>
+<nowiki>
+</nowiki><p><strong><nowiki>General pointers</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ For the sake of consistency, all igneous waves are handled the exact same throughout this guide. Rotations assume </nowiki>[https://cdn.discordapp.com/emojis/655341074235129858.png?v=1 <nowiki>vulnbomb</nowiki>]<nowiki> is being used on all three igneous enemies.</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Specific rotations</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (1) Igneous Mej: </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/736298121704767538.png?v=1 <nowiki>adrenrenewal</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532879250456578.png?v=1 <nowiki>gbarge</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532879283879977.png?v=1 <nowiki>gflurry</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532879334080527.png?v=1 <nowiki>gfury</nowiki>]<nowiki> → wait 2-3 ticks + </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> to Igneous Xil</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Wait for </nowiki>[https://cdn.discordapp.com/emojis/535532879283879977.png?v=1 <nowiki>gflurry</nowiki>]<nowiki> to finish it since the </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> will cause you to lose line-of-sight</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (2) Igneous Xil: </nowiki>[https://cdn.discordapp.com/emojis/1478070401702821938.png?v=1 <nowiki>meteorstrike</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532878969438210.png?v=1 <nowiki>cane</nowiki>]<nowiki> → basic if needed</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (3) Igneous Hur: </nowiki>[https://cdn.discordapp.com/emojis/535532854302605333.png?v=1 <nowiki>backhand</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532879334080517.png?v=1 <nowiki>overpower</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478062908767211640.png?v=1 <nowiki>chaosroar</nowiki>]<nowiki> if needed</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The basic to finish both Xil and Hur can be consistently skipped with an active </nowiki>[https://cdn.discordapp.com/emojis/902209626412560395.png?v=1 <nowiki>scriptureofful</nowiki>]<nowiki> proc</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (4) Zuk: </nowiki>[https://cdn.discordapp.com/emojis/1478062908767211640.png?v=1 <nowiki>chaosroar</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/903244090953588787.png?v=1 <nowiki>ezk</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532879283879977.png?v=1 <nowiki>gflurry</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/zK0l97w0ME.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="wave-5-challenge-wave"><nowiki>Wave 5 (Challenge wave)</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Step between three Hurs + </nowiki>[https://cdn.discordapp.com/emojis/1400511651014250596.png?v=1 <nowiki>tumekenslight</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1 <nowiki>dive</nowiki>]<nowiki> between remaining two + </nowiki>[https://cdn.discordapp.com/emojis/535532878969438210.png?v=1 <nowiki>cane</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• See example video for specific positioning</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="wave-6"><nowiki>Wave 6</nowiki></h3>
+<nowiki>
+</nowiki><p><strong><nowiki>General pointers</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Set up </nowiki>[https://cdn.discordapp.com/emojis/994644354536837121.png?v=1 <nowiki>gdeathsswift</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/994189289623662702.png?v=1 <nowiki>bolg</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/1478061866193518744.png?v=1 <nowiki>imbueshadows</nowiki>]<nowiki> on Zuk + northern Xil, go all the way south to clear the Jad, then clear remaining mobs with </nowiki>[https://cdn.discordapp.com/emojis/643848618477879328.png?v=1 <nowiki>decimation</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]</p>
+<nowiki>
+</nowiki><p><strong><nowiki>Specific rotations</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (1) Zuk + North Xil: </nowiki>[https://cdn.discordapp.com/emojis/900758234527301642.png?v=1 <nowiki>deathsporearrows</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478061863723073636.png?v=1 <nowiki>piercingshot</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/787904334812807238.png?v=1 <nowiki>grico</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478061863723073636.png?v=1 <nowiki>piercingshot</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/994644354536837121.png?v=1 <nowiki>gdeathsswift</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/994189289623662702.png?v=1 <nowiki>bolg</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Move further south once Xils spawn to prevent the north-west one from getting stuck</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (2) Jad: </nowiki>[https://cdn.discordapp.com/emojis/1478061866193518744.png?v=1 <nowiki>imbueshadows</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/643848618477879328.png?v=1 <nowiki>decimation</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/787904334812807238.png?v=1 <nowiki>grico</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> through to south wall → </nowiki>[https://cdn.discordapp.com/emojis/535541270521708566.png?v=1 <nowiki>rapid</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/626466665848242186.png?v=1 <nowiki>sgb</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (3) Southern-most Xil: </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/643848618477879328.png?v=1 <nowiki>decimation</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478061860371828929.png?v=1 <nowiki>deadshot</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The exact Xil to be targeted is usually the one that took 1-2 hits from the end of </nowiki>[https://cdn.discordapp.com/emojis/535541270521708566.png?v=1 <nowiki>rapid</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If done correctly the </nowiki>[https://cdn.discordapp.com/emojis/1478061860371828929.png?v=1 <nowiki>deadshot</nowiki>]<nowiki> should clear all remaining enemies, otherwise usually one Yt-Mejkot should be finished with </nowiki>[https://cdn.discordapp.com/emojis/1478061855732666439.png?v=1 <nowiki>snapshot</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/642713547142332416.png?v=1 <nowiki>shadowtend</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/WIMjU3w6Cq.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="wave-7"><nowiki>Wave 7</nowiki></h3>
+<nowiki>
+</nowiki><p><strong><nowiki>General pointers</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Set up </nowiki>[https://cdn.discordapp.com/emojis/1478070401702821938.png?v=1 <nowiki>meteorstrike</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> while clearing northern enemies, </nowiki>[https://cdn.discordapp.com/emojis/535532879334080517.png?v=1 <nowiki>overpower</nowiki>]<nowiki> the Yt-Mejkot, then run around to clear remaining enemies</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Specific rotations</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (1) North Mej: s</nowiki>[https://cdn.discordapp.com/emojis/1478070401702821938.png?v=1 <nowiki>meteorstrike</nowiki>]<nowiki> / any basic → release when Mej spawns + clear with basics</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (2) West Xil: </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532878969438210.png?v=1 <nowiki>cane</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (3) East Xil: </nowiki>[https://cdn.discordapp.com/emojis/535532879334080527.png?v=1 <nowiki>gfury</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478062906057949417.png?v=1 <nowiki>adaptivestrike</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Kihs should be taken out by </nowiki>[https://cdn.discordapp.com/emojis/1400511651014250596.png?v=1 <nowiki>tumekenslight</nowiki>]<nowiki> splash damage by the end of the wave, just ignore</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Center Yt-Mejkot: </nowiki>[https://cdn.discordapp.com/emojis/535532879334080517.png?v=1 <nowiki>overpower</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (4) East Tok-Xil: </nowiki>[https://cdn.discordapp.com/emojis/1478062908767211640.png?v=1 <nowiki>chaosroar</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1448697873603498045.png?v=1 <nowiki>varanussmercy</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Center 2x Xils: </nowiki>[https://cdn.discordapp.com/emojis/1478166426190741584.png?v=1 <nowiki>rend</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532878969438210.png?v=1 <nowiki>cane</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ West Tok-Xil: </nowiki>[https://cdn.discordapp.com/emojis/535532879334080517.png?v=1 <nowiki>overpower</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/eA7WlsHyib.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="wave-8"><nowiki>Wave 8</nowiki></h3>
+<nowiki>
+</nowiki><p><strong><nowiki>General pointers</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Clear out northern enemies while clumping southern spawns up, then clear with </nowiki>[https://cdn.discordapp.com/emojis/643848618477879328.png?v=1 <nowiki>decimation</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478061860371828929.png?v=1 <nowiki>deadshot</nowiki>]</p>
+<nowiki>
+</nowiki><p><strong><nowiki>Specific rotations</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (1) Zuk: </nowiki>[https://cdn.discordapp.com/emojis/900758234527301642.png?v=1 <nowiki>deathsporearrows</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478061863723073636.png?v=1 <nowiki>piercingshot</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/787904334812807238.png?v=1 <nowiki>grico</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478061863723073636.png?v=1 <nowiki>piercingshot</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/994644354536837121.png?v=1 <nowiki>gdeathsswift</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (1) North Xil: </nowiki>[https://cdn.discordapp.com/emojis/971025696958853180.png?v=1 <nowiki>fularrow</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/994189289623662702.png?v=1 <nowiki>bolg</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478061866193518744.png?v=1 <nowiki>imbueshadows</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (2) North-west Tok-Xil: </nowiki>[https://cdn.discordapp.com/emojis/535541270521708566.png?v=1 <nowiki>rapid</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (2) 2x Mej: </nowiki>[https://cdn.discordapp.com/emojis/1478061857486143498.png?v=1 <nowiki>snipe</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/642713547142332416.png?v=1 <nowiki>shadowtend</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (3) North-east Tok-Xil: </nowiki>[https://cdn.discordapp.com/emojis/1478061864943616122.png?v=1 <nowiki>galeshot</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478061855732666439.png?v=1 <nowiki>snapshot</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/787904334812807238.png?v=1 <nowiki>grico</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (3) Center-most Tok-Xil: </nowiki>[https://cdn.discordapp.com/emojis/643848618477879328.png?v=1 <nowiki>decimation</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478061860371828929.png?v=1 <nowiki>deadshot</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/TYzqggahJa.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="wave-9-igneous-wave"><nowiki>Wave 9 (Igneous wave)</nowiki></h3>
+<nowiki>
+</nowiki><p><strong><nowiki>General pointers</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Same as previous, end with </nowiki>[https://cdn.discordapp.com/emojis/1478062908767211640.png?v=1 <nowiki>chaosroar</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/903244090953588787.png?v=1 <nowiki>ezk</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532879283879977.png?v=1 <nowiki>gflurry</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532879334080527.png?v=1 <nowiki>gfury</nowiki>]<nowiki> on </nowiki>[https://cdn.discordapp.com/emojis/931175752651653121.png?v=1 <nowiki>tzkalzuk</nowiki>]</p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/zK0l97w0ME.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="wave-10-challenge-wave"><nowiki>Wave 10 (Challenge wave)</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/535532879334080517.png?v=1 <nowiki>overpower</nowiki>]<nowiki> (w/ </nowiki>[https://cdn.discordapp.com/emojis/535532879334080527.png?v=1 <nowiki>gfury</nowiki>]<nowiki> should guarantee kill)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="wave-11"><nowiki>Wave 11</nowiki></h3>
+<nowiki>
+</nowiki><p><strong><nowiki>General pointers</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Set up </nowiki>[https://cdn.discordapp.com/emojis/994644354536837121.png?v=1 <nowiki>gdeathsswift</nowiki>]<nowiki> and pick off initial set of spawns, lure Jads + stragglers to center and clear with </nowiki>[https://cdn.discordapp.com/emojis/643848618477879328.png?v=1 <nowiki>decimation</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535541270521708566.png?v=1 <nowiki>rapid</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478061860371828929.png?v=1 <nowiki>deadshot</nowiki>]</p>
+<nowiki>
+</nowiki><p><strong><nowiki>Specific rotations</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (1) Zuk + North Mej: </nowiki>[https://cdn.discordapp.com/emojis/900758234527301642.png?v=1 <nowiki>deathsporearrows</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478061863723073636.png?v=1 <nowiki>piercingshot</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/787904334812807238.png?v=1 <nowiki>grico</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478061863723073636.png?v=1 <nowiki>piercingshot</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/994644354536837121.png?v=1 <nowiki>gdeathsswift</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/971025696958853180.png?v=1 <nowiki>fularrow</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/994189289623662702.png?v=1 <nowiki>bolg</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ South Kih: </nowiki>[https://cdn.discordapp.com/emojis/642713547142332416.png?v=1 <nowiki>shadowtend</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (2) South-west Kih: </nowiki>[https://cdn.discordapp.com/emojis/1478061866193518744.png?v=1 <nowiki>imbueshadows</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/1478061855732666439.png?v=1 <nowiki>snapshot</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (2) South-west Mej: </nowiki>[https://cdn.discordapp.com/emojis/1478061857486143498.png?v=1 <nowiki>snipe</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (2) South Yt-Mejkot: </nowiki>[https://cdn.discordapp.com/emojis/1478061864943616122.png?v=1 <nowiki>galeshot</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478061855732666439.png?v=1 <nowiki>snapshot</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/787904334812807238.png?v=1 <nowiki>grico</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (3) South Mej: </nowiki>[https://cdn.discordapp.com/emojis/1478061855732666439.png?v=1 <nowiki>snapshot</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (3) Center Jad: </nowiki>[https://cdn.discordapp.com/emojis/643848618477879328.png?v=1 <nowiki>decimation</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535541270521708566.png?v=1 <nowiki>rapid</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478061860371828929.png?v=1 <nowiki>deadshot</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Jad lure may be tricky depending on how you move from (2) to (3), walk halfway then </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> the rest should keep them in </nowiki>[https://cdn.discordapp.com/emojis/643848618477879328.png?v=1 <nowiki>decimation</nowiki>]<nowiki> range</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The two remaining Mej should be caught in the AoE as well, otherwise finish with </nowiki>[https://cdn.discordapp.com/emojis/1478061855732666439.png?v=1 <nowiki>snapshot</nowiki>]</p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/V7QYkMcd7p.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="wave-12"><nowiki>Wave 12</nowiki></h3>
+<nowiki>
+</nowiki><p><strong><nowiki>General pointers</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/1478070401702821938.png?v=1 <nowiki>meteorstrike</nowiki>]<nowiki> North Kih, </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> to clear out east and southern enemies, then AoE the remainder in the center</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Specific rotations</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (1) North Kih: s</nowiki>[https://cdn.discordapp.com/emojis/1478070401702821938.png?v=1 <nowiki>meteorstrike</nowiki>]<nowiki> on Zuk → release with basic to kill</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (2) East Tok-Xil: </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532879334080517.png?v=1 <nowiki>overpower</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (2) East Mej: </nowiki>[https://cdn.discordapp.com/emojis/535532879334080527.png?v=1 <nowiki>gfury</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478166426190741584.png?v=1 <nowiki>rend</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ South Kih: </nowiki>[https://cdn.discordapp.com/emojis/1400511651014250596.png?v=1 <nowiki>tumekenslight</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (3) West Mej: </nowiki>[https://cdn.discordapp.com/emojis/535532879053062146.png?v=1 <nowiki>pulverise</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Center Tok-Xil: </nowiki>[https://cdn.discordapp.com/emojis/535532879334080517.png?v=1 <nowiki>overpower</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ North-west Ket + Mej: </nowiki>[https://cdn.discordapp.com/emojis/1478062908767211640.png?v=1 <nowiki>chaosroar</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/535532878969438210.png?v=1 <nowiki>cane</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Center Ket + Mej: </nowiki>[https://cdn.discordapp.com/emojis/1048592040507744257.png?v=1 <nowiki>dragon2hsword</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• AoE + </nowiki>[https://cdn.discordapp.com/emojis/1400511651014250596.png?v=1 <nowiki>tumekenslight</nowiki>]<nowiki> damage should clear out all enemies, finish stragglers off with </nowiki>[https://cdn.discordapp.com/emojis/580168050121113623.png?v=1 <nowiki>range</nowiki>]<nowiki> basics if not</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/lLg3mjHAbK.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="wave-13"><nowiki>Wave 13</nowiki></h3>
+<nowiki>
+</nowiki><p><strong><nowiki>General pointers</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Set up </nowiki>[https://cdn.discordapp.com/emojis/994644354536837121.png?v=1 <nowiki>gdeathsswift</nowiki>]<nowiki>, clear both Tok-Xils, then group up remaining enemies to </nowiki>[https://cdn.discordapp.com/emojis/643848618477879328.png?v=1 <nowiki>decimation</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478061860371828929.png?v=1 <nowiki>deadshot</nowiki>]</p>
+<nowiki>
+</nowiki><p><strong><nowiki>Specific rotations</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (1) Zuk + North Tok-Xil: </nowiki>[https://cdn.discordapp.com/emojis/900758234527301642.png?v=1 <nowiki>deathsporearrows</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478061863723073636.png?v=1 <nowiki>piercingshot</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/787904334812807238.png?v=1 <nowiki>grico</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478061863723073636.png?v=1 <nowiki>piercingshot</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/994644354536837121.png?v=1 <nowiki>gdeathsswift</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/971025696958853180.png?v=1 <nowiki>fularrow</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/994189289623662702.png?v=1 <nowiki>bolg</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478061866193518744.png?v=1 <nowiki>imbueshadows</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ East Mej: </nowiki>[https://cdn.discordapp.com/emojis/1478061864943616122.png?v=1 <nowiki>galeshot</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478061855732666439.png?v=1 <nowiki>snapshot</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ South Tok-Xil: </nowiki>[https://cdn.discordapp.com/emojis/535541270521708566.png?v=1 <nowiki>rapid</nowiki>]<nowiki> (cancel once low enough) → </nowiki>[https://cdn.discordapp.com/emojis/787904334812807238.png?v=1 <nowiki>grico</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (2) South-west Ket: </nowiki>[https://cdn.discordapp.com/emojis/1478061857486143498.png?v=1 <nowiki>snipe</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/642713547142332416.png?v=1 <nowiki>shadowtend</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (3) Center-most Ket: </nowiki>[https://cdn.discordapp.com/emojis/643848618477879328.png?v=1 <nowiki>decimation</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1 <nowiki>dive</nowiki>]<nowiki> to get line-of-sight on all enemies → </nowiki>[https://cdn.discordapp.com/emojis/1478061860371828929.png?v=1 <nowiki>deadshot</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478061855732666439.png?v=1 <nowiki>snapshot</nowiki>]<nowiki> any stragglers</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/7qh8IA13I2.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="wave-14-igneous-wave"><nowiki>Wave 14 (Igneous wave)</nowiki></h3>
+<nowiki>
+</nowiki><p><strong><nowiki>General pointers</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Same as previous, stay on melee when Zuk is cleared for </nowiki>[https://cdn.discordapp.com/emojis/1478070401702821938.png?v=1 <nowiki>meteorstrike</nowiki>]<nowiki> adren</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/zK0l97w0ME.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="wave-15-challenge-wave"><nowiki>Wave 15 (Challenge wave)</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/535541258844635148.png?v=1 <nowiki>res</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478062906057949417.png?v=1 <nowiki>adaptivestrike</nowiki>]<nowiki> let meteor tick up to at least 70 adren → </nowiki>[https://cdn.discordapp.com/emojis/900758234527301642.png?v=1 <nowiki>deathsporearrows</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478061863723073636.png?v=1 <nowiki>piercingshot</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/787904334812807238.png?v=1 <nowiki>grico</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478061863723073636.png?v=1 <nowiki>piercingshot</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="wave-16-triple-jad"><nowiki>Wave 16 (Triple Jad)</nowiki></h3>
+<nowiki>
+</nowiki><p><strong><nowiki>General pointers</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Similar to double Jad lure, let them clump up middle, then clear with </nowiki>[https://cdn.discordapp.com/emojis/643848618477879328.png?v=1 <nowiki>decimation</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535541270521708566.png?v=1 <nowiki>rapid</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478061860371828929.png?v=1 <nowiki>deadshot</nowiki>]</p>
+<nowiki>
+</nowiki><p><strong><nowiki>Specific rotations</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (1) Zuk: </nowiki>[https://cdn.discordapp.com/emojis/994644354536837121.png?v=1 <nowiki>gdeathsswift</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/994189289623662702.png?v=1 <nowiki>bolg</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1 <nowiki>dive</nowiki>]<nowiki> all the way south-west → </nowiki>[https://cdn.discordapp.com/emojis/1478061866193518744.png?v=1 <nowiki>imbueshadows</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ (3) Jad: once lured </nowiki>[https://cdn.discordapp.com/emojis/643848618477879328.png?v=1 <nowiki>decimation</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535541270521708566.png?v=1 <nowiki>rapid</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478061860371828929.png?v=1 <nowiki>deadshot</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Use </nowiki>[https://cdn.discordapp.com/emojis/535614336207552523.png?v=1 <nowiki>disrupt</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/654618235097972737.png?v=1 <nowiki>powerburstofvitality</nowiki>]<nowiki> if attacks overlap</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/V7QYkMcd7p.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="wave-17-har-aken"><nowiki>Wave 17 (Har-aken)</nowiki></h3>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/n4B2Z2KLAw.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Zuk </nowiki>[https://cdn.discordapp.com/emojis/1478070401702821938.png?v=1 <nowiki>meteorstrike</nowiki>]<nowiki> → s</nowiki>[https://cdn.discordapp.com/emojis/1478062906057949417.png?v=1 <nowiki>adaptivestrike</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Har-Aken: </nowiki>[https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1 <nowiki>dive</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/535532879250456578.png?v=1 <nowiki>gbarge</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532879334080517.png?v=1 <nowiki>overpower</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532855191928842.png?v=1 <nowiki>assault</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1448697873603498045.png?v=1 <nowiki>varanussmercy</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478166426190741584.png?v=1 <nowiki>rend</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532878969438210.png?v=1 <nowiki>cane</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532879334080517.png?v=1 <nowiki>overpower</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/883134308146098227.png?v=1 <nowiki>lengmh</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532879439069184.png?v=1 <nowiki>punish</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="wave-18-tz-kal-zuk"><ins><nowiki>Wave 18 (Tz-Kal Zuk)</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="zuk"><nowiki>Zuk</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Start near the middle and build to 100% adren</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Equip </nowiki>[https://cdn.discordapp.com/emojis/839903943018283050.png?v=1 <nowiki>reaverring</nowiki>]<nowiki> + Apply </nowiki>[https://cdn.discordapp.com/emojis/655341074235129858.png?v=1 <nowiki>vulnbomb</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/856635090641879050.png?v=1 <nowiki>smokecloud</nowiki>]<nowiki> + build </nowiki>[https://cdn.discordapp.com/emojis/900758234527301642.png?v=1 <nowiki>deathsporearrows</nowiki>]<nowiki> with </nowiki>[https://cdn.discordapp.com/emojis/1478061863723073636.png?v=1 <nowiki>piercingshot</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/787904334812807238.png?v=1 <nowiki>grico</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478061863723073636.png?v=1 <nowiki>piercingshot</nowiki>]<nowiki> + be on 3-7 </nowiki>[https://cdn.discordapp.com/emojis/1006119102814887957.png?v=1 <nowiki>perfectequilibrium</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Zuk: 3 ticks after </nowiki>[https://cdn.discordapp.com/emojis/931175752651653121.png?v=1 <nowiki>tzkalzuk</nowiki>]<nowiki> starts moving </nowiki>[https://cdn.discordapp.com/emojis/994644354536837121.png?v=1 <nowiki>gdeathsswift</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478061866193518744.png?v=1 <nowiki>imbueshadows</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478062908767211640.png?v=1 <nowiki>chaosroar</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/903244090953588787.png?v=1 <nowiki>ezk</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/994189289623662702.png?v=1 <nowiki>bolg</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/615618531937222657.png?v=1 <nowiki>ecb</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478061864943616122.png?v=1 <nowiki>galeshot</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/787904334812807238.png?v=1 <nowiki>grico</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535541270521708566.png?v=1 <nowiki>rapid</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/626466665848242186.png?v=1 <nowiki>sgb</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478061860371828929.png?v=1 <nowiki>deadshot</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1446178203608809472.png?v=1 <nowiki>gloomfirebow</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478061855732666439.png?v=1 <nowiki>snapshot</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/642713547142332416.png?v=1 <nowiki>shadowtend</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478061857486143498.png?v=1 <nowiki>snipe</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/615618531937222657.png?v=1 <nowiki>ecb</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478061864943616122.png?v=1 <nowiki>galeshot</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/787904334812807238.png?v=1 <nowiki>grico</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/535614336207552523.png?v=1 <nowiki>disrupt</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535541270521708566.png?v=1 <nowiki>rapid</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/994189289623662702.png?v=1 <nowiki>bolg</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> → dump adren to finish</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1 <nowiki>dive</nowiki>]<nowiki> as necessary to deal with mechanics</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Zuk should be lowered to ~220k or less by this point</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="pizza"><nowiki>Pizza</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Igneous Hur: </nowiki>[https://cdn.discordapp.com/emojis/535541306563231790.png?v=1 <nowiki>bindingshot</nowiki>]<nowiki> + build </nowiki>[https://cdn.discordapp.com/emojis/900758234527301642.png?v=1 <nowiki>deathsporearrows</nowiki>]<nowiki> while killing → </nowiki>[https://cdn.discordapp.com/emojis/535541258131865633.png?v=1 <nowiki>naturalinstinct</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/603979368850653216.png?v=1 <nowiki>dba</nowiki>]<nowiki> when rain is about to disappear</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Igneous Xil: </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1 <nowiki>dive</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/1478061863723073636.png?v=1 <nowiki>piercingshot</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478061855732666439.png?v=1 <nowiki>snapshot</nowiki>]<nowiki> + build adren while killing</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Igneous Mej: </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1 <nowiki>dive</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/787904334812807238.png?v=1 <nowiki>grico</nowiki>]<nowiki> → swap to </nowiki>[https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1 <nowiki>melee</nowiki>]<nowiki> and finish with basics</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Zuk: s</nowiki>[https://cdn.discordapp.com/emojis/1478070401702821938.png?v=1 <nowiki>meteorstrike</nowiki>]<nowiki> → r</nowiki>[https://cdn.discordapp.com/emojis/1478070401702821938.png?v=1 <nowiki>meteorstrike</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/1478062906057949417.png?v=1 <nowiki>adaptivestrike</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478062908767211640.png?v=1 <nowiki>chaosroar</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/1478166426190741584.png?v=1 <nowiki>rend</nowiki>]<nowiki> (depending on his remaining hp) → </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/903244090953588787.png?v=1 <nowiki>ezk</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532879439069184.png?v=1 <nowiki>punish</nowiki>]<nowiki> if needed</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Time it such that the extra action button to interrupt Zuk is usable after </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="conduits"><nowiki>Conduits</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Some improvisation may be needed, but generally just keep pressing strong abilities while following the listed defensive order</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Deal with Zuk's charged attacks using the following:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• C1 → </nowiki>[https://cdn.discordapp.com/emojis/535614336207552523.png?v=1 <nowiki>disrupt</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• C2 → </nowiki>[https://cdn.discordapp.com/emojis/535541258844635148.png?v=1 <nowiki>res</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• C3 → </nowiki>[https://cdn.discordapp.com/emojis/654618235097972737.png?v=1 <nowiki>powerburstofvitality</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• C4 → </nowiki>[https://cdn.discordapp.com/emojis/513190159462825984.png?v=1 <nowiki>rod</nowiki>]<nowiki> (make sure sign is not available, unequip cape if needed)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Conduits: </nowiki>[https://cdn.discordapp.com/emojis/535541306475151390.png?v=1 <nowiki>anti</nowiki>]<nowiki> → wait 2 ticks + </nowiki>[https://cdn.discordapp.com/emojis/535532879250456578.png?v=1 <nowiki>gbarge</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532879283879977.png?v=1 <nowiki>gflurry</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532879334080527.png?v=1 <nowiki>gfury</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532879334080517.png?v=1 <nowiki>overpower</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478062908767211640.png?v=1 <nowiki>chaosroar</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/1478166426190741584.png?v=1 <nowiki>rend</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1448697873603498045.png?v=1 <nowiki>varanussmercy</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532878969438210.png?v=1 <nowiki>cane</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535541258844635148.png?v=1 <nowiki>res</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535614336207552523.png?v=1 <nowiki>disrupt</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/883134308146098227.png?v=1 <nowiki>lengmh</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532879334080517.png?v=1 <nowiki>overpower</nowiki>]<nowiki> → equip </nowiki>[https://cdn.discordapp.com/emojis/513190159462825984.png?v=1 <nowiki>rod</nowiki>]<nowiki> + improvise to finish, use </nowiki>[https://cdn.discordapp.com/emojis/535532879283879977.png?v=1 <nowiki>gflurry</nowiki>]<nowiki> if it comes up while </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> is still running</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Take advantage of the lack of bombs during Zuk's charging attack to use more channelled abilities (</nowiki>[https://cdn.discordapp.com/emojis/535532855191928842.png?v=1 <nowiki>assault</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535532879283879977.png?v=1 <nowiki>gflurry</nowiki>]<nowiki>)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="example-videos"><ins><nowiki>Example videos</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://youtu.be/UfvmMGzttbw <nowiki>Full Kill (Biting)</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://youtu.be/cNhJ15iZE1s <nowiki>Full Kill (Equilibrium)</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+      
+    </nowiki>
+== Attribution and source history ==
+Adapted from [https://pvme.io/pvme-guides/rs3-full-boss-guides/tzkal-zuk/hm-zuk-melee-ranged/ <nowiki>HM Zuk Melee Ranged</nowiki>] by PvME contributors. [https://github.com/pvme/pvme-guides/commits/master/rs3-full-boss-guides/tzkal-zuk/hm-zuk-melee-ranged.txt Upstream source history]. Licensed [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]. Snapshot 074a9438f79d10fba75735791be0030734db8b5e. Formatting adapted for standalone MediaWiki; media and third-party references remain external links.

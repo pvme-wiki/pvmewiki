@@ -1,0 +1,1080 @@
+[[PvME|PvME guide index]]
+
+<h2 id="introduction"><ins><nowiki>Introduction</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><em><nowiki>Note: Use the </nowiki><ins><strong><nowiki>Table of Contents</nowiki></strong></ins><nowiki> in this page’s contents navigation to find the information you are looking for.</nowiki></em></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Some general notes:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The game runs on an internal tick system: </nowiki><strong><nowiki>1t (tick) = 0.6s (seconds)</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The minimum time between abilities is called the global cooldown: </nowiki><strong><nowiki>1 gcd = 3t = 1.8s</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Auto attacks will only give adrenaline if they hit (splash = no adrenaline gain).</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Debuff spells like Vuln </nowiki>[https://cdn.discordapp.com/emojis/537349530551582720.png?v=1 <nowiki>Vuln</nowiki>]<nowiki> or Enfeeble </nowiki>[https://cdn.discordapp.com/emojis/567727986409734145.png?v=1 <nowiki>Enfeeble</nowiki>]<nowiki> or Smoke Cloud </nowiki>[https://cdn.discordapp.com/emojis/856635090641879050.png?v=1 <nowiki>smokecloud</nowiki>]<nowiki> do not give adrenaline.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Some useful sheets and resources are given below.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+
+
+</nowiki><div><div><div><u><nowiki>Ability Damage Maths</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>To calculate your ability hit damage in detail, </nowiki>[https://tools.runescape.wiki/rs-rot/ <nowiki>click here</nowiki>]<nowiki>.
+This is affected by factors such as your gear and other boosts.
+</nowiki></div>
+</div>
+<div><div><u><nowiki>Ability Hit Timings</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>To see detailed breakdowns on ability hit timings, </nowiki>[https://docs.google.com/spreadsheets/d/1rK7u17JN6I-vf3dKBKg6tm9IPWje9EWSe_r8KPdsxoc/edit?usp=sharing <nowiki>click here</nowiki>]<nowiki>.
+This refers to when hitsplats appear on your target.
+</nowiki></div>
+</div>
+<div><div><u><nowiki>Auto-attack Adren Gain</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>To see adrenaline gained with different auto attacks, </nowiki>[https://runescape.wiki/w/Invigorating <nowiki>click here</nowiki>]<nowiki>.
+</nowiki></div>
+</div>
+</div>
+<nowiki>
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><em><nowiki>Note: If you have any difficulties in using the tools or understanding what the information means, you can always ask in </nowiki>[https://discord.com/channels/534508796639182860/656898197561802760 <nowiki>PvM help (external Discord)</nowiki>]</em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="defence"><ins><nowiki>Defence </nowiki>[https://cdn.discordapp.com/emojis/689509250979987525.png?v=1 <nowiki>defence</nowiki>]</ins></h2>
+<nowiki>
+</nowiki><p><nowiki>This section covers auto attacks, basics, thresholds, ultimate abilities and special attacks for Defence.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="autos"><nowiki>Autos</nowiki></h3>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-defaultdefenceauto"><u><nowiki>Default Defence Auto</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/689509250979987525.png?v=1 <nowiki>defence</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: Based on Weapon Speed
+    • Fastest: 4t (2.4s)
+    • Fast: 5t (3.0s)
+    • Average: 6t (3.6s)
+⬥ Takes on style of main hand weapon
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="basics"><nowiki>Basics</nowiki></h3>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-anticipate"><u><nowiki>Anticipate</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535541306475151390.png?v=1 <nowiki>anti</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 50t (30s)
+⬥ Duration: 17t (10.2s)
+⬥ Reduces all incoming damage by 10%
+⬥ Provides stun immunity
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-bash"><u><nowiki>Bash</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535541306546716692.png?v=1 <nowiki>bash</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 25t (15s)
+⬥ Basic offensive ability
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki><div><span><nowiki>This ability requires a shield or defender - the effects will be lost if removed.
+</nowiki></span></div>
+<nowiki>
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-cease"><u><nowiki>Cease</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/864235458464186418.png?v=1 <nowiki>cease</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 0t (0s)
+⬥ Stops the following:
+    • Channelled abilities
+    • Familiar attacks for 10t (6s)
+    • Auto-retaliate for 10t (6s)
+    • Queued abilities
+⬥ Cancelled by attacking target
+⬥ Generates no adrenaline
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-divert"><u><nowiki>Divert</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/787904334377648130.png?v=1 <nowiki>divert</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 34t (20.4s)
+⬥ Duration: 10t (6s)
+⬥ Shares cooldown with </nowiki>[https://cdn.discordapp.com/emojis/535541258844635148.png?v=1 <nowiki>res</nowiki>]<nowiki>
+⬥ Generates 0.8 to 50 adrenaline (1.6 to 100 under the effects of </nowiki>[https://cdn.discordapp.com/emojis/535541258131865633.png?v=1 <nowiki>nat</nowiki>]<nowiki>)
+    • </nowiki>[https://runescape.wiki/w/Calculator:Combat/Divert <nowiki>Divert calculator</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki><div><span><nowiki>This ability requires a shield or defender - the effects will be lost if removed.
+</nowiki></span></div>
+<nowiki>
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-freedom"><u><nowiki>Freedom</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535541258240786434.png?v=1 <nowiki>freedom</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 50t (30s)
+⬥ Duration: 10t (6s)
+⬥ Removes and grants immunity to stuns and binds
+⬥ Clears any </nowiki><strong><nowiki>existing</nowiki></strong><nowiki> damage over time effects
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-preparation"><u><nowiki>Preparation</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535541258546970624.png?v=1 <nowiki>prep</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 34t (20.4s)
+⬥ Duration: 16t (9.6s)
+⬥ Reduces any remaining cooldown of </nowiki>[https://cdn.discordapp.com/emojis/535541258844635148.png?v=1 <nowiki>res</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/787904334377648130.png?v=1 <nowiki>divert</nowiki>]<nowiki> by 5t (3s) per attack received
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki><div><span><nowiki>This ability requires a shield or defender - the effects will be lost if removed.
+</nowiki></span></div>
+<nowiki>
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-provoke"><u><nowiki>Provoke</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535541259465392143.png?v=1 <nowiki>voke</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 17t (10.2s)
+⬥ Forces enemy to target you
+    • Some enemies have other methods of aggression rendering </nowiki>[https://cdn.discordapp.com/emojis/535541259465392143.png?v=1 <nowiki>voke</nowiki>]<nowiki> useless
+⬥ Castable off gcd
+    • Will trigger gcd if used on gcd
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-resonance"><u><nowiki>Resonance</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535541258844635148.png?v=1 <nowiki>res</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 25t (15s)
+⬥ Duration: 10t (6s)
+⬥ Shares cooldown with </nowiki>[https://cdn.discordapp.com/emojis/787904334377648130.png?v=1 <nowiki>divert</nowiki>]<nowiki>
+⬥ Heal for (50 + 0.5 x shield tier)% of incoming hit
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki><div><span><nowiki>This ability requires a shield or defender - the effects will be lost if removed.
+</nowiki></span></div>
+<nowiki>
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="thresholds"><nowiki>Thresholds</nowiki></h3>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-debilitate"><u><nowiki>Debilitate</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535541278264393729.png?v=1 <nowiki>debil</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 50t (30s)
+⬥ Duration: 13t (7.8s) to 23t (13.8s)
+    • Extended if cast with a shield/defender
+    • If shield/defender removed the effects are removed
+    • A full table is available on the wiki </nowiki>[https://runescape.wiki/w/Debilitate#Duration <nowiki>here</nowiki>]<nowiki>
+⬥ Reduces damage from the effected target
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-devotion"><u><nowiki>Devotion</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/513190158728953857.png?v=1 <nowiki>devo</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 100t (60s)
+⬥ Duration: 15t (9.6s) to 30t (19.2s)
+    • Killing an enemy adds 8t (4.8s) to base duration
+⬥ While active protection prayers are 100% effective
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-reflect"><u><nowiki>Reflect</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535541258786177064.png?v=1 <nowiki>reflect</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 50t (30s)
+⬥ Duration: 316t (9.6s)
+⬥ Incoming damage reduced by 50%
+⬥ Reduced damage returned to sender
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki><div><span><nowiki>This ability requires a shield or defender - the effects will be lost if removed.
+</nowiki></span></div>
+<nowiki>
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-revenge"><u><nowiki>Revenge</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535541259645878302.png?v=1 <nowiki>revenge</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 75t (45s)
+⬥ Duration: 32t (19.2s)
+⬥ Increases outgoing damage done while wielding shield/defender
+    • Up to 10 stacks can be built
+    • Each stack adds 10% (5% with defender) damage to your attacks
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki><div><span><nowiki>This ability requires a shield or defender - the effects will be lost if removed.
+</nowiki></span></div>
+<nowiki>
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="ultimates"><nowiki>Ultimates</nowiki></h3>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-barricade"><u><nowiki>Barricade</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 100t (60s) to 140t (84s)
+    • Effected by turtling perk
+⬥ Duration: 8t (4.8s) to 29t (17.4s)
+    • Effected by shield tier, </nowiki>[https://cdn.discordapp.com/emojis/690136117374484508.png?v=1 <nowiki>malletops</nowiki>]<nowiki>, and turtling perk
+⬥ Full table of duration and cooldowns can be found </nowiki>[https://runescape.wiki/w/Calculator:Combat/Barricade <nowiki>here</nowiki>]<nowiki>
+⬥ Blocks all incoming damage </nowiki><em><nowiki>except</nowiki></em><nowiki> hard typeless
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki><div><span><nowiki>This ability requires a shield or defender - the effects will be lost if removed.
+</nowiki></span></div>
+<nowiki>
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-immortality"><u><nowiki>Immortality</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535541258538582017.png?v=1 <nowiki>immort</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 200t (120s)
+⬥ Duration: 50t (30s)
+    • Or until returned to life
+⬥ Reduces taken damage by 25%
+⬥ Be revived to 40% HP if dead while active
+    • 3t (1.8s) immunity to all damage while being revived
+    • Instakills avoid this effect
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki><div><span><nowiki>This ability requires a shield or defender - the effects will be lost if removed.
+</nowiki></span></div>
+<nowiki>
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-naturalinstinct"><u><nowiki>Natural Instinct</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535541258131865633.png?v=1 <nowiki>nat</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 200t (120s)
+⬥ Duration: 34t (20.4s)
+⬥ Doubles ability adrenaline gain
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-rejuvenate"><u><nowiki>Rejuvenate</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535541258873995284.png?v=1 <nowiki>rejuvenate</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Cooldown: 500t (300s)
+⬥ Duration: 16t (9.6s)
+⬥ Gain 2.5% of hp per tick while active (40% total)
+⬥ Shares cooldown with </nowiki>[https://cdn.discordapp.com/emojis/641337999170207763.png?v=1 <nowiki>excal</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+</nowiki><div><span><nowiki>This ability requires a shield or defender - the effects will be lost if removed.
+</nowiki></span></div>
+<nowiki>
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-defenceabilityindex">[https://cdn.discordapp.com/emojis/689509250979987525.png?v=1 <nowiki>defence</nowiki>]<nowiki> </nowiki><u><nowiki>Defence Ability Index</nowiki></u><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/689509250979987525.png?v=1 <nowiki>defence</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>⬥ Click the links to quickly navigate to that ability's information.
+⬥ General notes can be found in the introduction </nowiki>[[PvME/Combat reference/Defence Abilities#introduction|<nowiki>here</nowiki>]]<nowiki>.
+</nowiki></div>
+<nowiki>
+</nowiki><div><div><div><u><nowiki>Auto and Basics</nowiki></u><nowiki> (1/2)
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ </nowiki>[[PvME/Combat reference/Defence Abilities#block-defaultdefenceauto|<nowiki>Default Auto</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Defence Abilities#block-anticipate|<nowiki>Anticipate</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Defence Abilities#block-bash|<nowiki>Bash</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Defence Abilities#block-cease|<nowiki>Cease</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Defence Abilities#block-divert|<nowiki>Divert</nowiki>]]<nowiki>
+</nowiki></div>
+</div>
+<div><div><u><nowiki>Auto and Basics</nowiki></u><nowiki> (2/2)
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ </nowiki>[[PvME/Combat reference/Defence Abilities#block-freedom|<nowiki>Freedom</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Defence Abilities#block-preparation|<nowiki>Preparation</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Defence Abilities#block-provoke|<nowiki>Provoke</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Defence Abilities#block-resonance|<nowiki>Resonance</nowiki>]]<nowiki>
+</nowiki></div>
+</div>
+<div><div><u><nowiki>Thresholds</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ </nowiki>[[PvME/Combat reference/Defence Abilities#block-debilitate|<nowiki>Debilitate</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Defence Abilities#block-devotion|<nowiki>Devotion</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Defence Abilities#block-reflect|<nowiki>Reflect</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Defence Abilities#block-revenge|<nowiki>Revenge</nowiki>]]<nowiki>
+</nowiki></div>
+</div>
+<div><div><u><nowiki>Ultimates</nowiki></u><nowiki>
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>⬥ </nowiki>[[PvME/Combat reference/Defence Abilities#block-barricade|<nowiki>Barricade</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Defence Abilities#block-immortality|<nowiki>Immortality</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Defence Abilities#block-naturalinstinct|<nowiki>Natural Instinct</nowiki>]]<nowiki>
+⬥ </nowiki>[[PvME/Combat reference/Defence Abilities#block-rejuvenate|<nowiki>Rejuvenate</nowiki>]]<nowiki>
+</nowiki></div>
+</div>
+</div>
+<nowiki>
+</nowiki></div>
+<nowiki>
+
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+      
+    </nowiki>
+== Attribution and source history ==
+Adapted from [https://pvme.io/pvme-guides/miscellaneous-information/ability-information/defence-abilities/ <nowiki>Defence Abilities</nowiki>] by PvME contributors. [https://github.com/pvme/pvme-guides/commits/master/miscellaneous-information/ability-information/defence-abilities.txt Upstream source history]. Licensed [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]. Snapshot 074a9438f79d10fba75735791be0030734db8b5e. Formatting adapted for standalone MediaWiki; media and third-party references remain external links.

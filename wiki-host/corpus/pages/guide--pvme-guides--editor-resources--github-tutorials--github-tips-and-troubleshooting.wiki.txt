@@ -1,0 +1,201 @@
+[[PvME|PvME guide index]]
+
+<h2 id="introduction"><ins><nowiki>Introduction</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>This guide will go over an assortment of common issues you may encounter while working with GitHub, as well as a few helpful things you can do to streamline your workflow.</nowiki></p>
+<nowiki>
+</nowiki><p><em><nowiki>Note: You can always ask any editor or staff for help with GitHub at any time.</nowiki></em></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="frequently-used-terminology"><ins><nowiki>Frequently Used Terminology</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Repository</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• A collection of all the files and folders for a single project, that is tracked and version controlled.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Fork</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• A </nowiki><em><nowiki>copy</nowiki></em><nowiki> of an entire repository. A user can </nowiki><em><nowiki>fork</nowiki></em><nowiki> a repository to get a personal copy.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Commit</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Essentially a 'snapshot' of your repository. Think of it like a checkpoint in a video game. Going back to a particular commit shows the entire repository as it was at that point in time. You commit after making your changes, to prepare for a pull request.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Pull Request</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• A request to merge </nowiki><em><nowiki>your changes</nowiki></em><nowiki> into the </nowiki><em><nowiki>main repository</nowiki></em><nowiki>, to be accepted by someone with appropriate permissions.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="common-problems"><ins><nowiki>Common Problems</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="failed-checks"><nowiki>Failed Checks</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ PvME GitHub is set up to automatically check for valid formatting and styling. There are a number of checks, such as:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Trailing whitespace - extra space at the end of a line</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Improper spacing around emojis - emojis must be surrounded by a space on either side</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Message length exceeded (too many characters) - messages cannot exceed 2000 characters</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Invalid embed formatting - creates an invalid embed object.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Invalid commands - any </nowiki><code><nowiki>.command:</nowiki></code><nowiki> ‎used must be a valid command.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Checks failing can be avoided by using the </nowiki><strong><nowiki>web editor</nowiki></strong><nowiki> (</nowiki>[https://pvme.github.io/guide-editor/ <nowiki>https://pvme.github.io/guide-editor/</nowiki>]<nowiki>) to edit your content before adding it to GitHub, as it runs the same style checks that pull requests use. For more information check out, </nowiki>[[PvME/Contributing/Guide Editor|<nowiki>Guide Editor</nowiki>]]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ If your pull request fails due to a check, it will inform you. Click on </nowiki><strong><nowiki>Details</nowiki></strong><nowiki> on the check to see why it has failed, and what you can do to fix it.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Consider the following example:</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/ZxizF57.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/qdZjUvf.png <nowiki>Guide illustration</nowiki>]<nowiki>
+⬥ The bottom red square tells you what the error is. In this case, the message starting at line 108 and ending at line 139 has too many characters.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ To fix this, click the </nowiki><em><nowiki>Edit File</nowiki></em><nowiki> option in the following image, to open up editing again to make appropriate changes.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/WHpF7Wq.png <nowiki>Guide illustration</nowiki>]<nowiki>
+⬥ In this case, we break the single large message into 2 separate messages by hitting </nowiki><code><nowiki>Enter</nowiki></code><nowiki>, entering a single period </nowiki><code><nowiki>.</nowiki></code><nowiki> ‎and hitting </nowiki><code><nowiki>Enter</nowiki></code><nowiki> ‎again. Then commit these changes, and it will update the pull request.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/fTIpYv5.png <nowiki>Guide illustration</nowiki>]<nowiki>
+⬥ Your Pull Request should now be error-free once the checks complete again.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="checks-are-stuck"><nowiki>Checks Are Stuck</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Rarely, the style and syntax checks may get stuck, neither succeeding nor failing. In such an event, usually merging a different minor pull request tends to resolve the issue.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Checks can take some time to complete at times, so wait for at least 20-30 minutes before it is considered an issue.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ In case this occurs, you can contact an editor or staff for assistance.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="your-branch-is-x-commits-behind-master"><nowiki>Your Branch Is 'X' Commits Behind Master</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ When you make a new fork, your fork will look like this:</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/j3kEy55.png <nowiki>Guide illustration</nowiki>]<nowiki>
+⬥ However, after some time it may look something like this:</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/ztJQ0wj.png <nowiki>Guide illustration</nowiki>]<nowiki>
+⬥ This is because changes might have happened to the main repository (</nowiki><code><nowiki>'X' commits behind</nowiki></code><nowiki>) and it is no longer in-sync with your copy. This may cause issues when making a pull request.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ To resolved this, </nowiki><strong><nowiki>the simplest solution is to delete your fork, and make a new fork of the PvME repository</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ This will give you a fresh, up-to-date copy, and get rid of any lingering issues.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><em><strong><nowiki>For more experienced users</nowiki></strong><nowiki>: PvME squashes and merges all pull requests. This causes a difference in commit hashes, which is why your branch will be both ahead AND behind in commits after a pull request is accepted. You can clean this up by discarding commits from accepted PRs and syncing your branch to pvme:master. Or by resetting your branch to pvme:master. Or just delete and start over.|</nowiki></em></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="pull-requests"><ins><nowiki>Pull Requests</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="multiple-changes-updating-an-existing-pull-request"><nowiki>Multiple Changes &amp; Updating an Existing Pull Request</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ It is possible to include changes to multiple files within the same Pull Request, and to amend files you have already modified as part of that Pull Request.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ This can be helpful to reduce the number of PRs being opened, and remove the need of closing a PR and reopening it if a mistake has been made.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><em><nowiki>Note: It is assumed you have already forked the repository.</nowiki></em></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Consider the scenario: a pull request has been made, with changes to </nowiki><em><nowiki>one</nowiki></em><nowiki> file, visible in the </nowiki><em><nowiki>Files Changed</nowiki></em><nowiki> tab.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/kxvu0O2.png <nowiki>Guide illustration</nowiki>]<nowiki>
+​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="modify-an-existing-file-in-the-pull-request"><nowiki>Modify an Existing File in the Pull Request</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>To make an a change to a file that already contains a change, </nowiki><em><nowiki>in the same pull request</nowiki></em><nowiki>, do the following.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Navigate to your Pull Request, and go to the </nowiki><em><nowiki>Files Changed</nowiki></em><nowiki> tab.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Go to the top right corner of the file you wish to update, click the three dots, then </nowiki><em><nowiki>Edit File</nowiki></em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/h2i3Rkb.jpg <nowiki>Guide illustration</nowiki>]<nowiki>
+⬥ Make whatever additional changes you like, and then </nowiki><em><nowiki>Commit directly to the xxx branch</nowiki></em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/GbkYLNi.png <nowiki>Guide illustration</nowiki>]<nowiki>
+⬥ Navigate back to your Pull Request, and the additional change should be included!</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/OxtPQXE.png <nowiki>Guide illustration</nowiki>]<nowiki>
+​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="add-a-new-file-to-the-pull-request"><nowiki>Add a New File to the Pull Request</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>To edit a different file, and include it in the same pull request, do as follows,</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Navigate to your Pull Request and click on the name of your branch, here:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• You are now looking at the main directory of your own branch, where all files will reside.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/ylNa85w.png <nowiki>Guide illustration</nowiki>]<nowiki>
+⬥ Locate the additional file you would like to change, open it, and then click the edit icon.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/kSt0Xpa.png <nowiki>Guide illustration</nowiki>]<nowiki>
+⬥ Make whatever changes you like, and then </nowiki><em><nowiki>Commit directly to the xxx branch</nowiki></em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/sa6tPYh.png <nowiki>Guide illustration</nowiki>]<nowiki>
+⬥ Navigate back to your Pull Request, and the additional file should be included!</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/UKnKrfs.png <nowiki>Guide illustration</nowiki>]<nowiki>
+​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="helpful-tips"><ins><nowiki>Helpful Tips</nowiki></ins></h2>
+<nowiki>
+</nowiki><h3 id="file-split-view"><nowiki>File Split View</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ When opening a Pull Request, it is good practice to look at your changes and see if any mistakes have been made.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ By default, you will see differences between your changes and the original file in </nowiki><em><nowiki>Unified View</nowiki></em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Sometimes, especially for larger changes, it can be helpful to use </nowiki><em><nowiki>Split View</nowiki></em><nowiki> instead.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Navigate to your Pull Request, and go to the </nowiki><em><nowiki>Files Changed</nowiki></em><nowiki> tab.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• By default, you will see unified changes, as shown below:</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/KqtUExJ.png <nowiki>Guide illustration</nowiki>]<nowiki>
+⬥ Click the settings icon, select </nowiki><em><nowiki>Split</nowiki></em><nowiki>, and then </nowiki><em><nowiki>Apply and reload</nowiki></em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/mqNCNlT.png <nowiki>Guide illustration</nowiki>]<nowiki>
+⬥ Congratulations! From now on, your changes will be shown in </nowiki><em><nowiki>Split View</nowiki></em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• You can reverse the process to go back to a unified view at any time, if you prefer.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/IAz8bya.png <nowiki>Guide illustration</nowiki>]<nowiki>
+​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="bulk-replacing"><nowiki>Bulk Replacing</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ To bulk replace, either navigate to the </nowiki><strong><nowiki>Edit</nowiki></strong><nowiki> menu then select </nowiki><strong><nowiki>Replace in Files</nowiki></strong><nowiki> or use the Ctrl+Shift+H keybind to do the same.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/avBqR0i.png <nowiki>Guide illustration</nowiki>]<nowiki>
+⬥ Doing this will open the </nowiki><strong><nowiki>Search/Replace</nowiki></strong><nowiki> side menu.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/bLoBXsg.png <nowiki>Guide illustration</nowiki>]<nowiki>
+⬥ The search box is where you enter what you want to replace and the replace box is where you enter what you want to replace it with.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/1aRteP5.png <nowiki>Guide illustration</nowiki>]<nowiki>
+⬥ However, most of these results aren't what we're looking for so can be dismissed by hovering over the number to the right and clicking the X to dismiss the whole file or the individual Xs below to dismiss individual matches.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/acVwcaR.png <nowiki>Guide illustration</nowiki>]<nowiki>
+⬥ When you find something you want to replace. you can either right click and click Replace to do it one at a time or you can click the icon to the left of the X to replace all matches in a file.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/wolcMdJ.png <nowiki>Guide illustration</nowiki>]<nowiki>
+​</nowiki></p>
+<nowiki>
+      
+    </nowiki>
+== Attribution and source history ==
+Adapted from [https://pvme.io/pvme-guides/editor-resources/github-tutorials/github-tips-and-troubleshooting/ <nowiki>Github Tips And Troubleshooting</nowiki>] by PvME contributors. [https://github.com/pvme/pvme-guides/commits/master/editor-resources/github-tutorials/github-tips-and-troubleshooting.txt Upstream source history]. Licensed [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]. Snapshot 074a9438f79d10fba75735791be0030734db8b5e. Formatting adapted for standalone MediaWiki; media and third-party references remain external links.

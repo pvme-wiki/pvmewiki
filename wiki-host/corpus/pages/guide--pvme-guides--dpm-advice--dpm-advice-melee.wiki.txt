@@ -1,0 +1,444 @@
+[[PvME|PvME guide index]]
+
+<span id="melee-dpm-advice"></span><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>This guide will go over general damage output lessons, ability prioritisation, a learning path, and style-specific solutions for common PvM concerns.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Knowledge of in-game ability/item descriptions is assumed, this guide aims to tie the tools together rather than list what they do.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Melee rotations are highly situational and often change based on boss timings, phase length, weapon setup, and how much switching is practical.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ For general PvM terminology, damage tips, and revolution bars, check out their respective sections in </nowiki>[[PvME/Damage rotations/Damage rotations FAQ|<nowiki>DPM Advice Faq</nowiki>]]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ For recommended upgrade order, see </nowiki>[[PvME/Gear upgrades/Melee upgrade order|<nowiki>Melee</nowiki>]]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ For invention perks, see </nowiki>[[PvME/Invention perks/Perks|<nowiki>Perks</nowiki>]]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ If you need tailored advice for a specific boss or gear setup, ask in </nowiki>[https://discord.com/channels/534508796639182860/656898197561802760 <nowiki>PvM help (external Discord)</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ To compare abilities, use </nowiki>[https://tools.runescape.wiki/rs-rot/melee <nowiki>RS Analysis' Melee Page</nowiki>]<nowiki>, and add your gear</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="abilities-attacks-and-weapons"><ins><nowiki>Abilities, Attacks and Weapons</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="prioritising-basic-abilities"><ins><nowiki>Prioritising Basic Abilities</nowiki></ins><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478062907295010906.png?v=1 <nowiki>meleebasic</nowiki>]</h3>
+<nowiki>
+</nowiki><p><nowiki>You should prioritise the following Basic abilities:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Punish</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532879439069184.png?v=1 <nowiki>punish</nowiki>]<nowiki> if the target is &lt;50% life points</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Backhand</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/867678153854025779.png?v=1 <nowiki>backhandflank</nowiki>]<nowiki> with Flanking </nowiki>[https://cdn.discordapp.com/emojis/712073088296157185.png?v=1 <nowiki>flank4</nowiki>]<nowiki> if the boss is not facing you</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Greater Fury</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532879334080527.png?v=1 <nowiki>gfury</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Rend</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1488133579614588948.png?v=1 <nowiki>rendgop</nowiki>]<nowiki> with Gloves of Passage </nowiki>[https://cdn.discordapp.com/emojis/556588694862037012.png?v=1 <nowiki>glovesofpassage</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Adaptive Strike</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478062906057949417.png?v=1 <nowiki>adaptivestrike</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Fury</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532879510372352.png?v=1 <nowiki>fury</nowiki>]<nowiki> (if </nowiki>[https://cdn.discordapp.com/emojis/535532879334080527.png?v=1 <nowiki>gfury</nowiki>]<nowiki> is not yet unlocked)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Do </nowiki><ins><nowiki>not</nowiki></ins><nowiki> use these Basic abilities to build:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Chaos Roar</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478062908767211640.png?v=1 <nowiki>chaosroar</nowiki>]<nowiki> should be used before a heavy-hitting attack and its cooldown is too long</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Greater Barge</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532879250456578.png?v=1 <nowiki>gbarge</nowiki>]<nowiki> should be used before a strong channelled ability</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="prioritising-stronger-abilities"><ins><nowiki>Prioritising Stronger Abilities</nowiki></ins><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532879334080517.png?v=1 <nowiki>overpower</nowiki>]</h3>
+<nowiki>
+</nowiki><p><nowiki>When spending adrenaline, there are two primary considerations:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ total damage over time (e.g., the start of a phase) vs. instant damage (burst damage, e.g., boss damage check window)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ adren cost vs. total damage</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>In general, prioritise the following abilities and special attacks:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Berserk</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> whenever possible</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Ek-ZekKil</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/903244090953588787.png?v=1 <nowiki>ezk</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> during </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> for fights lasting over 1 minute</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• First cast </nowiki><code><nowiki>280 AD</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Further casts (Flamebound Rival </nowiki>[https://cdn.discordapp.com/emojis/1404885709034229922.png?v=1 <nowiki>flameboundrival</nowiki>]<nowiki>) </nowiki><code><nowiki>1045 AD</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Greater Flurry</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532879283879977.png?v=1 <nowiki>gflurry</nowiki>]<nowiki> in </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> </nowiki><code><nowiki>520 AD</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• For its Berserk extension</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Assault</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532855191928842.png?v=1 <nowiki>assault</nowiki>]<nowiki> when 4+ </nowiki>[https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1 <nowiki>bloodlust</nowiki>]<nowiki> </nowiki><code><nowiki>720 AD</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Greater Flurry</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532879283879977.png?v=1 <nowiki>gflurry</nowiki>]<nowiki> with 4+ </nowiki>[https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1 <nowiki>bloodlust</nowiki>]<nowiki> and target below ~71% life points</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• &lt;71% LP </nowiki><code><nowiki>671 AD</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• &lt;50% LP </nowiki><code><nowiki>780 AD</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• &lt;35% LP </nowiki><code><nowiki>858 AD</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Overpower</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/959089455640215633.png?v=1 <nowiki>overpowerigneous</nowiki>]<nowiki> with Igneous cape </nowiki>[https://cdn.discordapp.com/emojis/902209626404192316.png?v=1 <nowiki>igneouskalket</nowiki>]<nowiki> </nowiki><code><nowiki>620 AD</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Assault</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532855191928842.png?v=1 <nowiki>assault</nowiki>]<nowiki> with &lt;4 </nowiki>[https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1 <nowiki>bloodlust</nowiki>]<nowiki> </nowiki><code><nowiki>560 AD</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Massacre</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478062911619469495.png?v=1 <nowiki>massacre</nowiki>]<nowiki> with </nowiki>[https://cdn.discordapp.com/emojis/694566917456789554.png?v=1 <nowiki>mwspear</nowiki>]<nowiki> + </nowiki><ins><nowiki>not</nowiki></ins><nowiki> inside </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> + your target can take damage for another 24s </nowiki><code><nowiki>1120 AD</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Slaughter</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478062904732418159.png?v=1 <nowiki>slaughter</nowiki>]<nowiki> with </nowiki>[https://cdn.discordapp.com/emojis/694566917456789554.png?v=1 <nowiki>mwspear</nowiki>]<nowiki> + </nowiki><ins><nowiki>not</nowiki></ins><nowiki> inside </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> + your target can take damage for another 18s </nowiki><code><nowiki>810 AD</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Dismember</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478062910113714297.png?v=1 <nowiki>dismember</nowiki>]<nowiki> with </nowiki>[https://cdn.discordapp.com/emojis/694566917456789554.png?v=1 <nowiki>mwspear</nowiki>]<nowiki> + Strength cape </nowiki>[https://cdn.discordapp.com/emojis/1172654837616353320.png?v=1 <nowiki>strcape</nowiki>]<nowiki> + Lunging perk </nowiki>[https://cdn.discordapp.com/emojis/736522494315593759.png?v=1 <nowiki>lunge4</nowiki>]<nowiki> + </nowiki><ins><nowiki>not</nowiki></ins><nowiki> inside </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> + your target can take damage for another 18s </nowiki><code><nowiki>549 AD</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Overpower</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/959089455640215633.png?v=1 <nowiki>overpowerigneous</nowiki>]<nowiki> without cape </nowiki><code><nowiki>545 AD</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Varanus's Mercy</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1448697873603498045.png?v=1 <nowiki>varanussmercy</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki> </nowiki><code><nowiki>491.25 AD</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Unless perked with Equilibrium </nowiki>[https://cdn.discordapp.com/emojis/1005205003893485638.png?v=1 <nowiki>equilibrium</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Leng Set special attack</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/883134308146098227.png?v=1 <nowiki>lengmh</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/883134308070604870.png?v=1 <nowiki>lengoh</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> with 2+ Primordial Ice </nowiki>[https://cdn.discordapp.com/emojis/1219291285358120990.png?v=1 <nowiki>primordialice</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• 4 stacks </nowiki><code><nowiki>475 AD</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• 3 stacks </nowiki><code><nowiki>435 AD</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• 2 stacks </nowiki><code><nowiki>395 AD</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Greater Flurry</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532879283879977.png?v=1 <nowiki>gflurry</nowiki>]<nowiki> when &lt;4 </nowiki>[https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1 <nowiki>bloodlust</nowiki>]<nowiki> or the target is &gt;71% LP </nowiki><code><nowiki>520 AD</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Hurricane</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532878969438210.png?v=1 <nowiki>cane</nowiki>]<nowiki> </nowiki><code><nowiki>320 AD</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Situational special attacks:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Granite Maul</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/796989663051120640.png?v=1 <nowiki>gmaul</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki> ignores cooldowns and can be spammed during a single GCD </nowiki><code><nowiki>125 AD</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Dragon Claws</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/779048041088024606.png?v=1 <nowiki>dragonclaw</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki> are seen as a direct downgrade from </nowiki>[https://cdn.discordapp.com/emojis/1448697873603498045.png?v=1 <nowiki>varanussmercy</nowiki>]<nowiki> </nowiki><code><nowiki>400 AD</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="utility-abilities-and-special-attacks"><ins><nowiki>Utility Abilities and Special Attacks</nowiki></ins><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/603979368850653216.png?v=1 <nowiki>dba</nowiki>]</h3>
+<nowiki>
+</nowiki><p><nowiki>These setup tools are especially useful because they let you enter the fight with buffs already active:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Dragon Battleaxe</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/603979368850653216.png?v=1 <nowiki>dba</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> for a 60s damage boost (</nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> at War's Retreat → 100% adren → enter instance)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Annihilation</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/796989662983094275.png?v=1 <nowiki>annihilation</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> to give a niche 30s damage-output buff</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Zaros Godsword</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/626465964325601290.png?v=1 <nowiki>zgs</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> for a mini-zerk </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Pulverise</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532879053062146.png?v=1 <nowiki>pulverise</nowiki>]<nowiki> for its damage reduction effect</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="building-adrenaline"><ins><nowiki>Building Adrenaline</nowiki></ins><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478070401702821938.png?v=1 <nowiki>meteorstrike</nowiki>]</h3>
+<nowiki>
+</nowiki><p><nowiki>Maximising your adrenaline is one of the key ways to output more damage, as you will be able to use stronger attacks.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>There are many ways to build adrenaline, many of which you will see built into the rotations below:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Meteor Strike</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478070401702821938.png?v=1 <nowiki>meteorstrike</nowiki>]<nowiki> for 225% adrenaline gain over 30s</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Typically stalled at </nowiki>[https://cdn.discordapp.com/emojis/1032540079589163049.png?v=1 <nowiki>warsretreatteleport</nowiki>]<nowiki> and used at the start of a fight, and again before each </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Adrenaline Potions</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/736298121704767538.png?v=1 <nowiki>adrenrenewal</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1011705731118006544.png?v=1 <nowiki>adrenalinepotion</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/641337470491033600.png?v=1 <nowiki>replen</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Typically used mid-rotation, with some giving instant adren and others giving adren-over-time</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Jaws of the Abyss</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/947871842595639306.png?v=1 <nowiki>jawsoftheabyss</nowiki>]<nowiki> alongside bleeds</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Gives +2% adren per active bleed (</nowiki>[https://cdn.discordapp.com/emojis/1478062910113714297.png?v=1 <nowiki>dismember</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478062904732418159.png?v=1 <nowiki>slaughter</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478062911619469495.png?v=1 <nowiki>massacre</nowiki>]<nowiki> and </nowiki>[https://cdn.discordapp.com/emojis/1285348334869151754.png?v=1 <nowiki>abyssalparasite</nowiki>]<nowiki> from </nowiki>[https://cdn.discordapp.com/emojis/947871842469834832.png?v=1 <nowiki>abyssalscourge</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1004107347259555981.png?v=1 <nowiki>abyssalarmourspike</nowiki>]<nowiki>)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Natural Instinct</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535541258131865633.png?v=1 <nowiki>naturalinstinct</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• 2x adrenaline gained for 20.4s</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Vestments of Havoc</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/994189297659940904.png?v=1 <nowiki>vestmentsofhavochood</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• 2-piece refunds 15-20% adrenaline after using a Melee ultimate (</nowiki>[https://cdn.discordapp.com/emojis/535532879334080517.png?v=1 <nowiki>overpower</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532879053062146.png?v=1 <nowiki>pulverise</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478070401702821938.png?v=1 <nowiki>meteorstrike</nowiki>]<nowiki>)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• 4-piece raises max adrenaline to 120% with melee weapons</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Divert</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/787904334377648130.png?v=1 <nowiki>divert</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Protects you from the next damaging attack and converts it to adrenaline</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>You may wish to follow a standard &quot;adrenaline re-build rotation&quot;:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> finishes → basics → </nowiki>[https://cdn.discordapp.com/emojis/603979368850653216.png?v=1 <nowiki>dba</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> → basics → </nowiki>[https://cdn.discordapp.com/emojis/1478070401702821938.png?v=1 <nowiki>meteorstrike</nowiki>]<nowiki> → basics → </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="maximising-berserk"><ins><nowiki>Maximising Berserk</nowiki></ins><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]</h3>
+<nowiki>
+</nowiki><p><nowiki>You can empower </nowiki><strong><nowiki>Berserk</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> in four ways:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ 4-piece of </nowiki><strong><nowiki>Vestments of Havoc</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/994189297659940904.png?v=1 <nowiki>vestmentsofhavochood</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• extend </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> by +6 seconds (giving more time to deal increased damage)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• increase max adrenaline by +20% (allowing for stronger abilities directly after </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki>)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Conservation of Energy</nowiki></strong><nowiki> relic </nowiki>[https://cdn.discordapp.com/emojis/697808773711921195.png?v=1 <nowiki>conservationofenergy</nowiki>]<nowiki> and </nowiki><strong><nowiki>Ring of Vigour passive</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/513201065877831680.png?v=1 <nowiki>rov</nowiki>]<nowiki> from </nowiki>[https://runescape.wiki/w/Extinction <nowiki>Extinction quest</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• both regain +10% adrenaline after using </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• these are additive to +20%</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Greater Flurry</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532879283879977.png?v=1 <nowiki>gflurry</nowiki>]<nowiki> extends </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• You can fit 2x </nowiki>[https://cdn.discordapp.com/emojis/535532879283879977.png?v=1 <nowiki>gflurry</nowiki>]<nowiki> &quot;for free&quot; in the </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> buff window</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Overpower</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532879334080517.png?v=1 <nowiki>overpower</nowiki>]<nowiki> can be used more frequently</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/535532879334080517.png?v=1 <nowiki>overpower</nowiki>]<nowiki> cooldown is reduced from 30s to 9s</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>When the above are combined together </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki>:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ consumes 100% → 80% adrenaline</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ lasts 19.8s → 35.4s</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="maximising-chaos-roar"><ins><nowiki>Maximising Chaos Roar</nowiki></ins><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478062908767211640.png?v=1 <nowiki>chaosroar</nowiki>]</h3>
+<nowiki>
+</nowiki><p><strong><nowiki>Chaos Roar</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478062908767211640.png?v=1 <nowiki>chaosroar</nowiki>]<nowiki> should be saved for when a high-damage ability can be used directly after</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ It is strongest with large single-hit or multi-hit abilities where the full cast benefits</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ It is weaker with channelled abilities like Assault </nowiki>[https://cdn.discordapp.com/emojis/535532855191928842.png?v=1 <nowiki>assault</nowiki>]<nowiki> or Greater Flurry </nowiki>[https://cdn.discordapp.com/emojis/535532879283879977.png?v=1 <nowiki>gflurry</nowiki>]<nowiki>, as only the first hit is boosted</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Strong follow-ups include:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Second (and subsequent) </nowiki><strong><nowiki>Ek-ZekKil spec</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/903244090953588787.png?v=1 <nowiki>ezk</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><em><nowiki>Note: do not waste </nowiki>[https://cdn.discordapp.com/emojis/1478062908767211640.png?v=1 <nowiki>chaosroar</nowiki>]<nowiki> on your first </nowiki>[https://cdn.discordapp.com/emojis/903244090953588787.png?v=1 <nowiki>ezk</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]</em></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Igneous Overpower</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/959089455640215633.png?v=1 <nowiki>overpowerigneous</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Varanus's Mercy</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1448697873603498045.png?v=1 <nowiki>varanussmercy</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Leng Set spec</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/883134308146098227.png?v=1 <nowiki>lengmh</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/883134308070604870.png?v=1 <nowiki>lengoh</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Hurricane</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532878969438210.png?v=1 <nowiki>cane</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Bleeds outside Berserk</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478062904732418159.png?v=1 <nowiki>slaughter</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478062911619469495.png?v=1 <nowiki>massacre</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="managing-bloodlust-stacks"><ins><nowiki>Managing Bloodlust stacks</nowiki></ins><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1 <nowiki>bloodlust</nowiki>]</h3>
+<nowiki>
+</nowiki><p><nowiki>Bloodlust stacks </nowiki>[https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1 <nowiki>bloodlust</nowiki>]<nowiki> are a important component of Melee DPM. Up to 4 (8 inside </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki>) can be stored, which are generated from:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ +1 </nowiki><strong><nowiki>any Basic ability</nowiki></strong><nowiki> (+2 inside </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki>)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ +2 from </nowiki><strong><nowiki>Rend</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478166426190741584.png?v=1 <nowiki>rend</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ +4 from </nowiki><strong><nowiki>Berserk</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>When spending </nowiki>[https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1 <nowiki>bloodlust</nowiki>]<nowiki> you should prioritise:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Assault</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532855191928842.png?v=1 <nowiki>assault</nowiki>]<nowiki> as your default</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Greater Flurry</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532879283879977.png?v=1 <nowiki>gflurry</nowiki>]<nowiki> if the target is below ~70% life points</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Hurricane</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532878969438210.png?v=1 <nowiki>cane</nowiki>]<nowiki> for AoE situations</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="camping-switching-weapons"><ins><nowiki>Camping &amp; Switching Weapons</nowiki></ins></h3>
+<nowiki>
+</nowiki><p><nowiki>Melee has multiple strong weapons, and the best option depends heavily on the situation:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Some rotations camp one weapon setup for simplicity</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Some rotations switch between weapons to use specific abilities for extra damage</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Some fights are too short or too awkward to make switches worthwhile</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>The most common &quot;default&quot; or &quot;camped&quot; weapons include:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Ek-ZekKil </nowiki>[https://cdn.discordapp.com/emojis/903244090953588787.png?v=1 <nowiki>ezk</nowiki>]</strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Camp Ek-ZekKil when the fight lasts over 1 minute</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Its value comes from </nowiki><strong><nowiki>Flamebound Rival</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1404885709034229922.png?v=1 <nowiki>flameboundrival</nowiki>]<nowiki> while equipped (+12% damage and damage reduction)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Not reliant on RNG stacks, with higher single-GCD burst and stronger damage from the second minute onwards</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• More expensive, weaker in the first minute, and needs a dual-wield switch to stall / cast </nowiki>[https://cdn.discordapp.com/emojis/535532879283879977.png?v=1 <nowiki>gflurry</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Leng swords </nowiki>[https://cdn.discordapp.com/emojis/883134308146098227.png?v=1 <nowiki>lengmh</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/883134308070604870.png?v=1 <nowiki>lengoh</nowiki>]</strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Camp Lengs for fights sub-1 minute, especially for higher first </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> damage</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• They are cheaper, do not need an </nowiki>[https://cdn.discordapp.com/emojis/745279787471470713.png?v=1 <nowiki>eof</nowiki>]<nowiki>, and passively build Primordial Ice </nowiki>[https://cdn.discordapp.com/emojis/1219291285358120990.png?v=1 <nowiki>primordialice</nowiki>]<nowiki> stacks</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Icy Tempest </nowiki>[https://cdn.discordapp.com/emojis/883134308146098227.png?v=1 <nowiki>lengmh</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> costs 0 adrenaline at 3+ </nowiki>[https://cdn.discordapp.com/emojis/1219291285358120990.png?v=1 <nowiki>primordialice</nowiki>]<nowiki> (still requires +30% to use)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Stacks are RNG-based, making rotations more flexible, and damage falls behind </nowiki>[https://cdn.discordapp.com/emojis/903244090953588787.png?v=1 <nowiki>ezk</nowiki>]<nowiki> from the second minute onwards</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Needs a 2h switch to stall / cast </nowiki>[https://cdn.discordapp.com/emojis/535532878969438210.png?v=1 <nowiki>cane</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Masterwork Spear of Annihilation </nowiki>[https://cdn.discordapp.com/emojis/694566917456789554.png?v=1 <nowiki>mwspear</nowiki>]</strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Used mostly as a switch to apply </nowiki>[https://cdn.discordapp.com/emojis/1478062910113714297.png?v=1 <nowiki>dismember</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478062904732418159.png?v=1 <nowiki>slaughter</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478062911619469495.png?v=1 <nowiki>massacre</nowiki>]<nowiki>, then return to your main weapon</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Ideally perked with Lunging 3/4 </nowiki>[https://cdn.discordapp.com/emojis/736522494315593759.png?v=1 <nowiki>lunge4</nowiki>]<nowiki> to maximise on bleed synergies</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Consecrated keris</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1334318846202478615.png?v=1 <nowiki>consecratedkeris</nowiki>]<nowiki> + Dark sliver of leng </nowiki>[https://cdn.discordapp.com/emojis/883134308070604870.png?v=1 <nowiki>lengoh</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Camp keris when your target is any follower of Amascut, including all Sanctum of Rebirth bosses </nowiki>[https://cdn.discordapp.com/emojis/1278853591221669911.png?v=1 <nowiki>nakatra</nowiki>]<nowiki> and Amascut </nowiki>[https://cdn.discordapp.com/emojis/1400943309576470589.png?v=1 <nowiki>amascuthead</nowiki>]<nowiki> herself</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Increases your damage by ~37%</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="building-a-rotation"><ins><nowiki>Building a Rotation</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>Take this section with a pinch of salt... every boss is different and in reality we build &quot;situational&quot; rotations based on:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Phases and immunity windows </nowiki>[https://cdn.discordapp.com/emojis/789813907706478603.png?v=1 <nowiki>raksha</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Berserk buff uptime/downtime </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Adrenaline levels </nowiki>[https://cdn.discordapp.com/emojis/1478062907295010906.png?v=1 <nowiki>meleebasic</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Available weapons </nowiki>[https://cdn.discordapp.com/emojis/903244090953588787.png?v=1 <nowiki>ezk</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/883134308146098227.png?v=1 <nowiki>lengmh</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/883134308070604870.png?v=1 <nowiki>lengoh</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/694566917456789554.png?v=1 <nowiki>mwspear</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Pre-fight setup and utility abilities </nowiki>[https://cdn.discordapp.com/emojis/603979368850653216.png?v=1 <nowiki>dba</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Bloodlust stacks </nowiki>[https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1 <nowiki>bloodlust</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Weapon special attacks </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ EoF usage </nowiki>[https://cdn.discordapp.com/emojis/1448697873603498045.png?v=1 <nowiki>varanussmercy</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Vulnerability bombs </nowiki>[https://cdn.discordapp.com/emojis/655341074235129858.png?v=1 <nowiki>vulnbomb</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ And more...!</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>The examples below are not fixed boss rotations. They show how to start with a simple Berserk </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> window, then gradually add extra layers such as Greater Barge </nowiki>[https://cdn.discordapp.com/emojis/535532879250456578.png?v=1 <nowiki>gbarge</nowiki>]<nowiki>, weapon specs, bleeds, and pre-fight setup.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="step-1-basic-rotation"><ins><nowiki>Step 1: Basic Rotation</nowiki></ins><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]</h3>
+<nowiki>
+</nowiki><p><em><nowiki>At its core, a basic Melee damage cycle looks like...</nowiki></em></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Build adrenaline → </nowiki>[https://cdn.discordapp.com/emojis/1478070401702821938.png?v=1 <nowiki>meteorstrike</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> → high-damage abilities → </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> finishes → repeat</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Notes:</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ During </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki>, spend adrenaline on your strongest available abilities</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Outside </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki>, continue using strong abilities, but begin saving adrenaline and cooldowns for when </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> is nearly available again</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="step-2-greater-barge-potions"><ins><nowiki>Step 2: Greater Barge &amp; Potions</nowiki></ins><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/535532879250456578.png?v=1 <nowiki>gbarge</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/736298121704767538.png?v=1 <nowiki>adrenrenewal</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/655341074235129858.png?v=1 <nowiki>vulnbomb</nowiki>]</h3>
+<nowiki>
+</nowiki><p><em><nowiki>It's time to put those pretty potions to good use...</nowiki></em></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/736298121704767538.png?v=1 <nowiki>adrenrenewal</nowiki>]<nowiki> → (tc) boss → </nowiki>[https://cdn.discordapp.com/emojis/535532879250456578.png?v=1 <nowiki>gbarge</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/655341074235129858.png?v=1 <nowiki>vulnbomb</nowiki>]<nowiki> → bleed </nowiki>[https://cdn.discordapp.com/emojis/535532879283879977.png?v=1 <nowiki>gflurry</nowiki>]<nowiki> → high-damage abilities</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Notes:</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Situationally, </nowiki>[https://cdn.discordapp.com/emojis/535532879250456578.png?v=1 <nowiki>gbarge</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> may be switched (</nowiki>[https://cdn.discordapp.com/emojis/535532879250456578.png?v=1 <nowiki>gbarge</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532879283879977.png?v=1 <nowiki>gflurry</nowiki>]<nowiki>)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="step-3-adding-pre-fight-boosts"><ins><nowiki>Step 3: Adding pre-fight boosts</nowiki></ins><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/603979368850653216.png?v=1 <nowiki>dba</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1478070401702821938.png?v=1 <nowiki>meteorstrike</nowiki>]</h3>
+<nowiki>
+</nowiki><p><em><nowiki>Who doesn't want free damage?!</nowiki></em></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ At War's </nowiki>[https://cdn.discordapp.com/emojis/1032540079589163049.png?v=1 <nowiki>warsretreatteleport</nowiki>]<nowiki> use </nowiki>[https://cdn.discordapp.com/emojis/603979368850653216.png?v=1 <nowiki>dba</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> → rebuild to 100% adrenaline at crystal</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ You can also stall and release an ability to gain a &quot;free&quot; ultimate at the start of the fight:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Option A) s</nowiki>[https://cdn.discordapp.com/emojis/1478070401702821938.png?v=1 <nowiki>meteorstrike</nowiki>]<nowiki> → enter instance → r</nowiki>[https://cdn.discordapp.com/emojis/1478070401702821938.png?v=1 <nowiki>meteorstrike</nowiki>]<nowiki> on a dummy </nowiki>[https://cdn.discordapp.com/emojis/656844963522281473.png?v=1 <nowiki>dummy</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Option B) s</nowiki>[https://cdn.discordapp.com/emojis/903244090953588787.png?v=1 <nowiki>ezk</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> → enter instance → r</nowiki>[https://cdn.discordapp.com/emojis/903244090953588787.png?v=1 <nowiki>ezk</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/1478070401702821938.png?v=1 <nowiki>meteorstrike</nowiki>]<nowiki> on boss</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="step-4-camped-weapon-specs"><ins><nowiki>Step 4: Camped weapon specs</nowiki></ins><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/883134308146098227.png?v=1 <nowiki>lengmh</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/903244090953588787.png?v=1 <nowiki>ezk</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]</h3>
+<nowiki>
+</nowiki><p><em><nowiki>Weave in your primary weapon special attack during </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]</em></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Where camping Lengs</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/883134308146098227.png?v=1 <nowiki>lengmh</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/883134308070604870.png?v=1 <nowiki>lengoh</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/1478070401702821938.png?v=1 <nowiki>meteorstrike</nowiki>]<nowiki> → s</nowiki>[https://cdn.discordapp.com/emojis/1478062906057949417.png?v=1 <nowiki>adaptivestrike</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532879250456578.png?v=1 <nowiki>gbarge</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/959089455640215633.png?v=1 <nowiki>overpowerigneous</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/883134308146098227.png?v=1 <nowiki>lengmh</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532879283879977.png?v=1 <nowiki>gflurry</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532878969438210.png?v=1 <nowiki>cane</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478166426190741584.png?v=1 <nowiki>rend</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/959089455640215633.png?v=1 <nowiki>overpowerigneous</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532855191928842.png?v=1 <nowiki>assault</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478062908767211640.png?v=1 <nowiki>chaosroar</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/883134308146098227.png?v=1 <nowiki>lengmh</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/959089455640215633.png?v=1 <nowiki>overpowerigneous</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478166426190741584.png?v=1 <nowiki>rend</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532855191928842.png?v=1 <nowiki>assault</nowiki>]<nowiki> (5t) → </nowiki>[https://cdn.discordapp.com/emojis/535532879283879977.png?v=1 <nowiki>gflurry</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/959089455640215633.png?v=1 <nowiki>overpowerigneous</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/883134308146098227.png?v=1 <nowiki>lengmh</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/1219291285358120990.png?v=1 <nowiki>primordialice</nowiki>]<nowiki> stacks are naturally rng, so expect small changes from kill to kill</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://youtu.be/O-PDUpCA7W8 <nowiki>Example video</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Where camping EZK</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/903244090953588787.png?v=1 <nowiki>ezk</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/1478070401702821938.png?v=1 <nowiki>meteorstrike</nowiki>]<nowiki> → s</nowiki>[https://cdn.discordapp.com/emojis/1478062906057949417.png?v=1 <nowiki>adaptivestrike</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532853916860437.png?v=1 <nowiki>barge</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/959089455640215633.png?v=1 <nowiki>overpowerigneous</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/903244090953588787.png?v=1 <nowiki>ezk</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532879283879977.png?v=1 <nowiki>gflurry</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478166426190741584.png?v=1 <nowiki>rend</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532878969438210.png?v=1 <nowiki>cane</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/959089455640215633.png?v=1 <nowiki>overpowerigneous</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532855191928842.png?v=1 <nowiki>assault</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478062908767211640.png?v=1 <nowiki>chaosroar</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/779048041088024606.png?v=1 <nowiki>dragonclaw</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/1448697873603498045.png?v=1 <nowiki>varanussmercy</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/959089455640215633.png?v=1 <nowiki>overpowerigneous</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478166426190741584.png?v=1 <nowiki>rend</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532878969438210.png?v=1 <nowiki>cane</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478062906057949417.png?v=1 <nowiki>adaptivestrike</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535532879439069184.png?v=1 <nowiki>punish</nowiki>]<nowiki> → s</nowiki>[https://cdn.discordapp.com/emojis/535532879283879977.png?v=1 <nowiki>gflurry</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/903244090953588787.png?v=1 <nowiki>ezk</nowiki>]<nowiki> r</nowiki>[https://cdn.discordapp.com/emojis/535532879283879977.png?v=1 <nowiki>gflurry</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/959089455640215633.png?v=1 <nowiki>overpowerigneous</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• For subsequent </nowiki>[https://cdn.discordapp.com/emojis/903244090953588787.png?v=1 <nowiki>ezk</nowiki>]<nowiki> repeats, swap </nowiki>[https://cdn.discordapp.com/emojis/903244090953588787.png?v=1 <nowiki>ezk</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> and </nowiki>[https://cdn.discordapp.com/emojis/535532878969438210.png?v=1 <nowiki>cane</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://youtu.be/lysqoo_CxDc <nowiki>Example video</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="step-5-putting-it-all-together"><ins><nowiki>Step 5: Putting it all together</nowiki></ins></h3>
+<nowiki>
+</nowiki><p><em><nowiki>This is it, the moment you've been waiting for, the BiS rotation...</nowiki></em></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>At War's</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1032540079589163049.png?v=1 <nowiki>warsretreatteleport</nowiki>]<nowiki>: </nowiki>[https://cdn.discordapp.com/emojis/603979368850653216.png?v=1 <nowiki>dba</nowiki>]<nowiki> → s</nowiki>[https://cdn.discordapp.com/emojis/903244090953588787.png?v=1 <nowiki>ezk</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>1st (3rd, 5th...) Berserk</nowiki></strong><nowiki>: (tc) + r</nowiki>[https://cdn.discordapp.com/emojis/903244090953588787.png?v=1 <nowiki>ezk</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/655341074235129858.png?v=1 <nowiki>vulnbomb</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/1478070401702821938.png?v=1 <nowiki>meteorstrike</nowiki>]<nowiki> → s </nowiki>[https://cdn.discordapp.com/emojis/1478062906057949417.png?v=1 <nowiki>adaptivestrike</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532879250456578.png?v=1 <nowiki>gbarge</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/959089455640215633.png?v=1 <nowiki>overpowerigneous</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532879283879977.png?v=1 <nowiki>gflurry</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478062908767211640.png?v=1 <nowiki>chaosroar</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532878969438210.png?v=1 <nowiki>cane</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1488133579614588948.png?v=1 <nowiki>rendgop</nowiki>]<nowiki> → s </nowiki>[https://cdn.discordapp.com/emojis/959089455640215633.png?v=1 <nowiki>overpowerigneous</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1448697873603498045.png?v=1 <nowiki>varanussmercy</nowiki>]<nowiki> + r </nowiki>[https://cdn.discordapp.com/emojis/959089455640215633.png?v=1 <nowiki>overpowerigneous</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532879283879977.png?v=1 <nowiki>gflurry</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/959089455640215633.png?v=1 <nowiki>overpowerigneous</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532855191928842.png?v=1 <nowiki>assault</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532878969438210.png?v=1 <nowiki>cane</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/959089455640215633.png?v=1 <nowiki>overpowerigneous</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>During Berserk cooldown</nowiki></strong><nowiki>: (</nowiki>[https://cdn.discordapp.com/emojis/1478062906057949417.png?v=1 <nowiki>adaptivestrike</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/1478062907295010906.png?v=1 <nowiki>meleebasic</nowiki>]<nowiki>) until Berserk has 14.4s cooldown left → </nowiki>[https://cdn.discordapp.com/emojis/603979368850653216.png?v=1 <nowiki>dba</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> → (</nowiki>[https://cdn.discordapp.com/emojis/1478062906057949417.png?v=1 <nowiki>adaptivestrike</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/1478062907295010906.png?v=1 <nowiki>meleebasic</nowiki>]<nowiki>) → </nowiki>[https://cdn.discordapp.com/emojis/1478070401702821938.png?v=1 <nowiki>meteorstrike</nowiki>]<nowiki> → (</nowiki>[https://cdn.discordapp.com/emojis/1478062906057949417.png?v=1 <nowiki>adaptivestrike</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/1478062907295010906.png?v=1 <nowiki>meleebasic</nowiki>]<nowiki>)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>2nd (4th, 6th...) Berserk</nowiki></strong><nowiki>: </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532879250456578.png?v=1 <nowiki>gbarge</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/959089455640215633.png?v=1 <nowiki>overpowerigneous</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532879283879977.png?v=1 <nowiki>gflurry</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478062908767211640.png?v=1 <nowiki>chaosroar</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532878969438210.png?v=1 <nowiki>cane</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478166426190741584.png?v=1 <nowiki>rend</nowiki>]<nowiki> → s</nowiki>[https://cdn.discordapp.com/emojis/959089455640215633.png?v=1 <nowiki>overpowerigneous</nowiki>]<nowiki> → r</nowiki>[https://cdn.discordapp.com/emojis/959089455640215633.png?v=1 <nowiki>overpowerigneous</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/903244090953588787.png?v=1 <nowiki>ezk</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> → 7t </nowiki>[https://cdn.discordapp.com/emojis/535532855191928842.png?v=1 <nowiki>assault</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532879334080527.png?v=1 <nowiki>gfury</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/959089455640215633.png?v=1 <nowiki>overpowerigneous</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532879439069184.png?v=1 <nowiki>punish</nowiki>]<nowiki> → 8t </nowiki>[https://cdn.discordapp.com/emojis/535532879283879977.png?v=1 <nowiki>gflurry</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478166426190741584.png?v=1 <nowiki>rend</nowiki>]<nowiki> → s</nowiki>[https://cdn.discordapp.com/emojis/959089455640215633.png?v=1 <nowiki>overpowerigneous</nowiki>]<nowiki> → r</nowiki>[https://cdn.discordapp.com/emojis/959089455640215633.png?v=1 <nowiki>overpowerigneous</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/535532878969438210.png?v=1 <nowiki>cane</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+      
+    </nowiki>
+== Attribution and source history ==
+Adapted from [https://pvme.io/pvme-guides/dpm-advice/dpm-advice-melee/ <nowiki>DPM Advice Melee</nowiki>] by PvME contributors. [https://github.com/pvme/pvme-guides/commits/master/dpm-advice/dpm-advice-melee.txt Upstream source history]. Licensed [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]. Snapshot 074a9438f79d10fba75735791be0030734db8b5e. Formatting adapted for standalone MediaWiki; media and third-party references remain external links.

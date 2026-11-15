@@ -1,0 +1,517 @@
+[[PvME|PvME guide index]]
+
+<h2 id="introduction"><ins><nowiki>Introduction</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>GitHub is a service that lets users maintain a repository of information that is organized, version controlled, and allows for easy contributions from many users. PvME uses GitHub to maintain its guides and information.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>This guide covers how to use GitHub for contributing to PvME. If you would like to directly skip to the instructions, you can directly navigate to the </nowiki><ins><strong><nowiki>Tutorial</nowiki></strong></ins><nowiki> section using the pinned links, and if you would like a quick tutorial, use </nowiki>[[PvME/Contributing/Github Quick Guide|<nowiki>Github Quick Guide</nowiki>]]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Once you have completed this tutorial, you can look at </nowiki>[[PvME/Contributing/Github Tips And Troubleshooting|<nowiki>Github Tips And Troubleshooting</nowiki>]]<nowiki> for more tips, tricks, and other information.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="how-github-works"><ins><nowiki>How GitHub Works</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>⬥ GitHub is an Internet hosting service that offers the use of Git repositories, which is how PvME stores its information and guides.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ A repository is a collection of all the files and folders for a project, that is tracked and version controlled.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Anyone can contribute to the PvME repository.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The basic contribution process looks like this:</nowiki></p>
+<nowiki>
+</nowiki><pre>fork PvME repo → make changes → commit changes → make pull request → changes get accepted
+</pre>
+<nowiki>
+</nowiki><p><nowiki>⬥ A brief explanation of the steps:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Make a copy of the repository</nowiki></strong><nowiki>, also known as </nowiki><em><nowiki>forking</nowiki></em><nowiki> the repository. You now have an up-to-date copy of the PvME files.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Make changes to the files in your repository and commit them</nowiki></strong><nowiki> to your own repository. You can think of this as &quot;saving&quot; your changes.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• To add your new changes to the PvME repository, </nowiki><strong><nowiki>make a pull request</nowiki></strong><nowiki>. This tells PvME that you have changes you want </nowiki><em><nowiki>pulled</nowiki></em><nowiki> from your files into PvME's files.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Wait for your pull request to be accepted</nowiki></strong><nowiki>. When this is done, your changes will now be a part of PvME's guides!</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• You can now re-sync, or delete and re-fork the repository once you want to make more changes.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="tutorial"><ins><nowiki>Tutorial</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>The goal of this tutorial is to add your name to the list at the bottom of this guide.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h3 id="step-1-create-a-github-account-httpsgithubcom"><nowiki>Step 1: Create a GitHub Account (</nowiki>[https://github.com/ <nowiki>https://github.com</nowiki>]<nowiki>)</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Go to GitHub and use the </nowiki><em><nowiki>Sign Up</nowiki></em><nowiki> button on the top right of the page.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Your username and e-mail account will be visible, so ensure you don't include personal information</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ If you have a GitHub account already, it is advised to make a new one for PvME unless you are certain that you haven't doxxed yourself in your commit histories.</nowiki></p>
+<nowiki>
+</nowiki><p><em><nowiki>For experienced users: If you use the Git CLI, make sure you check your </nowiki><code><nowiki>git config [user.name|user.email]</nowiki></code><nowiki> ‎configs, as these settings can still dox you, even if you use a new account.</nowiki></em></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/uI7JVfh.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="step-2-fork-the-pvme-repository-httpsgithubcompvmepvme-guides"><nowiki>Step 2: Fork the PvME Repository (</nowiki>[https://github.com/pvme/pvme-guides <nowiki>https://github.com/pvme/pvme-guides</nowiki>]<nowiki>)</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ This creates a personal copy of the repository that you can then edit at your leisure.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Click the </nowiki><em><nowiki>Fork</nowiki></em><nowiki> button at the top right of the page, then confirm the creation of the fork.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/9sDym3q.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/TenWOom.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="step-3-open-your-forked-repository-in-your-browser"><nowiki>Step 3: Open Your Forked Repository In Your Browser</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ You can find it by selecting </nowiki><em><nowiki>Your Repositories</nowiki></em><nowiki> in the dropdown menu, found by clicking your profile at the top right.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ You will know you are in your forked repository when the top-left of the website looks like this:</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/h0zk8pQ.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><p><em><nowiki>For experienced users: You can just clone the repository locally and work from your local machine, whatever you prefer.</nowiki></em></p>
+<nowiki>
+</nowiki><h3 id="step-4-navigate-to-the-github-tutorialtxt-file"><nowiki>Step 4: Navigate to the </nowiki><em><nowiki>github-tutorial.txt</nowiki></em><nowiki> File</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ The structure of the PvME repository mimics the server category/channel structure, to navigate through the repository click through folders that share the name of the discord categories, until you find this guide in the GitHub repository.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If you are struggling to find a file you can use the search bar at the top.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The file is located at </nowiki><em><nowiki>editor-resources &gt; github-tutorials &gt; github-tutorial.txt</nowiki></em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/tT47C8Y.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="step-5-enable-discord-developer-options-and-copy-discord-id"><nowiki>Step 5: Enable Discord Developer Options and Copy Discord ID</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ This is required to be able to copy your own Discord ID.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ These settings are accessible at </nowiki><em><nowiki>Discord App Settings &gt; Advanced &gt; Developer Console &gt; (turn on)</nowiki></em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ After enabling them, you can right-click your name or profile picture to copy your own Discord ID.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/fUd2Z3a.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/17NA9pa.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/uK0diGu.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="step-6-your-first-change-and-contribution"><nowiki>Step 6: Your First Change and Contribution</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Click the </nowiki><em><nowiki>Edit</nowiki></em><nowiki> icon at the top right to begin editing the file. It looks like a pencil.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Paste your Discord ID at the bottom of the file, below the other IDs, in the format </nowiki><code><nowiki>&lt;@yourusedidhere&gt;</nowiki></code><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Replace the text with your Discord ID.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Then </nowiki><em><nowiki>commit</nowiki></em><nowiki> (i.e. save) your changes.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Leave the settings at their default (i.e. &quot;Commit directly to the </nowiki><code><nowiki>master</nowiki></code><nowiki> ‎branch&quot;).</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/SFB0OqA.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/EKpuYym.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="step-7-create-a-pull-request"><nowiki>Step 7: Create A Pull Request</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Navigate to the </nowiki><em><nowiki>Code</nowiki></em><nowiki> tab in your personal repository. You will notice that you are now </nowiki><em><nowiki>1 commit ahead</nowiki></em><nowiki> - this means you have changes ready to contribute!</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Click the </nowiki><em><nowiki>Contribute</nowiki></em><nowiki> button and select </nowiki><em><nowiki>Pull Request</nowiki></em><nowiki> from the drop-down.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ You can add type something like &quot;add my name to github-tutorial&quot; as the commit message, and then create the </nowiki><em><nowiki>pull request</nowiki></em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/DXYZid4.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/696GEzw.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="step-8-thats-it"><nowiki>Step 8: That's it!</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ You're done! If your changes are approved, then your pull request will be merged into PvME.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The </nowiki>[[PvME/Contributing/Github Comp Tutorial|<nowiki>Github Comp Tutorial</nowiki>]]<nowiki> channel will get updated, and your name will appear in the channel.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ You can resync or delete your fork </nowiki><em><nowiki>after</nowiki></em><nowiki> the pull request is accepted. To delete a fork, go to your repo </nowiki><em><nowiki>Settings</nowiki></em><nowiki>, and scroll down till you find the option to delete. Then follow the confirmation process.</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/VpO5Lde.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/YaxlO8O.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/a1HmkID.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h2 id="successfully-completed-pvmes-github-tutorial"><ins><nowiki>Successfully Completed PvME's GitHub Tutorial</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>@ptazolite</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@brainrs</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@robomi</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@pernix</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@enhi</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@grime2</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@.ndy</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@rinswaps</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@geherman</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@trackandxc</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@zerocheus</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@ado111</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@durmoth</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@ykrors</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@brightrailgun</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@roar.roar</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@senie</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@godmandevil8</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@mionee.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@emmett_shark</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@pvme</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@oraknight</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@basetank</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@kukkelis</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@alexgrooders3320</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@aussieman422</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@turtle9491</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@kyroh</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@deleted_user_a3738c4f4c16</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@terpsichore</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@diealive</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@dming</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@pixel.green</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@annietheeagle</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@bankserino</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@miagroves</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@finah</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@.takyon.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@phatkez</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@friggityfrank</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@hightdetal</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@ekarderif</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@w62</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@alluneve</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@inferium</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@sunforged</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@ladygoogoogaga</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@akritia</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@sambanator</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@deleted_user_f9d88888270c</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@washlyjay</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@dr.fishbones</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@blockdude</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@txj</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@codemati</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@whimbtw</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@.ezee</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@ferroric</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@sreveryn</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@oscar</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@stormight</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@rcm37</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@moxielf</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@.orangespice</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@epsilon39</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@skalshadar</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Cris</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@chrash.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@obelex</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@zombunny</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@adderinoo</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@neonx222</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@eusono</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@hyperrr</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@tinky1</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@peterkirk</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Linie</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@achievementshunter</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@reisenmoonrabbit</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@porfy</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@_rolypoly</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@markei</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@rinswaps</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>@jibyjib</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Cloudy day</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Contributor name unavailable</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Bliksemvis</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>thuem</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Loki</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+      
+    </nowiki>
+== Attribution and source history ==
+Adapted from [https://pvme.io/pvme-guides/editor-resources/github-tutorials/github-comp-tutorial/ <nowiki>Github Comp Tutorial</nowiki>] by PvME contributors. [https://github.com/pvme/pvme-guides/commits/master/editor-resources/github-tutorials/github-comp-tutorial.txt Upstream source history]. Licensed [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]. Snapshot 074a9438f79d10fba75735791be0030734db8b5e. Formatting adapted for standalone MediaWiki; media and third-party references remain external links.

@@ -6,10 +6,7 @@ $db = RuntimeConfig::database();
 
 $wgSitename = 'PvME Wiki';
 $wgMetaNamespace = 'PvME_Wiki';
-$wgServer = getenv('MW_SERVER') ?: 'https://pvmewiki.sanji3.dev';
-if (!preg_match('#^https://[a-z0-9.-]+$#D', $wgServer)) {
-    throw new RuntimeException('MW_SERVER must be an HTTPS origin');
-}
+$wgServer = RuntimeConfig::server();
 $wgCanonicalServer = $wgServer;
 $wgScriptPath = '';
 $wgResourceBasePath = $wgScriptPath;
@@ -44,5 +41,5 @@ wfLoadExtension('VisualEditor');
 wfLoadExtension('WikiEditor');
 wfLoadExtension('TemplateData');
 wfLoadExtension('Moderation');
-// Bootstrap maintenance processes import the signed corpus before HTTP starts.
+// Bootstrap maintenance processes import the checksum-verified corpus before HTTP starts.
 $wgModerationEnable = getenv('MW_BOOTSTRAP') !== '1';
