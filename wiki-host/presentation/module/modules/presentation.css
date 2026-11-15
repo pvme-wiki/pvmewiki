@@ -564,6 +564,7 @@ body:not(.pvme-visual-mode) #pvme-visual-reader,
 .pvme-climber-sequence>li{position:relative;display:flex;gap:8px;align-items:flex-start;min-width:0;border:1px solid #b6bec7;border-radius:7px;background:white;padding:10px;line-height:1.5;overflow-wrap:anywhere}
 .pvme-sequence-number{display:inline-grid;place-items:center;flex:0 0 26px;height:26px;border-radius:50%;background:#263c51;color:white;font-weight:700}
 .pvme-climber-sequence>li>div{min-width:0}
+.pvme-climber-sequence>li:first-child{grid-column:1/-1}
 .pvme-climber-sequence .pvme-ability-image{margin:2px 0}
 .pvme-amascut-preset{margin:1.5rem 0!important;padding:1rem;background:#f1f4f7;border:1px solid #b7c2ce;border-radius:8px;color:#222}
 .pvme-amascut-preset figcaption{font-size:1.15rem;font-weight:700;margin-bottom:.5rem}
