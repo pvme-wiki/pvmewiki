@@ -21,8 +21,8 @@
   },
   "ResourceModules": {
     "ext.pvmePresentation.reader": {
-      "packageFiles": ["modules/reader.js", "modules/navigation.json"],
-      "dependencies": ["mediawiki.util"]
+      "packageFiles": ["modules/reader.js", "modules/navigation.json", "modules/wiki-export.js", "modules/visual-reader.js", "modules/presets.json"],
+      "dependencies": ["mediawiki.util", "mediawiki.api"]
     },
     "ext.pvmePresentation.styles": {
       "styles": [

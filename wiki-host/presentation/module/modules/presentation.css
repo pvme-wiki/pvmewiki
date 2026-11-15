@@ -1,4 +1,55 @@
 /* Only the BeforePageDisplay title gate adds this body class. */
+html:not(.ve-active):not(.ve-activating) body.pvme-visual-mode:not(.ve-active):not(.ve-activating) #mw-content-text > .mw-parser-output { display: none; }
+body:not(.pvme-visual-mode) #pvme-visual-reader,
+.ve-active #pvme-visual-reader,
+.ve-active #pvme-reader-tools,
+.ve-active #pvme-reader-update-notice { display: none; }
+.ve-activating #pvme-visual-reader,
+.ve-activating #pvme-reader-tools,
+.ve-activating #pvme-reader-update-notice { display: none; }
+.pvme-presentation .pvme-reader-toggle { display: block; margin-block: .8rem; padding: .6rem; font: inherit; color: #593410; background: #fff; border: 1px solid #81501f; border-radius: .3rem; cursor: pointer; }
+.pvme-presentation .pvme-visual-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); gap: .7rem; margin-block: 1rem; }
+.pvme-presentation .pvme-visual-card { padding: .9rem; border: 1px solid #d8b78b; border-radius: .4rem; background: #fbf6ec; color: #262a2e; overflow-wrap: anywhere; }
+.pvme-presentation .pvme-visual-qualification { border-inline-start: 2px solid #a88c69; margin-block-start: .55rem; padding-inline-start: .6rem; font-size: .95em; }
+.pvme-presentation .pvme-visual-warning { border-inline-start: 4px solid #a55818; background: #fff2df; }
+.pvme-presentation #pvme-visual-reader a.pvme-visual-redundant-icon { display: none; }
+.pvme-presentation .pvme-visual-cue { width: 100%; border-collapse: collapse; margin-block: 1rem; }
+.pvme-presentation .pvme-visual-cue caption { text-align: start; font-size: .85rem; color: #555b61; }
+.pvme-presentation .pvme-visual-cue :is(th,td) { padding: .9rem; border: 1px solid #d8b78b; vertical-align: top; text-align: start; }
+.pvme-presentation .pvme-visual-cue th { width: 32%; background: #fbf6ec; }
+.pvme-presentation .pvme-preset-panel { padding: 1rem; margin-block: 1rem 1.8rem; border: 1px solid #d8b78b; border-radius: .5rem; background: #f7f5f0; color: #262a2e; }
+.pvme-presentation .pvme-preset-panel > p { font-size: .9rem; }
+.pvme-presentation .pvme-preset-grid { display: grid; gap: .45rem; list-style: none; padding: 0; margin: .6rem 0 1rem; }
+.pvme-presentation .pvme-preset-equipment { grid-template-columns: repeat(3, minmax(0,1fr)); }
+.pvme-presentation .pvme-preset-inventory { grid-template-columns: repeat(7, minmax(0,1fr)); }
+.pvme-presentation .pvme-preset-grid li { list-style: none; padding: .6rem; min-width: 0; border: 1px solid #c7c2b8; border-radius: .3rem; background: #fff; overflow-wrap: anywhere; line-height: 1.4; }
+.pvme-presentation .pvme-preset-grid small { display: block; color: #666; font-size: .7rem; margin-block-end: .25rem; }
+.pvme-presentation .pvme-preset-grid strong { font-size: .9rem; }
+.pvme-presentation .pvme-preset-note { margin: .4rem 0 0; font-size: .85rem; padding-block-start: .4rem; border-top: 1px solid #d8b78b; }
+.pvme-presentation .pvme-preset-grid .pvme-preset-empty { opacity: .65; border-style: dashed; }
+@media (max-width: 600px) {
+    .pvme-presentation .pvme-visual-list { grid-template-columns: repeat(2,minmax(0,1fr)); }
+    .pvme-presentation .pvme-visual-list .pvme-visual-warning,
+    .pvme-presentation .pvme-visual-list .pvme-visual-long-card,
+    .pvme-presentation .pvme-visual-list .pvme-visual-card:has(.pvme-visual-qualification) { grid-column: 1 / -1; }
+    .pvme-presentation .pvme-preset-panel { padding: .7rem; }
+    .pvme-presentation .pvme-preset-inventory { grid-template-columns: repeat(2,minmax(0,1fr)); }
+    .pvme-presentation .pvme-visual-cue :is(th,td) { display: block; box-sizing: border-box; width: 100%; }
+}
+.pvme-presentation #firstHeading { font-size: clamp(2rem, 2.5vw, 3rem); line-height: 1.15; padding-block: .5rem; }
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) { font-size: max(1em, 1rem); }
+.pvme-presentation .pvme-reader-export { margin-block-start: 1rem; padding-block-start: .8rem; border-block-start: 1px solid #d8b78b; }
+.pvme-presentation .pvme-reader-export button { font: inherit; font-weight: 600; padding: .65rem .9rem; border: 1px solid #81501f; border-radius: .3rem; color: #593410; background: #fff; cursor: pointer; }
+.pvme-presentation .pvme-reader-export button:disabled { cursor: wait; opacity: .7; }
+.pvme-presentation .pvme-reader-export textarea { box-sizing: border-box; width: 100%; min-height: 18rem; font: 14px/1.5 monospace; color: #262a2e; background: #fff; }
+.pvme-presentation #pvme-guide-filter { box-sizing: border-box; display: block; width: 100%; margin-block: .5rem; padding: .65rem; font: inherit; color: #262a2e; background: #fff; border: 1px solid #81501f; }
+.pvme-presentation .pvme-reader-grid a[hidden] { display: none; }
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content).pvme-legacy-reader .pvme-reader-phase-heading { padding: .65rem .8rem; border-inline-start: 4px solid #81501f; background: #fbf6ec; }
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content).pvme-legacy-reader .pvme-reader-term { margin-block-start: 1.4rem; padding-block-end: .35rem; border-bottom: 1px solid #d8b78b; font-size: 1.1em; }
+/* Labels are factual fallbacks; source text nodes stay intact for native editing. */
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) a[data-pvme-label] { font-size: 0; }
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) a[data-pvme-label]::after { content: attr(data-pvme-label); font-size: 1rem; }
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-reader-illustration { display: block; width: fit-content; max-width: 100%; padding: .8rem 1rem; border: 1px dashed #a88c69; border-radius: .3rem; background: #f7f5f0; }
 .pvme-presentation .pvme-reader-tools { margin-block: 0 1.5rem; padding: 1rem 1.2rem; border: 1px solid #d8b78b; border-radius: .5rem; background: #fbf6ec; color: #262a2e; line-height: 1.6; overflow-wrap: anywhere; }
 .pvme-presentation .pvme-reader-breadcrumbs { font-size: .95rem; }
 .pvme-presentation .pvme-reader-provenance { font-size: .85rem; color: #555b61; margin-block: .6rem; }
@@ -6,19 +57,19 @@
 .pvme-presentation .pvme-reader-grid a { display: block; padding: .7rem; border: 1px solid #d7d7d4; border-radius: .3rem; background: #fff; }
 .pvme-presentation .pvme-reader-jumps summary { cursor: pointer; font-weight: 600; }
 .pvme-presentation .pvme-reader-jumps ul { columns: 2 15rem; }
-.pvme-presentation .mw-parser-output.pvme-legacy-reader p { max-width: 88ch; margin-block: .65rem; }
-.pvme-presentation .mw-parser-output.pvme-legacy-reader h2 { margin-block-start: 2rem; border-bottom: 2px solid #d8b78b; padding-bottom: .35rem; line-height: 1.3; }
-.pvme-presentation .mw-parser-output.pvme-legacy-reader h3 { margin-block-start: 1.6rem; line-height: 1.35; }
-.pvme-presentation .mw-parser-output.pvme-legacy-reader :is(h2,h3) ins { text-decoration: none; }
-.pvme-presentation .mw-parser-output.pvme-legacy-reader :is(h2,h3,h4) { scroll-margin-top: 5rem; }
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content).pvme-legacy-reader p { max-width: 88ch; margin-block: .65rem; }
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content).pvme-legacy-reader h2 { margin-block-start: 2rem; border-bottom: 2px solid #d8b78b; padding-bottom: .35rem; line-height: 1.3; }
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content).pvme-legacy-reader h3 { margin-block-start: 1.6rem; line-height: 1.35; }
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content).pvme-legacy-reader :is(h2,h3) ins { text-decoration: none; }
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content).pvme-legacy-reader :is(h2,h3,h4) { scroll-margin-top: 5rem; }
 .pvme-presentation .pvme-reader-list-line { padding-inline-start: .9rem; border-inline-start: 2px solid #e4dfd4; }
 .pvme-presentation .pvme-reader-sequence { padding: .7rem; background: #f7f5f0; border-radius: .3rem; overflow-wrap: anywhere; }
-.pvme-presentation .mw-parser-output.pvme-legacy-reader table { max-width: 100%; }
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content).pvme-legacy-reader table { max-width: 100%; }
 @media (max-width: 600px) {
     .pvme-presentation .pvme-reader-tools { padding: .8rem; }
-    .pvme-presentation .mw-parser-output.pvme-legacy-reader table { display: block; overflow-x: auto; }
+    .pvme-presentation :is(.mw-parser-output, .pvme-visual-content).pvme-legacy-reader table { display: block; overflow-x: auto; }
 }
-.pvme-presentation .mw-parser-output {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) {
     --pvme-ink: #262a2e;
     --pvme-muted: #555b61;
     --pvme-line: #d7d7d4;
@@ -36,14 +87,14 @@
     line-height: 1.62;
     overflow-wrap: break-word;
 }
-.pvme-presentation .mw-parser-output a,
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) a,
 .pvme-presentation .pvme-reader-tools a { color: #2857a4; }
-.pvme-presentation .mw-parser-output :is(h2,h3,h4,h5,h6) { color: #262a2e; }
-.pvme-presentation .mw-parser-output :is(pre,code) { color: #262a2e; background: #f7f5f0; }
-.pvme-presentation .mw-parser-output :is(th,td) { color: #262a2e; background: #fff; }
-.pvme-presentation :is(.mw-parser-output,.pvme-reader-tools) a:focus-visible { outline: 3px solid #0b6cae; outline-offset: 2px; }
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) :is(h2,h3,h4,h5,h6) { color: #262a2e; }
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) :is(pre,code) { color: #262a2e; background: #f7f5f0; }
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) :is(th,td) { color: #262a2e; background: #fff; }
+.pvme-presentation :is(:is(.mw-parser-output, .pvme-visual-content),.pvme-reader-tools) a:focus-visible { outline: 3px solid #0b6cae; outline-offset: 2px; }
 
-.pvme-presentation .mw-parser-output .pvme-article {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-article {
     box-sizing: border-box;
     width: 100%;
     min-width: 0;
@@ -52,71 +103,71 @@
     padding-block-end: 2rem;
 }
 
-.pvme-presentation .mw-parser-output .pvme-article > :first-child {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-article > :first-child {
     margin-block-start: 0;
 }
 
-.pvme-presentation .mw-parser-output .pvme-article h2,
-.pvme-presentation .mw-parser-output .pvme-article h3,
-.pvme-presentation .mw-parser-output .pvme-article h4 {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-article h2,
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-article h3,
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-article h4 {
     color: var(--pvme-ink);
     line-height: 1.3;
     scroll-margin-top: 5rem;
 }
 
-.pvme-presentation .mw-parser-output .pvme-article h2 {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-article h2 {
     margin-block: 2rem .75rem;
     padding-block-end: .4rem;
     border-block-end: 2px solid var(--pvme-warm-line);
     font-size: clamp(1.35rem, 2.2vw, 1.8rem);
 }
 
-.pvme-presentation .mw-parser-output .pvme-article h3 {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-article h3 {
     margin-block: 1.5rem .5rem;
     font-size: clamp(1.14rem, 1.9vw, 1.4rem);
 }
 
-.pvme-presentation .mw-parser-output .pvme-article h4 {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-article h4 {
     margin-block: 1.1rem .4rem;
     font-size: 1.05rem;
 }
 
 /* Source emphasis is retained in body text; the heading rule supplies its line. */
-.pvme-presentation .mw-parser-output .pvme-article h2 ins,
-.pvme-presentation .mw-parser-output .pvme-article h2 u,
-.pvme-presentation .mw-parser-output .pvme-article h3 ins,
-.pvme-presentation .mw-parser-output .pvme-article h3 u,
-.pvme-presentation .mw-parser-output .pvme-article :is(ins, u):has(h2, h3) {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-article h2 ins,
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-article h2 u,
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-article h3 ins,
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-article h3 u,
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-article :is(ins, u):has(h2, h3) {
     text-decoration: none;
 }
 
-.pvme-presentation .mw-parser-output .pvme-article p,
-.pvme-presentation .mw-parser-output .pvme-article li {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-article p,
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-article li {
     max-width: 88ch;
 }
 
-.pvme-presentation .mw-parser-output .pvme-source-list {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-source-list {
     list-style: none;
     margin-block: .75rem 1.15rem;
     padding-inline-start: .7rem;
 }
 
-.pvme-presentation .mw-parser-output .pvme-source-list > li {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-source-list > li {
     list-style: none;
     margin-block: .3rem;
 }
 
-.pvme-presentation .mw-parser-output .pvme-preserve-lines {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-preserve-lines {
     white-space: pre-line;
 }
 
-.pvme-presentation .mw-parser-output .pvme-article a:focus-visible {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-article a:focus-visible {
     outline: 3px solid var(--pvme-focus);
     outline-offset: 2px;
     border-radius: 2px;
 }
 
-.pvme-presentation .mw-parser-output .pvme-breadcrumbs {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-breadcrumbs {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
@@ -126,13 +177,13 @@
     font-size: .88rem;
 }
 
-.pvme-presentation .mw-parser-output .pvme-breadcrumbs a {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-breadcrumbs a {
     color: var(--pvme-accent-strong);
     text-decoration: underline;
     text-underline-offset: .12em;
 }
 
-.pvme-presentation .mw-parser-output .pvme-guide-intro {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-guide-intro {
     box-sizing: border-box;
     margin-block: .75rem 1.4rem;
     padding: clamp(.9rem, 2vw, 1.35rem);
@@ -142,21 +193,21 @@
     background: var(--pvme-soft);
 }
 
-.pvme-presentation .mw-parser-output .pvme-guide-intro > :first-child,
-.pvme-presentation .mw-parser-output .pvme-callout > :first-child,
-.pvme-presentation .mw-parser-output .pvme-phase > :first-child,
-.pvme-presentation .mw-parser-output .pvme-step > :first-child {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-guide-intro > :first-child,
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-callout > :first-child,
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-phase > :first-child,
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-step > :first-child {
     margin-block-start: 0;
 }
 
-.pvme-presentation .mw-parser-output .pvme-guide-intro > :last-child,
-.pvme-presentation .mw-parser-output .pvme-callout > :last-child,
-.pvme-presentation .mw-parser-output .pvme-phase > :last-child,
-.pvme-presentation .mw-parser-output .pvme-step > :last-child {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-guide-intro > :last-child,
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-callout > :last-child,
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-phase > :last-child,
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-step > :last-child {
     margin-block-end: 0;
 }
 
-.pvme-presentation .mw-parser-output .pvme-jumps {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-jumps {
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
@@ -169,7 +220,7 @@
     font-size: .92rem;
 }
 
-.pvme-presentation .mw-parser-output .pvme-jumps a {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-jumps a {
     display: inline-block;
     padding: .2rem .55rem;
     border: 1px solid var(--pvme-line);
@@ -179,17 +230,17 @@
     text-decoration: none;
 }
 
-.pvme-presentation .mw-parser-output .pvme-jumps a:hover,
-.pvme-presentation .mw-parser-output .pvme-jumps a:focus-visible {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-jumps a:hover,
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-jumps a:focus-visible {
     border-color: var(--pvme-accent);
     text-decoration: underline;
 }
 
-.pvme-presentation .mw-parser-output .pvme-callout,
-.pvme-presentation .mw-parser-output .pvme-phase,
-.pvme-presentation .mw-parser-output .pvme-rotation,
-.pvme-presentation .mw-parser-output .pvme-step,
-.pvme-presentation .mw-parser-output .pvme-media-fallback {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-callout,
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-phase,
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-rotation,
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-step,
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-media-fallback {
     box-sizing: border-box;
     min-width: 0;
     margin-block: 1rem;
@@ -199,42 +250,42 @@
     background: var(--pvme-paper);
 }
 
-.pvme-presentation .mw-parser-output .pvme-callout {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-callout {
     border-inline-start: 4px solid var(--pvme-accent);
     background: var(--pvme-warm);
 }
 
-.pvme-presentation .mw-parser-output .pvme-callout--warning,
-.pvme-presentation .mw-parser-output .pvme-callout[data-tone="warning"] {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-callout--warning,
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-callout[data-tone="warning"] {
     border-inline-start-color: #a55818;
     background: var(--pvme-warning);
 }
 
-.pvme-presentation .mw-parser-output .pvme-callout--note,
-.pvme-presentation .mw-parser-output .pvme-callout[data-tone="note"] {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-callout--note,
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-callout[data-tone="note"] {
     border-inline-start-color: #526f83;
     background: #f1f6f8;
 }
 
-.pvme-presentation .mw-parser-output .pvme-phase {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-phase {
     border-block-start: 3px solid var(--pvme-warm-line);
 }
 
-.pvme-presentation .mw-parser-output .pvme-phase h3,
-.pvme-presentation .mw-parser-output .pvme-rotation h3 {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-phase h3,
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-rotation h3 {
     margin-block-start: 0;
 }
 
-.pvme-presentation .mw-parser-output .pvme-step {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-step {
     border-inline-start: 3px solid var(--pvme-warm-line);
     background: var(--pvme-soft);
 }
 
-.pvme-presentation .mw-parser-output .pvme-rotation {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-rotation {
     background: var(--pvme-soft);
 }
 
-.pvme-presentation .mw-parser-output .pvme-facts {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-facts {
     box-sizing: border-box;
     min-width: 0;
     margin-block: 1rem 1.4rem;
@@ -244,24 +295,24 @@
     background: var(--pvme-soft);
 }
 
-.pvme-presentation .mw-parser-output .pvme-facts dl {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-facts dl {
     display: grid;
     grid-template-columns: minmax(7rem, 11rem) minmax(0, 1fr);
     gap: .35rem .9rem;
     margin: 0;
 }
 
-.pvme-presentation .mw-parser-output .pvme-facts dt {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-facts dt {
     color: var(--pvme-muted);
     font-weight: 700;
 }
 
-.pvme-presentation .mw-parser-output .pvme-facts dd {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-facts dd {
     min-width: 0;
     margin: 0;
 }
 
-.pvme-presentation .mw-parser-output .pvme-cue-response:not(table) {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-cue-response:not(table) {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: minmax(9rem, 1fr) minmax(0, 2fr);
@@ -273,28 +324,28 @@
     background: var(--pvme-soft);
 }
 
-.pvme-presentation .mw-parser-output .pvme-cue-response:not(table) > :first-child {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-cue-response:not(table) > :first-child {
     font-weight: 700;
 }
 
-.pvme-presentation .mw-parser-output .pvme-cue-response:not(table) > * {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-cue-response:not(table) > * {
     min-width: 0;
     margin: 0;
 }
 
-.pvme-presentation .mw-parser-output .pvme-media-fallback {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-media-fallback {
     border-style: dashed;
     color: var(--pvme-muted);
     background: var(--pvme-soft);
     font-size: .92rem;
 }
 
-.pvme-presentation .mw-parser-output .pvme-media-fallback a {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-media-fallback a {
     color: var(--pvme-accent-strong);
     text-decoration: underline;
 }
 
-.pvme-presentation .mw-parser-output .pvme-index-grid {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-index-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
     gap: .85rem;
@@ -302,7 +353,7 @@
     margin-block: 1rem 1.5rem;
 }
 
-.pvme-presentation .mw-parser-output .pvme-index-card {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-index-card {
     box-sizing: border-box;
     min-width: 0;
     height: 100%;
@@ -313,19 +364,19 @@
     background: var(--pvme-paper);
 }
 
-.pvme-presentation .mw-parser-output .pvme-index-card > :first-child {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-index-card > :first-child {
     margin-block-start: 0;
 }
 
-.pvme-presentation .mw-parser-output .pvme-index-card > :last-child {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-index-card > :last-child {
     margin-block-end: 0;
 }
 
-.pvme-presentation .mw-parser-output .pvme-index-card a {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-index-card a {
     font-weight: 600;
 }
 
-.pvme-presentation .mw-parser-output .pvme-portrait {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-portrait {
     box-sizing: border-box;
     display: block;
     max-width: 100%;
@@ -340,7 +391,7 @@
     text-align: center;
 }
 
-.pvme-presentation .mw-parser-output .pvme-icon {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-icon {
     box-sizing: border-box;
     display: inline-block;
     max-width: 100%;
@@ -351,7 +402,7 @@
     vertical-align: middle;
 }
 
-.pvme-presentation .mw-parser-output img.pvme-icon {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) img.pvme-icon {
     max-width: 2.25rem;
     max-height: 2.25rem;
     width: auto;
@@ -361,7 +412,7 @@
     background: transparent;
 }
 
-.pvme-presentation .mw-parser-output .pvme-icon-fallback {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-icon-fallback {
     box-sizing: border-box;
     display: inline-block;
     max-width: 100%;
@@ -378,19 +429,19 @@
     vertical-align: baseline;
 }
 
-.pvme-presentation .mw-parser-output a:hover .pvme-icon-fallback,
-.pvme-presentation .mw-parser-output .pvme-icon-fallback a:hover {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) a:hover .pvme-icon-fallback,
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-icon-fallback a:hover {
     border-color: var(--pvme-accent);
     text-decoration: underline;
 }
 
-.pvme-presentation .mw-parser-output a:focus-visible .pvme-icon-fallback,
-.pvme-presentation .mw-parser-output .pvme-icon-fallback a:focus-visible {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) a:focus-visible .pvme-icon-fallback,
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-icon-fallback a:focus-visible {
     outline: 3px solid var(--pvme-focus);
     outline-offset: 2px;
 }
 
-.pvme-presentation .mw-parser-output .pvme-attribution {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-attribution {
     margin-block: 2rem .5rem;
     padding-block-start: .8rem;
     border-block-start: 1px solid var(--pvme-line);
@@ -398,7 +449,7 @@
     font-size: .82rem;
 }
 
-.pvme-presentation .mw-parser-output .pvme-article .pvme-table-scroll {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-article .pvme-table-scroll {
     box-sizing: border-box;
     max-width: 100%;
     overflow-x: auto;
@@ -408,56 +459,56 @@
     border-radius: 4px;
 }
 
-.pvme-presentation .mw-parser-output .pvme-article table {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-article table {
     border-collapse: collapse;
     max-width: 100%;
     margin-block: 1rem;
 }
 
-.pvme-presentation .mw-parser-output .pvme-article .pvme-table-scroll table {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-article .pvme-table-scroll table {
     margin: 0;
     min-width: 100%;
 }
 
-.pvme-presentation .mw-parser-output .pvme-article th,
-.pvme-presentation .mw-parser-output .pvme-article td {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-article th,
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-article td {
     padding: .45rem .6rem;
     border: 1px solid var(--pvme-line);
     vertical-align: top;
     overflow-wrap: anywhere;
 }
 
-.pvme-presentation .mw-parser-output .pvme-article th {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-article th {
     background: var(--pvme-soft);
     text-align: start;
 }
 
-.pvme-presentation .mw-parser-output .pvme-article pre,
-.pvme-presentation .mw-parser-output .pvme-article code {
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-article pre,
+.pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-article code {
     overflow-wrap: anywhere;
     white-space: pre-wrap;
 }
 
 @media (max-width: 720px) {
-    .pvme-presentation .mw-parser-output .pvme-article {
+    .pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-article {
         padding-inline: 0;
     }
 
-    .pvme-presentation .mw-parser-output .pvme-guide-intro,
-    .pvme-presentation .mw-parser-output .pvme-callout,
-    .pvme-presentation .mw-parser-output .pvme-phase,
-    .pvme-presentation .mw-parser-output .pvme-rotation,
-    .pvme-presentation .mw-parser-output .pvme-step,
-    .pvme-presentation .mw-parser-output .pvme-media-fallback {
+    .pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-guide-intro,
+    .pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-callout,
+    .pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-phase,
+    .pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-rotation,
+    .pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-step,
+    .pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-media-fallback {
         padding: .75rem .8rem;
     }
 
-    .pvme-presentation .mw-parser-output .pvme-facts dl,
-    .pvme-presentation .mw-parser-output .pvme-cue-response:not(table) {
+    .pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-facts dl,
+    .pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-cue-response:not(table) {
         grid-template-columns: minmax(0, 1fr);
     }
 
-    .pvme-presentation .mw-parser-output .pvme-article table:not(.pvme-no-scroll) {
+    .pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-article table:not(.pvme-no-scroll) {
         box-sizing: border-box;
         display: block;
         width: max-content;
@@ -466,7 +517,7 @@
         overscroll-behavior-inline: contain;
     }
 
-    .pvme-presentation .mw-parser-output .pvme-article .pvme-table-scroll table {
+    .pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-article .pvme-table-scroll table {
         display: table;
         max-width: none;
         overflow: visible;
@@ -474,19 +525,19 @@
 }
 
 @media print {
-    .pvme-presentation .mw-parser-output .pvme-article,
-    .pvme-presentation .mw-parser-output .pvme-index-card,
-    .pvme-presentation .mw-parser-output .pvme-callout {
+    .pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-article,
+    .pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-index-card,
+    .pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-callout {
         color: #000;
         background: #fff;
         box-shadow: none;
     }
 
-    .pvme-presentation .mw-parser-output .pvme-jumps {
+    .pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-jumps {
         display: none;
     }
 
-    .pvme-presentation .mw-parser-output .pvme-article table {
+    .pvme-presentation :is(.mw-parser-output, .pvme-visual-content) .pvme-article table {
         display: table;
         overflow: visible;
     }
