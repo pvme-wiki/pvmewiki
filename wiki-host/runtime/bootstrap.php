@@ -39,10 +39,10 @@ function run(array $argv, ?string $stdin = null): void {
     }
 }
 
-function corpus(): array {
-    $manifestPath = CORPUS . '/manifest.json';
-    $xmlPath = CORPUS . '/pages.xml';
-    $sumPath = CORPUS . '/SHA256SUMS';
+function corpus(string $directory = CORPUS): array {
+    $manifestPath = $directory . '/manifest.json';
+    $xmlPath = $directory . '/pages.xml';
+    $sumPath = $directory . '/SHA256SUMS';
     foreach ([$manifestPath, $xmlPath, $sumPath] as $path) {
         if (!is_file($path)) {
             fail('Required corpus file missing');
@@ -88,11 +88,12 @@ function corpus(): array {
         if ($reader->nodeType !== XMLReader::ELEMENT || $reader->localName !== 'page') {
             continue;
         }
-        $node = $reader->expand();
+        $document = new DOMDocument();
+        $node = $reader->expand($document);
         if (!$node) {
             fail('Invalid corpus XML page');
         }
-        $xpath = new DOMXPath($node->ownerDocument);
+        $xpath = new DOMXPath($document);
         $xpath->registerNamespace('m', 'http://www.mediawiki.org/xml/export-0.11/');
         $title = $xpath->evaluate('string(m:title)', $node);
         $ns = $xpath->evaluate('string(m:ns)', $node);
@@ -125,6 +126,11 @@ function verifyPages(PgSql\Connection $conn, array $titles, bool $exact): void {
     if (($exact && count($actual) !== EXPECTED_PAGES) || count($actual) < EXPECTED_PAGES || array_diff_key($titles, $actual)) {
         fail('Imported page titles or count differ from the corpus');
     }
+}
+
+// Loading validation helpers in a local fixture must not start database bootstrap.
+if (realpath($_SERVER['SCRIPT_FILENAME'] ?? '') !== __FILE__) {
+    return;
 }
 
 try {

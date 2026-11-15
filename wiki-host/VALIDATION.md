@@ -9,6 +9,7 @@ Checks completed locally:
 - All 42 code/configuration blocks preserve exact descendant text; 1,468 containers preserve source newline semantics. Nested linked media and template dependencies are absent.
 - Python standard-library XML parser: exactly 381 namespace-0 pages, one revision each; every imported revision body hash and byte count matches the manifest. Output line endings are normalized to LF before hashing, matching XML import semantics.
 - Portable official PHP 8.3.36: syntax checks passed for LocalSettings, bootstrap, health, runtime configuration and its test file. TLS URL/configuration positive and negative tests passed.
+- The bootstrap XML regression calls the real PHP validator over all 381 titles, plus three invalid XML structures with valid checksums; no database is contacted. It covers XMLReader expansion with an explicit DOMDocument, preventing the PHP 8.3 null-ownerDocument failure before database access.
 - Git whitespace check passed for implementation files. Imported source data retains original meaningful whitespace, including copyable examples. No application implementation files changed.
 
 The deployment origin is required through Render's `MW_SERVER` setting and validated before database access; no deployment hostname or default is committed. A privacy revision changes only the XML envelope's reserved example origin and its dump checksum: all 381 page bodies, page hashes and the manifest remain byte-identical. Shared parent history is preserved, so this revision sanitizes the replacement tip and current tree without claiming to erase earlier public commit data. The bootstrap marker identifies the XML dump digest; a database already initialized against the prior envelope would fail closed on the changed digest and requires separately reviewed recovery, not automatic reimport.
@@ -19,6 +20,7 @@ Reproduce source checks:
 node wiki-host/tools/verify-corpus.mjs
 python wiki-host/tools/verify-xml.py
 php wiki-host/tests/runtime-config.php
+php wiki-host/tests/bootstrap-corpus.php
 find wiki-host -name '*.php' -exec php -l {} \;
 git diff --check -- . ':(exclude)wiki-host/corpus/**'
 ```
