@@ -28,19 +28,36 @@ function enhance() {
     tools.id = 'pvme-reader-tools';
     tools.setAttribute('aria-label', 'PvME guide navigation');
     const crumbs = element('div', '', 'pvme-reader-breadcrumbs');
+    crumbs.setAttribute('aria-label', 'Guide location');
     for (const parent of page.parents) {
         crumbs.append(link(parent, parent.split('/').pop()), document.createTextNode(' / '));
     }
-    crumbs.append(element('span', title.split('/').pop()));
+    const current = element('span', title.split('/').pop());
+    current.setAttribute('aria-current', 'page');
+    crumbs.append(current);
     tools.append(crumbs);
+    const actions = element('div', '', 'pvme-reader-actions');
+    // Reuse the skin's edit destination and wording, including protected pages.
+    const nativeEdit = document.querySelector('#ca-edit a, #ca-viewsource a');
+    if (nativeEdit) {
+        const edit = element('a', nativeEdit.textContent.trim(), 'pvme-reader-edit');
+        edit.href = nativeEdit.href;
+        actions.append(edit);
+    }
+    const historyLink = link(title, 'Page history');
+    historyLink.href = mw.util.getUrl(title, { action: 'history' });
+    actions.append(historyLink);
+    tools.append(actions);
     if (page.source) {
+        const sourceDetails = element('details', '', 'pvme-reader-source');
+        sourceDetails.append(element('summary', 'Source, licence & export'));
         const provenance = element('p', 'PvME contributors. CC BY-NC-SA 4.0. ', 'pvme-reader-provenance');
         const source = element('a', 'Original guide'); source.href = page.source;
         provenance.append(source, document.createTextNode(' | Snapshot: ' + page.retrieved + '. '));
         if (page.date) provenance.append(document.createTextNode('Pinned upstream content change: ' + page.date + '. '));
         provenance.append(document.createTextNode('Source dates are not a current-game accuracy review.'));
         if (page.historyUrl) { const history = element('a', ' View source change'); history.href = page.historyUrl; provenance.append(history); }
-        tools.append(provenance);
+        sourceDetails.append(provenance);
         const exportArea = element('div', '', 'pvme-reader-export');
         const copy = element('button', 'Copy for RuneScape Wiki');
         copy.type = 'button';
@@ -78,7 +95,8 @@ function enhance() {
                 status.textContent = 'Export stopped: ' + (error instanceof Error ? error.message : 'The published revision could not be read.') + ' No partial guide was copied.';
             } finally { copy.disabled = false; }
         });
-        exportArea.append(copy, status, manual); tools.append(exportArea);
+        exportArea.append(copy, status, manual); sourceDetails.append(exportArea);
+        tools.append(sourceDetails);
     }
     if (title === 'PvME/Barrows') {
         tools.append(element('p', 'Encounter portrait: Ahrim the Blighted (normal Barrows). Image omitted pending independent-use permission.', 'pvme-reader-provenance'));
@@ -96,22 +114,34 @@ function enhance() {
         jumps.append(list); tools.append(jumps);
     }
     if (page.children.length) {
+        const directory = element('details', '', 'pvme-reader-directory');
+        directory.open = page.children.length <= 12;
+        directory.append(element('summary', 'Browse ' + page.children.length + ' guides and indexes'));
         const label = element('label', 'Filter these ' + page.children.length + ' guides and indexes');
         const filter = element('input'); filter.type = 'search'; filter.id = 'pvme-guide-filter';
-        label.htmlFor = filter.id; tools.append(label, filter);
+        filter.placeholder = 'Search within this index';
+        filter.setAttribute('aria-controls', 'pvme-guide-grid');
+        filter.setAttribute('aria-describedby', 'pvme-guide-count');
+        label.htmlFor = filter.id; directory.append(label, filter);
         const grid = element('div', '', 'pvme-reader-grid');
+        grid.id = 'pvme-guide-grid';
         for (const child of page.children) grid.append(link(child, child.split('/').pop()));
         const count = element('p', page.children.length + ' entries', 'pvme-reader-provenance');
+        count.id = 'pvme-guide-count';
         count.setAttribute('role', 'status');
+        count.setAttribute('aria-atomic', 'true');
         filter.addEventListener('input', () => {
             const query = filter.value.trim().toLocaleLowerCase(); let visible = 0;
             for (const card of grid.children) { card.hidden = !card.textContent.toLocaleLowerCase().includes(query); if (!card.hidden) visible++; }
-            count.textContent = visible + ' of ' + page.children.length + ' entries';
+            count.textContent = visible ? visible + ' of ' + page.children.length + ' entries' : 'No matching guides. Try a different search.';
         });
-        tools.append(count);
-        tools.append(grid);
+        directory.append(count, grid);
+        tools.append(directory);
     }
     content.before(tools);
+    // Native template layouts own their article presentation and remain editable.
+    // Keep only the shared navigation; skip legacy heuristics and cloned readers.
+    if (page.nativeLayout) return;
     // Classes and accessible labels only: no original text, links or node order change.
     article.classList.add('pvme-legacy-reader');
     for (const heading of article.querySelectorAll('h2,h3,h4')) {
@@ -148,14 +178,22 @@ function enhance() {
             toggle.textContent = visual ? 'Show original wiki view' : 'Show visual reader';
             toggle.setAttribute('aria-pressed', String(!visual));
         });
-        tools.append(toggle); document.body.classList.add('pvme-visual-mode');
+        toggle.setAttribute('aria-controls', 'pvme-visual-reader mw-content-text');
+        actions.prepend(toggle); document.body.classList.add('pvme-visual-mode');
+        function revealFragment(id, focus) {
+            const target = document.getElementById(anchors.get(id));
+            if (!target) return;
+            target.scrollIntoView();
+            if (focus) { target.tabIndex = -1; target.focus({ preventScroll: true }); }
+        }
         const fragmentClick = event => {
+            if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
             if (document.querySelector('.ve-active, .ve-activating')) return;
-            const anchor = event.target.closest('a[href^="#"]');
+            const anchor = event.target instanceof Element && event.target.closest('a[href^="#"]');
             if (!anchor || !document.body.classList.contains('pvme-visual-mode')) return;
             let id; try { id = decodeURIComponent(anchor.hash.slice(1)); } catch (_) { return; }
             const target = anchors.get(id);
-            if (target) { event.preventDefault(); document.getElementById(target)?.scrollIntoView(); history.replaceState(null, '', '#' + encodeURIComponent(id)); }
+            if (target) { event.preventDefault(); revealFragment(id, true); history.replaceState(null, '', '#' + encodeURIComponent(id)); }
         };
         document.addEventListener('click', fragmentClick);
         // Native editor saves can replace the article without navigating. Once editing
@@ -177,7 +215,7 @@ function enhance() {
         editorObserver.observe(document.body, { attributes: true, attributeFilter: ['class'] });
         const contentObserver = new MutationObserver(retireReader);
         contentObserver.observe(content, { childList: true, subtree: true, characterData: true });
-        if (location.hash) { try { const target = anchors.get(decodeURIComponent(location.hash.slice(1))); if (target) document.getElementById(target)?.scrollIntoView(); } catch (_) {} }
+        if (location.hash) { try { revealFragment(decodeURIComponent(location.hash.slice(1)), false); } catch (_) {} }
     }
 }
 if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', enhance, { once: true });

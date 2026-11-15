@@ -17,6 +17,12 @@ final class Hooks {
             return;
         }
         $out->addBodyClasses('pvme-presentation');
+        if ($key === 'PvME') {
+            $out->addBodyClasses('pvme-index');
+        }
+        // Vector otherwise emits a fixed 1120px viewport on this installation.
+        // Keep browser zoom available and let the skin's responsive layout work.
+        $out->addMeta('viewport', 'width=device-width, initial-scale=1');
         $out->addModuleStyles(['ext.pvmePresentation.styles']);
         if ($out->getContext()->getActionName() === 'view') {
             $out->addModules(['ext.pvmePresentation.reader']);
@@ -26,6 +32,9 @@ final class Hooks {
             $text = $title->getText();
             $lastSlash = strrpos($text, '/');
             $label = $lastSlash === false ? $text : substr($text, $lastSlash + 1);
+            if ($key === 'PvME/Amascut/Picture_guide') {
+                $label = 'Amascut picture guide';
+            }
             if ($label !== '') {
                 // setPageTitle receives an HTML fragment; preserve the canonical Title.
                 $out->setPageTitle(htmlspecialchars($label, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'));

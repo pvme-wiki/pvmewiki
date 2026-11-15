@@ -1,0 +1,99 @@
+<includeonly><div class="am-picture-map am-map-{{{type|statues}}}" role="group" aria-label="{{{label|Arena diagram}}}">
+<p class="am-map-compass">{{{compass|NORTH ↑}}}</p>
+<div class="am-picture-map-grid">
+<div class="am-map-cell am-map-nw"><span>{{{nw|}}}</span></div><div class="am-map-cell am-map-n"><span>{{{n|}}}</span></div><div class="am-map-cell am-map-ne"><span>{{{ne|}}}</span></div>
+<div class="am-map-cell am-map-w"><span>{{{w|}}}</span></div><div class="am-map-cell am-map-center"><span>{{{center|}}}</span></div><div class="am-map-cell am-map-e"><span>{{{e|}}}</span></div>
+<div class="am-map-cell am-map-sw"><span>{{{sw|}}}</span></div><div class="am-map-cell am-map-s"><span>{{{s|}}}</span></div><div class="am-map-cell am-map-se"><span>{{{se|}}}</span></div>
+</div><p class="am-picture-caption">{{{caption|}}}</p></div></includeonly>
+<noinclude>
+An editable, schematic 3×3 arena diagram. Names remain visible alongside shape and colour.
+
+Used by [[PvME/Amascut/Picture guide]]. Edit the guide's template parameters to change its instructions. Styling and decorative SVG symbols are supplied by the PvmePresentation extension; no JavaScript is required to read this component.
+
+<templatedata>
+{
+  "description": "An editable, schematic 3×3 arena diagram. Names remain visible alongside shape and colour.",
+  "params": {
+    "type": {
+      "label": "type",
+      "description": "statues or floor.",
+      "type": "string",
+      "required": false
+    },
+    "label": {
+      "label": "label",
+      "description": "Accessible description of the map.",
+      "type": "string",
+      "required": false
+    },
+    "compass": {
+      "label": "compass",
+      "description": "Orientation label.",
+      "type": "string",
+      "required": false
+    },
+    "nw": {
+      "label": "nw",
+      "description": "North-west cell.",
+      "type": "string",
+      "required": false
+    },
+    "n": {
+      "label": "n",
+      "description": "North cell.",
+      "type": "string",
+      "required": false
+    },
+    "ne": {
+      "label": "ne",
+      "description": "North-east cell.",
+      "type": "string",
+      "required": false
+    },
+    "w": {
+      "label": "w",
+      "description": "West cell.",
+      "type": "string",
+      "required": false
+    },
+    "center": {
+      "label": "center",
+      "description": "Centre cell.",
+      "type": "string",
+      "required": false
+    },
+    "e": {
+      "label": "e",
+      "description": "East cell.",
+      "type": "string",
+      "required": false
+    },
+    "sw": {
+      "label": "sw",
+      "description": "South-west cell.",
+      "type": "string",
+      "required": false
+    },
+    "s": {
+      "label": "s",
+      "description": "South cell.",
+      "type": "string",
+      "required": false
+    },
+    "se": {
+      "label": "se",
+      "description": "South-east cell.",
+      "type": "string",
+      "required": false
+    },
+    "caption": {
+      "label": "caption",
+      "description": "Explain the diagram and any limits.",
+      "type": "string",
+      "required": false
+    }
+  },
+  "format": "block"
+}
+</templatedata>
+</noinclude>

@@ -1,0 +1,87 @@
+<includeonly><div class="am-picture-flow am-flow-{{{type|flow}}}" role="group" aria-label="{{{label|Mechanic steps}}}">
+<ol>
+<li><span class="am-picture-icon am-icon-{{{icon1|eye}}}" aria-hidden="true"></span><span class="am-picture-flow-label">{{{one}}}</span></li>
+<li><span class="am-picture-icon am-icon-{{{icon2|run}}}" aria-hidden="true"></span><span class="am-picture-flow-label">{{{two}}}</span></li>
+<li><span class="am-picture-icon am-icon-{{{icon3|shield}}}" aria-hidden="true"></span><span class="am-picture-flow-label">{{{three}}}</span></li>
+<li><span class="am-picture-icon am-icon-{{{icon4|check}}}" aria-hidden="true"></span><span class="am-picture-flow-label">{{{four}}}</span></li>
+</ol><p class="am-picture-caption">{{{caption|}}}</p></div></includeonly>
+<noinclude>
+Four visual steps with editable labels and symbols. Type changes the layout, not the instructions.
+
+Used by [[PvME/Amascut/Picture guide]]. Edit the guide's template parameters to change its instructions. Styling and decorative SVG symbols are supplied by the PvmePresentation extension; no JavaScript is required to read this component.
+
+<templatedata>
+{
+  "description": "Four visual steps with editable labels and symbols. Type changes the layout, not the instructions.",
+  "params": {
+    "type": {
+      "label": "type",
+      "description": "Layout: flow, chains, intercept, climb or clones.",
+      "type": "string",
+      "required": false
+    },
+    "label": {
+      "label": "label",
+      "description": "Accessible diagram name.",
+      "type": "string",
+      "required": false
+    },
+    "icon1": {
+      "label": "icon1",
+      "description": "First symbol.",
+      "type": "string",
+      "required": false
+    },
+    "one": {
+      "label": "one",
+      "description": "First instruction.",
+      "type": "string",
+      "required": true
+    },
+    "icon2": {
+      "label": "icon2",
+      "description": "Second symbol.",
+      "type": "string",
+      "required": false
+    },
+    "two": {
+      "label": "two",
+      "description": "Second instruction.",
+      "type": "string",
+      "required": true
+    },
+    "icon3": {
+      "label": "icon3",
+      "description": "Third symbol.",
+      "type": "string",
+      "required": false
+    },
+    "three": {
+      "label": "three",
+      "description": "Third instruction.",
+      "type": "string",
+      "required": true
+    },
+    "icon4": {
+      "label": "icon4",
+      "description": "Fourth symbol.",
+      "type": "string",
+      "required": false
+    },
+    "four": {
+      "label": "four",
+      "description": "Fourth instruction.",
+      "type": "string",
+      "required": true
+    },
+    "caption": {
+      "label": "caption",
+      "description": "Diagram qualification or extra context.",
+      "type": "string",
+      "required": false
+    }
+  },
+  "format": "block"
+}
+</templatedata>
+</noinclude>

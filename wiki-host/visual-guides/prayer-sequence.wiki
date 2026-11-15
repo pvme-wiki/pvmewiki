@@ -1,0 +1,51 @@
+<includeonly><div class="am-prayer-sequence">
+<p class="am-prayer-call">“{{{call}}}” <small>{{{who|Base tank}}}</small></p>
+<ol class="am-prayer-steps" aria-label="Prayer order">
+<li class="am-style-{{{first}}}"><span class="am-picture-icon am-icon-{{{first}}}" aria-hidden="true"></span><span>{{{first}}}</span></li>
+<li class="am-style-{{{second}}}"><span class="am-picture-icon am-icon-{{{second}}}" aria-hidden="true"></span><span>{{{second}}}</span></li>
+<li class="am-style-{{{third}}}"><span class="am-picture-icon am-icon-{{{third}}}" aria-hidden="true"></span><span>{{{third}}}</span></li>
+</ol></div></includeonly>
+<noinclude>
+A spoken cue followed by three labelled prayer symbols. Use melee, ranged or magic in each step.
+
+Used by [[PvME/Amascut/Picture guide]]. Edit the guide's template parameters to change its instructions. Styling and decorative SVG symbols are supplied by the PvmePresentation extension; no JavaScript is required to read this component.
+
+<templatedata>
+{
+  "description": "A spoken cue followed by three labelled prayer symbols. Use melee, ranged or magic in each step.",
+  "params": {
+    "call": {
+      "label": "call",
+      "description": "The exact spoken cue.",
+      "type": "string",
+      "required": true
+    },
+    "who": {
+      "label": "who",
+      "description": "Who handles the mechanic.",
+      "type": "string",
+      "required": false
+    },
+    "first": {
+      "label": "first",
+      "description": "First prayer: melee, ranged or magic.",
+      "type": "string",
+      "required": true
+    },
+    "second": {
+      "label": "second",
+      "description": "Second prayer.",
+      "type": "string",
+      "required": true
+    },
+    "third": {
+      "label": "third",
+      "description": "Third prayer.",
+      "type": "string",
+      "required": true
+    }
+  },
+  "format": "block"
+}
+</templatedata>
+</noinclude>

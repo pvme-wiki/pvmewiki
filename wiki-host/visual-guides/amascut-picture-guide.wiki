@@ -1,0 +1,377 @@
+<div class="am-picture-guide">
+<div class="am-picture-hero">
+<div class="am-picture-kicker">FIELD NOTES · AMASCUT, THE DEVOURER</div>
+<p class="am-picture-mode">100% enrage · seven phases · team encounter</p>
+<p class="am-picture-lead">'''See the cue. Do your job. Keep the light alive.'''
+
+A picture-first companion for your first 100% kills. Read each '''SEE → DO''' card, then use the full guide when you need the precise setup or rotation.</p>
+<p>[[PvME/Amascut/Overview|Full beginner guide]] · [[PvME/Amascut/Amascut Nm Mechanics|Normal Mode: separate five-phase guide]] · [[PvME/Amascut|All Amascut methods]]</p>
+</div>
+
+<div class="am-picture-note">'''Before the pull:''' complete ''Eclipse of the Heart'' and prepare at least Stage 1 gear for your style. Agree who tanks, enters each portal, cleanses statues, intercepts and climbs. [https://presets.pvme.io/?id=c9915f48-ad2f-4a74-bc28-de538d40826e Necromancy preset] · [https://presets.pvme.io/?id=nfm2UnsVqmKfaFDf2Z9X Magic preset].</div>
+
+== The whole fight in one line ==
+<ol class="am-picture-journey">
+<li>[[#Prayer cues: phases 1 and 3|<b>1</b><span class="am-picture-icon am-icon-boss" aria-hidden="true"></span><strong>Fight</strong><small>Prayer cues</small>]]</li>
+<li>[[#Rescue: phases 2 and 4|<b>2</b><span class="am-picture-icon am-icon-chain" aria-hidden="true"></span><strong>Rescue</strong><small>Apmeken + Crondis</small>]]</li>
+<li>[[#Prayer cues: phases 1 and 3|<b>3</b><span class="am-picture-icon am-icon-boss" aria-hidden="true"></span><strong>Fight</strong><small>Cues + floor</small>]]</li>
+<li>[[#Rescue: phases 2 and 4|<b>4</b><span class="am-picture-icon am-icon-scarab" aria-hidden="true"></span><strong>Rescue</strong><small>Het + Scabaras</small>]]</li>
+<li>[[#Protect the light: phase 5|<b>5</b><span class="am-picture-icon am-icon-light" aria-hidden="true"></span><strong>Protect</strong><small>Charge the light</small>]]</li>
+<li>[[#Climb and regroup: phase 6|<b>6</b><span class="am-picture-icon am-icon-platform" aria-hidden="true"></span><strong>Climb</strong><small>Platforms + clones</small>]]</li>
+<li>[[#Finish: phase 7|<b>7</b><span class="am-picture-icon am-icon-statue" aria-hidden="true"></span><strong>Finish</strong><small>Name → statue</small>]]</li>
+</ol>
+
+__TOC__
+
+== Prayer cues: phases 1 and 3 ==
+'''Two different attacks. Read the whole cue.'''
+
+=== Three colours → three prayers ===
+The '''base tank''' watches the three orbs and changes prayer for each hit. The short spoken cue tells you the same order.
+
+{{PvME prayer sequence|call=Pathetic|first=melee|second=ranged|third=magic|who=Base tank}}
+{{PvME prayer sequence|call=Weak|first=ranged|second=magic|third=melee|who=Base tank}}
+{{PvME prayer sequence|call=Grovel|first=magic|second=melee|third=ranged|who=Base tank}}
+
+<p class="am-picture-caption">Tri-colour Attack / Triple Tap. Sword = melee; bow = ranged; wand = magic. Each symbol also has a written label. This attack targets the base tank.</p>
+
+=== One sky colour → the same prayer three times ===
+'''Everyone''' handles Triple Strike / Empowered Eruption. Keep the matching prayer on for all three hits.
+
+{{PvME prayer sequence|call=All strength withers|first=melee|second=melee|third=melee|who=Everyone · red sky}}
+{{PvME prayer sequence|call=I will not suffer this|first=ranged|second=ranged|third=ranged|who=Everyone · green sky}}
+{{PvME prayer sequence|call=Your soul is WEAK|first=magic|second=magic|third=magic|who=Everyone · blue sky}}
+
+<div class="am-picture-grid">
+{{PvME picture card
+|icon=scarab
+|title=Scarabs: stun first
+|cue=“Tear them apart” + charging scarabs.
+|action=Stun them, then finish any that survive.
+|detail=They are damage-immune until stunned. Standing on a spawn prevents it appearing. Use the team’s planned Barricade timing if covering an explosion.
+}}
+
+{{PvME picture card
+|icon=people
+|title=“Bend the knee”: the big share
+|cue=Soul Crush targets the base.
+|action=Use the agreed defensive or damage-share plan.
+|detail=The base can plan Immortality after Tri-colour Attack; it must still be available. Alternatively, designated DPS provoke and share within 3×3 using Reflect + Powerburst of vitality. It pierces defensives: an unplanned pile is dangerous.
+}}
+
+{{PvME picture card
+|icon=shield
+|title=Normal attacks still matter
+|cue=Left hand / green ball = magic. Right hand slash = melee.
+|action=Base: protect against the incoming style.
+|detail=Melee can splash nearby players and ricochet ranged hits within 10 tiles of the base. Rapid Swipes need attention; follow the full guide’s defensive plan.
+}}
+
+{{PvME picture card
+|icon=run
+|title=Floor marks: move
+|cue=An attack marks or sweeps the floor.
+|action=Step into a safe, unmarked area.
+|detail=Shockwaves can disable defensives for 6 seconds. Moving early is safer than relying on a last-second defensive.
+}}
+</div>
+
+== Rescue: phases 2 and 4 ==
+'''Amascut is immune. Free both gods to continue.''' At 100%, the destruction timer is '''200 seconds'''.
+
+{{PvME picture flow
+|type=chains
+|label=Rescue a god, then carry its fragment
+|icon1=gate
+|one=Kill the gatekeeper → enter
+|icon2=chain
+|two=Kill chainwarden + a chain
+|icon3=statue
+|three=Outside: click the GOLD statue
+|icon4=fragment
+|four=Carry fragment to OPPOSITE statue
+|caption=Repeat chain → gold-statue cleanse three times for each room. A green statue is too early and hurts the team. Bring both fragments across to restore their statues; damage Amascut when vulnerable.
+}}
+
+<div class="am-picture-grid">
+{{PvME picture card
+|icon=people
+|title=Inside and outside must talk
+|cue=A chain reaches 0 LP; its statue turns golden.
+|action=Outside cleanses it promptly. Inside moves to the next chain.
+|detail=Chains can return if the cleanse is missed. In phase 2, the chains role handles two chains and carries the fragment; the statues role handles one. In phase 4 both can stay inside while the base cleanses.
+}}
+
+{{PvME picture card
+|icon=fragment
+|title=Carrying a fragment
+|cue=You are holding Tumeken’s fragment.
+|action=Run to the statue opposite your portal.
+|detail=Surge, Escape and Dive are disabled while carrying it; Barge still works.
+}}
+
+{{PvME picture card
+|icon=scarab
+|title=Phase 4: green shields
+|cue=Gatekeepers, chainwardens or chains are shielded.
+|action=Kill an explosive scarab → grab it → click the shielded target.
+|detail=These scarabs have 5,000 LP and are throwable after death. The body expires; use it promptly. Plan Barricade for remaining scarabs exploding at the start of phase 5.
+}}
+
+{{PvME picture card
+|icon=warning
+|title=Crocodile = basic attacks
+|cue=A Modest crocodile demon is attacking.
+|action=Protect against it; use basics and conjures.
+|detail=Thresholds, ultimates and many enhanced attacks reflect. Be careful with bouncing Death Skulls. Their charged magic hit drains adrenaline.
+}}
+
+{{PvME picture card
+|icon=people
+|title=Burden: know the pass
+|cue=Apmeken’s Burden is bleeding a player.
+|action=Use the team’s pass plan when needed.
+|detail=A player who has never had it can receive it by standing within one tile at a damage tick. The basic guide says it does not reach its instant-kill limit below 2000%; higher-enrage behaviour is different.
+}}
+
+{{PvME picture card
+|icon=run
+|title=Watch the floor between jobs
+|cue=Soulfire waves or shockwaves approach.
+|action=Move clear while keeping your assigned job.
+|detail=Magic prayer reduces Soulfire damage. Defensive options and wave positioning are in the full guide; the pattern, rather than a fixed safe square, determines where to go.
+}}
+</div>
+
+== Protect the light: phase 5 ==
+'''There is no phase timer.''' Build the light bridge, protect the fragments, then protect Tumeken.
+
+{{PvME picture flow
+|type=flow
+|label=Charge the fragments of Tumeken
+|icon1=statue
+|one=Stand in the statue’s light
+|icon2=people
+|two=Form the bridge to a fragment
+|icon3=light
+|three=Charge it; ideally prepare two
+|icon4=target
+|four=Click Tumeken to reform him
+|caption=Use your team’s assigned charge positions. Far fragments belong to Apmeken/Crondis; near fragments belong to Het/Scabaras. Keep the soul obelisks below full charge by dealing damage; a damage-over-time ability helps.
+}}
+
+<div class="am-picture-grid">
+{{PvME picture card
+|icon=shield
+|title=While charging: swap interceptors
+|cue=“Your light will be snuffed out…” — arrows target the altars.
+|action=The two interceptors take turns blocking them.
+|detail=After blocking one, you have Interceptor: another hit kills you. Your partner intercepting clears it. Use the agreed defensive; this is a different job from the named strike below.
+}}
+
+{{PvME picture card
+|icon=dog
+|title=Stop the dogs
+|cue=Lightstealer salawa akhs approach a fragment or Tumeken.
+|action=Bind, intercept or kill them before they reach the light.
+|detail=They keep their drain progress when switching targets. Once fragments are recalled, clearing the dogs is urgent.
+}}
+
+{{PvME picture card
+|icon=target
+|title=While reforming: YOUR name
+|cue=Tumeken says “<name>, shield us from her shadow…”; your sky turns gold.
+|action=Be the FIRST player in the line from Amascut to Tumeken.
+|detail=Other players must leave the front position to the named player. Four charged strikes occur, one per jump; keep damaging Amascut when available.
+}}
+
+{{PvME picture card
+|icon=warning
+|title=Keep the two intercept jobs separate
+|cue=A charging altar bolt and a named reforming strike have different cues.
+|action=For altar bolts: alternate. For reforming strikes: follow the named call.
+|detail=Losing Tumeken’s progress or health can wipe the team. Read the cue before moving.
+}}
+</div>
+
+{{PvME picture flow
+|type=intercept
+|label=The named player stands first in the attack line
+|icon1=boss
+|one=AMASCUT
+|icon2=target
+|two=YOU · named player
+|icon3=light
+|three=TUMEKEN
+|icon4=check
+|four=Team protected
+|caption=Schematic attack line. The called player must be hit first; standing somewhere along the line behind another player does not intercept it correctly.
+}}
+
+== Climb and regroup: phase 6 ==
+'''One climber above. The team works below.'''
+
+{{PvME picture flow
+|type=climb
+|label=Four platform enemies, then claim the light
+|icon1=platform
+|one=Kill platform enemy 1
+|icon2=platform
+|two=Kill platform enemy 2
+|icon3=platform
+|three=Kill platform enemy 3
+|icon4=platform
+|four=Kill platform enemy 4 → click light
+|caption=The climber has 30 seconds; each enemy has 15,000 LP. Call your glowing glyph. A teammate standing on that matching ground glyph pauses the collapse timer until the next platform.
+}}
+
+<div class="am-picture-grid">
+{{PvME picture card
+|icon=platform
+|title=Climber: bring the burst
+|cue=The Path of Tumeken glows on the west or east side.
+|action=Enter, kill all four enemies, then click Tumeken’s light.
+|detail=Prepare the starting adrenaline/stacks and your full climber rotation from the main guide. Timing out can kill the climber and unleash the stored shield damage.
+}}
+
+{{PvME picture card
+|icon=people
+|title=Ground team: help the climb
+|cue=Your climber calls a glyph; shadow tears appear.
+|action=Match the glyph, keep the central shadow low and absorb tears.
+|detail=The central shadow cannot be killed. Avoid Invoke Death on it: respawning it adds health. Tears heal the shadow if left alone.
+}}
+
+{{PvME picture card
+|icon=shield
+|title=Clones: stack behind Amascut
+|cue=Clones spawn after the climber claims the light.
+|action=Group up behind Amascut and kill the clones together.
+|detail=Protect Magic for the initial dash, then Melee when they reach you. Use your planned area damage.
+}}
+
+{{PvME picture card
+|icon=light
+|title=Bomb warning: find the glow
+|cue=Clones survived long enough to turn their targets into bombs.
+|action=Finish the clones; otherwise gather near the Enlightened climber.
+|detail=The golden aura reduces most bomb damage. A bomb outside the aura can still hit people inside it. After the clones die, burst Amascut during the short damage window.
+}}
+</div>
+
+{{PvME picture flow
+|type=clones
+|label=Prayer changes as the clones close the distance
+|icon1=people
+|one=Stack behind boss
+|icon2=magic
+|two=Initial dash: MAGIC
+|icon3=melee
+|three=Up close: MELEE
+|icon4=check
+|four=AoE clones → burst boss
+|caption=The climber has Enlightened, shown as a golden aura. Keep the team together; then use the damage window to reduce the shield and real health before phase 7.
+}}
+
+== Finish: phase 7 ==
+'''Listen for the god’s name → pull Amascut to that statue.''' Your team assigns quadrants; the base fills gaps.
+
+{{PvME arena picture
+|type=statues
+|label=Phase 7 statue positions with north at the top
+|nw=Apmeken · NW
+|ne=Scabaras · NE
+|center=Tumeken
+|sw=Het · SW
+|se=Crondis · SE
+|caption=Keep north at the top when reading this schematic. Tumeken’s bolt of light also points to the correct statue; the statues can be examined.
+}}
+
+{| class="wikitable am-picture-calls"
+! scope="col" | Hear this name
+! scope="col" | Go here
+! scope="col" | Prepare for the follow-up
+|-
+| '''Apmeken''' — “I am sorry, Apmeken.” || North-west || Burden; use the pass plan if needed.
+|-
+| '''Scabaras''' — “Scabaras…” || North-east || Throw '''three''' dead explosive scarabs at Amascut to remove her shield.
+|-
+| '''Het''' — “Forgive me, Het.” || South-west || Damage taken heals her; keep dodging and focus the kill.
+|-
+| '''Crondis''' — “Crondis… It should have never come to this.” || South-east || Crocodiles; basic attacks/conjures if you need to kill them. Avoid bouncing reflected attacks.
+|}
+
+{{PvME picture flow
+|type=flow
+|label=Complete the statue pull, then use the damage window
+|icon1=eye
+|one=Hear the god’s NAME
+|icon2=statue
+|two=Provoke from its statue
+|icon3=run
+|three=Move aside / block follow-up
+|icon4=boss
+|four=Burst during Light Within
+|caption=The statue pull must happen within roughly 3 global cooldowns. After the correct provoke, step away or use Resonance / Disruption Shield for the heavy follow-up. A successful interception grants a 30-second damage window. Keep dodging floor telegraphs and matching the sky-colour prayer.
+}}
+
+<div class="am-picture-warning">'''If the pull fails:''' protect Tumeken, collect shadow tears and prepare for Soul Crush on the base. If Tumeken dies, the team wipes. Use the full guide’s recovery plan.</div>
+
+== One-screen reminders ==
+<div class="am-picture-grid">
+{{PvME picture card
+|icon=eye
+|title=Short word / three orbs
+|cue=Pathetic · Weak · Grovel
+|action=Base tank: follow the three-prayer order.
+|detail=
+}}
+
+{{PvME picture card
+|icon=magic
+|title=Whole sky changes colour
+|cue=A longer spoken line + red, green or blue sky.
+|action=Everyone: keep that style’s prayer for three hits.
+|detail=
+}}
+
+{{PvME picture card
+|icon=statue
+|title=Statue turns GOLD
+|cue=Your inside partner has downed a chain.
+|action=Outside partner: cleanse it now.
+|detail=
+}}
+
+{{PvME picture card
+|icon=target
+|title=Tumeken says YOUR name
+|cue=Your sky turns gold during reforming.
+|action=Get FIRST in the Amascut → Tumeken line.
+|detail=
+}}
+
+{{PvME picture card
+|icon=people
+|title=Clones rush the group
+|cue=The climber has claimed the light.
+|action=Stack behind boss: Magic dash → Melee up close.
+|detail=
+}}
+
+{{PvME picture card
+|icon=statue
+|title=Phase 7: a god’s name
+|cue=Apmeken · Scabaras · Het · Crondis
+|action=Pull to that statue, survive the follow-up, then burst.
+|detail=
+}}
+</div>
+
+== Source and editing ==
+This is an illustrated summary of [[PvME/Amascut/Overview|PvME’s beginner 100% guide]], not a complete rotation sheet. It deliberately keeps Normal Mode and higher-enrage changes in their own guides. [https://github.com/pvme/pvme-guides/blob/ee913a530677bddd0af48860062fed8c8efd77a3/basic-guides/amascut-basic.txt Pinned upstream source] by PvME contributors, including Loki and Linie / the Amascut community credits retained in the full guide. Licensed [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]. The diagrams are code-drawn schematics; floor patterns and player positions must be read from the live encounter. Source history is not current-game verification.
+
+'''To edit:''' use the wiki’s Edit tab. Each card is a small template with ordinary fields (''cue'', ''action'', ''detail''); prayer orders, flow labels and map names are editable parameters. [[Template:PvME picture card|Card fields]] · [[Template:PvME prayer sequence|Prayer fields]] · [[Template:PvME picture flow|Flow fields]] · [[Template:PvME arena picture|Map fields]].
+
+[[PvME/Amascut|← Amascut methods]] · [[PvME/Amascut/Overview|Full beginner guide →]]
+</div>

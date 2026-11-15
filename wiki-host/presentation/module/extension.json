@@ -21,12 +21,25 @@
   },
   "ResourceModules": {
     "ext.pvmePresentation.reader": {
-      "packageFiles": ["modules/reader.js", "modules/navigation.json", "modules/wiki-export.js", "modules/visual-reader.js", "modules/presets.json", "modules/action-bars.json", "modules/amascut-visuals.js", "modules/amascut-assets.json"],
-      "dependencies": ["mediawiki.util", "mediawiki.api"]
+      "packageFiles": [
+        "modules/reader.js",
+        "modules/navigation.json",
+        "modules/wiki-export.js",
+        "modules/visual-reader.js",
+        "modules/presets.json",
+        "modules/action-bars.json",
+        "modules/amascut-visuals.js",
+        "modules/amascut-assets.json"
+      ],
+      "dependencies": [
+        "mediawiki.util",
+        "mediawiki.api"
+      ]
     },
     "ext.pvmePresentation.styles": {
       "styles": [
-        "modules/presentation.css"
+        "modules/presentation.css",
+        "modules/amascut-pictures.css"
       ]
     }
   },

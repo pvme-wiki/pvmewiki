@@ -1,6 +1,7 @@
 services:
   - type: web
     name: pvmewiki
+    repo: https://github.com/pvme-wiki/pvmewiki
     runtime: docker
     plan: free
     region: virginia

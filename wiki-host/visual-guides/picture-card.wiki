@@ -1,0 +1,50 @@
+<includeonly><div class="am-picture-card">
+<div class="am-picture-card-head"><span class="am-picture-icon am-icon-{{{icon|eye}}}" aria-hidden="true"></span><h3>{{{title}}}</h3></div>
+<p class="am-picture-cue"><strong>SEE</strong> {{{cue}}}</p>
+<p class="am-picture-action"><strong>DO</strong> {{{action}}}</p>
+<p class="am-picture-detail">{{{detail|}}}</p>
+</div></includeonly>
+<noinclude>
+A short, picture-first cue and response. All instructional text is editable here.
+
+Used by [[PvME/Amascut/Picture guide]]. Edit the guide's template parameters to change its instructions. Styling and decorative SVG symbols are supplied by the PvmePresentation extension; no JavaScript is required to read this component.
+
+<templatedata>
+{
+  "description": "A short, picture-first cue and response. All instructional text is editable here.",
+  "params": {
+    "icon": {
+      "label": "icon",
+      "description": "Symbol name: eye, melee, ranged, magic, scarab, chain, statue, gate, fragment, shield, people, boss, run, dog, platform, target, clock, light, warning or check.",
+      "type": "string",
+      "required": false
+    },
+    "title": {
+      "label": "title",
+      "description": "Short card heading.",
+      "type": "string",
+      "required": true
+    },
+    "cue": {
+      "label": "cue",
+      "description": "What the player sees or hears.",
+      "type": "string",
+      "required": true
+    },
+    "action": {
+      "label": "action",
+      "description": "One clear response.",
+      "type": "string",
+      "required": true
+    },
+    "detail": {
+      "label": "detail",
+      "description": "Essential qualification or link to the full explanation.",
+      "type": "string",
+      "required": false
+    }
+  },
+  "format": "block"
+}
+</templatedata>
+</noinclude>
