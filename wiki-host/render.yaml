@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: pvmewiki
+    runtime: docker
+    plan: free
+    region: virginia
+    branch: wiki
+    dockerContext: ./wiki-host
+    dockerfilePath: ./wiki-host/Dockerfile
+    autoDeployTrigger: off
+    healthCheckPath: /healthz.php
+    envVars:
+      - key: MW_DATABASE_URL
+        fromDatabase:
+          name: pvmewiki
+          property: connectionString
+      - key: MW_SECRET_KEY
+        sync: false
+      - key: MW_UPGRADE_KEY
+        sync: false
+      - key: MW_ADMIN_PASSWORD
+        sync: false
+      - key: MW_SERVER
+        value: https://pvmewiki.sanji3.dev
+      - key: MW_ALLOW_RENDER_PRIVATE_TLS
+        value: "true"
+      - key: PORT
+        value: "80"

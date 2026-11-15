@@ -1,0 +1,13 @@
+# PvME MediaWiki runtime
+
+This directory is the Docker build context for the standalone editable wiki. The image uses official `mediawiki:1.43.11`, the bundled Vector 2022, VisualEditor, WikiEditor, and TemplateData, and Moderation 1.8.31 at commit `5135f2dee492b9f2f85f896f9a699ce753c53f4e`.
+
+At startup, `runtime/bootstrap.php` checks the corpus checksums, XML title set, and 381 one-revision mainspace pages. It obtains a PostgreSQL advisory lock, refuses a populated unmarked database, installs MediaWiki once, removes only the fresh installer sample Main Page when it is the sole mainspace page with one revision, imports the corpus, and records a ready marker in the database. Apache starts only after that succeeds. A failed or partial bootstrap leaves a non-ready marker and requires deliberate manual recovery; startup never reimports or runs automatic upgrades on a marked database. On restart, the marker, corpus digest, and baseline titles are checked. New community pages after launch are allowed.
+
+Render Blueprint `render.yaml` selects the `wiki` branch and existing private PostgreSQL resource named `pvmewiki`. It does not declare a new database and automatic deploys are off. Configure `MW_SECRET_KEY`, `MW_UPGRADE_KEY`, and `MW_ADMIN_PASSWORD` as Render secrets. `MW_DATABASE_URL` comes from the database reference. The image contains no database credentials. `MW_ALLOW_RENDER_PRIVATE_TLS=true` permits `sslmode=require` only when `RENDER=true` and the URL host has the strict single-label form `dpg-…-a`; all other connections use `verify-full`. Every connection checks `pg_stat_ssl`. The app-ready endpoint is `/healthz.php`.
+
+The first admin login is `Admin` with the secret supplied as `MW_ADMIN_PASSWORD`. Public readers can view; registered users can edit and create pages; new user edits enter Moderation's review queue at `Special:Moderation`. The admin can grant trusted groups using MediaWiki user rights. Image uploads and email are disabled. Page licensing is CC BY-NC-SA 4.0 with source attribution carried in the corpus.
+
+The Docker image copies only the import XML, manifest, checksums, and runtime files from `wiki-host/`. It excludes the existing application and corpus preparation inputs. The Blueprint is source configuration only; deploying it and setting DNS are separate operations.
+
+References: [MediaWiki install](https://www.mediawiki.org/wiki/Manual:Install.php), [XML import](https://www.mediawiki.org/wiki/Manual:ImportDump.php), [Moderation](https://www.mediawiki.org/wiki/Extension:Moderation), [Render private PostgreSQL TLS](https://render.com/docs/postgresql-creating-connecting), [Render Blueprint keys](https://render.com/docs/blueprint-spec).
