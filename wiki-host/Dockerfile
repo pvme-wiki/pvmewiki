@@ -24,7 +24,8 @@ COPY runtime/wiki.conf /etc/apache2/sites-available/000-default.conf
 COPY corpus/pages.xml /opt/pvme/corpus/pages.xml
 COPY corpus/manifest.json /opt/pvme/corpus/manifest.json
 COPY corpus/SHA256SUMS /opt/pvme/corpus/SHA256SUMS
-RUN chmod 755 /opt/pvme/runtime/start.sh
+RUN chmod 755 /opt/pvme /opt/pvme/runtime /opt/pvme/runtime/start.sh \
+    && chmod 644 /opt/pvme/LocalSettings.php /opt/pvme/runtime/*.php /var/www/html/healthz.php
 
 EXPOSE 80
 ENTRYPOINT ["/opt/pvme/runtime/start.sh"]

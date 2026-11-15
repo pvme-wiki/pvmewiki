@@ -2,9 +2,15 @@
 declare(strict_types=1);
 
 require_once '/opt/pvme/runtime/RuntimeConfig.php';
+require_once '/opt/pvme/runtime/RuntimeSettings.php';
 header('Content-Type: text/plain; charset=utf-8');
 header('Cache-Control: no-store');
 try {
+    RuntimeSettings::assertPaths('/var/www/html');
+    RuntimeConfig::server();
+    if (!RuntimeSettings::isReady('/opt/pvme/LocalSettings.php', '/var/www/html/LocalSettings.php')) {
+        throw new RuntimeException('MediaWiki settings are not ready');
+    }
     $digest = hash_file('sha256', '/opt/pvme/corpus/pages.xml');
     $conn = RuntimeConfig::connect(RuntimeConfig::database());
     $result = @pg_query_params($conn,

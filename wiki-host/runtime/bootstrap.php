@@ -2,6 +2,7 @@
 declare(strict_types=1);
 
 require_once __DIR__ . '/RuntimeConfig.php';
+require_once __DIR__ . '/RuntimeSettings.php';
 
 const CORPUS = '/opt/pvme/corpus';
 const EXPECTED_PAGES = 381;
@@ -134,6 +135,7 @@ if (realpath($_SERVER['SCRIPT_FILENAME'] ?? '') !== __FILE__) {
 }
 
 try {
+    RuntimeSettings::assertPaths(MW_ROOT);
     $server = RuntimeConfig::server();
     $db = RuntimeConfig::database();
     RuntimeConfig::requiredSecret('MW_SECRET_KEY');
@@ -153,6 +155,7 @@ try {
             fail('Incomplete bootstrap or corpus version mismatch; manual recovery required');
         }
         verifyPages($conn, $titles, false);
+        RuntimeSettings::activate('/opt/pvme/LocalSettings.php', MW_ROOT . '/LocalSettings.php');
         echo "PvME wiki ready: existing verified corpus\n";
         exit(0);
     }
@@ -184,9 +187,7 @@ try {
         @unlink($tempDir . '/LocalSettings.php');
         @rmdir($tempDir);
     }
-    if (!symlink('/opt/pvme/LocalSettings.php', MW_ROOT . '/LocalSettings.php')) {
-        fail('Could not activate MediaWiki settings');
-    }
+    RuntimeSettings::activate('/opt/pvme/LocalSettings.php', MW_ROOT . '/LocalSettings.php');
     putenv('MW_BOOTSTRAP=1');
     run(['php', 'maintenance/run.php', 'update', '--quick']);
     $preRows = query($conn, 'SELECT page_title FROM mediawiki.page WHERE page_namespace = 0');

@@ -1,5 +1,7 @@
 # PvME MediaWiki runtime
 
+Startup activates a regular, explicitly readable `LocalSettings.php` after a fresh installation and on the verified-corpus restart path. It replaces the previous symlink without following its target, and never reimports a completed database. Readiness additionally checks that Apache can read the active configuration and that its bytes match the packaged template. Unsupported `MW_CONFIG_FILE` or `MW_INSTALL_PATH` overrides fail before database access. Apache denies HTTP access to the setup wizard at `/mw-config/`.
+
 This directory is the Docker build context for the standalone editable wiki. The image uses official `mediawiki:1.43.11`, the bundled Vector 2022, VisualEditor, WikiEditor, and TemplateData, and Moderation 1.8.31 at commit `5135f2dee492b9f2f85f896f9a699ce753c53f4e`.
 
 At startup, `runtime/bootstrap.php` checks the corpus checksums, XML title set, and 381 one-revision mainspace pages. It obtains a PostgreSQL advisory lock, refuses a populated unmarked database, installs MediaWiki once, removes only the fresh installer sample Main Page when it is the sole mainspace page with one revision, imports the corpus, and records a ready marker in the database. Apache starts only after that succeeds. A failed or partial bootstrap leaves a non-ready marker and requires deliberate manual recovery; startup never reimports or runs automatic upgrades on a marked database. On restart, the marker, corpus digest, and baseline titles are checked. New community pages after launch are allowed.
