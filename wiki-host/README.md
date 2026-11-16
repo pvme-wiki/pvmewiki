@@ -14,7 +14,7 @@ outside the guide text, and every addition is counted.
 | captured pvme.io pages consistent with their recorded hashes | 330 of 330 |
 | compiled guides with the capture's exact text, media and links, in order | 329 of 329 |
 | live wiki pages saved byte for byte as packaged, 2026-11-16 | 374 of 374 |
-| rendered guides with the same words, media and links, 2026-11-16 | 329 of 329; 43 spaces made non-breaking by the parser in 22 guides (open finding) |
+| rendered guides with the same words, media and links, 2026-11-16 | 307 of 329 identical; the other 22 differ only by 43 spaces the parser made non-breaking (open finding) |
 | guides whose article the reader script leaves byte for byte unchanged | 329 of 329 |
 | Copy to wiki exports holding every guide passage once, in order | 329 of 329 (70,469 passages) |
 
