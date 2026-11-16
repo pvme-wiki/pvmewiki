@@ -1,42 +1,78 @@
 # PvME Wiki
 
-The current site is the [standalone editable MediaWiki](https://pvmewiki.sanji3.dev), maintained on this repository's default `wiki` branch. Its current-source corpus contains 325 guide articles and four About pages. Guide wording and order remain unchanged; presentation and navigation are additive.
+This repository is the source for an editable MediaWiki site that hosts PvME's
+RuneScape 3 bossing guides with attribution, at `https://pvmewiki.sanji3.dev`. Anyone
+can read; registered users can edit, and new users' edits go through a moderation
+queue. Each guide page has a **Copy to wiki** button that converts the guide's latest
+saved revision into RuneScape Wiki wikitext, ready to paste into that wiki's source
+editor.
 
-See [the wiki runtime documentation](wiki-host/README.md) and [Copy to wiki coverage and verification](wiki-host/copy-button-ports/README.md). The copy exporter covers all 325 guides. The five verified long guides have been published to the user's namespace after fresh live-button copies, bringing the guide table to 20 entries. Bulk corpus publication remains stopped.
+The site is one Docker image (MediaWiki 1.43, Apache, PHP) and one PostgreSQL database.
+The image carries a fixed seed corpus, compiled current guides, a small MediaWiki
+extension, and startup scripts that install the wiki once and never overwrite a page
+someone has edited.
 
-## Earlier reader prototype
+## Repository map
 
-The remaining application and documentation describe the earlier reader prototype and its separate 323-guide snapshot.
+| Path | What it is |
+| --- | --- |
+| `wiki-host/` | the product: image, runtime, extension, content, tools, tests and docs |
+| `AGENTS.md` | the content rule: guide text is verbatim, presentation is additive only |
+| everything else | an earlier reader prototype |
 
-An independent RuneScape 3 guide reader and phone-first contributor prototype.
+The other top-level directories (`editor/`, `server/`, `scripts/`, `src/`, `api/`,
+`reader/`, `content/`, `imported/`, `docs/`) and the root `package.json` and
+`vercel.json` belong to an earlier, separately deployed reader prototype. Nothing in
+them is built, tested or deployed from this branch, and their documentation describes
+that prototype, not the wiki. One link remains: the seed corpus builder
+`wiki-host/tools/build-corpus.mjs` reads guide snapshots from `editor/content/`.
 
-- The reader preserves 323 locally hosted PvME guides and their attribution.
-- All 323 guides support section-wide Markdown editing, removable bullets, lists, links, tables, known ability icons and image replacement. The editor supports private autosaved drafts, immutable submissions, reviewer approval, and Git-backed publication.
-- Discord authenticates contributors without giving them GitHub accounts or repository access. Sign-in returns to the same guide and editor tab, including after a cancelled attempt.
-- PostgreSQL stores accounts, drafts, reviews, and the audit trail. Approved content and review receipts go to the private repository.
-- Administrators may approve their own submitted snapshots. Moderators need another reviewer for their own contributions. Admin self-approvals retain immutable approval-time role evidence.
-- GitHub pull requests require a maintainer merge. A merged change is shown as published only after its matching deployed manifest is verified.
+## Quick start
 
-The shared editor fails closed until its database and authentication are configured. A successful static build is not evidence that these integrations work.
+Requirements: Node with npm, PHP 8.3 or newer CLI with `pgsql`, Python 3, Docker.
 
-## Develop
+```sh
+cd wiki-host
+npm ci
+npm test                                  # reader and exporter
+php tests/runtime-config.php              # one PHP test; the docs list all of them
+cd ..
+node wiki-host/tools/verify-corpus.mjs    # seed corpus integrity
+python3 wiki-host/tools/verify-xml.py
+docker build -t pvmewiki:local wiki-host  # the build context is wiki-host/
+```
 
-Use Node 24 or newer. Run `npm ci`, the applicable tests, and `npm run build`.
+Booting the image needs a PostgreSQL server with TLS; the steps are in
+[Testing](wiki-host/docs/Testing.md#booting-the-image-locally).
 
-Runtime credentials belong in the hosting provider's server-side environment, never source, client bundles, logs, or public build artifacts. See the setup and security documentation before enabling editing.
+## Documentation
 
-## Source and licensing
+Start at [wiki-host/docs/Home.md](wiki-host/docs/Home.md). The same pages can be
+published as this repository's GitHub wiki. [wiki-host/README.md](wiki-host/README.md)
+maps the product directory, and
+[Known limitations](wiki-host/docs/Known-limitations.md) lists what is imperfect.
 
-Guide content is adapted from [PvME](https://pvme.io/) and [pvme-guides](https://github.com/pvme/pvme-guides) under CC BY-NC-SA 4.0. Preserve the attribution and modifications recorded for each guide. Asset rights are separate. This project is not an official PvME or Jagex product. RuneScape Wiki import compatibility requires a separate rights and template review.
+## Licensing and attribution
 
-The reader baseline was recovered byte-for-byte from the existing authorized preview after its local development checkout became unavailable. The provenance manifest records that snapshot; the build layers reviewed content and shared UI changes over it. It is not a new upstream-content sync.
-
-## Editing guides
-
-Write directly in Readable, inspect Markdown, or edit either pane in Split. Formatting appears in place; selecting text reveals its syntax. Preview shows the final guide. Bullets and text are editable across passage boundaries. Start a known ability name with a colon for icon completion. Use Writing tools or click an image to replace it from an HTTPS URL or a PNG, JPEG, WebP or GIF file up to 1 MB. Uploaded rasters stay in the draft; the whole saved guide has a 1,750,000-byte limit.
-
-Save draft and autosave keep an account-owned working copy. Review changes shows text and image differences; Send for review freezes that version for a reviewer. Existing session, role, CSRF, conflict and publication checks still apply. Original source identities, provenance and captured AST remain immutable; an edited passage stores validated Markdown beside that source.
-
-HTML and executable URLs are not supported. Existing video/audio embeds are preserved when their captured references remain; new arbitrary embeds are not created. MediaWiki drafts label embedded images that need a separate target-wiki upload. This is an independent website, not an upstream PvME Markdown round-trip editor.
-
-Read [the readable-editor research](docs/readable-editor-research.md), [the verification record](docs/readable-editor-verification.md), [the feedback implementation record](docs/editor-feedback-completion.md) and [website-help provenance](docs/site-contributor-guidance.md). The Making Suggestions reader route now gives website instructions, with the captured upstream guide retained separately. Existing queued submissions and their baselines are not rewritten.
+- Guide text comes from [PvME](https://pvme.io/) and
+  [pvme-guides](https://github.com/pvme/pvme-guides), whose contributors license it
+  under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International. The
+  licence text is in
+  [wiki-host/corpus/LICENSE-CC-BY-NC-SA-4.0.txt](wiki-host/corpus/LICENSE-CC-BY-NC-SA-4.0.txt);
+  the upstream licence is
+  [pvme-guides/LICENSE](https://github.com/pvme/pvme-guides/blob/master/LICENSE). The
+  wiki's page licence is set to the same licence in `wiki-host/LocalSettings.php`.
+- Every imported page keeps its attribution: the seed manifest records each guide's
+  source and provenance (`wiki-host/corpus/manifest.json`), and the reader shows a
+  Source footer with the original guide, import date and upstream revision.
+  Formatting, navigation and wiki packaging are this project's adaptations; guide
+  wording is unchanged.
+- RuneScape and third-party images, videos and embeds remain with their owners. The
+  repository contains no copies of the guides' media files; pages load them from their
+  original hosts, and uploads are disabled on the wiki.
+- This is not an official PvME or Jagex product.
+- The PvmePresentation extension declares `GPL-2.0-or-later`
+  (`wiki-host/presentation/module/extension.json`). There is no repository-wide licence
+  file for the remaining code.
+- Pasting an exported guide into RuneScape Wiki is subject to that wiki's own licence
+  and content policies.

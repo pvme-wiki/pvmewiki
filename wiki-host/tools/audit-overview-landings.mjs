@@ -1,43 +1,218 @@
+/**
+ * Checks the boss landing pages built by build-overview-landings.mjs. Each
+ * landing transcludes one overview guide; the audit renders it through the
+ * production wiki's parser and compares it with that guide's source.
+ *
+ * Usage: node tools/audit-overview-landings.mjs [--verify-saved | --activate]
+ *     (no flag)       render each landing and write overview-landings-audit.json
+ *     --activate      also, when every landing passes, add the landings to
+ *                     main-guides/manifest.json so the next deploy installs them
+ *     --verify-saved  after a deploy: only compare saved revisions with the plan
+ *                     and write overview-landings-published.json
+ *
+ * Reads: main-guides/overview-landings.json, corpus-plan.json, the landing .wiki
+ *     files, parse5 from current-source/.dependencies/ (run
+ *     current-source/bootstrap.mjs first) and https://pvmewiki.sanji3.dev/api.php.
+ * Network: read-only action=query and action=parse, sent as POST; nothing is
+ *     edited.
+ * Exits with code 1 when any landing fails.
+ */
 import fs from 'node:fs';
 import path from 'node:path';
-import {fileURLToPath,pathToFileURL} from 'node:url';
-import {normalText,sha256} from './source-wikitext.mjs';
-const host=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const directory=path.join(host,'main-guides');
-const landings=JSON.parse(fs.readFileSync(path.join(directory,'overview-landings.json')));
-const source=new Map(JSON.parse(fs.readFileSync(path.join(directory,'corpus-plan.json'))).pages.map(p=>[p.title,p]));
-const {parseFragment}=await import(pathToFileURL(path.join(host,'current-source/.dependencies/node_modules/parse5/dist/index.js')).href);
-const attrs=n=>Object.fromEntries((n.attrs||[]).map(a=>[a.name,a.value]));
-const find=(n,p,r=[])=>{if(p(n))r.push(n);for(const c of n.childNodes||[])find(c,p,r);return r;};
-const text=n=>n.nodeName==='#text'?n.value:(n.childNodes||[]).map(text).join('');
-async function api(params){const r=await fetch('https://pvmewiki.sanji3.dev/api.php',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams({...params,format:'json',formatversion:'2'}),signal:AbortSignal.timeout(90000)});if(!r.ok)throw Error('Wiki API HTTP '+r.status);const data=await r.json();if(data.error)throw Error(data.error.info);return data;}
-const baseline=new Map();
-for(let i=0;i<landings.pages.length;i+=20){const data=await api({action:'query',prop:'revisions',rvprop:'ids|timestamp|user|comment|content',rvslots:'main',titles:landings.pages.slice(i,i+20).map(p=>p.title).join('|')});for(const p of data.query.pages){const r=p.revisions?.[0];baseline.set(p.title,{revision:r?.revid,sha256:r?sha256(r.slots.main.content):null,user:r?.user,comment:r?.comment});}}
-if(process.argv.includes('--verify-saved')){
- const results=landings.pages.map(p=>({title:p.title,overview:p.overview,...baseline.get(p.title),expectedSha256:p.sha256,matches:baseline.get(p.title)?.sha256===p.sha256,permalink:'https://pvmewiki.sanji3.dev/index.php?title='+encodeURIComponent(p.title)+'&oldid='+baseline.get(p.title)?.revision}));
- const report={captured:new Date().toISOString(),pages:results.length,matches:results.filter(p=>p.matches).length,failed:results.filter(p=>!p.matches).length,results};
- fs.writeFileSync(path.join(directory,'overview-landings-published.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify({...report,results:results.filter(p=>!p.matches)}));if(report.failed)process.exitCode=1;process.exit();
+import { forEachConcurrently } from './lib/concurrency.mjs';
+import { HOST_DIR as HOST, readJson, writeJson } from './lib/files.mjs';
+import {
+    guideRoot, sameAdditions, sameEmbeds, sameImages, sameLinks, sameVideos,
+} from './lib/guide-parity.mjs';
+import { attributes, findAll, hasClass, loadParse5, textContent } from './lib/html-tree.mjs';
+import {
+    TITLES_PER_QUERY, callWikiApi, latestRevisions, permalink,
+} from './lib/pvme-wiki-api.mjs';
+import { sha256 } from './lib/text.mjs';
+import { normalText } from './source-wikitext.mjs';
+
+const MAIN_GUIDES = path.join(HOST, 'main-guides');
+const WORKERS = 2;
+const PROGRESS_EVERY = 10;
+const LANDING_SUMMARY = 'Display the main guide directly; preserve source content';
+
+const mainGuidesFile = (name) => path.join(MAIN_GUIDES, name);
+
+const landings = readJson(mainGuidesFile('overview-landings.json'));
+const planByTitle = new Map(readJson(mainGuidesFile('corpus-plan.json')).pages
+    .map((page) => [page.title, page]));
+const { parseFragment } = await loadParse5(HOST);
+
+/** @return {Promise<Map<string, {revision, sha256, user, comment}>>} by landing title */
+async function savedLandings() {
+    const saved = new Map();
+    for (let start = 0; start < landings.pages.length; start += TITLES_PER_QUERY) {
+        const titles = landings.pages
+            .slice(start, start + TITLES_PER_QUERY)
+            .map((page) => page.title);
+        for (const page of await latestRevisions(titles)) {
+            const revision = page.revisions?.[0];
+            saved.set(page.title, {
+                revision: revision?.revid,
+                sha256: revision ? sha256(revision.slots.main.content) : null,
+                user: revision?.user,
+                comment: revision?.comment,
+            });
+        }
+    }
+    return saved;
 }
-const results=[];let cursor=0;
-async function worker(){while(cursor<landings.pages.length){const p=landings.pages[cursor++],expected=source.get(p.overview),before=baseline.get(p.title);let result={title:p.title,overview:p.overview,wikitextSha256:p.sha256,baseline:before};try{
- const wikitext=fs.readFileSync(path.join(directory,p.file),'utf8');if(sha256(wikitext)!==p.sha256)throw Error('Landing content hash mismatch');
- if(before.sha256!==p.baselineSha256&&before.sha256!==p.sha256)throw Error('Landing changed since the imported seed; preserve and merge');
- const data=await api({action:'parse',title:p.title,text:wikitext,prop:'text'});const dom=parseFragment(data.parse.text);
- const root=find(dom,n=>(attrs(n).class||'').split(/\s+/).includes('pvme-exact-guide'))[0];if(!root)throw Error('Overview missing from native transclusion');
- const images=find(root,n=>n.tagName==='img').map(attrs);
- const originals=images.filter(a=>!a['data-pvme-addition']);const additions=images.filter(a=>a['data-pvme-addition']);
- const expectedImages=expected.media.filter(m=>m.tag==='img');
- const videos=find(root,n=>n.tagName==='video').map(n=>({a:attrs(n),src:attrs(find(n,c=>c.tagName==='source')[0]||{}).src}));
- const expectedVideos=expected.media.filter(m=>m.tag==='video');
- const embeds=find(root,n=>n.tagName==='iframe').map(n=>attrs(n).src);const expectedEmbeds=expected.media.filter(m=>m.tag==='iframe');
- const sourceLinks=find(root,n=>n.tagName==='a').map(n=>({href:attrs(n).href,text:text(n)}));const expectedLinks=expected.links.filter(l=>l.href);
- const otherNav=find(dom,n=>(attrs(n).class||'').split(/\s+/).includes('pvme-other-guides'))[0];const others=otherNav?find(otherNav,n=>n.tagName==='a').map(n=>attrs(n).title):[];
- const url=s=>(s||'').replace(/%5b/gi,'[').replace(/%5d/gi,']');
- Object.assign(result,{textMatches:sha256(normalText(text(root)))===expected.bodyTextSha256,originalImages:originals.length,imagesMatch:originals.length===expectedImages.length&&expectedImages.every((m,i)=>['src','alt','title'].every(k=>(m[k]||'')===(originals[i][k]||''))),addedPreviews:additions.length,addedPreviewsMatch:additions.length===expected.additions.length&&expected.additions.every((a,i)=>a.src===additions[i]?.src&&(a.alt||'')===(additions[i]?.alt||'')),videosMatch:videos.length===expectedVideos.length&&expectedVideos.every((v,i)=>v.src===videos[i].src&&['controls','muted','loop'].every(k=>(videos[i].a[k]!==undefined)===v[k])),embedsMatch:embeds.length===expectedEmbeds.length&&expectedEmbeds.every((v,i)=>v.src===embeds[i]),sourceLinksMatch:sourceLinks.length===expectedLinks.length&&expectedLinks.every((l,i)=>url(l.href)===url(sourceLinks[i].href)&&l.text===sourceLinks[i].text),otherGuidesMatch:others.length===p.otherGuides.length&&p.otherGuides.every((t,i)=>t===others[i])});
- result.passed=result.textMatches&&result.imagesMatch&&result.addedPreviewsMatch&&result.videosMatch&&result.embedsMatch&&result.sourceLinksMatch&&result.otherGuidesMatch;
- }catch(e){result.error=e.message;result.passed=false;}results.push(result);if(!result.passed||results.length%10===0)console.log(JSON.stringify({checked:results.length,total:landings.pages.length,...(!result.passed?{issue:result}:{})}));}}
-await Promise.all([worker(),worker()]);
-const report={captured:new Date().toISOString(),pages:results.length,passed:results.filter(r=>r.passed).length,failed:results.filter(r=>!r.passed).length,results};
-fs.writeFileSync(path.join(directory,'overview-landings-audit.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify({...report,results:results.filter(r=>!r.passed)}));
-if(report.failed)process.exitCode=1;
-else if(process.argv.includes('--activate')){const file=path.join(directory,'manifest.json');const manifest=JSON.parse(fs.readFileSync(file));const pages=new Map(manifest.pages.map(p=>[p.title,p]));for(const p of landings.pages)pages.set(p.title,{title:p.title,file:p.file,baselineSha256:p.baselineSha256,sha256:p.sha256,summary:'Display the main guide directly; preserve source content'});fs.writeFileSync(file,JSON.stringify({pages:[...pages.values()]},null,2)+'\n');console.log(JSON.stringify({activatedLandings:landings.pages.length}));}
+
+function verifySaved(saved) {
+    const results = landings.pages.map((landing) => ({
+        title: landing.title,
+        overview: landing.overview,
+        ...saved.get(landing.title),
+        expectedSha256: landing.sha256,
+        matches: saved.get(landing.title)?.sha256 === landing.sha256,
+        permalink: permalink(landing.title, saved.get(landing.title)?.revision),
+    }));
+    const report = {
+        captured: new Date().toISOString(),
+        pages: results.length,
+        matches: results.filter((result) => result.matches).length,
+        failed: results.filter((result) => !result.matches).length,
+        results,
+    };
+    writeJson(mainGuidesFile('overview-landings-published.json'), report);
+    const failures = results.filter((result) => !result.matches);
+    console.log(JSON.stringify({ ...report, results: failures }));
+    if (report.failed) {
+        process.exitCode = 1;
+    }
+}
+
+function readLandingWikitext(landing, saved) {
+    const wikitext = fs.readFileSync(path.join(MAIN_GUIDES, landing.file), 'utf8');
+    if (sha256(wikitext) !== landing.sha256) {
+        throw Error('Landing content hash mismatch');
+    }
+    if (saved.sha256 !== landing.baselineSha256 && saved.sha256 !== landing.sha256) {
+        throw Error('Landing changed since the imported seed; preserve and merge');
+    }
+    return wikitext;
+}
+
+/** The overview links in the "other guides" box, by title. */
+function otherGuideTitles(tree) {
+    const box = findAll(tree, (node) => hasClass(node, 'pvme-other-guides'))[0];
+    if (!box) {
+        return [];
+    }
+    return findAll(box, (node) => node.tagName === 'a').map((node) => attributes(node).title);
+}
+
+async function compareLanding(landing, overview, saved) {
+    const wikitext = readLandingWikitext(landing, saved);
+    const data = await callWikiApi({
+        action: 'parse', title: landing.title, text: wikitext, prop: 'text',
+    });
+    const tree = parseFragment(data.parse.text);
+    const root = guideRoot(tree);
+    if (!root) {
+        throw Error('Overview missing from native transclusion');
+    }
+    const byTag = (tag) => findAll(root, (node) => node.tagName === tag);
+    const images = byTag('img').map(attributes);
+    const originals = images.filter((image) => !image['data-pvme-addition']);
+    const additions = images.filter((image) => image['data-pvme-addition']);
+    const expectedMedia = (tag) => overview.media.filter((media) => media.tag === tag);
+    const videos = byTag('video').map((node) => ({
+        attrs: attributes(node),
+        sources: findAll(node, (child) => child.tagName === 'source')
+            .map((child) => attributes(child).src),
+    }));
+    const embeds = byTag('iframe').map((node) => attributes(node).src);
+    const links = byTag('a')
+        .map((node) => ({ href: attributes(node).href, text: textContent(node) }));
+    const otherGuides = otherGuideTitles(tree);
+    return {
+        textMatches: sha256(normalText(textContent(root))) === overview.bodyTextSha256,
+        originalImages: originals.length,
+        imagesMatch: sameImages(expectedMedia('img'), originals),
+        addedPreviews: additions.length,
+        addedPreviewsMatch: sameAdditions(overview.additions, additions),
+        videosMatch: sameVideos(expectedMedia('video'), videos),
+        embedsMatch: sameEmbeds(expectedMedia('iframe'), embeds),
+        sourceLinksMatch: sameLinks(overview.links.filter((link) => link.href), links),
+        otherGuidesMatch: otherGuides.length === landing.otherGuides.length &&
+            landing.otherGuides.every((title, index) => title === otherGuides[index]),
+    };
+}
+
+const CHECKS = [
+    'textMatches', 'imagesMatch', 'addedPreviewsMatch', 'videosMatch', 'embedsMatch',
+    'sourceLinksMatch', 'otherGuidesMatch',
+];
+
+async function auditLandings(saved) {
+    const results = [];
+    await forEachConcurrently(landings.pages, WORKERS, async (landing) => {
+        const before = saved.get(landing.title);
+        const result = {
+            title: landing.title,
+            overview: landing.overview,
+            wikitextSha256: landing.sha256,
+            baseline: before,
+        };
+        try {
+            const overview = planByTitle.get(landing.overview);
+            Object.assign(result, await compareLanding(landing, overview, before));
+            result.passed = CHECKS.every((check) => result[check]);
+        } catch (error) {
+            result.error = error.message;
+            result.passed = false;
+        }
+        results.push(result);
+        if (!result.passed || results.length % PROGRESS_EVERY === 0) {
+            console.log(JSON.stringify({
+                checked: results.length,
+                total: landings.pages.length,
+                ...(!result.passed ? { issue: result } : {}),
+            }));
+        }
+    });
+    return results;
+}
+
+function activateLandings() {
+    const manifest = readJson(mainGuidesFile('manifest.json'));
+    const pages = new Map(manifest.pages.map((page) => [page.title, page]));
+    for (const landing of landings.pages) {
+        pages.set(landing.title, {
+            title: landing.title,
+            file: landing.file,
+            baselineSha256: landing.baselineSha256,
+            sha256: landing.sha256,
+            summary: LANDING_SUMMARY,
+        });
+    }
+    writeJson(mainGuidesFile('manifest.json'), { pages: [...pages.values()] });
+    console.log(JSON.stringify({ activatedLandings: landings.pages.length }));
+}
+
+const saved = await savedLandings();
+if (process.argv.includes('--verify-saved')) {
+    verifySaved(saved);
+    process.exit();
+}
+const results = await auditLandings(saved);
+const report = {
+    captured: new Date().toISOString(),
+    pages: results.length,
+    passed: results.filter((result) => result.passed).length,
+    failed: results.filter((result) => !result.passed).length,
+    results,
+};
+writeJson(mainGuidesFile('overview-landings-audit.json'), report);
+console.log(JSON.stringify({ ...report, results: results.filter((result) => !result.passed) }));
+if (report.failed) {
+    process.exitCode = 1;
+} else if (process.argv.includes('--activate')) {
+    activateLandings();
+}

@@ -1,0 +1,971 @@
+/*
+ * The Amascut picture guide and its four templates (PvME picture card, prayer sequence,
+ * picture flow, arena picture), all inside .am-picture-guide. Every label is wiki text; the
+ * picture-*.svg symbols are decoration.
+ */
+
+/* Page ------------------------------------------------------------------ */
+
+.am-picture-guide {
+    --am-paper: #fbf8f1;
+    --am-white: #fffefa;
+    --am-ink: #252e32;
+    --am-muted: #526066;
+    --am-line: #d7d6cc;
+    --am-teal: #17635e;
+    --am-teal-soft: #edf5f1;
+    --am-ochre: #805313;
+    --am-ochre-soft: #fff3d9;
+    color: var(--am-ink);
+    font-size: 1em;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+    color-scheme: light;
+    container-type: inline-size;
+    container-name: am-picture;
+}
+
+.am-picture-guide *,
+.am-picture-guide *::before,
+.am-picture-guide *::after {
+    box-sizing: border-box;
+}
+
+.am-picture-guide :is(h2, h3, h4) {
+    color: var(--am-ink);
+    line-height: 1.25;
+    scroll-margin-block-start: 5rem;
+}
+
+.am-picture-guide h2 {
+    margin-block: 2.3rem 1rem;
+    padding-block-end: .45rem;
+    border-block-end: 1px solid var(--am-line);
+}
+
+.am-picture-guide a {
+    color: #145e79;
+    text-underline-offset: .18em;
+}
+
+.am-picture-guide a:hover {
+    text-decoration: underline;
+}
+
+.am-picture-guide a:focus-visible {
+    outline: 3px solid var(--am-teal);
+    outline-offset: 4px;
+    border-radius: 2px;
+}
+
+/* Hero ------------------------------------------------------------------ */
+
+.am-picture-guide .am-picture-hero {
+    padding: clamp(1.2rem, 3vw, 2.2rem);
+    margin-block: 1rem 1.5rem;
+    border: 1px solid var(--am-line);
+    border-block-start: 4px solid var(--am-teal);
+    background: var(--am-paper);
+    border-radius: 3px;
+}
+
+.am-picture-guide .am-picture-hero :is(h2, h3) {
+    margin-block: .35rem .7rem;
+    padding: 0;
+    border: 0;
+    font-size: clamp(1.6em, 3vw, 2.35em);
+}
+
+.am-picture-guide .am-picture-hero p {
+    max-width: 70ch;
+    margin-block: .6rem;
+}
+
+.am-picture-guide .am-picture-hero .am-picture-lead {
+    margin-block: 1rem;
+    font-size: 1.15em;
+    line-height: 1.5;
+}
+
+.am-picture-guide .am-picture-lead > b:first-child {
+    display: block;
+    margin-block-end: .45rem;
+    font-size: clamp(1.45em, 2.5vw, 2em);
+    line-height: 1.25;
+}
+
+.am-picture-guide .am-picture-mode {
+    display: inline-block;
+    padding: .2rem .65rem;
+    border: 1px solid #b6c9c0;
+    border-radius: 3px;
+    color: var(--am-teal);
+    background: var(--am-teal-soft);
+    font-size: .85em;
+    font-weight: 600;
+}
+
+/* Roadmap --------------------------------------------------------------- */
+
+/* The numbered roadmap is an ordinary list of links. */
+
+.am-picture-guide .am-picture-journey {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: .55rem;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 1.7rem;
+}
+
+.am-picture-guide .am-picture-journey > li {
+    list-style: none;
+    margin: 0;
+    min-width: 0;
+}
+
+.am-picture-guide .am-picture-journey > li > a {
+    display: grid;
+    grid-template-columns: 1.6rem 1fr;
+    gap: .35rem .65rem;
+    align-content: start;
+    height: 100%;
+    padding: .85rem;
+    color: var(--am-ink);
+    border: 1px solid var(--am-line);
+    border-radius: 3px;
+    background: var(--am-white);
+    text-decoration: none;
+}
+
+.am-picture-guide .am-picture-journey > li > a:hover {
+    border-color: var(--am-teal);
+    background: var(--am-teal-soft);
+}
+
+.am-picture-guide .am-picture-journey b {
+    display: grid;
+    place-items: center;
+    width: 1.6rem;
+    height: 1.6rem;
+    color: white;
+    background: var(--am-teal);
+    border-radius: 50%;
+    font-size: .8em;
+}
+
+.am-picture-guide .am-picture-journey .am-picture-icon {
+    grid-column: 2;
+    grid-row: 1;
+    width: 1.65rem;
+    height: 1.65rem;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+.am-picture-guide .am-picture-journey :is(strong, small) {
+    grid-column: 1 / -1;
+}
+
+.am-picture-guide .am-picture-journey strong {
+    font-size: 1em;
+    line-height: 1.3;
+    margin-block-start: .2rem;
+}
+
+.am-picture-guide .am-picture-journey small {
+    color: var(--am-muted);
+    font-size: .8em;
+    line-height: 1.4;
+}
+
+/* Picture cards --------------------------------------------------------- */
+
+.am-picture-guide .am-picture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 21rem), 1fr));
+    gap: 1rem;
+    margin-block: 1rem 1.7rem;
+    align-items: start;
+}
+
+.am-picture-guide .am-picture-card {
+    min-width: 0;
+    padding: clamp(1rem, 2vw, 1.4rem);
+    border: 1px solid var(--am-line);
+    border-radius: 4px;
+    background: var(--am-white);
+}
+
+.am-picture-guide .am-picture-card-head {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    margin-block-end: 1rem;
+}
+
+.am-picture-guide .am-picture-card-head h3 {
+    flex: 1;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family: inherit;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.am-picture-guide .am-picture-card p {
+    margin-block: .75rem;
+}
+
+.am-picture-guide .am-picture-cue {
+    color: var(--am-muted);
+    padding-block-end: .75rem;
+    border-block-end: 1px solid #e6e5de;
+}
+
+.am-picture-guide .am-picture-action {
+    color: var(--am-teal);
+    font-size: clamp(1.15em, 1.6vw, 1.4em);
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.am-picture-guide .am-picture-detail {
+    font-size: .95em;
+}
+
+.am-picture-guide .am-picture-caption {
+    color: var(--am-muted);
+    font-size: .8em;
+    line-height: 1.5;
+}
+
+/* Symbols --------------------------------------------------------------- */
+
+.am-picture-guide .am-picture-icon {
+    display: inline-block;
+    flex: 0 0 auto;
+    width: 3rem;
+    height: 3rem;
+    vertical-align: middle;
+    border: 1px solid #d4ded7;
+    border-radius: 8px;
+    background-color: var(--am-teal-soft);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 72%;
+}
+
+.am-picture-guide .am-icon-melee {
+    background-image: url(../picture-melee.svg);
+}
+
+.am-picture-guide .am-icon-ranged {
+    background-image: url(../picture-ranged.svg);
+}
+
+.am-picture-guide .am-icon-magic {
+    background-image: url(../picture-magic.svg);
+}
+
+.am-picture-guide .am-icon-scarab {
+    background-image: url(../picture-scarab.svg);
+}
+
+.am-picture-guide .am-icon-chain {
+    background-image: url(../picture-chain.svg);
+}
+
+.am-picture-guide .am-icon-statue {
+    background-image: url(../picture-statue.svg);
+}
+
+.am-picture-guide .am-icon-gate {
+    background-image: url(../picture-gate.svg);
+}
+
+.am-picture-guide .am-icon-fragment {
+    background-image: url(../picture-fragment.svg);
+}
+
+.am-picture-guide .am-icon-shield {
+    background-image: url(../picture-shield.svg);
+}
+
+.am-picture-guide .am-icon-people {
+    background-image: url(../picture-people.svg);
+}
+
+.am-picture-guide .am-icon-boss {
+    background-image: url(../picture-boss.svg);
+}
+
+.am-picture-guide .am-icon-eye {
+    background-image: url(../picture-eye.svg);
+}
+
+.am-picture-guide .am-icon-run {
+    background-image: url(../picture-run.svg);
+}
+
+.am-picture-guide .am-icon-dog {
+    background-image: url(../picture-dog.svg);
+}
+
+.am-picture-guide .am-icon-platform {
+    background-image: url(../picture-platform.svg);
+}
+
+.am-picture-guide .am-icon-target {
+    background-image: url(../picture-target.svg);
+}
+
+.am-picture-guide .am-icon-clock {
+    background-image: url(../picture-clock.svg);
+}
+
+.am-picture-guide .am-icon-light {
+    background-image: url(../picture-light.svg);
+}
+
+.am-picture-guide .am-icon-warning {
+    background-image: url(../picture-warning.svg);
+    background-color: var(--am-ochre-soft);
+    border-color: #d9bd86;
+}
+
+.am-picture-guide .am-icon-check {
+    background-image: url(../picture-check.svg);
+}
+
+/* Prayer sequence ------------------------------------------------------- */
+
+/* Colour repeats the written style names and distinct symbols, never replaces them. */
+
+.am-picture-guide .am-prayer-sequence {
+    padding: 1rem;
+    margin-block: 1rem;
+    border: 1px solid var(--am-line);
+    border-radius: 4px;
+    background: var(--am-paper);
+}
+
+.am-picture-guide .am-prayer-call {
+    margin: 0 0 .8rem;
+    font-weight: 700;
+}
+
+.am-picture-guide .am-prayer-call small {
+    display: inline-block;
+    margin-inline-start: .5rem;
+    padding: .2rem .5rem;
+    border: 1px solid #a9c7bc;
+    border-radius: 3px;
+    color: var(--am-teal);
+    background: var(--am-teal-soft);
+    font-size: .8em;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.am-picture-guide .am-prayer-sequence:has(
+    .am-prayer-steps > .am-style-melee:first-child + .am-style-melee + .am-style-melee
+) .am-prayer-call small,
+.am-picture-guide .am-prayer-sequence:has(
+    .am-prayer-steps > .am-style-ranged:first-child + .am-style-ranged + .am-style-ranged
+) .am-prayer-call small,
+.am-picture-guide .am-prayer-sequence:has(
+    .am-prayer-steps > .am-style-magic:first-child + .am-style-magic + .am-style-magic
+) .am-prayer-call small {
+    border-color: #d9bd86;
+    color: #67440f;
+    background: var(--am-ochre-soft);
+}
+
+.am-picture-guide .am-prayer-steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .65rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    counter-reset: am-prayer;
+}
+
+.am-picture-guide .am-prayer-steps > li {
+    counter-increment: am-prayer;
+    display: flex;
+    align-items: center;
+    flex: 1 1 8rem;
+    gap: .5rem;
+    padding: .65rem;
+    margin: 0;
+    border: 1px solid var(--am-line);
+    border-radius: 3px;
+    background: var(--am-white);
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.am-picture-guide .am-prayer-steps > li::before {
+    content: counter(am-prayer) ".";
+    color: var(--am-muted);
+    font-size: .8em;
+}
+
+.am-picture-guide .am-prayer-steps .am-picture-icon {
+    width: 2.3rem;
+    height: 2.3rem;
+    border: 0;
+}
+
+.am-picture-guide .am-style-melee .am-picture-icon {
+    background-color: #f9eae5;
+}
+
+.am-picture-guide .am-style-ranged .am-picture-icon {
+    background-color: #e9f3e6;
+}
+
+.am-picture-guide .am-style-magic .am-picture-icon {
+    background-color: #e9effc;
+}
+
+/* Picture flow ---------------------------------------------------------- */
+
+/* Steps are numbered, so the order never depends on position alone. */
+
+.am-picture-guide .am-picture-flow {
+    margin-block: 1.1rem;
+    padding: 1rem .75rem;
+    background: var(--am-paper);
+    border: 1px solid var(--am-line);
+    border-radius: 3px;
+}
+
+.am-picture-guide .am-picture-flow > ol {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.3rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    counter-reset: am-flow;
+}
+
+.am-picture-guide .am-picture-flow > ol > li {
+    position: relative;
+    counter-increment: am-flow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    min-width: 0;
+    margin: 0;
+    text-align: center;
+    font-size: .85em;
+    line-height: 1.4;
+}
+
+.am-picture-guide .am-picture-flow > ol > li::before {
+    content: counter(am-flow);
+    display: block;
+    color: var(--am-muted);
+    font-size: .7em;
+    font-weight: 700;
+}
+
+.am-picture-guide .am-picture-flow > ol > li:not(:last-child)::after {
+    content: "→";
+    position: absolute;
+    inset-inline-end: -1.1rem;
+    top: 2.2rem;
+    color: var(--am-teal);
+    font-size: 1.2em;
+}
+
+.am-picture-guide .am-picture-flow-label {
+    max-width: 16ch;
+    font-weight: 600;
+}
+
+.am-picture-guide .am-flow-climb > ol {
+    align-items: end;
+}
+
+.am-picture-guide .am-flow-climb > ol > li {
+    padding-block-end: .4rem;
+    border-block-end: 3px solid #859c93;
+}
+
+.am-picture-guide .am-flow-climb > ol > li:nth-child(1) {
+    margin-block-start: 3rem;
+}
+
+.am-picture-guide .am-flow-climb > ol > li:nth-child(2) {
+    margin-block-end: 1rem;
+}
+
+.am-picture-guide .am-flow-climb > ol > li:nth-child(3) {
+    margin-block-end: 2rem;
+}
+
+.am-picture-guide .am-flow-climb > ol > li:nth-child(4) {
+    margin-block-end: 3rem;
+}
+
+.am-picture-guide .am-flow-interception > ol > li:nth-child(even) .am-picture-icon {
+    border-style: dashed;
+    background-color: var(--am-ochre-soft);
+}
+
+.am-picture-guide .am-flow-intercept > ol > li:nth-child(2) .am-picture-icon {
+    border: 2px solid var(--am-ochre);
+    background-color: var(--am-ochre-soft);
+}
+
+.am-picture-guide :is(.am-flow-clone, .am-flow-clones) > ol > li:last-child .am-picture-icon {
+    border: 2px solid var(--am-teal);
+}
+
+/* Arena map ------------------------------------------------------------- */
+
+/* Cells are placed by their compass class, not by their order in the markup. */
+
+.am-picture-guide .am-picture-map {
+    padding: 1rem;
+    margin-block: 1rem;
+    border: 1px solid var(--am-line);
+    background: var(--am-paper);
+    border-radius: 4px;
+}
+
+.am-picture-guide .am-map-compass {
+    text-align: center;
+    color: var(--am-muted);
+    font-size: .75em;
+    font-weight: 700;
+    letter-spacing: .08em;
+    margin-block-end: .75rem;
+}
+
+.am-picture-guide .am-picture-map-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-areas: "nw n ne" "w center e" "sw s se";
+    gap: .4rem;
+    max-width: 32rem;
+    margin-inline: auto;
+    padding: .6rem;
+    border: 2px solid #9daea5;
+    border-radius: 5px;
+    background: #f0eee5;
+}
+
+.am-picture-guide .am-map-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 4.3rem;
+    min-width: 0;
+    padding: .5rem .2rem;
+    text-align: center;
+    line-height: 1.3;
+    font-size: .85em;
+}
+
+.am-picture-guide .am-map-nw {
+    grid-area: nw;
+}
+
+.am-picture-guide .am-map-n {
+    grid-area: n;
+}
+
+.am-picture-guide .am-map-ne {
+    grid-area: ne;
+}
+
+.am-picture-guide .am-map-w {
+    grid-area: w;
+}
+
+.am-picture-guide .am-map-center {
+    grid-area: center;
+}
+
+.am-picture-guide .am-map-e {
+    grid-area: e;
+}
+
+.am-picture-guide .am-map-sw {
+    grid-area: sw;
+}
+
+.am-picture-guide .am-map-s {
+    grid-area: s;
+}
+
+.am-picture-guide .am-map-se {
+    grid-area: se;
+}
+
+.am-picture-guide .am-map-statues :is(
+    .am-map-nw,
+    .am-map-ne,
+    .am-map-sw,
+    .am-map-se,
+    .am-map-center
+) {
+    flex-direction: column;
+    gap: .3rem;
+    background: var(--am-white);
+    border: 1px solid #aebfb3;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.am-picture-guide .am-map-statues :is(
+    .am-map-nw,
+    .am-map-ne,
+    .am-map-sw,
+    .am-map-se,
+    .am-map-center
+)::before {
+    content: "";
+    display: block;
+    width: 1.7rem;
+    height: 1.7rem;
+    background: url(../picture-statue.svg) center / contain no-repeat;
+}
+
+.am-picture-guide .am-map-statues .am-map-center {
+    background: var(--am-teal-soft);
+    border: 2px solid var(--am-teal);
+}
+
+.am-picture-guide .am-map-floor .am-map-cell {
+    background: var(--am-white);
+    border: 1px solid #c9c8ba;
+}
+
+.am-picture-guide .am-map-floor :is(.am-map-nw, .am-map-e, .am-map-s) {
+    background: repeating-linear-gradient(
+        135deg, #f5e7cd 0, #f5e7cd 5px, #fff7e9 5px, #fff7e9 10px
+    );
+    border: 1px dashed var(--am-ochre);
+}
+
+.am-picture-guide .am-map-floor .am-map-center {
+    border: 2px solid var(--am-teal);
+    background: var(--am-teal-soft);
+    font-weight: 700;
+}
+
+/* Notes and warnings ---------------------------------------------------- */
+
+.am-picture-guide :is(.am-picture-note, .am-picture-warning) {
+    margin-block: 1rem;
+    padding: .85rem 1rem;
+    border-inline-start: 3px solid var(--am-teal);
+    background: var(--am-teal-soft);
+    font-size: .95em;
+}
+
+.am-picture-guide .am-picture-warning {
+    border-color: var(--am-ochre);
+    background: var(--am-ochre-soft);
+    color: #59421e;
+}
+
+.am-picture-guide :is(.am-picture-note, .am-picture-warning) > :first-child {
+    margin-block-start: 0;
+}
+
+.am-picture-guide :is(.am-picture-note, .am-picture-warning) > :last-child {
+    margin-block-end: 0;
+}
+
+/* Call table ------------------------------------------------------------ */
+
+.am-picture-guide .am-picture-calls {
+    width: 100%;
+    margin-block: 1rem 1.5rem;
+    border-collapse: collapse;
+    background: var(--am-white);
+    font-size: .95em;
+}
+
+.am-picture-guide .am-picture-calls :is(th, td) {
+    padding: .8rem;
+    border: 1px solid var(--am-line);
+    text-align: start;
+    vertical-align: top;
+}
+
+.am-picture-guide .am-picture-calls th {
+    color: var(--am-teal);
+    background: var(--am-teal-soft);
+    font-size: .85em;
+}
+
+/* Container widths ------------------------------------------------------ */
+
+@container am-picture (min-width: 48rem) {
+    .am-picture-guide .am-picture-journey {
+        grid-template-columns: repeat(7, minmax(0, 1fr));
+    }
+
+    .am-picture-guide .am-picture-journey > li > a {
+        padding: .75rem .6rem;
+    }
+}
+
+@container am-picture (max-width: 30rem) {
+    .am-picture-guide .am-picture-journey {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Narrow screens -------------------------------------------------------- */
+
+@media (max-width: 540px) {
+    .am-picture-guide .am-picture-journey {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .am-picture-guide .am-picture-card {
+        padding: 1rem;
+    }
+
+    .am-picture-guide .am-prayer-sequence {
+        padding: .75rem;
+    }
+
+    .am-picture-guide .am-prayer-steps {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: .35rem;
+    }
+
+    .am-picture-guide .am-prayer-steps > li {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        gap: .35rem;
+        padding: 1.1rem .2rem .6rem;
+        text-align: center;
+        font-size: .8em;
+    }
+
+    .am-picture-guide .am-prayer-steps > li::before {
+        position: absolute;
+        inset-block-start: .2rem;
+        inset-inline-start: .35rem;
+        font-size: .65em;
+    }
+
+    .am-picture-guide .am-prayer-steps > li > span:last-child {
+        text-transform: capitalize;
+    }
+
+    .am-picture-guide .am-prayer-steps .am-picture-icon {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .am-picture-guide .am-picture-flow > ol {
+        grid-template-columns: 1fr;
+        gap: 1.7rem;
+    }
+
+    .am-picture-guide .am-picture-flow > ol > li {
+        display: grid;
+        grid-template-columns: 1rem 3rem 1fr;
+        text-align: start;
+        align-items: center;
+        gap: .65rem;
+    }
+
+    .am-picture-guide .am-picture-flow-label {
+        max-width: none;
+    }
+
+    .am-picture-guide .am-picture-flow > ol > li:not(:last-child)::after {
+        content: "↓";
+        top: auto;
+        bottom: -1.5rem;
+        inset-inline-end: auto;
+        inset-inline-start: 2.6rem;
+    }
+
+    .am-picture-guide .am-flow-climb > ol > li:nth-child(n) {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    .am-picture-guide .am-picture-map {
+        padding: .65rem;
+    }
+
+    .am-picture-guide .am-picture-map-grid {
+        padding: .3rem;
+        gap: .25rem;
+    }
+
+    .am-picture-guide .am-map-cell {
+        font-size: .75em;
+    }
+
+    .am-picture-guide .am-prayer-call small {
+        display: table;
+        margin: .4rem 0 0;
+    }
+}
+
+/* Call table on narrow screens ------------------------------------------ */
+
+/*
+ * Each row becomes a card. The header row stays for assistive technology but is hidden
+ * visually.
+ */
+
+@media screen and (max-width: 600px) {
+    .am-picture-guide .am-picture-calls {
+        display: block;
+        width: 100%;
+        border: 0;
+        background: transparent;
+    }
+
+    .am-picture-guide .am-picture-calls > tbody {
+        display: block;
+    }
+
+    .am-picture-guide .am-picture-calls tr:has( > th) {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        clip-path: inset(50%);
+        white-space: nowrap;
+        border: 0;
+    }
+
+    .am-picture-guide .am-picture-calls tr:has( > td) {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        margin-block: .75rem;
+        padding: .85rem;
+        border: 1px solid var(--am-line);
+        border-radius: 4px;
+        background: var(--am-white);
+    }
+
+    .am-picture-guide .am-picture-calls td {
+        display: block;
+        width: auto;
+        min-width: 0;
+        padding: 0;
+        border: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .am-picture-guide .am-picture-calls td + td {
+        margin-block-start: .6rem;
+    }
+
+    .am-picture-guide .am-picture-calls td:nth-child(2) {
+        color: var(--am-teal);
+        font-weight: 700;
+    }
+
+    .am-picture-guide .am-picture-calls td:nth-child(2)::before {
+        content: "Go: ";
+        font-weight: 700;
+    }
+}
+
+/* Reduced motion -------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+    .am-picture-guide *,
+    .am-picture-guide *::before,
+    .am-picture-guide *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Forced colours -------------------------------------------------------- */
+
+@media (forced-colors: active) {
+    .am-picture-guide .am-picture-icon {
+        forced-color-adjust: none;
+        background-color: #fff;
+        border-color: CanvasText;
+    }
+
+    .am-picture-guide .am-picture-journey b {
+        border: 1px solid CanvasText;
+    }
+
+    .am-picture-guide .am-map-cell {
+        border: 1px solid CanvasText;
+    }
+}
+
+/* Print ----------------------------------------------------------------- */
+
+@media print {
+    .am-picture-guide {
+        font-size: 10pt;
+        color: #000;
+    }
+
+    .am-picture-guide .am-picture-hero {
+        padding: .8rem;
+    }
+
+    .am-picture-guide :is(
+        .am-picture-card,
+        .am-prayer-sequence,
+        .am-picture-map,
+        .am-picture-flow,
+        .am-picture-note,
+        .am-picture-warning
+    ) {
+        break-inside: avoid;
+        box-shadow: none;
+        border-color: #999;
+    }
+
+    .am-picture-guide .am-picture-grid {
+        display: block;
+    }
+
+    .am-picture-guide .am-picture-card {
+        margin-block: .8rem;
+    }
+
+    .am-picture-guide :is(.am-picture-action, a) {
+        color: #000;
+    }
+
+    .am-picture-guide .am-picture-icon {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+
+    .am-picture-guide .am-picture-journey {
+        display: none;
+    }
+}

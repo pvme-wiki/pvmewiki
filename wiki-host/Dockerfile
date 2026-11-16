@@ -27,12 +27,30 @@ COPY corpus/manifest.json /opt/pvme/corpus/manifest.json
 COPY corpus/SHA256SUMS /opt/pvme/corpus/SHA256SUMS
 COPY visual-guides/ /opt/pvme/visual-guides/
 COPY main-guides/ /opt/pvme/main-guides/
-RUN php -l /opt/pvme/runtime/install-visual-guides.php
-RUN php -l /opt/pvme/runtime/install-main-guides.php && php -l /var/www/html/extensions/PvmePresentation/includes/Hooks.php
-RUN chmod 755 /opt/pvme /opt/pvme/runtime /opt/pvme/runtime/start.sh \
-    && chmod 644 /opt/pvme/LocalSettings.php /opt/pvme/runtime/*.php /var/www/html/healthz.php
-RUN chmod 755 /var/www/html/extensions/PvmePresentation /var/www/html/extensions/PvmePresentation/includes /var/www/html/extensions/PvmePresentation/modules \
-    && chmod 644 /var/www/html/extensions/PvmePresentation/extension.json /var/www/html/extensions/PvmePresentation/includes/*.php /var/www/html/extensions/PvmePresentation/modules/*
+RUN set -e; \
+    for file in /opt/pvme/LocalSettings.php /opt/pvme/runtime/*.php /opt/pvme/runtime/lib/*.php \
+        /var/www/html/healthz.php /var/www/html/extensions/PvmePresentation/includes/*.php; do \
+        php -l "$file"; \
+    done
+# .dockerignore ships only the main-guide files the manifest lists; fail the build if
+# the two drift apart.
+RUN php -r '$dir = "/opt/pvme/main-guides"; \
+    $json = file_get_contents("$dir/manifest.json"); \
+    foreach (json_decode($json, true, 512, JSON_THROW_ON_ERROR)["pages"] as $page) { \
+        if (!is_file("$dir/" . $page["file"])) { \
+            fwrite(STDERR, "missing main guide $page[file]\n"); \
+            exit(1); \
+        } \
+    }'
+# Only entries whose mode differs are changed, so unchanged files are not copied into
+# another image layer.
+RUN set -e; \
+    for tree in /opt/pvme /var/www/html/extensions/PvmePresentation; do \
+        find "$tree" -type d ! -perm 755 -exec chmod 755 {} +; \
+        find "$tree" -type f ! -perm 644 -exec chmod 644 {} +; \
+    done; \
+    chmod 644 /var/www/html/healthz.php; \
+    chmod 755 /opt/pvme/runtime/start.sh
 
 EXPOSE 80
 ENTRYPOINT ["/opt/pvme/runtime/start.sh"]

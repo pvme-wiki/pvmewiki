@@ -1,214 +1,155 @@
 <?php
 declare(strict_types=1);
 
-require_once __DIR__ . '/RuntimeConfig.php';
-require_once __DIR__ . '/RuntimeSettings.php';
+/**
+ * Startup step 1 (see start.sh): makes sure the database holds the verified seed
+ * corpus, then activates LocalSettings.php. Either installs MediaWiki into an empty
+ * database and imports the seed, or confirms a finished earlier bootstrap. Anything
+ * else stops the container with one line on stderr; see StartupDecision.
+ */
 
-const CORPUS = '/opt/pvme/corpus';
-const EXPECTED_PAGES = 381;
-const MW_ROOT = '/var/www/html';
+require_once __DIR__ . '/lib/AdvisoryLock.php';
+require_once __DIR__ . '/lib/BootstrapMarker.php';
+require_once __DIR__ . '/lib/DatabaseSnapshot.php';
+require_once __DIR__ . '/lib/MaintenanceCommand.php';
+require_once __DIR__ . '/lib/RuntimeConfig.php';
+require_once __DIR__ . '/lib/RuntimePaths.php';
+require_once __DIR__ . '/lib/RuntimeSettings.php';
+require_once __DIR__ . '/lib/SeedCorpus.php';
+require_once __DIR__ . '/lib/StartupDecision.php';
+require_once __DIR__ . '/lib/WikiDatabase.php';
 
-function fail(string $reason): never {
-    throw new RuntimeException($reason);
-}
+const SITE_NAME = 'PvME Wiki';
+const ADMIN_USER = 'Admin';
+const INSTALLER_MAIN_PAGE = 'Main_Page';
+const SEED_HOME_PAGE = 'PvME';
 
-function query(PgSql\Connection $conn, string $sql, array $args = []): PgSql\Result {
-    $result = $args ? @pg_query_params($conn, $sql, $args) : @pg_query($conn, $sql);
-    if (!$result) {
-        fail('Database query failed during bootstrap');
-    }
-    return $result;
-}
-
-function scalar(PgSql\Connection $conn, string $sql, array $args = []): string {
-    return (string)pg_fetch_result(query($conn, $sql, $args), 0, 0);
-}
-
-function run(array $argv, ?string $stdin = null): void {
-    $process = proc_open($argv, [
-        0 => ['pipe', 'r'], 1 => ['file', '/dev/null', 'w'], 2 => ['file', '/dev/null', 'w'],
-    ], $pipes, MW_ROOT);
-    if (!is_resource($process)) {
-        fail('Could not start MediaWiki maintenance command');
-    }
-    if ($stdin !== null) {
-        fwrite($pipes[0], $stdin);
-    }
-    fclose($pipes[0]);
-    if (proc_close($process) !== 0) {
-        fail('MediaWiki maintenance command failed: ' . $argv[2]);
-    }
-}
-
-function corpus(string $directory = CORPUS): array {
-    $manifestPath = $directory . '/manifest.json';
-    $xmlPath = $directory . '/pages.xml';
-    $sumPath = $directory . '/SHA256SUMS';
-    foreach ([$manifestPath, $xmlPath, $sumPath] as $path) {
-        if (!is_file($path)) {
-            fail('Required corpus file missing');
-        }
-    }
-    $sums = file($sumPath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-    $expected = [];
-    foreach ($sums as $line) {
-        if (!preg_match('/^([a-f0-9]{64})  (?:\.\/)?(pages\.xml|manifest\.json)$/D', $line, $m)) {
-            continue;
-        }
-        if (isset($expected[$m[2]])) {
-            fail('Duplicate corpus checksum');
-        }
-        $expected[$m[2]] = $m[1];
-    }
-    if (count($expected) !== 2 || !hash_equals($expected['pages.xml'], hash_file('sha256', $xmlPath)) ||
-        !hash_equals($expected['manifest.json'], hash_file('sha256', $manifestPath))) {
-        fail('Corpus checksum mismatch');
-    }
-    $manifest = json_decode(file_get_contents($manifestPath), true, 512, JSON_THROW_ON_ERROR);
-    $entries = $manifest['entries'] ?? $manifest['pages'] ?? null;
-    if (!is_array($entries) || count($entries) !== EXPECTED_PAGES) {
-        fail('Manifest page count mismatch');
-    }
-    $titles = [];
-    foreach ($entries as $entry) {
-        if (!is_array($entry) || !is_string($entry['title'] ?? null) || $entry['title'] === '') {
-            fail('Invalid manifest title');
-        }
-        $title = str_replace(' ', '_', $entry['title']);
-        if (isset($titles[$title])) {
-            fail('Duplicate manifest title');
-        }
-        $titles[$title] = true;
-    }
-    $reader = new XMLReader();
-    if (!$reader->open($xmlPath, null, LIBXML_NONET)) {
-        fail('Could not read corpus XML');
-    }
-    $xmlTitles = [];
-    while ($reader->read()) {
-        if ($reader->nodeType !== XMLReader::ELEMENT || $reader->localName !== 'page') {
-            continue;
-        }
-        $document = new DOMDocument();
-        $node = $reader->expand($document);
-        if (!$node) {
-            fail('Invalid corpus XML page');
-        }
-        $xpath = new DOMXPath($document);
-        $xpath->registerNamespace('m', 'http://www.mediawiki.org/xml/export-0.11/');
-        $title = $xpath->evaluate('string(m:title)', $node);
-        $ns = $xpath->evaluate('string(m:ns)', $node);
-        $revisions = $xpath->query('m:revision', $node);
-        if ($title === '' || $ns !== '0' || $revisions->length !== 1) {
-            fail('Corpus must contain one revision per mainspace page');
-        }
-        $key = str_replace(' ', '_', $title);
-        if (isset($xmlTitles[$key])) {
-            fail('Duplicate XML title');
-        }
-        $xmlTitles[$key] = true;
-    }
-    $reader->close();
-    if (count($xmlTitles) !== EXPECTED_PAGES || array_diff_key($titles, $xmlTitles) || array_diff_key($xmlTitles, $titles)) {
-        fail('XML and manifest titles differ');
-    }
-    return [$expected['pages.xml'], $titles];
-}
-
-function verifyPages(PgSql\Connection $conn, array $titles, bool $exact): void {
-    if (scalar($conn, "SELECT to_regclass('mediawiki.page') IS NOT NULL") !== 't') {
-        fail('MediaWiki page table missing');
-    }
-    $rows = query($conn, 'SELECT page_title FROM mediawiki.page WHERE page_namespace = 0');
-    $actual = [];
-    while ($row = pg_fetch_assoc($rows)) {
-        $actual[$row['page_title']] = true;
-    }
-    if (($exact && count($actual) !== EXPECTED_PAGES) || count($actual) < EXPECTED_PAGES || array_diff_key($titles, $actual)) {
-        fail('Imported page titles or count differ from the corpus');
-    }
-}
-
-// Loading validation helpers in a local fixture must not start database bootstrap.
-if (realpath($_SERVER['SCRIPT_FILENAME'] ?? '') !== __FILE__) {
-    return;
-}
-
-try {
-    RuntimeSettings::assertPaths(MW_ROOT);
+function main(): void {
+    // Everything that can be checked without the database is checked first.
+    RuntimeSettings::assertPaths(RuntimePaths::MEDIAWIKI_ROOT);
     $server = RuntimeConfig::server();
-    $db = RuntimeConfig::database();
+    $config = RuntimeConfig::database();
     RuntimeConfig::requiredSecret('MW_SECRET_KEY');
     RuntimeConfig::requiredSecret('MW_UPGRADE_KEY');
     $adminPassword = RuntimeConfig::requiredSecret('MW_ADMIN_PASSWORD');
-    [$digest, $titles] = corpus();
-    $conn = RuntimeConfig::connect($db);
-    query($conn, 'SELECT pg_advisory_lock(734021, 381)');
-    $markerExists = scalar($conn, "SELECT to_regclass('public.pvmewiki_bootstrap') IS NOT NULL") === 't';
-    if ($markerExists) {
-        $rows = query($conn, 'SELECT corpus_sha256, page_count, state FROM public.pvmewiki_bootstrap');
-        if (pg_num_rows($rows) !== 1) {
-            fail('Unrecognized bootstrap marker');
-        }
-        $marker = pg_fetch_assoc($rows);
-        if ($marker['state'] !== 'ready' || $marker['corpus_sha256'] !== $digest || (int)$marker['page_count'] !== EXPECTED_PAGES) {
-            fail('Incomplete bootstrap or corpus version mismatch; manual recovery required');
-        }
-        verifyPages($conn, $titles, false);
-        RuntimeSettings::activate('/opt/pvme/LocalSettings.php', MW_ROOT . '/LocalSettings.php');
-        echo "PvME wiki ready: existing verified corpus\n";
-        exit(0);
+    $corpus = SeedCorpus::load(RuntimePaths::CORPUS);
+
+    $db = WikiDatabase::connect($config);
+    $db->lock(AdvisoryLock::Bootstrap);
+    $decision = StartupDecision::for(DatabaseSnapshot::read($db), $corpus);
+    match ($decision) {
+        StartupDecision::UseExisting => useExisting(),
+        StartupDecision::InstallFresh => installFresh(
+            db: $db,
+            config: $config,
+            server: $server,
+            adminPassword: $adminPassword,
+            corpus: $corpus,
+        ),
+        default => throw new RuntimeException($decision->refusal()),
+    };
+}
+
+function useExisting(): void {
+    RuntimeSettings::activate(RuntimePaths::SETTINGS_TEMPLATE, RuntimePaths::ACTIVE_SETTINGS);
+    echo "PvME wiki ready: existing verified corpus\n";
+}
+
+/**
+ * The marker says INSTALLING for the whole run, so a failure at any step leaves a
+ * database that the next start refuses instead of half-importing again.
+ */
+function installFresh(
+    WikiDatabase $db,
+    DatabaseConfig $config,
+    string $server,
+    string $adminPassword,
+    SeedCorpus $corpus
+): void {
+    BootstrapMarker::startInstalling($db, $corpus->digest);
+    // The installer does not read LocalSettings.php; it inherits libpq's TLS settings.
+    $config->exportTlsEnvironment();
+    runInstaller($config, $server, $adminPassword);
+    RuntimeSettings::activate(RuntimePaths::SETTINGS_TEMPLATE, RuntimePaths::ACTIVE_SETTINGS);
+
+    RuntimeConfig::bypassModerationInMaintenance();
+    MaintenanceCommand::run('update', ['--quick']);
+    removeInstallerMainPage($db);
+    MaintenanceCommand::run('importDump', [$corpus->xmlPath]);
+    $problem = StartupDecision::checkSeedPages(
+        $db->installedMainspaceTitles(), $corpus, exact: true
+    );
+    if ($problem !== null) {
+        throw new RuntimeException($problem->refusal());
     }
-    $tables = (int)scalar($conn, "SELECT COUNT(*) FROM information_schema.tables WHERE table_schema NOT IN ('pg_catalog', 'information_schema')");
-    if ($tables !== 0) {
-        fail('Existing database is not an empty PvME wiki database');
+    MaintenanceCommand::run(
+        'edit', ['-s', 'Set PvME wiki home', 'MediaWiki:Mainpage'], SEED_HOME_PAGE . "\n"
+    );
+    BootstrapMarker::markReady($db);
+    echo 'PvME wiki ready: imported ' . SeedCorpus::PAGE_COUNT . " mainspace pages\n";
+}
+
+/**
+ * Passwords reach the installer through mode 0600 files in a private directory, never
+ * through argv, which other processes can read. The installer's own LocalSettings.php
+ * is written there too and discarded; the packaged one is used instead.
+ */
+function runInstaller(DatabaseConfig $config, string $server, string $adminPassword): void {
+    $directory = sys_get_temp_dir() . '/pvme-install-' . bin2hex(random_bytes(8));
+    if (!mkdir($directory, 0700)) {
+        throw new RuntimeException('Could not create private installer directory');
     }
-    query($conn, 'CREATE TABLE public.pvmewiki_bootstrap (corpus_sha256 text NOT NULL, page_count integer NOT NULL, state text NOT NULL)');
-    query($conn, 'INSERT INTO public.pvmewiki_bootstrap VALUES ($1, $2, $3)', [$digest, EXPECTED_PAGES, 'installing']);
-    $tempDir = sys_get_temp_dir() . '/pvme-install-' . bin2hex(random_bytes(8));
-    if (!mkdir($tempDir, 0700)) {
-        fail('Could not create private installer directory');
-    }
-    $passwordFile = $tempDir . '/admin.pass';
-    $dbPasswordFile = $tempDir . '/db.pass';
-    file_put_contents($passwordFile, $adminPassword);
-    file_put_contents($dbPasswordFile, $db['password']);
-    chmod($passwordFile, 0600);
+    $adminPasswordFile = $directory . '/admin.pass';
+    $dbPasswordFile = $directory . '/db.pass';
+    file_put_contents($adminPasswordFile, $adminPassword);
+    file_put_contents($dbPasswordFile, $config->password);
+    chmod($adminPasswordFile, 0600);
     chmod($dbPasswordFile, 0600);
     try {
-        run(['php', 'maintenance/run.php', 'install', '--dbtype=postgres', '--dbserver=' . $db['host'],
-            '--dbport=' . $db['port'], '--dbname=' . $db['dbname'], '--dbschema=mediawiki',
-            '--dbuser=' . $db['user'], '--dbpassfile=' . $dbPasswordFile,
-            '--passfile=' . $passwordFile, '--confpath=' . $tempDir,
-            '--server=' . $server, '--scriptpath=', '--lang=en', 'PvME Wiki', 'Admin']);
+        MaintenanceCommand::run('install', [
+            '--dbtype=postgres',
+            '--dbserver=' . $config->host,
+            '--dbport=' . $config->port,
+            '--dbname=' . $config->dbname,
+            '--dbschema=' . WikiDatabase::SCHEMA,
+            '--dbuser=' . $config->user,
+            '--dbpassfile=' . $dbPasswordFile,
+            '--passfile=' . $adminPasswordFile,
+            '--confpath=' . $directory,
+            '--server=' . $server,
+            '--scriptpath=',
+            '--lang=en',
+            SITE_NAME,
+            ADMIN_USER,
+        ]);
     } finally {
-        @unlink($passwordFile);
+        @unlink($adminPasswordFile);
         @unlink($dbPasswordFile);
-        @unlink($tempDir . '/LocalSettings.php');
-        @rmdir($tempDir);
+        @unlink($directory . '/LocalSettings.php');
+        @rmdir($directory);
     }
-    RuntimeSettings::activate('/opt/pvme/LocalSettings.php', MW_ROOT . '/LocalSettings.php');
-    putenv('MW_BOOTSTRAP=1');
-    run(['php', 'maintenance/run.php', 'update', '--quick']);
-    $preRows = query($conn, 'SELECT page_title FROM mediawiki.page WHERE page_namespace = 0');
-    $preTitles = [];
-    while ($row = pg_fetch_assoc($preRows)) {
-        $preTitles[] = $row['page_title'];
+}
+
+/**
+ * The installer creates a sample Main Page that the seed does not contain. It is
+ * deleted only while it is still that untouched sample.
+ */
+function removeInstallerMainPage(WikiDatabase $db): void {
+    $titles = $db->mainspaceTitles();
+    if ($titles === []) {
+        return;
     }
-    if ($preTitles === ['Main_Page']) {
-        $revisions = (int)scalar($conn, "SELECT COUNT(*) FROM mediawiki.revision r JOIN mediawiki.page p ON p.page_id = r.rev_page WHERE p.page_namespace = 0 AND p.page_title = 'Main_Page'");
-        if ($revisions !== 1) {
-            fail('Installer Main Page is not a single sample revision');
-        }
-        run(['php', 'maintenance/run.php', 'nukePage', 'Main_Page', '--delete']);
-    } elseif ($preTitles !== []) {
-        fail('Unexpected pages in newly installed wiki');
+    if ($titles !== [INSTALLER_MAIN_PAGE]) {
+        throw new RuntimeException('Unexpected pages in newly installed wiki');
     }
-    run(['php', 'maintenance/run.php', 'importDump', CORPUS . '/pages.xml']);
-    verifyPages($conn, $titles, true);
-    run(['php', 'maintenance/run.php', 'edit', '-s', 'Set PvME wiki home', 'MediaWiki:Mainpage'], "PvME\n");
-    query($conn, "UPDATE public.pvmewiki_bootstrap SET state = 'ready' WHERE state = 'installing'");
-    echo "PvME wiki ready: imported 381 mainspace pages\n";
+    if ($db->mainspaceRevisionCount(INSTALLER_MAIN_PAGE) !== 1) {
+        throw new RuntimeException('Installer Main Page is not a single sample revision');
+    }
+    MaintenanceCommand::run('nukePage', [INSTALLER_MAIN_PAGE, '--delete']);
+}
+
+try {
+    main();
 } catch (Throwable $error) {
     // Never print connection URLs, passwords, or raw database exception messages.
     fwrite(STDERR, 'PvME wiki bootstrap blocked: ' . $error->getMessage() . "\n");

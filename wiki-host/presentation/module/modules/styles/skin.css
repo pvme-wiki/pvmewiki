@@ -1,0 +1,148 @@
+/*
+ * Vector skin chrome on PvME pages. The extension adds the pvme-presentation body class to the
+ * PvME hub and every PvME/... page, so nothing here applies elsewhere on the wiki. Menus,
+ * preferences, page tabs and the editors stay Vector's own.
+ */
+
+/* Page font ------------------------------------------------------------- */
+
+body.pvme-presentation {
+    --pvme-ui-line: var(--border-color-subtle, #d6dce2);
+    --pvme-ui-soft: var(--background-color-neutral-subtle, #f5f6f7);
+    --pvme-ui-paper: var(--background-color-base, #fff);
+    --pvme-ui-ink: var(--color-base, #202830);
+    --pvme-ui-muted: var(--color-subtle, #53606c);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* Header and page title ------------------------------------------------- */
+
+.pvme-presentation .vector-header-container {
+    border-block-end: 1px solid var(--pvme-ui-line);
+}
+
+.pvme-presentation .vector-header {
+    padding-block: .75rem;
+}
+
+.pvme-presentation .mw-logo-wordmark {
+    font-weight: 750;
+    letter-spacing: -.025em;
+}
+
+.pvme-presentation .mw-body {
+    min-width: 0;
+}
+
+.pvme-presentation .vector-page-titlebar {
+    padding-block: 1.25rem .4rem;
+}
+
+.pvme-presentation #firstHeading {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.8em, 3.5vw, 2.65em);
+    font-weight: 500;
+    line-height: 1.16;
+    letter-spacing: -.025em;
+    overflow-wrap: anywhere;
+    padding-block: .5rem;
+}
+
+/* Page tabs ------------------------------------------------------------- */
+
+.pvme-presentation .vector-page-toolbar {
+    margin-block-end: 1.25rem;
+}
+
+.pvme-presentation .vector-page-toolbar .vector-menu-content-list {
+    gap: .2rem;
+}
+
+.pvme-presentation .vector-page-toolbar .mw-list-item a {
+    padding-block: .8rem;
+}
+
+/* Table of contents ----------------------------------------------------- */
+
+.pvme-presentation .vector-toc {
+    font-size: .875em;
+    line-height: 1.45;
+}
+
+.pvme-presentation .vector-toc-link {
+    padding-block: .4rem;
+}
+
+.pvme-presentation .vector-toc-list-item-active > .vector-toc-link {
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: .2em;
+}
+
+/* Footer ---------------------------------------------------------------- */
+
+.pvme-presentation .mw-footer {
+    border-block-start: 1px solid var(--pvme-ui-line);
+    margin-block-start: 2rem;
+}
+
+/* Keyboard focus -------------------------------------------------------- */
+
+.pvme-presentation :is(a, button, input, textarea, select, summary):focus-visible {
+    outline: 3px solid #2675bf;
+    outline-offset: 3px;
+    border-radius: 3px;
+}
+
+/* Editing --------------------------------------------------------------- */
+
+.pvme-presentation .mw-editsection {
+    font-family: inherit;
+    font-size: .75em;
+    white-space: nowrap;
+}
+
+.pvme-presentation #wpTextbox1 {
+    font-family: ui-monospace, Consolas, monospace;
+    line-height: 1.6;
+    tab-size: 4;
+}
+
+/* Narrow screens -------------------------------------------------------- */
+
+@media (max-width: 999px) {
+    .pvme-presentation .mw-page-container {
+        padding-inline: 1rem;
+    }
+
+    .pvme-presentation .vector-page-titlebar {
+        padding-block-start: .75rem;
+    }
+
+    .pvme-presentation .vector-page-toolbar {
+        flex-wrap: wrap;
+        gap: 0 .75rem;
+    }
+
+    .pvme-presentation .vector-page-toolbar .vector-menu-content-list {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    .pvme-presentation .mw-page-container {
+        padding-inline: .75rem;
+    }
+
+    .pvme-presentation .vector-header {
+        padding-block: .5rem;
+    }
+}
+
+/* Reduced motion -------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+    .pvme-presentation {
+        scroll-behavior: auto;
+    }
+}
