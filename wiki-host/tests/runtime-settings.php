@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-require_once __DIR__ . '/../runtime/RuntimeSettings.php';
+require_once __DIR__ . '/../runtime/lib/RuntimeSettings.php';
 
 function settingsCheck(bool $condition, string $message): void {
     if (!$condition) {
@@ -42,22 +42,27 @@ try {
     settingsCheck(!RuntimeSettings::isReady($template, $active), 'Missing settings reported ready');
     RuntimeSettings::activate($template, $active);
     settingsCheck(RuntimeSettings::isReady($template, $active), 'Fresh activation is not ready');
-    settingsCheck(!is_link($active) && file_get_contents($active) === $contents, 'Activation did not create the regular configuration file');
+    settingsCheck(!is_link($active) && file_get_contents($active) === $contents,
+        'Activation did not create the regular configuration file');
     file_put_contents($active, 'stale configuration');
     settingsCheck(!RuntimeSettings::isReady($template, $active), 'Stale settings reported ready');
     RuntimeSettings::activate($template, $active);
     RuntimeSettings::activate($template, $active);
     settingsCheck(RuntimeSettings::isReady($template, $active), 'Restart activation failed');
     if (PHP_OS_FAMILY !== 'Windows') {
-        settingsCheck((fileperms($active) & 0777) === 0644, 'Active settings are not Apache-readable');
+        settingsCheck((fileperms($active) & 0777) === 0644,
+            'Active settings are not Apache-readable');
     }
     unlink($active);
     $symlinkTested = @symlink($template, $active);
     if ($symlinkTested) {
-        settingsCheck(!RuntimeSettings::isReady($template, $active), 'Legacy symlink reported ready');
+        settingsCheck(!RuntimeSettings::isReady($template, $active),
+            'Legacy symlink reported ready');
         RuntimeSettings::activate($template, $active);
-        settingsCheck(!is_link($active) && RuntimeSettings::isReady($template, $active), 'Legacy symlink was not replaced');
-        settingsCheck(file_get_contents($template) === $contents, 'Activation followed and modified the symlink target');
+        settingsCheck(!is_link($active) && RuntimeSettings::isReady($template, $active),
+            'Legacy symlink was not replaced');
+        settingsCheck(file_get_contents($template) === $contents,
+            'Activation followed and modified the symlink target');
     } else {
         settingsCheck(PHP_OS_FAMILY === 'Windows', 'Could not create the POSIX symlink fixture');
         RuntimeSettings::activate($template, $active);
@@ -65,7 +70,8 @@ try {
     $rejected = false;
     try { RuntimeSettings::activate($fixture . '/missing-template.php', $active); }
     catch (RuntimeException $error) { $rejected = true; }
-    settingsCheck($rejected && RuntimeSettings::isReady($template, $active), 'Failed activation damaged active settings');
+    settingsCheck($rejected && RuntimeSettings::isReady($template, $active),
+        'Failed activation damaged active settings');
 } finally {
     foreach ([$active, $template] as $file) {
         if (is_link($file) || is_file($file)) { unlink($file); }
@@ -74,4 +80,5 @@ try {
 }
 echo "Runtime settings activation/readiness tests passed" .
     (PHP_OS_FAMILY === 'Windows' ? "; POSIX permission check requires Linux" : '') .
-    ($symlinkTested ? "; legacy symlink replacement passed" : '; symlink creation unavailable') . "\n";
+    ($symlinkTested ? '; legacy symlink replacement passed' : '; symlink creation unavailable') .
+    "\n";

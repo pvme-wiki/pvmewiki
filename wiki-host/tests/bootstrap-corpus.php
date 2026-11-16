@@ -1,14 +1,17 @@
 <?php
 declare(strict_types=1);
 
-require_once __DIR__ . '/../runtime/bootstrap.php';
+require_once __DIR__ . '/../runtime/lib/SeedCorpus.php';
 
 $directory = __DIR__ . '/../corpus';
-[$digest, $titles] = corpus($directory);
-if (count($titles) !== 381 || $digest !== hash_file('sha256', $directory . '/pages.xml')) {
+$corpus = SeedCorpus::load($directory);
+$titles = $corpus->titles;
+if (count($titles) !== 381 || $corpus->digest !== hash_file('sha256', $directory . '/pages.xml') ||
+    $corpus->xmlPath !== $directory . '/pages.xml') {
     throw new RuntimeException('Real corpus validation failed');
 }
-$manifest = json_decode(file_get_contents($directory . '/manifest.json'), true, 512, JSON_THROW_ON_ERROR);
+$manifestJson = file_get_contents($directory . '/manifest.json');
+$manifest = json_decode($manifestJson, true, 512, JSON_THROW_ON_ERROR);
 foreach ($manifest['pages'] as $page) {
     if (!isset($titles[str_replace(' ', '_', $page['title'])])) {
         throw new RuntimeException('Real corpus title missing');
@@ -31,7 +34,7 @@ try {
             hash_file('sha256', $fixture . '/manifest.json') . "  manifest.json\n" .
             hash_file('sha256', $fixture . '/pages.xml') . "  pages.xml\n");
         $rejected = false;
-        try { corpus($fixture); } catch (RuntimeException $error) { $rejected = true; }
+        try { SeedCorpus::load($fixture); } catch (RuntimeException $error) { $rejected = true; }
         if (!$rejected) {
             throw new RuntimeException('Invalid XML accepted: ' . $case);
         }
@@ -42,4 +45,5 @@ try {
     }
     rmdir($fixture);
 }
-echo "Bootstrap corpus:381 real XML titles validated;3 invalid structures rejected; no database access\n";
+echo 'Bootstrap corpus:381 real XML titles validated;3 invalid structures rejected; ' .
+    "no database access\n";

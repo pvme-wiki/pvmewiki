@@ -1,8 +1,15 @@
 <?php
 declare(strict_types=1);
 
-require_once '/opt/pvme/runtime/RuntimeConfig.php';
+require_once '/opt/pvme/runtime/lib/PresentationRelease.php';
+require_once '/opt/pvme/runtime/lib/RuntimeConfig.php';
+require_once '/opt/pvme/runtime/lib/RuntimePaths.php';
+require_once '/opt/pvme/runtime/lib/WikiDatabase.php';
+
 $db = RuntimeConfig::database();
+// DatabasePostgres maps $wgDBssl = true only to sslmode=require, so the configured mode
+// reaches libpq through the environment instead.
+$db->exportTlsEnvironment();
 
 $wgSitename = 'PvME Wiki';
 $wgMetaNamespace = 'PvME_Wiki';
@@ -13,15 +20,8 @@ $wgResourceBasePath = $wgScriptPath;
 // Startup manifests are otherwise cached under an unversioned load.php URL.
 // Give each presentation release a distinct path so normal page reloads fetch
 // the current manifest before consulting ResourceLoader's module cache.
-$pvmeReleaseHash = hash_init('sha256');
-$pvmeReleaseFiles = glob('/var/www/html/extensions/PvmePresentation/modules/*') ?: [];
-sort($pvmeReleaseFiles, SORT_STRING);
-foreach ($pvmeReleaseFiles as $pvmeReleaseFile) {
-    if (is_file($pvmeReleaseFile) && preg_match('/\.(?:js|json|css)$/', $pvmeReleaseFile)) {
-        hash_update($pvmeReleaseHash, basename($pvmeReleaseFile) . ':' . hash_file('sha256', $pvmeReleaseFile) . "\n");
-    }
-}
-$wgLoadScript = $wgScriptPath . '/load-' . substr(hash_final($pvmeReleaseHash), 0, 16) . '.php';
+$wgLoadScript = $wgScriptPath . '/load-' .
+    PresentationRelease::id(RuntimePaths::PRESENTATION_MODULES) . '.php';
 $wgArticlePath = '/wiki/$1';
 $wgUsePathInfo = false;
 $wgCookieSecure = true;
@@ -29,13 +29,12 @@ $wgEnableEmail = false;
 $wgEnableUploads = false;
 $wgUseInstantCommons = false;
 $wgDBtype = 'postgres';
-$wgDBserver = $db['host'];
-$wgDBport = $db['port'];
-$wgDBname = $db['dbname'];
-$wgDBuser = $db['user'];
-$wgDBpassword = $db['password'];
-$wgDBmwschema = 'mediawiki';
-// DatabasePostgres maps true to sslmode=require. PGSSLMODE is set by RuntimeConfig.
+$wgDBserver = $db->host;
+$wgDBport = $db->port;
+$wgDBname = $db->dbname;
+$wgDBuser = $db->user;
+$wgDBpassword = $db->password;
+$wgDBmwschema = WikiDatabase::SCHEMA;
 $wgDBssl = false;
 $wgSecretKey = RuntimeConfig::requiredSecret('MW_SECRET_KEY');
 $wgUpgradeKey = RuntimeConfig::requiredSecret('MW_UPGRADE_KEY');
@@ -58,4 +57,4 @@ if (getenv('MW_PRESENTATION_ENABLED') !== 'false') {
 }
 wfLoadExtension('Moderation');
 // Bootstrap maintenance processes import the checksum-verified corpus before HTTP starts.
-$wgModerationEnable = getenv('MW_BOOTSTRAP') !== '1';
+$wgModerationEnable = !RuntimeConfig::moderationBypassed();
