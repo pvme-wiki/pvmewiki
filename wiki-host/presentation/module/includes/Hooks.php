@@ -25,7 +25,7 @@ final class Hooks {
         return $url;
     }
 
-    public static function renderSourceImage(string $input, array $args, Parser $parser, PPFrame $frame): string {
+    public static function renderSourceImage(?string $input, array $args, Parser $parser, PPFrame $frame): string {
         $src = self::sourceUrl($args['src'] ?? '');
         if ($src === '') { return ''; }
         return Html::element('img', [
@@ -36,7 +36,7 @@ final class Hooks {
         ]);
     }
 
-    public static function renderSourceVideo(string $input, array $args, Parser $parser, PPFrame $frame): string {
+    public static function renderSourceVideo(?string $input, array $args, Parser $parser, PPFrame $frame): string {
         $src = self::sourceUrl($args['src'] ?? '');
         if ($src === '') { return ''; }
         return Html::rawElement('video', [
