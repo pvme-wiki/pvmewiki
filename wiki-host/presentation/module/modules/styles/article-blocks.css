@@ -1,0 +1,445 @@
+/*
+ * Block classes that presentation/module/README.md offers to converted guides: .pvme-article
+ * and the blocks inside it. No packaged page uses them, but wiki editors may, so they stay.
+ */
+
+/* Article width and headings -------------------------------------------- */
+
+.pvme-presentation :where(.mw-parser-output) .pvme-article {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+    max-width: 76rem;
+    margin-inline: auto;
+    padding-block-end: 2rem;
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-article > :first-child {
+    margin-block-start: 0;
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-article h2,
+.pvme-presentation :where(.mw-parser-output) .pvme-article h3,
+.pvme-presentation :where(.mw-parser-output) .pvme-article h4 {
+    color: var(--pvme-ink);
+    line-height: 1.3;
+    scroll-margin-top: 5rem;
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-article h2 {
+    margin-block: 2rem .75rem;
+    padding-block-end: .4rem;
+    border-block-end: 2px solid var(--pvme-warm-line);
+    font-size: clamp(1.35em, 2.2vw, 1.8em);
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-article h3 {
+    margin-block: 1.5rem .5rem;
+    font-size: clamp(1.14em, 1.9vw, 1.4em);
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-article h4 {
+    margin-block: 1.1rem .4rem;
+    font-size: 1.05em;
+}
+
+/* Source headings are often underlined; the heading border already draws that line. */
+.pvme-presentation :where(.mw-parser-output) .pvme-article h2 ins,
+.pvme-presentation :where(.mw-parser-output) .pvme-article h2 u,
+.pvme-presentation :where(.mw-parser-output) .pvme-article h3 ins,
+.pvme-presentation :where(.mw-parser-output) .pvme-article h3 u,
+.pvme-presentation :where(.mw-parser-output) .pvme-article :is(ins, u):has(h2, h3) {
+    text-decoration: none;
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-article p,
+.pvme-presentation :where(.mw-parser-output) .pvme-article li {
+    max-width: 88ch;
+}
+
+/* Breadcrumbs and introduction ------------------------------------------ */
+
+.pvme-presentation :where(.mw-parser-output) .pvme-breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: .3rem .65rem;
+    margin-block: .25rem 1.1rem;
+    color: var(--pvme-muted);
+    font-size: .88em;
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-breadcrumbs a {
+    color: var(--pvme-accent-strong);
+    text-decoration: underline;
+    text-underline-offset: .12em;
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-guide-intro {
+    box-sizing: border-box;
+    margin-block: .75rem 1.4rem;
+    padding: clamp(.9rem, 2vw, 1.35rem);
+    border: 1px solid var(--pvme-line);
+    border-inline-start: 4px solid var(--pvme-accent);
+    border-radius: 5px;
+    background: var(--pvme-soft);
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-guide-intro > :first-child,
+.pvme-presentation :where(.mw-parser-output) .pvme-callout > :first-child,
+.pvme-presentation :where(.mw-parser-output) .pvme-phase > :first-child,
+.pvme-presentation :where(.mw-parser-output) .pvme-step > :first-child {
+    margin-block-start: 0;
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-guide-intro > :last-child,
+.pvme-presentation :where(.mw-parser-output) .pvme-callout > :last-child,
+.pvme-presentation :where(.mw-parser-output) .pvme-phase > :last-child,
+.pvme-presentation :where(.mw-parser-output) .pvme-step > :last-child {
+    margin-block-end: 0;
+}
+
+/* Jump links ------------------------------------------------------------ */
+
+.pvme-presentation :where(.mw-parser-output) .pvme-jumps {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .5rem .65rem;
+    margin-block: 1rem 1.5rem;
+    padding: .7rem .8rem;
+    border-block: 1px solid var(--pvme-line);
+    background: var(--pvme-paper);
+    font-size: .92em;
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-jumps a {
+    display: inline-block;
+    padding: .2rem .55rem;
+    border: 1px solid var(--pvme-line);
+    border-radius: 3px;
+    color: var(--pvme-accent-strong);
+    background: var(--pvme-soft);
+    text-decoration: none;
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-jumps a:hover,
+.pvme-presentation :where(.mw-parser-output) .pvme-jumps a:focus-visible {
+    border-color: var(--pvme-accent);
+    text-decoration: underline;
+}
+
+/* Callouts, phases, rotations and steps --------------------------------- */
+
+.pvme-presentation :where(.mw-parser-output) .pvme-callout,
+.pvme-presentation :where(.mw-parser-output) .pvme-phase,
+.pvme-presentation :where(.mw-parser-output) .pvme-rotation,
+.pvme-presentation :where(.mw-parser-output) .pvme-step,
+.pvme-presentation :where(.mw-parser-output) .pvme-media-fallback {
+    box-sizing: border-box;
+    min-width: 0;
+    margin-block: 1rem;
+    padding: .85rem 1rem;
+    border: 1px solid var(--pvme-line);
+    border-radius: 5px;
+    background: var(--pvme-paper);
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-callout {
+    border-inline-start: 4px solid var(--pvme-accent);
+    background: var(--pvme-warm);
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-phase {
+    border-block-start: 3px solid var(--pvme-warm-line);
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-phase h3,
+.pvme-presentation :where(.mw-parser-output) .pvme-rotation h3 {
+    margin-block-start: 0;
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-step {
+    border-inline-start: 3px solid var(--pvme-warm-line);
+    background: var(--pvme-soft);
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-rotation {
+    background: var(--pvme-soft);
+}
+
+/* Facts and cue/response pairs ------------------------------------------ */
+
+.pvme-presentation :where(.mw-parser-output) .pvme-facts {
+    box-sizing: border-box;
+    min-width: 0;
+    margin-block: 1rem 1.4rem;
+    padding: .8rem 1rem;
+    border: 1px solid var(--pvme-line);
+    border-radius: 5px;
+    background: var(--pvme-soft);
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-facts dl {
+    display: grid;
+    grid-template-columns: minmax(7rem, 11rem) minmax(0, 1fr);
+    gap: .35rem .9rem;
+    margin: 0;
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-facts dt {
+    color: var(--pvme-muted);
+    font-weight: 700;
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-facts dd {
+    min-width: 0;
+    margin: 0;
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-cue-response:not(table) {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: minmax(9rem, 1fr) minmax(0, 2fr);
+    gap: .35rem 1rem;
+    min-width: 0;
+    margin-block: .65rem;
+    padding: .75rem .9rem;
+    border-inline-start: 3px solid var(--pvme-warm-line);
+    background: var(--pvme-soft);
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-cue-response:not(table) > :first-child {
+    font-weight: 700;
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-cue-response:not(table) > * {
+    min-width: 0;
+    margin: 0;
+}
+
+/* Media fallback -------------------------------------------------------- */
+
+.pvme-presentation :where(.mw-parser-output) .pvme-media-fallback {
+    border-style: dashed;
+    color: var(--pvme-muted);
+    background: var(--pvme-soft);
+    font-size: .92em;
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-media-fallback a {
+    color: var(--pvme-accent-strong);
+    text-decoration: underline;
+}
+
+/* Index cards ----------------------------------------------------------- */
+
+.pvme-presentation :where(.mw-parser-output) .pvme-index-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+    gap: .85rem;
+    min-width: 0;
+    margin-block: 1rem 1.5rem;
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-index-card {
+    box-sizing: border-box;
+    min-width: 0;
+    height: 100%;
+    padding: .9rem 1rem;
+    border: 1px solid var(--pvme-line);
+    border-block-start: 3px solid var(--pvme-warm-line);
+    border-radius: 5px;
+    background: var(--pvme-paper);
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-index-card > :first-child {
+    margin-block-start: 0;
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-index-card > :last-child {
+    margin-block-end: 0;
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-index-card a {
+    font-weight: 600;
+}
+
+/* Portraits and icons --------------------------------------------------- */
+
+.pvme-presentation :where(.mw-parser-output) .pvme-portrait {
+    box-sizing: border-box;
+    display: block;
+    max-width: 100%;
+    width: min(12rem, 100%);
+    height: auto;
+    margin-block: .5rem;
+    padding: .55rem;
+    border: 1px solid var(--pvme-line);
+    border-radius: 4px;
+    background: var(--pvme-soft);
+    color: var(--pvme-muted);
+    text-align: center;
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-icon {
+    box-sizing: border-box;
+    display: inline-block;
+    max-width: 100%;
+    padding: .08rem .3rem;
+    border: 1px solid var(--pvme-line);
+    border-radius: 3px;
+    background: var(--pvme-soft);
+    vertical-align: middle;
+}
+
+.pvme-presentation :where(.mw-parser-output) img.pvme-icon {
+    max-width: 2.25rem;
+    max-height: 2.25rem;
+    width: auto;
+    height: auto;
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+
+/* Icon fallback --------------------------------------------------------- */
+
+/*
+ * index-page-styling.js also gives icon links on seed index pages this class. It stays in this
+ * file because its place in the cascade, after the blocks above, is part of its behaviour.
+ */
+
+.pvme-presentation :where(.mw-parser-output) .pvme-icon-fallback {
+    box-sizing: border-box;
+    display: inline-block;
+    max-width: 100%;
+    margin: .08rem .12rem;
+    padding: .13rem .4rem;
+    border: 1px solid var(--pvme-warm-line);
+    border-radius: 3px;
+    color: var(--pvme-accent-strong);
+    background: var(--pvme-warm);
+    font-size: .86em;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+    white-space: normal;
+    vertical-align: baseline;
+}
+
+.pvme-presentation :where(.mw-parser-output) a:hover .pvme-icon-fallback,
+.pvme-presentation :where(.mw-parser-output) .pvme-icon-fallback a:hover {
+    border-color: var(--pvme-accent);
+    text-decoration: underline;
+}
+
+/* Attribution ----------------------------------------------------------- */
+
+.pvme-presentation :where(.mw-parser-output) .pvme-attribution {
+    margin-block: 2rem .5rem;
+    padding-block-start: .8rem;
+    border-block-start: 1px solid var(--pvme-line);
+    color: var(--pvme-muted);
+    font-size: .82em;
+}
+
+/* Tables and code ------------------------------------------------------- */
+
+.pvme-presentation :where(.mw-parser-output) .pvme-article .pvme-table-scroll {
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    margin-block: 1rem;
+    border: 1px solid var(--pvme-line);
+    border-radius: 4px;
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-article table {
+    border-collapse: collapse;
+    max-width: 100%;
+    margin-block: 1rem;
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-article .pvme-table-scroll table {
+    margin: 0;
+    min-width: 100%;
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-article th,
+.pvme-presentation :where(.mw-parser-output) .pvme-article td {
+    padding: .45rem .6rem;
+    border: 1px solid var(--pvme-line);
+    vertical-align: top;
+    overflow-wrap: anywhere;
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-article th {
+    background: var(--pvme-soft);
+    text-align: start;
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-article pre,
+.pvme-presentation :where(.mw-parser-output) .pvme-article code {
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+}
+
+/* Narrow screens -------------------------------------------------------- */
+
+@media (max-width: 720px) {
+    .pvme-presentation :where(.mw-parser-output) .pvme-article {
+        padding-inline: 0;
+    }
+
+    .pvme-presentation :where(.mw-parser-output) .pvme-guide-intro,
+    .pvme-presentation :where(.mw-parser-output) .pvme-callout,
+    .pvme-presentation :where(.mw-parser-output) .pvme-phase,
+    .pvme-presentation :where(.mw-parser-output) .pvme-rotation,
+    .pvme-presentation :where(.mw-parser-output) .pvme-step,
+    .pvme-presentation :where(.mw-parser-output) .pvme-media-fallback {
+        padding: .75rem .8rem;
+    }
+
+    .pvme-presentation :where(.mw-parser-output) .pvme-facts dl,
+    .pvme-presentation :where(.mw-parser-output) .pvme-cue-response:not(table) {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .pvme-presentation :where(.mw-parser-output) .pvme-article table:not(.pvme-no-scroll) {
+        box-sizing: border-box;
+        display: block;
+        width: max-content;
+        max-width: 100%;
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
+    }
+
+    .pvme-presentation :where(.mw-parser-output) .pvme-article .pvme-table-scroll table {
+        display: table;
+        max-width: none;
+        overflow: visible;
+    }
+}
+
+/* Print ----------------------------------------------------------------- */
+
+@media print {
+    .pvme-presentation :where(.mw-parser-output) .pvme-article,
+    .pvme-presentation :where(.mw-parser-output) .pvme-index-card,
+    .pvme-presentation :where(.mw-parser-output) .pvme-callout {
+        color: #000;
+        background: #fff;
+        box-shadow: none;
+    }
+
+    .pvme-presentation :where(.mw-parser-output) .pvme-jumps {
+        display: none;
+    }
+
+    .pvme-presentation :where(.mw-parser-output) .pvme-article table {
+        display: table;
+        overflow: visible;
+    }
+}

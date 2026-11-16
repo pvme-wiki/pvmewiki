@@ -1,0 +1,339 @@
+/*
+ * The reader toolbar that reader/index.js puts above the article (nav#pvme-reader-tools), the
+ * source footer below it (aside.pvme-reader-tools) and the other-guides list. They sit outside
+ * the article, so none of this is saved with a page.
+ */
+
+/* Toolbar box ----------------------------------------------------------- */
+
+.pvme-presentation .pvme-reader-tools {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .85rem 1.25rem;
+    margin-block: .25rem 1.5rem;
+    padding: 1rem 1.15rem;
+    border: 1px solid #d6dce2;
+    border-block-start: 3px solid #9b7139;
+    border-radius: 8px;
+    background: #f7f8fa;
+    color: #202830;
+    font-size: .925em;
+    line-height: 1.55;
+    overflow-wrap: anywhere;
+}
+
+.pvme-presentation .pvme-reader-tools a {
+    color: #2857a4;
+}
+
+/* Hidden while VisualEditor is open ------------------------------------- */
+
+.ve-active #pvme-reader-tools,
+.ve-activating #pvme-reader-tools,
+.ve-active .pvme-presentation .pvme-reader-tools,
+.ve-activating .pvme-presentation .pvme-reader-tools,
+.pvme-presentation.ve-active .pvme-reader-tools,
+.pvme-presentation.ve-activating .pvme-reader-tools {
+    display: none;
+}
+
+/* Breadcrumbs ----------------------------------------------------------- */
+
+.pvme-presentation .pvme-reader-breadcrumbs {
+    flex: 1 1 16rem;
+    font-size: .875em;
+    color: #53606c;
+}
+
+.pvme-presentation .pvme-reader-breadcrumbs [aria-current] {
+    font-weight: 650;
+    color: #202830;
+}
+
+/* Edit, history and Copy to wiki ---------------------------------------- */
+
+.pvme-presentation .pvme-reader-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .5rem 1rem;
+}
+
+.pvme-presentation .pvme-reader-actions a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.75rem;
+}
+
+.pvme-presentation .pvme-reader-tools :is(button, input, summary) {
+    min-height: 2.75rem;
+    box-sizing: border-box;
+}
+
+.pvme-presentation .pvme-reader-tools button {
+    padding: .55rem .85rem;
+    border: 1px solid #81909e;
+    border-radius: 5px;
+    background: #fff;
+    color: #243f59;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.pvme-presentation .pvme-reader-tools button:hover {
+    background: #edf2f7;
+    border-color: #375a7c;
+}
+
+.pvme-presentation .pvme-reader-tools button:disabled {
+    opacity: .65;
+    cursor: wait;
+}
+
+.pvme-presentation .pvme-reader-actions .pvme-reader-copy {
+    background: #205e59;
+    color: #fff;
+    border-color: #205e59;
+    padding-inline: 1.2em;
+    font-weight: 700;
+}
+
+.pvme-presentation .pvme-reader-actions .pvme-reader-copy:hover {
+    background: #164b46;
+    color: #fff;
+    border-color: #164b46;
+}
+
+/* Source freshness badge ------------------------------------------------ */
+
+.pvme-presentation .pvme-reader-tools .pvme-freshness {
+    display: inline-flex;
+    align-items: center;
+    gap: .45em;
+    min-height: 2em;
+    padding: .25em .7em;
+    border: 1px solid #b8c6ce;
+    border-radius: 4px;
+    color: #344c5d;
+    background: #edf2f6;
+    font-size: .85em;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: .16em;
+}
+
+.pvme-presentation .pvme-freshness::before {
+    content: '';
+    width: .5em;
+    height: .5em;
+    flex: 0 0 .5em;
+    border-radius: 50%;
+    background: currentColor;
+}
+
+.pvme-presentation .pvme-reader-tools .pvme-freshness-recent {
+    color: #245343;
+    background: #eaf4ee;
+    border-color: #a8c9b6;
+}
+
+.pvme-presentation .pvme-reader-tools .pvme-freshness-older {
+    color: #6a4c20;
+    background: #fff4df;
+    border-color: #d5bc8e;
+}
+
+.pvme-presentation .pvme-reader-tools .pvme-freshness-unknown {
+    color: #555f68;
+    background: #f0f2f4;
+    border-color: #c1c7ce;
+}
+
+/* Copy to wiki panel ---------------------------------------------------- */
+
+/* Progress messages, and the wikitext to copy by hand when the browser blocks the clipboard. */
+
+.pvme-presentation .pvme-reader-export {
+    border-block-start: 1px solid #d8b78b;
+    margin-block-start: .75rem;
+    padding-block-start: .75rem;
+    border-color: #d6dce2;
+}
+
+.pvme-presentation .pvme-reader-export textarea {
+    padding: .8rem;
+    border: 1px solid #81909e;
+    border-radius: 5px;
+    resize: vertical;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 18rem;
+    font: 14px/1.5 monospace;
+    color: #262a2e;
+    background: #fff;
+    max-width: 100%;
+}
+
+.pvme-presentation .pvme-reader-tools > .pvme-reader-export {
+    flex: 1 0 100%;
+    min-width: 0;
+    margin: 0;
+}
+
+.pvme-presentation .pvme-reader-export details {
+    margin-block-start: .5em;
+}
+
+/* Contents list --------------------------------------------------------- */
+
+.pvme-presentation .pvme-reader-jumps {
+    flex: 1 0 100%;
+}
+
+.pvme-presentation .pvme-reader-jumps summary {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.pvme-presentation .pvme-reader-jumps ul {
+    margin-block: .25rem .75rem;
+    padding-inline-start: 1.4rem;
+    columns: 2 15rem;
+}
+
+.pvme-presentation .pvme-reader-jumps li {
+    padding-block: .25rem;
+    break-inside: avoid;
+}
+
+/* Child page directory -------------------------------------------------- */
+
+.pvme-presentation .pvme-reader-directory {
+    flex: 1 0 100%;
+}
+
+.pvme-presentation .pvme-reader-directory > label {
+    display: block;
+    margin-block: .5rem;
+    font-weight: 600;
+}
+
+.pvme-presentation #pvme-guide-filter {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    font: inherit;
+    color: #262a2e;
+    background: #fff;
+    margin: -.35rem 0 0;
+    padding: .7rem .85rem;
+    border: 1px solid #81909e;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.pvme-presentation #pvme-guide-count {
+    margin: .5rem 0;
+}
+
+.pvme-presentation .pvme-reader-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+    flex: 1 0 100%;
+    margin: 0;
+    gap: .5rem;
+}
+
+.pvme-presentation .pvme-reader-grid a {
+    display: block;
+    border: 1px solid #d7d7d4;
+    background: #fff;
+    padding: .7rem .85rem;
+    border-color: #d6dce2;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.pvme-presentation .pvme-reader-grid a:hover {
+    border-color: #81909e;
+    background: #edf2f7;
+}
+
+.pvme-presentation .pvme-reader-grid a[hidden] {
+    display: none;
+}
+
+/* Source footer --------------------------------------------------------- */
+
+.pvme-presentation .pvme-reader-source {
+    flex: 1 0 100%;
+    border-block-start: 1px solid #d6dce2;
+    padding-block-start: .5rem;
+}
+
+.pvme-presentation .pvme-reader-tools summary {
+    width: fit-content;
+    padding-block: .5rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.pvme-presentation .pvme-reader-provenance {
+    font-size: .8125em;
+    line-height: 1.6;
+    color: #53606c;
+    margin-block: .4rem;
+}
+
+/* Narrow screens -------------------------------------------------------- */
+
+@media (max-width: 600px) {
+    .pvme-presentation .pvme-reader-tools {
+        padding: .8rem;
+        gap: .65rem;
+    }
+
+    .pvme-presentation .pvme-reader-actions {
+        width: 100%;
+        gap: .4rem .85rem;
+    }
+
+    .pvme-presentation .pvme-reader-actions .pvme-reader-copy {
+        flex: 1 0 100%;
+    }
+}
+
+/* Other guides ---------------------------------------------------------- */
+
+.pvme-presentation .pvme-other-guides {
+    margin: 0 0 1.5em;
+    padding: .8em 1em;
+    border: 1px solid #c5d2d0;
+    border-radius: 5px;
+    background: #f5f8f7;
+}
+
+.pvme-presentation .pvme-other-guides ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5em 1.5em;
+    margin: .5em 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pvme-presentation .pvme-other-guides li {
+    margin: 0;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+}
+
+/* Print ----------------------------------------------------------------- */
+
+@media print {
+    .pvme-presentation .pvme-reader-tools {
+        display: none;
+    }
+}

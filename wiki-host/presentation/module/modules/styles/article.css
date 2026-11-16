@@ -1,0 +1,156 @@
+/*
+ * Defaults for the article (.mw-parser-output) on PvME pages. :where() keeps them at the
+ * specificity of .pvme-presentation alone, so classes in a page's own markup and templates
+ * win. The article stays light even inside Vector's night theme.
+ */
+
+/* Reading surface ------------------------------------------------------- */
+
+.pvme-presentation :where(.mw-parser-output) {
+    --pvme-ink: #262a2e;
+    --pvme-muted: #555b61;
+    --pvme-line: #d7d7d4;
+    --pvme-warm-line: #d8b78b;
+    --pvme-accent: #81501f;
+    --pvme-accent-strong: #593410;
+    --pvme-paper: #fff;
+    --pvme-soft: #f7f5f0;
+    --pvme-warm: #fbf6ec;
+    --pvme-warning: #fff2df;
+    --pvme-focus: #0b6cae;
+    border-radius: 6px;
+    padding: clamp(.5rem, 1.8vw, 1.5rem);
+    font-size: 1em;
+    line-height: 1.72;
+    color: var(--pvme-ink);
+    background: var(--pvme-paper);
+    overflow-wrap: break-word;
+}
+
+/* Paragraphs and links -------------------------------------------------- */
+
+.pvme-presentation :where(.mw-parser-output) p {
+    margin-block: .75em;
+}
+
+.pvme-presentation :where(.mw-parser-output) a {
+    text-decoration-thickness: .065em;
+    text-underline-offset: .16em;
+    color: #2857a4;
+}
+
+.pvme-presentation :where(.mw-parser-output) a:visited {
+    color: #654b8c;
+}
+
+.pvme-presentation :where(.mw-parser-output) a:hover {
+    text-decoration: underline;
+}
+
+/* Keyboard focus -------------------------------------------------------- */
+
+/*
+ * One focus ring for links in the article, the toolbar, converted-guide blocks and icon
+ * fallback links.
+ */
+
+.pvme-presentation :is(:where(.mw-parser-output), .pvme-reader-tools) a:focus-visible {
+    outline: 3px solid #0b6cae;
+    outline-offset: 2px;
+}
+
+.pvme-presentation :where(.mw-parser-output) .pvme-article a:focus-visible {
+    outline: 3px solid var(--pvme-focus);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+.pvme-presentation :where(.mw-parser-output) a:focus-visible .pvme-icon-fallback,
+.pvme-presentation :where(.mw-parser-output) .pvme-icon-fallback a:focus-visible {
+    outline: 3px solid var(--pvme-focus);
+    outline-offset: 2px;
+}
+
+/* Headings -------------------------------------------------------------- */
+
+.pvme-presentation :where(.mw-parser-output) :is(h2, h3, h4, h5, h6) {
+    color: #262a2e;
+}
+
+.pvme-presentation :where(.mw-parser-output) :is(h2, h3, h4) {
+    scroll-margin-block-start: 6rem;
+}
+
+.pvme-presentation :where(.mw-parser-output) h2 {
+    margin-block-start: 1.8em;
+    padding-block-end: .35em;
+}
+
+/* Code ------------------------------------------------------------------ */
+
+.pvme-presentation :where(.mw-parser-output) :is(pre, code) {
+    font-family: ui-monospace, Consolas, monospace;
+    color: #262a2e;
+    background: #f7f5f0;
+}
+
+.pvme-presentation :where(.mw-parser-output) pre {
+    overflow-x: auto;
+    padding: 1rem;
+    border: 1px solid #d6dce2;
+    border-radius: 5px;
+}
+
+/* Tables ---------------------------------------------------------------- */
+
+.pvme-presentation :where(.mw-parser-output) :is(th, td) {
+    color: #262a2e;
+    background: #fff;
+}
+
+.pvme-presentation :where(.mw-parser-output) .wikitable {
+    border-color: #c5cdd5;
+}
+
+.pvme-presentation :where(.mw-parser-output) .wikitable :is(th, td) {
+    padding: .65rem .8rem;
+    border-color: #c5cdd5;
+}
+
+.pvme-presentation :where(.mw-parser-output) .wikitable th {
+    background: #edf1f5;
+}
+
+/* Quotes ---------------------------------------------------------------- */
+
+.pvme-presentation :where(.mw-parser-output) blockquote {
+    border-inline-start: 3px solid #9b7139;
+    margin-inline: 0;
+    padding-inline-start: 1.1rem;
+}
+
+/* Narrow screens -------------------------------------------------------- */
+
+@media (max-width: 600px) {
+    .pvme-presentation :where(.mw-parser-output) {
+        padding: .5rem;
+    }
+
+    .pvme-presentation :where(.mw-parser-output) table:not(.pvme-no-scroll) {
+        display: block;
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    .pvme-presentation :where(.mw-parser-output) .pvme-table-scroll table {
+        display: table;
+    }
+}
+
+/* Print ----------------------------------------------------------------- */
+
+@media print {
+    .pvme-presentation :where(.mw-parser-output) {
+        padding: 0;
+    }
+}
