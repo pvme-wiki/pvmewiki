@@ -1,15 +1,15 @@
 {
   "schemaVersion": 2,
   "kind": "incremental-preset-image-export-audit",
-  "recordedAt": "2026-11-16T01:08:01.118Z",
+  "recordedAt": "2026-11-16T01:11:38.722Z",
+  "reason": "Refreshed after the converter moved each added preset image after the complete original text block, preserving label/icon/notes grouping.",
   "inputs": "corpus-plan.json pages with additions; remaining files compared with the previous successful published-revisions.json",
-  "corpusPlanSha256": "d94fb1011b6ad06d2f59ef6d7892ef12fa3bdd3585e46ea13e480af488ca3cbf",
+  "corpusPlanSha256": "fe1a06543459a9b0686c6af21d57353763de880af8227df14ff5aa904b0ca7df",
   "converterSha256": "c6442bd5a4a2573ded8aae708f25066ece0c55c625a336c36e87e91811ff56e4",
   "totalCorpusPages": 329,
   "pages": 99,
   "converted": 99,
   "unchangedPagesVerifiedAgainstPreviousPublication": 230,
-  "selectedPagesAlreadyEqualPreviousPublication": 1,
   "conversionFailures": [],
   "compiledFileSha256Mismatches": [],
   "unexpectedlyChangedUnselectedPages": [],
@@ -50,115 +50,123 @@
     ],
     "passed": true
   },
+  "previousIncrementalAudit": {
+    "recordedAt": "2026-11-16T01:08:01.118Z",
+    "corpusPlanSha256": "d94fb1011b6ad06d2f59ef6d7892ef12fa3bdd3585e46ea13e480af488ca3cbf",
+    "pages": 99,
+    "converted": 99,
+    "additionalImageEntries": 200,
+    "passed": true
+  },
   "results": [
     {
       "title": "PvME/Arch-Glacor/AFK Arch Glacor",
       "file": "guide--pvme-guides--afk--afk-arch-glacor.wiki",
-      "sourceSha256": "df39aa9ac7f358518d1a98ae44741a011f3fd358dfd71f21570503dfd312882d",
+      "sourceSha256": "8d7eeeace1cea0619baccc58caaab4c988c4e4f5bc7caf0821a59f3959cb2b86",
       "sourceLiteralTextNodes": 121,
       "originalMediaEntries": 47,
       "additionalImageEntries": 2,
       "nativeAddedImageTags": 2,
-      "exportCharacters": 12406,
+      "exportCharacters": 12359,
       "passed": true
     },
     {
       "title": "PvME/Chaos Elemental/AFK Chaos Elemental",
       "file": "guide--pvme-guides--afk--afk-chaos-elemental.wiki",
-      "sourceSha256": "d198c35f92e56cd2134676bcfe60619e72e6fd948f6dcb5d335335d3652e7935",
+      "sourceSha256": "f9b29a9f344c3bdbbf46a99d99396df1999a23624e97161464cfc8308483f38f",
       "sourceLiteralTextNodes": 71,
       "originalMediaEntries": 36,
       "additionalImageEntries": 3,
       "nativeAddedImageTags": 3,
-      "exportCharacters": 8209,
+      "exportCharacters": 8152,
       "passed": true
     },
     {
       "title": "PvME/Helwyr/AFK Helwyr Hardmode",
       "file": "guide--pvme-guides--afk--afk-helwyr-hardmode.wiki",
-      "sourceSha256": "ed4dbc77cf8daf45666612998eb022fec57010cf63ac90be2bf4acafcc031c75",
+      "sourceSha256": "312e20a62504fe24865c0a85baeb115ab7f1c28267d47f773a9943b57c8dc611",
       "sourceLiteralTextNodes": 73,
       "originalMediaEntries": 18,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 6294,
+      "exportCharacters": 6248,
       "passed": true
     },
     {
       "title": "PvME/Helwyr/AFK Helwyr",
       "file": "guide--pvme-guides--afk--afk-helwyr.wiki",
-      "sourceSha256": "8d0c2239bd1bbba65b7c697e28e34245f73ac84de2a3d099d61f79bacfcb333e",
+      "sourceSha256": "b4a0633ca9b43a5181940a738b33c2437b4ff81a9ff8d6d8429779c099e29e38",
       "sourceLiteralTextNodes": 177,
       "originalMediaEntries": 61,
       "additionalImageEntries": 2,
       "nativeAddedImageTags": 2,
-      "exportCharacters": 16860,
+      "exportCharacters": 16825,
       "passed": true
     },
     {
       "title": "PvME/Hermod/AFK Hermod",
       "file": "guide--pvme-guides--afk--afk-hermod.wiki",
-      "sourceSha256": "09df2757029aa0c27e4eca0a74bfef24f1e7019d3a072b1ac496ef3bfe5486e4",
+      "sourceSha256": "89b1bd610c6a360748d7ce8ea4a0e6bd16336b56469278499c605f6ae046d626",
       "sourceLiteralTextNodes": 94,
       "originalMediaEntries": 35,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 9227,
+      "exportCharacters": 9192,
       "passed": true
     },
     {
       "title": "PvME/Rex Matriarchs/AFK Osseous",
       "file": "guide--pvme-guides--afk--afk-osseous.wiki",
-      "sourceSha256": "e3514da6faf038e76d48ae63fb88f8eeccecaf1c86d616f6afbf1c14c30e2ba3",
+      "sourceSha256": "b5b51692c7aede5521c765b66d086c20601da0bdd1e91872e1e3e85a9eb38cb2",
       "sourceLiteralTextNodes": 72,
       "originalMediaEntries": 24,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 6886,
+      "exportCharacters": 6840,
       "passed": true
     },
     {
       "title": "PvME/Ghrazi blood knights/Low Effort Ghrazi Blood Knights (NM)",
       "file": "guide--pvme-guides--afk--low-effort-ghrazi-blood-knights-nm.wiki",
-      "sourceSha256": "9de68d828b632af33581f0fd50e48803cde6aa002f1183866b2ccf592e21fdb8",
+      "sourceSha256": "4a2d337075c0e8b4e78601571d2889c78186fb7556b46e2c931792a0f20216b5",
       "sourceLiteralTextNodes": 81,
       "originalMediaEntries": 22,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 7337,
+      "exportCharacters": 7250,
       "passed": true
     },
     {
       "title": "PvME/Helwyr/Low Effort Helwyr Hardmode",
       "file": "guide--pvme-guides--afk--low-effort-helwyr-hardmode.wiki",
-      "sourceSha256": "46648f133a97330f1946693accc78790d21f7fc362562c4710a4410fabcebe4c",
+      "sourceSha256": "4a3ff4a31a05ed2b35560c817b13aa162feb47759cb6472f9f0f0d767a89734b",
       "sourceLiteralTextNodes": 140,
       "originalMediaEntries": 48,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 15007,
+      "exportCharacters": 14952,
       "passed": true
     },
     {
       "title": "PvME/Kerapac/Low Effort Kerapac",
       "file": "guide--pvme-guides--afk--low-effort-kerapac.wiki",
-      "sourceSha256": "fe8a18125ed025d039876194aeec93275c63702656caed1979179c1dcba72b23",
+      "sourceSha256": "d5f5341f64d50fb22ee348c4a5cfd42283fd4a84d4a7a6f8d9eb8d8c00846641",
       "sourceLiteralTextNodes": 219,
       "originalMediaEntries": 91,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 21300,
+      "exportCharacters": 21254,
       "passed": true
     },
     {
       "title": "PvME/The Magister/Low Effort Magister",
       "file": "guide--pvme-guides--afk--low-effort-magister.wiki",
-      "sourceSha256": "074b788cf2ca06a91da6ec54f1667484be4af781571baba1da33400d6ecb819b",
+      "sourceSha256": "daa6d39960266459c21d210530c87c257e22b8db586c57b13dbb8f347677b6fd",
       "sourceLiteralTextNodes": 156,
       "originalMediaEntries": 87,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 17709,
+      "exportCharacters": 17655,
       "passed": true
     },
     {
@@ -169,18 +177,18 @@
       "originalMediaEntries": 200,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 69486,
+      "exportCharacters": 69454,
       "passed": true
     },
     {
       "title": "PvME/Nex: Angel of Death/Aod Overview",
       "file": "guide--pvme-guides--basic-guides--aod-basic.wiki",
-      "sourceSha256": "57407022bfe16de994765cfabcba4407f1ac8c4d46b66ca623f349b940b76155",
+      "sourceSha256": "cf863a6e2e32d2b1f0fde6eac52ecf1800529fe3a2cb8488bce99e5755c61f25",
       "sourceLiteralTextNodes": 481,
       "originalMediaEntries": 348,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 59722,
+      "exportCharacters": 59664,
       "passed": true
     },
     {
@@ -191,7 +199,7 @@
       "originalMediaEntries": 31,
       "additionalImageEntries": 3,
       "nativeAddedImageTags": 3,
-      "exportCharacters": 15589,
+      "exportCharacters": 15557,
       "passed": true
     },
     {
@@ -202,84 +210,84 @@
       "originalMediaEntries": 43,
       "additionalImageEntries": 3,
       "nativeAddedImageTags": 3,
-      "exportCharacters": 12530,
+      "exportCharacters": 12494,
       "passed": true
     },
     {
       "title": "PvME/Barrows brothers/Barrows Overview",
       "file": "guide--pvme-guides--basic-guides--barrows-basic.wiki",
-      "sourceSha256": "ac8cb389d6198b7e8cf3f0abbfa11960ac2d4b1238ae86ac39838a5bb321b99a",
+      "sourceSha256": "25a091868ed9078e46fa32591f251e01fbe3313ef3dff5d6154e7ab84ba3f95c",
       "sourceLiteralTextNodes": 84,
       "originalMediaEntries": 29,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 9921,
+      "exportCharacters": 9868,
       "passed": true
     },
     {
       "title": "PvME/Beastmaster Durzag/Bm Overview",
       "file": "guide--pvme-guides--basic-guides--bm-basic.wiki",
-      "sourceSha256": "89db13556cec9c604e56d77bcdc1b6a53ea4ec29f810930f7920d1fd97ba07a4",
+      "sourceSha256": "86ea8cfc89e8e1ec4db47806f08c8ba1f2f03cbbeffbacebe85bdc766548e80f",
       "sourceLiteralTextNodes": 135,
       "originalMediaEntries": 43,
       "additionalImageEntries": 2,
       "nativeAddedImageTags": 2,
-      "exportCharacters": 16406,
+      "exportCharacters": 16356,
       "passed": true
     },
     {
       "title": "PvME/Chaos Elemental/Overview",
       "file": "guide--pvme-guides--basic-guides--chaos-elemental-basic.wiki",
-      "sourceSha256": "939f994c2fe92e327996dcacdd614e3c247817a33f51bd33c3adc5005bbdb673",
+      "sourceSha256": "d11a60ccb67dffb3a7fc430fbcddc64a100ca091e75791a72673e7ceacc4c132",
       "sourceLiteralTextNodes": 71,
       "originalMediaEntries": 27,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 9232,
+      "exportCharacters": 9190,
       "passed": true
     },
     {
       "title": "PvME/Temple of Aminishi/ED1 Overview",
       "file": "guide--pvme-guides--basic-guides--ed1-basic.wiki",
-      "sourceSha256": "1ecba797621de01024b4033057f1ad644a038af6d1cd42909a16e49c06b674bf",
+      "sourceSha256": "7fd91aca5c2c1165562037b1c9d570ae0174c909902e9e199088469cc0ec6362",
       "sourceLiteralTextNodes": 415,
       "originalMediaEntries": 224,
       "additionalImageEntries": 2,
       "nativeAddedImageTags": 2,
-      "exportCharacters": 52257,
+      "exportCharacters": 52204,
       "passed": true
     },
     {
       "title": "PvME/Dragonkin Laboratory/ED2 Overview",
       "file": "guide--pvme-guides--basic-guides--ed2-basic.wiki",
-      "sourceSha256": "11d1e66aa745c8ef1858bae6cdb8f6fcb530cd5da3b1ca62d1a07518efcfdea6",
+      "sourceSha256": "702cc12c73fe5b93eb82723f10ab548a1d157a529059371914110f58e693f295",
       "sourceLiteralTextNodes": 304,
       "originalMediaEntries": 114,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 37038,
+      "exportCharacters": 36985,
       "passed": true
     },
     {
       "title": "PvME/The Shadow Reef/ED3 Overview",
       "file": "guide--pvme-guides--basic-guides--ed3-basic.wiki",
-      "sourceSha256": "9bbb71813b5e9334f3581540cc01946db5036d68742ac7fe16bea226b0937b69",
+      "sourceSha256": "4e4becb763b8bf377cd1ec4ad7a81787ae6dc12f6f378682ea65bdf4a84c86c5",
       "sourceLiteralTextNodes": 353,
       "originalMediaEntries": 144,
       "additionalImageEntries": 2,
       "nativeAddedImageTags": 2,
-      "exportCharacters": 39040,
+      "exportCharacters": 38990,
       "passed": true
     },
     {
       "title": "PvME/Giant Mole/Overview",
       "file": "guide--pvme-guides--basic-guides--giant-mole-basic.wiki",
-      "sourceSha256": "aced5f234e6f6582720c626e69eadc2b9b9f185601f2127c5e1e85e9aef76f2a",
+      "sourceSha256": "efbbc5b22c64426a7f4422cbc695bc09e2823af864d8a8eb391ba300ef4269a3",
       "sourceLiteralTextNodes": 80,
       "originalMediaEntries": 28,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 10754,
+      "exportCharacters": 10717,
       "passed": true
     },
     {
@@ -290,7 +298,7 @@
       "originalMediaEntries": 30,
       "additionalImageEntries": 3,
       "nativeAddedImageTags": 3,
-      "exportCharacters": 12802,
+      "exportCharacters": 12767,
       "passed": true
     },
     {
@@ -301,73 +309,73 @@
       "originalMediaEntries": 25,
       "additionalImageEntries": 3,
       "nativeAddedImageTags": 3,
-      "exportCharacters": 11394,
+      "exportCharacters": 11363,
       "passed": true
     },
     {
       "title": "PvME/King Black Dragon/Kbd Overview",
       "file": "guide--pvme-guides--basic-guides--kbd-basic.wiki",
-      "sourceSha256": "7ee141e81170cb60e49b8c1f9f8130cc1b6737be01c6db5288a9e97a36bbcb1d",
+      "sourceSha256": "00e076cc87f2ad91d9b88e404d6f790a1ad89fdbad842c71464b38b572f91e80",
       "sourceLiteralTextNodes": 84,
       "originalMediaEntries": 43,
       "additionalImageEntries": 3,
       "nativeAddedImageTags": 3,
-      "exportCharacters": 10883,
+      "exportCharacters": 10831,
       "passed": true
     },
     {
       "title": "PvME/Kerapac/Kerapac HM Overview",
       "file": "guide--pvme-guides--basic-guides--kerapac-hm-basic.wiki",
-      "sourceSha256": "5c19858b8ae7be36fb368bd9a47a9c40b8bcdb7be0a5045bde325a2b522a2657",
+      "sourceSha256": "aed21f5a4028c17a225789a199a137fc11837b3bc229d80dcc121b00b3165f89",
       "sourceLiteralTextNodes": 189,
       "originalMediaEntries": 96,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 19933,
+      "exportCharacters": 19886,
       "passed": true
     },
     {
       "title": "PvME/Raksha/Overview",
       "file": "guide--pvme-guides--basic-guides--raksha-basic.wiki",
-      "sourceSha256": "75f0643cde8d0e67e6f89bb38f4cf5b456dfeb01ee2451248b84a2fabe5a96d3",
+      "sourceSha256": "c39ea82471e0110ac033abdd4f99881a3bdf751819dbc606b30e53a6c6eda553",
       "sourceLiteralTextNodes": 240,
       "originalMediaEntries": 100,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 24415,
+      "exportCharacters": 24384,
       "passed": true
     },
     {
       "title": "PvME/Rise of the Six/Overview",
       "file": "guide--pvme-guides--basic-guides--rise-of-the-six-basic.wiki",
-      "sourceSha256": "e5b435321e913e57bc7e614c62aa3d6ffe40bbfc1514717e0fd2f3f1668de548",
+      "sourceSha256": "da23e9bd29670412562fcf7c5f080b76d5b089ef05070077f6428b7fe1bc6469",
       "sourceLiteralTextNodes": 185,
       "originalMediaEntries": 33,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 18865,
+      "exportCharacters": 18819,
       "passed": true
     },
     {
       "title": "PvME/Solak/Overview",
       "file": "guide--pvme-guides--basic-guides--solak-basic.wiki",
-      "sourceSha256": "4ac6a18fec5492681c85555a59d12cea571cc857170fcdc1523999763a7bc2fa",
+      "sourceSha256": "0e6dce1526f9be9d8d2f7a33380bd19ed4b568f9bbf159b29de31943b2748662",
       "sourceLiteralTextNodes": 269,
       "originalMediaEntries": 95,
       "additionalImageEntries": 3,
       "nativeAddedImageTags": 3,
-      "exportCharacters": 32508,
+      "exportCharacters": 32478,
       "passed": true
     },
     {
       "title": "PvME/Telos/Overview",
       "file": "guide--pvme-guides--basic-guides--telos-basic.wiki",
-      "sourceSha256": "3373b86384422001f3eeb7791b1d00e3e451dd98528716632f67f7aa95a56207",
+      "sourceSha256": "3f60e33e37f30a0142ef6f7c457faab8657728a4c053ecab01be7ad336feb097",
       "sourceLiteralTextNodes": 297,
       "originalMediaEntries": 119,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 31492,
+      "exportCharacters": 31462,
       "passed": true
     },
     {
@@ -378,18 +386,18 @@
       "originalMediaEntries": 27,
       "additionalImageEntries": 3,
       "nativeAddedImageTags": 3,
-      "exportCharacters": 13673,
+      "exportCharacters": 13635,
       "passed": true
     },
     {
       "title": "PvME/TzKal-Zuk/Tzkal Zuk Overview",
       "file": "guide--pvme-guides--basic-guides--tzkal-zuk-basic.wiki",
-      "sourceSha256": "a5b8c6182783775b77ee6d41f065b9f49e3a5a02e2435b58a94bba92936d39d1",
+      "sourceSha256": "8aaf6dd6989dfda19462ceeb27b2b6d41e0ef30e93caebb1d3b4ca3017437035",
       "sourceLiteralTextNodes": 208,
       "originalMediaEntries": 57,
       "additionalImageEntries": 3,
       "nativeAddedImageTags": 3,
-      "exportCharacters": 22977,
+      "exportCharacters": 22929,
       "passed": true
     },
     {
@@ -400,18 +408,18 @@
       "originalMediaEntries": 20,
       "additionalImageEntries": 3,
       "nativeAddedImageTags": 3,
-      "exportCharacters": 13744,
+      "exportCharacters": 13691,
       "passed": true
     },
     {
       "title": "PvME/Zamorak/Overview",
       "file": "guide--pvme-guides--basic-guides--zamorak-basic.wiki",
-      "sourceSha256": "a1107019c430ccfad47d96c16647fa3369697453a78b7d0f006df6eb3ccbcf19",
+      "sourceSha256": "a145d62a3f14663ae4479913faad0a8d2564d9f99d37b919ee92c3d4ef75c461",
       "sourceLiteralTextNodes": 219,
       "originalMediaEntries": 32,
       "additionalImageEntries": 3,
       "nativeAddedImageTags": 3,
-      "exportCharacters": 19010,
+      "exportCharacters": 18978,
       "passed": true
     },
     {
@@ -422,7 +430,7 @@
       "originalMediaEntries": 87,
       "additionalImageEntries": 2,
       "nativeAddedImageTags": 2,
-      "exportCharacters": 30629,
+      "exportCharacters": 30581,
       "passed": true
     },
     {
@@ -433,7 +441,7 @@
       "originalMediaEntries": 84,
       "additionalImageEntries": 2,
       "nativeAddedImageTags": 2,
-      "exportCharacters": 28698,
+      "exportCharacters": 28656,
       "passed": true
     },
     {
@@ -444,7 +452,7 @@
       "originalMediaEntries": 90,
       "additionalImageEntries": 2,
       "nativeAddedImageTags": 2,
-      "exportCharacters": 31252,
+      "exportCharacters": 31210,
       "passed": true
     },
     {
@@ -455,7 +463,7 @@
       "originalMediaEntries": 73,
       "additionalImageEntries": 2,
       "nativeAddedImageTags": 2,
-      "exportCharacters": 27126,
+      "exportCharacters": 27082,
       "passed": true
     },
     {
@@ -466,7 +474,7 @@
       "originalMediaEntries": 83,
       "additionalImageEntries": 2,
       "nativeAddedImageTags": 2,
-      "exportCharacters": 28553,
+      "exportCharacters": 28511,
       "passed": true
     },
     {
@@ -477,7 +485,7 @@
       "originalMediaEntries": 126,
       "additionalImageEntries": 2,
       "nativeAddedImageTags": 2,
-      "exportCharacters": 37007,
+      "exportCharacters": 36964,
       "passed": true
     },
     {
@@ -488,51 +496,51 @@
       "originalMediaEntries": 126,
       "additionalImageEntries": 2,
       "nativeAddedImageTags": 2,
-      "exportCharacters": 36987,
+      "exportCharacters": 36956,
       "passed": true
     },
     {
       "title": "PvME/The Shadow Reef/Ambassador Ca",
       "file": "guide--pvme-guides--combat-achievements--ambassador-ca.wiki",
-      "sourceSha256": "eb5e13b7f72e1126d04c97ad78a65ffe7b16e6f55cc7ea9b37aed37e5eb734f2",
+      "sourceSha256": "b13d0880444f60b76737e8851eef837516f0abf7d580b8fbd23457b79cebd7f0",
       "sourceLiteralTextNodes": 277,
       "originalMediaEntries": 238,
       "additionalImageEntries": 2,
       "nativeAddedImageTags": 2,
-      "exportCharacters": 32094,
+      "exportCharacters": 32043,
       "passed": true
     },
     {
       "title": "PvME/Nex: Angel of Death/Aod Ca",
       "file": "guide--pvme-guides--combat-achievements--aod-ca.wiki",
-      "sourceSha256": "59d602138147d38922f6fedf4494fdbf713691dca05f9ca7ed55681192e2c8aa",
+      "sourceSha256": "f92ad466cb9cad03357b1b54e8d4911443d05f8a426d5e7405ded52eacc58eb7",
       "sourceLiteralTextNodes": 86,
       "originalMediaEntries": 39,
       "additionalImageEntries": 3,
       "nativeAddedImageTags": 3,
-      "exportCharacters": 10479,
+      "exportCharacters": 10427,
       "passed": true
     },
     {
       "title": "PvME/Araxxor/Araxxor Ca",
       "file": "guide--pvme-guides--combat-achievements--araxxor-ca.wiki",
-      "sourceSha256": "4abf1a4efb8c3498e250f7c8df8ff19e19b8d5d732d164ecd51d231446f9bdf7",
+      "sourceSha256": "6706a7fe6fabc1bbad8334f3011ee797e008c994cc23702ee7da73c7a4d85f87",
       "sourceLiteralTextNodes": 102,
       "originalMediaEntries": 84,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 12444,
+      "exportCharacters": 12408,
       "passed": true
     },
     {
       "title": "PvME/Dragonkin Laboratory/Black Stone Dragon Ca",
       "file": "guide--pvme-guides--combat-achievements--black-stone-dragon-ca.wiki",
-      "sourceSha256": "2a609d27ae887eabd808ce01b614f1dcb39a776ce58f305a8c21871d30812d82",
+      "sourceSha256": "8e7ec1275641b10e85748fb11dd53641c71f98c0c1e5ad003a1f4f1978696391",
       "sourceLiteralTextNodes": 325,
       "originalMediaEntries": 288,
       "additionalImageEntries": 2,
       "nativeAddedImageTags": 2,
-      "exportCharacters": 40858,
+      "exportCharacters": 40792,
       "passed": true
     },
     {
@@ -543,7 +551,7 @@
       "originalMediaEntries": 57,
       "additionalImageEntries": 2,
       "nativeAddedImageTags": 2,
-      "exportCharacters": 9863,
+      "exportCharacters": 9819,
       "passed": true
     },
     {
@@ -554,7 +562,7 @@
       "originalMediaEntries": 89,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 15955,
+      "exportCharacters": 15921,
       "passed": true
     },
     {
@@ -565,18 +573,18 @@
       "originalMediaEntries": 104,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 15515,
+      "exportCharacters": 15465,
       "passed": true
     },
     {
       "title": "PvME/Telos/Telos Ca",
       "file": "guide--pvme-guides--combat-achievements--telos-ca.wiki",
-      "sourceSha256": "041f14134e550a2fc8c44bba31bb4492bab89bff1529718657cd077c9374ab4f",
+      "sourceSha256": "1b1e55ffb3b50b9fa73bf3047232a5aaeaf1b83e0d04724aac5f1407575a3ebb",
       "sourceLiteralTextNodes": 235,
       "originalMediaEntries": 203,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 27271,
+      "exportCharacters": 27239,
       "passed": true
     },
     {
@@ -587,51 +595,51 @@
       "originalMediaEntries": 148,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 20983,
+      "exportCharacters": 20947,
       "passed": true
     },
     {
       "title": "PvME/Getting started/Early Moneymaking Ideas",
       "file": "guide--pvme-guides--getting-started--early-moneymaking-ideas.wiki",
-      "sourceSha256": "9ddf833dc82ef994719aacb9751f08c6dbc1378c970e44358ee92e7f58d2b50a",
+      "sourceSha256": "8eaa48ca5b2baa0b72e44da8d8040f071a27f6c6ac63720939c739dd1a63f23e",
       "sourceLiteralTextNodes": 143,
       "originalMediaEntries": 50,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 15349,
+      "exportCharacters": 15288,
       "passed": true
     },
     {
       "title": "PvME/Getting started/Interface Guide",
       "file": "guide--pvme-guides--getting-started--interface-guide.wiki",
-      "sourceSha256": "cc371a4c575152b989aff36eb2aa1eb805a1873c0a750f7903ed4bb89665273e",
+      "sourceSha256": "82874bbf66da1361c09f0e6e8f8cdb22ca0c4b9bd4616274b4371132390f433b",
       "sourceLiteralTextNodes": 729,
       "originalMediaEntries": 109,
       "additionalImageEntries": 3,
       "nativeAddedImageTags": 3,
-      "exportCharacters": 63803,
+      "exportCharacters": 63752,
       "passed": true
     },
     {
       "title": "PvME/Invention perks/Scavenging Farming",
       "file": "guide--pvme-guides--invention-and-perks--scavenging-farming.wiki",
-      "sourceSha256": "0a41d0e71fe2eb127cd8f0ca722367f8d2d54b82ff5be455021ba0683eacca07",
+      "sourceSha256": "aaadfda5035b07822120191ae4a9870353721e79d5ac2b207fcab5a847abd318",
       "sourceLiteralTextNodes": 300,
       "originalMediaEntries": 129,
       "additionalImageEntries": 3,
       "nativeAddedImageTags": 3,
-      "exportCharacters": 30142,
+      "exportCharacters": 30088,
       "passed": true
     },
     {
       "title": "PvME/Corporeal Beast/Corporeal Beast",
       "file": "guide--pvme-guides--rs3-full-boss-guides--corporeal-beast.wiki",
-      "sourceSha256": "093641e28130a24b9fc6b364b21de47b406150b4014610cbf1c31997a07fd58c",
+      "sourceSha256": "16a1c90d10d17fe5892d4e98bc346827b1911f4640510b3b7d691b1359ff3e6f",
       "sourceLiteralTextNodes": 127,
       "originalMediaEntries": 64,
       "additionalImageEntries": 2,
       "nativeAddedImageTags": 2,
-      "exportCharacters": 13320,
+      "exportCharacters": 13269,
       "passed": true
     },
     {
@@ -642,29 +650,29 @@
       "originalMediaEntries": 41,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 8694,
+      "exportCharacters": 8643,
       "passed": true
     },
     {
       "title": "PvME/Flesh-hatcher Mhekarnahz/Flesh Hatcher Mhekarnahz",
       "file": "guide--pvme-guides--rs3-full-boss-guides--flesh-hatcher-mhekarnahz.wiki",
-      "sourceSha256": "956233737184650cb83243a7a4536775064ad632e9e655f26330d07bc94a8e07",
+      "sourceSha256": "75bd0d42e6f6f4f3af9165eb37e8fd342a75278f9126447488e22020bafbb573",
       "sourceLiteralTextNodes": 155,
       "originalMediaEntries": 87,
       "additionalImageEntries": 3,
       "nativeAddedImageTags": 3,
-      "exportCharacters": 17224,
+      "exportCharacters": 17153,
       "passed": true
     },
     {
       "title": "PvME/Gate of Elidinis/Gate Of Elidinis",
       "file": "guide--pvme-guides--rs3-full-boss-guides--gate-of-elidinis.wiki",
-      "sourceSha256": "678adbf450b0db2eff2843ca0f1d97cac1ee1a319c5a74e9e804ce61e1f615f3",
+      "sourceSha256": "ac048afc8af6bfc91c4ce971e775136ea8026a0929c43727c063344ebff9b9bb",
       "sourceLiteralTextNodes": 109,
       "originalMediaEntries": 18,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 13019,
+      "exportCharacters": 12962,
       "passed": true
     },
     {
@@ -675,18 +683,18 @@
       "originalMediaEntries": 59,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 10837,
+      "exportCharacters": 10808,
       "passed": true
     },
     {
       "title": "PvME/The Magister/Magister",
       "file": "guide--pvme-guides--rs3-full-boss-guides--magister.wiki",
-      "sourceSha256": "e9e7a4111ceedd27d19d24446bebf34eb3282b18365154023f3f0312bfd67dd2",
+      "sourceSha256": "aee6eaabdf3ba8684b4339d148f2d819dfe3d9d1ea01e8dc4f59be1da28ecf0d",
       "sourceLiteralTextNodes": 141,
       "originalMediaEntries": 31,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 15812,
+      "exportCharacters": 15773,
       "passed": true
     },
     {
@@ -697,7 +705,7 @@
       "originalMediaEntries": 36,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 12370,
+      "exportCharacters": 12309,
       "passed": true
     },
     {
@@ -708,73 +716,73 @@
       "originalMediaEntries": 107,
       "additionalImageEntries": 3,
       "nativeAddedImageTags": 3,
-      "exportCharacters": 54429,
+      "exportCharacters": 54396,
       "passed": true
     },
     {
       "title": "PvME/Amascut/Amascut 1000 Magic Melee Base",
       "file": "guide--pvme-guides--rs3-full-boss-guides--amascut--amascut-1000-magic-melee-base.wiki",
-      "sourceSha256": "2328fdf587d342fec5d95f6905d4588b9cabee564a8df64656bf41f54bc03340",
+      "sourceSha256": "098e0cb600539441c47d4586f8b8fe431fc35bf2548d9860a538b28326bd9b41",
       "sourceLiteralTextNodes": 248,
       "originalMediaEntries": 197,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 28750,
+      "exportCharacters": 28689,
       "passed": true
     },
     {
       "title": "PvME/Nex: Angel of Death/Angel Of Death Small Teams — Necro Duo Trio Overview",
       "file": "guide--pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--necro_duo_trio_basic.wiki",
-      "sourceSha256": "fc895057d63af6551b94f4776a4208240594d8bea778216e1fe3a63899b8415e",
+      "sourceSha256": "4b9ed07c7634b5774eb392908b4b58d36bc95e1df2a2aae6ca4b7966ce737a92",
       "sourceLiteralTextNodes": 304,
       "originalMediaEntries": 206,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 36041,
+      "exportCharacters": 35919,
       "passed": true
     },
     {
       "title": "PvME/Beastmaster Durzag/Beastmaster Durzag — Duo Bm",
       "file": "guide--pvme-guides--rs3-full-boss-guides--beastmaster-durzag--duo-bm.wiki",
-      "sourceSha256": "7143adc8fb3eddce0d1333560a1704a3038a723fcb03bef4c297a708d88337c4",
+      "sourceSha256": "82a241da951aa1b5bc3e5d00313b04eaf5bfa3ae4f657560e5e5f1e714ce074f",
       "sourceLiteralTextNodes": 86,
       "originalMediaEntries": 24,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 9411,
+      "exportCharacters": 9331,
       "passed": true
     },
     {
       "title": "PvME/Croesus/Croesus 1mid 4man",
       "file": "guide--pvme-guides--rs3-full-boss-guides--croesus--croesus-1mid-4man.wiki",
-      "sourceSha256": "4b5dcb26ddacd4ced7300a4e2a7bf42edb7e594a3657022c425b715af88bba7c",
+      "sourceSha256": "78338385d57ba4d1e35979a8dcb104e30e0e7de4f6d5fc09ef032cce2e78de09",
       "sourceLiteralTextNodes": 159,
       "originalMediaEntries": 31,
       "additionalImageEntries": 3,
       "nativeAddedImageTags": 3,
-      "exportCharacters": 16903,
+      "exportCharacters": 16858,
       "passed": true
     },
     {
       "title": "PvME/Croesus/Croesus Duo",
       "file": "guide--pvme-guides--rs3-full-boss-guides--croesus--croesus-duo.wiki",
-      "sourceSha256": "03b3877c3655a51d12da414ec4369dc9d61721546305e5c8e1755ea500ec41a5",
+      "sourceSha256": "40c41b9fc04a4c8b4684dc6c37ba715b5751b8cf0b2ec3d2f3eaf3bf7a58cd72",
       "sourceLiteralTextNodes": 46,
       "originalMediaEntries": 6,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 5809,
+      "exportCharacters": 5772,
       "passed": true
     },
     {
       "title": "PvME/Croesus/Croesus",
       "file": "guide--pvme-guides--rs3-full-boss-guides--croesus--croesus.wiki",
-      "sourceSha256": "b761725c14af236b0e1d1ef641df2a51b2e7787a82a8001a5aa217276a99d5f2",
+      "sourceSha256": "e3ec16e3886b7fce7a8567e343e9474e5296acd100af537224b4aa699988507f",
       "sourceLiteralTextNodes": 360,
       "originalMediaEntries": 68,
       "additionalImageEntries": 3,
       "nativeAddedImageTags": 3,
-      "exportCharacters": 37039,
+      "exportCharacters": 37008,
       "passed": true
     },
     {
@@ -785,7 +793,7 @@
       "originalMediaEntries": 95,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 14838,
+      "exportCharacters": 14770,
       "passed": true
     },
     {
@@ -796,18 +804,18 @@
       "originalMediaEntries": 83,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 12098,
+      "exportCharacters": 12029,
       "passed": true
     },
     {
       "title": "PvME/Rex Matriarchs/Rex Matriarchs — Rex Rotations",
       "file": "guide--pvme-guides--rs3-full-boss-guides--rex-matriarchs--rex-rotations.wiki",
-      "sourceSha256": "ca7de7fb5c6a768062619df4b9cd5c7011b586219a23d61eed6161a95700e4ae",
+      "sourceSha256": "aa160ae7e8523a9d5dfc27fde9f2473866aa66fcd7294b184eb5af9cbceca3cd",
       "sourceLiteralTextNodes": 175,
       "originalMediaEntries": 98,
       "additionalImageEntries": 7,
       "nativeAddedImageTags": 7,
-      "exportCharacters": 19147,
+      "exportCharacters": 19068,
       "passed": true
     },
     {
@@ -818,29 +826,29 @@
       "originalMediaEntries": 62,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 14706,
+      "exportCharacters": 14628,
       "passed": true
     },
     {
       "title": "PvME/Rise of the Six/Rise Of The Six Solo",
       "file": "guide--pvme-guides--rs3-full-boss-guides--rise-of-the-six--rise-of-the-six-solo.wiki",
-      "sourceSha256": "10f4a4ef7fd181471658803d649d7fd7ee2b6307e5e4b03b609aeb84993d888e",
+      "sourceSha256": "77627bd4005c9449f5d1804fa0a441e56c5063703fc4f5dcc97f97575b5200bf",
       "sourceLiteralTextNodes": 174,
       "originalMediaEntries": 90,
       "additionalImageEntries": 2,
       "nativeAddedImageTags": 2,
-      "exportCharacters": 18852,
+      "exportCharacters": 18786,
       "passed": true
     },
     {
       "title": "PvME/Telos/Telos — Necromancy",
       "file": "guide--pvme-guides--rs3-full-boss-guides--telos--necromancy.wiki",
-      "sourceSha256": "100e9c49f0306c52da4e52a10786d99eae3bd42ac7093bcf6b6fe6bcf386854e",
+      "sourceSha256": "de7e536580a8b4c9f7bd5e503346936ea31a5ce6f44e57e511346e6b6beda14c",
       "sourceLiteralTextNodes": 376,
       "originalMediaEntries": 277,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 40611,
+      "exportCharacters": 40559,
       "passed": true
     },
     {
@@ -851,7 +859,7 @@
       "originalMediaEntries": 141,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 20881,
+      "exportCharacters": 20826,
       "passed": true
     },
     {
@@ -862,18 +870,18 @@
       "originalMediaEntries": 270,
       "additionalImageEntries": 2,
       "nativeAddedImageTags": 2,
-      "exportCharacters": 87397,
+      "exportCharacters": 87326,
       "passed": true
     },
     {
       "title": "PvME/Vorkath/Melee Vorkath",
       "file": "guide--pvme-guides--rs3-full-boss-guides--vorkath--melee-vorkath.wiki",
-      "sourceSha256": "80856a0cd30d1daeb8faa54e766af0cdf3b947bc077265265192d2cfed09bde2",
+      "sourceSha256": "c590f4d65490c168ecb5109e024a8e99a964d551a3d011deadbaaed7b712ef3a",
       "sourceLiteralTextNodes": 210,
       "originalMediaEntries": 183,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 25802,
+      "exportCharacters": 25763,
       "passed": true
     },
     {
@@ -884,18 +892,18 @@
       "originalMediaEntries": 242,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 40521,
+      "exportCharacters": 40482,
       "passed": true
     },
     {
       "title": "PvME/Zamorak/Zamorak 2000 Ranged Melee Group",
       "file": "guide--pvme-guides--rs3-full-boss-guides--zamorak--zamorak-2000-ranged-melee-group.wiki",
-      "sourceSha256": "c766d552f244f1e54bfde7477a18862db46c504d31479d91f64a56d071d2fff8",
+      "sourceSha256": "0c21df26ca1da784912775dbe3f79b603312bb03d8063b8d41d47d5af24926f9",
       "sourceLiteralTextNodes": 331,
       "originalMediaEntries": 347,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 43897,
+      "exportCharacters": 43834,
       "passed": true
     },
     {
@@ -906,7 +914,7 @@
       "originalMediaEntries": 36,
       "additionalImageEntries": 2,
       "nativeAddedImageTags": 2,
-      "exportCharacters": 14047,
+      "exportCharacters": 14006,
       "passed": true
     },
     {
@@ -917,62 +925,62 @@
       "originalMediaEntries": 202,
       "additionalImageEntries": 4,
       "nativeAddedImageTags": 4,
-      "exportCharacters": 69386,
+      "exportCharacters": 69355,
       "passed": true
     },
     {
       "title": "PvME/Slayer/Abyssal Beasts",
       "file": "guide--pvme-guides--slayer--abyssal-beasts.wiki",
-      "sourceSha256": "716868b0663e5d8d412275c13fc96bd93b3a0fc1320762bacd86b4af36aa645d",
+      "sourceSha256": "ea0df2762a9377932819e370b6ccf0214a791537f208ee9e0b2c8597d1210fbe",
       "sourceLiteralTextNodes": 181,
       "originalMediaEntries": 93,
       "additionalImageEntries": 3,
       "nativeAddedImageTags": 3,
-      "exportCharacters": 20236,
+      "exportCharacters": 20197,
       "passed": true
     },
     {
       "title": "PvME/Slayer/Abyssal Demons",
       "file": "guide--pvme-guides--slayer--abyssal-demons.wiki",
-      "sourceSha256": "17ae798d8b2294a591daf8de366482a4da655fa9fe7449618df6c60911e06d0b",
+      "sourceSha256": "aa5355f8e7a5f0a468e40325ea0bc108d4d8d93bf6ced6da47a20311cba04967",
       "sourceLiteralTextNodes": 111,
       "originalMediaEntries": 64,
       "additionalImageEntries": 3,
       "nativeAddedImageTags": 3,
-      "exportCharacters": 13593,
+      "exportCharacters": 13554,
       "passed": true
     },
     {
       "title": "PvME/Slayer/Abyssal Lords",
       "file": "guide--pvme-guides--slayer--abyssal-lords.wiki",
-      "sourceSha256": "90b97db9c33d4c3fcc066a3b656371658515c6009bf0f4cfde1be9ed03e69fa1",
+      "sourceSha256": "f8f8fcb811c5cf07a3511b6e0ac17c35134734dba89c5d11763b8233f8413b83",
       "sourceLiteralTextNodes": 168,
       "originalMediaEntries": 82,
       "additionalImageEntries": 2,
       "nativeAddedImageTags": 2,
-      "exportCharacters": 17946,
+      "exportCharacters": 17908,
       "passed": true
     },
     {
       "title": "PvME/Slayer/Abyssal Savages",
       "file": "guide--pvme-guides--slayer--abyssal-savages.wiki",
-      "sourceSha256": "210f1553b146566a2a2652831d08997e322bff9a0d2409fe3b812cb5f2101046",
+      "sourceSha256": "d391bd95efdf44dcb82420203f8effb253714c402f61b3098da5924e776c5e32",
       "sourceLiteralTextNodes": 118,
       "originalMediaEntries": 75,
       "additionalImageEntries": 2,
       "nativeAddedImageTags": 2,
-      "exportCharacters": 13616,
+      "exportCharacters": 13576,
       "passed": true
     },
     {
       "title": "PvME/Slayer/Armoured Phantoms",
       "file": "guide--pvme-guides--slayer--armoured-phantoms.wiki",
-      "sourceSha256": "1d29fec1f32363dd4c610156f0acbbc7d827426daaa97d42bc05adb87a087fa4",
+      "sourceSha256": "7ad49578b6448f7f13810b268fff365aa9bff27bb67dd4704e5ed14ef05fbe51",
       "sourceLiteralTextNodes": 212,
       "originalMediaEntries": 112,
       "additionalImageEntries": 3,
       "nativeAddedImageTags": 3,
-      "exportCharacters": 23189,
+      "exportCharacters": 23147,
       "passed": true
     },
     {
@@ -983,51 +991,51 @@
       "originalMediaEntries": 108,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 21886,
+      "exportCharacters": 21853,
       "passed": true
     },
     {
       "title": "PvME/Slayer/Berserkers And Ash Lords",
       "file": "guide--pvme-guides--slayer--berserkers-and-ash-lords.wiki",
-      "sourceSha256": "7eb9a44cf2ccb8acfd66cc46cb23e1f4c6c0105a18f0a95a9aa95f4b28e8fa65",
+      "sourceSha256": "f1ca686e2da7243dbaa31afb2c750ecbd291863abb7e9ef2b0ae97bb4ce64a14",
       "sourceLiteralTextNodes": 92,
       "originalMediaEntries": 37,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 10901,
+      "exportCharacters": 10848,
       "passed": true
     },
     {
       "title": "PvME/Slayer/Crystal Shapeshifters",
       "file": "guide--pvme-guides--slayer--crystal-shapeshifters.wiki",
-      "sourceSha256": "f544f15cfd0ba452a0713df78481b389f6ab3b41d48a7a6a6268d09afc1d332c",
+      "sourceSha256": "60561e0132724c1fedeb8dec7298cb03a04e383897d78ec282248906c28cce5b",
       "sourceLiteralTextNodes": 137,
       "originalMediaEntries": 55,
       "additionalImageEntries": 2,
       "nativeAddedImageTags": 2,
-      "exportCharacters": 13962,
+      "exportCharacters": 13916,
       "passed": true
     },
     {
       "title": "PvME/Slayer/Elite Profane Scabarites",
       "file": "guide--pvme-guides--slayer--elite-profane-scabarites.wiki",
-      "sourceSha256": "e4ad9e39cece14046c717087e0f15c76cb8408361d73c41be7850e7ae9cc19e8",
+      "sourceSha256": "f7c84914b8858189e8e0b67fb0dcf2e9b43d890860e69d5739efe93f428edf40",
       "sourceLiteralTextNodes": 185,
       "originalMediaEntries": 92,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 19268,
+      "exportCharacters": 19217,
       "passed": true
     },
     {
       "title": "PvME/Slayer/Gemstone Dragons",
       "file": "guide--pvme-guides--slayer--gemstone-dragons.wiki",
-      "sourceSha256": "d6f900577857d1f20ce67e5b68e6cf1b5c50c4ee7d90bbb7014b36b4a7afecca",
+      "sourceSha256": "5461c8951b7b390c3c5846cd75aeb396ff18a5b10288fa2055ef3a9605b7ae95",
       "sourceLiteralTextNodes": 302,
       "originalMediaEntries": 170,
       "additionalImageEntries": 5,
       "nativeAddedImageTags": 5,
-      "exportCharacters": 33729,
+      "exportCharacters": 33688,
       "passed": true
     },
     {
@@ -1038,106 +1046,106 @@
       "originalMediaEntries": 34,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 12898,
+      "exportCharacters": 12869,
       "passed": true
     },
     {
       "title": "PvME/Slayer/Overview Of Slayer",
       "file": "guide--pvme-guides--slayer--overview-of-slayer.wiki",
-      "sourceSha256": "e523d8468bf07de7522d8ea8841f9614b50a3210aeb2aad7c513d473590be571",
+      "sourceSha256": "bcac90df2ee2eda5d5204379f7cecb8b5d84ab27cb9ba2e7dde25457e5325b21",
       "sourceLiteralTextNodes": 134,
       "originalMediaEntries": 60,
       "additionalImageEntries": 3,
       "nativeAddedImageTags": 3,
-      "exportCharacters": 16368,
+      "exportCharacters": 16323,
       "passed": true
     },
     {
       "title": "PvME/Slayer/Ravenous Strigoi",
       "file": "guide--pvme-guides--slayer--ravenous-strigoi.wiki",
-      "sourceSha256": "d53cd2c8fbc1322f5c9f5c9b3ae980b26d693d9db2312ff963c9c45fef19d4a1",
+      "sourceSha256": "bf3b883650dcccf73cf8cf2e9767d6843783295bdde428585b5f56802d4976bf",
       "sourceLiteralTextNodes": 129,
       "originalMediaEntries": 60,
       "additionalImageEntries": 2,
       "nativeAddedImageTags": 2,
-      "exportCharacters": 12610,
+      "exportCharacters": 12569,
       "passed": true
     },
     {
       "title": "PvME/Slayer/Sanguine Werewolves",
       "file": "guide--pvme-guides--slayer--sanguine-werewolves.wiki",
-      "sourceSha256": "775dc6d2117801f62827392a5adeadb96f587fed71a8b86abbe3c5fd562ac3d1",
+      "sourceSha256": "3f1721a42abb6f8fe620afc129cea95798d59b17248e58bf21d9b7d823e93400",
       "sourceLiteralTextNodes": 155,
       "originalMediaEntries": 69,
       "additionalImageEntries": 5,
       "nativeAddedImageTags": 5,
-      "exportCharacters": 15812,
+      "exportCharacters": 15768,
       "passed": true
     },
     {
       "title": "PvME/Slayer/Slayer Point Farming",
       "file": "guide--pvme-guides--slayer--slayer-point-farming.wiki",
-      "sourceSha256": "8ae7a9236777194b8d858496bd077209fa1b6b3ea1fe82d1fbf2502d5c498d94",
+      "sourceSha256": "ddc0a4a97fb1137509fd158721d3504a489fa4a230d4c4836ce351f8ebc1fe73",
       "sourceLiteralTextNodes": 61,
       "originalMediaEntries": 23,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 8374,
+      "exportCharacters": 8327,
       "passed": true
     },
     {
       "title": "PvME/Slayer/Soulgazers",
       "file": "guide--pvme-guides--slayer--soulgazers.wiki",
-      "sourceSha256": "ae4248690decacb41a4803691663bc706d413a285a2632829de05778bc4e8d39",
+      "sourceSha256": "50d73ac5388dfc15372b4159c7d83a341b16c3b451e055212e0c27a476b8c905",
       "sourceLiteralTextNodes": 134,
       "originalMediaEntries": 66,
       "additionalImageEntries": 1,
       "nativeAddedImageTags": 1,
-      "exportCharacters": 15258,
+      "exportCharacters": 15225,
       "passed": true
     },
     {
       "title": "PvME/Slayer/Spiritual Warriors",
       "file": "guide--pvme-guides--slayer--spiritual-warriors.wiki",
-      "sourceSha256": "71100084ea47c95cbe2389fe767aa7d1ae155584b2988712fa884fc3e26d768f",
+      "sourceSha256": "f6efa63456806d1abcd984dca1c034d0393a8d37c8809dbee326b67195aa5cb0",
       "sourceLiteralTextNodes": 111,
       "originalMediaEntries": 48,
       "additionalImageEntries": 2,
       "nativeAddedImageTags": 2,
-      "exportCharacters": 13021,
+      "exportCharacters": 12978,
       "passed": true
     },
     {
       "title": "PvME/Slayer/Vile Blooms",
       "file": "guide--pvme-guides--slayer--vile-blooms.wiki",
-      "sourceSha256": "c6194eb3f765f153219b8a0832a94862eca60a1a0fee8f8b84edb1569d76bf52",
+      "sourceSha256": "b83c5079f5e4bd662432747ca66328897f974e666ff0eb96adf04d760d6d9b71",
       "sourceLiteralTextNodes": 468,
       "originalMediaEntries": 233,
       "additionalImageEntries": 14,
       "nativeAddedImageTags": 14,
-      "exportCharacters": 46034,
+      "exportCharacters": 45998,
       "passed": true
     },
     {
       "title": "PvME/Slayer/Vyres",
       "file": "guide--pvme-guides--slayer--vyres.wiki",
-      "sourceSha256": "8cc7040d16ed8d1e8009f9f330550b0a8c37ff79d232ab8b6b538f0cf2a9d9ca",
+      "sourceSha256": "878ae5c1833b50a96cdca5e67bde6bf1ff466d9e65877f20953b0aff490f58e4",
       "sourceLiteralTextNodes": 136,
       "originalMediaEntries": 60,
       "additionalImageEntries": 2,
       "nativeAddedImageTags": 2,
-      "exportCharacters": 14993,
+      "exportCharacters": 14965,
       "passed": true
     },
     {
       "title": "PvME/Gear upgrades/Armour And Weapons",
       "file": "guide--pvme-guides--upgrading-info--armour-and-weapons.wiki",
-      "sourceSha256": "06926b7bc7f42050f1453c98795186226c7b433a7c22965c438c6d66c730f383",
+      "sourceSha256": "1344c6c626e370b1d7fcbabf00136b78e562d3e3969e969929fc11fa0e01539d",
       "sourceLiteralTextNodes": 726,
       "originalMediaEntries": 492,
       "additionalImageEntries": 3,
       "nativeAddedImageTags": 3,
-      "exportCharacters": 89348,
+      "exportCharacters": 89294,
       "passed": true
     }
   ],

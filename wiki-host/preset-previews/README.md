@@ -10,4 +10,8 @@ The current inventory covers 522 concrete preset references from 477 distinct em
 
 The compiler refuses concrete preset links without recorded verified coverage, and the renderer refuses additions without a matching unchanged source link. Images are native editable `pvme-image` tags and participate in Copy to wiki export. Runtime publication uses saved-revision hash guards to preserve community edits.
 
+The completed release is live on deployment `dep-dbt5gi8ae00c739nsc5g`, code commit `1a8a083b441c62eb3ef2c93d2d932fc30eb0cf91`. `../main-guides/published-revisions.json`, captured 16 November at 01:13:39 UTC (15 November in New York), confirms 329 saved pages match their audited content hashes, with zero missing pages or mismatches. Every saved revision has a permanent link. Original ordered text and media passed the production parser comparison for all 329 articles. The refreshed copy export audit covers all 200 additional preview URLs.
+
+Chrome verification of AFK Chaos Elemental confirmed all three added previews load, original style icons remain with their source labels, and the preview widths fit a 390×844 phone viewport without horizontal overflow. Copy to wiki exported live revision 819 with all three new preview references. Browser proof is saved in `../main-guides/proof/inline-presets-current.jpg` and `inline-presets-phone.jpg`. The temporary viewport was reset.
+
 To refresh after capturing changed source: run `node wiki-host/tools/capture-preset-previews.mjs` directly against the current captures, rebuild using `node wiki-host/tools/build-main-corpus.mjs`, then run `node wiki-host/tools/audit-gear-coverage.mjs` and the parser parity audit. These are publication-content audits; no test suite is added or run.
