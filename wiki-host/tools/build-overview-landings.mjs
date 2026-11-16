@@ -14,7 +14,7 @@ const published=new Map((fs.existsSync(publishedFile)?JSON.parse(fs.readFileSync
 const normalize=s=>s.replace(/^the /i,'').replace(/[^a-z0-9]/gi,'').toLowerCase();
 const pages=[],unchanged=[];
 for(const index of seed.pages.filter(p=>p.kind==='boss-index')){
- const entry=nav.pages[index.title];const children=entry.children.filter(t=>nav.pages[t]?.source);
+ const entry=nav.pages[index.title];entry.kind='boss-index';const children=entry.children.filter(t=>nav.pages[t]?.source);
  const leaf=t=>t.split('/').at(-1);
  const basic=children.filter(t=>nav.pages[t].source.includes('/basic-guides/')&&/overview$/i.test(leaf(t)));
  const generic=children.filter(t=>nav.pages[t].source.includes('/rs3-full-boss-guides/')&&normalize(leaf(t).replace(/ \(.*\)$/,''))===normalize(leaf(index.title)));

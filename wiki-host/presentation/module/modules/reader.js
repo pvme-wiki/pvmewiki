@@ -208,6 +208,25 @@ function enhance() {
         tools.append(directory);
     }
     content.before(tools);
+    // Method switching is shared navigation, outside the unchanged source article.
+    const bossTitle = [...page.parents].reverse().find(parent => registry.pages[parent]?.kind === 'boss-index');
+    if (page.source && bossTitle) {
+        const siblings = registry.pages[bossTitle].children.filter(target => target !== title && registry.pages[target]?.source);
+        if (siblings.length) {
+            const methods = element('nav', '', 'pvme-other-guides');
+            methods.id = 'pvme-other-guides';
+            methods.setAttribute('aria-label', 'Other guides');
+            methods.append(element('strong', 'Other guides'));
+            const list = element('ul');
+            for (const sibling of siblings) {
+                const item = element('li');
+                item.append(link(sibling, sibling.split('/').pop()));
+                list.append(item);
+            }
+            methods.append(list);
+            content.before(methods);
+        }
+    }
     // Native template layouts own their article presentation and remain editable.
     // Keep only the shared navigation; skip legacy heuristics and cloned readers.
     if (page.nativeLayout || article.querySelector('.pvme-exact-guide')) return;
