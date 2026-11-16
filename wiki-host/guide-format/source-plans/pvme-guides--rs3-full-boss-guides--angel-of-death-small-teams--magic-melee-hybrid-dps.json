@@ -1,0 +1,959 @@
+{
+  "title": "PvME/Nex: Angel of Death/Angel Of Death Small Teams — Magic Melee Hybrid Dps",
+  "id": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps",
+  "sourceSha256": "1b6b769fa79e1da627ecfd4da43f2f2f8144a00e5e57ad4de8057da6d25665f9",
+  "sourceFile": "wiki-host/corpus/pages/guide--pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps.wiki.txt",
+  "snapshotFile": "editor/content/pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps.json",
+  "snapshotSha256": "7d87c7cfa7aca2bc4342fcca29cd779adb1a43e09df2405b77e747e3242b6864",
+  "sourcePath": "rs3-full-boss-guides/angel-of-death-small-teams/magic-melee-hybrid-dps.txt",
+  "sourceUrl": "https://pvme.io/pvme-guides/rs3-full-boss-guides/angel-of-death-small-teams/magic-melee-hybrid-dps/",
+  "sourceCommit": "074a9438f79d10fba75735791be0030734db8b5e",
+  "status": "source-indexed",
+  "mainGuide": false,
+  "format": "combat-guide",
+  "sections": [
+    {
+      "sourceHeading": null,
+      "sourceAnchor": null,
+      "headingBlockId": null,
+      "level": 0,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000000",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000002",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000004",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000005"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000000",
+          "tag": "a",
+          "url": "https://discord.com/channels/534508796639182860/1020853673317908500",
+          "label": "Suggestions (external Discord)"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000005",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/JChZfA1i4S.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Presets and Relics",
+      "sourceAnchor": "presets-and-relics",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000007",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000007",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000009",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000011",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000013",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000015",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000017",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000019",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000021",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000023",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000025",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000027",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000029"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000009",
+          "tag": "a",
+          "url": "https://presets.pvme.io?id=63c7e6fa-3f25-4f1b-95fc-dd85f79e7f03",
+          "label": "Hybrid DPS"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000009",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1",
+          "label": "melee"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000009",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1",
+          "label": "magic"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000013",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/745279787471470713.png?v=1",
+          "label": "eofor"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000013",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1448697873603498045.png?v=1",
+          "label": "varanussmercy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000015",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/787526151978614824.png?v=1",
+          "label": "eof"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000015",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1048592044731400252.png?v=1",
+          "label": "dragonscimitar"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/902209626450296892.png?v=1",
+          "label": "pernixsquiver"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/785031580149743617.png?v=1",
+          "label": "blackstonearrow"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/550834403136503822.png?v=1",
+          "label": "hydrixbakri"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000023",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1266417538045317121.png?v=1",
+          "label": "roarofawakening"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000023",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1266417683058917517.png?v=1",
+          "label": "odetodeceit"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000023",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/791281588792590336.png?v=1",
+          "label": "caroming4"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000025",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/eQFjZEk5If.png",
+          "label": "Normal prayers"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000025",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1344313901189431296.png?v=1",
+          "label": "overcharge"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000025",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1215399597581533264.png?v=1",
+          "label": "piety"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000025",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1285372688457797672.png?v=1",
+          "label": "eclipsedsoul"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000025",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/926021352626982942.png?v=1",
+          "label": "zealots"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000027",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/933079947419983912.png?v=1",
+          "label": "powderofprotection"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000027",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1383112489092382810.png?v=1",
+          "label": "powderofdefence"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000027",
+          "tag": "img",
+          "url": "https://firebasestorage.googleapis.com/v0/b/preset-images/o/images%2F63c7e6fa-3f25-4f1b-95fc-dd85f79e7f03.png?alt=media",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000029",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/eQFjZEk5If.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Rotation",
+      "sourceAnchor": "rotation",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000031",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000031",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000033",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000035"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000035",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/867678153966878740.png?v=1",
+          "label": "gricocaroming"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000035",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/550834403136503822.png?v=1",
+          "label": "hydrixbakri"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000035",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/615618531937222657.png?v=1",
+          "label": "ecb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000035",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/785031580149743617.png?v=1",
+          "label": "blackstonearrow"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000035",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994189289623662702.png?v=1",
+          "label": "bolg"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Prebuild",
+      "sourceAnchor": "prebuild",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000037",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000037",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000039",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000041",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000043",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000045",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000047"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000039",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1032540079589163049.png?v=1",
+          "label": "warsretreatteleport"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000039",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/603979368850653216.png?v=1",
+          "label": "dba"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000039",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879359377439.png?v=1",
+          "label": "meteorstrike"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000043",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1176968330582700174.png?v=1",
+          "label": "invokelordofbones"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000043",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879359377439.png?v=1",
+          "label": "meteorstrike"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000043",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1048592044731400252.png?v=1",
+          "label": "dragonscimitar"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000043",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1",
+          "label": "eofspec"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000043",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879250456578.png?v=1",
+          "label": "gbarge"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000043",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879300526080.png?v=1",
+          "label": "havoc"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000043",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/864235458464186418.png?v=1",
+          "label": "cease"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000043",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532854004678657.png?v=1",
+          "label": "zerk"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000043",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258538450944.png?v=1",
+          "label": "piercing"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000043",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/867678153966878740.png?v=1",
+          "label": "gricocaroming"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000043",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879334080527.png?v=1",
+          "label": "gfury"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000043",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306475151390.png?v=1",
+          "label": "anti"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000043",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258131865633.png?v=1",
+          "label": "naturalinstinct"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000043",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879250456578.png?v=1",
+          "label": "gbarge"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000043",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644356671737966.png?v=1",
+          "label": "chaosroar"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000043",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1448697873603498045.png?v=1",
+          "label": "varanussmercy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000043",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1",
+          "label": "eofspec"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000039",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000043"
+      ]
+    },
+    {
+      "sourceHeading": "Phase 1",
+      "sourceAnchor": "phase-1",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000049",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000049",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000051"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000051",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580167371365548042.png?v=1",
+          "label": "aod"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000051",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1448697873603498045.png?v=1",
+          "label": "varanussmercy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000051",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1",
+          "label": "eofspec"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000051",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879330148352.png?v=1",
+          "label": "destroy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000051",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1448697873603498045.png?v=1",
+          "label": "varanussmercy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000051",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1",
+          "label": "eofspec"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000051",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1448697873603498045.png?v=1",
+          "label": "varanussmercy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000051",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1",
+          "label": "eofspec"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000051",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879334080517.png?v=1",
+          "label": "overpower"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000051",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580167371365548042.png?v=1",
+          "label": "aod"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000051",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/903244090953588787.png?v=1",
+          "label": "ezk"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000051",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000051",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/867678153966878740.png?v=1",
+          "label": "gricocaroming"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000051"
+      ]
+    },
+    {
+      "sourceHeading": "Phase 2",
+      "sourceAnchor": "phase-2",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000053",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000053",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000055",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000057"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/856635090641879050.png?v=1",
+          "label": "smokecloud"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/902209626509025290.png?v=1",
+          "label": "magmatempest"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/878739232607318086.png?v=1",
+          "label": "smokeamalg"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833358016512.png?v=1",
+          "label": "deto"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/787904334377648130.png?v=1",
+          "label": "divert"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258844635148.png?v=1",
+          "label": "res"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/536256663641128971.png?v=1",
+          "label": "stormshards"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/656844963522281473.png?v=1",
+          "label": "dummy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/867678153882861568.png?v=1",
+          "label": "gchaincaroming"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1266417538045317121.png?v=1",
+          "label": "roarofawakening"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1266417683058917517.png?v=1",
+          "label": "odetodeceit"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/867678153882861568.png?v=1",
+          "label": "gchaincaroming"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869284271595069451.png?v=1",
+          "label": "fsoa"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1095411826839257138.png?v=1",
+          "label": "gsonicwave"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580167371365548042.png?v=1",
+          "label": "aod"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1",
+          "label": "dbreath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537338981747261446.png?v=1",
+          "label": "bloodbarrage"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869284271595069451.png?v=1",
+          "label": "fsoa"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000057",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1",
+          "label": "dbreath"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000055"
+      ]
+    },
+    {
+      "sourceHeading": "Phase 3",
+      "sourceAnchor": "phase-3",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000059",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000059",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000061",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000063",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000065",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000067"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000061",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/785031580149743617.png?v=1",
+          "label": "blackstonearrow"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000061",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/867678153966878740.png?v=1",
+          "label": "gricocaroming"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000061",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000061",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/902209626509025290.png?v=1",
+          "label": "magmatempest"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000061",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257440278512537740.png?v=1",
+          "label": "gchain"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000061",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257440278512537740.png?v=1",
+          "label": "gchain"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000061",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1095411826839257138.png?v=1",
+          "label": "gsonicwave"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000061",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537338981747261446.png?v=1",
+          "label": "bloodbarrage"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000061",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809664262179.png?v=1",
+          "label": "omni"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000061",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809995874304.png?v=1",
+          "label": "tsunami"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000061",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000061",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/536257336130404372.png?v=1",
+          "label": "smoketendrils"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000061",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1",
+          "label": "dbreath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000061",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257439387474722836.png?v=1",
+          "label": "wrackandruin"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000065",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1",
+          "label": "dive"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000065",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257440278512537740.png?v=1",
+          "label": "gchain"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000067",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1",
+          "label": "dive"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000067",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1087373972443775056.png?v=1",
+          "label": "sonicwave"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000061"
+      ]
+    },
+    {
+      "sourceHeading": "Pillars",
+      "sourceAnchor": "pillars",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000069",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000069",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000071",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000073",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000075",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000077",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000079"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/787904334377648130.png?v=1",
+          "label": "divert"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532854004678657.png?v=1",
+          "label": "zerk"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736298121704767538.png?v=1",
+          "label": "adrenrenewal"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879250456578.png?v=1",
+          "label": "gbarge"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532855191928842.png?v=1",
+          "label": "assault"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/867678153966878740.png?v=1",
+          "label": "gricocaroming"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000073",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1448697873603498045.png?v=1",
+          "label": "varanussmercy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000073",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1",
+          "label": "eofspec"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000073",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1448697873603498045.png?v=1",
+          "label": "varanussmercy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000073",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1",
+          "label": "eofspec"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000073",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/756236265472524418.png?v=1",
+          "label": "powerburstofacceleration"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879334080527.png?v=1",
+          "label": "gfury"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879334080517.png?v=1",
+          "label": "overpower"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000077",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/883134308146098227.png?v=1",
+          "label": "lengmh"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000077",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000077",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879439069184.png?v=1",
+          "label": "punish"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000077",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644356671737966.png?v=1",
+          "label": "chaosroar"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000071",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000073",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000075",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000077"
+      ]
+    },
+    {
+      "sourceHeading": "Zaros",
+      "sourceAnchor": "zaros",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000081",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000081",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000083",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000085",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000087",
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000089"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000083",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/903244090953588787.png?v=1",
+          "label": "ezk"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000083",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000083",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1448697873603498045.png?v=1",
+          "label": "varanussmercy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000083",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1",
+          "label": "eofspec"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000083",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641339233638023179.png?v=1",
+          "label": "limitless"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000083",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532878969438210.png?v=1",
+          "label": "cane"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000085",
+          "tag": "a",
+          "url": "https://www.youtube.com/watch?v=f5QmOvRwck4",
+          "label": "Link"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000087",
+          "tag": "a",
+          "url": "https://discord.gg/2rd8Vqe",
+          "label": "Nex, Angel of Death discord (external Discord)"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000087",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/52ArNgViKL.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps:b:000083"
+      ]
+    }
+  ],
+  "attribution": {
+    "author": "PvME contributors",
+    "license": "CC BY-NC-SA 4.0",
+    "imported": "2026-11-11T14:25:57Z"
+  },
+  "upstream": {
+    "sourcePath": "rs3-full-boss-guides/angel-of-death-small-teams/magic-melee-hybrid-dps.txt",
+    "revision": "ee913a530677bddd0af48860062fed8c8efd77a3",
+    "sha256": "1e5a0c9813c397818b60bcd065ab45c7d40408b7c5bb88b285d9f06b3413b5bd",
+    "kind": "guide"
+  }
+}

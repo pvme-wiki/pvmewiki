@@ -1,0 +1,1377 @@
+{
+  "title": "PvME/Rasial/Rasial",
+  "id": "rasial",
+  "sourceSha256": "a2013e4e062487035ed8d29f75aa134819a5f9a5345c20a2f9fed21e6b721b45",
+  "sourceFile": "wiki-host/corpus/pages/guide--rasial.wiki.txt",
+  "snapshotFile": "editor/content/rasial.json",
+  "snapshotSha256": "d5f253dca3bf7b905371fc25433db36a991dee7052133872571d956ab774631c",
+  "sourcePath": "rs3-full-boss-guides/rasial.txt",
+  "sourceUrl": "https://pvme.io/pvme-guides/rs3-full-boss-guides/rasial/",
+  "sourceCommit": "074a9438f79d10fba75735791be0030734db8b5e",
+  "status": "source-indexed",
+  "mainGuide": false,
+  "format": "combat-guide",
+  "sections": [
+    {
+      "sourceHeading": null,
+      "sourceAnchor": null,
+      "headingBlockId": null,
+      "level": 0,
+      "blockIds": [
+        "rasial:b:000000",
+        "rasial:b:000001",
+        "rasial:b:000003"
+      ],
+      "media": [
+        {
+          "blockId": "rasial:b:000001",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/D6M7KtAfBS.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Introduction",
+      "sourceAnchor": "introduction",
+      "headingBlockId": "rasial:b:000005",
+      "level": 2,
+      "blockIds": [
+        "rasial:b:000005",
+        "rasial:b:000007",
+        "rasial:b:000009"
+      ],
+      "media": [
+        {
+          "blockId": "rasial:b:000007",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Alpha_vs_Omega",
+          "label": "Alpha vs Omega"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Positioning",
+      "sourceAnchor": "positioning",
+      "headingBlockId": "rasial:b:000011",
+      "level": 2,
+      "blockIds": [
+        "rasial:b:000011",
+        "rasial:b:000013",
+        "rasial:b:000015",
+        "rasial:b:000017",
+        "rasial:b:000019",
+        "rasial:b:000021",
+        "rasial:b:000023",
+        "rasial:b:000025"
+      ],
+      "media": [
+        {
+          "blockId": "rasial:b:000013",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/z4ifLrUqck.png",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "rasial:b:000015",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "rasial:b:000019",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "rasial:b:000023",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/N8u6ViKvDL.mp4",
+          "label": "click here"
+        },
+        {
+          "blockId": "rasial:b:000023",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/N8u6ViKvDL.mp4",
+          "label": ""
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Mechanics",
+      "sourceAnchor": "mechanics",
+      "headingBlockId": "rasial:b:000027",
+      "level": 2,
+      "blockIds": [
+        "rasial:b:000027",
+        "rasial:b:000029",
+        "rasial:b:000031"
+      ],
+      "media": [
+        {
+          "blockId": "rasial:b:000029",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1",
+          "label": "dive"
+        },
+        {
+          "blockId": "rasial:b:000029",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809145706319892.png?v=1",
+          "label": "spectralscythe"
+        },
+        {
+          "blockId": "rasial:b:000029",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "rasial:b:000029",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434516658651147.png?v=1",
+          "label": "conjureskeleton"
+        },
+        {
+          "blockId": "rasial:b:000029",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809200219684924.png?v=1",
+          "label": "conjurezombie"
+        },
+        {
+          "blockId": "rasial:b:000029",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1139453152169558046.png?v=1",
+          "label": "residualsoul"
+        },
+        {
+          "blockId": "rasial:b:000029",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "rasial:b:000029",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1",
+          "label": "volleyofsouls"
+        },
+        {
+          "blockId": "rasial:b:000029",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809111178813471.png?v=1",
+          "label": "deflectnecromancy"
+        },
+        {
+          "blockId": "rasial:b:000029",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190158728953857.png?v=1",
+          "label": "devo"
+        },
+        {
+          "blockId": "rasial:b:000029",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1139453152169558046.png?v=1",
+          "label": "residualsoul"
+        },
+        {
+          "blockId": "rasial:b:000029",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "rasial:b:000029",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1",
+          "label": "dive"
+        },
+        {
+          "blockId": "rasial:b:000029",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "rasial:b:000029",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809145706319892.png?v=1",
+          "label": "spectralscythe"
+        },
+        {
+          "blockId": "rasial:b:000029",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/787523880281047040.png?v=1",
+          "label": "antitheism"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Requirements",
+      "sourceAnchor": "requirements",
+      "headingBlockId": "rasial:b:000033",
+      "level": 2,
+      "blockIds": [
+        "rasial:b:000033",
+        "rasial:b:000035",
+        "rasial:b:000037",
+        "rasial:b:000039",
+        "rasial:b:000041",
+        "rasial:b:000043",
+        "rasial:b:000045",
+        "rasial:b:000047",
+        "rasial:b:000049",
+        "rasial:b:000051",
+        "rasial:b:000053",
+        "rasial:b:000055",
+        "rasial:b:000057"
+      ],
+      "media": [
+        {
+          "blockId": "rasial:b:000037",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/797899945730244648.png?v=1",
+          "label": "salveamulet"
+        },
+        {
+          "blockId": "rasial:b:000037",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641339922019516416.png?v=1",
+          "label": "undeadslayer"
+        },
+        {
+          "blockId": "rasial:b:000037",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689502804720615441.png?v=1",
+          "label": "undeadslayerperk"
+        },
+        {
+          "blockId": "rasial:b:000039",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1139200072438005851.png?v=1",
+          "label": "igneouskalmor"
+        },
+        {
+          "blockId": "rasial:b:000039",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/902209626479685734.png?v=1",
+          "label": "igneouskalzuk"
+        },
+        {
+          "blockId": "rasial:b:000039",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "rasial:b:000041",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/697808773711921195.png?v=1",
+          "label": "conservationofenergy"
+        },
+        {
+          "blockId": "rasial:b:000043",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/697808773917573233.png?v=1",
+          "label": "furyofthesmall"
+        },
+        {
+          "blockId": "rasial:b:000045",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/712073087859949570.png?v=1",
+          "label": "invig4"
+        },
+        {
+          "blockId": "rasial:b:000047",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/712073088589627505.png?v=1",
+          "label": "eq4"
+        },
+        {
+          "blockId": "rasial:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/921410226475925514.png?v=1",
+          "label": "hellhoundpouch"
+        },
+        {
+          "blockId": "rasial:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/703581275453128714.png?v=1",
+          "label": "ripperpouch"
+        },
+        {
+          "blockId": "rasial:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/703581275155464203.png?v=1",
+          "label": "ripperscroll"
+        },
+        {
+          "blockId": "rasial:b:000051",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543478434953822208.png?v=1",
+          "label": "veng"
+        },
+        {
+          "blockId": "rasial:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809118283976814.png?v=1",
+          "label": "greaterboneshield"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "T90 Equilibrium Rotation eq4",
+      "sourceAnchor": "t90-equilibrium-rotation",
+      "headingBlockId": "rasial:b:000059",
+      "level": 2,
+      "blockIds": [
+        "rasial:b:000059",
+        "rasial:b:000061",
+        "rasial:b:000063",
+        "rasial:b:000065"
+      ],
+      "media": [
+        {
+          "blockId": "rasial:b:000059",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/712073088589627505.png?v=1",
+          "label": "eq4"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Presets and Relics",
+      "sourceAnchor": "presets-and-relics",
+      "headingBlockId": "rasial:b:000067",
+      "level": 3,
+      "blockIds": [
+        "rasial:b:000067",
+        "rasial:b:000069",
+        "rasial:b:000071"
+      ],
+      "media": [
+        {
+          "blockId": "rasial:b:000069",
+          "tag": "a",
+          "url": "https://presets.pvme.io?id=b76b6c80-4fea-4108-b8bb-a8d5e57d763a",
+          "label": "T90 Equilibrium"
+        },
+        {
+          "blockId": "rasial:b:000069",
+          "tag": "img",
+          "url": "https://firebasestorage.googleapis.com/v0/b/preset-images/o/images%2Fb76b6c80-4fea-4108-b8bb-a8d5e57d763a.png?alt=media",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Rotations",
+      "sourceAnchor": "rotations",
+      "headingBlockId": "rasial:b:000073",
+      "level": 3,
+      "blockIds": [
+        "rasial:b:000073",
+        "rasial:b:000075",
+        "rasial:b:000077",
+        "rasial:b:000079",
+        "rasial:b:000081",
+        "rasial:b:000083",
+        "rasial:b:000085",
+        "rasial:b:000087",
+        "rasial:b:000089",
+        "rasial:b:000091",
+        "rasial:b:000093",
+        "rasial:b:000095",
+        "rasial:b:000097",
+        "rasial:b:000099",
+        "rasial:b:000101",
+        "rasial:b:000103",
+        "rasial:b:000105",
+        "rasial:b:000107",
+        "rasial:b:000109",
+        "rasial:b:000111",
+        "rasial:b:000113",
+        "rasial:b:000115",
+        "rasial:b:000117",
+        "rasial:b:000119",
+        "rasial:b:000121",
+        "rasial:b:000123",
+        "rasial:b:000125",
+        "rasial:b:000127",
+        "rasial:b:000129"
+      ],
+      "media": [
+        {
+          "blockId": "rasial:b:000079",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641339922019516416.png?v=1",
+          "label": "undeadslayer"
+        },
+        {
+          "blockId": "rasial:b:000079",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537336877900890135.png?v=1",
+          "label": "nip"
+        },
+        {
+          "blockId": "rasial:b:000081",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "rasial:b:000081",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1142783476169441401.png?v=1",
+          "label": "dealertop80"
+        },
+        {
+          "blockId": "rasial:b:000087",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1166094935066423348.png?v=1",
+          "label": "conjurearmy"
+        },
+        {
+          "blockId": "rasial:b:000087",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809128136388819.png?v=1",
+          "label": "lifetransfer"
+        },
+        {
+          "blockId": "rasial:b:000087",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "rasial:b:000087",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434409913634816.png?v=1",
+          "label": "commandghost"
+        },
+        {
+          "blockId": "rasial:b:000087",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "rasial:b:000087",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513200949016264727.png?v=1",
+          "label": "enhancedexcalibur"
+        },
+        {
+          "blockId": "rasial:b:000087",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        },
+        {
+          "blockId": "rasial:b:000087",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258786177064.png?v=1",
+          "label": "reflect"
+        },
+        {
+          "blockId": "rasial:b:000087",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537336877900890135.png?v=1",
+          "label": "nip"
+        },
+        {
+          "blockId": "rasial:b:000093",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "rasial:b:000093",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1",
+          "label": "bloat"
+        },
+        {
+          "blockId": "rasial:b:000093",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "rasial:b:000093",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "rasial:b:000093",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "rasial:b:000097",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "rasial:b:000097",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1",
+          "label": "necrobasic"
+        },
+        {
+          "blockId": "rasial:b:000097",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1",
+          "label": "necrobasic"
+        },
+        {
+          "blockId": "rasial:b:000097",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "rasial:b:000097",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        },
+        {
+          "blockId": "rasial:b:000103",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1",
+          "label": "livingdeath"
+        },
+        {
+          "blockId": "rasial:b:000103",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736298121704767538.png?v=1",
+          "label": "adrenrenewal"
+        },
+        {
+          "blockId": "rasial:b:000103",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "rasial:b:000103",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "rasial:b:000103",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/787904334377648130.png?v=1",
+          "label": "divert"
+        },
+        {
+          "blockId": "rasial:b:000103",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809168368148490.png?v=1",
+          "label": "splitsoul"
+        },
+        {
+          "blockId": "rasial:b:000103",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1",
+          "label": "volleyofsouls"
+        },
+        {
+          "blockId": "rasial:b:000103",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "rasial:b:000103",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1",
+          "label": "fingerofdeath"
+        },
+        {
+          "blockId": "rasial:b:000103",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        },
+        {
+          "blockId": "rasial:b:000107",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "rasial:b:000107",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641339922019516416.png?v=1",
+          "label": "undeadslayer"
+        },
+        {
+          "blockId": "rasial:b:000107",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "rasial:b:000107",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "rasial:b:000107",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1",
+          "label": "fingerofdeath"
+        },
+        {
+          "blockId": "rasial:b:000107",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "rasial:b:000107",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1",
+          "label": "volleyofsouls"
+        },
+        {
+          "blockId": "rasial:b:000107",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1",
+          "label": "necrobasic"
+        },
+        {
+          "blockId": "rasial:b:000107",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1",
+          "label": "fingerofdeath"
+        },
+        {
+          "blockId": "rasial:b:000107",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "rasial:b:000111",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1",
+          "label": "livingdeath"
+        },
+        {
+          "blockId": "rasial:b:000111",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736298121704767538.png?v=1",
+          "label": "adrenrenewal"
+        },
+        {
+          "blockId": "rasial:b:000117",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "rasial:b:000117",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1",
+          "label": "bloat"
+        },
+        {
+          "blockId": "rasial:b:000117",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        },
+        {
+          "blockId": "rasial:b:000117",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "rasial:b:000117",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "rasial:b:000117",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809142376058910.png?v=1",
+          "label": "soulstrike"
+        },
+        {
+          "blockId": "rasial:b:000117",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1",
+          "label": "necrobasic"
+        },
+        {
+          "blockId": "rasial:b:000117",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1",
+          "label": "fingerofdeath"
+        },
+        {
+          "blockId": "rasial:b:000117",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "rasial:b:000117",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809142376058910.png?v=1",
+          "label": "soulstrike"
+        },
+        {
+          "blockId": "rasial:b:000117",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1",
+          "label": "necrobasic"
+        },
+        {
+          "blockId": "rasial:b:000117",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1",
+          "label": "fingerofdeath"
+        },
+        {
+          "blockId": "rasial:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809128136388819.png?v=1",
+          "label": "lifetransfer"
+        },
+        {
+          "blockId": "rasial:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "rasial:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "rasial:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641339233638023179.png?v=1",
+          "label": "limitless"
+        },
+        {
+          "blockId": "rasial:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/654618235097972737.png?v=1",
+          "label": "powerburstofvitality"
+        },
+        {
+          "blockId": "rasial:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258786177064.png?v=1",
+          "label": "reflect"
+        },
+        {
+          "blockId": "rasial:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        },
+        {
+          "blockId": "rasial:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1",
+          "label": "fingerofdeath"
+        },
+        {
+          "blockId": "rasial:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1138809243143766118.png?v=1",
+          "label": "deathguard90"
+        },
+        {
+          "blockId": "rasial:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "rasial:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "rasial:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1",
+          "label": "volleyofsouls"
+        },
+        {
+          "blockId": "rasial:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "rasial:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809191231295549.png?v=1",
+          "label": "commandzombie"
+        },
+        {
+          "blockId": "rasial:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1",
+          "label": "fingerofdeath"
+        },
+        {
+          "blockId": "rasial:b:000127",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809128136388819.png?v=1",
+          "label": "lifetransfer"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "rasial:b:000087",
+        "rasial:b:000093",
+        "rasial:b:000097",
+        "rasial:b:000103",
+        "rasial:b:000107",
+        "rasial:b:000117",
+        "rasial:b:000123"
+      ]
+    },
+    {
+      "sourceHeading": "Example Kills",
+      "sourceAnchor": "example-kills",
+      "headingBlockId": "rasial:b:000131",
+      "level": 3,
+      "blockIds": [
+        "rasial:b:000131",
+        "rasial:b:000133",
+        "rasial:b:000135"
+      ],
+      "media": [
+        {
+          "blockId": "rasial:b:000133",
+          "tag": "a",
+          "url": "https://www.youtube.com/watch?v=dmGZMGVz9X0",
+          "label": "T90 Equilibrium Example"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Equilibrium Rotation (Advanced) eq4",
+      "sourceAnchor": "equilibrium-rotation-advanced",
+      "headingBlockId": "rasial:b:000137",
+      "level": 2,
+      "blockIds": [
+        "rasial:b:000137"
+      ],
+      "media": [
+        {
+          "blockId": "rasial:b:000137",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/712073088589627505.png?v=1",
+          "label": "eq4"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Presets and Relics",
+      "sourceAnchor": "presets-and-relics_1",
+      "headingBlockId": "rasial:b:000139",
+      "level": 3,
+      "blockIds": [
+        "rasial:b:000139",
+        "rasial:b:000141",
+        "rasial:b:000143"
+      ],
+      "media": [
+        {
+          "blockId": "rasial:b:000141",
+          "tag": "a",
+          "url": "https://presets.pvme.io?id=806eee99-0df5-439d-8225-c9f5e0736998",
+          "label": "Equilibrium (Advanced)"
+        },
+        {
+          "blockId": "rasial:b:000141",
+          "tag": "img",
+          "url": "https://firebasestorage.googleapis.com/v0/b/preset-images/o/images%2F806eee99-0df5-439d-8225-c9f5e0736998.png?alt=media",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Rotations",
+      "sourceAnchor": "rotations_1",
+      "headingBlockId": "rasial:b:000145",
+      "level": 3,
+      "blockIds": [
+        "rasial:b:000145",
+        "rasial:b:000147",
+        "rasial:b:000149",
+        "rasial:b:000151",
+        "rasial:b:000153",
+        "rasial:b:000155",
+        "rasial:b:000157",
+        "rasial:b:000159",
+        "rasial:b:000161",
+        "rasial:b:000163",
+        "rasial:b:000165",
+        "rasial:b:000167",
+        "rasial:b:000169",
+        "rasial:b:000171",
+        "rasial:b:000173",
+        "rasial:b:000175"
+      ],
+      "media": [
+        {
+          "blockId": "rasial:b:000149",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1166094935066423348.png?v=1",
+          "label": "conjurearmy"
+        },
+        {
+          "blockId": "rasial:b:000149",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258131865633.png?v=1",
+          "label": "naturalinstinct"
+        },
+        {
+          "blockId": "rasial:b:000155",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "rasial:b:000155",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "rasial:b:000155",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/797899945730244648.png?v=1",
+          "label": "salveamulet"
+        },
+        {
+          "blockId": "rasial:b:000155",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "rasial:b:000155",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434409913634816.png?v=1",
+          "label": "commandghost"
+        },
+        {
+          "blockId": "rasial:b:000155",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        },
+        {
+          "blockId": "rasial:b:000155",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "rasial:b:000155",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1179505729367969863.png?v=1",
+          "label": "deathskullsigneous"
+        },
+        {
+          "blockId": "rasial:b:000155",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736298313980182541.png?v=1",
+          "label": "adrenrenewalflask"
+        },
+        {
+          "blockId": "rasial:b:000155",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "rasial:b:000159",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1",
+          "label": "livingdeath"
+        },
+        {
+          "blockId": "rasial:b:000159",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "rasial:b:000159",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "rasial:b:000159",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1179505729367969863.png?v=1",
+          "label": "deathskullsigneous"
+        },
+        {
+          "blockId": "rasial:b:000159",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1",
+          "label": "necrobasic"
+        },
+        {
+          "blockId": "rasial:b:000159",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "rasial:b:000159",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        },
+        {
+          "blockId": "rasial:b:000159",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1",
+          "label": "bloat"
+        },
+        {
+          "blockId": "rasial:b:000159",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/787904334377648130.png?v=1",
+          "label": "divert"
+        },
+        {
+          "blockId": "rasial:b:000159",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809168368148490.png?v=1",
+          "label": "splitsoul"
+        },
+        {
+          "blockId": "rasial:b:000159",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1179505729367969863.png?v=1",
+          "label": "deathskullsigneous"
+        },
+        {
+          "blockId": "rasial:b:000159",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "rasial:b:000159",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "rasial:b:000159",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1",
+          "label": "necrobasic"
+        },
+        {
+          "blockId": "rasial:b:000163",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "rasial:b:000163",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        },
+        {
+          "blockId": "rasial:b:000163",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1179505729367969863.png?v=1",
+          "label": "deathskullsigneous"
+        },
+        {
+          "blockId": "rasial:b:000163",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641339922019516416.png?v=1",
+          "label": "undeadslayer"
+        },
+        {
+          "blockId": "rasial:b:000163",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1",
+          "label": "volleyofsouls"
+        },
+        {
+          "blockId": "rasial:b:000163",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1138809234922934282.png?v=1",
+          "label": "omniguard"
+        },
+        {
+          "blockId": "rasial:b:000163",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "rasial:b:000163",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1",
+          "label": "necrobasic"
+        },
+        {
+          "blockId": "rasial:b:000163",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1",
+          "label": "fingerofdeath"
+        },
+        {
+          "blockId": "rasial:b:000163",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1",
+          "label": "necrobasic"
+        },
+        {
+          "blockId": "rasial:b:000163",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "rasial:b:000163",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1",
+          "label": "necrobasic"
+        },
+        {
+          "blockId": "rasial:b:000169",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "rasial:b:000169",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1179505729367969863.png?v=1",
+          "label": "deathskullsigneous"
+        },
+        {
+          "blockId": "rasial:b:000169",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        },
+        {
+          "blockId": "rasial:b:000169",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1",
+          "label": "necrobasic"
+        },
+        {
+          "blockId": "rasial:b:000169",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1",
+          "label": "fingerofdeath"
+        },
+        {
+          "blockId": "rasial:b:000169",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1",
+          "label": "necrobasic"
+        },
+        {
+          "blockId": "rasial:b:000169",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1400511720455143539.png?v=1",
+          "label": "devourersguard"
+        },
+        {
+          "blockId": "rasial:b:000169",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "rasial:b:000169",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1138809243143766118.png?v=1",
+          "label": "deathguard90"
+        },
+        {
+          "blockId": "rasial:b:000169",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "rasial:b:000173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1400511720455143539.png?v=1",
+          "label": "devourersguard"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "rasial:b:000149",
+        "rasial:b:000155",
+        "rasial:b:000159",
+        "rasial:b:000163",
+        "rasial:b:000169"
+      ]
+    },
+    {
+      "sourceHeading": "Example Kills",
+      "sourceAnchor": "example-kills_1",
+      "headingBlockId": "rasial:b:000177",
+      "level": 3,
+      "blockIds": [
+        "rasial:b:000177",
+        "rasial:b:000179",
+        "rasial:b:000181",
+        "rasial:b:000183",
+        "rasial:b:000185",
+        "rasial:b:000187"
+      ],
+      "media": [
+        {
+          "blockId": "rasial:b:000179",
+          "tag": "a",
+          "url": "https://www.youtube.com/watch?v=l22751GR2fo",
+          "label": "Equilibrium (Advanced) Example"
+        },
+        {
+          "blockId": "rasial:b:000181",
+          "tag": "iframe",
+          "url": "https://www.youtube-nocookie.com/embed/l22751GR2fo",
+          "label": ""
+        },
+        {
+          "blockId": "rasial:b:000185",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "rasial:b:000185",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "rasial:b:000185",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543478434953822208.png?v=1",
+          "label": "veng"
+        },
+        {
+          "blockId": "rasial:b:000185",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "rasial:b:000185",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/797899945730244648.png?v=1",
+          "label": "salveamulet"
+        },
+        {
+          "blockId": "rasial:b:000185",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/787526151978614824.png?v=1",
+          "label": "eof"
+        },
+        {
+          "blockId": "rasial:b:000185",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809168368148490.png?v=1",
+          "label": "splitsoul"
+        },
+        {
+          "blockId": "rasial:b:000185",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "rasial:b:000185",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1",
+          "label": "volleyofsouls"
+        },
+        {
+          "blockId": "rasial:b:000185",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1",
+          "label": "fingerofdeath"
+        },
+        {
+          "blockId": "rasial:b:000185",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/787526151978614824.png?v=1",
+          "label": "eof"
+        }
+      ],
+      "cues": [
+        {
+          "blockId": "rasial:b:000185",
+          "text": "Ha! No more games!"
+        }
+      ],
+      "rotationBlockIds": []
+    }
+  ],
+  "attribution": {
+    "author": "PvME contributors",
+    "license": "CC BY-NC-SA 4.0",
+    "imported": "2026-11-11T14:25:57Z"
+  },
+  "upstream": {
+    "sourcePath": "rs3-full-boss-guides/rasial.txt",
+    "revision": "ee913a530677bddd0af48860062fed8c8efd77a3",
+    "sha256": "3d324d968ae00c786b5e31ca89ea932771a1bf8c09a41f62c1adc1b0f3795599",
+    "kind": "guide"
+  }
+}

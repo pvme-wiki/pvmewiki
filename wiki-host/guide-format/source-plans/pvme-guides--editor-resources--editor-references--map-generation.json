@@ -1,0 +1,331 @@
+{
+  "title": "PvME/Contributing/Map Generation",
+  "id": "pvme-guides--editor-resources--editor-references--map-generation",
+  "sourceSha256": "5f9453f557a89d03c00680fa74abb8b34efe48206e6366ed63b26e048cf9c690",
+  "sourceFile": "wiki-host/corpus/pages/guide--pvme-guides--editor-resources--editor-references--map-generation.wiki.txt",
+  "snapshotFile": "editor/content/pvme-guides--editor-resources--editor-references--map-generation.json",
+  "snapshotSha256": "216d86fc16be1fd742a9e28c55aae07c80845611fbfc035cde96c7d014d721f8",
+  "sourcePath": "editor-resources/editor-references/map-generation.txt",
+  "sourceUrl": "https://pvme.io/pvme-guides/editor-resources/editor-references/map-generation/",
+  "sourceCommit": "074a9438f79d10fba75735791be0030734db8b5e",
+  "status": "source-indexed",
+  "mainGuide": false,
+  "format": "reference-guide",
+  "sections": [
+    {
+      "sourceHeading": "Introduction",
+      "sourceAnchor": "introduction",
+      "headingBlockId": "pvme-guides--editor-resources--editor-references--map-generation:b:000000",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000000",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000002",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000004"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--editor-resources--editor-references--map-generation:b:000004",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/8tY6vB0VH7.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Method 1: Creating using web app",
+      "sourceAnchor": "method-1-creating-using-web-app",
+      "headingBlockId": "pvme-guides--editor-resources--editor-references--map-generation:b:000006",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000006",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000008",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000010"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--editor-resources--editor-references--map-generation:b:000008",
+          "tag": "a",
+          "url": "https://pvme.io/tilemap-maker",
+          "label": "https://pvme.io/tilemap-maker"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Method 2: Creating via coding",
+      "sourceAnchor": "method-2-creating-via-coding",
+      "headingBlockId": "pvme-guides--editor-resources--editor-references--map-generation:b:000012",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000012",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000014",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000016"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--editor-resources--editor-references--map-generation:b:000014",
+          "tag": "a",
+          "url": "https://colab.research.google.com/drive/1OfiHQwIhKCfCJxgHCjXNiteoMJqVX6Yr?usp=sharing",
+          "label": "Map Generator on Google Colab"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Step 1",
+      "sourceAnchor": "step-1",
+      "headingBlockId": "pvme-guides--editor-resources--editor-references--map-generation:b:000018",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000018",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000020",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000022"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--editor-resources--editor-references--map-generation:b:000022",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/iSHbmxoSrX.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Step 2",
+      "sourceAnchor": "step-2",
+      "headingBlockId": "pvme-guides--editor-resources--editor-references--map-generation:b:000024",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000024",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000026",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000028",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000030",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000032",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000034",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000036",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000038",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000040",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000042",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000044",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000046",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000048",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000050",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000052",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000054",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000056"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--editor-resources--editor-references--map-generation:b:000028",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/fCvNMZwNGs.png",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "pvme-guides--editor-resources--editor-references--map-generation:b:000034",
+          "tag": "a",
+          "url": "https://mejrs.github.io/",
+          "label": "https://mejrs.github.io/"
+        },
+        {
+          "blockId": "pvme-guides--editor-resources--editor-references--map-generation:b:000038",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/RuneScape:Map/mapIDs",
+          "label": "page listing common locations"
+        },
+        {
+          "blockId": "pvme-guides--editor-resources--editor-references--map-generation:b:000056",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/88RSQ8Bnvb.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [
+        {
+          "blockId": "pvme-guides--editor-resources--editor-references--map-generation:b:000026",
+          "text": "#########"
+        },
+        {
+          "blockId": "pvme-guides--editor-resources--editor-references--map-generation:b:000038",
+          "text": "-1"
+        },
+        {
+          "blockId": "pvme-guides--editor-resources--editor-references--map-generation:b:000054",
+          "text": "#"
+        },
+        {
+          "blockId": "pvme-guides--editor-resources--editor-references--map-generation:b:000054",
+          "text": "#"
+        }
+      ],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Step 3",
+      "sourceAnchor": "step-3",
+      "headingBlockId": "pvme-guides--editor-resources--editor-references--map-generation:b:000058",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000058",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000060",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000062",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000064"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--editor-resources--editor-references--map-generation:b:000062",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/hN8YQKzJWk.png",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "pvme-guides--editor-resources--editor-references--map-generation:b:000064",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/JOBeROCphO.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Step 4",
+      "sourceAnchor": "step-4",
+      "headingBlockId": "pvme-guides--editor-resources--editor-references--map-generation:b:000066",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000066",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000068",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000070"
+      ],
+      "media": [],
+      "cues": [
+        {
+          "blockId": "pvme-guides--editor-resources--editor-references--map-generation:b:000068",
+          "text": "right click > save"
+        }
+      ],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Real example",
+      "sourceAnchor": "real-example",
+      "headingBlockId": "pvme-guides--editor-resources--editor-references--map-generation:b:000072",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000072"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "The objective: make a player position map for the new Osseous AFK guide.",
+      "sourceAnchor": "the-objective-make-a-player-position-map-for-the-new-osseous-afk-guide",
+      "headingBlockId": "pvme-guides--editor-resources--editor-references--map-generation:b:000074",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000074",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000076",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000078",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000080",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000082",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000084",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000086",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000088",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000090",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000092",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000094",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000096",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000098",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000100",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000102",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000104",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000106",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000108",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000110",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000112",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000114",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000116",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000118",
+        "pvme-guides--editor-resources--editor-references--map-generation:b:000120"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--editor-resources--editor-references--map-generation:b:000080",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/4bOVcYUEIk.png",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "pvme-guides--editor-resources--editor-references--map-generation:b:000084",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/XwdQIAu7uv.png",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "pvme-guides--editor-resources--editor-references--map-generation:b:000088",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/EJXkK2pB4r.png",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "pvme-guides--editor-resources--editor-references--map-generation:b:000104",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/UDpjeF4nPZ.png",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "pvme-guides--editor-resources--editor-references--map-generation:b:000112",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/xb7wjGpZut.png",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "pvme-guides--editor-resources--editor-references--map-generation:b:000116",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/A76Rk7HV0P.png",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "pvme-guides--editor-resources--editor-references--map-generation:b:000120",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/Dys4yLDFqW.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [
+        {
+          "blockId": "pvme-guides--editor-resources--editor-references--map-generation:b:000092",
+          "text": "mej_x = 63\nmej_y = 153\n"
+        },
+        {
+          "blockId": "pvme-guides--editor-resources--editor-references--map-generation:b:000098",
+          "text": "mej_height = 2\nmej_width = 1\n"
+        },
+        {
+          "blockId": "pvme-guides--editor-resources--editor-references--map-generation:b:000108",
+          "text": "left = 1\nupper = 43\nright = 21\nlower = 43\n"
+        }
+      ],
+      "rotationBlockIds": []
+    }
+  ],
+  "attribution": {
+    "author": "PvME contributors",
+    "license": "CC BY-NC-SA 4.0",
+    "imported": "2026-11-11T14:25:57Z"
+  },
+  "upstream": {
+    "sourcePath": "editor-resources/editor-references/map-generation.txt",
+    "revision": "ee913a530677bddd0af48860062fed8c8efd77a3",
+    "sha256": "91b0f1ecc4fed19cb6c52305f9ab55f9784e2292def576103c0a7ae72b917aff",
+    "kind": "guide"
+  }
+}

@@ -1,0 +1,652 @@
+{
+  "title": "PvME/Arch-Glacor/AFK Arch Glacor",
+  "id": "pvme-guides--afk--afk-arch-glacor",
+  "sourceSha256": "8f83e5234097b77e70c4b3aa13188c670b31962091dc59b08c5d03ba91f6ea54",
+  "sourceFile": "wiki-host/corpus/pages/guide--pvme-guides--afk--afk-arch-glacor.wiki.txt",
+  "snapshotFile": "editor/content/pvme-guides--afk--afk-arch-glacor.json",
+  "snapshotSha256": "a20ac4f783e2768e7745f43ebb9b03b9f9e73270d8cda01b1588df778d5dde4c",
+  "sourcePath": "afk/afk-arch-glacor.txt",
+  "sourceUrl": "https://pvme.io/pvme-guides/afk/afk-arch-glacor/",
+  "sourceCommit": "074a9438f79d10fba75735791be0030734db8b5e",
+  "status": "source-indexed",
+  "mainGuide": false,
+  "format": "afk-guide",
+  "sections": [
+    {
+      "sourceHeading": null,
+      "sourceAnchor": null,
+      "headingBlockId": null,
+      "level": 0,
+      "blockIds": [
+        "pvme-guides--afk--afk-arch-glacor:b:000000",
+        "pvme-guides--afk--afk-arch-glacor:b:000001",
+        "pvme-guides--afk--afk-arch-glacor:b:000003"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000001",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/fs1qnYD.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Disclaimer",
+      "sourceAnchor": "disclaimer",
+      "headingBlockId": "pvme-guides--afk--afk-arch-glacor:b:000005",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--afk--afk-arch-glacor:b:000005",
+        "pvme-guides--afk--afk-arch-glacor:b:000007",
+        "pvme-guides--afk--afk-arch-glacor:b:000009",
+        "pvme-guides--afk--afk-arch-glacor:b:000011"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000009",
+          "tag": "a",
+          "url": "https://discord.com/channels/534508796639182860/656898197561802760",
+          "label": "PvM help (external Discord)"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Melee AFK Method (85 kph) melee",
+      "sourceAnchor": "melee-afk-method-85-kph",
+      "headingBlockId": "pvme-guides--afk--afk-arch-glacor:b:000013",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--afk--afk-arch-glacor:b:000013"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000013",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1",
+          "label": "melee"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Overview",
+      "sourceAnchor": "overview",
+      "headingBlockId": "pvme-guides--afk--afk-arch-glacor:b:000015",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--afk--afk-arch-glacor:b:000015",
+        "pvme-guides--afk--afk-arch-glacor:b:000017",
+        "pvme-guides--afk--afk-arch-glacor:b:000019"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000017",
+          "tag": "a",
+          "url": "/archive/pvme-guides/afk/afk-overview/",
+          "label": "AFK Overview"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000017",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Masterwork_2h_sword",
+          "label": "Masterwork 2H Sword"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1274330676061278334.png?v=1",
+          "label": "masterwork2hsword"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/712073088769982475.png?v=1",
+          "label": "p6"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689503091539705870.png?v=1",
+          "label": "genocidal"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/712074245202772009.png?v=1",
+          "label": "as4"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1214416336797564959.png?v=1",
+          "label": "eruptive2"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000017",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Gloves_of_passage",
+          "label": "Gloves of Passage"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/556588694862037012.png?v=1",
+          "label": "glovesofpassage"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000017",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Vestments_of_havoc_armour",
+          "label": "Vestments of havoc armour"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994189297659940904.png?v=1",
+          "label": "vestmentsofhavochood"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/712073088589627505.png?v=1",
+          "label": "eq4"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/712073087662686249.png?v=1",
+          "label": "crack4"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478090603026710648.png?v=1",
+          "label": "ultimatums4"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000017",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Igneous_Kal-Ket",
+          "label": "Igneous Kal-Ket"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/902209626404192316.png?v=1",
+          "label": "igneouskalket"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000017",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Igneous_Kal-Zuk",
+          "label": "Igneous Kal-Zuk"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/902209626479685734.png?v=1",
+          "label": "igneouskalzuk"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000017",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Chaos_Roar",
+          "label": "Chaos Roar"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478062908767211640.png?v=1",
+          "label": "chaosroar"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000017",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Greater_Fury",
+          "label": "Greater Fury"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879334080527.png?v=1",
+          "label": "gfury"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879510372352.png?v=1",
+          "label": "fury"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000017",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Arch-Glacor#Mechanics",
+          "label": "no mechanics are enabled"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000017",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Arch-Glacor#Mechanics",
+          "label": "Flurry and Frost Cannon mechanics are enabled"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/884739993527013426.png?v=1",
+          "label": "darknilas"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195487926845462.png?v=1",
+          "label": "deflectmage"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/583429936606347280.png?v=1",
+          "label": "turmoil"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190159416557573.png?v=1",
+          "label": "malevolence"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Presets and Relics",
+      "sourceAnchor": "presets-and-relics",
+      "headingBlockId": "pvme-guides--afk--afk-arch-glacor:b:000021",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--afk--afk-arch-glacor:b:000021",
+        "pvme-guides--afk--afk-arch-glacor:b:000023",
+        "pvme-guides--afk--afk-arch-glacor:b:000025",
+        "pvme-guides--afk--afk-arch-glacor:b:000027"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000023",
+          "tag": "a",
+          "url": "https://presets.pvme.io/?id=e54f8126-5a67-4af2-b282-a975cb12b9b5",
+          "label": "Melee (0 Mech)"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000023",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1",
+          "label": "melee"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000025",
+          "tag": "a",
+          "url": "https://presets.pvme.io/?id=7a639b95-b6d7-4e7e-999c-0ed474704733",
+          "label": "Melee (2 Mech)"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000025",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1",
+          "label": "melee"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000025",
+          "tag": "img",
+          "url": "https://firebasestorage.googleapis.com/v0/b/preset-images/o/images%2Fe54f8126-5a67-4af2-b282-a975cb12b9b5.png?alt=media",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Action Bars",
+      "sourceAnchor": "action-bars",
+      "headingBlockId": "pvme-guides--afk--afk-arch-glacor:b:000029",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--afk--afk-arch-glacor:b:000029",
+        "pvme-guides--afk--afk-arch-glacor:b:000031",
+        "pvme-guides--afk--afk-arch-glacor:b:000033",
+        "pvme-guides--afk--afk-arch-glacor:b:000035"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000033",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/0n5JNcBqXi.png",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000035",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/X5CvvlTzW5.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Example Kills",
+      "sourceAnchor": "example-kills",
+      "headingBlockId": "pvme-guides--afk--afk-arch-glacor:b:000037",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--afk--afk-arch-glacor:b:000037",
+        "pvme-guides--afk--afk-arch-glacor:b:000039",
+        "pvme-guides--afk--afk-arch-glacor:b:000041",
+        "pvme-guides--afk--afk-arch-glacor:b:000043"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000039",
+          "tag": "a",
+          "url": "https://www.youtube.com/watch?v=-M1w2d2Xl_c",
+          "label": "Melee (0 Mech)"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000039",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1",
+          "label": "melee"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000041",
+          "tag": "a",
+          "url": "https://youtu.be/a26Ztpkpa5w",
+          "label": "Melee (2 Mech)"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000041",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1",
+          "label": "melee"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Necromancy AFK Method (~80 kph) necromancy",
+      "sourceAnchor": "necromancy-afk-method-80-kph",
+      "headingBlockId": "pvme-guides--afk--afk-arch-glacor:b:000045",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--afk--afk-arch-glacor:b:000045"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000045",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1",
+          "label": "necromancy"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Overview",
+      "sourceAnchor": "overview_1",
+      "headingBlockId": "pvme-guides--afk--afk-arch-glacor:b:000047",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--afk--afk-arch-glacor:b:000047",
+        "pvme-guides--afk--afk-arch-glacor:b:000049",
+        "pvme-guides--afk--afk-arch-glacor:b:000051"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000049",
+          "tag": "a",
+          "url": "/archive/pvme-guides/afk/afk-overview/",
+          "label": "AFK Overview"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000049",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Occultist%27s_ring",
+          "label": "Occultist's ring"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1245442140318863490.png?v=1",
+          "label": "occultistring"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000049",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Igneous_Kal-Mor",
+          "label": "Igneous Kal-Mor"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1139200072438005851.png?v=1",
+          "label": "igneouskalmor"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000049",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Igneous_Kal-Zuk",
+          "label": "Igneous Kal-Zuk"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/902209626479685734.png?v=1",
+          "label": "igneouskalzuk"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000049",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Conjure_Undead_Army",
+          "label": "Conjure Undead Army"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1166094935066423348.png?v=1",
+          "label": "conjurearmy"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809206423060632.png?v=1",
+          "label": "conjureghost"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434516658651147.png?v=1",
+          "label": "conjureskeleton"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809200219684924.png?v=1",
+          "label": "conjurezombie"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1280109199069806604.png?v=1",
+          "label": "conjurephantom"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000049",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Equilibrium_aura",
+          "label": "Equilibrium"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1233722649834684416.png?v=1",
+          "label": "equilibriumaura"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000049",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Mahjarrat_aura",
+          "label": "Mahjarrat"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/643148943856762890.png?v=1",
+          "label": "mahj"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000049",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Soul_Split",
+          "label": "Soul Split"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/615613924506599497.png?v=1",
+          "label": "soulsplit"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000049",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Arch-Glacor#Mechanics",
+          "label": "no mechanics are enabled"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Presets and Relics",
+      "sourceAnchor": "presets-and-relics_1",
+      "headingBlockId": "pvme-guides--afk--afk-arch-glacor:b:000053",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--afk--afk-arch-glacor:b:000053",
+        "pvme-guides--afk--afk-arch-glacor:b:000055",
+        "pvme-guides--afk--afk-arch-glacor:b:000057",
+        "pvme-guides--afk--afk-arch-glacor:b:000059"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000055",
+          "tag": "a",
+          "url": "https://presets.pvme.io/?id=vLCQDFIDnEBmlFNaodoA",
+          "label": "Necromancy (T90)"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1",
+          "label": "necromancy"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000057",
+          "tag": "a",
+          "url": "https://presets.pvme.io/?id=gwoolHpQwuAr9Qd0wgil",
+          "label": "Necromancy (T95-T100)"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000057",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1",
+          "label": "necromancy"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000057",
+          "tag": "img",
+          "url": "https://firebasestorage.googleapis.com/v0/b/preset-images/o/images%2FgwoolHpQwuAr9Qd0wgil.png?alt=media",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Action Bars",
+      "sourceAnchor": "action-bars_1",
+      "headingBlockId": "pvme-guides--afk--afk-arch-glacor:b:000061",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--afk--afk-arch-glacor:b:000061",
+        "pvme-guides--afk--afk-arch-glacor:b:000063",
+        "pvme-guides--afk--afk-arch-glacor:b:000065"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000063",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/ddDtJrxvu9.png",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000063",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1166094935066423348.png?v=1",
+          "label": "conjurearmy"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000063",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809206423060632.png?v=1",
+          "label": "conjureghost"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Example Kills",
+      "sourceAnchor": "example-kills_1",
+      "headingBlockId": "pvme-guides--afk--afk-arch-glacor:b:000067",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--afk--afk-arch-glacor:b:000067",
+        "pvme-guides--afk--afk-arch-glacor:b:000069",
+        "pvme-guides--afk--afk-arch-glacor:b:000071"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000069",
+          "tag": "a",
+          "url": "https://youtu.be/w8ak1nFvIpk",
+          "label": "Necromancy"
+        },
+        {
+          "blockId": "pvme-guides--afk--afk-arch-glacor:b:000069",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1",
+          "label": "necromancy"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    }
+  ],
+  "attribution": {
+    "author": "PvME contributors",
+    "license": "CC BY-NC-SA 4.0",
+    "imported": "2026-11-11T14:25:57Z"
+  },
+  "upstream": {
+    "sourcePath": "afk/afk-arch-glacor.txt",
+    "revision": "ee913a530677bddd0af48860062fed8c8efd77a3",
+    "sha256": "90b2231573037f2386c3ed555742423825aa30622fc6d1abcb149b0e341fcca9",
+    "kind": "guide"
+  }
+}

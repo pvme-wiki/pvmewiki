@@ -1,0 +1,982 @@
+{
+  "title": "PvME/Raksha/Low Effort Raksha",
+  "id": "pvme-guides--afk--low-effort-raksha",
+  "sourceSha256": "4b6ac93358c30f8e3355dc7db1ca2a522ec372880faaa4fc00e3c3f9213fe3a7",
+  "sourceFile": "wiki-host/corpus/pages/guide--pvme-guides--afk--low-effort-raksha.wiki.txt",
+  "snapshotFile": "editor/content/pvme-guides--afk--low-effort-raksha.json",
+  "snapshotSha256": "d73ae5ec354a6293d696ef67dd2429dfbb0f0ef914aac3a0f20a1ad214a6380b",
+  "sourcePath": "afk/low-effort-raksha.txt",
+  "sourceUrl": "https://pvme.io/pvme-guides/afk/low-effort-raksha/",
+  "sourceCommit": "074a9438f79d10fba75735791be0030734db8b5e",
+  "status": "source-indexed",
+  "mainGuide": false,
+  "format": "afk-guide",
+  "sections": [
+    {
+      "sourceHeading": null,
+      "sourceAnchor": null,
+      "headingBlockId": null,
+      "level": 0,
+      "blockIds": [
+        "pvme-guides--afk--low-effort-raksha:b:000000",
+        "pvme-guides--afk--low-effort-raksha:b:000001",
+        "pvme-guides--afk--low-effort-raksha:b:000003"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000001",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/84XEYnJq1T.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Disclaimer",
+      "sourceAnchor": "disclaimer",
+      "headingBlockId": "pvme-guides--afk--low-effort-raksha:b:000005",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--afk--low-effort-raksha:b:000005",
+        "pvme-guides--afk--low-effort-raksha:b:000007",
+        "pvme-guides--afk--low-effort-raksha:b:000009",
+        "pvme-guides--afk--low-effort-raksha:b:000011"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000009",
+          "tag": "a",
+          "url": "https://discord.com/channels/534508796639182860/656898197561802760",
+          "label": "PvM help (external Discord)"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Melee Low Effort Method (19+ kph) melee",
+      "sourceAnchor": "melee-low-effort-method-19-kph",
+      "headingBlockId": "pvme-guides--afk--low-effort-raksha:b:000013",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--afk--low-effort-raksha:b:000013"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000013",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1",
+          "label": "melee"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Overview",
+      "sourceAnchor": "overview",
+      "headingBlockId": "pvme-guides--afk--low-effort-raksha:b:000015",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--afk--low-effort-raksha:b:000015",
+        "pvme-guides--afk--low-effort-raksha:b:000017",
+        "pvme-guides--afk--low-effort-raksha:b:000019"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "a",
+          "url": "/archive/pvme-guides/afk/afk-overview/",
+          "label": "AFK Overview"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/item_name",
+          "label": "Nodon Spike Harness"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1449363594495135776.png?v=1",
+          "label": "nodonspikeharness"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Vestments_of_havoc_robe_top",
+          "label": "Vestments of Havoc Robe Top"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994189295592161291.png?v=1",
+          "label": "vestmentsofhavoctop"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Ultimatums",
+          "label": "Ultimatums 4"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478090603026710648.png?v=1",
+          "label": "ultimatums4"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Crackling",
+          "label": "Crackling 4"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/712073087662686249.png?v=1",
+          "label": "crack4"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Equilibrium",
+          "label": "Equilibrium 4"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/712073088589627505.png?v=1",
+          "label": "eq4"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Biting",
+          "label": "Biting 4"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/712073087809617931.png?v=1",
+          "label": "biting4"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Vestments_of_havoc_robe_bottom",
+          "label": "Vestments of Havoc Robe Bottom"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994189293515980902.png?v=1",
+          "label": "vestmentsofhavocbottom"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Clear_Headed",
+          "label": "Clear Headed 4"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1102900937460285470.png?v=1",
+          "label": "clearheaded"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Bulwark",
+          "label": "Bulwark 4"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1242028174062391347.png?v=1",
+          "label": "bulwark4"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Absorbative",
+          "label": "Absorbative 1"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257432264279851119.png?v=1",
+          "label": "absorbative1"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Darkness",
+          "label": "Darkness"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809209782698024.png?v=1",
+          "label": "darkness"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Chaos_Roar",
+          "label": "Chaos Roar"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478062908767211640.png?v=1",
+          "label": "chaosroar"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Greater_Bone_Shield",
+          "label": "Greater Bone Shield"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809118283976814.png?v=1",
+          "label": "greaterboneshield"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Masterwork_2h_sword",
+          "label": "Masterwork 2H Sword"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1274330676061278334.png?v=1",
+          "label": "masterwork2hsword"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/615613924506599497.png?v=1",
+          "label": "soulsplit"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190159416557573.png?v=1",
+          "label": "malevolence"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/583429936606347280.png?v=1",
+          "label": "turmoil"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Hellhound_(familiar)",
+          "label": "Hellhound"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/921410226475925514.png?v=1",
+          "label": "hellhoundpouch"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Totem_of_Vitality",
+          "label": "Totem of Vitality"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/643507594811670538.png?v=1",
+          "label": "vitalitytotem"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Ogre_flask_(thermal)",
+          "label": "Ogre flask (thermal)"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689530593796423724.png?v=1",
+          "label": "thermalflask"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/War%27s_Retreat",
+          "label": "War's Retreat"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1032540079589163049.png?v=1",
+          "label": "warsretreatteleport"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Presets and Relics",
+      "sourceAnchor": "presets-and-relics",
+      "headingBlockId": "pvme-guides--afk--low-effort-raksha:b:000021",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--afk--low-effort-raksha:b:000021",
+        "pvme-guides--afk--low-effort-raksha:b:000023",
+        "pvme-guides--afk--low-effort-raksha:b:000025"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000023",
+          "tag": "a",
+          "url": "https://presets.pvme.io?id=33c193a5-e5ca-41e9-a8e4-f17491dc7961",
+          "label": "Melee preset"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000023",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1",
+          "label": "melee"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000023",
+          "tag": "img",
+          "url": "https://firebasestorage.googleapis.com/v0/b/preset-images/o/images%2F33c193a5-e5ca-41e9-a8e4-f17491dc7961.png?alt=media",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Action Bar",
+      "sourceAnchor": "action-bar",
+      "headingBlockId": "pvme-guides--afk--low-effort-raksha:b:000027",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--afk--low-effort-raksha:b:000027",
+        "pvme-guides--afk--low-effort-raksha:b:000029"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000029",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/6ZJXXjbrSu.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "The fight",
+      "sourceAnchor": "the-fight",
+      "headingBlockId": "pvme-guides--afk--low-effort-raksha:b:000031",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--afk--low-effort-raksha:b:000031",
+        "pvme-guides--afk--low-effort-raksha:b:000033",
+        "pvme-guides--afk--low-effort-raksha:b:000035"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000033",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000033",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000033",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/938475261366784070.png?v=1",
+          "label": "prismofrestoration"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000033",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/565726489526534154.png?v=1",
+          "label": "sbsstandards"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000033",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537349530551582720.png?v=1",
+          "label": "vuln"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--afk--low-effort-raksha:b:000033"
+      ]
+    },
+    {
+      "sourceHeading": "Example Kills",
+      "sourceAnchor": "example-kills",
+      "headingBlockId": "pvme-guides--afk--low-effort-raksha:b:000037",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--afk--low-effort-raksha:b:000037",
+        "pvme-guides--afk--low-effort-raksha:b:000039",
+        "pvme-guides--afk--low-effort-raksha:b:000041",
+        "pvme-guides--afk--low-effort-raksha:b:000043"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000039",
+          "tag": "a",
+          "url": "https://www.youtube.com/watch?v=9pgC1M5lXsY",
+          "label": "Melee Low Effort"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000039",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1",
+          "label": "melee"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Necromancy Low Effort Method (18+ kph) necromancy",
+      "sourceAnchor": "necromancy-low-effort-method-18-kph",
+      "headingBlockId": "pvme-guides--afk--low-effort-raksha:b:000045",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--afk--low-effort-raksha:b:000045"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000045",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1",
+          "label": "necromancy"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Overview",
+      "sourceAnchor": "overview_1",
+      "headingBlockId": "pvme-guides--afk--low-effort-raksha:b:000047",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--afk--low-effort-raksha:b:000047",
+        "pvme-guides--afk--low-effort-raksha:b:000049",
+        "pvme-guides--afk--low-effort-raksha:b:000051"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "a",
+          "url": "/archive/pvme-guides/afk/afk-overview/",
+          "label": "AFK Overview"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Zemouregal%27s_nexus",
+          "label": "Zemouregal's Nexus"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1179716261681307728.png?v=1",
+          "label": "zemouregalsnexus"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Robe_top_of_the_First_Necromancer",
+          "label": "Robe Top of the First Necromancer"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1206664820682657822.png?v=1",
+          "label": "firstnecrorobetop"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Ultimatums",
+          "label": "Ultimatums 4"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478090603026710648.png?v=1",
+          "label": "ultimatums4"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Crackling",
+          "label": "Crackling 4"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/712073087662686249.png?v=1",
+          "label": "crack4"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Equilibrium",
+          "label": "Equilibrium 4"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/712073088589627505.png?v=1",
+          "label": "eq4"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Robe_bottom_of_the_First_Necromancer",
+          "label": "Robe bottom of the First Necromancer"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1206664822654115911.png?v=1",
+          "label": "firstnecrorobebottom"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Crystal_Shield_(perk)",
+          "label": "Crystal Shield 4"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/921410343606034443.png?v=1",
+          "label": "crystalshield4"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Lucky",
+          "label": "Lucky 6"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/890542428287795221.png?v=1",
+          "label": "lucky6"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Absorbative",
+          "label": "Absorbative 1"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257432264279851119.png?v=1",
+          "label": "absorbative1"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Darkness",
+          "label": "Darkness"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809209782698024.png?v=1",
+          "label": "darkness"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Conjure_Undead_Army",
+          "label": "Conjure Undead Army"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1166094935066423348.png?v=1",
+          "label": "conjurearmy"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Greater_Bone_Shield",
+          "label": "Greater Bone Shield"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809118283976814.png?v=1",
+          "label": "greaterboneshield"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Shard_of_Genesis_Essence",
+          "label": "Tier 100 weapons"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1266418218264694954.png?v=1",
+          "label": "shardofgenesisessence"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/615613924506599497.png?v=1",
+          "label": "soulsplit"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137940996391452772.png?v=1",
+          "label": "ruination"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137941003895046284.png?v=1",
+          "label": "sorrow"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Hellhound_(familiar)",
+          "label": "Hellhound"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/921410226475925514.png?v=1",
+          "label": "hellhoundpouch"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Totem_of_Vitality",
+          "label": "Totem of Vitality"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/643507594811670538.png?v=1",
+          "label": "vitalitytotem"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Ogre_flask_(thermal)",
+          "label": "Ogre flask (thermal)"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689530593796423724.png?v=1",
+          "label": "thermalflask"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/War%27s_Retreat",
+          "label": "War's Retreat"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1032540079589163049.png?v=1",
+          "label": "warsretreatteleport"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Presets and Relics",
+      "sourceAnchor": "presets-and-relics_1",
+      "headingBlockId": "pvme-guides--afk--low-effort-raksha:b:000053",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--afk--low-effort-raksha:b:000053",
+        "pvme-guides--afk--low-effort-raksha:b:000055",
+        "pvme-guides--afk--low-effort-raksha:b:000057"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000055",
+          "tag": "a",
+          "url": "https://presets.pvme.io?id=4a73ab75-4df3-4be0-bda5-0a8069da99a6",
+          "label": "Necromancy preset"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1",
+          "label": "necromancy"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000055",
+          "tag": "img",
+          "url": "https://firebasestorage.googleapis.com/v0/b/preset-images/o/images%2F4a73ab75-4df3-4be0-bda5-0a8069da99a6.png?alt=media",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Action Bar",
+      "sourceAnchor": "action-bar_1",
+      "headingBlockId": "pvme-guides--afk--low-effort-raksha:b:000059",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--afk--low-effort-raksha:b:000059",
+        "pvme-guides--afk--low-effort-raksha:b:000061"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000061",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/EmWH1YHirb.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "The fight",
+      "sourceAnchor": "the-fight_1",
+      "headingBlockId": "pvme-guides--afk--low-effort-raksha:b:000063",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--afk--low-effort-raksha:b:000063",
+        "pvme-guides--afk--low-effort-raksha:b:000065",
+        "pvme-guides--afk--low-effort-raksha:b:000067"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000065",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000065",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000065",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1166094935066423348.png?v=1",
+          "label": "conjurearmy"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000065",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000065",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809128136388819.png?v=1",
+          "label": "lifetransfer"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000065",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/938475261366784070.png?v=1",
+          "label": "prismofrestoration"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000065",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809168368148490.png?v=1",
+          "label": "splitsoul"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000065",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/789813907706478603.png?v=1",
+          "label": "raksha"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000065",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000065",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1",
+          "label": "bloat"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--afk--low-effort-raksha:b:000065"
+      ]
+    },
+    {
+      "sourceHeading": "Phase 3",
+      "sourceAnchor": "phase-3",
+      "headingBlockId": "pvme-guides--afk--low-effort-raksha:b:000069",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--afk--low-effort-raksha:b:000069",
+        "pvme-guides--afk--low-effort-raksha:b:000071",
+        "pvme-guides--afk--low-effort-raksha:b:000073"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809168368148490.png?v=1",
+          "label": "splitsoul"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641337999170207763.png?v=1",
+          "label": "excal"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Phase 4",
+      "sourceAnchor": "phase-4",
+      "headingBlockId": "pvme-guides--afk--low-effort-raksha:b:000075",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--afk--low-effort-raksha:b:000075",
+        "pvme-guides--afk--low-effort-raksha:b:000077",
+        "pvme-guides--afk--low-effort-raksha:b:000079"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000077",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/789813907706478603.png?v=1",
+          "label": "raksha"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Optional Inputs",
+      "sourceAnchor": "optional-inputs",
+      "headingBlockId": "pvme-guides--afk--low-effort-raksha:b:000081",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--afk--low-effort-raksha:b:000081",
+        "pvme-guides--afk--low-effort-raksha:b:000083",
+        "pvme-guides--afk--low-effort-raksha:b:000085",
+        "pvme-guides--afk--low-effort-raksha:b:000087",
+        "pvme-guides--afk--low-effort-raksha:b:000089",
+        "pvme-guides--afk--low-effort-raksha:b:000091",
+        "pvme-guides--afk--low-effort-raksha:b:000093"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000087",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/654618235097972737.png?v=1",
+          "label": "powerburstofvitality"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000091",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257438330698858626.png?v=1",
+          "label": "innerpower"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Example Kills",
+      "sourceAnchor": "example-kills_1",
+      "headingBlockId": "pvme-guides--afk--low-effort-raksha:b:000095",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--afk--low-effort-raksha:b:000095",
+        "pvme-guides--afk--low-effort-raksha:b:000097",
+        "pvme-guides--afk--low-effort-raksha:b:000099"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000097",
+          "tag": "a",
+          "url": "https://www.youtube.com/watch?v=f8zyoP5ohfc",
+          "label": "Necromancy Low Effort"
+        },
+        {
+          "blockId": "pvme-guides--afk--low-effort-raksha:b:000097",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1",
+          "label": "necromancy"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    }
+  ],
+  "attribution": {
+    "author": "PvME contributors",
+    "license": "CC BY-NC-SA 4.0",
+    "imported": "2026-11-11T14:25:57Z"
+  },
+  "upstream": {
+    "sourcePath": "afk/low-effort-raksha.txt",
+    "revision": "ee913a530677bddd0af48860062fed8c8efd77a3",
+    "sha256": "ea2b4b27fc646747c9ad3a5f56c1c7ad7a8bd276481d71e1542881fc3432b271",
+    "kind": "guide"
+  }
+}

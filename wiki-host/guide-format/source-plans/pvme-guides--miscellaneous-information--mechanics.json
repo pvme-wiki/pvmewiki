@@ -1,0 +1,2819 @@
+{
+  "title": "PvME/Combat reference/Mechanics",
+  "id": "pvme-guides--miscellaneous-information--mechanics",
+  "sourceSha256": "7faf053b4d76a5f264e934383515a70574c7702629973d7e2a2077f19ef4b71d",
+  "sourceFile": "wiki-host/corpus/pages/guide--pvme-guides--miscellaneous-information--mechanics.wiki.txt",
+  "snapshotFile": "editor/content/pvme-guides--miscellaneous-information--mechanics.json",
+  "snapshotSha256": "2e4cb79772263aa263c7c12425654bcc17c72694a20bc427789385b379634f21",
+  "sourcePath": "miscellaneous-information/mechanics.txt",
+  "sourceUrl": "https://pvme.io/pvme-guides/miscellaneous-information/mechanics/",
+  "sourceCommit": "074a9438f79d10fba75735791be0030734db8b5e",
+  "status": "source-indexed",
+  "mainGuide": false,
+  "format": "reference-guide",
+  "sections": [
+    {
+      "sourceHeading": "Introduction",
+      "sourceAnchor": "introduction",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000000",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000000",
+        "pvme-guides--miscellaneous-information--mechanics:b:000002",
+        "pvme-guides--miscellaneous-information--mechanics:b:000004",
+        "pvme-guides--miscellaneous-information--mechanics:b:000006"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Ability Queueing",
+      "sourceAnchor": "ability-queueing",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000008",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000008"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "How It Works",
+      "sourceAnchor": "how-it-works",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000010",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000010",
+        "pvme-guides--miscellaneous-information--mechanics:b:000012",
+        "pvme-guides--miscellaneous-information--mechanics:b:000014",
+        "pvme-guides--miscellaneous-information--mechanics:b:000016",
+        "pvme-guides--miscellaneous-information--mechanics:b:000018",
+        "pvme-guides--miscellaneous-information--mechanics:b:000020",
+        "pvme-guides--miscellaneous-information--mechanics:b:000022",
+        "pvme-guides--miscellaneous-information--mechanics:b:000024"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000016",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/jrJ2XoSlss.png",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000018",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/898660152025161778.png?v=1",
+          "label": "queueing"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Movement Stalling",
+      "sourceAnchor": "movement-stalling",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000026",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000026",
+        "pvme-guides--miscellaneous-information--mechanics:b:000028",
+        "pvme-guides--miscellaneous-information--mechanics:b:000030",
+        "pvme-guides--miscellaneous-information--mechanics:b:000032",
+        "pvme-guides--miscellaneous-information--mechanics:b:000034"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "On-tick Defensives",
+      "sourceAnchor": "on-tick-defensives",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000036",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000036",
+        "pvme-guides--miscellaneous-information--mechanics:b:000038",
+        "pvme-guides--miscellaneous-information--mechanics:b:000040",
+        "pvme-guides--miscellaneous-information--mechanics:b:000042",
+        "pvme-guides--miscellaneous-information--mechanics:b:000044",
+        "pvme-guides--miscellaneous-information--mechanics:b:000046",
+        "pvme-guides--miscellaneous-information--mechanics:b:000048",
+        "pvme-guides--miscellaneous-information--mechanics:b:000050",
+        "pvme-guides--miscellaneous-information--mechanics:b:000052"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Last-Tick Interactions",
+      "sourceAnchor": "last-tick-interactions",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000054",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000054",
+        "pvme-guides--miscellaneous-information--mechanics:b:000056",
+        "pvme-guides--miscellaneous-information--mechanics:b:000058",
+        "pvme-guides--miscellaneous-information--mechanics:b:000060",
+        "pvme-guides--miscellaneous-information--mechanics:b:000062",
+        "pvme-guides--miscellaneous-information--mechanics:b:000064",
+        "pvme-guides--miscellaneous-information--mechanics:b:000066",
+        "pvme-guides--miscellaneous-information--mechanics:b:000068",
+        "pvme-guides--miscellaneous-information--mechanics:b:000070",
+        "pvme-guides--miscellaneous-information--mechanics:b:000072",
+        "pvme-guides--miscellaneous-information--mechanics:b:000074"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000058",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879250456578.png?v=1",
+          "label": "gbarge"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000060",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879250456578.png?v=1",
+          "label": "gbarge"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000062",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641339233638023179.png?v=1",
+          "label": "limitless"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000062",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641339234111848463.png?v=1",
+          "label": "ingen"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000064",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641339233638023179.png?v=1",
+          "label": "limitless"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000066",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641339234111848463.png?v=1",
+          "label": "ingen"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000074",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/JlBezRH.mp4",
+          "label": "click here"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000074",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/JlBezRH.mp4",
+          "label": ""
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Losing Target",
+      "sourceAnchor": "losing-target",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000076",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000076",
+        "pvme-guides--miscellaneous-information--mechanics:b:000078",
+        "pvme-guides--miscellaneous-information--mechanics:b:000080",
+        "pvme-guides--miscellaneous-information--mechanics:b:000082",
+        "pvme-guides--miscellaneous-information--mechanics:b:000084",
+        "pvme-guides--miscellaneous-information--mechanics:b:000086",
+        "pvme-guides--miscellaneous-information--mechanics:b:000088",
+        "pvme-guides--miscellaneous-information--mechanics:b:000090",
+        "pvme-guides--miscellaneous-information--mechanics:b:000092",
+        "pvme-guides--miscellaneous-information--mechanics:b:000094"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000084",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/603979368850653216.png?v=1",
+          "label": "DBA"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000086",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/626465964325601290.png?v=1",
+          "label": "zgs"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000088",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/841419289319964763.png?v=1",
+          "label": "staffoflight"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000088",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/925794592387907634.png?v=1",
+          "label": "staffofdarkness"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000090",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/643848618477879328.png?v=1",
+          "label": "decimation"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/615618531937222657.png?v=1",
+          "label": "ecb"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Ability Stalling",
+      "sourceAnchor": "ability-stalling",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000096",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000096",
+        "pvme-guides--miscellaneous-information--mechanics:b:000098",
+        "pvme-guides--miscellaneous-information--mechanics:b:000100"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000100",
+          "tag": "a",
+          "url": "https://youtu.be/kd9QpM12ckg",
+          "label": "click here."
+        }
+      ],
+      "cues": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000098",
+          "text": "!stalling"
+        }
+      ],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "How It Works",
+      "sourceAnchor": "how-it-works_1",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000102",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000102",
+        "pvme-guides--miscellaneous-information--mechanics:b:000104",
+        "pvme-guides--miscellaneous-information--mechanics:b:000106",
+        "pvme-guides--miscellaneous-information--mechanics:b:000108"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "How to Stall Abilities",
+      "sourceAnchor": "how-to-stall-abilities",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000110",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000110",
+        "pvme-guides--miscellaneous-information--mechanics:b:000112",
+        "pvme-guides--miscellaneous-information--mechanics:b:000114",
+        "pvme-guides--miscellaneous-information--mechanics:b:000116",
+        "pvme-guides--miscellaneous-information--mechanics:b:000118"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "How to Release Stalled Abilities",
+      "sourceAnchor": "how-to-release-stalled-abilities",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000120",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000120",
+        "pvme-guides--miscellaneous-information--mechanics:b:000122",
+        "pvme-guides--miscellaneous-information--mechanics:b:000124",
+        "pvme-guides--miscellaneous-information--mechanics:b:000126",
+        "pvme-guides--miscellaneous-information--mechanics:b:000128",
+        "pvme-guides--miscellaneous-information--mechanics:b:000130",
+        "pvme-guides--miscellaneous-information--mechanics:b:000132",
+        "pvme-guides--miscellaneous-information--mechanics:b:000134"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Adrenaline Management",
+      "sourceAnchor": "adrenaline-management",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000136",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000136",
+        "pvme-guides--miscellaneous-information--mechanics:b:000138",
+        "pvme-guides--miscellaneous-information--mechanics:b:000140",
+        "pvme-guides--miscellaneous-information--mechanics:b:000142",
+        "pvme-guides--miscellaneous-information--mechanics:b:000144",
+        "pvme-guides--miscellaneous-information--mechanics:b:000146",
+        "pvme-guides--miscellaneous-information--mechanics:b:000148",
+        "pvme-guides--miscellaneous-information--mechanics:b:000150",
+        "pvme-guides--miscellaneous-information--mechanics:b:000152"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000148",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258786177064.png?v=1",
+          "label": "reflect"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Stalling Adrenaline",
+      "sourceAnchor": "stalling-adrenaline",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000154",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000154",
+        "pvme-guides--miscellaneous-information--mechanics:b:000156",
+        "pvme-guides--miscellaneous-information--mechanics:b:000158",
+        "pvme-guides--miscellaneous-information--mechanics:b:000160",
+        "pvme-guides--miscellaneous-information--mechanics:b:000162",
+        "pvme-guides--miscellaneous-information--mechanics:b:000164",
+        "pvme-guides--miscellaneous-information--mechanics:b:000166",
+        "pvme-guides--miscellaneous-information--mechanics:b:000168",
+        "pvme-guides--miscellaneous-information--mechanics:b:000170",
+        "pvme-guides--miscellaneous-information--mechanics:b:000172",
+        "pvme-guides--miscellaneous-information--mechanics:b:000174",
+        "pvme-guides--miscellaneous-information--mechanics:b:000176"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000162",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000162",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258832052231.png?v=1",
+          "label": "escape"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000162",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532854281764884.png?v=1",
+          "label": "bd"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000162",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190159462694912.png?v=1",
+          "label": "Reprisal"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000164",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258546970624.png?v=1",
+          "label": "prep"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000164",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258844635148.png?v=1",
+          "label": "res"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000164",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258786177064.png?v=1",
+          "label": "reflect"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000166",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190159462694912.png?v=1",
+          "label": "Reprisal"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000170",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/656426717413507074.png?v=1",
+          "label": "adrenurn"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000172",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/739965637056659567.png?v=1",
+          "label": "persistentrage"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000174",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994189299681607800.png?v=1",
+          "label": "infernalpuzzlebox"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Gaining Adrenaline Without Target",
+      "sourceAnchor": "gaining-adrenaline-without-target",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000178",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000178",
+        "pvme-guides--miscellaneous-information--mechanics:b:000180",
+        "pvme-guides--miscellaneous-information--mechanics:b:000182",
+        "pvme-guides--miscellaneous-information--mechanics:b:000184",
+        "pvme-guides--miscellaneous-information--mechanics:b:000186",
+        "pvme-guides--miscellaneous-information--mechanics:b:000188",
+        "pvme-guides--miscellaneous-information--mechanics:b:000190",
+        "pvme-guides--miscellaneous-information--mechanics:b:000192",
+        "pvme-guides--miscellaneous-information--mechanics:b:000194"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000186",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000186",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258832052231.png?v=1",
+          "label": "escape"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000186",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532854281764884.png?v=1",
+          "label": "bd"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000190",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921434633744455.png?v=1",
+          "label": "deathsswift"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000190",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921119381463070.png?v=1",
+          "label": "sunshine"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000190",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532854004678657.png?v=1",
+          "label": "zerk"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000192",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/kq3890N.mp4",
+          "label": "click here"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000192",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/kq3890N.mp4",
+          "label": ""
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Late Adrenaline",
+      "sourceAnchor": "late-adrenaline",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000196",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000196",
+        "pvme-guides--miscellaneous-information--mechanics:b:000198",
+        "pvme-guides--miscellaneous-information--mechanics:b:000200",
+        "pvme-guides--miscellaneous-information--mechanics:b:000202",
+        "pvme-guides--miscellaneous-information--mechanics:b:000204",
+        "pvme-guides--miscellaneous-information--mechanics:b:000206",
+        "pvme-guides--miscellaneous-information--mechanics:b:000208",
+        "pvme-guides--miscellaneous-information--mechanics:b:000210",
+        "pvme-guides--miscellaneous-information--mechanics:b:000212",
+        "pvme-guides--miscellaneous-information--mechanics:b:000214"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000198",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736298121704767538.png?v=1",
+          "label": "adrenrenewal"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000202",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736298121704767538.png?v=1",
+          "label": "adrenrenewal"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000206",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400185245701.png?v=1",
+          "label": "icebarrage"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000206",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537338981747261446.png?v=1",
+          "label": "bloodbarrage"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537338981747261446.png?v=1",
+          "label": "bloodbarrage"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809995874304.png?v=1",
+          "label": "tsunami"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537338981747261446.png?v=1",
+          "label": "bloodbarrage"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000212"
+      ]
+    },
+    {
+      "sourceHeading": "How To Lose Target",
+      "sourceAnchor": "how-to-lose-target",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000216",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000216",
+        "pvme-guides--miscellaneous-information--mechanics:b:000218",
+        "pvme-guides--miscellaneous-information--mechanics:b:000220",
+        "pvme-guides--miscellaneous-information--mechanics:b:000222",
+        "pvme-guides--miscellaneous-information--mechanics:b:000224",
+        "pvme-guides--miscellaneous-information--mechanics:b:000226",
+        "pvme-guides--miscellaneous-information--mechanics:b:000228",
+        "pvme-guides--miscellaneous-information--mechanics:b:000230",
+        "pvme-guides--miscellaneous-information--mechanics:b:000232",
+        "pvme-guides--miscellaneous-information--mechanics:b:000234",
+        "pvme-guides--miscellaneous-information--mechanics:b:000236"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000218",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190158728953857.png?v=1",
+          "label": "devo"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000226",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/656844963522281473.png?v=1",
+          "label": "dummy"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Camera Shaking",
+      "sourceAnchor": "camera-shaking",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000238",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000238"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "How It Works",
+      "sourceAnchor": "how-it-works_2",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000240",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000240",
+        "pvme-guides--miscellaneous-information--mechanics:b:000242",
+        "pvme-guides--miscellaneous-information--mechanics:b:000244",
+        "pvme-guides--miscellaneous-information--mechanics:b:000246",
+        "pvme-guides--miscellaneous-information--mechanics:b:000248",
+        "pvme-guides--miscellaneous-information--mechanics:b:000250",
+        "pvme-guides--miscellaneous-information--mechanics:b:000252",
+        "pvme-guides--miscellaneous-information--mechanics:b:000254",
+        "pvme-guides--miscellaneous-information--mechanics:b:000256",
+        "pvme-guides--miscellaneous-information--mechanics:b:000258",
+        "pvme-guides--miscellaneous-information--mechanics:b:000260"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000246",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/omeOGKRqgJ.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Critical Strike",
+      "sourceAnchor": "critical-strike",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000262",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000262",
+        "pvme-guides--miscellaneous-information--mechanics:b:000264"
+      ],
+      "media": [],
+      "cues": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000264",
+          "text": "!crit"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000264",
+          "text": "!critbuff"
+        }
+      ],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "How It Works",
+      "sourceAnchor": "how-it-works_3",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000266",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000266",
+        "pvme-guides--miscellaneous-information--mechanics:b:000268",
+        "pvme-guides--miscellaneous-information--mechanics:b:000270",
+        "pvme-guides--miscellaneous-information--mechanics:b:000272",
+        "pvme-guides--miscellaneous-information--mechanics:b:000274",
+        "pvme-guides--miscellaneous-information--mechanics:b:000276"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Ability Interactions",
+      "sourceAnchor": "ability-interactions",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000278",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000278",
+        "pvme-guides--miscellaneous-information--mechanics:b:000280",
+        "pvme-guides--miscellaneous-information--mechanics:b:000282",
+        "pvme-guides--miscellaneous-information--mechanics:b:000284",
+        "pvme-guides--miscellaneous-information--mechanics:b:000286",
+        "pvme-guides--miscellaneous-information--mechanics:b:000288",
+        "pvme-guides--miscellaneous-information--mechanics:b:000290",
+        "pvme-guides--miscellaneous-information--mechanics:b:000292",
+        "pvme-guides--miscellaneous-information--mechanics:b:000294",
+        "pvme-guides--miscellaneous-information--mechanics:b:000296",
+        "pvme-guides--miscellaneous-information--mechanics:b:000298",
+        "pvme-guides--miscellaneous-information--mechanics:b:000300",
+        "pvme-guides--miscellaneous-information--mechanics:b:000302",
+        "pvme-guides--miscellaneous-information--mechanics:b:000304",
+        "pvme-guides--miscellaneous-information--mechanics:b:000306",
+        "pvme-guides--miscellaneous-information--mechanics:b:000308",
+        "pvme-guides--miscellaneous-information--mechanics:b:000310",
+        "pvme-guides--miscellaneous-information--mechanics:b:000312"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000280",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879510372352.png?v=1",
+          "label": "fury"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000284",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879334080527.png?v=1",
+          "label": "gfury"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000288",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869285393223254107.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000288",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1087373968731811880.png?v=1",
+          "label": "conc"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000294",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/536257336130404372.png?v=1",
+          "label": "smoketendrils"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000296",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/536257336130404372.png?v=1",
+          "label": "smoketendrils"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000300",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478062910113714297.png?v=1",
+          "label": "dismember"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000302",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478062904732418159.png?v=1",
+          "label": "slaughter"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000304",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478062911619469495.png?v=1",
+          "label": "massacre"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000306",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1",
+          "label": "combust"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000308",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063113659093075.png?v=1",
+          "label": "corruptionblast"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000310",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/902209626509025290.png?v=1",
+          "label": "magmatempest"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000312",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306294796299.png?v=1",
+          "label": "corruptshot"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Items That Affect Critical Hits",
+      "sourceAnchor": "items-that-affect-critical-hits",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000314",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000314",
+        "pvme-guides--miscellaneous-information--mechanics:b:000316",
+        "pvme-guides--miscellaneous-information--mechanics:b:000318",
+        "pvme-guides--miscellaneous-information--mechanics:b:000320",
+        "pvme-guides--miscellaneous-information--mechanics:b:000322",
+        "pvme-guides--miscellaneous-information--mechanics:b:000324",
+        "pvme-guides--miscellaneous-information--mechanics:b:000326",
+        "pvme-guides--miscellaneous-information--mechanics:b:000328",
+        "pvme-guides--miscellaneous-information--mechanics:b:000330",
+        "pvme-guides--miscellaneous-information--mechanics:b:000332",
+        "pvme-guides--miscellaneous-information--mechanics:b:000334",
+        "pvme-guides--miscellaneous-information--mechanics:b:000336",
+        "pvme-guides--miscellaneous-information--mechanics:b:000338",
+        "pvme-guides--miscellaneous-information--mechanics:b:000340",
+        "pvme-guides--miscellaneous-information--mechanics:b:000342",
+        "pvme-guides--miscellaneous-information--mechanics:b:000344",
+        "pvme-guides--miscellaneous-information--mechanics:b:000346",
+        "pvme-guides--miscellaneous-information--mechanics:b:000348",
+        "pvme-guides--miscellaneous-information--mechanics:b:000350",
+        "pvme-guides--miscellaneous-information--mechanics:b:000352",
+        "pvme-guides--miscellaneous-information--mechanics:b:000354",
+        "pvme-guides--miscellaneous-information--mechanics:b:000356",
+        "pvme-guides--miscellaneous-information--mechanics:b:000358",
+        "pvme-guides--miscellaneous-information--mechanics:b:000360",
+        "pvme-guides--miscellaneous-information--mechanics:b:000362"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000318",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/712073087809617931.png?v=1",
+          "label": "biting4"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000320",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/712073087809617931.png?v=1",
+          "label": "biting4"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000322",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/556582803014418432.png?v=1",
+          "label": "elitetectmask"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000326",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/921410226484301925.png?v=1",
+          "label": "kalgpouch"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000326",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/841409588954923049.png?v=1",
+          "label": "kalgscroll"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000328",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/841409588954923049.png?v=1",
+          "label": "kalgscroll"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000332",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/568262896375824385.png?v=1",
+          "label": "grim"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000336",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/568262896375824385.png?v=1",
+          "label": "grim"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000338",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/839903943018283050.png?v=1",
+          "label": "reaverring"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000342",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/839903943630520350.png?v=1",
+          "label": "championring"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000346",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/839903943404027914.png?v=1",
+          "label": "channellerring"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000352",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869285393223254107.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000352",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1087373968731811880.png?v=1",
+          "label": "conc"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000352",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000352",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190159085207555.png?v=1",
+          "label": "onsl"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000354",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/856635090641879050.png?v=1",
+          "label": "smokecloud"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000356",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1",
+          "label": "Magic"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000356",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1",
+          "label": "range"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000356",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1",
+          "label": "melee"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000356",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1",
+          "label": "necromancy"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000360",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Calculator:Combat/Critical_hit_chance/",
+          "label": "click here"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Grimoire/Scrimshaw Switching ('Grimshaw')",
+      "sourceAnchor": "grimoirescrimshaw-switching-grimshaw",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000364",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000364",
+        "pvme-guides--miscellaneous-information--mechanics:b:000366"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000366",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869284271595069451.png?v=1",
+          "label": "fsoa"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "How It Works",
+      "sourceAnchor": "how-it-works_4",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000368",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000368",
+        "pvme-guides--miscellaneous-information--mechanics:b:000370",
+        "pvme-guides--miscellaneous-information--mechanics:b:000372",
+        "pvme-guides--miscellaneous-information--mechanics:b:000374",
+        "pvme-guides--miscellaneous-information--mechanics:b:000376",
+        "pvme-guides--miscellaneous-information--mechanics:b:000378"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000370",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/568262896375824385.png?v=1",
+          "label": "grim"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000370",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/841409588959510539.png?v=1",
+          "label": "elementsscrim"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000370",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190159546712074.png?v=1",
+          "label": "Cruelty"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Sample Rotation",
+      "sourceAnchor": "sample-rotation",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000380",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000380",
+        "pvme-guides--miscellaneous-information--mechanics:b:000382",
+        "pvme-guides--miscellaneous-information--mechanics:b:000384",
+        "pvme-guides--miscellaneous-information--mechanics:b:000386",
+        "pvme-guides--miscellaneous-information--mechanics:b:000388"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000384",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1",
+          "label": "dbreath"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000386",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/568262896375824385.png?v=1",
+          "label": "grim"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000386",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1",
+          "label": "dbreath"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000386",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/841409588959510539.png?v=1",
+          "label": "elementsscrim"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000388",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/568262896375824385.png?v=1",
+          "label": "grim"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000388",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/841409588959510539.png?v=1",
+          "label": "elementsscrim"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000386",
+        "pvme-guides--miscellaneous-information--mechanics:b:000388"
+      ]
+    },
+    {
+      "sourceHeading": "Hex Weapons terramaul hexhunterbow inquisitorstaff",
+      "sourceAnchor": "hex-weapons",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000390",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000390"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000390",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/602561894829522954.png?v=1",
+          "label": "terramaul"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000390",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/581180369911414794.png?v=1",
+          "label": "hexhunterbow"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000390",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/694566917553520680.png?v=1",
+          "label": "inquisitorstaff"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "How It Works",
+      "sourceAnchor": "how-it-works_5",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000392",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000392",
+        "pvme-guides--miscellaneous-information--mechanics:b:000394",
+        "pvme-guides--miscellaneous-information--mechanics:b:000396",
+        "pvme-guides--miscellaneous-information--mechanics:b:000398",
+        "pvme-guides--miscellaneous-information--mechanics:b:000400",
+        "pvme-guides--miscellaneous-information--mechanics:b:000402",
+        "pvme-guides--miscellaneous-information--mechanics:b:000404",
+        "pvme-guides--miscellaneous-information--mechanics:b:000406",
+        "pvme-guides--miscellaneous-information--mechanics:b:000408",
+        "pvme-guides--miscellaneous-information--mechanics:b:000410",
+        "pvme-guides--miscellaneous-information--mechanics:b:000412",
+        "pvme-guides--miscellaneous-information--mechanics:b:000414",
+        "pvme-guides--miscellaneous-information--mechanics:b:000416",
+        "pvme-guides--miscellaneous-information--mechanics:b:000418",
+        "pvme-guides--miscellaneous-information--mechanics:b:000420",
+        "pvme-guides--miscellaneous-information--mechanics:b:000422",
+        "pvme-guides--miscellaneous-information--mechanics:b:000424",
+        "pvme-guides--miscellaneous-information--mechanics:b:000426",
+        "pvme-guides--miscellaneous-information--mechanics:b:000428",
+        "pvme-guides--miscellaneous-information--mechanics:b:000430",
+        "pvme-guides--miscellaneous-information--mechanics:b:000432",
+        "pvme-guides--miscellaneous-information--mechanics:b:000434"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000396",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/581180369911414794.png?v=1",
+          "label": "hexhunterbow"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000398",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/602561894829522954.png?v=1",
+          "label": "terramaul"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000400",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/694566917553520680.png?v=1",
+          "label": "inquisitorstaff"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000420",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/944649693500154006.png?v=1",
+          "label": "poisonicon"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000422",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/712074245202772009.png?v=1",
+          "label": "as4"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000424",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/712073087662686249.png?v=1",
+          "label": "crack4"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000428",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1006481321087991819.png?v=1",
+          "label": "enchantmentofaffliction"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000428",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/694566917553520680.png?v=1",
+          "label": "inquisitorstaff"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000430",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1006481317266993193.png?v=1",
+          "label": "enchantmentofdispelling"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000430",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/581180369911414794.png?v=1",
+          "label": "hexhunterbow"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000432",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1006481307443937310.png?v=1",
+          "label": "enchantmentofsavagery"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000432",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/602561894829522954.png?v=1",
+          "label": "terramaul"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Notes",
+      "sourceAnchor": "notes",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000436",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000436",
+        "pvme-guides--miscellaneous-information--mechanics:b:000438",
+        "pvme-guides--miscellaneous-information--mechanics:b:000440",
+        "pvme-guides--miscellaneous-information--mechanics:b:000442"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000440",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/581180369911414794.png?v=1",
+          "label": "hexhunterbow"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000440",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Category:Susceptible_to_hexhunter_bow",
+          "label": "click here"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000440",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/602561894829522954.png?v=1",
+          "label": "terramaul"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000440",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Category:Susceptible_to_terrasaur_maul",
+          "label": "click here"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000440",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/694566917553520680.png?v=1",
+          "label": "inquisitorstaff"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000440",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Category:Susceptible_to_inquisitor_staff",
+          "label": "click here"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Instance Hopping",
+      "sourceAnchor": "instance-hopping",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000444",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000444"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "How It Works",
+      "sourceAnchor": "how-it-works_6",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000446",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000446",
+        "pvme-guides--miscellaneous-information--mechanics:b:000448",
+        "pvme-guides--miscellaneous-information--mechanics:b:000450",
+        "pvme-guides--miscellaneous-information--mechanics:b:000452",
+        "pvme-guides--miscellaneous-information--mechanics:b:000454",
+        "pvme-guides--miscellaneous-information--mechanics:b:000456"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000456",
+          "tag": "a",
+          "url": "https://youtu.be/O-Lb93vFRAI",
+          "label": "click here"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000450"
+      ]
+    },
+    {
+      "sourceHeading": "NPC Centre vs. Coordinate",
+      "sourceAnchor": "npc-centre-vs-coordinate",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000458",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000458",
+        "pvme-guides--miscellaneous-information--mechanics:b:000460"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "NPC Centre vs. Coordinate",
+      "sourceAnchor": "npc-centre-vs-coordinate_1",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000462",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000462",
+        "pvme-guides--miscellaneous-information--mechanics:b:000464",
+        "pvme-guides--miscellaneous-information--mechanics:b:000466",
+        "pvme-guides--miscellaneous-information--mechanics:b:000468",
+        "pvme-guides--miscellaneous-information--mechanics:b:000470",
+        "pvme-guides--miscellaneous-information--mechanics:b:000472",
+        "pvme-guides--miscellaneous-information--mechanics:b:000474",
+        "pvme-guides--miscellaneous-information--mechanics:b:000476"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000476",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/53FBsUZ.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Area of Effect Search Range",
+      "sourceAnchor": "area-of-effect-search-range",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000478",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000478",
+        "pvme-guides--miscellaneous-information--mechanics:b:000480",
+        "pvme-guides--miscellaneous-information--mechanics:b:000482",
+        "pvme-guides--miscellaneous-information--mechanics:b:000484"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000482",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/643848618477879328.png?v=1",
+          "label": "decimation"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000482",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000484",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/WffxVA9FLq.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Non-Abilities and NPC Coordinate",
+      "sourceAnchor": "non-abilities-and-npc-coordinate",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000486",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000486",
+        "pvme-guides--miscellaneous-information--mechanics:b:000488",
+        "pvme-guides--miscellaneous-information--mechanics:b:000490",
+        "pvme-guides--miscellaneous-information--mechanics:b:000492",
+        "pvme-guides--miscellaneous-information--mechanics:b:000494",
+        "pvme-guides--miscellaneous-information--mechanics:b:000496",
+        "pvme-guides--miscellaneous-information--mechanics:b:000498"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000490",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/883134307902816297.png?v=1",
+          "label": "scriptureofwen"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000492",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1266417822188437569.png?v=1",
+          "label": "scriptureofamascut"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000494",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/712074245202772009.png?v=1",
+          "label": "as4"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000498",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/kr61SvG.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "NPC Facing and Flanking",
+      "sourceAnchor": "npc-facing-and-flanking",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000500",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000500",
+        "pvme-guides--miscellaneous-information--mechanics:b:000502",
+        "pvme-guides--miscellaneous-information--mechanics:b:000504"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Facing Direction: Movement",
+      "sourceAnchor": "facing-direction-movement",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000506",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000506",
+        "pvme-guides--miscellaneous-information--mechanics:b:000508",
+        "pvme-guides--miscellaneous-information--mechanics:b:000510",
+        "pvme-guides--miscellaneous-information--mechanics:b:000512",
+        "pvme-guides--miscellaneous-information--mechanics:b:000514",
+        "pvme-guides--miscellaneous-information--mechanics:b:000516"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Facing Direction: Targeting",
+      "sourceAnchor": "facing-direction-targeting",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000518",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000518",
+        "pvme-guides--miscellaneous-information--mechanics:b:000520",
+        "pvme-guides--miscellaneous-information--mechanics:b:000522",
+        "pvme-guides--miscellaneous-information--mechanics:b:000524",
+        "pvme-guides--miscellaneous-information--mechanics:b:000526",
+        "pvme-guides--miscellaneous-information--mechanics:b:000528",
+        "pvme-guides--miscellaneous-information--mechanics:b:000530",
+        "pvme-guides--miscellaneous-information--mechanics:b:000532",
+        "pvme-guides--miscellaneous-information--mechanics:b:000534",
+        "pvme-guides--miscellaneous-information--mechanics:b:000536",
+        "pvme-guides--miscellaneous-information--mechanics:b:000538",
+        "pvme-guides--miscellaneous-information--mechanics:b:000540",
+        "pvme-guides--miscellaneous-information--mechanics:b:000542",
+        "pvme-guides--miscellaneous-information--mechanics:b:000544",
+        "pvme-guides--miscellaneous-information--mechanics:b:000546",
+        "pvme-guides--miscellaneous-information--mechanics:b:000548"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000534",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/BJtN9We.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000546",
+          "text": "Player at F6 → Monster faces NORTH-WEST\nPlayer at R10 → Monster faces EAST\nPlayer at K14 → Monster faces SOUTH\nPlayer at L14 → Monster faces SOUTH-EAST\netc.\n"
+        }
+      ],
+      "rotationBlockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000546"
+      ]
+    },
+    {
+      "sourceHeading": "NPC Directions and Flanking",
+      "sourceAnchor": "npc-directions-and-flanking",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000550",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000550",
+        "pvme-guides--miscellaneous-information--mechanics:b:000552",
+        "pvme-guides--miscellaneous-information--mechanics:b:000554",
+        "pvme-guides--miscellaneous-information--mechanics:b:000556",
+        "pvme-guides--miscellaneous-information--mechanics:b:000558",
+        "pvme-guides--miscellaneous-information--mechanics:b:000560",
+        "pvme-guides--miscellaneous-information--mechanics:b:000562",
+        "pvme-guides--miscellaneous-information--mechanics:b:000564",
+        "pvme-guides--miscellaneous-information--mechanics:b:000566",
+        "pvme-guides--miscellaneous-information--mechanics:b:000568",
+        "pvme-guides--miscellaneous-information--mechanics:b:000570",
+        "pvme-guides--miscellaneous-information--mechanics:b:000572",
+        "pvme-guides--miscellaneous-information--mechanics:b:000574",
+        "pvme-guides--miscellaneous-information--mechanics:b:000576",
+        "pvme-guides--miscellaneous-information--mechanics:b:000578",
+        "pvme-guides--miscellaneous-information--mechanics:b:000580",
+        "pvme-guides--miscellaneous-information--mechanics:b:000582",
+        "pvme-guides--miscellaneous-information--mechanics:b:000584",
+        "pvme-guides--miscellaneous-information--mechanics:b:000586"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000552",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/841419289755385866.png?v=1",
+          "label": "flankicon"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000558",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/841419289755385866.png?v=1",
+          "label": "flankicon"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000562",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/fgggN05.png",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000566",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/841419289755385866.png?v=1",
+          "label": "flankicon"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000576",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/841419289755385866.png?v=1",
+          "label": "flankicon"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000586",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/G3bGkKk.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Solo Flanking",
+      "sourceAnchor": "solo-flanking",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000588",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000588",
+        "pvme-guides--miscellaneous-information--mechanics:b:000590",
+        "pvme-guides--miscellaneous-information--mechanics:b:000592",
+        "pvme-guides--miscellaneous-information--mechanics:b:000594",
+        "pvme-guides--miscellaneous-information--mechanics:b:000596",
+        "pvme-guides--miscellaneous-information--mechanics:b:000598",
+        "pvme-guides--miscellaneous-information--mechanics:b:000600",
+        "pvme-guides--miscellaneous-information--mechanics:b:000602",
+        "pvme-guides--miscellaneous-information--mechanics:b:000604",
+        "pvme-guides--miscellaneous-information--mechanics:b:000606",
+        "pvme-guides--miscellaneous-information--mechanics:b:000608",
+        "pvme-guides--miscellaneous-information--mechanics:b:000610"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000590",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/841419289755385866.png?v=1",
+          "label": "flankicon"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000594",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/841419289755385866.png?v=1",
+          "label": "flankicon"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000600",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/841419289755385866.png?v=1",
+          "label": "flankicon"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000608",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/841419289755385866.png?v=1",
+          "label": "flankicon"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000608",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/FMhz1Cm.mp4",
+          "label": "Walking under Ambassador to use Flanking."
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000608",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/FMhz1Cm.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000608",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/G1zlwXH.mp4",
+          "label": "Moving to one side to use Flanking during the tail swipe."
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000608",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/G1zlwXH.mp4",
+          "label": ""
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Player Character Movement",
+      "sourceAnchor": "player-character-movement",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000612",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000612"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Bladed Dive",
+      "sourceAnchor": "bladed-dive",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000614",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000614",
+        "pvme-guides--miscellaneous-information--mechanics:b:000616",
+        "pvme-guides--miscellaneous-information--mechanics:b:000618",
+        "pvme-guides--miscellaneous-information--mechanics:b:000620",
+        "pvme-guides--miscellaneous-information--mechanics:b:000622",
+        "pvme-guides--miscellaneous-information--mechanics:b:000624",
+        "pvme-guides--miscellaneous-information--mechanics:b:000626",
+        "pvme-guides--miscellaneous-information--mechanics:b:000628",
+        "pvme-guides--miscellaneous-information--mechanics:b:000630",
+        "pvme-guides--miscellaneous-information--mechanics:b:000632",
+        "pvme-guides--miscellaneous-information--mechanics:b:000634",
+        "pvme-guides--miscellaneous-information--mechanics:b:000636",
+        "pvme-guides--miscellaneous-information--mechanics:b:000638",
+        "pvme-guides--miscellaneous-information--mechanics:b:000640",
+        "pvme-guides--miscellaneous-information--mechanics:b:000642"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000616",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532854281764884.png?v=1",
+          "label": "bd"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000624",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/ODMwLfr.png",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000628",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532854281764884.png?v=1",
+          "label": "bd"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000634",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000634",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532854281764884.png?v=1",
+          "label": "bd"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000634",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532854281764884.png?v=1",
+          "label": "bd"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Walking Abilities",
+      "sourceAnchor": "walking-abilities",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000644",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000644",
+        "pvme-guides--miscellaneous-information--mechanics:b:000646",
+        "pvme-guides--miscellaneous-information--mechanics:b:000648",
+        "pvme-guides--miscellaneous-information--mechanics:b:000650",
+        "pvme-guides--miscellaneous-information--mechanics:b:000652",
+        "pvme-guides--miscellaneous-information--mechanics:b:000654",
+        "pvme-guides--miscellaneous-information--mechanics:b:000656",
+        "pvme-guides--miscellaneous-information--mechanics:b:000658",
+        "pvme-guides--miscellaneous-information--mechanics:b:000660",
+        "pvme-guides--miscellaneous-information--mechanics:b:000662",
+        "pvme-guides--miscellaneous-information--mechanics:b:000664",
+        "pvme-guides--miscellaneous-information--mechanics:b:000666",
+        "pvme-guides--miscellaneous-information--mechanics:b:000668"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000656",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543465115870035999.png?v=1",
+          "label": "AirSurge"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000656",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190159085207555.png?v=1",
+          "label": "onsl"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000662",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1",
+          "label": "melee"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000662",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532855191928842.png?v=1",
+          "label": "assault"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000662",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/864492981763702834.png?v=1",
+          "label": "flurry"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000664",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541270521708566.png?v=1",
+          "label": "rapid"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000666",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258425204770.png?v=1",
+          "label": "snipe"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000666",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190159441723392.png?v=1",
+          "label": "nightmaregauntlets"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000656"
+      ]
+    },
+    {
+      "sourceHeading": "Seren Godbow (SGB) Mechanics sgb",
+      "sourceAnchor": "seren-godbow-sgb-mechanics",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000670",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000670",
+        "pvme-guides--miscellaneous-information--mechanics:b:000672"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000670",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/626466665848242186.png?v=1",
+          "label": "sgb"
+        }
+      ],
+      "cues": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000672",
+          "text": "!sgb"
+        }
+      ],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "How It Works",
+      "sourceAnchor": "how-it-works_7",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000674",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000674",
+        "pvme-guides--miscellaneous-information--mechanics:b:000676",
+        "pvme-guides--miscellaneous-information--mechanics:b:000678",
+        "pvme-guides--miscellaneous-information--mechanics:b:000680",
+        "pvme-guides--miscellaneous-information--mechanics:b:000682",
+        "pvme-guides--miscellaneous-information--mechanics:b:000684"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000676",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/626466665848242186.png?v=1",
+          "label": "sgb"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Arrow 1",
+      "sourceAnchor": "arrow-1",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000686",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000686",
+        "pvme-guides--miscellaneous-information--mechanics:b:000688",
+        "pvme-guides--miscellaneous-information--mechanics:b:000690",
+        "pvme-guides--miscellaneous-information--mechanics:b:000692",
+        "pvme-guides--miscellaneous-information--mechanics:b:000694"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000690",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/626466665848242186.png?v=1",
+          "label": "sgb"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000690",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000692",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/626466665848242186.png?v=1",
+          "label": "sgb"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000692",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Arrows 2-5+",
+      "sourceAnchor": "arrows-2-5",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000696",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000696",
+        "pvme-guides--miscellaneous-information--mechanics:b:000698",
+        "pvme-guides--miscellaneous-information--mechanics:b:000700",
+        "pvme-guides--miscellaneous-information--mechanics:b:000702",
+        "pvme-guides--miscellaneous-information--mechanics:b:000704",
+        "pvme-guides--miscellaneous-information--mechanics:b:000706",
+        "pvme-guides--miscellaneous-information--mechanics:b:000708",
+        "pvme-guides--miscellaneous-information--mechanics:b:000710",
+        "pvme-guides--miscellaneous-information--mechanics:b:000712",
+        "pvme-guides--miscellaneous-information--mechanics:b:000714",
+        "pvme-guides--miscellaneous-information--mechanics:b:000716",
+        "pvme-guides--miscellaneous-information--mechanics:b:000718",
+        "pvme-guides--miscellaneous-information--mechanics:b:000720",
+        "pvme-guides--miscellaneous-information--mechanics:b:000722",
+        "pvme-guides--miscellaneous-information--mechanics:b:000724",
+        "pvme-guides--miscellaneous-information--mechanics:b:000726",
+        "pvme-guides--miscellaneous-information--mechanics:b:000728",
+        "pvme-guides--miscellaneous-information--mechanics:b:000730",
+        "pvme-guides--miscellaneous-information--mechanics:b:000732",
+        "pvme-guides--miscellaneous-information--mechanics:b:000734",
+        "pvme-guides--miscellaneous-information--mechanics:b:000736",
+        "pvme-guides--miscellaneous-information--mechanics:b:000738",
+        "pvme-guides--miscellaneous-information--mechanics:b:000740",
+        "pvme-guides--miscellaneous-information--mechanics:b:000742"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000722",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/626466665848242186.png?v=1",
+          "label": "sgb"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000722",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000728",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/2VsDDTr00Q.png",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000734",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/ZdUWuRE9Xs.png",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000736",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/626466665848242186.png?v=1",
+          "label": "sgb"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000736",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000742",
+          "tag": "a",
+          "url": "https://docs.google.com/spreadsheets/d/1fyH5qJjb08SzefZTQ23jANcKq7V8xSw7YHCu8QasQco",
+          "label": "click here."
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000738",
+        "pvme-guides--miscellaneous-information--mechanics:b:000740"
+      ]
+    },
+    {
+      "sourceHeading": "Target Cycling (TC)",
+      "sourceAnchor": "target-cycling-tc",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000744",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000744"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "How It Works",
+      "sourceAnchor": "how-it-works_8",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000746",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000746",
+        "pvme-guides--miscellaneous-information--mechanics:b:000748",
+        "pvme-guides--miscellaneous-information--mechanics:b:000750",
+        "pvme-guides--miscellaneous-information--mechanics:b:000752",
+        "pvme-guides--miscellaneous-information--mechanics:b:000754",
+        "pvme-guides--miscellaneous-information--mechanics:b:000756",
+        "pvme-guides--miscellaneous-information--mechanics:b:000758",
+        "pvme-guides--miscellaneous-information--mechanics:b:000760",
+        "pvme-guides--miscellaneous-information--mechanics:b:000762",
+        "pvme-guides--miscellaneous-information--mechanics:b:000764",
+        "pvme-guides--miscellaneous-information--mechanics:b:000766",
+        "pvme-guides--miscellaneous-information--mechanics:b:000768",
+        "pvme-guides--miscellaneous-information--mechanics:b:000770",
+        "pvme-guides--miscellaneous-information--mechanics:b:000772",
+        "pvme-guides--miscellaneous-information--mechanics:b:000774",
+        "pvme-guides--miscellaneous-information--mechanics:b:000776"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000754",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/ixoeAlQiHl.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Why it is Useful",
+      "sourceAnchor": "why-it-is-useful",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000778",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000778",
+        "pvme-guides--miscellaneous-information--mechanics:b:000780",
+        "pvme-guides--miscellaneous-information--mechanics:b:000782",
+        "pvme-guides--miscellaneous-information--mechanics:b:000784",
+        "pvme-guides--miscellaneous-information--mechanics:b:000786",
+        "pvme-guides--miscellaneous-information--mechanics:b:000788",
+        "pvme-guides--miscellaneous-information--mechanics:b:000790",
+        "pvme-guides--miscellaneous-information--mechanics:b:000792",
+        "pvme-guides--miscellaneous-information--mechanics:b:000794",
+        "pvme-guides--miscellaneous-information--mechanics:b:000796",
+        "pvme-guides--miscellaneous-information--mechanics:b:000798"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000790",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833358016512.png?v=1",
+          "label": "deto"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000796",
+          "tag": "a",
+          "url": "https://www.youtube.com/watch?v=KmYgKcfLeRc",
+          "label": "Targeting a Scopulus on P3 earlier than usual to lure it properly"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000796",
+          "tag": "a",
+          "url": "https://www.youtube.com/watch?v=9YejOAvquQk",
+          "label": "Tagging Vorago early on phase dropdowns to aggro or get in an extra hit"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000796",
+          "tag": "a",
+          "url": "https://i.gyazo.com/a3b13b217022a8523de01b4e50b3cc9f.mp4",
+          "label": "Targeting fragments earlier in the spinner phase to get more time"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000796",
+          "tag": "video",
+          "url": "https://i.gyazo.com/a3b13b217022a8523de01b4e50b3cc9f.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000796",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/ZFIZdKl.mp4",
+          "label": "Changing target to Nex while charging Detonate"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000796",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/ZFIZdKl.mp4",
+          "label": ""
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Tick System",
+      "sourceAnchor": "tick-system",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000800",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000800",
+        "pvme-guides--miscellaneous-information--mechanics:b:000802",
+        "pvme-guides--miscellaneous-information--mechanics:b:000804",
+        "pvme-guides--miscellaneous-information--mechanics:b:000806",
+        "pvme-guides--miscellaneous-information--mechanics:b:000808",
+        "pvme-guides--miscellaneous-information--mechanics:b:000810",
+        "pvme-guides--miscellaneous-information--mechanics:b:000812",
+        "pvme-guides--miscellaneous-information--mechanics:b:000814",
+        "pvme-guides--miscellaneous-information--mechanics:b:000816",
+        "pvme-guides--miscellaneous-information--mechanics:b:000818"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000816",
+          "tag": "a",
+          "url": "https://youtu.be/hElkOvHJmaA",
+          "label": "click here"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Typeless Damage",
+      "sourceAnchor": "typeless-damage",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000820",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000820"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "How It Works",
+      "sourceAnchor": "how-it-works_9",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000822",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000822",
+        "pvme-guides--miscellaneous-information--mechanics:b:000824",
+        "pvme-guides--miscellaneous-information--mechanics:b:000826",
+        "pvme-guides--miscellaneous-information--mechanics:b:000828",
+        "pvme-guides--miscellaneous-information--mechanics:b:000830",
+        "pvme-guides--miscellaneous-information--mechanics:b:000832",
+        "pvme-guides--miscellaneous-information--mechanics:b:000834",
+        "pvme-guides--miscellaneous-information--mechanics:b:000836",
+        "pvme-guides--miscellaneous-information--mechanics:b:000838",
+        "pvme-guides--miscellaneous-information--mechanics:b:000840",
+        "pvme-guides--miscellaneous-information--mechanics:b:000842"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000830",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306353778689.png?v=1",
+          "label": "cade"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000830",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543478434509357098.png?v=1",
+          "label": "Cept"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000838",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532854004678657.png?v=1",
+          "label": "zerk"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Lossless Heal Other",
+      "sourceAnchor": "lossless-heal-other",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000844",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000844"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "How It Works",
+      "sourceAnchor": "how-it-works_10",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000846",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000846",
+        "pvme-guides--miscellaneous-information--mechanics:b:000848",
+        "pvme-guides--miscellaneous-information--mechanics:b:000850",
+        "pvme-guides--miscellaneous-information--mechanics:b:000852",
+        "pvme-guides--miscellaneous-information--mechanics:b:000854",
+        "pvme-guides--miscellaneous-information--mechanics:b:000856",
+        "pvme-guides--miscellaneous-information--mechanics:b:000858"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000848",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/567727985851891715.png?v=1",
+          "label": "HealOther"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000850",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/567727985851891715.png?v=1",
+          "label": "HealOther"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000852",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306353778689.png?v=1",
+          "label": "cade"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000852",
+          "tag": "a",
+          "url": "https://youtu.be/Bnkle3v8MRQ",
+          "label": "Demo"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000852",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/572867742613635082.png?v=1",
+          "label": "vorago"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000852",
+          "tag": "a",
+          "url": "https://youtu.be/I2rr00IhUl8",
+          "label": "Demo"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000852",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258538582017.png?v=1",
+          "label": "immort"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000852",
+          "tag": "a",
+          "url": "https://youtu.be/LH-h1vBIhZI",
+          "label": "Demo"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000854",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/567727985851891715.png?v=1",
+          "label": "HealOther"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Vengeance",
+      "sourceAnchor": "vengeance",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000860",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000860"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "How It Works",
+      "sourceAnchor": "how-it-works_11",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000862",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000862",
+        "pvme-guides--miscellaneous-information--mechanics:b:000864",
+        "pvme-guides--miscellaneous-information--mechanics:b:000866",
+        "pvme-guides--miscellaneous-information--mechanics:b:000868",
+        "pvme-guides--miscellaneous-information--mechanics:b:000870",
+        "pvme-guides--miscellaneous-information--mechanics:b:000872",
+        "pvme-guides--miscellaneous-information--mechanics:b:000874"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000864",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543478434953822208.png?v=1",
+          "label": "Veng"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000872",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1009570755836641331.png?v=1",
+          "label": "venggroup"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000874",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1015698983034826794.png?v=1",
+          "label": "vengother"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000874",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543478434953822208.png?v=1",
+          "label": "Veng"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Vengeance Interactions",
+      "sourceAnchor": "vengeance-interactions",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000876",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000876",
+        "pvme-guides--miscellaneous-information--mechanics:b:000878",
+        "pvme-guides--miscellaneous-information--mechanics:b:000880",
+        "pvme-guides--miscellaneous-information--mechanics:b:000882",
+        "pvme-guides--miscellaneous-information--mechanics:b:000884",
+        "pvme-guides--miscellaneous-information--mechanics:b:000886",
+        "pvme-guides--miscellaneous-information--mechanics:b:000888",
+        "pvme-guides--miscellaneous-information--mechanics:b:000890",
+        "pvme-guides--miscellaneous-information--mechanics:b:000892",
+        "pvme-guides--miscellaneous-information--mechanics:b:000894",
+        "pvme-guides--miscellaneous-information--mechanics:b:000896",
+        "pvme-guides--miscellaneous-information--mechanics:b:000898",
+        "pvme-guides--miscellaneous-information--mechanics:b:000900",
+        "pvme-guides--miscellaneous-information--mechanics:b:000902",
+        "pvme-guides--miscellaneous-information--mechanics:b:000904",
+        "pvme-guides--miscellaneous-information--mechanics:b:000906"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000882",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543478434953822208.png?v=1",
+          "label": "Veng"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000884",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535614336207552523.png?v=1",
+          "label": "disrupt"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000886",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/787904334377648130.png?v=1",
+          "label": "divert"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000888",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258844635148.png?v=1",
+          "label": "res"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000890",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190158728953857.png?v=1",
+          "label": "devo"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000892",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306353778689.png?v=1",
+          "label": "cade"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000896",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537349530551582720.png?v=1",
+          "label": "Vuln"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000898",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543478434953822208.png?v=1",
+          "label": "Veng"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000900",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258786177064.png?v=1",
+          "label": "reflect"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000900",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541278264393729.png?v=1",
+          "label": "debil"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000900",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543478434509357098.png?v=1",
+          "label": "Cept"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000902",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543478434953822208.png?v=1",
+          "label": "Veng"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000904",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532854004678657.png?v=1",
+          "label": "zerk"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Walking Monsters",
+      "sourceAnchor": "walking-monsters",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000908",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000908",
+        "pvme-guides--miscellaneous-information--mechanics:b:000910"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "How It Works",
+      "sourceAnchor": "how-it-works_12",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000912",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000912",
+        "pvme-guides--miscellaneous-information--mechanics:b:000914",
+        "pvme-guides--miscellaneous-information--mechanics:b:000916",
+        "pvme-guides--miscellaneous-information--mechanics:b:000918",
+        "pvme-guides--miscellaneous-information--mechanics:b:000920",
+        "pvme-guides--miscellaneous-information--mechanics:b:000922",
+        "pvme-guides--miscellaneous-information--mechanics:b:000924",
+        "pvme-guides--miscellaneous-information--mechanics:b:000926"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000922",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000922",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532854281764884.png?v=1",
+          "label": "bd"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Determining Walk Direction",
+      "sourceAnchor": "determining-walk-direction",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000928",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000928",
+        "pvme-guides--miscellaneous-information--mechanics:b:000930",
+        "pvme-guides--miscellaneous-information--mechanics:b:000932",
+        "pvme-guides--miscellaneous-information--mechanics:b:000934",
+        "pvme-guides--miscellaneous-information--mechanics:b:000936",
+        "pvme-guides--miscellaneous-information--mechanics:b:000938",
+        "pvme-guides--miscellaneous-information--mechanics:b:000940",
+        "pvme-guides--miscellaneous-information--mechanics:b:000942",
+        "pvme-guides--miscellaneous-information--mechanics:b:000944",
+        "pvme-guides--miscellaneous-information--mechanics:b:000946"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000944",
+          "tag": "a",
+          "url": "https://youtu.be/A_6ah7GF_1k",
+          "label": "click here"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Weapon Poison weppoison",
+      "sourceAnchor": "weapon-poison",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000948",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000948"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000948",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689525476158472288.png?v=1",
+          "label": "weppoison"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "How It Works",
+      "sourceAnchor": "how-it-works_13",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000950",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000950",
+        "pvme-guides--miscellaneous-information--mechanics:b:000952",
+        "pvme-guides--miscellaneous-information--mechanics:b:000954",
+        "pvme-guides--miscellaneous-information--mechanics:b:000956",
+        "pvme-guides--miscellaneous-information--mechanics:b:000958",
+        "pvme-guides--miscellaneous-information--mechanics:b:000960"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000956",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/944649693500154006.png?v=1",
+          "label": "poisonicon"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Calculating Poison Damage",
+      "sourceAnchor": "calculating-poison-damage",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000962",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000962",
+        "pvme-guides--miscellaneous-information--mechanics:b:000964",
+        "pvme-guides--miscellaneous-information--mechanics:b:000966",
+        "pvme-guides--miscellaneous-information--mechanics:b:000968",
+        "pvme-guides--miscellaneous-information--mechanics:b:000970",
+        "pvme-guides--miscellaneous-information--mechanics:b:000972",
+        "pvme-guides--miscellaneous-information--mechanics:b:000974",
+        "pvme-guides--miscellaneous-information--mechanics:b:000976",
+        "pvme-guides--miscellaneous-information--mechanics:b:000978",
+        "pvme-guides--miscellaneous-information--mechanics:b:000980",
+        "pvme-guides--miscellaneous-information--mechanics:b:000982",
+        "pvme-guides--miscellaneous-information--mechanics:b:000984",
+        "pvme-guides--miscellaneous-information--mechanics:b:000986"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000964",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/944649693500154006.png?v=1",
+          "label": "poisonicon"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000966",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190158355660812.png?v=1",
+          "label": "cinderbanes"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Poison Interactions",
+      "sourceAnchor": "poison-interactions",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:000988",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:000988",
+        "pvme-guides--miscellaneous-information--mechanics:b:000990",
+        "pvme-guides--miscellaneous-information--mechanics:b:000992",
+        "pvme-guides--miscellaneous-information--mechanics:b:000994",
+        "pvme-guides--miscellaneous-information--mechanics:b:000996",
+        "pvme-guides--miscellaneous-information--mechanics:b:000998",
+        "pvme-guides--miscellaneous-information--mechanics:b:001000",
+        "pvme-guides--miscellaneous-information--mechanics:b:001002",
+        "pvme-guides--miscellaneous-information--mechanics:b:001004",
+        "pvme-guides--miscellaneous-information--mechanics:b:001006",
+        "pvme-guides--miscellaneous-information--mechanics:b:001008",
+        "pvme-guides--miscellaneous-information--mechanics:b:001010",
+        "pvme-guides--miscellaneous-information--mechanics:b:001012",
+        "pvme-guides--miscellaneous-information--mechanics:b:001014",
+        "pvme-guides--miscellaneous-information--mechanics:b:001016",
+        "pvme-guides--miscellaneous-information--mechanics:b:001018",
+        "pvme-guides--miscellaneous-information--mechanics:b:001020",
+        "pvme-guides--miscellaneous-information--mechanics:b:001022",
+        "pvme-guides--miscellaneous-information--mechanics:b:001024",
+        "pvme-guides--miscellaneous-information--mechanics:b:001026",
+        "pvme-guides--miscellaneous-information--mechanics:b:001028",
+        "pvme-guides--miscellaneous-information--mechanics:b:001030",
+        "pvme-guides--miscellaneous-information--mechanics:b:001032",
+        "pvme-guides--miscellaneous-information--mechanics:b:001034",
+        "pvme-guides--miscellaneous-information--mechanics:b:001036",
+        "pvme-guides--miscellaneous-information--mechanics:b:001038",
+        "pvme-guides--miscellaneous-information--mechanics:b:001040",
+        "pvme-guides--miscellaneous-information--mechanics:b:001042",
+        "pvme-guides--miscellaneous-information--mechanics:b:001044",
+        "pvme-guides--miscellaneous-information--mechanics:b:001046",
+        "pvme-guides--miscellaneous-information--mechanics:b:001048",
+        "pvme-guides--miscellaneous-information--mechanics:b:001050",
+        "pvme-guides--miscellaneous-information--mechanics:b:001052",
+        "pvme-guides--miscellaneous-information--mechanics:b:001054",
+        "pvme-guides--miscellaneous-information--mechanics:b:001056",
+        "pvme-guides--miscellaneous-information--mechanics:b:001058",
+        "pvme-guides--miscellaneous-information--mechanics:b:001060",
+        "pvme-guides--miscellaneous-information--mechanics:b:001062",
+        "pvme-guides--miscellaneous-information--mechanics:b:001064",
+        "pvme-guides--miscellaneous-information--mechanics:b:001066",
+        "pvme-guides--miscellaneous-information--mechanics:b:001068",
+        "pvme-guides--miscellaneous-information--mechanics:b:001070",
+        "pvme-guides--miscellaneous-information--mechanics:b:001072",
+        "pvme-guides--miscellaneous-information--mechanics:b:001074",
+        "pvme-guides--miscellaneous-information--mechanics:b:001076"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:000990",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190158355660812.png?v=1",
+          "label": "cinderbanes"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:001002",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/565726489341984779.png?v=1",
+          "label": "KwuarmSticks"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:001004",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/565726489341984779.png?v=1",
+          "label": "KwuarmSticks"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:001008",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/971025697235689513.png?v=1",
+          "label": "bikarrow"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:001010",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/971025697235689513.png?v=1",
+          "label": "bikarrow"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:001018",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/839903893177106454.png?v=1",
+          "label": "lanispear"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:001024",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/565726489341984779.png?v=1",
+          "label": "KwuarmSticks"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:001026",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/982264010563018772.png?v=1",
+          "label": "boneblowpipe"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:001034",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580177522587729940.png?v=1",
+          "label": "wyverncrossbow"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:001048",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1",
+          "label": "combust"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:001048",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306294796299.png?v=1",
+          "label": "corruptshot"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:001048",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921119381463070.png?v=1",
+          "label": "sunshine"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:001050",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1276946271424479234.png?v=1",
+          "label": "primalabyssalarmourspikes"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:001052",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/866551637714665484.png?v=1",
+          "label": "emeraldbakri"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:001052",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/565726489144852511.png?v=1",
+          "label": "DragonstoneBakri"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:001054",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1015698981118038117.png?v=1",
+          "label": "bloodfury"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:001056",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869283142350041098.png?v=1",
+          "label": "cannon"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:001058",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/662249620579155968.png?v=1",
+          "label": "dommine"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:001060",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/615618531937222657.png?v=1",
+          "label": "ecb"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:001060",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:001062",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190159051915264.png?v=1",
+          "label": "armabook"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:001062",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869284342839513108.png?v=1",
+          "label": "scriptureofjas"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:001062",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/902209626412560395.png?v=1",
+          "label": "scriptureofful"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:001062",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/883134307902816297.png?v=1",
+          "label": "scriptureofwen"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:001064",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/944649693500154006.png?v=1",
+          "label": "poisonicon"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:001066",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1025020525770178661.png?v=1",
+          "label": "punctureddebuff"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:001070",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580177522587729940.png?v=1",
+          "label": "wyverncrossbow"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:001072",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/615613924506599497.png?v=1",
+          "label": "soulsplit"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:001072",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513201294262009874.png?v=1",
+          "label": "VampScrim"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:001020",
+        "pvme-guides--miscellaneous-information--mechanics:b:001028",
+        "pvme-guides--miscellaneous-information--mechanics:b:001042"
+      ]
+    },
+    {
+      "sourceHeading": "Poison in Group Encounters",
+      "sourceAnchor": "poison-in-group-encounters",
+      "headingBlockId": "pvme-guides--miscellaneous-information--mechanics:b:001078",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--mechanics:b:001078",
+        "pvme-guides--miscellaneous-information--mechanics:b:001080",
+        "pvme-guides--miscellaneous-information--mechanics:b:001082",
+        "pvme-guides--miscellaneous-information--mechanics:b:001084",
+        "pvme-guides--miscellaneous-information--mechanics:b:001086"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:001080",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/971025697235689513.png?v=1",
+          "label": "bikarrow"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:001080",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537349530551582720.png?v=1",
+          "label": "Vuln"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:001082",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190158355660812.png?v=1",
+          "label": "cinderbanes"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--mechanics:b:001082",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580177522587729940.png?v=1",
+          "label": "wyverncrossbow"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    }
+  ],
+  "attribution": {
+    "author": "PvME contributors",
+    "license": "CC BY-NC-SA 4.0",
+    "imported": "2026-11-11T14:25:57Z"
+  },
+  "upstream": {
+    "sourcePath": "miscellaneous-information/mechanics.txt",
+    "revision": "ee913a530677bddd0af48860062fed8c8efd77a3",
+    "sha256": "f1a6aea863482fa14e37dc18c898e0dcbbc77ae35e6830ab3a9ec736b680840e",
+    "kind": "guide"
+  }
+}

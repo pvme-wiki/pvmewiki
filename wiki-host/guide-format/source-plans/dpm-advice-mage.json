@@ -1,0 +1,4078 @@
+{
+  "title": "PvME/Damage rotations/Magic damage guide",
+  "id": "dpm-advice-mage",
+  "sourceSha256": "a0c2bb5ff0b650b6a821d2abee1e82e6c55c731d5f7172631386d3f113a5ceea",
+  "sourceFile": "wiki-host/corpus/pages/guide--dpm-advice-mage.wiki.txt",
+  "snapshotFile": "editor/content/dpm-advice-mage.json",
+  "snapshotSha256": "8e679b598385fff75d892d64c5c168d94a343f39d3768b293c82f0ac58f4868e",
+  "sourcePath": "dpm-advice/dpm-advice-mage.txt",
+  "sourceUrl": "https://pvme.io/pvme-guides/dpm-advice/dpm-advice-mage/",
+  "sourceCommit": "074a9438f79d10fba75735791be0030734db8b5e",
+  "status": "source-indexed",
+  "mainGuide": false,
+  "format": "reference-guide",
+  "sections": [
+    {
+      "sourceHeading": null,
+      "sourceAnchor": null,
+      "headingBlockId": null,
+      "level": 0,
+      "blockIds": [
+        "dpm-advice-mage:b:0000",
+        "dpm-advice-mage:b:0001",
+        "dpm-advice-mage:b:0002",
+        "dpm-advice-mage:b:0003",
+        "dpm-advice-mage:b:0004",
+        "dpm-advice-mage:b:0005",
+        "dpm-advice-mage:b:0006"
+      ],
+      "media": [
+        {
+          "blockId": "dpm-advice-mage:b:0004",
+          "tag": "a",
+          "url": "/archive/pvme-guides/dpm-advice/dpm-advice-faq/",
+          "label": "DPM Advice Faq"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0005",
+          "tag": "a",
+          "url": "https://tools.runescape.wiki/rs-rot/magic",
+          "label": "RS Analysis' Magic Page"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "> Core Magic Rotation magic",
+      "sourceAnchor": "core-magic-rotation",
+      "headingBlockId": "dpm-advice-mage:b:0007",
+      "level": 2,
+      "blockIds": [
+        "dpm-advice-mage:b:0007",
+        "dpm-advice-mage:b:0008",
+        "dpm-advice-mage:b:0009",
+        "dpm-advice-mage:b:0010",
+        "dpm-advice-mage:b:0011",
+        "dpm-advice-mage:b:0012",
+        "dpm-advice-mage:b:0013",
+        "dpm-advice-mage:b:0014",
+        "dpm-advice-mage:b:0015",
+        "dpm-advice-mage:b:0016"
+      ],
+      "media": [
+        {
+          "blockId": "dpm-advice-mage:b:0007",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1",
+          "label": "magic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0013",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0014",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0015",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/856635090783567902.png?v=1",
+          "label": "incitefear"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Basic Pattern",
+      "sourceAnchor": "basic-pattern",
+      "headingBlockId": "dpm-advice-mage:b:0017",
+      "level": 3,
+      "blockIds": [
+        "dpm-advice-mage:b:0017",
+        "dpm-advice-mage:b:0018",
+        "dpm-advice-mage:b:0019",
+        "dpm-advice-mage:b:0020",
+        "dpm-advice-mage:b:0021",
+        "dpm-advice-mage:b:0022",
+        "dpm-advice-mage:b:0023",
+        "dpm-advice-mage:b:0024",
+        "dpm-advice-mage:b:0025",
+        "dpm-advice-mage:b:0026",
+        "dpm-advice-mage:b:0027",
+        "dpm-advice-mage:b:0028",
+        "dpm-advice-mage:b:0029",
+        "dpm-advice-mage:b:0030",
+        "dpm-advice-mage:b:0031",
+        "dpm-advice-mage:b:0032",
+        "dpm-advice-mage:b:0033",
+        "dpm-advice-mage:b:0034",
+        "dpm-advice-mage:b:0035",
+        "dpm-advice-mage:b:0036"
+      ],
+      "media": [
+        {
+          "blockId": "dpm-advice-mage:b:0018",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869285393223254107.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0018",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1087373968731811880.png?v=1",
+          "label": "conc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0020",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869285393223254107.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0021",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0021",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1",
+          "label": "dbreath"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0021",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0021",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809664262179.png?v=1",
+          "label": "omni"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0022",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869285393223254107.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0023",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869285393223254107.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0026",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1",
+          "label": "dbreath"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0027",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063115709972651.png?v=1",
+          "label": "sonic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0028",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1",
+          "label": "combust"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0031",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809664262179.png?v=1",
+          "label": "omni"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0032",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0033",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0034",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "dpm-advice-mage:b:0023"
+      ]
+    },
+    {
+      "sourceHeading": "Sunshine",
+      "sourceAnchor": "sunshine",
+      "headingBlockId": "dpm-advice-mage:b:0037",
+      "level": 3,
+      "blockIds": [
+        "dpm-advice-mage:b:0037",
+        "dpm-advice-mage:b:0038",
+        "dpm-advice-mage:b:0039",
+        "dpm-advice-mage:b:0040",
+        "dpm-advice-mage:b:0041",
+        "dpm-advice-mage:b:0042",
+        "dpm-advice-mage:b:0043",
+        "dpm-advice-mage:b:0044",
+        "dpm-advice-mage:b:0045",
+        "dpm-advice-mage:b:0046",
+        "dpm-advice-mage:b:0047",
+        "dpm-advice-mage:b:0048",
+        "dpm-advice-mage:b:0049"
+      ],
+      "media": [
+        {
+          "blockId": "dpm-advice-mage:b:0038",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921595489488927.png?v=1",
+          "label": "sunshinepf"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0038",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0040",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0043",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0044",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809664262179.png?v=1",
+          "label": "omni"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0045",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0046",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0047",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1",
+          "label": "combust"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0047",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0048",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0048",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Other Buffs",
+      "sourceAnchor": "other-buffs",
+      "headingBlockId": "dpm-advice-mage:b:0050",
+      "level": 3,
+      "blockIds": [
+        "dpm-advice-mage:b:0050",
+        "dpm-advice-mage:b:0051",
+        "dpm-advice-mage:b:0052",
+        "dpm-advice-mage:b:0053",
+        "dpm-advice-mage:b:0054",
+        "dpm-advice-mage:b:0055",
+        "dpm-advice-mage:b:0056",
+        "dpm-advice-mage:b:0057",
+        "dpm-advice-mage:b:0058",
+        "dpm-advice-mage:b:0059",
+        "dpm-advice-mage:b:0060",
+        "dpm-advice-mage:b:0061",
+        "dpm-advice-mage:b:0062",
+        "dpm-advice-mage:b:0063",
+        "dpm-advice-mage:b:0064"
+      ],
+      "media": [
+        {
+          "blockId": "dpm-advice-mage:b:0053",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809995874304.png?v=1",
+          "label": "tsunami"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0053",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0054",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0054",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0054",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/536257336130404372.png?v=1",
+          "label": "smoketendrils"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0056",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063117211668584.png?v=1",
+          "label": "gsonic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0056",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0056",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809995874304.png?v=1",
+          "label": "tsunami"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0057",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0057",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0059",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1",
+          "label": "runic_charge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0060",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1",
+          "label": "runic_charge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0060",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063117211668584.png?v=1",
+          "label": "gsonic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0060",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0060",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809995874304.png?v=1",
+          "label": "tsunami"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0061",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1",
+          "label": "runic_charge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0061",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0061",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809664262179.png?v=1",
+          "label": "omni"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0061",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0063",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Spell Effects",
+      "sourceAnchor": "spell-effects",
+      "headingBlockId": "dpm-advice-mage:b:0065",
+      "level": 3,
+      "blockIds": [
+        "dpm-advice-mage:b:0065",
+        "dpm-advice-mage:b:0066",
+        "dpm-advice-mage:b:0067",
+        "dpm-advice-mage:b:0068",
+        "dpm-advice-mage:b:0069",
+        "dpm-advice-mage:b:0070",
+        "dpm-advice-mage:b:0071",
+        "dpm-advice-mage:b:0072",
+        "dpm-advice-mage:b:0073",
+        "dpm-advice-mage:b:0074",
+        "dpm-advice-mage:b:0075"
+      ],
+      "media": [
+        {
+          "blockId": "dpm-advice-mage:b:0069",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/856635090745950258.png?v=1",
+          "label": "exsanguinate"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0069",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/856635090783567902.png?v=1",
+          "label": "incitefear"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0069",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809995874304.png?v=1",
+          "label": "tsunami"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0070",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537338981747261446.png?v=1",
+          "label": "bloodbarrage"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0070",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543465115870035999.png?v=1",
+          "label": "airsurge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0070",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1351696446646390824.png?v=1",
+          "label": "crumbleundead"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063104146411713.png?v=1",
+          "label": "magicbasic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0072",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063104146411713.png?v=1",
+          "label": "magicbasic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0072",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/856635090783567902.png?v=1",
+          "label": "incitefear"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0073",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063104146411713.png?v=1",
+          "label": "magicbasic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0073",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537338981747261446.png?v=1",
+          "label": "bloodbarrage"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0073",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/914077639784935424.png?v=1",
+          "label": "emeraldaurora"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0073",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/574292444791963659.png?v=1",
+          "label": "rubyaurora"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0074",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/856635090641879050.png?v=1",
+          "label": "smokecloud"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "> Rotation Examples gsunshine",
+      "sourceAnchor": "rotation-examples",
+      "headingBlockId": "dpm-advice-mage:b:0076",
+      "level": 2,
+      "blockIds": [
+        "dpm-advice-mage:b:0076",
+        "dpm-advice-mage:b:0077",
+        "dpm-advice-mage:b:0078"
+      ],
+      "media": [
+        {
+          "blockId": "dpm-advice-mage:b:0076",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Starting Unlocks",
+      "sourceAnchor": "starting-unlocks",
+      "headingBlockId": "dpm-advice-mage:b:0079",
+      "level": 3,
+      "blockIds": [
+        "dpm-advice-mage:b:0079",
+        "dpm-advice-mage:b:0080",
+        "dpm-advice-mage:b:0081",
+        "dpm-advice-mage:b:0082",
+        "dpm-advice-mage:b:0083",
+        "dpm-advice-mage:b:0084",
+        "dpm-advice-mage:b:0085",
+        "dpm-advice-mage:b:0086"
+      ],
+      "media": [
+        {
+          "blockId": "dpm-advice-mage:b:0080",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513201065877831680.png?v=1",
+          "label": "rov"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0080",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Extinction",
+          "label": "Extinction quest"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0081",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/634350450887622656.png?v=1",
+          "label": "enhreplen"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0083",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1095409577014599701.png?v=1",
+          "label": "gsunshinecodex"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0083",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689501925770919981.png?v=1",
+          "label": "pf"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0084",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1095411706395635782.png?v=1",
+          "label": "gconccodex"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0084",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1095411830207299654.png?v=1",
+          "label": "gsoniccodex"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0085",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/856635090783567902.png?v=1",
+          "label": "incitefear"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0085",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/536257336130404372.png?v=1",
+          "label": "smoketendrils"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0085",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809995874304.png?v=1",
+          "label": "tsunami"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "1 Minute Examples",
+      "sourceAnchor": "1-minute-examples",
+      "headingBlockId": "dpm-advice-mage:b:0087",
+      "level": 3,
+      "blockIds": [
+        "dpm-advice-mage:b:0087",
+        "dpm-advice-mage:b:0088",
+        "dpm-advice-mage:b:0089",
+        "dpm-advice-mage:b:0090",
+        "dpm-advice-mage:b:0091",
+        "dpm-advice-mage:b:0092",
+        "dpm-advice-mage:b:0093",
+        "dpm-advice-mage:b:0094",
+        "dpm-advice-mage:b:0095",
+        "dpm-advice-mage:b:0096",
+        "dpm-advice-mage:b:0097",
+        "dpm-advice-mage:b:0098",
+        "dpm-advice-mage:b:0099",
+        "dpm-advice-mage:b:0100",
+        "dpm-advice-mage:b:0101",
+        "dpm-advice-mage:b:0102",
+        "dpm-advice-mage:b:0103"
+      ],
+      "media": [
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1",
+          "label": "runic_charge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063117211668584.png?v=1",
+          "label": "gsonic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/634350450887622656.png?v=1",
+          "label": "enhreplen"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809664262179.png?v=1",
+          "label": "omni"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1",
+          "label": "dbreath"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063117211668584.png?v=1",
+          "label": "gsonic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1",
+          "label": "dbreath"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1",
+          "label": "runic_charge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063117211668584.png?v=1",
+          "label": "gsonic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1",
+          "label": "combust"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1",
+          "label": "dbreath"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063104146411713.png?v=1",
+          "label": "magicbasic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063104146411713.png?v=1",
+          "label": "magicbasic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1",
+          "label": "dbreath"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063104146411713.png?v=1",
+          "label": "magicbasic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1",
+          "label": "runic_charge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063117211668584.png?v=1",
+          "label": "gsonic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1",
+          "label": "combust"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1",
+          "label": "runic_charge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063117211668584.png?v=1",
+          "label": "gsonic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1",
+          "label": "dbreath"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063117211668584.png?v=1",
+          "label": "gsonic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1",
+          "label": "combust"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1",
+          "label": "dbreath"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1",
+          "label": "runic_charge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809664262179.png?v=1",
+          "label": "omni"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063117211668584.png?v=1",
+          "label": "gsonic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1",
+          "label": "combust"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1",
+          "label": "dbreath"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063104146411713.png?v=1",
+          "label": "magicbasic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063104146411713.png?v=1",
+          "label": "magicbasic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1",
+          "label": "dbreath"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063104146411713.png?v=1",
+          "label": "magicbasic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1",
+          "label": "runic_charge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063117211668584.png?v=1",
+          "label": "gsonic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/634350450887622656.png?v=1",
+          "label": "enhreplen"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1",
+          "label": "runic_charge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063117211668584.png?v=1",
+          "label": "gsonic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1",
+          "label": "dbreath"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809995874304.png?v=1",
+          "label": "tsunami"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809664262179.png?v=1",
+          "label": "omni"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/536257336130404372.png?v=1",
+          "label": "smoketendrils"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063117211668584.png?v=1",
+          "label": "gsonic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1",
+          "label": "runic_charge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1",
+          "label": "combust"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1",
+          "label": "dbreath"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063104146411713.png?v=1",
+          "label": "magicbasic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1",
+          "label": "dbreath"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063104146411713.png?v=1",
+          "label": "magicbasic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1",
+          "label": "combust"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0095",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0098",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0098",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1",
+          "label": "runic_charge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0098",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063117211668584.png?v=1",
+          "label": "gsonic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0098",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0098",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1",
+          "label": "dbreath"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0098",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809995874304.png?v=1",
+          "label": "tsunami"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0098",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0098",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0098",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0098",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0098",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/536257336130404372.png?v=1",
+          "label": "smoketendrils"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0098",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0098",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0098",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063117211668584.png?v=1",
+          "label": "gsonic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0098",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0098",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0098",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0098",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1",
+          "label": "runic_charge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0098",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0098",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809664262179.png?v=1",
+          "label": "omni"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0098",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0098",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1",
+          "label": "combust"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0098",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0098",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1",
+          "label": "dbreath"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0098",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063104146411713.png?v=1",
+          "label": "magicbasic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0098",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0098",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063104146411713.png?v=1",
+          "label": "magicbasic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0098",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1",
+          "label": "dbreath"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0098",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0098",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0098",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063104146411713.png?v=1",
+          "label": "magicbasic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0098",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0098",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1",
+          "label": "combust"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0098",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0100",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809995874304.png?v=1",
+          "label": "tsunami"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0100",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/839903943018283050.png?v=1",
+          "label": "reaverring"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0100",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/712073087809617931.png?v=1",
+          "label": "biting4"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0102",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0102",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809995874304.png?v=1",
+          "label": "tsunami"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "dpm-advice-mage:b:0089",
+        "dpm-advice-mage:b:0092",
+        "dpm-advice-mage:b:0095",
+        "dpm-advice-mage:b:0098"
+      ]
+    },
+    {
+      "sourceHeading": "> PvM Decision Making wm",
+      "sourceAnchor": "pvm-decision-making",
+      "headingBlockId": "dpm-advice-mage:b:0104",
+      "level": 2,
+      "blockIds": [
+        "dpm-advice-mage:b:0104",
+        "dpm-advice-mage:b:0105",
+        "dpm-advice-mage:b:0106"
+      ],
+      "media": [
+        {
+          "blockId": "dpm-advice-mage:b:0104",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Area-of-Effect (AoE)",
+      "sourceAnchor": "area-of-effect-aoe",
+      "headingBlockId": "dpm-advice-mage:b:0107",
+      "level": 3,
+      "blockIds": [
+        "dpm-advice-mage:b:0107",
+        "dpm-advice-mage:b:0108",
+        "dpm-advice-mage:b:0109",
+        "dpm-advice-mage:b:0110",
+        "dpm-advice-mage:b:0111",
+        "dpm-advice-mage:b:0112",
+        "dpm-advice-mage:b:0113",
+        "dpm-advice-mage:b:0114",
+        "dpm-advice-mage:b:0115",
+        "dpm-advice-mage:b:0116",
+        "dpm-advice-mage:b:0117",
+        "dpm-advice-mage:b:0118",
+        "dpm-advice-mage:b:0119",
+        "dpm-advice-mage:b:0120",
+        "dpm-advice-mage:b:0121",
+        "dpm-advice-mage:b:0122",
+        "dpm-advice-mage:b:0123",
+        "dpm-advice-mage:b:0124",
+        "dpm-advice-mage:b:0125",
+        "dpm-advice-mage:b:0126"
+      ],
+      "media": [
+        {
+          "blockId": "dpm-advice-mage:b:0108",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063105182269460.png?v=1",
+          "label": "chain"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0108",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257440278512537740.png?v=1",
+          "label": "gchain"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0110",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257440278512537740.png?v=1",
+          "label": "gchain"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0110",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809664262179.png?v=1",
+          "label": "omni"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0110",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1266417538045317121.png?v=1",
+          "label": "roarofawakening"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0110",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0112",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809655873556.png?v=1",
+          "label": "impact"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0112",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0114",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/902209626509025290.png?v=1",
+          "label": "magmatempest"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0115",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/924741973858996284.png?v=1",
+          "label": "magmatempesttarget"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0116",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0117",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063106914779166.png?v=1",
+          "label": "gchain"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0118",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063106914779166.png?v=1",
+          "label": "gchain"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0118",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063454173532242.png?v=1",
+          "label": "magmatemptest"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0121",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537338981747261446.png?v=1",
+          "label": "bloodbarrage"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0122",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537338981747261446.png?v=1",
+          "label": "bloodbarrage"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0122",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400185245701.png?v=1",
+          "label": "icebarrage"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809995874304.png?v=1",
+          "label": "tsunami"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0124",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1",
+          "label": "dbreath"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0124",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1",
+          "label": "runic_charge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0125",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063113659093075.png?v=1",
+          "label": "corruptionblast"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0125",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537338981747261446.png?v=1",
+          "label": "bloodbarrage"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0125",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1",
+          "label": "dbreath"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "dpm-advice-mage:b:0110"
+      ]
+    },
+    {
+      "sourceHeading": "Spending Excess Adrenaline",
+      "sourceAnchor": "spending-excess-adrenaline",
+      "headingBlockId": "dpm-advice-mage:b:0127",
+      "level": 3,
+      "blockIds": [
+        "dpm-advice-mage:b:0127",
+        "dpm-advice-mage:b:0128",
+        "dpm-advice-mage:b:0129",
+        "dpm-advice-mage:b:0130",
+        "dpm-advice-mage:b:0131",
+        "dpm-advice-mage:b:0132",
+        "dpm-advice-mage:b:0133",
+        "dpm-advice-mage:b:0134"
+      ],
+      "media": [
+        {
+          "blockId": "dpm-advice-mage:b:0128",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0129",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1",
+          "label": "eofspec"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0129",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0130",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0130",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0131",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1215929543068618752.png?v=1",
+          "label": "ibansstaff"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0131",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1451134746280329357.png?v=1",
+          "label": "legatusemberstaff"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0131",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/745279787471470713.png?v=1",
+          "label": "eof"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0133",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513203008608141314.png?v=1",
+          "label": "gstaff"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0133",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1",
+          "label": "eofspec"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Dealing with Movement",
+      "sourceAnchor": "dealing-with-movement",
+      "headingBlockId": "dpm-advice-mage:b:0135",
+      "level": 3,
+      "blockIds": [
+        "dpm-advice-mage:b:0135",
+        "dpm-advice-mage:b:0136",
+        "dpm-advice-mage:b:0137",
+        "dpm-advice-mage:b:0138",
+        "dpm-advice-mage:b:0139",
+        "dpm-advice-mage:b:0140",
+        "dpm-advice-mage:b:0141",
+        "dpm-advice-mage:b:0142"
+      ],
+      "media": [
+        {
+          "blockId": "dpm-advice-mage:b:0136",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0136",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0137",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0138",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0138",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1",
+          "label": "dive"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0138",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0139",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0139",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1",
+          "label": "dive"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0140",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535614336207552523.png?v=1",
+          "label": "disrupt"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0140",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/654618235097972737.png?v=1",
+          "label": "powerburstofvitality"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0141",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0141",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1",
+          "label": "combust"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0141",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1266417538045317121.png?v=1",
+          "label": "roarofawakening"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0141",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Short Damage Checks",
+      "sourceAnchor": "short-damage-checks",
+      "headingBlockId": "dpm-advice-mage:b:0143",
+      "level": 3,
+      "blockIds": [
+        "dpm-advice-mage:b:0143",
+        "dpm-advice-mage:b:0144",
+        "dpm-advice-mage:b:0145",
+        "dpm-advice-mage:b:0146",
+        "dpm-advice-mage:b:0147",
+        "dpm-advice-mage:b:0148",
+        "dpm-advice-mage:b:0149",
+        "dpm-advice-mage:b:0150",
+        "dpm-advice-mage:b:0151",
+        "dpm-advice-mage:b:0152",
+        "dpm-advice-mage:b:0153"
+      ],
+      "media": [
+        {
+          "blockId": "dpm-advice-mage:b:0146",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1",
+          "label": "runic_charge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0146",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0146",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809664262179.png?v=1",
+          "label": "omni"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0146",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0147",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0147",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0148",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063454173532242.png?v=1",
+          "label": "magmatemptest"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0148",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1",
+          "label": "combust"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0148",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1266417538045317121.png?v=1",
+          "label": "roarofawakening"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0148",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0149",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1",
+          "label": "combust"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0149",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0149",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1",
+          "label": "runic_charge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0149",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1",
+          "label": "dbreath"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0150",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809664262179.png?v=1",
+          "label": "omni"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0151",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1266417538045317121.png?v=1",
+          "label": "roarofawakening"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0151",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641337999170207763.png?v=1",
+          "label": "excal"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "dpm-advice-mage:b:0146",
+        "dpm-advice-mage:b:0149"
+      ]
+    },
+    {
+      "sourceHeading": "Reaver's Ring vs Channeller's Ring reaverring channellerring",
+      "sourceAnchor": "reavers-ring-vs-channellers-ring",
+      "headingBlockId": "dpm-advice-mage:b:0154",
+      "level": 3,
+      "blockIds": [
+        "dpm-advice-mage:b:0154",
+        "dpm-advice-mage:b:0155",
+        "dpm-advice-mage:b:0156",
+        "dpm-advice-mage:b:0157",
+        "dpm-advice-mage:b:0158",
+        "dpm-advice-mage:b:0159",
+        "dpm-advice-mage:b:0160"
+      ],
+      "media": [
+        {
+          "blockId": "dpm-advice-mage:b:0154",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/839903943018283050.png?v=1",
+          "label": "reaverring"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0154",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/839903943404027914.png?v=1",
+          "label": "channellerring"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0155",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1",
+          "label": "magic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0156",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/839903943404027914.png?v=1",
+          "label": "channellersring"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0156",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809664262179.png?v=1",
+          "label": "omni"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0156",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0156",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869284271595069451.png?v=1",
+          "label": "fsoa"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0156",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0157",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/839903943404027914.png?v=1",
+          "label": "channellersring"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0157",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1400500746377625790.png?v=1",
+          "label": "tumekenrobetop"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0157",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0158",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/839903943404027914.png?v=1",
+          "label": "channellerring"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0158",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1400500746377625790.png?v=1",
+          "label": "tumekenrobetop"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0158",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/839903943018283050.png?v=1",
+          "label": "reaverring"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0159",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/839903943404027914.png?v=1",
+          "label": "channellersring"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0159",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0159",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/839903943018283050.png?v=1",
+          "label": "reaverring"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "> Advanced Magic Rotations fsoa",
+      "sourceAnchor": "advanced-magic-rotations",
+      "headingBlockId": "dpm-advice-mage:b:0161",
+      "level": 2,
+      "blockIds": [
+        "dpm-advice-mage:b:0161",
+        "dpm-advice-mage:b:0162",
+        "dpm-advice-mage:b:0163"
+      ],
+      "media": [
+        {
+          "blockId": "dpm-advice-mage:b:0161",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869284271595069451.png?v=1",
+          "label": "fsoa"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0162",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1",
+          "label": "magic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0162",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869284271595069451.png?v=1",
+          "label": "fsoa"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0162",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1400500746377625790.png?v=1",
+          "label": "tumekenrobetop"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Sanctum Dual Wield Weapons roarofawakening odetodeceit",
+      "sourceAnchor": "sanctum-dual-wield-weapons",
+      "headingBlockId": "dpm-advice-mage:b:0164",
+      "level": 3,
+      "blockIds": [
+        "dpm-advice-mage:b:0164",
+        "dpm-advice-mage:b:0165",
+        "dpm-advice-mage:b:0166",
+        "dpm-advice-mage:b:0167",
+        "dpm-advice-mage:b:0168",
+        "dpm-advice-mage:b:0169",
+        "dpm-advice-mage:b:0170",
+        "dpm-advice-mage:b:0171",
+        "dpm-advice-mage:b:0172",
+        "dpm-advice-mage:b:0173",
+        "dpm-advice-mage:b:0174",
+        "dpm-advice-mage:b:0175",
+        "dpm-advice-mage:b:0176",
+        "dpm-advice-mage:b:0177",
+        "dpm-advice-mage:b:0178",
+        "dpm-advice-mage:b:0179"
+      ],
+      "media": [
+        {
+          "blockId": "dpm-advice-mage:b:0164",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1266417538045317121.png?v=1",
+          "label": "roarofawakening"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0164",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1266417683058917517.png?v=1",
+          "label": "odetodeceit"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0165",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869284271595069451.png?v=1",
+          "label": "fsoa"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0167",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1266418936820404295.png?v=1",
+          "label": "essencecorruption"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0167",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0168",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1266417538045317121.png?v=1",
+          "label": "roarofawakening"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0168",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0168",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0169",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1",
+          "label": "combust"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0169",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0169",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1266418936820404295.png?v=1",
+          "label": "essencecorruption"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0169",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0170",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1266417538045317121.png?v=1",
+          "label": "roarofawakening"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0170",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0170",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0170",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1",
+          "label": "combust"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1",
+          "label": "runic_charge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063117211668584.png?v=1",
+          "label": "gsonic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869285393223254107.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809995874304.png?v=1",
+          "label": "tsunami"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809664262179.png?v=1",
+          "label": "omni"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/536257336130404372.png?v=1",
+          "label": "smoketendrils"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1266417538045317121.png?v=1",
+          "label": "roarofawakening"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1",
+          "label": "combust"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1266417538045317121.png?v=1",
+          "label": "roarofawakening"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1",
+          "label": "dbreath"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1",
+          "label": "combust"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0176",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1266417538045317121.png?v=1",
+          "label": "roarofawakening"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0176",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0176",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0176",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0176",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0177",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1",
+          "label": "combust"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0177",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1266418936820404295.png?v=1",
+          "label": "essencecorruption"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0177",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0178",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257440278512537740.png?v=1",
+          "label": "gchain"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0178",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833098100745.png?v=1",
+          "label": "comb"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0178",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1266418936820404295.png?v=1",
+          "label": "essencecorruption"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "dpm-advice-mage:b:0173",
+        "dpm-advice-mage:b:0178"
+      ]
+    },
+    {
+      "sourceHeading": "Fractured Staff of Armadyl fsoa",
+      "sourceAnchor": "fractured-staff-of-armadyl",
+      "headingBlockId": "dpm-advice-mage:b:0180",
+      "level": 3,
+      "blockIds": [
+        "dpm-advice-mage:b:0180",
+        "dpm-advice-mage:b:0181",
+        "dpm-advice-mage:b:0182",
+        "dpm-advice-mage:b:0183",
+        "dpm-advice-mage:b:0184",
+        "dpm-advice-mage:b:0185",
+        "dpm-advice-mage:b:0186",
+        "dpm-advice-mage:b:0187",
+        "dpm-advice-mage:b:0188",
+        "dpm-advice-mage:b:0189",
+        "dpm-advice-mage:b:0190",
+        "dpm-advice-mage:b:0191",
+        "dpm-advice-mage:b:0192",
+        "dpm-advice-mage:b:0193",
+        "dpm-advice-mage:b:0194",
+        "dpm-advice-mage:b:0195",
+        "dpm-advice-mage:b:0196",
+        "dpm-advice-mage:b:0197",
+        "dpm-advice-mage:b:0198",
+        "dpm-advice-mage:b:0199",
+        "dpm-advice-mage:b:0200",
+        "dpm-advice-mage:b:0201"
+      ],
+      "media": [
+        {
+          "blockId": "dpm-advice-mage:b:0180",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869284271595069451.png?v=1",
+          "label": "fsoa"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0181",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869284271595069451.png?v=1",
+          "label": "fsoa"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0182",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1266418936820404295.png?v=1",
+          "label": "essencecorruption"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0182",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869284271595069451.png?v=1",
+          "label": "fsoa"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0183",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1266417538045317121.png?v=1",
+          "label": "roarofawakening"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0183",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1266417683058917517.png?v=1",
+          "label": "odetodeceit"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0183",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0184",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0184",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809995874304.png?v=1",
+          "label": "tsunami"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0184",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869284271595069451.png?v=1",
+          "label": "fsoa"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0184",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0186",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/712073087809617931.png?v=1",
+          "label": "biting4"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0187",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/568262896375824385.png?v=1",
+          "label": "grim"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0188",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/839903943018283050.png?v=1",
+          "label": "reaverring"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0188",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/839903943404027914.png?v=1",
+          "label": "channellerring"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0189",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/921410226484301925.png?v=1",
+          "label": "kalgpouch"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0189",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/841409588954923049.png?v=1",
+          "label": "kalgscroll"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0190",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/643849283199696917.png?v=1",
+          "label": "tectmask"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0190",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/556582803014418432.png?v=1",
+          "label": "elitetectmask"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0190",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1400500746377625790.png?v=1",
+          "label": "tumekenrobetop"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0191",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1285372688457797672.png?v=1",
+          "label": "eclipsedsoul"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0194",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0194",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1",
+          "label": "runic_charge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0194",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063117211668584.png?v=1",
+          "label": "gsonic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0194",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869285393223254107.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0194",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809995874304.png?v=1",
+          "label": "tsunami"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0194",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869284271595069451.png?v=1",
+          "label": "fsoa"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0194",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0194",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869285393223254107.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0194",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0194",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0194",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809664262179.png?v=1",
+          "label": "omni"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0194",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0194",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/536257336130404372.png?v=1",
+          "label": "smoketendrils"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0194",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0194",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0194",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1266417538045317121.png?v=1",
+          "label": "roarofawakening"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0194",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0194",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0194",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0194",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1",
+          "label": "runic_charge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0194",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0194",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0194",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0194",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1",
+          "label": "combust"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0194",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1",
+          "label": "combust"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0194",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0194",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0194",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0198",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/536257336130404372.png?v=1",
+          "label": "smoketendrils"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0198",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0199",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/536257336130404372.png?v=1",
+          "label": "smoketendrils"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0199",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0199",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1400500746377625790.png?v=1",
+          "label": "tumekenrobetop"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0200",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/856635090783567902.png?v=1",
+          "label": "incitefear"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0200",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "dpm-advice-mage:b:0194"
+      ]
+    },
+    {
+      "sourceHeading": "Tumeken's Resplendence tumekenrobetop",
+      "sourceAnchor": "tumekens-resplendence",
+      "headingBlockId": "dpm-advice-mage:b:0202",
+      "level": 3,
+      "blockIds": [
+        "dpm-advice-mage:b:0202",
+        "dpm-advice-mage:b:0203",
+        "dpm-advice-mage:b:0204",
+        "dpm-advice-mage:b:0205",
+        "dpm-advice-mage:b:0206",
+        "dpm-advice-mage:b:0207",
+        "dpm-advice-mage:b:0208",
+        "dpm-advice-mage:b:0209",
+        "dpm-advice-mage:b:0210",
+        "dpm-advice-mage:b:0211",
+        "dpm-advice-mage:b:0212",
+        "dpm-advice-mage:b:0213",
+        "dpm-advice-mage:b:0214",
+        "dpm-advice-mage:b:0215",
+        "dpm-advice-mage:b:0216",
+        "dpm-advice-mage:b:0217",
+        "dpm-advice-mage:b:0218",
+        "dpm-advice-mage:b:0219",
+        "dpm-advice-mage:b:0220"
+      ],
+      "media": [
+        {
+          "blockId": "dpm-advice-mage:b:0202",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1400500746377625790.png?v=1",
+          "label": "tumekenrobetop"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0203",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1400500746377625790.png?v=1",
+          "label": "tumekenrobetop"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0203",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/552955120707698699.png?v=1",
+          "label": "elitetectbody"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0205",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0206",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0206",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0206",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809995874304.png?v=1",
+          "label": "tsunami"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0206",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869284271595069451.png?v=1",
+          "label": "fsoa"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0206",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0207",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0208",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0208",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/839903943404027914.png?v=1",
+          "label": "channellerring"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0208",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1279516151423963166.png?v=1",
+          "label": "critbuff"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0208",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0208",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/536257336130404372.png?v=1",
+          "label": "smoketendrils"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0209",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0209",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/856635090745950258.png?v=1",
+          "label": "exsanguinate"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0209",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/856635090783567902.png?v=1",
+          "label": "incitefear"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0209",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869284271595069451.png?v=1",
+          "label": "fsoa"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0209",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0209",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869285393223254107.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0209",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0209",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/856635090745950258.png?v=1",
+          "label": "exsanguinate"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0209",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1",
+          "label": "runic_charge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063117211668584.png?v=1",
+          "label": "gsonic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1",
+          "label": "dbreath"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809995874304.png?v=1",
+          "label": "tsunami"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869284271595069451.png?v=1",
+          "label": "fsoa"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/536257336130404372.png?v=1",
+          "label": "smoketendrils"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809664262179.png?v=1",
+          "label": "omni"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1266417538045317121.png?v=1",
+          "label": "roarofawakening"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1",
+          "label": "runic_charge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1",
+          "label": "combust"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1",
+          "label": "dbreath"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063117211668584.png?v=1",
+          "label": "gsonic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1",
+          "label": "combust"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1",
+          "label": "dbreath"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0212",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0215",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0215",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809664262179.png?v=1",
+          "label": "omni"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0215",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0216",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/536257336130404372.png?v=1",
+          "label": "smoketendrils"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0216",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0218",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1266417538045317121.png?v=1",
+          "label": "roarofawakening"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0218",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0218",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1",
+          "label": "eofspec"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0219",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0219",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "dpm-advice-mage:b:0209",
+        "dpm-advice-mage:b:0212"
+      ]
+    },
+    {
+      "sourceHeading": "Runic Charge and Adrenaline Renewal runic_charge adrenrenewal",
+      "sourceAnchor": "runic-charge-and-adrenaline-renewal",
+      "headingBlockId": "dpm-advice-mage:b:0221",
+      "level": 3,
+      "blockIds": [
+        "dpm-advice-mage:b:0221",
+        "dpm-advice-mage:b:0222",
+        "dpm-advice-mage:b:0223",
+        "dpm-advice-mage:b:0224",
+        "dpm-advice-mage:b:0225",
+        "dpm-advice-mage:b:0226",
+        "dpm-advice-mage:b:0227",
+        "dpm-advice-mage:b:0228",
+        "dpm-advice-mage:b:0229",
+        "dpm-advice-mage:b:0230",
+        "dpm-advice-mage:b:0231",
+        "dpm-advice-mage:b:0232",
+        "dpm-advice-mage:b:0233",
+        "dpm-advice-mage:b:0234",
+        "dpm-advice-mage:b:0235",
+        "dpm-advice-mage:b:0236"
+      ],
+      "media": [
+        {
+          "blockId": "dpm-advice-mage:b:0221",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1",
+          "label": "runic_charge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0221",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736298121704767538.png?v=1",
+          "label": "adrenrenewal"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0222",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1",
+          "label": "runic_charge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0222",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063117211668584.png?v=1",
+          "label": "gsonic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0222",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809995874304.png?v=1",
+          "label": "tsunami"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0223",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0223",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809664262179.png?v=1",
+          "label": "omni"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0223",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0224",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1",
+          "label": "runic_charge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0225",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1",
+          "label": "runic_charge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0225",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1",
+          "label": "dbreath"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0225",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736298121704767538.png?v=1",
+          "label": "adrenrenewal"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0226",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1",
+          "label": "runic_charge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0226",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0226",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063117211668584.png?v=1",
+          "label": "gsonic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0226",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0227",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1",
+          "label": "runic_charge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736298121704767538.png?v=1",
+          "label": "adrenrenewal"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063117211668584.png?v=1",
+          "label": "gsonic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1",
+          "label": "runic_charge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809995874304.png?v=1",
+          "label": "tsunami"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869284271595069451.png?v=1",
+          "label": "fsoa"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/536257336130404372.png?v=1",
+          "label": "smoketendrils"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809664262179.png?v=1",
+          "label": "omni"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1266417538045317121.png?v=1",
+          "label": "roarofawakening"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1",
+          "label": "runic_charge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1",
+          "label": "combust"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1",
+          "label": "dbreath"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063117211668584.png?v=1",
+          "label": "gsonic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1",
+          "label": "combust"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1",
+          "label": "dbreath"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1",
+          "label": "runic_charge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063117211668584.png?v=1",
+          "label": "gsonic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809995874304.png?v=1",
+          "label": "tsunami"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869284271595069451.png?v=1",
+          "label": "fsoa"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0234",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736298121704767538.png?v=1",
+          "label": "adrenrenewal"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0234",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1",
+          "label": "runic_charge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0234",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0234",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0235",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1",
+          "label": "runic_charge"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0235",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063117211668584.png?v=1",
+          "label": "gsonic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0235",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736298121704767538.png?v=1",
+          "label": "adrenrenewal"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "dpm-advice-mage:b:0231"
+      ]
+    },
+    {
+      "sourceHeading": "Temporal Anomaly temporalanomaly",
+      "sourceAnchor": "temporal-anomaly",
+      "headingBlockId": "dpm-advice-mage:b:0237",
+      "level": 3,
+      "blockIds": [
+        "dpm-advice-mage:b:0237",
+        "dpm-advice-mage:b:0238",
+        "dpm-advice-mage:b:0239",
+        "dpm-advice-mage:b:0240",
+        "dpm-advice-mage:b:0241",
+        "dpm-advice-mage:b:0242",
+        "dpm-advice-mage:b:0243",
+        "dpm-advice-mage:b:0244",
+        "dpm-advice-mage:b:0245",
+        "dpm-advice-mage:b:0246",
+        "dpm-advice-mage:b:0247",
+        "dpm-advice-mage:b:0248",
+        "dpm-advice-mage:b:0249"
+      ],
+      "media": [
+        {
+          "blockId": "dpm-advice-mage:b:0237",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1357545000577011782.png?v=1",
+          "label": "temporalanomaly"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0238",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1357545000577011782.png?v=1",
+          "label": "temporalanomaly"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0240",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809995874304.png?v=1",
+          "label": "tsunami"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0240",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0243",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809664262179.png?v=1",
+          "label": "omni"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0243",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869284271595069451.png?v=1",
+          "label": "fsoa"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0243",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0244",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0244",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1400500746377625790.png?v=1",
+          "label": "tumekenrobetop"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0244",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+          "label": "gsunshine"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0245",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0245",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0246",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/536257336130404372.png?v=1",
+          "label": "smoketendrils"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0246",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869284271595069451.png?v=1",
+          "label": "fsoa"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0246",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0247",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257440278512537740.png?v=1",
+          "label": "gchain"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0248",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809664262179.png?v=1",
+          "label": "omni"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0248",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Related guides",
+      "sourceAnchor": "related-channels",
+      "headingBlockId": "dpm-advice-mage:b:0250",
+      "level": 2,
+      "blockIds": [
+        "dpm-advice-mage:b:0250",
+        "dpm-advice-mage:b:0251",
+        "dpm-advice-mage:b:0252",
+        "dpm-advice-mage:b:0253",
+        "dpm-advice-mage:b:0254"
+      ],
+      "media": [
+        {
+          "blockId": "dpm-advice-mage:b:0252",
+          "tag": "a",
+          "url": "/archive/pvme-guides/upgrading-info/upgrade-order/magic/",
+          "label": "Magic"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0252",
+          "tag": "a",
+          "url": "/archive/pvme-guides/miscellaneous-information/eof-specs/",
+          "label": "Eof Specs"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0252",
+          "tag": "a",
+          "url": "/archive/pvme-guides/invention-and-perks/perks/",
+          "label": "Perks"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0252",
+          "tag": "a",
+          "url": "/archive/pvme-guides/invention-and-perks/perk-information/",
+          "label": "Perk Information"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0252",
+          "tag": "a",
+          "url": "/archive/pvme-guides/miscellaneous-information/ability-information/magic-abilities/",
+          "label": "Magic Abilities"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0252",
+          "tag": "a",
+          "url": "/archive/pvme-guides/miscellaneous-information/mechanics/",
+          "label": "Mechanics"
+        },
+        {
+          "blockId": "dpm-advice-mage:b:0253",
+          "tag": "a",
+          "url": "https://discord.com/channels/534508796639182860/656898197561802760",
+          "label": "PvM help (external Discord)"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    }
+  ],
+  "attribution": {
+    "author": "PvME contributors",
+    "license": "CC BY-NC-SA 4.0",
+    "imported": "2026-11-10T14:23:33Z"
+  },
+  "upstream": {
+    "sourcePath": "dpm-advice/dpm-advice-mage.txt",
+    "revision": "ee913a530677bddd0af48860062fed8c8efd77a3",
+    "sha256": "7ad6c4d8a3f7a8f75419a5139104f9c34d71a22ac020de4b41319a30e2d633ff",
+    "kind": "guide"
+  }
+}

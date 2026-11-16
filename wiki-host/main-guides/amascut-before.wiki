@@ -1,0 +1,729 @@
+[[PvME|PvME guide index]]
+
+<span id="amascut-the-devourer"></span><p>[https://img.pvme.io/images/EFlnaJbrvr.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h2 id="introduction"><nowiki>Introduction</nowiki></h2>
+<nowiki>
+</nowiki><p><nowiki>The aim of this guide is to provide a basic overview of how to get consistent kills at Amascut, the Devourer. Due to the boss' high defence levels, demanding DPS checks and mechanical complexity, contents of this guide assume you have at least made it to the end of Stage 1 of </nowiki>[https://pvme.io/gear/ <nowiki>Upgrade guides</nowiki>]<nowiki> for your chosen style. As Amascut is enrage-based with fixed enrages of 100, 500, 750, 1000, 2000 and 4000%, mechanics and strategies may differ based on enrage. For the purposes of this guide, 100% enrage will be utilized.</nowiki></p>
+<nowiki>
+</nowiki><h3 id="disclaimer"><nowiki>Disclaimer</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>This guide, and its contents thereof, assume you are getting started with Amascut, and does not necessarily cover meta strategies.</nowiki></p>
+<nowiki>
+</nowiki><h2 id="general-information"><ins><nowiki>General Information</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>⬥ Amascut, the Devourer is located in Menaphos. Fighting her requires completion of the </nowiki><strong><nowiki>Eclipse of the Heart</nowiki></strong><nowiki> quest.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ She has variable LP based on chosen mode and enrage:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><ins><strong><nowiki>Normal Mode</nowiki></strong></ins><nowiki>: 4.0M</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><ins><strong><nowiki>100%</nowiki></strong></ins><nowiki>: 5.5M</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><ins><strong><nowiki>500%</nowiki></strong></ins><nowiki>: 7M</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><ins><strong><nowiki>750%</nowiki></strong></ins><nowiki>: 8M</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><ins><strong><nowiki>1000%</nowiki></strong></ins><nowiki>: 9M</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><ins><strong><nowiki>2000%</nowiki></strong></ins><nowiki>: 12M</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><ins><strong><nowiki>4000%</nowiki></strong></ins><nowiki>: 16M</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Defensively, Amascut has a Defence </nowiki>[https://cdn.discordapp.com/emojis/689509250979987525.png?v=1 <nowiki>defence</nowiki>]<nowiki> level of 95, with 2765 Armour and an affinity of 55 Affinity against all styles.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Amascut is immune to stuns </nowiki>[https://cdn.discordapp.com/emojis/841419289428492369.png?v=1 <nowiki>stunicon</nowiki>]<nowiki> and poison </nowiki>[https://cdn.discordapp.com/emojis/944649693500154006.png?v=1 <nowiki>poisonicon</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Her minions can be poisoned and stunned.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Amascut is mechanically complex, consisting of 5 phases in Normal and 7 phases in Enrage mode.</nowiki></p>
+<nowiki>
+</nowiki><h2 id="gear-relics-familiars"><ins><nowiki>Gear, Relics, Familiars</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>The following presets are based on Stage 1 and provided by Amascut, the Devourer Discord:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://presets.pvme.io/?id=c9915f48-ad2f-4a74-bc28-de538d40826e <nowiki>Necromancy</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://presets.pvme.io/?id=nfm2UnsVqmKfaFDf2Z9X <nowiki>Magic</nowiki>]<nowiki>
+</nowiki>[https://firebasestorage.googleapis.com/v0/b/preset-images/o/images%2Fnfm2UnsVqmKfaFDf2Z9X.png?alt=media <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h2 id="fight-mechanics-phases-1-3"><ins><nowiki>Fight Mechanics</nowiki></ins><nowiki> (Phases 1 &amp; 3)</nowiki></h2>
+<nowiki>
+</nowiki><p><nowiki>⬥ Amascut attacks with </nowiki>[https://cdn.discordapp.com/emojis/689504724159823906.png?v=1 <nowiki>magic</nowiki>]<nowiki> and </nowiki>[https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1 <nowiki>melee</nowiki>]<nowiki>, with a mechanic every 3 auto attacks</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Magic attacks deal damage to all players, and is telegraphed by Amascut raising her left hand and shooting out a green ball of energy</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Melee attacks deal damage to whoever has Amascut's aggression, and any player within 2-3 tiles near them; telegraphed by Amascut raising her right hand and slashing her target</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Melee attacks will additionally cause </nowiki>[https://cdn.discordapp.com/emojis/580168050121113623.png?v=1 <nowiki>range</nowiki>]<nowiki> arrows to fly at anyone within 10 tiles of her target once the melee hit lands</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Every 4 auto attacks, Amascut will perform </nowiki><ins><nowiki>Rapid Swipes</nowiki></ins><nowiki> where she starts viciously swiping at her target, dealing 2 quick hits of </nowiki>[https://cdn.discordapp.com/emojis/689504724159823906.png?v=1 <nowiki>magic</nowiki>]<nowiki> or </nowiki>[https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1 <nowiki>melee</nowiki>]<nowiki> damage based on her last used style, followed by a double hit that inflicts both types of damage</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• In higher enrages, this has massive KO potential</nowiki></p>
+<nowiki>
+</nowiki><h3 id="attack-rotation"><ins><nowiki>Attack Rotation</nowiki></ins></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ This rotation assumes Amascut is not phased by reaching her hitcap</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ 3 </nowiki>[https://cdn.discordapp.com/emojis/689504724159823906.png?v=1 <nowiki>magic</nowiki>]<nowiki> auto attacks → </nowiki><em><nowiki>Tri-colour Attack</nowiki></em><nowiki> → Rapid swipes + 2 auto attacks → </nowiki><em><nowiki>Summon Scarabs</nowiki></em><nowiki> → 1 auto attack + Rapid swipes + 1 auto attack → </nowiki><em><nowiki>Soul Crush</nowiki></em><nowiki> → 2 auto attacks + Rapid swipes → </nowiki><em><nowiki>Triple Strike</nowiki></em><nowiki> → 3 auto attacks → </nowiki><em><nowiki>Tri-colour Attack</nowiki></em><nowiki> → Rapid swipes + 2 auto attacks → </nowiki><em><nowiki>Hard phase</nowiki></em><nowiki> (Amascut enters P2 or P4 depending on which phase the players were on)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ If the players reach phase hitcap for P1 and/or P3, Amascut will reset her mechanics rotation (starting over with Tri-colour attack being her first mechanic), but will </nowiki><ins><nowiki>not</nowiki></ins><nowiki> reset her auto attack rotation (if she entered P2 after landing Rapid swipes, her P3 rotation will start with 3 regular auto attacks)</nowiki></p>
+<nowiki>
+</nowiki><h3 id="corruption"><ins><nowiki>Corruption</nowiki></ins><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1402610315480535050.png?v=1 <nowiki>corruption</nowiki>]</h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Persistent mechanic that increases all incoming damage by 10% per stack</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Capped at 15 stacks for a total of 150% damage increase</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Sources:</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Amascut's auto-attacks against her </nowiki><ins><nowiki>main target</nowiki></ins><nowiki> each inflict a stack</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Getting hit by Devourer's Shockwaves or Soulfire Waves inflict a stack</nowiki></p>
+<nowiki>
+</nowiki><h3 id="tri-colour-attack"><ins><nowiki>Tri-colour Attack</nowiki></ins></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Amascut will flash 3 orbs in order, </nowiki><ins><nowiki>one for each style</nowiki></ins><nowiki>, and attack the Base Tank in the order she flashed the orbs</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The attacks deal heavy damage if not prayed against, and will stun the player taking them at 500% enrage or higher</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Solution:</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Amascut </nowiki><ins><nowiki>telegraphs</nowiki></ins><nowiki> which styles she will attack with when she performs the mechanic:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><code><nowiki>Pathetic</nowiki></code><nowiki>: </nowiki>[https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1 <nowiki>melee</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/580168050121113623.png?v=1 <nowiki>range</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/689504724159823906.png?v=1 <nowiki>magic</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><code><nowiki>Weak</nowiki></code><nowiki>: </nowiki>[https://cdn.discordapp.com/emojis/580168050121113623.png?v=1 <nowiki>range</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/689504724159823906.png?v=1 <nowiki>magic</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1 <nowiki>melee</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><code><nowiki>Grovel</nowiki></code><nowiki>: </nowiki>[https://cdn.discordapp.com/emojis/689504724159823906.png?v=1 <nowiki>magic</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1 <nowiki>melee</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/580168050121113623.png?v=1 <nowiki>range</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/535541306475151390.png?v=1 <nowiki>anti</nowiki>]<nowiki> protects against being stunned at 500% enrage or higher</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Only affects the Base Tank, other roles are safe</nowiki></p>
+<nowiki>
+</nowiki>[https://img.pvme.io/images/ZO7c5iux5L.mp4 <nowiki>Source media</nowiki>]<nowiki>
+
+</nowiki><h3 id="summon-scarabs"><ins><nowiki>Summon Scarabs</nowiki></ins></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Amascut summons 2-5 scarabs per player based on enrage, charging up over time</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The scarabs are Immune to damage until they are stunned</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Once fully charged, they explode, dealing soft typeless damage to all players in the arena</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Solution:</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Their damage can be mitigated entirely by casting </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If unavailable, </nowiki>[https://cdn.discordapp.com/emojis/535541258786177064.png?v=1 <nowiki>reflect</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/654618235097972737.png?v=1 <nowiki>powerburstofvitality</nowiki>]<nowiki> can be used as a last resort</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Stepping on them as they spawn will prevent them from spawning entirely, doing so will reset the cooldown of </nowiki>[https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1 <nowiki>dive</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Stunning them will lift their damage immunity and kill them due to their low health (2000 LP)</nowiki></p>
+<nowiki>
+</nowiki><h3 id="soul-crush-aka-bend-the-knee"><ins><nowiki>Soul Crush</nowiki></ins><nowiki> (a.k.a. Bend the Knee)</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Amascut deals massive soft typeless damage to her main target, split between all players in a 3x3 radius of her target</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Has 50% piercing against defensive abilities</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Solution:</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Base Tank can </nowiki>[https://cdn.discordapp.com/emojis/535541258538582017.png?v=1 <nowiki>immort</nowiki>]<nowiki> at the end of </nowiki><ins><strong><nowiki>Tri-colour Attack</nowiki></strong></ins><nowiki> at earliest to negate this mechanic, assuming they do not proc it earlier</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ DPS pile can </nowiki>[https://cdn.discordapp.com/emojis/535541259465392143.png?v=1 <nowiki>voke</nowiki>]<nowiki> Soul Crush and split it between themselves, using </nowiki>[https://cdn.discordapp.com/emojis/535541258786177064.png?v=1 <nowiki>reflect</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/654618235097972737.png?v=1 <nowiki>powerburstofvitality</nowiki>]<nowiki> to stay alive</nowiki></p>
+<nowiki>
+</nowiki>[https://img.pvme.io/images/DTnk2wbbf4.mp4 <nowiki>Source media</nowiki>]<nowiki>
+
+</nowiki><h3 id="triple-strike"><ins><nowiki>Triple Strike</nowiki></ins></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Amascut alters the skybox colour and prepares to launch 3 devastating hits with the same style she calls out</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Not praying against the hits correctly deals massive damage</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Affects all players in the encounter</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Solution:</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Amascut </nowiki><ins><nowiki>telegraphs</nowiki></ins><nowiki> which style she will attack with when she performs the mechanic:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><code><nowiki>All strength withers</nowiki></code><nowiki> ‎(skybox turns </nowiki><ins><strong><nowiki>red</nowiki></strong></ins><nowiki>): 3 </nowiki>[https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1 <nowiki>melee</nowiki>]<nowiki> hits</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><code><nowiki>I will not suffer this</nowiki></code><nowiki> ‎(skybox turns </nowiki><ins><strong><nowiki>green</nowiki></strong></ins><nowiki>): 3 </nowiki>[https://cdn.discordapp.com/emojis/580168050121113623.png?v=1 <nowiki>range</nowiki>]<nowiki> hits</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><code><nowiki>Your soul is WEAK</nowiki></code><nowiki> ‎(skybox turns </nowiki><ins><strong><nowiki>blue</nowiki></strong></ins><nowiki>): 3 </nowiki>[https://cdn.discordapp.com/emojis/689504724159823906.png?v=1 <nowiki>magic</nowiki>]<nowiki> hits</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/513190158728953857.png?v=1 <nowiki>devo</nowiki>]<nowiki> will fully protect you from all 3 hits, as long as you are praying against the style correctly</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If timed correctly, </nowiki>[https://cdn.discordapp.com/emojis/535541258844635148.png?v=1 <nowiki>res</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/787904334377648130.png?v=1 <nowiki>divert</nowiki>]<nowiki> can gain a massive amount of healing and adren respectively from the third hit</nowiki></p>
+<nowiki>
+</nowiki>[https://img.pvme.io/images/SH08p0rCVi.mp4 <nowiki>Source media</nowiki>]<nowiki>
+
+</nowiki><h2 id="fight-mechanics-phases-2-4"><ins><nowiki>Fight Mechanics</nowiki></ins><nowiki> (Phases 2 &amp; 4)</nowiki></h2>
+<nowiki>
+</nowiki><p><nowiki>⬥ Amascut stops attacking, becomes Immune to all damage, and charges a wipe mechanic</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ She will invoke the names of two of the Bau of Tumeken (Apmeken and Crondis in Phase 2, Scabaras and Het in Phase 4), causing their respective mechanics to become active</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Failure to complete this phase in less than 200 seconds will result in a </nowiki><ins><strong><nowiki>WIPE</nowiki></strong></ins><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1104794644497309809.png?v=1 <nowiki>instakill</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• This timer is reduced to 125 seconds at 1000% enrage, and further reduced to 100 seconds at 2000%</nowiki></p>
+<nowiki>
+</nowiki><h3 id="statues-fragments"><ins><nowiki>Statues &amp; Fragments</nowiki></ins></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ The statues of the Bau of Tumeken are </nowiki><ins><nowiki>corrupted</nowiki></ins><nowiki>, and must be </nowiki><ins><nowiki>cleansed</nowiki></ins><nowiki> and </nowiki><ins><nowiki>restored</nowiki></ins><nowiki> to progress the fight</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Clicking on the statue while they are glowing </nowiki><ins><strong><nowiki>green</nowiki></strong></ins><nowiki> will deal hard typeless damage to all players in the encounter</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Solution:</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The statues can be </nowiki><ins><nowiki>cleansed</nowiki></ins><nowiki> by clicking on them once they start glowing </nowiki><ins><strong><nowiki>golden</nowiki></strong></ins><nowiki> (indicating a </nowiki><ins><nowiki>Chain</nowiki></ins><nowiki> inside was brought to 0 HP), doing so three times will cleanse the statue, allowing it to be restored</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The statues can be </nowiki><ins><nowiki>restored</nowiki></ins><nowiki> by bringing its respective Fragment of Tumeken to them, this will stagger Amascut, interrupting her channelling and removing her damage immunity, allowing the encounter to be progressed</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Once both statues for that phase are </nowiki><ins><nowiki>restored</nowiki></ins><nowiki>, the phase ends when Amascut is damaged to her hitcap, or once she fully recovers</nowiki></p>
+<nowiki>
+</nowiki><h3 id="portals-inside-rooms"><ins><nowiki>Portals</nowiki></ins><nowiki> (Inside Rooms)</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ In order to cleanse the statues, players must enter through a portal on each side of the arena, guarded by a </nowiki><ins><nowiki>Gatekeeper gorilla akh</nowiki></ins></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><ins><nowiki>Gatekeeper gorilla akh</nowiki></ins><nowiki> has crawling speed, can potentially stun players with </nowiki>[https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1 <nowiki>melee</nowiki>]<nowiki> attacks</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Once inside, the players must work together and towards killing the </nowiki><ins><nowiki>Chainwarden mage akh</nowiki></ins><nowiki> and the </nowiki><ins><nowiki>chains</nowiki></ins><nowiki> preventing the players from claiming a </nowiki><ins><nowiki>Fragment of Tumeken</nowiki></ins></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ The chains, once they drop to </nowiki><strong><nowiki>0 LP</nowiki></strong><nowiki>, must be </nowiki><ins><nowiki>cleansed</nowiki></ins><nowiki> to fully destroy them, and once all three are destroyed, the </nowiki><ins><nowiki>Fragment of Tumeken</nowiki></ins><nowiki> can be claimed to restore its respective statue</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Solution:</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><ins><nowiki>Gatekeeper gorilla akh</nowiki></ins><nowiki> can be dispatched relatively easily with high burst damage</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Inside (Chains) and Outside (Statues) players must work together to take out the </nowiki><ins><nowiki>Chainwarden</nowiki></ins><nowiki>, Chains player takes out </nowiki><strong><nowiki>two</nowiki></strong><nowiki> chains and carries the </nowiki><ins><nowiki>Fragment of Tumeken</nowiki></ins><nowiki>, while the Statues player takes out </nowiki><strong><nowiki>one</nowiki></strong><nowiki> and cleanses their side's statue</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• In Phase 4, both players remain inside as the Base Tank can singlehandedly cleanse both statues due to their proximity</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Chains player runs the </nowiki><ins><nowiki>Fragment of Tumeken</nowiki></ins><nowiki> across the arena, the correct statue to </nowiki><ins><nowiki>restore</nowiki></ins><nowiki> is on the </nowiki><strong><nowiki>opposite</nowiki></strong><nowiki> side of where they entered through the portal (e.g. East player must ferry the </nowiki><ins><nowiki>fragments</nowiki></ins><nowiki> to the Western statues)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• While carrying the </nowiki><ins><nowiki>Fragment of Tumeken</nowiki></ins><nowiki>, </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki>, </nowiki>[https://cdn.discordapp.com/emojis/535541258832052231.png?v=1 <nowiki>escape</nowiki>]<nowiki> &amp; </nowiki>[https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1 <nowiki>dive</nowiki>]<nowiki> are disabled, </nowiki>[https://cdn.discordapp.com/emojis/535532853916860437.png?v=1 <nowiki>barge</nowiki>]<nowiki> can still be utilised</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><em><nowiki>Note:</nowiki></em><nowiki> </nowiki><em><nowiki>Gatekeeper gorilla akhs have a chance to stun you with their melee attacks starting at 1000% enrage</nowiki></em></p>
+<nowiki>
+</nowiki><h3 id="apmekens-burden"><ins><nowiki>Apmeken's Burden</nowiki></ins><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1402579857648390224.png?v=1 <nowiki>apmekensburden</nowiki>]</h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Shortly after Phase 2 starts, Amascut marks one random player who is outside with </nowiki><ins><nowiki>Apmeken's Burden</nowiki></ins><nowiki>, a hard hitting bleed that deals typeless damage</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The bleed wears off after a while, length based on enrage</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ If </nowiki><ins><nowiki>Apmeken's Burden</nowiki></ins><nowiki> deals damage to a player for the 8th time (indicated by the number of stacks on the debuff), that player is </nowiki><ins><strong><nowiki>instakilled</nowiki></strong></ins><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1104794644497309809.png?v=1 <nowiki>instakill</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Solution:</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Players can pass </nowiki><ins><nowiki>Apmeken's Burden</nowiki></ins><nowiki> around to reset its stacks, to pass the debuff the player must be standing in a 1 tile radius of the player who </nowiki><strong><nowiki>never</nowiki></strong><nowiki> got the burden during the phase when its damage ticks</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Should the debuff be applied, it can be safely ignored in enrages less than 2000% as it will never instakill </nowiki>[https://cdn.discordapp.com/emojis/1104794644497309809.png?v=1 <nowiki>instakill</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><ins><nowiki>Apmeken's Burden</nowiki></ins><nowiki> can be skipped </nowiki><strong><nowiki>entirely</nowiki></strong><nowiki>, if Amascut cannot find a target when she tries to mark a player (e.g. all players are inside the portal) the debuff will never be applied</nowiki></p>
+<nowiki>
+</nowiki><h3 id="modest-crocodile-demons"><ins><nowiki>Modest Crocodile Demons</nowiki></ins><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1402583151322071091.png?v=1 <nowiki>modesty</nowiki>]</h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ At the start of Phase 2, and again once a player starts running the Fragment of Tumeken from Crondis, two </nowiki><ins><nowiki>Modest crocodile demons</nowiki></ins><nowiki> will spawn, one for each side of the arena</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Modest crocodile demons primarily attack with </nowiki>[https://cdn.discordapp.com/emojis/580168050121113623.png?v=1 <nowiki>range</nowiki>]<nowiki>, sometimes attacking with </nowiki>[https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1 <nowiki>melee</nowiki>]<nowiki> if their target is too close</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Once the adrenaline bar above their head is charged, they fire a </nowiki>[https://cdn.discordapp.com/emojis/689504724159823906.png?v=1 <nowiki>magic</nowiki>]<nowiki> attack that </nowiki><strong><nowiki>cannot miss</nowiki></strong><nowiki>, draining the player's adrenaline by 20% and halving their adrenaline gain for a short time</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ These creatures have the </nowiki><ins><nowiki>Modesty</nowiki></ins><nowiki> and </nowiki><ins><nowiki>Provoke Immune</nowiki></ins><nowiki> buffs, reflecting damage from enhanced and ultimate abilities, as well as special attacks while preventing </nowiki>[https://cdn.discordapp.com/emojis/535541259465392143.png?v=1 <nowiki>voke</nowiki>]<nowiki> from changing their targets</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Solution:</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Pray against their attacks and use basic abilities and conjures </nowiki>[https://cdn.discordapp.com/emojis/1166094935066423348.png?v=1 <nowiki>conjurearmy</nowiki>]<nowiki> to kill them</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Necromancers are strongly recommended to </nowiki>[https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1 <nowiki>invokedeath</nowiki>]<nowiki> as it will speed up the kills</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ They will attack the first target they see until they lose them; as they are </nowiki><ins><nowiki>Provoke Immune</nowiki></ins><nowiki>, Statues roles should have their aggro once the second set spawns, Base Tank can tank/dispatch the first set</nowiki></p>
+<nowiki>
+</nowiki><h3 id="healing-in-strength"><ins><nowiki>Healing in Strength</nowiki></ins><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1402585055297273896.png?v=1 <nowiki>healinginstrength</nowiki>]</h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Amascut will heal for a portion of all damage dealt by her minions (except for the Chainwarden mage akh) during Phase 4</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Solution:</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ This mechanic can be safely ignored as the healing is usually negligible</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If going for </nowiki><strong><nowiki>You Shall Not Heal</nowiki></strong><nowiki> Combat Achievement, </nowiki>[https://cdn.discordapp.com/emojis/567727987274022924.png?v=1 <nowiki>ent</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/537340400185245701.png?v=1 <nowiki>icebarrage</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/655341074306301964.png?v=1 <nowiki>stickybomb</nowiki>]<nowiki> is strongly recommended to stop </nowiki><ins><nowiki>Feline guard akhs</nowiki></ins><nowiki> and </nowiki><ins><nowiki>Gorilla gatekeeper akhs</nowiki></ins><nowiki> from dealing damage with their attacks</nowiki></p>
+<nowiki>
+</nowiki><h3 id="explosive-scarab-akhs"><ins><nowiki>Explosive Scarab Akhs</nowiki></ins><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1402585081624924210.png?v=1 <nowiki>carapace</nowiki>]</h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ During Phase 4, Amascut will summon </nowiki><ins><nowiki>Explosive scarab akhs</nowiki></ins><nowiki> with </nowiki><strong><nowiki>5000 LP</nowiki></strong><nowiki> and no damage immunity</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• In addition to the scarabs, Gorilla gatekeeper akhs, Chainwarden mage akhs and Chains all gain damage immunity through the </nowiki><ins><nowiki>Carapace</nowiki></ins><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1402585081624924210.png?v=1 <nowiki>carapace</nowiki>]<nowiki> buff</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ On death, the scarabs will start filling a bar above their head, causing them to explode once filled dealing soft typeless damage to all players in the arena</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Any remaining scarabs at the end of Phase 4 will simultaneously die and start charging</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Solution:</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Scarabs can be </nowiki><ins><nowiki>grabbed</nowiki></ins><nowiki> and tossed at targets once they have been killed and start charging their explosion, doing so will lift the Carapace buff from enemies (green glow around them)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• To throw a scarab, click on a dead scarab to grab, then click on a target to throw it</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ At the start of Phase 5, use </nowiki>[https://cdn.discordapp.com/emojis/535541306353778689.png?v=1 <nowiki>cade</nowiki>]<nowiki> to null all of their damage as they explode</nowiki></p>
+<nowiki>
+</nowiki>[https://img.pvme.io/images/TH3J0tKcHR.mp4 <nowiki>Source media</nowiki>]<nowiki>
+
+</nowiki><h3 id="floor-mechanics-devourers-shockwaves-soulfire-waves-devourers-hieroglyphs"><ins><nowiki>Floor Mechanics</nowiki></ins><nowiki> (Devourer's Shockwaves, Soulfire Waves, Devourer's Hieroglyphs)</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Amascut will blast the ground with high damage </nowiki><ins><nowiki>Shockwaves</nowiki></ins><nowiki>, </nowiki><ins><nowiki>Hieroglyphs</nowiki></ins><nowiki> or </nowiki><ins><nowiki>Soulfire Waves</nowiki></ins><nowiki>, similar to Nakatra in Sanctum of Rebirth</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><ins><nowiki>Shockwaves</nowiki></ins><nowiki> have a fixed pattern and deal typeless damage, disabling defensive abilities and putting them on cooldown for 6s</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><ins><nowiki>Soulfire Waves</nowiki></ins><nowiki> sweep the arena in a set pattern dealing high </nowiki>[https://cdn.discordapp.com/emojis/689504724159823906.png?v=1 <nowiki>magic</nowiki>]<nowiki> damage and lowering the duration of </nowiki>[https://cdn.discordapp.com/emojis/513190158728953857.png?v=1 <nowiki>devo</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><ins><nowiki>Hieroglyphs</nowiki></ins><nowiki> split the arena into 9 5x5 tiles, dealing heavy typeless damage and disabling defensive abilities as well as putting them on cooldown for 6s</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Shockwaves appear in Phases 2 (West side), Phase 3, Phase 4 (East side) and Phase 7</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Soulfire Waves appear in Phase 2 and Phase 4</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Hieroglyphs appear in Phase 7 only</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Solution:</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ All floor mechanics are telegraphed, move out of the way if possible</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• For Soulfire Waves, praying </nowiki>[https://cdn.discordapp.com/emojis/689504724159823906.png?v=1 <nowiki>magic</nowiki>]<nowiki> will mitigate some damage, </nowiki>[https://cdn.discordapp.com/emojis/535541258844635148.png?v=1 <nowiki>res</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/787904334377648130.png?v=1 <nowiki>divert</nowiki>]<nowiki> and </nowiki>[https://cdn.discordapp.com/emojis/535614336207552523.png?v=1 <nowiki>disrupt</nowiki>]<nowiki> both block one hit, </nowiki>[https://cdn.discordapp.com/emojis/513190158728953857.png?v=1 <nowiki>devo</nowiki>]<nowiki> can block hits while praying but will suffer duration reduction</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ In Phase 7, dodging </nowiki><ins><nowiki>Shockwaves</nowiki></ins><nowiki> and </nowiki><ins><nowiki>Hieroglyphs</nowiki></ins><nowiki> will </nowiki><ins><nowiki>reset the cooldowns</nowiki></ins><nowiki> of all movement abilities</nowiki></p>
+<nowiki>
+</nowiki><h2 id="fight-mechanics-phase-5"><ins><nowiki>Fight Mechanics</nowiki></ins><nowiki> (Phase 5)</nowiki></h2>
+<nowiki>
+</nowiki><p><nowiki>⬥ Amascut will go Immune once again, and summons a pair of soul obelisks that slowly charge towards periodic bursts of </nowiki>[https://cdn.discordapp.com/emojis/689504724159823906.png?v=1 <nowiki>magic</nowiki>]<nowiki> damage</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ To progress the fight, the players must work together to charge the Fragments of Tumeken freed in Phases 2 and 4</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ There is no timer in this phase</nowiki></p>
+<nowiki>
+</nowiki><h3 id="altar-charging"><ins><nowiki>Altar Charging</nowiki></ins></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Four fragments of Tumeken, two on each side of the arena, will appear directly across the statues</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><ins><nowiki>Far</nowiki></ins><nowiki> fragments are Crondis and Apmeken, and can be charged by the </nowiki><ins><nowiki>Solo Charge</nowiki></ins><nowiki> role</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><ins><nowiki>Near</nowiki></ins><nowiki> fragments are Scabaras and Het, and must be charged by the </nowiki><ins><nowiki>South Charge</nowiki></ins><nowiki> and </nowiki><ins><nowiki>Interceptors</nowiki></ins></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ To charge a fragment, the players must form a bridge to carry Tumeken's light shooting out of the statues</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Once at least 1 fragment is charged, players can click on </nowiki><ins><nowiki>Tumeken</nowiki></ins><nowiki> to start reforming him</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Ideally, at least 2 fragments must be charged before clicking on Tumeken to start reformation</nowiki></p>
+<nowiki>
+</nowiki><h3 id="soul-obelisks"><ins><nowiki>Soul Obelisks</nowiki></ins></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ A </nowiki><ins><nowiki>Soul obelisk</nowiki></ins><nowiki> will spawn on each side of the arena, slowly charging up its health</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Once fully charged, it will start dealing periodic </nowiki>[https://cdn.discordapp.com/emojis/689504724159823906.png?v=1 <nowiki>magic</nowiki>]<nowiki> to all players in a fairly large AoE</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Solution:</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ So long as the obelisks take damage, they will not charge up</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Using a damage over time ability </nowiki>[https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1 <nowiki>bloat</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1 <nowiki>combust</nowiki>]<nowiki> will stop it from charging up without having to actively focus it</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Finishing a charging cycle will also reset the obelisks</nowiki></p>
+<nowiki>
+</nowiki><h3 id="lightstealer-salawa-akhs-aka-dogs"><ins><nowiki>Lightstealer salawa akhs</nowiki></ins><nowiki> (a.k.a. Dogs)</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ While any number of altars are charging, </nowiki><ins><nowiki>Lightstealer salawa akhs</nowiki></ins><nowiki> (dogs) will emerge from the southern stairs, moving towards the charging fragments</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ If the dogs make it to their target, they will start to slowly charge up, then sacrifice themselves after fully charging, setting back progression for that fragment by a significant amount</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If the fragments have been recalled, they will target Tumeken instead; if they deplete Tumeken's health, it will result in a </nowiki><ins><strong><nowiki>WIPE</nowiki></strong></ins><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1104794644497309809.png?v=1 <nowiki>instakill</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Solution:</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Players at the southern side of the arena can use </nowiki>[https://cdn.discordapp.com/emojis/567727987274022924.png?v=1 <nowiki>ent</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/537340400185245701.png?v=1 <nowiki>icebarrage</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/655341074306301964.png?v=1 <nowiki>stickybomb</nowiki>]<nowiki> to stop the dogs from moving</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Attacking will also change their target to the player who dealt damage to them</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ As soon as Tumeken recalls all fragments and starts reforming, they become high priority targets; strong AoE rotations (e.g. </nowiki>[https://cdn.discordapp.com/emojis/1478063106914779166.png?v=1 <nowiki>gchain</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1179505745654448208.png?v=1 <nowiki>omnipowerigneous</nowiki>]<nowiki> ) must be utilized to remove them from the arena as quickly as possible</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><em><nowiki>Note:</nowiki></em><nowiki> </nowiki><em><nowiki>Lightstealer salawa akhs will remember their progress to snuff out the light of one of Tumeken's fragments, e.g. if one of them had their charge bar halfway full and switch target over to Tumeken himself, they will continue charging from where they left off, this can lead to unexpected wipes</nowiki></em></p>
+<nowiki>
+</nowiki><h3 id="altar-strike"><ins><nowiki>Altar Strike</nowiki></ins></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ So long as any altars are charging, Amascut will say </nowiki><code><nowiki>Your light will be snuffed out once and for all</nowiki></code><nowiki> ‎and launch 1-4 arrows at the altars based on how many altars are charging, dealing heavy damage and reducing a fragment's charge by a significant amount</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Solution:</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Two Interceptor players (Green 1 &amp; Green 2) take turns to stand in front of Amascut, stopping the bolts from flying at the altars; refer to the image below for positioning</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Interrupting Altar Strike deals soft typeless damage that also inflicts the </nowiki><ins><nowiki>Interceptor</nowiki></ins><nowiki> debuff, any player with the debuff that gets hit again with Altar Strike is instakilled </nowiki>[https://cdn.discordapp.com/emojis/1104794644497309809.png?v=1 <nowiki>instakill</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ The debuff is cleared if another player intercepts the bolts</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Incoming damage should be mitigated with </nowiki>[https://cdn.discordapp.com/emojis/535541278264393729.png?v=1 <nowiki>debil</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535541258786177064.png?v=1 <nowiki>reflect</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ One good tip is to drop down a </nowiki>[https://cdn.discordapp.com/emojis/892342109431029761.png?v=1 <nowiki>prismofsalvation</nowiki>]<nowiki> at the North Charge spot for the Interceptors to swap more easily</nowiki></p>
+<nowiki>
+</nowiki><p>[https://img.pvme.io/images/lfr0z98VqG.png <nowiki>Guide illustration</nowiki>]</p>
+<nowiki>
+</nowiki><h3 id="the-god-of-destruction-aka-blinking-strikes"><ins><nowiki>The God of Destruction</nowiki></ins><nowiki> (a.k.a. Blinking strikes)</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ As soon as Tumeken starts reforming, Amascut becomes damageable and blinks to a random side of the arena (North, South, West or East), dealing </nowiki>[https://cdn.discordapp.com/emojis/689504724159823906.png?v=1 <nowiki>magic</nowiki>]<nowiki> damage and stunning any player in her way</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ During this stage, Amascut will charge four devastating attacks (once per jump) that will deplete Tumeken's reformation progress</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ If not intercepted properly or intercepted at all, it will set back Tumeken's reformation progress and deal heavy soft typeless damage to all players as well as stunning them</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If Tumeken's life bar depletes, the players </nowiki><ins><strong><nowiki>WIPE</nowiki></strong></ins><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1104794644497309809.png?v=1 <nowiki>instakill</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Solution:</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><ins><nowiki>Tumeken</nowiki></ins><nowiki> will call a player to intercept the attack by saying </nowiki><code><nowiki>&lt;playername&gt;, shield us from her shadow...</nowiki></code><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• The player who is called out will notice their skybox turn </nowiki><ins><strong><nowiki>golden</nowiki></strong></ins></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The player called out by Tumeken </nowiki><strong><nowiki>must be the first player</nowiki></strong><nowiki> to be hit by Amascut's attack, intercepting it and preventing potentially lethal damage</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If they are not the first player to get hit, the attack will deal damage as if it wasn't intercepted at all</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ All players who are standing in a line between Amascut and Tumeken will take typeless damage and have the cooldowns of all mobility abilities reset, allowing easy repositioning</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><em><nowiki>Note: Tumeken will </nowiki><ins><nowiki>never</nowiki></ins><nowiki> call the same player to intercept twice in a row</nowiki></em></p>
+<nowiki>
+</nowiki><h2 id="fight-mechanics-phase-6"><ins><nowiki>Fight Mechanics</nowiki></ins><nowiki> (Phase 6)</nowiki></h2>
+<nowiki>
+</nowiki><p><nowiki>⬥ Amascut will summon an </nowiki><ins><nowiki>Engulfing shadow</nowiki></ins><nowiki> that consumes Tumeken, constantly bombarding the arena with projectiles that deal heavy typeless damage</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ To progress the fight, the players must follow </nowiki><ins><nowiki>the Path of Tumeken</nowiki></ins><nowiki> and take </nowiki><ins><nowiki>Tumeken's light</nowiki></ins></p>
+<nowiki>
+</nowiki><h3 id="the-path-of-tumeken-aka-platforms"><ins><nowiki>The Path of Tumeken</nowiki></ins><nowiki> (a.k.a. Platforms)</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ The center hieroglyph either on west or east side of the arena will </nowiki><ins><strong><nowiki>start glowing</nowiki></strong></ins><nowiki>, indicating that a player can follow </nowiki><ins><nowiki>the Path of Tumeken</nowiki></ins></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ The player following </nowiki><ins><nowiki>the Path of Tumeken</nowiki></ins><nowiki> (climbing) must kill </nowiki><strong><nowiki>four</nowiki></strong><nowiki> mage/range akhs in </nowiki><strong><nowiki>30 seconds</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If the collapse timer runs out, the climber is instakilled </nowiki>[https://cdn.discordapp.com/emojis/1104794644497309809.png?v=1 <nowiki>instakill</nowiki>]<nowiki>, and Amascut will deal however much black health she has as typeless damage to players, split between all players in the arena</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Solution:</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Akhs have only </nowiki><strong><nowiki>15k</nowiki></strong><nowiki> LP, high burst damage will kill them in one or (at worst) two hits</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ While climbing, the climber will see a </nowiki><ins><strong><nowiki>glowing</nowiki></strong></ins><nowiki> hieroglyph under the platform they're standing on, if another player stands on the same glyph the climber calls out, the collapse timer will be paused until the next platform</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Once the four akhs are dead, the climber can click on </nowiki><ins><nowiki>Tumeken's light</nowiki></ins><nowiki> to finish climbing and gain the </nowiki><ins><nowiki>Enlightened</nowiki></ins><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1402585098527965275.png?v=1 <nowiki>interceptor</nowiki>]<nowiki> buff, for the remainder of the phase they are Amascut's main target</nowiki></p>
+<nowiki>
+</nowiki><h3 id="climber-rotations"><nowiki>Climber Rotations</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Both rotations assume they start as soon as Amascut calls </nowiki><code><nowiki>I WILL NOT BE DENIED</nowiki></code><nowiki> ‎at the start of Phase 6</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Necromancy </nowiki>[https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1 <nowiki>necromancy</nowiki>]</strong><nowiki> (assumes 8 </nowiki>[https://cdn.discordapp.com/emojis/1139452791878856805.png?v=1 <nowiki>necrosis</nowiki>]<nowiki> &amp; 4 </nowiki>[https://cdn.discordapp.com/emojis/1139453152169558046.png?v=1 <nowiki>residualsoul</nowiki>]<nowiki>): </nowiki>[https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1 <nowiki>livingdeath</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/736298121704767538.png?v=1 <nowiki>adrenrenewal</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1 <nowiki>touchofdeath</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1139453152169558046.png?v=1 <nowiki>residualsoul</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1 <nowiki>invokedeath</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1 <nowiki>dive</nowiki>]<nowiki> (towards the Path of Tumeken) → click the Path of Tumeken → (tc) </nowiki>[https://cdn.discordapp.com/emojis/537340400273195028.png?v=1 <nowiki>spec</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1138809234922934282.png?v=1 <nowiki>omniguard</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1 <nowiki>invokedeath</nowiki>]<nowiki> → (tc) </nowiki>[https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1 <nowiki>fingerofdeath</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1 <nowiki>invokedeath</nowiki>]<nowiki> → (tc) </nowiki>[https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1 <nowiki>fingerofdeath</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1 <nowiki>invokedeath</nowiki>]<nowiki> → (tc) </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1138809243143766118.png?v=1 <nowiki>deathguard90</nowiki>]<nowiki> → click Tumeken's light</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><strong><nowiki>Melee </nowiki>[https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1 <nowiki>melee</nowiki>]</strong><nowiki>: </nowiki>[https://cdn.discordapp.com/emojis/1478070401702821938.png?v=1 <nowiki>meteorstrike</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1478062906057949417.png?v=1 <nowiki>adaptivestrike</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532854004678657.png?v=1 <nowiki>berserk</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535533810004262912.png?v=1 <nowiki>surge</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1 <nowiki>dive</nowiki>]<nowiki> (towards the Path of Tumeken) → click the Path of Tumeken → (tc) </nowiki>[https://cdn.discordapp.com/emojis/535532878969438210.png?v=1 <nowiki>cane</nowiki>]<nowiki> → (tc) </nowiki>[https://cdn.discordapp.com/emojis/535532879053062146.png?v=1 <nowiki>pulverise</nowiki>]<nowiki> → (tc) </nowiki>[https://cdn.discordapp.com/emojis/535532879334080517.png?v=1 <nowiki>overpower</nowiki>]<nowiki> → (tc) </nowiki>[https://cdn.discordapp.com/emojis/1478062908767211640.png?v=1 <nowiki>chaosroar</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535532855191928842.png?v=1 <nowiki>assault</nowiki>]<nowiki> → click Tumeken's light</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>Add a basic attack </nowiki>[https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1 <nowiki>necrobasic</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/1478062907295010906.png?v=1 <nowiki>meleebasic</nowiki>]<nowiki> if they don't die in 1 GCD</nowiki></p>
+<nowiki>
+</nowiki>[https://img.pvme.io/images/r6hPuPjueK.mp4 <nowiki>Source media</nowiki>]<nowiki>
+</nowiki><p><em><nowiki>Notes:</nowiki></em></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><em><nowiki>At 2000% Enrage and higher, a climber will be chosen randomly by Tumeken, indicated by their skybox turning golden</nowiki></em></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><em><nowiki>As a last ditch effort, if the climber times out </nowiki>[https://cdn.discordapp.com/emojis/1104794644497309809.png?v=1 <nowiki>instakill</nowiki>]<nowiki>, a well timed </nowiki>[https://cdn.discordapp.com/emojis/535541258538582017.png?v=1 <nowiki>immort</nowiki>]<nowiki> will negate all of the damage, but Amascut will have much higher health than if she was phased normally</nowiki></em></p>
+<nowiki>
+</nowiki><h3 id="engulfing-shadow-shadow-tears"><ins><nowiki>Engulfing shadow &amp; Shadow tears</nowiki></ins></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ At the center of the arena is the </nowiki><ins><nowiki>Engulfing shadow</nowiki></ins><nowiki>, which continuously increases Amascut's shield (black health) for the phase based on how much life it has</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Every time the climber kills a range/mage akh, </nowiki><ins><nowiki>Engulfing shadow tears</nowiki></ins><nowiki> will spawn across the arena, increasing in quantity for each akh killed and number of players present</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• These tears will heal the Engulfing shadow for 1000 health every tick, and for 15K health if not absorbed in time</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Solution:</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Engulfing shadow </nowiki><ins><nowiki>cannot be killed</nowiki></ins><nowiki>; the players on ground level must deal as much damage to it as possible to keep its health low</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1 <nowiki>invokedeath</nowiki>]<nowiki> is counterintuitive as the shadow will respawn with more health</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Engulfing shadow tears can be absorbed, preventing them from healing the larger Engulfing shadow, doing so will inflict a stacking debuff </nowiki>[https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1 <nowiki>combust</nowiki>]<nowiki> that deals </nowiki>[https://cdn.discordapp.com/emojis/689504724159823906.png?v=1 <nowiki>magic</nowiki>]<nowiki> damage</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/513190158728953857.png?v=1 <nowiki>devo</nowiki>]<nowiki> will fully block the hit, but is best reserved for Clones</nowiki></p>
+<nowiki>
+</nowiki><h3 id="shadows-of-amascut-aka-clones"><ins><nowiki>Shadows of Amascut</nowiki></ins><nowiki> (a.k.a. Clones)</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ Once </nowiki><ins><nowiki>Tumeken's light</nowiki></ins><nowiki> is claimed by the climber, Amascut will summon a </nowiki><ins><nowiki>Shadow of Amascut</nowiki></ins><nowiki> for each player alive who isn't the climber</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ If outside melee distance, they will dash at their target dealing </nowiki>[https://cdn.discordapp.com/emojis/689504724159823906.png?v=1 <nowiki>magic</nowiki>]<nowiki> damage, if in melee distance they will swipe at their target dealing </nowiki>[https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1 <nowiki>melee</nowiki>]<nowiki> damage</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ If not all of them are dead at the same time, dead clones will deal huge damage to all players who aren't standing in the climber's </nowiki><ins><nowiki>Enlightened</nowiki></ins><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1402585098527965275.png?v=1 <nowiki>interceptor</nowiki>]<nowiki> buff</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Solution:</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Go directly behind Amascut and stack up with the rest of the DPS pile who aren't climbing, pray </nowiki>[https://cdn.discordapp.com/emojis/689504724159823906.png?v=1 <nowiki>magic</nowiki>]<nowiki> for the initial dash attack from clones, pray </nowiki>[https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1 <nowiki>melee</nowiki>]<nowiki> afterwards</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Kill them as quickly as possible with a strong AoE rotation (assumes you start as soon as she says </nowiki><code><nowiki>I WILL NOT BE SUBJUGATED BY A MORTAL!</nowiki></code><nowiki>, adjust timing based on clone spawn):</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Necromancy </nowiki>[https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1 <nowiki>necromancy</nowiki>]</strong><nowiki>: </nowiki>[https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1 <nowiki>invokedeath</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/513190158728953857.png?v=1 <nowiki>devo</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535541258786177064.png?v=1 <nowiki>reflect</nowiki>]<nowiki> (+ </nowiki>[https://cdn.discordapp.com/emojis/654618235097972737.png?v=1 <nowiki>powerburstofvitality</nowiki>]<nowiki>) → </nowiki>[https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1 <nowiki>threadsoffate</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1 <nowiki>volleyofsouls</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1 <nowiki>eofspec</nowiki>]<nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1138809243143766118.png?v=1 <nowiki>deathguard90</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1 <nowiki>bloat</nowiki>]<nowiki> → improvise</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Magic </nowiki>[https://cdn.discordapp.com/emojis/689504724159823906.png?v=1 <nowiki>magic</nowiki>]</strong><nowiki>: </nowiki>[https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1 <nowiki>runic_charge</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/1478063117211668584.png?v=1 <nowiki>gsonic</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/994644352871714836.png?v=1 <nowiki>gsunshine</nowiki>]<nowiki> + </nowiki>[https://cdn.discordapp.com/emojis/736298121704767538.png?v=1 <nowiki>adrenrenewal</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/513190158728953857.png?v=1 <nowiki>devo</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535541258786177064.png?v=1 <nowiki>reflect</nowiki>]<nowiki> (+ </nowiki>[https://cdn.discordapp.com/emojis/654618235097972737.png?v=1 <nowiki>powerburstofvitality</nowiki>]<nowiki>) → </nowiki>[https://cdn.discordapp.com/emojis/1478063106914779166.png?v=1 <nowiki>gchain</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535533809664262179.png?v=1 <nowiki>omni</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/958989794757730307.png?v=1 <nowiki>tsunamiincite</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535533833391702017.png?v=1 <nowiki>dbreath</nowiki>]<nowiki> → improvise</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Amascut becomes damageable once the clones are dead, unload as much damage as you can in ~20 seconds to remove her black HP and deal damage to her real HP to make Phase 7 easier</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Necromancy </nowiki>[https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1 <nowiki>necromancy</nowiki>]</strong><nowiki>: Aim to enter Phase 7 with at least 8 </nowiki>[https://cdn.discordapp.com/emojis/1139452791878856805.png?v=1 <nowiki>necrosis</nowiki>]<nowiki> and 4 </nowiki>[https://cdn.discordapp.com/emojis/1139453152169558046.png?v=1 <nowiki>residualsoul</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><em><nowiki>Note: The climber can deal damage to Amascut's shield directly with their </nowiki><ins><nowiki>Enlightened</nowiki></ins><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1402585098527965275.png?v=1 <nowiki>interceptor</nowiki>]<nowiki> buff</nowiki></em></p>
+<nowiki>
+</nowiki><h3 id="player-bomb"><ins><nowiki>Player Bomb</nowiki></ins></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ If the clones are not killed in time, Amascut will turn the players under attack by her clones into bombs, dealing ~12k typeless damage with defensive penetration to all players in a 7x7 area after a short time</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Solution:</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Finish off all clones before the players detonate, nulling all damage</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ If the clones cannot be finished off in time, players must stand near the climber who has the </nowiki><ins><nowiki>Enlightened</nowiki></ins><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1402585098527965275.png?v=1 <nowiki>interceptor</nowiki>]<nowiki> buff (appears as a golden aura around them) to null most of the damage</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><em><nowiki>Note: Any blast from outside the Enlightenment buff will still clip players who are inside of it</nowiki></em></p>
+<nowiki>
+</nowiki><h2 id="fight-mechanics-phase-7"><ins><nowiki>Fight Mechanics</nowiki></ins><nowiki> (Phase 7)</nowiki></h2>
+<nowiki>
+</nowiki><p><nowiki>⬥ Amascut pulls all players towards her and teleports them to a twisted version of the Throne Room, gaining </nowiki><ins><nowiki>Inner Shadow</nowiki></ins><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1403076345084379337.png?v=1 <nowiki>shadowlink</nowiki>]<nowiki> buff that massively reduces incoming damage</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ To finish the fight, players must withstand Amascut's onslaught and lower her health to 0 while preventing Tumeken from dying by intercepting her attacks on him</nowiki></p>
+<nowiki>
+</nowiki><h3 id="tumeken-strike"><ins><nowiki>Tumeken Strike</nowiki></ins></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ After 4 </nowiki>[https://cdn.discordapp.com/emojis/689504724159823906.png?v=1 <nowiki>magic</nowiki>]<nowiki> auto attacks in the first cycle and 3 </nowiki>[https://cdn.discordapp.com/emojis/689504724159823906.png?v=1 <nowiki>magic</nowiki>]<nowiki> auto attacks in subsequent cycles, Amascut will address one of the Bau of Tumeken by name and face Tumeken directly, charging an extremely powerful attack</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ If intercepted incorrectly or not intercepted at all, the attack deals massive damage to Tumeken and heavy soft typeless damage to all players in the Throne Room</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If Tumeken dies, the team </nowiki><ins><strong><nowiki>WIPES</nowiki></strong></ins><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1104794644497309809.png?v=1 <nowiki>instakill</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Solution:</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Players are assigned a quadrant based on their P2/4 roles, with Base Tank acting as fill should a player die</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• Inside players are usually expected to go North, while Outside players go South</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Amascut must be </nowiki>[https://cdn.discordapp.com/emojis/535541259465392143.png?v=1 <nowiki>voke</nowiki>]<nowiki> towards the correct statue within ~3 GCDs, based on the following callouts:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/1402585055297273896.png?v=1 <nowiki>healinginstrength</nowiki>]<nowiki> </nowiki><strong><nowiki>Het</nowiki></strong><nowiki> - </nowiki><code><nowiki>Forgive me, Het.</nowiki></code><nowiki> ‎(Southwest)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/1402579857648390224.png?v=1 <nowiki>apmekensburden</nowiki>]<nowiki> </nowiki><strong><nowiki>Apmeken</nowiki></strong><nowiki> - </nowiki><code><nowiki>I am sorry, Apmeken.</nowiki></code><nowiki> ‎(Northwest)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/1402583151322071091.png?v=1 <nowiki>modesty</nowiki>]<nowiki> </nowiki><strong><nowiki>Crondis</nowiki></strong><nowiki> - </nowiki><code><nowiki>Crondis... It should have never come to this.</nowiki></code><nowiki> ‎(Southeast)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki>[https://cdn.discordapp.com/emojis/1402585081624924210.png?v=1 <nowiki>carapace</nowiki>]<nowiki> </nowiki><strong><nowiki>Scabaras</nowiki></strong><nowiki> - </nowiki><code><nowiki>Scabaras...</nowiki></code><nowiki> ‎(Northeast)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Once </nowiki>[https://cdn.discordapp.com/emojis/535541259465392143.png?v=1 <nowiki>voke</nowiki>]<nowiki> to correct statue, move out of the way or </nowiki>[https://cdn.discordapp.com/emojis/535541258844635148.png?v=1 <nowiki>res</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535614336207552523.png?v=1 <nowiki>disrupt</nowiki>]<nowiki> to survive the massive followup typeless hit</nowiki></p>
+<nowiki>
+</nowiki>[https://img.pvme.io/images/JKyDStksJE.mp4 <nowiki>Source media</nowiki>]<nowiki>
+</nowiki><p><em><nowiki>Notes:</nowiki></em></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><em><nowiki>A singular bolt of light will shoot out from Tumeken to the correct statue, acting as a visual indicator for which statue is the correct one</nowiki></em></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki><em><nowiki>Statues in the room can be examined if in doubt about which statue is the correct one to stand in front of</nowiki></em></p>
+<nowiki>
+</nowiki><h3 id="tumeken-strike-cont-on-fail"><ins><nowiki>Tumeken Strike</nowiki></ins><nowiki> (cont., on Fail)</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ If the players </nowiki><strong><nowiki>fail</nowiki></strong><nowiki> the Tumeken Strike mechanic, players will take massive typeless damage, and </nowiki><ins><nowiki>shadow tears</nowiki></ins><nowiki> will spawn across the room, while she resumes </nowiki>[https://cdn.discordapp.com/emojis/689504724159823906.png?v=1 <nowiki>magic</nowiki>]<nowiki> auto attacks</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Amascut's main target will also be targeted with </nowiki><ins><nowiki>Soul Crush</nowiki></ins><nowiki> after 3 auto attacks</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Solution:</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://cdn.discordapp.com/emojis/535541258844635148.png?v=1 <nowiki>res</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535614336207552523.png?v=1 <nowiki>disrupt</nowiki>]<nowiki> pre-emptively to avoid taking huge typeless damage</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• If Tumeken dies, it doesn't matter as the team wipes instead</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Try to collect as many Shadow Tears as you can, as they will heal Amascut for 1000 LP/tick per orb</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Huddle together or (Base Tank) </nowiki>[https://cdn.discordapp.com/emojis/535541259465392143.png?v=1 <nowiki>voke</nowiki>]<nowiki> → </nowiki>[https://cdn.discordapp.com/emojis/535541258844635148.png?v=1 <nowiki>res</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535614336207552523.png?v=1 <nowiki>disrupt</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/535541258538582017.png?v=1 <nowiki>immort</nowiki>]<nowiki> (depending on enrage) to survive </nowiki><ins><nowiki>Soul Crush</nowiki></ins></p>
+<nowiki>
+</nowiki><h3 id="tumeken-strike-cont-on-success"><ins><nowiki>Tumeken Strike</nowiki></ins><nowiki> (cont., on Success)</nowiki></h3>
+<nowiki>
+</nowiki><p><nowiki>⬥ If the players successfully handle the Tumeken Strike mechanic, Tumeken will take light damage and players will gain </nowiki><ins><nowiki>Light Within</nowiki></ins><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1402585098527965275.png?v=1 <nowiki>interceptor</nowiki>]<nowiki> for 30s, lifting the damage cap from Inner Shadow </nowiki>[https://cdn.discordapp.com/emojis/1403076345084379337.png?v=1 <nowiki>shadowlink</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ During this phase, Amascut will continuously perform her </nowiki><ins><nowiki>Empowered Eruption</nowiki></ins><nowiki> attack, as well as </nowiki><ins><nowiki>Devourer's Hieroglyphs</nowiki></ins><nowiki> and </nowiki><ins><nowiki>Devourer's Shockwaves</nowiki></ins></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Based on which of the Bau of Tumeken was called, Amascut will invoke a mechanic from the previous phases:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Apmeken</nowiki></strong><nowiki>: A random player receives Apmeken's Burden </nowiki>[https://cdn.discordapp.com/emojis/1402579857648390224.png?v=1 <nowiki>apmekensburden</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Crondis</nowiki></strong><nowiki>: Two Modest crocodile demons </nowiki>[https://cdn.discordapp.com/emojis/1402583151322071091.png?v=1 <nowiki>modesty</nowiki>]<nowiki> spawn</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Het</nowiki></strong><nowiki>: Amascut heals </nowiki>[https://cdn.discordapp.com/emojis/1402585055297273896.png?v=1 <nowiki>healinginstrength</nowiki>]<nowiki> for 25% of all damage she does to players</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Scabaras</nowiki></strong><nowiki>: Amascut becomes shielded </nowiki>[https://cdn.discordapp.com/emojis/1402585081624924210.png?v=1 <nowiki>carapace</nowiki>]<nowiki> and summons Explosive scarab akhs</nowiki></p>
+<nowiki>
+</nowiki><p><strong><nowiki>Solution:</nowiki></strong></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Try to deal as much burst damage as possible within the first few seconds of receiving the buff to finish off Amascut to skip all follow-up mechanics (except if Scabaras was called)</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Depending on which of the Bau of Tumeken was called:</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Apmeken</nowiki></strong><nowiki>: Burden acts the same way as it does in Phase 2 and can be passed around between players, on lower enrages or if the boss can be bursted to 0 this can be ignored</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Het</nowiki></strong><nowiki>: Can be safely ignored as the healing per hit from each attack is usually negligible</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Crondis</nowiki></strong><nowiki>: Can be ignored if Amascut can be bursted down to 0 quickly, otherwise prioritise them to avoid taking too much off-style damage</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ </nowiki>[https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1 <nowiki>deathskulls</nowiki>]<nowiki> </nowiki><strong><nowiki>will</nowiki></strong><nowiki> bounce onto the crocodiles, resulting in potentially fatal reflection damage</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Scabaras</nowiki></strong><nowiki>: Players must throw 3 Explosive scarab akhs at Amascut to remove her shield</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Empowered Eruption and floor mechanics will happen in tandem, players must focus on dodging the floor mechanics and praying correctly with defensives if bursting Amascut down to 0 within the first few seconds of receiving the buff isn't possible</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="base-tank-troubleshooting"><nowiki>Base Tank Troubleshooting</nowiki></h2>
+<nowiki>
+</nowiki><p><nowiki>This section is reserved exclusively for troubleshooting Base Tank issues in higher enrages (1000%+), but may also be applicable for lower enrages.</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Modest crocodile demons attack at the same time with different styles</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Solution:</nowiki></strong><nowiki> Prioritize praying </nowiki>[https://cdn.discordapp.com/emojis/689504724159823906.png?v=1 <nowiki>magic</nowiki>]<nowiki> if getting off-styled on the same tick, as the </nowiki>[https://cdn.discordapp.com/emojis/580168050121113623.png?v=1 <nowiki>ranged</nowiki>]<nowiki> attack </nowiki><em><nowiki>can</nowiki></em><nowiki> miss; </nowiki>[https://cdn.discordapp.com/emojis/535541258786177064.png?v=1 <nowiki>reflect</nowiki>]<nowiki> / </nowiki>[https://cdn.discordapp.com/emojis/513190158728953857.png?v=1 <nowiki>devo</nowiki>]<nowiki> can negate a lot of damage from the crocodiles</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ Base Tank from </nowiki>[https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1 <nowiki>necromancy</nowiki>]<nowiki> spot becomes immobilised after tanking Soul Crush with </nowiki>[https://cdn.discordapp.com/emojis/535541258538582017.png?v=1 <nowiki>immort</nowiki>]<nowiki>, leading to a follow up Devourer's Shockwaves hit</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Solution:</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1 <nowiki>dive</nowiki>]<nowiki> 1 tile outside the first (outer) set of shockwaves to avoid defensives reset, </nowiki>[https://cdn.discordapp.com/emojis/864235458464186418.png?v=1 <nowiki>cease</nowiki>]<nowiki> to avoid being moved back in</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ </nowiki>[https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1 <nowiki>dive</nowiki>]<nowiki> 2+ tiles away from shockwaves can potentially make Amascut switch targets during Soul Crush</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Necessary if going for </nowiki><strong><nowiki>Dedicated Denial of Standing (here)</nowiki></strong><nowiki> Combat Achievement</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>⬥ If Amascut starts P3 with Rapid Swipes, third one lines up right after Soul Crush, resulting in a high KO potential situation</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Solution:</nowiki></strong><nowiki> </nowiki>[https://cdn.discordapp.com/emojis/867678153883516958.png?v=1 <nowiki>cadeturtling</nowiki>]<nowiki> with </nowiki>[https://cdn.discordapp.com/emojis/974504834394898522.png?v=1 <nowiki>turtling3</nowiki>]<nowiki> or better will cover Rapid Swipes and scarabs exploding</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Alternatively, the team can </nowiki>[https://cdn.discordapp.com/emojis/535541259465392143.png?v=1 <nowiki>voke</nowiki>]<nowiki> and split the big hit instead</nowiki></p>
+<nowiki>
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki><h2 id="example-kills"><ins><nowiki>Example Kills</nowiki></ins></h2>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://youtu.be/IC06WyHCVj8 <nowiki>1000% Necromancy Base Tank POV</nowiki>]</p>
+<nowiki>
+</nowiki><p><nowiki>⬥ </nowiki>[https://www.youtube.com/watch?v=3cenard8xGE <nowiki>1000% Ranged/Melee Hybrid DPS POV</nowiki>]</p>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div></div>
+<nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div id="block-amascutgoddessofdestruction"><u><nowiki>Amascut, Goddess of Destruction</nowiki></u><nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki><div style="white-space: pre-line"><nowiki>This guide is made and upkept in collaboration with the </nowiki>[https://discord.gg/amascut <nowiki>Amascut, Goddess of Destruction (external Discord)</nowiki>]<nowiki> discord.
+</nowiki></div>
+<nowiki>
+</nowiki><div><div><div><nowiki>​
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>Content provided by: Loki &amp; Linie
+ Content maintained by: Loki
+</nowiki></div>
+</div>
+<div><div><nowiki>​
+</nowiki></div>
+<div style="white-space: pre-line"><nowiki>Amascut, Goddess of Destruction is a community focused on high-quality matchmaking, structured learner support, and building a strong, drama-free PvM community.
+</nowiki></div>
+</div>
+</div>
+<nowiki>
+</nowiki></div>
+<nowiki>
+</nowiki>[https://img.pvme.io/images/XzC8jTwqTu.png <nowiki>Guide illustration</nowiki>]<nowiki>
+</nowiki></div>
+<nowiki>
+
+
+</nowiki></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nowiki>
+
+</nowiki><p><nowiki>​</nowiki></p>
+<nowiki>
+      
+    </nowiki>
+== Attribution and source history ==
+Adapted from [https://pvme.io/pvme-guides/basic-guides/amascut-basic/ <nowiki>Amascut Basic</nowiki>] by PvME contributors. [https://github.com/pvme/pvme-guides/commits/master/basic-guides/amascut-basic.txt Upstream source history]. Licensed [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]. Snapshot 074a9438f79d10fba75735791be0030734db8b5e. Formatting adapted for standalone MediaWiki; media and third-party references remain external links.

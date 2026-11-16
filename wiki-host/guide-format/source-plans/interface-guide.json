@@ -1,0 +1,1658 @@
+{
+  "title": "PvME/Getting started/Interface Guide",
+  "id": "interface-guide",
+  "sourceSha256": "e8f4fa20ba73df38bb625bde258f2a1c2f0790ee6abb30e9a3b0e1a64eace1f4",
+  "sourceFile": "wiki-host/corpus/pages/guide--interface-guide.wiki.txt",
+  "snapshotFile": "editor/content/interface-guide.json",
+  "snapshotSha256": "d961fdb6a26ab9d94414b0f76daed326ae81a6de17a98bae8500b1a2c4503122",
+  "sourcePath": "getting-started/interface-guide.txt",
+  "sourceUrl": "https://pvme.io/pvme-guides/getting-started/interface-guide/",
+  "sourceCommit": "074a9438f79d10fba75735791be0030734db8b5e",
+  "status": "source-indexed",
+  "mainGuide": false,
+  "format": "reference-guide",
+  "sections": [
+    {
+      "sourceHeading": null,
+      "sourceAnchor": null,
+      "headingBlockId": null,
+      "level": 0,
+      "blockIds": [
+        "interface-guide:b:0000"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Introduction",
+      "sourceAnchor": "introduction",
+      "headingBlockId": "interface-guide:b:0001",
+      "level": 2,
+      "blockIds": [
+        "interface-guide:b:0001",
+        "interface-guide:b:0002",
+        "interface-guide:b:0003"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "What is the User Interface",
+      "sourceAnchor": "what-is-the-user-interface",
+      "headingBlockId": "interface-guide:b:0004",
+      "level": 2,
+      "blockIds": [
+        "interface-guide:b:0004",
+        "interface-guide:b:0005",
+        "interface-guide:b:0006"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Default Interface",
+      "sourceAnchor": "default-interface",
+      "headingBlockId": "interface-guide:b:0007",
+      "level": 3,
+      "blockIds": [
+        "interface-guide:b:0007",
+        "interface-guide:b:0008",
+        "interface-guide:b:0009",
+        "interface-guide:b:0010",
+        "interface-guide:b:0011",
+        "interface-guide:b:0012",
+        "interface-guide:b:0013",
+        "interface-guide:b:0014",
+        "interface-guide:b:0015",
+        "interface-guide:b:0016",
+        "interface-guide:b:0017",
+        "interface-guide:b:0018"
+      ],
+      "media": [
+        {
+          "blockId": "interface-guide:b:0009",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/HZkDZaJlB1.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Useful Interface Elements",
+      "sourceAnchor": "useful-interface-elements",
+      "headingBlockId": "interface-guide:b:0019",
+      "level": 3,
+      "blockIds": [
+        "interface-guide:b:0019",
+        "interface-guide:b:0020",
+        "interface-guide:b:0021",
+        "interface-guide:b:0022",
+        "interface-guide:b:0023",
+        "interface-guide:b:0024",
+        "interface-guide:b:0025",
+        "interface-guide:b:0026",
+        "interface-guide:b:0027",
+        "interface-guide:b:0028",
+        "interface-guide:b:0029",
+        "interface-guide:b:0030",
+        "interface-guide:b:0031",
+        "interface-guide:b:0032",
+        "interface-guide:b:0033",
+        "interface-guide:b:0034",
+        "interface-guide:b:0035",
+        "interface-guide:b:0036",
+        "interface-guide:b:0037"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Creating A Good Interface",
+      "sourceAnchor": "creating-a-good-interface",
+      "headingBlockId": "interface-guide:b:0038",
+      "level": 2,
+      "blockIds": [
+        "interface-guide:b:0038",
+        "interface-guide:b:0039",
+        "interface-guide:b:0040",
+        "interface-guide:b:0041"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Step 1: Interface Layout",
+      "sourceAnchor": "step-1-interface-layout",
+      "headingBlockId": "interface-guide:b:0042",
+      "level": 3,
+      "blockIds": [
+        "interface-guide:b:0042",
+        "interface-guide:b:0043",
+        "interface-guide:b:0044",
+        "interface-guide:b:0045",
+        "interface-guide:b:0046",
+        "interface-guide:b:0047",
+        "interface-guide:b:0048",
+        "interface-guide:b:0049",
+        "interface-guide:b:0050",
+        "interface-guide:b:0051",
+        "interface-guide:b:0052",
+        "interface-guide:b:0053",
+        "interface-guide:b:0054",
+        "interface-guide:b:0055",
+        "interface-guide:b:0056",
+        "interface-guide:b:0057"
+      ],
+      "media": [
+        {
+          "blockId": "interface-guide:b:0055",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/FrZsV7CK9v.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [
+        {
+          "blockId": "interface-guide:b:0044",
+          "text": "L"
+        }
+      ],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Step 2: Edit Layout Mode",
+      "sourceAnchor": "step-2-edit-layout-mode",
+      "headingBlockId": "interface-guide:b:0058",
+      "level": 3,
+      "blockIds": [
+        "interface-guide:b:0058",
+        "interface-guide:b:0059",
+        "interface-guide:b:0060",
+        "interface-guide:b:0061",
+        "interface-guide:b:0062",
+        "interface-guide:b:0063",
+        "interface-guide:b:0064",
+        "interface-guide:b:0065",
+        "interface-guide:b:0066",
+        "interface-guide:b:0067",
+        "interface-guide:b:0068",
+        "interface-guide:b:0069",
+        "interface-guide:b:0070",
+        "interface-guide:b:0071",
+        "interface-guide:b:0072",
+        "interface-guide:b:0073",
+        "interface-guide:b:0074",
+        "interface-guide:b:0075"
+      ],
+      "media": [
+        {
+          "blockId": "interface-guide:b:0061",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/k0HRt49m43.png",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "interface-guide:b:0070",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/QOrNAqUyhw.png",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "interface-guide:b:0071",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/WuJJI2A86q.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Saving Interface Layout",
+      "sourceAnchor": "saving-interface-layout",
+      "headingBlockId": "interface-guide:b:0076",
+      "level": 3,
+      "blockIds": [
+        "interface-guide:b:0076",
+        "interface-guide:b:0077",
+        "interface-guide:b:0078",
+        "interface-guide:b:0079",
+        "interface-guide:b:0080"
+      ],
+      "media": [
+        {
+          "blockId": "interface-guide:b:0078",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/Uou11B31Yd.png",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "interface-guide:b:0080",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/N0jNtGN6yJ.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Miscellaneous settings",
+      "sourceAnchor": "miscellaneous-settings",
+      "headingBlockId": "interface-guide:b:0081",
+      "level": 3,
+      "blockIds": [
+        "interface-guide:b:0081",
+        "interface-guide:b:0082",
+        "interface-guide:b:0083",
+        "interface-guide:b:0084",
+        "interface-guide:b:0085",
+        "interface-guide:b:0086",
+        "interface-guide:b:0087",
+        "interface-guide:b:0088",
+        "interface-guide:b:0089",
+        "interface-guide:b:0090",
+        "interface-guide:b:0091"
+      ],
+      "media": [
+        {
+          "blockId": "interface-guide:b:0091",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/NDTcpCE9c7.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Interface searching",
+      "sourceAnchor": "interface-searching",
+      "headingBlockId": "interface-guide:b:0092",
+      "level": 3,
+      "blockIds": [
+        "interface-guide:b:0092",
+        "interface-guide:b:0093",
+        "interface-guide:b:0094",
+        "interface-guide:b:0095"
+      ],
+      "media": [
+        {
+          "blockId": "interface-guide:b:0095",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/KCOF2ENQFZ.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Example Interfaces",
+      "sourceAnchor": "example-interfaces",
+      "headingBlockId": "interface-guide:b:0096",
+      "level": 2,
+      "blockIds": [
+        "interface-guide:b:0096",
+        "interface-guide:b:0097",
+        "interface-guide:b:0098"
+      ],
+      "media": [
+        {
+          "blockId": "interface-guide:b:0098",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/bdILpQ7vjW.png",
+          "label": "Dyanne"
+        },
+        {
+          "blockId": "interface-guide:b:0098",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/B0bNRGzvDH.png",
+          "label": "HighAlch4GP"
+        },
+        {
+          "blockId": "interface-guide:b:0098",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/YlZnpaFJtE.png",
+          "label": "ToG Baam"
+        },
+        {
+          "blockId": "interface-guide:b:0098",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/xAAbHkt1jM.png",
+          "label": "akritia"
+        },
+        {
+          "blockId": "interface-guide:b:0098",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/H8DPdDKay0.png",
+          "label": "mionee"
+        },
+        {
+          "blockId": "interface-guide:b:0098",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/AKEZViZzRQ.png",
+          "label": "So True"
+        },
+        {
+          "blockId": "interface-guide:b:0098",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/Sige4yiatI.png",
+          "label": "hikaru nara"
+        },
+        {
+          "blockId": "interface-guide:b:0098",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/4T65awNK39.png",
+          "label": "I O"
+        },
+        {
+          "blockId": "interface-guide:b:0098",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/8YFlWEzT79.png",
+          "label": "Evil Lucario"
+        },
+        {
+          "blockId": "interface-guide:b:0098",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/dKvOunlhMU.png",
+          "label": "Gwinna"
+        },
+        {
+          "blockId": "interface-guide:b:0098",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/fvlzKBfqxw.jpg",
+          "label": "chi pa pa"
+        },
+        {
+          "blockId": "interface-guide:b:0098",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/dU6w1jLWIl.png",
+          "label": "clay head (1366x768)"
+        },
+        {
+          "blockId": "interface-guide:b:0098",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/EpCyboBJKS.png",
+          "label": "Gwinna (1920x1200)"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Settings Menu",
+      "sourceAnchor": "settings-menu",
+      "headingBlockId": "interface-guide:b:0099",
+      "level": 2,
+      "blockIds": [
+        "interface-guide:b:0099",
+        "interface-guide:b:0100",
+        "interface-guide:b:0101"
+      ],
+      "media": [
+        {
+          "blockId": "interface-guide:b:0101",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/iWprrL4oGa.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Gameplay Settings > Interfaces",
+      "sourceAnchor": "gameplay-settings-interfaces",
+      "headingBlockId": "interface-guide:b:0102",
+      "level": 3,
+      "blockIds": [
+        "interface-guide:b:0102",
+        "interface-guide:b:0103",
+        "interface-guide:b:0104",
+        "interface-guide:b:0105",
+        "interface-guide:b:0106",
+        "interface-guide:b:0107",
+        "interface-guide:b:0108",
+        "interface-guide:b:0109",
+        "interface-guide:b:0110",
+        "interface-guide:b:0111",
+        "interface-guide:b:0112",
+        "interface-guide:b:0113",
+        "interface-guide:b:0114",
+        "interface-guide:b:0115",
+        "interface-guide:b:0116",
+        "interface-guide:b:0117",
+        "interface-guide:b:0118",
+        "interface-guide:b:0119",
+        "interface-guide:b:0120",
+        "interface-guide:b:0121",
+        "interface-guide:b:0122",
+        "interface-guide:b:0123",
+        "interface-guide:b:0124",
+        "interface-guide:b:0125",
+        "interface-guide:b:0126",
+        "interface-guide:b:0127",
+        "interface-guide:b:0128",
+        "interface-guide:b:0129",
+        "interface-guide:b:0130"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Gameplay Settings > Combat & Action Bar",
+      "sourceAnchor": "gameplay-settings-combat-action-bar",
+      "headingBlockId": "interface-guide:b:0131",
+      "level": 3,
+      "blockIds": [
+        "interface-guide:b:0131",
+        "interface-guide:b:0132",
+        "interface-guide:b:0133",
+        "interface-guide:b:0134",
+        "interface-guide:b:0135",
+        "interface-guide:b:0136",
+        "interface-guide:b:0137",
+        "interface-guide:b:0138",
+        "interface-guide:b:0139",
+        "interface-guide:b:0140",
+        "interface-guide:b:0141",
+        "interface-guide:b:0142",
+        "interface-guide:b:0143",
+        "interface-guide:b:0144",
+        "interface-guide:b:0145",
+        "interface-guide:b:0146",
+        "interface-guide:b:0147",
+        "interface-guide:b:0148",
+        "interface-guide:b:0149",
+        "interface-guide:b:0150",
+        "interface-guide:b:0151",
+        "interface-guide:b:0152",
+        "interface-guide:b:0153",
+        "interface-guide:b:0154",
+        "interface-guide:b:0155",
+        "interface-guide:b:0156",
+        "interface-guide:b:0157",
+        "interface-guide:b:0158"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Gameplay Settings > Camera",
+      "sourceAnchor": "gameplay-settings-camera",
+      "headingBlockId": "interface-guide:b:0159",
+      "level": 3,
+      "blockIds": [
+        "interface-guide:b:0159",
+        "interface-guide:b:0160",
+        "interface-guide:b:0161",
+        "interface-guide:b:0162",
+        "interface-guide:b:0163",
+        "interface-guide:b:0164",
+        "interface-guide:b:0165",
+        "interface-guide:b:0166"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Gameplay Settings > Item Drops",
+      "sourceAnchor": "gameplay-settings-item-drops",
+      "headingBlockId": "interface-guide:b:0167",
+      "level": 3,
+      "blockIds": [
+        "interface-guide:b:0167",
+        "interface-guide:b:0168",
+        "interface-guide:b:0169",
+        "interface-guide:b:0170",
+        "interface-guide:b:0171",
+        "interface-guide:b:0172",
+        "interface-guide:b:0173",
+        "interface-guide:b:0174",
+        "interface-guide:b:0175"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Gameplay Settings > Chat & Social",
+      "sourceAnchor": "gameplay-settings-chat-social",
+      "headingBlockId": "interface-guide:b:0176",
+      "level": 3,
+      "blockIds": [
+        "interface-guide:b:0176",
+        "interface-guide:b:0177",
+        "interface-guide:b:0178",
+        "interface-guide:b:0179",
+        "interface-guide:b:0180",
+        "interface-guide:b:0181",
+        "interface-guide:b:0182",
+        "interface-guide:b:0183",
+        "interface-guide:b:0184",
+        "interface-guide:b:0185",
+        "interface-guide:b:0186",
+        "interface-guide:b:0187",
+        "interface-guide:b:0188"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Controls",
+      "sourceAnchor": "controls",
+      "headingBlockId": "interface-guide:b:0189",
+      "level": 3,
+      "blockIds": [
+        "interface-guide:b:0189",
+        "interface-guide:b:0190",
+        "interface-guide:b:0191",
+        "interface-guide:b:0192",
+        "interface-guide:b:0193",
+        "interface-guide:b:0194",
+        "interface-guide:b:0195",
+        "interface-guide:b:0196",
+        "interface-guide:b:0197",
+        "interface-guide:b:0198"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Graphics",
+      "sourceAnchor": "graphics",
+      "headingBlockId": "interface-guide:b:0199",
+      "level": 3,
+      "blockIds": [
+        "interface-guide:b:0199",
+        "interface-guide:b:0200",
+        "interface-guide:b:0201",
+        "interface-guide:b:0202",
+        "interface-guide:b:0203",
+        "interface-guide:b:0204",
+        "interface-guide:b:0205",
+        "interface-guide:b:0206",
+        "interface-guide:b:0207"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Accessibility",
+      "sourceAnchor": "accessibility",
+      "headingBlockId": "interface-guide:b:0208",
+      "level": 3,
+      "blockIds": [
+        "interface-guide:b:0208",
+        "interface-guide:b:0209",
+        "interface-guide:b:0210",
+        "interface-guide:b:0211",
+        "interface-guide:b:0212"
+      ],
+      "media": [
+        {
+          "blockId": "interface-guide:b:0212",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/0Tc2b2mJPN.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Action Bars",
+      "sourceAnchor": "action-bars",
+      "headingBlockId": "interface-guide:b:0213",
+      "level": 2,
+      "blockIds": [
+        "interface-guide:b:0213",
+        "interface-guide:b:0214",
+        "interface-guide:b:0215"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Action Bar Basics",
+      "sourceAnchor": "action-bar-basics",
+      "headingBlockId": "interface-guide:b:0216",
+      "level": 3,
+      "blockIds": [
+        "interface-guide:b:0216",
+        "interface-guide:b:0217",
+        "interface-guide:b:0218",
+        "interface-guide:b:0219",
+        "interface-guide:b:0220",
+        "interface-guide:b:0221",
+        "interface-guide:b:0222",
+        "interface-guide:b:0223",
+        "interface-guide:b:0224",
+        "interface-guide:b:0225",
+        "interface-guide:b:0226",
+        "interface-guide:b:0227",
+        "interface-guide:b:0228",
+        "interface-guide:b:0229",
+        "interface-guide:b:0230",
+        "interface-guide:b:0231",
+        "interface-guide:b:0232"
+      ],
+      "media": [
+        {
+          "blockId": "interface-guide:b:0219",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/2AATN75VNi.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Action Bar Presets",
+      "sourceAnchor": "action-bar-presets",
+      "headingBlockId": "interface-guide:b:0233",
+      "level": 3,
+      "blockIds": [
+        "interface-guide:b:0233",
+        "interface-guide:b:0234",
+        "interface-guide:b:0235",
+        "interface-guide:b:0236",
+        "interface-guide:b:0237",
+        "interface-guide:b:0238"
+      ],
+      "media": [
+        {
+          "blockId": "interface-guide:b:0236",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/prulhUMfss.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Additional Action Bars",
+      "sourceAnchor": "additional-action-bars",
+      "headingBlockId": "interface-guide:b:0239",
+      "level": 3,
+      "blockIds": [
+        "interface-guide:b:0239",
+        "interface-guide:b:0240",
+        "interface-guide:b:0241",
+        "interface-guide:b:0242",
+        "interface-guide:b:0243"
+      ],
+      "media": [
+        {
+          "blockId": "interface-guide:b:0241",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/DEayN1PfPr.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Action Bar Binding",
+      "sourceAnchor": "action-bar-binding",
+      "headingBlockId": "interface-guide:b:0244",
+      "level": 3,
+      "blockIds": [
+        "interface-guide:b:0244",
+        "interface-guide:b:0245",
+        "interface-guide:b:0246",
+        "interface-guide:b:0247",
+        "interface-guide:b:0248",
+        "interface-guide:b:0249",
+        "interface-guide:b:0250",
+        "interface-guide:b:0251",
+        "interface-guide:b:0252",
+        "interface-guide:b:0253",
+        "interface-guide:b:0254",
+        "interface-guide:b:0255",
+        "interface-guide:b:0256",
+        "interface-guide:b:0257",
+        "interface-guide:b:0258",
+        "interface-guide:b:0259",
+        "interface-guide:b:0260",
+        "interface-guide:b:0261",
+        "interface-guide:b:0262",
+        "interface-guide:b:0263"
+      ],
+      "media": [
+        {
+          "blockId": "interface-guide:b:0255",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/7Nrz4BVCCq.png",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "interface-guide:b:0262",
+          "tag": "video",
+          "url": "https://pvme.io/pvme-guides/getting-started/interface-guide/",
+          "label": ""
+        },
+        {
+          "blockId": "interface-guide:b:0262",
+          "tag": "source",
+          "url": "https://img.pvme.io/images/CAcj8vQaZO.mp4",
+          "label": ""
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "interface-guide:b:0251",
+        "interface-guide:b:0252",
+        "interface-guide:b:0253"
+      ]
+    },
+    {
+      "sourceHeading": "Keybinds",
+      "sourceAnchor": "keybinds",
+      "headingBlockId": "interface-guide:b:0264",
+      "level": 2,
+      "blockIds": [
+        "interface-guide:b:0264",
+        "interface-guide:b:0265",
+        "interface-guide:b:0266"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Keybind Tips",
+      "sourceAnchor": "keybind-tips",
+      "headingBlockId": "interface-guide:b:0267",
+      "level": 3,
+      "blockIds": [
+        "interface-guide:b:0267",
+        "interface-guide:b:0268",
+        "interface-guide:b:0269",
+        "interface-guide:b:0270",
+        "interface-guide:b:0271",
+        "interface-guide:b:0272",
+        "interface-guide:b:0273",
+        "interface-guide:b:0274",
+        "interface-guide:b:0275",
+        "interface-guide:b:0276",
+        "interface-guide:b:0277",
+        "interface-guide:b:0278",
+        "interface-guide:b:0279",
+        "interface-guide:b:0280",
+        "interface-guide:b:0281",
+        "interface-guide:b:0282",
+        "interface-guide:b:0283",
+        "interface-guide:b:0284",
+        "interface-guide:b:0285"
+      ],
+      "media": [
+        {
+          "blockId": "interface-guide:b:0278",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/565726489467682816.png?v=1",
+          "label": "sbslunars"
+        },
+        {
+          "blockId": "interface-guide:b:0278",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535614336207552523.png?v=1",
+          "label": "disrupt"
+        },
+        {
+          "blockId": "interface-guide:b:0279",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/883134308146098227.png?v=1",
+          "label": "lengmh"
+        },
+        {
+          "blockId": "interface-guide:b:0279",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/883134308070604870.png?v=1",
+          "label": "lengoh"
+        },
+        {
+          "blockId": "interface-guide:b:0280",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/565726489363087360.png?v=1",
+          "label": "sailfish"
+        },
+        {
+          "blockId": "interface-guide:b:0280",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689530593742291033.png?v=1",
+          "label": "blueblubber"
+        },
+        {
+          "blockId": "interface-guide:b:0280",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/565726489400573962.png?v=1",
+          "label": "brew"
+        },
+        {
+          "blockId": "interface-guide:b:0281",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1266417538045317121.png?v=1",
+          "label": "roarofawakening"
+        },
+        {
+          "blockId": "interface-guide:b:0281",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1266417683058917517.png?v=1",
+          "label": "odetodeceit"
+        },
+        {
+          "blockId": "interface-guide:b:0281",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641339234111848463.png?v=1",
+          "label": "ingen"
+        },
+        {
+          "blockId": "interface-guide:b:0281",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "interface-guide:b:0281",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1138809234922934282.png?v=1",
+          "label": "omniguard"
+        }
+      ],
+      "cues": [
+        {
+          "blockId": "interface-guide:b:0276",
+          "text": "q → w → r"
+        },
+        {
+          "blockId": "interface-guide:b:0276",
+          "text": "q → ctrl+w → alt+r"
+        }
+      ],
+      "rotationBlockIds": [
+        "interface-guide:b:0276"
+      ]
+    },
+    {
+      "sourceHeading": "Modifier Keys.",
+      "sourceAnchor": "modifier-keys",
+      "headingBlockId": "interface-guide:b:0286",
+      "level": 3,
+      "blockIds": [
+        "interface-guide:b:0286",
+        "interface-guide:b:0287",
+        "interface-guide:b:0288",
+        "interface-guide:b:0289",
+        "interface-guide:b:0290",
+        "interface-guide:b:0291",
+        "interface-guide:b:0292",
+        "interface-guide:b:0293",
+        "interface-guide:b:0294",
+        "interface-guide:b:0295",
+        "interface-guide:b:0296",
+        "interface-guide:b:0297"
+      ],
+      "media": [
+        {
+          "blockId": "interface-guide:b:0294",
+          "tag": "a",
+          "url": "https://github.com/PixlOne/logiops",
+          "label": "https://github.com/PixlOne/logiops"
+        }
+      ],
+      "cues": [
+        {
+          "blockId": "interface-guide:b:0289",
+          "text": "A"
+        },
+        {
+          "blockId": "interface-guide:b:0289",
+          "text": "Shift+A"
+        },
+        {
+          "blockId": "interface-guide:b:0289",
+          "text": "Ctrl+A"
+        },
+        {
+          "blockId": "interface-guide:b:0289",
+          "text": "Alt+A"
+        },
+        {
+          "blockId": "interface-guide:b:0291",
+          "text": "Modifier+Key"
+        },
+        {
+          "blockId": "interface-guide:b:0294",
+          "text": "Shift"
+        },
+        {
+          "blockId": "interface-guide:b:0294",
+          "text": "Control"
+        }
+      ],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Utilising Additional Action Bars",
+      "sourceAnchor": "utilising-additional-action-bars",
+      "headingBlockId": "interface-guide:b:0298",
+      "level": 3,
+      "blockIds": [
+        "interface-guide:b:0298",
+        "interface-guide:b:0299",
+        "interface-guide:b:0300",
+        "interface-guide:b:0301",
+        "interface-guide:b:0302",
+        "interface-guide:b:0303",
+        "interface-guide:b:0304"
+      ],
+      "media": [
+        {
+          "blockId": "interface-guide:b:0300",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478063454173532242.png?v=1",
+          "label": "magmatemptest"
+        },
+        {
+          "blockId": "interface-guide:b:0300",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190158468907008.png?v=1",
+          "label": "affliction"
+        },
+        {
+          "blockId": "interface-guide:b:0300",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869284271595069451.png?v=1",
+          "label": "fsoa"
+        },
+        {
+          "blockId": "interface-guide:b:0300",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1266417538045317121.png?v=1",
+          "label": "roarofawakening"
+        },
+        {
+          "blockId": "interface-guide:b:0300",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1266417683058917517.png?v=1",
+          "label": "odetodeceit"
+        },
+        {
+          "blockId": "interface-guide:b:0301",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190158728953857.png?v=1",
+          "label": "devo"
+        },
+        {
+          "blockId": "interface-guide:b:0301",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306475151390.png?v=1",
+          "label": "anti"
+        },
+        {
+          "blockId": "interface-guide:b:0301",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258240786434.png?v=1",
+          "label": "freedom"
+        },
+        {
+          "blockId": "interface-guide:b:0301",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258786177064.png?v=1",
+          "label": "reflect"
+        },
+        {
+          "blockId": "interface-guide:b:0301",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306353778689.png?v=1",
+          "label": "cade"
+        },
+        {
+          "blockId": "interface-guide:b:0302",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/565726489467682816.png?v=1",
+          "label": "sbslunars"
+        },
+        {
+          "blockId": "interface-guide:b:0302",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1009570755836641331.png?v=1",
+          "label": "venggroup"
+        },
+        {
+          "blockId": "interface-guide:b:0302",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535614336207552523.png?v=1",
+          "label": "disrupt"
+        },
+        {
+          "blockId": "interface-guide:b:0302",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543478434509357098.png?v=1",
+          "label": "cept"
+        },
+        {
+          "blockId": "interface-guide:b:0302",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537341954392850442.png?v=1",
+          "label": "shielddome"
+        },
+        {
+          "blockId": "interface-guide:b:0303",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195487926845462.png?v=1",
+          "label": "deflectmage"
+        },
+        {
+          "blockId": "interface-guide:b:0303",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195488317046812.png?v=1",
+          "label": "deflectrange"
+        },
+        {
+          "blockId": "interface-guide:b:0303",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195488447201300.png?v=1",
+          "label": "deflectmelee"
+        },
+        {
+          "blockId": "interface-guide:b:0303",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809111178813471.png?v=1",
+          "label": "deflectnecromancy"
+        },
+        {
+          "blockId": "interface-guide:b:0303",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/615613924506599497.png?v=1",
+          "label": "soulsplit"
+        },
+        {
+          "blockId": "interface-guide:b:0303",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641339233638023179.png?v=1",
+          "label": "limitless"
+        },
+        {
+          "blockId": "interface-guide:b:0303",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641339921675845633.png?v=1",
+          "label": "demonslayer"
+        },
+        {
+          "blockId": "interface-guide:b:0303",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641339234111848463.png?v=1",
+          "label": "ingen"
+        },
+        {
+          "blockId": "interface-guide:b:0303",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1",
+          "label": "eofspec"
+        },
+        {
+          "blockId": "interface-guide:b:0303",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809209782698024.png?v=1",
+          "label": "darkness"
+        },
+        {
+          "blockId": "interface-guide:b:0303",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1494069332584693810.png?v=1",
+          "label": "penanceaspect"
+        },
+        {
+          "blockId": "interface-guide:b:0304",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/q0H8z0u6gw.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Keybinds Guide",
+      "sourceAnchor": "keybinds-guide",
+      "headingBlockId": "interface-guide:b:0305",
+      "level": 3,
+      "blockIds": [
+        "interface-guide:b:0305",
+        "interface-guide:b:0306",
+        "interface-guide:b:0307",
+        "interface-guide:b:0308",
+        "interface-guide:b:0309"
+      ],
+      "media": [
+        {
+          "blockId": "interface-guide:b:0307",
+          "tag": "a",
+          "url": "https://www.youtube.com/watch?v=zn_y-_2giZg",
+          "label": "https://www.youtube.com/watch?v=zn_y-_2giZg"
+        },
+        {
+          "blockId": "interface-guide:b:0309",
+          "tag": "iframe",
+          "url": "https://www.youtube-nocookie.com/embed/zn_y-_2giZg",
+          "label": ""
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Banking & Presets",
+      "sourceAnchor": "banking-presets",
+      "headingBlockId": "interface-guide:b:0310",
+      "level": 2,
+      "blockIds": [
+        "interface-guide:b:0310",
+        "interface-guide:b:0311"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Bank Tabs",
+      "sourceAnchor": "bank-tabs",
+      "headingBlockId": "interface-guide:b:0312",
+      "level": 3,
+      "blockIds": [
+        "interface-guide:b:0312",
+        "interface-guide:b:0313",
+        "interface-guide:b:0314",
+        "interface-guide:b:0315",
+        "interface-guide:b:0316",
+        "interface-guide:b:0317",
+        "interface-guide:b:0318"
+      ],
+      "media": [
+        {
+          "blockId": "interface-guide:b:0317",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/ZOY0yf077m.png",
+          "label": "Rcm37"
+        },
+        {
+          "blockId": "interface-guide:b:0317",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/NWc14PQIxU.png",
+          "label": "P U P"
+        },
+        {
+          "blockId": "interface-guide:b:0317",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/IyzWjKvkRa.png",
+          "label": "Mionee"
+        },
+        {
+          "blockId": "interface-guide:b:0317",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/2zinXDLziN.png",
+          "label": "Dyanne"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Bank Presets",
+      "sourceAnchor": "bank-presets",
+      "headingBlockId": "interface-guide:b:0319",
+      "level": 3,
+      "blockIds": [
+        "interface-guide:b:0319",
+        "interface-guide:b:0320",
+        "interface-guide:b:0321",
+        "interface-guide:b:0322",
+        "interface-guide:b:0323",
+        "interface-guide:b:0324",
+        "interface-guide:b:0325",
+        "interface-guide:b:0326",
+        "interface-guide:b:0327",
+        "interface-guide:b:0328",
+        "interface-guide:b:0329",
+        "interface-guide:b:0330",
+        "interface-guide:b:0331",
+        "interface-guide:b:0332",
+        "interface-guide:b:0333",
+        "interface-guide:b:0334",
+        "interface-guide:b:0335",
+        "interface-guide:b:0336",
+        "interface-guide:b:0337"
+      ],
+      "media": [
+        {
+          "blockId": "interface-guide:b:0321",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/4WLm6Y71Up.png",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "interface-guide:b:0322",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/WvBCI8Rzrf.png",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "interface-guide:b:0336",
+          "tag": "video",
+          "url": "https://pvme.io/pvme-guides/getting-started/interface-guide/",
+          "label": ""
+        },
+        {
+          "blockId": "interface-guide:b:0336",
+          "tag": "source",
+          "url": "https://img.pvme.io/images/pDdD6tAO9B.mp4",
+          "label": ""
+        }
+      ],
+      "cues": [
+        {
+          "blockId": "interface-guide:b:0334",
+          "text": "1"
+        },
+        {
+          "blockId": "interface-guide:b:0334",
+          "text": "2"
+        },
+        {
+          "blockId": "interface-guide:b:0334",
+          "text": "Alt+(number)"
+        }
+      ],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Quick Banking Preset",
+      "sourceAnchor": "quick-banking-preset",
+      "headingBlockId": "interface-guide:b:0338",
+      "level": 3,
+      "blockIds": [
+        "interface-guide:b:0338",
+        "interface-guide:b:0339",
+        "interface-guide:b:0340",
+        "interface-guide:b:0341",
+        "interface-guide:b:0342",
+        "interface-guide:b:0343",
+        "interface-guide:b:0344",
+        "interface-guide:b:0345",
+        "interface-guide:b:0346",
+        "interface-guide:b:0347",
+        "interface-guide:b:0348",
+        "interface-guide:b:0349",
+        "interface-guide:b:0350",
+        "interface-guide:b:0351",
+        "interface-guide:b:0352",
+        "interface-guide:b:0353",
+        "interface-guide:b:0354",
+        "interface-guide:b:0355",
+        "interface-guide:b:0356",
+        "interface-guide:b:0357",
+        "interface-guide:b:0358",
+        "interface-guide:b:0359",
+        "interface-guide:b:0360",
+        "interface-guide:b:0361",
+        "interface-guide:b:0362",
+        "interface-guide:b:0363",
+        "interface-guide:b:0364",
+        "interface-guide:b:0365"
+      ],
+      "media": [
+        {
+          "blockId": "interface-guide:b:0341",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/921410226484301925.png?v=1",
+          "label": "kalgpouch"
+        },
+        {
+          "blockId": "interface-guide:b:0341",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/841409588954923049.png?v=1",
+          "label": "kalgscroll"
+        },
+        {
+          "blockId": "interface-guide:b:0341",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/703581275453128714.png?v=1",
+          "label": "ripperpouch"
+        },
+        {
+          "blockId": "interface-guide:b:0341",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/703581275155464203.png?v=1",
+          "label": "ripperscroll"
+        },
+        {
+          "blockId": "interface-guide:b:0341",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1499293961364308059.png?v=1",
+          "label": "mammothpouch"
+        },
+        {
+          "blockId": "interface-guide:b:0341",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1032540070332346388.png?v=1",
+          "label": "mammothscroll"
+        },
+        {
+          "blockId": "interface-guide:b:0342",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/648976643687317532.png?v=1",
+          "label": "elderovlsalve"
+        },
+        {
+          "blockId": "interface-guide:b:0342",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689525476158472288.png?v=1",
+          "label": "weppoison"
+        },
+        {
+          "blockId": "interface-guide:b:0342",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/854475161809190913.png?v=1",
+          "label": "summoningrenewal"
+        },
+        {
+          "blockId": "interface-guide:b:0342",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689530593796423724.png?v=1",
+          "label": "thermalflask"
+        },
+        {
+          "blockId": "interface-guide:b:0343",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1357545000577011782.png?v=1",
+          "label": "temporalanomaly"
+        },
+        {
+          "blockId": "interface-guide:b:0343",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1390439126519644271.png?v=1",
+          "label": "graspingpouchpink"
+        },
+        {
+          "blockId": "interface-guide:b:0343",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1390439129275306164.png?v=1",
+          "label": "graspingpouchblue"
+        },
+        {
+          "blockId": "interface-guide:b:0343",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1390439136875253810.png?v=1",
+          "label": "graspingpouchblack"
+        },
+        {
+          "blockId": "interface-guide:b:0343",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1179716442816532540.png?v=1",
+          "label": "deathwardennexus"
+        },
+        {
+          "blockId": "interface-guide:b:0344",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/565726489136463894.png?v=1",
+          "label": "SpiritSticks"
+        },
+        {
+          "blockId": "interface-guide:b:0344",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/565726489404899368.png?v=1",
+          "label": "LantaSticks"
+        },
+        {
+          "blockId": "interface-guide:b:0344",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/565726489341984779.png?v=1",
+          "label": "KwuarmSticks"
+        },
+        {
+          "blockId": "interface-guide:b:0345",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1010485547598356530.png?v=1",
+          "label": "divinecharge"
+        },
+        {
+          "blockId": "interface-guide:b:0346",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/928221126360969226.png?v=1",
+          "label": "powderofpenance"
+        },
+        {
+          "blockId": "interface-guide:b:0346",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1043953716908269598.png?v=1",
+          "label": "powderofitemprotection"
+        },
+        {
+          "blockId": "interface-guide:b:0346",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/933079947419983912.png?v=1",
+          "label": "powderofprotection"
+        },
+        {
+          "blockId": "interface-guide:b:0347",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/568262896375824385.png?v=1",
+          "label": "grim"
+        },
+        {
+          "blockId": "interface-guide:b:0347",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/643168594493964298.png?v=1",
+          "label": "grimpage"
+        },
+        {
+          "blockId": "interface-guide:b:0347",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/902209626412560395.png?v=1",
+          "label": "scriptureofful"
+        },
+        {
+          "blockId": "interface-guide:b:0347",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869284373898334238.png?v=1",
+          "label": "manuscriptofful"
+        },
+        {
+          "blockId": "interface-guide:b:0348",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1043953726341267606.png?v=1",
+          "label": "magiccape"
+        },
+        {
+          "blockId": "interface-guide:b:0349",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1043953724441231431.png?v=1",
+          "label": "archcape"
+        },
+        {
+          "blockId": "interface-guide:b:0350",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/975284344123953164.png?v=1",
+          "label": "slayermastercape"
+        },
+        {
+          "blockId": "interface-guide:b:0351",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1043953720628621352.png?v=1",
+          "label": "grimgem"
+        },
+        {
+          "blockId": "interface-guide:b:0353",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/659122178704408598.png?v=1",
+          "label": "blessedflask"
+        },
+        {
+          "blockId": "interface-guide:b:0353",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1102897785881235606.png?v=1",
+          "label": "extremeprayer"
+        },
+        {
+          "blockId": "interface-guide:b:0354",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/566453486913323042.png?v=1",
+          "label": "LotD"
+        },
+        {
+          "blockId": "interface-guide:b:0355",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/900765150678749204.png?v=1",
+          "label": "gote"
+        },
+        {
+          "blockId": "interface-guide:b:0356",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994189295592161291.png?v=1",
+          "label": "vestmentsofhavoctop"
+        },
+        {
+          "blockId": "interface-guide:b:0357",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/603979368850653216.png?v=1",
+          "label": "dba"
+        },
+        {
+          "blockId": "interface-guide:b:0358",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/643507594811670538.png?v=1",
+          "label": "vitalitytotem"
+        },
+        {
+          "blockId": "interface-guide:b:0359",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1142784247543894056.png?v=1",
+          "label": "wardentop80"
+        },
+        {
+          "blockId": "interface-guide:b:0359",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1334336168363561041.png?v=1",
+          "label": "cryptbloomtop"
+        },
+        {
+          "blockId": "interface-guide:b:0359",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/583428622094958612.png?v=1",
+          "label": "achtotempestbody"
+        },
+        {
+          "blockId": "interface-guide:b:0360",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1102553021457645579.png?v=1",
+          "label": "merciless"
+        },
+        {
+          "blockId": "interface-guide:b:0360",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1102553026415313006.png?v=1",
+          "label": "vengeful"
+        },
+        {
+          "blockId": "interface-guide:b:0360",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1102553024536252466.png?v=1",
+          "label": "malevkite"
+        },
+        {
+          "blockId": "interface-guide:b:0361",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/839906296290476033.png?v=1",
+          "label": "reefcape"
+        },
+        {
+          "blockId": "interface-guide:b:0362",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580177522629804062.png?v=1",
+          "label": "CeremonialMask"
+        },
+        {
+          "blockId": "interface-guide:b:0362",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580177522441060363.png?v=1",
+          "label": "CeremonialTop"
+        },
+        {
+          "blockId": "interface-guide:b:0362",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580177522533335051.png?v=1",
+          "label": "CeremonialLegs"
+        },
+        {
+          "blockId": "interface-guide:b:0362",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580177522633736214.png?v=1",
+          "label": "CeremonialGloves"
+        },
+        {
+          "blockId": "interface-guide:b:0362",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580177522575147018.png?v=1",
+          "label": "CeremonialBoots"
+        },
+        {
+          "blockId": "interface-guide:b:0362",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/698816156961603654.png?v=1",
+          "label": "coins"
+        },
+        {
+          "blockId": "interface-guide:b:0364",
+          "tag": "a",
+          "url": "https://presets.pvme.io/?id=7a3eaf08-a1ce-4a89-b3ec-ee94efcffa29",
+          "label": "Dyanne"
+        },
+        {
+          "blockId": "interface-guide:b:0364",
+          "tag": "a",
+          "url": "https://presets.pvme.io/?id=2a258b96-3929-47f3-adc6-92a8d6f8a95a",
+          "label": "hikaru nara"
+        },
+        {
+          "blockId": "interface-guide:b:0364",
+          "tag": "a",
+          "url": "https://presets.pvme.io/?id=ad56e52f-0cd0-4173-9caf-a4cf1e04170e",
+          "label": "basic preset"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    }
+  ],
+  "attribution": {
+    "author": "PvME contributors",
+    "license": "CC BY-NC-SA 4.0",
+    "imported": "2026-11-10T14:24:05Z"
+  },
+  "upstream": {
+    "sourcePath": "getting-started/interface-guide.txt",
+    "revision": "ee913a530677bddd0af48860062fed8c8efd77a3",
+    "sha256": "2806de34728bad39a0faff25421a7efc72b3c0ab6dc8c59f32d5529932cd3fc0",
+    "kind": "guide"
+  }
+}

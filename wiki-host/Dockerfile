@@ -26,7 +26,9 @@ COPY corpus/pages.xml /opt/pvme/corpus/pages.xml
 COPY corpus/manifest.json /opt/pvme/corpus/manifest.json
 COPY corpus/SHA256SUMS /opt/pvme/corpus/SHA256SUMS
 COPY visual-guides/ /opt/pvme/visual-guides/
+COPY main-guides/ /opt/pvme/main-guides/
 RUN php -l /opt/pvme/runtime/install-visual-guides.php
+RUN php -l /opt/pvme/runtime/install-main-guides.php && php -l /var/www/html/extensions/PvmePresentation/includes/Hooks.php
 RUN chmod 755 /opt/pvme /opt/pvme/runtime /opt/pvme/runtime/start.sh \
     && chmod 644 /opt/pvme/LocalSettings.php /opt/pvme/runtime/*.php /var/www/html/healthz.php
 RUN chmod 755 /var/www/html/extensions/PvmePresentation /var/www/html/extensions/PvmePresentation/includes /var/www/html/extensions/PvmePresentation/modules \

@@ -1,0 +1,18 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+const directory=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../main-guides');
+const file=process.argv[2]||'preview-audit.json';
+if(path.basename(file)!==file)throw new Error('Pass a capture filename in main-guides');
+const source=JSON.parse(fs.readFileSync(path.join(directory,'amascut-parity.json')));
+const actual=JSON.parse(fs.readFileSync(path.join(directory,file)));
+const images=source.media.filter(m=>m.tag==='img');
+const videos=source.media.filter(m=>m.tag==='video');
+const activeLinks=source.links.filter(l=>l.href);
+const hash=s=>crypto.createHash('sha256').update(s).digest('hex');
+const result={capture:file,textMatch:source.bodyTextSha256===hash(actual.text),sourceTextSha256:source.bodyTextSha256,actualTextSha256:hash(actual.text),images:actual.images.length,videos:actual.videos.length,sourceImages:images.length,sourceVideos:videos.length,imageOrderAndAttributesMatch:actual.images.length===images.length&&images.every((m,i)=>['src','alt','title'].every(k=>(m[k]||'')===(actual.images[i][k]||''))),videoOrderMatch:actual.videos.length===videos.length&&videos.every((m,i)=>m.src===actual.videos[i]),activeLinkOrderAndLabelsMatch:activeLinks.length===actual.links.length&&activeLinks.every((l,i)=>l.href===actual.links[i].href&&l.text===actual.links[i].text)};
+result.passed=result.textMatch&&result.imageOrderAndAttributesMatch&&result.videoOrderMatch&&result.activeLinkOrderAndLabelsMatch;
+fs.writeFileSync(path.join(directory,file.replace('.json','-result.json')),JSON.stringify(result,null,2)+'\n');
+console.log(JSON.stringify(result));
+if(!result.passed)process.exitCode=1;

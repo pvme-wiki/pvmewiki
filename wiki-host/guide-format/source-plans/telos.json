@@ -1,0 +1,1301 @@
+{
+  "title": "PvME/Telos/Overview",
+  "id": "telos",
+  "sourceSha256": "4ad89e3f1468b6a56a4f0c9306feaf1517f79fdf8b1da4ba4c35e494d4e3a7ce",
+  "sourceFile": "wiki-host/corpus/pages/guide--telos.wiki.txt",
+  "snapshotFile": "editor/content/telos.json",
+  "snapshotSha256": "c5c44b39319984f1226912ed031c2a80b384b3aae5341425248dd4ea30456c1e",
+  "sourcePath": "basic-guides/telos-basic.txt",
+  "sourceUrl": "https://pvme.io/pvme-guides/basic-guides/telos-basic/",
+  "sourceCommit": "074a9438f79d10fba75735791be0030734db8b5e",
+  "status": "source-indexed",
+  "mainGuide": true,
+  "format": "combat-overview",
+  "sections": [
+    {
+      "sourceHeading": null,
+      "sourceAnchor": null,
+      "headingBlockId": null,
+      "level": 0,
+      "blockIds": [
+        "telos:b:000000",
+        "telos:b:000001",
+        "telos:b:000003"
+      ],
+      "media": [
+        {
+          "blockId": "telos:b:000001",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/X0pACbKpyT.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Disclaimer",
+      "sourceAnchor": "disclaimer",
+      "headingBlockId": "telos:b:000005",
+      "level": 2,
+      "blockIds": [
+        "telos:b:000005",
+        "telos:b:000007",
+        "telos:b:000009"
+      ],
+      "media": [
+        {
+          "blockId": "telos:b:000007",
+          "tag": "a",
+          "url": "/guides/?q=telos",
+          "label": "Telos guides"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Presets and Relics",
+      "sourceAnchor": "presets-and-relics",
+      "headingBlockId": "telos:b:000011",
+      "level": 2,
+      "blockIds": [
+        "telos:b:000011",
+        "telos:b:000013",
+        "telos:b:000015",
+        "telos:b:000017"
+      ],
+      "media": [
+        {
+          "blockId": "telos:b:000013",
+          "tag": "a",
+          "url": "https://presets.pvme.io/?id=uCYUF3PdRTGiEaTRnXMF",
+          "label": "Magic - Statius's Warhammer"
+        },
+        {
+          "blockId": "telos:b:000013",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1",
+          "label": "magic"
+        },
+        {
+          "blockId": "telos:b:000015",
+          "tag": "a",
+          "url": "https://presets.pvme.io/?id=pi3Mt9McC4EVfYjOGCNZ",
+          "label": "Magic - No Statius's Warhammer"
+        },
+        {
+          "blockId": "telos:b:000015",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1",
+          "label": "magic"
+        },
+        {
+          "blockId": "telos:b:000015",
+          "tag": "img",
+          "url": "https://firebasestorage.googleapis.com/v0/b/preset-images/o/images%2Fpi3Mt9McC4EVfYjOGCNZ.png?alt=media",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Enrage Mechanics",
+      "sourceAnchor": "enrage-mechanics",
+      "headingBlockId": "telos:b:000019",
+      "level": 2,
+      "blockIds": [
+        "telos:b:000019",
+        "telos:b:000021",
+        "telos:b:000023",
+        "telos:b:000025",
+        "telos:b:000027",
+        "telos:b:000029",
+        "telos:b:000031",
+        "telos:b:000033",
+        "telos:b:000035",
+        "telos:b:000037",
+        "telos:b:000039"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Attack Pattern",
+      "sourceAnchor": "attack-pattern",
+      "headingBlockId": "telos:b:000041",
+      "level": 2,
+      "blockIds": [
+        "telos:b:000041",
+        "telos:b:000043",
+        "telos:b:000045",
+        "telos:b:000047"
+      ],
+      "media": [
+        {
+          "blockId": "telos:b:000045",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/K44ZbrL43J.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Mechanics Summary",
+      "sourceAnchor": "mechanics-summary",
+      "headingBlockId": "telos:b:000049",
+      "level": 2,
+      "blockIds": [
+        "telos:b:000049",
+        "telos:b:000051",
+        "telos:b:000053",
+        "telos:b:000055",
+        "telos:b:000057",
+        "telos:b:000059",
+        "telos:b:000061"
+      ],
+      "media": [
+        {
+          "blockId": "telos:b:000051",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/e6LpKti.mp4",
+          "label": "melee"
+        },
+        {
+          "blockId": "telos:b:000051",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/e6LpKti.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "telos:b:000051",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/wMhIhgf.mp4",
+          "label": "magic"
+        },
+        {
+          "blockId": "telos:b:000051",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/wMhIhgf.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "telos:b:000051",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/n92IQzM.mp4",
+          "label": "Example"
+        },
+        {
+          "blockId": "telos:b:000051",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/n92IQzM.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "telos:b:000051",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/iUIAuba.mp4",
+          "label": "Example"
+        },
+        {
+          "blockId": "telos:b:000051",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/iUIAuba.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "telos:b:000051",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "telos:b:000051",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258832052231.png?v=1",
+          "label": "escape"
+        },
+        {
+          "blockId": "telos:b:000051",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1",
+          "label": "dive"
+        },
+        {
+          "blockId": "telos:b:000051",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535614336207552523.png?v=1",
+          "label": "disrupt"
+        },
+        {
+          "blockId": "telos:b:000051",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258844635148.png?v=1",
+          "label": "res"
+        },
+        {
+          "blockId": "telos:b:000051",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/fKhoh6P.mp4",
+          "label": "Example"
+        },
+        {
+          "blockId": "telos:b:000051",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/fKhoh6P.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "telos:b:000051",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306475151390.png?v=1",
+          "label": "anti"
+        },
+        {
+          "blockId": "telos:b:000051",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258240786434.png?v=1",
+          "label": "freedom"
+        },
+        {
+          "blockId": "telos:b:000051",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258844635148.png?v=1",
+          "label": "res"
+        },
+        {
+          "blockId": "telos:b:000053",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195487926845462.png?v=1",
+          "label": "DeflectMage"
+        },
+        {
+          "blockId": "telos:b:000053",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190158728953857.png?v=1",
+          "label": "devo"
+        },
+        {
+          "blockId": "telos:b:000053",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258786177064.png?v=1",
+          "label": "reflect"
+        },
+        {
+          "blockId": "telos:b:000055",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/IrOrcBM.mp4",
+          "label": "Example"
+        },
+        {
+          "blockId": "telos:b:000055",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/IrOrcBM.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "telos:b:000055",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/GNj9g8i.mp4",
+          "label": "Example"
+        },
+        {
+          "blockId": "telos:b:000055",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/GNj9g8i.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "telos:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258786177064.png?v=1",
+          "label": "reflect"
+        },
+        {
+          "blockId": "telos:b:000057",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/Pqb71gY.mp4",
+          "label": "Example"
+        },
+        {
+          "blockId": "telos:b:000057",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/Pqb71gY.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "telos:b:000057",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306475151390.png?v=1",
+          "label": "anti"
+        },
+        {
+          "blockId": "telos:b:000057",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258240786434.png?v=1",
+          "label": "freedom"
+        },
+        {
+          "blockId": "telos:b:000057",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/mBqSukd.mp4",
+          "label": "Example"
+        },
+        {
+          "blockId": "telos:b:000057",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/mBqSukd.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "telos:b:000057",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258844635148.png?v=1",
+          "label": "res"
+        },
+        {
+          "blockId": "telos:b:000057",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258786177064.png?v=1",
+          "label": "reflect"
+        },
+        {
+          "blockId": "telos:b:000057",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/567727987274022924.png?v=1",
+          "label": "ent"
+        },
+        {
+          "blockId": "telos:b:000057",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190159194259467.png?v=1",
+          "label": "corruptblast"
+        },
+        {
+          "blockId": "telos:b:000057",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "telos:b:000057",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/dyeeCcK.mp4",
+          "label": "here"
+        },
+        {
+          "blockId": "telos:b:000057",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/dyeeCcK.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "telos:b:000057",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/rOCPDcD.mp4",
+          "label": "Example"
+        },
+        {
+          "blockId": "telos:b:000057",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/rOCPDcD.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "telos:b:000057",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258844635148.png?v=1",
+          "label": "res"
+        },
+        {
+          "blockId": "telos:b:000057",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535614336207552523.png?v=1",
+          "label": "disrupt"
+        },
+        {
+          "blockId": "telos:b:000057",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/Ft9mmv4.mp4",
+          "label": "Example"
+        },
+        {
+          "blockId": "telos:b:000057",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/Ft9mmv4.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "telos:b:000057",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535614336207552523.png?v=1",
+          "label": "disrupt"
+        },
+        {
+          "blockId": "telos:b:000057",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258844635148.png?v=1",
+          "label": "res"
+        },
+        {
+          "blockId": "telos:b:000059",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/654618235097972737.png?v=1",
+          "label": "powerburstofvitality"
+        },
+        {
+          "blockId": "telos:b:000059",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258786177064.png?v=1",
+          "label": "reflect"
+        },
+        {
+          "blockId": "telos:b:000059",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258786177064.png?v=1",
+          "label": "reflect"
+        },
+        {
+          "blockId": "telos:b:000059",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541278264393729.png?v=1",
+          "label": "debil"
+        },
+        {
+          "blockId": "telos:b:000059",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "telos:b:000059",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1",
+          "label": "dive"
+        },
+        {
+          "blockId": "telos:b:000059",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/7vfE0Da.mp4",
+          "label": "Example"
+        },
+        {
+          "blockId": "telos:b:000059",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/7vfE0Da.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "telos:b:000059",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258538582017.png?v=1",
+          "label": "immort"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "telos:b:000055",
+        "telos:b:000057",
+        "telos:b:000059"
+      ]
+    },
+    {
+      "sourceHeading": "Stunning Guide",
+      "sourceAnchor": "stunning-guide",
+      "headingBlockId": "telos:b:000063",
+      "level": 2,
+      "blockIds": [
+        "telos:b:000063",
+        "telos:b:000065",
+        "telos:b:000067",
+        "telos:b:000069",
+        "telos:b:000071",
+        "telos:b:000073",
+        "telos:b:000075",
+        "telos:b:000077"
+      ],
+      "media": [
+        {
+          "blockId": "telos:b:000067",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809655873556.png?v=1",
+          "label": "impact"
+        },
+        {
+          "blockId": "telos:b:000069",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833139912724.png?v=1",
+          "label": "deep"
+        },
+        {
+          "blockId": "telos:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "telos:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833139912724.png?v=1",
+          "label": "deep"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Basic Rotations",
+      "sourceAnchor": "basic-rotations",
+      "headingBlockId": "telos:b:000079",
+      "level": 2,
+      "blockIds": [
+        "telos:b:000079",
+        "telos:b:000081"
+      ],
+      "media": [
+        {
+          "blockId": "telos:b:000081",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Phase 1",
+      "sourceAnchor": "phase-1",
+      "headingBlockId": "telos:b:000083",
+      "level": 3,
+      "blockIds": [
+        "telos:b:000083",
+        "telos:b:000085",
+        "telos:b:000087",
+        "telos:b:000089",
+        "telos:b:000091",
+        "telos:b:000093",
+        "telos:b:000095"
+      ],
+      "media": [
+        {
+          "blockId": "telos:b:000085",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "telos:b:000085",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921119381463070.png?v=1",
+          "label": "sunshine"
+        },
+        {
+          "blockId": "telos:b:000085",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869285393223254107.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "telos:b:000085",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641670143197446182.png?v=1",
+          "label": "swh"
+        },
+        {
+          "blockId": "telos:b:000085",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "telos:b:000085",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513203008608141314.png?v=1",
+          "label": "gstaff"
+        },
+        {
+          "blockId": "telos:b:000085",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1",
+          "label": "eofspec"
+        },
+        {
+          "blockId": "telos:b:000085",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400185245701.png?v=1",
+          "label": "icebarrage"
+        },
+        {
+          "blockId": "telos:b:000085",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258240786434.png?v=1",
+          "label": "freedom"
+        },
+        {
+          "blockId": "telos:b:000089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "telos:b:000089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809655873556.png?v=1",
+          "label": "impact"
+        },
+        {
+          "blockId": "telos:b:000089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833139912724.png?v=1",
+          "label": "deep"
+        },
+        {
+          "blockId": "telos:b:000091",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "telos:b:000093",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833358016512.png?v=1",
+          "label": "deto"
+        },
+        {
+          "blockId": "telos:b:000093",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513203008608141314.png?v=1",
+          "label": "gstaff"
+        },
+        {
+          "blockId": "telos:b:000093",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1",
+          "label": "eofspec"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "telos:b:000085"
+      ]
+    },
+    {
+      "sourceHeading": "Phase 2",
+      "sourceAnchor": "phase-2",
+      "headingBlockId": "telos:b:000097",
+      "level": 3,
+      "blockIds": [
+        "telos:b:000097",
+        "telos:b:000099",
+        "telos:b:000101",
+        "telos:b:000103",
+        "telos:b:000105"
+      ],
+      "media": [
+        {
+          "blockId": "telos:b:000099",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190159194259467.png?v=1",
+          "label": "corruptblast"
+        },
+        {
+          "blockId": "telos:b:000099",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833098100745.png?v=1",
+          "label": "comb"
+        },
+        {
+          "blockId": "telos:b:000101",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "telos:b:000101",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809655873556.png?v=1",
+          "label": "impact"
+        },
+        {
+          "blockId": "telos:b:000101",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833139912724.png?v=1",
+          "label": "deep"
+        },
+        {
+          "blockId": "telos:b:000103",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/869285393223254107.png?v=1",
+          "label": "gconc"
+        },
+        {
+          "blockId": "telos:b:000103",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "telos:b:000103",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513203008608141314.png?v=1",
+          "label": "gstaff"
+        },
+        {
+          "blockId": "telos:b:000103",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1",
+          "label": "eofspec"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Phase 3",
+      "sourceAnchor": "phase-3",
+      "headingBlockId": "telos:b:000107",
+      "level": 3,
+      "blockIds": [
+        "telos:b:000107",
+        "telos:b:000109",
+        "telos:b:000111",
+        "telos:b:000113",
+        "telos:b:000115",
+        "telos:b:000117",
+        "telos:b:000119"
+      ],
+      "media": [
+        {
+          "blockId": "telos:b:000111",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533811304497183.png?v=1",
+          "label": "meta"
+        },
+        {
+          "blockId": "telos:b:000111",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190159194259467.png?v=1",
+          "label": "corruptblast"
+        },
+        {
+          "blockId": "telos:b:000111",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833098100745.png?v=1",
+          "label": "comb"
+        },
+        {
+          "blockId": "telos:b:000113",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641339233638023179.png?v=1",
+          "label": "limitless"
+        },
+        {
+          "blockId": "telos:b:000113",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "telos:b:000113",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "telos:b:000117",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190159085207555.png?v=1",
+          "label": "onsl"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "telos:b:000111",
+        "telos:b:000113",
+        "telos:b:000117"
+      ]
+    },
+    {
+      "sourceHeading": "Phase 4",
+      "sourceAnchor": "phase-4",
+      "headingBlockId": "telos:b:000121",
+      "level": 3,
+      "blockIds": [
+        "telos:b:000121",
+        "telos:b:000123",
+        "telos:b:000125",
+        "telos:b:000127",
+        "telos:b:000129",
+        "telos:b:000131"
+      ],
+      "media": [
+        {
+          "blockId": "telos:b:000127",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736298121704767538.png?v=1",
+          "label": "adrenrenewal"
+        },
+        {
+          "blockId": "telos:b:000129",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641670143197446182.png?v=1",
+          "label": "swh"
+        },
+        {
+          "blockId": "telos:b:000129",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "telos:b:000129",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513203008608141314.png?v=1",
+          "label": "gstaff"
+        },
+        {
+          "blockId": "telos:b:000129",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1",
+          "label": "eofspec"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Font 1",
+      "sourceAnchor": "font-1",
+      "headingBlockId": "telos:b:000133",
+      "level": 3,
+      "blockIds": [
+        "telos:b:000133",
+        "telos:b:000135",
+        "telos:b:000137",
+        "telos:b:000139",
+        "telos:b:000141",
+        "telos:b:000143"
+      ],
+      "media": [
+        {
+          "blockId": "telos:b:000137",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258786177064.png?v=1",
+          "label": "reflect"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Font 2",
+      "sourceAnchor": "font-2",
+      "headingBlockId": "telos:b:000145",
+      "level": 3,
+      "blockIds": [
+        "telos:b:000145",
+        "telos:b:000147",
+        "telos:b:000149",
+        "telos:b:000151",
+        "telos:b:000153",
+        "telos:b:000155"
+      ],
+      "media": [
+        {
+          "blockId": "telos:b:000149",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258786177064.png?v=1",
+          "label": "reflect"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Font 3",
+      "sourceAnchor": "font-3",
+      "headingBlockId": "telos:b:000157",
+      "level": 3,
+      "blockIds": [
+        "telos:b:000157",
+        "telos:b:000159",
+        "telos:b:000161",
+        "telos:b:000163",
+        "telos:b:000165",
+        "telos:b:000167",
+        "telos:b:000169",
+        "telos:b:000171"
+      ],
+      "media": [
+        {
+          "blockId": "telos:b:000161",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543875425055670275.png?v=1",
+          "label": "SBS"
+        },
+        {
+          "blockId": "telos:b:000161",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/567727987274022924.png?v=1",
+          "label": "ent"
+        },
+        {
+          "blockId": "telos:b:000161",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190159194259467.png?v=1",
+          "label": "corruptblast"
+        },
+        {
+          "blockId": "telos:b:000161",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "telos:b:000163",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/dyeeCcK.mp4",
+          "label": "here"
+        },
+        {
+          "blockId": "telos:b:000163",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/dyeeCcK.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "telos:b:000167",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258844635148.png?v=1",
+          "label": "res"
+        },
+        {
+          "blockId": "telos:b:000167",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258786177064.png?v=1",
+          "label": "reflect"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "telos:b:000161"
+      ]
+    },
+    {
+      "sourceHeading": "Phase 5",
+      "sourceAnchor": "phase-5",
+      "headingBlockId": "telos:b:000173",
+      "level": 3,
+      "blockIds": [
+        "telos:b:000173",
+        "telos:b:000175",
+        "telos:b:000177",
+        "telos:b:000179",
+        "telos:b:000181",
+        "telos:b:000183",
+        "telos:b:000185",
+        "telos:b:000187"
+      ],
+      "media": [
+        {
+          "blockId": "telos:b:000175",
+          "tag": "a",
+          "url": "/archive/pvme-guides/rs3-full-boss-guides/telos/p5-movement-and-timing/",
+          "label": "P5 Movement And Timing"
+        },
+        {
+          "blockId": "telos:b:000181",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921119381463070.png?v=1",
+          "label": "sunshine"
+        },
+        {
+          "blockId": "telos:b:000183",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190159194259467.png?v=1",
+          "label": "corruptblast"
+        },
+        {
+          "blockId": "telos:b:000183",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1",
+          "label": "dbreath"
+        },
+        {
+          "blockId": "telos:b:000185",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195488447201300.png?v=1",
+          "label": "DeflectMelee"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Side Beams",
+      "sourceAnchor": "side-beams",
+      "headingBlockId": "telos:b:000189",
+      "level": 3,
+      "blockIds": [
+        "telos:b:000189",
+        "telos:b:000191",
+        "telos:b:000193",
+        "telos:b:000195",
+        "telos:b:000197",
+        "telos:b:000199",
+        "telos:b:000201",
+        "telos:b:000203"
+      ],
+      "media": [
+        {
+          "blockId": "telos:b:000193",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921119381463070.png?v=1",
+          "label": "sunshine"
+        },
+        {
+          "blockId": "telos:b:000193",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306475151390.png?v=1",
+          "label": "anti"
+        },
+        {
+          "blockId": "telos:b:000193",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641339233638023179.png?v=1",
+          "label": "limitless"
+        },
+        {
+          "blockId": "telos:b:000193",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "telos:b:000193",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833139912724.png?v=1",
+          "label": "deep"
+        },
+        {
+          "blockId": "telos:b:000195",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/654618235097972737.png?v=1",
+          "label": "powerburstofvitality"
+        },
+        {
+          "blockId": "telos:b:000195",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258786177064.png?v=1",
+          "label": "reflect"
+        },
+        {
+          "blockId": "telos:b:000197",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258240786434.png?v=1",
+          "label": "freedom"
+        },
+        {
+          "blockId": "telos:b:000197",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833358016512.png?v=1",
+          "label": "deto"
+        },
+        {
+          "blockId": "telos:b:000197",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809995874304.png?v=1",
+          "label": "tsunami"
+        },
+        {
+          "blockId": "telos:b:000199",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541278264393729.png?v=1",
+          "label": "debil"
+        },
+        {
+          "blockId": "telos:b:000201",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "telos:b:000201",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1",
+          "label": "dive"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "telos:b:000193",
+        "telos:b:000197"
+      ]
+    },
+    {
+      "sourceHeading": "Back Beam",
+      "sourceAnchor": "back-beam",
+      "headingBlockId": "telos:b:000205",
+      "level": 3,
+      "blockIds": [
+        "telos:b:000205",
+        "telos:b:000207",
+        "telos:b:000209",
+        "telos:b:000211",
+        "telos:b:000213",
+        "telos:b:000215",
+        "telos:b:000217",
+        "telos:b:000219",
+        "telos:b:000221",
+        "telos:b:000223"
+      ],
+      "media": [
+        {
+          "blockId": "telos:b:000207",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809655873556.png?v=1",
+          "label": "impact"
+        },
+        {
+          "blockId": "telos:b:000207",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833139912724.png?v=1",
+          "label": "deep"
+        },
+        {
+          "blockId": "telos:b:000211",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921119381463070.png?v=1",
+          "label": "sunshine"
+        },
+        {
+          "blockId": "telos:b:000211",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306475151390.png?v=1",
+          "label": "anti"
+        },
+        {
+          "blockId": "telos:b:000211",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641339233638023179.png?v=1",
+          "label": "limitless"
+        },
+        {
+          "blockId": "telos:b:000211",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "telos:b:000213",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258786177064.png?v=1",
+          "label": "reflect"
+        },
+        {
+          "blockId": "telos:b:000213",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/654618235097972737.png?v=1",
+          "label": "powerburstofvitality"
+        },
+        {
+          "blockId": "telos:b:000215",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258240786434.png?v=1",
+          "label": "freedom"
+        },
+        {
+          "blockId": "telos:b:000215",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833358016512.png?v=1",
+          "label": "deto"
+        },
+        {
+          "blockId": "telos:b:000215",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809995874304.png?v=1",
+          "label": "tsunami"
+        },
+        {
+          "blockId": "telos:b:000217",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809655873556.png?v=1",
+          "label": "impact"
+        },
+        {
+          "blockId": "telos:b:000217",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833139912724.png?v=1",
+          "label": "deep"
+        },
+        {
+          "blockId": "telos:b:000219",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541278264393729.png?v=1",
+          "label": "debil"
+        },
+        {
+          "blockId": "telos:b:000221",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "telos:b:000221",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1",
+          "label": "dive"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "telos:b:000211",
+        "telos:b:000215"
+      ]
+    },
+    {
+      "sourceHeading": "Example Kills",
+      "sourceAnchor": "example-kills",
+      "headingBlockId": "telos:b:000225",
+      "level": 2,
+      "blockIds": [
+        "telos:b:000225",
+        "telos:b:000227",
+        "telos:b:000229",
+        "telos:b:000231"
+      ],
+      "media": [
+        {
+          "blockId": "telos:b:000227",
+          "tag": "a",
+          "url": "https://youtu.be/jeZnAP4kNb8",
+          "label": "Full kill"
+        },
+        {
+          "blockId": "telos:b:000229",
+          "tag": "iframe",
+          "url": "https://www.youtube-nocookie.com/embed/jeZnAP4kNb8",
+          "label": ""
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    }
+  ],
+  "attribution": {
+    "author": "PvME contributors",
+    "license": "CC BY-NC-SA 4.0",
+    "imported": "2026-11-11T14:25:57Z"
+  },
+  "upstream": {
+    "sourcePath": "basic-guides/telos-basic.txt",
+    "revision": "ee913a530677bddd0af48860062fed8c8efd77a3",
+    "sha256": "64c19c448b25748eff00b42f793610142cc906fb4eab0ce1bc0f2d4a34a5ae53",
+    "kind": "guide"
+  }
+}

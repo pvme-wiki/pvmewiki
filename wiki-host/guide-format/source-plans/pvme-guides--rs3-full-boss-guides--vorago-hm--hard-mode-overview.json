@@ -1,0 +1,3255 @@
+{
+  "title": "PvME/Vorago/Vorago Hm — Hard Mode Overview",
+  "id": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview",
+  "sourceSha256": "552ab3adb3c69a0e2f3c8ed788260d4a6a5a8afa3d3d0cd519e0906685078f1a",
+  "sourceFile": "wiki-host/corpus/pages/guide--pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview.wiki.txt",
+  "snapshotFile": "editor/content/pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview.json",
+  "snapshotSha256": "f13f519b01b4afefd6819195d525b6603059a302a57f7ad715cc23f7ebfb4743",
+  "sourcePath": "rs3-full-boss-guides/vorago-hm/hard-mode-overview.txt",
+  "sourceUrl": "https://pvme.io/pvme-guides/rs3-full-boss-guides/vorago-hm/hard-mode-overview/",
+  "sourceCommit": "074a9438f79d10fba75735791be0030734db8b5e",
+  "status": "source-indexed",
+  "mainGuide": true,
+  "format": "combat-guide",
+  "sections": [
+    {
+      "sourceHeading": null,
+      "sourceAnchor": null,
+      "headingBlockId": null,
+      "level": 0,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000000",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000001"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000001",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/sY7JVkg9No.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Introduction",
+      "sourceAnchor": "introduction",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000003",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000003",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000005",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000007",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000009",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000011",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000013",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000015",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000017",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000019",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000021",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000023",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000025",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000027",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000029",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000031",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000033",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000035",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000037"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000023",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/656844963522281473.png?v=1",
+          "label": "dummy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000031",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1",
+          "label": "melee"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000031",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1",
+          "label": "range"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000031",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1",
+          "label": "Magic"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000031",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921119381463070.png?v=1",
+          "label": "sunshine"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000031",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533811304497183.png?v=1",
+          "label": "meta"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000031",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/615618531937222657.png?v=1",
+          "label": "ecb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000031",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921434633744455.png?v=1",
+          "label": "deathsswift"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Requirements",
+      "sourceAnchor": "requirements",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000039",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000039",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000041",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000043",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000045",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000047",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000049",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000051",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000053",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000055",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000057",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000059",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000061",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000063",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000065",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000067",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000069",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000071",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000073",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000075"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000053",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543478434509357098.png?v=1",
+          "label": "Cept"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000057",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1",
+          "label": "melee"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000057",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641670143197446182.png?v=1",
+          "label": "swh"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000061",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641670143197446182.png?v=1",
+          "label": "swh"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000061",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513203008608141314.png?v=1",
+          "label": "gstaff"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000061",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/785031580149743617.png?v=1",
+          "label": "blackstonearrow"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000065",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/654618235097972737.png?v=1",
+          "label": "powerburstofvitality"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000069",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/854475442169053194.png?v=1",
+          "label": "bloodnihil"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000069",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/854475441946230855.png?v=1",
+          "label": "shadownihil"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000069",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/854475442227642388.png?v=1",
+          "label": "smokenihil"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000073",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/854475442164334592.png?v=1",
+          "label": "icenihil"
+        }
+      ],
+      "cues": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000065",
+          "text": "14,000"
+        }
+      ],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Recommendations",
+      "sourceAnchor": "recommendations",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000077",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000077",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000079",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000081",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000083",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000085",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000087",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000089"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000079",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/567727985851891715.png?v=1",
+          "label": "HealOther"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000081",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/626465964325601290.png?v=1",
+          "label": "zgs"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000083",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/615618531937222657.png?v=1",
+          "label": "ecb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000085",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/626466665848242186.png?v=1",
+          "label": "sgb"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Presets and Relics",
+      "sourceAnchor": "presets-and-relics",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000091",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000091",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000093",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000095",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000097",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000099",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000101"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000093",
+          "tag": "a",
+          "url": "https://presets.pvme.io/?id=JdkIDmzO3yRvDY8losgL",
+          "label": "Magic"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000095",
+          "tag": "a",
+          "url": "https://presets.pvme.io/?id=ltTxKZTkowjIhwdm0ULU",
+          "label": "Melee"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000097",
+          "tag": "a",
+          "url": "https://presets.pvme.io/?id=YSPh9XkAiF2t73Oyvrzk",
+          "label": "Ranged"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000101",
+          "tag": "img",
+          "url": "https://firebasestorage.googleapis.com/v0/b/preset-images/o/images%2FYSPh9XkAiF2t73Oyvrzk.png?alt=media",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Entry Hit",
+      "sourceAnchor": "entry-hit",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000103",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000103",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000105",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000107",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000109",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000111",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000113",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000115",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000117",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000119",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000121",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000123",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000125",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000127",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000129",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000131",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000133"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000107",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513200949016264727.png?v=1",
+          "label": "EnhancedExcalibur"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000109",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535614336207552523.png?v=1",
+          "label": "disrupt"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000109",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513200949016264727.png?v=1",
+          "label": "EnhancedExcalibur"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000113",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258131865633.png?v=1",
+          "label": "nat"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000119",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258131865633.png?v=1",
+          "label": "nat"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000121",
+          "tag": "video",
+          "url": "https://pvme.io/pvme-guides/rs3-full-boss-guides/vorago-hm/hard-mode-overview/",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000121",
+          "tag": "source",
+          "url": "https://img.pvme.io/images/JycYCl7.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/654618235097972737.png?v=1",
+          "label": "powerburstofvitality"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000131",
+          "tag": "a",
+          "url": "https://www.youtube.com/watch?v=MG00fhlSnKA",
+          "label": "https://www.youtube.com/watch?v=MG00fhlSnKA"
+        }
+      ],
+      "cues": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000105",
+          "text": "90%"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000105",
+          "text": "70%"
+        }
+      ],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Tips",
+      "sourceAnchor": "tips",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000135",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000135",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000137",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000139",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000141",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000143",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000145",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000147",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000149"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000137",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537341748180025365.png?v=1",
+          "label": "fortitude"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000137",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537336701933060106.png?v=1",
+          "label": "sailfishsoup"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000137",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/654618235097972737.png?v=1",
+          "label": "powerburstofvitality"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000137",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258546970624.png?v=1",
+          "label": "prep"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000137",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/654618235097972737.png?v=1",
+          "label": "powerburstofvitality"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000137",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/654618235097972737.png?v=1",
+          "label": "powerburstofvitality"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000149",
+          "tag": "iframe",
+          "url": "https://www.youtube-nocookie.com/embed/MG00fhlSnKA",
+          "label": ""
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Phases and Mechanic Breakdown",
+      "sourceAnchor": "phases-and-mechanic-breakdown",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000151",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000151"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Phase Breakdown",
+      "sourceAnchor": "phase-breakdown",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000153",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000153",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000155",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000157",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000159",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000161",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000163",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000165",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000167",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000169",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000171",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000173",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000175"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000175",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/pB3bo1z.png",
+          "label": "https://img.pvme.io/images/pB3bo1z.png"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000175",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/pB3bo1z.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000171",
+          "text": "Phase 1: Top Lure (Piece)\nPhase 2: Bring Him Down (Piece)\nPhase 3: Ceiling Collapse\nPhase 4: Scopulus\nPhase 5: Vitalis\nPhase 6: Green Bomb\nPhase 7: Team Split\nPhase 8: The End\nPhase 9: Waterfall (Piece)\nPhase 10: Maul\nPhase 11: Maul\n"
+        }
+      ],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Rewards",
+      "sourceAnchor": "rewards",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000177",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000177",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000179",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000181",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000183",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000185"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000185",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/F61kKIC.png",
+          "label": "https://img.pvme.io/images/F61kKIC.png"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000185",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/F61kKIC.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000179",
+          "text": "the Defeater"
+        }
+      ],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Differences from Normal Mode",
+      "sourceAnchor": "differences-from-normal-mode",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000187",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000187",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000189",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000191",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000193",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000195",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000197",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000199",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000201",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000203",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000205",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000207",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000209",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000211",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000213",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000215",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000217",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000219",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000221",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000223"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000223",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/MI4OUYu.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000193",
+          "text": "50,000"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000193",
+          "text": "70,000"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000193",
+          "text": "12,500"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000193",
+          "text": "14,000"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000207",
+          "text": "2,000"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000207",
+          "text": "3,000"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000209",
+          "text": "7,000"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000209",
+          "text": "10,500"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000217",
+          "text": "1,200"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000217",
+          "text": "3,000"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000217",
+          "text": "6,000"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000217",
+          "text": "10,000"
+        }
+      ],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "DPS/TL5 - Introduction",
+      "sourceAnchor": "dpstl5-introduction",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000225",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000225",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000227",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000229"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000227",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541259465392143.png?v=1",
+          "label": "voke"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Notes",
+      "sourceAnchor": "notes",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000231",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000231",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000233",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000235",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000237",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000239",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000241",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000243"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000233",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879376023572.png?v=1",
+          "label": "dismember"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Positioning for DPS and TL5 throughout Phases 3 - 8",
+      "sourceAnchor": "positioning-for-dps-and-tl5-throughout-phases-3-8",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000245",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000245",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000247"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000247",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/YIA0fWD.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Strategy Summary",
+      "sourceAnchor": "strategy-summary",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000249",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000249",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000251"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000251",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/REZ0zYh.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "DPS/TL5 - Phases 1 & 2",
+      "sourceAnchor": "dpstl5-phases-1-2",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000253",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000253"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "DPS/TL5 - Phase 1",
+      "sourceAnchor": "dpstl5-phase-1",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000255",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000255",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000257",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000259",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000261",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000263",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000265",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000267",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000269",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000271",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000273",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000275",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000277",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000279",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000281",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000283"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000277",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195487926845462.png?v=1",
+          "label": "DeflectMage"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000281",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541259465392143.png?v=1",
+          "label": "voke"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000283",
+          "tag": "video",
+          "url": "https://pvme.io/pvme-guides/rs3-full-boss-guides/vorago-hm/hard-mode-overview/",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000283",
+          "tag": "source",
+          "url": "https://img.pvme.io/images/lQr0FfS.mp4",
+          "label": ""
+        }
+      ],
+      "cues": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000257",
+          "text": "2,000"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000257",
+          "text": "3,000"
+        }
+      ],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "DPS/TL5 - Phase 2",
+      "sourceAnchor": "dpstl5-phase-2",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000285",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000285",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000287",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000289",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000291",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000293",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000295",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000297",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000299",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000301",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000303",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000305"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000287",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879376023572.png?v=1",
+          "label": "dismember"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000299",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/656844963522281473.png?v=1",
+          "label": "dummy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000303",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535614336207552523.png?v=1",
+          "label": "disrupt"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000305",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/yHSpGcd.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "DPS/TL5 - Phases 3 - 8",
+      "sourceAnchor": "dpstl5-phases-3-8",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000307",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000307"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "DPS/TL5 - Phase 3 Ceilings",
+      "sourceAnchor": "dpstl5-phase-3-ceilings",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000309",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000309",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000311",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000313",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000315",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000317",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000319",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000321",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000323",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000325"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000319",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195487926845462.png?v=1",
+          "label": "DeflectMage"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000323",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000323",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "DPS/TL5 - Phase 4 Scopulus",
+      "sourceAnchor": "dpstl5-phase-4-scopulus",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000327",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000327",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000329",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000331",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000333",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000335",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000337",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000339",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000341",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000343",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000345",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000347",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000349",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000351",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000353",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000355",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000357",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000359"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000329",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195488447201300.png?v=1",
+          "label": "DeflectMelee"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000333",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541259465392143.png?v=1",
+          "label": "voke"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000349",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190158728953857.png?v=1",
+          "label": "devo"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000349",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641670143197446182.png?v=1",
+          "label": "swh"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000349",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/643848618553507843.png?v=1",
+          "label": "dbow"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000349",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513203008608141314.png?v=1",
+          "label": "gstaff"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000353",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258844635148.png?v=1",
+          "label": "res"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000357",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/656844963522281473.png?v=1",
+          "label": "dummy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000359",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/G5hKzZw.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "DPS/TL5 - Phase 5 Vitalis",
+      "sourceAnchor": "dpstl5-phase-5-vitalis",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000361",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000361",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000363",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000365",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000367",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000369",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000371",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000373",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000375",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000377",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000379",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000381",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000383",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000385"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000367",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/626466665848242186.png?v=1",
+          "label": "sgb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000375",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879376023572.png?v=1",
+          "label": "dismember"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000383",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/656844963522281473.png?v=1",
+          "label": "dummy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000385",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/SFzYxmS.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "DPS/TL5 - Phase 6 Green Bomb",
+      "sourceAnchor": "dpstl5-phase-6-green-bomb",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000387",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000387",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000389",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000391",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000393",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000395",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000397",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000399",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000401",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000403",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000405",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000407",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000409",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000411"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000389",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/656844963522281473.png?v=1",
+          "label": "dummy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000397",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1",
+          "label": "Magic"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000397",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921119381463070.png?v=1",
+          "label": "sunshine"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000397",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533811304497183.png?v=1",
+          "label": "meta"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000397",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513203008608141314.png?v=1",
+          "label": "gstaff"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000401",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1",
+          "label": "range"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000401",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/615618531937222657.png?v=1",
+          "label": "ecb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000405",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641339234111848463.png?v=1",
+          "label": "ingen"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000405",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/626466665848242186.png?v=1",
+          "label": "sgb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000409",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/654618235097972737.png?v=1",
+          "label": "powerburstofvitality"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000409",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541259465392143.png?v=1",
+          "label": "voke"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "DPS/TL5 - Phase 7 Team Split",
+      "sourceAnchor": "dpstl5-phase-7-team-split",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000413",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000413",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000415",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000417",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000419",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000421",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000423",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000425",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000427",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000429"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000415",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535614336207552523.png?v=1",
+          "label": "disrupt"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000419",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/656844963522281473.png?v=1",
+          "label": "dummy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000423",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258844635148.png?v=1",
+          "label": "res"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000427",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190159462694912.png?v=1",
+          "label": "Reprisal"
+        }
+      ],
+      "cues": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000415",
+          "text": "9,000"
+        }
+      ],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "DPS/TL5 - Phase 8 The End",
+      "sourceAnchor": "dpstl5-phase-8-the-end",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000431",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000431",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000433",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000435",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000437",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000439",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000441",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000443",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000445",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000447",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000449",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000451"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000445",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535614336207552523.png?v=1",
+          "label": "disrupt"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000445",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/654618235097972737.png?v=1",
+          "label": "powerburstofvitality"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000447",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/6j6v67i.png",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000451",
+          "tag": "video",
+          "url": "https://pvme.io/pvme-guides/rs3-full-boss-guides/vorago-hm/hard-mode-overview/",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000451",
+          "tag": "source",
+          "url": "https://img.pvme.io/images/wwtUZ8w.mp4",
+          "label": ""
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Base Tank - Introduction",
+      "sourceAnchor": "base-tank-introduction",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000453",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000453",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000455",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000457"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000455",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258844635148.png?v=1",
+          "label": "res"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000455",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1",
+          "label": "melee"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000455",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641670143197446182.png?v=1",
+          "label": "swh"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000455",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1",
+          "label": "range"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000455",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1",
+          "label": "Magic"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000455",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1",
+          "label": "melee"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000455",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641670143197446182.png?v=1",
+          "label": "swh"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Strategy Summary",
+      "sourceAnchor": "strategy-summary_1",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000459",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000459",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000461"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000461",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/DwkesCR.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Base Tank - Phases 1 & 2",
+      "sourceAnchor": "base-tank-phases-1-2",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000463",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000463"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Base Tank - Phase 1",
+      "sourceAnchor": "base-tank-phase-1",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000465",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000465",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000467",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000469",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000471",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000473",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000475",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000477",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000479",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000481",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000483",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000485",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000487",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000489",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000491",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000493",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000495",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000497"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000473",
+          "tag": "video",
+          "url": "https://pvme.io/pvme-guides/rs3-full-boss-guides/vorago-hm/hard-mode-overview/",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000473",
+          "tag": "source",
+          "url": "https://img.pvme.io/images/uJP5zV5.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000475",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541259465392143.png?v=1",
+          "label": "voke"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000479",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541259465392143.png?v=1",
+          "label": "voke"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000491",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000495",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541259465392143.png?v=1",
+          "label": "voke"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000495",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Base Tank - Phase 2",
+      "sourceAnchor": "base-tank-phase-2",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000499",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000499",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000501",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000503"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000501",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543478434509357098.png?v=1",
+          "label": "Cept"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000501",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/656844963522281473.png?v=1",
+          "label": "dummy"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Base Tank - Phases 3 - 8",
+      "sourceAnchor": "base-tank-phases-3-8",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000505",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000505"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Base Tank - Phase 3 Ceilings",
+      "sourceAnchor": "base-tank-phase-3-ceilings",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000507",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000507",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000509",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000511",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000513",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000515",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000517",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000519",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000521",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000523",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000525",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000527"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000509",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258131865633.png?v=1",
+          "label": "nat"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000513",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736298121704767538.png?v=1",
+          "label": "adrenrenewal"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000517",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/656844963522281473.png?v=1",
+          "label": "dummy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000521",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641670143197446182.png?v=1",
+          "label": "swh"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000525",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541259465392143.png?v=1",
+          "label": "voke"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Base Tank - Phase 4 Scopulus",
+      "sourceAnchor": "base-tank-phase-4-scopulus",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000529",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000529",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000531",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000533",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000535",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000537",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000539",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000541",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000543",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000545",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000547",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000549",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000551",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000553",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000555",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000557",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000559",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000561",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000563",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000565",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000567",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000569"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000531",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000539",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641670143197446182.png?v=1",
+          "label": "swh"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000551",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190158728953857.png?v=1",
+          "label": "devo"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000559",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/656844963522281473.png?v=1",
+          "label": "dummy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000567",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641670143197446182.png?v=1",
+          "label": "swh"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Base Tank - Phase 5 Vitalis",
+      "sourceAnchor": "base-tank-phase-5-vitalis",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000571",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000571",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000573",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000575",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000577",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000579",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000581",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000583",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000585",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000587",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000589",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000591",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000593",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000595",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000597",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000599",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000601",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000603"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000577",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532854004678657.png?v=1",
+          "label": "zerk"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000581",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/656844963522281473.png?v=1",
+          "label": "dummy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000585",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641670143197446182.png?v=1",
+          "label": "swh"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000589",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/626466665848242186.png?v=1",
+          "label": "sgb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000597",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541259465392143.png?v=1",
+          "label": "voke"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000601",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879376023572.png?v=1",
+          "label": "dismember"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Base Tank - Phase 6 Green Bomb",
+      "sourceAnchor": "base-tank-phase-6-green-bomb",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000605",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000605",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000607",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000609",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000611",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000613",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000615",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000617",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000619",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000621",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000623",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000625",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000627",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000629"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000611",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641670143197446182.png?v=1",
+          "label": "swh"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000615",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/656844963522281473.png?v=1",
+          "label": "dummy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000619",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641339234111848463.png?v=1",
+          "label": "ingen"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000619",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/626466665848242186.png?v=1",
+          "label": "sgb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000623",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/654618235097972737.png?v=1",
+          "label": "powerburstofvitality"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000627",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/567727985851891715.png?v=1",
+          "label": "HealOther"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Base Tank - Phase 7 Team Split",
+      "sourceAnchor": "base-tank-phase-7-team-split",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000631",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000631",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000633",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000635",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000637",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000639",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000641",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000643",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000645",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000647"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000633",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641670143197446182.png?v=1",
+          "label": "swh"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000637",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190159462694912.png?v=1",
+          "label": "Reprisal"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000641",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541259465392143.png?v=1",
+          "label": "voke"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Base Tank - Phase 8 The End",
+      "sourceAnchor": "base-tank-phase-8-the-end",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000649",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000649",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000651",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000653",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000655",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000657",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000659",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000661",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000663",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000665",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000667",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000669",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000671",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000673"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000651",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258131865633.png?v=1",
+          "label": "nat"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000655",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532854004678657.png?v=1",
+          "label": "zerk"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000659",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/656844963522281473.png?v=1",
+          "label": "dummy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000663",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641670143197446182.png?v=1",
+          "label": "swh"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000671",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/626466665848242186.png?v=1",
+          "label": "sgb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000671",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/654618235097972737.png?v=1",
+          "label": "powerburstofvitality"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Base Tank - Tips",
+      "sourceAnchor": "base-tank-tips",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000675",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000675",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000677",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000679",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000681",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000683",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000685",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000687",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000689",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000691"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000677",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641670143197446182.png?v=1",
+          "label": "swh"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000677",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1260022289731158146.png?v=1",
+          "label": "eofblacku"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000677",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/779048041088024606.png?v=1",
+          "label": "dragonclaw"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000677",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/780401412839833601.png?v=1",
+          "label": "eofred"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000681",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535614336207552523.png?v=1",
+          "label": "disrupt"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000685",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258131865633.png?v=1",
+          "label": "nat"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Bomb Tank - Introduction",
+      "sourceAnchor": "bomb-tank-introduction",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000693",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000693",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000695",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000697"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000695",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543478434509357098.png?v=1",
+          "label": "Cept"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000695",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/567727985851891715.png?v=1",
+          "label": "HealOther"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Strategy Summary",
+      "sourceAnchor": "strategy-summary_2",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000699",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000699",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000701"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000701",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/mHVPVse.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Bomb Tank - Phases 1 & 2",
+      "sourceAnchor": "bomb-tank-phases-1-2",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000703",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000703"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Bomb Tank - Phase 1",
+      "sourceAnchor": "bomb-tank-phase-1",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000705",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000705",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000707",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000709",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000711",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000713",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000715",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000717",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000719",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000721",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000723",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000725",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000727",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000729",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000731"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000713",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535614336207552523.png?v=1",
+          "label": "disrupt"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000729",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/567727985851891715.png?v=1",
+          "label": "HealOther"
+        }
+      ],
+      "cues": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000713",
+          "text": "2,000"
+        }
+      ],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Bomb Tank - Phase 2",
+      "sourceAnchor": "bomb-tank-phase-2",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000733",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000733",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000735",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000737",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000739",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000741",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000743",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000745",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000747",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000749",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000751",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000753",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000755",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000757",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000759",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000761"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000743",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879376023572.png?v=1",
+          "label": "dismember"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000747",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306353778689.png?v=1",
+          "label": "cade"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000747",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543478434509357098.png?v=1",
+          "label": "Cept"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000751",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/567727985851891715.png?v=1",
+          "label": "HealOther"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000755",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/656844963522281473.png?v=1",
+          "label": "dummy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000759",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535614336207552523.png?v=1",
+          "label": "disrupt"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Bomb Tank - Phases 3 - 8",
+      "sourceAnchor": "bomb-tank-phases-3-8",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000763",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000763"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Bomb Tank - Phase 3 Ceilings",
+      "sourceAnchor": "bomb-tank-phase-3-ceilings",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000765",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000765",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000767",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000769",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000771",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000773",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000775",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000777",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000779",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000781",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000783",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000785",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000787",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000789"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000771",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541259465392143.png?v=1",
+          "label": "voke"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000783",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000783",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000787",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190158728953857.png?v=1",
+          "label": "devo"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Bomb Tank - Phase 4 Scopulus",
+      "sourceAnchor": "bomb-tank-phase-4-scopulus",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000791",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000791",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000793",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000795",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000797",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000799",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000801",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000803",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000805",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000807",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000809",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000811",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000813",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000815",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000817",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000819",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000821",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000823",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000825",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000827"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000793",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736298121704767538.png?v=1",
+          "label": "adrenrenewal"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000799",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/G5hKzZw.png",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000805",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535614336207552523.png?v=1",
+          "label": "disrupt"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000805",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258844635148.png?v=1",
+          "label": "res"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000809",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190158728953857.png?v=1",
+          "label": "devo"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000809",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543478434509357098.png?v=1",
+          "label": "Cept"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000813",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/615613924506599497.png?v=1",
+          "label": "soulsplit"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000817",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641669268722810881.png?v=1",
+          "label": "mechchin"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000817",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513203008608141314.png?v=1",
+          "label": "gstaff"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000817",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257440278512537740.png?v=1",
+          "label": "gchain"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000821",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/656844963522281473.png?v=1",
+          "label": "dummy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000825",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000825",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Bomb Tank - Phase 5 Vitalis",
+      "sourceAnchor": "bomb-tank-phase-5-vitalis",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000829",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000829",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000831",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000833",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000835",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000837",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000839",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000841",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000843",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000845",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000847",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000849",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000851",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000853"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000843",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258844635148.png?v=1",
+          "label": "res"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000847",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/626466665848242186.png?v=1",
+          "label": "sgb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000851",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879376023572.png?v=1",
+          "label": "dismember"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Bomb Tank - Phase 6 Green Bomb",
+      "sourceAnchor": "bomb-tank-phase-6-green-bomb",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000855",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000855",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000857",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000859",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000861",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000863",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000865",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000867",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000869",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000871",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000873",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000875",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000877",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000879",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000881",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000883",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000885",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000887"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000861",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541259465392143.png?v=1",
+          "label": "voke"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000869",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/615618531937222657.png?v=1",
+          "label": "ecb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000869",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000869",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921119381463070.png?v=1",
+          "label": "sunshine"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000869",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533811304497183.png?v=1",
+          "label": "meta"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000873",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641670143197446182.png?v=1",
+          "label": "swh"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000877",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/656844963522281473.png?v=1",
+          "label": "dummy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000881",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641339234111848463.png?v=1",
+          "label": "ingen"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000881",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/626466665848242186.png?v=1",
+          "label": "sgb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000885",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/654618235097972737.png?v=1",
+          "label": "powerburstofvitality"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Bomb Tank - Phase 7 Team Split",
+      "sourceAnchor": "bomb-tank-phase-7-team-split",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000889",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000889",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000891",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000893",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000895",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000897",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000899",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000901",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000903",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000905",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000907",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000909"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000891",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/654618235097972737.png?v=1",
+          "label": "powerburstofvitality"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000891",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190159462694912.png?v=1",
+          "label": "Reprisal"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000895",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541259465392143.png?v=1",
+          "label": "voke"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000907",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/656844963522281473.png?v=1",
+          "label": "dummy"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Bomb Tank - Phase 8 The End",
+      "sourceAnchor": "bomb-tank-phase-8-the-end",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000911",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000911",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000913",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000915",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000917",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000919",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000921",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000923"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Weekly Special Mechanics - Phases 9, 10 & 11",
+      "sourceAnchor": "weekly-special-mechanics-phases-9-10-11",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000925",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000925"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Overview",
+      "sourceAnchor": "overview",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000927",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000927",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000929",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000931"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000929",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/S2PZvtj.png",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000931",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/ASTyHHs.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Phase 9",
+      "sourceAnchor": "phase-9",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000933",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000933",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000935",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000937",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000939",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000941",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000943"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000937",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306353778689.png?v=1",
+          "label": "cade"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000937",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543478434509357098.png?v=1",
+          "label": "Cept"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000937",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306353778689.png?v=1",
+          "label": "cade"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Ceilings",
+      "sourceAnchor": "ceilings",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000945",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000945",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000947",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000949"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000947",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306353778689.png?v=1",
+          "label": "cade"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000947",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543478434509357098.png?v=1",
+          "label": "Cept"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000947",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879376023572.png?v=1",
+          "label": "dismember"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000947",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543478434509357098.png?v=1",
+          "label": "Cept"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Scopulus",
+      "sourceAnchor": "scopulus",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000951",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000951",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000953",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000955"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000953",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306353778689.png?v=1",
+          "label": "cade"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000953",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543478434509357098.png?v=1",
+          "label": "Cept"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Vitalis",
+      "sourceAnchor": "vitalis",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000957",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000957",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000959",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000961",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000963",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000965",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000967",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000969"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000959",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306353778689.png?v=1",
+          "label": "cade"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000959",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543478434509357098.png?v=1",
+          "label": "Cept"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000959",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306353778689.png?v=1",
+          "label": "cade"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000959",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543478434509357098.png?v=1",
+          "label": "Cept"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000963",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/662249620579155968.png?v=1",
+          "label": "dommine"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Green Bomb",
+      "sourceAnchor": "green-bomb",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000971",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000971",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000973",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000975",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000977",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000979"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000973",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306353778689.png?v=1",
+          "label": "cade"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000973",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543478434509357098.png?v=1",
+          "label": "Cept"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000977",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306353778689.png?v=1",
+          "label": "cade"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000977",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543478434509357098.png?v=1",
+          "label": "Cept"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000977",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306353778689.png?v=1",
+          "label": "cade"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000977",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306353778689.png?v=1",
+          "label": "cade"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000977",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543478434509357098.png?v=1",
+          "label": "Cept"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Team Split",
+      "sourceAnchor": "team-split",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000981",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000981",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000983",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000985"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000983",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306353778689.png?v=1",
+          "label": "cade"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000983",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543478434509357098.png?v=1",
+          "label": "Cept"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "The End",
+      "sourceAnchor": "the-end",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000987",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000987",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000989",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000991",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000993",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000995",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000997",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000999",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001001",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001003",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001005",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001007"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000989",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306353778689.png?v=1",
+          "label": "cade"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000989",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543478434509357098.png?v=1",
+          "label": "Cept"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000993",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306353778689.png?v=1",
+          "label": "cade"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000993",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543478434509357098.png?v=1",
+          "label": "Cept"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000993",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543478434509357098.png?v=1",
+          "label": "Cept"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000997",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1",
+          "label": "range"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000997",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1",
+          "label": "Magic"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000997",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306353778689.png?v=1",
+          "label": "cade"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:000997",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543478434509357098.png?v=1",
+          "label": "Cept"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001001",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736524968174682132.png?v=1",
+          "label": "maul"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001005",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/656844963522281473.png?v=1",
+          "label": "dummy"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Phase 10 and 11 Overview",
+      "sourceAnchor": "phase-10-and-11-overview",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001009",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001009",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001011",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001013",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001015",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001017",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001019",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001021",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001023",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001025",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001027",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001029",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001031",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001033"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001023",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535614336207552523.png?v=1",
+          "label": "disrupt"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001023",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306353778689.png?v=1",
+          "label": "cade"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001023",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535614336207552523.png?v=1",
+          "label": "disrupt"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001027",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535614336207552523.png?v=1",
+          "label": "disrupt"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Safe Method",
+      "sourceAnchor": "safe-method",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001035",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001035",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001037",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001039"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001037",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306353778689.png?v=1",
+          "label": "cade"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001037",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535614336207552523.png?v=1",
+          "label": "disrupt"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001037",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306353778689.png?v=1",
+          "label": "cade"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Advanced Method",
+      "sourceAnchor": "advanced-method",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001041",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001041",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001043",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001045",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001047",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001049",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001051",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001053",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001055"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001043",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306353778689.png?v=1",
+          "label": "cade"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Phase 10",
+      "sourceAnchor": "phase-10",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001057",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001057",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001059",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001061"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Ceilings & Team Split",
+      "sourceAnchor": "ceilings-team-split",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001063",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001063",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001065",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001067"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001065",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535614336207552523.png?v=1",
+          "label": "disrupt"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001065",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535614336207552523.png?v=1",
+          "label": "disrupt"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001065",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306353778689.png?v=1",
+          "label": "cade"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Ceilings, Scopulus, Vitalis, & The End",
+      "sourceAnchor": "ceilings-scopulus-vitalis-the-end",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001069",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001069",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001071",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001073"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306353778689.png?v=1",
+          "label": "cade"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543478434509357098.png?v=1",
+          "label": "Cept"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306353778689.png?v=1",
+          "label": "cade"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Green Bomb",
+      "sourceAnchor": "green-bomb_1",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001075",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001075",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001077",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001079",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001081",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001083",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001085"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001077",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/654618235097972737.png?v=1",
+          "label": "powerburstofvitality"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001077",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/567727985851891715.png?v=1",
+          "label": "HealOther"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001077",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/654618235097972737.png?v=1",
+          "label": "powerburstofvitality"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001081",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736524968174682132.png?v=1",
+          "label": "maul"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001083",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/656844963522281473.png?v=1",
+          "label": "dummy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001083",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537341954392850442.png?v=1",
+          "label": "sd"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001083",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736524968174682132.png?v=1",
+          "label": "maul"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Broken Team Split",
+      "sourceAnchor": "broken-team-split",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001087",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001087",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001089",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001091",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001093",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001095",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001097",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001099"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001089",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/fvNg9AV.png",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001097",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195487926845462.png?v=1",
+          "label": "DeflectMage"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Mauling Phase 10",
+      "sourceAnchor": "mauling-phase-10",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001101",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001101",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001103",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001105",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001107",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001109",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001111",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001113",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001115",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001117",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001119",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001121",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001123",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001125",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001127",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001129",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001131",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001133",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001135",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001137",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001139",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001141",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001143",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001145",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001147",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001149",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001151",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001153"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001103",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1",
+          "label": "melee"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001103",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736524968174682132.png?v=1",
+          "label": "maul"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001103",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736524968174682132.png?v=1",
+          "label": "maul"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736524968174682132.png?v=1",
+          "label": "maul"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736524968174682132.png?v=1",
+          "label": "maul"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001127",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736524968174682132.png?v=1",
+          "label": "maul"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001147",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736524968174682132.png?v=1",
+          "label": "maul"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001147",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736524968174682132.png?v=1",
+          "label": "maul"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001147",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736524968174682132.png?v=1",
+          "label": "maul"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001149",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/9tJk0aI.png",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001151",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736524968174682132.png?v=1",
+          "label": "maul"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001111",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001115"
+      ]
+    },
+    {
+      "sourceHeading": "Shield Dome Mauling",
+      "sourceAnchor": "shield-dome-mauling",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001155",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001155",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001157",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001159",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001161"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001157",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736524968174682132.png?v=1",
+          "label": "maul"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001157",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/656844963522281473.png?v=1",
+          "label": "dummy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001159",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537341954392850442.png?v=1",
+          "label": "sd"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001159",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736524968174682132.png?v=1",
+          "label": "maul"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001159",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736524968174682132.png?v=1",
+          "label": "maul"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001159",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537341954392850442.png?v=1",
+          "label": "sd"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001159",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736524968174682132.png?v=1",
+          "label": "maul"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001161",
+          "tag": "video",
+          "url": "https://pvme.io/pvme-guides/rs3-full-boss-guides/vorago-hm/hard-mode-overview/",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001161",
+          "tag": "source",
+          "url": "https://img.pvme.io/images/3X7xQ5k.mp4",
+          "label": ""
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Phase 11",
+      "sourceAnchor": "phase-11",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001163",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001163",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001165",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001167",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001169",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001171"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001167",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306353778689.png?v=1",
+          "label": "cade"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001167",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921119381463070.png?v=1",
+          "label": "sunshine"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001167",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921434633744455.png?v=1",
+          "label": "deathsswift"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001167",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306353778689.png?v=1",
+          "label": "cade"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001169",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306353778689.png?v=1",
+          "label": "cade"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Acknowledgements",
+      "sourceAnchor": "acknowledgements",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001173",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001173",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001175",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001177",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001179",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001181",
+        "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001183"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001175",
+          "tag": "a",
+          "url": "https://discord.gg/uqGJbKH",
+          "label": "Rago Hub Discord community (external Discord)"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview:b:001183",
+          "tag": "a",
+          "url": "https://discord.gg/uqGJbKH",
+          "label": "PvME community (external Discord)"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    }
+  ],
+  "attribution": {
+    "author": "PvME contributors",
+    "license": "CC BY-NC-SA 4.0",
+    "imported": "2026-11-11T14:25:57Z"
+  },
+  "upstream": {
+    "sourcePath": "rs3-full-boss-guides/vorago-hm/hard-mode-overview.txt",
+    "revision": "ee913a530677bddd0af48860062fed8c8efd77a3",
+    "sha256": "9446d27d68ef3ae6879d18d008f39868f7e55426d2db1dc17732729524db6715",
+    "kind": "guide"
+  }
+}

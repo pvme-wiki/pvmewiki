@@ -1,0 +1,822 @@
+{
+  "title": "PvME/Combat reference/Ranged Abilities",
+  "id": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities",
+  "sourceSha256": "735f81526ccb64cb497f51ff2c8bfb5b0dfe5bfcd8daed84fca5e838bf50c677",
+  "sourceFile": "wiki-host/corpus/pages/guide--pvme-guides--miscellaneous-information--ability-information--ranged-abilities.wiki.txt",
+  "snapshotFile": "editor/content/pvme-guides--miscellaneous-information--ability-information--ranged-abilities.json",
+  "snapshotSha256": "e201f7d86c8e205a9c2c1c95b4c9ff2b60418556076e04e424f6184890e38665",
+  "sourcePath": "miscellaneous-information/ability-information/ranged-abilities.txt",
+  "sourceUrl": "https://pvme.io/pvme-guides/miscellaneous-information/ability-information/ranged-abilities/",
+  "sourceCommit": "074a9438f79d10fba75735791be0030734db8b5e",
+  "status": "source-indexed",
+  "mainGuide": false,
+  "format": "reference-guide",
+  "sections": [
+    {
+      "sourceHeading": "Introduction",
+      "sourceAnchor": "introduction",
+      "headingBlockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000000",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000000",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000002",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000004",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000006",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000008",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000010",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000012",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000014",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000016",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000018",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000020",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000022"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000012",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537349530551582720.png?v=1",
+          "label": "Vuln"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000012",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/567727986409734145.png?v=1",
+          "label": "Enfeeble"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000012",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/856635090641879050.png?v=1",
+          "label": "smokecloud"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000018",
+          "tag": "a",
+          "url": "https://tools.runescape.wiki/rs-rot/ranged",
+          "label": "click here"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000018",
+          "tag": "a",
+          "url": "https://docs.google.com/spreadsheets/d/1rK7u17JN6I-vf3dKBKg6tm9IPWje9EWSe_r8KPdsxoc/edit?usp=sharing",
+          "label": "click here"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000018",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Invigorating",
+          "label": "click here"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000020",
+          "tag": "a",
+          "url": "https://discord.com/channels/534508796639182860/656898197561802760",
+          "label": "PvM help (external Discord)"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Ranged range",
+      "sourceAnchor": "ranged",
+      "headingBlockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000024",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000024",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000026",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000028"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000024",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1",
+          "label": "range"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Basic Abilities",
+      "sourceAnchor": "basic-abilities",
+      "headingBlockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000030",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000030",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000032",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000034",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000036",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000038",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000040",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000042",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000044",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000046",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000048",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000050",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000052",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000054"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000032",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061858622537809.png?v=1",
+          "label": "ranged_basic"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000032",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/789813993480388640.png?v=1",
+          "label": "fleetingboots"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000032",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061863723073636.png?v=1",
+          "label": "piercing_shot"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000036",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061863723073636.png?v=1",
+          "label": "piercing_shot"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000036",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/789813993480388640.png?v=1",
+          "label": "fleetingboots"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000036",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061857486143498.png?v=1",
+          "label": "snipe"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000040",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306563231790.png?v=1",
+          "label": "bindingshot"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000040",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/841419289755385866.png?v=1",
+          "label": "flankicon"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000040",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/841419289755385866.png?v=1",
+          "label": "flankicon"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000040",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/841419289755385866.png?v=1",
+          "label": "flankicon"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000044",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061864943616122.png?v=1",
+          "label": "imbue_gales"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000048",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061867288100885.png?v=1",
+          "label": "ricochet"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000048",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/791281588792590336.png?v=1",
+          "label": "caroming4"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000048",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641669268722810881.png?v=1",
+          "label": "mechchin"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000052",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/787904334812807238.png?v=1",
+          "label": "grico"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000052",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/791281588792590336.png?v=1",
+          "label": "caroming4"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000052",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641669268722810881.png?v=1",
+          "label": "mechchin"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Enhanced Abilities",
+      "sourceAnchor": "enhanced-abilities",
+      "headingBlockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000056",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000056",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000058",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000060",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000062",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000064",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000066",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000068",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000070",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000072",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000074",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000076",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000078",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000080",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000082",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000084"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000058",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061855732666439.png?v=1",
+          "label": "snapshot"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000062",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061857486143498.png?v=1",
+          "label": "snipe"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000062",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190159441723392.png?v=1",
+          "label": "NMG"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000062",
+          "tag": "a",
+          "url": "/archive/pvme-guides/upgrading-info/armour-and-weapons/",
+          "label": "Armour And Weapons"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000066",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306391265284.png?v=1",
+          "label": "bombard"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000066",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641669268722810881.png?v=1",
+          "label": "mechchin"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000070",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541270521708566.png?v=1",
+          "label": "rapid"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000074",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/642713547142332416.png?v=1",
+          "label": "shadowtend"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000078",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306294796299.png?v=1",
+          "label": "corruptshot"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000078",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1005204971886743572.png?v=1",
+          "label": "precise"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000078",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1214364892895907941.png?v=1",
+          "label": "eruptive"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000082",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061866193518744.png?v=1",
+          "label": "imbue_shadows"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Special Attacks",
+      "sourceAnchor": "special-attacks",
+      "headingBlockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000086",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000086",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000088",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000090",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000092",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000094",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000096",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000098",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000100",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000102",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000104",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000106",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000108",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000110"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000088",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/643848618553507843.png?v=1",
+          "label": "dbow"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000088",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513201065877831680.png?v=1",
+          "label": "rov"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1215929540908679208.png?v=1",
+          "label": "zammybow"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000092",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513201065877831680.png?v=1",
+          "label": "rov"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000096",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1446178203608809472.png?v=1",
+          "label": "gloomfirebow"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000096",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513201065877831680.png?v=1",
+          "label": "rov"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000100",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/626466665848242186.png?v=1",
+          "label": "sgb"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000100",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513201065877831680.png?v=1",
+          "label": "rov"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000100",
+          "tag": "a",
+          "url": "https://discord.com/channels/534508796639182860/534563158304620564",
+          "label": "Bot commands (external Discord)"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000104",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/615618531937222657.png?v=1",
+          "label": "ecb"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000104",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513201065877831680.png?v=1",
+          "label": "rov"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000104",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/615613924506599497.png?v=1",
+          "label": "soulsplit"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000104",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/615613924506599497.png?v=1",
+          "label": "soulsplit"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000104",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/615613924506599497.png?v=1",
+          "label": "soulsplit"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000104",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537349530551582720.png?v=1",
+          "label": "Vuln"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000104",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641339921675845633.png?v=1",
+          "label": "demonslayer"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000104",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641339921814126594.png?v=1",
+          "label": "dragonslayer"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000104",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641339922019516416.png?v=1",
+          "label": "undeadslayer"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000104",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689502804720615441.png?v=1",
+          "label": "undeadslayerperk"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000104",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689502842653900818.png?v=1",
+          "label": "demonslayerperk"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000104",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689502927731163170.png?v=1",
+          "label": "dragonslayerperk"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000108",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994189289623662702.png?v=1",
+          "label": "bolg"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000108",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513201065877831680.png?v=1",
+          "label": "rov"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000108",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1006119102814887957.png?v=1",
+          "label": "perfectequilibrium"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000108",
+          "tag": "a",
+          "url": "https://discord.com/channels/534508796639182860/534563158304620564",
+          "label": "Bot commands (external Discord)"
+        }
+      ],
+      "cues": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000100",
+          "text": "!sgb"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000108",
+          "text": "!bolg"
+        }
+      ],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Ultimate Abilities",
+      "sourceAnchor": "ultimate-abilities",
+      "headingBlockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000112",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000112",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000114",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000116",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000118",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000120",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000122",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000124",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000126"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000116",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061860371828929.png?v=1",
+          "label": "deadshot"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000116",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/902209626404171786.png?v=1",
+          "label": "igneouskalxil"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000116",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/902209626479685734.png?v=1",
+          "label": "igneouskalzuk"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000120",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921434633744455.png?v=1",
+          "label": "deathsswift"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000120",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689501925770919981.png?v=1",
+          "label": "pf"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000124",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644354536837121.png?v=1",
+          "label": "gdeathsswift"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000124",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689501925770919981.png?v=1",
+          "label": "pf"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000124",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994644354536837121.png?v=1",
+          "label": "gdeathsswift"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000124",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921434633744455.png?v=1",
+          "label": "deathsswift"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000124",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689501925770919981.png?v=1",
+          "label": "pf"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000120",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000124"
+      ]
+    },
+    {
+      "sourceHeading": "Utility Abilities",
+      "sourceAnchor": "utility-abilities",
+      "headingBlockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000128",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000128",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000130",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000132",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000134",
+        "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000136"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000130",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258832052231.png?v=1",
+          "label": "escape"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000130",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1",
+          "label": "range"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000130",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1",
+          "label": "range"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000130",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689501908628799488.png?v=1",
+          "label": "mob"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000130",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/602561894443778115.png?v=1",
+          "label": "escapecodex"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000130",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258832052231.png?v=1",
+          "label": "escape"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000130",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689501908628799488.png?v=1",
+          "label": "mob"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000134",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1",
+          "label": "range"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000134",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1",
+          "label": "range"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000134",
+          "tag": "a",
+          "url": "#introduction",
+          "label": "here"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000134",
+          "tag": "a",
+          "url": "#block-ranged",
+          "label": "Ranged"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000134",
+          "tag": "a",
+          "url": "#block-piercingshot",
+          "label": "Piercing Shot"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000134",
+          "tag": "a",
+          "url": "#block-bindingshot",
+          "label": "Binding Shot"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000134",
+          "tag": "a",
+          "url": "#block-galeshot",
+          "label": "Galeshot"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000134",
+          "tag": "a",
+          "url": "#block-ricochet",
+          "label": "Ricochet"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000134",
+          "tag": "a",
+          "url": "#block-greaterricochet",
+          "label": "G. Ricochet"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000134",
+          "tag": "a",
+          "url": "#block-snapshot",
+          "label": "Snapshot"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000134",
+          "tag": "a",
+          "url": "#block-snipe",
+          "label": "Snipe"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000134",
+          "tag": "a",
+          "url": "#block-bombardment",
+          "label": "Bombard"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000134",
+          "tag": "a",
+          "url": "#block-rapidfire",
+          "label": "Rapid Fire"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000134",
+          "tag": "a",
+          "url": "#block-shadowtendrils",
+          "label": "Shadow Tendrils"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000134",
+          "tag": "a",
+          "url": "#block-corruptionshot",
+          "label": "Corr. Shot"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000134",
+          "tag": "a",
+          "url": "#block-imbueshadows",
+          "label": "Imbue: Shadows"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000134",
+          "tag": "a",
+          "url": "#block-darkbow",
+          "label": "Dark Bow"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000134",
+          "tag": "a",
+          "url": "#block-zamorakbow",
+          "label": "Zamorak Bow"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000134",
+          "tag": "a",
+          "url": "#block-gloomfirebow",
+          "label": "Gloomfire Bow"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000134",
+          "tag": "a",
+          "url": "#block-serengodbow",
+          "label": "Seren Godbow"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000134",
+          "tag": "a",
+          "url": "#block-eldritchcrossbow",
+          "label": "Eldritch Crossbow"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000134",
+          "tag": "a",
+          "url": "#block-bowofthelastguardian",
+          "label": "Bow of the Last Guardian"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000134",
+          "tag": "a",
+          "url": "#block-deadshot",
+          "label": "Deadshot"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000134",
+          "tag": "a",
+          "url": "#block-deathsswiftness",
+          "label": "Death's Swiftness"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000134",
+          "tag": "a",
+          "url": "#block-greaterdeathsswiftness",
+          "label": "G. Death's Swiftness"
+        },
+        {
+          "blockId": "pvme-guides--miscellaneous-information--ability-information--ranged-abilities:b:000134",
+          "tag": "a",
+          "url": "#block-escape",
+          "label": "Escape"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    }
+  ],
+  "attribution": {
+    "author": "PvME contributors",
+    "license": "CC BY-NC-SA 4.0",
+    "imported": "2026-11-11T14:25:57Z"
+  },
+  "upstream": {
+    "sourcePath": "miscellaneous-information/ability-information/ranged-abilities.txt",
+    "revision": "ee913a530677bddd0af48860062fed8c8efd77a3",
+    "sha256": "27847e3cdacba7dead99be29a2b08202713b7f5caa10021f0ee53a2dc5515d36",
+    "kind": "guide"
+  }
+}

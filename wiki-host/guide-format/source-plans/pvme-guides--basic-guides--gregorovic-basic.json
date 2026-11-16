@@ -1,0 +1,551 @@
+{
+  "title": "PvME/Gregorovic/Overview",
+  "id": "pvme-guides--basic-guides--gregorovic-basic",
+  "sourceSha256": "3eea5dbb4882951b14e45ad976bfe687572a18a7d5a1343833585e53d40e521d",
+  "sourceFile": "wiki-host/corpus/pages/guide--pvme-guides--basic-guides--gregorovic-basic.wiki.txt",
+  "snapshotFile": "editor/content/pvme-guides--basic-guides--gregorovic-basic.json",
+  "snapshotSha256": "481661567156a6763193cb1481bacca89db16b786c51af68e00992127aed1211",
+  "sourcePath": "basic-guides/gregorovic-basic.txt",
+  "sourceUrl": "https://pvme.io/pvme-guides/basic-guides/gregorovic-basic/",
+  "sourceCommit": "074a9438f79d10fba75735791be0030734db8b5e",
+  "status": "source-indexed",
+  "mainGuide": true,
+  "format": "combat-overview",
+  "sections": [
+    {
+      "sourceHeading": null,
+      "sourceAnchor": null,
+      "headingBlockId": null,
+      "level": 0,
+      "blockIds": [
+        "pvme-guides--basic-guides--gregorovic-basic:b:000000",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000001"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000001",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/befXbfQX0n.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "General Information",
+      "sourceAnchor": "general-information",
+      "headingBlockId": "pvme-guides--basic-guides--gregorovic-basic:b:000003",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--basic-guides--gregorovic-basic:b:000003",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000005",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000007",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000009",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000011",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000013",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000015",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000017",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000019"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000009",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1005450651347730533.png?v=1",
+          "label": "prayer"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000017",
+          "tag": "a",
+          "url": "/guides/?q=gregorovic",
+          "label": "Gregorovic guides"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000017",
+          "tag": "a",
+          "url": "/archive/pvme-guides/afk/afk-gregorovic/",
+          "label": "AFK Gregorovic"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Gear, Relics and Familiars",
+      "sourceAnchor": "gear-relics-and-familiars",
+      "headingBlockId": "pvme-guides--basic-guides--gregorovic-basic:b:000021",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--basic-guides--gregorovic-basic:b:000021",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000023",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000025",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000027",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000029",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000031",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000033"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000023",
+          "tag": "a",
+          "url": "/gear/",
+          "label": "Upgrade guides"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000025",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1",
+          "label": "magic"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000025",
+          "tag": "a",
+          "url": "https://presets.pvme.io/?id=36ec3ebe-379d-4350-a3ff-ce7a88f7525a",
+          "label": "Magic"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000027",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1",
+          "label": "range"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000027",
+          "tag": "a",
+          "url": "https://presets.pvme.io/?id=50e03e24-37ad-4be8-abf5-a4bb22c0aa09",
+          "label": "Ranged"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000029",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1",
+          "label": "melee"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000029",
+          "tag": "a",
+          "url": "https://presets.pvme.io/?id=de7d0a00-3300-4607-ad6f-0c98f839c560",
+          "label": "Melee"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000031",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1",
+          "label": "necromancy"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000031",
+          "tag": "a",
+          "url": "https://presets.pvme.io/?id=0d30907b-8f74-4b10-9335-335d98008918",
+          "label": "Necromancy"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000033",
+          "tag": "img",
+          "url": "https://firebasestorage.googleapis.com/v0/b/preset-images/o/images%2F0d30907b-8f74-4b10-9335-335d98008918.png?alt=media",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Fight Mechanics",
+      "sourceAnchor": "fight-mechanics",
+      "headingBlockId": "pvme-guides--basic-guides--gregorovic-basic:b:000035",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--basic-guides--gregorovic-basic:b:000035",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000037",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000039",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000041",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000043",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000045"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000037",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1",
+          "label": "melee"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000037",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1",
+          "label": "range"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000041",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/839903893177106454.png?v=1",
+          "label": "lanispear"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000041",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/643161541931171872.png?v=1",
+          "label": "dragonriderlance"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000041",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190159341322240.png?v=1",
+          "label": "noxscythe"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000043",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195488447201300.png?v=1",
+          "label": "deflectmelee"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000043",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195488317046812.png?v=1",
+          "label": "deflectrange"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Attack Rotation",
+      "sourceAnchor": "attack-rotation",
+      "headingBlockId": "pvme-guides--basic-guides--gregorovic-basic:b:000047",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--basic-guides--gregorovic-basic:b:000047",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000049",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000051",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000053",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000055"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--basic-guides--gregorovic-basic:b:000049",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000051"
+      ]
+    },
+    {
+      "sourceHeading": "Trick Knife (Example)",
+      "sourceAnchor": "trick-knife-example",
+      "headingBlockId": "pvme-guides--basic-guides--gregorovic-basic:b:000057",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--basic-guides--gregorovic-basic:b:000057",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000059",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000061",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000063",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000065",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000067",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000069",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000071",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000073",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000075"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000057",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/aFZzLQF.mp4",
+          "label": "(Example)"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000057",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/aFZzLQF.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195488317046812.png?v=1",
+          "label": "deflectrange"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1052551455078367313.png?v=1",
+          "label": "protectfrommissiles"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000073",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190158728953857.png?v=1",
+          "label": "devo"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Summon Spirit (Example)",
+      "sourceAnchor": "summon-spirit-example",
+      "headingBlockId": "pvme-guides--basic-guides--gregorovic-basic:b:000077",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--basic-guides--gregorovic-basic:b:000077",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000079",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000081",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000083",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000085",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000087",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000089",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000091",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000093",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000095",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000097",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000099",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000101",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000103"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000077",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/BVvu3F8.mp4",
+          "label": "(Example)"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000077",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/BVvu3F8.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000101",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/690987265371144202.png?v=1",
+          "label": "IritSticks"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000101",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/841419289714229258.png?v=1",
+          "label": "venomblood"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Glaive Throw (Example)",
+      "sourceAnchor": "glaive-throw-example",
+      "headingBlockId": "pvme-guides--basic-guides--gregorovic-basic:b:000105",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--basic-guides--gregorovic-basic:b:000105",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000107",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000109",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000111",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000113",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000115",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000117",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000119"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000105",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/ZPw1hZR.mp4",
+          "label": "(Example)"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000105",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/ZPw1hZR.mp4",
+          "label": ""
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Shadows (Example)",
+      "sourceAnchor": "shadows-example",
+      "headingBlockId": "pvme-guides--basic-guides--gregorovic-basic:b:000121",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--basic-guides--gregorovic-basic:b:000121",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000123",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000125",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000127",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000129",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000131",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000133",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000135",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000137",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000139"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000121",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/4ce8fSc.mp4",
+          "label": "(Example)"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000121",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/4ce8fSc.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000135",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532878969438210.png?v=1",
+          "label": "cane"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000135",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809149690916945.png?v=1",
+          "label": "spectralscythe2"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000135",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809995874304.png?v=1",
+          "label": "tsunami"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000135",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306391265284.png?v=1",
+          "label": "bombard"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Join Me (HM Only)",
+      "sourceAnchor": "join-me-hm-only",
+      "headingBlockId": "pvme-guides--basic-guides--gregorovic-basic:b:000141",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--basic-guides--gregorovic-basic:b:000141",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000143",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000145",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000147",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000149",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000151",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000153",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000155",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000157",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000159",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000161",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000163",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000165",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000167"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000159",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000165",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258240786434.png?v=1",
+          "label": "freedom"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000165",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306475151390.png?v=1",
+          "label": "anti"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000165",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258546970624.png?v=1",
+          "label": "prep"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000165",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541259465392143.png?v=1",
+          "label": "voke"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Final Phase (HM Only)",
+      "sourceAnchor": "final-phase-hm-only",
+      "headingBlockId": "pvme-guides--basic-guides--gregorovic-basic:b:000169",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--basic-guides--gregorovic-basic:b:000169",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000171",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000173",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000175",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000177",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000179",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000181",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000183"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Videos",
+      "sourceAnchor": "videos",
+      "headingBlockId": "pvme-guides--basic-guides--gregorovic-basic:b:000185",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--basic-guides--gregorovic-basic:b:000185",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000187",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000189",
+        "pvme-guides--basic-guides--gregorovic-basic:b:000191"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000187",
+          "tag": "a",
+          "url": "https://youtu.be/5KfUDxPPyzM",
+          "label": "Necromancy"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000187",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1",
+          "label": "necromancy"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000189",
+          "tag": "a",
+          "url": "https://www.youtube.com/watch?v=lAZVrjptcVo",
+          "label": "Necromancy"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--gregorovic-basic:b:000189",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1",
+          "label": "necromancy"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    }
+  ],
+  "attribution": {
+    "author": "PvME contributors",
+    "license": "CC BY-NC-SA 4.0",
+    "imported": "2026-11-11T14:25:57Z"
+  },
+  "upstream": {
+    "sourcePath": "basic-guides/gregorovic-basic.txt",
+    "revision": "ee913a530677bddd0af48860062fed8c8efd77a3",
+    "sha256": "f5a7ef44353801d2b0e873dace67820f14563d262c2f7201116987a95257a216",
+    "kind": "guide"
+  }
+}

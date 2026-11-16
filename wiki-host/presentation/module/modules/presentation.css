@@ -10,7 +10,7 @@
     .pvme-presentation .pvme-action-bar { grid-template-columns: repeat(2,minmax(0,1fr)); gap: .45rem; }
     .pvme-presentation .pvme-action-bar li { display: block; padding: .6rem; }
     .pvme-presentation .pvme-action-number { display: block; width: 1.8rem; margin-block-end: .35rem; }
-    .pvme-presentation .pvme-action-bar strong { font-size: .95rem; }
+    .pvme-presentation .pvme-action-bar strong { font-size: .95em; }
 }
 html:not(.ve-active):not(.ve-activating) body.pvme-visual-mode:not(.ve-active):not(.ve-activating) #mw-content-text > .mw-parser-output { display: none; }
 body:not(.pvme-visual-mode) #pvme-visual-reader,
@@ -27,18 +27,18 @@ body:not(.pvme-visual-mode) #pvme-visual-reader,
 .pvme-presentation .pvme-visual-warning { border-inline-start: 4px solid #a55818; background: #fff2df; }
 .pvme-presentation #pvme-visual-reader a.pvme-visual-redundant-icon { display: none; }
 .pvme-presentation .pvme-visual-cue { width: 100%; border-collapse: collapse; margin-block: 1rem; }
-.pvme-presentation .pvme-visual-cue caption { text-align: start; font-size: .85rem; color: #555b61; }
+.pvme-presentation .pvme-visual-cue caption { text-align: start; font-size: .85em; color: #555b61; }
 .pvme-presentation .pvme-visual-cue :is(th,td) { padding: .9rem; border: 1px solid #d8b78b; vertical-align: top; text-align: start; }
 .pvme-presentation .pvme-visual-cue th { width: 32%; background: #fbf6ec; }
 .pvme-presentation .pvme-preset-panel { padding: 1rem; margin-block: 1rem 1.8rem; border: 1px solid #d8b78b; border-radius: .5rem; background: #f7f5f0; color: #262a2e; }
-.pvme-presentation .pvme-preset-panel > p { font-size: .9rem; }
+.pvme-presentation .pvme-preset-panel > p { font-size: .9em; }
 .pvme-presentation .pvme-preset-grid { display: grid; gap: .45rem; list-style: none; padding: 0; margin: .6rem 0 1rem; }
 .pvme-presentation .pvme-preset-equipment { grid-template-columns: repeat(3, minmax(0,1fr)); }
 .pvme-presentation .pvme-preset-inventory { grid-template-columns: repeat(7, minmax(0,1fr)); }
 .pvme-presentation .pvme-preset-grid li { list-style: none; padding: .6rem; min-width: 0; border: 1px solid #c7c2b8; border-radius: .3rem; background: #fff; overflow-wrap: anywhere; line-height: 1.4; }
-.pvme-presentation .pvme-preset-grid small { display: block; color: #666; font-size: .7rem; margin-block-end: .25rem; }
-.pvme-presentation .pvme-preset-grid strong { font-size: .9rem; }
-.pvme-presentation .pvme-preset-note { margin: .4rem 0 0; font-size: .85rem; padding-block-start: .4rem; border-top: 1px solid #d8b78b; }
+.pvme-presentation .pvme-preset-grid small { display: block; color: #666; font-size: .7em; margin-block-end: .25rem; }
+.pvme-presentation .pvme-preset-grid strong { font-size: .9em; }
+.pvme-presentation .pvme-preset-note { margin: .4rem 0 0; font-size: .85em; padding-block-start: .4rem; border-top: 1px solid #d8b78b; }
 .pvme-presentation .pvme-preset-grid .pvme-preset-empty { opacity: .65; border-style: dashed; }
 @media (max-width: 600px) {
     .pvme-presentation .pvme-visual-list { grid-template-columns: repeat(2,minmax(0,1fr)); }
@@ -49,8 +49,8 @@ body:not(.pvme-visual-mode) #pvme-visual-reader,
     .pvme-presentation .pvme-preset-inventory { grid-template-columns: repeat(2,minmax(0,1fr)); }
     .pvme-presentation .pvme-visual-cue :is(th,td) { display: block; box-sizing: border-box; width: 100%; }
 }
-.pvme-presentation #firstHeading { font-size: clamp(2rem, 2.5vw, 3rem); line-height: 1.15; padding-block: .5rem; }
-.pvme-presentation :where(.mw-parser-output, .pvme-visual-content) { font-size: max(1em, 1rem); }
+.pvme-presentation #firstHeading { font-size: clamp(2em, 2.5vw, 3em); line-height: 1.15; padding-block: .5rem; }
+.pvme-presentation :where(.mw-parser-output, .pvme-visual-content) { font-size: max(1em, 1em); }
 .pvme-presentation .pvme-reader-export { margin-block-start: 1rem; padding-block-start: .8rem; border-block-start: 1px solid #d8b78b; }
 .pvme-presentation .pvme-reader-export button { font: inherit; font-weight: 600; padding: .65rem .9rem; border: 1px solid #81501f; border-radius: .3rem; color: #593410; background: #fff; cursor: pointer; }
 .pvme-presentation .pvme-reader-export button:disabled { cursor: wait; opacity: .7; }
@@ -61,11 +61,11 @@ body:not(.pvme-visual-mode) #pvme-visual-reader,
 .pvme-presentation :where(.mw-parser-output, .pvme-visual-content).pvme-legacy-reader .pvme-reader-term { margin-block-start: 1.4rem; padding-block-end: .35rem; border-bottom: 1px solid #d8b78b; font-size: 1.1em; }
 /* Labels are factual fallbacks; source text nodes stay intact for native editing. */
 .pvme-presentation :where(.mw-parser-output, .pvme-visual-content) a[data-pvme-label] { font-size: 0; }
-.pvme-presentation :where(.mw-parser-output, .pvme-visual-content) a[data-pvme-label]::after { content: attr(data-pvme-label); font-size: 1rem; }
+.pvme-presentation :where(.mw-parser-output, .pvme-visual-content) a[data-pvme-label]::after { content: attr(data-pvme-label); font-size: 1em; }
 .pvme-presentation :where(.mw-parser-output, .pvme-visual-content) .pvme-reader-illustration { display: block; width: fit-content; max-width: 100%; padding: .8rem 1rem; border: 1px dashed #a88c69; border-radius: .3rem; background: #f7f5f0; }
 .pvme-presentation .pvme-reader-tools { margin-block: 0 1.5rem; padding: 1rem 1.2rem; border: 1px solid #d8b78b; border-radius: .5rem; background: #fbf6ec; color: #262a2e; line-height: 1.6; overflow-wrap: anywhere; }
-.pvme-presentation .pvme-reader-breadcrumbs { font-size: .95rem; }
-.pvme-presentation .pvme-reader-provenance { font-size: .85rem; color: #555b61; margin-block: .6rem; }
+.pvme-presentation .pvme-reader-breadcrumbs { font-size: .95em; }
+.pvme-presentation .pvme-reader-provenance { font-size: .85em; color: #555b61; margin-block: .6rem; }
 .pvme-presentation .pvme-reader-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: .6rem; margin-block-start: 1rem; }
 .pvme-presentation .pvme-reader-grid a { display: block; padding: .7rem; border: 1px solid #d7d7d4; border-radius: .3rem; background: #fff; }
 .pvme-presentation .pvme-reader-jumps summary { cursor: pointer; font-weight: 600; }
@@ -132,17 +132,17 @@ body:not(.pvme-visual-mode) #pvme-visual-reader,
     margin-block: 2rem .75rem;
     padding-block-end: .4rem;
     border-block-end: 2px solid var(--pvme-warm-line);
-    font-size: clamp(1.35rem, 2.2vw, 1.8rem);
+    font-size: clamp(1.35em, 2.2vw, 1.8em);
 }
 
 .pvme-presentation :where(.mw-parser-output, .pvme-visual-content) .pvme-article h3 {
     margin-block: 1.5rem .5rem;
-    font-size: clamp(1.14rem, 1.9vw, 1.4rem);
+    font-size: clamp(1.14em, 1.9vw, 1.4em);
 }
 
 .pvme-presentation :where(.mw-parser-output, .pvme-visual-content) .pvme-article h4 {
     margin-block: 1.1rem .4rem;
-    font-size: 1.05rem;
+    font-size: 1.05em;
 }
 
 /* Source emphasis is retained in body text; the heading rule supplies its line. */
@@ -187,7 +187,7 @@ body:not(.pvme-visual-mode) #pvme-visual-reader,
     gap: .3rem .65rem;
     margin-block: .25rem 1.1rem;
     color: var(--pvme-muted);
-    font-size: .88rem;
+    font-size: .88em;
 }
 
 .pvme-presentation :where(.mw-parser-output, .pvme-visual-content) .pvme-breadcrumbs a {
@@ -230,7 +230,7 @@ body:not(.pvme-visual-mode) #pvme-visual-reader,
     padding: .7rem .8rem;
     border-block: 1px solid var(--pvme-line);
     background: var(--pvme-paper);
-    font-size: .92rem;
+    font-size: .92em;
 }
 
 .pvme-presentation :where(.mw-parser-output, .pvme-visual-content) .pvme-jumps a {
@@ -350,7 +350,7 @@ body:not(.pvme-visual-mode) #pvme-visual-reader,
     border-style: dashed;
     color: var(--pvme-muted);
     background: var(--pvme-soft);
-    font-size: .92rem;
+    font-size: .92em;
 }
 
 .pvme-presentation :where(.mw-parser-output, .pvme-visual-content) .pvme-media-fallback a {
@@ -435,7 +435,7 @@ body:not(.pvme-visual-mode) #pvme-visual-reader,
     border-radius: 3px;
     color: var(--pvme-accent-strong);
     background: var(--pvme-warm);
-    font-size: .86rem;
+    font-size: .86em;
     line-height: 1.35;
     overflow-wrap: anywhere;
     white-space: normal;
@@ -459,7 +459,7 @@ body:not(.pvme-visual-mode) #pvme-visual-reader,
     padding-block-start: .8rem;
     border-block-start: 1px solid var(--pvme-line);
     color: var(--pvme-muted);
-    font-size: .82rem;
+    font-size: .82em;
 }
 
 .pvme-presentation :where(.mw-parser-output, .pvme-visual-content) .pvme-article .pvme-table-scroll {
@@ -558,8 +558,8 @@ body:not(.pvme-visual-mode) #pvme-visual-reader,
 .pvme-visual-content a.pvme-ability-image{display:inline-flex;align-items:center;gap:.3rem;vertical-align:middle;white-space:normal;max-width:100%;border-radius:4px;padding:2px 4px;background:#f3f5f7}
 .pvme-ability-image img{display:inline-block;width:32px;height:32px;object-fit:contain;flex-shrink:0}
 .pvme-climber-panel{margin:1.5rem 0;padding:1rem;border:1px solid #c8b689;border-left:4px solid #8b6a28;background:#fcfaf4;border-radius:8px;color:#222}
-.pvme-climber-panel h4{margin:0 0 .5rem;font-size:1.25rem}
-.pvme-sequence-key{font-size:.9rem;color:#46505a}
+.pvme-climber-panel h4{margin:0 0 .5rem;font-size:1.25em}
+.pvme-sequence-key{font-size:.9em;color:#46505a}
 .pvme-climber-sequence{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;padding:0!important;margin:1rem 0!important;list-style:none;counter-reset:step}
 .pvme-climber-sequence>li{position:relative;display:flex;gap:8px;align-items:flex-start;min-width:0;border:1px solid #b6bec7;border-radius:7px;background:white;padding:10px;line-height:1.5;overflow-wrap:anywhere}
 .pvme-sequence-number{display:inline-grid;place-items:center;flex:0 0 26px;height:26px;border-radius:50%;background:#263c51;color:white;font-weight:700}
@@ -567,17 +567,17 @@ body:not(.pvme-visual-mode) #pvme-visual-reader,
 .pvme-climber-sequence>li:first-child{grid-column:1/-1}
 .pvme-climber-sequence .pvme-ability-image{margin:2px 0}
 .pvme-amascut-preset{margin:1.5rem 0!important;padding:1rem;background:#f1f4f7;border:1px solid #b7c2ce;border-radius:8px;color:#222}
-.pvme-amascut-preset figcaption{font-size:1.15rem;font-weight:700;margin-bottom:.5rem}
+.pvme-amascut-preset figcaption{font-size:1.15em;font-weight:700;margin-bottom:.5rem}
 .pvme-amascut-preset button{margin-bottom:.75rem;min-height:44px;padding:8px 14px;border:1px solid #687889;border-radius:5px;background:white;color:#23394c;font:inherit;cursor:pointer}
 .pvme-preset-image-viewport{overflow:auto;max-width:100%;border-radius:5px;background:#18212b}
 .pvme-preset-image-viewport img{display:block;width:100%;height:auto;max-width:none!important}
 .pvme-preset-image-viewport.pvme-image-enlarged img{width:944px}
-.pvme-amascut-preset p{font-size:.9rem}
+.pvme-amascut-preset p{font-size:.9em}
 .pvme-preset-comparison{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:1rem;align-items:start}
-.pvme-amascut-loadout h5{font-size:1rem;margin:0 0 .5rem}
+.pvme-amascut-loadout h5{font-size:1em;margin:0 0 .5rem}
 .pvme-amascut-equipment{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;padding:0!important;list-style:none;margin:.5rem 0!important}
-.pvme-amascut-equipment li{border:1px solid #c3cbd4;border-radius:4px;background:white;padding:6px;font-size:.9rem;overflow-wrap:anywhere}
-.pvme-amascut-loadout details{margin-top:.75rem}.pvme-preset-full-notes{white-space:pre-line;font-size:.95rem;padding:.5rem 0}
+.pvme-amascut-equipment li{border:1px solid #c3cbd4;border-radius:4px;background:white;padding:6px;font-size:.9em;overflow-wrap:anywhere}
+.pvme-amascut-loadout details{margin-top:.75rem}.pvme-preset-full-notes{white-space:pre-line;font-size:.95em;padding:.5rem 0}
 @media(max-width:850px){.pvme-preset-comparison{grid-template-columns:1fr}}
 @media(max-width:600px){.pvme-climber-panel,.pvme-amascut-preset{padding:.7rem}.pvme-climber-sequence{grid-template-columns:repeat(2,minmax(0,1fr))}.pvme-climber-sequence .pvme-ability-image{flex-wrap:wrap}.pvme-climber-sequence .pvme-ability-image img{width:36px;height:36px}.pvme-climber-sequence .pvme-sequence-group{grid-column:1/-1}}
 @media(max-width:360px){.pvme-climber-sequence{grid-template-columns:1fr}}
@@ -607,7 +607,7 @@ body.pvme-presentation {
 .pvme-presentation .vector-page-toolbar { margin-block-end: 1.25rem; }
 .pvme-presentation .vector-page-toolbar .vector-menu-content-list { gap: .2rem; }
 .pvme-presentation .vector-page-toolbar .mw-list-item a { padding-block: .8rem; }
-.pvme-presentation .vector-toc { font-size: .875rem; line-height: 1.45; }
+.pvme-presentation .vector-toc { font-size: .875em; line-height: 1.45; }
 .pvme-presentation .vector-toc-link { padding-block: .4rem; }
 .pvme-presentation .vector-toc-list-item-active > .vector-toc-link {
     font-weight: 700;
@@ -620,7 +620,7 @@ body.pvme-presentation {
     outline-offset: 3px;
     border-radius: 3px;
 }
-.pvme-presentation .mw-editsection { font-family: inherit; font-size: .75rem; white-space: nowrap; }
+.pvme-presentation .mw-editsection { font-family: inherit; font-size: .75em; white-space: nowrap; }
 .pvme-presentation #wpTextbox1 { font-family: ui-monospace, Consolas, monospace; line-height: 1.6; tab-size: 4; }
 
 /* Generated controls remain outside the editable article. */
@@ -636,10 +636,10 @@ body.pvme-presentation {
     border-radius: 8px;
     background: #f7f8fa;
     color: #202830;
-    font-size: .925rem;
+    font-size: .925em;
     line-height: 1.55;
 }
-.pvme-presentation .pvme-reader-breadcrumbs { flex: 1 1 16rem; font-size: .875rem; color: #53606c; }
+.pvme-presentation .pvme-reader-breadcrumbs { flex: 1 1 16rem; font-size: .875em; color: #53606c; }
 .pvme-presentation .pvme-reader-breadcrumbs [aria-current] { font-weight: 650; color: #202830; }
 .pvme-presentation .pvme-reader-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; }
 .pvme-presentation .pvme-reader-actions a { display: inline-flex; align-items: center; min-height: 2.75rem; }
@@ -659,7 +659,7 @@ body.pvme-presentation {
 .pvme-presentation .pvme-reader-toggle { margin: 0; }
 .pvme-presentation .pvme-reader-source { flex: 1 0 100%; border-block-start: 1px solid #d6dce2; padding-block-start: .5rem; }
 .pvme-presentation .pvme-reader-tools summary { width: fit-content; padding-block: .5rem; cursor: pointer; font-weight: 600; }
-.pvme-presentation .pvme-reader-provenance { font-size: .8125rem; line-height: 1.6; color: #53606c; margin-block: .4rem; }
+.pvme-presentation .pvme-reader-provenance { font-size: .8125em; line-height: 1.6; color: #53606c; margin-block: .4rem; }
 .pvme-presentation .pvme-reader-export { margin-block-start: .75rem; padding-block-start: .75rem; border-color: #d6dce2; }
 .pvme-presentation .pvme-reader-export textarea { padding: .8rem; border: 1px solid #81909e; border-radius: 5px; resize: vertical; }
 .pvme-presentation .pvme-reader-jumps { flex: 1 0 100%; }
@@ -672,7 +672,7 @@ body.pvme-presentation {
     padding: .7rem .85rem;
     border: 1px solid #81909e;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1em;
 }
 .pvme-presentation #pvme-guide-count { margin: .5rem 0; }
 .pvme-presentation .pvme-reader-grid { flex: 1 0 100%; margin: 0; gap: .5rem; }

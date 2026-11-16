@@ -1,0 +1,22 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+const host=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const directory=path.resolve(host,'../../../preview');
+const escape=s=>String(s).replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;').replaceAll('>','&gt;');
+const decode=s=>s.replaceAll('&quot;','"').replaceAll('&gt;','>').replaceAll('&lt;','<').replaceAll('&amp;','&');
+const media=[];
+let text=fs.readFileSync(path.join(host,'main-guides/amascut-main.wiki'),'utf8');
+text=text.replace(/<pvme-(image|video)\s+([^>]+)\/>/g,(_,kind,attributes)=>{
+ const a=Object.fromEntries([...attributes.matchAll(/([a-z]+)="([^"]*)"/g)].map(m=>[m[1],decode(m[2])]));
+ const html=kind==='image'?'<img src="'+escape(a.src)+'" alt="'+escape(a.alt||'')+'" title="'+escape(a.title||'')+'" class="pvme-source-'+(a.kind==='icon'?'icon':'media')+'"'+(a.kind==='addition'?' data-pvme-addition="preset"':'')+' loading="lazy">':'<video class="pvme-source-video" controls loop muted preload="none"><source src="'+escape(a.src)+'" type="video/mp4"></video>';
+ media.push(html);return 'PVME_MEDIA_PLACEHOLDER_'+(media.length-1)+'_END';
+});
+const r=await fetch('https://pvmewiki.sanji3.dev/api.php',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams({action:'parse',format:'json',title:'PvME/Amascut/Overview',text,prop:'text|sections',disableeditsection:'1'})});
+const j=await r.json();if(j.error)throw new Error(j.error.info);
+const html=j.parse.text['*'].replace(/PVME_MEDIA_PLACEHOLDER_(\d+)_END/g,(_,i)=>media[Number(i)]);
+fs.mkdirSync(directory,{recursive:true});
+for(const f of ['presentation.css','amascut-main.css'])fs.copyFileSync(path.join(host,'presentation/module/modules',f),path.join(directory,f));
+fs.writeFileSync(path.join(directory,'amascut-main.html'),'<!doctype html><html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Amascut, the Devourer</title><link rel="stylesheet" href="presentation.css"><link rel="stylesheet" href="amascut-main.css"><style>body{margin:0;background:#f8f9fa;font:18px/1.65 system-ui;color:#202122}main{max-width:1100px;margin:auto;padding:1.5em;background:white}h1{font:2.3em Georgia,serif;border-bottom:1px solid #a2a9b1;padding-bottom:.3em}.toc{display:none}@media(max-width:600px){main{padding:.8em}}</style><body class="pvme-presentation"><main><h1>Amascut, the Devourer</h1>'+html+'</main></body></html>');
+fs.writeFileSync(path.join(directory,'amascut-main-parser.json'),JSON.stringify(j,null,2));
+console.log(JSON.stringify({preview:path.join(directory,'amascut-main.html'),sections:j.parse.sections.length,media:media.length,parserError:html.includes('class="error"')}));

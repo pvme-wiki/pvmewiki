@@ -1,5 +1,7 @@
 # Editable Amascut picture guide
 
+**Superseded:** the user requires exact source wording, not an editorial summary. The canonical implementation is now described in `main-guides/README.md`. This file and the companion generator document the earlier summary, which must not be reused as a main-guide conversion. The old companion URL redirects to the complete verbatim-source main page. The copy skill applies to new interface labels only; `AGENTS.md` forbids rewriting guide content.
+
 The native wiki page is `PvME/Amascut/Picture guide`. It covers the beginner **100% enrage** encounter and clearly links the separate five-phase Normal Mode guide.
 
 All instructional text, prayer orders, map labels and diagram captions live in ordinary wikitext. Four templates provide picture cards, prayer sequences, four-step flows and a compass-oriented arena map. TemplateData exposes their parameters to VisualEditor. The guide is rendered by MediaWiki itself, without a JavaScript replacement view; source/history/edit controls remain native.

@@ -1,0 +1,727 @@
+{
+  "title": "PvME/Fight Kiln/Fight Kiln",
+  "id": "pvme-guides--rs3-full-boss-guides--fight-kiln",
+  "sourceSha256": "cdf15d9f9a8be214b1c0de1ac9013119e044435b121267fe490603ccd4da378a",
+  "sourceFile": "wiki-host/corpus/pages/guide--pvme-guides--rs3-full-boss-guides--fight-kiln.wiki.txt",
+  "snapshotFile": "editor/content/pvme-guides--rs3-full-boss-guides--fight-kiln.json",
+  "snapshotSha256": "45471e4ef1e586bf2bffd29ccb3fb6a80043405e49ba0c9a06b38046afc197ac",
+  "sourcePath": "rs3-full-boss-guides/fight-kiln.txt",
+  "sourceUrl": "https://pvme.io/pvme-guides/rs3-full-boss-guides/fight-kiln/",
+  "sourceCommit": "074a9438f79d10fba75735791be0030734db8b5e",
+  "status": "source-indexed",
+  "mainGuide": false,
+  "format": "combat-guide",
+  "sections": [
+    {
+      "sourceHeading": null,
+      "sourceAnchor": null,
+      "headingBlockId": null,
+      "level": 0,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000000",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000001",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000003"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000001",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/n4B2Z2KLAw.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Introduction",
+      "sourceAnchor": "introduction",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000005",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000005",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000007",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000009",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000011",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000013",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000015",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000017"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000007",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/Fight_Kiln",
+          "label": "Fight Kiln"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000007",
+          "tag": "a",
+          "url": "https://runescape.wiki/w/The_Elder_Kiln",
+          "label": "The Elder Kiln"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000011",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1153768065427853354.png?v=1",
+          "label": "kilnmage"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000011",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/602582045553590274.png?v=1",
+          "label": "KilnMelee"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000011",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1153772314215858247.png?v=1",
+          "label": "kilnnecro"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000011",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/602582045541269567.png?v=1",
+          "label": "KilnRanged"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000013",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1153772938252787793.png?v=1",
+          "label": "igneouskalmej"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000013",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/902209626404192316.png?v=1",
+          "label": "igneouskalket"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000013",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1139200072438005851.png?v=1",
+          "label": "igneouskalmor"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000013",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/902209626404171786.png?v=1",
+          "label": "igneouskalxil"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000015",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/902209626479685734.png?v=1",
+          "label": "igneouskalzuk"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "General Wave Breakdown",
+      "sourceAnchor": "general-wave-breakdown",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000019",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000019",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000021",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000023",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000025",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000027",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000029",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000031",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000033"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000021",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689509250472476758.png?v=1",
+          "label": "Attack"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000023",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1",
+          "label": "range"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000025",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1",
+          "label": "Magic"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000027",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689509250472476758.png?v=1",
+          "label": "Attack"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000029",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1",
+          "label": "Magic"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000031",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1",
+          "label": "range"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Preset Suggestions",
+      "sourceAnchor": "preset-suggestions",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000035",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000035",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000037",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000039",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000041",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000043",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000045",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000047",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000049",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000051"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000037",
+          "tag": "a",
+          "url": "https://presets.pvme.io/?id=AToCog7o6tN7tyjnbfpN",
+          "label": "All styles"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000037",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1",
+          "label": "magic"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000037",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1",
+          "label": "melee"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000037",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1",
+          "label": "necromancy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000037",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1",
+          "label": "range"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000037",
+          "tag": "img",
+          "url": "https://firebasestorage.googleapis.com/v0/b/preset-images/o/images%2FAToCog7o6tN7tyjnbfpN.png?alt=media",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000047",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/975012160759550042.png?v=1",
+          "label": "tokkulzo"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513201065877831680.png?v=1",
+          "label": "rov"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "The Fight",
+      "sourceAnchor": "the-fight",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000053",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000053"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Waves 1-9",
+      "sourceAnchor": "waves-1-9",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000055",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000055",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000057",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000059",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000061",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000063",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000065",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000067",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000069"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000067",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532854004678657.png?v=1",
+          "label": "zerk"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Wave 10",
+      "sourceAnchor": "wave-10",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000071",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000071",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000073",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000075",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000077"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000073",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/cibB2kx.jpg",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Wave 11-19",
+      "sourceAnchor": "wave-11-19",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000079",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000079",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000081",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000083",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000085",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000087",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000089",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000091"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921597813137518.png?v=1",
+          "label": "deathsswiftpf"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Wave 20",
+      "sourceAnchor": "wave-20",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000093",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000093",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000095",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000097",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000099"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Waves 21-29",
+      "sourceAnchor": "waves-21-29",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000101",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000101",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000103",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000105",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000107",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000109",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000111",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000113"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000111",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921595489488927.png?v=1",
+          "label": "sunshinepf"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Wave 30",
+      "sourceAnchor": "wave-30",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000115",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000115",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000117",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000119",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000121"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Waves 31-33",
+      "sourceAnchor": "waves-31-33",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000123",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000123",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000125",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000127",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000129",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000131"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Wave 34",
+      "sourceAnchor": "wave-34",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000133",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000133",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000135",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000137",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000139"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Wave 35",
+      "sourceAnchor": "wave-35",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000141",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000141",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000143",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000145",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000147"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Wave 36",
+      "sourceAnchor": "wave-36",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000149",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000149",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000151",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000153",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000155"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000151",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/hLsQnEw.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Wave 37 (Har-Aken)",
+      "sourceAnchor": "wave-37-har-aken",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000157",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000157",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000159",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000161",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000163",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000165",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000167",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000169",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000171"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000159",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/n4B2Z2KLAw.png",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000165",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921595489488927.png?v=1",
+          "label": "sunshinepf"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000165",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532854004678657.png?v=1",
+          "label": "zerk"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000165",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1",
+          "label": "livingdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000165",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921597813137518.png?v=1",
+          "label": "deathsswiftpf"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000167",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537349530551582720.png?v=1",
+          "label": "Vuln"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000167",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000169",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/651079281882955787.png?v=1",
+          "label": "spiritualprayer"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000169",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/703581275453128714.png?v=1",
+          "label": "ripperpouch"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000169",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/703581275155464203.png?v=1",
+          "label": "ripperscroll"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Tips and Tricks",
+      "sourceAnchor": "tips-and-tricks",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000173",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000173"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "General",
+      "sourceAnchor": "general",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000175",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000175",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000177",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000179",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000181",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000183",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000185",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000187",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000189"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000177",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190159085207555.png?v=1",
+          "label": "onsl"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000179",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1005552211847295076.png?v=1",
+          "label": "signoflife"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000181",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/615613924506599497.png?v=1",
+          "label": "soulsplit"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000181",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195487926845462.png?v=1",
+          "label": "deflectmage"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000181",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195488447201300.png?v=1",
+          "label": "deflectmelee"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000181",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195488317046812.png?v=1",
+          "label": "deflectrange"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000181",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190158728953857.png?v=1",
+          "label": "devo"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000183",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190158728953857.png?v=1",
+          "label": "devo"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000185",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195487926845462.png?v=1",
+          "label": "deflectmage"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000185",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195488447201300.png?v=1",
+          "label": "deflectmelee"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000185",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195488317046812.png?v=1",
+          "label": "deflectrange"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Speed",
+      "sourceAnchor": "speed",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000191",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000191",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000193",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000195",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000197",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000199"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000195",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/975012160759550042.png?v=1",
+          "label": "tokkulzo"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000197",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/565726489404899368.png?v=1",
+          "label": "LantaSticks"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000197",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/565726489341984779.png?v=1",
+          "label": "KwuarmSticks"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000197",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/565726489136463894.png?v=1",
+          "label": "SpiritSticks"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "How to get a specific cape",
+      "sourceAnchor": "how-to-get-a-specific-cape",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000201",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000201",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000203",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000205"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Example Kill",
+      "sourceAnchor": "example-kill",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000207",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000207",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000209",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000211",
+        "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000213"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000209",
+          "tag": "a",
+          "url": "https://youtu.be/P3SvPeq2rik",
+          "label": "34:46 Revo+ kill with basic gear"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--fight-kiln:b:000211",
+          "tag": "iframe",
+          "url": "https://www.youtube-nocookie.com/embed/P3SvPeq2rik",
+          "label": ""
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    }
+  ],
+  "attribution": {
+    "author": "PvME contributors",
+    "license": "CC BY-NC-SA 4.0",
+    "imported": "2026-11-11T14:25:57Z"
+  },
+  "upstream": {
+    "sourcePath": "rs3-full-boss-guides/fight-kiln.txt",
+    "revision": "ee913a530677bddd0af48860062fed8c8efd77a3",
+    "sha256": "029769bb7077f5635a0f424779f36ae62bf1fe650b7435583755633c0cd5715b",
+    "kind": "guide"
+  }
+}

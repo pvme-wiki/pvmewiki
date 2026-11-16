@@ -3,7 +3,7 @@ name: pvme-interface-copy
 description: Rewrite PvME guide and wiki interface copy into direct, natural player instructions while preserving mechanics, attribution and editable wiki structure.
 ---
 
-Write like an experienced teammate explaining the fight. The reader needs to recognise an attack and know what to do, often while playing.
+User invariant for this wiki: source guide content is verbatim and this is an additive presentation layer. Do not apply editorial rewrites to guide text. Every source word and its order, gear note, rotation, caption, warning, link and visual must remain unchanged. The following writing guidance applies only to newly authored shared interface labels and help text; it does not authorize changing guide content.
 
 Start from the source mechanic. Preserve exact spoken cues, ability names, quantities, timings, role distinctions and exceptions. Simplify the explanation, never the mechanic. Flag uncertainty in editor notes instead of inventing certainty for the reader.
 

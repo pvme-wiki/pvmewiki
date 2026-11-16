@@ -1,0 +1,3812 @@
+{
+  "title": "PvME/TzKal-Zuk/Tzkal Zuk — HM Zuk Necro",
+  "id": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro",
+  "sourceSha256": "f8d1c859c9b62231fbace7015143fe5bb04b4c630a437f837019d063cfcf7e5d",
+  "sourceFile": "wiki-host/corpus/pages/guide--pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro.wiki.txt",
+  "snapshotFile": "editor/content/pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro.json",
+  "snapshotSha256": "d04144e510bb589a53e3419a7cf4e602db4bc5403dec63007799b5e5a63c41f6",
+  "sourcePath": "rs3-full-boss-guides/tzkal-zuk/hm-zuk-necro.txt",
+  "sourceUrl": "https://pvme.io/pvme-guides/rs3-full-boss-guides/tzkal-zuk/hm-zuk-necro/",
+  "sourceCommit": "074a9438f79d10fba75735791be0030734db8b5e",
+  "status": "source-indexed",
+  "mainGuide": false,
+  "format": "combat-guide",
+  "sections": [
+    {
+      "sourceHeading": null,
+      "sourceAnchor": null,
+      "headingBlockId": null,
+      "level": 0,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000000",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000001",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000003"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000001",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/zURz0KcXrt.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Introduction and preface",
+      "sourceAnchor": "introduction-and-preface",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000005",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000005",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000007",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000009",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000011",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000013",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000015",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000017",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000019",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000021",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000023"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000007",
+          "tag": "a",
+          "url": "/archive/pvme-guides/basic-guides/tzkal-zuk-basic/",
+          "label": "Tzkal Zuk Basic"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000011",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1139453152169558046.png?v=1",
+          "label": "residualsoul"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000011",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1139452791878856805.png?v=1",
+          "label": "necrosis"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000011",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1",
+          "label": "threadsoffate"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000019",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809209782698024.png?v=1",
+          "label": "darkness"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000019",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1166094935066423348.png?v=1",
+          "label": "conjurearmy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000019",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434409913634816.png?v=1",
+          "label": "commandghost"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000021",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809118283976814.png?v=1",
+          "label": "greaterboneshield"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000021",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1179716261681307728.png?v=1",
+          "label": "zemouregalsnexus"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000021",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190158728953857.png?v=1",
+          "label": "devo"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000021",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258786177064.png?v=1",
+          "label": "reflect"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000023",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/643148943856762890.png?v=1",
+          "label": "mahj"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000023",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/643505652865695767.png?v=1",
+          "label": "invigaura"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000023",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1233722649834684416.png?v=1",
+          "label": "equilibriumaura"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000023",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1166094935066423348.png?v=1",
+          "label": "conjurearmy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000023",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434409913634816.png?v=1",
+          "label": "commandghost"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Presets and Relics",
+      "sourceAnchor": "presets-and-relics",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000025",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000025",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000027",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000029"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000027",
+          "tag": "a",
+          "url": "https://presets.pvme.io/?id=DBJShaNHiFWgvpriGLPM",
+          "label": "Necromancy"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Preset Notes",
+      "sourceAnchor": "preset-notes",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000031",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000031",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000033",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000035",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000037",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000039",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000041",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000043",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000045"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000035",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/565726489341984779.png?v=1",
+          "label": "kwuarmsticks"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000035",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/928221126360969226.png?v=1",
+          "label": "powderofpenance"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000035",
+          "tag": "img",
+          "url": "https://firebasestorage.googleapis.com/v0/b/preset-images/o/images%2FDBJShaNHiFWgvpriGLPM.png?alt=media",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000037",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1142416978112417812.png?v=1",
+          "label": "firstnecrohandwrap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000037",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1232124265826877574.png?v=1",
+          "label": "zorgothsring"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000037",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/931175752651653121.png?v=1",
+          "label": "tzkalzuk"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000037",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/975012160759550042.png?v=1",
+          "label": "tokkulzo"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000039",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689501908628799488.png?v=1",
+          "label": "mob"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000041",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/895999229737185280.png?v=1",
+          "label": "shadowsgrace"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000043",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1100353893063462912.png?v=1",
+          "label": "obsidianmagehelm"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000043",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1100353910130102312.png?v=1",
+          "label": "obsidianrangerhelm"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000043",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1100353943277686924.png?v=1",
+          "label": "obsidianwarriorhelm"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000043",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/921410226475925514.png?v=1",
+          "label": "hellhoundpouch"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000045",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/703581275453128714.png?v=1",
+          "label": "ripperpouch"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000045",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/703581275155464203.png?v=1",
+          "label": "ripperscroll"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000045",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/933299003121078332.png?v=1",
+          "label": "callfollower"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Waves 1-16",
+      "sourceAnchor": "waves-1-16",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000047",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000047",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000049",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000051"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000049",
+          "tag": "a",
+          "url": "https://raidplan.io/plan/tdrat5qccgh87rbs",
+          "label": "here"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Wave 1",
+      "sourceAnchor": "wave-1",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000053",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000053",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000055",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000057"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1166094935066423348.png?v=1",
+          "label": "conjurearmy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809128136388819.png?v=1",
+          "label": "lifetransfer"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434409913634816.png?v=1",
+          "label": "commandghost"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1",
+          "label": "livingdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736298121704767538.png?v=1",
+          "label": "adrenrenewal"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1",
+          "label": "threadsoffate"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1",
+          "label": "volleyofsouls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1138809234922934282.png?v=1",
+          "label": "omniguard"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1",
+          "label": "threadsoffate"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1138809234922934282.png?v=1",
+          "label": "omniguard"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000055"
+      ]
+    },
+    {
+      "sourceHeading": "Wave 2",
+      "sourceAnchor": "wave-2",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000059",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000059",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000061",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000063",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000065"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000063",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1143642264850141205.png?v=1",
+          "label": "deathsparkorsoulreave"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000063",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000063",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000063",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000063",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1",
+          "label": "dive"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000063",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1143642264850141205.png?v=1",
+          "label": "deathsparkorsoulreave"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000063",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000063",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1",
+          "label": "fingerofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000063",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1143642264850141205.png?v=1",
+          "label": "deathsparkorsoulreave"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000063",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000063",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000063",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000063"
+      ]
+    },
+    {
+      "sourceHeading": "Wave 3",
+      "sourceAnchor": "wave-3",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000067",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000067",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000069",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000071",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000073"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1",
+          "label": "bloat"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1",
+          "label": "fingerofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1",
+          "label": "threadsoffate"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1",
+          "label": "volleyofsouls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1138809243143766118.png?v=1",
+          "label": "deathguard90"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809128136388819.png?v=1",
+          "label": "lifetransfer"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000071"
+      ]
+    },
+    {
+      "sourceHeading": "Wave 4 (Igneous wave)",
+      "sourceAnchor": "wave-4-igneous-wave",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000075",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000075",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000077",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000079",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000081",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000083",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000085",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000087",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000089",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000091",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000093",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000095"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000079",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1",
+          "label": "bloat"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000079",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000079",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/931175752651653121.png?v=1",
+          "label": "tzkalzuk"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000085",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1166094935066423348.png?v=1",
+          "label": "conjurearmy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000085",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809128136388819.png?v=1",
+          "label": "lifetransfer"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000085",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000085",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000087",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000087",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000087",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000087",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1",
+          "label": "bloat"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000087",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000087",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000087",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000087",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000087",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1",
+          "label": "bloat"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1",
+          "label": "necrobasic"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000091",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000091",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000091",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809142376058910.png?v=1",
+          "label": "soulstrike"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000091",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000091",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809168368148490.png?v=1",
+          "label": "splitsoul"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000091",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1",
+          "label": "necrobasic"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000091",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000093",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/931175752651653121.png?v=1",
+          "label": "tzkalzuk"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000093",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000093",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000093",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000093",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000093",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1",
+          "label": "volleyofsouls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000093",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1138809243143766118.png?v=1",
+          "label": "deathguard90"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000093",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1166094935066423348.png?v=1",
+          "label": "conjurearmy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000093",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000087",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000089",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000091",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000093"
+      ]
+    },
+    {
+      "sourceHeading": "Wave 5 (Challenge wave)",
+      "sourceAnchor": "wave-5-challenge-wave",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000097",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000097",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000099",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000101",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000103",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000105"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000099",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809128136388819.png?v=1",
+          "label": "lifetransfer"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000099",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434409913634816.png?v=1",
+          "label": "commandghost"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000103",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1",
+          "label": "threadsoffate"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000103",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000103",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1",
+          "label": "volleyofsouls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000103",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1138809234922934282.png?v=1",
+          "label": "omniguard"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000103",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000099",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000103"
+      ]
+    },
+    {
+      "sourceHeading": "Wave 6",
+      "sourceAnchor": "wave-6",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000107",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000107",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000109",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000111",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000113",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000115"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000113",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434409913634816.png?v=1",
+          "label": "commandghost"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000113",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000113",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1143642264850141205.png?v=1",
+          "label": "deathsparkorsoulreave"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000113",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000113",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000113",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000113",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000113",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1",
+          "label": "livingdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000113",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736298121704767538.png?v=1",
+          "label": "adrenrenewal"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000113",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000113",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000113",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000113",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000113",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1",
+          "label": "fingerofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000113",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000113",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1143642264850141205.png?v=1",
+          "label": "deathsparkorsoulreave"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000113",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1",
+          "label": "necrobasic"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000113",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000113",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1",
+          "label": "fingerofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000113",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000113",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000113",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1",
+          "label": "fingerofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000113",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1",
+          "label": "necrobasic"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000113",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000113",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809128136388819.png?v=1",
+          "label": "lifetransfer"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000113",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000113",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000113"
+      ]
+    },
+    {
+      "sourceHeading": "Wave 7",
+      "sourceAnchor": "wave-7",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000117",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000117",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000119",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000121",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000123",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000125"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1",
+          "label": "bloat"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1",
+          "label": "bloat"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1",
+          "label": "fingerofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1",
+          "label": "volleyofsouls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1",
+          "label": "bloat"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1",
+          "label": "bloat"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1166094935066423348.png?v=1",
+          "label": "conjurearmy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434409913634816.png?v=1",
+          "label": "commandghost"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1",
+          "label": "dive"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1",
+          "label": "threadsoffate"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1",
+          "label": "volleyofsouls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809128136388819.png?v=1",
+          "label": "lifetransfer"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000123"
+      ]
+    },
+    {
+      "sourceHeading": "Wave 8",
+      "sourceAnchor": "wave-8",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000127",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000127",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000129",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000131",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000133",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000135",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000137",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000139",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000141",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000143"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000133",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1",
+          "label": "bloat"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000133",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000133",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000133",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000133",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000133",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000133",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000133",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000133",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1",
+          "label": "bloat"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000133",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000133",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1",
+          "label": "bloat"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000133",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1166094935066423348.png?v=1",
+          "label": "conjurearmy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000133",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000133",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434409913634816.png?v=1",
+          "label": "commandghost"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000133",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1",
+          "label": "dive"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000133",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1",
+          "label": "threadsoffate"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000133",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000133",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1",
+          "label": "volleyofsouls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000133",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809128136388819.png?v=1",
+          "label": "lifetransfer"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000133",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000133",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000139",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000141",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000141",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1",
+          "label": "threadsoffate"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000141",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1",
+          "label": "volleyofsouls"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000133"
+      ]
+    },
+    {
+      "sourceHeading": "Wave 9 (Igneous wave)",
+      "sourceAnchor": "wave-9-igneous-wave",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000145",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000145",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000147",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000149",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000151",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000153",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000155",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000157",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000159"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000149",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1166094935066423348.png?v=1",
+          "label": "conjurearmy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000149",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809128136388819.png?v=1",
+          "label": "lifetransfer"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000149",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000149",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000151",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000151",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000151",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000151",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1",
+          "label": "bloat"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000151",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000151",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000151",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000151",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000151",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000153",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000153",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1",
+          "label": "bloat"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000153",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000153",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1",
+          "label": "necrobasic"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000153",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000155",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000155",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000155",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809142376058910.png?v=1",
+          "label": "soulstrike"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000155",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000155",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809168368148490.png?v=1",
+          "label": "splitsoul"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000155",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1",
+          "label": "necrobasic"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000155",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000157",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/931175752651653121.png?v=1",
+          "label": "tzkalzuk"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000157",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000157",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000157",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1",
+          "label": "bloat"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000157",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000157",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000157",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1",
+          "label": "volleyofsouls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000157",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1138809234922934282.png?v=1",
+          "label": "omniguard"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000157",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000157",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1166094935066423348.png?v=1",
+          "label": "conjurearmy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000157",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000151",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000153",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000155",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000157"
+      ]
+    },
+    {
+      "sourceHeading": "Wave 10 (Challenge wave)",
+      "sourceAnchor": "wave-10-challenge-wave",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000161",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000161",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000163",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000165"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000163",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000163",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1143642264850141205.png?v=1",
+          "label": "deathsparkorsoulreave"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000163",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1138809243143766118.png?v=1",
+          "label": "deathguard90"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000163",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1",
+          "label": "eofspec"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000163",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434409913634816.png?v=1",
+          "label": "commandghost"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000163",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809128136388819.png?v=1",
+          "label": "lifetransfer"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000163",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000163"
+      ]
+    },
+    {
+      "sourceHeading": "Wave 11",
+      "sourceAnchor": "wave-11",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000167",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000167",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000169",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000171",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000173",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000175"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1",
+          "label": "bloat"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1143642264850141205.png?v=1",
+          "label": "deathsparkorsoulreave"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1",
+          "label": "livingdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736298121704767538.png?v=1",
+          "label": "adrenrenewal"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1",
+          "label": "fingerofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1",
+          "label": "necrobasic"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1",
+          "label": "necrobasic"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1",
+          "label": "fingerofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1",
+          "label": "dive"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1",
+          "label": "threadsoffate"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1",
+          "label": "volleyofsouls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1",
+          "label": "fingerofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809128136388819.png?v=1",
+          "label": "lifetransfer"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000173"
+      ]
+    },
+    {
+      "sourceHeading": "Wave 12",
+      "sourceAnchor": "wave-12",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000177",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000177",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000179",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000181",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000183",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000185",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000187",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000189"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000183",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1",
+          "label": "bloat"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000183",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000183",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1",
+          "label": "bloat"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000183",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000183",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000183",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1",
+          "label": "necrobasic"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000183",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000183",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000183",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000183",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1",
+          "label": "necrobasic"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000183",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000183",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000183",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000183",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1",
+          "label": "dive"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000183",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1",
+          "label": "threadsoffate"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000183",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000183",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1",
+          "label": "volleyofsouls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000183",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000183",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809128136388819.png?v=1",
+          "label": "lifetransfer"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000183",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000187",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000187",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1",
+          "label": "threadsoffate"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000183"
+      ]
+    },
+    {
+      "sourceHeading": "Wave 13",
+      "sourceAnchor": "wave-13",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000191",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000191",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000193",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000195",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000197",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000199"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000197",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1",
+          "label": "bloat"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000197",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000197",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1",
+          "label": "bloat"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000197",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000197",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000197",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1",
+          "label": "dive"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000197",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000197",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000197",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000197",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1",
+          "label": "necrobasic"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000197",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809191231295549.png?v=1",
+          "label": "commandzombie"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000197",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1166094935066423348.png?v=1",
+          "label": "conjurearmy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000197",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000197",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434409913634816.png?v=1",
+          "label": "commandghost"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000197",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000197",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1",
+          "label": "threadsoffate"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000197",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000197",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1",
+          "label": "dive"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000197",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000197",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1",
+          "label": "volleyofsouls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000197",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000197",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000197"
+      ]
+    },
+    {
+      "sourceHeading": "Wave 14 (Igneous wave)",
+      "sourceAnchor": "wave-14-igneous-wave",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000201",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000201",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000203",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000205",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000207",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000209",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000211",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000213",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000215"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000205",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1166094935066423348.png?v=1",
+          "label": "conjurearmy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000205",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809128136388819.png?v=1",
+          "label": "lifetransfer"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000205",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000205",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000207",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000207",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000207",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000207",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1",
+          "label": "bloat"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000207",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000207",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000207",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000207",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000207",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000209",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000209",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1",
+          "label": "bloat"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000209",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000209",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1",
+          "label": "necrobasic"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000209",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000211",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000211",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000211",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1138809243143766118.png?v=1",
+          "label": "deathguard90"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000211",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1",
+          "label": "eofspec"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000211",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000211",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809168368148490.png?v=1",
+          "label": "splitsoul"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000211",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000213",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/931175752651653121.png?v=1",
+          "label": "tzkalzuk"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000213",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000213",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000213",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000213",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809191231295549.png?v=1",
+          "label": "commandzombie"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000213",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000213",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000213",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1",
+          "label": "volleyofsouls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000213",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000213",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1166094935066423348.png?v=1",
+          "label": "conjurearmy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000213",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809128136388819.png?v=1",
+          "label": "lifetransfer"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000207",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000209",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000211",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000213"
+      ]
+    },
+    {
+      "sourceHeading": "Wave 15 (Challenge wave)",
+      "sourceAnchor": "wave-15-challenge-wave",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000217",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000217",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000219",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000221",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000223",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000225"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000219",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535614336207552523.png?v=1",
+          "label": "disrupt"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000219",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434409913634816.png?v=1",
+          "label": "commandghost"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000219",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190158728953857.png?v=1",
+          "label": "devo"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000219",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000219",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1",
+          "label": "necrobasic"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000219",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1",
+          "label": "livingdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000219",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736298121704767538.png?v=1",
+          "label": "adrenrenewal"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000219",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000219",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000219",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/787904334377648130.png?v=1",
+          "label": "divert"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000219",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000219",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000219",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000223",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535614336207552523.png?v=1",
+          "label": "disrupt"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000223",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190158728953857.png?v=1",
+          "label": "devo"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000223",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195488317046812.png?v=1",
+          "label": "deflectrange"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000223",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195487926845462.png?v=1",
+          "label": "deflectmage"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000223",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/787904334377648130.png?v=1",
+          "label": "divert"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000223",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1",
+          "label": "livingdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000223",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/931175752651653121.png?v=1",
+          "label": "tzkalzuk"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000219"
+      ]
+    },
+    {
+      "sourceHeading": "Wave 16 (Triple Jad)",
+      "sourceAnchor": "wave-16-triple-jad",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000227",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000227",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000229",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000231",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000233",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000235",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000237",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000239",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000241"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1",
+          "label": "volleyofsouls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000235",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1",
+          "label": "threadsoffate"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000235",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1",
+          "label": "fingerofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000235",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000235",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1",
+          "label": "fingerofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000235",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1139453152169558046.png?v=1",
+          "label": "residualsoul"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000235",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1139452791878856805.png?v=1",
+          "label": "necrosis"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000235",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/931175752651653121.png?v=1",
+          "label": "tzkalzuk"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000239",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000239",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809168368148490.png?v=1",
+          "label": "splitsoul"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000239",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandwarrior"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000231",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000235",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000239"
+      ]
+    },
+    {
+      "sourceHeading": "Wave 17 (Har-Aken)",
+      "sourceAnchor": "wave-17-har-aken",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000243",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000243",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000245",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000247",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000249"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000245",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/n4B2Z2KLAw.png",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000247",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1",
+          "label": "dive"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000247",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513212948781596682.png?v=1",
+          "label": "haraken"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000247",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1",
+          "label": "bloat"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000247",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000247",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1138809234922934282.png?v=1",
+          "label": "omniguard"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000247",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000247",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1143642264850141205.png?v=1",
+          "label": "deathsparkorsoulreave"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000247",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000247",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000247",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000247",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000247",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1139453152169558046.png?v=1",
+          "label": "residualsoul"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000247",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1",
+          "label": "volleyofsouls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000247",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1143642264850141205.png?v=1",
+          "label": "deathsparkorsoulreave"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000247",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000247",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000247",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1143642264850141205.png?v=1",
+          "label": "deathsparkorsoulreave"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000247",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809191231295549.png?v=1",
+          "label": "commandzombie"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000247",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513212948781596682.png?v=1",
+          "label": "haraken"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000247"
+      ]
+    },
+    {
+      "sourceHeading": "Wave 18 (Tz-Kal Zuk)",
+      "sourceAnchor": "wave-18-tz-kal-zuk",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000251",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000251"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "First cycle",
+      "sourceAnchor": "first-cycle",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000253",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000253",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000255",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000257",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000259",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000261",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000263",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000267",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000269",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000271"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000255",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/931175752651653121.png?v=1",
+          "label": "tzkalzuk"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000257",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000259",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543478434953822208.png?v=1",
+          "label": "Veng"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000261",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1142416978112417812.png?v=1",
+          "label": "firstnecrohandwrap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000261",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1232124265826877574.png?v=1",
+          "label": "zorgothsring"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1166094935066423348.png?v=1",
+          "label": "conjurearmy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434409913634816.png?v=1",
+          "label": "commandghost"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258131865633.png?v=1",
+          "label": "nat"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1",
+          "label": "necrobasic"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1",
+          "label": "livingdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258240786434.png?v=1",
+          "label": "freedom"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/787904334377648130.png?v=1",
+          "label": "divert"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1",
+          "label": "bloat"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809168368148490.png?v=1",
+          "label": "splitsoul"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1",
+          "label": "volleyofsouls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1",
+          "label": "dive"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1",
+          "label": "fingerofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1",
+          "label": "fingerofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1",
+          "label": "necrobasic"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535614336207552523.png?v=1",
+          "label": "disrupt"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1138809234922934282.png?v=1",
+          "label": "omniguard"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1143642264850141205.png?v=1",
+          "label": "deathsparkorsoulreave"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1138809243143766118.png?v=1",
+          "label": "deathguard90"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1",
+          "label": "eofspec"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1",
+          "label": "volleyofsouls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258240786434.png?v=1",
+          "label": "freedom"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000265"
+      ]
+    },
+    {
+      "sourceHeading": "Pizza Phase",
+      "sourceAnchor": "pizza-phase",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000273",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000273",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000275",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000277",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000279",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000281",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000283",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000285",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000287",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000289"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000275",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000275",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1",
+          "label": "dive"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000279",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000279",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000279",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1",
+          "label": "dive"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000279",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000279",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809142376058910.png?v=1",
+          "label": "soulstrike"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000279",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000279",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1143642264850141205.png?v=1",
+          "label": "deathsparkorsoulreave"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000279",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000279",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000283",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000283",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000283",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1",
+          "label": "dive"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000283",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000283",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1",
+          "label": "bloat"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000283",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000283",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000283",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1143642264850141205.png?v=1",
+          "label": "deathsparkorsoulreave"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000283",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000283",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1166094935066423348.png?v=1",
+          "label": "conjurearmy"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000283",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809128136388819.png?v=1",
+          "label": "lifetransfer"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000283",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434409913634816.png?v=1",
+          "label": "commandghost"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000287",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000287",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000287",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1",
+          "label": "dive"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000287",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1",
+          "label": "bloat"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000287",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000287",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000287",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1",
+          "label": "necrobasic"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000287",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000279",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000283",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000287"
+      ]
+    },
+    {
+      "sourceHeading": "Second cycle",
+      "sourceAnchor": "second-cycle",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000291",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000291",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000293",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000295",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000297",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000299"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000293",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/543478434953822208.png?v=1",
+          "label": "Veng"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000293",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1",
+          "label": "livingdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000293",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736298121704767538.png?v=1",
+          "label": "adrenrenewal"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000293",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000293",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000293",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000293",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/787904334377648130.png?v=1",
+          "label": "divert"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000293",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809168368148490.png?v=1",
+          "label": "splitsoul"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000293",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1",
+          "label": "volleyofsouls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000293",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1",
+          "label": "fingerofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000293",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000293",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258240786434.png?v=1",
+          "label": "freedom"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000293",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000293",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000293",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1",
+          "label": "fingerofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000293",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1",
+          "label": "necrobasic"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000293",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1",
+          "label": "fingerofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000293",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000293",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1",
+          "label": "dive"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000293",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000293",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1",
+          "label": "necrobasic"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000293",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1",
+          "label": "necrobasic"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000293",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000293",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000293",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000293",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000293",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1138809234922934282.png?v=1",
+          "label": "omniguard"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000293",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000293",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000293",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1143642264850141205.png?v=1",
+          "label": "deathsparkorsoulreave"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000293"
+      ]
+    },
+    {
+      "sourceHeading": "Conduits",
+      "sourceAnchor": "conduits",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000301",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000301",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000303",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000305",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000307",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000309",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000311",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000313",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000315",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000317",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000319",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000321",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000323",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000325",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000327",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000329",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000331",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000333"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000303",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1",
+          "label": "livingdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000303",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000309",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535614336207552523.png?v=1",
+          "label": "disrupt"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000311",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/787904334377648130.png?v=1",
+          "label": "divert"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000311",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258844635148.png?v=1",
+          "label": "res"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000313",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258786177064.png?v=1",
+          "label": "reflect"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000315",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/654618235097972737.png?v=1",
+          "label": "powerburstofvitality"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000319",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000319",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000319",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+          "label": "touchofdeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000319",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1143642264850141205.png?v=1",
+          "label": "deathsparkorsoulreave"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000319",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+          "label": "deathskulls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000319",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1143642264850141205.png?v=1",
+          "label": "deathsparkorsoulreave"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000323",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000323",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000323",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1",
+          "label": "bloat"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000323",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000323",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1",
+          "label": "commandskeleton"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000323",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809191231295549.png?v=1",
+          "label": "commandzombie"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000323",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1",
+          "label": "soulsap"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000327",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000327",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000327",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809168368148490.png?v=1",
+          "label": "splitsoul"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000327",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1",
+          "label": "volleyofsouls"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000331",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000331",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+          "label": "invokedeath"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000331",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1",
+          "label": "bloat"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000331",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1138809243143766118.png?v=1",
+          "label": "deathguard90"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000331",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1",
+          "label": "eofspec"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000309",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000311",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000313",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000315",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000319",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000323",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000327",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000331"
+      ]
+    },
+    {
+      "sourceHeading": "Example videos",
+      "sourceAnchor": "example-videos",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000335",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000335",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000337",
+        "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000339"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro:b:000337",
+          "tag": "a",
+          "url": "https://youtu.be/2gSnPnd4Oyw?si=msXHJ3A0iEXZU0MZ",
+          "label": "Full Kill"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    }
+  ],
+  "attribution": {
+    "author": "PvME contributors",
+    "license": "CC BY-NC-SA 4.0",
+    "imported": "2026-11-11T14:25:57Z"
+  },
+  "upstream": {
+    "sourcePath": "rs3-full-boss-guides/tzkal-zuk/hm-zuk-necro.txt",
+    "revision": "ee913a530677bddd0af48860062fed8c8efd77a3",
+    "sha256": "579b4d5a9e2e000164114f3039a2ddcfa9ad0e45ac5d04025479803bc0fdc62a",
+    "kind": "guide"
+  }
+}

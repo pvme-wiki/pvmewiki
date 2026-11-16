@@ -1,0 +1,2005 @@
+{
+  "title": "PvME/Temple of Aminishi/ED1 Overview",
+  "id": "pvme-guides--basic-guides--ed1-basic",
+  "sourceSha256": "0b3ef7b530fa1773c9d2fe82eb61b34ba32a89fd57c2d8fe4609562dd2a545d8",
+  "sourceFile": "wiki-host/corpus/pages/guide--pvme-guides--basic-guides--ed1-basic.wiki.txt",
+  "snapshotFile": "editor/content/pvme-guides--basic-guides--ed1-basic.json",
+  "snapshotSha256": "7688e5a2edaf54cbae48a415b1a791a610a33fe005e3e8cf59ee3ff787b1226e",
+  "sourcePath": "basic-guides/ed1-basic.txt",
+  "sourceUrl": "https://pvme.io/pvme-guides/basic-guides/ed1-basic/",
+  "sourceCommit": "074a9438f79d10fba75735791be0030734db8b5e",
+  "status": "source-indexed",
+  "mainGuide": true,
+  "format": "combat-overview",
+  "sections": [
+    {
+      "sourceHeading": null,
+      "sourceAnchor": null,
+      "headingBlockId": null,
+      "level": 0,
+      "blockIds": [
+        "pvme-guides--basic-guides--ed1-basic:b:000000",
+        "pvme-guides--basic-guides--ed1-basic:b:000001",
+        "pvme-guides--basic-guides--ed1-basic:b:000003",
+        "pvme-guides--basic-guides--ed1-basic:b:000005",
+        "pvme-guides--basic-guides--ed1-basic:b:000007",
+        "pvme-guides--basic-guides--ed1-basic:b:000009"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000001",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/LdYq2RP.png",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000007",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/643505116347105290.png?v=1",
+          "label": "berserker"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000007",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/643505179378974748.png?v=1",
+          "label": "reckless"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000007",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/643505153709965322.png?v=1",
+          "label": "mani"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000007",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/643505653079343144.png?v=1",
+          "label": "vamp"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000007",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513203008608141314.png?v=1",
+          "label": "gstaff"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000007",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1",
+          "label": "eofspec"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000007",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879506309150.png?v=1",
+          "label": "quake"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000007",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641670143197446182.png?v=1",
+          "label": "swh"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000007",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1",
+          "label": "eofspec"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Presets and Relics",
+      "sourceAnchor": "presets-and-relics",
+      "headingBlockId": "pvme-guides--basic-guides--ed1-basic:b:000011",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--basic-guides--ed1-basic:b:000011",
+        "pvme-guides--basic-guides--ed1-basic:b:000013",
+        "pvme-guides--basic-guides--ed1-basic:b:000015",
+        "pvme-guides--basic-guides--ed1-basic:b:000017",
+        "pvme-guides--basic-guides--ed1-basic:b:000019"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000013",
+          "tag": "a",
+          "url": "https://presets.pvme.io/?id=GsbuR3CBDvwpdHQz6KPL",
+          "label": "Magic preset"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000013",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1",
+          "label": "magic"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000015",
+          "tag": "a",
+          "url": "https://presets.pvme.io/?id=o9Fo2OzlWJKMHazAaOSS",
+          "label": "Melee preset"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000015",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1",
+          "label": "melee"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000017",
+          "tag": "a",
+          "url": "https://presets.pvme.io/?id=JYNxXhY5s0cZfQKbgUYb",
+          "label": "Ranged preset"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000017",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1",
+          "label": "range"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000019",
+          "tag": "img",
+          "url": "https://firebasestorage.googleapis.com/v0/b/preset-images/o/images%2FJYNxXhY5s0cZfQKbgUYb.png?alt=media",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Recommended Upgrades",
+      "sourceAnchor": "recommended-upgrades",
+      "headingBlockId": "pvme-guides--basic-guides--ed1-basic:b:000021",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--basic-guides--ed1-basic:b:000021",
+        "pvme-guides--basic-guides--ed1-basic:b:000023",
+        "pvme-guides--basic-guides--ed1-basic:b:000025"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000023",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257440278512537740.png?v=1",
+          "label": "gchain"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000023",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/791281588792590336.png?v=1",
+          "label": "caroming4"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000023",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/780401412936040478.png?v=1",
+          "label": "eofpurple"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000023",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513203008608141314.png?v=1",
+          "label": "gstaff"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000023",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879250456578.png?v=1",
+          "label": "gbarge"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000023",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879283879977.png?v=1",
+          "label": "gflurry"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000023",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/787904334812807238.png?v=1",
+          "label": "grico"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000023",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/791281588792590336.png?v=1",
+          "label": "caroming4"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000023",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1260022280046645349.png?v=1",
+          "label": "eofyellowu"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000023",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/643848618553507843.png?v=1",
+          "label": "dbow"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "The Sanctum Guardian (Info)",
+      "sourceAnchor": "the-sanctum-guardian-info",
+      "headingBlockId": "pvme-guides--basic-guides--ed1-basic:b:000027",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--basic-guides--ed1-basic:b:000027",
+        "pvme-guides--basic-guides--ed1-basic:b:000029",
+        "pvme-guides--basic-guides--ed1-basic:b:000031",
+        "pvme-guides--basic-guides--ed1-basic:b:000033",
+        "pvme-guides--basic-guides--ed1-basic:b:000035"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000029",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/KCgIv13UAG.png",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000031",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1",
+          "label": "range"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000035",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/r63xxBI.mp4",
+          "label": "Example"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000035",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/r63xxBI.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000035",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1",
+          "label": "melee"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000035",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/TJngvfo.mp4",
+          "label": "Example"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000035",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/TJngvfo.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000035",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195488447201300.png?v=1",
+          "label": "DeflectMelee"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000035",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258844635148.png?v=1",
+          "label": "res"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000035",
+          "tag": "a",
+          "url": "https://youtu.be/3xDLQIAMeEc",
+          "label": "Example"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000035",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/xbJwXJj.mp4",
+          "label": "Example"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000035",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/xbJwXJj.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000035",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258844635148.png?v=1",
+          "label": "res"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000035",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535614336207552523.png?v=1",
+          "label": "disrupt"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000035",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541278264393729.png?v=1",
+          "label": "debil"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000035",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258786177064.png?v=1",
+          "label": "reflect"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000035",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/CCIKuCR.mp4",
+          "label": "Example"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000035",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/CCIKuCR.mp4",
+          "label": ""
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--basic-guides--ed1-basic:b:000035"
+      ]
+    },
+    {
+      "sourceHeading": "The Sanctum Guardian (Fight tips)",
+      "sourceAnchor": "the-sanctum-guardian-fight-tips",
+      "headingBlockId": "pvme-guides--basic-guides--ed1-basic:b:000037",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--basic-guides--ed1-basic:b:000037",
+        "pvme-guides--basic-guides--ed1-basic:b:000039",
+        "pvme-guides--basic-guides--ed1-basic:b:000041",
+        "pvme-guides--basic-guides--ed1-basic:b:000043",
+        "pvme-guides--basic-guides--ed1-basic:b:000045",
+        "pvme-guides--basic-guides--ed1-basic:b:000047",
+        "pvme-guides--basic-guides--ed1-basic:b:000049",
+        "pvme-guides--basic-guides--ed1-basic:b:000051",
+        "pvme-guides--basic-guides--ed1-basic:b:000053",
+        "pvme-guides--basic-guides--ed1-basic:b:000055",
+        "pvme-guides--basic-guides--ed1-basic:b:000057",
+        "pvme-guides--basic-guides--ed1-basic:b:000059",
+        "pvme-guides--basic-guides--ed1-basic:b:000061",
+        "pvme-guides--basic-guides--ed1-basic:b:000063",
+        "pvme-guides--basic-guides--ed1-basic:b:000065"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000045",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1",
+          "label": "melee"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000045",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532854004678657.png?v=1",
+          "label": "zerk"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000045",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736298121704767538.png?v=1",
+          "label": "adrenrenewal"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000045",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532855191928842.png?v=1",
+          "label": "assault"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000045",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879330148352.png?v=1",
+          "label": "destroy"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000045",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879283879977.png?v=1",
+          "label": "gflurry"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000045",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/959089455640215633.png?v=1",
+          "label": "overpowerigneous"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000045",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532854004678657.png?v=1",
+          "label": "zerk"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000045",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532854004678657.png?v=1",
+          "label": "zerk"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000047",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1",
+          "label": "range"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000047",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921597813137518.png?v=1",
+          "label": "deathsswiftpf"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000047",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736298121704767538.png?v=1",
+          "label": "adrenrenewal"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000047",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535534127131394088.png?v=1",
+          "label": "snap"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000047",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541270521708566.png?v=1",
+          "label": "rapid"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000047",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/642713547142332416.png?v=1",
+          "label": "shadowtend"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000047",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535534127131394088.png?v=1",
+          "label": "snap"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000047",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541270521708566.png?v=1",
+          "label": "rapid"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000047",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/959089455283728386.png?v=1",
+          "label": "deadshotigneous"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000047",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921597813137518.png?v=1",
+          "label": "deathsswiftpf"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000047",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/959089455283728386.png?v=1",
+          "label": "deadshotigneous"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1",
+          "label": "Magic"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921595489488927.png?v=1",
+          "label": "sunshinepf"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736298121704767538.png?v=1",
+          "label": "adrenrenewal"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/856635090641879050.png?v=1",
+          "label": "smokecloud"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809664262179.png?v=1",
+          "label": "omni"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809995874304.png?v=1",
+          "label": "tsunami"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1179505745654448208.png?v=1",
+          "label": "omnipowerigneous"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000049",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921595489488927.png?v=1",
+          "label": "sunshinepf"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000051",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532854004678657.png?v=1",
+          "label": "zerk"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000051",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921597813137518.png?v=1",
+          "label": "deathsswiftpf"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000051",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921595489488927.png?v=1",
+          "label": "sunshinepf"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000055",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1",
+          "label": "range"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000057",
+          "tag": "video",
+          "url": "https://pvme.io/pvme-guides/basic-guides/ed1-basic/",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000057",
+          "tag": "source",
+          "url": "https://img.pvme.io/images/j5yD1xR.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000061",
+          "tag": "video",
+          "url": "https://pvme.io/pvme-guides/basic-guides/ed1-basic/",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000061",
+          "tag": "source",
+          "url": "https://img.pvme.io/images/OSdmLyz.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000065",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/7qIjbzv.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--basic-guides--ed1-basic:b:000045",
+        "pvme-guides--basic-guides--ed1-basic:b:000047",
+        "pvme-guides--basic-guides--ed1-basic:b:000049"
+      ]
+    },
+    {
+      "sourceHeading": "Masuta, the Ascended (Info)",
+      "sourceAnchor": "masuta-the-ascended-info",
+      "headingBlockId": "pvme-guides--basic-guides--ed1-basic:b:000067",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--basic-guides--ed1-basic:b:000067",
+        "pvme-guides--basic-guides--ed1-basic:b:000069",
+        "pvme-guides--basic-guides--ed1-basic:b:000071",
+        "pvme-guides--basic-guides--ed1-basic:b:000073",
+        "pvme-guides--basic-guides--ed1-basic:b:000075"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000069",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/l1tE0lAhOH.png",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1",
+          "label": "melee"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1",
+          "label": "range"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/lQiGv8Y.mp4",
+          "label": "Example"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/lQiGv8Y.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1",
+          "label": "melee"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/VrBObJ5.mp4",
+          "label": "Example"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/VrBObJ5.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195488447201300.png?v=1",
+          "label": "DeflectMelee"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195488447201300.png?v=1",
+          "label": "DeflectMelee"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190158728953857.png?v=1",
+          "label": "devo"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921597813137518.png?v=1",
+          "label": "deathsswiftpf"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/841419289755385866.png?v=1",
+          "label": "flankicon"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/zHMArnZ.mp4",
+          "label": "Example"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/zHMArnZ.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1",
+          "label": "Magic"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535614336207552523.png?v=1",
+          "label": "disrupt"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258844635148.png?v=1",
+          "label": "res"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "a",
+          "url": "https://youtu.be/WZlGkkmUsis",
+          "label": "Example"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1",
+          "label": "surge"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809995874304.png?v=1",
+          "label": "tsunami"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "a",
+          "url": "https://youtu.be/qrcCqidKhe0",
+          "label": "Example"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1",
+          "label": "melee"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/LvR5mBE.mp4",
+          "label": "Example"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/LvR5mBE.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195488447201300.png?v=1",
+          "label": "DeflectMelee"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/Fe0ihJk.mp4",
+          "label": "Example"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/Fe0ihJk.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1",
+          "label": "Magic"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195487926845462.png?v=1",
+          "label": "DeflectMage"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/gvMdd2v.mp4",
+          "label": "Example"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/gvMdd2v.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641337999170207763.png?v=1",
+          "label": "excal"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190158728953857.png?v=1",
+          "label": "devo"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/W6v0V4g.mp4",
+          "label": "Example"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/W6v0V4g.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1",
+          "label": "range"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1",
+          "label": "range"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1",
+          "label": "Magic"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/615613924506599497.png?v=1",
+          "label": "soulsplit"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195487926845462.png?v=1",
+          "label": "DeflectMage"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/615613924506599497.png?v=1",
+          "label": "soulsplit"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195488317046812.png?v=1",
+          "label": "DeflectRange"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--basic-guides--ed1-basic:b:000075"
+      ]
+    },
+    {
+      "sourceHeading": "Masuta, the Ascended (Fight tips)",
+      "sourceAnchor": "masuta-the-ascended-fight-tips",
+      "headingBlockId": "pvme-guides--basic-guides--ed1-basic:b:000077",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--basic-guides--ed1-basic:b:000077",
+        "pvme-guides--basic-guides--ed1-basic:b:000079",
+        "pvme-guides--basic-guides--ed1-basic:b:000081",
+        "pvme-guides--basic-guides--ed1-basic:b:000083",
+        "pvme-guides--basic-guides--ed1-basic:b:000085",
+        "pvme-guides--basic-guides--ed1-basic:b:000087",
+        "pvme-guides--basic-guides--ed1-basic:b:000089",
+        "pvme-guides--basic-guides--ed1-basic:b:000091",
+        "pvme-guides--basic-guides--ed1-basic:b:000093",
+        "pvme-guides--basic-guides--ed1-basic:b:000095",
+        "pvme-guides--basic-guides--ed1-basic:b:000097",
+        "pvme-guides--basic-guides--ed1-basic:b:000099",
+        "pvme-guides--basic-guides--ed1-basic:b:000101",
+        "pvme-guides--basic-guides--ed1-basic:b:000103",
+        "pvme-guides--basic-guides--ed1-basic:b:000105",
+        "pvme-guides--basic-guides--ed1-basic:b:000107",
+        "pvme-guides--basic-guides--ed1-basic:b:000109",
+        "pvme-guides--basic-guides--ed1-basic:b:000111",
+        "pvme-guides--basic-guides--ed1-basic:b:000113",
+        "pvme-guides--basic-guides--ed1-basic:b:000115",
+        "pvme-guides--basic-guides--ed1-basic:b:000117"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000083",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190158728953857.png?v=1",
+          "label": "devo"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000083",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541278264393729.png?v=1",
+          "label": "debil"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000083",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258786177064.png?v=1",
+          "label": "reflect"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000087",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000087",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879330148352.png?v=1",
+          "label": "destroy"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000087",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258425204770.png?v=1",
+          "label": "snipe"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/881962727705280512.png?v=1",
+          "label": "armadylbattlestaff"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000089",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1",
+          "label": "eofspec"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000097",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190158728953857.png?v=1",
+          "label": "devo"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000099",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641339233638023179.png?v=1",
+          "label": "limitless"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000101",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1",
+          "label": "melee"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000101",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532854004678657.png?v=1",
+          "label": "zerk"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000101",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736298121704767538.png?v=1",
+          "label": "adrenrenewal"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000101",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532855191928842.png?v=1",
+          "label": "assault"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000101",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879330148352.png?v=1",
+          "label": "destroy"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000101",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879283879977.png?v=1",
+          "label": "gflurry"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000101",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/959089455640215633.png?v=1",
+          "label": "overpowerigneous"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000101",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/959089455640215633.png?v=1",
+          "label": "overpowerigneous"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000103",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1",
+          "label": "range"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000103",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/959089455283728386.png?v=1",
+          "label": "deadshotigneous"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000103",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921597813137518.png?v=1",
+          "label": "deathsswiftpf"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000103",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736298121704767538.png?v=1",
+          "label": "adrenrenewal"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000103",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535534127131394088.png?v=1",
+          "label": "snap"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000103",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541270521708566.png?v=1",
+          "label": "rapid"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000103",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/642713547142332416.png?v=1",
+          "label": "shadowtend"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000103",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535534127131394088.png?v=1",
+          "label": "snap"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000103",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541270521708566.png?v=1",
+          "label": "rapid"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000103",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/959089455283728386.png?v=1",
+          "label": "deadshotigneous"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000105",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1",
+          "label": "Magic"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000105",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921595489488927.png?v=1",
+          "label": "sunshinepf"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000105",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736298121704767538.png?v=1",
+          "label": "adrenrenewal"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000105",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/856635090641879050.png?v=1",
+          "label": "smokecloud"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000105",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/958989794757730307.png?v=1",
+          "label": "tsunamiincite"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000105",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000105",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000105",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1179505745654448208.png?v=1",
+          "label": "omnipowerigneous"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000105",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1",
+          "label": "wm"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000105",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1",
+          "label": "asphyx"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000109",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513201065907322880.png?v=1",
+          "label": "Sacrifice"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000109",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306475151390.png?v=1",
+          "label": "anti"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000111",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258844635148.png?v=1",
+          "label": "res"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000115",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1",
+          "label": "range"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000115",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1",
+          "label": "Magic"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--basic-guides--ed1-basic:b:000101",
+        "pvme-guides--basic-guides--ed1-basic:b:000103",
+        "pvme-guides--basic-guides--ed1-basic:b:000105"
+      ]
+    },
+    {
+      "sourceHeading": "Seiryu, the Azure Serpent (Info)",
+      "sourceAnchor": "seiryu-the-azure-serpent-info",
+      "headingBlockId": "pvme-guides--basic-guides--ed1-basic:b:000119",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--basic-guides--ed1-basic:b:000119",
+        "pvme-guides--basic-guides--ed1-basic:b:000121",
+        "pvme-guides--basic-guides--ed1-basic:b:000123",
+        "pvme-guides--basic-guides--ed1-basic:b:000125",
+        "pvme-guides--basic-guides--ed1-basic:b:000127"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000121",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/dksAPM9sP5.png",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000123",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1",
+          "label": "Magic"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000127",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1",
+          "label": "Magic"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000127",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/zwFuDq4.mp4",
+          "label": "Example"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000127",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/zwFuDq4.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000127",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/fsznjRq.mp4",
+          "label": "Example"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000127",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/fsznjRq.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000127",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1",
+          "label": "Magic"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000127",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535614336207552523.png?v=1",
+          "label": "disrupt"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000127",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195487926845462.png?v=1",
+          "label": "DeflectMage"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000127",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258844635148.png?v=1",
+          "label": "res"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000127",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/0NPw0Ot.mp4",
+          "label": "Example"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000127",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/0NPw0Ot.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000127",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/4YRp1Ra.mp4",
+          "label": "Example"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000127",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/4YRp1Ra.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000127",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1",
+          "label": "melee"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000127",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/6UThIKD.mp4",
+          "label": "Example"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000127",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/6UThIKD.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000127",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/ia7OVYS.png",
+          "label": "Example"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000127",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/662249620579155968.png?v=1",
+          "label": "dommine"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000127",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/NqEDUWE.mp4",
+          "label": "Example"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000127",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/NqEDUWE.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000127",
+          "tag": "a",
+          "url": "https://img.pvme.io/images/c7V97dw.mp4",
+          "label": "Example"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000127",
+          "tag": "video",
+          "url": "https://img.pvme.io/images/c7V97dw.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000127",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258240786434.png?v=1",
+          "label": "freedom"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000127",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306475151390.png?v=1",
+          "label": "anti"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--basic-guides--ed1-basic:b:000127"
+      ]
+    },
+    {
+      "sourceHeading": "Seiryu, the Azure Serpent (Fight tips)",
+      "sourceAnchor": "seiryu-the-azure-serpent-fight-tips",
+      "headingBlockId": "pvme-guides--basic-guides--ed1-basic:b:000129",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--basic-guides--ed1-basic:b:000129",
+        "pvme-guides--basic-guides--ed1-basic:b:000131",
+        "pvme-guides--basic-guides--ed1-basic:b:000133",
+        "pvme-guides--basic-guides--ed1-basic:b:000135",
+        "pvme-guides--basic-guides--ed1-basic:b:000137",
+        "pvme-guides--basic-guides--ed1-basic:b:000139",
+        "pvme-guides--basic-guides--ed1-basic:b:000141",
+        "pvme-guides--basic-guides--ed1-basic:b:000143",
+        "pvme-guides--basic-guides--ed1-basic:b:000145",
+        "pvme-guides--basic-guides--ed1-basic:b:000147",
+        "pvme-guides--basic-guides--ed1-basic:b:000149",
+        "pvme-guides--basic-guides--ed1-basic:b:000151",
+        "pvme-guides--basic-guides--ed1-basic:b:000153",
+        "pvme-guides--basic-guides--ed1-basic:b:000155",
+        "pvme-guides--basic-guides--ed1-basic:b:000157",
+        "pvme-guides--basic-guides--ed1-basic:b:000159",
+        "pvme-guides--basic-guides--ed1-basic:b:000161",
+        "pvme-guides--basic-guides--ed1-basic:b:000163",
+        "pvme-guides--basic-guides--ed1-basic:b:000165",
+        "pvme-guides--basic-guides--ed1-basic:b:000167",
+        "pvme-guides--basic-guides--ed1-basic:b:000169",
+        "pvme-guides--basic-guides--ed1-basic:b:000171",
+        "pvme-guides--basic-guides--ed1-basic:b:000173",
+        "pvme-guides--basic-guides--ed1-basic:b:000175",
+        "pvme-guides--basic-guides--ed1-basic:b:000177",
+        "pvme-guides--basic-guides--ed1-basic:b:000179",
+        "pvme-guides--basic-guides--ed1-basic:b:000181",
+        "pvme-guides--basic-guides--ed1-basic:b:000183",
+        "pvme-guides--basic-guides--ed1-basic:b:000185",
+        "pvme-guides--basic-guides--ed1-basic:b:000187",
+        "pvme-guides--basic-guides--ed1-basic:b:000189",
+        "pvme-guides--basic-guides--ed1-basic:b:000191",
+        "pvme-guides--basic-guides--ed1-basic:b:000193",
+        "pvme-guides--basic-guides--ed1-basic:b:000195"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000131",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/841419289755385866.png?v=1",
+          "label": "flankicon"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000137",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/615613924506599497.png?v=1",
+          "label": "soulsplit"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000139",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541258844635148.png?v=1",
+          "label": "res"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000149",
+          "tag": "video",
+          "url": "https://pvme.io/pvme-guides/basic-guides/ed1-basic/",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000149",
+          "tag": "source",
+          "url": "https://img.pvme.io/images/ktXTzON.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000157",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532854004678657.png?v=1",
+          "label": "zerk"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000157",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921595489488927.png?v=1",
+          "label": "sunshinepf"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000157",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921597813137518.png?v=1",
+          "label": "deathsswiftpf"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000163",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/867678153668820992.png?v=1",
+          "label": "bdmobile"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000169",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/867678153798975498.png?v=1",
+          "label": "surgemobile"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000169",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532854004678657.png?v=1",
+          "label": "zerk"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000169",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921595489488927.png?v=1",
+          "label": "sunshinepf"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000169",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921597813137518.png?v=1",
+          "label": "deathsswiftpf"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000169",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736298121704767538.png?v=1",
+          "label": "adrenrenewal"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000169",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/662249620579155968.png?v=1",
+          "label": "dommine"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000173",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/662249620579155968.png?v=1",
+          "label": "dommine"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000181",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532854004678657.png?v=1",
+          "label": "zerk"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000181",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921595489488927.png?v=1",
+          "label": "sunshinepf"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000181",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921597813137518.png?v=1",
+          "label": "deathsswiftpf"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000191",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532854004678657.png?v=1",
+          "label": "zerk"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000191",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921595489488927.png?v=1",
+          "label": "sunshinepf"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000191",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994921597813137518.png?v=1",
+          "label": "deathsswiftpf"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000191",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736298121704767538.png?v=1",
+          "label": "adrenrenewal"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000191",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/662249620579155968.png?v=1",
+          "label": "dommine"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Mobs and movement",
+      "sourceAnchor": "mobs-and-movement",
+      "headingBlockId": "pvme-guides--basic-guides--ed1-basic:b:000197",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--basic-guides--ed1-basic:b:000197",
+        "pvme-guides--basic-guides--ed1-basic:b:000199",
+        "pvme-guides--basic-guides--ed1-basic:b:000201",
+        "pvme-guides--basic-guides--ed1-basic:b:000203",
+        "pvme-guides--basic-guides--ed1-basic:b:000205",
+        "pvme-guides--basic-guides--ed1-basic:b:000207",
+        "pvme-guides--basic-guides--ed1-basic:b:000209",
+        "pvme-guides--basic-guides--ed1-basic:b:000211",
+        "pvme-guides--basic-guides--ed1-basic:b:000213",
+        "pvme-guides--basic-guides--ed1-basic:b:000215",
+        "pvme-guides--basic-guides--ed1-basic:b:000217",
+        "pvme-guides--basic-guides--ed1-basic:b:000219",
+        "pvme-guides--basic-guides--ed1-basic:b:000221",
+        "pvme-guides--basic-guides--ed1-basic:b:000223",
+        "pvme-guides--basic-guides--ed1-basic:b:000225",
+        "pvme-guides--basic-guides--ed1-basic:b:000227",
+        "pvme-guides--basic-guides--ed1-basic:b:000229",
+        "pvme-guides--basic-guides--ed1-basic:b:000231",
+        "pvme-guides--basic-guides--ed1-basic:b:000233",
+        "pvme-guides--basic-guides--ed1-basic:b:000235",
+        "pvme-guides--basic-guides--ed1-basic:b:000237",
+        "pvme-guides--basic-guides--ed1-basic:b:000239",
+        "pvme-guides--basic-guides--ed1-basic:b:000241",
+        "pvme-guides--basic-guides--ed1-basic:b:000243",
+        "pvme-guides--basic-guides--ed1-basic:b:000245",
+        "pvme-guides--basic-guides--ed1-basic:b:000247",
+        "pvme-guides--basic-guides--ed1-basic:b:000249",
+        "pvme-guides--basic-guides--ed1-basic:b:000251",
+        "pvme-guides--basic-guides--ed1-basic:b:000253",
+        "pvme-guides--basic-guides--ed1-basic:b:000255",
+        "pvme-guides--basic-guides--ed1-basic:b:000257",
+        "pvme-guides--basic-guides--ed1-basic:b:000259",
+        "pvme-guides--basic-guides--ed1-basic:b:000261",
+        "pvme-guides--basic-guides--ed1-basic:b:000263",
+        "pvme-guides--basic-guides--ed1-basic:b:000265",
+        "pvme-guides--basic-guides--ed1-basic:b:000267",
+        "pvme-guides--basic-guides--ed1-basic:b:000269",
+        "pvme-guides--basic-guides--ed1-basic:b:000271",
+        "pvme-guides--basic-guides--ed1-basic:b:000273",
+        "pvme-guides--basic-guides--ed1-basic:b:000275",
+        "pvme-guides--basic-guides--ed1-basic:b:000277",
+        "pvme-guides--basic-guides--ed1-basic:b:000279",
+        "pvme-guides--basic-guides--ed1-basic:b:000281",
+        "pvme-guides--basic-guides--ed1-basic:b:000283",
+        "pvme-guides--basic-guides--ed1-basic:b:000285"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000207",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190158728953857.png?v=1",
+          "label": "devo"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000207",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195488317046812.png?v=1",
+          "label": "DeflectRange"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000209",
+          "tag": "video",
+          "url": "https://pvme.io/pvme-guides/basic-guides/ed1-basic/",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000209",
+          "tag": "source",
+          "url": "https://img.pvme.io/images/rwE2Ei3.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000213",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195488317046812.png?v=1",
+          "label": "DeflectRange"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000215",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190158728953857.png?v=1",
+          "label": "devo"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000215",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190158728953857.png?v=1",
+          "label": "devo"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000217",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/IwHIix8.png",
+          "label": "Guide illustration"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000219",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195488317046812.png?v=1",
+          "label": "DeflectRange"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000221",
+          "tag": "video",
+          "url": "https://pvme.io/pvme-guides/basic-guides/ed1-basic/",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000221",
+          "tag": "source",
+          "url": "https://img.pvme.io/images/WoaCM1c.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195488447201300.png?v=1",
+          "label": "DeflectMelee"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000231",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/841419289428492369.png?v=1",
+          "label": "stunicon"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000237",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1",
+          "label": "Magic"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000245",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195487926845462.png?v=1",
+          "label": "DeflectMage"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000245",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190158728953857.png?v=1",
+          "label": "devo"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000245",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190158728953857.png?v=1",
+          "label": "devo"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000249",
+          "tag": "video",
+          "url": "https://pvme.io/pvme-guides/basic-guides/ed1-basic/",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000249",
+          "tag": "source",
+          "url": "https://img.pvme.io/images/9JmjLtG.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000253",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1",
+          "label": "Magic"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000253",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195487926845462.png?v=1",
+          "label": "DeflectMage"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000263",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532878969438210.png?v=1",
+          "label": "cane"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000263",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879506309150.png?v=1",
+          "label": "quake"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000263",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/864492981763702834.png?v=1",
+          "label": "flurry"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000263",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532878616985610.png?v=1",
+          "label": "cleave"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000263",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532854281764884.png?v=1",
+          "label": "bd"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000265",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879359377439.png?v=1",
+          "label": "meteorstrike"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000267",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641669268722810881.png?v=1",
+          "label": "mechchin"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000267",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541270521708566.png?v=1",
+          "label": "rapid"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000267",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641669268722810881.png?v=1",
+          "label": "mechchin"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000267",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535534127131394088.png?v=1",
+          "label": "snap"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000267",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306391265284.png?v=1",
+          "label": "bombard"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000267",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541306294796299.png?v=1",
+          "label": "corruptshot"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000267",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641669268722810881.png?v=1",
+          "label": "mechchin"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000267",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/867678153635004447.png?v=1",
+          "label": "ricocaroming"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000269",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/641669268722810881.png?v=1",
+          "label": "mechchin"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000269",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/959089455283728386.png?v=1",
+          "label": "deadshotigneous"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000271",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/958989794757730307.png?v=1",
+          "label": "tsunamiincite"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000271",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833358016512.png?v=1",
+          "label": "deto"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000271",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190159194259467.png?v=1",
+          "label": "corruptblast"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000271",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1",
+          "label": "dbreath"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000271",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/867678153962684426.png?v=1",
+          "label": "chaincaroming"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000273",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537338981747261446.png?v=1",
+          "label": "bloodbarrage"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000273",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400185245701.png?v=1",
+          "label": "icebarrage"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000275",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/867678153882861568.png?v=1",
+          "label": "gchaincaroming"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000275",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1179505745654448208.png?v=1",
+          "label": "omnipowerigneous"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000279",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/756236265472524418.png?v=1",
+          "label": "powerburstofacceleration"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000283",
+          "tag": "video",
+          "url": "https://pvme.io/pvme-guides/basic-guides/ed1-basic/",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000283",
+          "tag": "source",
+          "url": "https://img.pvme.io/images/8htV7Pg.mp4",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000285",
+          "tag": "video",
+          "url": "https://pvme.io/pvme-guides/basic-guides/ed1-basic/",
+          "label": ""
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000285",
+          "tag": "source",
+          "url": "https://img.pvme.io/images/6IQ9MAJ.mp4",
+          "label": ""
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Example runs",
+      "sourceAnchor": "example-runs",
+      "headingBlockId": "pvme-guides--basic-guides--ed1-basic:b:000287",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--basic-guides--ed1-basic:b:000287",
+        "pvme-guides--basic-guides--ed1-basic:b:000289"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000289",
+          "tag": "a",
+          "url": "https://www.youtube.com/watch?v=fM9pFoNyIho",
+          "label": "16:10"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000289",
+          "tag": "a",
+          "url": "https://www.youtube.com/watch?v=uaWAHAd8aDw",
+          "label": "17:15"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000289",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879283879977.png?v=1",
+          "label": "gflurry"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000289",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535532879250456578.png?v=1",
+          "label": "gbarge"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000289",
+          "tag": "a",
+          "url": "https://www.youtube.com/watch?v=JIrwWHW9vgQ",
+          "label": "16:03"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000289",
+          "tag": "a",
+          "url": "https://www.youtube.com/watch?v=Qc0inKS8b7U",
+          "label": "Ranged"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000289",
+          "tag": "a",
+          "url": "https://www.youtube.com/watch?v=F59efgBX0Go",
+          "label": "Magic"
+        },
+        {
+          "blockId": "pvme-guides--basic-guides--ed1-basic:b:000289",
+          "tag": "a",
+          "url": "https://www.youtube.com/watch?v=4jIGoNwRm5E",
+          "label": "Melee"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    }
+  ],
+  "attribution": {
+    "author": "PvME contributors",
+    "license": "CC BY-NC-SA 4.0",
+    "imported": "2026-11-11T14:25:57Z"
+  },
+  "upstream": {
+    "sourcePath": "basic-guides/ed1-basic.txt",
+    "revision": "ee913a530677bddd0af48860062fed8c8efd77a3",
+    "sha256": "7c22933c289bb30db107656fbcb16b5923907751b9e998b2af8a3e9a43da2c20",
+    "kind": "guide"
+  }
+}

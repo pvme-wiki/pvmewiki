@@ -1,0 +1,908 @@
+{
+  "title": "PvME/Kerapac/Kerapac — Solo Hard Mode Ranged",
+  "id": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged",
+  "sourceSha256": "ec85e8dc2e1e6de89dd68c062e1fe919b1e9ac8a4f2ec68ba85d27cddfe219d5",
+  "sourceFile": "wiki-host/corpus/pages/guide--pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged.wiki.txt",
+  "snapshotFile": "editor/content/pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged.json",
+  "snapshotSha256": "2b8d2c80d86bf23b19ea38ef9bba6e3da39389d662fb31131d4d7a49d71a5029",
+  "sourcePath": "rs3-full-boss-guides/kerapac/solo-hard-mode-ranged.txt",
+  "sourceUrl": "https://pvme.io/pvme-guides/rs3-full-boss-guides/kerapac/solo-hard-mode-ranged/",
+  "sourceCommit": "074a9438f79d10fba75735791be0030734db8b5e",
+  "status": "source-indexed",
+  "mainGuide": false,
+  "format": "combat-guide",
+  "sections": [
+    {
+      "sourceHeading": null,
+      "sourceAnchor": null,
+      "headingBlockId": null,
+      "level": 0,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000000",
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000001"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000001",
+          "tag": "img",
+          "url": "https://img.pvme.io/images/1fZdXd5U3v.png",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Introduction",
+      "sourceAnchor": "introduction",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000003",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000003",
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000005",
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000007",
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000009"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000007",
+          "tag": "a",
+          "url": "/archive/pvme-guides/basic-guides/kerapac-hm-basic/",
+          "label": "Kerapac HM Basic"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Presets and Relics",
+      "sourceAnchor": "presets-and-relics",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000011",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000011",
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000013"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000013",
+          "tag": "a",
+          "url": "https://presets.pvme.io?id=a7fe1641-aa2c-46ee-879b-c248b550cc5d",
+          "label": "Ranged"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000013",
+          "tag": "img",
+          "url": "https://firebasestorage.googleapis.com/v0/b/preset-images/o/images%2Fa7fe1641-aa2c-46ee-879b-c248b550cc5d.png?alt=media",
+          "label": "Guide illustration"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Requirements",
+      "sourceAnchor": "requirements",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000015",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000015",
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000017",
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000019",
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000021",
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000023"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000021",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/565726489341984779.png?v=1",
+          "label": "kwuarmsticks"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000021",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/565726489136463894.png?v=1",
+          "label": "spiritsticks"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000023",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/798285340460449792.png?v=1",
+          "label": "slayerhelm"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Overview",
+      "sourceAnchor": "overview",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000025",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000025",
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000027",
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000029",
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000031"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000029",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/870328868815396914.png?v=1",
+          "label": "timewarp"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000029",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061862405931120.png?v=1",
+          "label": "deathsswiftness"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000031",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1137809209782698024.png?v=1",
+          "label": "darkness"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Rotation",
+      "sourceAnchor": "rotation",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000033",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000033"
+      ],
+      "media": [],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "War's Retreat",
+      "sourceAnchor": "wars-retreat",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000035",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000035",
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000037"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000037",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061860371828929.png?v=1",
+          "label": "deadshot"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Phase 1",
+      "sourceAnchor": "phase-1",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000039",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000039",
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000041",
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000043"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000041",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/900758234527301642.png?v=1",
+          "label": "deathsporearrows"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000041",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061860371828929.png?v=1",
+          "label": "deadshot"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000041",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/787904334812807238.png?v=1",
+          "label": "grico"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000041",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061862405931120.png?v=1",
+          "label": "deathsswiftness"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000041",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061866193518744.png?v=1",
+          "label": "imbueshadows"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000041",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/615618531937222657.png?v=1",
+          "label": "ecb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000041",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1",
+          "label": "eofspec"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000041",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/971025696958853180.png?v=1",
+          "label": "fularrow"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000041",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994189289623662702.png?v=1",
+          "label": "bolg"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000041",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000041",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061864943616122.png?v=1",
+          "label": "galeshot"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000041",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541270521708566.png?v=1",
+          "label": "rapid"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000041",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061860371828929.png?v=1",
+          "label": "deadshot"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000041",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1446178203608809472.png?v=1",
+          "label": "gloomfirebow"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000041",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1",
+          "label": "eofspec"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000041",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061855732666439.png?v=1",
+          "label": "snapshot"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000041",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061855732666439.png?v=1",
+          "label": "snapshot"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000041",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061863723073636.png?v=1",
+          "label": "piercingshot"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000041",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/736298121704767538.png?v=1",
+          "label": "adrenrenewal"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000041",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/615618531937222657.png?v=1",
+          "label": "ecb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000041",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1",
+          "label": "eofspec"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000041",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/787904334812807238.png?v=1",
+          "label": "grico"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000041"
+      ]
+    },
+    {
+      "sourceHeading": "Phase 2",
+      "sourceAnchor": "phase-2",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000045",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000045",
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000047",
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000049"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000047",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/787904334812807238.png?v=1",
+          "label": "grico"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000047",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1446178203608809472.png?v=1",
+          "label": "gloomfirebow"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000047",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1",
+          "label": "eofspec"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000047",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/642713547142332416.png?v=1",
+          "label": "shadowtend"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000047",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061864943616122.png?v=1",
+          "label": "galeshot"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000047",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541270521708566.png?v=1",
+          "label": "rapid"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000047",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994189289623662702.png?v=1",
+          "label": "bolg"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000047",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000047",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061857486143498.png?v=1",
+          "label": "snipe"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000047",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/787904334812807238.png?v=1",
+          "label": "grico"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000047",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061855732666439.png?v=1",
+          "label": "snapshot"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000047",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061863723073636.png?v=1",
+          "label": "piercingshot"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000047",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994189289623662702.png?v=1",
+          "label": "bolg"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000047",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000047",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/900758234527301642.png?v=1",
+          "label": "deathsporearrows"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000047",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061858622537809.png?v=1",
+          "label": "rangedbasic"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000047",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061863723073636.png?v=1",
+          "label": "piercingshot"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000047",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/787904334812807238.png?v=1",
+          "label": "grico"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000047"
+      ]
+    },
+    {
+      "sourceHeading": "Phase 3",
+      "sourceAnchor": "phase-3",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000051",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000051",
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000053",
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000055"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000053",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/971025696958853180.png?v=1",
+          "label": "fularrow"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000053",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061863723073636.png?v=1",
+          "label": "piercingshot"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000053",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061858622537809.png?v=1",
+          "label": "rangedbasic"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000053",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061863723073636.png?v=1",
+          "label": "piercingshot"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000053",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061858622537809.png?v=1",
+          "label": "rangedbasic"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000053",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/870328868815396914.png?v=1",
+          "label": "timewarp"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000053",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/900758234527301642.png?v=1",
+          "label": "deathsporearrows"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000053",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061862405931120.png?v=1",
+          "label": "deathsswiftness"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000053",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061866193518744.png?v=1",
+          "label": "imbueshadows"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000053",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/971025696958853180.png?v=1",
+          "label": "fularrow"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000053",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061860371828929.png?v=1",
+          "label": "deadshot"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000053",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541270521708566.png?v=1",
+          "label": "rapid"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000053",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1446178203608809472.png?v=1",
+          "label": "gloomfirebow"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000053",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1",
+          "label": "eofspec"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000053",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061860371828929.png?v=1",
+          "label": "deadshot"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000053",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1446178203608809472.png?v=1",
+          "label": "gloomfirebow"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000053",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1",
+          "label": "eofspec"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000053",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061855732666439.png?v=1",
+          "label": "snapshot"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000053",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/787904334812807238.png?v=1",
+          "label": "grico"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000053",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061863723073636.png?v=1",
+          "label": "piercingshot"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000053",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/615618531937222657.png?v=1",
+          "label": "ecb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000053",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1",
+          "label": "eofspec"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000053"
+      ]
+    },
+    {
+      "sourceHeading": "Phase 4",
+      "sourceAnchor": "phase-4",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000057",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000057",
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000059",
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000061",
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000063"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000059",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1",
+          "label": "vulnbomb"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000061",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/615613924506599497.png?v=1",
+          "label": "soulsplit"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000061",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/544195487926845462.png?v=1",
+          "label": "deflectmage"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    },
+    {
+      "sourceHeading": "Clone 1",
+      "sourceAnchor": "clone-1",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000065",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000065",
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000067"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000067",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061855732666439.png?v=1",
+          "label": "snapshot"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000067",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061863723073636.png?v=1",
+          "label": "piercingshot"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000067",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994189289623662702.png?v=1",
+          "label": "bolg"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000067",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000067",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061855732666439.png?v=1",
+          "label": "snapshot"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000067"
+      ]
+    },
+    {
+      "sourceHeading": "Clone 2",
+      "sourceAnchor": "clone-2",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000069",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000069",
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000071"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/900758234527301642.png?v=1",
+          "label": "deathsporearrows"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061863723073636.png?v=1",
+          "label": "piercingshot"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/787904334812807238.png?v=1",
+          "label": "grico"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061863723073636.png?v=1",
+          "label": "piercingshot"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/870328868815396914.png?v=1",
+          "label": "timewarp"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061862405931120.png?v=1",
+          "label": "deathsswiftness"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061866193518744.png?v=1",
+          "label": "imbueshadows"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/971025696958853180.png?v=1",
+          "label": "fularrow"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061860371828929.png?v=1",
+          "label": "deadshot"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000071",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061855732666439.png?v=1",
+          "label": "snapshot"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000071"
+      ]
+    },
+    {
+      "sourceHeading": "Clone 3",
+      "sourceAnchor": "clone-3",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000073",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000073",
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000075"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/787904334812807238.png?v=1",
+          "label": "grico"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/994189289623662702.png?v=1",
+          "label": "bolg"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1",
+          "label": "spec"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061855732666439.png?v=1",
+          "label": "snapshot"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/513190158728953857.png?v=1",
+          "label": "devo"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000075",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061855732666439.png?v=1",
+          "label": "snapshot"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000075"
+      ]
+    },
+    {
+      "sourceHeading": "Kerapac",
+      "sourceAnchor": "kerapac",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000077",
+      "level": 3,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000077",
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000079"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000079",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/535541270521708566.png?v=1",
+          "label": "rapid"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000079",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1478061860371828929.png?v=1",
+          "label": "deadshot"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000079",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1446178203608809472.png?v=1",
+          "label": "gloomfirebow"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000079",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1",
+          "label": "eofspec"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000079",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1446178203608809472.png?v=1",
+          "label": "gloomfirebow"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000079",
+          "tag": "img",
+          "url": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1",
+          "label": "eofspec"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": [
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000079"
+      ]
+    },
+    {
+      "sourceHeading": "Example Kills",
+      "sourceAnchor": "example-kills",
+      "headingBlockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000081",
+      "level": 2,
+      "blockIds": [
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000081",
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000083",
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000085",
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000087",
+        "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000089"
+      ],
+      "media": [
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000083",
+          "tag": "a",
+          "url": "https://youtu.be/Hd0iSafMfnk",
+          "label": "2:07.8"
+        },
+        {
+          "blockId": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged:b:000085",
+          "tag": "a",
+          "url": "https://youtu.be/T_I0hhNRKJg",
+          "label": "2:10.8 (Different rotation)"
+        }
+      ],
+      "cues": [],
+      "rotationBlockIds": []
+    }
+  ],
+  "attribution": {
+    "author": "PvME contributors",
+    "license": "CC BY-NC-SA 4.0",
+    "imported": "2026-11-11T14:25:57Z"
+  },
+  "upstream": {
+    "sourcePath": "rs3-full-boss-guides/kerapac/solo-hard-mode-ranged.txt",
+    "revision": "ee913a530677bddd0af48860062fed8c8efd77a3",
+    "sha256": "55053eda7e4db80f862ca3196cb7de836019c95107fc90aa6d0e2e5d311a8c4b",
+    "kind": "guide"
+  }
+}
