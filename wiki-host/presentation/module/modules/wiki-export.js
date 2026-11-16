@@ -153,7 +153,7 @@ function convertRevision(source, metadata, registry = {}, actionBars = {}, visua
     let tocInserted = false;
     const layout = {paragraphs:0,headings:0,mechanicCards:0,gearPanels:0,tables:0,lists:0};
     function render(node, context = {}) {
-        if (typeof node === 'string') return restore(node).replace(/<nowiki>([\t\r\n ]*)<\/nowiki>/g, (_, whitespace) => whitespace);
+        if (typeof node === 'string') return restore(node.replace(/\n/g, '')).replace(/<nowiki>([\t\r\n ]*)<\/nowiki>/g, (_, whitespace) => whitespace);
         if (['pvme-image','pvme-video','pvme-embed','img'].includes(node.tag)) return media(node, context);
         if (!permitted.has(node.tag)) throw new Error('Unsupported published HTML <' + node.tag + '>.');
         const cls = classes(node);
