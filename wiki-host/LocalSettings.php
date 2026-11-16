@@ -10,6 +10,18 @@ $wgServer = RuntimeConfig::server();
 $wgCanonicalServer = $wgServer;
 $wgScriptPath = '';
 $wgResourceBasePath = $wgScriptPath;
+// Startup manifests are otherwise cached under an unversioned load.php URL.
+// Give each presentation release a distinct path so normal page reloads fetch
+// the current manifest before consulting ResourceLoader's module cache.
+$pvmeReleaseHash = hash_init('sha256');
+$pvmeReleaseFiles = glob('/var/www/html/extensions/PvmePresentation/modules/*') ?: [];
+sort($pvmeReleaseFiles, SORT_STRING);
+foreach ($pvmeReleaseFiles as $pvmeReleaseFile) {
+    if (is_file($pvmeReleaseFile) && preg_match('/\.(?:js|json|css)$/', $pvmeReleaseFile)) {
+        hash_update($pvmeReleaseHash, basename($pvmeReleaseFile) . ':' . hash_file('sha256', $pvmeReleaseFile) . "\n");
+    }
+}
+$wgLoadScript = $wgScriptPath . '/load-' . substr(hash_final($pvmeReleaseHash), 0, 16) . '.php';
 $wgArticlePath = '/wiki/$1';
 $wgUsePathInfo = false;
 $wgCookieSecure = true;
