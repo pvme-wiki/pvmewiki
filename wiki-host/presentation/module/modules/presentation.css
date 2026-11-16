@@ -61,7 +61,11 @@ body:not(.pvme-visual-mode) #pvme-visual-reader,
 .pvme-presentation :where(.mw-parser-output, .pvme-visual-content).pvme-legacy-reader .pvme-reader-term { margin-block-start: 1.4rem; padding-block-end: .35rem; border-bottom: 1px solid #d8b78b; font-size: 1.1em; }
 /* Labels are factual fallbacks; source text nodes stay intact for native editing. */
 .pvme-presentation :where(.mw-parser-output, .pvme-visual-content) a[data-pvme-label] { font-size: 0; }
-.pvme-presentation :where(.mw-parser-output, .pvme-visual-content) a[data-pvme-label]::after { content: attr(data-pvme-label); font-size: 1em; }
+.pvme-presentation :where(.mw-parser-output, .pvme-visual-content) a[data-pvme-label]::after { content: attr(data-pvme-label); font-size: var(--pvme-label-size, 1rem); }
+/* Label fallbacks have a zero-size parent; use the selected Vector scale. */
+html.vector-feature-custom-font-size-clientpref-0 .pvme-presentation { --pvme-label-size: .875rem; }
+html.vector-feature-custom-font-size-clientpref-1 .pvme-presentation { --pvme-label-size: 1rem; }
+html.vector-feature-custom-font-size-clientpref-2 .pvme-presentation { --pvme-label-size: 1.25rem; }
 .pvme-presentation :where(.mw-parser-output, .pvme-visual-content) .pvme-reader-illustration { display: block; width: fit-content; max-width: 100%; padding: .8rem 1rem; border: 1px dashed #a88c69; border-radius: .3rem; background: #f7f5f0; }
 .pvme-presentation .pvme-reader-tools { margin-block: 0 1.5rem; padding: 1rem 1.2rem; border: 1px solid #d8b78b; border-radius: .5rem; background: #fbf6ec; color: #262a2e; line-height: 1.6; overflow-wrap: anywhere; }
 .pvme-presentation .pvme-reader-breadcrumbs { font-size: .95em; }
