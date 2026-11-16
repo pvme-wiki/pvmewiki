@@ -4,6 +4,8 @@ import vm from 'node:vm';
 import {fileURLToPath} from 'node:url';
 const host=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const dir=path.join(host,'copy-button-ports');
+const drafts=path.join(dir,'prepared/older-five');
+fs.mkdirSync(drafts,{recursive:true});
 const inventory=JSON.parse(fs.readFileSync(path.join(dir,'namespace-hub-inventory.json')));
 const plan=JSON.parse(fs.readFileSync(path.join(host,'main-guides/corpus-plan.json')));
 const published=JSON.parse(fs.readFileSync(path.join(host,'main-guides/published-revisions.json')));
@@ -38,7 +40,7 @@ for(const selection of selected){
  }
  const {text,...report}=result;
  reports.push({...selection,expectedSourceTextSha256:page.bodyTextSha256,expectedSourceSha256:page.sha256,literalNodesUnchangedInOrder:true,literalNodes:count,...report});
- fs.writeFileSync(path.join(dir,page.id+'-older-prepared.wiki'),text);
+ fs.writeFileSync(path.join(drafts,page.id+'-older-prepared.wiki'),text);
  console.log(JSON.stringify({title:page.title,ready:result.readyToPublish,media:result.mediaCoverage,unresolved:result.unresolvedAssets.map(a=>({url:a.url,alt:a.alt,kind:a.kind,role:a.role}))}));
 }
 fs.writeFileSync(path.join(dir,'older-preflight.json'),JSON.stringify(reports,null,2)+'\n');

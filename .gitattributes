@@ -4,3 +4,7 @@
 *.png binary
 *.jpg binary
 *.webp binary
+# Preserve captured copy output and upstream metadata exactly, including whitespace.
+wiki-host/copy-button-ports/inputs/*.json -text whitespace=-blank-at-eol
+wiki-host/copy-button-ports/prepared/older-five/*.wiki -text whitespace=-blank-at-eol
+wiki-host/copy-button-ports/verification/five-long-previews/*.wiki -text whitespace=-blank-at-eol

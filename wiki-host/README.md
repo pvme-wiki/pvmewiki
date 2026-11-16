@@ -4,6 +4,8 @@ This directory supplies an editable MediaWiki service independently of the exist
 
 ## Corpus and provenance
 
+The live current-source edition contains **325 guide articles and four About pages**. Its import plan and provenance are in [main-guides](main-guides/); presentation and RuneScape Wiki export coverage are documented in [copy-button-ports](copy-button-ports/). The 381-page bootstrap described below is an immutable earlier seed, not the current guide count. Preserve both the seed and subsequent community revisions.
+
 `corpus/pages.xml` contains exactly **381 mainspace pages**: **323 guides, 45 boss indexes, 12 group indexes and the PvME hub**. Each page has one attributed initial revision. This is a new standalone edition, not a claim to reproduce upstream revision history inside MediaWiki.
 
 The guide bodies come from the repository's versioned `editor/content/*.json` AST documents at app snapshot **074a9438f79d10fba75735791be0030734db8b5e**. The 381-title navigation allowlist was recovered from the prior first-party corpus conversion. Its original `User:Mo rs/PvME` destinations are retargeted to `PvME` mainspace paths. The four newer support/guide additions and 282 archive/navigation/test packets are excluded.

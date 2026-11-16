@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 const dir='wiki-host/copy-button-ports/';
 const inventory=JSON.parse(fs.readFileSync(dir+'batch-a-assets.json'));
-const labels=JSON.parse(fs.readFileSync('C:/Users/haidm/Desktop/pvme port/wiki-port/official-emoji-labels.json'));
+const labels=JSON.parse(fs.readFileSync('wiki-host/copy-button-ports/inputs/official-emoji-labels.json'));
 const wikiTitles=JSON.parse(fs.readFileSync('wiki-host/presentation/module/modules/navigation.json')).wikiTitles||{};
 const pilot=JSON.parse(fs.readFileSync(dir+'vorago-asset-resolver.json'));
 const candidates=[];

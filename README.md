@@ -1,4 +1,12 @@
-# PvME Field Guide
+# PvME Wiki
+
+The current site is the [standalone editable MediaWiki](https://pvmewiki.sanji3.dev), maintained on this repository's default `wiki` branch. Its current-source corpus contains 325 guide articles and four About pages. Guide wording and order remain unchanged; presentation and navigation are additive.
+
+See [the wiki runtime documentation](wiki-host/README.md) and [Copy to wiki coverage and verification](wiki-host/copy-button-ports/README.md). The copy exporter covers all 325 guides. The latest five long-guide checks were unsaved RuneScape Wiki previews; the stopped bulk publication has not resumed.
+
+## Earlier reader prototype
+
+The remaining application and documentation describe the earlier reader prototype and its separate 323-guide snapshot.
 
 An independent RuneScape 3 guide reader and phone-first contributor prototype.
 

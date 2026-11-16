@@ -3,8 +3,8 @@ const dir='wiki-host/copy-button-ports/';
 const read=file=>JSON.parse(fs.readFileSync(file,'utf8'));
 const plan=read('wiki-host/main-guides/corpus-plan.json');
 const pages=plan.pages.filter(page=>new URL(page.source).pathname.startsWith('/pvme-guides/'));
-const labels=read('C:/Users/haidm/Desktop/pvme port/wiki-port/official-emoji-labels.json');
-const catalog=read('C:/Users/haidm/Desktop/pvme port/wiki-port/reused/pvme-full-wiki-port/inputs/emojis_v2.json');
+const labels=read(dir+'inputs/official-emoji-labels.json');
+const catalog=read(dir+'inputs/emojis_v2.json');
 const wikiTitles=read('wiki-host/presentation/module/modules/navigation.json').wikiTitles||{};
 const sources=['wiki-host/presentation/module/modules/wiki-media-resolver.json',dir+'older-a-resolver.json',dir+'older-b-resolver.json'];
 const known={};for(const file of sources)if(fs.existsSync(file)){for(const[url,entry]of Object.entries(read(file).assets||{}))if(!known[url]&&entry.verified===true)known[url]=entry;}

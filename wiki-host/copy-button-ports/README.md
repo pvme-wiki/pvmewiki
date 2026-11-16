@@ -1,4 +1,16 @@
-# Visual copy pilot
+# Copy to wiki
+
+## Current status
+
+The live exporter covers **all 325 current guides**, with **34,420 inline image occurrences** and no unresolved assets in the corpus inventory. Production copy and cache-busting fixes are in `8c8109a` and `e7310d0`; the deployed loader path is `/load-81ed0c8cdd53bd80.php`. Later evidence and documentation commits do not require redeployment.
+
+The latest [five random long-guide previews](verification/five-long-previews/README.md) passed: **24,528 source words**, **3,048 literal source nodes** unchanged and in order, and **773/773 inline images loaded**. These were native RuneScape Wiki previews using the actual live Copy button. **Nothing was saved.** Original MP4 clips retain source-player links where the destination cannot embed them.
+
+The existing RuneScape Wiki hub still lists **15 saved guides**, at [revision 37281573](https://runescape.wiki/w/User:Mo_rs/PvME?oldid=37281573). The five older ports have not been upgraded, and bulk publication remains stopped. Their [prepared exports](prepared/older-five/README.md) are unpublished drafts.
+
+## Earlier pilot and publication history
+
+The records below describe the earlier ten-guide publication pass. Its counts and runtime commits are historical; current corpus-wide coverage is stated above.
 
 Published the first selected guide using Chrome's live **Copy to wiki** control, then its complete manual-copy field, and RuneScape Wiki's source editor. The browser inspection API truncates individual strings at 200,000 characters; read the field in 90,000-character chunks. The actual button output is saved in `vorago-actual-copy-button.wiki` (411,492 characters), with its SHA-256 and destination revision in `vorago-saved-proof.json`.
 
