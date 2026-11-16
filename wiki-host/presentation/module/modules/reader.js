@@ -136,12 +136,24 @@ function enhance() {
         fallback.setAttribute('aria-label', 'RuneScape Wiki wikitext');
         const manual = element('details'); manual.hidden = true;
         exportArea.hidden = true;
-        manual.append(element('summary', 'Copy manually'), fallback);
+        const retryCopy = element('button', 'Copy wikitext', 'pvme-reader-copy');
+        retryCopy.type = 'button';
+        retryCopy.addEventListener('click', async () => {
+            if (!fallback.value) return;
+            try {
+                await navigator.clipboard.writeText(fallback.value);
+                status.textContent = 'Copied. Paste it into the wiki source editor.';
+            } catch (_) {
+                fallback.focus(); fallback.select();
+                status.textContent = 'Your browser blocked the clipboard. The complete wikitext is selected below; press Ctrl+C or Command+C.';
+            }
+        });
+        manual.append(element('summary', 'Wikitext'), retryCopy, fallback);
         copy.addEventListener('click', async () => {
             exportArea.hidden = false;
             copy.disabled = true; manual.hidden = true; manual.open = false; fallback.value = '';
-            status.textContent = 'Loading wikitext...';
-            try {
+            status.textContent = 'Preparing copy…';
+            const preparation = (async () => {
                 const result = await new mw.Api().get({ action: 'query', prop: 'revisions', titles: guideTitle,
                     rvprop: 'ids|timestamp|content', rvslots: 'main', formatversion: 2 });
                 const published = result.query?.pages?.[0];
@@ -150,25 +162,43 @@ function enhance() {
                 const exported = convertRevision(revision.slots.main.content, { title: guideTitle, displayTitle: sourcePage.nativeTitle || document.getElementById('firstHeading')?.textContent.trim(), revisionId: revision.revid,
                     timestamp: revision.timestamp, source: sourcePage.source,
                     revisionUrl: new URL(mw.util.getUrl(guideTitle, { oldid: revision.revid }), location.origin).href }, registry, actionBars, amascutAssets, wikiMediaResolver);
+                if (!exported.readyToPublish) {
+                    const error = new Error('This guide needs ' + exported.unresolvedAssets.length + ' more image or video links for RuneScape Wiki. Nothing was copied.');
+                    error.unresolvedAssets = exported.unresolvedAssets;
+                    throw error;
+                }
+                return {exported, revision};
+            })();
+            // Start the clipboard operation during the click. Its promised text
+            // can finish loading afterwards without losing user activation.
+            let clipboardWrite;
+            if (navigator.clipboard?.write && typeof ClipboardItem === 'function') {
+                try {
+                    const plainText = preparation.then(({exported}) => new Blob([exported.text], {type:'text/plain'}));
+                    plainText.catch(() => {});
+                    clipboardWrite = navigator.clipboard.write([new ClipboardItem({
+                        'text/plain': plainText
+                    })]).then(() => true, () => false);
+                } catch (_) { clipboardWrite = Promise.resolve(false); }
+            }
+            try {
+                const {exported, revision} = await preparation;
                 fallback.value = exported.text;
                 manual.hidden = false;
-                if (!exported.readyToPublish) {
-                    manual.open = true;
-                    status.textContent = 'Export incomplete: ' + exported.unresolvedAssets.length + ' media assets still need an inline rendering route. No incomplete export was copied.';
-                    return;
+                let copied = clipboardWrite ? await clipboardWrite : false;
+                if (!copied && navigator.clipboard?.writeText) {
+                    try { await navigator.clipboard.writeText(exported.text); copied = true; } catch (_) {}
                 }
-                try {
-                    if (!navigator.clipboard?.writeText) throw new Error('Clipboard unavailable');
-                    await navigator.clipboard.writeText(exported.text);
-                    status.textContent = 'Copied revision ' + revision.revid + ' for RuneScape Wiki.';
-                } catch (_) {
+                if (copied) status.textContent = 'Copied revision ' + revision.revid + '. Paste it into the wiki source editor.';
+                else {
                     manual.open = true; fallback.focus(); fallback.select();
-                    status.textContent = 'Clipboard unavailable. Copy revision ' + revision.revid + ' from the box below.';
+                    status.textContent = 'Your browser blocked the clipboard. Click Copy wikitext below to try again.';
                 }
                 if (exported.visualGaps.length) status.textContent += ' ' + exported.visualGaps.join(' ');
                 if (exported.mediaNotices?.length) status.textContent += ' ' + exported.mediaNotices.join(' ');
             } catch (error) {
-                status.textContent = 'Copy failed. ' + (error instanceof Error ? error.message : 'Could not load the published wikitext.');
+                fallback.value = ''; manual.hidden = true;
+                status.textContent = error?.unresolvedAssets ? error.message : 'Couldn’t load this guide. Try Copy to wiki again.';
             } finally { copy.disabled = false; }
         });
         exportArea.append(status, manual); tools.append(exportArea);
