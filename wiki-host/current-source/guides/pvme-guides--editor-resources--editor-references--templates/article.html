@@ -1,0 +1,109 @@
+<h1 id="templates-tips-for-writing-guides"><ins>Templates &amp; Tips for Writing Guides</ins></h1>
+<p>This channel showcases many of the ways you can be more efficient when writing guides, whether that be through copy-able templates, code snippets or other tips.</p>
+<p>&#x200b;</p>
+<p><strong>It assumes you are using the <a href="https://pvme.github.io/guide-editor/">PvME Guide Editor</a> to write &amp; live preview your guides.</strong></p>
+<p>&#x200b;</p>
+<h2 id="finding-and-using-templates"><ins>Finding and using Templates</ins></h2>
+<p>In the Guide Editor toolbar you will see a "Template" dropdown, containing starting points for our main guide types:</p>
+<p>⬥ Boss Guide</p>
+<p>⬥ AFK Guide</p>
+<p>⬥ Slayer Guide</p>
+<p>⬥ Command Embed</p>
+<p>&#x200b;</p>
+<p>Simply click "copy" and paste these into the editor to get started on your guide, as in the screenshot below:</p>
+<p><img class="media" src="https://img.pvme.io/images/ArqoW60TuE.png">
+&#x200b;</p>
+<h2 id="finding-emojis"><ins>Finding emojis</ins></h2>
+<p>There are two ways to find an emoji:</p>
+<ol>
+<li>
+<p>In the Guide Editor, simply start typing <code>:emojiname</code> ‎and it will bring up a list - select the one you want</p>
+</li>
+<li>
+<p>Search the full repository of emojis at <a href="https://pvme.io/pvme-settings/#emojis">https://pvme.io/pvme-settings/#emojis</a></p>
+</li>
+</ol>
+<p>&#x200b;</p>
+<h2 id="linking-items-to-the-wiki"><ins>Linking items to the Wiki</ins></h2>
+<p>Many of our guides link items and gear to the <a href="https://runescape.wiki/">RS Wiki</a>. Follow these steps:</p>
+<p>⬥ Use the pattern: <code>[Item name](&lt;http://runescape.wiki/w/Item_name&gt;) &lt;:emoji:&gt;</code>&#x200b;</p>
+<p>‎ ‎ ‎ ‎• Wrap the URL in <code>&lt;&gt;</code> ‎to prevent it showing a preview</p>
+<p>‎ ‎ ‎ ‎• Most items only capitalise the first word</p>
+<p>‎ ‎ ‎ ‎• Replace spaces with underscores</p>
+<p>⬥ Test your URL in the guide editor by clicking on it</p>
+<p>&#x200b;</p>
+<p>See the following example:</p>
+<p>&#x200b;<code>[Channeller's ring](&lt;http://runescape.wiki/w/Channeller's_ring&gt;) &lt;:channellersring:839903943404027914&gt;</code>&#x200b;</p>
+<p>→ <a href="http://runescape.wiki/w/Channeller's_ring">Channeller's ring</a> <img title="channellersring" class="d-emoji" alt="channellersring" src="https://cdn.discordapp.com/emojis/839903943404027914.png?v=1"></p>
+<p>&#x200b;</p>
+<h2 id="using-embeds"><ins>Using Embeds</ins></h2>
+<p>Sometimes we use a special Discord "embed" to format messages in a pretty way - these are written in JSON. When inside a JSON, common punctuation like bullets or new lines will not work as normal; use the following to achieve what you are looking for:</p>
+<p>&#x200b;</p>
+<p>⬥ <strong><code>\n</code></strong> → adds a new line</p>
+<p>⬥ <strong><code>\u00a0\u00a0\u00a0\u00a0</code></strong> = adds a new line + 4 spaces</p>
+<p>⬥ <strong><code>\n⬥</code></strong> → adds a new line + a bullet</p>
+<p>⬥ <strong><code>\n\u00a0\u00a0\u00a0\u00a0•</code></strong> → adds a new line + 4 spaces + a sub-bullet</p>
+<p>⬥ <strong><code>\n\u200B</code></strong> → adds a blank line</p>
+<p>&#x200b;</p>
+<p>A example embed can be seen below:</p>
+<p>&#x200b;</p>
+<pre><code>..
+{
+  &quot;embed&quot;: {
+    &quot;title&quot;: &quot;__[embed title]__&quot;,
+    &quot;description&quot;: &quot;[embed description]\n\u200B&quot;,
+    &quot;color&quot;: 39423,
+    &quot;fields&quot;: [
+      {
+        &quot;name&quot;: &quot;__[field 1 name]__&quot;,
+        &quot;value&quot;: &quot;[field 1 contents]&quot;
+      },
+      {
+        &quot;name&quot;: &quot;__[field 2 name]__&quot;,
+        &quot;value&quot;: &quot;⬥ Field 2 contents\n⬥ Field 2 contents&quot;
+      }
+    ]
+  }
+}
+..embed:json
+</code></pre>
+<p>&#x200b;</p>
+<p>When rendered, the above code looks like the following;</p>
+<div class="flex-vertical whitney theme-dark">
+<div class="chat flex-vertical flex-spacer">
+<div class="content flex-spacer flex-horizontal">
+<div class="flex-spacer flex-vertical messages-wrapper">
+<div class="scroller-wrap">
+<div class="scroller messages">
+<div class="message-group hide-overflow">
+<div class="comment">
+<div class="message first">
+<div class="accessory">
+
+<div class="embed-wrapper">
+<div class="embed-color-pill" style="background-color: rgb(0, 153, 255);"></div>
+<div class="embed embed-rich">
+<div class="embed-content">
+<div class="embed-content-inner">
+
+<div class="embed-title" ><u>[embed title]</u>
+</div>
+<div class="embed-description markup" >[embed description]
+​
+</div>
+<div class="embed-fields"><div class="embed-field" ><div class="embed-field-name" ><u>[field 1 name]</u>
+</div><div class="embed-field-value markup" >[field 1 contents]
+</div></div><div class="embed-field" ><div class="embed-field-name" ><u>[field 2 name]</u>
+</div><div class="embed-field-value markup" >⬥ Field 2 contents
+⬥ Field 2 contents
+</div></div></div>
+</div>
+
+</div>
+
+
+</div></div></div></div></div></div></div></div></div></div></div></div>
+
+<p>&#x200b;</p>
+      
+    

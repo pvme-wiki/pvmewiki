@@ -1,0 +1,1305 @@
+__NOTOC__
+<div class="pvme-exact-guide">
+
+<div class="pvme-source-section">
+<h2 id="introduction"><ins><nowiki>Introduction</nowiki></ins></h2>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><em><nowiki>Note: Use the </nowiki><ins><strong><nowiki>Table of Contents</nowiki></strong></ins><nowiki> present at the bottom of the channel, or in the pinned comments, to quickly navigate through this channel and find the information you are looking for.</nowiki></em></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>Some general notes:</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ The game runs on an internal tick system: </nowiki><strong><nowiki>1t (tick) = 0.6s (seconds)</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ The minimum time between abilities is called the global cooldown: </nowiki><strong><nowiki>1 gcd = 3t = 1.8s</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Some useful sheets and resources are given below.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(84, 22, 188)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+
+
+</nowiki><div><div><div><u><nowiki>Ability Damage Maths</nowiki></u><nowiki>
+</nowiki></div><div class="pvme-source-preserve-lines"><nowiki>To calculate your ability hit damage in detail, </nowiki>[https://tools.runescape.wiki/rs-rot/necromancy <nowiki>click here</nowiki>]<nowiki>.
+This is affected by factors such as your gear and other boosts.
+</nowiki></div></div><div><div><u><nowiki>Ability Hit Timings</nowiki></u><nowiki>
+</nowiki></div><div class="pvme-source-preserve-lines"><nowiki>To see detailed breakdowns on ability hit timings, </nowiki>[https://docs.google.com/spreadsheets/d/1rK7u17JN6I-vf3dKBKg6tm9IPWje9EWSe_r8KPdsxoc/edit?usp=sharing <nowiki>click here</nowiki>]<nowiki>.
+This refers to when hitsplats appear on your target.
+</nowiki></div></div><div><div><u><nowiki>Auto-attack Adren Gain</nowiki></u><nowiki>
+</nowiki></div><div class="pvme-source-preserve-lines"><nowiki>To see adrenaline gained with different auto attacks, </nowiki>[https://img.pvme.io/images/7EINzgc.png <nowiki>click here</nowiki>]<nowiki>.
+</nowiki></div></div></div><nowiki>
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line"><em><nowiki>Note: If you have any difficulties in using the tools or understanding what the information means, you can always ask in </nowiki><span><nowiki>#pvm-help</nowiki></span></em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="necromancy"><ins><nowiki>Necromancy </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1" alt="necromancy" title="necromancy" kind="icon" /></ins></h2>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>This section covers the basic abilities, enhanced abilities, ultimate abilities, conjures and commands, special attacks, and incantations for Necromancy.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+<div class="pvme-source-mechanic">
+<h3 id="basic-abilities"><nowiki>Basic Abilities</nowiki></h3>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(84, 22, 188)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Necromancy</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1" alt="necrobasic" title="necrobasic" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137770977506369596.png?v=1" alt="singletarget" title="singletarget" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 3t (1.8s)
+⬥ Affected by </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1009422698633502881.png?v=1" alt="invigorating" title="invigorating" kind="icon" /><nowiki>:
+    • Gain (</nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1009422698633502881.png?v=1" alt="invigorating" title="invigorating" kind="icon" /><nowiki> Rank * 0.05) more adrenaline
+⬥ Automatically activated when in combat (toggleable)
+⬥ Generates 1 Death Spark stack if Omni Guard </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138809234922934282.png?v=1" alt="omniguard" title="omniguard" kind="icon" /><nowiki> is equipped
+    • At 6 Death Spark stacks the </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1" alt="necrobasic" title="necrobasic" kind="icon" /><nowiki> will deal double damage
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(84, 22, 188)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Touch of Death</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1" alt="touchofdeath" title="touchofdeath" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137770977506369596.png?v=1" alt="singletarget" title="singletarget" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 24t (14.4s)
+⬥ Generates 4 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1139452791878856805.png?v=1" alt="necrosis" title="necrosis" kind="icon" /><nowiki> stacks
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(84, 22, 188)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Soul Sap</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1" alt="soulsap" title="soulsap" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137770977506369596.png?v=1" alt="singletarget" title="singletarget" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 9t (5.4s)
+⬥ Generates 1 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1139453152169558046.png?v=1" alt="residualsoul" title="residualsoul" kind="icon" /><nowiki> stack
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="enhanced-abilities"><nowiki>Enhanced Abilities</nowiki></h3>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(84, 22, 188)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Soul Strike</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137809142376058910.png?v=1" alt="soulstrike" title="soulstrike" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137770972703883354.png?v=1" alt="areatarget" title="areatarget" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ No Cooldown
+⬥ Requires minimum 1 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1139453152169558046.png?v=1" alt="residualsoul" title="residualsoul" kind="icon" /><nowiki> stack. One stack is consumed on use.
+⬥ Stuns and Binds for 5t (3s)
+⬥ Deals a reduced amount of damage to enemies within 1 tile of target
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(84, 22, 188)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Volley of Souls</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1" alt="volleyofsouls" title="volleyofsouls" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137770977506369596.png?v=1" alt="singletarget" title="singletarget" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ No Cooldown
+⬥ Requires minimum 2 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1139453152169558046.png?v=1" alt="residualsoul" title="residualsoul" kind="icon" /><nowiki> stacks. All stacks consumed on use.
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(84, 22, 188)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Finger of Death</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1" alt="fingerofdeath" title="fingerofdeath" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137770977506369596.png?v=1" alt="singletarget" title="singletarget" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ No Cooldown
+⬥ Base adrenaline cost of 60%
+⬥ Adrenaline cost reduced by 10% for each </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1139452791878856805.png?v=1" alt="necrosis" title="necrosis" kind="icon" /><nowiki> stack
+⬥ Consumes up to 6 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1139452791878856805.png?v=1" alt="necrosis" title="necrosis" kind="icon" /><nowiki> stacks
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(84, 22, 188)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Bloat</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1" alt="bloat" title="bloat" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137770977506369596.png?v=1" alt="singletarget" title="singletarget" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ No Cooldown
+⬥ Base adrenaline cost of 20%
+⬥ Applies </nowiki><strong><nowiki>Bloated</nowiki></strong><nowiki> debuff to target for 10 hits
+⬥ </nowiki><strong><u><nowiki>Bloated:</nowiki></u></strong><nowiki>
+    • 25% of initial damage per hit every 3t (1.8s)
+    • On Death: Applies Bloated to up to 9 enemies within 1 tile for 4 hits
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(84, 22, 188)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Spectral Scythe</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137809145706319892.png?v=1" alt="spectralscythe" title="spectralscythe" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137770972703883354.png?v=1" alt="areatarget" title="areatarget" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 25t (15s)
+⬥ Base adrenaline cost of 10%
+⬥ AoE damage in a cone (max 9 targets)
+⬥ On-hit: 25% chance to generate 1 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1139453152169558046.png?v=1" alt="residualsoul" title="residualsoul" kind="icon" /><nowiki> stack per target hit
+⬥ Able to be re-cast upon unlock from the Necromancy skill tree:
+    • </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137809149690916945.png?v=1" alt="spectralscythe2" title="spectralscythe2" kind="icon" /><nowiki> 2nd cast costs 20% and does AoE within 2 tiles of you (25 max targets, in addition to your primary target)
+        ⬩ Also has a 25% chance to generate a </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1139453152169558046.png?v=1" alt="residualsoul" title="residualsoul" kind="icon" /><nowiki> stack per target hit
+    • </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137809152043925505.png?v=1" alt="spectralscythe3" title="spectralscythe3" kind="icon" /><nowiki> 3rd cast costs 30% and does AoE within 2 tiles of you (25 max targets, in addition to your primary target)
+        ⬩ Damage is increased by 1% per 1% missing life points on target
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(84, 22, 188)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Blood Siphon</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1159434279311380532.png?v=1" alt="bloodsiphon" title="bloodsiphon" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137770972703883354.png?v=1" alt="areatarget" title="areatarget" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 75t (45s)
+⬥ No adrenaline cost
+⬥ AoE to enemies within 2 tiles of player
+⬥ Channeled attack: 4 hits over 8t (4.8s)
+    • Completing the full channel deals 100% of the total heal plus extra damage to the target
+⬥ Heal for 70% of the damage dealt
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="ultimate-abilities"><nowiki>Ultimate Abilities</nowiki></h3>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(84, 22, 188)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Death Skulls</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1" alt="deathskulls" title="deathskulls" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137770974431944835.png?v=1" alt="multitarget" title="multitarget" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 100t (60s)
+⬥ Launches a Death Skull that bounces up to 4 times after hitting the target
+⬥ Prioritises enemies by maximum life points, but can also bounce off of you
+⬥ The Necromancy Zuk Cape </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1139200072438005851.png?v=1" alt="igneouskalmor" title="igneouskalmor" kind="icon" /><nowiki> reduces the adrenaline cost of this ability to 60% and also adds two additional bounces
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(84, 22, 188)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Living Death</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1" alt="livingdeath" title="livingdeath" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137770968736079957.png?v=1" alt="selftarget" title="selftarget" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 150t (90s)
+⬥ Change forms into Death form, empowering Necromancy abilities for 30s
+⬥ On-cast: the cooldowns of </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1" alt="touchofdeath" title="touchofdeath" kind="icon" /><nowiki> and </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1" alt="deathskulls" title="deathskulls" kind="icon" /><nowiki> are reset
+⬥ While active:
+    • </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1" alt="necrobasic" title="necrobasic" kind="icon" /><nowiki> generates 2 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1139452791878856805.png?v=1" alt="necrosis" title="necrosis" kind="icon" /><nowiki> stacks
+    • </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1" alt="touchofdeath" title="touchofdeath" kind="icon" /><nowiki> generates an addition 6% adrenaline
+    • </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1" alt="fingerofdeath" title="fingerofdeath" kind="icon" /><nowiki> deals 1.5x damage
+    • </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1" alt="deathskulls" title="deathskulls" kind="icon" /><nowiki> cooldown reduced to 10.2s
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="conjures-and-commands"><nowiki>Conjures and Commands</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>Listed conjure durations do not account for the Spirit Pact unlocks in the Necromancy talent tree nor the set effect of the First Necromancer armour</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(84, 22, 188)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Conjure Skeleton Warrior</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1159434516658651147.png?v=1" alt="conjureskeleton" title="conjureskeleton" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137770968736079957.png?v=1" alt="selftarget" title="selftarget" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ No Cooldown
+⬥ 70t (42s) duration
+⬥ Conjure a Skeleton warrior:
+    • Skeleton attacks every 5t (3s)
+    • Generates 1 Rage stack with each attack
+    • Deals an additional 3% ability damage per Rage stack
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(84, 22, 188)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Command Skeleton Warrior</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1" alt="commandwarrior" title="commandwarrior" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137770977506369596.png?v=1" alt="singletarget" title="singletarget" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 25t (15s)
+⬥ Commands a conjured skeleton to rapidly perform additional attacks (every 2t (1.2s)) for 10t (6s)
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(84, 22, 188)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Conjure Vengeful Ghost</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137809206423060632.png?v=1" alt="conjureghost" title="conjureghost" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137770968736079957.png?v=1" alt="selftarget" title="selftarget" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ No Cooldown
+⬥ 70t (42s) duration
+⬥ Conjure a Vengeful Ghost:
+    • Ghost attacks every 7t (4.2s)
+    • Heal for 140% of the damage dealt by the ghost
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(84, 22, 188)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Command Vengeful Ghost</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1159434409913634816.png?v=1" alt="commandghost" title="commandghost" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137770977506369596.png?v=1" alt="singletarget" title="singletarget" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ No Cooldown
+⬥ Applies </nowiki><strong><nowiki>Haunted</nowiki></strong><nowiki> to the target
+    • Haunted: Takes up to 10% bonus damage from all attacks, capped at 20% ability damage
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(84, 22, 188)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Conjure Putrid Zombie</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137809200219684924.png?v=1" alt="conjurezombie" title="conjurezombie" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137770968736079957.png?v=1" alt="selftarget" title="selftarget" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 50t (30s)
+⬥ 70t (42s) duration
+⬥ Conjure a Putrid Zombie:
+    • Zombie attacks every 6t (3.6s)
+    • Zombie inflicts poison damage every 3t (1.8s) to enemies within 1 tile
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(84, 22, 188)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Command Putrid Zombie</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137809191231295549.png?v=1" alt="commandzombie" title="commandzombie" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137770972703883354.png?v=1" alt="areatarget" title="areatarget" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ No Cooldown
+⬥ Command the Zombie to explode, dealing large damage to enemies within 2 tiles
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(84, 22, 188)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Conjure Phantom Guardian</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1280109199069806604.png?v=1" alt="conjurephantom" title="conjurephantom" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137770968736079957.png?v=1" alt="selftarget" title="selftarget" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ No Cooldown
+⬥ 70t (42s) duration
+⬥ Conjure a Phantom Guardian:
+    • Does not auto attack
+    • Reduces </nowiki><strong><nowiki>core</nowiki></strong><nowiki> damage taken by 5%, up to 10% of your ability damage
+        ⬩  Core damage refers to the 4 combat styles
+    • Generates 1 stack of </nowiki><em><nowiki>Valour</nowiki></em><nowiki> per incoming hit, up to 25
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(84, 22, 188)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Command Phantom Guardian</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1280109200432959528.png?v=1" alt="commandphantom" title="commandphantom" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137770968736079957.png?v=1" alt="selftarget" title="selftarget" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 15t (9s)
+⬥ Deals 45%-55% Necromancy Spirit damage to the target and up to 4 additional enemies within 1 tile of the target
+⬥ Consumes all </nowiki><em><nowiki>Valour</nowiki></em><nowiki> and increases damage dealt by 20% for each stack
+    • Caps at 270%-330% damage at 25 stacks
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(84, 22, 188)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Conjure Undead Army</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1166094935066423348.png?v=1" alt="conjurearmy" title="conjurearmy" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137770968736079957.png?v=1" alt="selftarget" title="selftarget" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Casts up to 4 conjure abilities
+⬥ Consumes 2x the ectoplasm for each ability
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="special-attacks"><nowiki>Special Attacks</nowiki></h3>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(84, 22, 188)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Death Grasp</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138809262194294864.png?v=1" alt="deathguard70" title="deathguard70" kind="icon" /><nowiki> / </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138809249061929082.png?v=1" alt="deathguard80" title="deathguard80" kind="icon" /><nowiki> / </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138809243143766118.png?v=1" alt="deathguard90" title="deathguard90" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/537340400273195028.png?v=1" alt="spec" title="spec" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137770972703883354.png?v=1" alt="areatarget" title="areatarget" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 50t (30s)
+⬥ Base adrenaline cost of 25%
+⬥ Stuns and Binds the target for 8t (4.8s)
+⬥ Deals extra damage for each </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1139452791878856805.png?v=1" alt="necrosis" title="necrosis" kind="icon" /><nowiki> stack held, but also consumes all stacks
+    • The spec seems to hitcap easily without many stacks, so consider using </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1" alt="fingerofdeath" title="fingerofdeath" kind="icon" /><nowiki> if at high </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1139452791878856805.png?v=1" alt="necrosis" title="necrosis" kind="icon" /><nowiki> stacks before using the Death Grasp </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/537340400273195028.png?v=1" alt="spec" title="spec" kind="icon" /><nowiki> as to not waste </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1139452791878856805.png?v=1" alt="necrosis" title="necrosis" kind="icon" /><nowiki> stacks
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(84, 22, 188)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Death Essence</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138809234922934282.png?v=1" alt="omniguard" title="omniguard" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/537340400273195028.png?v=1" alt="spec" title="spec" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137770972703883354.png?v=1" alt="areatarget" title="areatarget" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 100t (60s)
+⬥ Base adrenaline cost of 30%
+⬥ 50t (30s) duration
+⬥ On-cast: immediately readies Death Spark
+    • Death Spark causes </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1" alt="necrobasic" title="necrobasic" kind="icon" /><nowiki> to deal double damage
+⬥ For the duration, </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1" alt="touchofdeath" title="touchofdeath" kind="icon" /><nowiki>, </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1" alt="fingerofdeath" title="fingerofdeath" kind="icon" /><nowiki>, and </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1" alt="deathskulls" title="deathskulls" kind="icon" /><nowiki> immediately ready Death Spark
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="incantations"><nowiki>Incantations</nowiki></h3>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(84, 22, 188)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Lesser Bone Shield</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137809125590450276.png?v=1" alt="lesserboneshield" title="lesserboneshield" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137770968736079957.png?v=1" alt="selftarget" title="selftarget" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ No Cooldown
+⬥ Toggleable bone shield with a tier matching 25% </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1" alt="necromancy" title="necromancy" kind="icon" /><nowiki> level
+    • Allows the use of non-offensive abilities that typically require a shield
+⬥ Rune cost:
+    • 5 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138808705362710680.png?v=1" alt="spiritrune" title="spiritrune" kind="icon" /><nowiki>
+    • 5 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138808701029982319.png?v=1" alt="bonerune" title="bonerune" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(84, 22, 188)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Threads of Fate</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1" alt="threadsoffate" title="threadsoffate" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137770968736079957.png?v=1" alt="selftarget" title="selftarget" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 75t (45s)
+⬥ 11t (6.6s) duration
+⬥ </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137770977506369596.png?v=1" alt="singletarget" title="singletarget" kind="icon" /><nowiki> necromancy attacks will also be cast on up to 4 additional enemies within 4 tiles of the target
+⬥ Soul sap </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1" alt="soulsap" title="soulsap" kind="icon" /><nowiki> generates residual souls </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1139453152169558046.png?v=1" alt="residualsoul" title="residualsoul" kind="icon" /><nowiki> equal to number of targets
+⬥ Rune cost:
+    • 5 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138808705362710680.png?v=1" alt="spiritrune" title="spiritrune" kind="icon" /><nowiki>
+    • 2 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138808701029982319.png?v=1" alt="bonerune" title="bonerune" kind="icon" /><nowiki>
+    • 1 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138808695703207967.png?v=1" alt="fleshrune" title="fleshrune" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(84, 22, 188)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Greater Bone Shield</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137809118283976814.png?v=1" alt="greaterboneshield" title="greaterboneshield" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137770968736079957.png?v=1" alt="selftarget" title="selftarget" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ No Cooldown
+⬥ Toggleable bone shield with a tier matching 50% </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1" alt="necromancy" title="necromancy" kind="icon" /><nowiki> level
+    • Allows the use of non-offensive abilities that typically require a shield
+⬥ Rune cost:
+    • 10 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138808705362710680.png?v=1" alt="spiritrune" title="spiritrune" kind="icon" /><nowiki>
+    • 10 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138808701029982319.png?v=1" alt="bonerune" title="bonerune" kind="icon" /><nowiki>
+    • 5 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138808695703207967.png?v=1" alt="fleshrune" title="fleshrune" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(84, 22, 188)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Life Transfer</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137809128136388819.png?v=1" alt="lifetransfer" title="lifetransfer" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137770968736079957.png?v=1" alt="selftarget" title="selftarget" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 75t (45s)
+⬥ Deals self damage equal to 50% max health
+⬥ Extends the duration of all active </nowiki><strong><nowiki>spirits</nowiki></strong><nowiki> by 34t (20.4s)
+⬥ Rune cost:
+    • 10 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138808705362710680.png?v=1" alt="spiritrune" title="spiritrune" kind="icon" /><nowiki>
+    • 5 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138808701029982319.png?v=1" alt="bonerune" title="bonerune" kind="icon" /><nowiki>
+    • 2 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138808695703207967.png?v=1" alt="fleshrune" title="fleshrune" kind="icon" /><nowiki>
+    • 1 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138808692087730206.png?v=1" alt="miasmarune" title="miasmarune" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(84, 22, 188)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Invoke Lord of Bones</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1176968330582700174.png?v=1" alt="invokelordofbones" title="invokelordofbones" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137770968736079957.png?v=1" alt="selftarget" title="selftarget" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ No Cooldown
+⬥ Gain a 60-second buff making your Skeleton Warrior apply a stack of the </nowiki><strong><nowiki>Shattering bones</nowiki></strong><nowiki> debuff per attack
+⬥ </nowiki><strong><nowiki>Shattering bones</nowiki></strong><nowiki>: Reduces armour rating by 0.2% per stack
+    • Up to 200 stacks can be applied (-40% armour rating)
+⬥ Rune cost:
+    • 8 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138808705362710680.png?v=1" alt="spiritrune" title="spiritrune" kind="icon" /><nowiki>
+    • 6 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138808701029982319.png?v=1" alt="bonerune" title="bonerune" kind="icon" /><nowiki>
+    • 2 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138808695703207967.png?v=1" alt="fleshrune" title="fleshrune" kind="icon" /><nowiki>
+    • 1 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138808692087730206.png?v=1" alt="miasmarune" title="miasmarune" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(84, 22, 188)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Invoke Death</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1" alt="invokedeath" title="invokedeath" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137770968736079957.png?v=1" alt="selftarget" title="selftarget" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 6t (3.6s)
+⬥ 10t (6s) duration
+⬥ Your next necromancy attack during the 10t duration applies Death Mark
+    • If your target drops below 20% hp, the next necromancy attack to hit it will execute it. Damage caps at 30,000
+⬥ Rune cost:
+    • 5 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138808705362710680.png?v=1" alt="spiritrune" title="spiritrune" kind="icon" /><nowiki>
+    • 2 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138808701029982319.png?v=1" alt="bonerune" title="bonerune" kind="icon" /><nowiki>
+    • 2 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138808695703207967.png?v=1" alt="fleshrune" title="fleshrune" kind="icon" /><nowiki>
+    • 1 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138808692087730206.png?v=1" alt="miasmarune" title="miasmarune" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(84, 22, 188)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Invoke Arisen Flesh</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1563943555683197019.png?v=1" alt="invokearisenflesh" title="invokearisenflesh" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137770968736079957.png?v=1" alt="selftarget" title="selftarget" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ No cooldown
+⬥ 150t (90s) duration
+⬥ Each Zombie attack deals 6% max LP as damage to you
+    • Zombie attacks deal 75% of this as additional damage
+    • This additional damage is doubled when &lt;50% LP
+⬥ Rune cost:
+    • 10 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138808705362710680.png?v=1" alt="spiritrune" title="spiritrune" kind="icon" /><nowiki>
+    • 2 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138808701029982319.png?v=1" alt="bonerune" title="bonerune" kind="icon" /><nowiki>
+    • 8 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138808695703207967.png?v=1" alt="fleshrune" title="fleshrune" kind="icon" /><nowiki>
+    • 1 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138808692087730206.png?v=1" alt="miasmarune" title="miasmarune" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(84, 22, 188)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Darkness</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137809209782698024.png?v=1" alt="darkness" title="darkness" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137770968736079957.png?v=1" alt="selftarget" title="selftarget" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ No cooldown
+⬥ 1200t (12 min) duration
+⬥ Applies the </nowiki><strong><nowiki>Darkness</nowiki></strong><nowiki> aspect to self
+    • 20% chance to dodge incoming attacks
+⬥ Rune cost:
+    • 40 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138808705362710680.png?v=1" alt="spiritrune" title="spiritrune" kind="icon" /><nowiki>
+    • 20 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138808701029982319.png?v=1" alt="bonerune" title="bonerune" kind="icon" /><nowiki>
+    • 10 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138808695703207967.png?v=1" alt="fleshrune" title="fleshrune" kind="icon" /><nowiki>
+    • 5 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138808692087730206.png?v=1" alt="miasmarune" title="miasmarune" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki><div><span><nowiki>Aspect of Evasion: You may only have one aspect active at once
+</nowiki></span></div><nowiki>
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(84, 22, 188)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Split Soul</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137809168368148490.png?v=1" alt="splitsoul" title="splitsoul" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137770968736079957.png?v=1" alt="selftarget" title="selftarget" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 100t (60s)
+⬥ 34t (20.4s) duration
+⬥ 400% of the healing from soul split will instead be dealt as damage
+⬥ Rune cost:
+    • 10 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138808705362710680.png?v=1" alt="spiritrune" title="spiritrune" kind="icon" /><nowiki>
+    • 5 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138808701029982319.png?v=1" alt="bonerune" title="bonerune" kind="icon" /><nowiki>
+    • 2 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138808695703207967.png?v=1" alt="fleshrune" title="fleshrune" kind="icon" /><nowiki>
+    • 1 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138808692087730206.png?v=1" alt="miasmarune" title="miasmarune" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(84, 22, 188)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><pvme-image src="https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1" alt="necromancy" title="necromancy" kind="icon" /><nowiki> </nowiki><u><nowiki>Necromancy Ability Index</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1" alt="necromancy" title="necromancy" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Click the links to quickly navigate to that ability's information.
+⬥ General notes can be found in the introduction </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/necromancy-abilities/$linkmsg_intro$ <nowiki>here</nowiki>]<nowiki>.
+</nowiki></div><nowiki>
+</nowiki><div><div><div><u><nowiki>Basic</nowiki></u><nowiki>
+</nowiki></div><div class="pvme-source-preserve-lines"><nowiki>⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/necromancy-abilities/$linkmsg_necroauto$ <nowiki>Necromancy (Auto)</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/necromancy-abilities/$linkmsg_touchofdeath$ <nowiki>Touch of Death</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/necromancy-abilities/$linkmsg_soulsap$ <nowiki>Soul Sap</nowiki>]<nowiki>
+</nowiki></div></div><div><div><u><nowiki>Enhanced</nowiki></u><nowiki>
+</nowiki></div><div class="pvme-source-preserve-lines"><nowiki>⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/necromancy-abilities/$linkmsg_soulstrike$ <nowiki>Soul Strike</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/necromancy-abilities/$linkmsg_volleyofsouls$ <nowiki>Volley of Souls</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/necromancy-abilities/$linkmsg_fingerofdeath$ <nowiki>Finger of Death</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/necromancy-abilities/$linkmsg_bloat$ <nowiki>Bloat</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/necromancy-abilities/$linkmsg_spectralscythe$ <nowiki>Spectral Scythe</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/necromancy-abilities/$linkmsg_bloodsiphon$ <nowiki>Blood Siphon</nowiki>]<nowiki>
+</nowiki></div></div><div><div><u><nowiki>Ultimate</nowiki></u><nowiki>
+</nowiki></div><div class="pvme-source-preserve-lines"><nowiki>⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/necromancy-abilities/$linkmsg_livingdeath$ <nowiki>Living Death</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/necromancy-abilities/$linkmsg_deathskulls$ <nowiki>Death Skulls</nowiki>]<nowiki>
+</nowiki></div></div><div><div><u><nowiki>Conjures/Commands</nowiki></u><nowiki>
+</nowiki></div><div class="pvme-source-preserve-lines"><nowiki>⬥ Skeleton Warrior
+    • </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/necromancy-abilities/$linkmsg_conjureskeleton$ <nowiki>Conjure</nowiki>]<nowiki>
+    • </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/necromancy-abilities/$linkmsg_commandskeleton$ <nowiki>Command</nowiki>]<nowiki>
+⬥ Vengeful Ghost
+    • </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/necromancy-abilities/$linkmsg_conjureghost$ <nowiki>Conjure</nowiki>]<nowiki>
+    • </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/necromancy-abilities/$linkmsg_commandghost$ <nowiki>Command</nowiki>]<nowiki>
+⬥ Putrid Zombie
+    • </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/necromancy-abilities/$linkmsg_conjurezombie$ <nowiki>Conjure</nowiki>]<nowiki>
+    • </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/necromancy-abilities/$linkmsg_commandzombie$ <nowiki>Command</nowiki>]<nowiki>
+⬥ Phantom Guardian
+    • </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/necromancy-abilities/$linkmsg_conjurephantom$ <nowiki>Conjure</nowiki>]<nowiki>
+    • </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/necromancy-abilities/$linkmsg_commandphantom$ <nowiki>Command</nowiki>]<nowiki>
+</nowiki></div></div><div><div><u><nowiki>Special Attacks</nowiki></u><nowiki>
+</nowiki></div><div class="pvme-source-preserve-lines"><nowiki>⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/necromancy-abilities/$linkmsg_deathgrasp$ <nowiki>Death Grasp</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/necromancy-abilities/$linkmsg_deathessence$ <nowiki>Death Essence</nowiki>]<nowiki>
+</nowiki></div></div><div><div><u><nowiki>Incantations</nowiki></u><nowiki>
+</nowiki></div><div class="pvme-source-preserve-lines"><nowiki>⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/necromancy-abilities/$linkmsg_lesserboneshield$ <nowiki>Lesser Bone Shield</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/necromancy-abilities/$linkmsg_threadsoffate$ <nowiki>Threads of Fate</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/necromancy-abilities/$linkmsg_greaterboneshield$ <nowiki>Greater Bone Shield</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/necromancy-abilities/$linkmsg_lifetransfer$ <nowiki>Life Transfer</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/necromancy-abilities/$linkmsg_invokebones$ <nowiki>Invoke Lord of Bones</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/necromancy-abilities/$linkmsg_invokedeath$ <nowiki>Invoke Death</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/necromancy-abilities/$linkmsg_invokearisenflesh$ <nowiki>Invoke Arisen Flesh</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/necromancy-abilities/$linkmsg_darkness$ <nowiki>Darkness</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/necromancy-abilities/$linkmsg_splitsoul$ <nowiki>Split Soul</nowiki>]<nowiki>
+</nowiki></div></div></div><nowiki>
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+      
+    </nowiki>
+
+</div>
+</div>
+</div>
+
+<div class="pvme-source-attribution">[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/necromancy-abilities/ PvME source] · PvME contributors · [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]. AI-assisted formatting; source wording retained.
+</div>

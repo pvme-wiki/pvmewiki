@@ -1,0 +1,3320 @@
+[
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "introduction"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 166546,
+      "end": 166596
+    },
+    "children": [
+      {
+        "nodeName": "ins",
+        "tag": "ins",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 166568,
+          "end": 166591
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Introduction",
+            "location": {
+              "start": 166573,
+              "end": 166585
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 166596,
+      "end": 166597
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 166597,
+      "end": 166696
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "This channel will cover creating tile-based maps for our guides, such as the below examples:",
+        "location": {
+          "start": 166600,
+          "end": 166692
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 166696,
+      "end": 166697
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 166697,
+      "end": 166780
+    },
+    "children": [
+      {
+        "nodeName": "img",
+        "tag": "img",
+        "attrs": {
+          "class": "media",
+          "src": "https://img.pvme.io/images/8tY6vB0VH7.png"
+        },
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 166700,
+          "end": 166767
+        },
+        "children": []
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n​",
+        "location": {
+          "start": 166767,
+          "end": 166776
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 166780,
+      "end": 166781
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "method-1-creating-using-web-app"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 166781,
+      "end": 166870
+    },
+    "children": [
+      {
+        "nodeName": "ins",
+        "tag": "ins",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 166822,
+          "end": 166865
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Method 1: Creating using web app",
+            "location": {
+              "start": 166827,
+              "end": 166859
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 166870,
+      "end": 166871
+    }
+  },
+  {
+    "nodeName": "div",
+    "tag": "div",
+    "attrs": {
+      "class": "flex-vertical whitney theme-dark"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 166871,
+      "end": 168009
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 166917,
+          "end": 166918
+        }
+      },
+      {
+        "nodeName": "div",
+        "tag": "div",
+        "attrs": {
+          "class": "chat flex-vertical flex-spacer"
+        },
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 166918,
+          "end": 168003
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "\n",
+            "location": {
+              "start": 166962,
+              "end": 166963
+            }
+          },
+          {
+            "nodeName": "div",
+            "tag": "div",
+            "attrs": {
+              "class": "content flex-spacer flex-horizontal"
+            },
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "location": {
+              "start": 166963,
+              "end": 167997
+            },
+            "children": [
+              {
+                "nodeName": "#text",
+                "text": "\n",
+                "location": {
+                  "start": 167012,
+                  "end": 167013
+                }
+              },
+              {
+                "nodeName": "div",
+                "tag": "div",
+                "attrs": {
+                  "class": "flex-spacer flex-vertical messages-wrapper"
+                },
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "location": {
+                  "start": 167013,
+                  "end": 167991
+                },
+                "children": [
+                  {
+                    "nodeName": "#text",
+                    "text": "\n",
+                    "location": {
+                      "start": 167069,
+                      "end": 167070
+                    }
+                  },
+                  {
+                    "nodeName": "div",
+                    "tag": "div",
+                    "attrs": {
+                      "class": "scroller-wrap"
+                    },
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "location": {
+                      "start": 167070,
+                      "end": 167985
+                    },
+                    "children": [
+                      {
+                        "nodeName": "#text",
+                        "text": "\n",
+                        "location": {
+                          "start": 167097,
+                          "end": 167098
+                        }
+                      },
+                      {
+                        "nodeName": "div",
+                        "tag": "div",
+                        "attrs": {
+                          "class": "scroller messages"
+                        },
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "location": {
+                          "start": 167098,
+                          "end": 167979
+                        },
+                        "children": [
+                          {
+                            "nodeName": "#text",
+                            "text": "\n",
+                            "location": {
+                              "start": 167129,
+                              "end": 167130
+                            }
+                          },
+                          {
+                            "nodeName": "div",
+                            "tag": "div",
+                            "attrs": {
+                              "class": "message-group hide-overflow"
+                            },
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "location": {
+                              "start": 167130,
+                              "end": 167973
+                            },
+                            "children": [
+                              {
+                                "nodeName": "#text",
+                                "text": "\n",
+                                "location": {
+                                  "start": 167171,
+                                  "end": 167172
+                                }
+                              },
+                              {
+                                "nodeName": "div",
+                                "tag": "div",
+                                "attrs": {
+                                  "class": "comment"
+                                },
+                                "namespace": "http://www.w3.org/1999/xhtml",
+                                "location": {
+                                  "start": 167172,
+                                  "end": 167967
+                                },
+                                "children": [
+                                  {
+                                    "nodeName": "#text",
+                                    "text": "\n",
+                                    "location": {
+                                      "start": 167193,
+                                      "end": 167194
+                                    }
+                                  },
+                                  {
+                                    "nodeName": "div",
+                                    "tag": "div",
+                                    "attrs": {
+                                      "class": "message first"
+                                    },
+                                    "namespace": "http://www.w3.org/1999/xhtml",
+                                    "location": {
+                                      "start": 167194,
+                                      "end": 167961
+                                    },
+                                    "children": [
+                                      {
+                                        "nodeName": "#text",
+                                        "text": "\n",
+                                        "location": {
+                                          "start": 167221,
+                                          "end": 167222
+                                        }
+                                      },
+                                      {
+                                        "nodeName": "div",
+                                        "tag": "div",
+                                        "attrs": {
+                                          "class": "accessory"
+                                        },
+                                        "namespace": "http://www.w3.org/1999/xhtml",
+                                        "location": {
+                                          "start": 167222,
+                                          "end": 167955
+                                        },
+                                        "children": [
+                                          {
+                                            "nodeName": "#text",
+                                            "text": "\n\n",
+                                            "location": {
+                                              "start": 167245,
+                                              "end": 167247
+                                            }
+                                          },
+                                          {
+                                            "nodeName": "div",
+                                            "tag": "div",
+                                            "attrs": {
+                                              "class": "embed-wrapper"
+                                            },
+                                            "namespace": "http://www.w3.org/1999/xhtml",
+                                            "location": {
+                                              "start": 167247,
+                                              "end": 167949
+                                            },
+                                            "children": [
+                                              {
+                                                "nodeName": "#text",
+                                                "text": "\n",
+                                                "location": {
+                                                  "start": 167274,
+                                                  "end": 167275
+                                                }
+                                              },
+                                              {
+                                                "nodeName": "div",
+                                                "tag": "div",
+                                                "attrs": {
+                                                  "class": "embed-color-pill",
+                                                  "style": "background-color: rgb(0, 153, 255);"
+                                                },
+                                                "namespace": "http://www.w3.org/1999/xhtml",
+                                                "location": {
+                                                  "start": 167275,
+                                                  "end": 167355
+                                                },
+                                                "children": []
+                                              },
+                                              {
+                                                "nodeName": "#text",
+                                                "text": "\n",
+                                                "location": {
+                                                  "start": 167355,
+                                                  "end": 167356
+                                                }
+                                              },
+                                              {
+                                                "nodeName": "div",
+                                                "tag": "div",
+                                                "attrs": {
+                                                  "class": "embed embed-rich"
+                                                },
+                                                "namespace": "http://www.w3.org/1999/xhtml",
+                                                "location": {
+                                                  "start": 167356,
+                                                  "end": 167943
+                                                },
+                                                "children": [
+                                                  {
+                                                    "nodeName": "#text",
+                                                    "text": "\n",
+                                                    "location": {
+                                                      "start": 167386,
+                                                      "end": 167387
+                                                    }
+                                                  },
+                                                  {
+                                                    "nodeName": "div",
+                                                    "tag": "div",
+                                                    "attrs": {
+                                                      "class": "embed-content"
+                                                    },
+                                                    "namespace": "http://www.w3.org/1999/xhtml",
+                                                    "location": {
+                                                      "start": 167387,
+                                                      "end": 167934
+                                                    },
+                                                    "children": [
+                                                      {
+                                                        "nodeName": "#text",
+                                                        "text": "\n",
+                                                        "location": {
+                                                          "start": 167414,
+                                                          "end": 167415
+                                                        }
+                                                      },
+                                                      {
+                                                        "nodeName": "div",
+                                                        "tag": "div",
+                                                        "attrs": {
+                                                          "class": "embed-content-inner"
+                                                        },
+                                                        "namespace": "http://www.w3.org/1999/xhtml",
+                                                        "location": {
+                                                          "start": 167415,
+                                                          "end": 167926
+                                                        },
+                                                        "children": [
+                                                          {
+                                                            "nodeName": "#text",
+                                                            "text": "\n\n\n\n",
+                                                            "location": {
+                                                              "start": 167448,
+                                                              "end": 167452
+                                                            }
+                                                          },
+                                                          {
+                                                            "nodeName": "div",
+                                                            "tag": "div",
+                                                            "attrs": {
+                                                              "class": "embed-fields"
+                                                            },
+                                                            "namespace": "http://www.w3.org/1999/xhtml",
+                                                            "location": {
+                                                              "start": 167452,
+                                                              "end": 167919
+                                                            },
+                                                            "children": [
+                                                              {
+                                                                "nodeName": "div",
+                                                                "tag": "div",
+                                                                "attrs": {
+                                                                  "class": "embed-field"
+                                                                },
+                                                                "namespace": "http://www.w3.org/1999/xhtml",
+                                                                "location": {
+                                                                  "start": 167478,
+                                                                  "end": 167692
+                                                                },
+                                                                "children": [
+                                                                  {
+                                                                    "nodeName": "div",
+                                                                    "tag": "div",
+                                                                    "attrs": {
+                                                                      "class": "embed-field-name"
+                                                                    },
+                                                                    "namespace": "http://www.w3.org/1999/xhtml",
+                                                                    "location": {
+                                                                      "start": 167504,
+                                                                      "end": 167565
+                                                                    },
+                                                                    "children": [
+                                                                      {
+                                                                        "nodeName": "u",
+                                                                        "tag": "u",
+                                                                        "attrs": {},
+                                                                        "namespace": "http://www.w3.org/1999/xhtml",
+                                                                        "location": {
+                                                                          "start": 167535,
+                                                                          "end": 167558
+                                                                        },
+                                                                        "children": [
+                                                                          {
+                                                                            "nodeName": "#text",
+                                                                            "text": "Link to the tool",
+                                                                            "location": {
+                                                                              "start": 167538,
+                                                                              "end": 167554
+                                                                            }
+                                                                          }
+                                                                        ]
+                                                                      },
+                                                                      {
+                                                                        "nodeName": "#text",
+                                                                        "text": "\n",
+                                                                        "location": {
+                                                                          "start": 167558,
+                                                                          "end": 167559
+                                                                        }
+                                                                      }
+                                                                    ]
+                                                                  },
+                                                                  {
+                                                                    "nodeName": "div",
+                                                                    "tag": "div",
+                                                                    "attrs": {
+                                                                      "class": "embed-field-value markup"
+                                                                    },
+                                                                    "namespace": "http://www.w3.org/1999/xhtml",
+                                                                    "location": {
+                                                                      "start": 167565,
+                                                                      "end": 167686
+                                                                    },
+                                                                    "children": [
+                                                                      {
+                                                                        "nodeName": "#text",
+                                                                        "text": "⬥ ",
+                                                                        "location": {
+                                                                          "start": 167604,
+                                                                          "end": 167606
+                                                                        }
+                                                                      },
+                                                                      {
+                                                                        "nodeName": "a",
+                                                                        "tag": "a",
+                                                                        "attrs": {
+                                                                          "href": "https://pvme.io/tilemap-maker"
+                                                                        },
+                                                                        "namespace": "http://www.w3.org/1999/xhtml",
+                                                                        "location": {
+                                                                          "start": 167606,
+                                                                          "end": 167679
+                                                                        },
+                                                                        "children": [
+                                                                          {
+                                                                            "nodeName": "#text",
+                                                                            "text": "https://pvme.io/tilemap-maker",
+                                                                            "location": {
+                                                                              "start": 167646,
+                                                                              "end": 167675
+                                                                            }
+                                                                          }
+                                                                        ]
+                                                                      },
+                                                                      {
+                                                                        "nodeName": "#text",
+                                                                        "text": "\n",
+                                                                        "location": {
+                                                                          "start": 167679,
+                                                                          "end": 167680
+                                                                        }
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                ]
+                                                              },
+                                                              {
+                                                                "nodeName": "div",
+                                                                "tag": "div",
+                                                                "attrs": {
+                                                                  "class": "embed-field"
+                                                                },
+                                                                "namespace": "http://www.w3.org/1999/xhtml",
+                                                                "location": {
+                                                                  "start": 167692,
+                                                                  "end": 167913
+                                                                },
+                                                                "children": [
+                                                                  {
+                                                                    "nodeName": "div",
+                                                                    "tag": "div",
+                                                                    "attrs": {
+                                                                      "class": "embed-field-name"
+                                                                    },
+                                                                    "namespace": "http://www.w3.org/1999/xhtml",
+                                                                    "location": {
+                                                                      "start": 167718,
+                                                                      "end": 167780
+                                                                    },
+                                                                    "children": [
+                                                                      {
+                                                                        "nodeName": "u",
+                                                                        "tag": "u",
+                                                                        "attrs": {},
+                                                                        "namespace": "http://www.w3.org/1999/xhtml",
+                                                                        "location": {
+                                                                          "start": 167749,
+                                                                          "end": 167773
+                                                                        },
+                                                                        "children": [
+                                                                          {
+                                                                            "nodeName": "#text",
+                                                                            "text": "Finding problems?",
+                                                                            "location": {
+                                                                              "start": 167752,
+                                                                              "end": 167769
+                                                                            }
+                                                                          }
+                                                                        ]
+                                                                      },
+                                                                      {
+                                                                        "nodeName": "#text",
+                                                                        "text": "\n",
+                                                                        "location": {
+                                                                          "start": 167773,
+                                                                          "end": 167774
+                                                                        }
+                                                                      }
+                                                                    ]
+                                                                  },
+                                                                  {
+                                                                    "nodeName": "div",
+                                                                    "tag": "div",
+                                                                    "attrs": {
+                                                                      "class": "embed-field-value markup"
+                                                                    },
+                                                                    "namespace": "http://www.w3.org/1999/xhtml",
+                                                                    "location": {
+                                                                      "start": 167780,
+                                                                      "end": 167907
+                                                                    },
+                                                                    "children": [
+                                                                      {
+                                                                        "nodeName": "#text",
+                                                                        "text": "⬥ If you have any issues, contact Nick (@neonx222)\n⬥ Do not sit struggling alone!\n",
+                                                                        "location": {
+                                                                          "start": 167819,
+                                                                          "end": 167901
+                                                                        }
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          },
+                                                          {
+                                                            "nodeName": "#text",
+                                                            "text": "\n",
+                                                            "location": {
+                                                              "start": 167919,
+                                                              "end": 167920
+                                                            }
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "nodeName": "#text",
+                                                        "text": "\n\n",
+                                                        "location": {
+                                                          "start": 167926,
+                                                          "end": 167928
+                                                        }
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "nodeName": "#text",
+                                                    "text": "\n\n\n",
+                                                    "location": {
+                                                      "start": 167934,
+                                                      "end": 167937
+                                                    }
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n\n",
+    "location": {
+      "start": 168009,
+      "end": 168011
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 168011,
+      "end": 168026
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "​",
+        "location": {
+          "start": 168014,
+          "end": 168022
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 168026,
+      "end": 168027
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "method-2-creating-via-coding"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 168027,
+      "end": 168110
+    },
+    "children": [
+      {
+        "nodeName": "ins",
+        "tag": "ins",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 168065,
+          "end": 168105
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Method 2: Creating via coding",
+            "location": {
+              "start": 168070,
+              "end": 168099
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 168110,
+      "end": 168111
+    }
+  },
+  {
+    "nodeName": "div",
+    "tag": "div",
+    "attrs": {
+      "class": "flex-vertical whitney theme-dark"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 168111,
+      "end": 169348
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 168157,
+          "end": 168158
+        }
+      },
+      {
+        "nodeName": "div",
+        "tag": "div",
+        "attrs": {
+          "class": "chat flex-vertical flex-spacer"
+        },
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 168158,
+          "end": 169342
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "\n",
+            "location": {
+              "start": 168202,
+              "end": 168203
+            }
+          },
+          {
+            "nodeName": "div",
+            "tag": "div",
+            "attrs": {
+              "class": "content flex-spacer flex-horizontal"
+            },
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "location": {
+              "start": 168203,
+              "end": 169336
+            },
+            "children": [
+              {
+                "nodeName": "#text",
+                "text": "\n",
+                "location": {
+                  "start": 168252,
+                  "end": 168253
+                }
+              },
+              {
+                "nodeName": "div",
+                "tag": "div",
+                "attrs": {
+                  "class": "flex-spacer flex-vertical messages-wrapper"
+                },
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "location": {
+                  "start": 168253,
+                  "end": 169330
+                },
+                "children": [
+                  {
+                    "nodeName": "#text",
+                    "text": "\n",
+                    "location": {
+                      "start": 168309,
+                      "end": 168310
+                    }
+                  },
+                  {
+                    "nodeName": "div",
+                    "tag": "div",
+                    "attrs": {
+                      "class": "scroller-wrap"
+                    },
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "location": {
+                      "start": 168310,
+                      "end": 169324
+                    },
+                    "children": [
+                      {
+                        "nodeName": "#text",
+                        "text": "\n",
+                        "location": {
+                          "start": 168337,
+                          "end": 168338
+                        }
+                      },
+                      {
+                        "nodeName": "div",
+                        "tag": "div",
+                        "attrs": {
+                          "class": "scroller messages"
+                        },
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "location": {
+                          "start": 168338,
+                          "end": 169318
+                        },
+                        "children": [
+                          {
+                            "nodeName": "#text",
+                            "text": "\n",
+                            "location": {
+                              "start": 168369,
+                              "end": 168370
+                            }
+                          },
+                          {
+                            "nodeName": "div",
+                            "tag": "div",
+                            "attrs": {
+                              "class": "message-group hide-overflow"
+                            },
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "location": {
+                              "start": 168370,
+                              "end": 169312
+                            },
+                            "children": [
+                              {
+                                "nodeName": "#text",
+                                "text": "\n",
+                                "location": {
+                                  "start": 168411,
+                                  "end": 168412
+                                }
+                              },
+                              {
+                                "nodeName": "div",
+                                "tag": "div",
+                                "attrs": {
+                                  "class": "comment"
+                                },
+                                "namespace": "http://www.w3.org/1999/xhtml",
+                                "location": {
+                                  "start": 168412,
+                                  "end": 169306
+                                },
+                                "children": [
+                                  {
+                                    "nodeName": "#text",
+                                    "text": "\n",
+                                    "location": {
+                                      "start": 168433,
+                                      "end": 168434
+                                    }
+                                  },
+                                  {
+                                    "nodeName": "div",
+                                    "tag": "div",
+                                    "attrs": {
+                                      "class": "message first"
+                                    },
+                                    "namespace": "http://www.w3.org/1999/xhtml",
+                                    "location": {
+                                      "start": 168434,
+                                      "end": 169300
+                                    },
+                                    "children": [
+                                      {
+                                        "nodeName": "#text",
+                                        "text": "\n",
+                                        "location": {
+                                          "start": 168461,
+                                          "end": 168462
+                                        }
+                                      },
+                                      {
+                                        "nodeName": "div",
+                                        "tag": "div",
+                                        "attrs": {
+                                          "class": "accessory"
+                                        },
+                                        "namespace": "http://www.w3.org/1999/xhtml",
+                                        "location": {
+                                          "start": 168462,
+                                          "end": 169294
+                                        },
+                                        "children": [
+                                          {
+                                            "nodeName": "#text",
+                                            "text": "\n\n",
+                                            "location": {
+                                              "start": 168485,
+                                              "end": 168487
+                                            }
+                                          },
+                                          {
+                                            "nodeName": "div",
+                                            "tag": "div",
+                                            "attrs": {
+                                              "class": "embed-wrapper"
+                                            },
+                                            "namespace": "http://www.w3.org/1999/xhtml",
+                                            "location": {
+                                              "start": 168487,
+                                              "end": 169288
+                                            },
+                                            "children": [
+                                              {
+                                                "nodeName": "#text",
+                                                "text": "\n",
+                                                "location": {
+                                                  "start": 168514,
+                                                  "end": 168515
+                                                }
+                                              },
+                                              {
+                                                "nodeName": "div",
+                                                "tag": "div",
+                                                "attrs": {
+                                                  "class": "embed-color-pill",
+                                                  "style": "background-color: rgb(0, 153, 255);"
+                                                },
+                                                "namespace": "http://www.w3.org/1999/xhtml",
+                                                "location": {
+                                                  "start": 168515,
+                                                  "end": 168595
+                                                },
+                                                "children": []
+                                              },
+                                              {
+                                                "nodeName": "#text",
+                                                "text": "\n",
+                                                "location": {
+                                                  "start": 168595,
+                                                  "end": 168596
+                                                }
+                                              },
+                                              {
+                                                "nodeName": "div",
+                                                "tag": "div",
+                                                "attrs": {
+                                                  "class": "embed embed-rich"
+                                                },
+                                                "namespace": "http://www.w3.org/1999/xhtml",
+                                                "location": {
+                                                  "start": 168596,
+                                                  "end": 169282
+                                                },
+                                                "children": [
+                                                  {
+                                                    "nodeName": "#text",
+                                                    "text": "\n",
+                                                    "location": {
+                                                      "start": 168626,
+                                                      "end": 168627
+                                                    }
+                                                  },
+                                                  {
+                                                    "nodeName": "div",
+                                                    "tag": "div",
+                                                    "attrs": {
+                                                      "class": "embed-content"
+                                                    },
+                                                    "namespace": "http://www.w3.org/1999/xhtml",
+                                                    "location": {
+                                                      "start": 168627,
+                                                      "end": 169273
+                                                    },
+                                                    "children": [
+                                                      {
+                                                        "nodeName": "#text",
+                                                        "text": "\n",
+                                                        "location": {
+                                                          "start": 168654,
+                                                          "end": 168655
+                                                        }
+                                                      },
+                                                      {
+                                                        "nodeName": "div",
+                                                        "tag": "div",
+                                                        "attrs": {
+                                                          "class": "embed-content-inner"
+                                                        },
+                                                        "namespace": "http://www.w3.org/1999/xhtml",
+                                                        "location": {
+                                                          "start": 168655,
+                                                          "end": 169265
+                                                        },
+                                                        "children": [
+                                                          {
+                                                            "nodeName": "#text",
+                                                            "text": "\n\n\n\n",
+                                                            "location": {
+                                                              "start": 168688,
+                                                              "end": 168692
+                                                            }
+                                                          },
+                                                          {
+                                                            "nodeName": "div",
+                                                            "tag": "div",
+                                                            "attrs": {
+                                                              "class": "embed-fields"
+                                                            },
+                                                            "namespace": "http://www.w3.org/1999/xhtml",
+                                                            "location": {
+                                                              "start": 168692,
+                                                              "end": 169258
+                                                            },
+                                                            "children": [
+                                                              {
+                                                                "nodeName": "div",
+                                                                "tag": "div",
+                                                                "attrs": {
+                                                                  "class": "embed-field"
+                                                                },
+                                                                "namespace": "http://www.w3.org/1999/xhtml",
+                                                                "location": {
+                                                                  "start": 168718,
+                                                                  "end": 169030
+                                                                },
+                                                                "children": [
+                                                                  {
+                                                                    "nodeName": "div",
+                                                                    "tag": "div",
+                                                                    "attrs": {
+                                                                      "class": "embed-field-name"
+                                                                    },
+                                                                    "namespace": "http://www.w3.org/1999/xhtml",
+                                                                    "location": {
+                                                                      "start": 168744,
+                                                                      "end": 168805
+                                                                    },
+                                                                    "children": [
+                                                                      {
+                                                                        "nodeName": "u",
+                                                                        "tag": "u",
+                                                                        "attrs": {},
+                                                                        "namespace": "http://www.w3.org/1999/xhtml",
+                                                                        "location": {
+                                                                          "start": 168775,
+                                                                          "end": 168798
+                                                                        },
+                                                                        "children": [
+                                                                          {
+                                                                            "nodeName": "#text",
+                                                                            "text": "Link to the tool",
+                                                                            "location": {
+                                                                              "start": 168778,
+                                                                              "end": 168794
+                                                                            }
+                                                                          }
+                                                                        ]
+                                                                      },
+                                                                      {
+                                                                        "nodeName": "#text",
+                                                                        "text": "\n",
+                                                                        "location": {
+                                                                          "start": 168798,
+                                                                          "end": 168799
+                                                                        }
+                                                                      }
+                                                                    ]
+                                                                  },
+                                                                  {
+                                                                    "nodeName": "div",
+                                                                    "tag": "div",
+                                                                    "attrs": {
+                                                                      "class": "embed-field-value markup"
+                                                                    },
+                                                                    "namespace": "http://www.w3.org/1999/xhtml",
+                                                                    "location": {
+                                                                      "start": 168805,
+                                                                      "end": 169024
+                                                                    },
+                                                                    "children": [
+                                                                      {
+                                                                        "nodeName": "#text",
+                                                                        "text": "⬥ ",
+                                                                        "location": {
+                                                                          "start": 168844,
+                                                                          "end": 168846
+                                                                        }
+                                                                      },
+                                                                      {
+                                                                        "nodeName": "a",
+                                                                        "tag": "a",
+                                                                        "attrs": {
+                                                                          "title": "",
+                                                                          "href": "https://colab.research.google.com/drive/1OfiHQwIhKCfCJxgHCjXNiteoMJqVX6Yr?usp=sharing",
+                                                                          "target": "_blank",
+                                                                          "rel": "noreferrer"
+                                                                        },
+                                                                        "namespace": "http://www.w3.org/1999/xhtml",
+                                                                        "location": {
+                                                                          "start": 168846,
+                                                                          "end": 169017
+                                                                        },
+                                                                        "children": [
+                                                                          {
+                                                                            "nodeName": "#text",
+                                                                            "text": "Map Generator on Google Colab",
+                                                                            "location": {
+                                                                              "start": 168984,
+                                                                              "end": 169013
+                                                                            }
+                                                                          }
+                                                                        ]
+                                                                      },
+                                                                      {
+                                                                        "nodeName": "#text",
+                                                                        "text": "\n",
+                                                                        "location": {
+                                                                          "start": 169017,
+                                                                          "end": 169018
+                                                                        }
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                ]
+                                                              },
+                                                              {
+                                                                "nodeName": "div",
+                                                                "tag": "div",
+                                                                "attrs": {
+                                                                  "class": "embed-field"
+                                                                },
+                                                                "namespace": "http://www.w3.org/1999/xhtml",
+                                                                "location": {
+                                                                  "start": 169030,
+                                                                  "end": 169252
+                                                                },
+                                                                "children": [
+                                                                  {
+                                                                    "nodeName": "div",
+                                                                    "tag": "div",
+                                                                    "attrs": {
+                                                                      "class": "embed-field-name"
+                                                                    },
+                                                                    "namespace": "http://www.w3.org/1999/xhtml",
+                                                                    "location": {
+                                                                      "start": 169056,
+                                                                      "end": 169118
+                                                                    },
+                                                                    "children": [
+                                                                      {
+                                                                        "nodeName": "u",
+                                                                        "tag": "u",
+                                                                        "attrs": {},
+                                                                        "namespace": "http://www.w3.org/1999/xhtml",
+                                                                        "location": {
+                                                                          "start": 169087,
+                                                                          "end": 169111
+                                                                        },
+                                                                        "children": [
+                                                                          {
+                                                                            "nodeName": "#text",
+                                                                            "text": "Finding problems?",
+                                                                            "location": {
+                                                                              "start": 169090,
+                                                                              "end": 169107
+                                                                            }
+                                                                          }
+                                                                        ]
+                                                                      },
+                                                                      {
+                                                                        "nodeName": "#text",
+                                                                        "text": "\n",
+                                                                        "location": {
+                                                                          "start": 169111,
+                                                                          "end": 169112
+                                                                        }
+                                                                      }
+                                                                    ]
+                                                                  },
+                                                                  {
+                                                                    "nodeName": "div",
+                                                                    "tag": "div",
+                                                                    "attrs": {
+                                                                      "class": "embed-field-value markup"
+                                                                    },
+                                                                    "namespace": "http://www.w3.org/1999/xhtml",
+                                                                    "location": {
+                                                                      "start": 169118,
+                                                                      "end": 169246
+                                                                    },
+                                                                    "children": [
+                                                                      {
+                                                                        "nodeName": "#text",
+                                                                        "text": "⬥ If you have any issues, contact Chrash (@chrash.)\n⬥ Do not sit struggling alone!\n",
+                                                                        "location": {
+                                                                          "start": 169157,
+                                                                          "end": 169240
+                                                                        }
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          },
+                                                          {
+                                                            "nodeName": "#text",
+                                                            "text": "\n",
+                                                            "location": {
+                                                              "start": 169258,
+                                                              "end": 169259
+                                                            }
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "nodeName": "#text",
+                                                        "text": "\n\n",
+                                                        "location": {
+                                                          "start": 169265,
+                                                          "end": 169267
+                                                        }
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "nodeName": "#text",
+                                                    "text": "\n\n\n",
+                                                    "location": {
+                                                      "start": 169273,
+                                                      "end": 169276
+                                                    }
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n\n",
+    "location": {
+      "start": 169348,
+      "end": 169350
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 169350,
+      "end": 169365
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "​",
+        "location": {
+          "start": 169353,
+          "end": 169361
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 169365,
+      "end": 169366
+    }
+  },
+  {
+    "nodeName": "h3",
+    "tag": "h3",
+    "attrs": {
+      "id": "step-1"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 169366,
+      "end": 169393
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "Step 1",
+        "location": {
+          "start": 169382,
+          "end": 169388
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 169393,
+      "end": 169394
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 169394,
+      "end": 169465
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "1.1 Run the first code section by clicking the first play button",
+        "location": {
+          "start": 169397,
+          "end": 169461
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 169465,
+      "end": 169466
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 169466,
+      "end": 169549
+    },
+    "children": [
+      {
+        "nodeName": "img",
+        "tag": "img",
+        "attrs": {
+          "class": "media",
+          "src": "https://img.pvme.io/images/iSHbmxoSrX.png"
+        },
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 169469,
+          "end": 169536
+        },
+        "children": []
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n​",
+        "location": {
+          "start": 169536,
+          "end": 169545
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 169549,
+      "end": 169550
+    }
+  },
+  {
+    "nodeName": "h3",
+    "tag": "h3",
+    "attrs": {
+      "id": "step-2"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 169550,
+      "end": 169577
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "Step 2",
+        "location": {
+          "start": 169566,
+          "end": 169572
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 169577,
+      "end": 169578
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 169578,
+      "end": 169707
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "2.1. Scroll down to the second code section and edit the variables between the two lines of ",
+        "location": {
+          "start": 169581,
+          "end": 169673
+        }
+      },
+      {
+        "nodeName": "code",
+        "tag": "code",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 169673,
+          "end": 169695
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "#########",
+            "location": {
+              "start": 169679,
+              "end": 169688
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "​",
+        "location": {
+          "start": 169695,
+          "end": 169703
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 169707,
+      "end": 169708
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 169708,
+      "end": 169782
+    },
+    "children": [
+      {
+        "nodeName": "img",
+        "tag": "img",
+        "attrs": {
+          "class": "media",
+          "src": "https://img.pvme.io/images/fCvNMZwNGs.png"
+        },
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 169711,
+          "end": 169778
+        },
+        "children": []
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 169782,
+      "end": 169783
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 169783,
+      "end": 169805
+    },
+    "children": [
+      {
+        "nodeName": "em",
+        "tag": "em",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 169786,
+          "end": 169801
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Notes:",
+            "location": {
+              "start": 169790,
+              "end": 169796
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 169805,
+      "end": 169806
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 169806,
+      "end": 169940
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "‎ ‎ ‎ ‎a. Check ",
+        "location": {
+          "start": 169809,
+          "end": 169825
+        }
+      },
+      {
+        "nodeName": "a",
+        "tag": "a",
+        "attrs": {
+          "href": "",
+          "class": "inactiveLink"
+        },
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 169825,
+          "end": 169869
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "#unknown",
+            "location": {
+              "start": 169857,
+              "end": 169865
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": " first for already created maps and variables sets to save you time",
+        "location": {
+          "start": 169869,
+          "end": 169936
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 169940,
+      "end": 169941
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 169941,
+      "end": 170057
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "‎ ‎ ‎ ‎b. You can find map chunks by visiting ",
+        "location": {
+          "start": 169944,
+          "end": 169990
+        }
+      },
+      {
+        "nodeName": "a",
+        "tag": "a",
+        "attrs": {
+          "href": "https://mejrs.github.io/"
+        },
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 169990,
+          "end": 170053
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "https://mejrs.github.io/",
+            "location": {
+              "start": 170025,
+              "end": 170049
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 170057,
+      "end": 170058
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 170058,
+      "end": 170167
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Turn on the ",
+        "location": {
+          "start": 170061,
+          "end": 170090
+        }
+      },
+      {
+        "nodeName": "strong",
+        "tag": "strong",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 170090,
+          "end": 170117
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "grid layer",
+            "location": {
+              "start": 170098,
+              "end": 170108
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": " by hovering over the icon in the bottom-right",
+        "location": {
+          "start": 170117,
+          "end": 170163
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 170167,
+      "end": 170168
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 170168,
+      "end": 170420
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ If you struggle to find a specific area the RS Wiki has a ",
+        "location": {
+          "start": 170171,
+          "end": 170246
+        }
+      },
+      {
+        "nodeName": "a",
+        "tag": "a",
+        "attrs": {
+          "href": "https://runescape.wiki/w/RuneScape:Map/mapIDs"
+        },
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 170246,
+          "end": 170335
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "page listing common locations",
+            "location": {
+              "start": 170302,
+              "end": 170331
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": " - simply replace the ",
+        "location": {
+          "start": 170335,
+          "end": 170357
+        }
+      },
+      {
+        "nodeName": "code",
+        "tag": "code",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 170357,
+          "end": 170372
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "-1",
+            "location": {
+              "start": 170363,
+              "end": 170365
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": " ‎in the mej URL to the corresponding map ID",
+        "location": {
+          "start": 170372,
+          "end": 170416
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 170420,
+      "end": 170421
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 170421,
+      "end": 170436
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "​",
+        "location": {
+          "start": 170424,
+          "end": 170432
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 170436,
+      "end": 170437
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 170437,
+      "end": 170584
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "2.2. If unsure about the coloured tile markings, enter a number around where you think for player/cannon etc, then tweak and re-run the code",
+        "location": {
+          "start": 170440,
+          "end": 170580
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 170584,
+      "end": 170585
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 170585,
+      "end": 170600
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "​",
+        "location": {
+          "start": 170588,
+          "end": 170596
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 170600,
+      "end": 170601
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 170601,
+      "end": 170695
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "2.3. Choose how many tiles to trim off each side of the image (left,upper,right,bottom)",
+        "location": {
+          "start": 170604,
+          "end": 170691
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 170695,
+      "end": 170696
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 170696,
+      "end": 170711
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "​",
+        "location": {
+          "start": 170699,
+          "end": 170707
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 170711,
+      "end": 170712
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 170712,
+      "end": 170774
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "2.4. Select which legend to use from the listed options",
+        "location": {
+          "start": 170715,
+          "end": 170770
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 170774,
+      "end": 170775
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 170775,
+      "end": 170790
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "​",
+        "location": {
+          "start": 170778,
+          "end": 170786
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 170790,
+      "end": 170791
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 170791,
+      "end": 170913
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "2.5. Remove the ",
+        "location": {
+          "start": 170794,
+          "end": 170810
+        }
+      },
+      {
+        "nodeName": "code",
+        "tag": "code",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 170810,
+          "end": 170824
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "#",
+            "location": {
+              "start": 170816,
+              "end": 170817
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": " ‎from any lines you have set (any lines with a ",
+        "location": {
+          "start": 170824,
+          "end": 170872
+        }
+      },
+      {
+        "nodeName": "code",
+        "tag": "code",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 170872,
+          "end": 170886
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "#",
+            "location": {
+              "start": 170878,
+              "end": 170879
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": " ‎will not be executed)",
+        "location": {
+          "start": 170886,
+          "end": 170909
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 170913,
+      "end": 170914
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 170914,
+      "end": 170997
+    },
+    "children": [
+      {
+        "nodeName": "img",
+        "tag": "img",
+        "attrs": {
+          "class": "media",
+          "src": "https://img.pvme.io/images/88RSQ8Bnvb.png"
+        },
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 170917,
+          "end": 170984
+        },
+        "children": []
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n​",
+        "location": {
+          "start": 170984,
+          "end": 170993
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 170997,
+      "end": 170998
+    }
+  },
+  {
+    "nodeName": "h3",
+    "tag": "h3",
+    "attrs": {
+      "id": "step-3"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 170998,
+      "end": 171025
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "Step 3",
+        "location": {
+          "start": 171014,
+          "end": 171020
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 171025,
+      "end": 171026
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 171026,
+      "end": 171055
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "3.1. Run the main code",
+        "location": {
+          "start": 171029,
+          "end": 171051
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 171055,
+      "end": 171056
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 171056,
+      "end": 171223
+    },
+    "children": [
+      {
+        "nodeName": "img",
+        "tag": "img",
+        "attrs": {
+          "class": "media",
+          "src": "https://img.pvme.io/images/hN8YQKzJWk.png"
+        },
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 171059,
+          "end": 171126
+        },
+        "children": []
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n3.2. Wait for the code to execute - you can track its progress at the bottom of your browser",
+        "location": {
+          "start": 171126,
+          "end": 171219
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 171223,
+      "end": 171224
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 171224,
+      "end": 171307
+    },
+    "children": [
+      {
+        "nodeName": "img",
+        "tag": "img",
+        "attrs": {
+          "class": "media",
+          "src": "https://img.pvme.io/images/JOBeROCphO.png"
+        },
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 171227,
+          "end": 171294
+        },
+        "children": []
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n​",
+        "location": {
+          "start": 171294,
+          "end": 171303
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 171307,
+      "end": 171308
+    }
+  },
+  {
+    "nodeName": "h3",
+    "tag": "h3",
+    "attrs": {
+      "id": "step-4"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 171308,
+      "end": 171335
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "Step 4",
+        "location": {
+          "start": 171324,
+          "end": 171330
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 171335,
+      "end": 171336
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 171336,
+      "end": 171522
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "4.1. Scroll to the very bottom of the page to view your created map and ",
+        "location": {
+          "start": 171339,
+          "end": 171411
+        }
+      },
+      {
+        "nodeName": "code",
+        "tag": "code",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 171411,
+          "end": 171445
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "right click > save",
+            "location": {
+              "start": 171417,
+              "end": 171438
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": " ‎when happy, or scroll back up and tweak the variables if it's not right",
+        "location": {
+          "start": 171445,
+          "end": 171518
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 171522,
+      "end": 171523
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 171523,
+      "end": 171538
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "​",
+        "location": {
+          "start": 171526,
+          "end": 171534
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 171538,
+      "end": 171539
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "real-example"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 171539,
+      "end": 171589
+    },
+    "children": [
+      {
+        "nodeName": "ins",
+        "tag": "ins",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 171561,
+          "end": 171584
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Real example",
+            "location": {
+              "start": 171566,
+              "end": 171578
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 171589,
+      "end": 171590
+    }
+  },
+  {
+    "nodeName": "h3",
+    "tag": "h3",
+    "attrs": {
+      "id": "the-objective-make-a-player-position-map-for-the-new-osseous-afk-guide"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 171590,
+      "end": 171747
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "The objective: make a player position map for the new Osseous AFK guide.",
+        "location": {
+          "start": 171670,
+          "end": 171742
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 171747,
+      "end": 171748
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 171748,
+      "end": 171763
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "​",
+        "location": {
+          "start": 171751,
+          "end": 171759
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 171763,
+      "end": 171764
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 171764,
+      "end": 171859
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "First we find the Rex Matriarch arena (we've had to scroll across Mej's map to find it):",
+        "location": {
+          "start": 171767,
+          "end": 171855
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 171859,
+      "end": 171860
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 171860,
+      "end": 171943
+    },
+    "children": [
+      {
+        "nodeName": "img",
+        "tag": "img",
+        "attrs": {
+          "class": "media",
+          "src": "https://img.pvme.io/images/4bOVcYUEIk.png"
+        },
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 171863,
+          "end": 171930
+        },
+        "children": []
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n​",
+        "location": {
+          "start": 171930,
+          "end": 171939
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 171943,
+      "end": 171944
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 171944,
+      "end": 172022
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "Next, we add map gridlines on so we know which map chunks to reference:",
+        "location": {
+          "start": 171947,
+          "end": 172018
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 172022,
+      "end": 172023
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 172023,
+      "end": 172106
+    },
+    "children": [
+      {
+        "nodeName": "img",
+        "tag": "img",
+        "attrs": {
+          "class": "media",
+          "src": "https://img.pvme.io/images/XwdQIAu7uv.png"
+        },
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 172026,
+          "end": 172093
+        },
+        "children": []
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n​",
+        "location": {
+          "start": 172093,
+          "end": 172102
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 172106,
+      "end": 172107
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 172107,
+      "end": 172237
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "Now we want to reduce the map to just the Osseous arena (highlighted by the yellow box), which crosses multiple map chunks.",
+        "location": {
+          "start": 172110,
+          "end": 172233
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 172237,
+      "end": 172238
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 172238,
+      "end": 172321
+    },
+    "children": [
+      {
+        "nodeName": "img",
+        "tag": "img",
+        "attrs": {
+          "class": "media",
+          "src": "https://img.pvme.io/images/EJXkK2pB4r.png"
+        },
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 172241,
+          "end": 172308
+        },
+        "children": []
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n​",
+        "location": {
+          "start": 172308,
+          "end": 172317
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 172321,
+      "end": 172322
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 172322,
+      "end": 172391
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "First we set the x and y values to be of the top tile (63,153)",
+        "location": {
+          "start": 172325,
+          "end": 172387
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 172391,
+      "end": 172392
+    }
+  },
+  {
+    "nodeName": "pre",
+    "tag": "pre",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 172392,
+      "end": 172439
+    },
+    "children": [
+      {
+        "nodeName": "code",
+        "tag": "code",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 172397,
+          "end": 172433
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "mej_x = 63\nmej_y = 153\n",
+            "location": {
+              "start": 172403,
+              "end": 172426
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 172439,
+      "end": 172440
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 172440,
+      "end": 172455
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "​",
+        "location": {
+          "start": 172443,
+          "end": 172451
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 172455,
+      "end": 172456
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 172456,
+      "end": 172513
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "Next let's make it so 2 tiles are shown vertically",
+        "location": {
+          "start": 172459,
+          "end": 172509
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 172513,
+      "end": 172514
+    }
+  },
+  {
+    "nodeName": "pre",
+    "tag": "pre",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 172514,
+      "end": 172567
+    },
+    "children": [
+      {
+        "nodeName": "code",
+        "tag": "code",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 172519,
+          "end": 172561
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "mej_height = 2\nmej_width = 1\n",
+            "location": {
+              "start": 172525,
+              "end": 172554
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 172567,
+      "end": 172568
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 172568,
+      "end": 172583
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "​",
+        "location": {
+          "start": 172571,
+          "end": 172579
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 172583,
+      "end": 172584
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 172584,
+      "end": 172637
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "If we ran the code now, it would give us this:",
+        "location": {
+          "start": 172587,
+          "end": 172633
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 172637,
+      "end": 172638
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 172638,
+      "end": 172721
+    },
+    "children": [
+      {
+        "nodeName": "img",
+        "tag": "img",
+        "attrs": {
+          "class": "media",
+          "src": "https://img.pvme.io/images/UDpjeF4nPZ.png"
+        },
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 172641,
+          "end": 172708
+        },
+        "children": []
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n​",
+        "location": {
+          "start": 172708,
+          "end": 172717
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 172721,
+      "end": 172722
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 172722,
+      "end": 172796
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "Let's trim off the sides and press the run button to check our map:",
+        "location": {
+          "start": 172725,
+          "end": 172792
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 172796,
+      "end": 172797
+    }
+  },
+  {
+    "nodeName": "pre",
+    "tag": "pre",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 172797,
+      "end": 172863
+    },
+    "children": [
+      {
+        "nodeName": "code",
+        "tag": "code",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 172802,
+          "end": 172857
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "left = 1\nupper = 43\nright = 21\nlower = 43\n",
+            "location": {
+              "start": 172808,
+              "end": 172850
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 172863,
+      "end": 172864
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 172864,
+      "end": 172879
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "​",
+        "location": {
+          "start": 172867,
+          "end": 172875
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 172879,
+      "end": 172880
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 172880,
+      "end": 172963
+    },
+    "children": [
+      {
+        "nodeName": "img",
+        "tag": "img",
+        "attrs": {
+          "class": "media",
+          "src": "https://img.pvme.io/images/xb7wjGpZut.png"
+        },
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 172883,
+          "end": 172950
+        },
+        "children": []
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n​",
+        "location": {
+          "start": 172950,
+          "end": 172959
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 172963,
+      "end": 172964
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 172964,
+      "end": 173124
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "It's almost there! Let's cut off some of that excess map, put a coloured tile for the player position, and set the legend to show just 'player position':",
+        "location": {
+          "start": 172967,
+          "end": 173120
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 173124,
+      "end": 173125
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 173125,
+      "end": 173208
+    },
+    "children": [
+      {
+        "nodeName": "img",
+        "tag": "img",
+        "attrs": {
+          "class": "media",
+          "src": "https://img.pvme.io/images/A76Rk7HV0P.png"
+        },
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 173128,
+          "end": 173195
+        },
+        "children": []
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n​",
+        "location": {
+          "start": 173195,
+          "end": 173204
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 173208,
+      "end": 173209
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 173209,
+      "end": 173264
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "Now let's hit the run button again... we did it!",
+        "location": {
+          "start": 173212,
+          "end": 173260
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 173264,
+      "end": 173265
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 173265,
+      "end": 173348
+    },
+    "children": [
+      {
+        "nodeName": "img",
+        "tag": "img",
+        "attrs": {
+          "class": "media",
+          "src": "https://img.pvme.io/images/Dys4yLDFqW.png"
+        },
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 173268,
+          "end": 173335
+        },
+        "children": []
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n​",
+        "location": {
+          "start": 173335,
+          "end": 173344
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n      \n    ",
+    "location": {
+      "start": 173348,
+      "end": 173360
+    }
+  }
+]

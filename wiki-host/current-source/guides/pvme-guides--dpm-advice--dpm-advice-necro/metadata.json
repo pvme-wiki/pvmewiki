@@ -1,0 +1,4366 @@
+{
+  "schemaVersion": 1,
+  "captureVersion": 2,
+  "id": "pvme-guides--dpm-advice--dpm-advice-necro",
+  "sourceURL": "https://pvme.io/pvme-guides/dpm-advice/dpm-advice-necro/",
+  "officialURL": "https://pvme.io/pvme-guides/dpm-advice/dpm-advice-necro/",
+  "responseURL": "https://pvme.io/pvme-guides/dpm-advice/dpm-advice-necro/",
+  "status": "captured",
+  "statusCode": 200,
+  "retrievedAt": "2026-11-16T00:26:49.005Z",
+  "sitemapLastmod": "2026-11-15",
+  "sitemapSha256": "7166472554d36bfc69a7e14f7298264c0f9bfac00dc9034e5bfd0fba58a14b07",
+  "kind": "guide",
+  "audience": "player",
+  "title": "PvME/Damage rotations/Necromancy damage guide",
+  "titleStatus": "existing-exact-url",
+  "baselineId": "pvme-guides--dpm-advice--dpm-advice-necro",
+  "sourceTitle": "> Necromancy DPM Advice ",
+  "sourceH1": "> Necromancy DPM Advice ",
+  "discovery": "official-sitemap",
+  "directory": "guides/pvme-guides--dpm-advice--dpm-advice-necro",
+  "sourceSha256": "5a69aa626d4fd955d8c7175667ab857cae9e99bc4621ed964c3a89f2e4005d21",
+  "bodySha256": "5a69aa626d4fd955d8c7175667ab857cae9e99bc4621ed964c3a89f2e4005d21",
+  "normalizedTextSha256": "bf162fd85eb3fcafc5a5aba3a669cee7fb6034eb1753179f5294a2279012af07",
+  "parser": "parse5 8.1.1; entities 9.0.0; sourceCodeLocationInfo",
+  "headers": {
+    "accept-ranges": "bytes",
+    "access-control-allow-origin": "*",
+    "age": "0",
+    "cache-control": "max-age=600",
+    "connection": "keep-alive",
+    "content-encoding": "gzip",
+    "content-length": "22517",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Mon, 16 Nov 2026 00:26:49 GMT",
+    "etag": "W/\"6afa1a34-36efc\"",
+    "expires": "Mon, 16 Nov 2026 00:36:49 GMT",
+    "last-modified": "Sun, 15 Nov 2026 20:46:44 GMT",
+    "server": "GitHub.com",
+    "strict-transport-security": "max-age=31556952",
+    "vary": "Accept-Encoding",
+    "via": "1.1 varnish",
+    "x-cache": "MISS",
+    "x-cache-hits": "0",
+    "x-fastly-request-id": "884f8b5fd8db358981c15801119e3fdf74443303",
+    "x-github-edge-region": "iad",
+    "x-github-request-id": "10CA:4D533:2FE633E:38E29A7:6AFA4DC9",
+    "x-origin-cache": "HIT",
+    "x-proxy-cache": "MISS",
+    "x-served-by": "cache-iad-kiad7000190-IAD",
+    "x-timer": "S1794788809.417720,VS0,VE54"
+  },
+  "hashes": {
+    "responseSha256": "a663e67ec8df4ce5c9a704dacacf8c8002a5323d997ecce4308d7be57c3dae46",
+    "articleSha256": "5a69aa626d4fd955d8c7175667ab857cae9e99bc4621ed964c3a89f2e4005d21",
+    "textSha256": "28e8384f99019d6d224cbcb9b8eb5c08d070589ada6766ced45a7c6a56fbdd35",
+    "normalizedTextSha256": "bf162fd85eb3fcafc5a5aba3a669cee7fb6034eb1753179f5294a2279012af07"
+  },
+  "counts": {
+    "bytes": 225020,
+    "articleBytes": 53940,
+    "nodes": 1295,
+    "topLevelNodes": 346,
+    "words": 2119,
+    "images": 296,
+    "videos": 0,
+    "sources": 0,
+    "links": 10
+  },
+  "tags": {
+    "h1": 1,
+    "ins": 19,
+    "img": 296,
+    "p": 162,
+    "a": 10,
+    "h2": 5,
+    "em": 4,
+    "strong": 26,
+    "h3": 12,
+    "ol": 1,
+    "li": 9,
+    "div": 27,
+    "u": 4
+  },
+  "mediaHosts": {
+    "cdn.discordapp.com": 296
+  },
+  "patterns": [],
+  "media": [
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necromancy",
+        "class": "d-emoji",
+        "alt": "necromancy",
+        "src": "https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 169452,
+        "end": 169577
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necromancy",
+        "class": "d-emoji",
+        "alt": "necromancy",
+        "src": "https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 170289,
+        "end": 170414
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "touchofdeath",
+        "class": "d-emoji",
+        "alt": "touchofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 171060,
+        "end": 171189
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "livingdeath",
+        "class": "d-emoji",
+        "alt": "livingdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 171225,
+        "end": 171352
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necrosis",
+        "class": "d-emoji",
+        "alt": "necrosis",
+        "src": "https://cdn.discordapp.com/emojis/1139452791878856805.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 171394,
+        "end": 171515
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "residualsoul",
+        "class": "d-emoji",
+        "alt": "residualsoul",
+        "src": "https://cdn.discordapp.com/emojis/1139453152169558046.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 171518,
+        "end": 171647
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "touchofdeath",
+        "class": "d-emoji",
+        "alt": "touchofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 171772,
+        "end": 171901
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulsap",
+        "class": "d-emoji",
+        "alt": "soulsap",
+        "src": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 171915,
+        "end": 172034
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "touchofdeath",
+        "class": "d-emoji",
+        "alt": "touchofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 172108,
+        "end": 172237
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulsap",
+        "class": "d-emoji",
+        "alt": "soulsap",
+        "src": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 172302,
+        "end": 172421
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulsap",
+        "class": "d-emoji",
+        "alt": "soulsap",
+        "src": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 172495,
+        "end": 172614
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necrosis",
+        "class": "d-emoji",
+        "alt": "necrosis",
+        "src": "https://cdn.discordapp.com/emojis/1139452791878856805.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 172745,
+        "end": 172866
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "residualsoul",
+        "class": "d-emoji",
+        "alt": "residualsoul",
+        "src": "https://cdn.discordapp.com/emojis/1139453152169558046.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 172871,
+        "end": 173000
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "fingerofdeath",
+        "class": "d-emoji",
+        "alt": "fingerofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 173041,
+        "end": 173172
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "livingdeath",
+        "class": "d-emoji",
+        "alt": "livingdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 173219,
+        "end": 173346
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necrosis",
+        "class": "d-emoji",
+        "alt": "necrosis",
+        "src": "https://cdn.discordapp.com/emojis/1139452791878856805.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 173408,
+        "end": 173529
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "volleyofsouls",
+        "class": "d-emoji",
+        "alt": "volleyofsouls",
+        "src": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 173592,
+        "end": 173723
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "residualsoul",
+        "class": "d-emoji",
+        "alt": "residualsoul",
+        "src": "https://cdn.discordapp.com/emojis/1139453152169558046.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 173785,
+        "end": 173914
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathguard90",
+        "class": "d-emoji",
+        "alt": "deathguard90",
+        "src": "https://cdn.discordapp.com/emojis/1138809243143766118.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 173950,
+        "end": 174079
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necrosis",
+        "class": "d-emoji",
+        "alt": "necrosis",
+        "src": "https://cdn.discordapp.com/emojis/1139452791878856805.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 174130,
+        "end": 174251
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necrosis",
+        "class": "d-emoji",
+        "alt": "necrosis",
+        "src": "https://cdn.discordapp.com/emojis/1139452791878856805.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 174296,
+        "end": 174417
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathskulls",
+        "class": "d-emoji",
+        "alt": "deathskulls",
+        "src": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 174570,
+        "end": 174697
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "splitsoul",
+        "class": "d-emoji",
+        "alt": "splitsoul",
+        "src": "https://cdn.discordapp.com/emojis/1137809168368148490.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 174725,
+        "end": 174848
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bloat",
+        "class": "d-emoji",
+        "alt": "bloat",
+        "src": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 174871,
+        "end": 174986
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "commandskeleton",
+        "class": "d-emoji",
+        "alt": "commandskeleton",
+        "src": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 175028,
+        "end": 175163
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "livingdeath",
+        "class": "d-emoji",
+        "alt": "livingdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 175261,
+        "end": 175388
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "livingdeath",
+        "class": "d-emoji",
+        "alt": "livingdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 175766,
+        "end": 175893
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathskulls",
+        "class": "d-emoji",
+        "alt": "deathskulls",
+        "src": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 175995,
+        "end": 176122
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathskulls",
+        "class": "d-emoji",
+        "alt": "deathskulls",
+        "src": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 176159,
+        "end": 176286
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "fingerofdeath",
+        "class": "d-emoji",
+        "alt": "fingerofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 176319,
+        "end": 176450
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "volleyofsouls",
+        "class": "d-emoji",
+        "alt": "volleyofsouls",
+        "src": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 176483,
+        "end": 176614
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathskulls",
+        "class": "d-emoji",
+        "alt": "deathskulls",
+        "src": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 176697,
+        "end": 176824
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "splitsoul",
+        "class": "d-emoji",
+        "alt": "splitsoul",
+        "src": "https://cdn.discordapp.com/emojis/1137809168368148490.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 176876,
+        "end": 176999
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bloat",
+        "class": "d-emoji",
+        "alt": "bloat",
+        "src": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 177022,
+        "end": 177137
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "commandskeleton",
+        "class": "d-emoji",
+        "alt": "commandskeleton",
+        "src": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 177216,
+        "end": 177351
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "livingdeath",
+        "class": "d-emoji",
+        "alt": "livingdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 177379,
+        "end": 177506
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "livingdeath",
+        "class": "d-emoji",
+        "alt": "livingdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 177597,
+        "end": 177724
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "conjureghost",
+        "class": "d-emoji",
+        "alt": "conjureghost",
+        "src": "https://cdn.discordapp.com/emojis/1137809206423060632.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 177985,
+        "end": 178114
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "commandghost",
+        "class": "d-emoji",
+        "alt": "commandghost",
+        "src": "https://cdn.discordapp.com/emojis/1159434409913634816.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 178156,
+        "end": 178285
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "conjureskeleton",
+        "class": "d-emoji",
+        "alt": "conjureskeleton",
+        "src": "https://cdn.discordapp.com/emojis/1159434516658651147.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 178424,
+        "end": 178559
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "commandskeleton",
+        "class": "d-emoji",
+        "alt": "commandskeleton",
+        "src": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 178613,
+        "end": 178748
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "conjurezombie",
+        "class": "d-emoji",
+        "alt": "conjurezombie",
+        "src": "https://cdn.discordapp.com/emojis/1137809200219684924.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 178846,
+        "end": 178977
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "commandzombie",
+        "class": "d-emoji",
+        "alt": "commandzombie",
+        "src": "https://cdn.discordapp.com/emojis/1137809191231295549.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 179046,
+        "end": 179177
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "conjurearmy",
+        "class": "d-emoji",
+        "alt": "conjurearmy",
+        "src": "https://cdn.discordapp.com/emojis/1166094935066423348.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 179322,
+        "end": 179449
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "conjurephantom",
+        "class": "d-emoji",
+        "alt": "conjurephantom",
+        "src": "https://cdn.discordapp.com/emojis/1280109199069806604.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 179535,
+        "end": 179668
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "commandphantom",
+        "class": "d-emoji",
+        "alt": "commandphantom",
+        "src": "https://cdn.discordapp.com/emojis/1280109200432959528.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 179846,
+        "end": 179979
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "conjurearmy",
+        "class": "d-emoji",
+        "alt": "conjurearmy",
+        "src": "https://cdn.discordapp.com/emojis/1166094935066423348.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 180053,
+        "end": 180180
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "conjurearmy",
+        "class": "d-emoji",
+        "alt": "conjurearmy",
+        "src": "https://cdn.discordapp.com/emojis/1166094935066423348.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 180309,
+        "end": 180436
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necrosis",
+        "class": "d-emoji",
+        "alt": "necrosis",
+        "src": "https://cdn.discordapp.com/emojis/1139452791878856805.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 180602,
+        "end": 180723
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "residualsoul",
+        "class": "d-emoji",
+        "alt": "residualsoul",
+        "src": "https://cdn.discordapp.com/emojis/1139453152169558046.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 180742,
+        "end": 180871
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "touchofdeath",
+        "class": "d-emoji",
+        "alt": "touchofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 181056,
+        "end": 181185
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necrosis",
+        "class": "d-emoji",
+        "alt": "necrosis",
+        "src": "https://cdn.discordapp.com/emojis/1139452791878856805.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 181195,
+        "end": 181316
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulsap",
+        "class": "d-emoji",
+        "alt": "soulsap",
+        "src": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 181342,
+        "end": 181461
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "residualsoul",
+        "class": "d-emoji",
+        "alt": "residualsoul",
+        "src": "https://cdn.discordapp.com/emojis/1139453152169558046.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 181471,
+        "end": 181600
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necrosis",
+        "class": "d-emoji",
+        "alt": "necrosis",
+        "src": "https://cdn.discordapp.com/emojis/1139452791878856805.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 181757,
+        "end": 181878
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "fingerofdeath",
+        "class": "d-emoji",
+        "alt": "fingerofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 181925,
+        "end": 182056
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "fingerofdeath",
+        "class": "d-emoji",
+        "alt": "fingerofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182101,
+        "end": 182232
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necrosis",
+        "class": "d-emoji",
+        "alt": "necrosis",
+        "src": "https://cdn.discordapp.com/emojis/1139452791878856805.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182241,
+        "end": 182362
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "livingdeath",
+        "class": "d-emoji",
+        "alt": "livingdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182417,
+        "end": 182544
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "fingerofdeath",
+        "class": "d-emoji",
+        "alt": "fingerofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182572,
+        "end": 182703
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necrobasic",
+        "class": "d-emoji",
+        "alt": "necrobasic",
+        "src": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182719,
+        "end": 182844
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathguard90",
+        "class": "d-emoji",
+        "alt": "deathguard90",
+        "src": "https://cdn.discordapp.com/emojis/1138809243143766118.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182906,
+        "end": 183035
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "spec",
+        "class": "d-emoji",
+        "alt": "spec",
+        "src": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 183051,
+        "end": 183163
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necrosis",
+        "class": "d-emoji",
+        "alt": "necrosis",
+        "src": "https://cdn.discordapp.com/emojis/1139452791878856805.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 183177,
+        "end": 183298
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necrosis",
+        "class": "d-emoji",
+        "alt": "necrosis",
+        "src": "https://cdn.discordapp.com/emojis/1139452791878856805.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 183375,
+        "end": 183496
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "residualsoul",
+        "class": "d-emoji",
+        "alt": "residualsoul",
+        "src": "https://cdn.discordapp.com/emojis/1139453152169558046.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 183528,
+        "end": 183657
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "volleyofsouls",
+        "class": "d-emoji",
+        "alt": "volleyofsouls",
+        "src": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 183704,
+        "end": 183835
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "volleyofsouls",
+        "class": "d-emoji",
+        "alt": "volleyofsouls",
+        "src": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 183877,
+        "end": 184008
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "residualsoul",
+        "class": "d-emoji",
+        "alt": "residualsoul",
+        "src": "https://cdn.discordapp.com/emojis/1139453152169558046.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 184031,
+        "end": 184160
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulstrike",
+        "class": "d-emoji",
+        "alt": "soulstrike",
+        "src": "https://cdn.discordapp.com/emojis/1137809142376058910.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 184207,
+        "end": 184332
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "flank4",
+        "class": "d-emoji",
+        "alt": "flank4",
+        "src": "https://cdn.discordapp.com/emojis/712073088296157185.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 184359,
+        "end": 184475
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "livingdeath",
+        "class": "d-emoji",
+        "alt": "livingdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 184522,
+        "end": 184649
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulsap",
+        "class": "d-emoji",
+        "alt": "soulsap",
+        "src": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 184675,
+        "end": 184794
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "threadsoffate",
+        "class": "d-emoji",
+        "alt": "threadsoffate",
+        "src": "https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 184836,
+        "end": 184967
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "residualsoul",
+        "class": "d-emoji",
+        "alt": "residualsoul",
+        "src": "https://cdn.discordapp.com/emojis/1139453152169558046.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 184985,
+        "end": 185114
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "devourersguard",
+        "class": "d-emoji",
+        "alt": "devourersguard",
+        "src": "https://cdn.discordapp.com/emojis/1400511720455143539.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 185165,
+        "end": 185298
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "spec",
+        "class": "d-emoji",
+        "alt": "spec",
+        "src": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 185314,
+        "end": 185426
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "residualsoul",
+        "class": "d-emoji",
+        "alt": "residualsoul",
+        "src": "https://cdn.discordapp.com/emojis/1139453152169558046.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 185440,
+        "end": 185569
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "livingdeath",
+        "class": "d-emoji",
+        "alt": "livingdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 185640,
+        "end": 185767
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "livingdeath",
+        "class": "d-emoji",
+        "alt": "livingdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 186130,
+        "end": 186257
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "rov",
+        "class": "d-emoji",
+        "alt": "rov",
+        "src": "https://cdn.discordapp.com/emojis/513201065877831680.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 186532,
+        "end": 186642
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "enhreplen",
+        "class": "d-emoji",
+        "alt": "enhreplen",
+        "src": "https://cdn.discordapp.com/emojis/634350450887622656.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 186798,
+        "end": 186920
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathskulls",
+        "class": "d-emoji",
+        "alt": "deathskulls",
+        "src": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 187127,
+        "end": 187254
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "livingdeath",
+        "class": "d-emoji",
+        "alt": "livingdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 187261,
+        "end": 187388
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "igneouskalmor",
+        "class": "d-emoji",
+        "alt": "igneouskalmor",
+        "src": "https://cdn.discordapp.com/emojis/1139200072438005851.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 187420,
+        "end": 187551
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "conservationofenergy",
+        "class": "d-emoji",
+        "alt": "conservationofenergy",
+        "src": "https://cdn.discordapp.com/emojis/697808773711921195.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 187604,
+        "end": 187748
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "conjurearmy",
+        "class": "d-emoji",
+        "alt": "conjurearmy",
+        "src": "https://cdn.discordapp.com/emojis/1166094935066423348.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 187920,
+        "end": 188047
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "lifetransfer",
+        "class": "d-emoji",
+        "alt": "lifetransfer",
+        "src": "https://cdn.discordapp.com/emojis/1137809128136388819.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 188050,
+        "end": 188179
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "commandghost",
+        "class": "d-emoji",
+        "alt": "commandghost",
+        "src": "https://cdn.discordapp.com/emojis/1159434409913634816.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 188182,
+        "end": 188311
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathskulls",
+        "class": "d-emoji",
+        "alt": "deathskulls",
+        "src": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 188388,
+        "end": 188515
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulsap",
+        "class": "d-emoji",
+        "alt": "soulsap",
+        "src": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 188518,
+        "end": 188637
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "touchofdeath",
+        "class": "d-emoji",
+        "alt": "touchofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 188640,
+        "end": 188769
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necrobasic",
+        "class": "d-emoji",
+        "alt": "necrobasic",
+        "src": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 188772,
+        "end": 188897
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulsap",
+        "class": "d-emoji",
+        "alt": "soulsap",
+        "src": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 188900,
+        "end": 189019
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "livingdeath",
+        "class": "d-emoji",
+        "alt": "livingdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 189022,
+        "end": 189149
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "enhreplen",
+        "class": "d-emoji",
+        "alt": "enhreplen",
+        "src": "https://cdn.discordapp.com/emojis/634350450887622656.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 189152,
+        "end": 189274
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "touchofdeath",
+        "class": "d-emoji",
+        "alt": "touchofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 189277,
+        "end": 189406
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathskulls",
+        "class": "d-emoji",
+        "alt": "deathskulls",
+        "src": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 189409,
+        "end": 189536
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulsap",
+        "class": "d-emoji",
+        "alt": "soulsap",
+        "src": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 189539,
+        "end": 189658
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "commandskeleton",
+        "class": "d-emoji",
+        "alt": "commandskeleton",
+        "src": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 189661,
+        "end": 189796
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necrobasic",
+        "class": "d-emoji",
+        "alt": "necrobasic",
+        "src": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 189799,
+        "end": 189924
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulsap",
+        "class": "d-emoji",
+        "alt": "soulsap",
+        "src": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 189927,
+        "end": 190046
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necrobasic",
+        "class": "d-emoji",
+        "alt": "necrobasic",
+        "src": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 190049,
+        "end": 190174
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "splitsoul",
+        "class": "d-emoji",
+        "alt": "splitsoul",
+        "src": "https://cdn.discordapp.com/emojis/1137809168368148490.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 190177,
+        "end": 190300
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathskulls",
+        "class": "d-emoji",
+        "alt": "deathskulls",
+        "src": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 190303,
+        "end": 190430
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "fingerofdeath",
+        "class": "d-emoji",
+        "alt": "fingerofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 190433,
+        "end": 190564
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "touchofdeath",
+        "class": "d-emoji",
+        "alt": "touchofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 190567,
+        "end": 190696
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "fingerofdeath",
+        "class": "d-emoji",
+        "alt": "fingerofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 190699,
+        "end": 190830
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necrobasic",
+        "class": "d-emoji",
+        "alt": "necrobasic",
+        "src": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 190833,
+        "end": 190958
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "fingerofdeath",
+        "class": "d-emoji",
+        "alt": "fingerofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 190961,
+        "end": 191092
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulsap",
+        "class": "d-emoji",
+        "alt": "soulsap",
+        "src": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 191095,
+        "end": 191214
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathskulls",
+        "class": "d-emoji",
+        "alt": "deathskulls",
+        "src": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 191217,
+        "end": 191344
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "livingdeath",
+        "class": "d-emoji",
+        "alt": "livingdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 191346,
+        "end": 191473
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathskulls",
+        "class": "d-emoji",
+        "alt": "deathskulls",
+        "src": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 191545,
+        "end": 191672
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulsap",
+        "class": "d-emoji",
+        "alt": "soulsap",
+        "src": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 191675,
+        "end": 191794
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "touchofdeath",
+        "class": "d-emoji",
+        "alt": "touchofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 191797,
+        "end": 191926
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necrobasic",
+        "class": "d-emoji",
+        "alt": "necrobasic",
+        "src": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 191929,
+        "end": 192054
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulsap",
+        "class": "d-emoji",
+        "alt": "soulsap",
+        "src": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 192057,
+        "end": 192176
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "livingdeath",
+        "class": "d-emoji",
+        "alt": "livingdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 192179,
+        "end": 192306
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "touchofdeath",
+        "class": "d-emoji",
+        "alt": "touchofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 192309,
+        "end": 192438
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necrobasic",
+        "class": "d-emoji",
+        "alt": "necrobasic",
+        "src": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 192441,
+        "end": 192566
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necrobasic",
+        "class": "d-emoji",
+        "alt": "necrobasic",
+        "src": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 192569,
+        "end": 192694
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathskulls",
+        "class": "d-emoji",
+        "alt": "deathskulls",
+        "src": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 192697,
+        "end": 192824
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulsap",
+        "class": "d-emoji",
+        "alt": "soulsap",
+        "src": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 192827,
+        "end": 192946
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necrobasic",
+        "class": "d-emoji",
+        "alt": "necrobasic",
+        "src": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 192949,
+        "end": 193074
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necrobasic",
+        "class": "d-emoji",
+        "alt": "necrobasic",
+        "src": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 193077,
+        "end": 193202
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulsap",
+        "class": "d-emoji",
+        "alt": "soulsap",
+        "src": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 193205,
+        "end": 193324
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "splitsoul",
+        "class": "d-emoji",
+        "alt": "splitsoul",
+        "src": "https://cdn.discordapp.com/emojis/1137809168368148490.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 193327,
+        "end": 193450
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathskulls",
+        "class": "d-emoji",
+        "alt": "deathskulls",
+        "src": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 193453,
+        "end": 193580
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "fingerofdeath",
+        "class": "d-emoji",
+        "alt": "fingerofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 193583,
+        "end": 193714
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "touchofdeath",
+        "class": "d-emoji",
+        "alt": "touchofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 193717,
+        "end": 193846
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "fingerofdeath",
+        "class": "d-emoji",
+        "alt": "fingerofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 193849,
+        "end": 193980
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necrobasic",
+        "class": "d-emoji",
+        "alt": "necrobasic",
+        "src": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 193983,
+        "end": 194108
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necrobasic",
+        "class": "d-emoji",
+        "alt": "necrobasic",
+        "src": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 194111,
+        "end": 194236
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathskulls",
+        "class": "d-emoji",
+        "alt": "deathskulls",
+        "src": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 194239,
+        "end": 194366
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bloat",
+        "class": "d-emoji",
+        "alt": "bloat",
+        "src": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 194369,
+        "end": 194484
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "livingdeath",
+        "class": "d-emoji",
+        "alt": "livingdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 194486,
+        "end": 194613
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathskulls",
+        "class": "d-emoji",
+        "alt": "deathskulls",
+        "src": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 194775,
+        "end": 194902
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "divert",
+        "class": "d-emoji",
+        "alt": "divert",
+        "src": "https://cdn.discordapp.com/emojis/787904334377648130.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 194954,
+        "end": 195070
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bloat",
+        "class": "d-emoji",
+        "alt": "bloat",
+        "src": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 195137,
+        "end": 195252
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "livingdeath",
+        "class": "d-emoji",
+        "alt": "livingdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 195260,
+        "end": 195387
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathskulls",
+        "class": "d-emoji",
+        "alt": "deathskulls",
+        "src": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 195444,
+        "end": 195571
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "livingdeath",
+        "class": "d-emoji",
+        "alt": "livingdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 195584,
+        "end": 195711
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathskulls",
+        "class": "d-emoji",
+        "alt": "deathskulls",
+        "src": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 195732,
+        "end": 195859
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bloat",
+        "class": "d-emoji",
+        "alt": "bloat",
+        "src": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 195912,
+        "end": 196027
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "fingerofdeath",
+        "class": "d-emoji",
+        "alt": "fingerofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 196028,
+        "end": 196159
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "commandskeleton",
+        "class": "d-emoji",
+        "alt": "commandskeleton",
+        "src": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 196160,
+        "end": 196295
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathskulls",
+        "class": "d-emoji",
+        "alt": "deathskulls",
+        "src": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 196499,
+        "end": 196626
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bloat",
+        "class": "d-emoji",
+        "alt": "bloat",
+        "src": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 196715,
+        "end": 196830
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "commandskeleton",
+        "class": "d-emoji",
+        "alt": "commandskeleton",
+        "src": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 196944,
+        "end": 197079
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "touchofdeath",
+        "class": "d-emoji",
+        "alt": "touchofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 197113,
+        "end": 197242
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necrosis",
+        "class": "d-emoji",
+        "alt": "necrosis",
+        "src": "https://cdn.discordapp.com/emojis/1139452791878856805.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 197284,
+        "end": 197405
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulsap",
+        "class": "d-emoji",
+        "alt": "soulsap",
+        "src": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 197431,
+        "end": 197550
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "volleyofsouls",
+        "class": "d-emoji",
+        "alt": "volleyofsouls",
+        "src": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 197600,
+        "end": 197731
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "livingdeath",
+        "class": "d-emoji",
+        "alt": "livingdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 197744,
+        "end": 197871
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "fingerofdeath",
+        "class": "d-emoji",
+        "alt": "fingerofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 197890,
+        "end": 198021
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necrosis",
+        "class": "d-emoji",
+        "alt": "necrosis",
+        "src": "https://cdn.discordapp.com/emojis/1139452791878856805.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 198028,
+        "end": 198149
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "volleyofsouls",
+        "class": "d-emoji",
+        "alt": "volleyofsouls",
+        "src": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 198175,
+        "end": 198306
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "residualsoul",
+        "class": "d-emoji",
+        "alt": "residualsoul",
+        "src": "https://cdn.discordapp.com/emojis/1139453152169558046.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 198312,
+        "end": 198441
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathguard90",
+        "class": "d-emoji",
+        "alt": "deathguard90",
+        "src": "https://cdn.discordapp.com/emojis/1138809243143766118.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 198460,
+        "end": 198589
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "eofspec",
+        "class": "d-emoji",
+        "alt": "eofspec",
+        "src": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 198590,
+        "end": 198709
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "livingdeath",
+        "class": "d-emoji",
+        "alt": "livingdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 198797,
+        "end": 198924
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "conjurearmy",
+        "class": "d-emoji",
+        "alt": "conjurearmy",
+        "src": "https://cdn.discordapp.com/emojis/1166094935066423348.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 198991,
+        "end": 199118
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "livingdeath",
+        "class": "d-emoji",
+        "alt": "livingdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 199136,
+        "end": 199263
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bloat",
+        "class": "d-emoji",
+        "alt": "bloat",
+        "src": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 199370,
+        "end": 199485
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "volleyofsouls",
+        "class": "d-emoji",
+        "alt": "volleyofsouls",
+        "src": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 199488,
+        "end": 199619
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "touchofdeath",
+        "class": "d-emoji",
+        "alt": "touchofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 199622,
+        "end": 199751
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulsap",
+        "class": "d-emoji",
+        "alt": "soulsap",
+        "src": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 199754,
+        "end": 199873
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "commandskeleton",
+        "class": "d-emoji",
+        "alt": "commandskeleton",
+        "src": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 199876,
+        "end": 200011
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necrobasic",
+        "class": "d-emoji",
+        "alt": "necrobasic",
+        "src": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 200014,
+        "end": 200139
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulsap",
+        "class": "d-emoji",
+        "alt": "soulsap",
+        "src": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 200142,
+        "end": 200261
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "omniguard",
+        "class": "d-emoji",
+        "alt": "omniguard",
+        "src": "https://cdn.discordapp.com/emojis/1138809234922934282.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 200264,
+        "end": 200387
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "spec",
+        "class": "d-emoji",
+        "alt": "spec",
+        "src": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 200388,
+        "end": 200500
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necrobasic",
+        "class": "d-emoji",
+        "alt": "necrobasic",
+        "src": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 200503,
+        "end": 200628
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulsap",
+        "class": "d-emoji",
+        "alt": "soulsap",
+        "src": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 200631,
+        "end": 200750
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "touchofdeath",
+        "class": "d-emoji",
+        "alt": "touchofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 200753,
+        "end": 200882
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bloat",
+        "class": "d-emoji",
+        "alt": "bloat",
+        "src": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 200885,
+        "end": 201000
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulsap",
+        "class": "d-emoji",
+        "alt": "soulsap",
+        "src": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 201003,
+        "end": 201122
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "commandskeleton",
+        "class": "d-emoji",
+        "alt": "commandskeleton",
+        "src": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 201125,
+        "end": 201260
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necrobasic",
+        "class": "d-emoji",
+        "alt": "necrobasic",
+        "src": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 201263,
+        "end": 201388
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulsap",
+        "class": "d-emoji",
+        "alt": "soulsap",
+        "src": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 201391,
+        "end": 201510
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "fingerofdeath",
+        "class": "d-emoji",
+        "alt": "fingerofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 201513,
+        "end": 201644
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necrobasic",
+        "class": "d-emoji",
+        "alt": "necrobasic",
+        "src": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 201647,
+        "end": 201772
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "touchofdeath",
+        "class": "d-emoji",
+        "alt": "touchofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 201775,
+        "end": 201904
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necrobasic",
+        "class": "d-emoji",
+        "alt": "necrobasic",
+        "src": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 201907,
+        "end": 202032
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathskulls",
+        "class": "d-emoji",
+        "alt": "deathskulls",
+        "src": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 202035,
+        "end": 202162
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necrobasic",
+        "class": "d-emoji",
+        "alt": "necrobasic",
+        "src": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 202165,
+        "end": 202290
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "fingerofdeath",
+        "class": "d-emoji",
+        "alt": "fingerofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 202293,
+        "end": 202424
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necrobasic",
+        "class": "d-emoji",
+        "alt": "necrobasic",
+        "src": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 202427,
+        "end": 202552
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "commandskeleton",
+        "class": "d-emoji",
+        "alt": "commandskeleton",
+        "src": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 202555,
+        "end": 202690
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bloat",
+        "class": "d-emoji",
+        "alt": "bloat",
+        "src": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 202693,
+        "end": 202808
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "volleyofsouls",
+        "class": "d-emoji",
+        "alt": "volleyofsouls",
+        "src": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 202811,
+        "end": 202942
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulsap",
+        "class": "d-emoji",
+        "alt": "soulsap",
+        "src": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 202945,
+        "end": 203064
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "touchofdeath",
+        "class": "d-emoji",
+        "alt": "touchofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 203067,
+        "end": 203196
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necrobasic",
+        "class": "d-emoji",
+        "alt": "necrobasic",
+        "src": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 203199,
+        "end": 203324
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulsap",
+        "class": "d-emoji",
+        "alt": "soulsap",
+        "src": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 203327,
+        "end": 203446
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "fingerofdeath",
+        "class": "d-emoji",
+        "alt": "fingerofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 203532,
+        "end": 203663
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "threadsoffate",
+        "class": "d-emoji",
+        "alt": "threadsoffate",
+        "src": "https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 203872,
+        "end": 204003
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "threadsoffate",
+        "class": "d-emoji",
+        "alt": "threadsoffate",
+        "src": "https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 204229,
+        "end": 204360
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "fingerofdeath",
+        "class": "d-emoji",
+        "alt": "fingerofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 204363,
+        "end": 204494
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "volleyofsouls",
+        "class": "d-emoji",
+        "alt": "volleyofsouls",
+        "src": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 204497,
+        "end": 204628
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathguard70",
+        "class": "d-emoji",
+        "alt": "deathguard70",
+        "src": "https://cdn.discordapp.com/emojis/1138809262194294864.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 204631,
+        "end": 204760
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "eofspec",
+        "class": "d-emoji",
+        "alt": "eofspec",
+        "src": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 204761,
+        "end": 204880
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulsap",
+        "class": "d-emoji",
+        "alt": "soulsap",
+        "src": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 204888,
+        "end": 205007
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "residualsoul",
+        "class": "d-emoji",
+        "alt": "residualsoul",
+        "src": "https://cdn.discordapp.com/emojis/1139453152169558046.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 205017,
+        "end": 205146
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "threadsoffate",
+        "class": "d-emoji",
+        "alt": "threadsoffate",
+        "src": "https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 205159,
+        "end": 205290
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulsap",
+        "class": "d-emoji",
+        "alt": "soulsap",
+        "src": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 205293,
+        "end": 205412
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "volleyofsouls",
+        "class": "d-emoji",
+        "alt": "volleyofsouls",
+        "src": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 205415,
+        "end": 205546
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathguard70",
+        "class": "d-emoji",
+        "alt": "deathguard70",
+        "src": "https://cdn.discordapp.com/emojis/1138809262194294864.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 205549,
+        "end": 205678
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "eofspec",
+        "class": "d-emoji",
+        "alt": "eofspec",
+        "src": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 205679,
+        "end": 205798
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathguard70",
+        "class": "d-emoji",
+        "alt": "deathguard70",
+        "src": "https://cdn.discordapp.com/emojis/1138809262194294864.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 206020,
+        "end": 206149
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "eofspec",
+        "class": "d-emoji",
+        "alt": "eofspec",
+        "src": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 206150,
+        "end": 206269
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulstrike",
+        "class": "d-emoji",
+        "alt": "soulstrike",
+        "src": "https://cdn.discordapp.com/emojis/1137809142376058910.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 206272,
+        "end": 206397
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "spectralscythe",
+        "class": "d-emoji",
+        "alt": "spectralscythe",
+        "src": "https://cdn.discordapp.com/emojis/1137809145706319892.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 206447,
+        "end": 206580
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulstrike",
+        "class": "d-emoji",
+        "alt": "soulstrike",
+        "src": "https://cdn.discordapp.com/emojis/1137809142376058910.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 206958,
+        "end": 207083
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "residualsoul",
+        "class": "d-emoji",
+        "alt": "residualsoul",
+        "src": "https://cdn.discordapp.com/emojis/1139453152169558046.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 207163,
+        "end": 207292
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "commandzombie",
+        "class": "d-emoji",
+        "alt": "commandzombie",
+        "src": "https://cdn.discordapp.com/emojis/1137809191231295549.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 207338,
+        "end": 207469
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "conjurezombie",
+        "class": "d-emoji",
+        "alt": "conjurezombie",
+        "src": "https://cdn.discordapp.com/emojis/1137809200219684924.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 207533,
+        "end": 207664
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "conjurearmy",
+        "class": "d-emoji",
+        "alt": "conjurearmy",
+        "src": "https://cdn.discordapp.com/emojis/1166094935066423348.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 207696,
+        "end": 207823
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bloat",
+        "class": "d-emoji",
+        "alt": "bloat",
+        "src": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 207846,
+        "end": 207961
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bloodsiphon",
+        "class": "d-emoji",
+        "alt": "bloodsiphon",
+        "src": "https://cdn.discordapp.com/emojis/1159434279311380532.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 208115,
+        "end": 208242
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "splitsoul",
+        "class": "d-emoji",
+        "alt": "splitsoul",
+        "src": "https://cdn.discordapp.com/emojis/1137809168368148490.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 208613,
+        "end": 208736
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bloat",
+        "class": "d-emoji",
+        "alt": "bloat",
+        "src": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 208741,
+        "end": 208856
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathskulls",
+        "class": "d-emoji",
+        "alt": "deathskulls",
+        "src": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 208929,
+        "end": 209056
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "volleyofsouls",
+        "class": "d-emoji",
+        "alt": "volleyofsouls",
+        "src": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 209059,
+        "end": 209190
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "volleyofsouls",
+        "class": "d-emoji",
+        "alt": "volleyofsouls",
+        "src": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 209282,
+        "end": 209413
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "fingerofdeath",
+        "class": "d-emoji",
+        "alt": "fingerofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 209416,
+        "end": 209547
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathguard90",
+        "class": "d-emoji",
+        "alt": "deathguard90",
+        "src": "https://cdn.discordapp.com/emojis/1138809243143766118.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 209550,
+        "end": 209679
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "eofspec",
+        "class": "d-emoji",
+        "alt": "eofspec",
+        "src": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 209680,
+        "end": 209799
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathguard90",
+        "class": "d-emoji",
+        "alt": "deathguard90",
+        "src": "https://cdn.discordapp.com/emojis/1138809243143766118.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 209840,
+        "end": 209969
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "eofspec",
+        "class": "d-emoji",
+        "alt": "eofspec",
+        "src": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 209970,
+        "end": 210089
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "omniguard",
+        "class": "d-emoji",
+        "alt": "omniguard",
+        "src": "https://cdn.discordapp.com/emojis/1138809234922934282.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 210092,
+        "end": 210215
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "spec",
+        "class": "d-emoji",
+        "alt": "spec",
+        "src": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 210216,
+        "end": 210328
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "splitsoul",
+        "class": "d-emoji",
+        "alt": "splitsoul",
+        "src": "https://cdn.discordapp.com/emojis/1137809168368148490.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 210500,
+        "end": 210623
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "threadsoffate",
+        "class": "d-emoji",
+        "alt": "threadsoffate",
+        "src": "https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 210626,
+        "end": 210757
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "invokedeath",
+        "class": "d-emoji",
+        "alt": "invokedeath",
+        "src": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 210760,
+        "end": 210887
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "occulistring",
+        "class": "d-emoji",
+        "alt": "occulistring",
+        "src": "https://cdn.discordapp.com/emojis/1245442140318863490.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 210983,
+        "end": 211112
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "zorgothsring",
+        "class": "d-emoji",
+        "alt": "zorgothsring",
+        "src": "https://cdn.discordapp.com/emojis/1232124265826877574.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 211113,
+        "end": 211242
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "ringofretribution",
+        "class": "d-emoji",
+        "alt": "ringofretribution",
+        "src": "https://cdn.discordapp.com/emojis/1511674831945334894.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 211243,
+        "end": 211382
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "rod",
+        "class": "d-emoji",
+        "alt": "rod",
+        "src": "https://cdn.discordapp.com/emojis/513190159462825984.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 211383,
+        "end": 211493
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "occulistring",
+        "class": "d-emoji",
+        "alt": "occulistring",
+        "src": "https://cdn.discordapp.com/emojis/1245442140318863490.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 211626,
+        "end": 211755
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necrosis",
+        "class": "d-emoji",
+        "alt": "necrosis",
+        "src": "https://cdn.discordapp.com/emojis/1139452791878856805.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 211831,
+        "end": 211952
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "livingdeath",
+        "class": "d-emoji",
+        "alt": "livingdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 211974,
+        "end": 212101
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "zorgothsring",
+        "class": "d-emoji",
+        "alt": "zorgothsring",
+        "src": "https://cdn.discordapp.com/emojis/1232124265826877574.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 212126,
+        "end": 212255
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "threadsoffate",
+        "class": "d-emoji",
+        "alt": "threadsoffate",
+        "src": "https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 212318,
+        "end": 212449
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "volleyofsouls",
+        "class": "d-emoji",
+        "alt": "volleyofsouls",
+        "src": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 212450,
+        "end": 212581
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulstrike",
+        "class": "d-emoji",
+        "alt": "soulstrike",
+        "src": "https://cdn.discordapp.com/emojis/1137809142376058910.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 212586,
+        "end": 212711
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "ringofretribution",
+        "class": "d-emoji",
+        "alt": "ringofretribution",
+        "src": "https://cdn.discordapp.com/emojis/1511674831945334894.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 212736,
+        "end": 212875
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "rod",
+        "class": "d-emoji",
+        "alt": "rod",
+        "src": "https://cdn.discordapp.com/emojis/513190159462825984.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 213034,
+        "end": 213144
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "omniguard",
+        "class": "d-emoji",
+        "alt": "omniguard",
+        "src": "https://cdn.discordapp.com/emojis/1138809234922934282.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 213318,
+        "end": 213441
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necromancy",
+        "class": "d-emoji",
+        "alt": "necromancy",
+        "src": "https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 213542,
+        "end": 213667
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "omniguard",
+        "class": "d-emoji",
+        "alt": "omniguard",
+        "src": "https://cdn.discordapp.com/emojis/1138809234922934282.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 213715,
+        "end": 213838
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "devourersguard",
+        "class": "d-emoji",
+        "alt": "devourersguard",
+        "src": "https://cdn.discordapp.com/emojis/1400511720455143539.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 213860,
+        "end": 213993
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "omniguard",
+        "class": "d-emoji",
+        "alt": "omniguard",
+        "src": "https://cdn.discordapp.com/emojis/1138809234922934282.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 214094,
+        "end": 214217
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathspark",
+        "class": "d-emoji",
+        "alt": "deathspark",
+        "src": "https://cdn.discordapp.com/emojis/1143642264850141205.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 214259,
+        "end": 214384
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "spec",
+        "class": "d-emoji",
+        "alt": "spec",
+        "src": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 214444,
+        "end": 214556
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathspark",
+        "class": "d-emoji",
+        "alt": "deathspark",
+        "src": "https://cdn.discordapp.com/emojis/1143642264850141205.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 214578,
+        "end": 214703
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "dummy",
+        "class": "d-emoji",
+        "alt": "dummy",
+        "src": "https://cdn.discordapp.com/emojis/656844963522281473.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 214712,
+        "end": 214826
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "omniguard",
+        "class": "d-emoji",
+        "alt": "omniguard",
+        "src": "https://cdn.discordapp.com/emojis/1138809234922934282.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 214881,
+        "end": 215004
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "spec",
+        "class": "d-emoji",
+        "alt": "spec",
+        "src": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 215005,
+        "end": 215117
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathspark",
+        "class": "d-emoji",
+        "alt": "deathspark",
+        "src": "https://cdn.discordapp.com/emojis/1143642264850141205.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 215126,
+        "end": 215251
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathspark",
+        "class": "d-emoji",
+        "alt": "deathspark",
+        "src": "https://cdn.discordapp.com/emojis/1143642264850141205.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 215347,
+        "end": 215472
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "omniguard",
+        "class": "d-emoji",
+        "alt": "omniguard",
+        "src": "https://cdn.discordapp.com/emojis/1138809234922934282.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 215489,
+        "end": 215612
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "spec",
+        "class": "d-emoji",
+        "alt": "spec",
+        "src": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 215613,
+        "end": 215725
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathspark",
+        "class": "d-emoji",
+        "alt": "deathspark",
+        "src": "https://cdn.discordapp.com/emojis/1143642264850141205.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 215728,
+        "end": 215853
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "fingerofdeath",
+        "class": "d-emoji",
+        "alt": "fingerofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 215856,
+        "end": 215987
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathspark",
+        "class": "d-emoji",
+        "alt": "deathspark",
+        "src": "https://cdn.discordapp.com/emojis/1143642264850141205.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 215990,
+        "end": 216115
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "touchofdeath",
+        "class": "d-emoji",
+        "alt": "touchofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 216118,
+        "end": 216247
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathspark",
+        "class": "d-emoji",
+        "alt": "deathspark",
+        "src": "https://cdn.discordapp.com/emojis/1143642264850141205.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 216250,
+        "end": 216375
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "devourersguard",
+        "class": "d-emoji",
+        "alt": "devourersguard",
+        "src": "https://cdn.discordapp.com/emojis/1400511720455143539.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 216449,
+        "end": 216582
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathspark",
+        "class": "d-emoji",
+        "alt": "deathspark",
+        "src": "https://cdn.discordapp.com/emojis/1143642264850141205.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 216623,
+        "end": 216748
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "spec",
+        "class": "d-emoji",
+        "alt": "spec",
+        "src": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 216805,
+        "end": 216917
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "dummy",
+        "class": "d-emoji",
+        "alt": "dummy",
+        "src": "https://cdn.discordapp.com/emojis/656844963522281473.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 216950,
+        "end": 217064
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "threadsoffate",
+        "class": "d-emoji",
+        "alt": "threadsoffate",
+        "src": "https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 217088,
+        "end": 217219
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "devourersguard",
+        "class": "d-emoji",
+        "alt": "devourersguard",
+        "src": "https://cdn.discordapp.com/emojis/1400511720455143539.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 217222,
+        "end": 217355
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "spec",
+        "class": "d-emoji",
+        "alt": "spec",
+        "src": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 217356,
+        "end": 217468
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathsparkorsoulreave",
+        "class": "d-emoji",
+        "alt": "deathsparkorsoulreave",
+        "src": "https://cdn.discordapp.com/emojis/1143642264850141205.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 217471,
+        "end": 217618
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulsap",
+        "class": "d-emoji",
+        "alt": "soulsap",
+        "src": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 217621,
+        "end": 217740
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "touchofdeath",
+        "class": "d-emoji",
+        "alt": "touchofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 217743,
+        "end": 217872
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "volleyofsouls",
+        "class": "d-emoji",
+        "alt": "volleyofsouls",
+        "src": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 217907,
+        "end": 218038
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "livingdeath",
+        "class": "d-emoji",
+        "alt": "livingdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 218070,
+        "end": 218197
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "residualsoul",
+        "class": "d-emoji",
+        "alt": "residualsoul",
+        "src": "https://cdn.discordapp.com/emojis/1139453152169558046.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 218253,
+        "end": 218382
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "splitsoul",
+        "class": "d-emoji",
+        "alt": "splitsoul",
+        "src": "https://cdn.discordapp.com/emojis/1137809168368148490.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 218385,
+        "end": 218508
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bloat",
+        "class": "d-emoji",
+        "alt": "bloat",
+        "src": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 218511,
+        "end": 218626
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "volleyofsouls",
+        "class": "d-emoji",
+        "alt": "volleyofsouls",
+        "src": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 218629,
+        "end": 218760
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "devourersguard",
+        "class": "d-emoji",
+        "alt": "devourersguard",
+        "src": "https://cdn.discordapp.com/emojis/1400511720455143539.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 218763,
+        "end": 218896
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "spec",
+        "class": "d-emoji",
+        "alt": "spec",
+        "src": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 218897,
+        "end": 219009
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathsparkorsoulreave",
+        "class": "d-emoji",
+        "alt": "deathsparkorsoulreave",
+        "src": "https://cdn.discordapp.com/emojis/1143642264850141205.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 219012,
+        "end": 219159
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulsap",
+        "class": "d-emoji",
+        "alt": "soulsap",
+        "src": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 219162,
+        "end": 219281
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathsparkorsoulreave",
+        "class": "d-emoji",
+        "alt": "deathsparkorsoulreave",
+        "src": "https://cdn.discordapp.com/emojis/1143642264850141205.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 219284,
+        "end": 219431
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "commandskeleton",
+        "class": "d-emoji",
+        "alt": "commandskeleton",
+        "src": "https://cdn.discordapp.com/emojis/1137809194423160883.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 219434,
+        "end": 219569
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulsap",
+        "class": "d-emoji",
+        "alt": "soulsap",
+        "src": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 219572,
+        "end": 219691
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathsparkorsoulreave",
+        "class": "d-emoji",
+        "alt": "deathsparkorsoulreave",
+        "src": "https://cdn.discordapp.com/emojis/1143642264850141205.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 219694,
+        "end": 219841
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "fingerofdeath",
+        "class": "d-emoji",
+        "alt": "fingerofdeath",
+        "src": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 219844,
+        "end": 219975
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulsap",
+        "class": "d-emoji",
+        "alt": "soulsap",
+        "src": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 219978,
+        "end": 220097
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "volleyofsouls",
+        "class": "d-emoji",
+        "alt": "volleyofsouls",
+        "src": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 220100,
+        "end": 220231
+      }
+    }
+  ],
+  "links": [
+    {
+      "href": "",
+      "text": "#unknown-channel",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 170004,
+        "end": 170056
+      }
+    },
+    {
+      "href": "https://rs-analysis.xyz/necromancy.html",
+      "text": "RS Analysis' Necromancy Page",
+      "attrs": {
+        "href": "https://rs-analysis.xyz/necromancy.html"
+      },
+      "location": {
+        "start": 170092,
+        "end": 170174
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Extinction",
+      "text": "Extinction quest",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Extinction"
+      },
+      "location": {
+        "start": 186671,
+        "end": 186737
+      }
+    },
+    {
+      "href": "",
+      "text": "#unknown-channel",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 221342,
+        "end": 221394
+      }
+    },
+    {
+      "href": "",
+      "text": "#eof-specs",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 221397,
+        "end": 221443
+      }
+    },
+    {
+      "href": "",
+      "text": "#perks",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 221596,
+        "end": 221638
+      }
+    },
+    {
+      "href": "",
+      "text": "#perk-information",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 221641,
+        "end": 221694
+      }
+    },
+    {
+      "href": "",
+      "text": "#unknown-channel",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 221848,
+        "end": 221900
+      }
+    },
+    {
+      "href": "",
+      "text": "#mechanics",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 221903,
+        "end": 221949
+      }
+    },
+    {
+      "href": "",
+      "text": "#pvm-help",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 222188,
+        "end": 222233
+      }
+    }
+  ],
+  "files": {
+    "source": "guides/pvme-guides--dpm-advice--dpm-advice-necro/source.json",
+    "inventory": "guides/pvme-guides--dpm-advice--dpm-advice-necro/inventory.json",
+    "article": "guides/pvme-guides--dpm-advice--dpm-advice-necro/article.html",
+    "response": "guides/pvme-guides--dpm-advice--dpm-advice-necro/response.html",
+    "metadata": "guides/pvme-guides--dpm-advice--dpm-advice-necro/metadata.json"
+  },
+  "limitations": [
+    "Exact HTTP article preserved, not dynamic preset/item/API data or image/video-only information.",
+    "No media availability, browser layout, semantic equivalence or live wiki revision parity claim."
+  ]
+}

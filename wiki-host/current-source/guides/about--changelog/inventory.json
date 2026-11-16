@@ -1,0 +1,2991 @@
+{
+  "schemaVersion": 1,
+  "id": "about--changelog",
+  "sourceURL": "https://pvme.io/about/changelog/",
+  "responseURL": "https://pvme.io/about/changelog/",
+  "boundary": "Direct article H1 onward through article-inner end",
+  "offsets": {
+    "start": 179012,
+    "end": 186566
+  },
+  "text": "Changelog\nUpdates for the website.\nFor bugs or feature requests, message me on Discord (Pleb#0025) or create an issue on Github.\nNovember 28, 2025\n\nSupport rendering preset maker embed urls\nUpdated depedencies\nBugfix: empty  for #pvme-help\nRemoved \"Testing\" guide\n\nNovember 30, 2024\n\nunlinked social channel and forum names now always up to date (support new channels.json format)\n\nNovember 23, 2024\n\nUpdated various #unknown-channel to show actual channel name\nyoutube.com/live show embed preview correctly\n\nJuly 4, 2024\n\nAdded support for pvme spreadsheet cell alias (prices shown correctly again)\n\nJune 28, 2024\n\nAdded \"edit this guide\" button\nChange #user -> @user\n\nJune 15, 2024\n\nFixed issue with duplicate titles and improved headings\n\nMay 3, 2024\n\nUpdated mkdocs and other dependencies to latest version\n\nApril 2, 2024\n\nFixed markdown links with )) not being formatted correctly\n\nNovember 9, 2023\n\nUpdated social card\nNew PVME logo\n\nApril 16, 2023\n\nUrls and other formatting now disabled when text is in inline code field\n\nApril 6, 2023\n\nAdded \"Editor Info\" and \"Mastery\" categories\nUpdated logo\nFixed some roles that weren't rendered because of a different ID length\n\nNovember, 13, 2022\n\nReorganized about and home page (improves navigation on mobile).\nBetter alias support\nAlias for forums/words/extra channels\nCategory emojis\n\nNovember, 5, 2022\n\nNew site structure:\nCategories now on the top of the page.\nAdded category aliases\nUpdated \"about\" page\nAdded \"how the site works\" page\nIncluded changelog to the site itself\n\n\nGenerated pages are now appended to mkdocs.yaml nav instead of fully overwriting it.\n\nNovember, 1, 2022\n\nMoved \"(Courtesy of)\" to the line below headings to clean up the ToC on the side\nNew logo\nRemoved various mentions of ToC in pins (only relevant to Discord)\n\nNovember, 1, 2022\n\nFixed some broken headings\n\nOctober, 30, 2022\n\nImplemented new site generation\nBy default, guides are sorted alphabetically\nAll guides will be included, even when the pvme-guides repository structure changes\n\n\nFixed remaining broken links (will continue to work in the future)\n\nSeptember, 6, 2022\n\nFinished formatter rewrite\nEmbed changes\nincreased max width (if content fits on discord, it will fit on the site)\nfixed inline code formatting (correct font so width matches discord)\ndarkened background slightly\nchanged description font color to match that of the rest of the embed\nlight mode looks the same as dark mode\n\n\nAttachment url changes (videos/images)\nremoved autoplay option to improve page load time\nall videos have the same control options\nadded more known url regexes to reduce build time\n\n\nbugfix with incorrect channel urls: issue\n\nSeptember, 1, 2022\n\nCode blocks in embeds now shown correctly\n\nAugust, 31, 2022\n\nEmpty lines are now shown correctly\n\nAugust, 30, 2022\n\nPVME settings are now all obtained from pvme-settings and will be kept up to date mostly automatically and otherwise more frequently (users is still manual)\nVarious refactoring for PVME settings migration\n\nAugust, 15, 2022\n\nPrices now updated correctly in embeds\n\nJuly, 4, 2022\n\nadded Zamorak category\n\nJune, 20, 2022\nThanks to emmet-shark:\n\nAdded new category structure and guide names. The guide structure and names now always match the category + channel names in Discord \nReduced spacing\nembed fixes\nfix links inside embeds\nremove nonexistent footer embed icons\n\n\n\nJune, 15, 2022\nThanks to emmet-shark:\n\nRemoved unnecessary ToC embed at the bottom of the page\nFixed a bunch of non-clickable urls\n\nAugust, 9, 2021\n\nUpdated invalid Discord channels\nAdded invite link url to home page\n\nAugust, 6, 2021\n\nAdded invalid discord channels as non-clickable links (WiP)\nAdded search suggestions\nAdded search highlighting\nAdded \"back to top\" button\nUpdated channels and users\n\nJuly, 7, 2021\n\nUpdated users and roles\n\nJune, 30, 2021\n\nAdded Solak category and updated channels\n\nJune, 25, 2021\n\nFixed bug with imgur.mp4 and imgur.jpg not being rendered\n\nJune, 10, 2021\n\nAdded support for discord embeds vorago-trio-hm\n\nMay 20, 2021\n\nfixed broken channel links\nupdated missing roles/channels/users\nbugfix imgur links\nlight/dark mode switch\n\nApril 16, 2021\n\nAdded new categories (same structure as PVME Discord)\n\nMarch 22, 2021\n\nAdded support for emojis (standard discord emojis)\nUpdated missing roles/channels/users\nRemoved note for survey\n\nMarch 15, 2021\n\nUpdated missing roles/channels/users\nAdded note for survey\n\nJanuary 9, 2021\n\nAdded colored roles\nUpdated missing Discord links\nAdded WiP Slayer Category\n\nJanuary 4, 2021\n\nAdded, and enabled by default, debug logging to quickly check missing Discord links (check daily build log)\n\nDecember 18, 2020\n\n\"last updated on\" only on \"Home\" page (since the page is updated daily)\n\nDecember 17, 2020\n\nAdded support for strike-through text\nAdded changelog\n\nDecember 16, 2020\n\nInitial release\n\n      \n    ",
+  "normalizedText": "Changelog Updates for the website. For bugs or feature requests, message me on Discord (Pleb#0025) or create an issue on Github. November 28, 2025 Support rendering preset maker embed urls Updated depedencies Bugfix: empty for #pvme-help Removed \"Testing\" guide November 30, 2024 unlinked social channel and forum names now always up to date (support new channels.json format) November 23, 2024 Updated various #unknown-channel to show actual channel name youtube.com/live show embed preview correctly July 4, 2024 Added support for pvme spreadsheet cell alias (prices shown correctly again) June 28, 2024 Added \"edit this guide\" button Change #user -> @user June 15, 2024 Fixed issue with duplicate titles and improved headings May 3, 2024 Updated mkdocs and other dependencies to latest version April 2, 2024 Fixed markdown links with )) not being formatted correctly November 9, 2023 Updated social card New PVME logo April 16, 2023 Urls and other formatting now disabled when text is in inline code field April 6, 2023 Added \"Editor Info\" and \"Mastery\" categories Updated logo Fixed some roles that weren't rendered because of a different ID length November, 13, 2022 Reorganized about and home page (improves navigation on mobile). Better alias support Alias for forums/words/extra channels Category emojis November, 5, 2022 New site structure: Categories now on the top of the page. Added category aliases Updated \"about\" page Added \"how the site works\" page Included changelog to the site itself Generated pages are now appended to mkdocs.yaml nav instead of fully overwriting it. November, 1, 2022 Moved \"(Courtesy of)\" to the line below headings to clean up the ToC on the side New logo Removed various mentions of ToC in pins (only relevant to Discord) November, 1, 2022 Fixed some broken headings October, 30, 2022 Implemented new site generation By default, guides are sorted alphabetically All guides will be included, even when the pvme-guides repository structure changes Fixed remaining broken links (will continue to work in the future) September, 6, 2022 Finished formatter rewrite Embed changes increased max width (if content fits on discord, it will fit on the site) fixed inline code formatting (correct font so width matches discord) darkened background slightly changed description font color to match that of the rest of the embed light mode looks the same as dark mode Attachment url changes (videos/images) removed autoplay option to improve page load time all videos have the same control options added more known url regexes to reduce build time bugfix with incorrect channel urls: issue September, 1, 2022 Code blocks in embeds now shown correctly August, 31, 2022 Empty lines are now shown correctly August, 30, 2022 PVME settings are now all obtained from pvme-settings and will be kept up to date mostly automatically and otherwise more frequently (users is still manual) Various refactoring for PVME settings migration August, 15, 2022 Prices now updated correctly in embeds July, 4, 2022 added Zamorak category June, 20, 2022 Thanks to emmet-shark: Added new category structure and guide names. The guide structure and names now always match the category + channel names in Discord Reduced spacing embed fixes fix links inside embeds remove nonexistent footer embed icons June, 15, 2022 Thanks to emmet-shark: Removed unnecessary ToC embed at the bottom of the page Fixed a bunch of non-clickable urls August, 9, 2021 Updated invalid Discord channels Added invite link url to home page August, 6, 2021 Added invalid discord channels as non-clickable links (WiP) Added search suggestions Added search highlighting Added \"back to top\" button Updated channels and users July, 7, 2021 Updated users and roles June, 30, 2021 Added Solak category and updated channels June, 25, 2021 Fixed bug with imgur.mp4 and imgur.jpg not being rendered June, 10, 2021 Added support for discord embeds vorago-trio-hm May 20, 2021 fixed broken channel links updated missing roles/channels/users bugfix imgur links light/dark mode switch April 16, 2021 Added new categories (same structure as PVME Discord) March 22, 2021 Added support for emojis (standard discord emojis) Updated missing roles/channels/users Removed note for survey March 15, 2021 Updated missing roles/channels/users Added note for survey January 9, 2021 Added colored roles Updated missing Discord links Added WiP Slayer Category January 4, 2021 Added, and enabled by default, debug logging to quickly check missing Discord links (check daily build log) December 18, 2020 \"last updated on\" only on \"Home\" page (since the page is updated daily) December 17, 2020 Added support for strike-through text Added changelog December 16, 2020 Initial release",
+  "wordStream": [
+    "Changelog",
+    "Updates",
+    "for",
+    "the",
+    "website.",
+    "For",
+    "bugs",
+    "or",
+    "feature",
+    "requests,",
+    "message",
+    "me",
+    "on",
+    "Discord",
+    "(Pleb#0025)",
+    "or",
+    "create",
+    "an",
+    "issue",
+    "on",
+    "Github.",
+    "November",
+    "28,",
+    "2025",
+    "Support",
+    "rendering",
+    "preset",
+    "maker",
+    "embed",
+    "urls",
+    "Updated",
+    "depedencies",
+    "Bugfix:",
+    "empty",
+    "for",
+    "#pvme-help",
+    "Removed",
+    "\"Testing\"",
+    "guide",
+    "November",
+    "30,",
+    "2024",
+    "unlinked",
+    "social",
+    "channel",
+    "and",
+    "forum",
+    "names",
+    "now",
+    "always",
+    "up",
+    "to",
+    "date",
+    "(support",
+    "new",
+    "channels.json",
+    "format)",
+    "November",
+    "23,",
+    "2024",
+    "Updated",
+    "various",
+    "#unknown-channel",
+    "to",
+    "show",
+    "actual",
+    "channel",
+    "name",
+    "youtube.com/live",
+    "show",
+    "embed",
+    "preview",
+    "correctly",
+    "July",
+    "4,",
+    "2024",
+    "Added",
+    "support",
+    "for",
+    "pvme",
+    "spreadsheet",
+    "cell",
+    "alias",
+    "(prices",
+    "shown",
+    "correctly",
+    "again)",
+    "June",
+    "28,",
+    "2024",
+    "Added",
+    "\"edit",
+    "this",
+    "guide\"",
+    "button",
+    "Change",
+    "#user",
+    "->",
+    "@user",
+    "June",
+    "15,",
+    "2024",
+    "Fixed",
+    "issue",
+    "with",
+    "duplicate",
+    "titles",
+    "and",
+    "improved",
+    "headings",
+    "May",
+    "3,",
+    "2024",
+    "Updated",
+    "mkdocs",
+    "and",
+    "other",
+    "dependencies",
+    "to",
+    "latest",
+    "version",
+    "April",
+    "2,",
+    "2024",
+    "Fixed",
+    "markdown",
+    "links",
+    "with",
+    "))",
+    "not",
+    "being",
+    "formatted",
+    "correctly",
+    "November",
+    "9,",
+    "2023",
+    "Updated",
+    "social",
+    "card",
+    "New",
+    "PVME",
+    "logo",
+    "April",
+    "16,",
+    "2023",
+    "Urls",
+    "and",
+    "other",
+    "formatting",
+    "now",
+    "disabled",
+    "when",
+    "text",
+    "is",
+    "in",
+    "inline",
+    "code",
+    "field",
+    "April",
+    "6,",
+    "2023",
+    "Added",
+    "\"Editor",
+    "Info\"",
+    "and",
+    "\"Mastery\"",
+    "categories",
+    "Updated",
+    "logo",
+    "Fixed",
+    "some",
+    "roles",
+    "that",
+    "weren't",
+    "rendered",
+    "because",
+    "of",
+    "a",
+    "different",
+    "ID",
+    "length",
+    "November,",
+    "13,",
+    "2022",
+    "Reorganized",
+    "about",
+    "and",
+    "home",
+    "page",
+    "(improves",
+    "navigation",
+    "on",
+    "mobile).",
+    "Better",
+    "alias",
+    "support",
+    "Alias",
+    "for",
+    "forums/words/extra",
+    "channels",
+    "Category",
+    "emojis",
+    "November,",
+    "5,",
+    "2022",
+    "New",
+    "site",
+    "structure:",
+    "Categories",
+    "now",
+    "on",
+    "the",
+    "top",
+    "of",
+    "the",
+    "page.",
+    "Added",
+    "category",
+    "aliases",
+    "Updated",
+    "\"about\"",
+    "page",
+    "Added",
+    "\"how",
+    "the",
+    "site",
+    "works\"",
+    "page",
+    "Included",
+    "changelog",
+    "to",
+    "the",
+    "site",
+    "itself",
+    "Generated",
+    "pages",
+    "are",
+    "now",
+    "appended",
+    "to",
+    "mkdocs.yaml",
+    "nav",
+    "instead",
+    "of",
+    "fully",
+    "overwriting",
+    "it.",
+    "November,",
+    "1,",
+    "2022",
+    "Moved",
+    "\"(Courtesy",
+    "of)\"",
+    "to",
+    "the",
+    "line",
+    "below",
+    "headings",
+    "to",
+    "clean",
+    "up",
+    "the",
+    "ToC",
+    "on",
+    "the",
+    "side",
+    "New",
+    "logo",
+    "Removed",
+    "various",
+    "mentions",
+    "of",
+    "ToC",
+    "in",
+    "pins",
+    "(only",
+    "relevant",
+    "to",
+    "Discord)",
+    "November,",
+    "1,",
+    "2022",
+    "Fixed",
+    "some",
+    "broken",
+    "headings",
+    "October,",
+    "30,",
+    "2022",
+    "Implemented",
+    "new",
+    "site",
+    "generation",
+    "By",
+    "default,",
+    "guides",
+    "are",
+    "sorted",
+    "alphabetically",
+    "All",
+    "guides",
+    "will",
+    "be",
+    "included,",
+    "even",
+    "when",
+    "the",
+    "pvme-guides",
+    "repository",
+    "structure",
+    "changes",
+    "Fixed",
+    "remaining",
+    "broken",
+    "links",
+    "(will",
+    "continue",
+    "to",
+    "work",
+    "in",
+    "the",
+    "future)",
+    "September,",
+    "6,",
+    "2022",
+    "Finished",
+    "formatter",
+    "rewrite",
+    "Embed",
+    "changes",
+    "increased",
+    "max",
+    "width",
+    "(if",
+    "content",
+    "fits",
+    "on",
+    "discord,",
+    "it",
+    "will",
+    "fit",
+    "on",
+    "the",
+    "site)",
+    "fixed",
+    "inline",
+    "code",
+    "formatting",
+    "(correct",
+    "font",
+    "so",
+    "width",
+    "matches",
+    "discord)",
+    "darkened",
+    "background",
+    "slightly",
+    "changed",
+    "description",
+    "font",
+    "color",
+    "to",
+    "match",
+    "that",
+    "of",
+    "the",
+    "rest",
+    "of",
+    "the",
+    "embed",
+    "light",
+    "mode",
+    "looks",
+    "the",
+    "same",
+    "as",
+    "dark",
+    "mode",
+    "Attachment",
+    "url",
+    "changes",
+    "(videos/images)",
+    "removed",
+    "autoplay",
+    "option",
+    "to",
+    "improve",
+    "page",
+    "load",
+    "time",
+    "all",
+    "videos",
+    "have",
+    "the",
+    "same",
+    "control",
+    "options",
+    "added",
+    "more",
+    "known",
+    "url",
+    "regexes",
+    "to",
+    "reduce",
+    "build",
+    "time",
+    "bugfix",
+    "with",
+    "incorrect",
+    "channel",
+    "urls:",
+    "issue",
+    "September,",
+    "1,",
+    "2022",
+    "Code",
+    "blocks",
+    "in",
+    "embeds",
+    "now",
+    "shown",
+    "correctly",
+    "August,",
+    "31,",
+    "2022",
+    "Empty",
+    "lines",
+    "are",
+    "now",
+    "shown",
+    "correctly",
+    "August,",
+    "30,",
+    "2022",
+    "PVME",
+    "settings",
+    "are",
+    "now",
+    "all",
+    "obtained",
+    "from",
+    "pvme-settings",
+    "and",
+    "will",
+    "be",
+    "kept",
+    "up",
+    "to",
+    "date",
+    "mostly",
+    "automatically",
+    "and",
+    "otherwise",
+    "more",
+    "frequently",
+    "(users",
+    "is",
+    "still",
+    "manual)",
+    "Various",
+    "refactoring",
+    "for",
+    "PVME",
+    "settings",
+    "migration",
+    "August,",
+    "15,",
+    "2022",
+    "Prices",
+    "now",
+    "updated",
+    "correctly",
+    "in",
+    "embeds",
+    "July,",
+    "4,",
+    "2022",
+    "added",
+    "Zamorak",
+    "category",
+    "June,",
+    "20,",
+    "2022",
+    "Thanks",
+    "to",
+    "emmet-shark:",
+    "Added",
+    "new",
+    "category",
+    "structure",
+    "and",
+    "guide",
+    "names.",
+    "The",
+    "guide",
+    "structure",
+    "and",
+    "names",
+    "now",
+    "always",
+    "match",
+    "the",
+    "category",
+    "+",
+    "channel",
+    "names",
+    "in",
+    "Discord",
+    "Reduced",
+    "spacing",
+    "embed",
+    "fixes",
+    "fix",
+    "links",
+    "inside",
+    "embeds",
+    "remove",
+    "nonexistent",
+    "footer",
+    "embed",
+    "icons",
+    "June,",
+    "15,",
+    "2022",
+    "Thanks",
+    "to",
+    "emmet-shark:",
+    "Removed",
+    "unnecessary",
+    "ToC",
+    "embed",
+    "at",
+    "the",
+    "bottom",
+    "of",
+    "the",
+    "page",
+    "Fixed",
+    "a",
+    "bunch",
+    "of",
+    "non-clickable",
+    "urls",
+    "August,",
+    "9,",
+    "2021",
+    "Updated",
+    "invalid",
+    "Discord",
+    "channels",
+    "Added",
+    "invite",
+    "link",
+    "url",
+    "to",
+    "home",
+    "page",
+    "August,",
+    "6,",
+    "2021",
+    "Added",
+    "invalid",
+    "discord",
+    "channels",
+    "as",
+    "non-clickable",
+    "links",
+    "(WiP)",
+    "Added",
+    "search",
+    "suggestions",
+    "Added",
+    "search",
+    "highlighting",
+    "Added",
+    "\"back",
+    "to",
+    "top\"",
+    "button",
+    "Updated",
+    "channels",
+    "and",
+    "users",
+    "July,",
+    "7,",
+    "2021",
+    "Updated",
+    "users",
+    "and",
+    "roles",
+    "June,",
+    "30,",
+    "2021",
+    "Added",
+    "Solak",
+    "category",
+    "and",
+    "updated",
+    "channels",
+    "June,",
+    "25,",
+    "2021",
+    "Fixed",
+    "bug",
+    "with",
+    "imgur.mp4",
+    "and",
+    "imgur.jpg",
+    "not",
+    "being",
+    "rendered",
+    "June,",
+    "10,",
+    "2021",
+    "Added",
+    "support",
+    "for",
+    "discord",
+    "embeds",
+    "vorago-trio-hm",
+    "May",
+    "20,",
+    "2021",
+    "fixed",
+    "broken",
+    "channel",
+    "links",
+    "updated",
+    "missing",
+    "roles/channels/users",
+    "bugfix",
+    "imgur",
+    "links",
+    "light/dark",
+    "mode",
+    "switch",
+    "April",
+    "16,",
+    "2021",
+    "Added",
+    "new",
+    "categories",
+    "(same",
+    "structure",
+    "as",
+    "PVME",
+    "Discord)",
+    "March",
+    "22,",
+    "2021",
+    "Added",
+    "support",
+    "for",
+    "emojis",
+    "(standard",
+    "discord",
+    "emojis)",
+    "Updated",
+    "missing",
+    "roles/channels/users",
+    "Removed",
+    "note",
+    "for",
+    "survey",
+    "March",
+    "15,",
+    "2021",
+    "Updated",
+    "missing",
+    "roles/channels/users",
+    "Added",
+    "note",
+    "for",
+    "survey",
+    "January",
+    "9,",
+    "2021",
+    "Added",
+    "colored",
+    "roles",
+    "Updated",
+    "missing",
+    "Discord",
+    "links",
+    "Added",
+    "WiP",
+    "Slayer",
+    "Category",
+    "January",
+    "4,",
+    "2021",
+    "Added,",
+    "and",
+    "enabled",
+    "by",
+    "default,",
+    "debug",
+    "logging",
+    "to",
+    "quickly",
+    "check",
+    "missing",
+    "Discord",
+    "links",
+    "(check",
+    "daily",
+    "build",
+    "log)",
+    "December",
+    "18,",
+    "2020",
+    "\"last",
+    "updated",
+    "on\"",
+    "only",
+    "on",
+    "\"Home\"",
+    "page",
+    "(since",
+    "the",
+    "page",
+    "is",
+    "updated",
+    "daily)",
+    "December",
+    "17,",
+    "2020",
+    "Added",
+    "support",
+    "for",
+    "strike-through",
+    "text",
+    "Added",
+    "changelog",
+    "December",
+    "16,",
+    "2020",
+    "Initial",
+    "release"
+  ],
+  "hashes": {
+    "responseSha256": "8930e60392befaa31a788918e2a79209929343d2df76260fe38f1f4d71b43acd",
+    "articleSha256": "711b16b94cf9416cc05da1d32c23747fc071500f115791ff4bbed0a4c951c9ac",
+    "textSha256": "bccbf4a329b70276b5ee4e52f1cc87b2888b4e0c1eadfa6c6f7698905c585909",
+    "normalizedTextSha256": "e2019a848342b6444c1e87f3794017248417e490f93a06e505e0d1e6ccbfde5e"
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Changelog",
+      "attrs": {
+        "id": "changelog"
+      },
+      "location": {
+        "start": 179012,
+        "end": 179045
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "November 28, 2025",
+      "attrs": {
+        "id": "november-28-2025"
+      },
+      "location": {
+        "start": 179232,
+        "end": 179280
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "November 30, 2024",
+      "attrs": {
+        "id": "november-30-2024"
+      },
+      "location": {
+        "start": 179470,
+        "end": 179518
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "November 23, 2024",
+      "attrs": {
+        "id": "november-23-2024"
+      },
+      "location": {
+        "start": 179636,
+        "end": 179684
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "July 4, 2024",
+      "attrs": {
+        "id": "july-4-2024"
+      },
+      "location": {
+        "start": 179821,
+        "end": 179859
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "June 28, 2024",
+      "attrs": {
+        "id": "june-28-2024"
+      },
+      "location": {
+        "start": 179957,
+        "end": 179997
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "June 15, 2024",
+      "attrs": {
+        "id": "june-15-2024"
+      },
+      "location": {
+        "start": 180083,
+        "end": 180123
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "May 3, 2024",
+      "attrs": {
+        "id": "may-3-2024"
+      },
+      "location": {
+        "start": 180200,
+        "end": 180236
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "April 2, 2024",
+      "attrs": {
+        "id": "april-2-2024"
+      },
+      "location": {
+        "start": 180313,
+        "end": 180353
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "November 9, 2023",
+      "attrs": {
+        "id": "november-9-2023"
+      },
+      "location": {
+        "start": 180433,
+        "end": 180479
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "April 16, 2023",
+      "attrs": {
+        "id": "april-16-2023"
+      },
+      "location": {
+        "start": 180543,
+        "end": 180585
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "April 6, 2023",
+      "attrs": {
+        "id": "april-6-2023"
+      },
+      "location": {
+        "start": 180692,
+        "end": 180732
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "November, 13, 2022",
+      "attrs": {
+        "id": "november-13-2022"
+      },
+      "location": {
+        "start": 180901,
+        "end": 180950
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "November, 5, 2022",
+      "attrs": {
+        "id": "november-5-2022"
+      },
+      "location": {
+        "start": 181138,
+        "end": 181185
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "November, 1, 2022",
+      "attrs": {
+        "id": "november-1-2022"
+      },
+      "location": {
+        "start": 181542,
+        "end": 181589
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "November, 1, 2022",
+      "attrs": {
+        "id": "november-1-2022_1"
+      },
+      "location": {
+        "start": 181798,
+        "end": 181847
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "October, 30, 2022",
+      "attrs": {
+        "id": "october-30-2022"
+      },
+      "location": {
+        "start": 181895,
+        "end": 181942
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "September, 6, 2022",
+      "attrs": {
+        "id": "september-6-2022"
+      },
+      "location": {
+        "start": 182279,
+        "end": 182328
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "September, 1, 2022",
+      "attrs": {
+        "id": "september-1-2022"
+      },
+      "location": {
+        "start": 183076,
+        "end": 183125
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "August, 31, 2022",
+      "attrs": {
+        "id": "august-31-2022"
+      },
+      "location": {
+        "start": 183188,
+        "end": 183233
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "August, 30, 2022",
+      "attrs": {
+        "id": "august-30-2022"
+      },
+      "location": {
+        "start": 183290,
+        "end": 183335
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "August, 15, 2022",
+      "attrs": {
+        "id": "august-15-2022"
+      },
+      "location": {
+        "start": 183570,
+        "end": 183615
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "July, 4, 2022",
+      "attrs": {
+        "id": "july-4-2022"
+      },
+      "location": {
+        "start": 183675,
+        "end": 183714
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "June, 20, 2022",
+      "attrs": {
+        "id": "june-20-2022"
+      },
+      "location": {
+        "start": 183758,
+        "end": 183799
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "June, 15, 2022",
+      "attrs": {
+        "id": "june-15-2022"
+      },
+      "location": {
+        "start": 184121,
+        "end": 184162
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "August, 9, 2021",
+      "attrs": {
+        "id": "august-9-2021"
+      },
+      "location": {
+        "start": 184314,
+        "end": 184357
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "August, 6, 2021",
+      "attrs": {
+        "id": "august-6-2021"
+      },
+      "location": {
+        "start": 184455,
+        "end": 184498
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "July, 7, 2021",
+      "attrs": {
+        "id": "july-7-2021"
+      },
+      "location": {
+        "start": 184720,
+        "end": 184759
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "June, 30, 2021",
+      "attrs": {
+        "id": "june-30-2021"
+      },
+      "location": {
+        "start": 184804,
+        "end": 184845
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "June, 25, 2021",
+      "attrs": {
+        "id": "june-25-2021"
+      },
+      "location": {
+        "start": 184908,
+        "end": 184949
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "June, 10, 2021",
+      "attrs": {
+        "id": "june-10-2021"
+      },
+      "location": {
+        "start": 185028,
+        "end": 185069
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "May 20, 2021",
+      "attrs": {
+        "id": "may-20-2021"
+      },
+      "location": {
+        "start": 185221,
+        "end": 185259
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "April 16, 2021",
+      "attrs": {
+        "id": "april-16-2021"
+      },
+      "location": {
+        "start": 185413,
+        "end": 185455
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "March 22, 2021",
+      "attrs": {
+        "id": "march-22-2021"
+      },
+      "location": {
+        "start": 185530,
+        "end": 185572
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "March 15, 2021",
+      "attrs": {
+        "id": "march-15-2021"
+      },
+      "location": {
+        "start": 185723,
+        "end": 185765
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "January 9, 2021",
+      "attrs": {
+        "id": "january-9-2021"
+      },
+      "location": {
+        "start": 185854,
+        "end": 185898
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "January 4, 2021",
+      "attrs": {
+        "id": "january-4-2021"
+      },
+      "location": {
+        "start": 186013,
+        "end": 186057
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "December 18, 2020",
+      "attrs": {
+        "id": "december-18-2020"
+      },
+      "location": {
+        "start": 186186,
+        "end": 186234
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "December 17, 2020",
+      "attrs": {
+        "id": "december-17-2020"
+      },
+      "location": {
+        "start": 186327,
+        "end": 186375
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "December 16, 2020",
+      "attrs": {
+        "id": "december-16-2020"
+      },
+      "location": {
+        "start": 186470,
+        "end": 186518
+      }
+    }
+  ],
+  "media": [],
+  "links": [
+    {
+      "href": "https://github.com/pvme/pvme.github.io",
+      "text": "Github",
+      "attrs": {
+        "href": "https://github.com/pvme/pvme.github.io"
+      },
+      "location": {
+        "start": 179167,
+        "end": 179226
+      }
+    },
+    {
+      "href": "https://github.com/pvme/pvme-guides",
+      "text": "pvme-guides repository",
+      "attrs": {
+        "href": "https://github.com/pvme/pvme-guides"
+      },
+      "location": {
+        "start": 182089,
+        "end": 182161
+      }
+    },
+    {
+      "href": "https://github.com/pvme/pvme.github.io/issues/9",
+      "text": "issue",
+      "attrs": {
+        "href": "https://github.com/pvme/pvme.github.io/issues/9"
+      },
+      "location": {
+        "start": 182997,
+        "end": 183064
+      }
+    },
+    {
+      "href": "https://pvme.io/pvme-guides/vorago/vorago-trio-hm/#safe-phases-10-11",
+      "text": "vorago-trio-hm",
+      "attrs": {
+        "href": "https://pvme.io/pvme-guides/vorago/vorago-trio-hm/#safe-phases-10-11"
+      },
+      "location": {
+        "start": 185112,
+        "end": 185209
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "h1",
+      "attrs": {
+        "id": "changelog"
+      },
+      "text": "Changelog",
+      "location": {
+        "start": 179012,
+        "end": 179045
+      }
+    },
+    {
+      "index": 1,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179045,
+        "end": 179046
+      }
+    },
+    {
+      "index": 2,
+      "tag": "p",
+      "attrs": {},
+      "text": "Updates for the website.",
+      "location": {
+        "start": 179046,
+        "end": 179077
+      }
+    },
+    {
+      "index": 3,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179077,
+        "end": 179078
+      }
+    },
+    {
+      "index": 4,
+      "tag": "p",
+      "attrs": {},
+      "text": "For bugs or feature requests, message me on Discord (Pleb#0025) or create an issue on Github.",
+      "location": {
+        "start": 179078,
+        "end": 179231
+      }
+    },
+    {
+      "index": 5,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179231,
+        "end": 179232
+      }
+    },
+    {
+      "index": 6,
+      "tag": "h2",
+      "attrs": {
+        "id": "november-28-2025"
+      },
+      "text": "November 28, 2025",
+      "location": {
+        "start": 179232,
+        "end": 179280
+      }
+    },
+    {
+      "index": 7,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179280,
+        "end": 179281
+      }
+    },
+    {
+      "index": 8,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nSupport rendering preset maker embed urls\nUpdated depedencies\nBugfix: empty  for #pvme-help\nRemoved \"Testing\" guide\n",
+      "location": {
+        "start": 179281,
+        "end": 179469
+      }
+    },
+    {
+      "index": 9,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179469,
+        "end": 179470
+      }
+    },
+    {
+      "index": 10,
+      "tag": "h2",
+      "attrs": {
+        "id": "november-30-2024"
+      },
+      "text": "November 30, 2024",
+      "location": {
+        "start": 179470,
+        "end": 179518
+      }
+    },
+    {
+      "index": 11,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179518,
+        "end": 179519
+      }
+    },
+    {
+      "index": 12,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nunlinked social channel and forum names now always up to date (support new channels.json format)\n",
+      "location": {
+        "start": 179519,
+        "end": 179635
+      }
+    },
+    {
+      "index": 13,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179635,
+        "end": 179636
+      }
+    },
+    {
+      "index": 14,
+      "tag": "h2",
+      "attrs": {
+        "id": "november-23-2024"
+      },
+      "text": "November 23, 2024",
+      "location": {
+        "start": 179636,
+        "end": 179684
+      }
+    },
+    {
+      "index": 15,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179684,
+        "end": 179685
+      }
+    },
+    {
+      "index": 16,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nUpdated various #unknown-channel to show actual channel name\nyoutube.com/live show embed preview correctly\n",
+      "location": {
+        "start": 179685,
+        "end": 179820
+      }
+    },
+    {
+      "index": 17,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179820,
+        "end": 179821
+      }
+    },
+    {
+      "index": 18,
+      "tag": "h2",
+      "attrs": {
+        "id": "july-4-2024"
+      },
+      "text": "July 4, 2024",
+      "location": {
+        "start": 179821,
+        "end": 179859
+      }
+    },
+    {
+      "index": 19,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179859,
+        "end": 179860
+      }
+    },
+    {
+      "index": 20,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nAdded support for pvme spreadsheet cell alias (prices shown correctly again)\n",
+      "location": {
+        "start": 179860,
+        "end": 179956
+      }
+    },
+    {
+      "index": 21,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179956,
+        "end": 179957
+      }
+    },
+    {
+      "index": 22,
+      "tag": "h2",
+      "attrs": {
+        "id": "june-28-2024"
+      },
+      "text": "June 28, 2024",
+      "location": {
+        "start": 179957,
+        "end": 179997
+      }
+    },
+    {
+      "index": 23,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179997,
+        "end": 179998
+      }
+    },
+    {
+      "index": 24,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nAdded \"edit this guide\" button\nChange #user -> @user\n",
+      "location": {
+        "start": 179998,
+        "end": 180082
+      }
+    },
+    {
+      "index": 25,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180082,
+        "end": 180083
+      }
+    },
+    {
+      "index": 26,
+      "tag": "h2",
+      "attrs": {
+        "id": "june-15-2024"
+      },
+      "text": "June 15, 2024",
+      "location": {
+        "start": 180083,
+        "end": 180123
+      }
+    },
+    {
+      "index": 27,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180123,
+        "end": 180124
+      }
+    },
+    {
+      "index": 28,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nFixed issue with duplicate titles and improved headings\n",
+      "location": {
+        "start": 180124,
+        "end": 180199
+      }
+    },
+    {
+      "index": 29,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180199,
+        "end": 180200
+      }
+    },
+    {
+      "index": 30,
+      "tag": "h2",
+      "attrs": {
+        "id": "may-3-2024"
+      },
+      "text": "May 3, 2024",
+      "location": {
+        "start": 180200,
+        "end": 180236
+      }
+    },
+    {
+      "index": 31,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180236,
+        "end": 180237
+      }
+    },
+    {
+      "index": 32,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nUpdated mkdocs and other dependencies to latest version\n",
+      "location": {
+        "start": 180237,
+        "end": 180312
+      }
+    },
+    {
+      "index": 33,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180312,
+        "end": 180313
+      }
+    },
+    {
+      "index": 34,
+      "tag": "h2",
+      "attrs": {
+        "id": "april-2-2024"
+      },
+      "text": "April 2, 2024",
+      "location": {
+        "start": 180313,
+        "end": 180353
+      }
+    },
+    {
+      "index": 35,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180353,
+        "end": 180354
+      }
+    },
+    {
+      "index": 36,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nFixed markdown links with )) not being formatted correctly\n",
+      "location": {
+        "start": 180354,
+        "end": 180432
+      }
+    },
+    {
+      "index": 37,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180432,
+        "end": 180433
+      }
+    },
+    {
+      "index": 38,
+      "tag": "h2",
+      "attrs": {
+        "id": "november-9-2023"
+      },
+      "text": "November 9, 2023",
+      "location": {
+        "start": 180433,
+        "end": 180479
+      }
+    },
+    {
+      "index": 39,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180479,
+        "end": 180480
+      }
+    },
+    {
+      "index": 40,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nUpdated social card\nNew PVME logo\n",
+      "location": {
+        "start": 180480,
+        "end": 180542
+      }
+    },
+    {
+      "index": 41,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180542,
+        "end": 180543
+      }
+    },
+    {
+      "index": 42,
+      "tag": "h2",
+      "attrs": {
+        "id": "april-16-2023"
+      },
+      "text": "April 16, 2023",
+      "location": {
+        "start": 180543,
+        "end": 180585
+      }
+    },
+    {
+      "index": 43,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180585,
+        "end": 180586
+      }
+    },
+    {
+      "index": 44,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nUrls and other formatting now disabled when text is in inline code field\n",
+      "location": {
+        "start": 180586,
+        "end": 180691
+      }
+    },
+    {
+      "index": 45,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180691,
+        "end": 180692
+      }
+    },
+    {
+      "index": 46,
+      "tag": "h2",
+      "attrs": {
+        "id": "april-6-2023"
+      },
+      "text": "April 6, 2023",
+      "location": {
+        "start": 180692,
+        "end": 180732
+      }
+    },
+    {
+      "index": 47,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180732,
+        "end": 180733
+      }
+    },
+    {
+      "index": 48,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nAdded \"Editor Info\" and \"Mastery\" categories\nUpdated logo\nFixed some roles that weren't rendered because of a different ID length\n",
+      "location": {
+        "start": 180733,
+        "end": 180900
+      }
+    },
+    {
+      "index": 49,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180900,
+        "end": 180901
+      }
+    },
+    {
+      "index": 50,
+      "tag": "h2",
+      "attrs": {
+        "id": "november-13-2022"
+      },
+      "text": "November, 13, 2022",
+      "location": {
+        "start": 180901,
+        "end": 180950
+      }
+    },
+    {
+      "index": 51,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180950,
+        "end": 180951
+      }
+    },
+    {
+      "index": 52,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nReorganized about and home page (improves navigation on mobile).\nBetter alias support\nAlias for forums/words/extra channels\nCategory emojis\n",
+      "location": {
+        "start": 180951,
+        "end": 181137
+      }
+    },
+    {
+      "index": 53,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 181137,
+        "end": 181138
+      }
+    },
+    {
+      "index": 54,
+      "tag": "h2",
+      "attrs": {
+        "id": "november-5-2022"
+      },
+      "text": "November, 5, 2022",
+      "location": {
+        "start": 181138,
+        "end": 181185
+      }
+    },
+    {
+      "index": 55,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 181185,
+        "end": 181186
+      }
+    },
+    {
+      "index": 56,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nNew site structure:\nCategories now on the top of the page.\nAdded category aliases\nUpdated \"about\" page\nAdded \"how the site works\" page\nIncluded changelog to the site itself\n\n\nGenerated pages are now appended to mkdocs.yaml nav instead of fully overwriting it.\n",
+      "location": {
+        "start": 181186,
+        "end": 181541
+      }
+    },
+    {
+      "index": 57,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 181541,
+        "end": 181542
+      }
+    },
+    {
+      "index": 58,
+      "tag": "h2",
+      "attrs": {
+        "id": "november-1-2022"
+      },
+      "text": "November, 1, 2022",
+      "location": {
+        "start": 181542,
+        "end": 181589
+      }
+    },
+    {
+      "index": 59,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 181589,
+        "end": 181590
+      }
+    },
+    {
+      "index": 60,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nMoved \"(Courtesy of)\" to the line below headings to clean up the ToC on the side\nNew logo\nRemoved various mentions of ToC in pins (only relevant to Discord)\n",
+      "location": {
+        "start": 181590,
+        "end": 181797
+      }
+    },
+    {
+      "index": 61,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 181797,
+        "end": 181798
+      }
+    },
+    {
+      "index": 62,
+      "tag": "h2",
+      "attrs": {
+        "id": "november-1-2022_1"
+      },
+      "text": "November, 1, 2022",
+      "location": {
+        "start": 181798,
+        "end": 181847
+      }
+    },
+    {
+      "index": 63,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 181847,
+        "end": 181848
+      }
+    },
+    {
+      "index": 64,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nFixed some broken headings\n",
+      "location": {
+        "start": 181848,
+        "end": 181894
+      }
+    },
+    {
+      "index": 65,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 181894,
+        "end": 181895
+      }
+    },
+    {
+      "index": 66,
+      "tag": "h2",
+      "attrs": {
+        "id": "october-30-2022"
+      },
+      "text": "October, 30, 2022",
+      "location": {
+        "start": 181895,
+        "end": 181942
+      }
+    },
+    {
+      "index": 67,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 181942,
+        "end": 181943
+      }
+    },
+    {
+      "index": 68,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nImplemented new site generation\nBy default, guides are sorted alphabetically\nAll guides will be included, even when the pvme-guides repository structure changes\n\n\nFixed remaining broken links (will continue to work in the future)\n",
+      "location": {
+        "start": 181943,
+        "end": 182278
+      }
+    },
+    {
+      "index": 69,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 182278,
+        "end": 182279
+      }
+    },
+    {
+      "index": 70,
+      "tag": "h2",
+      "attrs": {
+        "id": "september-6-2022"
+      },
+      "text": "September, 6, 2022",
+      "location": {
+        "start": 182279,
+        "end": 182328
+      }
+    },
+    {
+      "index": 71,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 182328,
+        "end": 182329
+      }
+    },
+    {
+      "index": 72,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nFinished formatter rewrite\nEmbed changes\nincreased max width (if content fits on discord, it will fit on the site)\nfixed inline code formatting (correct font so width matches discord)\ndarkened background slightly\nchanged description font color to match that of the rest of the embed\nlight mode looks the same as dark mode\n\n\nAttachment url changes (videos/images)\nremoved autoplay option to improve page load time\nall videos have the same control options\nadded more known url regexes to reduce build time\n\n\nbugfix with incorrect channel urls: issue\n",
+      "location": {
+        "start": 182329,
+        "end": 183075
+      }
+    },
+    {
+      "index": 73,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 183075,
+        "end": 183076
+      }
+    },
+    {
+      "index": 74,
+      "tag": "h2",
+      "attrs": {
+        "id": "september-1-2022"
+      },
+      "text": "September, 1, 2022",
+      "location": {
+        "start": 183076,
+        "end": 183125
+      }
+    },
+    {
+      "index": 75,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 183125,
+        "end": 183126
+      }
+    },
+    {
+      "index": 76,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nCode blocks in embeds now shown correctly\n",
+      "location": {
+        "start": 183126,
+        "end": 183187
+      }
+    },
+    {
+      "index": 77,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 183187,
+        "end": 183188
+      }
+    },
+    {
+      "index": 78,
+      "tag": "h2",
+      "attrs": {
+        "id": "august-31-2022"
+      },
+      "text": "August, 31, 2022",
+      "location": {
+        "start": 183188,
+        "end": 183233
+      }
+    },
+    {
+      "index": 79,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 183233,
+        "end": 183234
+      }
+    },
+    {
+      "index": 80,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nEmpty lines are now shown correctly\n",
+      "location": {
+        "start": 183234,
+        "end": 183289
+      }
+    },
+    {
+      "index": 81,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 183289,
+        "end": 183290
+      }
+    },
+    {
+      "index": 82,
+      "tag": "h2",
+      "attrs": {
+        "id": "august-30-2022"
+      },
+      "text": "August, 30, 2022",
+      "location": {
+        "start": 183290,
+        "end": 183335
+      }
+    },
+    {
+      "index": 83,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 183335,
+        "end": 183336
+      }
+    },
+    {
+      "index": 84,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nPVME settings are now all obtained from pvme-settings and will be kept up to date mostly automatically and otherwise more frequently (users is still manual)\nVarious refactoring for PVME settings migration\n",
+      "location": {
+        "start": 183336,
+        "end": 183569
+      }
+    },
+    {
+      "index": 85,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 183569,
+        "end": 183570
+      }
+    },
+    {
+      "index": 86,
+      "tag": "h2",
+      "attrs": {
+        "id": "august-15-2022"
+      },
+      "text": "August, 15, 2022",
+      "location": {
+        "start": 183570,
+        "end": 183615
+      }
+    },
+    {
+      "index": 87,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 183615,
+        "end": 183616
+      }
+    },
+    {
+      "index": 88,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nPrices now updated correctly in embeds\n",
+      "location": {
+        "start": 183616,
+        "end": 183674
+      }
+    },
+    {
+      "index": 89,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 183674,
+        "end": 183675
+      }
+    },
+    {
+      "index": 90,
+      "tag": "h2",
+      "attrs": {
+        "id": "july-4-2022"
+      },
+      "text": "July, 4, 2022",
+      "location": {
+        "start": 183675,
+        "end": 183714
+      }
+    },
+    {
+      "index": 91,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 183714,
+        "end": 183715
+      }
+    },
+    {
+      "index": 92,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nadded Zamorak category\n",
+      "location": {
+        "start": 183715,
+        "end": 183757
+      }
+    },
+    {
+      "index": 93,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 183757,
+        "end": 183758
+      }
+    },
+    {
+      "index": 94,
+      "tag": "h2",
+      "attrs": {
+        "id": "june-20-2022"
+      },
+      "text": "June, 20, 2022",
+      "location": {
+        "start": 183758,
+        "end": 183799
+      }
+    },
+    {
+      "index": 95,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 183799,
+        "end": 183800
+      }
+    },
+    {
+      "index": 96,
+      "tag": "p",
+      "attrs": {},
+      "text": "Thanks to emmet-shark:",
+      "location": {
+        "start": 183800,
+        "end": 183829
+      }
+    },
+    {
+      "index": 97,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 183829,
+        "end": 183830
+      }
+    },
+    {
+      "index": 98,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nAdded new category structure and guide names. The guide structure and names now always match the category + channel names in Discord \nReduced spacing\nembed fixes\nfix links inside embeds\nremove nonexistent footer embed icons\n\n\n",
+      "location": {
+        "start": 183830,
+        "end": 184120
+      }
+    },
+    {
+      "index": 99,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 184120,
+        "end": 184121
+      }
+    },
+    {
+      "index": 100,
+      "tag": "h2",
+      "attrs": {
+        "id": "june-15-2022"
+      },
+      "text": "June, 15, 2022",
+      "location": {
+        "start": 184121,
+        "end": 184162
+      }
+    },
+    {
+      "index": 101,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 184162,
+        "end": 184163
+      }
+    },
+    {
+      "index": 102,
+      "tag": "p",
+      "attrs": {},
+      "text": "Thanks to emmet-shark:",
+      "location": {
+        "start": 184163,
+        "end": 184192
+      }
+    },
+    {
+      "index": 103,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 184192,
+        "end": 184193
+      }
+    },
+    {
+      "index": 104,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nRemoved unnecessary ToC embed at the bottom of the page\nFixed a bunch of non-clickable urls\n",
+      "location": {
+        "start": 184193,
+        "end": 184313
+      }
+    },
+    {
+      "index": 105,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 184313,
+        "end": 184314
+      }
+    },
+    {
+      "index": 106,
+      "tag": "h2",
+      "attrs": {
+        "id": "august-9-2021"
+      },
+      "text": "August, 9, 2021",
+      "location": {
+        "start": 184314,
+        "end": 184357
+      }
+    },
+    {
+      "index": 107,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 184357,
+        "end": 184358
+      }
+    },
+    {
+      "index": 108,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nUpdated invalid Discord channels\nAdded invite link url to home page\n",
+      "location": {
+        "start": 184358,
+        "end": 184454
+      }
+    },
+    {
+      "index": 109,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 184454,
+        "end": 184455
+      }
+    },
+    {
+      "index": 110,
+      "tag": "h2",
+      "attrs": {
+        "id": "august-6-2021"
+      },
+      "text": "August, 6, 2021",
+      "location": {
+        "start": 184455,
+        "end": 184498
+      }
+    },
+    {
+      "index": 111,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 184498,
+        "end": 184499
+      }
+    },
+    {
+      "index": 112,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nAdded invalid discord channels as non-clickable links (WiP)\nAdded search suggestions\nAdded search highlighting\nAdded \"back to top\" button\nUpdated channels and users\n",
+      "location": {
+        "start": 184499,
+        "end": 184719
+      }
+    },
+    {
+      "index": 113,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 184719,
+        "end": 184720
+      }
+    },
+    {
+      "index": 114,
+      "tag": "h2",
+      "attrs": {
+        "id": "july-7-2021"
+      },
+      "text": "July, 7, 2021",
+      "location": {
+        "start": 184720,
+        "end": 184759
+      }
+    },
+    {
+      "index": 115,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 184759,
+        "end": 184760
+      }
+    },
+    {
+      "index": 116,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nUpdated users and roles\n",
+      "location": {
+        "start": 184760,
+        "end": 184803
+      }
+    },
+    {
+      "index": 117,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 184803,
+        "end": 184804
+      }
+    },
+    {
+      "index": 118,
+      "tag": "h2",
+      "attrs": {
+        "id": "june-30-2021"
+      },
+      "text": "June, 30, 2021",
+      "location": {
+        "start": 184804,
+        "end": 184845
+      }
+    },
+    {
+      "index": 119,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 184845,
+        "end": 184846
+      }
+    },
+    {
+      "index": 120,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nAdded Solak category and updated channels\n",
+      "location": {
+        "start": 184846,
+        "end": 184907
+      }
+    },
+    {
+      "index": 121,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 184907,
+        "end": 184908
+      }
+    },
+    {
+      "index": 122,
+      "tag": "h2",
+      "attrs": {
+        "id": "june-25-2021"
+      },
+      "text": "June, 25, 2021",
+      "location": {
+        "start": 184908,
+        "end": 184949
+      }
+    },
+    {
+      "index": 123,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 184949,
+        "end": 184950
+      }
+    },
+    {
+      "index": 124,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nFixed bug with imgur.mp4 and imgur.jpg not being rendered\n",
+      "location": {
+        "start": 184950,
+        "end": 185027
+      }
+    },
+    {
+      "index": 125,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 185027,
+        "end": 185028
+      }
+    },
+    {
+      "index": 126,
+      "tag": "h2",
+      "attrs": {
+        "id": "june-10-2021"
+      },
+      "text": "June, 10, 2021",
+      "location": {
+        "start": 185028,
+        "end": 185069
+      }
+    },
+    {
+      "index": 127,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 185069,
+        "end": 185070
+      }
+    },
+    {
+      "index": 128,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nAdded support for discord embeds vorago-trio-hm\n",
+      "location": {
+        "start": 185070,
+        "end": 185220
+      }
+    },
+    {
+      "index": 129,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 185220,
+        "end": 185221
+      }
+    },
+    {
+      "index": 130,
+      "tag": "h2",
+      "attrs": {
+        "id": "may-20-2021"
+      },
+      "text": "May 20, 2021",
+      "location": {
+        "start": 185221,
+        "end": 185259
+      }
+    },
+    {
+      "index": 131,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 185259,
+        "end": 185260
+      }
+    },
+    {
+      "index": 132,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nfixed broken channel links\nupdated missing roles/channels/users\nbugfix imgur links\nlight/dark mode switch\n",
+      "location": {
+        "start": 185260,
+        "end": 185412
+      }
+    },
+    {
+      "index": 133,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 185412,
+        "end": 185413
+      }
+    },
+    {
+      "index": 134,
+      "tag": "h2",
+      "attrs": {
+        "id": "april-16-2021"
+      },
+      "text": "April 16, 2021",
+      "location": {
+        "start": 185413,
+        "end": 185455
+      }
+    },
+    {
+      "index": 135,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 185455,
+        "end": 185456
+      }
+    },
+    {
+      "index": 136,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nAdded new categories (same structure as PVME Discord)\n",
+      "location": {
+        "start": 185456,
+        "end": 185529
+      }
+    },
+    {
+      "index": 137,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 185529,
+        "end": 185530
+      }
+    },
+    {
+      "index": 138,
+      "tag": "h2",
+      "attrs": {
+        "id": "march-22-2021"
+      },
+      "text": "March 22, 2021",
+      "location": {
+        "start": 185530,
+        "end": 185572
+      }
+    },
+    {
+      "index": 139,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 185572,
+        "end": 185573
+      }
+    },
+    {
+      "index": 140,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nAdded support for emojis (standard discord emojis)\nUpdated missing roles/channels/users\nRemoved note for survey\n",
+      "location": {
+        "start": 185573,
+        "end": 185722
+      }
+    },
+    {
+      "index": 141,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 185722,
+        "end": 185723
+      }
+    },
+    {
+      "index": 142,
+      "tag": "h2",
+      "attrs": {
+        "id": "march-15-2021"
+      },
+      "text": "March 15, 2021",
+      "location": {
+        "start": 185723,
+        "end": 185765
+      }
+    },
+    {
+      "index": 143,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 185765,
+        "end": 185766
+      }
+    },
+    {
+      "index": 144,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nUpdated missing roles/channels/users\nAdded note for survey\n",
+      "location": {
+        "start": 185766,
+        "end": 185853
+      }
+    },
+    {
+      "index": 145,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 185853,
+        "end": 185854
+      }
+    },
+    {
+      "index": 146,
+      "tag": "h2",
+      "attrs": {
+        "id": "january-9-2021"
+      },
+      "text": "January 9, 2021",
+      "location": {
+        "start": 185854,
+        "end": 185898
+      }
+    },
+    {
+      "index": 147,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 185898,
+        "end": 185899
+      }
+    },
+    {
+      "index": 148,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nAdded colored roles\nUpdated missing Discord links\nAdded WiP Slayer Category\n",
+      "location": {
+        "start": 185899,
+        "end": 186012
+      }
+    },
+    {
+      "index": 149,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 186012,
+        "end": 186013
+      }
+    },
+    {
+      "index": 150,
+      "tag": "h2",
+      "attrs": {
+        "id": "january-4-2021"
+      },
+      "text": "January 4, 2021",
+      "location": {
+        "start": 186013,
+        "end": 186057
+      }
+    },
+    {
+      "index": 151,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 186057,
+        "end": 186058
+      }
+    },
+    {
+      "index": 152,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nAdded, and enabled by default, debug logging to quickly check missing Discord links (check daily build log)\n",
+      "location": {
+        "start": 186058,
+        "end": 186185
+      }
+    },
+    {
+      "index": 153,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 186185,
+        "end": 186186
+      }
+    },
+    {
+      "index": 154,
+      "tag": "h2",
+      "attrs": {
+        "id": "december-18-2020"
+      },
+      "text": "December 18, 2020",
+      "location": {
+        "start": 186186,
+        "end": 186234
+      }
+    },
+    {
+      "index": 155,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 186234,
+        "end": 186235
+      }
+    },
+    {
+      "index": 156,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\n\"last updated on\" only on \"Home\" page (since the page is updated daily)\n",
+      "location": {
+        "start": 186235,
+        "end": 186326
+      }
+    },
+    {
+      "index": 157,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 186326,
+        "end": 186327
+      }
+    },
+    {
+      "index": 158,
+      "tag": "h2",
+      "attrs": {
+        "id": "december-17-2020"
+      },
+      "text": "December 17, 2020",
+      "location": {
+        "start": 186327,
+        "end": 186375
+      }
+    },
+    {
+      "index": 159,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 186375,
+        "end": 186376
+      }
+    },
+    {
+      "index": 160,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nAdded support for strike-through text\nAdded changelog\n",
+      "location": {
+        "start": 186376,
+        "end": 186469
+      }
+    },
+    {
+      "index": 161,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 186469,
+        "end": 186470
+      }
+    },
+    {
+      "index": 162,
+      "tag": "h2",
+      "attrs": {
+        "id": "december-16-2020"
+      },
+      "text": "December 16, 2020",
+      "location": {
+        "start": 186470,
+        "end": 186518
+      }
+    },
+    {
+      "index": 163,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 186518,
+        "end": 186519
+      }
+    },
+    {
+      "index": 164,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nInitial release\n",
+      "location": {
+        "start": 186519,
+        "end": 186554
+      }
+    },
+    {
+      "index": 165,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n      \n    ",
+      "location": {
+        "start": 186554,
+        "end": 186566
+      }
+    }
+  ]
+}

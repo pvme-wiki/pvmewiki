@@ -1,0 +1,1777 @@
+{
+  "schemaVersion": 1,
+  "captureVersion": 2,
+  "id": "pvme-guides--slayer--ripper-demon",
+  "sourceURL": "https://pvme.io/pvme-guides/slayer/ripper-demon/",
+  "officialURL": "https://pvme.io/pvme-guides/slayer/ripper-demon/",
+  "responseURL": "https://pvme.io/pvme-guides/slayer/ripper-demon/",
+  "status": "captured",
+  "statusCode": 200,
+  "retrievedAt": "2026-11-16T00:26:54.341Z",
+  "sitemapLastmod": "2026-11-15",
+  "sitemapSha256": "7166472554d36bfc69a7e14f7298264c0f9bfac00dc9034e5bfd0fba58a14b07",
+  "kind": "guide",
+  "audience": "player",
+  "title": "PvME/Slayer/Ripper Demon",
+  "titleStatus": "existing-exact-url",
+  "baselineId": "pvme-guides--slayer--ripper-demon",
+  "sourceTitle": "Ripper Demons",
+  "sourceH1": "Ripper Demons",
+  "discovery": "official-sitemap",
+  "directory": "guides/pvme-guides--slayer--ripper-demon",
+  "sourceSha256": "6149d6011e836ef44f91ee03aa595e1bd719e6d57f039a21fd81e063ade27209",
+  "bodySha256": "6149d6011e836ef44f91ee03aa595e1bd719e6d57f039a21fd81e063ade27209",
+  "normalizedTextSha256": "65ec3ca691ef02bd462dea90cf6887e763fc28f77858e065090367aea0005155",
+  "parser": "parse5 8.1.1; entities 9.0.0; sourceCodeLocationInfo",
+  "headers": {
+    "accept-ranges": "bytes",
+    "access-control-allow-origin": "*",
+    "age": "0",
+    "cache-control": "max-age=600",
+    "connection": "keep-alive",
+    "content-encoding": "gzip",
+    "content-length": "20209",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Mon, 16 Nov 2026 00:26:54 GMT",
+    "etag": "W/\"6afa1a34-2f578\"",
+    "expires": "Mon, 16 Nov 2026 00:36:54 GMT",
+    "last-modified": "Sun, 15 Nov 2026 20:46:44 GMT",
+    "server": "GitHub.com",
+    "strict-transport-security": "max-age=31556952",
+    "vary": "Accept-Encoding",
+    "via": "1.1 varnish",
+    "x-cache": "MISS",
+    "x-cache-hits": "0",
+    "x-fastly-request-id": "ce9beb29c76f22812d1145322a70344deb55f234",
+    "x-github-edge-region": "iad",
+    "x-github-request-id": "B42C:228087:3D682D3:43545D8:6AFA4DCE",
+    "x-origin-cache": "HIT",
+    "x-proxy-cache": "MISS",
+    "x-served-by": "cache-iad-khef600037-IAD",
+    "x-timer": "S1794788815.778211,VS0,VE22"
+  },
+  "hashes": {
+    "responseSha256": "996f713eb47d7407af2bcf93801c955ba1119cd066b317cdac04ec688d6ff4f7",
+    "articleSha256": "6149d6011e836ef44f91ee03aa595e1bd719e6d57f039a21fd81e063ade27209",
+    "textSha256": "4d0054c93d43ecc3a0309985ee48baafe749123aac9e01b238d6b4c9cbee6745",
+    "normalizedTextSha256": "65ec3ca691ef02bd462dea90cf6887e763fc28f77858e065090367aea0005155"
+  },
+  "counts": {
+    "bytes": 193912,
+    "articleBytes": 25071,
+    "nodes": 752,
+    "topLevelNodes": 234,
+    "words": 1282,
+    "images": 96,
+    "videos": 0,
+    "sources": 0,
+    "links": 29
+  },
+  "tags": {
+    "h1": 1,
+    "p": 101,
+    "h2": 3,
+    "ins": 8,
+    "a": 29,
+    "img": 96,
+    "strong": 9,
+    "em": 9,
+    "h3": 10,
+    "div": 51,
+    "u": 6
+  },
+  "mediaHosts": {
+    "cdn.discordapp.com": 91,
+    "img.pvme.io": 3,
+    "firebasestorage.googleapis.com": 2
+  },
+  "patterns": [
+    "linked-preset-content-external-to-html"
+  ],
+  "media": [
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "ripperdemon",
+        "class": "d-emoji",
+        "alt": "ripperdemon",
+        "src": "https://cdn.discordapp.com/emojis/1004107343123976284.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 167322,
+        "end": 167449
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "slayer",
+        "class": "d-emoji",
+        "alt": "slayer",
+        "src": "https://cdn.discordapp.com/emojis/797896049548066857.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 167614,
+        "end": 167730
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "ripperpouch",
+        "class": "d-emoji",
+        "alt": "ripperpouch",
+        "src": "https://cdn.discordapp.com/emojis/703581275453128714.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 167998,
+        "end": 168124
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "slayer",
+        "class": "d-emoji",
+        "alt": "slayer",
+        "src": "https://cdn.discordapp.com/emojis/797896049548066857.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 168192,
+        "end": 168308
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "alkharidlode",
+        "class": "d-emoji",
+        "alt": "alkharidlode",
+        "src": "https://cdn.discordapp.com/emojis/1032552328005419038.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 168842,
+        "end": 168971
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "darklight",
+        "class": "d-emoji",
+        "alt": "darklight",
+        "src": "https://cdn.discordapp.com/emojis/1130170689119326350.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 169020,
+        "end": 169143
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "vampscrim",
+        "class": "d-emoji",
+        "alt": "vampscrim",
+        "src": "https://cdn.discordapp.com/emojis/513201294262009874.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 169148,
+        "end": 169270
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "slayer",
+        "class": "d-emoji",
+        "alt": "slayer",
+        "src": "https://cdn.discordapp.com/emojis/797896049548066857.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 169450,
+        "end": 169566
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "slayer",
+        "class": "d-emoji",
+        "alt": "slayer",
+        "src": "https://cdn.discordapp.com/emojis/797896049548066857.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 169586,
+        "end": 169702
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 169762,
+        "end": 169876
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necromancy",
+        "class": "d-emoji",
+        "alt": "necromancy",
+        "src": "https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 169897,
+        "end": 170022
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "slayer",
+        "class": "d-emoji",
+        "alt": "slayer",
+        "src": "https://cdn.discordapp.com/emojis/797896049548066857.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 170053,
+        "end": 170169
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 170190,
+        "end": 170304
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necromancy",
+        "class": "d-emoji",
+        "alt": "necromancy",
+        "src": "https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 170326,
+        "end": 170451
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "slaughter",
+        "class": "d-emoji",
+        "alt": "slaughter",
+        "src": "https://cdn.discordapp.com/emojis/535532879237873666.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 171361,
+        "end": 171483
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "devo",
+        "class": "d-emoji",
+        "alt": "devo",
+        "src": "https://cdn.discordapp.com/emojis/513190158728953857.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 172455,
+        "end": 172567
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deflectmelee",
+        "class": "d-emoji",
+        "alt": "deflectmelee",
+        "src": "https://cdn.discordapp.com/emojis/544195488447201300.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 172952,
+        "end": 173080
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "enhdev4",
+        "class": "d-emoji",
+        "alt": "enhdev4",
+        "src": "https://cdn.discordapp.com/emojis/712073087507628035.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 173085,
+        "end": 173203
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "ripperclaw",
+        "class": "d-emoji",
+        "alt": "ripperclaw",
+        "src": "https://cdn.discordapp.com/emojis/797895640054759444.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 173490,
+        "end": 173614
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "ripperclawoh",
+        "class": "d-emoji",
+        "alt": "ripperclawoh",
+        "src": "https://cdn.discordapp.com/emojis/915232154252890122.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 173700,
+        "end": 173828
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "parasiticorb",
+        "class": "d-emoji",
+        "alt": "parasiticorb",
+        "src": "https://cdn.discordapp.com/emojis/1023150740384006234.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 174001,
+        "end": 174130
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "masterquestcape",
+        "class": "d-emoji",
+        "alt": "masterquestcape",
+        "src": "https://cdn.discordapp.com/emojis/1091050888828813412.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 174676,
+        "end": 174811
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "cursedamascutsand",
+        "class": "d-emoji",
+        "alt": "cursedamascutsand",
+        "src": "https://cdn.discordapp.com/emojis/1023152063208763433.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 174900,
+        "end": 175039
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bindingcontract",
+        "class": "d-emoji",
+        "alt": "bindingcontract",
+        "src": "https://cdn.discordapp.com/emojis/1073883118521557052.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 176226,
+        "end": 176361
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "notepaper",
+        "class": "d-emoji",
+        "alt": "notepaper",
+        "src": "https://cdn.discordapp.com/emojis/1137735230908805240.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 176479,
+        "end": 176602
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "ripperpouch",
+        "class": "d-emoji",
+        "alt": "ripperpouch",
+        "src": "https://cdn.discordapp.com/emojis/703581275453128714.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 176639,
+        "end": 176765
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "demonslayerperk",
+        "class": "d-emoji",
+        "alt": "demonslayerperk",
+        "src": "https://cdn.discordapp.com/emojis/689502842653900818.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 176859,
+        "end": 176993
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "enhdev4",
+        "class": "d-emoji",
+        "alt": "enhdev4",
+        "src": "https://cdn.discordapp.com/emojis/712073087507628035.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 177163,
+        "end": 177281
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "oldakcoil",
+        "class": "d-emoji",
+        "alt": "oldakcoil",
+        "src": "https://cdn.discordapp.com/emojis/798285651387613194.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 177430,
+        "end": 177552
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "demonslayer",
+        "class": "d-emoji",
+        "alt": "demonslayer",
+        "src": "https://cdn.discordapp.com/emojis/641339921675845633.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 177951,
+        "end": 178077
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "infernalpuzzlebox",
+        "class": "d-emoji",
+        "alt": "infernalpuzzlebox",
+        "src": "https://cdn.discordapp.com/emojis/994189299681607800.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 178296,
+        "end": 178434
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "kalgerion_demon",
+        "class": "d-emoji",
+        "alt": "kalgerion_demon",
+        "src": "https://cdn.discordapp.com/emojis/1155600607504257024.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 179417,
+        "end": 179552
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "corporealbeast",
+        "class": "d-emoji",
+        "alt": "corporealbeast",
+        "src": "https://cdn.discordapp.com/emojis/513212996726685749.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 179613,
+        "end": 179745
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/zVTy9k8mLg.png"
+      },
+      "text": "",
+      "location": {
+        "start": 180210,
+        "end": 180277
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "ripperdemon",
+        "class": "d-emoji",
+        "alt": "ripperdemon",
+        "src": "https://cdn.discordapp.com/emojis/1004107343123976284.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 180354,
+        "end": 180481
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "alkharidlode",
+        "class": "d-emoji",
+        "alt": "alkharidlode",
+        "src": "https://cdn.discordapp.com/emojis/1032552328005419038.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 180649,
+        "end": 180778
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/Hs3NllZKrA.png"
+      },
+      "text": "",
+      "location": {
+        "start": 180906,
+        "end": 180973
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 181070,
+        "end": 181184
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "animatedead",
+        "class": "d-emoji",
+        "alt": "animatedead",
+        "src": "https://cdn.discordapp.com/emojis/856635090453135382.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 181303,
+        "end": 181429
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "cryptbloomhelm",
+        "class": "d-emoji",
+        "alt": "cryptbloomhelm",
+        "src": "https://cdn.discordapp.com/emojis/1334336169336373339.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 181449,
+        "end": 181582
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "infernalpuzzlebox",
+        "class": "d-emoji",
+        "alt": "infernalpuzzlebox",
+        "src": "https://cdn.discordapp.com/emojis/994189299681607800.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 181604,
+        "end": 181742
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deflectmelee",
+        "class": "d-emoji",
+        "alt": "deflectmelee",
+        "src": "https://cdn.discordapp.com/emojis/544195488447201300.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 181758,
+        "end": 181886
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "aos",
+        "class": "d-emoji",
+        "alt": "aos",
+        "src": "https://cdn.discordapp.com/emojis/513190158359724056.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 181908,
+        "end": 182018
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "enhdev4",
+        "class": "d-emoji",
+        "alt": "enhdev4",
+        "src": "https://cdn.discordapp.com/emojis/712073087507628035.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182042,
+        "end": 182160
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bloodbarrage",
+        "class": "d-emoji",
+        "alt": "bloodbarrage",
+        "src": "https://cdn.discordapp.com/emojis/537338981747261446.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182231,
+        "end": 182359
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "oldakcoil",
+        "class": "d-emoji",
+        "alt": "oldakcoil",
+        "src": "https://cdn.discordapp.com/emojis/798285651387613194.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182539,
+        "end": 182661
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "ruthless3",
+        "class": "d-emoji",
+        "alt": "ruthless3",
+        "src": "https://cdn.discordapp.com/emojis/712244800572883025.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182696,
+        "end": 182818
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deflectmelee",
+        "class": "d-emoji",
+        "alt": "deflectmelee",
+        "src": "https://cdn.discordapp.com/emojis/544195488447201300.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182990,
+        "end": 183118
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "torment",
+        "class": "d-emoji",
+        "alt": "torment",
+        "src": "https://cdn.discordapp.com/emojis/583429936958930964.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 183123,
+        "end": 183241
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "affliction",
+        "class": "d-emoji",
+        "alt": "affliction",
+        "src": "https://cdn.discordapp.com/emojis/513190158468907008.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 183245,
+        "end": 183369
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "prayer",
+        "class": "d-emoji",
+        "alt": "prayer",
+        "src": "https://cdn.discordapp.com/emojis/1005450651347730533.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 183387,
+        "end": 183504
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "powderofpenance",
+        "class": "d-emoji",
+        "alt": "powderofpenance",
+        "src": "https://cdn.discordapp.com/emojis/928221126360969226.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 183510,
+        "end": 183644
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bloodbarrage",
+        "class": "d-emoji",
+        "alt": "bloodbarrage",
+        "src": "https://cdn.discordapp.com/emojis/537338981747261446.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 183663,
+        "end": 183791
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "animatedead",
+        "class": "d-emoji",
+        "alt": "animatedead",
+        "src": "https://cdn.discordapp.com/emojis/856635090453135382.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 183803,
+        "end": 183929
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "elderovlsalve",
+        "class": "d-emoji",
+        "alt": "elderovlsalve",
+        "src": "https://cdn.discordapp.com/emojis/648976643687317532.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 183946,
+        "end": 184076
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "weppoison",
+        "class": "d-emoji",
+        "alt": "weppoison",
+        "src": "https://cdn.discordapp.com/emojis/689525476158472288.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 184081,
+        "end": 184203
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "scriptureofwen",
+        "class": "d-emoji",
+        "alt": "scriptureofwen",
+        "src": "https://cdn.discordapp.com/emojis/883134307902816297.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 184247,
+        "end": 184379
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "aggressionpotion",
+        "class": "d-emoji",
+        "alt": "aggressionpotion",
+        "src": "https://cdn.discordapp.com/emojis/925794592199147581.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 184395,
+        "end": 184531
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "oldakcoil",
+        "class": "d-emoji",
+        "alt": "oldakcoil",
+        "src": "https://cdn.discordapp.com/emojis/798285651387613194.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 184569,
+        "end": 184691
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bloodbarrage",
+        "class": "d-emoji",
+        "alt": "bloodbarrage",
+        "src": "https://cdn.discordapp.com/emojis/537338981747261446.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 184857,
+        "end": 184985
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "ripperpouch",
+        "class": "d-emoji",
+        "alt": "ripperpouch",
+        "src": "https://cdn.discordapp.com/emojis/703581275453128714.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 185238,
+        "end": 185364
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 185561,
+        "end": 185675
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://firebasestorage.googleapis.com/v0/b/preset-images/o/images%2F15e7b07c-4b4f-40ab-9fdc-04a9a1baab8f.png?alt=media"
+      },
+      "text": "",
+      "location": {
+        "start": 185708,
+        "end": 185853
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "animatedead",
+        "class": "d-emoji",
+        "alt": "animatedead",
+        "src": "https://cdn.discordapp.com/emojis/856635090453135382.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 186094,
+        "end": 186220
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "cryptbloomhelm",
+        "class": "d-emoji",
+        "alt": "cryptbloomhelm",
+        "src": "https://cdn.discordapp.com/emojis/1334336169336373339.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 186240,
+        "end": 186373
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "wardenhood90",
+        "class": "d-emoji",
+        "alt": "wardenhood90",
+        "src": "https://cdn.discordapp.com/emojis/1142770718468223027.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 186394,
+        "end": 186523
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "infernalpuzzlebox",
+        "class": "d-emoji",
+        "alt": "infernalpuzzlebox",
+        "src": "https://cdn.discordapp.com/emojis/994189299681607800.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 186545,
+        "end": 186683
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "hellhoundpouch",
+        "class": "d-emoji",
+        "alt": "hellhoundpouch",
+        "src": "https://cdn.discordapp.com/emojis/921410226475925514.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 186695,
+        "end": 186827
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deflectmelee",
+        "class": "d-emoji",
+        "alt": "deflectmelee",
+        "src": "https://cdn.discordapp.com/emojis/544195488447201300.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 186843,
+        "end": 186971
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "aos",
+        "class": "d-emoji",
+        "alt": "aos",
+        "src": "https://cdn.discordapp.com/emojis/513190158359724056.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 186993,
+        "end": 187103
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "powderofprotection",
+        "class": "d-emoji",
+        "alt": "powderofprotection",
+        "src": "https://cdn.discordapp.com/emojis/933079947419983912.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 187127,
+        "end": 187267
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "enhdev4",
+        "class": "d-emoji",
+        "alt": "enhdev4",
+        "src": "https://cdn.discordapp.com/emojis/712073087507628035.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 187292,
+        "end": 187410
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "devo",
+        "class": "d-emoji",
+        "alt": "devo",
+        "src": "https://cdn.discordapp.com/emojis/513190158728953857.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 187527,
+        "end": 187639
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "rod",
+        "class": "d-emoji",
+        "alt": "rod",
+        "src": "https://cdn.discordapp.com/emojis/513190159462825984.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 187835,
+        "end": 187945
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deflectmelee",
+        "class": "d-emoji",
+        "alt": "deflectmelee",
+        "src": "https://cdn.discordapp.com/emojis/544195488447201300.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 188022,
+        "end": 188150
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "sorrow",
+        "class": "d-emoji",
+        "alt": "sorrow",
+        "src": "https://cdn.discordapp.com/emojis/1137941003895046284.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 188155,
+        "end": 188272
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "ruination",
+        "class": "d-emoji",
+        "alt": "ruination",
+        "src": "https://cdn.discordapp.com/emojis/1137940996391452772.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 188276,
+        "end": 188399
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "prayer",
+        "class": "d-emoji",
+        "alt": "prayer",
+        "src": "https://cdn.discordapp.com/emojis/1005450651347730533.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 188417,
+        "end": 188534
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "powderofpenance",
+        "class": "d-emoji",
+        "alt": "powderofpenance",
+        "src": "https://cdn.discordapp.com/emojis/928221126360969226.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 188540,
+        "end": 188674
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "powderofprotection",
+        "class": "d-emoji",
+        "alt": "powderofprotection",
+        "src": "https://cdn.discordapp.com/emojis/933079947419983912.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 188691,
+        "end": 188831
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "aos",
+        "class": "d-emoji",
+        "alt": "aos",
+        "src": "https://cdn.discordapp.com/emojis/513190158359724056.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 188845,
+        "end": 188955
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "animatedead",
+        "class": "d-emoji",
+        "alt": "animatedead",
+        "src": "https://cdn.discordapp.com/emojis/856635090453135382.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 188972,
+        "end": 189098
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "prismofrestoration",
+        "class": "d-emoji",
+        "alt": "prismofrestoration",
+        "src": "https://cdn.discordapp.com/emojis/938475261366784070.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 189112,
+        "end": 189252
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "hellhoundpouch",
+        "class": "d-emoji",
+        "alt": "hellhoundpouch",
+        "src": "https://cdn.discordapp.com/emojis/921410226475925514.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 189261,
+        "end": 189393
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "elderovlsalve",
+        "class": "d-emoji",
+        "alt": "elderovlsalve",
+        "src": "https://cdn.discordapp.com/emojis/648976643687317532.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 189416,
+        "end": 189546
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "weppoison",
+        "class": "d-emoji",
+        "alt": "weppoison",
+        "src": "https://cdn.discordapp.com/emojis/689525476158472288.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 189551,
+        "end": 189673
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "scriptureofwen",
+        "class": "d-emoji",
+        "alt": "scriptureofwen",
+        "src": "https://cdn.discordapp.com/emojis/883134307902816297.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 189717,
+        "end": 189849
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "invokedeath",
+        "class": "d-emoji",
+        "alt": "invokedeath",
+        "src": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 190004,
+        "end": 190131
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "demonslayer",
+        "class": "d-emoji",
+        "alt": "demonslayer",
+        "src": "https://cdn.discordapp.com/emojis/641339921675845633.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 190148,
+        "end": 190274
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "threadsoffate",
+        "class": "d-emoji",
+        "alt": "threadsoffate",
+        "src": "https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 190278,
+        "end": 190409
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulsap",
+        "class": "d-emoji",
+        "alt": "soulsap",
+        "src": "https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 190412,
+        "end": 190531
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "volleyofsouls",
+        "class": "d-emoji",
+        "alt": "volleyofsouls",
+        "src": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 190534,
+        "end": 190665
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necromancy",
+        "class": "d-emoji",
+        "alt": "necromancy",
+        "src": "https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 190904,
+        "end": 191029
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://firebasestorage.googleapis.com/v0/b/preset-images/o/images%2F29a3659c-fee8-45e0-a3f7-5aecdee2f2ae.png?alt=media"
+      },
+      "text": "",
+      "location": {
+        "start": 191062,
+        "end": 191207
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/u2Xr8TKPVQ.png"
+      },
+      "text": "",
+      "location": {
+        "start": 191253,
+        "end": 191320
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "rod",
+        "class": "d-emoji",
+        "alt": "rod",
+        "src": "https://cdn.discordapp.com/emojis/513190159462825984.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 191627,
+        "end": 191737
+      }
+    }
+  ],
+  "links": [
+    {
+      "href": "https://runescape.wiki/w/Ripper_Demon",
+      "text": "Ripper Demons",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Ripper_Demon"
+      },
+      "location": {
+        "start": 167256,
+        "end": 167321
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Slayer_collection_log#Kharidian_Desert",
+      "text": "Kharidian Desert collection log",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Slayer_collection_log#Kharidian_Desert"
+      },
+      "location": {
+        "start": 167742,
+        "end": 167851
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Parasitic_orb",
+      "text": "parasitic orb",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Parasitic_orb"
+      },
+      "location": {
+        "start": 167857,
+        "end": 167923
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Ripper_Demon_cave",
+      "text": "Ripper Demon cave",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Ripper_Demon_cave"
+      },
+      "location": {
+        "start": 168730,
+        "end": 168804
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Skyboxes_and_filters",
+      "text": "skybox",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Skyboxes_and_filters"
+      },
+      "location": {
+        "start": 169307,
+        "end": 169373
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Ripper_claw",
+      "text": "Ripper claw",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Ripper_claw"
+      },
+      "location": {
+        "start": 173427,
+        "end": 173489
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Off-hand_ripper_claw",
+      "text": "Off-hand ripper claw",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Off-hand_ripper_claw"
+      },
+      "location": {
+        "start": 173619,
+        "end": 173699
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Parasitic_orb",
+      "text": "Parasitic orb",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Parasitic_orb"
+      },
+      "location": {
+        "start": 173934,
+        "end": 174000
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Raptor_key_part_2",
+      "text": "Raptor key part 2",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Raptor_key_part_2"
+      },
+      "location": {
+        "start": 174292,
+        "end": 174366
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Don%27t_Fear_the_Ripper",
+      "text": "Miner's journal 1-5",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Don%27t_Fear_the_Ripper"
+      },
+      "location": {
+        "start": 174465,
+        "end": 174547
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/The_Diary_of_Jebediah_Omnis",
+      "text": "The Diary of Jebediah Omnis",
+      "attrs": {
+        "href": "https://runescape.wiki/w/The_Diary_of_Jebediah_Omnis"
+      },
+      "location": {
+        "start": 174552,
+        "end": 174646
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Cursed_amascut_sand",
+      "text": "Cursed amascut sand",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Cursed_amascut_sand"
+      },
+      "location": {
+        "start": 174821,
+        "end": 174899
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Binding_contract",
+      "text": "Binding contracts",
+      "attrs": {
+        "title": "",
+        "href": "https://runescape.wiki/w/Binding_contract",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 176110,
+        "end": 176225
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Magic_notepaper",
+      "text": "Magic notepaper",
+      "attrs": {
+        "title": "",
+        "href": "https://runescape.wiki/w/Magic_notepaper",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 176366,
+        "end": 176478
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Demon_Slayer_(perk)",
+      "text": "Demon Slayer",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Demon_Slayer_(perk)"
+      },
+      "location": {
+        "start": 176787,
+        "end": 176858
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Enhanced_Devoted",
+      "text": "Enhanced Devoted",
+      "attrs": {
+        "title": "",
+        "href": "https://runescape.wiki/w/Enhanced_Devoted",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 177048,
+        "end": 177162
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Oldak_coil",
+      "text": "Oldak coil",
+      "attrs": {
+        "title": "",
+        "href": "https://runescape.wiki/w/Oldak_coil",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 177327,
+        "end": 177429
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Artisans'_Workshop_Reward_Shop#Rewards",
+      "text": "Restocking Cannon",
+      "attrs": {
+        "title": "",
+        "href": "https://runescape.wiki/w/Artisans'_Workshop_Reward_Shop#Rewards",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 177581,
+        "end": 177718
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Demon_Slayer_(ability)",
+      "text": "Demon Slayer (ability)",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Demon_Slayer_(ability)"
+      },
+      "location": {
+        "start": 177866,
+        "end": 177950
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Infernal_Puzzle_Box",
+      "text": "Infernal Puzzle Box (tier 6)",
+      "attrs": {
+        "title": "",
+        "href": "https://runescape.wiki/w/Infernal_Puzzle_Box",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 178166,
+        "end": 178295
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Vala#Edgeville",
+      "text": "Vala",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Vala#Edgeville"
+      },
+      "location": {
+        "start": 179100,
+        "end": 179158
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Annakarl_Teleport",
+      "text": "Annakarl Teleport (Ancient Magicks)",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Annakarl_Teleport"
+      },
+      "location": {
+        "start": 179261,
+        "end": 179353
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/fKZLfiGXqH.png",
+      "text": "Click here",
+      "attrs": {
+        "href": "https://img.pvme.io/images/fKZLfiGXqH.png"
+      },
+      "location": {
+        "start": 179924,
+        "end": 179990
+      }
+    },
+    {
+      "href": "https://presets.pvme.io?id=15e7b07c-4b4f-40ab-9fdc-04a9a1baab8f",
+      "text": "Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=15e7b07c-4b4f-40ab-9fdc-04a9a1baab8f"
+      },
+      "location": {
+        "start": 185470,
+        "end": 185560
+      }
+    },
+    {
+      "href": "https://youtu.be/KiP5Li1JfxM",
+      "text": "Low Effort Magic",
+      "attrs": {
+        "href": "https://youtu.be/KiP5Li1JfxM"
+      },
+      "location": {
+        "start": 185905,
+        "end": 185964
+      }
+    },
+    {
+      "href": "https://presets.pvme.io?id=29a3659c-fee8-45e0-a3f7-5aecdee2f2ae",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=29a3659c-fee8-45e0-a3f7-5aecdee2f2ae"
+      },
+      "location": {
+        "start": 190808,
+        "end": 190903
+      }
+    },
+    {
+      "href": "https://youtu.be/wt9MOvmFBj8",
+      "text": "Necro - Camping",
+      "attrs": {
+        "href": "https://youtu.be/wt9MOvmFBj8"
+      },
+      "location": {
+        "start": 191383,
+        "end": 191441
+      }
+    },
+    {
+      "href": "https://youtu.be/sHFZpO6g-xw",
+      "text": "Necro/Cryptbloom - Camping",
+      "attrs": {
+        "href": "https://youtu.be/sHFZpO6g-xw"
+      },
+      "location": {
+        "start": 191451,
+        "end": 191520
+      }
+    },
+    {
+      "href": "https://youtu.be/zxjP8zVb1kc",
+      "text": "Necro - Elite spawn farming",
+      "attrs": {
+        "href": "https://youtu.be/zxjP8zVb1kc"
+      },
+      "location": {
+        "start": 191530,
+        "end": 191600
+      }
+    }
+  ],
+  "files": {
+    "source": "guides/pvme-guides--slayer--ripper-demon/source.json",
+    "inventory": "guides/pvme-guides--slayer--ripper-demon/inventory.json",
+    "article": "guides/pvme-guides--slayer--ripper-demon/article.html",
+    "response": "guides/pvme-guides--slayer--ripper-demon/response.html",
+    "metadata": "guides/pvme-guides--slayer--ripper-demon/metadata.json"
+  },
+  "limitations": [
+    "Exact HTTP article preserved, not dynamic preset/item/API data or image/video-only information.",
+    "No media availability, browser layout, semantic equivalence or live wiki revision parity claim."
+  ]
+}

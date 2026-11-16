@@ -1,0 +1,449 @@
+{
+  "schemaVersion": 1,
+  "captureVersion": 2,
+  "id": "pvme-guides--editor-resources--editor-references--creating-afk-methods",
+  "sourceURL": "https://pvme.io/pvme-guides/editor-resources/editor-references/creating-afk-methods/",
+  "officialURL": "https://pvme.io/pvme-guides/editor-resources/editor-references/creating-afk-methods/",
+  "responseURL": "https://pvme.io/pvme-guides/editor-resources/editor-references/creating-afk-methods/",
+  "status": "captured",
+  "statusCode": 200,
+  "retrievedAt": "2026-11-16T00:26:49.134Z",
+  "sitemapLastmod": "2026-11-15",
+  "sitemapSha256": "7166472554d36bfc69a7e14f7298264c0f9bfac00dc9034e5bfd0fba58a14b07",
+  "kind": "guide",
+  "audience": "editor",
+  "title": "PvME/Contributing/Creating AFK Methods",
+  "titleStatus": "existing-exact-url",
+  "baselineId": "pvme-guides--editor-resources--editor-references--creating-afk-methods",
+  "sourceTitle": "Creating AFK Methods",
+  "sourceH1": "Creating AFK Methods",
+  "discovery": "official-sitemap",
+  "directory": "guides/pvme-guides--editor-resources--editor-references--creating-afk-methods",
+  "sourceSha256": "129f0f248f8f8d8a371a6ba6dc26058529d3685911f58228dfcea66757268789",
+  "bodySha256": "129f0f248f8f8d8a371a6ba6dc26058529d3685911f58228dfcea66757268789",
+  "normalizedTextSha256": "b71a467fb8311c7490c9ca60be4789a5382744213b44b043b7fe280f74a792fd",
+  "parser": "parse5 8.1.1; entities 9.0.0; sourceCodeLocationInfo",
+  "headers": {
+    "accept-ranges": "bytes",
+    "access-control-allow-origin": "*",
+    "age": "0",
+    "cache-control": "max-age=600",
+    "connection": "keep-alive",
+    "content-encoding": "gzip",
+    "content-length": "16208",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Mon, 16 Nov 2026 00:26:49 GMT",
+    "etag": "W/\"6afa1a34-2a0e6\"",
+    "expires": "Mon, 16 Nov 2026 00:36:49 GMT",
+    "last-modified": "Sun, 15 Nov 2026 20:46:44 GMT",
+    "server": "GitHub.com",
+    "strict-transport-security": "max-age=31556952",
+    "vary": "Accept-Encoding",
+    "via": "1.1 varnish",
+    "x-cache": "MISS",
+    "x-cache-hits": "0",
+    "x-fastly-request-id": "f1a61f2ec25459b9e3b3cba6b22392e52944c8cf",
+    "x-github-edge-region": "iad",
+    "x-github-request-id": "A2F2:150208:5409086:5A5A8BC:6AFA4DC9",
+    "x-origin-cache": "HIT",
+    "x-proxy-cache": "MISS",
+    "x-served-by": "cache-iad-kcgs7200027-IAD",
+    "x-timer": "S1794788810.545518,VS0,VE23"
+  },
+  "hashes": {
+    "responseSha256": "14b9108bde3b9e5deae7c7340fc55abff225f54c96c92cf623d9af39144b2bf1",
+    "articleSha256": "129f0f248f8f8d8a371a6ba6dc26058529d3685911f58228dfcea66757268789",
+    "textSha256": "41322a778015ac24c8f0191f7070cebb6ed83915c86b6a7cee81d90385933c66",
+    "normalizedTextSha256": "b71a467fb8311c7490c9ca60be4789a5382744213b44b043b7fe280f74a792fd"
+  },
+  "counts": {
+    "bytes": 172262,
+    "articleBytes": 6508,
+    "nodes": 262,
+    "topLevelNodes": 108,
+    "words": 459,
+    "images": 24,
+    "videos": 0,
+    "sources": 0,
+    "links": 1
+  },
+  "tags": {
+    "h1": 1,
+    "ins": 4,
+    "p": 54,
+    "em": 4,
+    "h2": 3,
+    "ol": 2,
+    "li": 6,
+    "a": 1,
+    "strong": 4,
+    "img": 24
+  },
+  "mediaHosts": {
+    "cdn.discordapp.com": 24
+  },
+  "patterns": [],
+  "media": [
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "biting4",
+        "class": "d-emoji",
+        "alt": "biting4",
+        "src": "https://cdn.discordapp.com/emojis/712073087809617931.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 165243,
+        "end": 165361
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "kalgpouch",
+        "class": "d-emoji",
+        "alt": "kalgpouch",
+        "src": "https://cdn.discordapp.com/emojis/921410226484301925.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 165364,
+        "end": 165486
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "reaverring",
+        "class": "d-emoji",
+        "alt": "reaverring",
+        "src": "https://cdn.discordapp.com/emojis/839903943018283050.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 165489,
+        "end": 165613
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "scriptureofful",
+        "class": "d-emoji",
+        "alt": "scriptureofful",
+        "src": "https://cdn.discordapp.com/emojis/902209626412560395.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 165649,
+        "end": 165781
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "scriptureofamascut",
+        "class": "d-emoji",
+        "alt": "scriptureofamascut",
+        "src": "https://cdn.discordapp.com/emojis/1266417822188437569.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 165784,
+        "end": 165925
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "malevolence",
+        "class": "d-emoji",
+        "alt": "malevolence",
+        "src": "https://cdn.discordapp.com/emojis/513190159416557573.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 166037,
+        "end": 166163
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "turmoil",
+        "class": "d-emoji",
+        "alt": "turmoil",
+        "src": "https://cdn.discordapp.com/emojis/583429936606347280.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 166166,
+        "end": 166284
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "nodonspikeharness",
+        "class": "d-emoji",
+        "alt": "nodonspikeharness",
+        "src": "https://cdn.discordapp.com/emojis/1449363594495135776.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 166341,
+        "end": 166480
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "primalabyssalarmourspikes",
+        "class": "d-emoji",
+        "alt": "primalabyssalarmourspikes",
+        "src": "https://cdn.discordapp.com/emojis/1276946271424479234.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 166483,
+        "end": 166638
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "vestmentsofhavochood",
+        "class": "d-emoji",
+        "alt": "vestmentsofhavochood",
+        "src": "https://cdn.discordapp.com/emojis/994189297659940904.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 166672,
+        "end": 166816
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "masterworkhelm",
+        "class": "d-emoji",
+        "alt": "masterworkhelm",
+        "src": "https://cdn.discordapp.com/emojis/643847068103737354.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 166819,
+        "end": 166951
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bandoshelm",
+        "class": "d-emoji",
+        "alt": "bandoshelm",
+        "src": "https://cdn.discordapp.com/emojis/1073883114797010974.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 166954,
+        "end": 167079
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "cinderbanes",
+        "class": "d-emoji",
+        "alt": "cinderbanes",
+        "src": "https://cdn.discordapp.com/emojis/513190158355660812.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 167245,
+        "end": 167371
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "weppoison",
+        "class": "d-emoji",
+        "alt": "weppoison",
+        "src": "https://cdn.discordapp.com/emojis/689525476158472288.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 167374,
+        "end": 167496
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "ripperpouch",
+        "class": "d-emoji",
+        "alt": "ripperpouch",
+        "src": "https://cdn.discordapp.com/emojis/703581275453128714.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 167535,
+        "end": 167661
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "berserk",
+        "class": "d-emoji",
+        "alt": "berserk",
+        "src": "https://cdn.discordapp.com/emojis/535532854004678657.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 168298,
+        "end": 168416
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "berserk",
+        "class": "d-emoji",
+        "alt": "berserk",
+        "src": "https://cdn.discordapp.com/emojis/535532854004678657.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 168614,
+        "end": 168732
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "berserk",
+        "class": "d-emoji",
+        "alt": "berserk",
+        "src": "https://cdn.discordapp.com/emojis/535532854004678657.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 169076,
+        "end": 169194
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "berserk",
+        "class": "d-emoji",
+        "alt": "berserk",
+        "src": "https://cdn.discordapp.com/emojis/535532854004678657.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 169493,
+        "end": 169611
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "malevolence",
+        "class": "d-emoji",
+        "alt": "malevolence",
+        "src": "https://cdn.discordapp.com/emojis/513190159416557573.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 169725,
+        "end": 169851
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "turmoil",
+        "class": "d-emoji",
+        "alt": "turmoil",
+        "src": "https://cdn.discordapp.com/emojis/583429936606347280.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 169854,
+        "end": 169972
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "nodonspikeharness",
+        "class": "d-emoji",
+        "alt": "nodonspikeharness",
+        "src": "https://cdn.discordapp.com/emojis/1449363594495135776.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 170001,
+        "end": 170140
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "championring",
+        "class": "d-emoji",
+        "alt": "championring",
+        "src": "https://cdn.discordapp.com/emojis/839903943630520350.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 170170,
+        "end": 170298
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "rod",
+        "class": "d-emoji",
+        "alt": "rod",
+        "src": "https://cdn.discordapp.com/emojis/513190159462825984.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 170302,
+        "end": 170412
+      }
+    }
+  ],
+  "links": [
+    {
+      "href": "",
+      "text": "#pvm-help",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 164512,
+        "end": 164557
+      }
+    }
+  ],
+  "files": {
+    "source": "guides/pvme-guides--editor-resources--editor-references--creating-afk-methods/source.json",
+    "inventory": "guides/pvme-guides--editor-resources--editor-references--creating-afk-methods/inventory.json",
+    "article": "guides/pvme-guides--editor-resources--editor-references--creating-afk-methods/article.html",
+    "response": "guides/pvme-guides--editor-resources--editor-references--creating-afk-methods/response.html",
+    "metadata": "guides/pvme-guides--editor-resources--editor-references--creating-afk-methods/metadata.json"
+  },
+  "limitations": [
+    "Exact HTTP article preserved, not dynamic preset/item/API data or image/video-only information.",
+    "No media availability, browser layout, semantic equivalence or live wiki revision parity claim."
+  ]
+}

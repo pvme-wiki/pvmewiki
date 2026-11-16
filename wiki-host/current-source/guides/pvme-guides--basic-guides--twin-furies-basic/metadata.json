@@ -1,0 +1,658 @@
+{
+  "schemaVersion": 1,
+  "captureVersion": 2,
+  "id": "pvme-guides--basic-guides--twin-furies-basic",
+  "sourceURL": "https://pvme.io/pvme-guides/basic-guides/twin-furies-basic/",
+  "officialURL": "https://pvme.io/pvme-guides/basic-guides/twin-furies-basic/",
+  "responseURL": "https://pvme.io/pvme-guides/basic-guides/twin-furies-basic/",
+  "status": "captured",
+  "statusCode": 200,
+  "retrievedAt": "2026-11-16T00:26:48.441Z",
+  "sitemapLastmod": "2026-11-15",
+  "sitemapSha256": "7166472554d36bfc69a7e14f7298264c0f9bfac00dc9034e5bfd0fba58a14b07",
+  "kind": "guide",
+  "audience": "player",
+  "title": "PvME/Twin Furies/Overview",
+  "titleStatus": "existing-exact-url",
+  "baselineId": "pvme-guides--basic-guides--twin-furies-basic",
+  "sourceTitle": "Twin Furies – Boss Guide",
+  "sourceH1": "Twin Furies – Boss Guide",
+  "discovery": "official-sitemap",
+  "directory": "guides/pvme-guides--basic-guides--twin-furies-basic",
+  "sourceSha256": "7a9bb15e16937098c4c0547bc06ec42a7038a00318bb167d8f2301e6c9db0f0d",
+  "bodySha256": "7a9bb15e16937098c4c0547bc06ec42a7038a00318bb167d8f2301e6c9db0f0d",
+  "normalizedTextSha256": "a708c442e54782fe1bf93b083cca65bd64f856804fabe211b402ebf2a868a3bc",
+  "parser": "parse5 8.1.1; entities 9.0.0; sourceCodeLocationInfo",
+  "headers": {
+    "accept-ranges": "bytes",
+    "access-control-allow-origin": "*",
+    "age": "0",
+    "cache-control": "max-age=600",
+    "connection": "keep-alive",
+    "content-encoding": "gzip",
+    "content-length": "17639",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Mon, 16 Nov 2026 00:26:48 GMT",
+    "etag": "W/\"6afa1a34-2b767\"",
+    "expires": "Mon, 16 Nov 2026 00:22:11 GMT",
+    "last-modified": "Sun, 15 Nov 2026 20:46:44 GMT",
+    "server": "GitHub.com",
+    "strict-transport-security": "max-age=31556952",
+    "vary": "Accept-Encoding",
+    "via": "1.1 varnish",
+    "x-cache": "HIT",
+    "x-cache-hits": "0",
+    "x-fastly-request-id": "fff1aa04a7283b44184be4ec69ac29d93623c154",
+    "x-github-edge-region": "iad",
+    "x-github-request-id": "5FEC:1D22:4CBE0EF:52D56C6:6AFA4A5B",
+    "x-origin-cache": "HIT",
+    "x-proxy-cache": "MISS",
+    "x-served-by": "cache-iad-khef600037-IAD",
+    "x-timer": "S1794788809.886110,VS0,VE33"
+  },
+  "hashes": {
+    "responseSha256": "84ecdb54900bcd2baaa062ef0ba474ed50b3ab7e3a649f132b14e0d2067ad6e1",
+    "articleSha256": "7a9bb15e16937098c4c0547bc06ec42a7038a00318bb167d8f2301e6c9db0f0d",
+    "textSha256": "c257752def5c2a89d5042820ed425e96636a221bcf06d960fbc6e17fb9ff2109",
+    "normalizedTextSha256": "a708c442e54782fe1bf93b083cca65bd64f856804fabe211b402ebf2a868a3bc"
+  },
+  "counts": {
+    "bytes": 178023,
+    "articleBytes": 10310,
+    "nodes": 449,
+    "topLevelNodes": 202,
+    "words": 797,
+    "images": 27,
+    "videos": 0,
+    "sources": 0,
+    "links": 16
+  },
+  "tags": {
+    "h1": 1,
+    "p": 89,
+    "img": 27,
+    "h2": 4,
+    "ins": 11,
+    "strong": 17,
+    "a": 16,
+    "h3": 7,
+    "em": 7
+  },
+  "mediaHosts": {
+    "img.pvme.io": 1,
+    "cdn.discordapp.com": 25,
+    "firebasestorage.googleapis.com": 1
+  },
+  "patterns": [
+    "linked-preset-content-external-to-html"
+  ],
+  "media": [
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/gaIHwzHbTa.png"
+      },
+      "text": "",
+      "location": {
+        "start": 166081,
+        "end": 166148
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "range",
+        "class": "d-emoji",
+        "alt": "range",
+        "src": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 166515,
+        "end": 166629
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "overload",
+        "class": "d-emoji",
+        "alt": "overload",
+        "src": "https://cdn.discordapp.com/emojis/689554436179361864.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 166719,
+        "end": 166839
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 167387,
+        "end": 167501
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "range",
+        "class": "d-emoji",
+        "alt": "range",
+        "src": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 167596,
+        "end": 167710
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "melee",
+        "class": "d-emoji",
+        "alt": "melee",
+        "src": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 167806,
+        "end": 167921
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necromancy",
+        "class": "d-emoji",
+        "alt": "necromancy",
+        "src": "https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 168016,
+        "end": 168141
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://firebasestorage.googleapis.com/v0/b/preset-images/o/images%2F0d30907b-8f74-4b10-9335-335d98008918.png?alt=media"
+      },
+      "text": "",
+      "location": {
+        "start": 168248,
+        "end": 168393
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "poisonicon",
+        "class": "d-emoji",
+        "alt": "poisonicon",
+        "src": "https://cdn.discordapp.com/emojis/944649693500154006.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 168467,
+        "end": 168591
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "cane",
+        "class": "d-emoji",
+        "alt": "cane",
+        "src": "https://cdn.discordapp.com/emojis/535532878969438210.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 169687,
+        "end": 169799
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bombard",
+        "class": "d-emoji",
+        "alt": "bombard",
+        "src": "https://cdn.discordapp.com/emojis/535541306391265284.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 169800,
+        "end": 169918
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "spectralscythe",
+        "class": "d-emoji",
+        "alt": "spectralscythe",
+        "src": "https://cdn.discordapp.com/emojis/1137809145706319892.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 169919,
+        "end": 170052
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "gchain",
+        "class": "d-emoji",
+        "alt": "gchain",
+        "src": "https://cdn.discordapp.com/emojis/1478063106914779166.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 170053,
+        "end": 170170
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "chaosroar",
+        "class": "d-emoji",
+        "alt": "chaosroar",
+        "src": "https://cdn.discordapp.com/emojis/994644356671737966.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 170224,
+        "end": 170346
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "overpowerigneous",
+        "class": "d-emoji",
+        "alt": "overpowerigneous",
+        "src": "https://cdn.discordapp.com/emojis/959089455640215633.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 170359,
+        "end": 170495
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulsplit",
+        "class": "d-emoji",
+        "alt": "soulsplit",
+        "src": "https://cdn.discordapp.com/emojis/615613924506599497.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 172568,
+        "end": 172690
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "cleave",
+        "class": "d-emoji",
+        "alt": "cleave",
+        "src": "https://cdn.discordapp.com/emojis/535532878616985610.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 172833,
+        "end": 172949
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "cane",
+        "class": "d-emoji",
+        "alt": "cane",
+        "src": "https://cdn.discordapp.com/emojis/535532878969438210.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 172961,
+        "end": 173073
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "quake",
+        "class": "d-emoji",
+        "alt": "quake",
+        "src": "https://cdn.discordapp.com/emojis/535532879506309150.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 173084,
+        "end": 173198
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "spectralscythe",
+        "class": "d-emoji",
+        "alt": "spectralscythe",
+        "src": "https://cdn.discordapp.com/emojis/1137809145706319892.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 173243,
+        "end": 173376
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "spectralscythe2",
+        "class": "d-emoji",
+        "alt": "spectralscythe2",
+        "src": "https://cdn.discordapp.com/emojis/1137809149690916945.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 173397,
+        "end": 173532
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "spectralscythe3",
+        "class": "d-emoji",
+        "alt": "spectralscythe3",
+        "src": "https://cdn.discordapp.com/emojis/1137809152043925505.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 173557,
+        "end": 173692
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "surge",
+        "class": "d-emoji",
+        "alt": "surge",
+        "src": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 173716,
+        "end": 173830
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "melee",
+        "class": "d-emoji",
+        "alt": "melee",
+        "src": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 175441,
+        "end": 175556
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necromancy",
+        "class": "d-emoji",
+        "alt": "necromancy",
+        "src": "https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 175613,
+        "end": 175738
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "melee",
+        "class": "d-emoji",
+        "alt": "melee",
+        "src": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 175832,
+        "end": 175947
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necromancy",
+        "class": "d-emoji",
+        "alt": "necromancy",
+        "src": "https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 176019,
+        "end": 176144
+      }
+    }
+  ],
+  "links": [
+    {
+      "href": "",
+      "text": "#twin-furies-gwd2",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 167022,
+        "end": 167075
+      }
+    },
+    {
+      "href": "",
+      "text": "#unknown-channel",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 167076,
+        "end": 167128
+      }
+    },
+    {
+      "href": "",
+      "text": "#unknown-channel",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 167129,
+        "end": 167181
+      }
+    },
+    {
+      "href": "",
+      "text": "#upgrade-order",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 167326,
+        "end": 167376
+      }
+    },
+    {
+      "href": "https://presets.pvme.io/?id=36ec3ebe-379d-4350-a3ff-ce7a88f7525a",
+      "text": "Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=36ec3ebe-379d-4350-a3ff-ce7a88f7525a"
+      },
+      "location": {
+        "start": 167502,
+        "end": 167586
+      }
+    },
+    {
+      "href": "https://presets.pvme.io/?id=50e03e24-37ad-4be8-abf5-a4bb22c0aa09",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=50e03e24-37ad-4be8-abf5-a4bb22c0aa09"
+      },
+      "location": {
+        "start": 167711,
+        "end": 167796
+      }
+    },
+    {
+      "href": "https://presets.pvme.io/?id=de7d0a00-3300-4607-ad6f-0c98f839c560",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=de7d0a00-3300-4607-ad6f-0c98f839c560"
+      },
+      "location": {
+        "start": 167922,
+        "end": 168006
+      }
+    },
+    {
+      "href": "https://presets.pvme.io/?id=0d30907b-8f74-4b10-9335-335d98008918",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=0d30907b-8f74-4b10-9335-335d98008918"
+      },
+      "location": {
+        "start": 168142,
+        "end": 168231
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/NWTHSDg.mp4",
+      "text": "(Example)",
+      "attrs": {
+        "href": "https://img.pvme.io/images/NWTHSDg.mp4"
+      },
+      "location": {
+        "start": 170606,
+        "end": 170668
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/QIMa9WS.mp4",
+      "text": "(Example)",
+      "attrs": {
+        "href": "https://img.pvme.io/images/QIMa9WS.mp4"
+      },
+      "location": {
+        "start": 171427,
+        "end": 171489
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/N7ceSRh.mp4",
+      "text": "(Examples)",
+      "attrs": {
+        "href": "https://img.pvme.io/images/N7ceSRh.mp4"
+      },
+      "location": {
+        "start": 172053,
+        "end": 172116
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/CJkO32O.mp4",
+      "text": "(Explosion)",
+      "attrs": {
+        "href": "https://img.pvme.io/images/CJkO32O.mp4"
+      },
+      "location": {
+        "start": 172117,
+        "end": 172181
+      }
+    },
+    {
+      "href": "https://youtu.be/9XD2MutZKFo",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://youtu.be/9XD2MutZKFo"
+      },
+      "location": {
+        "start": 175392,
+        "end": 175440
+      }
+    },
+    {
+      "href": "https://youtu.be/lag84Kr6CP8",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://youtu.be/lag84Kr6CP8"
+      },
+      "location": {
+        "start": 175559,
+        "end": 175612
+      }
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=6veyQTUV76A",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://www.youtube.com/watch?v=6veyQTUV76A"
+      },
+      "location": {
+        "start": 175768,
+        "end": 175831
+      }
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=Ri0umfL65Ms",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://www.youtube.com/watch?v=Ri0umfL65Ms"
+      },
+      "location": {
+        "start": 175950,
+        "end": 176018
+      }
+    }
+  ],
+  "files": {
+    "source": "guides/pvme-guides--basic-guides--twin-furies-basic/source.json",
+    "inventory": "guides/pvme-guides--basic-guides--twin-furies-basic/inventory.json",
+    "article": "guides/pvme-guides--basic-guides--twin-furies-basic/article.html",
+    "response": "guides/pvme-guides--basic-guides--twin-furies-basic/response.html",
+    "metadata": "guides/pvme-guides--basic-guides--twin-furies-basic/metadata.json"
+  },
+  "limitations": [
+    "Exact HTTP article preserved, not dynamic preset/item/API data or image/video-only information.",
+    "No media availability, browser layout, semantic equivalence or live wiki revision parity claim."
+  ]
+}

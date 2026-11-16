@@ -1,0 +1,5851 @@
+{
+  "schemaVersion": 1,
+  "id": "pvme-guides--miscellaneous-information--ability-information--magic-abilities",
+  "sourceURL": "https://pvme.io/pvme-guides/miscellaneous-information/ability-information/magic-abilities/",
+  "responseURL": "https://pvme.io/pvme-guides/miscellaneous-information/ability-information/magic-abilities/",
+  "boundary": "First original source content after editor utility; no H1; flagged",
+  "offsets": {
+    "start": 165773,
+    "end": 220432
+  },
+  "text": "Introduction\nNote: Use the Table of Contents present at the bottom of the channel, or in the pinned comments, to quickly navigate through this channel and find the information you are looking for.\n​\nSome general notes:\n⬥ The game runs on an internal tick system: 1t (tick) = 0.6s (seconds).\n⬥ The minimum time between abilities is called the global cooldown: 1 gcd = 3t = 1.8s.\n⬥ Debuff spells like Vuln  or Enfeeble  or Smoke Cloud  do not give adrenaline.\n⬥ Some useful sheets and resources are given below.\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAbility Damage Maths\nTo calculate your ability hit damage in detail, click here.\nThis is affected by factors such as your gear and other boosts.\nAbility Hit Timings\nTo see detailed breakdowns on ability hit timings, click here.\nThis refers to when hitsplats appear on your target.\nAuto-attack Adren Gain\nTo see adrenaline gained with different auto attacks, click here.\n\n\n\n\n\n\n\n\nNote: If you have any difficulties in using the tools or understanding what the information means, you can always ask in #pvm-help.\n​\nMagic \nThis section covers auto attacks and spells, basic abilities, enhanced abilities, ultimate abilities, utility abilities and special attacks for Magic.\n​\nAutos and Spells\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBarrages \n\n⬥ It is an AoE:\n    • 3x3 AoE\n    • Secondary targets take reduced damage (0.7x)\n⬥ Each element has different effects when cast:\n    • Smoke: Enemy hit chance reduced by 5% for 16t (9.6s)\n    • Shadow: Enemy damage reduced by 5% for 16t (9.6s)\n    • Blood: Heals you for 5% of damage dealt\n    • Ice: Enemy is bound for 16t (9.6s)\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBlitzes \n\n⬥ Single target version of Barrages\n⬥ Effects last for 12t (7.2s)\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVulnerability \n\n⬥ Increases damage dealt by 10%\n⬥ Lasts 60s\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIncite Fear \n\n⬥ Every ability cast applies a stack:\n    • Caps at 5 stacks, and at max stacks uses no runes on ability casts\n    • Stacks are lost after 20s, refreshed upon applying another stack\n    • Each stack reduces Tsunami's  cast cost by -12% adrenaline\n⬥ Frost Surge:\n    • At 5 stacks, ability casts trigger Frost Surge; deals 10-50% ability damage\n    • Triggering it costs runes even at max stacks\n    • Frost Surge is a 5x5 AoE around your primary target which hits up to 8 extra targets in range for 10-50% ability damage each\n    • Frost Surge has a 12s cooldown, after an ability cast can trigger it again\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExsanguinate \n\n⬥ Every ability cast applies a stack:\n    • Caps at 12 stacks, and at max stacks uses no runes on ability casts\n    • Stacks are lost after 20s, refreshed upon applying another stack\n    • Each stack increases basic ability damage by +1%\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSmoke Cloud \n\n⬥ Increases damage dealt with critical hits by 15% for Magic, 6% otherwise\n⬥ Lasts 120s\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnimate Dead \n\n⬥ Applies a flat damage reduction:\n    • Reduction based on 10% of equipped magic tank gear's armour + 25% of your current Defence  level after any buffs or debuffs\n    • Damage reduced cannot exceed 60% of the damage taken\n    • 60% cap is based off the damage after all other damage reductions such as deflect prayers ( /  / ) on the hit\n⬥ Lasts 12 minutes\n⬥ Does not reduce  /  HP / adrenaline gain\n⬥ A calculator can be found here\n\n\n\n\n\n\n\n\n\n​\nBasic Abilities\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMagic \n\n⬥ Cooldown: 0t (0s)\n⬥ Applies auto-cast spell effect\n⬥ Auto triggered during combat\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSonic Wave \n\n⬥ Cooldown: 25t (15s)\n⬥ Applies Flow to self for 15t (9s)\n⬥ Next Magic ability uses 10% less adrenaline\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGreater Sonic Wave \n\n⬥ Cooldown: 25t (15s)\n⬥ Applies Greater Flow to self for 15t (9s)\n⬥ Next Magic ability uses 20% less adrenaline\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDragon Breath \n\n⬥ Cooldown: 12t (7.2s)\n⬥ It is an AoE:\n    • AoE is straight line to target + 3x3 around it\n    • Hits 5 targets, inclusive of main\n⬥ It is affected by Kerapac's wrist wraps :\n    • Next  to hit within 10t of the  cast will have remaining hits instantly hit at 25% more damage\n    • Within 10t means: if  is cast t0,  has to hit within t0-9\n        ⬩ Latest you can cast  is t7\n⬥ It is affected by the Dragonrider Amulet \n    • Boosts damage by 10%\n    • Has a 10% chance of applying a 3-hit DoT, each for 10% of  max hit, rounded down (excludes boosts that do not normally boost bleeds)\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nImpact \n\n⬥ Cooldown: 25t (15s)\n    • Charges: 2\n⬥ Stuns and binds for 3t (1.8s)\n⬥ It is affected by :\n    • Increases Max by 40% per  rank\n    • Increases Minimum by 8% per  Rank\n    • No longer stuns or binds\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCombust \n\n⬥ Cooldown: 30t (18s)\n⬥ It is a Burn:\n    • Not affected by \n    • Hits every 3t (1.8s), for a total of 10 times\n⬥ Affected by :\n    • Increases damage by 10% + 3% per  rank\n⬥ Affected by  modified by Kerapac's wrist wraps \n    • Next  to hit within 10t of the  cast will have remaining hits instantly hit at 25% more damage\n    • Within 10t means: if  is cast t0,  has to hit within t0-9\n        ⬩ Latest you can cast  is t7\n⬥ Deals 40% increased damage if used within 15 seconds of  \n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nChain \n\n⬥ Cooldown: 17t (10.2s)\n⬥ It is an AoE:\n    • Hits within a 5 square radius from SW tile of initial target\n    • Hits 3 targets, inclusive of main\n    • Does not hit things on initial target's SW tile\n⬥ Secondary targets hit by  take the next ability cast on your main target within 6s at 30% \n⬥ Affected by Caroming \n    •  secondary target damage increased by 5% + 5% per Caroming rank\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGreater Chain \n\n⬥ Cooldown: 17t (10.2s)\n⬥ It is an AoE:\n    • Hits within a 5 square radius from SW tile of initial target\n    • Hits 7 targets, inclusive of main\n    • Does not hit things on initial target's SW tile\n⬥ Secondary targets hit by  take the next ability cast on your main target within 6s at 50% \n⬥ Affected by Caroming \n    •  secondary target damage increased by 5% + 5% per Caroming rank\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConcentrated Blast \n\n⬥ Cooldown: 9t (5.4s)\n⬥ Provides a passive critical hit buff\n    • 5% increased crit chance for each hit\n⬥ Channelled ability\n    • Hits a maximum of 3 times over 5t (3s)\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGreater Concentrated Blast \n\n⬥ Cooldown: 9t (5.4s)\n⬥ Provides a passive critical hit buff\n    • 7% increased crit chance for each hit\n⬥ Channelled ability\n    • Hits a maximum of 3 times over 5t (3s)\n\n\n\n\n\n\n\n\n\n​\nEnhanced Abilities\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWild Magic \n\n⬥ Cooldown: 9t (5.4s)\n⬥ Adrenaline Cost: 25%\n⬥ Two separate, strong hits\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAsphyxiate \n\n⬥ Cooldown: 34t (20.4s)\n⬥ Adrenaline Cost: 25%\n⬥ Stuns for 6t (3.6s)\n⬥ Channelled ability, 4 hits at full channel duration (7t, 4.2s)\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSmoke Tendrils \n\n⬥ Cooldown: 75t (45s)\n⬥ Adrenaline Cost: 0%\n⬥ Channelled ability, 4 hits at full channel duration (7t, 4.2s)\n⬥ Inflicts self-damage each hit\n⬥ Each hit is a guaranteed critical hit\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMagma Tempest  / \n\n⬥ Cooldown: 35t (21s)\n⬥ Adrenaline Cost: 20%\n⬥ Is a 5x5 area-of-effect\n⬥ Hits every 1.2s (2t) over 9.6s for a total of 8 hits\n⬥ Cannot critical hit\n⬥ Has two variants, see differences using !magma\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCorruption Blast \n\n⬥ Cooldown: 25t (15s)\n⬥ Adrenaline Cost: 20%\n⬥ It is a DoT:\n    • Not affected by \n    • Hits every 2t (1.2s), for a total of 5 times\n⬥ It is an AoE:\n    • Spreads to targets within 2 tiles each hit\n\n\n\n\n\n\n\n\n\n​\nSpecial Attacks\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGuthix Staff \n\n⬥ Adrenaline Cost: 25% (22.5% with )\n⬥ Applies an affinity and defence reduction:\n    • +2 affinity\n    • Reduces  level by 5% of base\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nArmadyl Battlestaff \n\n⬥ Adrenaline Cost: 50% (45% with )\n⬥ Channelled ability, 5 hits at full channel duration (5t, 3s)\n⬥ Subsequent hits deal increasing damage\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIban's Staff \n\n⬥ Adrenaline Cost: 50% (45% with )\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLegatus's Emberstaff \n\n⬥ Adrenaline Cost: 35% (31.5% with )\n⬥  Deals 1% increased damage for each 1% life points the target is missing\n    • Up to a maximum of 75%\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRoar of Awakening \n\n⬥ Special Attack: Soulfire\n⬥ Cooldown: 75t (45s)\n⬥ Adrenaline Cost: 35% (31.5% with )\n⬥ Hits every 1.8s (3t) over 12.6s for a total of 7 hits.\n ⬥ Gain Conflagrate buff for 15s (25t).\n     • Next  deals 40% increased damage.\n⬥ Can get reset while having at least 1 \n    • For more information on , use !essencecorruption in #bot-commands\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFractured Staff of Armadyl \n\n⬥ Special Attack: Instability\n⬥ Cooldown: 100t (60s)\n⬥ Adrenaline Cost: 50% (45% with )\n⬥ Lasts 50t (30s)\n⬥ Whenever a magic critical hit is inflicted on primary target, an additional Time Strike will be fired\n    • Time Strike deals 90%-110% damage to your current target\n⬥ For more information on how to use the special attack, use !fsoa in #bot-commands\n\n\n\n\n\n\n\n\n\n​\nUltimate Abilities\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOmnipower \n\n⬥ Cooldown: 50t (30s)\n⬥ Adrenaline Cost: 60%\n⬥ Affected by the Igneous Kal-Mej  and Igneous Kal-Zuk \n    • Fires 4 hits\n    • Increases average ability damage from 460% to 540%\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSunshine \n\n⬥ Cooldown: 100t (60s)\n⬥ Adrenaline Cost: 100%\n⬥ It is an on cast buff\n⬥ Increases damage by 50% from t0→t51 (52t/31.2s duration); buff starts t1\n⬥ 7x7 buff radius\n⬥ Does not incur the auto cooldown\n⬥ Planted Feet  increases duration to t0→t64 (65t/39s)); buff starts t1\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGreater Sunshine \n\n⬥ Cooldown: 100t (60s)\n⬥ Adrenaline Cost: 100%\n⬥ Duration becomes t0→t64 (65t/39s duration); buff starts t1\n    • Using  does not extend this further\n⬥  retains the DoT effect of \n    • Using  will cancel this\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTsunami \n\n⬥ Cooldown: 100t (60s)\n⬥ Adrenaline Cost: 100%\n⬥ It is an AoE\n⬥ Provides a Critical Adrenaline buff:\n    • For the next 30s,  critical hits give 8% adrenaline\n    • This buff is applied on release of the ability\n⬥ Adrenaline cost can be reduced through auto-casting Incite Fear \n    • Each stack reduces  adrenaline cost by 12, down to 40% at 5 stacks\n\n\n\n\n\n\n\n\n\n​\nUtility Abilities\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSurge \n\n⬥ Cooldown: 34t (20.4s)\n⬥ It is a Mobility ability:\n    • Moves you forward 10 tiles\n⬥ Affected by Mobile \n    • Reduces cooldown to 17t (10.2s)\n⬥ Can be upgraded with a Double Surge codex: \n    • Gives you a second  on its own 34t (17t ) internal cooldown that is used after the first\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRunic Charge \n\n⬥ Cooldown: 50t (30s)\n⬥ Applies Anima Charged to self for 25t (15s), consumed once used\n⬥ Anima Charged\n    •  /  Next Magic Ability costs 35%/45% less adrenaline\n    •  Increased damaged\n    •  /  Each channel grants an additional 10% crit chance\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Magic Ability Index \n\n⬥ Click the links to quickly navigate to that ability's information.\n⬥ General notes can be found in the introduction here.\n\nSpells and Basic (1/3)\n⬥ Barrage Spells\n⬥ Blitz Spells\n⬥ Vulnerability\n⬥ Incite Fear\n⬥ Exsanguinate\n⬥ Smoke Cloud\nSpells and Basic (2/3)\n⬥ Animate Dead\n⬥ Magic\n⬥ Sonic Wave\n⬥ G. Sonic Wave\n⬥ Dragon Breath\n⬥ Impact\nSpells and Basic (3/3)\n⬥ Combust\n⬥ Chain\n⬥ G. Chain\n⬥ Conc. Blast\n⬥ G. Conc. Blast\nEnhanced\n⬥ Wild Magic\n⬥ Asphyxiate\n⬥ Smoke Tendrils\n⬥ Magma Tempest\n⬥ Corr. Blast\nSpecial Attacks\n⬥ Guthix Staff\n⬥ Arma. Battlestaff\n⬥ Iban's Staff\n⬥ Legatus's Emberstaff\n⬥ Roar of Awakening\n⬥ F. Staff of Armadyl\nUltimate\n⬥ Omnipower\n⬥ Sunshine\n⬥ G. Sunshine\n⬥ Tsunami\nUtility\n⬥ Surge\n⬥ Runic Charge\n\n\n\n\n\n\n\n      \n    ",
+  "normalizedText": "Introduction Note: Use the Table of Contents present at the bottom of the channel, or in the pinned comments, to quickly navigate through this channel and find the information you are looking for. ​ Some general notes: ⬥ The game runs on an internal tick system: 1t (tick) = 0.6s (seconds). ⬥ The minimum time between abilities is called the global cooldown: 1 gcd = 3t = 1.8s. ⬥ Debuff spells like Vuln or Enfeeble or Smoke Cloud do not give adrenaline. ⬥ Some useful sheets and resources are given below. ​ Ability Damage Maths To calculate your ability hit damage in detail, click here. This is affected by factors such as your gear and other boosts. Ability Hit Timings To see detailed breakdowns on ability hit timings, click here. This refers to when hitsplats appear on your target. Auto-attack Adren Gain To see adrenaline gained with different auto attacks, click here. Note: If you have any difficulties in using the tools or understanding what the information means, you can always ask in #pvm-help. ​ Magic This section covers auto attacks and spells, basic abilities, enhanced abilities, ultimate abilities, utility abilities and special attacks for Magic. ​ Autos and Spells Barrages ⬥ It is an AoE: • 3x3 AoE • Secondary targets take reduced damage (0.7x) ⬥ Each element has different effects when cast: • Smoke: Enemy hit chance reduced by 5% for 16t (9.6s) • Shadow: Enemy damage reduced by 5% for 16t (9.6s) • Blood: Heals you for 5% of damage dealt • Ice: Enemy is bound for 16t (9.6s) ​ Blitzes ⬥ Single target version of Barrages ⬥ Effects last for 12t (7.2s) ​ Vulnerability ⬥ Increases damage dealt by 10% ⬥ Lasts 60s ​ Incite Fear ⬥ Every ability cast applies a stack: • Caps at 5 stacks, and at max stacks uses no runes on ability casts • Stacks are lost after 20s, refreshed upon applying another stack • Each stack reduces Tsunami's cast cost by -12% adrenaline ⬥ Frost Surge: • At 5 stacks, ability casts trigger Frost Surge; deals 10-50% ability damage • Triggering it costs runes even at max stacks • Frost Surge is a 5x5 AoE around your primary target which hits up to 8 extra targets in range for 10-50% ability damage each • Frost Surge has a 12s cooldown, after an ability cast can trigger it again ​ Exsanguinate ⬥ Every ability cast applies a stack: • Caps at 12 stacks, and at max stacks uses no runes on ability casts • Stacks are lost after 20s, refreshed upon applying another stack • Each stack increases basic ability damage by +1% ​ Smoke Cloud ⬥ Increases damage dealt with critical hits by 15% for Magic, 6% otherwise ⬥ Lasts 120s ​ Animate Dead ⬥ Applies a flat damage reduction: • Reduction based on 10% of equipped magic tank gear's armour + 25% of your current Defence level after any buffs or debuffs • Damage reduced cannot exceed 60% of the damage taken • 60% cap is based off the damage after all other damage reductions such as deflect prayers ( / / ) on the hit ⬥ Lasts 12 minutes ⬥ Does not reduce / HP / adrenaline gain ⬥ A calculator can be found here ​ Basic Abilities Magic ⬥ Cooldown: 0t (0s) ⬥ Applies auto-cast spell effect ⬥ Auto triggered during combat ​ Sonic Wave ⬥ Cooldown: 25t (15s) ⬥ Applies Flow to self for 15t (9s) ⬥ Next Magic ability uses 10% less adrenaline ​ Greater Sonic Wave ⬥ Cooldown: 25t (15s) ⬥ Applies Greater Flow to self for 15t (9s) ⬥ Next Magic ability uses 20% less adrenaline ​ Dragon Breath ⬥ Cooldown: 12t (7.2s) ⬥ It is an AoE: • AoE is straight line to target + 3x3 around it • Hits 5 targets, inclusive of main ⬥ It is affected by Kerapac's wrist wraps : • Next to hit within 10t of the cast will have remaining hits instantly hit at 25% more damage • Within 10t means: if is cast t0, has to hit within t0-9 ⬩ Latest you can cast is t7 ⬥ It is affected by the Dragonrider Amulet • Boosts damage by 10% • Has a 10% chance of applying a 3-hit DoT, each for 10% of max hit, rounded down (excludes boosts that do not normally boost bleeds) ​ Impact ⬥ Cooldown: 25t (15s) • Charges: 2 ⬥ Stuns and binds for 3t (1.8s) ⬥ It is affected by : • Increases Max by 40% per rank • Increases Minimum by 8% per Rank • No longer stuns or binds ​ Combust ⬥ Cooldown: 30t (18s) ⬥ It is a Burn: • Not affected by • Hits every 3t (1.8s), for a total of 10 times ⬥ Affected by : • Increases damage by 10% + 3% per rank ⬥ Affected by modified by Kerapac's wrist wraps • Next to hit within 10t of the cast will have remaining hits instantly hit at 25% more damage • Within 10t means: if is cast t0, has to hit within t0-9 ⬩ Latest you can cast is t7 ⬥ Deals 40% increased damage if used within 15 seconds of ​ Chain ⬥ Cooldown: 17t (10.2s) ⬥ It is an AoE: • Hits within a 5 square radius from SW tile of initial target • Hits 3 targets, inclusive of main • Does not hit things on initial target's SW tile ⬥ Secondary targets hit by take the next ability cast on your main target within 6s at 30% ⬥ Affected by Caroming • secondary target damage increased by 5% + 5% per Caroming rank ​ Greater Chain ⬥ Cooldown: 17t (10.2s) ⬥ It is an AoE: • Hits within a 5 square radius from SW tile of initial target • Hits 7 targets, inclusive of main • Does not hit things on initial target's SW tile ⬥ Secondary targets hit by take the next ability cast on your main target within 6s at 50% ⬥ Affected by Caroming • secondary target damage increased by 5% + 5% per Caroming rank ​ Concentrated Blast ⬥ Cooldown: 9t (5.4s) ⬥ Provides a passive critical hit buff • 5% increased crit chance for each hit ⬥ Channelled ability • Hits a maximum of 3 times over 5t (3s) ​ Greater Concentrated Blast ⬥ Cooldown: 9t (5.4s) ⬥ Provides a passive critical hit buff • 7% increased crit chance for each hit ⬥ Channelled ability • Hits a maximum of 3 times over 5t (3s) ​ Enhanced Abilities Wild Magic ⬥ Cooldown: 9t (5.4s) ⬥ Adrenaline Cost: 25% ⬥ Two separate, strong hits ​ Asphyxiate ⬥ Cooldown: 34t (20.4s) ⬥ Adrenaline Cost: 25% ⬥ Stuns for 6t (3.6s) ⬥ Channelled ability, 4 hits at full channel duration (7t, 4.2s) ​ Smoke Tendrils ⬥ Cooldown: 75t (45s) ⬥ Adrenaline Cost: 0% ⬥ Channelled ability, 4 hits at full channel duration (7t, 4.2s) ⬥ Inflicts self-damage each hit ⬥ Each hit is a guaranteed critical hit ​ Magma Tempest / ⬥ Cooldown: 35t (21s) ⬥ Adrenaline Cost: 20% ⬥ Is a 5x5 area-of-effect ⬥ Hits every 1.2s (2t) over 9.6s for a total of 8 hits ⬥ Cannot critical hit ⬥ Has two variants, see differences using !magma ​ Corruption Blast ⬥ Cooldown: 25t (15s) ⬥ Adrenaline Cost: 20% ⬥ It is a DoT: • Not affected by • Hits every 2t (1.2s), for a total of 5 times ⬥ It is an AoE: • Spreads to targets within 2 tiles each hit ​ Special Attacks Guthix Staff ⬥ Adrenaline Cost: 25% (22.5% with ) ⬥ Applies an affinity and defence reduction: • +2 affinity • Reduces level by 5% of base ​ Armadyl Battlestaff ⬥ Adrenaline Cost: 50% (45% with ) ⬥ Channelled ability, 5 hits at full channel duration (5t, 3s) ⬥ Subsequent hits deal increasing damage ​ Iban's Staff ⬥ Adrenaline Cost: 50% (45% with ) Legatus's Emberstaff ⬥ Adrenaline Cost: 35% (31.5% with ) ⬥ Deals 1% increased damage for each 1% life points the target is missing • Up to a maximum of 75% Roar of Awakening ⬥ Special Attack: Soulfire ⬥ Cooldown: 75t (45s) ⬥ Adrenaline Cost: 35% (31.5% with ) ⬥ Hits every 1.8s (3t) over 12.6s for a total of 7 hits. ⬥ Gain Conflagrate buff for 15s (25t). • Next deals 40% increased damage. ⬥ Can get reset while having at least 1 • For more information on , use !essencecorruption in #bot-commands ​ Fractured Staff of Armadyl ⬥ Special Attack: Instability ⬥ Cooldown: 100t (60s) ⬥ Adrenaline Cost: 50% (45% with ) ⬥ Lasts 50t (30s) ⬥ Whenever a magic critical hit is inflicted on primary target, an additional Time Strike will be fired • Time Strike deals 90%-110% damage to your current target ⬥ For more information on how to use the special attack, use !fsoa in #bot-commands ​ Ultimate Abilities Omnipower ⬥ Cooldown: 50t (30s) ⬥ Adrenaline Cost: 60% ⬥ Affected by the Igneous Kal-Mej and Igneous Kal-Zuk • Fires 4 hits • Increases average ability damage from 460% to 540% ​ Sunshine ⬥ Cooldown: 100t (60s) ⬥ Adrenaline Cost: 100% ⬥ It is an on cast buff ⬥ Increases damage by 50% from t0→t51 (52t/31.2s duration); buff starts t1 ⬥ 7x7 buff radius ⬥ Does not incur the auto cooldown ⬥ Planted Feet increases duration to t0→t64 (65t/39s)); buff starts t1 ​ Greater Sunshine ⬥ Cooldown: 100t (60s) ⬥ Adrenaline Cost: 100% ⬥ Duration becomes t0→t64 (65t/39s duration); buff starts t1 • Using does not extend this further ⬥ retains the DoT effect of • Using will cancel this ​ Tsunami ⬥ Cooldown: 100t (60s) ⬥ Adrenaline Cost: 100% ⬥ It is an AoE ⬥ Provides a Critical Adrenaline buff: • For the next 30s, critical hits give 8% adrenaline • This buff is applied on release of the ability ⬥ Adrenaline cost can be reduced through auto-casting Incite Fear • Each stack reduces adrenaline cost by 12, down to 40% at 5 stacks ​ Utility Abilities Surge ⬥ Cooldown: 34t (20.4s) ⬥ It is a Mobility ability: • Moves you forward 10 tiles ⬥ Affected by Mobile • Reduces cooldown to 17t (10.2s) ⬥ Can be upgraded with a Double Surge codex: • Gives you a second on its own 34t (17t ) internal cooldown that is used after the first ​ Runic Charge ⬥ Cooldown: 50t (30s) ⬥ Applies Anima Charged to self for 25t (15s), consumed once used ⬥ Anima Charged • / Next Magic Ability costs 35%/45% less adrenaline • Increased damaged • / Each channel grants an additional 10% crit chance ​ Magic Ability Index ⬥ Click the links to quickly navigate to that ability's information. ⬥ General notes can be found in the introduction here. Spells and Basic (1/3) ⬥ Barrage Spells ⬥ Blitz Spells ⬥ Vulnerability ⬥ Incite Fear ⬥ Exsanguinate ⬥ Smoke Cloud Spells and Basic (2/3) ⬥ Animate Dead ⬥ Magic ⬥ Sonic Wave ⬥ G. Sonic Wave ⬥ Dragon Breath ⬥ Impact Spells and Basic (3/3) ⬥ Combust ⬥ Chain ⬥ G. Chain ⬥ Conc. Blast ⬥ G. Conc. Blast Enhanced ⬥ Wild Magic ⬥ Asphyxiate ⬥ Smoke Tendrils ⬥ Magma Tempest ⬥ Corr. Blast Special Attacks ⬥ Guthix Staff ⬥ Arma. Battlestaff ⬥ Iban's Staff ⬥ Legatus's Emberstaff ⬥ Roar of Awakening ⬥ F. Staff of Armadyl Ultimate ⬥ Omnipower ⬥ Sunshine ⬥ G. Sunshine ⬥ Tsunami Utility ⬥ Surge ⬥ Runic Charge",
+  "wordStream": [
+    "Introduction",
+    "Note:",
+    "Use",
+    "the",
+    "Table",
+    "of",
+    "Contents",
+    "present",
+    "at",
+    "the",
+    "bottom",
+    "of",
+    "the",
+    "channel,",
+    "or",
+    "in",
+    "the",
+    "pinned",
+    "comments,",
+    "to",
+    "quickly",
+    "navigate",
+    "through",
+    "this",
+    "channel",
+    "and",
+    "find",
+    "the",
+    "information",
+    "you",
+    "are",
+    "looking",
+    "for.",
+    "​",
+    "Some",
+    "general",
+    "notes:",
+    "⬥",
+    "The",
+    "game",
+    "runs",
+    "on",
+    "an",
+    "internal",
+    "tick",
+    "system:",
+    "1t",
+    "(tick)",
+    "=",
+    "0.6s",
+    "(seconds).",
+    "⬥",
+    "The",
+    "minimum",
+    "time",
+    "between",
+    "abilities",
+    "is",
+    "called",
+    "the",
+    "global",
+    "cooldown:",
+    "1",
+    "gcd",
+    "=",
+    "3t",
+    "=",
+    "1.8s.",
+    "⬥",
+    "Debuff",
+    "spells",
+    "like",
+    "Vuln",
+    "or",
+    "Enfeeble",
+    "or",
+    "Smoke",
+    "Cloud",
+    "do",
+    "not",
+    "give",
+    "adrenaline.",
+    "⬥",
+    "Some",
+    "useful",
+    "sheets",
+    "and",
+    "resources",
+    "are",
+    "given",
+    "below.",
+    "​",
+    "Ability",
+    "Damage",
+    "Maths",
+    "To",
+    "calculate",
+    "your",
+    "ability",
+    "hit",
+    "damage",
+    "in",
+    "detail,",
+    "click",
+    "here.",
+    "This",
+    "is",
+    "affected",
+    "by",
+    "factors",
+    "such",
+    "as",
+    "your",
+    "gear",
+    "and",
+    "other",
+    "boosts.",
+    "Ability",
+    "Hit",
+    "Timings",
+    "To",
+    "see",
+    "detailed",
+    "breakdowns",
+    "on",
+    "ability",
+    "hit",
+    "timings,",
+    "click",
+    "here.",
+    "This",
+    "refers",
+    "to",
+    "when",
+    "hitsplats",
+    "appear",
+    "on",
+    "your",
+    "target.",
+    "Auto-attack",
+    "Adren",
+    "Gain",
+    "To",
+    "see",
+    "adrenaline",
+    "gained",
+    "with",
+    "different",
+    "auto",
+    "attacks,",
+    "click",
+    "here.",
+    "Note:",
+    "If",
+    "you",
+    "have",
+    "any",
+    "difficulties",
+    "in",
+    "using",
+    "the",
+    "tools",
+    "or",
+    "understanding",
+    "what",
+    "the",
+    "information",
+    "means,",
+    "you",
+    "can",
+    "always",
+    "ask",
+    "in",
+    "#pvm-help.",
+    "​",
+    "Magic",
+    "This",
+    "section",
+    "covers",
+    "auto",
+    "attacks",
+    "and",
+    "spells,",
+    "basic",
+    "abilities,",
+    "enhanced",
+    "abilities,",
+    "ultimate",
+    "abilities,",
+    "utility",
+    "abilities",
+    "and",
+    "special",
+    "attacks",
+    "for",
+    "Magic.",
+    "​",
+    "Autos",
+    "and",
+    "Spells",
+    "Barrages",
+    "⬥",
+    "It",
+    "is",
+    "an",
+    "AoE:",
+    "•",
+    "3x3",
+    "AoE",
+    "•",
+    "Secondary",
+    "targets",
+    "take",
+    "reduced",
+    "damage",
+    "(0.7x)",
+    "⬥",
+    "Each",
+    "element",
+    "has",
+    "different",
+    "effects",
+    "when",
+    "cast:",
+    "•",
+    "Smoke:",
+    "Enemy",
+    "hit",
+    "chance",
+    "reduced",
+    "by",
+    "5%",
+    "for",
+    "16t",
+    "(9.6s)",
+    "•",
+    "Shadow:",
+    "Enemy",
+    "damage",
+    "reduced",
+    "by",
+    "5%",
+    "for",
+    "16t",
+    "(9.6s)",
+    "•",
+    "Blood:",
+    "Heals",
+    "you",
+    "for",
+    "5%",
+    "of",
+    "damage",
+    "dealt",
+    "•",
+    "Ice:",
+    "Enemy",
+    "is",
+    "bound",
+    "for",
+    "16t",
+    "(9.6s)",
+    "​",
+    "Blitzes",
+    "⬥",
+    "Single",
+    "target",
+    "version",
+    "of",
+    "Barrages",
+    "⬥",
+    "Effects",
+    "last",
+    "for",
+    "12t",
+    "(7.2s)",
+    "​",
+    "Vulnerability",
+    "⬥",
+    "Increases",
+    "damage",
+    "dealt",
+    "by",
+    "10%",
+    "⬥",
+    "Lasts",
+    "60s",
+    "​",
+    "Incite",
+    "Fear",
+    "⬥",
+    "Every",
+    "ability",
+    "cast",
+    "applies",
+    "a",
+    "stack:",
+    "•",
+    "Caps",
+    "at",
+    "5",
+    "stacks,",
+    "and",
+    "at",
+    "max",
+    "stacks",
+    "uses",
+    "no",
+    "runes",
+    "on",
+    "ability",
+    "casts",
+    "•",
+    "Stacks",
+    "are",
+    "lost",
+    "after",
+    "20s,",
+    "refreshed",
+    "upon",
+    "applying",
+    "another",
+    "stack",
+    "•",
+    "Each",
+    "stack",
+    "reduces",
+    "Tsunami's",
+    "cast",
+    "cost",
+    "by",
+    "-12%",
+    "adrenaline",
+    "⬥",
+    "Frost",
+    "Surge:",
+    "•",
+    "At",
+    "5",
+    "stacks,",
+    "ability",
+    "casts",
+    "trigger",
+    "Frost",
+    "Surge;",
+    "deals",
+    "10-50%",
+    "ability",
+    "damage",
+    "•",
+    "Triggering",
+    "it",
+    "costs",
+    "runes",
+    "even",
+    "at",
+    "max",
+    "stacks",
+    "•",
+    "Frost",
+    "Surge",
+    "is",
+    "a",
+    "5x5",
+    "AoE",
+    "around",
+    "your",
+    "primary",
+    "target",
+    "which",
+    "hits",
+    "up",
+    "to",
+    "8",
+    "extra",
+    "targets",
+    "in",
+    "range",
+    "for",
+    "10-50%",
+    "ability",
+    "damage",
+    "each",
+    "•",
+    "Frost",
+    "Surge",
+    "has",
+    "a",
+    "12s",
+    "cooldown,",
+    "after",
+    "an",
+    "ability",
+    "cast",
+    "can",
+    "trigger",
+    "it",
+    "again",
+    "​",
+    "Exsanguinate",
+    "⬥",
+    "Every",
+    "ability",
+    "cast",
+    "applies",
+    "a",
+    "stack:",
+    "•",
+    "Caps",
+    "at",
+    "12",
+    "stacks,",
+    "and",
+    "at",
+    "max",
+    "stacks",
+    "uses",
+    "no",
+    "runes",
+    "on",
+    "ability",
+    "casts",
+    "•",
+    "Stacks",
+    "are",
+    "lost",
+    "after",
+    "20s,",
+    "refreshed",
+    "upon",
+    "applying",
+    "another",
+    "stack",
+    "•",
+    "Each",
+    "stack",
+    "increases",
+    "basic",
+    "ability",
+    "damage",
+    "by",
+    "+1%",
+    "​",
+    "Smoke",
+    "Cloud",
+    "⬥",
+    "Increases",
+    "damage",
+    "dealt",
+    "with",
+    "critical",
+    "hits",
+    "by",
+    "15%",
+    "for",
+    "Magic,",
+    "6%",
+    "otherwise",
+    "⬥",
+    "Lasts",
+    "120s",
+    "​",
+    "Animate",
+    "Dead",
+    "⬥",
+    "Applies",
+    "a",
+    "flat",
+    "damage",
+    "reduction:",
+    "•",
+    "Reduction",
+    "based",
+    "on",
+    "10%",
+    "of",
+    "equipped",
+    "magic",
+    "tank",
+    "gear's",
+    "armour",
+    "+",
+    "25%",
+    "of",
+    "your",
+    "current",
+    "Defence",
+    "level",
+    "after",
+    "any",
+    "buffs",
+    "or",
+    "debuffs",
+    "•",
+    "Damage",
+    "reduced",
+    "cannot",
+    "exceed",
+    "60%",
+    "of",
+    "the",
+    "damage",
+    "taken",
+    "•",
+    "60%",
+    "cap",
+    "is",
+    "based",
+    "off",
+    "the",
+    "damage",
+    "after",
+    "all",
+    "other",
+    "damage",
+    "reductions",
+    "such",
+    "as",
+    "deflect",
+    "prayers",
+    "(",
+    "/",
+    "/",
+    ")",
+    "on",
+    "the",
+    "hit",
+    "⬥",
+    "Lasts",
+    "12",
+    "minutes",
+    "⬥",
+    "Does",
+    "not",
+    "reduce",
+    "/",
+    "HP",
+    "/",
+    "adrenaline",
+    "gain",
+    "⬥",
+    "A",
+    "calculator",
+    "can",
+    "be",
+    "found",
+    "here",
+    "​",
+    "Basic",
+    "Abilities",
+    "Magic",
+    "⬥",
+    "Cooldown:",
+    "0t",
+    "(0s)",
+    "⬥",
+    "Applies",
+    "auto-cast",
+    "spell",
+    "effect",
+    "⬥",
+    "Auto",
+    "triggered",
+    "during",
+    "combat",
+    "​",
+    "Sonic",
+    "Wave",
+    "⬥",
+    "Cooldown:",
+    "25t",
+    "(15s)",
+    "⬥",
+    "Applies",
+    "Flow",
+    "to",
+    "self",
+    "for",
+    "15t",
+    "(9s)",
+    "⬥",
+    "Next",
+    "Magic",
+    "ability",
+    "uses",
+    "10%",
+    "less",
+    "adrenaline",
+    "​",
+    "Greater",
+    "Sonic",
+    "Wave",
+    "⬥",
+    "Cooldown:",
+    "25t",
+    "(15s)",
+    "⬥",
+    "Applies",
+    "Greater",
+    "Flow",
+    "to",
+    "self",
+    "for",
+    "15t",
+    "(9s)",
+    "⬥",
+    "Next",
+    "Magic",
+    "ability",
+    "uses",
+    "20%",
+    "less",
+    "adrenaline",
+    "​",
+    "Dragon",
+    "Breath",
+    "⬥",
+    "Cooldown:",
+    "12t",
+    "(7.2s)",
+    "⬥",
+    "It",
+    "is",
+    "an",
+    "AoE:",
+    "•",
+    "AoE",
+    "is",
+    "straight",
+    "line",
+    "to",
+    "target",
+    "+",
+    "3x3",
+    "around",
+    "it",
+    "•",
+    "Hits",
+    "5",
+    "targets,",
+    "inclusive",
+    "of",
+    "main",
+    "⬥",
+    "It",
+    "is",
+    "affected",
+    "by",
+    "Kerapac's",
+    "wrist",
+    "wraps",
+    ":",
+    "•",
+    "Next",
+    "to",
+    "hit",
+    "within",
+    "10t",
+    "of",
+    "the",
+    "cast",
+    "will",
+    "have",
+    "remaining",
+    "hits",
+    "instantly",
+    "hit",
+    "at",
+    "25%",
+    "more",
+    "damage",
+    "•",
+    "Within",
+    "10t",
+    "means:",
+    "if",
+    "is",
+    "cast",
+    "t0,",
+    "has",
+    "to",
+    "hit",
+    "within",
+    "t0-9",
+    "⬩",
+    "Latest",
+    "you",
+    "can",
+    "cast",
+    "is",
+    "t7",
+    "⬥",
+    "It",
+    "is",
+    "affected",
+    "by",
+    "the",
+    "Dragonrider",
+    "Amulet",
+    "•",
+    "Boosts",
+    "damage",
+    "by",
+    "10%",
+    "•",
+    "Has",
+    "a",
+    "10%",
+    "chance",
+    "of",
+    "applying",
+    "a",
+    "3-hit",
+    "DoT,",
+    "each",
+    "for",
+    "10%",
+    "of",
+    "max",
+    "hit,",
+    "rounded",
+    "down",
+    "(excludes",
+    "boosts",
+    "that",
+    "do",
+    "not",
+    "normally",
+    "boost",
+    "bleeds)",
+    "​",
+    "Impact",
+    "⬥",
+    "Cooldown:",
+    "25t",
+    "(15s)",
+    "•",
+    "Charges:",
+    "2",
+    "⬥",
+    "Stuns",
+    "and",
+    "binds",
+    "for",
+    "3t",
+    "(1.8s)",
+    "⬥",
+    "It",
+    "is",
+    "affected",
+    "by",
+    ":",
+    "•",
+    "Increases",
+    "Max",
+    "by",
+    "40%",
+    "per",
+    "rank",
+    "•",
+    "Increases",
+    "Minimum",
+    "by",
+    "8%",
+    "per",
+    "Rank",
+    "•",
+    "No",
+    "longer",
+    "stuns",
+    "or",
+    "binds",
+    "​",
+    "Combust",
+    "⬥",
+    "Cooldown:",
+    "30t",
+    "(18s)",
+    "⬥",
+    "It",
+    "is",
+    "a",
+    "Burn:",
+    "•",
+    "Not",
+    "affected",
+    "by",
+    "•",
+    "Hits",
+    "every",
+    "3t",
+    "(1.8s),",
+    "for",
+    "a",
+    "total",
+    "of",
+    "10",
+    "times",
+    "⬥",
+    "Affected",
+    "by",
+    ":",
+    "•",
+    "Increases",
+    "damage",
+    "by",
+    "10%",
+    "+",
+    "3%",
+    "per",
+    "rank",
+    "⬥",
+    "Affected",
+    "by",
+    "modified",
+    "by",
+    "Kerapac's",
+    "wrist",
+    "wraps",
+    "•",
+    "Next",
+    "to",
+    "hit",
+    "within",
+    "10t",
+    "of",
+    "the",
+    "cast",
+    "will",
+    "have",
+    "remaining",
+    "hits",
+    "instantly",
+    "hit",
+    "at",
+    "25%",
+    "more",
+    "damage",
+    "•",
+    "Within",
+    "10t",
+    "means:",
+    "if",
+    "is",
+    "cast",
+    "t0,",
+    "has",
+    "to",
+    "hit",
+    "within",
+    "t0-9",
+    "⬩",
+    "Latest",
+    "you",
+    "can",
+    "cast",
+    "is",
+    "t7",
+    "⬥",
+    "Deals",
+    "40%",
+    "increased",
+    "damage",
+    "if",
+    "used",
+    "within",
+    "15",
+    "seconds",
+    "of",
+    "​",
+    "Chain",
+    "⬥",
+    "Cooldown:",
+    "17t",
+    "(10.2s)",
+    "⬥",
+    "It",
+    "is",
+    "an",
+    "AoE:",
+    "•",
+    "Hits",
+    "within",
+    "a",
+    "5",
+    "square",
+    "radius",
+    "from",
+    "SW",
+    "tile",
+    "of",
+    "initial",
+    "target",
+    "•",
+    "Hits",
+    "3",
+    "targets,",
+    "inclusive",
+    "of",
+    "main",
+    "•",
+    "Does",
+    "not",
+    "hit",
+    "things",
+    "on",
+    "initial",
+    "target's",
+    "SW",
+    "tile",
+    "⬥",
+    "Secondary",
+    "targets",
+    "hit",
+    "by",
+    "take",
+    "the",
+    "next",
+    "ability",
+    "cast",
+    "on",
+    "your",
+    "main",
+    "target",
+    "within",
+    "6s",
+    "at",
+    "30%",
+    "⬥",
+    "Affected",
+    "by",
+    "Caroming",
+    "•",
+    "secondary",
+    "target",
+    "damage",
+    "increased",
+    "by",
+    "5%",
+    "+",
+    "5%",
+    "per",
+    "Caroming",
+    "rank",
+    "​",
+    "Greater",
+    "Chain",
+    "⬥",
+    "Cooldown:",
+    "17t",
+    "(10.2s)",
+    "⬥",
+    "It",
+    "is",
+    "an",
+    "AoE:",
+    "•",
+    "Hits",
+    "within",
+    "a",
+    "5",
+    "square",
+    "radius",
+    "from",
+    "SW",
+    "tile",
+    "of",
+    "initial",
+    "target",
+    "•",
+    "Hits",
+    "7",
+    "targets,",
+    "inclusive",
+    "of",
+    "main",
+    "•",
+    "Does",
+    "not",
+    "hit",
+    "things",
+    "on",
+    "initial",
+    "target's",
+    "SW",
+    "tile",
+    "⬥",
+    "Secondary",
+    "targets",
+    "hit",
+    "by",
+    "take",
+    "the",
+    "next",
+    "ability",
+    "cast",
+    "on",
+    "your",
+    "main",
+    "target",
+    "within",
+    "6s",
+    "at",
+    "50%",
+    "⬥",
+    "Affected",
+    "by",
+    "Caroming",
+    "•",
+    "secondary",
+    "target",
+    "damage",
+    "increased",
+    "by",
+    "5%",
+    "+",
+    "5%",
+    "per",
+    "Caroming",
+    "rank",
+    "​",
+    "Concentrated",
+    "Blast",
+    "⬥",
+    "Cooldown:",
+    "9t",
+    "(5.4s)",
+    "⬥",
+    "Provides",
+    "a",
+    "passive",
+    "critical",
+    "hit",
+    "buff",
+    "•",
+    "5%",
+    "increased",
+    "crit",
+    "chance",
+    "for",
+    "each",
+    "hit",
+    "⬥",
+    "Channelled",
+    "ability",
+    "•",
+    "Hits",
+    "a",
+    "maximum",
+    "of",
+    "3",
+    "times",
+    "over",
+    "5t",
+    "(3s)",
+    "​",
+    "Greater",
+    "Concentrated",
+    "Blast",
+    "⬥",
+    "Cooldown:",
+    "9t",
+    "(5.4s)",
+    "⬥",
+    "Provides",
+    "a",
+    "passive",
+    "critical",
+    "hit",
+    "buff",
+    "•",
+    "7%",
+    "increased",
+    "crit",
+    "chance",
+    "for",
+    "each",
+    "hit",
+    "⬥",
+    "Channelled",
+    "ability",
+    "•",
+    "Hits",
+    "a",
+    "maximum",
+    "of",
+    "3",
+    "times",
+    "over",
+    "5t",
+    "(3s)",
+    "​",
+    "Enhanced",
+    "Abilities",
+    "Wild",
+    "Magic",
+    "⬥",
+    "Cooldown:",
+    "9t",
+    "(5.4s)",
+    "⬥",
+    "Adrenaline",
+    "Cost:",
+    "25%",
+    "⬥",
+    "Two",
+    "separate,",
+    "strong",
+    "hits",
+    "​",
+    "Asphyxiate",
+    "⬥",
+    "Cooldown:",
+    "34t",
+    "(20.4s)",
+    "⬥",
+    "Adrenaline",
+    "Cost:",
+    "25%",
+    "⬥",
+    "Stuns",
+    "for",
+    "6t",
+    "(3.6s)",
+    "⬥",
+    "Channelled",
+    "ability,",
+    "4",
+    "hits",
+    "at",
+    "full",
+    "channel",
+    "duration",
+    "(7t,",
+    "4.2s)",
+    "​",
+    "Smoke",
+    "Tendrils",
+    "⬥",
+    "Cooldown:",
+    "75t",
+    "(45s)",
+    "⬥",
+    "Adrenaline",
+    "Cost:",
+    "0%",
+    "⬥",
+    "Channelled",
+    "ability,",
+    "4",
+    "hits",
+    "at",
+    "full",
+    "channel",
+    "duration",
+    "(7t,",
+    "4.2s)",
+    "⬥",
+    "Inflicts",
+    "self-damage",
+    "each",
+    "hit",
+    "⬥",
+    "Each",
+    "hit",
+    "is",
+    "a",
+    "guaranteed",
+    "critical",
+    "hit",
+    "​",
+    "Magma",
+    "Tempest",
+    "/",
+    "⬥",
+    "Cooldown:",
+    "35t",
+    "(21s)",
+    "⬥",
+    "Adrenaline",
+    "Cost:",
+    "20%",
+    "⬥",
+    "Is",
+    "a",
+    "5x5",
+    "area-of-effect",
+    "⬥",
+    "Hits",
+    "every",
+    "1.2s",
+    "(2t)",
+    "over",
+    "9.6s",
+    "for",
+    "a",
+    "total",
+    "of",
+    "8",
+    "hits",
+    "⬥",
+    "Cannot",
+    "critical",
+    "hit",
+    "⬥",
+    "Has",
+    "two",
+    "variants,",
+    "see",
+    "differences",
+    "using",
+    "!magma",
+    "​",
+    "Corruption",
+    "Blast",
+    "⬥",
+    "Cooldown:",
+    "25t",
+    "(15s)",
+    "⬥",
+    "Adrenaline",
+    "Cost:",
+    "20%",
+    "⬥",
+    "It",
+    "is",
+    "a",
+    "DoT:",
+    "•",
+    "Not",
+    "affected",
+    "by",
+    "•",
+    "Hits",
+    "every",
+    "2t",
+    "(1.2s),",
+    "for",
+    "a",
+    "total",
+    "of",
+    "5",
+    "times",
+    "⬥",
+    "It",
+    "is",
+    "an",
+    "AoE:",
+    "•",
+    "Spreads",
+    "to",
+    "targets",
+    "within",
+    "2",
+    "tiles",
+    "each",
+    "hit",
+    "​",
+    "Special",
+    "Attacks",
+    "Guthix",
+    "Staff",
+    "⬥",
+    "Adrenaline",
+    "Cost:",
+    "25%",
+    "(22.5%",
+    "with",
+    ")",
+    "⬥",
+    "Applies",
+    "an",
+    "affinity",
+    "and",
+    "defence",
+    "reduction:",
+    "•",
+    "+2",
+    "affinity",
+    "•",
+    "Reduces",
+    "level",
+    "by",
+    "5%",
+    "of",
+    "base",
+    "​",
+    "Armadyl",
+    "Battlestaff",
+    "⬥",
+    "Adrenaline",
+    "Cost:",
+    "50%",
+    "(45%",
+    "with",
+    ")",
+    "⬥",
+    "Channelled",
+    "ability,",
+    "5",
+    "hits",
+    "at",
+    "full",
+    "channel",
+    "duration",
+    "(5t,",
+    "3s)",
+    "⬥",
+    "Subsequent",
+    "hits",
+    "deal",
+    "increasing",
+    "damage",
+    "​",
+    "Iban's",
+    "Staff",
+    "⬥",
+    "Adrenaline",
+    "Cost:",
+    "50%",
+    "(45%",
+    "with",
+    ")",
+    "Legatus's",
+    "Emberstaff",
+    "⬥",
+    "Adrenaline",
+    "Cost:",
+    "35%",
+    "(31.5%",
+    "with",
+    ")",
+    "⬥",
+    "Deals",
+    "1%",
+    "increased",
+    "damage",
+    "for",
+    "each",
+    "1%",
+    "life",
+    "points",
+    "the",
+    "target",
+    "is",
+    "missing",
+    "•",
+    "Up",
+    "to",
+    "a",
+    "maximum",
+    "of",
+    "75%",
+    "Roar",
+    "of",
+    "Awakening",
+    "⬥",
+    "Special",
+    "Attack:",
+    "Soulfire",
+    "⬥",
+    "Cooldown:",
+    "75t",
+    "(45s)",
+    "⬥",
+    "Adrenaline",
+    "Cost:",
+    "35%",
+    "(31.5%",
+    "with",
+    ")",
+    "⬥",
+    "Hits",
+    "every",
+    "1.8s",
+    "(3t)",
+    "over",
+    "12.6s",
+    "for",
+    "a",
+    "total",
+    "of",
+    "7",
+    "hits.",
+    "⬥",
+    "Gain",
+    "Conflagrate",
+    "buff",
+    "for",
+    "15s",
+    "(25t).",
+    "•",
+    "Next",
+    "deals",
+    "40%",
+    "increased",
+    "damage.",
+    "⬥",
+    "Can",
+    "get",
+    "reset",
+    "while",
+    "having",
+    "at",
+    "least",
+    "1",
+    "•",
+    "For",
+    "more",
+    "information",
+    "on",
+    ",",
+    "use",
+    "!essencecorruption",
+    "in",
+    "#bot-commands",
+    "​",
+    "Fractured",
+    "Staff",
+    "of",
+    "Armadyl",
+    "⬥",
+    "Special",
+    "Attack:",
+    "Instability",
+    "⬥",
+    "Cooldown:",
+    "100t",
+    "(60s)",
+    "⬥",
+    "Adrenaline",
+    "Cost:",
+    "50%",
+    "(45%",
+    "with",
+    ")",
+    "⬥",
+    "Lasts",
+    "50t",
+    "(30s)",
+    "⬥",
+    "Whenever",
+    "a",
+    "magic",
+    "critical",
+    "hit",
+    "is",
+    "inflicted",
+    "on",
+    "primary",
+    "target,",
+    "an",
+    "additional",
+    "Time",
+    "Strike",
+    "will",
+    "be",
+    "fired",
+    "•",
+    "Time",
+    "Strike",
+    "deals",
+    "90%-110%",
+    "damage",
+    "to",
+    "your",
+    "current",
+    "target",
+    "⬥",
+    "For",
+    "more",
+    "information",
+    "on",
+    "how",
+    "to",
+    "use",
+    "the",
+    "special",
+    "attack,",
+    "use",
+    "!fsoa",
+    "in",
+    "#bot-commands",
+    "​",
+    "Ultimate",
+    "Abilities",
+    "Omnipower",
+    "⬥",
+    "Cooldown:",
+    "50t",
+    "(30s)",
+    "⬥",
+    "Adrenaline",
+    "Cost:",
+    "60%",
+    "⬥",
+    "Affected",
+    "by",
+    "the",
+    "Igneous",
+    "Kal-Mej",
+    "and",
+    "Igneous",
+    "Kal-Zuk",
+    "•",
+    "Fires",
+    "4",
+    "hits",
+    "•",
+    "Increases",
+    "average",
+    "ability",
+    "damage",
+    "from",
+    "460%",
+    "to",
+    "540%",
+    "​",
+    "Sunshine",
+    "⬥",
+    "Cooldown:",
+    "100t",
+    "(60s)",
+    "⬥",
+    "Adrenaline",
+    "Cost:",
+    "100%",
+    "⬥",
+    "It",
+    "is",
+    "an",
+    "on",
+    "cast",
+    "buff",
+    "⬥",
+    "Increases",
+    "damage",
+    "by",
+    "50%",
+    "from",
+    "t0→t51",
+    "(52t/31.2s",
+    "duration);",
+    "buff",
+    "starts",
+    "t1",
+    "⬥",
+    "7x7",
+    "buff",
+    "radius",
+    "⬥",
+    "Does",
+    "not",
+    "incur",
+    "the",
+    "auto",
+    "cooldown",
+    "⬥",
+    "Planted",
+    "Feet",
+    "increases",
+    "duration",
+    "to",
+    "t0→t64",
+    "(65t/39s));",
+    "buff",
+    "starts",
+    "t1",
+    "​",
+    "Greater",
+    "Sunshine",
+    "⬥",
+    "Cooldown:",
+    "100t",
+    "(60s)",
+    "⬥",
+    "Adrenaline",
+    "Cost:",
+    "100%",
+    "⬥",
+    "Duration",
+    "becomes",
+    "t0→t64",
+    "(65t/39s",
+    "duration);",
+    "buff",
+    "starts",
+    "t1",
+    "•",
+    "Using",
+    "does",
+    "not",
+    "extend",
+    "this",
+    "further",
+    "⬥",
+    "retains",
+    "the",
+    "DoT",
+    "effect",
+    "of",
+    "•",
+    "Using",
+    "will",
+    "cancel",
+    "this",
+    "​",
+    "Tsunami",
+    "⬥",
+    "Cooldown:",
+    "100t",
+    "(60s)",
+    "⬥",
+    "Adrenaline",
+    "Cost:",
+    "100%",
+    "⬥",
+    "It",
+    "is",
+    "an",
+    "AoE",
+    "⬥",
+    "Provides",
+    "a",
+    "Critical",
+    "Adrenaline",
+    "buff:",
+    "•",
+    "For",
+    "the",
+    "next",
+    "30s,",
+    "critical",
+    "hits",
+    "give",
+    "8%",
+    "adrenaline",
+    "•",
+    "This",
+    "buff",
+    "is",
+    "applied",
+    "on",
+    "release",
+    "of",
+    "the",
+    "ability",
+    "⬥",
+    "Adrenaline",
+    "cost",
+    "can",
+    "be",
+    "reduced",
+    "through",
+    "auto-casting",
+    "Incite",
+    "Fear",
+    "•",
+    "Each",
+    "stack",
+    "reduces",
+    "adrenaline",
+    "cost",
+    "by",
+    "12,",
+    "down",
+    "to",
+    "40%",
+    "at",
+    "5",
+    "stacks",
+    "​",
+    "Utility",
+    "Abilities",
+    "Surge",
+    "⬥",
+    "Cooldown:",
+    "34t",
+    "(20.4s)",
+    "⬥",
+    "It",
+    "is",
+    "a",
+    "Mobility",
+    "ability:",
+    "•",
+    "Moves",
+    "you",
+    "forward",
+    "10",
+    "tiles",
+    "⬥",
+    "Affected",
+    "by",
+    "Mobile",
+    "•",
+    "Reduces",
+    "cooldown",
+    "to",
+    "17t",
+    "(10.2s)",
+    "⬥",
+    "Can",
+    "be",
+    "upgraded",
+    "with",
+    "a",
+    "Double",
+    "Surge",
+    "codex:",
+    "•",
+    "Gives",
+    "you",
+    "a",
+    "second",
+    "on",
+    "its",
+    "own",
+    "34t",
+    "(17t",
+    ")",
+    "internal",
+    "cooldown",
+    "that",
+    "is",
+    "used",
+    "after",
+    "the",
+    "first",
+    "​",
+    "Runic",
+    "Charge",
+    "⬥",
+    "Cooldown:",
+    "50t",
+    "(30s)",
+    "⬥",
+    "Applies",
+    "Anima",
+    "Charged",
+    "to",
+    "self",
+    "for",
+    "25t",
+    "(15s),",
+    "consumed",
+    "once",
+    "used",
+    "⬥",
+    "Anima",
+    "Charged",
+    "•",
+    "/",
+    "Next",
+    "Magic",
+    "Ability",
+    "costs",
+    "35%/45%",
+    "less",
+    "adrenaline",
+    "•",
+    "Increased",
+    "damaged",
+    "•",
+    "/",
+    "Each",
+    "channel",
+    "grants",
+    "an",
+    "additional",
+    "10%",
+    "crit",
+    "chance",
+    "​",
+    "Magic",
+    "Ability",
+    "Index",
+    "⬥",
+    "Click",
+    "the",
+    "links",
+    "to",
+    "quickly",
+    "navigate",
+    "to",
+    "that",
+    "ability's",
+    "information.",
+    "⬥",
+    "General",
+    "notes",
+    "can",
+    "be",
+    "found",
+    "in",
+    "the",
+    "introduction",
+    "here.",
+    "Spells",
+    "and",
+    "Basic",
+    "(1/3)",
+    "⬥",
+    "Barrage",
+    "Spells",
+    "⬥",
+    "Blitz",
+    "Spells",
+    "⬥",
+    "Vulnerability",
+    "⬥",
+    "Incite",
+    "Fear",
+    "⬥",
+    "Exsanguinate",
+    "⬥",
+    "Smoke",
+    "Cloud",
+    "Spells",
+    "and",
+    "Basic",
+    "(2/3)",
+    "⬥",
+    "Animate",
+    "Dead",
+    "⬥",
+    "Magic",
+    "⬥",
+    "Sonic",
+    "Wave",
+    "⬥",
+    "G.",
+    "Sonic",
+    "Wave",
+    "⬥",
+    "Dragon",
+    "Breath",
+    "⬥",
+    "Impact",
+    "Spells",
+    "and",
+    "Basic",
+    "(3/3)",
+    "⬥",
+    "Combust",
+    "⬥",
+    "Chain",
+    "⬥",
+    "G.",
+    "Chain",
+    "⬥",
+    "Conc.",
+    "Blast",
+    "⬥",
+    "G.",
+    "Conc.",
+    "Blast",
+    "Enhanced",
+    "⬥",
+    "Wild",
+    "Magic",
+    "⬥",
+    "Asphyxiate",
+    "⬥",
+    "Smoke",
+    "Tendrils",
+    "⬥",
+    "Magma",
+    "Tempest",
+    "⬥",
+    "Corr.",
+    "Blast",
+    "Special",
+    "Attacks",
+    "⬥",
+    "Guthix",
+    "Staff",
+    "⬥",
+    "Arma.",
+    "Battlestaff",
+    "⬥",
+    "Iban's",
+    "Staff",
+    "⬥",
+    "Legatus's",
+    "Emberstaff",
+    "⬥",
+    "Roar",
+    "of",
+    "Awakening",
+    "⬥",
+    "F.",
+    "Staff",
+    "of",
+    "Armadyl",
+    "Ultimate",
+    "⬥",
+    "Omnipower",
+    "⬥",
+    "Sunshine",
+    "⬥",
+    "G.",
+    "Sunshine",
+    "⬥",
+    "Tsunami",
+    "Utility",
+    "⬥",
+    "Surge",
+    "⬥",
+    "Runic",
+    "Charge"
+  ],
+  "hashes": {
+    "responseSha256": "32123f4c8ab3eba342bcb0f8294c4e36e73e5beab85795019e9cd04444b10329",
+    "articleSha256": "a0e7a0479fb9b66287c7b44cebf93f615bb7129e113e6a988491e9025f6e5e08",
+    "textSha256": "52371a0a45981bbcdefbc24e9c8d2bb309d21336d85ad0b7180f2f3044ead2f7",
+    "normalizedTextSha256": "4b3106e0d4a05f341a59492f55f9c953ad994ad7a09a4bca7f8e37f421e172bd"
+  },
+  "headings": [
+    {
+      "tag": "h2",
+      "text": "Introduction",
+      "attrs": {
+        "id": "introduction"
+      },
+      "location": {
+        "start": 165773,
+        "end": 165823
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "Magic ",
+      "attrs": {
+        "id": "magic"
+      },
+      "location": {
+        "start": 168807,
+        "end": 168958
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Autos and Spells",
+      "attrs": {
+        "id": "autos-and-spells"
+      },
+      "location": {
+        "start": 169133,
+        "end": 169180
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Basic Abilities",
+      "attrs": {
+        "id": "basic-abilities"
+      },
+      "location": {
+        "start": 178311,
+        "end": 178356
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Enhanced Abilities",
+      "attrs": {
+        "id": "enhanced-abilities"
+      },
+      "location": {
+        "start": 193589,
+        "end": 193640
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Special Attacks",
+      "attrs": {
+        "id": "special-attacks"
+      },
+      "location": {
+        "start": 199285,
+        "end": 199330
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Ultimate Abilities",
+      "attrs": {
+        "id": "ultimate-abilities"
+      },
+      "location": {
+        "start": 207307,
+        "end": 207358
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Utility Abilities",
+      "attrs": {
+        "id": "utility-abilities"
+      },
+      "location": {
+        "start": 213164,
+        "end": 213213
+      }
+    }
+  ],
+  "media": [
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Vuln",
+        "class": "d-emoji",
+        "alt": "Vuln",
+        "src": "https://cdn.discordapp.com/emojis/537349530551582720.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 166331,
+        "end": 166443
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Enfeeble",
+        "class": "d-emoji",
+        "alt": "Enfeeble",
+        "src": "https://cdn.discordapp.com/emojis/567727986409734145.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 166456,
+        "end": 166576
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "smokecloud",
+        "class": "d-emoji",
+        "alt": "smokecloud",
+        "src": "https://cdn.discordapp.com/emojis/856635090641879050.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 166592,
+        "end": 166716
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Magic",
+        "class": "d-emoji",
+        "alt": "Magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 168833,
+        "end": 168947
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bloodbarrage",
+        "class": "d-emoji",
+        "alt": "bloodbarrage",
+        "src": "https://cdn.discordapp.com/emojis/537338981747261446.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 169802,
+        "end": 169930
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bloodblitz",
+        "class": "d-emoji",
+        "alt": "bloodblitz",
+        "src": "https://cdn.discordapp.com/emojis/535616247807868938.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 171043,
+        "end": 171167
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Vuln",
+        "class": "d-emoji",
+        "alt": "Vuln",
+        "src": "https://cdn.discordapp.com/emojis/537349530551582720.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 172021,
+        "end": 172133
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "incitefear",
+        "class": "d-emoji",
+        "alt": "incitefear",
+        "src": "https://cdn.discordapp.com/emojis/856635090783567902.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 172963,
+        "end": 173087
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "tsunami",
+        "class": "d-emoji",
+        "alt": "tsunami",
+        "src": "https://cdn.discordapp.com/emojis/535533809995874304.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 173351,
+        "end": 173469
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "exsanguinate",
+        "class": "d-emoji",
+        "alt": "exsanguinate",
+        "src": "https://cdn.discordapp.com/emojis/856635090745950258.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 174599,
+        "end": 174727
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "smokecloud",
+        "class": "d-emoji",
+        "alt": "smokecloud",
+        "src": "https://cdn.discordapp.com/emojis/856635090641879050.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 175751,
+        "end": 175875
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "animatedead",
+        "class": "d-emoji",
+        "alt": "animatedead",
+        "src": "https://cdn.discordapp.com/emojis/856635090453135382.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 176750,
+        "end": 176876
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Defence",
+        "class": "d-emoji",
+        "alt": "Defence",
+        "src": "https://cdn.discordapp.com/emojis/689509250979987525.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 177054,
+        "end": 177172
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "DeflectMelee",
+        "class": "d-emoji",
+        "alt": "DeflectMelee",
+        "src": "https://cdn.discordapp.com/emojis/544195488447201300.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 177362,
+        "end": 177490
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "DeflectRange",
+        "class": "d-emoji",
+        "alt": "DeflectRange",
+        "src": "https://cdn.discordapp.com/emojis/544195488317046812.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 177493,
+        "end": 177621
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "DeflectMage",
+        "class": "d-emoji",
+        "alt": "DeflectMage",
+        "src": "https://cdn.discordapp.com/emojis/544195487926845462.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 177624,
+        "end": 177750
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "res",
+        "class": "d-emoji",
+        "alt": "res",
+        "src": "https://cdn.discordapp.com/emojis/535541258844635148.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 177800,
+        "end": 177910
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "divert",
+        "class": "d-emoji",
+        "alt": "divert",
+        "src": "https://cdn.discordapp.com/emojis/787904334377648130.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 177913,
+        "end": 178029
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic_basic",
+        "class": "d-emoji",
+        "alt": "magic_basic",
+        "src": "https://cdn.discordapp.com/emojis/1478063104146411713.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 178975,
+        "end": 179102
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "sonic",
+        "class": "d-emoji",
+        "alt": "sonic",
+        "src": "https://cdn.discordapp.com/emojis/1478063115709972651.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 179971,
+        "end": 180086
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "gsonic",
+        "class": "d-emoji",
+        "alt": "gsonic",
+        "src": "https://cdn.discordapp.com/emojis/1478063117211668584.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 180983,
+        "end": 181100
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "dbreath",
+        "class": "d-emoji",
+        "alt": "dbreath",
+        "src": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182000,
+        "end": 182118
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "kerapacswristwraps",
+        "class": "d-emoji",
+        "alt": "kerapacswristwraps",
+        "src": "https://cdn.discordapp.com/emojis/869286640722513940.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182339,
+        "end": 182479
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "combust",
+        "class": "d-emoji",
+        "alt": "combust",
+        "src": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182492,
+        "end": 182611
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "dbreath",
+        "class": "d-emoji",
+        "alt": "dbreath",
+        "src": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182637,
+        "end": 182755
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "dbreath",
+        "class": "d-emoji",
+        "alt": "dbreath",
+        "src": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182846,
+        "end": 182964
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "combust",
+        "class": "d-emoji",
+        "alt": "combust",
+        "src": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182977,
+        "end": 183096
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "combust",
+        "class": "d-emoji",
+        "alt": "combust",
+        "src": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 183150,
+        "end": 183269
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "drider",
+        "class": "d-emoji",
+        "alt": "drider",
+        "src": "https://cdn.discordapp.com/emojis/656785090994503700.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 183319,
+        "end": 183435
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "dbreath",
+        "class": "d-emoji",
+        "alt": "dbreath",
+        "src": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 183527,
+        "end": 183645
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "impact",
+        "class": "d-emoji",
+        "alt": "impact",
+        "src": "https://cdn.discordapp.com/emojis/535533809655873556.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 184454,
+        "end": 184570
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "flankicon",
+        "class": "d-emoji",
+        "alt": "flankicon",
+        "src": "https://cdn.discordapp.com/emojis/841419289755385866.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 184708,
+        "end": 184830
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "flankicon",
+        "class": "d-emoji",
+        "alt": "flankicon",
+        "src": "https://cdn.discordapp.com/emojis/841419289755385866.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 184863,
+        "end": 184985
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "flankicon",
+        "class": "d-emoji",
+        "alt": "flankicon",
+        "src": "https://cdn.discordapp.com/emojis/841419289755385866.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 185025,
+        "end": 185147
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "combust",
+        "class": "d-emoji",
+        "alt": "combust",
+        "src": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 185919,
+        "end": 186038
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "precise",
+        "class": "d-emoji",
+        "alt": "precise",
+        "src": "https://cdn.discordapp.com/emojis/1005204971886743572.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 186145,
+        "end": 186264
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "lunging",
+        "class": "d-emoji",
+        "alt": "lunging",
+        "src": "https://cdn.discordapp.com/emojis/1009423860875153559.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 186331,
+        "end": 186450
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "lunging",
+        "class": "d-emoji",
+        "alt": "lunging",
+        "src": "https://cdn.discordapp.com/emojis/1009423860875153559.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 186491,
+        "end": 186610
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "dbreath",
+        "class": "d-emoji",
+        "alt": "dbreath",
+        "src": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 186630,
+        "end": 186748
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "kerapacswristwraps",
+        "class": "d-emoji",
+        "alt": "kerapacswristwraps",
+        "src": "https://cdn.discordapp.com/emojis/869286640722513940.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 186783,
+        "end": 186923
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "combust",
+        "class": "d-emoji",
+        "alt": "combust",
+        "src": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 186935,
+        "end": 187054
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "dbreath",
+        "class": "d-emoji",
+        "alt": "dbreath",
+        "src": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 187080,
+        "end": 187198
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "dbreath",
+        "class": "d-emoji",
+        "alt": "dbreath",
+        "src": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 187289,
+        "end": 187407
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "combust",
+        "class": "d-emoji",
+        "alt": "combust",
+        "src": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 187420,
+        "end": 187539
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "combust",
+        "class": "d-emoji",
+        "alt": "combust",
+        "src": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 187593,
+        "end": 187712
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "roarofawakening",
+        "class": "d-emoji",
+        "alt": "roarofawakening",
+        "src": "https://cdn.discordapp.com/emojis/1266417538045317121.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 187777,
+        "end": 187912
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "spec",
+        "class": "d-emoji",
+        "alt": "spec",
+        "src": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 187913,
+        "end": 188025
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "chain",
+        "class": "d-emoji",
+        "alt": "chain",
+        "src": "https://cdn.discordapp.com/emojis/1478063105182269460.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 188759,
+        "end": 188874
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "chain",
+        "class": "d-emoji",
+        "alt": "chain",
+        "src": "https://cdn.discordapp.com/emojis/1478063105182269460.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 189149,
+        "end": 189264
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "caroming4",
+        "class": "d-emoji",
+        "alt": "caroming4",
+        "src": "https://cdn.discordapp.com/emojis/791281588792590336.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 189353,
+        "end": 189475
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "chain",
+        "class": "d-emoji",
+        "alt": "chain",
+        "src": "https://cdn.discordapp.com/emojis/1478063105182269460.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 189482,
+        "end": 189597
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "gchain",
+        "class": "d-emoji",
+        "alt": "gchain",
+        "src": "https://cdn.discordapp.com/emojis/1478063106914779166.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 190402,
+        "end": 190519
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "gchain",
+        "class": "d-emoji",
+        "alt": "gchain",
+        "src": "https://cdn.discordapp.com/emojis/1478063106914779166.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 190794,
+        "end": 190911
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "caroming4",
+        "class": "d-emoji",
+        "alt": "caroming4",
+        "src": "https://cdn.discordapp.com/emojis/791281588792590336.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 191000,
+        "end": 191122
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "gchain",
+        "class": "d-emoji",
+        "alt": "gchain",
+        "src": "https://cdn.discordapp.com/emojis/1478063106914779166.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 191129,
+        "end": 191246
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "conc",
+        "class": "d-emoji",
+        "alt": "conc",
+        "src": "https://cdn.discordapp.com/emojis/1478063109712121856.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 192056,
+        "end": 192169
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "gconc",
+        "class": "d-emoji",
+        "alt": "gconc",
+        "src": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 193141,
+        "end": 193256
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "wm",
+        "class": "d-emoji",
+        "alt": "wm",
+        "src": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 194264,
+        "end": 194372
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "asphyx",
+        "class": "d-emoji",
+        "alt": "asphyx",
+        "src": "https://cdn.discordapp.com/emojis/535533833072672778.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 195230,
+        "end": 195346
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Smoke_Tendrils",
+        "class": "d-emoji",
+        "alt": "Smoke_Tendrils",
+        "src": "https://cdn.discordapp.com/emojis/536257336130404372.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 196269,
+        "end": 196401
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magmatempest",
+        "class": "d-emoji",
+        "alt": "magmatempest",
+        "src": "https://cdn.discordapp.com/emojis/902209626509025290.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 197370,
+        "end": 197498
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magmatempesttarget",
+        "class": "d-emoji",
+        "alt": "magmatempesttarget",
+        "src": "https://cdn.discordapp.com/emojis/924741973858996284.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 197501,
+        "end": 197641
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "corruption_blast",
+        "class": "d-emoji",
+        "alt": "corruption_blast",
+        "src": "https://cdn.discordapp.com/emojis/1478063113659093075.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 198668,
+        "end": 198805
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "precise",
+        "class": "d-emoji",
+        "alt": "precise",
+        "src": "https://cdn.discordapp.com/emojis/1005204971886743572.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 198934,
+        "end": 199053
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "gstaff",
+        "class": "d-emoji",
+        "alt": "gstaff",
+        "src": "https://cdn.discordapp.com/emojis/513203008608141314.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 199956,
+        "end": 200072
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "rov",
+        "class": "d-emoji",
+        "alt": "rov",
+        "src": "https://cdn.discordapp.com/emojis/513201065877831680.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 200154,
+        "end": 200264
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Defence",
+        "class": "d-emoji",
+        "alt": "Defence",
+        "src": "https://cdn.discordapp.com/emojis/689509250979987525.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 200343,
+        "end": 200461
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "armadylbattlestaff",
+        "class": "d-emoji",
+        "alt": "armadylbattlestaff",
+        "src": "https://cdn.discordapp.com/emojis/881962727705280512.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 201229,
+        "end": 201369
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "rov",
+        "class": "d-emoji",
+        "alt": "rov",
+        "src": "https://cdn.discordapp.com/emojis/513201065877831680.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 201449,
+        "end": 201559
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "ibansstaff",
+        "class": "d-emoji",
+        "alt": "ibansstaff",
+        "src": "https://cdn.discordapp.com/emojis/1215929543068618752.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 202405,
+        "end": 202530
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "rov",
+        "class": "d-emoji",
+        "alt": "rov",
+        "src": "https://cdn.discordapp.com/emojis/513201065877831680.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 202610,
+        "end": 202720
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "legatusemberstaff",
+        "class": "d-emoji",
+        "alt": "legatusemberstaff",
+        "src": "https://cdn.discordapp.com/emojis/1451134746280329357.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 203454,
+        "end": 203593
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "rov",
+        "class": "d-emoji",
+        "alt": "rov",
+        "src": "https://cdn.discordapp.com/emojis/513201065877831680.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 203675,
+        "end": 203785
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "roarofawakening",
+        "class": "d-emoji",
+        "alt": "roarofawakening",
+        "src": "https://cdn.discordapp.com/emojis/1266417538045317121.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 204620,
+        "end": 204755
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "rov",
+        "class": "d-emoji",
+        "alt": "rov",
+        "src": "https://cdn.discordapp.com/emojis/513201065877831680.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 204886,
+        "end": 204996
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "combust",
+        "class": "d-emoji",
+        "alt": "combust",
+        "src": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 205107,
+        "end": 205226
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "essencecorruption",
+        "class": "d-emoji",
+        "alt": "essencecorruption",
+        "src": "https://cdn.discordapp.com/emojis/1266418936820404295.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 205295,
+        "end": 205434
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "essencecorruption",
+        "class": "d-emoji",
+        "alt": "essencecorruption",
+        "src": "https://cdn.discordapp.com/emojis/1266418936820404295.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 205465,
+        "end": 205604
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soa",
+        "class": "d-emoji",
+        "alt": "soa",
+        "src": "https://cdn.discordapp.com/emojis/869284271595069451.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 206475,
+        "end": 206585
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "rov",
+        "class": "d-emoji",
+        "alt": "rov",
+        "src": "https://cdn.discordapp.com/emojis/513201065877831680.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 206718,
+        "end": 206828
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "omni",
+        "class": "d-emoji",
+        "alt": "omni",
+        "src": "https://cdn.discordapp.com/emojis/535533809664262179.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 207981,
+        "end": 208093
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "igneouskalmej",
+        "class": "d-emoji",
+        "alt": "igneouskalmej",
+        "src": "https://cdn.discordapp.com/emojis/1153772938252787793.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 208219,
+        "end": 208350
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "igneouskalzuk",
+        "class": "d-emoji",
+        "alt": "igneouskalzuk",
+        "src": "https://cdn.discordapp.com/emojis/902209626479685734.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 208371,
+        "end": 208501
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "sunshine",
+        "class": "d-emoji",
+        "alt": "sunshine",
+        "src": "https://cdn.discordapp.com/emojis/994921119381463070.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 209314,
+        "end": 209434
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "pf",
+        "class": "d-emoji",
+        "alt": "pf",
+        "src": "https://cdn.discordapp.com/emojis/689501925770919981.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 209695,
+        "end": 209803
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "gsunshine",
+        "class": "d-emoji",
+        "alt": "gsunshine",
+        "src": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 210604,
+        "end": 210726
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "pf",
+        "class": "d-emoji",
+        "alt": "pf",
+        "src": "https://cdn.discordapp.com/emojis/689501925770919981.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 210893,
+        "end": 211001
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "gsunshine",
+        "class": "d-emoji",
+        "alt": "gsunshine",
+        "src": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 211033,
+        "end": 211155
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "sunshine",
+        "class": "d-emoji",
+        "alt": "sunshine",
+        "src": "https://cdn.discordapp.com/emojis/994921119381463070.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 211182,
+        "end": 211302
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "pf",
+        "class": "d-emoji",
+        "alt": "pf",
+        "src": "https://cdn.discordapp.com/emojis/689501925770919981.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 211315,
+        "end": 211423
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "tsunami",
+        "class": "d-emoji",
+        "alt": "tsunami",
+        "src": "https://cdn.discordapp.com/emojis/535533809995874304.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 212176,
+        "end": 212294
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 212466,
+        "end": 212580
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "incitefear",
+        "class": "d-emoji",
+        "alt": "incitefear",
+        "src": "https://cdn.discordapp.com/emojis/856635090783567902.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 212733,
+        "end": 212857
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "tsunami",
+        "class": "d-emoji",
+        "alt": "tsunami",
+        "src": "https://cdn.discordapp.com/emojis/535533809995874304.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 212883,
+        "end": 213001
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "surge",
+        "class": "d-emoji",
+        "alt": "surge",
+        "src": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 213832,
+        "end": 213946
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "mob",
+        "class": "d-emoji",
+        "alt": "mob",
+        "src": "https://cdn.discordapp.com/emojis/689501908628799488.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 214099,
+        "end": 214209
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "surgecodex",
+        "class": "d-emoji",
+        "alt": "surgecodex",
+        "src": "https://cdn.discordapp.com/emojis/602561894414417944.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 214293,
+        "end": 214417
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "surge",
+        "class": "d-emoji",
+        "alt": "surge",
+        "src": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 214443,
+        "end": 214557
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "mob",
+        "class": "d-emoji",
+        "alt": "mob",
+        "src": "https://cdn.discordapp.com/emojis/689501908628799488.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 214578,
+        "end": 214688
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "runic_charge",
+        "class": "d-emoji",
+        "alt": "runic_charge",
+        "src": "https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 215477,
+        "end": 215606
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "sonic",
+        "class": "d-emoji",
+        "alt": "sonic",
+        "src": "https://cdn.discordapp.com/emojis/1478063115709972651.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 215763,
+        "end": 215878
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "gsonic",
+        "class": "d-emoji",
+        "alt": "gsonic",
+        "src": "https://cdn.discordapp.com/emojis/1478063117211668584.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 215881,
+        "end": 215998
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "dbreath",
+        "class": "d-emoji",
+        "alt": "dbreath",
+        "src": "https://cdn.discordapp.com/emojis/535533833391702017.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 216054,
+        "end": 216172
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "conc",
+        "class": "d-emoji",
+        "alt": "conc",
+        "src": "https://cdn.discordapp.com/emojis/1478063109712121856.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 216197,
+        "end": 216310
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "gconc",
+        "class": "d-emoji",
+        "alt": "gconc",
+        "src": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 216313,
+        "end": 216428
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Magic",
+        "class": "d-emoji",
+        "alt": "Magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 217199,
+        "end": 217313
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Magic",
+        "class": "d-emoji",
+        "alt": "Magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 217341,
+        "end": 217455
+      }
+    }
+  ],
+  "links": [
+    {
+      "href": "https://tools.runescape.wiki/rs-rot/magic",
+      "text": "click here",
+      "attrs": {
+        "title": "",
+        "href": "https://tools.runescape.wiki/rs-rot/magic",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 167605,
+        "end": 167713
+      }
+    },
+    {
+      "href": "https://docs.google.com/spreadsheets/d/1rK7u17JN6I-vf3dKBKg6tm9IPWje9EWSe_r8KPdsxoc/edit?usp=sharing",
+      "text": "click here",
+      "attrs": {
+        "title": "",
+        "href": "https://docs.google.com/spreadsheets/d/1rK7u17JN6I-vf3dKBKg6tm9IPWje9EWSe_r8KPdsxoc/edit?usp=sharing",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 167971,
+        "end": 168138
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Invigorating",
+      "text": "click here",
+      "attrs": {
+        "title": "",
+        "href": "https://runescape.wiki/w/Invigorating",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 168391,
+        "end": 168495
+      }
+    },
+    {
+      "href": "",
+      "text": "#pvm-help",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 168735,
+        "end": 168780
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Combat/Animate_Dead",
+      "text": "here",
+      "attrs": {
+        "title": "",
+        "href": "https://runescape.wiki/w/Calculator:Combat/Animate_Dead",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 178079,
+        "end": 178195
+      }
+    },
+    {
+      "href": "",
+      "text": "#bot-commands",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 205671,
+        "end": 205720
+      }
+    },
+    {
+      "href": "",
+      "text": "#bot-commands",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 207142,
+        "end": 207191
+      }
+    },
+    {
+      "href": "$linkmsg_intro$",
+      "text": "here",
+      "attrs": {
+        "href": "$linkmsg_intro$"
+      },
+      "location": {
+        "start": 217620,
+        "end": 217654
+      }
+    },
+    {
+      "href": "$linkmsg_barrage$",
+      "text": "Barrage Spells",
+      "attrs": {
+        "href": "$linkmsg_barrage$"
+      },
+      "location": {
+        "start": 217842,
+        "end": 217888
+      }
+    },
+    {
+      "href": "$linkmsg_blitz$",
+      "text": "Blitz Spells",
+      "attrs": {
+        "href": "$linkmsg_blitz$"
+      },
+      "location": {
+        "start": 217891,
+        "end": 217933
+      }
+    },
+    {
+      "href": "$linkmsg_vuln$",
+      "text": "Vulnerability",
+      "attrs": {
+        "href": "$linkmsg_vuln$"
+      },
+      "location": {
+        "start": 217936,
+        "end": 217978
+      }
+    },
+    {
+      "href": "$linkmsg_incitefear$",
+      "text": "Incite Fear",
+      "attrs": {
+        "href": "$linkmsg_incitefear$"
+      },
+      "location": {
+        "start": 217981,
+        "end": 218027
+      }
+    },
+    {
+      "href": "$linkmsg_exsang$",
+      "text": "Exsanguinate",
+      "attrs": {
+        "href": "$linkmsg_exsang$"
+      },
+      "location": {
+        "start": 218030,
+        "end": 218073
+      }
+    },
+    {
+      "href": "$linkmsg_smokecloud$",
+      "text": "Smoke Cloud",
+      "attrs": {
+        "href": "$linkmsg_smokecloud$"
+      },
+      "location": {
+        "start": 218076,
+        "end": 218122
+      }
+    },
+    {
+      "href": "$linkmsg_animatedead$",
+      "text": "Animate Dead",
+      "attrs": {
+        "href": "$linkmsg_animatedead$"
+      },
+      "location": {
+        "start": 218288,
+        "end": 218336
+      }
+    },
+    {
+      "href": "$linkmsg_magicauto$",
+      "text": "Magic",
+      "attrs": {
+        "href": "$linkmsg_magicauto$"
+      },
+      "location": {
+        "start": 218339,
+        "end": 218378
+      }
+    },
+    {
+      "href": "$linkmsg_sonic$",
+      "text": "Sonic Wave",
+      "attrs": {
+        "href": "$linkmsg_sonic$"
+      },
+      "location": {
+        "start": 218381,
+        "end": 218421
+      }
+    },
+    {
+      "href": "$linkmsg_gsonic$",
+      "text": "G. Sonic Wave",
+      "attrs": {
+        "href": "$linkmsg_gsonic$"
+      },
+      "location": {
+        "start": 218424,
+        "end": 218468
+      }
+    },
+    {
+      "href": "$linkmsg_dbreath$",
+      "text": "Dragon Breath",
+      "attrs": {
+        "href": "$linkmsg_dbreath$"
+      },
+      "location": {
+        "start": 218471,
+        "end": 218516
+      }
+    },
+    {
+      "href": "$linkmsg_impact$",
+      "text": "Impact",
+      "attrs": {
+        "href": "$linkmsg_impact$"
+      },
+      "location": {
+        "start": 218519,
+        "end": 218556
+      }
+    },
+    {
+      "href": "$linkmsg_combust$",
+      "text": "Combust",
+      "attrs": {
+        "href": "$linkmsg_combust$"
+      },
+      "location": {
+        "start": 218722,
+        "end": 218761
+      }
+    },
+    {
+      "href": "$linkmsg_chain$",
+      "text": "Chain",
+      "attrs": {
+        "href": "$linkmsg_chain$"
+      },
+      "location": {
+        "start": 218764,
+        "end": 218799
+      }
+    },
+    {
+      "href": "$linkmsg_gchain$",
+      "text": "G. Chain",
+      "attrs": {
+        "href": "$linkmsg_gchain$"
+      },
+      "location": {
+        "start": 218802,
+        "end": 218841
+      }
+    },
+    {
+      "href": "$linkmsg_conc$",
+      "text": "Conc. Blast",
+      "attrs": {
+        "href": "$linkmsg_conc$"
+      },
+      "location": {
+        "start": 218844,
+        "end": 218884
+      }
+    },
+    {
+      "href": "$linkmsg_gconc$",
+      "text": "G. Conc. Blast",
+      "attrs": {
+        "href": "$linkmsg_gconc$"
+      },
+      "location": {
+        "start": 218887,
+        "end": 218931
+      }
+    },
+    {
+      "href": "$linkmsg_wm$",
+      "text": "Wild Magic",
+      "attrs": {
+        "href": "$linkmsg_wm$"
+      },
+      "location": {
+        "start": 219083,
+        "end": 219120
+      }
+    },
+    {
+      "href": "$linkmsg_asphyx$",
+      "text": "Asphyxiate",
+      "attrs": {
+        "href": "$linkmsg_asphyx$"
+      },
+      "location": {
+        "start": 219123,
+        "end": 219164
+      }
+    },
+    {
+      "href": "$linkmsg_smoketendrils$",
+      "text": "Smoke Tendrils",
+      "attrs": {
+        "href": "$linkmsg_smoketendrils$"
+      },
+      "location": {
+        "start": 219167,
+        "end": 219219
+      }
+    },
+    {
+      "href": "$linkmsg_magma$",
+      "text": "Magma Tempest",
+      "attrs": {
+        "href": "$linkmsg_magma$"
+      },
+      "location": {
+        "start": 219222,
+        "end": 219265
+      }
+    },
+    {
+      "href": "$linkmsg_corrblast$",
+      "text": "Corr. Blast",
+      "attrs": {
+        "href": "$linkmsg_corrblast$"
+      },
+      "location": {
+        "start": 219268,
+        "end": 219313
+      }
+    },
+    {
+      "href": "$linkmsg_gstaff$",
+      "text": "Guthix Staff",
+      "attrs": {
+        "href": "$linkmsg_gstaff$"
+      },
+      "location": {
+        "start": 219472,
+        "end": 219515
+      }
+    },
+    {
+      "href": "$linkmsg_abs$",
+      "text": "Arma. Battlestaff",
+      "attrs": {
+        "href": "$linkmsg_abs$"
+      },
+      "location": {
+        "start": 219518,
+        "end": 219563
+      }
+    },
+    {
+      "href": "$linkmsg_iban$",
+      "text": "Iban's Staff",
+      "attrs": {
+        "href": "$linkmsg_iban$"
+      },
+      "location": {
+        "start": 219566,
+        "end": 219607
+      }
+    },
+    {
+      "href": "$linkmsg_ember$",
+      "text": "Legatus's Emberstaff",
+      "attrs": {
+        "href": "$linkmsg_ember$"
+      },
+      "location": {
+        "start": 219610,
+        "end": 219660
+      }
+    },
+    {
+      "href": "$linkmsg_roa$",
+      "text": "Roar of Awakening",
+      "attrs": {
+        "href": "$linkmsg_roa$"
+      },
+      "location": {
+        "start": 219663,
+        "end": 219708
+      }
+    },
+    {
+      "href": "$linkmsg_soa$",
+      "text": "F. Staff of Armadyl",
+      "attrs": {
+        "href": "$linkmsg_soa$"
+      },
+      "location": {
+        "start": 219711,
+        "end": 219758
+      }
+    },
+    {
+      "href": "$linkmsg_omni$",
+      "text": "Omnipower",
+      "attrs": {
+        "href": "$linkmsg_omni$"
+      },
+      "location": {
+        "start": 219910,
+        "end": 219948
+      }
+    },
+    {
+      "href": "$linkmsg_sunshine$",
+      "text": "Sunshine",
+      "attrs": {
+        "href": "$linkmsg_sunshine$"
+      },
+      "location": {
+        "start": 219951,
+        "end": 219992
+      }
+    },
+    {
+      "href": "$linkmsg_gsun$",
+      "text": "G. Sunshine",
+      "attrs": {
+        "href": "$linkmsg_gsun$"
+      },
+      "location": {
+        "start": 219995,
+        "end": 220035
+      }
+    },
+    {
+      "href": "$linkmsg_nami$",
+      "text": "Tsunami",
+      "attrs": {
+        "href": "$linkmsg_nami$"
+      },
+      "location": {
+        "start": 220038,
+        "end": 220074
+      }
+    },
+    {
+      "href": "$linkmsg_surge$",
+      "text": "Surge",
+      "attrs": {
+        "href": "$linkmsg_surge$"
+      },
+      "location": {
+        "start": 220225,
+        "end": 220260
+      }
+    },
+    {
+      "href": "$linkmsg_runicCharge$",
+      "text": "Runic Charge",
+      "attrs": {
+        "href": "$linkmsg_runicCharge$"
+      },
+      "location": {
+        "start": 220263,
+        "end": 220311
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "h2",
+      "attrs": {
+        "id": "introduction"
+      },
+      "text": "Introduction",
+      "location": {
+        "start": 165773,
+        "end": 165823
+      }
+    },
+    {
+      "index": 1,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 165823,
+        "end": 165824
+      }
+    },
+    {
+      "index": 2,
+      "tag": "p",
+      "attrs": {},
+      "text": "Note: Use the Table of Contents present at the bottom of the channel, or in the pinned comments, to quickly navigate through this channel and find the information you are looking for.",
+      "location": {
+        "start": 165824,
+        "end": 166051
+      }
+    },
+    {
+      "index": 3,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166051,
+        "end": 166052
+      }
+    },
+    {
+      "index": 4,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 166052,
+        "end": 166067
+      }
+    },
+    {
+      "index": 5,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166067,
+        "end": 166068
+      }
+    },
+    {
+      "index": 6,
+      "tag": "p",
+      "attrs": {},
+      "text": "Some general notes:",
+      "location": {
+        "start": 166068,
+        "end": 166094
+      }
+    },
+    {
+      "index": 7,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166094,
+        "end": 166095
+      }
+    },
+    {
+      "index": 8,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ The game runs on an internal tick system: 1t (tick) = 0.6s (seconds).",
+      "location": {
+        "start": 166095,
+        "end": 166190
+      }
+    },
+    {
+      "index": 9,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166190,
+        "end": 166191
+      }
+    },
+    {
+      "index": 10,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ The minimum time between abilities is called the global cooldown: 1 gcd = 3t = 1.8s.",
+      "location": {
+        "start": 166191,
+        "end": 166301
+      }
+    },
+    {
+      "index": 11,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166301,
+        "end": 166302
+      }
+    },
+    {
+      "index": 12,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Debuff spells like Vuln  or Enfeeble  or Smoke Cloud  do not give adrenaline.",
+      "location": {
+        "start": 166302,
+        "end": 166744
+      }
+    },
+    {
+      "index": 13,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166744,
+        "end": 166745
+      }
+    },
+    {
+      "index": 14,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Some useful sheets and resources are given below.",
+      "location": {
+        "start": 166745,
+        "end": 166803
+      }
+    },
+    {
+      "index": 15,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166803,
+        "end": 166804
+      }
+    },
+    {
+      "index": 16,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 166804,
+        "end": 166819
+      }
+    },
+    {
+      "index": 17,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166819,
+        "end": 166820
+      }
+    },
+    {
+      "index": 18,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAbility Damage Maths\nTo calculate your ability hit damage in detail, click here.\nThis is affected by factors such as your gear and other boosts.\nAbility Hit Timings\nTo see detailed breakdowns on ability hit timings, click here.\nThis refers to when hitsplats appear on your target.\nAuto-attack Adren Gain\nTo see adrenaline gained with different auto attacks, click here.\n\n\n\n\n\n\n",
+      "location": {
+        "start": 166820,
+        "end": 168605
+      }
+    },
+    {
+      "index": 19,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 168605,
+        "end": 168607
+      }
+    },
+    {
+      "index": 20,
+      "tag": "p",
+      "attrs": {},
+      "text": "Note: If you have any difficulties in using the tools or understanding what the information means, you can always ask in #pvm-help.",
+      "location": {
+        "start": 168607,
+        "end": 168790
+      }
+    },
+    {
+      "index": 21,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168790,
+        "end": 168791
+      }
+    },
+    {
+      "index": 22,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 168791,
+        "end": 168806
+      }
+    },
+    {
+      "index": 23,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168806,
+        "end": 168807
+      }
+    },
+    {
+      "index": 24,
+      "tag": "h2",
+      "attrs": {
+        "id": "magic"
+      },
+      "text": "Magic ",
+      "location": {
+        "start": 168807,
+        "end": 168958
+      }
+    },
+    {
+      "index": 25,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168958,
+        "end": 168959
+      }
+    },
+    {
+      "index": 26,
+      "tag": "p",
+      "attrs": {},
+      "text": "This section covers auto attacks and spells, basic abilities, enhanced abilities, ultimate abilities, utility abilities and special attacks for Magic.",
+      "location": {
+        "start": 168959,
+        "end": 169116
+      }
+    },
+    {
+      "index": 27,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169116,
+        "end": 169117
+      }
+    },
+    {
+      "index": 28,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 169117,
+        "end": 169132
+      }
+    },
+    {
+      "index": 29,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169132,
+        "end": 169133
+      }
+    },
+    {
+      "index": 30,
+      "tag": "h3",
+      "attrs": {
+        "id": "autos-and-spells"
+      },
+      "text": "Autos and Spells",
+      "location": {
+        "start": 169133,
+        "end": 169180
+      }
+    },
+    {
+      "index": 31,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169180,
+        "end": 169181
+      }
+    },
+    {
+      "index": 32,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBarrages \n\n⬥ It is an AoE:\n    • 3x3 AoE\n    • Secondary targets take reduced damage (0.7x)\n⬥ Each element has different effects when cast:\n    • Smoke: Enemy hit chance reduced by 5% for 16t (9.6s)\n    • Shadow: Enemy damage reduced by 5% for 16t (9.6s)\n    • Blood: Heals you for 5% of damage dealt\n    • Ice: Enemy is bound for 16t (9.6s)\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 169181,
+        "end": 170405
+      }
+    },
+    {
+      "index": 33,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 170405,
+        "end": 170407
+      }
+    },
+    {
+      "index": 34,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 170407,
+        "end": 170422
+      }
+    },
+    {
+      "index": 35,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170422,
+        "end": 170423
+      }
+    },
+    {
+      "index": 36,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBlitzes \n\n⬥ Single target version of Barrages\n⬥ Effects last for 12t (7.2s)\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 170423,
+        "end": 171377
+      }
+    },
+    {
+      "index": 37,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 171377,
+        "end": 171379
+      }
+    },
+    {
+      "index": 38,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 171379,
+        "end": 171394
+      }
+    },
+    {
+      "index": 39,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171394,
+        "end": 171395
+      }
+    },
+    {
+      "index": 40,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVulnerability \n\n⬥ Increases damage dealt by 10%\n⬥ Lasts 60s\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 171395,
+        "end": 172321
+      }
+    },
+    {
+      "index": 41,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 172321,
+        "end": 172323
+      }
+    },
+    {
+      "index": 42,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 172323,
+        "end": 172338
+      }
+    },
+    {
+      "index": 43,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172338,
+        "end": 172339
+      }
+    },
+    {
+      "index": 44,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIncite Fear \n\n⬥ Every ability cast applies a stack:\n    • Caps at 5 stacks, and at max stacks uses no runes on ability casts\n    • Stacks are lost after 20s, refreshed upon applying another stack\n    • Each stack reduces Tsunami's  cast cost by -12% adrenaline\n⬥ Frost Surge:\n    • At 5 stacks, ability casts trigger Frost Surge; deals 10-50% ability damage\n    • Triggering it costs runes even at max stacks\n    • Frost Surge is a 5x5 AoE around your primary target which hits up to 8 extra targets in range for 10-50% ability damage each\n    • Frost Surge has a 12s cooldown, after an ability cast can trigger it again\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 172339,
+        "end": 173956
+      }
+    },
+    {
+      "index": 45,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 173956,
+        "end": 173958
+      }
+    },
+    {
+      "index": 46,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 173958,
+        "end": 173973
+      }
+    },
+    {
+      "index": 47,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173973,
+        "end": 173974
+      }
+    },
+    {
+      "index": 48,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExsanguinate \n\n⬥ Every ability cast applies a stack:\n    • Caps at 12 stacks, and at max stacks uses no runes on ability casts\n    • Stacks are lost after 20s, refreshed upon applying another stack\n    • Each stack increases basic ability damage by +1%\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 173974,
+        "end": 175109
+      }
+    },
+    {
+      "index": 49,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 175109,
+        "end": 175111
+      }
+    },
+    {
+      "index": 50,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 175111,
+        "end": 175126
+      }
+    },
+    {
+      "index": 51,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175126,
+        "end": 175127
+      }
+    },
+    {
+      "index": 52,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSmoke Cloud \n\n⬥ Increases damage dealt with critical hits by 15% for Magic, 6% otherwise\n⬥ Lasts 120s\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 175127,
+        "end": 176107
+      }
+    },
+    {
+      "index": 53,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 176107,
+        "end": 176109
+      }
+    },
+    {
+      "index": 54,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 176109,
+        "end": 176124
+      }
+    },
+    {
+      "index": 55,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176124,
+        "end": 176125
+      }
+    },
+    {
+      "index": 56,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnimate Dead \n\n⬥ Applies a flat damage reduction:\n    • Reduction based on 10% of equipped magic tank gear's armour + 25% of your current Defence  level after any buffs or debuffs\n    • Damage reduced cannot exceed 60% of the damage taken\n    • 60% cap is based off the damage after all other damage reductions such as deflect prayers ( /  / ) on the hit\n⬥ Lasts 12 minutes\n⬥ Does not reduce  /  HP / adrenaline gain\n⬥ A calculator can be found here\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 176125,
+        "end": 178293
+      }
+    },
+    {
+      "index": 57,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 178293,
+        "end": 178295
+      }
+    },
+    {
+      "index": 58,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 178295,
+        "end": 178310
+      }
+    },
+    {
+      "index": 59,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178310,
+        "end": 178311
+      }
+    },
+    {
+      "index": 60,
+      "tag": "h3",
+      "attrs": {
+        "id": "basic-abilities"
+      },
+      "text": "Basic Abilities",
+      "location": {
+        "start": 178311,
+        "end": 178356
+      }
+    },
+    {
+      "index": 61,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178356,
+        "end": 178357
+      }
+    },
+    {
+      "index": 62,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMagic \n\n⬥ Cooldown: 0t (0s)\n⬥ Applies auto-cast spell effect\n⬥ Auto triggered during combat\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 178357,
+        "end": 179330
+      }
+    },
+    {
+      "index": 63,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 179330,
+        "end": 179332
+      }
+    },
+    {
+      "index": 64,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 179332,
+        "end": 179347
+      }
+    },
+    {
+      "index": 65,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179347,
+        "end": 179348
+      }
+    },
+    {
+      "index": 66,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSonic Wave \n\n⬥ Cooldown: 25t (15s)\n⬥ Applies Flow to self for 15t (9s)\n⬥ Next Magic ability uses 10% less adrenaline\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 179348,
+        "end": 180334
+      }
+    },
+    {
+      "index": 67,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 180334,
+        "end": 180336
+      }
+    },
+    {
+      "index": 68,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 180336,
+        "end": 180351
+      }
+    },
+    {
+      "index": 69,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180351,
+        "end": 180352
+      }
+    },
+    {
+      "index": 70,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGreater Sonic Wave \n\n⬥ Cooldown: 25t (15s)\n⬥ Applies Greater Flow to self for 15t (9s)\n⬥ Next Magic ability uses 20% less adrenaline\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 180352,
+        "end": 181356
+      }
+    },
+    {
+      "index": 71,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 181356,
+        "end": 181358
+      }
+    },
+    {
+      "index": 72,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 181358,
+        "end": 181373
+      }
+    },
+    {
+      "index": 73,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 181373,
+        "end": 181374
+      }
+    },
+    {
+      "index": 74,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDragon Breath \n\n⬥ Cooldown: 12t (7.2s)\n⬥ It is an AoE:\n    • AoE is straight line to target + 3x3 around it\n    • Hits 5 targets, inclusive of main\n⬥ It is affected by Kerapac's wrist wraps :\n    • Next  to hit within 10t of the  cast will have remaining hits instantly hit at 25% more damage\n    • Within 10t means: if  is cast t0,  has to hit within t0-9\n        ⬩ Latest you can cast  is t7\n⬥ It is affected by the Dragonrider Amulet \n    • Boosts damage by 10%\n    • Has a 10% chance of applying a 3-hit DoT, each for 10% of  max hit, rounded down (excludes boosts that do not normally boost bleeds)\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 181374,
+        "end": 183817
+      }
+    },
+    {
+      "index": 75,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 183817,
+        "end": 183819
+      }
+    },
+    {
+      "index": 76,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 183819,
+        "end": 183834
+      }
+    },
+    {
+      "index": 77,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 183834,
+        "end": 183835
+      }
+    },
+    {
+      "index": 78,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nImpact \n\n⬥ Cooldown: 25t (15s)\n    • Charges: 2\n⬥ Stuns and binds for 3t (1.8s)\n⬥ It is affected by :\n    • Increases Max by 40% per  rank\n    • Increases Minimum by 8% per  Rank\n    • No longer stuns or binds\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 183835,
+        "end": 185281
+      }
+    },
+    {
+      "index": 79,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 185281,
+        "end": 185283
+      }
+    },
+    {
+      "index": 80,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 185283,
+        "end": 185298
+      }
+    },
+    {
+      "index": 81,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 185298,
+        "end": 185299
+      }
+    },
+    {
+      "index": 82,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCombust \n\n⬥ Cooldown: 30t (18s)\n⬥ It is a Burn:\n    • Not affected by \n    • Hits every 3t (1.8s), for a total of 10 times\n⬥ Affected by :\n    • Increases damage by 10% + 3% per  rank\n⬥ Affected by  modified by Kerapac's wrist wraps \n    • Next  to hit within 10t of the  cast will have remaining hits instantly hit at 25% more damage\n    • Within 10t means: if  is cast t0,  has to hit within t0-9\n        ⬩ Latest you can cast  is t7\n⬥ Deals 40% increased damage if used within 15 seconds of  \n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 185299,
+        "end": 188123
+      }
+    },
+    {
+      "index": 83,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 188123,
+        "end": 188125
+      }
+    },
+    {
+      "index": 84,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 188125,
+        "end": 188140
+      }
+    },
+    {
+      "index": 85,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 188140,
+        "end": 188141
+      }
+    },
+    {
+      "index": 86,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nChain \n\n⬥ Cooldown: 17t (10.2s)\n⬥ It is an AoE:\n    • Hits within a 5 square radius from SW tile of initial target\n    • Hits 3 targets, inclusive of main\n    • Does not hit things on initial target's SW tile\n⬥ Secondary targets hit by  take the next ability cast on your main target within 6s at 30% \n⬥ Affected by Caroming \n    •  secondary target damage increased by 5% + 5% per Caroming rank\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 188141,
+        "end": 189758
+      }
+    },
+    {
+      "index": 87,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 189758,
+        "end": 189760
+      }
+    },
+    {
+      "index": 88,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 189760,
+        "end": 189775
+      }
+    },
+    {
+      "index": 89,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 189775,
+        "end": 189776
+      }
+    },
+    {
+      "index": 90,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGreater Chain \n\n⬥ Cooldown: 17t (10.2s)\n⬥ It is an AoE:\n    • Hits within a 5 square radius from SW tile of initial target\n    • Hits 7 targets, inclusive of main\n    • Does not hit things on initial target's SW tile\n⬥ Secondary targets hit by  take the next ability cast on your main target within 6s at 50% \n⬥ Affected by Caroming \n    •  secondary target damage increased by 5% + 5% per Caroming rank\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 189776,
+        "end": 191407
+      }
+    },
+    {
+      "index": 91,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 191407,
+        "end": 191409
+      }
+    },
+    {
+      "index": 92,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 191409,
+        "end": 191424
+      }
+    },
+    {
+      "index": 93,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 191424,
+        "end": 191425
+      }
+    },
+    {
+      "index": 94,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConcentrated Blast \n\n⬥ Cooldown: 9t (5.4s)\n⬥ Provides a passive critical hit buff\n    • 5% increased crit chance for each hit\n⬥ Channelled ability\n    • Hits a maximum of 3 times over 5t (3s)\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 191425,
+        "end": 192484
+      }
+    },
+    {
+      "index": 95,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 192484,
+        "end": 192486
+      }
+    },
+    {
+      "index": 96,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 192486,
+        "end": 192501
+      }
+    },
+    {
+      "index": 97,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 192501,
+        "end": 192502
+      }
+    },
+    {
+      "index": 98,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGreater Concentrated Blast \n\n⬥ Cooldown: 9t (5.4s)\n⬥ Provides a passive critical hit buff\n    • 7% increased crit chance for each hit\n⬥ Channelled ability\n    • Hits a maximum of 3 times over 5t (3s)\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 192502,
+        "end": 193571
+      }
+    },
+    {
+      "index": 99,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 193571,
+        "end": 193573
+      }
+    },
+    {
+      "index": 100,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 193573,
+        "end": 193588
+      }
+    },
+    {
+      "index": 101,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 193588,
+        "end": 193589
+      }
+    },
+    {
+      "index": 102,
+      "tag": "h3",
+      "attrs": {
+        "id": "enhanced-abilities"
+      },
+      "text": "Enhanced Abilities",
+      "location": {
+        "start": 193589,
+        "end": 193640
+      }
+    },
+    {
+      "index": 103,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 193640,
+        "end": 193641
+      }
+    },
+    {
+      "index": 104,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWild Magic \n\n⬥ Cooldown: 9t (5.4s)\n⬥ Adrenaline Cost: 25%\n⬥ Two separate, strong hits\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 193641,
+        "end": 194589
+      }
+    },
+    {
+      "index": 105,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 194589,
+        "end": 194591
+      }
+    },
+    {
+      "index": 106,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 194591,
+        "end": 194606
+      }
+    },
+    {
+      "index": 107,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 194606,
+        "end": 194607
+      }
+    },
+    {
+      "index": 108,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAsphyxiate \n\n⬥ Cooldown: 34t (20.4s)\n⬥ Adrenaline Cost: 25%\n⬥ Stuns for 6t (3.6s)\n⬥ Channelled ability, 4 hits at full channel duration (7t, 4.2s)\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 194607,
+        "end": 195624
+      }
+    },
+    {
+      "index": 109,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 195624,
+        "end": 195626
+      }
+    },
+    {
+      "index": 110,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 195626,
+        "end": 195641
+      }
+    },
+    {
+      "index": 111,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 195641,
+        "end": 195642
+      }
+    },
+    {
+      "index": 112,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSmoke Tendrils \n\n⬥ Cooldown: 75t (45s)\n⬥ Adrenaline Cost: 0%\n⬥ Channelled ability, 4 hits at full channel duration (7t, 4.2s)\n⬥ Inflicts self-damage each hit\n⬥ Each hit is a guaranteed critical hit\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 195642,
+        "end": 196726
+      }
+    },
+    {
+      "index": 113,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 196726,
+        "end": 196728
+      }
+    },
+    {
+      "index": 114,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 196728,
+        "end": 196743
+      }
+    },
+    {
+      "index": 115,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 196743,
+        "end": 196744
+      }
+    },
+    {
+      "index": 116,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMagma Tempest  / \n\n⬥ Cooldown: 35t (21s)\n⬥ Adrenaline Cost: 20%\n⬥ Is a 5x5 area-of-effect\n⬥ Hits every 1.2s (2t) over 9.6s for a total of 8 hits\n⬥ Cannot critical hit\n⬥ Has two variants, see differences using !magma\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 196744,
+        "end": 198021
+      }
+    },
+    {
+      "index": 117,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 198021,
+        "end": 198023
+      }
+    },
+    {
+      "index": 118,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 198023,
+        "end": 198038
+      }
+    },
+    {
+      "index": 119,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 198038,
+        "end": 198039
+      }
+    },
+    {
+      "index": 120,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCorruption Blast \n\n⬥ Cooldown: 25t (15s)\n⬥ Adrenaline Cost: 20%\n⬥ It is a DoT:\n    • Not affected by \n    • Hits every 2t (1.2s), for a total of 5 times\n⬥ It is an AoE:\n    • Spreads to targets within 2 tiles each hit\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 198039,
+        "end": 199267
+      }
+    },
+    {
+      "index": 121,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 199267,
+        "end": 199269
+      }
+    },
+    {
+      "index": 122,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 199269,
+        "end": 199284
+      }
+    },
+    {
+      "index": 123,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 199284,
+        "end": 199285
+      }
+    },
+    {
+      "index": 124,
+      "tag": "h3",
+      "attrs": {
+        "id": "special-attacks"
+      },
+      "text": "Special Attacks",
+      "location": {
+        "start": 199285,
+        "end": 199330
+      }
+    },
+    {
+      "index": 125,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 199330,
+        "end": 199331
+      }
+    },
+    {
+      "index": 126,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGuthix Staff \n\n⬥ Adrenaline Cost: 25% (22.5% with )\n⬥ Applies an affinity and defence reduction:\n    • +2 affinity\n    • Reduces  level by 5% of base\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 199331,
+        "end": 200579
+      }
+    },
+    {
+      "index": 127,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 200579,
+        "end": 200581
+      }
+    },
+    {
+      "index": 128,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 200581,
+        "end": 200596
+      }
+    },
+    {
+      "index": 129,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 200596,
+        "end": 200597
+      }
+    },
+    {
+      "index": 130,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nArmadyl Battlestaff \n\n⬥ Adrenaline Cost: 50% (45% with )\n⬥ Channelled ability, 5 hits at full channel duration (5t, 3s)\n⬥ Subsequent hits deal increasing damage\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 200597,
+        "end": 201762
+      }
+    },
+    {
+      "index": 131,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 201762,
+        "end": 201764
+      }
+    },
+    {
+      "index": 132,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 201764,
+        "end": 201779
+      }
+    },
+    {
+      "index": 133,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 201779,
+        "end": 201780
+      }
+    },
+    {
+      "index": 134,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIban's Staff \n\n⬥ Adrenaline Cost: 50% (45% with )\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 201780,
+        "end": 202819
+      }
+    },
+    {
+      "index": 135,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 202819,
+        "end": 202821
+      }
+    },
+    {
+      "index": 136,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLegatus's Emberstaff \n\n⬥ Adrenaline Cost: 35% (31.5% with )\n⬥  Deals 1% increased damage for each 1% life points the target is missing\n    • Up to a maximum of 75%\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 202821,
+        "end": 203988
+      }
+    },
+    {
+      "index": 137,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 203988,
+        "end": 203990
+      }
+    },
+    {
+      "index": 138,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRoar of Awakening \n\n⬥ Special Attack: Soulfire\n⬥ Cooldown: 75t (45s)\n⬥ Adrenaline Cost: 35% (31.5% with )\n⬥ Hits every 1.8s (3t) over 12.6s for a total of 7 hits.\n ⬥ Gain Conflagrate buff for 15s (25t).\n     • Next  deals 40% increased damage.\n⬥ Can get reset while having at least 1 \n    • For more information on , use !essencecorruption in #bot-commands\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 203990,
+        "end": 205818
+      }
+    },
+    {
+      "index": 139,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 205818,
+        "end": 205820
+      }
+    },
+    {
+      "index": 140,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 205820,
+        "end": 205835
+      }
+    },
+    {
+      "index": 141,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 205835,
+        "end": 205836
+      }
+    },
+    {
+      "index": 142,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFractured Staff of Armadyl \n\n⬥ Special Attack: Instability\n⬥ Cooldown: 100t (60s)\n⬥ Adrenaline Cost: 50% (45% with )\n⬥ Lasts 50t (30s)\n⬥ Whenever a magic critical hit is inflicted on primary target, an additional Time Strike will be fired\n    • Time Strike deals 90%-110% damage to your current target\n⬥ For more information on how to use the special attack, use !fsoa in #bot-commands\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 205836,
+        "end": 207289
+      }
+    },
+    {
+      "index": 143,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 207289,
+        "end": 207291
+      }
+    },
+    {
+      "index": 144,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 207291,
+        "end": 207306
+      }
+    },
+    {
+      "index": 145,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 207306,
+        "end": 207307
+      }
+    },
+    {
+      "index": 146,
+      "tag": "h3",
+      "attrs": {
+        "id": "ultimate-abilities"
+      },
+      "text": "Ultimate Abilities",
+      "location": {
+        "start": 207307,
+        "end": 207358
+      }
+    },
+    {
+      "index": 147,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 207358,
+        "end": 207359
+      }
+    },
+    {
+      "index": 148,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOmnipower \n\n⬥ Cooldown: 50t (30s)\n⬥ Adrenaline Cost: 60%\n⬥ Affected by the Igneous Kal-Mej  and Igneous Kal-Zuk \n    • Fires 4 hits\n    • Increases average ability damage from 460% to 540%\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 207359,
+        "end": 208675
+      }
+    },
+    {
+      "index": 149,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 208675,
+        "end": 208677
+      }
+    },
+    {
+      "index": 150,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 208677,
+        "end": 208692
+      }
+    },
+    {
+      "index": 151,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 208692,
+        "end": 208693
+      }
+    },
+    {
+      "index": 152,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSunshine \n\n⬥ Cooldown: 100t (60s)\n⬥ Adrenaline Cost: 100%\n⬥ It is an on cast buff\n⬥ Increases damage by 50% from t0→t51 (52t/31.2s duration); buff starts t1\n⬥ 7x7 buff radius\n⬥ Does not incur the auto cooldown\n⬥ Planted Feet  increases duration to t0→t64 (65t/39s)); buff starts t1\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 208693,
+        "end": 209957
+      }
+    },
+    {
+      "index": 153,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 209957,
+        "end": 209959
+      }
+    },
+    {
+      "index": 154,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 209959,
+        "end": 209974
+      }
+    },
+    {
+      "index": 155,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 209974,
+        "end": 209975
+      }
+    },
+    {
+      "index": 156,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGreater Sunshine \n\n⬥ Cooldown: 100t (60s)\n⬥ Adrenaline Cost: 100%\n⬥ Duration becomes t0→t64 (65t/39s duration); buff starts t1\n    • Using  does not extend this further\n⬥  retains the DoT effect of \n    • Using  will cancel this\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 209975,
+        "end": 211538
+      }
+    },
+    {
+      "index": 157,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 211538,
+        "end": 211540
+      }
+    },
+    {
+      "index": 158,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 211540,
+        "end": 211555
+      }
+    },
+    {
+      "index": 159,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 211555,
+        "end": 211556
+      }
+    },
+    {
+      "index": 160,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTsunami \n\n⬥ Cooldown: 100t (60s)\n⬥ Adrenaline Cost: 100%\n⬥ It is an AoE\n⬥ Provides a Critical Adrenaline buff:\n    • For the next 30s,  critical hits give 8% adrenaline\n    • This buff is applied on release of the ability\n⬥ Adrenaline cost can be reduced through auto-casting Incite Fear \n    • Each stack reduces  adrenaline cost by 12, down to 40% at 5 stacks\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 211556,
+        "end": 213146
+      }
+    },
+    {
+      "index": 161,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 213146,
+        "end": 213148
+      }
+    },
+    {
+      "index": 162,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 213148,
+        "end": 213163
+      }
+    },
+    {
+      "index": 163,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 213163,
+        "end": 213164
+      }
+    },
+    {
+      "index": 164,
+      "tag": "h3",
+      "attrs": {
+        "id": "utility-abilities"
+      },
+      "text": "Utility Abilities",
+      "location": {
+        "start": 213164,
+        "end": 213213
+      }
+    },
+    {
+      "index": 165,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 213213,
+        "end": 213214
+      }
+    },
+    {
+      "index": 166,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSurge \n\n⬥ Cooldown: 34t (20.4s)\n⬥ It is a Mobility ability:\n    • Moves you forward 10 tiles\n⬥ Affected by Mobile \n    • Reduces cooldown to 17t (10.2s)\n⬥ Can be upgraded with a Double Surge codex: \n    • Gives you a second  on its own 34t (17t ) internal cooldown that is used after the first\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 213214,
+        "end": 214834
+      }
+    },
+    {
+      "index": 167,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 214834,
+        "end": 214836
+      }
+    },
+    {
+      "index": 168,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 214836,
+        "end": 214851
+      }
+    },
+    {
+      "index": 169,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 214851,
+        "end": 214852
+      }
+    },
+    {
+      "index": 170,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRunic Charge \n\n⬥ Cooldown: 50t (30s)\n⬥ Applies Anima Charged to self for 25t (15s), consumed once used\n⬥ Anima Charged\n    •  /  Next Magic Ability costs 35%/45% less adrenaline\n    •  Increased damaged\n    •  /  Each channel grants an additional 10% crit chance\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 214852,
+        "end": 216576
+      }
+    },
+    {
+      "index": 171,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 216576,
+        "end": 216578
+      }
+    },
+    {
+      "index": 172,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 216578,
+        "end": 216593
+      }
+    },
+    {
+      "index": 173,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 216593,
+        "end": 216594
+      }
+    },
+    {
+      "index": 174,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Magic Ability Index \n\n⬥ Click the links to quickly navigate to that ability's information.\n⬥ General notes can be found in the introduction here.\n\nSpells and Basic (1/3)\n⬥ Barrage Spells\n⬥ Blitz Spells\n⬥ Vulnerability\n⬥ Incite Fear\n⬥ Exsanguinate\n⬥ Smoke Cloud\nSpells and Basic (2/3)\n⬥ Animate Dead\n⬥ Magic\n⬥ Sonic Wave\n⬥ G. Sonic Wave\n⬥ Dragon Breath\n⬥ Impact\nSpells and Basic (3/3)\n⬥ Combust\n⬥ Chain\n⬥ G. Chain\n⬥ Conc. Blast\n⬥ G. Conc. Blast\nEnhanced\n⬥ Wild Magic\n⬥ Asphyxiate\n⬥ Smoke Tendrils\n⬥ Magma Tempest\n⬥ Corr. Blast\nSpecial Attacks\n⬥ Guthix Staff\n⬥ Arma. Battlestaff\n⬥ Iban's Staff\n⬥ Legatus's Emberstaff\n⬥ Roar of Awakening\n⬥ F. Staff of Armadyl\nUltimate\n⬥ Omnipower\n⬥ Sunshine\n⬥ G. Sunshine\n⬥ Tsunami\nUtility\n⬥ Surge\n⬥ Runic Charge\n\n\n\n\n\n\n",
+      "location": {
+        "start": 216594,
+        "end": 220420
+      }
+    },
+    {
+      "index": 175,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n      \n    ",
+      "location": {
+        "start": 220420,
+        "end": 220432
+      }
+    }
+  ]
+}

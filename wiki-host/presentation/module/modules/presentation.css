@@ -660,6 +660,40 @@ body.pvme-presentation {
 }
 .pvme-presentation .pvme-reader-tools button:hover { background: #edf2f7; border-color: #375a7c; }
 .pvme-presentation .pvme-reader-tools button:disabled { opacity: .65; cursor: wait; }
+.pvme-presentation .pvme-reader-actions .pvme-reader-copy {
+    background: #205e59;
+    color: #fff;
+    border-color: #205e59;
+    padding-inline: 1.2em;
+    font-weight: 700;
+}
+.pvme-presentation .pvme-reader-actions .pvme-reader-copy:hover { background: #164b46; color: #fff; border-color: #164b46; }
+.pvme-presentation .pvme-reader-tools .pvme-freshness {
+    display: inline-flex;
+    align-items: center;
+    gap: .45em;
+    min-height: 2em;
+    padding: .25em .7em;
+    border: 1px solid #b8c6ce;
+    border-radius: 4px;
+    color: #344c5d;
+    background: #edf2f6;
+    font-size: .85em;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: .16em;
+}
+.pvme-presentation .pvme-freshness::before { content: ''; width: .5em; height: .5em; flex: 0 0 .5em; border-radius: 50%; background: currentColor; }
+.pvme-presentation .pvme-reader-tools .pvme-freshness-recent { color: #245343; background: #eaf4ee; border-color: #a8c9b6; }
+.pvme-presentation .pvme-reader-tools .pvme-freshness-older { color: #6a4c20; background: #fff4df; border-color: #d5bc8e; }
+.pvme-presentation .pvme-reader-tools .pvme-freshness-unknown { color: #555f68; background: #f0f2f4; border-color: #c1c7ce; }
+.pvme-presentation .pvme-reader-tools > .pvme-reader-export { flex: 1 0 100%; min-width: 0; margin: 0; }
+.pvme-presentation .pvme-reader-export details { margin-block-start: .5em; }
+.pvme-presentation .pvme-reader-export textarea { max-width: 100%; }
+.ve-active .pvme-presentation .pvme-reader-tools,
+.ve-activating .pvme-presentation .pvme-reader-tools,
+.pvme-presentation.ve-active .pvme-reader-tools,
+.pvme-presentation.ve-activating .pvme-reader-tools { display: none; }
 .pvme-presentation .pvme-reader-toggle { margin: 0; }
 .pvme-presentation .pvme-reader-source { flex: 1 0 100%; border-block-start: 1px solid #d6dce2; padding-block-start: .5rem; }
 .pvme-presentation .pvme-reader-tools summary { width: fit-content; padding-block: .5rem; cursor: pointer; font-weight: 600; }
@@ -732,6 +766,7 @@ body.pvme-presentation {
     .pvme-presentation .vector-header { padding-block: .5rem; }
     .pvme-presentation .pvme-reader-tools { padding: .8rem; gap: .65rem; }
     .pvme-presentation .pvme-reader-actions { width: 100%; gap: .4rem .85rem; }
+    .pvme-presentation .pvme-reader-actions .pvme-reader-copy { flex: 1 0 100%; }
     .pvme-presentation .pvme-reader-actions .pvme-reader-toggle { flex-basis: 100%; }
     .pvme-presentation :where(.mw-parser-output, .pvme-visual-content) { padding: .5rem; }
     .pvme-presentation :where(.mw-parser-output, .pvme-visual-content) table:not(.pvme-no-scroll) { display: block; max-width: 100%; overflow-x: auto; }

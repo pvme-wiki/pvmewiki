@@ -1,0 +1,2337 @@
+[
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "introduction"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 166394,
+      "end": 166444
+    },
+    "children": [
+      {
+        "nodeName": "ins",
+        "tag": "ins",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 166416,
+          "end": 166439
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Introduction",
+            "location": {
+              "start": 166421,
+              "end": 166433
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 166444,
+      "end": 166445
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 166445,
+      "end": 166579
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "⬥ Try it for yourself: ",
+        "location": {
+          "start": 166448,
+          "end": 166471
+        }
+      },
+      {
+        "nodeName": "strong",
+        "tag": "strong",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 166471,
+          "end": 166575
+        },
+        "children": [
+          {
+            "nodeName": "a",
+            "tag": "a",
+            "attrs": {
+              "href": "https://pvme.github.io/guide-editor/"
+            },
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "location": {
+              "start": 166479,
+              "end": 166566
+            },
+            "children": [
+              {
+                "nodeName": "#text",
+                "text": "https://pvme.github.io/guide-editor/",
+                "location": {
+                  "start": 166526,
+                  "end": 166562
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 166579,
+      "end": 166580
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 166580,
+      "end": 166720
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "⬥ The ",
+        "location": {
+          "start": 166583,
+          "end": 166589
+        }
+      },
+      {
+        "nodeName": "strong",
+        "tag": "strong",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 166589,
+          "end": 166623
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "PvME Guide Editor",
+            "location": {
+              "start": 166597,
+              "end": 166614
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": ", developed by @pleb0025, is a comprehensive editor tool to accelerate guide making for PvME.",
+        "location": {
+          "start": 166623,
+          "end": 166716
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 166720,
+      "end": 166721
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 166721,
+      "end": 166912
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "⬥ It is the recommended way to write guides, as it makes it easier to check them with the live preview, and prevent issues from occurring with the help of the integrated error checker.",
+        "location": {
+          "start": 166724,
+          "end": 166908
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 166912,
+      "end": 166913
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 166913,
+      "end": 167047
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "⬥ Additionally, the ",
+        "location": {
+          "start": 166916,
+          "end": 166936
+        }
+      },
+      {
+        "nodeName": "code",
+        "tag": "code",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 166936,
+          "end": 166955
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "/files",
+            "location": {
+              "start": 166942,
+              "end": 166948
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": " ‎bot command offers the ability to open any current guide directly in the guide editor.",
+        "location": {
+          "start": 166955,
+          "end": 167043
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 167047,
+      "end": 167048
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 167048,
+      "end": 167063
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "​",
+        "location": {
+          "start": 167051,
+          "end": 167059
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 167063,
+      "end": 167064
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "editor-layout"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 167064,
+      "end": 167116
+    },
+    "children": [
+      {
+        "nodeName": "ins",
+        "tag": "ins",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 167087,
+          "end": 167111
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Editor Layout",
+            "location": {
+              "start": 167092,
+              "end": 167105
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 167116,
+      "end": 167117
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 167117,
+      "end": 167201
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "⬥ When you open the website you'll see the a layout similar to the following.",
+        "location": {
+          "start": 167120,
+          "end": 167197
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 167201,
+      "end": 167202
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 167202,
+      "end": 167334
+    },
+    "children": [
+      {
+        "nodeName": "img",
+        "tag": "img",
+        "attrs": {
+          "class": "media",
+          "src": "https://img.pvme.io/images/zr62id2.png"
+        },
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 167205,
+          "end": 167269
+        },
+        "children": []
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n⬥ ",
+        "location": {
+          "start": 167269,
+          "end": 167272
+        }
+      },
+      {
+        "nodeName": "strong",
+        "tag": "strong",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 167272,
+          "end": 167299
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Input Text",
+            "location": {
+              "start": 167280,
+              "end": 167290
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": " is where your input text goes.",
+        "location": {
+          "start": 167299,
+          "end": 167330
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 167334,
+      "end": 167335
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 167335,
+      "end": 167432
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "⬥ ",
+        "location": {
+          "start": 167338,
+          "end": 167340
+        }
+      },
+      {
+        "nodeName": "strong",
+        "tag": "strong",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 167340,
+          "end": 167372
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Discord Preview",
+            "location": {
+              "start": 167348,
+              "end": 167363
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": " is a live preview of what it will look like in discord.",
+        "location": {
+          "start": 167372,
+          "end": 167428
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 167432,
+      "end": 167433
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 167433,
+      "end": 167554
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "⬥ ",
+        "location": {
+          "start": 167436,
+          "end": 167438
+        }
+      },
+      {
+        "nodeName": "strong",
+        "tag": "strong",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 167438,
+          "end": 167468
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Error Checker",
+            "location": {
+              "start": 167446,
+              "end": 167459
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": " displays any formatting and syntax errors in your text that need to be corrected.",
+        "location": {
+          "start": 167468,
+          "end": 167550
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 167554,
+      "end": 167555
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 167555,
+      "end": 167650
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "⬥ The ",
+        "location": {
+          "start": 167558,
+          "end": 167564
+        }
+      },
+      {
+        "nodeName": "strong",
+        "tag": "strong",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 167564,
+          "end": 167595
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Formatting Bar",
+            "location": {
+              "start": 167572,
+              "end": 167586
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": " contains tools to help you format your input text.",
+        "location": {
+          "start": 167595,
+          "end": 167646
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 167650,
+      "end": 167651
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 167651,
+      "end": 167691
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "‎ ‎ ‎ ‎• Covered in detail below.",
+        "location": {
+          "start": 167654,
+          "end": 167687
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 167691,
+      "end": 167692
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 167692,
+      "end": 167707
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "​",
+        "location": {
+          "start": 167695,
+          "end": 167703
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 167707,
+      "end": 167708
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "formatting-bar"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 167708,
+      "end": 167762
+    },
+    "children": [
+      {
+        "nodeName": "ins",
+        "tag": "ins",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 167732,
+          "end": 167757
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Formatting Bar",
+            "location": {
+              "start": 167737,
+              "end": 167751
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 167762,
+      "end": 167763
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 167763,
+      "end": 167848
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "⬥ The formatting bar at the top contains tools to help format your input text.",
+        "location": {
+          "start": 167766,
+          "end": 167844
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 167848,
+      "end": 167849
+    }
+  },
+  {
+    "nodeName": "h3",
+    "tag": "h3",
+    "attrs": {
+      "id": "text-formatting"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 167849,
+      "end": 167894
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "Text Formatting",
+        "location": {
+          "start": 167874,
+          "end": 167889
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 167894,
+      "end": 167895
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 167895,
+      "end": 168122
+    },
+    "children": [
+      {
+        "nodeName": "img",
+        "tag": "img",
+        "attrs": {
+          "class": "media",
+          "src": "https://img.pvme.io/images/WcekSyf.png"
+        },
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 167898,
+          "end": 167962
+        },
+        "children": []
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n⬥ ",
+        "location": {
+          "start": 167962,
+          "end": 167965
+        }
+      },
+      {
+        "nodeName": "strong",
+        "tag": "strong",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 167965,
+          "end": 167983
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "B",
+            "location": {
+              "start": 167973,
+              "end": 167974
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": " ",
+        "location": {
+          "start": 167983,
+          "end": 167984
+        }
+      },
+      {
+        "nodeName": "em",
+        "tag": "em",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 167984,
+          "end": 167994
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "I",
+            "location": {
+              "start": 167988,
+              "end": 167989
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": " ",
+        "location": {
+          "start": 167994,
+          "end": 167995
+        }
+      },
+      {
+        "nodeName": "ins",
+        "tag": "ins",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 167995,
+          "end": 168007
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "U",
+            "location": {
+              "start": 168000,
+              "end": 168001
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": " ",
+        "location": {
+          "start": 168007,
+          "end": 168008
+        }
+      },
+      {
+        "nodeName": "del",
+        "tag": "del",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 168008,
+          "end": 168020
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "S",
+            "location": {
+              "start": 168013,
+              "end": 168014
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": " - ",
+        "location": {
+          "start": 168020,
+          "end": 168023
+        }
+      },
+      {
+        "nodeName": "strong",
+        "tag": "strong",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 168023,
+          "end": 168044
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Bold",
+            "location": {
+              "start": 168031,
+              "end": 168035
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": ", ",
+        "location": {
+          "start": 168044,
+          "end": 168046
+        }
+      },
+      {
+        "nodeName": "em",
+        "tag": "em",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 168046,
+          "end": 168064
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "italicize",
+            "location": {
+              "start": 168050,
+              "end": 168059
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": ", ",
+        "location": {
+          "start": 168064,
+          "end": 168066
+        }
+      },
+      {
+        "nodeName": "ins",
+        "tag": "ins",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 168066,
+          "end": 168086
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "underline",
+            "location": {
+              "start": 168071,
+              "end": 168080
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": ", and ",
+        "location": {
+          "start": 168086,
+          "end": 168092
+        }
+      },
+      {
+        "nodeName": "del",
+        "tag": "del",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 168092,
+          "end": 168117
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "strike through",
+            "location": {
+              "start": 168097,
+              "end": 168111
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": ".",
+        "location": {
+          "start": 168117,
+          "end": 168118
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 168122,
+      "end": 168123
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 168123,
+      "end": 168194
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "⬥ ",
+        "location": {
+          "start": 168126,
+          "end": 168128
+        }
+      },
+      {
+        "nodeName": "strong",
+        "tag": "strong",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 168128,
+          "end": 168147
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "H1",
+            "location": {
+              "start": 168136,
+              "end": 168138
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": " - Indents, bolds and underlines paragraph.",
+        "location": {
+          "start": 168147,
+          "end": 168190
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 168194,
+      "end": 168195
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 168195,
+      "end": 168257
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "⬥ ",
+        "location": {
+          "start": 168198,
+          "end": 168200
+        }
+      },
+      {
+        "nodeName": "strong",
+        "tag": "strong",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 168200,
+          "end": 168219
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "H2",
+            "location": {
+              "start": 168208,
+              "end": 168210
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": " - Bolds and underlines paragraph.",
+        "location": {
+          "start": 168219,
+          "end": 168253
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 168257,
+      "end": 168258
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 168258,
+      "end": 168273
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "​",
+        "location": {
+          "start": 168261,
+          "end": 168269
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 168273,
+      "end": 168274
+    }
+  },
+  {
+    "nodeName": "h3",
+    "tag": "h3",
+    "attrs": {
+      "id": "lists-and-code"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 168274,
+      "end": 168317
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "Lists and Code",
+        "location": {
+          "start": 168298,
+          "end": 168312
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 168317,
+      "end": 168318
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 168318,
+      "end": 168536
+    },
+    "children": [
+      {
+        "nodeName": "img",
+        "tag": "img",
+        "attrs": {
+          "class": "media",
+          "src": "https://img.pvme.io/images/H8jz5KQ.png"
+        },
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 168321,
+          "end": 168385
+        },
+        "children": []
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n⬥ ",
+        "location": {
+          "start": 168385,
+          "end": 168388
+        }
+      },
+      {
+        "nodeName": "strong",
+        "tag": "strong",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 168388,
+          "end": 168426
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "2 buttons on the left",
+            "location": {
+              "start": 168396,
+              "end": 168417
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": " - Reformats selected text as ",
+        "location": {
+          "start": 168426,
+          "end": 168456
+        }
+      },
+      {
+        "nodeName": "strong",
+        "tag": "strong",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 168456,
+          "end": 168481
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "bulleted",
+            "location": {
+              "start": 168464,
+              "end": 168472
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": " and ",
+        "location": {
+          "start": 168481,
+          "end": 168486
+        }
+      },
+      {
+        "nodeName": "strong",
+        "tag": "strong",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 168486,
+          "end": 168511
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "numbered",
+            "location": {
+              "start": 168494,
+              "end": 168502
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": " lists, respectively.",
+        "location": {
+          "start": 168511,
+          "end": 168532
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 168536,
+      "end": 168537
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 168537,
+      "end": 168693
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "⬥ ",
+        "location": {
+          "start": 168540,
+          "end": 168542
+        }
+      },
+      {
+        "nodeName": "strong",
+        "tag": "strong",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 168542,
+          "end": 168581
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "2 buttons on the right",
+            "location": {
+              "start": 168550,
+              "end": 168572
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": " - Reformat selected text as ",
+        "location": {
+          "start": 168581,
+          "end": 168610
+        }
+      },
+      {
+        "nodeName": "strong",
+        "tag": "strong",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 168610,
+          "end": 168638
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "inline code",
+            "location": {
+              "start": 168618,
+              "end": 168629
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": " and as a ",
+        "location": {
+          "start": 168638,
+          "end": 168648
+        }
+      },
+      {
+        "nodeName": "strong",
+        "tag": "strong",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 168648,
+          "end": 168675
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "code block",
+            "location": {
+              "start": 168656,
+              "end": 168666
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": " respectively.",
+        "location": {
+          "start": 168675,
+          "end": 168689
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 168693,
+      "end": 168694
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 168694,
+      "end": 168774
+    },
+    "children": [
+      {
+        "nodeName": "img",
+        "tag": "img",
+        "attrs": {
+          "class": "media",
+          "src": "https://img.pvme.io/images/HUYXf3K.png"
+        },
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 168697,
+          "end": 168761
+        },
+        "children": []
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n​",
+        "location": {
+          "start": 168761,
+          "end": 168770
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 168774,
+      "end": 168775
+    }
+  },
+  {
+    "nodeName": "h3",
+    "tag": "h3",
+    "attrs": {
+      "id": "commands-and-templates"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 168775,
+      "end": 168834
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "Commands and Templates",
+        "location": {
+          "start": 168807,
+          "end": 168829
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 168834,
+      "end": 168835
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 168835,
+      "end": 168906
+    },
+    "children": [
+      {
+        "nodeName": "img",
+        "tag": "img",
+        "attrs": {
+          "class": "media",
+          "src": "https://img.pvme.io/images/YpdbuKa.png"
+        },
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 168838,
+          "end": 168902
+        },
+        "children": []
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 168906,
+      "end": 168907
+    }
+  },
+  {
+    "nodeName": "h3",
+    "tag": "h3",
+    "attrs": {
+      "id": "misc-buttons"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 168907,
+      "end": 168947
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "Misc. Buttons",
+        "location": {
+          "start": 168929,
+          "end": 168942
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 168947,
+      "end": 168948
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 168948,
+      "end": 169019
+    },
+    "children": [
+      {
+        "nodeName": "img",
+        "tag": "img",
+        "attrs": {
+          "class": "media",
+          "src": "https://img.pvme.io/images/rYEb2gj.png"
+        },
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 168951,
+          "end": 169015
+        },
+        "children": []
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 169019,
+      "end": 169020
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 169020,
+      "end": 169178
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "⬥ ",
+        "location": {
+          "start": 169023,
+          "end": 169025
+        }
+      },
+      {
+        "nodeName": "strong",
+        "tag": "strong",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 169025,
+          "end": 169051
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "<|>",
+            "location": {
+              "start": 169033,
+              "end": 169042
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": " - Toggles automatically scrolling of the live preview to the bottom of the preview (mimics guide channels in the discord).",
+        "location": {
+          "start": 169051,
+          "end": 169174
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 169178,
+      "end": 169179
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 169179,
+      "end": 169297
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "⬥ ",
+        "location": {
+          "start": 169182,
+          "end": 169184
+        }
+      },
+      {
+        "nodeName": "strong",
+        "tag": "strong",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 169184,
+          "end": 169203
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "👁",
+            "location": {
+              "start": 169192,
+              "end": 169194
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": " - Toggles the live preview on/off, useful for reducing lag when writing very long guides.",
+        "location": {
+          "start": 169203,
+          "end": 169293
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 169297,
+      "end": 169298
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 169298,
+      "end": 169401
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "⬥ ",
+        "location": {
+          "start": 169301,
+          "end": 169303
+        }
+      },
+      {
+        "nodeName": "strong",
+        "tag": "strong",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 169303,
+          "end": 169321
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "?",
+            "location": {
+              "start": 169311,
+              "end": 169312
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": " - Shows formatting shortcuts and features, and instructions for the editor.",
+        "location": {
+          "start": 169321,
+          "end": 169397
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 169401,
+      "end": 169402
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 169402,
+      "end": 169548
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "⬥ ⓘ - Some quick links for editors may use, as well as the GitHub issues tab for this website editor for any updates that are in the works.",
+        "location": {
+          "start": 169405,
+          "end": 169544
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 169548,
+      "end": 169549
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 169549,
+      "end": 169564
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "​",
+        "location": {
+          "start": 169552,
+          "end": 169560
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 169564,
+      "end": 169565
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "input-text"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 169565,
+      "end": 169611
+    },
+    "children": [
+      {
+        "nodeName": "ins",
+        "tag": "ins",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 169585,
+          "end": 169606
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Input Text",
+            "location": {
+              "start": 169590,
+              "end": 169600
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 169611,
+      "end": 169612
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 169612,
+      "end": 169711
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "⬥ Use the ",
+        "location": {
+          "start": 169615,
+          "end": 169625
+        }
+      },
+      {
+        "nodeName": "strong",
+        "tag": "strong",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 169625,
+          "end": 169665
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "left box for input text",
+            "location": {
+              "start": 169633,
+              "end": 169656
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": " to write the raw content for your guides.",
+        "location": {
+          "start": 169665,
+          "end": 169707
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 169711,
+      "end": 169712
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 169712,
+      "end": 169811
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "⬥ There is a ",
+        "location": {
+          "start": 169715,
+          "end": 169728
+        }
+      },
+      {
+        "nodeName": "strong",
+        "tag": "strong",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 169728,
+          "end": 169770
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "live preview on the right",
+            "location": {
+              "start": 169736,
+              "end": 169761
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": ", as shown in the layout image above.",
+        "location": {
+          "start": 169770,
+          "end": 169807
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 169811,
+      "end": 169812
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 169812,
+      "end": 169946
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "⬥ See the question mark ",
+        "location": {
+          "start": 169815,
+          "end": 169839
+        }
+      },
+      {
+        "nodeName": "strong",
+        "tag": "strong",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 169839,
+          "end": 169857
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "?",
+            "location": {
+              "start": 169847,
+              "end": 169848
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": " button on the top right of the web editor for tips to make editing a little quicker.",
+        "location": {
+          "start": 169857,
+          "end": 169942
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 169946,
+      "end": 169947
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 169947,
+      "end": 169962
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "​",
+        "location": {
+          "start": 169950,
+          "end": 169958
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 169962,
+      "end": 169963
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "error-checker"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 169963,
+      "end": 170015
+    },
+    "children": [
+      {
+        "nodeName": "ins",
+        "tag": "ins",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 169986,
+          "end": 170010
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Error Checker",
+            "location": {
+              "start": 169991,
+              "end": 170004
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 170015,
+      "end": 170016
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 170016,
+      "end": 170116
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "⬥ If any style or formatting errors are present in your guide, then they will be listed here.",
+        "location": {
+          "start": 170019,
+          "end": 170112
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 170116,
+      "end": 170117
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 170117,
+      "end": 170276
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "⬥ The checker is the same as the one used during pull requests on GitHub, so ",
+        "location": {
+          "start": 170120,
+          "end": 170197
+        }
+      },
+      {
+        "nodeName": "strong",
+        "tag": "strong",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 170197,
+          "end": 170272
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "if you see any errors here, fix them before submitting it!",
+            "location": {
+              "start": 170205,
+              "end": 170263
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 170276,
+      "end": 170277
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 170277,
+      "end": 170292
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "​",
+        "location": {
+          "start": 170280,
+          "end": 170288
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 170292,
+      "end": 170293
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "video-tutorial"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 170293,
+      "end": 170347
+    },
+    "children": [
+      {
+        "nodeName": "ins",
+        "tag": "ins",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 170317,
+          "end": 170342
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Video Tutorial",
+            "location": {
+              "start": 170322,
+              "end": 170336
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 170347,
+      "end": 170348
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 170348,
+      "end": 170512
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "If you prefer to watch a video guide, then see the following tutorial by @trackandxc: ",
+        "location": {
+          "start": 170351,
+          "end": 170437
+        }
+      },
+      {
+        "nodeName": "a",
+        "tag": "a",
+        "attrs": {
+          "href": "https://youtu.be/LQWuufctPLA"
+        },
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 170437,
+          "end": 170508
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "https://youtu.be/LQWuufctPLA",
+            "location": {
+              "start": 170476,
+              "end": 170504
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 170512,
+      "end": 170513
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 170513,
+      "end": 170528
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "​",
+        "location": {
+          "start": 170516,
+          "end": 170524
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 170528,
+      "end": 170529
+    }
+  },
+  {
+    "nodeName": "iframe",
+    "tag": "iframe",
+    "attrs": {
+      "class": "media",
+      "width": "560",
+      "height": "315",
+      "src": "https://www.youtube.com/embed/LQWuufctPLA",
+      "frameborder": "0",
+      "allow": "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+      "allowfullscreen": ""
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 170529,
+      "end": 170745
+    },
+    "children": []
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n      \n    ",
+    "location": {
+      "start": 170745,
+      "end": 170757
+    }
+  }
+]

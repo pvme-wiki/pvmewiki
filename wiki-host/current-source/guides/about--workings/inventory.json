@@ -1,0 +1,449 @@
+{
+  "schemaVersion": 1,
+  "id": "about--workings",
+  "sourceURL": "https://pvme.io/about/workings/",
+  "responseURL": "https://pvme.io/about/workings/",
+  "boundary": "Direct article H1 onward through article-inner end",
+  "offsets": {
+    "start": 165964,
+    "end": 167331
+  },
+  "text": "How The Site Works\nFull process on Github, and in short:\n\nGather the .txt guides from the pvme-guides repository.\nFormat .txt -> .md.\nBuild the website from the .md files using MKDocs Material.\n\nLimitations\nFirst and foremost, the guides on the website are always up-to-date with the PvME Discord Server.\nThis is because both are using the .txt guides from the pvme-guides repository.\nWith that being said, the .txt formatting is primarily aimed at Discord which can lead to some content showing incorrectly:\n\nReferences to social Discord exclusive channels (#pvm-help)\nMentions of $linkmsg\n\nI try to stay ahead of this by adding formatting rules that exclude or change Discord-only content.\nIf you find any formatting issues, please message me on Discord (Pleb#0025) or create an issue on Github.\n      \n    ",
+  "normalizedText": "How The Site Works Full process on Github, and in short: Gather the .txt guides from the pvme-guides repository. Format .txt -> .md. Build the website from the .md files using MKDocs Material. Limitations First and foremost, the guides on the website are always up-to-date with the PvME Discord Server. This is because both are using the .txt guides from the pvme-guides repository. With that being said, the .txt formatting is primarily aimed at Discord which can lead to some content showing incorrectly: References to social Discord exclusive channels (#pvm-help) Mentions of $linkmsg I try to stay ahead of this by adding formatting rules that exclude or change Discord-only content. If you find any formatting issues, please message me on Discord (Pleb#0025) or create an issue on Github.",
+  "wordStream": [
+    "How",
+    "The",
+    "Site",
+    "Works",
+    "Full",
+    "process",
+    "on",
+    "Github,",
+    "and",
+    "in",
+    "short:",
+    "Gather",
+    "the",
+    ".txt",
+    "guides",
+    "from",
+    "the",
+    "pvme-guides",
+    "repository.",
+    "Format",
+    ".txt",
+    "->",
+    ".md.",
+    "Build",
+    "the",
+    "website",
+    "from",
+    "the",
+    ".md",
+    "files",
+    "using",
+    "MKDocs",
+    "Material.",
+    "Limitations",
+    "First",
+    "and",
+    "foremost,",
+    "the",
+    "guides",
+    "on",
+    "the",
+    "website",
+    "are",
+    "always",
+    "up-to-date",
+    "with",
+    "the",
+    "PvME",
+    "Discord",
+    "Server.",
+    "This",
+    "is",
+    "because",
+    "both",
+    "are",
+    "using",
+    "the",
+    ".txt",
+    "guides",
+    "from",
+    "the",
+    "pvme-guides",
+    "repository.",
+    "With",
+    "that",
+    "being",
+    "said,",
+    "the",
+    ".txt",
+    "formatting",
+    "is",
+    "primarily",
+    "aimed",
+    "at",
+    "Discord",
+    "which",
+    "can",
+    "lead",
+    "to",
+    "some",
+    "content",
+    "showing",
+    "incorrectly:",
+    "References",
+    "to",
+    "social",
+    "Discord",
+    "exclusive",
+    "channels",
+    "(#pvm-help)",
+    "Mentions",
+    "of",
+    "$linkmsg",
+    "I",
+    "try",
+    "to",
+    "stay",
+    "ahead",
+    "of",
+    "this",
+    "by",
+    "adding",
+    "formatting",
+    "rules",
+    "that",
+    "exclude",
+    "or",
+    "change",
+    "Discord-only",
+    "content.",
+    "If",
+    "you",
+    "find",
+    "any",
+    "formatting",
+    "issues,",
+    "please",
+    "message",
+    "me",
+    "on",
+    "Discord",
+    "(Pleb#0025)",
+    "or",
+    "create",
+    "an",
+    "issue",
+    "on",
+    "Github."
+  ],
+  "hashes": {
+    "responseSha256": "b398e852c899d8398660447f27fb380ba488a69367a9cff15daa3115e506ed52",
+    "articleSha256": "67eb5046fbb29e2ce13cf9be442dc2e417ae015ae61d38c2ea28cc070744b3fe",
+    "textSha256": "b47dc9ba59d375d3c2feabbe535a1022ea332863a33be3c3c4e6dd6d76e5a89e",
+    "normalizedTextSha256": "573234cad6b25c0be8071a0e259dda8e4b6d67176af050f40bde3487d7e38b44"
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "How The Site Works",
+      "attrs": {
+        "id": "how-the-site-works"
+      },
+      "location": {
+        "start": 165964,
+        "end": 166015
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "Limitations",
+      "attrs": {
+        "id": "limitations"
+      },
+      "location": {
+        "start": 166451,
+        "end": 166488
+      }
+    }
+  ],
+  "media": [],
+  "links": [
+    {
+      "href": "https://github.com/pvme/pvme.github.io",
+      "text": "Github",
+      "attrs": {
+        "href": "https://github.com/pvme/pvme.github.io"
+      },
+      "location": {
+        "start": 166035,
+        "end": 166094
+      }
+    },
+    {
+      "href": "https://github.com/pvme/pvme-guides",
+      "text": "pvme-guides repository",
+      "attrs": {
+        "href": "https://github.com/pvme/pvme-guides"
+      },
+      "location": {
+        "start": 166168,
+        "end": 166240
+      }
+    },
+    {
+      "href": "https://squidfunk.github.io/mkdocs-material",
+      "text": "MKDocs Material",
+      "attrs": {
+        "href": "https://squidfunk.github.io/mkdocs-material"
+      },
+      "location": {
+        "start": 166365,
+        "end": 166438
+      }
+    },
+    {
+      "href": "https://github.com/pvme/pvme-guides",
+      "text": "pvme-guides repository",
+      "attrs": {
+        "href": "https://github.com/pvme/pvme-guides"
+      },
+      "location": {
+        "start": 166666,
+        "end": 166738
+      }
+    },
+    {
+      "href": "",
+      "text": "#pvm-help",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 166946,
+        "end": 166991
+      }
+    },
+    {
+      "href": "https://github.com/pvme/pvme.github.io",
+      "text": "Github",
+      "attrs": {
+        "href": "https://github.com/pvme/pvme.github.io"
+      },
+      "location": {
+        "start": 167255,
+        "end": 167314
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "h1",
+      "attrs": {
+        "id": "how-the-site-works"
+      },
+      "text": "How The Site Works",
+      "location": {
+        "start": 165964,
+        "end": 166015
+      }
+    },
+    {
+      "index": 1,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166015,
+        "end": 166016
+      }
+    },
+    {
+      "index": 2,
+      "tag": "p",
+      "attrs": {},
+      "text": "Full process on Github, and in short:",
+      "location": {
+        "start": 166016,
+        "end": 166113
+      }
+    },
+    {
+      "index": 3,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166113,
+        "end": 166114
+      }
+    },
+    {
+      "index": 4,
+      "tag": "ol",
+      "attrs": {},
+      "text": "\nGather the .txt guides from the pvme-guides repository.\nFormat .txt -> .md.\nBuild the website from the .md files using MKDocs Material.\n",
+      "location": {
+        "start": 166114,
+        "end": 166450
+      }
+    },
+    {
+      "index": 5,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166450,
+        "end": 166451
+      }
+    },
+    {
+      "index": 6,
+      "tag": "h2",
+      "attrs": {
+        "id": "limitations"
+      },
+      "text": "Limitations",
+      "location": {
+        "start": 166451,
+        "end": 166488
+      }
+    },
+    {
+      "index": 7,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166488,
+        "end": 166489
+      }
+    },
+    {
+      "index": 8,
+      "tag": "p",
+      "attrs": {},
+      "text": "First and foremost, the guides on the website are always up-to-date with the PvME Discord Server.",
+      "location": {
+        "start": 166489,
+        "end": 166593
+      }
+    },
+    {
+      "index": 9,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166593,
+        "end": 166594
+      }
+    },
+    {
+      "index": 10,
+      "tag": "p",
+      "attrs": {},
+      "text": "This is because both are using the .txt guides from the pvme-guides repository.",
+      "location": {
+        "start": 166594,
+        "end": 166743
+      }
+    },
+    {
+      "index": 11,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166743,
+        "end": 166744
+      }
+    },
+    {
+      "index": 12,
+      "tag": "p",
+      "attrs": {},
+      "text": "With that being said, the .txt formatting is primarily aimed at Discord which can lead to some content showing incorrectly:",
+      "location": {
+        "start": 166744,
+        "end": 166887
+      }
+    },
+    {
+      "index": 13,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166887,
+        "end": 166888
+      }
+    },
+    {
+      "index": 14,
+      "tag": "ul",
+      "attrs": {},
+      "text": "\nReferences to social Discord exclusive channels (#pvm-help)\nMentions of $linkmsg\n",
+      "location": {
+        "start": 166888,
+        "end": 167046
+      }
+    },
+    {
+      "index": 15,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 167046,
+        "end": 167047
+      }
+    },
+    {
+      "index": 16,
+      "tag": "p",
+      "attrs": {},
+      "text": "I try to stay ahead of this by adding formatting rules that exclude or change Discord-only content.",
+      "location": {
+        "start": 167047,
+        "end": 167153
+      }
+    },
+    {
+      "index": 17,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 167153,
+        "end": 167154
+      }
+    },
+    {
+      "index": 18,
+      "tag": "p",
+      "attrs": {},
+      "text": "If you find any formatting issues, please message me on Discord (Pleb#0025) or create an issue on Github.",
+      "location": {
+        "start": 167154,
+        "end": 167319
+      }
+    },
+    {
+      "index": 19,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n      \n    ",
+      "location": {
+        "start": 167319,
+        "end": 167331
+      }
+    }
+  ]
+}

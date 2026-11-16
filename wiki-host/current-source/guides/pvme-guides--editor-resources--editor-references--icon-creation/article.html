@@ -1,0 +1,259 @@
+<h2 id="introduction"><ins>Introduction</ins></h2>
+<p>This channel will cover creating and editing:</p>
+<ol>
+<li>
+<p>Emojis used in PvME's guides - <a href="https://pvme.io/pvme-settings/#emojis">https://pvme.io/pvme-settings/#emojis</a></p>
+</li>
+<li>
+<p>Icons used in the Preset Maker - <a href="https://pvme.github.io/preset-maker/">https://pvme.github.io/preset-maker/</a></p>
+</li>
+</ol>
+<p>&#x200b;</p>
+<div class="flex-vertical whitney theme-dark">
+<div class="chat flex-vertical flex-spacer">
+<div class="content flex-spacer flex-horizontal">
+<div class="flex-spacer flex-vertical messages-wrapper">
+<div class="scroller-wrap">
+<div class="scroller messages">
+<div class="message-group hide-overflow">
+<div class="comment">
+<div class="message first">
+<div class="accessory">
+
+<div class="embed-wrapper">
+<div class="embed-color-pill" style="background-color: rgb(0, 153, 255);"></div>
+<div class="embed embed-rich">
+<div class="embed-content">
+<div class="embed-content-inner">
+
+<div class="embed-title" ><u>Requirements</u>
+</div>
+<div class="embed-description markup" >Take note of these before you start.
+</div>
+<div class="embed-fields"><div class="embed-field" ><div class="embed-field-name" ><u>Interface scaling</u>
+</div><div class="embed-field-value markup" >⬥ Ensure both system and RuneScape interface scaling are set to <strong>100%</strong>.
+    • System display scaling can be found under <a title="" href="https://img.pvme.io/images/XspEfnR9K5.png" target="_blank" rel="noreferrer">System &gt; Display &gt; Scale</a> for Windows users.
+    • RuneScape interface scaling can be found under <a title="" href="https://img.pvme.io/images/4wusRQznyv.png" target="_blank" rel="noreferrer">Settings &gt; Graphics &gt; Interface Scaling</a>.
+​
+</div></div><div class="embed-field" ><div class="embed-field-name" ><u>Manual emoji creation/Image editing</u>
+</div><div class="embed-field-value markup" >⬥ <a title="" href="https://www.getpaint.net/download.html#download" target="_blank" rel="noreferrer">Paint.net</a> or better image editing software downloaded.
+​
+</div></div><div class="embed-field" ><div class="embed-field-name" ><u>Emoji/icon creation by script</u>
+</div><div class="embed-field-value markup" >⬥ <a title="" href="https://www.python.org/downloads/" target="_blank" rel="noreferrer">Python</a> installed.
+⬥ Internet connection.
+⬥ <a title="" href="https://www.getpaint.net/download.html#download" target="_blank" rel="noreferrer">Paint.net</a> is still highly recommended to manually edit or make icons where the script fails.
+​
+</div></div><div class="embed-field" ><div class="embed-field-name" ><u>Raw input picture requirements</u>
+</div><div class="embed-field-value markup" >⬥ In game interfaces MUST have 0% transparency.
+⬥ Must <a title="" href="https://img.pvme.io/images/DneowCezKn.png" target="_blank" rel="noreferrer">look clear when zoomed in</a> (affected by interface scaling)​
+</div></div></div>
+</div>
+
+</div>
+
+
+</div></div></div></div></div></div></div></div></div></div></div></div>
+
+<h2 id="icon-formatting"><ins>Icon formatting</ins></h2>
+<p>Every icon consists of 4 parts:</p>
+<ol>
+<li>
+<p>The <strong>main item</strong> - Colour varies, never contains the same shade as the <strong>outline</strong> and <strong>shadow</strong>.</p>
+</li>
+<li>
+<p>The <strong>outline</strong> - A black border that immediately surrounds the main item (RGB value 0,0,2).</p>
+</li>
+<li>
+<p>The <strong>shadow</strong> - A black border that appears bottom-right of the outline where applicable (RGB value 0,0,1).</p>
+</li>
+<li>
+<p>(Only for stackable items) The number (RGB value 255,255,0).</p>
+</li>
+</ol>
+<p>‎ ‎ ‎ ‎a. Numbers have their own shadows.</p>
+<p>&#x200b;</p>
+<p>Image showing different regions selected:</p>
+<p><img class="media" src="https://img.pvme.io/images/tHGKxIrkby.png"></p>
+<p><strong>Preset icons</strong> are extracted from inventory slots pictures (38x34) and contains all icon parts.</p>
+<p><img class="media" src="https://img.pvme.io/images/Yv2AN2KqdH.png"></p>
+<p><strong>Emojis</strong> are extracted from bank pictures and have <strong>shadows</strong> and <strong>numbers</strong> removed. They are also cropped to size.</p>
+<p><img class="media" src="https://img.pvme.io/images/ZlC9E1hWBh.png"></p>
+<h2 id="rswiki-icons"><ins>RSWiki icons</ins></h2>
+<p>⬥ <strong>All preset icons should be made via the script or manually, and not based on RSWiki icons.</strong></p>
+<p>‎ ‎ ‎ ‎• Emojis can be made from RSWiki icons based on conditions below.</p>
+<p>&#x200b;</p>
+<p>⬥ The source of the icon determines whether you can use the RSWiki icon as an <strong>emoji</strong>.</p>
+<p>‎ ‎ ‎ ‎• Icons which are prepared by users and accurately reflects how they appear in the game <strong>can be used.</strong></p>
+<p>‎ ‎ ‎ ‎• If the icon is prepared by a bot. It is most likely a <strong>Java icon</strong> which do not reflect how the icon looks like in the live game.</p>
+<p><img class="media" src="https://img.pvme.io/images/TgSLjZRTq9.png"></p>
+<h2 id="icon-creation-script"><ins>Icon creation (script)</ins></h2>
+<p>Currently, the script only works for screen grabs <strong>of the inventory section when banking</strong> or <strong>of the GE buy interface</strong>.</p>
+<p>&#x200b;</p>
+<p><strong>Setting up</strong></p>
+<p>⬥ Download the script here: <a href="https://drive.google.com/file/d/1lLI6X3hAx-IebShGFe1jxbCZgGOzJ60-/view?usp=sharing">https://drive.google.com/file/d/1lLI6X3hAx-IebShGFe1jxbCZgGOzJ60-/view?usp=sharing</a></p>
+<p>⬥ Move the script to a desired directory.</p>
+<p>⬥ Run the script to set up the folders required.</p>
+<p>‎ ‎ ‎ ‎• Let the script to install the <strong>Pillow</strong> Python package if not installed (required for Python to manipulate images).</p>
+<p>‎ ‎ ‎ ‎• DO NOT RENAME THE CREATED FOLDERS.</p>
+<p><a href="https://youtu.be/PG19o3AzfCc">https://youtu.be/PG19o3AzfCc</a></p>
+<iframe class="media" width="560" height="315" src="https://www.youtube.com/embed/PG19o3AzfCc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><strong>Making icons/emojis</strong></p>
+<p>⬥ Take screen grabs of items from the inventory section of the banking interface (example below) and save it in <strong>"Inventory screengrabs"</strong> as a <strong>.png</strong> file.</p>
+<p>‎ ‎ ‎ ‎• To make emojis instead of preset icons: add a "_emoji" suffix to the name of the screengrab.</p>
+<p><img class="media" src="https://img.pvme.io/images/0nBdPW5cuc.png">
+⬥ Navigate back and run <strong>"Make icon.py"</strong></p>
+<p>‎ ‎ ‎ ‎• Check that the quantities printed in the terminal are correct.</p>
+<p>⬥ Check <strong>"Generated emojis"</strong> for emojis and <strong>"Generated preset icons"</strong> for preset icons.</p>
+<p>⬥ Use <strong>"Archive images.py"</strong> to archive all images after they have been added.</p>
+<p>⬥ Example video of basic/icon creation:</p>
+<p><a href="https://youtu.be/81FjnkxgNoQ">https://youtu.be/81FjnkxgNoQ</a></p>
+<iframe class="media" width="560" height="315" src="https://www.youtube.com/embed/81FjnkxgNoQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2 id="icon-creation-manual"><ins>Icon creation (manual)</ins></h2>
+<p>⬥ Take a screen grab of an item from an <strong>opaque bank interface (for emojis)</strong> or <strong>opaque inventory slot (for preset icons)</strong></p>
+<p>‎ ‎ ‎ ‎• Your bank background should be uniformly coloured to facilitate background removal.</p>
+<p>‎ ‎ ‎ ‎• Items on the <strong>Grand Exchange</strong> and <strong>preset interface</strong> have their outlines removed and cannot be used as a source for emojis.</p>
+<p>&#x200b;</p>
+<p><strong>Manual icon creation</strong></p>
+<ol>
+<li>
+<p>Open the item you want to make an icon of in <strong>Paint.net</strong>, crop it as nicely as possible.</p>
+</li>
+<li>
+<p>Zoom in and crop the inventory slot exactly using rectangle select (this should give you a 38x34 area).</p>
+</li>
+<li>
+<p>Use the crop to selection option under <strong>Image</strong>.</p>
+</li>
+</ol>
+<p>‎ ‎ ‎ ‎a. Shortcut: <strong>Ctrl + Shift + X</strong>.</p>
+<ol>
+<li>Select the <strong>Magic Wand</strong> and <strong>Rectangle select</strong>/<strong>Lasso select</strong> tools to select and delete regions until the background is completely removed.</li>
+</ol>
+<p>‎ ‎ ‎ ‎a. Use <strong>Shift + Click</strong> with the <strong>Magic Wand</strong> on 0% tolerance on the background to quickly select chunks of regions.</p>
+<p><a href="https://youtu.be/ZjdWPbp4YUo">https://youtu.be/ZjdWPbp4YUo</a></p>
+<iframe class="media" width="560" height="315" src="https://www.youtube.com/embed/ZjdWPbp4YUo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><strong>Manual emoji creation</strong></p>
+<ol>
+<li>
+<p>Open the item you want to make an icon of in <strong>Paint.net</strong>, crop it as nicely as possible.</p>
+</li>
+<li>
+<p>Select the <strong>Magic Wand</strong> tool on 0% tolerance and use <strong>Shift + Click</strong> followed by <strong>Delete</strong> on the background.</p>
+</li>
+<li>
+<p>Repeat the previous step for shadow and number pixels.</p>
+</li>
+<li>
+<p>If removing number pixels, ensure that the number or its shadow do not cover the icon.</p>
+</li>
+</ol>
+<p>‎ ‎ ‎ ‎a. Post in <a href="" class="inactiveLink">#guide-media-upload-and-request</a> if there is no way to get the complete unnumbered icon or visit the <strong>Image stacking</strong> section below.</p>
+<ol>
+<li>Use the <strong>Magic Wand</strong> again to select the transparent background, press <strong>Ctrl + I</strong> followed by <strong>Ctrl + Shift + X</strong> to crop the image to size</li>
+</ol>
+<p><a href="https://youtu.be/9oiHOuCO89U">https://youtu.be/9oiHOuCO89U</a></p>
+<iframe class="media" width="560" height="315" src="https://www.youtube.com/embed/9oiHOuCO89U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2 id="image-stacking"><ins>Image stacking</ins></h2>
+<p>If you're trying to emoji-fy a <strong>stackable</strong> item (check if icon is available on wiki first) and cannot get a whole icon due to the number partially covering it, you can stack multiple incomplete images (made by removing different numbers) to form a complete image.</p>
+<p>&#x200b;</p>
+<p>⬥ The most efficient quantities you can use for stacking are not yet known, but generally:</p>
+<p>‎ ‎ ‎ ‎• Items without varying icons based on quantity (e.g. teleport tabs), use quantities 1, 7 and 9.</p>
+<p>‎ ‎ ‎ ‎• Items with varying icons throughout numbers 1-5 (e.g. Bakriminel bolts), use quantities 11, 44, 77 and 99.</p>
+<p>‎ ‎ ‎ ‎• Items with varying icons throughout 1-1000 (e.g. congealed blood), use numbers 1111, 2222, 7777 and 9999.</p>
+<p>&#x200b;</p>
+<p><strong>Stacking with the script</strong></p>
+<ol>
+<li>
+<p>Save an image consisting multiple inventories with different quantities of the same item(s) you want stacked.</p>
+</li>
+<li>
+<p>Run <strong>"Make icon.py"</strong> to generate the incomplete emojis.</p>
+</li>
+<li>
+<p>Create respective folders starting with "stack" followed by the item name and sort the incomplete emojis into their respective folders.</p>
+</li>
+<li>
+<p>Run <strong>"Stack.py"</strong> to create the stacked icons.</p>
+</li>
+</ol>
+<p><a href="https://youtu.be/MCmgf2WiOeY">https://youtu.be/MCmgf2WiOeY</a></p>
+<iframe class="media" width="560" height="315" src="https://www.youtube.com/embed/MCmgf2WiOeY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><strong>Manual stacking</strong></p>
+<ol>
+<li>
+<p>Have images consisting different quantities of the item(s) you want stacked open in different windows.</p>
+</li>
+<li>
+<p>Carry out removal of background, shadows, and quantities.</p>
+</li>
+<li>
+<p>Paste the incomplete emojis <strong>onto different layers</strong> and merge them to get the complete emoji(s).</p>
+</li>
+</ol>
+<p><a href="https://youtu.be/yM61GooZZco">https://youtu.be/yM61GooZZco</a></p>
+<iframe class="media" width="560" height="315" src="https://www.youtube.com/embed/yM61GooZZco" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2 id="known-issues"><ins>Known issues</ins></h2>
+<p>⬥ Currently, there is not a standardised method for auras and other icons (e.g. buffs, debuffs).</p>
+<p>⬥ If your inventory slots (from the banking interface) are not completely uniform, the script will not be able to recognise them as inventory slots.</p>
+<p>⬥ The script uses the complete frames of the inventory slot to identify them: <a href="https://imgur.com/CCfr7dG">https://imgur.com/CCfr7dG</a>, <a href="https://imgur.com/ypnZCL3">https://imgur.com/ypnZCL3</a>.</p>
+<p>‎ ‎ ‎ ‎• If an item has its shadow and/or outline invading the inventory slot, the frame will not be recognised and the item will not be extracted.</p>
+<p>Examples:</p>
+<p><img class="media" src="https://img.pvme.io/images/MmKQxc25gA.png"></p>
+<h2 id="submitting-completed-icons"><ins>Submitting completed icons</ins></h2>
+<p><strong>Preset icons</strong> - Upload the icon to <code>https://img.pvme.io/</code> ‎(via <a href="" class="inactiveLink">#guide-media-upload-and-request</a>), copy the item link, and fill in this template for each item to submit via pasting it to <a href="" class="inactiveLink">#unknown</a>:</p>
+<pre><code>name:
+image:
+slot:
+label:
+breakdownNotes:
+wikiLink:
+
+</code></pre>
+<p>Fields explanations:</p>
+<p>⬥ <code>name:</code> ‎The item name as displayed <strong>on the RSWiki</strong>.</p>
+<p>⬥ <code>image:</code> ‎The raw <code>https://img.pvme.io/</code> ‎link.</p>
+<p>⬥ <code>slot:</code> ‎Numbers 0 to 13 which decides where the item can be equipped.</p>
+<p>INVENTORY = 0</p>
+<p>HELM = 1</p>
+<p>BODY = 2</p>
+<p>LEGS = 3</p>
+<p>MH_WEAPON = 4</p>
+<p>OH_WEAPON = 5</p>
+<p>GLOVES = 6</p>
+<p>BOOTS = 7</p>
+<p>AURA = 8</p>
+<p>AMMO = 9</p>
+<p>NECKLACE = 10</p>
+<p>RING = 11</p>
+<p>CAPE = 12</p>
+<p>POCKET = 13</p>
+<p>⬥ <code>label:</code> ‎The <code>name:</code> ‎of the item with all lower-case and no spacing OR an acceptable abbreviation.</p>
+<p>⬥ <code>breakdownNotes:</code> ‎Default text that appears in item breakdown when an item is picked. This is usually left blank.</p>
+<p>⬥ <code>wikiLink:</code> ‎Link to the item on RSWiki.</p>
+<p>‎ ‎ ‎ ‎• Make sure the link is valid.</p>
+<p>&#x200b;</p>
+<p>Examples:</p>
+<pre><code>name: Abyssal scourge
+image: https://img.pvme.io/images/Moh9yya.png
+slot: 4
+label: abyssalscourge
+breakdownNotes:
+wikiLink: https://runescape.wiki/w/Abyssal_scourge
+</code></pre>
+<p>&#x200b;</p>
+<pre><code>name: Black stone arrows
+image: https://img.pvme.io/images/uBbMQoy.png
+slot: 9
+label: bsa100
+breakdownNotes:
+wikiLink: https://runescape.wiki/w/Black_stone_arrows
+</code></pre>
+<p><strong>Emojis</strong> - Once done creating the emoji(s), use <strong>Ctrl + A</strong> + <strong>Ctrl + C</strong> to copy the cropped image (if made manually) or drag and drop saved emojis into <a href="" class="inactiveLink">#unknown</a> along with the item names.</p>
+      
+    

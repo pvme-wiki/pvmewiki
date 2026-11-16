@@ -1,0 +1,544 @@
+{
+  "schemaVersion": 1,
+  "captureVersion": 2,
+  "id": "pvme-guides--basic-guides--vindicta-basic",
+  "sourceURL": "https://pvme.io/pvme-guides/basic-guides/vindicta-basic/",
+  "officialURL": "https://pvme.io/pvme-guides/basic-guides/vindicta-basic/",
+  "responseURL": "https://pvme.io/pvme-guides/basic-guides/vindicta-basic/",
+  "status": "captured",
+  "statusCode": 200,
+  "retrievedAt": "2026-11-16T00:26:48.493Z",
+  "sitemapLastmod": "2026-11-15",
+  "sitemapSha256": "7166472554d36bfc69a7e14f7298264c0f9bfac00dc9034e5bfd0fba58a14b07",
+  "kind": "guide",
+  "audience": "player",
+  "title": "PvME/Vindicta Gorvek/Vindicta Overview",
+  "titleStatus": "existing-exact-url",
+  "baselineId": "vindicta",
+  "sourceTitle": "Vindicta & Gorvek – Boss Guide",
+  "sourceH1": "Vindicta & Gorvek – Boss Guide",
+  "discovery": "official-sitemap",
+  "directory": "guides/pvme-guides--basic-guides--vindicta-basic",
+  "sourceSha256": "4bd1d031a98d4fa0e726dbe38e47e5407be0ddf790e56089c7fb144e8af4d133",
+  "bodySha256": "4bd1d031a98d4fa0e726dbe38e47e5407be0ddf790e56089c7fb144e8af4d133",
+  "normalizedTextSha256": "2b03946dd2c13541ef2a2705f0cd5f73a9508b7bf7b2147063bc5e8ece7f9d8e",
+  "parser": "parse5 8.1.1; entities 9.0.0; sourceCodeLocationInfo",
+  "headers": {
+    "accept-ranges": "bytes",
+    "access-control-allow-origin": "*",
+    "age": "0",
+    "cache-control": "max-age=600",
+    "connection": "keep-alive",
+    "content-encoding": "gzip",
+    "content-length": "17247",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Mon, 16 Nov 2026 00:26:48 GMT",
+    "etag": "W/\"6afa1a34-2ba9a\"",
+    "expires": "Mon, 16 Nov 2026 00:36:48 GMT",
+    "last-modified": "Sun, 15 Nov 2026 20:46:44 GMT",
+    "server": "GitHub.com",
+    "strict-transport-security": "max-age=31556952",
+    "vary": "Accept-Encoding",
+    "via": "1.1 varnish",
+    "x-cache": "MISS",
+    "x-cache-hits": "0",
+    "x-fastly-request-id": "ed625b975e49993762168e5c7ce4280445cac257",
+    "x-github-edge-region": "iad",
+    "x-github-request-id": "3A28:68622:3DCAD16:43B5936:6AFA4DC8",
+    "x-origin-cache": "HIT",
+    "x-proxy-cache": "MISS",
+    "x-served-by": "cache-iad-kcgs7200076-IAD",
+    "x-timer": "S1794788809.956602,VS0,VE29"
+  },
+  "hashes": {
+    "responseSha256": "a06abe5e7e72c893717ef27486a0310d7044b629c8cf8f6ecfb5e0a92a0bc330",
+    "articleSha256": "4bd1d031a98d4fa0e726dbe38e47e5407be0ddf790e56089c7fb144e8af4d133",
+    "textSha256": "5094e2d73fd0029bfe5789aa0125b01340bf50383b2d703462298a16c65c9399",
+    "normalizedTextSha256": "2b03946dd2c13541ef2a2705f0cd5f73a9508b7bf7b2147063bc5e8ece7f9d8e"
+  },
+  "counts": {
+    "bytes": 178842,
+    "articleBytes": 9840,
+    "nodes": 527,
+    "topLevelNodes": 244,
+    "words": 781,
+    "images": 19,
+    "videos": 0,
+    "sources": 0,
+    "links": 14
+  },
+  "tags": {
+    "h1": 1,
+    "p": 106,
+    "img": 19,
+    "h2": 4,
+    "ins": 14,
+    "a": 14,
+    "h3": 10,
+    "strong": 24,
+    "em": 18,
+    "iframe": 1
+  },
+  "mediaHosts": {
+    "img.pvme.io": 1,
+    "cdn.discordapp.com": 17,
+    "firebasestorage.googleapis.com": 1,
+    "www.youtube.com": 1
+  },
+  "patterns": [
+    "source-tag:iframe",
+    "linked-preset-content-external-to-html"
+  ],
+  "media": [
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/sHIVTBZvZU.png"
+      },
+      "text": "",
+      "location": {
+        "start": 167384,
+        "end": 167451
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "attack",
+        "class": "d-emoji",
+        "alt": "attack",
+        "src": "https://cdn.discordapp.com/emojis/689509250472476758.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 167905,
+        "end": 168021
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 168500,
+        "end": 168614
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "range",
+        "class": "d-emoji",
+        "alt": "range",
+        "src": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 168709,
+        "end": 168823
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "melee",
+        "class": "d-emoji",
+        "alt": "melee",
+        "src": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 168919,
+        "end": 169034
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necromancy",
+        "class": "d-emoji",
+        "alt": "necromancy",
+        "src": "https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 169129,
+        "end": 169254
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://firebasestorage.googleapis.com/v0/b/preset-images/o/images%2F0d30907b-8f74-4b10-9335-335d98008918.png?alt=media"
+      },
+      "text": "",
+      "location": {
+        "start": 169361,
+        "end": 169506
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "melee",
+        "class": "d-emoji",
+        "alt": "melee",
+        "src": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 170499,
+        "end": 170614
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deflectmelee",
+        "class": "d-emoji",
+        "alt": "deflectmelee",
+        "src": "https://cdn.discordapp.com/emojis/544195488447201300.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 170821,
+        "end": 170949
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulsplit",
+        "class": "d-emoji",
+        "alt": "soulsplit",
+        "src": "https://cdn.discordapp.com/emojis/615613924506599497.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 170984,
+        "end": 171106
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "devo",
+        "class": "d-emoji",
+        "alt": "devo",
+        "src": "https://cdn.discordapp.com/emojis/513190158728953857.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 171701,
+        "end": 171813
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deflectrange",
+        "class": "d-emoji",
+        "alt": "deflectrange",
+        "src": "https://cdn.discordapp.com/emojis/544195488317046812.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 172412,
+        "end": 172540
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "surge",
+        "class": "d-emoji",
+        "alt": "surge",
+        "src": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 174106,
+        "end": 174220
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "res",
+        "class": "d-emoji",
+        "alt": "res",
+        "src": "https://cdn.discordapp.com/emojis/535541258844635148.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 174566,
+        "end": 174676
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deflectrange",
+        "class": "d-emoji",
+        "alt": "deflectrange",
+        "src": "https://cdn.discordapp.com/emojis/544195488317046812.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 174747,
+        "end": 174875
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "devo",
+        "class": "d-emoji",
+        "alt": "devo",
+        "src": "https://cdn.discordapp.com/emojis/513190158728953857.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 174893,
+        "end": 175005
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deflectmelee",
+        "class": "d-emoji",
+        "alt": "deflectmelee",
+        "src": "https://cdn.discordapp.com/emojis/544195488447201300.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 175417,
+        "end": 175545
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "surge",
+        "class": "d-emoji",
+        "alt": "surge",
+        "src": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 176355,
+        "end": 176469
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "dive",
+        "class": "d-emoji",
+        "alt": "dive",
+        "src": "https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 176478,
+        "end": 176591
+      }
+    },
+    {
+      "tag": "iframe",
+      "attrs": {
+        "class": "media",
+        "width": "560",
+        "height": "315",
+        "src": "https://www.youtube.com/embed/Eo5sWwnuaPk",
+        "frameborder": "0",
+        "allow": "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+        "allowfullscreen": ""
+      },
+      "text": "",
+      "location": {
+        "start": 176753,
+        "end": 176969
+      }
+    }
+  ],
+  "links": [
+    {
+      "href": "",
+      "text": "#vindicta-gwd2",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 168138,
+        "end": 168188
+      }
+    },
+    {
+      "href": "",
+      "text": "#unknown-channel",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 168189,
+        "end": 168241
+      }
+    },
+    {
+      "href": "",
+      "text": "#unknown-channel",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 168242,
+        "end": 168294
+      }
+    },
+    {
+      "href": "",
+      "text": "#upgrade-order",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 168439,
+        "end": 168489
+      }
+    },
+    {
+      "href": "https://presets.pvme.io/?id=36ec3ebe-379d-4350-a3ff-ce7a88f7525a",
+      "text": "Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=36ec3ebe-379d-4350-a3ff-ce7a88f7525a"
+      },
+      "location": {
+        "start": 168615,
+        "end": 168699
+      }
+    },
+    {
+      "href": "https://presets.pvme.io/?id=50e03e24-37ad-4be8-abf5-a4bb22c0aa09",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=50e03e24-37ad-4be8-abf5-a4bb22c0aa09"
+      },
+      "location": {
+        "start": 168824,
+        "end": 168909
+      }
+    },
+    {
+      "href": "https://presets.pvme.io/?id=de7d0a00-3300-4607-ad6f-0c98f839c560",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=de7d0a00-3300-4607-ad6f-0c98f839c560"
+      },
+      "location": {
+        "start": 169035,
+        "end": 169119
+      }
+    },
+    {
+      "href": "https://presets.pvme.io/?id=0d30907b-8f74-4b10-9335-335d98008918",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=0d30907b-8f74-4b10-9335-335d98008918"
+      },
+      "location": {
+        "start": 169255,
+        "end": 169344
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/1tatA2X.mp4",
+      "text": "(Example)",
+      "attrs": {
+        "href": "https://img.pvme.io/images/1tatA2X.mp4"
+      },
+      "location": {
+        "start": 171355,
+        "end": 171417
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/Y43i9Dnwrr.mp4",
+      "text": "(Example)",
+      "attrs": {
+        "href": "https://img.pvme.io/images/Y43i9Dnwrr.mp4"
+      },
+      "location": {
+        "start": 172060,
+        "end": 172125
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/TG1pugT.mp4",
+      "text": "(Example)",
+      "attrs": {
+        "href": "https://img.pvme.io/images/TG1pugT.mp4"
+      },
+      "location": {
+        "start": 172629,
+        "end": 172691
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/flnK9zh.mp4",
+      "text": "(Example)",
+      "attrs": {
+        "href": "https://img.pvme.io/images/flnK9zh.mp4"
+      },
+      "location": {
+        "start": 173734,
+        "end": 173796
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/h5uwYYH.mp4",
+      "text": "(Example)",
+      "attrs": {
+        "href": "https://img.pvme.io/images/h5uwYYH.mp4"
+      },
+      "location": {
+        "start": 174348,
+        "end": 174410
+      }
+    },
+    {
+      "href": "https://youtu.be/Eo5sWwnuaPk",
+      "text": "Example kill",
+      "attrs": {
+        "href": "https://youtu.be/Eo5sWwnuaPk"
+      },
+      "location": {
+        "start": 176677,
+        "end": 176732
+      }
+    }
+  ],
+  "files": {
+    "source": "guides/pvme-guides--basic-guides--vindicta-basic/source.json",
+    "inventory": "guides/pvme-guides--basic-guides--vindicta-basic/inventory.json",
+    "article": "guides/pvme-guides--basic-guides--vindicta-basic/article.html",
+    "response": "guides/pvme-guides--basic-guides--vindicta-basic/response.html",
+    "metadata": "guides/pvme-guides--basic-guides--vindicta-basic/metadata.json"
+  },
+  "limitations": [
+    "Exact HTTP article preserved, not dynamic preset/item/API data or image/video-only information.",
+    "No media availability, browser layout, semantic equivalence or live wiki revision parity claim."
+  ]
+}

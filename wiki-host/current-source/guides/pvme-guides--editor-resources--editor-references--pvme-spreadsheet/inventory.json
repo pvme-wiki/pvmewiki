@@ -1,0 +1,1328 @@
+{
+  "schemaVersion": 1,
+  "id": "pvme-guides--editor-resources--editor-references--pvme-spreadsheet",
+  "sourceURL": "https://pvme.io/pvme-guides/editor-resources/editor-references/pvme-spreadsheet/",
+  "responseURL": "https://pvme.io/pvme-guides/editor-resources/editor-references/pvme-spreadsheet/",
+  "boundary": "First original source content after editor utility; no H1; flagged",
+  "offsets": {
+    "start": 164247,
+    "end": 169020
+  },
+  "text": "Introduction\nThe PVMe Spreadsheet is a Google Sheet document that is used to store dynamic information for use in guides. This includes things like prices of items, values of invention components, calculating boss revenue, etc. which can change over time. This guide is a brief overview of the sheet, and how you can use data from it in your guides.\n​\nThe spreadsheet can be found at the following link.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPvME Spreadsheet\n\nCheck out the PvME Spreadsheet here.\nYou can make a copy for own use, but it will not affect any PvME guides.\n\n\n\n\n\n\n\n\n\nNote: Data in guides is only pulled from the master copy of the sheet. To modify existing data, or add new data, use #guide-media-upload-and-request.\n​\nPvME Spreadsheet Layout\n⬥ When you open the spreadsheet, you will see the following sheets at the bottom:\n\n⬥ These tabs correspond to different categories of items/etc. within the game for data is present/calculated for use in the guides:\n‎ ‎ ‎ ‎• Prices: sheet that contains and periodically fetches/updates GE prices of items.\n‎ ‎ ‎ ‎• Bosses: used to calculate earnings for #boss-revenue.\n‎ ‎ ‎ ‎• Slayer: used to calculate earnings for #rs3-slayer.\n‎ ‎ ‎ ‎• Perks: used to calculate cost of Invention components and perks for #perks.\n‎ ‎ ‎ ‎• Unlocks: prices of unlockable items found in #permanent-unlocks.\n‎ ‎ ‎ ‎• Miscellaneous: some misc. prices and calculations.\n‎ ‎ ‎ ‎• Consumables: prices of consumable items found in #consumables.\n‎ ‎ ‎ ‎• Mastery: outdated sheet, kept for historic/reference purposes.\n⬥ To access a specific piece of information, only two things are required: the sheet name and named range.\n​\nUsing Spreadsheet Data In Guides\n⬥ Using data from the spreadsheet in a guide is very straightforward.\n⬥ Values from the sheet can be accessed using the following command: data_pvme:<sheet>_<namedrange>, replacing the contents of <sheet> ‎and <namedrange> ‎with the sheet name and named range respectively.\n⬥ When posted (by the PvME Bot), the command text will get replaced by the value present in that cell.\n​\n⬥ For example, the following sentence might be in a guide:\nGreater Chain <:gchain:1257440278512537740> is a very powerful ability, but is also quite expensive, costing <:coins:698816156961603654> $data_pvmе:unlock_gchain$.\n\n⬥ When posted by the bot, it will look like the following:\n\nNote: The command syntax can also be found in the Commands dropdown menu in the web guide editor tool.\n​\nRequesting Changes/Additions\n⬥ Anyone can make a copy of the sheet for personal use, but only data from the master sheet will be referenced by the bot.\n⬥ To request any changes or additions to the sheet, use the #guide-media-upload-and-request channel.\n​\n      \n    ",
+  "normalizedText": "Introduction The PVMe Spreadsheet is a Google Sheet document that is used to store dynamic information for use in guides. This includes things like prices of items, values of invention components, calculating boss revenue, etc. which can change over time. This guide is a brief overview of the sheet, and how you can use data from it in your guides. ​ The spreadsheet can be found at the following link. PvME Spreadsheet Check out the PvME Spreadsheet here. You can make a copy for own use, but it will not affect any PvME guides. Note: Data in guides is only pulled from the master copy of the sheet. To modify existing data, or add new data, use #guide-media-upload-and-request. ​ PvME Spreadsheet Layout ⬥ When you open the spreadsheet, you will see the following sheets at the bottom: ⬥ These tabs correspond to different categories of items/etc. within the game for data is present/calculated for use in the guides: ‎ ‎ ‎ ‎• Prices: sheet that contains and periodically fetches/updates GE prices of items. ‎ ‎ ‎ ‎• Bosses: used to calculate earnings for #boss-revenue. ‎ ‎ ‎ ‎• Slayer: used to calculate earnings for #rs3-slayer. ‎ ‎ ‎ ‎• Perks: used to calculate cost of Invention components and perks for #perks. ‎ ‎ ‎ ‎• Unlocks: prices of unlockable items found in #permanent-unlocks. ‎ ‎ ‎ ‎• Miscellaneous: some misc. prices and calculations. ‎ ‎ ‎ ‎• Consumables: prices of consumable items found in #consumables. ‎ ‎ ‎ ‎• Mastery: outdated sheet, kept for historic/reference purposes. ⬥ To access a specific piece of information, only two things are required: the sheet name and named range. ​ Using Spreadsheet Data In Guides ⬥ Using data from the spreadsheet in a guide is very straightforward. ⬥ Values from the sheet can be accessed using the following command: data_pvme:<sheet>_<namedrange>, replacing the contents of <sheet> ‎and <namedrange> ‎with the sheet name and named range respectively. ⬥ When posted (by the PvME Bot), the command text will get replaced by the value present in that cell. ​ ⬥ For example, the following sentence might be in a guide: Greater Chain <:gchain:1257440278512537740> is a very powerful ability, but is also quite expensive, costing <:coins:698816156961603654> $data_pvmе:unlock_gchain$. ⬥ When posted by the bot, it will look like the following: Note: The command syntax can also be found in the Commands dropdown menu in the web guide editor tool. ​ Requesting Changes/Additions ⬥ Anyone can make a copy of the sheet for personal use, but only data from the master sheet will be referenced by the bot. ⬥ To request any changes or additions to the sheet, use the #guide-media-upload-and-request channel. ​",
+  "wordStream": [
+    "Introduction",
+    "The",
+    "PVMe",
+    "Spreadsheet",
+    "is",
+    "a",
+    "Google",
+    "Sheet",
+    "document",
+    "that",
+    "is",
+    "used",
+    "to",
+    "store",
+    "dynamic",
+    "information",
+    "for",
+    "use",
+    "in",
+    "guides.",
+    "This",
+    "includes",
+    "things",
+    "like",
+    "prices",
+    "of",
+    "items,",
+    "values",
+    "of",
+    "invention",
+    "components,",
+    "calculating",
+    "boss",
+    "revenue,",
+    "etc.",
+    "which",
+    "can",
+    "change",
+    "over",
+    "time.",
+    "This",
+    "guide",
+    "is",
+    "a",
+    "brief",
+    "overview",
+    "of",
+    "the",
+    "sheet,",
+    "and",
+    "how",
+    "you",
+    "can",
+    "use",
+    "data",
+    "from",
+    "it",
+    "in",
+    "your",
+    "guides.",
+    "​",
+    "The",
+    "spreadsheet",
+    "can",
+    "be",
+    "found",
+    "at",
+    "the",
+    "following",
+    "link.",
+    "PvME",
+    "Spreadsheet",
+    "Check",
+    "out",
+    "the",
+    "PvME",
+    "Spreadsheet",
+    "here.",
+    "You",
+    "can",
+    "make",
+    "a",
+    "copy",
+    "for",
+    "own",
+    "use,",
+    "but",
+    "it",
+    "will",
+    "not",
+    "affect",
+    "any",
+    "PvME",
+    "guides.",
+    "Note:",
+    "Data",
+    "in",
+    "guides",
+    "is",
+    "only",
+    "pulled",
+    "from",
+    "the",
+    "master",
+    "copy",
+    "of",
+    "the",
+    "sheet.",
+    "To",
+    "modify",
+    "existing",
+    "data,",
+    "or",
+    "add",
+    "new",
+    "data,",
+    "use",
+    "#guide-media-upload-and-request.",
+    "​",
+    "PvME",
+    "Spreadsheet",
+    "Layout",
+    "⬥",
+    "When",
+    "you",
+    "open",
+    "the",
+    "spreadsheet,",
+    "you",
+    "will",
+    "see",
+    "the",
+    "following",
+    "sheets",
+    "at",
+    "the",
+    "bottom:",
+    "⬥",
+    "These",
+    "tabs",
+    "correspond",
+    "to",
+    "different",
+    "categories",
+    "of",
+    "items/etc.",
+    "within",
+    "the",
+    "game",
+    "for",
+    "data",
+    "is",
+    "present/calculated",
+    "for",
+    "use",
+    "in",
+    "the",
+    "guides:",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Prices:",
+    "sheet",
+    "that",
+    "contains",
+    "and",
+    "periodically",
+    "fetches/updates",
+    "GE",
+    "prices",
+    "of",
+    "items.",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Bosses:",
+    "used",
+    "to",
+    "calculate",
+    "earnings",
+    "for",
+    "#boss-revenue.",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Slayer:",
+    "used",
+    "to",
+    "calculate",
+    "earnings",
+    "for",
+    "#rs3-slayer.",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Perks:",
+    "used",
+    "to",
+    "calculate",
+    "cost",
+    "of",
+    "Invention",
+    "components",
+    "and",
+    "perks",
+    "for",
+    "#perks.",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Unlocks:",
+    "prices",
+    "of",
+    "unlockable",
+    "items",
+    "found",
+    "in",
+    "#permanent-unlocks.",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Miscellaneous:",
+    "some",
+    "misc.",
+    "prices",
+    "and",
+    "calculations.",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Consumables:",
+    "prices",
+    "of",
+    "consumable",
+    "items",
+    "found",
+    "in",
+    "#consumables.",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Mastery:",
+    "outdated",
+    "sheet,",
+    "kept",
+    "for",
+    "historic/reference",
+    "purposes.",
+    "⬥",
+    "To",
+    "access",
+    "a",
+    "specific",
+    "piece",
+    "of",
+    "information,",
+    "only",
+    "two",
+    "things",
+    "are",
+    "required:",
+    "the",
+    "sheet",
+    "name",
+    "and",
+    "named",
+    "range.",
+    "​",
+    "Using",
+    "Spreadsheet",
+    "Data",
+    "In",
+    "Guides",
+    "⬥",
+    "Using",
+    "data",
+    "from",
+    "the",
+    "spreadsheet",
+    "in",
+    "a",
+    "guide",
+    "is",
+    "very",
+    "straightforward.",
+    "⬥",
+    "Values",
+    "from",
+    "the",
+    "sheet",
+    "can",
+    "be",
+    "accessed",
+    "using",
+    "the",
+    "following",
+    "command:",
+    "data_pvme:<sheet>_<namedrange>,",
+    "replacing",
+    "the",
+    "contents",
+    "of",
+    "<sheet>",
+    "‎and",
+    "<namedrange>",
+    "‎with",
+    "the",
+    "sheet",
+    "name",
+    "and",
+    "named",
+    "range",
+    "respectively.",
+    "⬥",
+    "When",
+    "posted",
+    "(by",
+    "the",
+    "PvME",
+    "Bot),",
+    "the",
+    "command",
+    "text",
+    "will",
+    "get",
+    "replaced",
+    "by",
+    "the",
+    "value",
+    "present",
+    "in",
+    "that",
+    "cell.",
+    "​",
+    "⬥",
+    "For",
+    "example,",
+    "the",
+    "following",
+    "sentence",
+    "might",
+    "be",
+    "in",
+    "a",
+    "guide:",
+    "Greater",
+    "Chain",
+    "<:gchain:1257440278512537740>",
+    "is",
+    "a",
+    "very",
+    "powerful",
+    "ability,",
+    "but",
+    "is",
+    "also",
+    "quite",
+    "expensive,",
+    "costing",
+    "<:coins:698816156961603654>",
+    "$data_pvmе:unlock_gchain$.",
+    "⬥",
+    "When",
+    "posted",
+    "by",
+    "the",
+    "bot,",
+    "it",
+    "will",
+    "look",
+    "like",
+    "the",
+    "following:",
+    "Note:",
+    "The",
+    "command",
+    "syntax",
+    "can",
+    "also",
+    "be",
+    "found",
+    "in",
+    "the",
+    "Commands",
+    "dropdown",
+    "menu",
+    "in",
+    "the",
+    "web",
+    "guide",
+    "editor",
+    "tool.",
+    "​",
+    "Requesting",
+    "Changes/Additions",
+    "⬥",
+    "Anyone",
+    "can",
+    "make",
+    "a",
+    "copy",
+    "of",
+    "the",
+    "sheet",
+    "for",
+    "personal",
+    "use,",
+    "but",
+    "only",
+    "data",
+    "from",
+    "the",
+    "master",
+    "sheet",
+    "will",
+    "be",
+    "referenced",
+    "by",
+    "the",
+    "bot.",
+    "⬥",
+    "To",
+    "request",
+    "any",
+    "changes",
+    "or",
+    "additions",
+    "to",
+    "the",
+    "sheet,",
+    "use",
+    "the",
+    "#guide-media-upload-and-request",
+    "channel.",
+    "​"
+  ],
+  "hashes": {
+    "responseSha256": "84f6f96ce61dab4402925d69c799b438eeb06376c3fb856ed3ceb8137466f68b",
+    "articleSha256": "f430ee6e40eb5011ec504c82e1fc66572c311df30c447fdfacbf02d77082fe7c",
+    "textSha256": "4b013c0c44660ef9c0a2d783f5060009801a0211abac5acf8ca92d61eb1168ba",
+    "normalizedTextSha256": "8b7ef1326f211531b8b467b81f4ea6e3b4b30c3ee36978122d213d69ddb0d2ac"
+  },
+  "headings": [
+    {
+      "tag": "h2",
+      "text": "Introduction",
+      "attrs": {
+        "id": "introduction"
+      },
+      "location": {
+        "start": 164247,
+        "end": 164297
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "PvME Spreadsheet Layout",
+      "attrs": {
+        "id": "pvme-spreadsheet-layout"
+      },
+      "location": {
+        "start": 165996,
+        "end": 166068
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "Using Spreadsheet Data In Guides",
+      "attrs": {
+        "id": "using-spreadsheet-data-in-guides"
+      },
+      "location": {
+        "start": 167475,
+        "end": 167565
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "Requesting Changes/Additions",
+      "attrs": {
+        "id": "requesting-changesadditions"
+      },
+      "location": {
+        "start": 168637,
+        "end": 168718
+      }
+    }
+  ],
+  "media": [
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/u0WjDXv.png"
+      },
+      "text": "",
+      "location": {
+        "start": 166161,
+        "end": 166225
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/KQeL5Dq.png"
+      },
+      "text": "",
+      "location": {
+        "start": 168422,
+        "end": 168486
+      }
+    }
+  ],
+  "links": [
+    {
+      "href": "https://docs.google.com/spreadsheets/d/1OGM9MBUG2bQVbHxlm86Xfs60soFcjINSOrPv1WL3Vgw/",
+      "text": "here",
+      "attrs": {
+        "title": "",
+        "href": "https://docs.google.com/spreadsheets/d/1OGM9MBUG2bQVbHxlm86Xfs60soFcjINSOrPv1WL3Vgw/",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 165423,
+        "end": 165568
+      }
+    },
+    {
+      "href": "",
+      "text": "#guide-media-upload-and-request",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 165902,
+        "end": 165969
+      }
+    },
+    {
+      "href": "",
+      "text": "#boss-revenue",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 166544,
+        "end": 166593
+      }
+    },
+    {
+      "href": "",
+      "text": "#rs3-slayer",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 166667,
+        "end": 166714
+      }
+    },
+    {
+      "href": "",
+      "text": "#perks",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 166817,
+        "end": 166859
+      }
+    },
+    {
+      "href": "",
+      "text": "#permanent-unlocks",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 166939,
+        "end": 166993
+      }
+    },
+    {
+      "href": "",
+      "text": "#consumables",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 167161,
+        "end": 167209
+      }
+    },
+    {
+      "href": "",
+      "text": "#guide-media-upload-and-request",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 168912,
+        "end": 168979
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "h2",
+      "attrs": {
+        "id": "introduction"
+      },
+      "text": "Introduction",
+      "location": {
+        "start": 164247,
+        "end": 164297
+      }
+    },
+    {
+      "index": 1,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 164297,
+        "end": 164298
+      }
+    },
+    {
+      "index": 2,
+      "tag": "p",
+      "attrs": {},
+      "text": "The PVMe Spreadsheet is a Google Sheet document that is used to store dynamic information for use in guides. This includes things like prices of items, values of invention components, calculating boss revenue, etc. which can change over time. This guide is a brief overview of the sheet, and how you can use data from it in your guides.",
+      "location": {
+        "start": 164298,
+        "end": 164641
+      }
+    },
+    {
+      "index": 3,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 164641,
+        "end": 164642
+      }
+    },
+    {
+      "index": 4,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 164642,
+        "end": 164657
+      }
+    },
+    {
+      "index": 5,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 164657,
+        "end": 164658
+      }
+    },
+    {
+      "index": 6,
+      "tag": "p",
+      "attrs": {},
+      "text": "The spreadsheet can be found at the following link.",
+      "location": {
+        "start": 164658,
+        "end": 164716
+      }
+    },
+    {
+      "index": 7,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 164716,
+        "end": 164717
+      }
+    },
+    {
+      "index": 8,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPvME Spreadsheet\n\nCheck out the PvME Spreadsheet here.\nYou can make a copy for own use, but it will not affect any PvME guides.\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 164717,
+        "end": 165758
+      }
+    },
+    {
+      "index": 9,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 165758,
+        "end": 165760
+      }
+    },
+    {
+      "index": 10,
+      "tag": "p",
+      "attrs": {},
+      "text": "Note: Data in guides is only pulled from the master copy of the sheet. To modify existing data, or add new data, use #guide-media-upload-and-request.",
+      "location": {
+        "start": 165760,
+        "end": 165979
+      }
+    },
+    {
+      "index": 11,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 165979,
+        "end": 165980
+      }
+    },
+    {
+      "index": 12,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 165980,
+        "end": 165995
+      }
+    },
+    {
+      "index": 13,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 165995,
+        "end": 165996
+      }
+    },
+    {
+      "index": 14,
+      "tag": "h2",
+      "attrs": {
+        "id": "pvme-spreadsheet-layout"
+      },
+      "text": "PvME Spreadsheet Layout",
+      "location": {
+        "start": 165996,
+        "end": 166068
+      }
+    },
+    {
+      "index": 15,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166068,
+        "end": 166069
+      }
+    },
+    {
+      "index": 16,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ When you open the spreadsheet, you will see the following sheets at the bottom:",
+      "location": {
+        "start": 166069,
+        "end": 166157
+      }
+    },
+    {
+      "index": 17,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166157,
+        "end": 166158
+      }
+    },
+    {
+      "index": 18,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n⬥ These tabs correspond to different categories of items/etc. within the game for data is present/calculated for use in the guides:",
+      "location": {
+        "start": 166158,
+        "end": 166361
+      }
+    },
+    {
+      "index": 19,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166361,
+        "end": 166362
+      }
+    },
+    {
+      "index": 20,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Prices: sheet that contains and periodically fetches/updates GE prices of items.",
+      "location": {
+        "start": 166362,
+        "end": 166475
+      }
+    },
+    {
+      "index": 21,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166475,
+        "end": 166476
+      }
+    },
+    {
+      "index": 22,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Bosses: used to calculate earnings for #boss-revenue.",
+      "location": {
+        "start": 166476,
+        "end": 166598
+      }
+    },
+    {
+      "index": 23,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166598,
+        "end": 166599
+      }
+    },
+    {
+      "index": 24,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Slayer: used to calculate earnings for #rs3-slayer.",
+      "location": {
+        "start": 166599,
+        "end": 166719
+      }
+    },
+    {
+      "index": 25,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166719,
+        "end": 166720
+      }
+    },
+    {
+      "index": 26,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Perks: used to calculate cost of Invention components and perks for #perks.",
+      "location": {
+        "start": 166720,
+        "end": 166864
+      }
+    },
+    {
+      "index": 27,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166864,
+        "end": 166865
+      }
+    },
+    {
+      "index": 28,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Unlocks: prices of unlockable items found in #permanent-unlocks.",
+      "location": {
+        "start": 166865,
+        "end": 166998
+      }
+    },
+    {
+      "index": 29,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166998,
+        "end": 166999
+      }
+    },
+    {
+      "index": 30,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Miscellaneous: some misc. prices and calculations.",
+      "location": {
+        "start": 166999,
+        "end": 167082
+      }
+    },
+    {
+      "index": 31,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 167082,
+        "end": 167083
+      }
+    },
+    {
+      "index": 32,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Consumables: prices of consumable items found in #consumables.",
+      "location": {
+        "start": 167083,
+        "end": 167214
+      }
+    },
+    {
+      "index": 33,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 167214,
+        "end": 167215
+      }
+    },
+    {
+      "index": 34,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Mastery: outdated sheet, kept for historic/reference purposes.",
+      "location": {
+        "start": 167215,
+        "end": 167310
+      }
+    },
+    {
+      "index": 35,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 167310,
+        "end": 167311
+      }
+    },
+    {
+      "index": 36,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ To access a specific piece of information, only two things are required: the sheet name and named range.",
+      "location": {
+        "start": 167311,
+        "end": 167458
+      }
+    },
+    {
+      "index": 37,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 167458,
+        "end": 167459
+      }
+    },
+    {
+      "index": 38,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 167459,
+        "end": 167474
+      }
+    },
+    {
+      "index": 39,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 167474,
+        "end": 167475
+      }
+    },
+    {
+      "index": 40,
+      "tag": "h2",
+      "attrs": {
+        "id": "using-spreadsheet-data-in-guides"
+      },
+      "text": "Using Spreadsheet Data In Guides",
+      "location": {
+        "start": 167475,
+        "end": 167565
+      }
+    },
+    {
+      "index": 41,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 167565,
+        "end": 167566
+      }
+    },
+    {
+      "index": 42,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Using data from the spreadsheet in a guide is very straightforward.",
+      "location": {
+        "start": 167566,
+        "end": 167642
+      }
+    },
+    {
+      "index": 43,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 167642,
+        "end": 167643
+      }
+    },
+    {
+      "index": 44,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Values from the sheet can be accessed using the following command: data_pvme:<sheet>_<namedrange>, replacing the contents of <sheet> ‎and <namedrange> ‎with the sheet name and named range respectively.",
+      "location": {
+        "start": 167643,
+        "end": 167950
+      }
+    },
+    {
+      "index": 45,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 167950,
+        "end": 167951
+      }
+    },
+    {
+      "index": 46,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ When posted (by the PvME Bot), the command text will get replaced by the value present in that cell.",
+      "location": {
+        "start": 167951,
+        "end": 168069
+      }
+    },
+    {
+      "index": 47,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168069,
+        "end": 168070
+      }
+    },
+    {
+      "index": 48,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 168070,
+        "end": 168085
+      }
+    },
+    {
+      "index": 49,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168085,
+        "end": 168086
+      }
+    },
+    {
+      "index": 50,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ For example, the following sentence might be in a guide:",
+      "location": {
+        "start": 168086,
+        "end": 168151
+      }
+    },
+    {
+      "index": 51,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168151,
+        "end": 168152
+      }
+    },
+    {
+      "index": 52,
+      "tag": "pre",
+      "attrs": {},
+      "text": "Greater Chain <:gchain:1257440278512537740> is a very powerful ability, but is also quite expensive, costing <:coins:698816156961603654> $data_pvmе:unlock_gchain$.\n",
+      "location": {
+        "start": 168152,
+        "end": 168352
+      }
+    },
+    {
+      "index": 53,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168352,
+        "end": 168353
+      }
+    },
+    {
+      "index": 54,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ When posted by the bot, it will look like the following:",
+      "location": {
+        "start": 168353,
+        "end": 168418
+      }
+    },
+    {
+      "index": 55,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168418,
+        "end": 168419
+      }
+    },
+    {
+      "index": 56,
+      "tag": "p",
+      "attrs": {},
+      "text": "\nNote: The command syntax can also be found in the Commands dropdown menu in the web guide editor tool.",
+      "location": {
+        "start": 168419,
+        "end": 168620
+      }
+    },
+    {
+      "index": 57,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168620,
+        "end": 168621
+      }
+    },
+    {
+      "index": 58,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 168621,
+        "end": 168636
+      }
+    },
+    {
+      "index": 59,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168636,
+        "end": 168637
+      }
+    },
+    {
+      "index": 60,
+      "tag": "h2",
+      "attrs": {
+        "id": "requesting-changesadditions"
+      },
+      "text": "Requesting Changes/Additions",
+      "location": {
+        "start": 168637,
+        "end": 168718
+      }
+    },
+    {
+      "index": 61,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168718,
+        "end": 168719
+      }
+    },
+    {
+      "index": 62,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Anyone can make a copy of the sheet for personal use, but only data from the master sheet will be referenced by the bot.",
+      "location": {
+        "start": 168719,
+        "end": 168848
+      }
+    },
+    {
+      "index": 63,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168848,
+        "end": 168849
+      }
+    },
+    {
+      "index": 64,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ To request any changes or additions to the sheet, use the #guide-media-upload-and-request channel.",
+      "location": {
+        "start": 168849,
+        "end": 168992
+      }
+    },
+    {
+      "index": 65,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168992,
+        "end": 168993
+      }
+    },
+    {
+      "index": 66,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 168993,
+        "end": 169008
+      }
+    },
+    {
+      "index": 67,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n      \n    ",
+      "location": {
+        "start": 169008,
+        "end": 169020
+      }
+    }
+  ]
+}

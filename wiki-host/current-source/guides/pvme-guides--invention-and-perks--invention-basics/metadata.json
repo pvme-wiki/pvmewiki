@@ -1,0 +1,3470 @@
+{
+  "schemaVersion": 1,
+  "captureVersion": 2,
+  "id": "pvme-guides--invention-and-perks--invention-basics",
+  "sourceURL": "https://pvme.io/pvme-guides/invention-and-perks/invention-basics/",
+  "officialURL": "https://pvme.io/pvme-guides/invention-and-perks/invention-basics/",
+  "responseURL": "https://pvme.io/pvme-guides/invention-and-perks/invention-basics/",
+  "status": "captured",
+  "statusCode": 200,
+  "retrievedAt": "2026-11-16T00:26:49.499Z",
+  "sitemapLastmod": "2026-11-15",
+  "sitemapSha256": "7166472554d36bfc69a7e14f7298264c0f9bfac00dc9034e5bfd0fba58a14b07",
+  "kind": "guide",
+  "audience": "player",
+  "title": "PvME/Invention perks/Invention Basics",
+  "titleStatus": "existing-exact-url",
+  "baselineId": "pvme-guides--invention-and-perks--invention-basics",
+  "sourceTitle": "Invention Basics Guide ",
+  "sourceH1": "Invention Basics Guide ",
+  "discovery": "official-sitemap",
+  "directory": "guides/pvme-guides--invention-and-perks--invention-basics",
+  "sourceSha256": "27f8b9eb97c62a3595cc77d52690c149fbfc91ae460aa17856f95e71861fec11",
+  "bodySha256": "27f8b9eb97c62a3595cc77d52690c149fbfc91ae460aa17856f95e71861fec11",
+  "normalizedTextSha256": "6f4822f3ad41ceb90cccef9a98991c96018b41e2da41b0da4aacf58ad420c974",
+  "parser": "parse5 8.1.1; entities 9.0.0; sourceCodeLocationInfo",
+  "headers": {
+    "accept-ranges": "bytes",
+    "access-control-allow-origin": "*",
+    "age": "0",
+    "cache-control": "max-age=600",
+    "connection": "keep-alive",
+    "content-encoding": "gzip",
+    "content-length": "28109",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Mon, 16 Nov 2026 00:26:49 GMT",
+    "etag": "W/\"6afa1a34-39569\"",
+    "expires": "Mon, 16 Nov 2026 00:30:27 GMT",
+    "last-modified": "Sun, 15 Nov 2026 20:46:44 GMT",
+    "server": "GitHub.com",
+    "strict-transport-security": "max-age=31556952",
+    "vary": "Accept-Encoding",
+    "via": "1.1 varnish",
+    "x-cache": "HIT",
+    "x-cache-hits": "0",
+    "x-fastly-request-id": "3658b93ca93a22eac400e1a8fcee7fa877d4fcc0",
+    "x-github-edge-region": "iad",
+    "x-github-request-id": "7734:21FFE:5015A39:56671AA:6AFA4C4B",
+    "x-proxy-cache": "MISS",
+    "x-served-by": "cache-iad-khef600063-IAD",
+    "x-timer": "S1794788810.938322,VS0,VE25"
+  },
+  "hashes": {
+    "responseSha256": "e635b0d596653fc6b7c1b7cd5294bd2cf4ce1e78cd9768f5a9999c34c6d68210",
+    "articleSha256": "27f8b9eb97c62a3595cc77d52690c149fbfc91ae460aa17856f95e71861fec11",
+    "textSha256": "021c9eec88edd7bf2267477eb44667a5bea344cb6a25b012fc0d44cdf0e580b5",
+    "normalizedTextSha256": "6f4822f3ad41ceb90cccef9a98991c96018b41e2da41b0da4aacf58ad420c974"
+  },
+  "counts": {
+    "bytes": 234857,
+    "articleBytes": 55771,
+    "nodes": 1969,
+    "topLevelNodes": 706,
+    "words": 3341,
+    "images": 167,
+    "videos": 0,
+    "sources": 0,
+    "links": 95
+  },
+  "tags": {
+    "h1": 1,
+    "img": 167,
+    "p": 313,
+    "em": 16,
+    "h2": 12,
+    "ins": 15,
+    "strong": 125,
+    "a": 95,
+    "h3": 25,
+    "div": 34,
+    "u": 2,
+    "code": 1
+  },
+  "mediaHosts": {
+    "cdn.discordapp.com": 153,
+    "img.pvme.io": 14
+  },
+  "patterns": [],
+  "media": [
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Invention",
+        "class": "d-emoji",
+        "alt": "Invention",
+        "src": "https://cdn.discordapp.com/emojis/689509250946695292.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 177444,
+        "end": 177566
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "smithing",
+        "class": "d-emoji",
+        "alt": "smithing",
+        "src": "https://cdn.discordapp.com/emojis/1039864814379466812.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 178787,
+        "end": 178908
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "crafting",
+        "class": "d-emoji",
+        "alt": "crafting",
+        "src": "https://cdn.discordapp.com/emojis/1039864810239705119.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 178937,
+        "end": 179058
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "divination",
+        "class": "d-emoji",
+        "alt": "divination",
+        "src": "https://cdn.discordapp.com/emojis/1042453694735712286.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 179089,
+        "end": 179214
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/Bq1tAou.png"
+      },
+      "text": "",
+      "location": {
+        "start": 179400,
+        "end": 179464
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/1u8quO8.png"
+      },
+      "text": "",
+      "location": {
+        "start": 179522,
+        "end": 179586
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/VcjjxMr.png"
+      },
+      "text": "",
+      "location": {
+        "start": 180129,
+        "end": 180193
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/L1xzFwg.png"
+      },
+      "text": "",
+      "location": {
+        "start": 180332,
+        "end": 180396
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Invention",
+        "class": "d-emoji",
+        "alt": "Invention",
+        "src": "https://cdn.discordapp.com/emojis/689509250946695292.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 180866,
+        "end": 180988
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/R5unsHe.png"
+      },
+      "text": "",
+      "location": {
+        "start": 181008,
+        "end": 181072
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Invention",
+        "class": "d-emoji",
+        "alt": "Invention",
+        "src": "https://cdn.discordapp.com/emojis/689509250946695292.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 181184,
+        "end": 181306
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/7q46xXN.png"
+      },
+      "text": "",
+      "location": {
+        "start": 181458,
+        "end": 181522
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/PCvnhmH9DF.png"
+      },
+      "text": "",
+      "location": {
+        "start": 181781,
+        "end": 181848
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "divinecharge",
+        "class": "d-emoji",
+        "alt": "divinecharge",
+        "src": "https://cdn.discordapp.com/emojis/1010485547598356530.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 181892,
+        "end": 182021
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "ancientweapongizmo",
+        "class": "d-emoji",
+        "alt": "ancientweapongizmo",
+        "src": "https://cdn.discordapp.com/emojis/1088041624803745862.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182030,
+        "end": 182171
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "ancientarmourgizmo",
+        "class": "d-emoji",
+        "alt": "ancientarmourgizmo",
+        "src": "https://cdn.discordapp.com/emojis/697405383769194516.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182172,
+        "end": 182312
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "ancienttoolgizmo",
+        "class": "d-emoji",
+        "alt": "ancienttoolgizmo",
+        "src": "https://cdn.discordapp.com/emojis/1088041619653152858.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182313,
+        "end": 182450
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "augmentor",
+        "class": "d-emoji",
+        "alt": "augmentor",
+        "src": "https://cdn.discordapp.com/emojis/1039863296729296946.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182468,
+        "end": 182591
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "gizmodissolver",
+        "class": "d-emoji",
+        "alt": "gizmodissolver",
+        "src": "https://cdn.discordapp.com/emojis/1039869649975787580.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182592,
+        "end": 182725
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "augmentationdissolver",
+        "class": "d-emoji",
+        "alt": "augmentationdissolver",
+        "src": "https://cdn.discordapp.com/emojis/1039869647677313144.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182726,
+        "end": 182873
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "dummy",
+        "class": "d-emoji",
+        "alt": "dummy",
+        "src": "https://cdn.discordapp.com/emojis/656844963522281473.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182874,
+        "end": 182988
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "equipmentseperator",
+        "class": "d-emoji",
+        "alt": "equipmentseperator",
+        "src": "https://cdn.discordapp.com/emojis/1039869642455404594.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182989,
+        "end": 183130
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "sirenicbody",
+        "class": "d-emoji",
+        "alt": "sirenicbody",
+        "src": "https://cdn.discordapp.com/emojis/643846948570267648.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 183156,
+        "end": 183282
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "sireniclegs",
+        "class": "d-emoji",
+        "alt": "sireniclegs",
+        "src": "https://cdn.discordapp.com/emojis/643846938537623564.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 183283,
+        "end": 183409
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/96igPYd.png"
+      },
+      "text": "",
+      "location": {
+        "start": 184007,
+        "end": 184071
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/M0Oc0Ey.png"
+      },
+      "text": "",
+      "location": {
+        "start": 184192,
+        "end": 184256
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "baseparts",
+        "class": "d-emoji",
+        "alt": "baseparts",
+        "src": "https://cdn.discordapp.com/emojis/583434183448330270.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 185147,
+        "end": 185269
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bladeparts",
+        "class": "d-emoji",
+        "alt": "bladeparts",
+        "src": "https://cdn.discordapp.com/emojis/583434183465238536.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 185464,
+        "end": 185588
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "clearparts",
+        "class": "d-emoji",
+        "alt": "clearparts",
+        "src": "https://cdn.discordapp.com/emojis/583434183674953728.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 185788,
+        "end": 185912
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "connectorparts",
+        "class": "d-emoji",
+        "alt": "connectorparts",
+        "src": "https://cdn.discordapp.com/emojis/583434183200866321.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 186071,
+        "end": 186203
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "coverparts",
+        "class": "d-emoji",
+        "alt": "coverparts",
+        "src": "https://cdn.discordapp.com/emojis/583434318848720906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 186364,
+        "end": 186488
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "craftedparts",
+        "class": "d-emoji",
+        "alt": "craftedparts",
+        "src": "https://cdn.discordapp.com/emojis/583434317347291138.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 186659,
+        "end": 186787
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "crystalparts",
+        "class": "d-emoji",
+        "alt": "crystalparts",
+        "src": "https://cdn.discordapp.com/emojis/583434317431046155.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 187056,
+        "end": 187184
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deflectingparts",
+        "class": "d-emoji",
+        "alt": "deflectingparts",
+        "src": "https://cdn.discordapp.com/emojis/583434317644955648.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 187391,
+        "end": 187525
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "delicateparts",
+        "class": "d-emoji",
+        "alt": "delicateparts",
+        "src": "https://cdn.discordapp.com/emojis/583434317301022723.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 187706,
+        "end": 187836
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "flexibleparts",
+        "class": "d-emoji",
+        "alt": "flexibleparts",
+        "src": "https://cdn.discordapp.com/emojis/583434317699743754.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 188064,
+        "end": 188194
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "dextrouscomp",
+        "class": "d-emoji",
+        "alt": "dextrouscomp",
+        "src": "https://cdn.discordapp.com/emojis/607288026263191563.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 188333,
+        "end": 188461
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "strongcomp",
+        "class": "d-emoji",
+        "alt": "strongcomp",
+        "src": "https://cdn.discordapp.com/emojis/583434604632080387.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 188487,
+        "end": 188611
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "headparts",
+        "class": "d-emoji",
+        "alt": "headparts",
+        "src": "https://cdn.discordapp.com/emojis/583434317686898716.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 188622,
+        "end": 188744
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magicparts",
+        "class": "d-emoji",
+        "alt": "magicparts",
+        "src": "https://cdn.discordapp.com/emojis/583434336263602187.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 188897,
+        "end": 189021
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "metallicparts",
+        "class": "d-emoji",
+        "alt": "metallicparts",
+        "src": "https://cdn.discordapp.com/emojis/583434336553140224.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 189185,
+        "end": 189315
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "organicparts",
+        "class": "d-emoji",
+        "alt": "organicparts",
+        "src": "https://cdn.discordapp.com/emojis/583434337182154764.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 189472,
+        "end": 189600
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "paddedparts",
+        "class": "d-emoji",
+        "alt": "paddedparts",
+        "src": "https://cdn.discordapp.com/emojis/583434336397688834.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 189770,
+        "end": 189896
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "platedparts",
+        "class": "d-emoji",
+        "alt": "platedparts",
+        "src": "https://cdn.discordapp.com/emojis/583434336737427475.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 190088,
+        "end": 190214
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "simpleparts",
+        "class": "d-emoji",
+        "alt": "simpleparts",
+        "src": "https://cdn.discordapp.com/emojis/583434336741621761.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 190387,
+        "end": 190513
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "smoothparts",
+        "class": "d-emoji",
+        "alt": "smoothparts",
+        "src": "https://cdn.discordapp.com/emojis/583434336674775050.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 190723,
+        "end": 190849
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "spikedparts",
+        "class": "d-emoji",
+        "alt": "spikedparts",
+        "src": "https://cdn.discordapp.com/emojis/583434336842547200.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 191010,
+        "end": 191136
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "spiritualparts",
+        "class": "d-emoji",
+        "alt": "spiritualparts",
+        "src": "https://cdn.discordapp.com/emojis/583434317926105118.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 191280,
+        "end": 191412
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "staveparts",
+        "class": "d-emoji",
+        "alt": "staveparts",
+        "src": "https://cdn.discordapp.com/emojis/583434317728841765.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 191621,
+        "end": 191745
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "dextrouscomp",
+        "class": "d-emoji",
+        "alt": "dextrouscomp",
+        "src": "https://cdn.discordapp.com/emojis/607288026263191563.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 191878,
+        "end": 192006
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "strongcomp",
+        "class": "d-emoji",
+        "alt": "strongcomp",
+        "src": "https://cdn.discordapp.com/emojis/583434604632080387.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 192032,
+        "end": 192156
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "tensileparts",
+        "class": "d-emoji",
+        "alt": "tensileparts",
+        "src": "https://cdn.discordapp.com/emojis/583434317720584224.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 192167,
+        "end": 192295
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "dextrouscomp",
+        "class": "d-emoji",
+        "alt": "dextrouscomp",
+        "src": "https://cdn.discordapp.com/emojis/607288026263191563.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 192432,
+        "end": 192560
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "strongcomp",
+        "class": "d-emoji",
+        "alt": "strongcomp",
+        "src": "https://cdn.discordapp.com/emojis/583434604632080387.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 192586,
+        "end": 192710
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "dextrouscomp",
+        "class": "d-emoji",
+        "alt": "dextrouscomp",
+        "src": "https://cdn.discordapp.com/emojis/607288026263191563.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 192817,
+        "end": 192945
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "directcomp",
+        "class": "d-emoji",
+        "alt": "directcomp",
+        "src": "https://cdn.discordapp.com/emojis/583428397112492043.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 193106,
+        "end": 193230
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "enhancingcomp",
+        "class": "d-emoji",
+        "alt": "enhancingcomp",
+        "src": "https://cdn.discordapp.com/emojis/583434584113283072.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 193417,
+        "end": 193547
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "etherealcomp",
+        "class": "d-emoji",
+        "alt": "etherealcomp",
+        "src": "https://cdn.discordapp.com/emojis/583434584805343242.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 193777,
+        "end": 193905
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "evasivecomp",
+        "class": "d-emoji",
+        "alt": "evasivecomp",
+        "src": "https://cdn.discordapp.com/emojis/643829647049752586.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 194088,
+        "end": 194214
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "healthycomp",
+        "class": "d-emoji",
+        "alt": "healthycomp",
+        "src": "https://cdn.discordapp.com/emojis/583428396994920521.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 194394,
+        "end": 194520
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "heavycomp",
+        "class": "d-emoji",
+        "alt": "heavycomp",
+        "src": "https://cdn.discordapp.com/emojis/583434584730107904.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 194768,
+        "end": 194890
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "imbuedcomp",
+        "class": "d-emoji",
+        "alt": "imbuedcomp",
+        "src": "https://cdn.discordapp.com/emojis/583428397464682517.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 195061,
+        "end": 195185
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "lightcomp",
+        "class": "d-emoji",
+        "alt": "lightcomp",
+        "src": "https://cdn.discordapp.com/emojis/583434584792891452.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 195315,
+        "end": 195437
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "livingcomp",
+        "class": "d-emoji",
+        "alt": "livingcomp",
+        "src": "https://cdn.discordapp.com/emojis/583434584679776256.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 195568,
+        "end": 195692
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "manufacturedcomp",
+        "class": "d-emoji",
+        "alt": "manufacturedcomp",
+        "src": "https://cdn.discordapp.com/emojis/1495031880964374688.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 195860,
+        "end": 195997
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "offcutcomp",
+        "class": "d-emoji",
+        "alt": "offcutcomp",
+        "src": "https://cdn.discordapp.com/emojis/1495031942918180974.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 196146,
+        "end": 196271
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "piouscomp",
+        "class": "d-emoji",
+        "alt": "piouscomp",
+        "src": "https://cdn.discordapp.com/emojis/583434604363644929.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 196435,
+        "end": 196557
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "powerfulcomp",
+        "class": "d-emoji",
+        "alt": "powerfulcomp",
+        "src": "https://cdn.discordapp.com/emojis/583434604644663299.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 196704,
+        "end": 196832
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "preciouscomp",
+        "class": "d-emoji",
+        "alt": "preciouscomp",
+        "src": "https://cdn.discordapp.com/emojis/583434604724224008.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 197065,
+        "end": 197193
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "precisecomp",
+        "class": "d-emoji",
+        "alt": "precisecomp",
+        "src": "https://cdn.discordapp.com/emojis/583434604711510026.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 197347,
+        "end": 197473
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "dextrouscomp",
+        "class": "d-emoji",
+        "alt": "dextrouscomp",
+        "src": "https://cdn.discordapp.com/emojis/607288026263191563.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 197610,
+        "end": 197738
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "strongcomp",
+        "class": "d-emoji",
+        "alt": "strongcomp",
+        "src": "https://cdn.discordapp.com/emojis/583434604632080387.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 197764,
+        "end": 197888
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "protectivecomp",
+        "class": "d-emoji",
+        "alt": "protectivecomp",
+        "src": "https://cdn.discordapp.com/emojis/583434604267175937.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 197899,
+        "end": 198031
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "refinedcomp",
+        "class": "d-emoji",
+        "alt": "refinedcomp",
+        "src": "https://cdn.discordapp.com/emojis/583434604501794883.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 198212,
+        "end": 198338
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "sharpcomp",
+        "class": "d-emoji",
+        "alt": "sharpcomp",
+        "src": "https://cdn.discordapp.com/emojis/583434604766035970.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 198481,
+        "end": 198603
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "strongcomp",
+        "class": "d-emoji",
+        "alt": "strongcomp",
+        "src": "https://cdn.discordapp.com/emojis/583434604632080387.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 198748,
+        "end": 198872
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "stunningcomp",
+        "class": "d-emoji",
+        "alt": "stunningcomp",
+        "src": "https://cdn.discordapp.com/emojis/583434584490770495.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 199007,
+        "end": 199135
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "subtlecomp",
+        "class": "d-emoji",
+        "alt": "subtlecomp",
+        "src": "https://cdn.discordapp.com/emojis/607288026305134608.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 199294,
+        "end": 199418
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "swiftcomp",
+        "class": "d-emoji",
+        "alt": "swiftcomp",
+        "src": "https://cdn.discordapp.com/emojis/583434584717262855.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 199589,
+        "end": 199711
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "variablecomp",
+        "class": "d-emoji",
+        "alt": "variablecomp",
+        "src": "https://cdn.discordapp.com/emojis/583428408554291221.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 199839,
+        "end": 199967
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "armadylcomp",
+        "class": "d-emoji",
+        "alt": "armadylcomp",
+        "src": "https://cdn.discordapp.com/emojis/513190158477033474.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 200336,
+        "end": 200462
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "ascendedcomp",
+        "class": "d-emoji",
+        "alt": "ascendedcomp",
+        "src": "https://cdn.discordapp.com/emojis/583435429848678439.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 200628,
+        "end": 200756
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "averniccomp",
+        "class": "d-emoji",
+        "alt": "averniccomp",
+        "src": "https://cdn.discordapp.com/emojis/583435429840420865.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 200895,
+        "end": 201021
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bandoscomp",
+        "class": "d-emoji",
+        "alt": "bandoscomp",
+        "src": "https://cdn.discordapp.com/emojis/583435429861261322.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 201256,
+        "end": 201380
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "brassicancomp",
+        "class": "d-emoji",
+        "alt": "brassicancomp",
+        "src": "https://cdn.discordapp.com/emojis/583435429638963205.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 201514,
+        "end": 201644
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "clockworkcomp",
+        "class": "d-emoji",
+        "alt": "clockworkcomp",
+        "src": "https://cdn.discordapp.com/emojis/513206171549696000.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 201776,
+        "end": 201906
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "corporealcomp",
+        "class": "d-emoji",
+        "alt": "corporealcomp",
+        "src": "https://cdn.discordapp.com/emojis/583435429878038528.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 202048,
+        "end": 202178
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "culinarycomp",
+        "class": "d-emoji",
+        "alt": "culinarycomp",
+        "src": "https://cdn.discordapp.com/emojis/583435429500551169.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 202324,
+        "end": 202452
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "cywircomp",
+        "class": "d-emoji",
+        "alt": "cywircomp",
+        "src": "https://cdn.discordapp.com/emojis/583430147538026496.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 202614,
+        "end": 202736
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "dragonfirecomp",
+        "class": "d-emoji",
+        "alt": "dragonfirecomp",
+        "src": "https://cdn.discordapp.com/emojis/583428397439516673.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 202961,
+        "end": 203093
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "ecliptic",
+        "class": "d-emoji",
+        "alt": "ecliptic",
+        "src": "https://cdn.discordapp.com/emojis/1480620316467400714.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 203254,
+        "end": 203375
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "explosivecomp",
+        "class": "d-emoji",
+        "alt": "explosivecomp",
+        "src": "https://cdn.discordapp.com/emojis/513190158917566485.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 203558,
+        "end": 203688
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "facetedcomp",
+        "class": "d-emoji",
+        "alt": "facetedcomp",
+        "src": "https://cdn.discordapp.com/emojis/607288026355466299.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 203824,
+        "end": 203950
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "fortunatecomp",
+        "class": "d-emoji",
+        "alt": "fortunatecomp",
+        "src": "https://cdn.discordapp.com/emojis/583435543845797891.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 204168,
+        "end": 204298
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "fungalcomp",
+        "class": "d-emoji",
+        "alt": "fungalcomp",
+        "src": "https://cdn.discordapp.com/emojis/607289548661063688.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 204450,
+        "end": 204574
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "harnessedcomp",
+        "class": "d-emoji",
+        "alt": "harnessedcomp",
+        "src": "https://cdn.discordapp.com/emojis/583428397296910356.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 204712,
+        "end": 204842
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "ilujankancomp",
+        "class": "d-emoji",
+        "alt": "ilujankancomp",
+        "src": "https://cdn.discordapp.com/emojis/513190158674427906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 204994,
+        "end": 205124
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "knightlycomp",
+        "class": "d-emoji",
+        "alt": "knightlycomp",
+        "src": "https://cdn.discordapp.com/emojis/583435544315559977.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 205363,
+        "end": 205491
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "noxiouscomp",
+        "class": "d-emoji",
+        "alt": "noxiouscomp",
+        "src": "https://cdn.discordapp.com/emojis/513203842473525248.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 205634,
+        "end": 205760
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "oceaniccomp",
+        "class": "d-emoji",
+        "alt": "oceaniccomp",
+        "src": "https://cdn.discordapp.com/emojis/607288026229506058.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 205897,
+        "end": 206023
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "pestiferouscomp",
+        "class": "d-emoji",
+        "alt": "pestiferouscomp",
+        "src": "https://cdn.discordapp.com/emojis/583435544088936491.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 206164,
+        "end": 206298
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "resilientcomp",
+        "class": "d-emoji",
+        "alt": "resilientcomp",
+        "src": "https://cdn.discordapp.com/emojis/583435452556640259.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 206463,
+        "end": 206593
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "rumblingcomp",
+        "class": "d-emoji",
+        "alt": "rumblingcomp",
+        "src": "https://cdn.discordapp.com/emojis/583435452225421347.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 206782,
+        "end": 206910
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "saradomincomp",
+        "class": "d-emoji",
+        "alt": "saradomincomp",
+        "src": "https://cdn.discordapp.com/emojis/583435429785632769.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 207061,
+        "end": 207191
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "serencomp",
+        "class": "d-emoji",
+        "alt": "serencomp",
+        "src": "https://cdn.discordapp.com/emojis/583435429877907456.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 207366,
+        "end": 207488
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "shadowcomp",
+        "class": "d-emoji",
+        "alt": "shadowcomp",
+        "src": "https://cdn.discordapp.com/emojis/583428397318012938.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 207648,
+        "end": 207772
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "shiftingcomp",
+        "class": "d-emoji",
+        "alt": "shiftingcomp",
+        "src": "https://cdn.discordapp.com/emojis/583435429978570763.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 208004,
+        "end": 208132
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "silentcomp",
+        "class": "d-emoji",
+        "alt": "silentcomp",
+        "src": "https://cdn.discordapp.com/emojis/583435429563465730.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 208295,
+        "end": 208419
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "thirdagecomp",
+        "class": "d-emoji",
+        "alt": "thirdagecomp",
+        "src": "https://cdn.discordapp.com/emojis/583428397204766783.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 208631,
+        "end": 208759
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "undeadcomp",
+        "class": "d-emoji",
+        "alt": "undeadcomp",
+        "src": "https://cdn.discordapp.com/emojis/583428397397573659.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 208902,
+        "end": 209026
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "zamorakcomp",
+        "class": "d-emoji",
+        "alt": "zamorakcomp",
+        "src": "https://cdn.discordapp.com/emojis/607288026334232576.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 209183,
+        "end": 209309
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "zaroscomp",
+        "class": "d-emoji",
+        "alt": "zaroscomp",
+        "src": "https://cdn.discordapp.com/emojis/583435429949341697.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 209495,
+        "end": 209617
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "historiccomps",
+        "class": "d-emoji",
+        "alt": "historiccomps",
+        "src": "https://cdn.discordapp.com/emojis/697405254676906018.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 209912,
+        "end": 210042
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "classiccomps",
+        "class": "d-emoji",
+        "alt": "classiccomps",
+        "src": "https://cdn.discordapp.com/emojis/697405254337167401.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 210137,
+        "end": 210265
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "vintagecomps",
+        "class": "d-emoji",
+        "alt": "vintagecomps",
+        "src": "https://cdn.discordapp.com/emojis/697405254098092063.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 210358,
+        "end": 210486
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "timeworncomps",
+        "class": "d-emoji",
+        "alt": "timeworncomps",
+        "src": "https://cdn.discordapp.com/emojis/697405254265864244.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 210579,
+        "end": 210709
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "scavenging4",
+        "class": "d-emoji",
+        "alt": "scavenging4",
+        "src": "https://cdn.discordapp.com/emojis/1005934140669046824.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 210955,
+        "end": 211082
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "preciouscomp",
+        "class": "d-emoji",
+        "alt": "preciouscomp",
+        "src": "https://cdn.discordapp.com/emojis/583434604724224008.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 211146,
+        "end": 211274
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "invention",
+        "class": "d-emoji",
+        "alt": "invention",
+        "src": "https://cdn.discordapp.com/emojis/689509250946695292.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 211304,
+        "end": 211426
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "preciouscomp",
+        "class": "d-emoji",
+        "alt": "preciouscomp",
+        "src": "https://cdn.discordapp.com/emojis/583434604724224008.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 211583,
+        "end": 211711
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "armadylcomp",
+        "class": "d-emoji",
+        "alt": "armadylcomp",
+        "src": "https://cdn.discordapp.com/emojis/513190158477033474.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 212396,
+        "end": 212522
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "zamorakcomp",
+        "class": "d-emoji",
+        "alt": "zamorakcomp",
+        "src": "https://cdn.discordapp.com/emojis/607288026334232576.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 212527,
+        "end": 212653
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "crystalparts",
+        "class": "d-emoji",
+        "alt": "crystalparts",
+        "src": "https://cdn.discordapp.com/emojis/583434317431046155.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 212813,
+        "end": 212941
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "facetedcomp",
+        "class": "d-emoji",
+        "alt": "facetedcomp",
+        "src": "https://cdn.discordapp.com/emojis/607288026355466299.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 212946,
+        "end": 213072
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "ancienttoolgizmo",
+        "class": "d-emoji",
+        "alt": "ancienttoolgizmo",
+        "src": "https://cdn.discordapp.com/emojis/1088041619653152858.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 213425,
+        "end": 213562
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "ancientweapongizmo",
+        "class": "d-emoji",
+        "alt": "ancientweapongizmo",
+        "src": "https://cdn.discordapp.com/emojis/1088041624803745862.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 213572,
+        "end": 213713
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "ancientarmourgizmo",
+        "class": "d-emoji",
+        "alt": "ancientarmourgizmo",
+        "src": "https://cdn.discordapp.com/emojis/697405383769194516.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 213725,
+        "end": 213865
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Invention",
+        "class": "d-emoji",
+        "alt": "Invention",
+        "src": "https://cdn.discordapp.com/emojis/689509250946695292.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 214034,
+        "end": 214156
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Invention",
+        "class": "d-emoji",
+        "alt": "Invention",
+        "src": "https://cdn.discordapp.com/emojis/689509250946695292.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 214198,
+        "end": 214320
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Invention",
+        "class": "d-emoji",
+        "alt": "Invention",
+        "src": "https://cdn.discordapp.com/emojis/689509250946695292.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 214360,
+        "end": 214482
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/lpZ1nXp.png"
+      },
+      "text": "",
+      "location": {
+        "start": 214701,
+        "end": 214765
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/H3qQ2F9.png"
+      },
+      "text": "",
+      "location": {
+        "start": 215066,
+        "end": 215130
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "biting4",
+        "class": "d-emoji",
+        "alt": "biting4",
+        "src": "https://cdn.discordapp.com/emojis/712073087809617931.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 215367,
+        "end": 215485
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "mob",
+        "class": "d-emoji",
+        "alt": "mob",
+        "src": "https://cdn.discordapp.com/emojis/689501908628799488.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 215497,
+        "end": 215607
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "gizmodissolver",
+        "class": "d-emoji",
+        "alt": "gizmodissolver",
+        "src": "https://cdn.discordapp.com/emojis/1039869649975787580.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 217079,
+        "end": 217212
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "augmentationdissolver",
+        "class": "d-emoji",
+        "alt": "augmentationdissolver",
+        "src": "https://cdn.discordapp.com/emojis/1039869647677313144.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 217343,
+        "end": 217490
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "equipmentseperator",
+        "class": "d-emoji",
+        "alt": "equipmentseperator",
+        "src": "https://cdn.discordapp.com/emojis/1039869642455404594.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 217609,
+        "end": 217750
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "divinecharge",
+        "class": "d-emoji",
+        "alt": "divinecharge",
+        "src": "https://cdn.discordapp.com/emojis/1010485547598356530.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 217956,
+        "end": 218085
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "augmentor",
+        "class": "d-emoji",
+        "alt": "augmentor",
+        "src": "https://cdn.discordapp.com/emojis/1039863296729296946.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 218394,
+        "end": 218517
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "divinecharge",
+        "class": "d-emoji",
+        "alt": "divinecharge",
+        "src": "https://cdn.discordapp.com/emojis/1010485547598356530.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 218615,
+        "end": 218744
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "augmentor",
+        "class": "d-emoji",
+        "alt": "augmentor",
+        "src": "https://cdn.discordapp.com/emojis/1039863296729296946.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 218747,
+        "end": 218870
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Invention",
+        "class": "d-emoji",
+        "alt": "Invention",
+        "src": "https://cdn.discordapp.com/emojis/689509250946695292.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 219170,
+        "end": 219292
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Invention",
+        "class": "d-emoji",
+        "alt": "Invention",
+        "src": "https://cdn.discordapp.com/emojis/689509250946695292.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 219326,
+        "end": 219448
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Invention",
+        "class": "d-emoji",
+        "alt": "Invention",
+        "src": "https://cdn.discordapp.com/emojis/689509250946695292.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 219482,
+        "end": 219604
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Invention",
+        "class": "d-emoji",
+        "alt": "Invention",
+        "src": "https://cdn.discordapp.com/emojis/689509250946695292.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 219638,
+        "end": 219760
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "divinecharge",
+        "class": "d-emoji",
+        "alt": "divinecharge",
+        "src": "https://cdn.discordapp.com/emojis/1010485547598356530.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 220402,
+        "end": 220531
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "highalch",
+        "class": "d-emoji",
+        "alt": "highalch",
+        "src": "https://cdn.discordapp.com/emojis/937093290631786496.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 220819,
+        "end": 220939
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/An6ZlWP.png"
+      },
+      "text": "",
+      "location": {
+        "start": 221156,
+        "end": 221220
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/zufYzSW.png"
+      },
+      "text": "",
+      "location": {
+        "start": 221366,
+        "end": 221430
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "divinecharge",
+        "class": "d-emoji",
+        "alt": "divinecharge",
+        "src": "https://cdn.discordapp.com/emojis/1010485547598356530.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 221496,
+        "end": 221625
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/VLXAeM6.png"
+      },
+      "text": "",
+      "location": {
+        "start": 222527,
+        "end": 222591
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "archaeology",
+        "class": "d-emoji",
+        "alt": "archaeology",
+        "src": "https://cdn.discordapp.com/emojis/941211288665739274.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 223679,
+        "end": 223805
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Invention",
+        "class": "d-emoji",
+        "alt": "Invention",
+        "src": "https://cdn.discordapp.com/emojis/689509250946695292.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 223806,
+        "end": 223928
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "archaeology",
+        "class": "d-emoji",
+        "alt": "archaeology",
+        "src": "https://cdn.discordapp.com/emojis/941211288665739274.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 224013,
+        "end": 224139
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "ancientweapongizmo",
+        "class": "d-emoji",
+        "alt": "ancientweapongizmo",
+        "src": "https://cdn.discordapp.com/emojis/1088041624803745862.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 224288,
+        "end": 224429
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "ancientarmourgizmo",
+        "class": "d-emoji",
+        "alt": "ancientarmourgizmo",
+        "src": "https://cdn.discordapp.com/emojis/697405383769194516.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 224430,
+        "end": 224570
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "ancienttoolgizmo",
+        "class": "d-emoji",
+        "alt": "ancienttoolgizmo",
+        "src": "https://cdn.discordapp.com/emojis/1088041619653152858.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 224571,
+        "end": 224708
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Invention",
+        "class": "d-emoji",
+        "alt": "Invention",
+        "src": "https://cdn.discordapp.com/emojis/689509250946695292.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 224776,
+        "end": 224898
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "extremeinventionpotion",
+        "class": "d-emoji",
+        "alt": "extremeinventionpotion",
+        "src": "https://cdn.discordapp.com/emojis/1032540072169439242.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 224941,
+        "end": 225090
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "archaeology",
+        "class": "d-emoji",
+        "alt": "archaeology",
+        "src": "https://cdn.discordapp.com/emojis/941211288665739274.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 225206,
+        "end": 225332
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "iron",
+        "class": "d-emoji",
+        "alt": "iron",
+        "src": "https://cdn.discordapp.com/emojis/764086050959392778.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 225450,
+        "end": 225562
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Invention",
+        "class": "d-emoji",
+        "alt": "Invention",
+        "src": "https://cdn.discordapp.com/emojis/689509250946695292.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 226945,
+        "end": 227067
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "xpcapacitor",
+        "class": "d-emoji",
+        "alt": "xpcapacitor",
+        "src": "https://cdn.discordapp.com/emojis/1039869645768884256.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 227103,
+        "end": 227230
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "extremeinventionpotion",
+        "class": "d-emoji",
+        "alt": "extremeinventionpotion",
+        "src": "https://cdn.discordapp.com/emojis/1032540072169439242.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 229640,
+        "end": 229789
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Herblore",
+        "class": "d-emoji",
+        "alt": "Herblore",
+        "src": "https://cdn.discordapp.com/emojis/689554435583508558.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 229813,
+        "end": 229933
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "scavenging4",
+        "class": "d-emoji",
+        "alt": "scavenging4",
+        "src": "https://cdn.discordapp.com/emojis/1005934140669046824.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 230430,
+        "end": 230557
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "slayer",
+        "class": "d-emoji",
+        "alt": "slayer",
+        "src": "https://cdn.discordapp.com/emojis/797896049548066857.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 230737,
+        "end": 230853
+      }
+    }
+  ],
+  "links": [
+    {
+      "href": "",
+      "text": "#perks",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 178475,
+        "end": 178517
+      }
+    },
+    {
+      "href": "",
+      "text": "#perk-information",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 178522,
+        "end": 178575
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Base",
+      "text": "Base",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Base"
+      },
+      "location": {
+        "start": 185270,
+        "end": 185370
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Blade",
+      "text": "Blade",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Blade"
+      },
+      "location": {
+        "start": 185589,
+        "end": 185691
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Clear",
+      "text": "Clear",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Clear"
+      },
+      "location": {
+        "start": 185913,
+        "end": 186015
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Connector",
+      "text": "Connector",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Connector"
+      },
+      "location": {
+        "start": 186204,
+        "end": 186314
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Cover",
+      "text": "Cover",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Cover"
+      },
+      "location": {
+        "start": 186489,
+        "end": 186591
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Crafted",
+      "text": "Crafted",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Crafted"
+      },
+      "location": {
+        "start": 186788,
+        "end": 186894
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Crystal",
+      "text": "Crystal",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Crystal"
+      },
+      "location": {
+        "start": 187185,
+        "end": 187291
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Deflecting",
+      "text": "Deflecting",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Deflecting"
+      },
+      "location": {
+        "start": 187526,
+        "end": 187638
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Delicate",
+      "text": "Delicate",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Delicate"
+      },
+      "location": {
+        "start": 187837,
+        "end": 187945
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Flexible",
+      "text": "Flexible",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Flexible"
+      },
+      "location": {
+        "start": 188195,
+        "end": 188303
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Head",
+      "text": "Head",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Head"
+      },
+      "location": {
+        "start": 188745,
+        "end": 188845
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Magic",
+      "text": "Magic",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Magic"
+      },
+      "location": {
+        "start": 189022,
+        "end": 189124
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Metallic",
+      "text": "Metallic",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Metallic"
+      },
+      "location": {
+        "start": 189316,
+        "end": 189424
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Organic",
+      "text": "Organic",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Organic"
+      },
+      "location": {
+        "start": 189601,
+        "end": 189707
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Padded",
+      "text": "Padded",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Padded"
+      },
+      "location": {
+        "start": 189897,
+        "end": 190001
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Plated",
+      "text": "Plated",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Plated"
+      },
+      "location": {
+        "start": 190215,
+        "end": 190319
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Simple",
+      "text": "Simple",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Simple"
+      },
+      "location": {
+        "start": 190514,
+        "end": 190618
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Smooth",
+      "text": "Smooth",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Smooth"
+      },
+      "location": {
+        "start": 190850,
+        "end": 190954
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Spiked",
+      "text": "Spiked",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Spiked"
+      },
+      "location": {
+        "start": 191137,
+        "end": 191241
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Spiritual",
+      "text": "Spiritual",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Spiritual"
+      },
+      "location": {
+        "start": 191413,
+        "end": 191523
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Stave",
+      "text": "Stave",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Stave"
+      },
+      "location": {
+        "start": 191746,
+        "end": 191848
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Tensile",
+      "text": "Tensile",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Tensile"
+      },
+      "location": {
+        "start": 192296,
+        "end": 192402
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Dextrous",
+      "text": "Dextrous",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Dextrous"
+      },
+      "location": {
+        "start": 192946,
+        "end": 193054
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Direct",
+      "text": "Direct",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Direct"
+      },
+      "location": {
+        "start": 193231,
+        "end": 193335
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Enhancing",
+      "text": "Enhancing",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Enhancing"
+      },
+      "location": {
+        "start": 193548,
+        "end": 193658
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Ethereal",
+      "text": "Ethereal",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Ethereal"
+      },
+      "location": {
+        "start": 193906,
+        "end": 194014
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Evasive",
+      "text": "Evasive",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Evasive"
+      },
+      "location": {
+        "start": 194215,
+        "end": 194321
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Healthy",
+      "text": "Healthy",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Healthy"
+      },
+      "location": {
+        "start": 194521,
+        "end": 194627
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Heavy",
+      "text": "Heavy",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Heavy"
+      },
+      "location": {
+        "start": 194891,
+        "end": 194993
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Imbued",
+      "text": "Imbued",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Imbued"
+      },
+      "location": {
+        "start": 195186,
+        "end": 195290
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Light",
+      "text": "Light",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Light"
+      },
+      "location": {
+        "start": 195438,
+        "end": 195540
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Living",
+      "text": "Living",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Living"
+      },
+      "location": {
+        "start": 195693,
+        "end": 195797
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Manufactured",
+      "text": "Manufactured",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Manufactured"
+      },
+      "location": {
+        "start": 195998,
+        "end": 196114
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Offcut",
+      "text": "Offcut",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Offcut"
+      },
+      "location": {
+        "start": 196272,
+        "end": 196376
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Pious",
+      "text": "Pious",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Pious"
+      },
+      "location": {
+        "start": 196558,
+        "end": 196660
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Powerful",
+      "text": "Powerful",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Powerful"
+      },
+      "location": {
+        "start": 196833,
+        "end": 196941
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Precious",
+      "text": "Precious",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Precious"
+      },
+      "location": {
+        "start": 197194,
+        "end": 197302
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Precise",
+      "text": "Precise",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Precise"
+      },
+      "location": {
+        "start": 197474,
+        "end": 197580
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Protective",
+      "text": "Protective",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Protective"
+      },
+      "location": {
+        "start": 198032,
+        "end": 198144
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Refined",
+      "text": "Refined",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Refined"
+      },
+      "location": {
+        "start": 198339,
+        "end": 198445
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Sharp",
+      "text": "Sharp",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Sharp"
+      },
+      "location": {
+        "start": 198604,
+        "end": 198706
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Strong",
+      "text": "Strong",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Strong"
+      },
+      "location": {
+        "start": 198873,
+        "end": 198977
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Stunning",
+      "text": "Stunning",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Stunning"
+      },
+      "location": {
+        "start": 199136,
+        "end": 199244
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Subtle",
+      "text": "Subtle",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Subtle"
+      },
+      "location": {
+        "start": 199419,
+        "end": 199523
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Swift",
+      "text": "Swift",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Swift"
+      },
+      "location": {
+        "start": 199712,
+        "end": 199814
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Variable",
+      "text": "Variable",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Variable"
+      },
+      "location": {
+        "start": 199968,
+        "end": 200076
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Armadyl",
+      "text": "Armadyl",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Armadyl"
+      },
+      "location": {
+        "start": 200463,
+        "end": 200569
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Ascended",
+      "text": "Ascended",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Ascended"
+      },
+      "location": {
+        "start": 200757,
+        "end": 200865
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Avernic",
+      "text": "Avernic",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Avernic"
+      },
+      "location": {
+        "start": 201022,
+        "end": 201128
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Avernic_components#Methods_of_obtaining",
+      "text": "compare methods",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Avernic_components#Methods_of_obtaining"
+      },
+      "location": {
+        "start": 201151,
+        "end": 201245
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Bandos",
+      "text": "Bandos",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Bandos"
+      },
+      "location": {
+        "start": 201381,
+        "end": 201485
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Brassican",
+      "text": "Brassican",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Brassican"
+      },
+      "location": {
+        "start": 201645,
+        "end": 201755
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Clockwork",
+      "text": "Clockwork",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Clockwork"
+      },
+      "location": {
+        "start": 201907,
+        "end": 202017
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Corporeal",
+      "text": "Corporeal",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Corporeal"
+      },
+      "location": {
+        "start": 202179,
+        "end": 202289
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Culinary",
+      "text": "Culinary",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Culinary"
+      },
+      "location": {
+        "start": 202453,
+        "end": 202561
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Cywir",
+      "text": "Cywir",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Cywir"
+      },
+      "location": {
+        "start": 202737,
+        "end": 202839
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Cywir_components#Methods_of_obtaining",
+      "text": "compare methods",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Cywir_components#Methods_of_obtaining"
+      },
+      "location": {
+        "start": 202858,
+        "end": 202950
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Dragonfire",
+      "text": "Dragonfire",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Dragonfire"
+      },
+      "location": {
+        "start": 203094,
+        "end": 203206
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Ecliptic",
+      "text": "Ecliptic",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Ecliptic"
+      },
+      "location": {
+        "start": 203376,
+        "end": 203484
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Explosive",
+      "text": "Explosive",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Explosive"
+      },
+      "location": {
+        "start": 203689,
+        "end": 203799
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Faceted",
+      "text": "Faceted",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Faceted"
+      },
+      "location": {
+        "start": 203951,
+        "end": 204057
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Fortunate",
+      "text": "Fortunate",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Fortunate"
+      },
+      "location": {
+        "start": 204299,
+        "end": 204409
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Fungal",
+      "text": "Fungal",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Fungal"
+      },
+      "location": {
+        "start": 204575,
+        "end": 204679
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Harnessed",
+      "text": "Harnessed",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Harnessed"
+      },
+      "location": {
+        "start": 204843,
+        "end": 204953
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Ilujankan",
+      "text": "Ilujankan",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Ilujankan"
+      },
+      "location": {
+        "start": 205125,
+        "end": 205235
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Ilujankan_components#Methods_of_obtaining",
+      "text": "compare methods",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Ilujankan_components#Methods_of_obtaining"
+      },
+      "location": {
+        "start": 205256,
+        "end": 205352
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Knightly",
+      "text": "Knightly",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Knightly"
+      },
+      "location": {
+        "start": 205492,
+        "end": 205600
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Noxious",
+      "text": "Noxious",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Noxious"
+      },
+      "location": {
+        "start": 205761,
+        "end": 205867
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Oceanic",
+      "text": "Oceanic",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Oceanic"
+      },
+      "location": {
+        "start": 206024,
+        "end": 206130
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Pestiferous",
+      "text": "Pestiferous",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Pestiferous"
+      },
+      "location": {
+        "start": 206299,
+        "end": 206413
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Resilient",
+      "text": "Resilient",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Resilient"
+      },
+      "location": {
+        "start": 206594,
+        "end": 206704
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Rumbling",
+      "text": "Rumbling",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Rumbling"
+      },
+      "location": {
+        "start": 206911,
+        "end": 207019
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Saradomin",
+      "text": "Saradomin",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Saradomin"
+      },
+      "location": {
+        "start": 207192,
+        "end": 207302
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Seren",
+      "text": "Seren",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Seren"
+      },
+      "location": {
+        "start": 207489,
+        "end": 207591
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Shadow",
+      "text": "Shadow",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Shadow"
+      },
+      "location": {
+        "start": 207773,
+        "end": 207877
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Shadow_components#Methods_of_obtaining",
+      "text": "compare methods",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Shadow_components#Methods_of_obtaining"
+      },
+      "location": {
+        "start": 207900,
+        "end": 207993
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Shifting",
+      "text": "Shifting",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Shifting"
+      },
+      "location": {
+        "start": 208133,
+        "end": 208241
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Silent",
+      "text": "Silent",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Silent"
+      },
+      "location": {
+        "start": 208420,
+        "end": 208524
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Third-age",
+      "text": "Third-age",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Third-age"
+      },
+      "location": {
+        "start": 208760,
+        "end": 208870
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Undead",
+      "text": "Undead",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Undead"
+      },
+      "location": {
+        "start": 209027,
+        "end": 209131
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Zamorak",
+      "text": "Zamorak",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Zamorak"
+      },
+      "location": {
+        "start": 209310,
+        "end": 209416
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Zaros",
+      "text": "Zaros",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Calculator:Disassembly_by_material/Zaros"
+      },
+      "location": {
+        "start": 209618,
+        "end": 209720
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Historic_components",
+      "text": "Historic",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Historic_components"
+      },
+      "location": {
+        "start": 210043,
+        "end": 210127
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Classic_components",
+      "text": "Classic",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Classic_components"
+      },
+      "location": {
+        "start": 210266,
+        "end": 210348
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Vintage_components",
+      "text": "Vintage",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Vintage_components"
+      },
+      "location": {
+        "start": 210487,
+        "end": 210569
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Timeworn_components",
+      "text": "Timeworn",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Timeworn_components"
+      },
+      "location": {
+        "start": 210710,
+        "end": 210794
+      }
+    },
+    {
+      "href": "",
+      "text": "#scavenging-farming",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 211806,
+        "end": 211861
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Ancient_Invention",
+      "text": "Ancient Invention",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Ancient_Invention"
+      },
+      "location": {
+        "start": 216871,
+        "end": 216945
+      }
+    },
+    {
+      "href": "",
+      "text": "#perks",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 225951,
+        "end": 225993
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Invention_training",
+      "text": "Wiki guide",
+      "attrs": {
+        "title": "",
+        "href": "https://runescape.wiki/w/Invention_training",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 229292,
+        "end": 229402
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Perks",
+      "text": "Wiki Perk Calculator",
+      "attrs": {
+        "title": "",
+        "href": "https://runescape.wiki/w/Calculator:Perks",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 231726,
+        "end": 231844
+      }
+    },
+    {
+      "href": "",
+      "text": "#perks",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 231852,
+        "end": 231894
+      }
+    },
+    {
+      "href": "",
+      "text": "#perk-information",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 231940,
+        "end": 231993
+      }
+    }
+  ],
+  "files": {
+    "source": "guides/pvme-guides--invention-and-perks--invention-basics/source.json",
+    "inventory": "guides/pvme-guides--invention-and-perks--invention-basics/inventory.json",
+    "article": "guides/pvme-guides--invention-and-perks--invention-basics/article.html",
+    "response": "guides/pvme-guides--invention-and-perks--invention-basics/response.html",
+    "metadata": "guides/pvme-guides--invention-and-perks--invention-basics/metadata.json"
+  },
+  "limitations": [
+    "Exact HTTP article preserved, not dynamic preset/item/API data or image/video-only information.",
+    "No media availability, browser layout, semantic equivalence or live wiki revision parity claim."
+  ]
+}

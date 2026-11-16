@@ -22,7 +22,7 @@ final class InstallPvmeMainGuides extends Maintenance {
         if (!$user) { $this->fatalError('Maintenance author unavailable'); }
         StubGlobalUser::setUser($user);
         foreach ($manifest['pages'] as $entry) {
-            if (basename($entry['file']) !== $entry['file'] || !str_starts_with($entry['title'], 'PvME/Amascut/')) {
+            if (basename($entry['file']) !== $entry['file'] || !str_starts_with($entry['title'], 'PvME/')) {
                 $this->fatalError('Invalid main guide manifest');
             }
             $text = file_get_contents($directory . '/' . $entry['file']);
@@ -30,19 +30,20 @@ final class InstallPvmeMainGuides extends Maintenance {
                 $this->fatalError('Main guide source hash mismatch');
             }
             $title = Title::newFromText($entry['title']);
-            if (!$title || !$title->exists()) { $this->fatalError('Main guide does not exist'); }
+            if (!$title || $title->getNamespace() !== NS_MAIN) { $this->fatalError('Invalid main guide title'); }
             $page = $this->getServiceContainer()->getWikiPageFactory()->newFromTitle($title);
             $updater = $page->newPageUpdater($user);
             // Starts MediaWiki CAS protection; concurrent edits make save fail.
             $parent = $updater->grabParentRevision();
             $current = $parent ? $parent->getContent(SlotRecord::MAIN) : null;
-            if (!$current) { $this->fatalError('Current main guide unavailable'); }
-            $currentHash = hash('sha256', $current->serialize());
-            if (hash_equals($entry['sha256'], $currentHash)) {
+            $currentHash = $current ? hash('sha256', $current->serialize()) : null;
+            if ($currentHash !== null && hash_equals($entry['sha256'], $currentHash)) {
                 $this->output('Main guide already published: ' . $entry['title'] . "\n");
                 continue;
             }
-            if (!hash_equals($entry['baselineSha256'], $currentHash)) {
+            $expected = $entry['baselineSha256'];
+            if (($expected === null && $currentHash !== null)
+                || ($expected !== null && ($currentHash === null || !hash_equals($expected, $currentHash)))) {
                 $this->output('Preserved changed main guide; publication needs merge: ' . $entry['title'] . "\n");
                 continue;
             }
@@ -52,6 +53,10 @@ final class InstallPvmeMainGuides extends Maintenance {
                 $this->fatalError('Conditional main guide publication refused; existing edits retained');
             }
             $this->output('Published exact-source main guide: ' . $entry['title'] . ' revision ' . $saved->getId() . "\n");
+            // Drain per-page work instead of accumulating an entire corpus in RAM.
+            DeferredUpdates::doUpdates();
+            unset($updater, $parent, $current, $saved, $page);
+            gc_collect_cycles();
         }
     }
 }

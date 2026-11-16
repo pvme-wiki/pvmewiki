@@ -1,0 +1,810 @@
+__NOTOC__
+<div class="pvme-exact-guide">
+
+<div class="pvme-source-section">
+<h2 id="introduction"><ins><nowiki>Introduction</nowiki></ins></h2>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>GitHub is a service that lets users maintain a repository of information that is organized, version controlled, and allows for easy contributions from many users. PvME uses GitHub to maintain its guides and information.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>This guide covers how to use GitHub for contributing to PvME. If you would like to directly skip to the instructions, you can directly navigate to the </nowiki><ins><strong><nowiki>Tutorial</nowiki></strong></ins><nowiki> section using the pinned links, and if you would like a quick tutorial, use </nowiki><span><nowiki>#unknown-channel</nowiki></span><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>Once you have completed this tutorial, you can look at </nowiki><span><nowiki>#unknown-channel</nowiki></span><nowiki> for more tips, tricks, and other information.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="how-github-works"><ins><nowiki>How GitHub Works</nowiki></ins></h2>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ GitHub is an Internet hosting service that offers the use of Git repositories, which is how PvME stores its information and guides.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ A repository is a collection of all the files and folders for a project, that is tracked and version controlled.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Anyone can contribute to the PvME repository.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ The basic contribution process looks like this:</nowiki></p>
+<nowiki>
+</nowiki>
+<pre>fork PvME repo → make changes → commit changes → make pull request → changes get accepted
+</pre>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ A brief explanation of the steps:</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Make a copy of the repository</nowiki></strong><nowiki>, also known as </nowiki><em><nowiki>forking</nowiki></em><nowiki> the repository. You now have an up-to-date copy of the PvME files.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Make changes to the files in your repository and commit them</nowiki></strong><nowiki> to your own repository. You can think of this as &quot;saving&quot; your changes.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• To add your new changes to the PvME repository, </nowiki><strong><nowiki>make a pull request</nowiki></strong><nowiki>. This tells PvME that you have changes you want </nowiki><em><nowiki>pulled</nowiki></em><nowiki> from your files into PvME's files.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Wait for your pull request to be accepted</nowiki></strong><nowiki>. When this is done, your changes will now be a part of PvME's guides!</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• You can now re-sync, or delete and re-fork the repository once you want to make more changes.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="tutorial"><ins><nowiki>Tutorial</nowiki></ins></h2>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>The goal of this tutorial is to add your name to the list at the bottom of this guide.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+<div class="pvme-source-mechanic">
+<h3 id="step-1-create-a-github-account-httpsgithubcom"><nowiki>Step 1: Create a GitHub Account (</nowiki>[https://github.com/ <nowiki>https://github.com</nowiki>]<nowiki>)</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Go to GitHub and use the </nowiki><em><nowiki>Sign Up</nowiki></em><nowiki> button on the top right of the page.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Your username and e-mail account will be visible, so ensure you don't include personal information</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ If you have a GitHub account already, it is advised to make a new one for PvME unless you are certain that you haven't doxxed yourself in your commit histories.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><em><nowiki>For experienced users: If you use the Git CLI, make sure you check your </nowiki><code><nowiki>git config [user.name|user.email]</nowiki></code><nowiki> ‎configs, as these settings can still dox you, even if you use a new account.</nowiki></em></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><pvme-image src="https://img.pvme.io/images/uI7JVfh.png" alt="" title="" kind="media" /></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="step-2-fork-the-pvme-repository-httpsgithubcompvmepvme-guides"><nowiki>Step 2: Fork the PvME Repository (</nowiki>[https://github.com/pvme/pvme-guides <nowiki>https://github.com/pvme/pvme-guides</nowiki>]<nowiki>)</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ This creates a personal copy of the repository that you can then edit at your leisure.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Click the </nowiki><em><nowiki>Fork</nowiki></em><nowiki> button at the top right of the page, then confirm the creation of the fork.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><pvme-image src="https://img.pvme.io/images/9sDym3q.png" alt="" title="" kind="media" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><pvme-image src="https://img.pvme.io/images/TenWOom.png" alt="" title="" kind="media" /></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="step-3-open-your-forked-repository-in-your-browser"><nowiki>Step 3: Open Your Forked Repository In Your Browser</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ You can find it by selecting </nowiki><em><nowiki>Your Repositories</nowiki></em><nowiki> in the dropdown menu, found by clicking your profile at the top right.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ You will know you are in your forked repository when the top-left of the website looks like this:</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><pvme-image src="https://img.pvme.io/images/h0zk8pQ.png" alt="" title="" kind="media" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><em><nowiki>For experienced users: You can just clone the repository locally and work from your local machine, whatever you prefer.</nowiki></em></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="step-4-navigate-to-the-github-tutorialtxt-file"><nowiki>Step 4: Navigate to the </nowiki><em><nowiki>github-tutorial.txt</nowiki></em><nowiki> File</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ The structure of the PvME repository mimics the server category/channel structure, to navigate through the repository click through folders that share the name of the discord categories, until you find this guide in the GitHub repository.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• If you are struggling to find a file you can use the search bar at the top.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ The file is located at </nowiki><em><nowiki>editor-resources &gt; github-tutorials &gt; github-tutorial.txt</nowiki></em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><pvme-image src="https://img.pvme.io/images/tT47C8Y.png" alt="" title="" kind="media" /></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="step-5-enable-discord-developer-options-and-copy-discord-id"><nowiki>Step 5: Enable Discord Developer Options and Copy Discord ID</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ This is required to be able to copy your own Discord ID.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ These settings are accessible at </nowiki><em><nowiki>Discord App Settings &gt; Advanced &gt; Developer Console &gt; (turn on)</nowiki></em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ After enabling them, you can right-click your name or profile picture to copy your own Discord ID.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><pvme-image src="https://img.pvme.io/images/fUd2Z3a.png" alt="" title="" kind="media" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><pvme-image src="https://img.pvme.io/images/17NA9pa.png" alt="" title="" kind="media" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><pvme-image src="https://img.pvme.io/images/uK0diGu.png" alt="" title="" kind="media" /></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="step-6-your-first-change-and-contribution"><nowiki>Step 6: Your First Change and Contribution</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Click the </nowiki><em><nowiki>Edit</nowiki></em><nowiki> icon at the top right to begin editing the file. It looks like a pencil.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Paste your Discord ID at the bottom of the file, below the other IDs, in the format </nowiki><code><nowiki>&lt;@yourusedidhere&gt;</nowiki></code><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• Replace the text with your Discord ID.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Then </nowiki><em><nowiki>commit</nowiki></em><nowiki> (i.e. save) your changes.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• Leave the settings at their default (i.e. &quot;Commit directly to the </nowiki><code><nowiki>master</nowiki></code><nowiki> ‎branch&quot;).</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><pvme-image src="https://img.pvme.io/images/SFB0OqA.png" alt="" title="" kind="media" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><pvme-image src="https://img.pvme.io/images/EKpuYym.png" alt="" title="" kind="media" /></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="step-7-create-a-pull-request"><nowiki>Step 7: Create A Pull Request</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Navigate to the </nowiki><em><nowiki>Code</nowiki></em><nowiki> tab in your personal repository. You will notice that you are now </nowiki><em><nowiki>1 commit ahead</nowiki></em><nowiki> - this means you have changes ready to contribute!</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Click the </nowiki><em><nowiki>Contribute</nowiki></em><nowiki> button and select </nowiki><em><nowiki>Pull Request</nowiki></em><nowiki> from the drop-down.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ You can add type something like &quot;add my name to github-tutorial&quot; as the commit message, and then create the </nowiki><em><nowiki>pull request</nowiki></em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><pvme-image src="https://img.pvme.io/images/DXYZid4.png" alt="" title="" kind="media" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><pvme-image src="https://img.pvme.io/images/696GEzw.png" alt="" title="" kind="media" /></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="step-8-thats-it"><nowiki>Step 8: That's it!</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ You're done! If your changes are approved, then your pull request will be merged into PvME.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ The </nowiki><span><nowiki>#unknown-channel</nowiki></span><nowiki> channel will get updated, and your name will appear in the channel.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ You can resync or delete your fork </nowiki><em><nowiki>after</nowiki></em><nowiki> the pull request is accepted. To delete a fork, go to your repo </nowiki><em><nowiki>Settings</nowiki></em><nowiki>, and scroll down till you find the option to delete. Then follow the confirmation process.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><pvme-image src="https://img.pvme.io/images/VpO5Lde.png" alt="" title="" kind="media" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><pvme-image src="https://img.pvme.io/images/YaxlO8O.png" alt="" title="" kind="media" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><pvme-image src="https://img.pvme.io/images/a1HmkID.png" alt="" title="" kind="media" /></p>
+<nowiki>
+</nowiki>
+
+</div>
+</div>
+<div class="pvme-source-section">
+<h2 id="successfully-completed-pvmes-github-tutorial"><ins><nowiki>Successfully Completed PvME's GitHub Tutorial</nowiki></ins></h2>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@ptazolite</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@brainrs</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@robomi</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@pernix</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@enhi</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@grime2</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@.ndy</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@rinswaps</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@geherman</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@trackandxc</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@zerocheus</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@ado111</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@durmoth</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@ykrors</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@brightrailgun</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@roar.roar</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@senie</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@godmandevil8</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@mionee.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@emmett_shark</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@pvme</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@oraknight</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@basetank</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@kukkelis</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@alexgrooders3320</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@aussieman422</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@turtle9491</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@kyroh</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@deleted_user_a3738c4f4c16</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@terpsichore</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@diealive</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@dming</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@pixel.green</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@annietheeagle</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@bankserino</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@miagroves</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@finah</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@.takyon.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@phatkez</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@friggityfrank</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@hightdetal</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@ekarderif</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@w62</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@alluneve</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@inferium</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@sunforged</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@ladygoogoogaga</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@akritia</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@sambanator</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@deleted_user_f9d88888270c</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@washlyjay</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@dr.fishbones</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@blockdude</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@txj</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@codemati</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@whimbtw</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@.ezee</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@ferroric</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@sreveryn</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@oscar</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@stormight</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@rcm37</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@moxielf</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@.orangespice</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@epsilon39</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@skalshadar</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@chrash.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@obelex</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@zombunny</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@adderinoo</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@neonx222</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@eusono</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@hyperrr</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@tinky1</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@peterkirk</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@achievementshunter</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@reisenmoonrabbit</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@porfy</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@_rolypoly</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@markei</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@rinswaps</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@jibyjib</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>@Unknown user</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+      
+    </nowiki>
+
+</div>
+</div>
+
+<div class="pvme-source-attribution">[https://pvme.io/pvme-guides/editor-resources/github-tutorials/github-comp-tutorial/ PvME source] · PvME contributors · [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]. AI-assisted formatting; source wording retained.
+</div>

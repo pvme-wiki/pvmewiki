@@ -1,0 +1,901 @@
+<h2 id="introduction"><ins>Introduction</ins></h2>
+<p><em>Note: Use the <ins><strong>Table of Contents</strong></ins> present at the bottom of the channel, or in the pinned comments, to quickly navigate through this channel and find the information you are looking for.</em></p>
+<p>&#x200b;</p>
+<p>Some general notes:</p>
+<p>⬥ The game runs on an internal tick system: <strong>1t (tick) = 0.6s (seconds)</strong>.</p>
+<p>⬥ The minimum time between abilities is called the global cooldown: <strong>1 gcd = 3t = 1.8s</strong>.</p>
+<p>⬥ Debuff spells like Vuln <img title="Vuln" class="d-emoji" alt="Vuln" src="https://cdn.discordapp.com/emojis/537349530551582720.png?v=1"> or Enfeeble <img title="Enfeeble" class="d-emoji" alt="Enfeeble" src="https://cdn.discordapp.com/emojis/567727986409734145.png?v=1"> or Smoke Cloud <img title="smokecloud" class="d-emoji" alt="smokecloud" src="https://cdn.discordapp.com/emojis/856635090641879050.png?v=1"> do not give adrenaline.</p>
+<p>⬥ Some useful sheets and resources are given below.</p>
+<p>&#x200b;</p>
+<div class="flex-vertical whitney theme-dark">
+<div class="chat flex-vertical flex-spacer">
+<div class="content flex-spacer flex-horizontal">
+<div class="flex-spacer flex-vertical messages-wrapper">
+<div class="scroller-wrap">
+<div class="scroller messages">
+<div class="message-group hide-overflow">
+<div class="comment">
+<div class="message first">
+<div class="accessory">
+
+<div class="embed-wrapper">
+<div class="embed-color-pill" style="background-color: rgb(0, 153, 255);"></div>
+<div class="embed embed-rich">
+<div class="embed-content">
+<div class="embed-content-inner">
+
+
+
+<div class="embed-fields"><div class="embed-field" ><div class="embed-field-name" ><u>Ability Damage Maths</u>
+</div><div class="embed-field-value markup" >To calculate your ability hit damage in detail, <a title="" href="https://tools.runescape.wiki/rs-rot/ranged" target="_blank" rel="noreferrer">click here</a>.
+This is affected by factors such as your gear and other boosts.
+</div></div><div class="embed-field" ><div class="embed-field-name" ><u>Ability Hit Timings</u>
+</div><div class="embed-field-value markup" >To see detailed breakdowns on ability hit timings, <a title="" href="https://docs.google.com/spreadsheets/d/1rK7u17JN6I-vf3dKBKg6tm9IPWje9EWSe_r8KPdsxoc/edit?usp=sharing" target="_blank" rel="noreferrer">click here</a>.
+This refers to when hitsplats appear on your target.
+</div></div><div class="embed-field" ><div class="embed-field-name" ><u>Auto-attack Adren Gain</u>
+</div><div class="embed-field-value markup" >To see adrenaline gained with different auto attacks, <a title="" href="https://runescape.wiki/w/Invigorating" target="_blank" rel="noreferrer">click here</a>.
+</div></div></div>
+</div>
+
+</div>
+
+
+</div></div></div></div></div></div></div></div></div></div></div></div>
+
+<p><em>Note: If you have any difficulties in using the tools or understanding what the information means, you can always ask in <a href="" class="inactiveLink">#pvm-help</a></em>.</p>
+<p>&#x200b;</p>
+<h2 id="ranged"><ins>Ranged <img title="range" class="d-emoji" alt="range" src="https://cdn.discordapp.com/emojis/580168050121113623.png?v=1"></ins></h2>
+<p>This section covers basic abilities, enhanced abilities, ultimate abilities, utility abilities and special attacks for Ranged.</p>
+<p>&#x200b;</p>
+<h3 id="basic-abilities">Basic Abilities</h3>
+<div class="flex-vertical whitney theme-dark">
+<div class="chat flex-vertical flex-spacer">
+<div class="content flex-spacer flex-horizontal">
+<div class="flex-spacer flex-vertical messages-wrapper">
+<div class="scroller-wrap">
+<div class="scroller messages">
+<div class="message-group hide-overflow">
+<div class="comment">
+<div class="message first">
+<div class="accessory">
+
+<div class="embed-wrapper">
+<div class="embed-color-pill" style="background-color: rgb(46, 204, 113);"></div>
+<div class="embed embed-rich">
+<div class="embed-content">
+<div class="embed-content-inner">
+
+<div class="embed-title" ><u>Ranged</u> <img title="ranged_basic" class="d-emoji" alt="ranged_basic" src="https://cdn.discordapp.com/emojis/1478061858622537809.png?v=1">
+</div>
+<div class="embed-description markup" >⬥ Cooldown: 0t (0s)
+⬥ Affected by Fleeting Boots <img title="fleetingboots" class="d-emoji" alt="fleetingboots" src="https://cdn.discordapp.com/emojis/789813993480388640.png?v=1">
+    • Applies the cooldown reduction effect of <img title="piercing_shot" class="d-emoji" alt="piercing_shot" src="https://cdn.discordapp.com/emojis/1478061863723073636.png?v=1">
+</div>
+
+</div>
+
+</div>
+
+
+</div></div></div></div></div></div></div></div></div></div></div></div>
+
+<p>&#x200b;</p>
+<div class="flex-vertical whitney theme-dark">
+<div class="chat flex-vertical flex-spacer">
+<div class="content flex-spacer flex-horizontal">
+<div class="flex-spacer flex-vertical messages-wrapper">
+<div class="scroller-wrap">
+<div class="scroller messages">
+<div class="message-group hide-overflow">
+<div class="comment">
+<div class="message first">
+<div class="accessory">
+
+<div class="embed-wrapper">
+<div class="embed-color-pill" style="background-color: rgb(46, 204, 113);"></div>
+<div class="embed embed-rich">
+<div class="embed-content">
+<div class="embed-content-inner">
+
+<div class="embed-title" ><u>Piercing Shot</u> <img title="piercing_shot" class="d-emoji" alt="piercing_shot" src="https://cdn.discordapp.com/emojis/1478061863723073636.png?v=1">
+</div>
+<div class="embed-description markup" >⬥ Cooldown: 5t (3s)
+⬥ Fires 2 hits
+⬥ Reduces cooldown of Snipe by 4t (2.4s) per hit, 8t total (4.8s)
+⬥ Affected by Fleeting Boots <img title="fleetingboots" class="d-emoji" alt="fleetingboots" src="https://cdn.discordapp.com/emojis/789813993480388640.png?v=1">
+    • Reduces cooldown of <img title="snipe" class="d-emoji" alt="snipe" src="https://cdn.discordapp.com/emojis/1478061857486143498.png?v=1"> by additional 2t (1.2s) per hit, 4t (2.4s) extra, 12t (7.2s) total
+</div>
+
+</div>
+
+</div>
+
+
+</div></div></div></div></div></div></div></div></div></div></div></div>
+
+<p>&#x200b;</p>
+<div class="flex-vertical whitney theme-dark">
+<div class="chat flex-vertical flex-spacer">
+<div class="content flex-spacer flex-horizontal">
+<div class="flex-spacer flex-vertical messages-wrapper">
+<div class="scroller-wrap">
+<div class="scroller messages">
+<div class="message-group hide-overflow">
+<div class="comment">
+<div class="message first">
+<div class="accessory">
+
+<div class="embed-wrapper">
+<div class="embed-color-pill" style="background-color: rgb(46, 204, 113);"></div>
+<div class="embed embed-rich">
+<div class="embed-content">
+<div class="embed-content-inner">
+
+<div class="embed-title" ><u>Binding Shot</u> <img title="bindingshot" class="d-emoji" alt="bindingshot" src="https://cdn.discordapp.com/emojis/535541306563231790.png?v=1">
+</div>
+<div class="embed-description markup" >⬥ Cooldown: 25t (15s)
+    • Charges: 2
+⬥ Stuns for 2t (1.2s) and binds for 16t (9.6s)
+⬥ It is affected by <img title="flankicon" class="d-emoji" alt="flankicon" src="https://cdn.discordapp.com/emojis/841419289755385866.png?v=1">:
+    • Increases Max by 40% per <img title="flankicon" class="d-emoji" alt="flankicon" src="https://cdn.discordapp.com/emojis/841419289755385866.png?v=1"> rank
+    • Increases Minimum by 8% per <img title="flankicon" class="d-emoji" alt="flankicon" src="https://cdn.discordapp.com/emojis/841419289755385866.png?v=1"> Rank
+    • No longer stuns or binds
+</div>
+
+</div>
+
+</div>
+
+
+</div></div></div></div></div></div></div></div></div></div></div></div>
+
+<p>&#x200b;</p>
+<div class="flex-vertical whitney theme-dark">
+<div class="chat flex-vertical flex-spacer">
+<div class="content flex-spacer flex-horizontal">
+<div class="flex-spacer flex-vertical messages-wrapper">
+<div class="scroller-wrap">
+<div class="scroller messages">
+<div class="message-group hide-overflow">
+<div class="comment">
+<div class="message first">
+<div class="accessory">
+
+<div class="embed-wrapper">
+<div class="embed-color-pill" style="background-color: rgb(46, 204, 113);"></div>
+<div class="embed embed-rich">
+<div class="embed-content">
+<div class="embed-content-inner">
+
+<div class="embed-title" ><u>Galeshot</u> <img title="imbue_gales" class="d-emoji" alt="imbue_gales" src="https://cdn.discordapp.com/emojis/1478061864943616122.png?v=1">
+</div>
+<div class="embed-description markup" >⬥ Cooldown: 34t (20.4s)
+⬥ Applies Searing Winds to self for 10t (6s)
+⬥ Searing Winds:
+    • Ranged attacks deal 20% damage with each hit
+</div>
+
+</div>
+
+</div>
+
+
+</div></div></div></div></div></div></div></div></div></div></div></div>
+
+<p>&#x200b;</p>
+<div class="flex-vertical whitney theme-dark">
+<div class="chat flex-vertical flex-spacer">
+<div class="content flex-spacer flex-horizontal">
+<div class="flex-spacer flex-vertical messages-wrapper">
+<div class="scroller-wrap">
+<div class="scroller messages">
+<div class="message-group hide-overflow">
+<div class="comment">
+<div class="message first">
+<div class="accessory">
+
+<div class="embed-wrapper">
+<div class="embed-color-pill" style="background-color: rgb(46, 204, 113);"></div>
+<div class="embed embed-rich">
+<div class="embed-content">
+<div class="embed-content-inner">
+
+<div class="embed-title" ><u>Ricochet</u> <img title="ricochet" class="d-emoji" alt="ricochet" src="https://cdn.discordapp.com/emojis/1478061867288100885.png?v=1">
+</div>
+<div class="embed-description markup" >⬥ Cooldown: 17t (10.2s)
+⬥ It is an AoE:
+    • Hits within a 5 square radius from SW tile of initial target
+    • Hits 3 targets, inclusive of main
+    • Main target hit an additional 15-20% for each enemy that cannot be found
+    • Does not hit things on initial target's SW tile
+⬥ It is affected by Caroming <img title="caroming4" class="d-emoji" alt="caroming4" src="https://cdn.discordapp.com/emojis/791281588792590336.png?v=1">
+    • Ricochet hits 4% bonus damage per Caroming rank
+⬥ Not affected by Chinchompas <img title="mechchin" class="d-emoji" alt="mechchin" src="https://cdn.discordapp.com/emojis/641669268722810881.png?v=1">
+</div>
+
+</div>
+
+</div>
+
+
+</div></div></div></div></div></div></div></div></div></div></div></div>
+
+<p>&#x200b;</p>
+<div class="flex-vertical whitney theme-dark">
+<div class="chat flex-vertical flex-spacer">
+<div class="content flex-spacer flex-horizontal">
+<div class="flex-spacer flex-vertical messages-wrapper">
+<div class="scroller-wrap">
+<div class="scroller messages">
+<div class="message-group hide-overflow">
+<div class="comment">
+<div class="message first">
+<div class="accessory">
+
+<div class="embed-wrapper">
+<div class="embed-color-pill" style="background-color: rgb(46, 204, 113);"></div>
+<div class="embed embed-rich">
+<div class="embed-content">
+<div class="embed-content-inner">
+
+<div class="embed-title" ><u>Greater Ricochet</u> <img title="grico" class="d-emoji" alt="grico" src="https://cdn.discordapp.com/emojis/787904334812807238.png?v=1">
+</div>
+<div class="embed-description markup" >⬥ Cooldown: 17t (10.2s)
+⬥ It is an AoE:
+    • Hits within a 5 square radius from SW tile of initial target
+    • Hits 7 targets, inclusive of main
+    • Main target hit an additional 15-20% (4-6% after 2 hits) for each enemy that cannot be found
+    • Does not hit things on initial target's SW tile
+⬥ It is affected by Caroming <img title="caroming4" class="d-emoji" alt="caroming4" src="https://cdn.discordapp.com/emojis/791281588792590336.png?v=1">
+    • Ricochet hits 4% bonus damage per Caroming rank
+⬥ Not affected by Chinchompas <img title="mechchin" class="d-emoji" alt="mechchin" src="https://cdn.discordapp.com/emojis/641669268722810881.png?v=1">
+</div>
+
+</div>
+
+</div>
+
+
+</div></div></div></div></div></div></div></div></div></div></div></div>
+
+<p>&#x200b;</p>
+<h3 id="enhanced-abilities">Enhanced Abilities</h3>
+<div class="flex-vertical whitney theme-dark">
+<div class="chat flex-vertical flex-spacer">
+<div class="content flex-spacer flex-horizontal">
+<div class="flex-spacer flex-vertical messages-wrapper">
+<div class="scroller-wrap">
+<div class="scroller messages">
+<div class="message-group hide-overflow">
+<div class="comment">
+<div class="message first">
+<div class="accessory">
+
+<div class="embed-wrapper">
+<div class="embed-color-pill" style="background-color: rgb(46, 204, 113);"></div>
+<div class="embed embed-rich">
+<div class="embed-content">
+<div class="embed-content-inner">
+
+<div class="embed-title" ><u>Snap Shot</u> <img title="snapshot" class="d-emoji" alt="snapshot" src="https://cdn.discordapp.com/emojis/1478061855732666439.png?v=1">
+</div>
+<div class="embed-description markup" >⬥ Cooldown: 0t (0s)
+⬥ Adrenaline Cost: 25%
+⬥ Two separate, strong hits
+</div>
+
+</div>
+
+</div>
+
+
+</div></div></div></div></div></div></div></div></div></div></div></div>
+
+<p>&#x200b;</p>
+<div class="flex-vertical whitney theme-dark">
+<div class="chat flex-vertical flex-spacer">
+<div class="content flex-spacer flex-horizontal">
+<div class="flex-spacer flex-vertical messages-wrapper">
+<div class="scroller-wrap">
+<div class="scroller messages">
+<div class="message-group hide-overflow">
+<div class="comment">
+<div class="message first">
+<div class="accessory">
+
+<div class="embed-wrapper">
+<div class="embed-color-pill" style="background-color: rgb(46, 204, 113);"></div>
+<div class="embed embed-rich">
+<div class="embed-content">
+<div class="embed-content-inner">
+
+<div class="embed-title" ><u>Snipe</u> <img title="snipe" class="d-emoji" alt="snipe" src="https://cdn.discordapp.com/emojis/1478061857486143498.png?v=1">
+</div>
+<div class="embed-description markup" >⬥ Cooldown: 100t (60s)
+⬥ Adrenaline Cost: 0%
+⬥ It is a channeled ability
+⬥ It is affected by Nightmare Gauntlets <img title="NMG" class="d-emoji" alt="NMG" src="https://cdn.discordapp.com/emojis/513190159441723392.png?v=1">, details in <a href="" class="inactiveLink">#armour-and-weapons</a>
+</div>
+
+</div>
+
+</div>
+
+
+</div></div></div></div></div></div></div></div></div></div></div></div>
+
+<p>&#x200b;</p>
+<div class="flex-vertical whitney theme-dark">
+<div class="chat flex-vertical flex-spacer">
+<div class="content flex-spacer flex-horizontal">
+<div class="flex-spacer flex-vertical messages-wrapper">
+<div class="scroller-wrap">
+<div class="scroller messages">
+<div class="message-group hide-overflow">
+<div class="comment">
+<div class="message first">
+<div class="accessory">
+
+<div class="embed-wrapper">
+<div class="embed-color-pill" style="background-color: rgb(46, 204, 113);"></div>
+<div class="embed embed-rich">
+<div class="embed-content">
+<div class="embed-content-inner">
+
+<div class="embed-title" ><u>Bombardment</u> <img title="bombard" class="d-emoji" alt="bombard" src="https://cdn.discordapp.com/emojis/535541306391265284.png?v=1">
+</div>
+<div class="embed-description markup" >⬥ Cooldown: 9t (5.4ss)
+⬥ Adrenaline Cost: 25%
+⬥ It is an AoE:
+    • 5x5 with target's true centre (SW tile) as centre
+    • Up to 9 targets
+⬥ Not affected by Chinchompas <img title="mechchin" class="d-emoji" alt="mechchin" src="https://cdn.discordapp.com/emojis/641669268722810881.png?v=1">
+</div>
+
+</div>
+
+</div>
+
+
+</div></div></div></div></div></div></div></div></div></div></div></div>
+
+<p>&#x200b;</p>
+<div class="flex-vertical whitney theme-dark">
+<div class="chat flex-vertical flex-spacer">
+<div class="content flex-spacer flex-horizontal">
+<div class="flex-spacer flex-vertical messages-wrapper">
+<div class="scroller-wrap">
+<div class="scroller messages">
+<div class="message-group hide-overflow">
+<div class="comment">
+<div class="message first">
+<div class="accessory">
+
+<div class="embed-wrapper">
+<div class="embed-color-pill" style="background-color: rgb(46, 204, 113);"></div>
+<div class="embed embed-rich">
+<div class="embed-content">
+<div class="embed-content-inner">
+
+<div class="embed-title" ><u>Rapid Fire</u> <img title="rapid" class="d-emoji" alt="rapid" src="https://cdn.discordapp.com/emojis/535541270521708566.png?v=1">
+</div>
+<div class="embed-description markup" >⬥ Cooldown: 34t (20.4s)
+⬥ Adrenaline Cost: 25%
+⬥ 8 hits
+⬥ Binds for 10t (6s)
+⬥ Channelled ability
+⬥ Each attack extends the duration of Searing Winds by 1t (0.6s)
+</div>
+
+</div>
+
+</div>
+
+
+</div></div></div></div></div></div></div></div></div></div></div></div>
+
+<p>&#x200b;</p>
+<div class="flex-vertical whitney theme-dark">
+<div class="chat flex-vertical flex-spacer">
+<div class="content flex-spacer flex-horizontal">
+<div class="flex-spacer flex-vertical messages-wrapper">
+<div class="scroller-wrap">
+<div class="scroller messages">
+<div class="message-group hide-overflow">
+<div class="comment">
+<div class="message first">
+<div class="accessory">
+
+<div class="embed-wrapper">
+<div class="embed-color-pill" style="background-color: rgb(46, 204, 113);"></div>
+<div class="embed embed-rich">
+<div class="embed-content">
+<div class="embed-content-inner">
+
+<div class="embed-title" ><u>Shadow Tendrils</u> <img title="shadowtend" class="d-emoji" alt="shadowtend" src="https://cdn.discordapp.com/emojis/642713547142332416.png?v=1">
+</div>
+<div class="embed-description markup" >⬥ Cooldown: 75t (45s)
+⬥ Adrenaline Cost: 0%
+⬥ Calculates damage on activation
+⬥ Deals self-damage to the player
+⬥ Extends the duration of Shadow Imbue by 3.6s
+⬥ Guaranteed to crit
+</div>
+
+</div>
+
+</div>
+
+
+</div></div></div></div></div></div></div></div></div></div></div></div>
+
+<p>&#x200b;</p>
+<div class="flex-vertical whitney theme-dark">
+<div class="chat flex-vertical flex-spacer">
+<div class="content flex-spacer flex-horizontal">
+<div class="flex-spacer flex-vertical messages-wrapper">
+<div class="scroller-wrap">
+<div class="scroller messages">
+<div class="message-group hide-overflow">
+<div class="comment">
+<div class="message first">
+<div class="accessory">
+
+<div class="embed-wrapper">
+<div class="embed-color-pill" style="background-color: rgb(46, 204, 113);"></div>
+<div class="embed embed-rich">
+<div class="embed-content">
+<div class="embed-content-inner">
+
+<div class="embed-title" ><u>Corruption Shot</u> <img title="corruptshot" class="d-emoji" alt="corruptshot" src="https://cdn.discordapp.com/emojis/535541306294796299.png?v=1">
+</div>
+<div class="embed-description markup" >⬥ Cooldown: 25t (15s)
+⬥ Adrenaline Cost: 20%
+⬥ It is a DoT:
+    • Not affected by <img title="precise" class="d-emoji" alt="precise" src="https://cdn.discordapp.com/emojis/1005204971886743572.png?v=1"> or <img title="eruptive" class="d-emoji" alt="eruptive" src="https://cdn.discordapp.com/emojis/1214364892895907941.png?v=1">
+    • Hits every 2t (1.2s), for a total of 5 times
+⬥ It is an AoE:
+    • Spreads to targets within 2 tiles each hit, up to 5 additional targets
+</div>
+
+</div>
+
+</div>
+
+
+</div></div></div></div></div></div></div></div></div></div></div></div>
+
+<p>&#x200b;</p>
+<div class="flex-vertical whitney theme-dark">
+<div class="chat flex-vertical flex-spacer">
+<div class="content flex-spacer flex-horizontal">
+<div class="flex-spacer flex-vertical messages-wrapper">
+<div class="scroller-wrap">
+<div class="scroller messages">
+<div class="message-group hide-overflow">
+<div class="comment">
+<div class="message first">
+<div class="accessory">
+
+<div class="embed-wrapper">
+<div class="embed-color-pill" style="background-color: rgb(46, 204, 113);"></div>
+<div class="embed embed-rich">
+<div class="embed-content">
+<div class="embed-content-inner">
+
+<div class="embed-title" ><u>Imbue: Shadows</u> <img title="imbue_shadows" class="d-emoji" alt="imbue_shadows" src="https://cdn.discordapp.com/emojis/1478061866193518744.png?v=1">
+</div>
+<div class="embed-description markup" >⬥ Cooldown: 100t (60s)
+⬥ Adrenaline Cost: 40%
+⬥ Applies Shadow Imbued to self for 50t (30s)
+⬥ Shadow Imbued:
+    • Ranged attacks against your target generate 5% adrenaline for each hit
+</div>
+
+</div>
+
+</div>
+
+
+</div></div></div></div></div></div></div></div></div></div></div></div>
+
+<p>&#x200b;</p>
+<h3 id="special-attacks">Special Attacks</h3>
+<div class="flex-vertical whitney theme-dark">
+<div class="chat flex-vertical flex-spacer">
+<div class="content flex-spacer flex-horizontal">
+<div class="flex-spacer flex-vertical messages-wrapper">
+<div class="scroller-wrap">
+<div class="scroller messages">
+<div class="message-group hide-overflow">
+<div class="comment">
+<div class="message first">
+<div class="accessory">
+
+<div class="embed-wrapper">
+<div class="embed-color-pill" style="background-color: rgb(46, 204, 113);"></div>
+<div class="embed embed-rich">
+<div class="embed-content">
+<div class="embed-content-inner">
+
+<div class="embed-title" ><u>Dark Bow</u> <img title="dbow" class="d-emoji" alt="dbow" src="https://cdn.discordapp.com/emojis/643848618553507843.png?v=1">
+</div>
+<div class="embed-description markup" >⬥ Adrenaline Cost: 65% (58.5% with <img title="rov" class="d-emoji" alt="rov" src="https://cdn.discordapp.com/emojis/513201065877831680.png?v=1">)
+</div>
+
+</div>
+
+</div>
+
+
+</div></div></div></div></div></div></div></div></div></div></div></div>
+
+<p>&#x200b;</p>
+<div class="flex-vertical whitney theme-dark">
+<div class="chat flex-vertical flex-spacer">
+<div class="content flex-spacer flex-horizontal">
+<div class="flex-spacer flex-vertical messages-wrapper">
+<div class="scroller-wrap">
+<div class="scroller messages">
+<div class="message-group hide-overflow">
+<div class="comment">
+<div class="message first">
+<div class="accessory">
+
+<div class="embed-wrapper">
+<div class="embed-color-pill" style="background-color: rgb(46, 204, 113);"></div>
+<div class="embed embed-rich">
+<div class="embed-content">
+<div class="embed-content-inner">
+
+<div class="embed-title" ><u>Zamorak Bow</u> <img title="zammybow" class="d-emoji" alt="zammybow" src="https://cdn.discordapp.com/emojis/1215929540908679208.png?v=1">
+</div>
+<div class="embed-description markup" >⬥ Adrenaline Cost: 40% (36% with <img title="rov" class="d-emoji" alt="rov" src="https://cdn.discordapp.com/emojis/513201065877831680.png?v=1">)
+</div>
+
+</div>
+
+</div>
+
+
+</div></div></div></div></div></div></div></div></div></div></div></div>
+
+<p>&#x200b;</p>
+<div class="flex-vertical whitney theme-dark">
+<div class="chat flex-vertical flex-spacer">
+<div class="content flex-spacer flex-horizontal">
+<div class="flex-spacer flex-vertical messages-wrapper">
+<div class="scroller-wrap">
+<div class="scroller messages">
+<div class="message-group hide-overflow">
+<div class="comment">
+<div class="message first">
+<div class="accessory">
+
+<div class="embed-wrapper">
+<div class="embed-color-pill" style="background-color: rgb(46, 204, 113);"></div>
+<div class="embed embed-rich">
+<div class="embed-content">
+<div class="embed-content-inner">
+
+<div class="embed-title" ><u>Gloomfire Bow</u> <img title="gloomfirebow" class="d-emoji" alt="gloomfirebow" src="https://cdn.discordapp.com/emojis/1446178203608809472.png?v=1">
+</div>
+<div class="embed-description markup" >⬥ Adrenaline Cost: 65% (58.5% with <img title="rov" class="d-emoji" alt="rov" src="https://cdn.discordapp.com/emojis/513201065877831680.png?v=1">)
+</div>
+
+</div>
+
+</div>
+
+
+</div></div></div></div></div></div></div></div></div></div></div></div>
+
+<p>&#x200b;</p>
+<div class="flex-vertical whitney theme-dark">
+<div class="chat flex-vertical flex-spacer">
+<div class="content flex-spacer flex-horizontal">
+<div class="flex-spacer flex-vertical messages-wrapper">
+<div class="scroller-wrap">
+<div class="scroller messages">
+<div class="message-group hide-overflow">
+<div class="comment">
+<div class="message first">
+<div class="accessory">
+
+<div class="embed-wrapper">
+<div class="embed-color-pill" style="background-color: rgb(46, 204, 113);"></div>
+<div class="embed embed-rich">
+<div class="embed-content">
+<div class="embed-content-inner">
+
+<div class="embed-title" ><u>Seren Godbow</u> <img title="sgb" class="d-emoji" alt="sgb" src="https://cdn.discordapp.com/emojis/626466665848242186.png?v=1">
+</div>
+<div class="embed-description markup" >⬥ Cooldown: 50t (30s)
+⬥ Adrenaline Cost: 30% (27% with <img title="rov" class="d-emoji" alt="rov" src="https://cdn.discordapp.com/emojis/513201065877831680.png?v=1">)
+⬥ To see how use the special attack, use <code class="embed-code-inline">!sgb</code> in <a href="" class="inactiveLink">#bot-commands</a>
+</div>
+
+</div>
+
+</div>
+
+
+</div></div></div></div></div></div></div></div></div></div></div></div>
+
+<p>&#x200b;</p>
+<div class="flex-vertical whitney theme-dark">
+<div class="chat flex-vertical flex-spacer">
+<div class="content flex-spacer flex-horizontal">
+<div class="flex-spacer flex-vertical messages-wrapper">
+<div class="scroller-wrap">
+<div class="scroller messages">
+<div class="message-group hide-overflow">
+<div class="comment">
+<div class="message first">
+<div class="accessory">
+
+<div class="embed-wrapper">
+<div class="embed-color-pill" style="background-color: rgb(46, 204, 113);"></div>
+<div class="embed embed-rich">
+<div class="embed-content">
+<div class="embed-content-inner">
+
+<div class="embed-title" ><u>Eldritch Crossbow</u> <img title="ecb" class="d-emoji" alt="ecb" src="https://cdn.discordapp.com/emojis/615618531937222657.png?v=1">
+</div>
+<div class="embed-description markup" >⬥ Special Attack: Split Soul
+⬥ Adrenaline Cost: 25% (22.5% with <img title="rov" class="d-emoji" alt="rov" src="https://cdn.discordapp.com/emojis/513201065877831680.png?v=1">)
+    • Lasts 25t (t0-t24)
+    • Anything <img title="soulsplit" class="d-emoji" alt="soulsplit" src="https://cdn.discordapp.com/emojis/615613924506599497.png?v=1"> would have healed whilst spec is active instead deals Blight damage equal to 4 * <img title="soulsplit" class="d-emoji" alt="soulsplit" src="https://cdn.discordapp.com/emojis/615613924506599497.png?v=1"> heal amount
+    • To get the Split Soul damage both the <img title="soulsplit" class="d-emoji" alt="soulsplit" src="https://cdn.discordapp.com/emojis/615613924506599497.png?v=1"> heal and the hit of the ability must occur within the duration of the special
+    • Special attack is lost if main hand weapon is switched while active
+    • Blight damage is affected a second time by Vulnerability <img title="Vuln" class="d-emoji" alt="Vuln" src="https://cdn.discordapp.com/emojis/537349530551582720.png?v=1">, X Slayer sigils <img title="demonslayer" class="d-emoji" alt="demonslayer" src="https://cdn.discordapp.com/emojis/641339921675845633.png?v=1"> <img title="dragonslayer" class="d-emoji" alt="dragonslayer" src="https://cdn.discordapp.com/emojis/641339921814126594.png?v=1"> <img title="undeadslayer" class="d-emoji" alt="undeadslayer" src="https://cdn.discordapp.com/emojis/641339922019516416.png?v=1">, the NopeNopeNope PoF perk, and X Slayer perks <img title="undeadslayerperk" class="d-emoji" alt="undeadslayerperk" src="https://cdn.discordapp.com/emojis/689502804720615441.png?v=1"> <img title="demonslayerperk" class="d-emoji" alt="demonslayerperk" src="https://cdn.discordapp.com/emojis/689502842653900818.png?v=1"> <img title="dragonslayerperk" class="d-emoji" alt="dragonslayerperk" src="https://cdn.discordapp.com/emojis/689502927731163170.png?v=1">
+</div>
+
+</div>
+
+</div>
+
+
+</div></div></div></div></div></div></div></div></div></div></div></div>
+
+<p>&#x200b;</p>
+<div class="flex-vertical whitney theme-dark">
+<div class="chat flex-vertical flex-spacer">
+<div class="content flex-spacer flex-horizontal">
+<div class="flex-spacer flex-vertical messages-wrapper">
+<div class="scroller-wrap">
+<div class="scroller messages">
+<div class="message-group hide-overflow">
+<div class="comment">
+<div class="message first">
+<div class="accessory">
+
+<div class="embed-wrapper">
+<div class="embed-color-pill" style="background-color: rgb(46, 204, 113);"></div>
+<div class="embed embed-rich">
+<div class="embed-content">
+<div class="embed-content-inner">
+
+<div class="embed-title" ><u>Bow of the Last Guardian</u> <img title="bolg" class="d-emoji" alt="bolg" src="https://cdn.discordapp.com/emojis/994189289623662702.png?v=1">
+</div>
+<div class="embed-description markup" >⬥ Special Attack: Balance by Force
+⬥ Adrenaline Cost: 30% (27% with <img title="rov" class="d-emoji" alt="rov" src="https://cdn.discordapp.com/emojis/513201065877831680.png?v=1">)
+    • Lasts 50t (t0-t49)
+    • While active, the number of stacks needed to trigger the passive effect is lowered to 4
+    • If 3 or more <img title="perfectequilibrium" class="d-emoji" alt="perfectequilibrium" src="https://cdn.discordapp.com/emojis/1006119102814887957.png?v=1"> stacks when used the passive effect will trigger
+    • For more info on how to use the special attack, use <code class="embed-code-inline">!bolg</code> in <a href="" class="inactiveLink">#bot-commands</a>
+</div>
+
+</div>
+
+</div>
+
+
+</div></div></div></div></div></div></div></div></div></div></div></div>
+
+<p>&#x200b;</p>
+<h3 id="ultimate-abilities">Ultimate Abilities</h3>
+<p>&#x200b;</p>
+<div class="flex-vertical whitney theme-dark">
+<div class="chat flex-vertical flex-spacer">
+<div class="content flex-spacer flex-horizontal">
+<div class="flex-spacer flex-vertical messages-wrapper">
+<div class="scroller-wrap">
+<div class="scroller messages">
+<div class="message-group hide-overflow">
+<div class="comment">
+<div class="message first">
+<div class="accessory">
+
+<div class="embed-wrapper">
+<div class="embed-color-pill" style="background-color: rgb(46, 204, 113);"></div>
+<div class="embed embed-rich">
+<div class="embed-content">
+<div class="embed-content-inner">
+
+<div class="embed-title" ><u>Deadshot</u> <img title="deadshot" class="d-emoji" alt="deadshot" src="https://cdn.discordapp.com/emojis/1478061860371828929.png?v=1">
+</div>
+<div class="embed-description markup" >⬥ Cooldown: 50t (30s)
+⬥ Adrenaline Cost: 60%
+⬥ Fires 4 hits
+⬥ Affected by the Igneous Kal-Xil <img title="igneouskalxil" class="d-emoji" alt="igneouskalxil" src="https://cdn.discordapp.com/emojis/902209626404171786.png?v=1"> and Igneous Kal-Zuk <img title="igneouskalzuk" class="d-emoji" alt="igneouskalzuk" src="https://cdn.discordapp.com/emojis/902209626479685734.png?v=1">
+    • Adrenaline cost becomes 60%
+    • Fires 8 hits
+</div>
+
+</div>
+
+</div>
+
+
+</div></div></div></div></div></div></div></div></div></div></div></div>
+
+<p>&#x200b;</p>
+<div class="flex-vertical whitney theme-dark">
+<div class="chat flex-vertical flex-spacer">
+<div class="content flex-spacer flex-horizontal">
+<div class="flex-spacer flex-vertical messages-wrapper">
+<div class="scroller-wrap">
+<div class="scroller messages">
+<div class="message-group hide-overflow">
+<div class="comment">
+<div class="message first">
+<div class="accessory">
+
+<div class="embed-wrapper">
+<div class="embed-color-pill" style="background-color: rgb(46, 204, 113);"></div>
+<div class="embed embed-rich">
+<div class="embed-content">
+<div class="embed-content-inner">
+
+<div class="embed-title" ><u>Death's Swiftness</u> <img title="deathsswift" class="d-emoji" alt="deathsswift" src="https://cdn.discordapp.com/emojis/994921434633744455.png?v=1">
+</div>
+<div class="embed-description markup" >⬥ Cooldown: 100t (60s)
+⬥ It is an on cast buff
+⬥ Increases damage by 50% from t0→t51 (52t/31.2s duration); buff starts t1
+⬥ It has a 7x7 buff radius
+⬥ It does not incur the auto cooldown
+⬥ Planted Feet <img title="pf" class="d-emoji" alt="pf" src="https://cdn.discordapp.com/emojis/689501925770919981.png?v=1"> increases duration to t0→t64 (65t/39s)
+</div>
+
+</div>
+
+</div>
+
+
+</div></div></div></div></div></div></div></div></div></div></div></div>
+
+<p>&#x200b;</p>
+<div class="flex-vertical whitney theme-dark">
+<div class="chat flex-vertical flex-spacer">
+<div class="content flex-spacer flex-horizontal">
+<div class="flex-spacer flex-vertical messages-wrapper">
+<div class="scroller-wrap">
+<div class="scroller messages">
+<div class="message-group hide-overflow">
+<div class="comment">
+<div class="message first">
+<div class="accessory">
+
+<div class="embed-wrapper">
+<div class="embed-color-pill" style="background-color: rgb(46, 204, 113);"></div>
+<div class="embed embed-rich">
+<div class="embed-content">
+<div class="embed-content-inner">
+
+<div class="embed-title" ><u>Greater Death's Swiftness</u> <img title="gdeathsswift" class="d-emoji" alt="gdeathsswift" src="https://cdn.discordapp.com/emojis/994644354536837121.png?v=1">
+</div>
+<div class="embed-description markup" >⬥ Cooldown: 100t (60s)
+⬥ Duration becomes t0→t64 (65t/39s duration); buff starts t1
+    • Using <img title="pf" class="d-emoji" alt="pf" src="https://cdn.discordapp.com/emojis/689501925770919981.png?v=1"> does not extend this further
+⬥ <img title="gdeathsswift" class="d-emoji" alt="gdeathsswift" src="https://cdn.discordapp.com/emojis/994644354536837121.png?v=1"> retains the DoT effect of <img title="deathsswift" class="d-emoji" alt="deathsswift" src="https://cdn.discordapp.com/emojis/994921434633744455.png?v=1">
+    • Using <img title="pf" class="d-emoji" alt="pf" src="https://cdn.discordapp.com/emojis/689501925770919981.png?v=1"> will cancel this
+</div>
+
+</div>
+
+</div>
+
+
+</div></div></div></div></div></div></div></div></div></div></div></div>
+
+<p>&#x200b;</p>
+<h3 id="utility-abilities">Utility Abilities</h3>
+<div class="flex-vertical whitney theme-dark">
+<div class="chat flex-vertical flex-spacer">
+<div class="content flex-spacer flex-horizontal">
+<div class="flex-spacer flex-vertical messages-wrapper">
+<div class="scroller-wrap">
+<div class="scroller messages">
+<div class="message-group hide-overflow">
+<div class="comment">
+<div class="message first">
+<div class="accessory">
+
+<div class="embed-wrapper">
+<div class="embed-color-pill" style="background-color: rgb(46, 204, 113);"></div>
+<div class="embed embed-rich">
+<div class="embed-content">
+<div class="embed-content-inner">
+
+<div class="embed-title" ><u>Escape</u> <img title="escape" class="d-emoji" alt="escape" src="https://cdn.discordapp.com/emojis/535541258832052231.png?v=1">
+</div>
+<div class="embed-description markup" >⬥ Cooldown: 34t (20.4s)
+⬥ It is a Mobility ability:
+    • For <img title="range" class="d-emoji" alt="range" src="https://cdn.discordapp.com/emojis/580168050121113623.png?v=1">: moves you back (weapon attack range - 1) tiles
+    • For non-<img title="range" class="d-emoji" alt="range" src="https://cdn.discordapp.com/emojis/580168050121113623.png?v=1">: moves you back 7 tiles
+⬥ It is affected by Mobile <img title="mob" class="d-emoji" alt="mob" src="https://cdn.discordapp.com/emojis/689501908628799488.png?v=1">
+    • Reduces cooldown to 17t (10.2s)
+⬥ Can be upgraded with a Double Escape codex: <img title="escapecodex" class="d-emoji" alt="escapecodex" src="https://cdn.discordapp.com/emojis/602561894443778115.png?v=1">
+    • Gives you a second <img title="escape" class="d-emoji" alt="escape" src="https://cdn.discordapp.com/emojis/535541258832052231.png?v=1"> on its own 34t (17t <img title="mob" class="d-emoji" alt="mob" src="https://cdn.discordapp.com/emojis/689501908628799488.png?v=1">) internal cooldown that is used after the first
+</div>
+
+</div>
+
+</div>
+
+
+</div></div></div></div></div></div></div></div></div></div></div></div>
+
+<p>&#x200b;</p>
+<div class="flex-vertical whitney theme-dark">
+<div class="chat flex-vertical flex-spacer">
+<div class="content flex-spacer flex-horizontal">
+<div class="flex-spacer flex-vertical messages-wrapper">
+<div class="scroller-wrap">
+<div class="scroller messages">
+<div class="message-group hide-overflow">
+<div class="comment">
+<div class="message first">
+<div class="accessory">
+
+<div class="embed-wrapper">
+<div class="embed-color-pill" style="background-color: rgb(46, 204, 113);"></div>
+<div class="embed embed-rich">
+<div class="embed-content">
+<div class="embed-content-inner">
+
+<div class="embed-title" ><img title="range" class="d-emoji" alt="range" src="https://cdn.discordapp.com/emojis/580168050121113623.png?v=1"> <u>Ranged Ability Index</u> <img title="range" class="d-emoji" alt="range" src="https://cdn.discordapp.com/emojis/580168050121113623.png?v=1">
+</div>
+<div class="embed-description markup" >⬥ Click the links to quickly navigate to that ability's information.
+⬥ General notes can be found in the introduction <a href="$linkmsg_intro$">here</a>.
+</div>
+<div class="embed-fields"><div class="embed-field embed-field-inline" ><div class="embed-field-name" ><u>Basic</u>
+</div><div class="embed-field-value markup" >⬥ <a href="$linkmsg_rangeauto$">Ranged</a>
+⬥ <a href="$linkmsg_piercing$">Piercing Shot</a>
+⬥ <a href="$linkmsg_binding$">Binding Shot</a>
+⬥ <a href="$linkmsg_galeshot$">Galeshot</a>
+⬥ <a href="$linkmsg_ricochet$">Ricochet</a>
+⬥ <a href="$linkmsg_grico$">G. Ricochet</a>
+</div></div><div class="embed-field embed-field-inline" ><div class="embed-field-name" ><u>Enhanced</u>
+</div><div class="embed-field-value markup" >⬥ <a href="$linkmsg_snap$">Snapshot</a>
+⬥ <a href="$linkmsg_snipe$">Snipe</a>
+⬥ <a href="$linkmsg_bmbard$">Bombard</a>
+⬥ <a href="$linkmsg_rapid$">Rapid Fire</a>
+⬥ <a href="$linkmsg_shadowtendril$">Shadow Tendrils</a>
+⬥ <a href="$linkmsg_corrshot$">Corr. Shot</a>
+⬥ <a href="$linkmsg_imbueshadows$">Imbue: Shadows</a>
+</div></div><div class="embed-field embed-field-inline" ><div class="embed-field-name" ><u>Special Attacks</u>
+</div><div class="embed-field-value markup" >⬥ <a href="$linkmsg_dbow$">Dark Bow</a>
+⬥ <a href="$linkmsg_zbow$">Zamorak Bow</a>
+⬥ <a href="$linkmsg_gloomfire$">Gloomfire Bow</a>
+⬥ <a href="$linkmsg_sgb$">Seren Godbow</a>
+⬥ <a href="$linkmsg_ecb$">Eldritch Crossbow</a>
+⬥ <a href="$linkmsg_bolg$">Bow of the Last Guardian</a>
+</div></div><div class="embed-field embed-field-inline" ><div class="embed-field-name" ><u>Ultimate</u>
+</div><div class="embed-field-value markup" >⬥ <a href="$linkmsg_deadshot$">Deadshot</a>
+⬥ <a href="$linkmsg_ds$">Death's Swiftness</a>
+⬥ <a href="$linkmsg_greaterds$">G. Death's Swiftness</a>
+</div></div><div class="embed-field embed-field-inline" ><div class="embed-field-name" ><u>Utility</u>
+</div><div class="embed-field-value markup" >⬥ <a href="$linkmsg_escape$">Escape</a>
+</div></div></div>
+</div>
+
+</div>
+
+
+</div></div></div></div></div></div></div></div></div></div></div></div>
+
+<p>&#x200b;</p>
+      
+    

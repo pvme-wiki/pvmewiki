@@ -1,0 +1,731 @@
+__NOTOC__
+<div class="pvme-exact-guide">
+
+<div class="pvme-source-section">
+<h2 id="introduction"><ins><nowiki>Introduction</nowiki></ins></h2>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><em><nowiki>Note: Use the </nowiki><ins><strong><nowiki>Table of Contents</nowiki></strong></ins><nowiki> present at the bottom of the channel, or in the pinned comments, to quickly navigate through this channel and find the information you are looking for.</nowiki></em></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>Some general notes:</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ The game runs on an internal tick system: </nowiki><strong><nowiki>1t (tick) = 0.6s (seconds)</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ The minimum time between abilities is called the global cooldown: </nowiki><strong><nowiki>1 gcd = 3t = 1.8s</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Auto attacks will only give adrenaline if they hit (splash = no adrenaline gain).</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• Debuff spells like Vuln </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/537349530551582720.png?v=1" alt="Vuln" title="Vuln" kind="icon" /><nowiki> or Enfeeble </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/567727986409734145.png?v=1" alt="Enfeeble" title="Enfeeble" kind="icon" /><nowiki> or Smoke Cloud </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/856635090641879050.png?v=1" alt="smokecloud" title="smokecloud" kind="icon" /><nowiki> do not give adrenaline.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Some useful sheets and resources are given below.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(0, 153, 255)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+
+
+</nowiki><div><div><div><u><nowiki>Ability Damage Maths</nowiki></u><nowiki>
+</nowiki></div><div class="pvme-source-preserve-lines"><nowiki>To calculate your ability hit damage in detail, </nowiki>[https://tools.runescape.wiki/rs-rot/ <nowiki>click here</nowiki>]<nowiki>.
+This is affected by factors such as your gear and other boosts.
+</nowiki></div></div><div><div><u><nowiki>Ability Hit Timings</nowiki></u><nowiki>
+</nowiki></div><div class="pvme-source-preserve-lines"><nowiki>To see detailed breakdowns on ability hit timings, </nowiki>[https://docs.google.com/spreadsheets/d/1rK7u17JN6I-vf3dKBKg6tm9IPWje9EWSe_r8KPdsxoc/edit?usp=sharing <nowiki>click here</nowiki>]<nowiki>.
+This refers to when hitsplats appear on your target.
+</nowiki></div></div><div><div><u><nowiki>Auto-attack Adren Gain</nowiki></u><nowiki>
+</nowiki></div><div class="pvme-source-preserve-lines"><nowiki>To see adrenaline gained with different auto attacks, </nowiki>[https://runescape.wiki/w/Invigorating <nowiki>click here</nowiki>]<nowiki>.
+</nowiki></div></div></div><nowiki>
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line"><em><nowiki>Note: If you have any difficulties in using the tools or understanding what the information means, you can always ask in </nowiki><span><nowiki>#pvm-help</nowiki></span></em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="constitution"><ins><nowiki>Constitution </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/689509250887712902.png?v=1" alt="constitution" title="constitution" kind="icon" /></ins></h2>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>This section covers auto attacks, basics, thresholds, ultimate abilities and special attacks for Defence.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+<div class="pvme-source-mechanic">
+<h3 id="autos"><nowiki>Autos</nowiki></h3>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(186, 3, 1)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Default Auto</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/689509250887712902.png?v=1" alt="constitution" title="constitution" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: Based on Weapon Speed
+    • Fastest: 4t (2.4s)
+    • Fast: 5t (3.0s)
+    • Average: 6t (3.6s)
+⬥ Takes on style of main hand weapon
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="basics"><nowiki>Basics</nowiki></h3>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(186, 3, 1)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Siphon</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/553050198012854275.png?v=1" alt="siphon" title="siphon" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 100t (60s)
+⬥ Only works on targets with more adrenaline than you
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(186, 3, 1)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Sacrifice</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/513201065907322880.png?v=1" alt="sacrifice" title="sacrifice" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 50t (30s)
+⬥ Heal for 25% of your damage dealt
+    • Increased to 100% if killing hit
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(186, 3, 1)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Storm Shards</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/536256663641128971.png?v=1" alt="stormshards" title="stormshards" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 50t (30s)
+⬥ Stacks delayed ability damage on target
+    • Up to 10 stacks
+    • Damage is triggered by using </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/536256673904328704.png?v=1" alt="shatter" title="shatter" kind="icon" /><nowiki>
+⬥ Damage when triggered is dependant on weapon which applied the </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/536256663641128971.png?v=1" alt="stormshards" title="stormshards" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(186, 3, 1)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Regenerate</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137770309315997836.png?v=1" alt="regenerate" title="regenerate" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 0t (0s)
+⬥ Must be </nowiki><strong><nowiki>out</nowiki></strong><nowiki> of combat to use
+⬥ Trades 10% adrenaline for 2% of max health per tick until either
+    • Health is full; or
+    • Adrenaline is empty; or
+    • Combat is initiated
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(186, 3, 1)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Eat Food</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1073883122069934182.png?v=1" alt="eatfood" title="eatfood" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 0t (0s)
+⬥ Eats food
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(186, 3, 1)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Tuska's Wrath</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/513201065513058306.png?v=1" alt="tuskas" title="tuskas" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 200t (120s)
+    • 25t (15s) if used on non slayer target
+⬥ If enemy is your </nowiki><strong><nowiki>active slayer target</nowiki></strong><nowiki>, it will do </nowiki><code><nowiki>100*(Slayer level</nowiki></code><nowiki> damage)
+    • All bosses except The Magister are immune to this effect
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="thresholds"><nowiki>Thresholds</nowiki></h3>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(186, 3, 1)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Reprisal</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/513190159462694912.png?v=1" alt="reprisal" title="reprisal" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 100t (60s)
+⬥ Duration: 10t (6s), or </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/513190159462694912.png?v=1" alt="reprisal" title="reprisal" kind="icon" /><nowiki> is cast again
+⬥ Stores incoming damage while active (up to 30,000)
+⬥ Stored damage dealt to target at end of duration
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(186, 3, 1)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Shatter</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/536256673904328704.png?v=1" alt="shatter" title="shatter" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 200t (120s)
+⬥ Unleashes all Storm Shards </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/536256663641128971.png?v=1" alt="stormshards" title="stormshards" kind="icon" /><nowiki> on target
+⬥ Maximum hit of 30,000
+⬥ Damage is based on weapon which applied </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/536256663641128971.png?v=1" alt="stormshards" title="stormshards" kind="icon" /><nowiki> , but effected by damage boosts when </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/536256673904328704.png?v=1" alt="shatter" title="shatter" kind="icon" /><nowiki> is used
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="special-attacks"><nowiki>Special Attacks</nowiki></h3>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(186, 3, 1)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Essence of Finality</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1" alt="eofspec" title="eofspec" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 0t (0s)
+⬥ Adrenaline cost: dependant on weapon stored in Essence of Finality </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/787526151978614824.png?v=1" alt="eof" title="eof" kind="icon" /><nowiki>
+⬥ main hand weapon must be of the same style as weapon stored
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki><div><span><nowiki>This ability requires an Essence of Finality with a stored weapon
+</nowiki></span></div><nowiki>
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(186, 3, 1)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Weapon Special Attack</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/537340400273195028.png?v=1" alt="spec" title="spec" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 0t (0s)
+    • Some weapons have their own weapon specific cooldown
+⬥ Duration: dependant on weapon
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="ultimates"><nowiki>Ultimates</nowiki></h3>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(186, 3, 1)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Guthix's Blessing</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/553050196767145995.png?v=1" alt="guthixsblessing" title="guthixsblessing" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 500t (300s)
+⬥ Duration: 16t (9.6s)
+⬥ Every 4t (1.6s) heal for 8% of your max HP
+    • Enemies may target the butterfly and end effects early
+⬥ Shares cooldown with </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/641337999170207763.png?v=1" alt="excal" title="excal" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(186, 3, 1)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Ice Asylum</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/553050196817215491.png?v=1" alt="iceasylum" title="iceasylum" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 500t (300s)
+⬥ Duration: 34t (22.2s)
+⬥ Heals players nearby for 1 - 7% of their max HP (based on proximity) every 6t (3.6s)
+⬥ Healing capacity of 300% of your max HP
+⬥ Shares cooldown with </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/641337999170207763.png?v=1" alt="excal" title="excal" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(186, 3, 1)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Onslaught</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/513190159085207555.png?v=1" alt="onsl" title="onsl" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 200t (120s)
+⬥ Channeled ability
+⬥ Up to 26 hits
+    • Drain adrenaline 25 at per hit to 0
+    • Subsequent hits damage you for 25% of the outgoing hit
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(186, 3, 1)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Transfigure</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/553050196523876354.png?v=1" alt="transfigure" title="transfigure" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 300t (180s)
+⬥ Duration: 10t (6s) of incapacitation, then 25t (15s) of stun and bind immunity
+⬥ Heal for 250% of damage taken during incapacitation, when it ends, up to a maximum 75% of max HP
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(186, 3, 1)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><pvme-image src="https://cdn.discordapp.com/emojis/689509250887712902.png?v=1" alt="constitution" title="constitution" kind="icon" /><nowiki> </nowiki><u><nowiki>Constitution Ability Index</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/689509250887712902.png?v=1" alt="constitution" title="constitution" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Click the links to quickly navigate to that ability's information.
+⬥ General notes can be found in the introduction </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/constitution-abilities/$linkmsg_intro$ <nowiki>here</nowiki>]<nowiki>.
+</nowiki></div><nowiki>
+</nowiki><div><div><div><u><nowiki>Auto and Basics</nowiki></u><nowiki> (1/2)
+</nowiki></div><div class="pvme-source-preserve-lines"><nowiki>⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/constitution-abilities/$linkmsg_defaultconstitution$ <nowiki>Default Auto</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/constitution-abilities/$linkmsg_eatfood$ <nowiki>Eat Food</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/constitution-abilities/$linkmsg_regenerate$ <nowiki>Regenerate</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/constitution-abilities/$linkmsg_sacrifice$ <nowiki>Sacrifice</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/constitution-abilities/$linkmsg_siphon$ <nowiki>Siphon</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/constitution-abilities/$linkmsg_stormshards$ <nowiki>Storm Shards</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/constitution-abilities/$linkmsg_tuskaswrath$ <nowiki>Tuska's Wrath</nowiki>]<nowiki>
+</nowiki></div></div><div><div><u><nowiki>Thresholds</nowiki></u><nowiki>
+</nowiki></div><div class="pvme-source-preserve-lines"><nowiki>⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/constitution-abilities/$linkmsg_reprisal$ <nowiki>Reprisal</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/constitution-abilities/$linkmsg_shatter$ <nowiki>Shatter</nowiki>]<nowiki>
+</nowiki></div></div><div><div><u><nowiki>Special Attacks</nowiki></u><nowiki>
+</nowiki></div><div class="pvme-source-preserve-lines"><nowiki>⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/constitution-abilities/$linkmsg_eofspec$ <nowiki>Essence of Finality</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/constitution-abilities/$linkmsg_wepspec$ <nowiki>Special Attack</nowiki>]<nowiki>
+</nowiki></div></div><div><div><u><nowiki>Ultimates</nowiki></u><nowiki>
+</nowiki></div><div class="pvme-source-preserve-lines"><nowiki>⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/constitution-abilities/$linkmsg_guthixsblessing$ <nowiki>Guthix's Blessing</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/constitution-abilities/$linkmsg_iceasylum$ <nowiki>Ice Asylum</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/constitution-abilities/$linkmsg_onslaught$ <nowiki>Onslaught</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/constitution-abilities/$linkmsg_transfigure$ <nowiki>Transfigure</nowiki>]<nowiki>
+</nowiki></div></div></div><nowiki>
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+      
+    </nowiki>
+
+</div>
+</div>
+</div>
+
+<div class="pvme-source-attribution">[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/constitution-abilities/ PvME source] · PvME contributors · [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]. AI-assisted formatting; source wording retained.
+</div>

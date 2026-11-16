@@ -6,6 +6,14 @@
 .pvme-exact-guide .pvme-source-mechanic { padding:1.1em 1.25em; margin-block:1.3em; border:1px solid var(--am-line); border-block-start:3px solid var(--am-teal); border-radius:5px; background:#fbf8f1; }
 .pvme-exact-guide .pvme-source-mechanic h3 { font-family:inherit; font-size:1.18em; font-weight:700; line-height:1.4; margin-block:0 .85em; border:0; }
 .pvme-exact-guide .pvme-source-line { max-width:86ch; margin-block:.7em; }
+.pvme-exact-guide .pvme-source-spacer { margin-block:.15em; line-height:0; }
+.pvme-exact-guide .pvme-source-preserve-lines { white-space:pre-line; }
+.pvme-exact-guide .pvme-source-preserve-lines p { white-space:normal; }
+.pvme-exact-guide .pvme-source-table { max-width:100%; display:block; overflow-x:auto; }
+.pvme-exact-guide pre { white-space:pre; overflow-x:auto; font-size:.9em; }
+.pvme-exact-guide .pvme-source-embed { display:block; width:min(100%,50em); aspect-ratio:16/9; height:auto; border:0; margin-block:1em; }
+.pvme-source-heading-image { max-height:2em; max-width:100%; width:auto; vertical-align:middle; }
+html:not(.ve-active):not(.ve-activating) body.action-view:not(.ve-active):not(.ve-activating) .pvme-exact-guide > .pvme-source-title { display:none; }
 .pvme-exact-guide .pvme-source-detail { margin-inline-start:1.2em; padding-inline-start:.7em; border-inline-start:2px solid #d5dfd9; }
 .pvme-exact-guide .pvme-source-prayer { padding:.8em; border:1px solid #c1d1c9; border-radius:4px; background:#fffefa; font-size:1.08em; }
 .pvme-exact-guide .pvme-source-prayer .pvme-source-icon { width:1.8em; height:1.8em; }

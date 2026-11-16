@@ -1,0 +1,1498 @@
+{
+  "schemaVersion": 1,
+  "id": "pvme-guides--editor-resources--editor-references--templates",
+  "sourceURL": "https://pvme.io/pvme-guides/editor-resources/editor-references/templates/",
+  "responseURL": "https://pvme.io/pvme-guides/editor-resources/editor-references/templates/",
+  "boundary": "Direct article H1 onward through article-inner end",
+  "offsets": {
+    "start": 164215,
+    "end": 169206
+  },
+  "text": "Templates & Tips for Writing Guides\nThis channel showcases many of the ways you can be more efficient when writing guides, whether that be through copy-able templates, code snippets or other tips.\n​\nIt assumes you are using the PvME Guide Editor to write & live preview your guides.\n​\nFinding and using Templates\nIn the Guide Editor toolbar you will see a \"Template\" dropdown, containing starting points for our main guide types:\n⬥ Boss Guide\n⬥ AFK Guide\n⬥ Slayer Guide\n⬥ Command Embed\n​\nSimply click \"copy\" and paste these into the editor to get started on your guide, as in the screenshot below:\n\n​\nFinding emojis\nThere are two ways to find an emoji:\n\n\nIn the Guide Editor, simply start typing :emojiname ‎and it will bring up a list - select the one you want\n\n\nSearch the full repository of emojis at https://pvme.io/pvme-settings/#emojis\n\n\n​\nLinking items to the Wiki\nMany of our guides link items and gear to the RS Wiki. Follow these steps:\n⬥ Use the pattern: [Item name](<http://runescape.wiki/w/Item_name>) <:emoji:>​\n‎ ‎ ‎ ‎• Wrap the URL in <> ‎to prevent it showing a preview\n‎ ‎ ‎ ‎• Most items only capitalise the first word\n‎ ‎ ‎ ‎• Replace spaces with underscores\n⬥ Test your URL in the guide editor by clicking on it\n​\nSee the following example:\n​[Channeller's ring](<http://runescape.wiki/w/Channeller's_ring>) <:channellersring:839903943404027914>​\n→ Channeller's ring \n​\nUsing Embeds\nSometimes we use a special Discord \"embed\" to format messages in a pretty way - these are written in JSON. When inside a JSON, common punctuation like bullets or new lines will not work as normal; use the following to achieve what you are looking for:\n​\n⬥ \\n → adds a new line\n⬥ \\u00a0\\u00a0\\u00a0\\u00a0 = adds a new line + 4 spaces\n⬥ \\n⬥ → adds a new line + a bullet\n⬥ \\n\\u00a0\\u00a0\\u00a0\\u00a0• → adds a new line + 4 spaces + a sub-bullet\n⬥ \\n\\u200B → adds a blank line\n​\nA example embed can be seen below:\n​\n..\n{\n  \"embed\": {\n    \"title\": \"__[embed title]__\",\n    \"description\": \"[embed description]\\n\\u200B\",\n    \"color\": 39423,\n    \"fields\": [\n      {\n        \"name\": \"__[field 1 name]__\",\n        \"value\": \"[field 1 contents]\"\n      },\n      {\n        \"name\": \"__[field 2 name]__\",\n        \"value\": \"⬥ Field 2 contents\\n⬥ Field 2 contents\"\n      }\n    ]\n  }\n}\n..embed:json\n\n​\nWhen rendered, the above code looks like the following;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[embed title]\n\n[embed description]\n​\n\n[field 1 name]\n[field 1 contents]\n[field 2 name]\n⬥ Field 2 contents\n⬥ Field 2 contents\n\n\n\n\n\n\n\n\n​\n      \n    ",
+  "normalizedText": "Templates & Tips for Writing Guides This channel showcases many of the ways you can be more efficient when writing guides, whether that be through copy-able templates, code snippets or other tips. ​ It assumes you are using the PvME Guide Editor to write & live preview your guides. ​ Finding and using Templates In the Guide Editor toolbar you will see a \"Template\" dropdown, containing starting points for our main guide types: ⬥ Boss Guide ⬥ AFK Guide ⬥ Slayer Guide ⬥ Command Embed ​ Simply click \"copy\" and paste these into the editor to get started on your guide, as in the screenshot below: ​ Finding emojis There are two ways to find an emoji: In the Guide Editor, simply start typing :emojiname ‎and it will bring up a list - select the one you want Search the full repository of emojis at https://pvme.io/pvme-settings/#emojis ​ Linking items to the Wiki Many of our guides link items and gear to the RS Wiki. Follow these steps: ⬥ Use the pattern: [Item name](<http://runescape.wiki/w/Item_name>) <:emoji:>​ ‎ ‎ ‎ ‎• Wrap the URL in <> ‎to prevent it showing a preview ‎ ‎ ‎ ‎• Most items only capitalise the first word ‎ ‎ ‎ ‎• Replace spaces with underscores ⬥ Test your URL in the guide editor by clicking on it ​ See the following example: ​[Channeller's ring](<http://runescape.wiki/w/Channeller's_ring>) <:channellersring:839903943404027914>​ → Channeller's ring ​ Using Embeds Sometimes we use a special Discord \"embed\" to format messages in a pretty way - these are written in JSON. When inside a JSON, common punctuation like bullets or new lines will not work as normal; use the following to achieve what you are looking for: ​ ⬥ \\n → adds a new line ⬥ \\u00a0\\u00a0\\u00a0\\u00a0 = adds a new line + 4 spaces ⬥ \\n⬥ → adds a new line + a bullet ⬥ \\n\\u00a0\\u00a0\\u00a0\\u00a0• → adds a new line + 4 spaces + a sub-bullet ⬥ \\n\\u200B → adds a blank line ​ A example embed can be seen below: ​ .. { \"embed\": { \"title\": \"__[embed title]__\", \"description\": \"[embed description]\\n\\u200B\", \"color\": 39423, \"fields\": [ { \"name\": \"__[field 1 name]__\", \"value\": \"[field 1 contents]\" }, { \"name\": \"__[field 2 name]__\", \"value\": \"⬥ Field 2 contents\\n⬥ Field 2 contents\" } ] } } ..embed:json ​ When rendered, the above code looks like the following; [embed title] [embed description] ​ [field 1 name] [field 1 contents] [field 2 name] ⬥ Field 2 contents ⬥ Field 2 contents ​",
+  "wordStream": [
+    "Templates",
+    "&",
+    "Tips",
+    "for",
+    "Writing",
+    "Guides",
+    "This",
+    "channel",
+    "showcases",
+    "many",
+    "of",
+    "the",
+    "ways",
+    "you",
+    "can",
+    "be",
+    "more",
+    "efficient",
+    "when",
+    "writing",
+    "guides,",
+    "whether",
+    "that",
+    "be",
+    "through",
+    "copy-able",
+    "templates,",
+    "code",
+    "snippets",
+    "or",
+    "other",
+    "tips.",
+    "​",
+    "It",
+    "assumes",
+    "you",
+    "are",
+    "using",
+    "the",
+    "PvME",
+    "Guide",
+    "Editor",
+    "to",
+    "write",
+    "&",
+    "live",
+    "preview",
+    "your",
+    "guides.",
+    "​",
+    "Finding",
+    "and",
+    "using",
+    "Templates",
+    "In",
+    "the",
+    "Guide",
+    "Editor",
+    "toolbar",
+    "you",
+    "will",
+    "see",
+    "a",
+    "\"Template\"",
+    "dropdown,",
+    "containing",
+    "starting",
+    "points",
+    "for",
+    "our",
+    "main",
+    "guide",
+    "types:",
+    "⬥",
+    "Boss",
+    "Guide",
+    "⬥",
+    "AFK",
+    "Guide",
+    "⬥",
+    "Slayer",
+    "Guide",
+    "⬥",
+    "Command",
+    "Embed",
+    "​",
+    "Simply",
+    "click",
+    "\"copy\"",
+    "and",
+    "paste",
+    "these",
+    "into",
+    "the",
+    "editor",
+    "to",
+    "get",
+    "started",
+    "on",
+    "your",
+    "guide,",
+    "as",
+    "in",
+    "the",
+    "screenshot",
+    "below:",
+    "​",
+    "Finding",
+    "emojis",
+    "There",
+    "are",
+    "two",
+    "ways",
+    "to",
+    "find",
+    "an",
+    "emoji:",
+    "In",
+    "the",
+    "Guide",
+    "Editor,",
+    "simply",
+    "start",
+    "typing",
+    ":emojiname",
+    "‎and",
+    "it",
+    "will",
+    "bring",
+    "up",
+    "a",
+    "list",
+    "-",
+    "select",
+    "the",
+    "one",
+    "you",
+    "want",
+    "Search",
+    "the",
+    "full",
+    "repository",
+    "of",
+    "emojis",
+    "at",
+    "https://pvme.io/pvme-settings/#emojis",
+    "​",
+    "Linking",
+    "items",
+    "to",
+    "the",
+    "Wiki",
+    "Many",
+    "of",
+    "our",
+    "guides",
+    "link",
+    "items",
+    "and",
+    "gear",
+    "to",
+    "the",
+    "RS",
+    "Wiki.",
+    "Follow",
+    "these",
+    "steps:",
+    "⬥",
+    "Use",
+    "the",
+    "pattern:",
+    "[Item",
+    "name](<http://runescape.wiki/w/Item_name>)",
+    "<:emoji:>​",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Wrap",
+    "the",
+    "URL",
+    "in",
+    "<>",
+    "‎to",
+    "prevent",
+    "it",
+    "showing",
+    "a",
+    "preview",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Most",
+    "items",
+    "only",
+    "capitalise",
+    "the",
+    "first",
+    "word",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Replace",
+    "spaces",
+    "with",
+    "underscores",
+    "⬥",
+    "Test",
+    "your",
+    "URL",
+    "in",
+    "the",
+    "guide",
+    "editor",
+    "by",
+    "clicking",
+    "on",
+    "it",
+    "​",
+    "See",
+    "the",
+    "following",
+    "example:",
+    "​[Channeller's",
+    "ring](<http://runescape.wiki/w/Channeller's_ring>)",
+    "<:channellersring:839903943404027914>​",
+    "→",
+    "Channeller's",
+    "ring",
+    "​",
+    "Using",
+    "Embeds",
+    "Sometimes",
+    "we",
+    "use",
+    "a",
+    "special",
+    "Discord",
+    "\"embed\"",
+    "to",
+    "format",
+    "messages",
+    "in",
+    "a",
+    "pretty",
+    "way",
+    "-",
+    "these",
+    "are",
+    "written",
+    "in",
+    "JSON.",
+    "When",
+    "inside",
+    "a",
+    "JSON,",
+    "common",
+    "punctuation",
+    "like",
+    "bullets",
+    "or",
+    "new",
+    "lines",
+    "will",
+    "not",
+    "work",
+    "as",
+    "normal;",
+    "use",
+    "the",
+    "following",
+    "to",
+    "achieve",
+    "what",
+    "you",
+    "are",
+    "looking",
+    "for:",
+    "​",
+    "⬥",
+    "\\n",
+    "→",
+    "adds",
+    "a",
+    "new",
+    "line",
+    "⬥",
+    "\\u00a0\\u00a0\\u00a0\\u00a0",
+    "=",
+    "adds",
+    "a",
+    "new",
+    "line",
+    "+",
+    "4",
+    "spaces",
+    "⬥",
+    "\\n⬥",
+    "→",
+    "adds",
+    "a",
+    "new",
+    "line",
+    "+",
+    "a",
+    "bullet",
+    "⬥",
+    "\\n\\u00a0\\u00a0\\u00a0\\u00a0•",
+    "→",
+    "adds",
+    "a",
+    "new",
+    "line",
+    "+",
+    "4",
+    "spaces",
+    "+",
+    "a",
+    "sub-bullet",
+    "⬥",
+    "\\n\\u200B",
+    "→",
+    "adds",
+    "a",
+    "blank",
+    "line",
+    "​",
+    "A",
+    "example",
+    "embed",
+    "can",
+    "be",
+    "seen",
+    "below:",
+    "​",
+    "..",
+    "{",
+    "\"embed\":",
+    "{",
+    "\"title\":",
+    "\"__[embed",
+    "title]__\",",
+    "\"description\":",
+    "\"[embed",
+    "description]\\n\\u200B\",",
+    "\"color\":",
+    "39423,",
+    "\"fields\":",
+    "[",
+    "{",
+    "\"name\":",
+    "\"__[field",
+    "1",
+    "name]__\",",
+    "\"value\":",
+    "\"[field",
+    "1",
+    "contents]\"",
+    "},",
+    "{",
+    "\"name\":",
+    "\"__[field",
+    "2",
+    "name]__\",",
+    "\"value\":",
+    "\"⬥",
+    "Field",
+    "2",
+    "contents\\n⬥",
+    "Field",
+    "2",
+    "contents\"",
+    "}",
+    "]",
+    "}",
+    "}",
+    "..embed:json",
+    "​",
+    "When",
+    "rendered,",
+    "the",
+    "above",
+    "code",
+    "looks",
+    "like",
+    "the",
+    "following;",
+    "[embed",
+    "title]",
+    "[embed",
+    "description]",
+    "​",
+    "[field",
+    "1",
+    "name]",
+    "[field",
+    "1",
+    "contents]",
+    "[field",
+    "2",
+    "name]",
+    "⬥",
+    "Field",
+    "2",
+    "contents",
+    "⬥",
+    "Field",
+    "2",
+    "contents",
+    "​"
+  ],
+  "hashes": {
+    "responseSha256": "825903875f6afbb03d0c99fd20fd78a362743136ee1e857c6355da77ba75f94a",
+    "articleSha256": "c14066fdc21df47d3d0e9f742936368bc9edad9f123506a586e8471237a682e0",
+    "textSha256": "3137adec170d866c7b3cc2712932449c0e172f9912373ba8d64d134bc2aa9c0d",
+    "normalizedTextSha256": "b6f1d4361962404ad49130576b49f3de0037920b27eed1b9ef4f56d6a8fdb8c2"
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Templates & Tips for Writing Guides",
+      "attrs": {
+        "id": "templates-tips-for-writing-guides"
+      },
+      "location": {
+        "start": 164215,
+        "end": 164313
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "Finding and using Templates",
+      "attrs": {
+        "id": "finding-and-using-templates"
+      },
+      "location": {
+        "start": 164677,
+        "end": 164757
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "Finding emojis",
+      "attrs": {
+        "id": "finding-emojis"
+      },
+      "location": {
+        "start": 165183,
+        "end": 165237
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "Linking items to the Wiki",
+      "attrs": {
+        "id": "linking-items-to-the-wiki"
+      },
+      "location": {
+        "start": 165595,
+        "end": 165671
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "Using Embeds",
+      "attrs": {
+        "id": "using-embeds"
+      },
+      "location": {
+        "start": 166599,
+        "end": 166649
+      }
+    }
+  ],
+  "media": [
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/ArqoW60TuE.png"
+      },
+      "text": "",
+      "location": {
+        "start": 165102,
+        "end": 165169
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "channellersring",
+        "class": "d-emoji",
+        "alt": "channellersring",
+        "src": "https://cdn.discordapp.com/emojis/839903943404027914.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 166444,
+        "end": 166578
+      }
+    }
+  ],
+  "links": [
+    {
+      "href": "https://pvme.github.io/guide-editor/",
+      "text": "PvME Guide Editor",
+      "attrs": {
+        "href": "https://pvme.github.io/guide-editor/"
+      },
+      "location": {
+        "start": 164538,
+        "end": 164606
+      }
+    },
+    {
+      "href": "https://pvme.io/pvme-settings/#emojis",
+      "text": "https://pvme.io/pvme-settings/#emojis",
+      "attrs": {
+        "href": "https://pvme.io/pvme-settings/#emojis"
+      },
+      "location": {
+        "start": 165473,
+        "end": 165562
+      }
+    },
+    {
+      "href": "https://runescape.wiki/",
+      "text": "RS Wiki",
+      "attrs": {
+        "href": "https://runescape.wiki/"
+      },
+      "location": {
+        "start": 165721,
+        "end": 165766
+      }
+    },
+    {
+      "href": "http://runescape.wiki/w/Channeller's_ring",
+      "text": "Channeller's ring",
+      "attrs": {
+        "href": "http://runescape.wiki/w/Channeller's_ring"
+      },
+      "location": {
+        "start": 166370,
+        "end": 166443
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "h1",
+      "attrs": {
+        "id": "templates-tips-for-writing-guides"
+      },
+      "text": "Templates & Tips for Writing Guides",
+      "location": {
+        "start": 164215,
+        "end": 164313
+      }
+    },
+    {
+      "index": 1,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 164313,
+        "end": 164314
+      }
+    },
+    {
+      "index": 2,
+      "tag": "p",
+      "attrs": {},
+      "text": "This channel showcases many of the ways you can be more efficient when writing guides, whether that be through copy-able templates, code snippets or other tips.",
+      "location": {
+        "start": 164314,
+        "end": 164481
+      }
+    },
+    {
+      "index": 3,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 164481,
+        "end": 164482
+      }
+    },
+    {
+      "index": 4,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 164482,
+        "end": 164497
+      }
+    },
+    {
+      "index": 5,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 164497,
+        "end": 164498
+      }
+    },
+    {
+      "index": 6,
+      "tag": "p",
+      "attrs": {},
+      "text": "It assumes you are using the PvME Guide Editor to write & live preview your guides.",
+      "location": {
+        "start": 164498,
+        "end": 164660
+      }
+    },
+    {
+      "index": 7,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 164660,
+        "end": 164661
+      }
+    },
+    {
+      "index": 8,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 164661,
+        "end": 164676
+      }
+    },
+    {
+      "index": 9,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 164676,
+        "end": 164677
+      }
+    },
+    {
+      "index": 10,
+      "tag": "h2",
+      "attrs": {
+        "id": "finding-and-using-templates"
+      },
+      "text": "Finding and using Templates",
+      "location": {
+        "start": 164677,
+        "end": 164757
+      }
+    },
+    {
+      "index": 11,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 164757,
+        "end": 164758
+      }
+    },
+    {
+      "index": 12,
+      "tag": "p",
+      "attrs": {},
+      "text": "In the Guide Editor toolbar you will see a \"Template\" dropdown, containing starting points for our main guide types:",
+      "location": {
+        "start": 164758,
+        "end": 164881
+      }
+    },
+    {
+      "index": 13,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 164881,
+        "end": 164882
+      }
+    },
+    {
+      "index": 14,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Boss Guide",
+      "location": {
+        "start": 164882,
+        "end": 164901
+      }
+    },
+    {
+      "index": 15,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 164901,
+        "end": 164902
+      }
+    },
+    {
+      "index": 16,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ AFK Guide",
+      "location": {
+        "start": 164902,
+        "end": 164920
+      }
+    },
+    {
+      "index": 17,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 164920,
+        "end": 164921
+      }
+    },
+    {
+      "index": 18,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Slayer Guide",
+      "location": {
+        "start": 164921,
+        "end": 164942
+      }
+    },
+    {
+      "index": 19,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 164942,
+        "end": 164943
+      }
+    },
+    {
+      "index": 20,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Command Embed",
+      "location": {
+        "start": 164943,
+        "end": 164965
+      }
+    },
+    {
+      "index": 21,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 164965,
+        "end": 164966
+      }
+    },
+    {
+      "index": 22,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 164966,
+        "end": 164981
+      }
+    },
+    {
+      "index": 23,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 164981,
+        "end": 164982
+      }
+    },
+    {
+      "index": 24,
+      "tag": "p",
+      "attrs": {},
+      "text": "Simply click \"copy\" and paste these into the editor to get started on your guide, as in the screenshot below:",
+      "location": {
+        "start": 164982,
+        "end": 165098
+      }
+    },
+    {
+      "index": 25,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 165098,
+        "end": 165099
+      }
+    },
+    {
+      "index": 26,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n​",
+      "location": {
+        "start": 165099,
+        "end": 165182
+      }
+    },
+    {
+      "index": 27,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 165182,
+        "end": 165183
+      }
+    },
+    {
+      "index": 28,
+      "tag": "h2",
+      "attrs": {
+        "id": "finding-emojis"
+      },
+      "text": "Finding emojis",
+      "location": {
+        "start": 165183,
+        "end": 165237
+      }
+    },
+    {
+      "index": 29,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 165237,
+        "end": 165238
+      }
+    },
+    {
+      "index": 30,
+      "tag": "p",
+      "attrs": {},
+      "text": "There are two ways to find an emoji:",
+      "location": {
+        "start": 165238,
+        "end": 165281
+      }
+    },
+    {
+      "index": 31,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 165281,
+        "end": 165282
+      }
+    },
+    {
+      "index": 32,
+      "tag": "ol",
+      "attrs": {},
+      "text": "\n\nIn the Guide Editor, simply start typing :emojiname ‎and it will bring up a list - select the one you want\n\n\nSearch the full repository of emojis at https://pvme.io/pvme-settings/#emojis\n\n",
+      "location": {
+        "start": 165282,
+        "end": 165578
+      }
+    },
+    {
+      "index": 33,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 165578,
+        "end": 165579
+      }
+    },
+    {
+      "index": 34,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 165579,
+        "end": 165594
+      }
+    },
+    {
+      "index": 35,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 165594,
+        "end": 165595
+      }
+    },
+    {
+      "index": 36,
+      "tag": "h2",
+      "attrs": {
+        "id": "linking-items-to-the-wiki"
+      },
+      "text": "Linking items to the Wiki",
+      "location": {
+        "start": 165595,
+        "end": 165671
+      }
+    },
+    {
+      "index": 37,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 165671,
+        "end": 165672
+      }
+    },
+    {
+      "index": 38,
+      "tag": "p",
+      "attrs": {},
+      "text": "Many of our guides link items and gear to the RS Wiki. Follow these steps:",
+      "location": {
+        "start": 165672,
+        "end": 165791
+      }
+    },
+    {
+      "index": 39,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 165791,
+        "end": 165792
+      }
+    },
+    {
+      "index": 40,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Use the pattern: [Item name](<http://runescape.wiki/w/Item_name>) <:emoji:>​",
+      "location": {
+        "start": 165792,
+        "end": 165909
+      }
+    },
+    {
+      "index": 41,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 165909,
+        "end": 165910
+      }
+    },
+    {
+      "index": 42,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Wrap the URL in <> ‎to prevent it showing a preview",
+      "location": {
+        "start": 165910,
+        "end": 165996
+      }
+    },
+    {
+      "index": 43,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 165996,
+        "end": 165997
+      }
+    },
+    {
+      "index": 44,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Most items only capitalise the first word",
+      "location": {
+        "start": 165997,
+        "end": 166054
+      }
+    },
+    {
+      "index": 45,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166054,
+        "end": 166055
+      }
+    },
+    {
+      "index": 46,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Replace spaces with underscores",
+      "location": {
+        "start": 166055,
+        "end": 166102
+      }
+    },
+    {
+      "index": 47,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166102,
+        "end": 166103
+      }
+    },
+    {
+      "index": 48,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Test your URL in the guide editor by clicking on it",
+      "location": {
+        "start": 166103,
+        "end": 166163
+      }
+    },
+    {
+      "index": 49,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166163,
+        "end": 166164
+      }
+    },
+    {
+      "index": 50,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 166164,
+        "end": 166179
+      }
+    },
+    {
+      "index": 51,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166179,
+        "end": 166180
+      }
+    },
+    {
+      "index": 52,
+      "tag": "p",
+      "attrs": {},
+      "text": "See the following example:",
+      "location": {
+        "start": 166180,
+        "end": 166213
+      }
+    },
+    {
+      "index": 53,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166213,
+        "end": 166214
+      }
+    },
+    {
+      "index": 54,
+      "tag": "p",
+      "attrs": {},
+      "text": "​[Channeller's ring](<http://runescape.wiki/w/Channeller's_ring>) <:channellersring:839903943404027914>​",
+      "location": {
+        "start": 166214,
+        "end": 166364
+      }
+    },
+    {
+      "index": 55,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166364,
+        "end": 166365
+      }
+    },
+    {
+      "index": 56,
+      "tag": "p",
+      "attrs": {},
+      "text": "→ Channeller's ring ",
+      "location": {
+        "start": 166365,
+        "end": 166582
+      }
+    },
+    {
+      "index": 57,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166582,
+        "end": 166583
+      }
+    },
+    {
+      "index": 58,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 166583,
+        "end": 166598
+      }
+    },
+    {
+      "index": 59,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166598,
+        "end": 166599
+      }
+    },
+    {
+      "index": 60,
+      "tag": "h2",
+      "attrs": {
+        "id": "using-embeds"
+      },
+      "text": "Using Embeds",
+      "location": {
+        "start": 166599,
+        "end": 166649
+      }
+    },
+    {
+      "index": 61,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166649,
+        "end": 166650
+      }
+    },
+    {
+      "index": 62,
+      "tag": "p",
+      "attrs": {},
+      "text": "Sometimes we use a special Discord \"embed\" to format messages in a pretty way - these are written in JSON. When inside a JSON, common punctuation like bullets or new lines will not work as normal; use the following to achieve what you are looking for:",
+      "location": {
+        "start": 166650,
+        "end": 166908
+      }
+    },
+    {
+      "index": 63,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166908,
+        "end": 166909
+      }
+    },
+    {
+      "index": 64,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 166909,
+        "end": 166924
+      }
+    },
+    {
+      "index": 65,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166924,
+        "end": 166925
+      }
+    },
+    {
+      "index": 66,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ \\n → adds a new line",
+      "location": {
+        "start": 166925,
+        "end": 166984
+      }
+    },
+    {
+      "index": 67,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166984,
+        "end": 166985
+      }
+    },
+    {
+      "index": 68,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ \\u00a0\\u00a0\\u00a0\\u00a0 = adds a new line + 4 spaces",
+      "location": {
+        "start": 166985,
+        "end": 167077
+      }
+    },
+    {
+      "index": 69,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 167077,
+        "end": 167078
+      }
+    },
+    {
+      "index": 70,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ \\n⬥ → adds a new line + a bullet",
+      "location": {
+        "start": 167078,
+        "end": 167149
+      }
+    },
+    {
+      "index": 71,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 167149,
+        "end": 167150
+      }
+    },
+    {
+      "index": 72,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ \\n\\u00a0\\u00a0\\u00a0\\u00a0• → adds a new line + 4 spaces + a sub-bullet",
+      "location": {
+        "start": 167150,
+        "end": 167260
+      }
+    },
+    {
+      "index": 73,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 167260,
+        "end": 167261
+      }
+    },
+    {
+      "index": 74,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ \\n\\u200B → adds a blank line",
+      "location": {
+        "start": 167261,
+        "end": 167328
+      }
+    },
+    {
+      "index": 75,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 167328,
+        "end": 167329
+      }
+    },
+    {
+      "index": 76,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 167329,
+        "end": 167344
+      }
+    },
+    {
+      "index": 77,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 167344,
+        "end": 167345
+      }
+    },
+    {
+      "index": 78,
+      "tag": "p",
+      "attrs": {},
+      "text": "A example embed can be seen below:",
+      "location": {
+        "start": 167345,
+        "end": 167386
+      }
+    },
+    {
+      "index": 79,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 167386,
+        "end": 167387
+      }
+    },
+    {
+      "index": 80,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 167387,
+        "end": 167402
+      }
+    },
+    {
+      "index": 81,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 167402,
+        "end": 167403
+      }
+    },
+    {
+      "index": 82,
+      "tag": "pre",
+      "attrs": {},
+      "text": "..\n{\n  \"embed\": {\n    \"title\": \"__[embed title]__\",\n    \"description\": \"[embed description]\\n\\u200B\",\n    \"color\": 39423,\n    \"fields\": [\n      {\n        \"name\": \"__[field 1 name]__\",\n        \"value\": \"[field 1 contents]\"\n      },\n      {\n        \"name\": \"__[field 2 name]__\",\n        \"value\": \"⬥ Field 2 contents\\n⬥ Field 2 contents\"\n      }\n    ]\n  }\n}\n..embed:json\n",
+      "location": {
+        "start": 167403,
+        "end": 167945
+      }
+    },
+    {
+      "index": 83,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 167945,
+        "end": 167946
+      }
+    },
+    {
+      "index": 84,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 167946,
+        "end": 167961
+      }
+    },
+    {
+      "index": 85,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 167961,
+        "end": 167962
+      }
+    },
+    {
+      "index": 86,
+      "tag": "p",
+      "attrs": {},
+      "text": "When rendered, the above code looks like the following;",
+      "location": {
+        "start": 167962,
+        "end": 168024
+      }
+    },
+    {
+      "index": 87,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168024,
+        "end": 168025
+      }
+    },
+    {
+      "index": 88,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[embed title]\n\n[embed description]\n​\n\n[field 1 name]\n[field 1 contents]\n[field 2 name]\n⬥ Field 2 contents\n⬥ Field 2 contents\n\n\n\n\n\n\n",
+      "location": {
+        "start": 168025,
+        "end": 169177
+      }
+    },
+    {
+      "index": 89,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 169177,
+        "end": 169179
+      }
+    },
+    {
+      "index": 90,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 169179,
+        "end": 169194
+      }
+    },
+    {
+      "index": 91,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n      \n    ",
+      "location": {
+        "start": 169194,
+        "end": 169206
+      }
+    }
+  ]
+}

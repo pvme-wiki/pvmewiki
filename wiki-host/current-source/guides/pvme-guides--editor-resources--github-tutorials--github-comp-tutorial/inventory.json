@@ -1,0 +1,6723 @@
+{
+  "schemaVersion": 1,
+  "id": "pvme-guides--editor-resources--github-tutorials--github-comp-tutorial",
+  "sourceURL": "https://pvme.io/pvme-guides/editor-resources/github-tutorials/github-comp-tutorial/",
+  "responseURL": "https://pvme.io/pvme-guides/editor-resources/github-tutorials/github-comp-tutorial/",
+  "boundary": "First original source content after editor utility; no H1; flagged",
+  "offsets": {
+    "start": 168434,
+    "end": 179753
+  },
+  "text": "Introduction\nGitHub is a service that lets users maintain a repository of information that is organized, version controlled, and allows for easy contributions from many users. PvME uses GitHub to maintain its guides and information.\n​\nThis guide covers how to use GitHub for contributing to PvME. If you would like to directly skip to the instructions, you can directly navigate to the Tutorial section using the pinned links, and if you would like a quick tutorial, use #unknown-channel.\n​\nOnce you have completed this tutorial, you can look at #unknown-channel for more tips, tricks, and other information.\n​\nHow GitHub Works\n⬥ GitHub is an Internet hosting service that offers the use of Git repositories, which is how PvME stores its information and guides.\n⬥ A repository is a collection of all the files and folders for a project, that is tracked and version controlled.\n⬥ Anyone can contribute to the PvME repository.\n⬥ The basic contribution process looks like this:\nfork PvME repo → make changes → commit changes → make pull request → changes get accepted\n\n⬥ A brief explanation of the steps:\n‎ ‎ ‎ ‎• Make a copy of the repository, also known as forking the repository. You now have an up-to-date copy of the PvME files.\n‎ ‎ ‎ ‎• Make changes to the files in your repository and commit them to your own repository. You can think of this as \"saving\" your changes.\n‎ ‎ ‎ ‎• To add your new changes to the PvME repository, make a pull request. This tells PvME that you have changes you want pulled from your files into PvME's files.\n‎ ‎ ‎ ‎• Wait for your pull request to be accepted. When this is done, your changes will now be a part of PvME's guides!\n‎ ‎ ‎ ‎• You can now re-sync, or delete and re-fork the repository once you want to make more changes.\n​\nTutorial\nThe goal of this tutorial is to add your name to the list at the bottom of this guide.\n​\nStep 1: Create a GitHub Account (https://github.com)\n⬥ Go to GitHub and use the Sign Up button on the top right of the page.\n⬥ Your username and e-mail account will be visible, so ensure you don't include personal information.\n⬥ If you have a GitHub account already, it is advised to make a new one for PvME unless you are certain that you haven't doxxed yourself in your commit histories.\nFor experienced users: If you use the Git CLI, make sure you check your git config [user.name|user.email] ‎configs, as these settings can still dox you, even if you use a new account.\n\nStep 2: Fork the PvME Repository (https://github.com/pvme/pvme-guides)\n⬥ This creates a personal copy of the repository that you can then edit at your leisure.\n⬥ Click the Fork button at the top right of the page, then confirm the creation of the fork.\n\n\nStep 3: Open Your Forked Repository In Your Browser\n⬥ You can find it by selecting Your Repositories in the dropdown menu, found by clicking your profile at the top right.\n⬥ You will know you are in your forked repository when the top-left of the website looks like this:\n\nFor experienced users: You can just clone the repository locally and work from your local machine, whatever you prefer.\nStep 4: Navigate to the github-tutorial.txt File\n⬥ The structure of the PvME repository mimics the server category/channel structure, to navigate through the repository click through folders that share the name of the discord categories, until you find this guide in the GitHub repository.\n‎ ‎ ‎ ‎• If you are struggling to find a file you can use the search bar at the top.\n⬥ The file is located at editor-resources > github-tutorials > github-tutorial.txt.\n\nStep 5: Enable Discord Developer Options and Copy Discord ID\n⬥ This is required to be able to copy your own Discord ID.\n⬥ These settings are accessible at Discord App Settings > Advanced > Developer Console > (turn on).\n⬥ After enabling them, you can right-click your name or profile picture to copy your own Discord ID.\n\n\n\nStep 6: Your First Change and Contribution\n⬥ Click the Edit icon at the top right to begin editing the file. It looks like a pencil.\n⬥ Paste your Discord ID at the bottom of the file, below the other IDs, in the format <@yourusedidhere>.\n‎ ‎ ‎ ‎• Replace the text with your Discord ID.\n⬥ Then commit (i.e. save) your changes.\n‎ ‎ ‎ ‎• Leave the settings at their default (i.e. \"Commit directly to the master ‎branch\").\n\n\nStep 7: Create A Pull Request\n⬥ Navigate to the Code tab in your personal repository. You will notice that you are now 1 commit ahead - this means you have changes ready to contribute!\n⬥ Click the Contribute button and select Pull Request from the drop-down.\n⬥ You can add type something like \"add my name to github-tutorial\" as the commit message, and then create the pull request.\n\n\nStep 8: That's it!\n⬥ You're done! If your changes are approved, then your pull request will be merged into PvME.\n⬥ The #unknown-channel channel will get updated, and your name will appear in the channel.\n⬥ You can resync or delete your fork after the pull request is accepted. To delete a fork, go to your repo Settings, and scroll down till you find the option to delete. Then follow the confirmation process.\n\n\n\nSuccessfully Completed PvME's GitHub Tutorial\n@ptazolite\n@brainrs\n@Unknown user\n@Unknown user\n@robomi\n@Unknown user\n@Unknown user\n@pernix\n@enhi\n@grime2\n@.ndy\n@rinswaps\n@geherman\n@Unknown user\n@Unknown user\n@Unknown user\n@Unknown user\n@trackandxc\n@Unknown user\n@Unknown user\n@Unknown user\n@Unknown user\n@Unknown user\n@Unknown user\n@zerocheus\n@Unknown user\n@Unknown user\n@ado111\n@Unknown user\n@Unknown user\n@durmoth\n@ykrors\n@brightrailgun\n@Unknown user\n@Unknown user\n@roar.roar\n@Unknown user\n@Unknown user\n@senie\n@godmandevil8\n@mionee.\n@Unknown user\n@Unknown user\n@Unknown user\n@emmett_shark\n@Unknown user\n@pvme\n@Unknown user\n@oraknight\n@basetank\n@Unknown user\n@Unknown user\n@Unknown user\n@kukkelis\n@alexgrooders3320\n@Unknown user\n@Unknown user\n@Unknown user\n@Unknown user\n@aussieman422\n@Unknown user\n@turtle9491\n@Unknown user\n@Unknown user\n@kyroh\n@deleted_user_a3738c4f4c16\n@terpsichore\n@diealive\n@dming\n@pixel.green\n@Unknown user\n@Unknown user\n@Unknown user\n@Unknown user\n@Unknown user\n@annietheeagle\n@bankserino\n@Unknown user\n@miagroves\n@Unknown user\n@Unknown user\n@Unknown user\n@finah\n@.takyon.\n@Unknown user\n@phatkez\n@friggityfrank\n@hightdetal\n@ekarderif\n@Unknown user\n@Unknown user\n@w62\n@alluneve\n@Unknown user\n@inferium\n@Unknown user\n@Unknown user\n@Unknown user\n@Unknown user\n@Unknown user\n@Unknown user\n@Unknown user\n@Unknown user\n@sunforged\n@Unknown user\n@Unknown user\n@ladygoogoogaga\n@akritia\n@Unknown user\n@sambanator\n@Unknown user\n@Unknown user\n@Unknown user\n@Unknown user\n@Unknown user\n@Unknown user\n@Unknown user\n@deleted_user_f9d88888270c\n@Unknown user\n@washlyjay\n@dr.fishbones\n@blockdude\n@Unknown user\n@Unknown user\n@txj\n@codemati\n@Unknown user\n@whimbtw\n@Unknown user\n@.ezee\n@ferroric\n@Unknown user\n@Unknown user\n@sreveryn\n@oscar\n@stormight\n@Unknown user\n@Unknown user\n@rcm37\n@Unknown user\n@Unknown user\n@moxielf\n@.orangespice\n@Unknown user\n@Unknown user\n@epsilon39\n@Unknown user\n@skalshadar\n@Unknown user\n@Unknown user\n@chrash.\n@Unknown user\n@Unknown user\n@obelex\n@zombunny\n@adderinoo\n@neonx222\n@eusono\n@Unknown user\n@hyperrr\n@tinky1\n@Unknown user\n@Unknown user\n@peterkirk\n@Unknown user\n@Unknown user\n@achievementshunter\n@reisenmoonrabbit\n@porfy\n@_rolypoly\n@markei\n@rinswaps\n@Unknown user\n@jibyjib\n@Unknown user\n@Unknown user\n@Unknown user\n@Unknown user\n@Unknown user\n@Unknown user\n@Unknown user\n​\n      \n    ",
+  "normalizedText": "Introduction GitHub is a service that lets users maintain a repository of information that is organized, version controlled, and allows for easy contributions from many users. PvME uses GitHub to maintain its guides and information. ​ This guide covers how to use GitHub for contributing to PvME. If you would like to directly skip to the instructions, you can directly navigate to the Tutorial section using the pinned links, and if you would like a quick tutorial, use #unknown-channel. ​ Once you have completed this tutorial, you can look at #unknown-channel for more tips, tricks, and other information. ​ How GitHub Works ⬥ GitHub is an Internet hosting service that offers the use of Git repositories, which is how PvME stores its information and guides. ⬥ A repository is a collection of all the files and folders for a project, that is tracked and version controlled. ⬥ Anyone can contribute to the PvME repository. ⬥ The basic contribution process looks like this: fork PvME repo → make changes → commit changes → make pull request → changes get accepted ⬥ A brief explanation of the steps: ‎ ‎ ‎ ‎• Make a copy of the repository, also known as forking the repository. You now have an up-to-date copy of the PvME files. ‎ ‎ ‎ ‎• Make changes to the files in your repository and commit them to your own repository. You can think of this as \"saving\" your changes. ‎ ‎ ‎ ‎• To add your new changes to the PvME repository, make a pull request. This tells PvME that you have changes you want pulled from your files into PvME's files. ‎ ‎ ‎ ‎• Wait for your pull request to be accepted. When this is done, your changes will now be a part of PvME's guides! ‎ ‎ ‎ ‎• You can now re-sync, or delete and re-fork the repository once you want to make more changes. ​ Tutorial The goal of this tutorial is to add your name to the list at the bottom of this guide. ​ Step 1: Create a GitHub Account (https://github.com) ⬥ Go to GitHub and use the Sign Up button on the top right of the page. ⬥ Your username and e-mail account will be visible, so ensure you don't include personal information. ⬥ If you have a GitHub account already, it is advised to make a new one for PvME unless you are certain that you haven't doxxed yourself in your commit histories. For experienced users: If you use the Git CLI, make sure you check your git config [user.name|user.email] ‎configs, as these settings can still dox you, even if you use a new account. Step 2: Fork the PvME Repository (https://github.com/pvme/pvme-guides) ⬥ This creates a personal copy of the repository that you can then edit at your leisure. ⬥ Click the Fork button at the top right of the page, then confirm the creation of the fork. Step 3: Open Your Forked Repository In Your Browser ⬥ You can find it by selecting Your Repositories in the dropdown menu, found by clicking your profile at the top right. ⬥ You will know you are in your forked repository when the top-left of the website looks like this: For experienced users: You can just clone the repository locally and work from your local machine, whatever you prefer. Step 4: Navigate to the github-tutorial.txt File ⬥ The structure of the PvME repository mimics the server category/channel structure, to navigate through the repository click through folders that share the name of the discord categories, until you find this guide in the GitHub repository. ‎ ‎ ‎ ‎• If you are struggling to find a file you can use the search bar at the top. ⬥ The file is located at editor-resources > github-tutorials > github-tutorial.txt. Step 5: Enable Discord Developer Options and Copy Discord ID ⬥ This is required to be able to copy your own Discord ID. ⬥ These settings are accessible at Discord App Settings > Advanced > Developer Console > (turn on). ⬥ After enabling them, you can right-click your name or profile picture to copy your own Discord ID. Step 6: Your First Change and Contribution ⬥ Click the Edit icon at the top right to begin editing the file. It looks like a pencil. ⬥ Paste your Discord ID at the bottom of the file, below the other IDs, in the format <@yourusedidhere>. ‎ ‎ ‎ ‎• Replace the text with your Discord ID. ⬥ Then commit (i.e. save) your changes. ‎ ‎ ‎ ‎• Leave the settings at their default (i.e. \"Commit directly to the master ‎branch\"). Step 7: Create A Pull Request ⬥ Navigate to the Code tab in your personal repository. You will notice that you are now 1 commit ahead - this means you have changes ready to contribute! ⬥ Click the Contribute button and select Pull Request from the drop-down. ⬥ You can add type something like \"add my name to github-tutorial\" as the commit message, and then create the pull request. Step 8: That's it! ⬥ You're done! If your changes are approved, then your pull request will be merged into PvME. ⬥ The #unknown-channel channel will get updated, and your name will appear in the channel. ⬥ You can resync or delete your fork after the pull request is accepted. To delete a fork, go to your repo Settings, and scroll down till you find the option to delete. Then follow the confirmation process. Successfully Completed PvME's GitHub Tutorial @ptazolite @brainrs @Unknown user @Unknown user @robomi @Unknown user @Unknown user @pernix @enhi @grime2 @.ndy @rinswaps @geherman @Unknown user @Unknown user @Unknown user @Unknown user @trackandxc @Unknown user @Unknown user @Unknown user @Unknown user @Unknown user @Unknown user @zerocheus @Unknown user @Unknown user @ado111 @Unknown user @Unknown user @durmoth @ykrors @brightrailgun @Unknown user @Unknown user @roar.roar @Unknown user @Unknown user @senie @godmandevil8 @mionee. @Unknown user @Unknown user @Unknown user @emmett_shark @Unknown user @pvme @Unknown user @oraknight @basetank @Unknown user @Unknown user @Unknown user @kukkelis @alexgrooders3320 @Unknown user @Unknown user @Unknown user @Unknown user @aussieman422 @Unknown user @turtle9491 @Unknown user @Unknown user @kyroh @deleted_user_a3738c4f4c16 @terpsichore @diealive @dming @pixel.green @Unknown user @Unknown user @Unknown user @Unknown user @Unknown user @annietheeagle @bankserino @Unknown user @miagroves @Unknown user @Unknown user @Unknown user @finah @.takyon. @Unknown user @phatkez @friggityfrank @hightdetal @ekarderif @Unknown user @Unknown user @w62 @alluneve @Unknown user @inferium @Unknown user @Unknown user @Unknown user @Unknown user @Unknown user @Unknown user @Unknown user @Unknown user @sunforged @Unknown user @Unknown user @ladygoogoogaga @akritia @Unknown user @sambanator @Unknown user @Unknown user @Unknown user @Unknown user @Unknown user @Unknown user @Unknown user @deleted_user_f9d88888270c @Unknown user @washlyjay @dr.fishbones @blockdude @Unknown user @Unknown user @txj @codemati @Unknown user @whimbtw @Unknown user @.ezee @ferroric @Unknown user @Unknown user @sreveryn @oscar @stormight @Unknown user @Unknown user @rcm37 @Unknown user @Unknown user @moxielf @.orangespice @Unknown user @Unknown user @epsilon39 @Unknown user @skalshadar @Unknown user @Unknown user @chrash. @Unknown user @Unknown user @obelex @zombunny @adderinoo @neonx222 @eusono @Unknown user @hyperrr @tinky1 @Unknown user @Unknown user @peterkirk @Unknown user @Unknown user @achievementshunter @reisenmoonrabbit @porfy @_rolypoly @markei @rinswaps @Unknown user @jibyjib @Unknown user @Unknown user @Unknown user @Unknown user @Unknown user @Unknown user @Unknown user ​",
+  "wordStream": [
+    "Introduction",
+    "GitHub",
+    "is",
+    "a",
+    "service",
+    "that",
+    "lets",
+    "users",
+    "maintain",
+    "a",
+    "repository",
+    "of",
+    "information",
+    "that",
+    "is",
+    "organized,",
+    "version",
+    "controlled,",
+    "and",
+    "allows",
+    "for",
+    "easy",
+    "contributions",
+    "from",
+    "many",
+    "users.",
+    "PvME",
+    "uses",
+    "GitHub",
+    "to",
+    "maintain",
+    "its",
+    "guides",
+    "and",
+    "information.",
+    "​",
+    "This",
+    "guide",
+    "covers",
+    "how",
+    "to",
+    "use",
+    "GitHub",
+    "for",
+    "contributing",
+    "to",
+    "PvME.",
+    "If",
+    "you",
+    "would",
+    "like",
+    "to",
+    "directly",
+    "skip",
+    "to",
+    "the",
+    "instructions,",
+    "you",
+    "can",
+    "directly",
+    "navigate",
+    "to",
+    "the",
+    "Tutorial",
+    "section",
+    "using",
+    "the",
+    "pinned",
+    "links,",
+    "and",
+    "if",
+    "you",
+    "would",
+    "like",
+    "a",
+    "quick",
+    "tutorial,",
+    "use",
+    "#unknown-channel.",
+    "​",
+    "Once",
+    "you",
+    "have",
+    "completed",
+    "this",
+    "tutorial,",
+    "you",
+    "can",
+    "look",
+    "at",
+    "#unknown-channel",
+    "for",
+    "more",
+    "tips,",
+    "tricks,",
+    "and",
+    "other",
+    "information.",
+    "​",
+    "How",
+    "GitHub",
+    "Works",
+    "⬥",
+    "GitHub",
+    "is",
+    "an",
+    "Internet",
+    "hosting",
+    "service",
+    "that",
+    "offers",
+    "the",
+    "use",
+    "of",
+    "Git",
+    "repositories,",
+    "which",
+    "is",
+    "how",
+    "PvME",
+    "stores",
+    "its",
+    "information",
+    "and",
+    "guides.",
+    "⬥",
+    "A",
+    "repository",
+    "is",
+    "a",
+    "collection",
+    "of",
+    "all",
+    "the",
+    "files",
+    "and",
+    "folders",
+    "for",
+    "a",
+    "project,",
+    "that",
+    "is",
+    "tracked",
+    "and",
+    "version",
+    "controlled.",
+    "⬥",
+    "Anyone",
+    "can",
+    "contribute",
+    "to",
+    "the",
+    "PvME",
+    "repository.",
+    "⬥",
+    "The",
+    "basic",
+    "contribution",
+    "process",
+    "looks",
+    "like",
+    "this:",
+    "fork",
+    "PvME",
+    "repo",
+    "→",
+    "make",
+    "changes",
+    "→",
+    "commit",
+    "changes",
+    "→",
+    "make",
+    "pull",
+    "request",
+    "→",
+    "changes",
+    "get",
+    "accepted",
+    "⬥",
+    "A",
+    "brief",
+    "explanation",
+    "of",
+    "the",
+    "steps:",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Make",
+    "a",
+    "copy",
+    "of",
+    "the",
+    "repository,",
+    "also",
+    "known",
+    "as",
+    "forking",
+    "the",
+    "repository.",
+    "You",
+    "now",
+    "have",
+    "an",
+    "up-to-date",
+    "copy",
+    "of",
+    "the",
+    "PvME",
+    "files.",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Make",
+    "changes",
+    "to",
+    "the",
+    "files",
+    "in",
+    "your",
+    "repository",
+    "and",
+    "commit",
+    "them",
+    "to",
+    "your",
+    "own",
+    "repository.",
+    "You",
+    "can",
+    "think",
+    "of",
+    "this",
+    "as",
+    "\"saving\"",
+    "your",
+    "changes.",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "To",
+    "add",
+    "your",
+    "new",
+    "changes",
+    "to",
+    "the",
+    "PvME",
+    "repository,",
+    "make",
+    "a",
+    "pull",
+    "request.",
+    "This",
+    "tells",
+    "PvME",
+    "that",
+    "you",
+    "have",
+    "changes",
+    "you",
+    "want",
+    "pulled",
+    "from",
+    "your",
+    "files",
+    "into",
+    "PvME's",
+    "files.",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Wait",
+    "for",
+    "your",
+    "pull",
+    "request",
+    "to",
+    "be",
+    "accepted.",
+    "When",
+    "this",
+    "is",
+    "done,",
+    "your",
+    "changes",
+    "will",
+    "now",
+    "be",
+    "a",
+    "part",
+    "of",
+    "PvME's",
+    "guides!",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "You",
+    "can",
+    "now",
+    "re-sync,",
+    "or",
+    "delete",
+    "and",
+    "re-fork",
+    "the",
+    "repository",
+    "once",
+    "you",
+    "want",
+    "to",
+    "make",
+    "more",
+    "changes.",
+    "​",
+    "Tutorial",
+    "The",
+    "goal",
+    "of",
+    "this",
+    "tutorial",
+    "is",
+    "to",
+    "add",
+    "your",
+    "name",
+    "to",
+    "the",
+    "list",
+    "at",
+    "the",
+    "bottom",
+    "of",
+    "this",
+    "guide.",
+    "​",
+    "Step",
+    "1:",
+    "Create",
+    "a",
+    "GitHub",
+    "Account",
+    "(https://github.com)",
+    "⬥",
+    "Go",
+    "to",
+    "GitHub",
+    "and",
+    "use",
+    "the",
+    "Sign",
+    "Up",
+    "button",
+    "on",
+    "the",
+    "top",
+    "right",
+    "of",
+    "the",
+    "page.",
+    "⬥",
+    "Your",
+    "username",
+    "and",
+    "e-mail",
+    "account",
+    "will",
+    "be",
+    "visible,",
+    "so",
+    "ensure",
+    "you",
+    "don't",
+    "include",
+    "personal",
+    "information.",
+    "⬥",
+    "If",
+    "you",
+    "have",
+    "a",
+    "GitHub",
+    "account",
+    "already,",
+    "it",
+    "is",
+    "advised",
+    "to",
+    "make",
+    "a",
+    "new",
+    "one",
+    "for",
+    "PvME",
+    "unless",
+    "you",
+    "are",
+    "certain",
+    "that",
+    "you",
+    "haven't",
+    "doxxed",
+    "yourself",
+    "in",
+    "your",
+    "commit",
+    "histories.",
+    "For",
+    "experienced",
+    "users:",
+    "If",
+    "you",
+    "use",
+    "the",
+    "Git",
+    "CLI,",
+    "make",
+    "sure",
+    "you",
+    "check",
+    "your",
+    "git",
+    "config",
+    "[user.name|user.email]",
+    "‎configs,",
+    "as",
+    "these",
+    "settings",
+    "can",
+    "still",
+    "dox",
+    "you,",
+    "even",
+    "if",
+    "you",
+    "use",
+    "a",
+    "new",
+    "account.",
+    "Step",
+    "2:",
+    "Fork",
+    "the",
+    "PvME",
+    "Repository",
+    "(https://github.com/pvme/pvme-guides)",
+    "⬥",
+    "This",
+    "creates",
+    "a",
+    "personal",
+    "copy",
+    "of",
+    "the",
+    "repository",
+    "that",
+    "you",
+    "can",
+    "then",
+    "edit",
+    "at",
+    "your",
+    "leisure.",
+    "⬥",
+    "Click",
+    "the",
+    "Fork",
+    "button",
+    "at",
+    "the",
+    "top",
+    "right",
+    "of",
+    "the",
+    "page,",
+    "then",
+    "confirm",
+    "the",
+    "creation",
+    "of",
+    "the",
+    "fork.",
+    "Step",
+    "3:",
+    "Open",
+    "Your",
+    "Forked",
+    "Repository",
+    "In",
+    "Your",
+    "Browser",
+    "⬥",
+    "You",
+    "can",
+    "find",
+    "it",
+    "by",
+    "selecting",
+    "Your",
+    "Repositories",
+    "in",
+    "the",
+    "dropdown",
+    "menu,",
+    "found",
+    "by",
+    "clicking",
+    "your",
+    "profile",
+    "at",
+    "the",
+    "top",
+    "right.",
+    "⬥",
+    "You",
+    "will",
+    "know",
+    "you",
+    "are",
+    "in",
+    "your",
+    "forked",
+    "repository",
+    "when",
+    "the",
+    "top-left",
+    "of",
+    "the",
+    "website",
+    "looks",
+    "like",
+    "this:",
+    "For",
+    "experienced",
+    "users:",
+    "You",
+    "can",
+    "just",
+    "clone",
+    "the",
+    "repository",
+    "locally",
+    "and",
+    "work",
+    "from",
+    "your",
+    "local",
+    "machine,",
+    "whatever",
+    "you",
+    "prefer.",
+    "Step",
+    "4:",
+    "Navigate",
+    "to",
+    "the",
+    "github-tutorial.txt",
+    "File",
+    "⬥",
+    "The",
+    "structure",
+    "of",
+    "the",
+    "PvME",
+    "repository",
+    "mimics",
+    "the",
+    "server",
+    "category/channel",
+    "structure,",
+    "to",
+    "navigate",
+    "through",
+    "the",
+    "repository",
+    "click",
+    "through",
+    "folders",
+    "that",
+    "share",
+    "the",
+    "name",
+    "of",
+    "the",
+    "discord",
+    "categories,",
+    "until",
+    "you",
+    "find",
+    "this",
+    "guide",
+    "in",
+    "the",
+    "GitHub",
+    "repository.",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "If",
+    "you",
+    "are",
+    "struggling",
+    "to",
+    "find",
+    "a",
+    "file",
+    "you",
+    "can",
+    "use",
+    "the",
+    "search",
+    "bar",
+    "at",
+    "the",
+    "top.",
+    "⬥",
+    "The",
+    "file",
+    "is",
+    "located",
+    "at",
+    "editor-resources",
+    ">",
+    "github-tutorials",
+    ">",
+    "github-tutorial.txt.",
+    "Step",
+    "5:",
+    "Enable",
+    "Discord",
+    "Developer",
+    "Options",
+    "and",
+    "Copy",
+    "Discord",
+    "ID",
+    "⬥",
+    "This",
+    "is",
+    "required",
+    "to",
+    "be",
+    "able",
+    "to",
+    "copy",
+    "your",
+    "own",
+    "Discord",
+    "ID.",
+    "⬥",
+    "These",
+    "settings",
+    "are",
+    "accessible",
+    "at",
+    "Discord",
+    "App",
+    "Settings",
+    ">",
+    "Advanced",
+    ">",
+    "Developer",
+    "Console",
+    ">",
+    "(turn",
+    "on).",
+    "⬥",
+    "After",
+    "enabling",
+    "them,",
+    "you",
+    "can",
+    "right-click",
+    "your",
+    "name",
+    "or",
+    "profile",
+    "picture",
+    "to",
+    "copy",
+    "your",
+    "own",
+    "Discord",
+    "ID.",
+    "Step",
+    "6:",
+    "Your",
+    "First",
+    "Change",
+    "and",
+    "Contribution",
+    "⬥",
+    "Click",
+    "the",
+    "Edit",
+    "icon",
+    "at",
+    "the",
+    "top",
+    "right",
+    "to",
+    "begin",
+    "editing",
+    "the",
+    "file.",
+    "It",
+    "looks",
+    "like",
+    "a",
+    "pencil.",
+    "⬥",
+    "Paste",
+    "your",
+    "Discord",
+    "ID",
+    "at",
+    "the",
+    "bottom",
+    "of",
+    "the",
+    "file,",
+    "below",
+    "the",
+    "other",
+    "IDs,",
+    "in",
+    "the",
+    "format",
+    "<@yourusedidhere>.",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Replace",
+    "the",
+    "text",
+    "with",
+    "your",
+    "Discord",
+    "ID.",
+    "⬥",
+    "Then",
+    "commit",
+    "(i.e.",
+    "save)",
+    "your",
+    "changes.",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Leave",
+    "the",
+    "settings",
+    "at",
+    "their",
+    "default",
+    "(i.e.",
+    "\"Commit",
+    "directly",
+    "to",
+    "the",
+    "master",
+    "‎branch\").",
+    "Step",
+    "7:",
+    "Create",
+    "A",
+    "Pull",
+    "Request",
+    "⬥",
+    "Navigate",
+    "to",
+    "the",
+    "Code",
+    "tab",
+    "in",
+    "your",
+    "personal",
+    "repository.",
+    "You",
+    "will",
+    "notice",
+    "that",
+    "you",
+    "are",
+    "now",
+    "1",
+    "commit",
+    "ahead",
+    "-",
+    "this",
+    "means",
+    "you",
+    "have",
+    "changes",
+    "ready",
+    "to",
+    "contribute!",
+    "⬥",
+    "Click",
+    "the",
+    "Contribute",
+    "button",
+    "and",
+    "select",
+    "Pull",
+    "Request",
+    "from",
+    "the",
+    "drop-down.",
+    "⬥",
+    "You",
+    "can",
+    "add",
+    "type",
+    "something",
+    "like",
+    "\"add",
+    "my",
+    "name",
+    "to",
+    "github-tutorial\"",
+    "as",
+    "the",
+    "commit",
+    "message,",
+    "and",
+    "then",
+    "create",
+    "the",
+    "pull",
+    "request.",
+    "Step",
+    "8:",
+    "That's",
+    "it!",
+    "⬥",
+    "You're",
+    "done!",
+    "If",
+    "your",
+    "changes",
+    "are",
+    "approved,",
+    "then",
+    "your",
+    "pull",
+    "request",
+    "will",
+    "be",
+    "merged",
+    "into",
+    "PvME.",
+    "⬥",
+    "The",
+    "#unknown-channel",
+    "channel",
+    "will",
+    "get",
+    "updated,",
+    "and",
+    "your",
+    "name",
+    "will",
+    "appear",
+    "in",
+    "the",
+    "channel.",
+    "⬥",
+    "You",
+    "can",
+    "resync",
+    "or",
+    "delete",
+    "your",
+    "fork",
+    "after",
+    "the",
+    "pull",
+    "request",
+    "is",
+    "accepted.",
+    "To",
+    "delete",
+    "a",
+    "fork,",
+    "go",
+    "to",
+    "your",
+    "repo",
+    "Settings,",
+    "and",
+    "scroll",
+    "down",
+    "till",
+    "you",
+    "find",
+    "the",
+    "option",
+    "to",
+    "delete.",
+    "Then",
+    "follow",
+    "the",
+    "confirmation",
+    "process.",
+    "Successfully",
+    "Completed",
+    "PvME's",
+    "GitHub",
+    "Tutorial",
+    "@ptazolite",
+    "@brainrs",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@robomi",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@pernix",
+    "@enhi",
+    "@grime2",
+    "@.ndy",
+    "@rinswaps",
+    "@geherman",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@trackandxc",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@zerocheus",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@ado111",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@durmoth",
+    "@ykrors",
+    "@brightrailgun",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@roar.roar",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@senie",
+    "@godmandevil8",
+    "@mionee.",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@emmett_shark",
+    "@Unknown",
+    "user",
+    "@pvme",
+    "@Unknown",
+    "user",
+    "@oraknight",
+    "@basetank",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@kukkelis",
+    "@alexgrooders3320",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@aussieman422",
+    "@Unknown",
+    "user",
+    "@turtle9491",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@kyroh",
+    "@deleted_user_a3738c4f4c16",
+    "@terpsichore",
+    "@diealive",
+    "@dming",
+    "@pixel.green",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@annietheeagle",
+    "@bankserino",
+    "@Unknown",
+    "user",
+    "@miagroves",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@finah",
+    "@.takyon.",
+    "@Unknown",
+    "user",
+    "@phatkez",
+    "@friggityfrank",
+    "@hightdetal",
+    "@ekarderif",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@w62",
+    "@alluneve",
+    "@Unknown",
+    "user",
+    "@inferium",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@sunforged",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@ladygoogoogaga",
+    "@akritia",
+    "@Unknown",
+    "user",
+    "@sambanator",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@deleted_user_f9d88888270c",
+    "@Unknown",
+    "user",
+    "@washlyjay",
+    "@dr.fishbones",
+    "@blockdude",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@txj",
+    "@codemati",
+    "@Unknown",
+    "user",
+    "@whimbtw",
+    "@Unknown",
+    "user",
+    "@.ezee",
+    "@ferroric",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@sreveryn",
+    "@oscar",
+    "@stormight",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@rcm37",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@moxielf",
+    "@.orangespice",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@epsilon39",
+    "@Unknown",
+    "user",
+    "@skalshadar",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@chrash.",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@obelex",
+    "@zombunny",
+    "@adderinoo",
+    "@neonx222",
+    "@eusono",
+    "@Unknown",
+    "user",
+    "@hyperrr",
+    "@tinky1",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@peterkirk",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@achievementshunter",
+    "@reisenmoonrabbit",
+    "@porfy",
+    "@_rolypoly",
+    "@markei",
+    "@rinswaps",
+    "@Unknown",
+    "user",
+    "@jibyjib",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "@Unknown",
+    "user",
+    "​"
+  ],
+  "hashes": {
+    "responseSha256": "164eac9e0631d097e4f2777fc69657afd39bc93145e89761ef4d0fc9e3b4f2c3",
+    "articleSha256": "58e333ed889a2b0970847f561fe1ce2f0c30ddd29bd32e911db21f62d455311e",
+    "textSha256": "f24cb2a660c3e55e58a56fbe6d9fd24d04c41c302aeb176137f48b7ac0e67eea",
+    "normalizedTextSha256": "c8cf999c700431c1d8951b627fde8e43d647da8d20b64b0f40634fde586df22a"
+  },
+  "headings": [
+    {
+      "tag": "h2",
+      "text": "Introduction",
+      "attrs": {
+        "id": "introduction"
+      },
+      "location": {
+        "start": 168434,
+        "end": 168484
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "How GitHub Works",
+      "attrs": {
+        "id": "how-github-works"
+      },
+      "location": {
+        "start": 169246,
+        "end": 169304
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "Tutorial",
+      "attrs": {
+        "id": "tutorial"
+      },
+      "location": {
+        "start": 170637,
+        "end": 170679
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Step 1: Create a GitHub Account (https://github.com)",
+      "attrs": {
+        "id": "step-1-create-a-github-account-httpsgithubcom"
+      },
+      "location": {
+        "start": 170790,
+        "end": 170935
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Step 2: Fork the PvME Repository (https://github.com/pvme/pvme-guides)",
+      "attrs": {
+        "id": "step-2-fork-the-pvme-repository-httpsgithubcompvmepvme-guides"
+      },
+      "location": {
+        "start": 171605,
+        "end": 171801
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Step 3: Open Your Forked Repository In Your Browser",
+      "attrs": {
+        "id": "step-3-open-your-forked-repository-in-your-browser"
+      },
+      "location": {
+        "start": 172151,
+        "end": 172267
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Step 4: Navigate to the github-tutorial.txt File",
+      "attrs": {
+        "id": "step-4-navigate-to-the-github-tutorialtxt-file"
+      },
+      "location": {
+        "start": 172719,
+        "end": 172837
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Step 5: Enable Discord Developer Options and Copy Discord ID",
+      "attrs": {
+        "id": "step-5-enable-discord-developer-options-and-copy-discord-id"
+      },
+      "location": {
+        "start": 173356,
+        "end": 173490
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Step 6: Your First Change and Contribution",
+      "attrs": {
+        "id": "step-6-your-first-change-and-contribution"
+      },
+      "location": {
+        "start": 174006,
+        "end": 174104
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Step 7: Create A Pull Request",
+      "attrs": {
+        "id": "step-7-create-a-pull-request"
+      },
+      "location": {
+        "start": 174710,
+        "end": 174782
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Step 8: That's it!",
+      "attrs": {
+        "id": "step-8-thats-it"
+      },
+      "location": {
+        "start": 175346,
+        "end": 175394
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "Successfully Completed PvME's GitHub Tutorial",
+      "attrs": {
+        "id": "successfully-completed-pvmes-github-tutorial"
+      },
+      "location": {
+        "start": 176078,
+        "end": 176193
+      }
+    }
+  ],
+  "media": [
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/uI7JVfh.png"
+      },
+      "text": "",
+      "location": {
+        "start": 171536,
+        "end": 171600
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/9sDym3q.png"
+      },
+      "text": "",
+      "location": {
+        "start": 172010,
+        "end": 172074
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/TenWOom.png"
+      },
+      "text": "",
+      "location": {
+        "start": 172082,
+        "end": 172146
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/h0zk8pQ.png"
+      },
+      "text": "",
+      "location": {
+        "start": 172514,
+        "end": 172578
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/tT47C8Y.png"
+      },
+      "text": "",
+      "location": {
+        "start": 173287,
+        "end": 173351
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/fUd2Z3a.png"
+      },
+      "text": "",
+      "location": {
+        "start": 173793,
+        "end": 173857
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/17NA9pa.png"
+      },
+      "text": "",
+      "location": {
+        "start": 173865,
+        "end": 173929
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/uK0diGu.png"
+      },
+      "text": "",
+      "location": {
+        "start": 173937,
+        "end": 174001
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/SFB0OqA.png"
+      },
+      "text": "",
+      "location": {
+        "start": 174569,
+        "end": 174633
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/EKpuYym.png"
+      },
+      "text": "",
+      "location": {
+        "start": 174641,
+        "end": 174705
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/DXYZid4.png"
+      },
+      "text": "",
+      "location": {
+        "start": 175205,
+        "end": 175269
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/696GEzw.png"
+      },
+      "text": "",
+      "location": {
+        "start": 175277,
+        "end": 175341
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/VpO5Lde.png"
+      },
+      "text": "",
+      "location": {
+        "start": 175865,
+        "end": 175929
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/YaxlO8O.png"
+      },
+      "text": "",
+      "location": {
+        "start": 175937,
+        "end": 176001
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/a1HmkID.png"
+      },
+      "text": "",
+      "location": {
+        "start": 176009,
+        "end": 176073
+      }
+    }
+  ],
+  "links": [
+    {
+      "href": "",
+      "text": "#unknown-channel",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 168995,
+        "end": 169047
+      }
+    },
+    {
+      "href": "",
+      "text": "#unknown-channel",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 169127,
+        "end": 169179
+      }
+    },
+    {
+      "href": "https://github.com",
+      "text": "https://github.com",
+      "attrs": {
+        "href": "https://github.com"
+      },
+      "location": {
+        "start": 170878,
+        "end": 170929
+      }
+    },
+    {
+      "href": "https://github.com/pvme/pvme-guides",
+      "text": "https://github.com/pvme/pvme-guides",
+      "attrs": {
+        "href": "https://github.com/pvme/pvme-guides"
+      },
+      "location": {
+        "start": 171710,
+        "end": 171795
+      }
+    },
+    {
+      "href": "",
+      "text": "#unknown-channel",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 175505,
+        "end": 175557
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "h2",
+      "attrs": {
+        "id": "introduction"
+      },
+      "text": "Introduction",
+      "location": {
+        "start": 168434,
+        "end": 168484
+      }
+    },
+    {
+      "index": 1,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168484,
+        "end": 168485
+      }
+    },
+    {
+      "index": 2,
+      "tag": "p",
+      "attrs": {},
+      "text": "GitHub is a service that lets users maintain a repository of information that is organized, version controlled, and allows for easy contributions from many users. PvME uses GitHub to maintain its guides and information.",
+      "location": {
+        "start": 168485,
+        "end": 168711
+      }
+    },
+    {
+      "index": 3,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168711,
+        "end": 168712
+      }
+    },
+    {
+      "index": 4,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 168712,
+        "end": 168727
+      }
+    },
+    {
+      "index": 5,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168727,
+        "end": 168728
+      }
+    },
+    {
+      "index": 6,
+      "tag": "p",
+      "attrs": {},
+      "text": "This guide covers how to use GitHub for contributing to PvME. If you would like to directly skip to the instructions, you can directly navigate to the Tutorial section using the pinned links, and if you would like a quick tutorial, use #unknown-channel.",
+      "location": {
+        "start": 168728,
+        "end": 169052
+      }
+    },
+    {
+      "index": 7,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169052,
+        "end": 169053
+      }
+    },
+    {
+      "index": 8,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 169053,
+        "end": 169068
+      }
+    },
+    {
+      "index": 9,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169068,
+        "end": 169069
+      }
+    },
+    {
+      "index": 10,
+      "tag": "p",
+      "attrs": {},
+      "text": "Once you have completed this tutorial, you can look at #unknown-channel for more tips, tricks, and other information.",
+      "location": {
+        "start": 169069,
+        "end": 169229
+      }
+    },
+    {
+      "index": 11,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169229,
+        "end": 169230
+      }
+    },
+    {
+      "index": 12,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 169230,
+        "end": 169245
+      }
+    },
+    {
+      "index": 13,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169245,
+        "end": 169246
+      }
+    },
+    {
+      "index": 14,
+      "tag": "h2",
+      "attrs": {
+        "id": "how-github-works"
+      },
+      "text": "How GitHub Works",
+      "location": {
+        "start": 169246,
+        "end": 169304
+      }
+    },
+    {
+      "index": 15,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169304,
+        "end": 169305
+      }
+    },
+    {
+      "index": 16,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ GitHub is an Internet hosting service that offers the use of Git repositories, which is how PvME stores its information and guides.",
+      "location": {
+        "start": 169305,
+        "end": 169445
+      }
+    },
+    {
+      "index": 17,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169445,
+        "end": 169446
+      }
+    },
+    {
+      "index": 18,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ A repository is a collection of all the files and folders for a project, that is tracked and version controlled.",
+      "location": {
+        "start": 169446,
+        "end": 169567
+      }
+    },
+    {
+      "index": 19,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169567,
+        "end": 169568
+      }
+    },
+    {
+      "index": 20,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Anyone can contribute to the PvME repository.",
+      "location": {
+        "start": 169568,
+        "end": 169622
+      }
+    },
+    {
+      "index": 21,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169622,
+        "end": 169623
+      }
+    },
+    {
+      "index": 22,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ The basic contribution process looks like this:",
+      "location": {
+        "start": 169623,
+        "end": 169679
+      }
+    },
+    {
+      "index": 23,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169679,
+        "end": 169680
+      }
+    },
+    {
+      "index": 24,
+      "tag": "pre",
+      "attrs": {},
+      "text": "fork PvME repo → make changes → commit changes → make pull request → changes get accepted\n",
+      "location": {
+        "start": 169680,
+        "end": 169794
+      }
+    },
+    {
+      "index": 25,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169794,
+        "end": 169795
+      }
+    },
+    {
+      "index": 26,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ A brief explanation of the steps:",
+      "location": {
+        "start": 169795,
+        "end": 169837
+      }
+    },
+    {
+      "index": 27,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169837,
+        "end": 169838
+      }
+    },
+    {
+      "index": 28,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Make a copy of the repository, also known as forking the repository. You now have an up-to-date copy of the PvME files.",
+      "location": {
+        "start": 169838,
+        "end": 169999
+      }
+    },
+    {
+      "index": 29,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169999,
+        "end": 170000
+      }
+    },
+    {
+      "index": 30,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Make changes to the files in your repository and commit them to your own repository. You can think of this as \"saving\" your changes.",
+      "location": {
+        "start": 170000,
+        "end": 170165
+      }
+    },
+    {
+      "index": 31,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170165,
+        "end": 170166
+      }
+    },
+    {
+      "index": 32,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• To add your new changes to the PvME repository, make a pull request. This tells PvME that you have changes you want pulled from your files into PvME's files.",
+      "location": {
+        "start": 170166,
+        "end": 170365
+      }
+    },
+    {
+      "index": 33,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170365,
+        "end": 170366
+      }
+    },
+    {
+      "index": 34,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Wait for your pull request to be accepted. When this is done, your changes will now be a part of PvME's guides!",
+      "location": {
+        "start": 170366,
+        "end": 170510
+      }
+    },
+    {
+      "index": 35,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170510,
+        "end": 170511
+      }
+    },
+    {
+      "index": 36,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• You can now re-sync, or delete and re-fork the repository once you want to make more changes.",
+      "location": {
+        "start": 170511,
+        "end": 170620
+      }
+    },
+    {
+      "index": 37,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170620,
+        "end": 170621
+      }
+    },
+    {
+      "index": 38,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 170621,
+        "end": 170636
+      }
+    },
+    {
+      "index": 39,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170636,
+        "end": 170637
+      }
+    },
+    {
+      "index": 40,
+      "tag": "h2",
+      "attrs": {
+        "id": "tutorial"
+      },
+      "text": "Tutorial",
+      "location": {
+        "start": 170637,
+        "end": 170679
+      }
+    },
+    {
+      "index": 41,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170679,
+        "end": 170680
+      }
+    },
+    {
+      "index": 42,
+      "tag": "p",
+      "attrs": {},
+      "text": "The goal of this tutorial is to add your name to the list at the bottom of this guide.",
+      "location": {
+        "start": 170680,
+        "end": 170773
+      }
+    },
+    {
+      "index": 43,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170773,
+        "end": 170774
+      }
+    },
+    {
+      "index": 44,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 170774,
+        "end": 170789
+      }
+    },
+    {
+      "index": 45,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170789,
+        "end": 170790
+      }
+    },
+    {
+      "index": 46,
+      "tag": "h3",
+      "attrs": {
+        "id": "step-1-create-a-github-account-httpsgithubcom"
+      },
+      "text": "Step 1: Create a GitHub Account (https://github.com)",
+      "location": {
+        "start": 170790,
+        "end": 170935
+      }
+    },
+    {
+      "index": 47,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170935,
+        "end": 170936
+      }
+    },
+    {
+      "index": 48,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Go to GitHub and use the Sign Up button on the top right of the page.",
+      "location": {
+        "start": 170936,
+        "end": 171023
+      }
+    },
+    {
+      "index": 49,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171023,
+        "end": 171024
+      }
+    },
+    {
+      "index": 50,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Your username and e-mail account will be visible, so ensure you don't include personal information.",
+      "location": {
+        "start": 171024,
+        "end": 171149
+      }
+    },
+    {
+      "index": 51,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171149,
+        "end": 171150
+      }
+    },
+    {
+      "index": 52,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ If you have a GitHub account already, it is advised to make a new one for PvME unless you are certain that you haven't doxxed yourself in your commit histories.",
+      "location": {
+        "start": 171150,
+        "end": 171319
+      }
+    },
+    {
+      "index": 53,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171319,
+        "end": 171320
+      }
+    },
+    {
+      "index": 54,
+      "tag": "p",
+      "attrs": {},
+      "text": "For experienced users: If you use the Git CLI, make sure you check your git config [user.name|user.email] ‎configs, as these settings can still dox you, even if you use a new account.",
+      "location": {
+        "start": 171320,
+        "end": 171532
+      }
+    },
+    {
+      "index": 55,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171532,
+        "end": 171533
+      }
+    },
+    {
+      "index": 56,
+      "tag": "p",
+      "attrs": {},
+      "text": "",
+      "location": {
+        "start": 171533,
+        "end": 171604
+      }
+    },
+    {
+      "index": 57,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171604,
+        "end": 171605
+      }
+    },
+    {
+      "index": 58,
+      "tag": "h3",
+      "attrs": {
+        "id": "step-2-fork-the-pvme-repository-httpsgithubcompvmepvme-guides"
+      },
+      "text": "Step 2: Fork the PvME Repository (https://github.com/pvme/pvme-guides)",
+      "location": {
+        "start": 171605,
+        "end": 171801
+      }
+    },
+    {
+      "index": 59,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171801,
+        "end": 171802
+      }
+    },
+    {
+      "index": 60,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ This creates a personal copy of the repository that you can then edit at your leisure.",
+      "location": {
+        "start": 171802,
+        "end": 171897
+      }
+    },
+    {
+      "index": 61,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171897,
+        "end": 171898
+      }
+    },
+    {
+      "index": 62,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Click the Fork button at the top right of the page, then confirm the creation of the fork.",
+      "location": {
+        "start": 171898,
+        "end": 172006
+      }
+    },
+    {
+      "index": 63,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172006,
+        "end": 172007
+      }
+    },
+    {
+      "index": 64,
+      "tag": "p",
+      "attrs": {},
+      "text": "",
+      "location": {
+        "start": 172007,
+        "end": 172078
+      }
+    },
+    {
+      "index": 65,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172078,
+        "end": 172079
+      }
+    },
+    {
+      "index": 66,
+      "tag": "p",
+      "attrs": {},
+      "text": "",
+      "location": {
+        "start": 172079,
+        "end": 172150
+      }
+    },
+    {
+      "index": 67,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172150,
+        "end": 172151
+      }
+    },
+    {
+      "index": 68,
+      "tag": "h3",
+      "attrs": {
+        "id": "step-3-open-your-forked-repository-in-your-browser"
+      },
+      "text": "Step 3: Open Your Forked Repository In Your Browser",
+      "location": {
+        "start": 172151,
+        "end": 172267
+      }
+    },
+    {
+      "index": 69,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172267,
+        "end": 172268
+      }
+    },
+    {
+      "index": 70,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ You can find it by selecting Your Repositories in the dropdown menu, found by clicking your profile at the top right.",
+      "location": {
+        "start": 172268,
+        "end": 172403
+      }
+    },
+    {
+      "index": 71,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172403,
+        "end": 172404
+      }
+    },
+    {
+      "index": 72,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ You will know you are in your forked repository when the top-left of the website looks like this:",
+      "location": {
+        "start": 172404,
+        "end": 172510
+      }
+    },
+    {
+      "index": 73,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172510,
+        "end": 172511
+      }
+    },
+    {
+      "index": 74,
+      "tag": "p",
+      "attrs": {},
+      "text": "",
+      "location": {
+        "start": 172511,
+        "end": 172582
+      }
+    },
+    {
+      "index": 75,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172582,
+        "end": 172583
+      }
+    },
+    {
+      "index": 76,
+      "tag": "p",
+      "attrs": {},
+      "text": "For experienced users: You can just clone the repository locally and work from your local machine, whatever you prefer.",
+      "location": {
+        "start": 172583,
+        "end": 172718
+      }
+    },
+    {
+      "index": 77,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172718,
+        "end": 172719
+      }
+    },
+    {
+      "index": 78,
+      "tag": "h3",
+      "attrs": {
+        "id": "step-4-navigate-to-the-github-tutorialtxt-file"
+      },
+      "text": "Step 4: Navigate to the github-tutorial.txt File",
+      "location": {
+        "start": 172719,
+        "end": 172837
+      }
+    },
+    {
+      "index": 79,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172837,
+        "end": 172838
+      }
+    },
+    {
+      "index": 80,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ The structure of the PvME repository mimics the server category/channel structure, to navigate through the repository click through folders that share the name of the discord categories, until you find this guide in the GitHub repository.",
+      "location": {
+        "start": 172838,
+        "end": 173085
+      }
+    },
+    {
+      "index": 81,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173085,
+        "end": 173086
+      }
+    },
+    {
+      "index": 82,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• If you are struggling to find a file you can use the search bar at the top.",
+      "location": {
+        "start": 173086,
+        "end": 173177
+      }
+    },
+    {
+      "index": 83,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173177,
+        "end": 173178
+      }
+    },
+    {
+      "index": 84,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ The file is located at editor-resources > github-tutorials > github-tutorial.txt.",
+      "location": {
+        "start": 173178,
+        "end": 173283
+      }
+    },
+    {
+      "index": 85,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173283,
+        "end": 173284
+      }
+    },
+    {
+      "index": 86,
+      "tag": "p",
+      "attrs": {},
+      "text": "",
+      "location": {
+        "start": 173284,
+        "end": 173355
+      }
+    },
+    {
+      "index": 87,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173355,
+        "end": 173356
+      }
+    },
+    {
+      "index": 88,
+      "tag": "h3",
+      "attrs": {
+        "id": "step-5-enable-discord-developer-options-and-copy-discord-id"
+      },
+      "text": "Step 5: Enable Discord Developer Options and Copy Discord ID",
+      "location": {
+        "start": 173356,
+        "end": 173490
+      }
+    },
+    {
+      "index": 89,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173490,
+        "end": 173491
+      }
+    },
+    {
+      "index": 90,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ This is required to be able to copy your own Discord ID.",
+      "location": {
+        "start": 173491,
+        "end": 173556
+      }
+    },
+    {
+      "index": 91,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173556,
+        "end": 173557
+      }
+    },
+    {
+      "index": 92,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ These settings are accessible at Discord App Settings > Advanced > Developer Console > (turn on).",
+      "location": {
+        "start": 173557,
+        "end": 173681
+      }
+    },
+    {
+      "index": 93,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173681,
+        "end": 173682
+      }
+    },
+    {
+      "index": 94,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ After enabling them, you can right-click your name or profile picture to copy your own Discord ID.",
+      "location": {
+        "start": 173682,
+        "end": 173789
+      }
+    },
+    {
+      "index": 95,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173789,
+        "end": 173790
+      }
+    },
+    {
+      "index": 96,
+      "tag": "p",
+      "attrs": {},
+      "text": "",
+      "location": {
+        "start": 173790,
+        "end": 173861
+      }
+    },
+    {
+      "index": 97,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173861,
+        "end": 173862
+      }
+    },
+    {
+      "index": 98,
+      "tag": "p",
+      "attrs": {},
+      "text": "",
+      "location": {
+        "start": 173862,
+        "end": 173933
+      }
+    },
+    {
+      "index": 99,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173933,
+        "end": 173934
+      }
+    },
+    {
+      "index": 100,
+      "tag": "p",
+      "attrs": {},
+      "text": "",
+      "location": {
+        "start": 173934,
+        "end": 174005
+      }
+    },
+    {
+      "index": 101,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174005,
+        "end": 174006
+      }
+    },
+    {
+      "index": 102,
+      "tag": "h3",
+      "attrs": {
+        "id": "step-6-your-first-change-and-contribution"
+      },
+      "text": "Step 6: Your First Change and Contribution",
+      "location": {
+        "start": 174006,
+        "end": 174104
+      }
+    },
+    {
+      "index": 103,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174104,
+        "end": 174105
+      }
+    },
+    {
+      "index": 104,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Click the Edit icon at the top right to begin editing the file. It looks like a pencil.",
+      "location": {
+        "start": 174105,
+        "end": 174210
+      }
+    },
+    {
+      "index": 105,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174210,
+        "end": 174211
+      }
+    },
+    {
+      "index": 106,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Paste your Discord ID at the bottom of the file, below the other IDs, in the format <@yourusedidhere>.",
+      "location": {
+        "start": 174211,
+        "end": 174341
+      }
+    },
+    {
+      "index": 107,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174341,
+        "end": 174342
+      }
+    },
+    {
+      "index": 108,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Replace the text with your Discord ID.",
+      "location": {
+        "start": 174342,
+        "end": 174396
+      }
+    },
+    {
+      "index": 109,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174396,
+        "end": 174397
+      }
+    },
+    {
+      "index": 110,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Then commit (i.e. save) your changes.",
+      "location": {
+        "start": 174397,
+        "end": 174452
+      }
+    },
+    {
+      "index": 111,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174452,
+        "end": 174453
+      }
+    },
+    {
+      "index": 112,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Leave the settings at their default (i.e. \"Commit directly to the master ‎branch\").",
+      "location": {
+        "start": 174453,
+        "end": 174565
+      }
+    },
+    {
+      "index": 113,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174565,
+        "end": 174566
+      }
+    },
+    {
+      "index": 114,
+      "tag": "p",
+      "attrs": {},
+      "text": "",
+      "location": {
+        "start": 174566,
+        "end": 174637
+      }
+    },
+    {
+      "index": 115,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174637,
+        "end": 174638
+      }
+    },
+    {
+      "index": 116,
+      "tag": "p",
+      "attrs": {},
+      "text": "",
+      "location": {
+        "start": 174638,
+        "end": 174709
+      }
+    },
+    {
+      "index": 117,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174709,
+        "end": 174710
+      }
+    },
+    {
+      "index": 118,
+      "tag": "h3",
+      "attrs": {
+        "id": "step-7-create-a-pull-request"
+      },
+      "text": "Step 7: Create A Pull Request",
+      "location": {
+        "start": 174710,
+        "end": 174782
+      }
+    },
+    {
+      "index": 119,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174782,
+        "end": 174783
+      }
+    },
+    {
+      "index": 120,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Navigate to the Code tab in your personal repository. You will notice that you are now 1 commit ahead - this means you have changes ready to contribute!",
+      "location": {
+        "start": 174783,
+        "end": 174962
+      }
+    },
+    {
+      "index": 121,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174962,
+        "end": 174963
+      }
+    },
+    {
+      "index": 122,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Click the Contribute button and select Pull Request from the drop-down.",
+      "location": {
+        "start": 174963,
+        "end": 175061
+      }
+    },
+    {
+      "index": 123,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175061,
+        "end": 175062
+      }
+    },
+    {
+      "index": 124,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ You can add type something like \"add my name to github-tutorial\" as the commit message, and then create the pull request.",
+      "location": {
+        "start": 175062,
+        "end": 175201
+      }
+    },
+    {
+      "index": 125,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175201,
+        "end": 175202
+      }
+    },
+    {
+      "index": 126,
+      "tag": "p",
+      "attrs": {},
+      "text": "",
+      "location": {
+        "start": 175202,
+        "end": 175273
+      }
+    },
+    {
+      "index": 127,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175273,
+        "end": 175274
+      }
+    },
+    {
+      "index": 128,
+      "tag": "p",
+      "attrs": {},
+      "text": "",
+      "location": {
+        "start": 175274,
+        "end": 175345
+      }
+    },
+    {
+      "index": 129,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175345,
+        "end": 175346
+      }
+    },
+    {
+      "index": 130,
+      "tag": "h3",
+      "attrs": {
+        "id": "step-8-thats-it"
+      },
+      "text": "Step 8: That's it!",
+      "location": {
+        "start": 175346,
+        "end": 175394
+      }
+    },
+    {
+      "index": 131,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175394,
+        "end": 175395
+      }
+    },
+    {
+      "index": 132,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ You're done! If your changes are approved, then your pull request will be merged into PvME.",
+      "location": {
+        "start": 175395,
+        "end": 175495
+      }
+    },
+    {
+      "index": 133,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175495,
+        "end": 175496
+      }
+    },
+    {
+      "index": 134,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ The #unknown-channel channel will get updated, and your name will appear in the channel.",
+      "location": {
+        "start": 175496,
+        "end": 175629
+      }
+    },
+    {
+      "index": 135,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175629,
+        "end": 175630
+      }
+    },
+    {
+      "index": 136,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ You can resync or delete your fork after the pull request is accepted. To delete a fork, go to your repo Settings, and scroll down till you find the option to delete. Then follow the confirmation process.",
+      "location": {
+        "start": 175630,
+        "end": 175861
+      }
+    },
+    {
+      "index": 137,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175861,
+        "end": 175862
+      }
+    },
+    {
+      "index": 138,
+      "tag": "p",
+      "attrs": {},
+      "text": "",
+      "location": {
+        "start": 175862,
+        "end": 175933
+      }
+    },
+    {
+      "index": 139,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175933,
+        "end": 175934
+      }
+    },
+    {
+      "index": 140,
+      "tag": "p",
+      "attrs": {},
+      "text": "",
+      "location": {
+        "start": 175934,
+        "end": 176005
+      }
+    },
+    {
+      "index": 141,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176005,
+        "end": 176006
+      }
+    },
+    {
+      "index": 142,
+      "tag": "p",
+      "attrs": {},
+      "text": "",
+      "location": {
+        "start": 176006,
+        "end": 176077
+      }
+    },
+    {
+      "index": 143,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176077,
+        "end": 176078
+      }
+    },
+    {
+      "index": 144,
+      "tag": "h2",
+      "attrs": {
+        "id": "successfully-completed-pvmes-github-tutorial"
+      },
+      "text": "Successfully Completed PvME's GitHub Tutorial",
+      "location": {
+        "start": 176078,
+        "end": 176193
+      }
+    },
+    {
+      "index": 145,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176193,
+        "end": 176194
+      }
+    },
+    {
+      "index": 146,
+      "tag": "p",
+      "attrs": {},
+      "text": "@ptazolite",
+      "location": {
+        "start": 176194,
+        "end": 176211
+      }
+    },
+    {
+      "index": 147,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176211,
+        "end": 176212
+      }
+    },
+    {
+      "index": 148,
+      "tag": "p",
+      "attrs": {},
+      "text": "@brainrs",
+      "location": {
+        "start": 176212,
+        "end": 176227
+      }
+    },
+    {
+      "index": 149,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176227,
+        "end": 176228
+      }
+    },
+    {
+      "index": 150,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 176228,
+        "end": 176248
+      }
+    },
+    {
+      "index": 151,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176248,
+        "end": 176249
+      }
+    },
+    {
+      "index": 152,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 176249,
+        "end": 176269
+      }
+    },
+    {
+      "index": 153,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176269,
+        "end": 176270
+      }
+    },
+    {
+      "index": 154,
+      "tag": "p",
+      "attrs": {},
+      "text": "@robomi",
+      "location": {
+        "start": 176270,
+        "end": 176284
+      }
+    },
+    {
+      "index": 155,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176284,
+        "end": 176285
+      }
+    },
+    {
+      "index": 156,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 176285,
+        "end": 176305
+      }
+    },
+    {
+      "index": 157,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176305,
+        "end": 176306
+      }
+    },
+    {
+      "index": 158,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 176306,
+        "end": 176326
+      }
+    },
+    {
+      "index": 159,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176326,
+        "end": 176327
+      }
+    },
+    {
+      "index": 160,
+      "tag": "p",
+      "attrs": {},
+      "text": "@pernix",
+      "location": {
+        "start": 176327,
+        "end": 176341
+      }
+    },
+    {
+      "index": 161,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176341,
+        "end": 176342
+      }
+    },
+    {
+      "index": 162,
+      "tag": "p",
+      "attrs": {},
+      "text": "@enhi",
+      "location": {
+        "start": 176342,
+        "end": 176354
+      }
+    },
+    {
+      "index": 163,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176354,
+        "end": 176355
+      }
+    },
+    {
+      "index": 164,
+      "tag": "p",
+      "attrs": {},
+      "text": "@grime2",
+      "location": {
+        "start": 176355,
+        "end": 176369
+      }
+    },
+    {
+      "index": 165,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176369,
+        "end": 176370
+      }
+    },
+    {
+      "index": 166,
+      "tag": "p",
+      "attrs": {},
+      "text": "@.ndy",
+      "location": {
+        "start": 176370,
+        "end": 176382
+      }
+    },
+    {
+      "index": 167,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176382,
+        "end": 176383
+      }
+    },
+    {
+      "index": 168,
+      "tag": "p",
+      "attrs": {},
+      "text": "@rinswaps",
+      "location": {
+        "start": 176383,
+        "end": 176399
+      }
+    },
+    {
+      "index": 169,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176399,
+        "end": 176400
+      }
+    },
+    {
+      "index": 170,
+      "tag": "p",
+      "attrs": {},
+      "text": "@geherman",
+      "location": {
+        "start": 176400,
+        "end": 176416
+      }
+    },
+    {
+      "index": 171,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176416,
+        "end": 176417
+      }
+    },
+    {
+      "index": 172,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 176417,
+        "end": 176437
+      }
+    },
+    {
+      "index": 173,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176437,
+        "end": 176438
+      }
+    },
+    {
+      "index": 174,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 176438,
+        "end": 176458
+      }
+    },
+    {
+      "index": 175,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176458,
+        "end": 176459
+      }
+    },
+    {
+      "index": 176,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 176459,
+        "end": 176479
+      }
+    },
+    {
+      "index": 177,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176479,
+        "end": 176480
+      }
+    },
+    {
+      "index": 178,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 176480,
+        "end": 176500
+      }
+    },
+    {
+      "index": 179,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176500,
+        "end": 176501
+      }
+    },
+    {
+      "index": 180,
+      "tag": "p",
+      "attrs": {},
+      "text": "@trackandxc",
+      "location": {
+        "start": 176501,
+        "end": 176519
+      }
+    },
+    {
+      "index": 181,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176519,
+        "end": 176520
+      }
+    },
+    {
+      "index": 182,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 176520,
+        "end": 176540
+      }
+    },
+    {
+      "index": 183,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176540,
+        "end": 176541
+      }
+    },
+    {
+      "index": 184,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 176541,
+        "end": 176561
+      }
+    },
+    {
+      "index": 185,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176561,
+        "end": 176562
+      }
+    },
+    {
+      "index": 186,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 176562,
+        "end": 176582
+      }
+    },
+    {
+      "index": 187,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176582,
+        "end": 176583
+      }
+    },
+    {
+      "index": 188,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 176583,
+        "end": 176603
+      }
+    },
+    {
+      "index": 189,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176603,
+        "end": 176604
+      }
+    },
+    {
+      "index": 190,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 176604,
+        "end": 176624
+      }
+    },
+    {
+      "index": 191,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176624,
+        "end": 176625
+      }
+    },
+    {
+      "index": 192,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 176625,
+        "end": 176645
+      }
+    },
+    {
+      "index": 193,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176645,
+        "end": 176646
+      }
+    },
+    {
+      "index": 194,
+      "tag": "p",
+      "attrs": {},
+      "text": "@zerocheus",
+      "location": {
+        "start": 176646,
+        "end": 176663
+      }
+    },
+    {
+      "index": 195,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176663,
+        "end": 176664
+      }
+    },
+    {
+      "index": 196,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 176664,
+        "end": 176684
+      }
+    },
+    {
+      "index": 197,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176684,
+        "end": 176685
+      }
+    },
+    {
+      "index": 198,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 176685,
+        "end": 176705
+      }
+    },
+    {
+      "index": 199,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176705,
+        "end": 176706
+      }
+    },
+    {
+      "index": 200,
+      "tag": "p",
+      "attrs": {},
+      "text": "@ado111",
+      "location": {
+        "start": 176706,
+        "end": 176720
+      }
+    },
+    {
+      "index": 201,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176720,
+        "end": 176721
+      }
+    },
+    {
+      "index": 202,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 176721,
+        "end": 176741
+      }
+    },
+    {
+      "index": 203,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176741,
+        "end": 176742
+      }
+    },
+    {
+      "index": 204,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 176742,
+        "end": 176762
+      }
+    },
+    {
+      "index": 205,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176762,
+        "end": 176763
+      }
+    },
+    {
+      "index": 206,
+      "tag": "p",
+      "attrs": {},
+      "text": "@durmoth",
+      "location": {
+        "start": 176763,
+        "end": 176778
+      }
+    },
+    {
+      "index": 207,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176778,
+        "end": 176779
+      }
+    },
+    {
+      "index": 208,
+      "tag": "p",
+      "attrs": {},
+      "text": "@ykrors",
+      "location": {
+        "start": 176779,
+        "end": 176793
+      }
+    },
+    {
+      "index": 209,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176793,
+        "end": 176794
+      }
+    },
+    {
+      "index": 210,
+      "tag": "p",
+      "attrs": {},
+      "text": "@brightrailgun",
+      "location": {
+        "start": 176794,
+        "end": 176815
+      }
+    },
+    {
+      "index": 211,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176815,
+        "end": 176816
+      }
+    },
+    {
+      "index": 212,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 176816,
+        "end": 176836
+      }
+    },
+    {
+      "index": 213,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176836,
+        "end": 176837
+      }
+    },
+    {
+      "index": 214,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 176837,
+        "end": 176857
+      }
+    },
+    {
+      "index": 215,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176857,
+        "end": 176858
+      }
+    },
+    {
+      "index": 216,
+      "tag": "p",
+      "attrs": {},
+      "text": "@roar.roar",
+      "location": {
+        "start": 176858,
+        "end": 176875
+      }
+    },
+    {
+      "index": 217,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176875,
+        "end": 176876
+      }
+    },
+    {
+      "index": 218,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 176876,
+        "end": 176896
+      }
+    },
+    {
+      "index": 219,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176896,
+        "end": 176897
+      }
+    },
+    {
+      "index": 220,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 176897,
+        "end": 176917
+      }
+    },
+    {
+      "index": 221,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176917,
+        "end": 176918
+      }
+    },
+    {
+      "index": 222,
+      "tag": "p",
+      "attrs": {},
+      "text": "@senie",
+      "location": {
+        "start": 176918,
+        "end": 176931
+      }
+    },
+    {
+      "index": 223,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176931,
+        "end": 176932
+      }
+    },
+    {
+      "index": 224,
+      "tag": "p",
+      "attrs": {},
+      "text": "@godmandevil8",
+      "location": {
+        "start": 176932,
+        "end": 176952
+      }
+    },
+    {
+      "index": 225,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176952,
+        "end": 176953
+      }
+    },
+    {
+      "index": 226,
+      "tag": "p",
+      "attrs": {},
+      "text": "@mionee.",
+      "location": {
+        "start": 176953,
+        "end": 176968
+      }
+    },
+    {
+      "index": 227,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176968,
+        "end": 176969
+      }
+    },
+    {
+      "index": 228,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 176969,
+        "end": 176989
+      }
+    },
+    {
+      "index": 229,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176989,
+        "end": 176990
+      }
+    },
+    {
+      "index": 230,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 176990,
+        "end": 177010
+      }
+    },
+    {
+      "index": 231,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177010,
+        "end": 177011
+      }
+    },
+    {
+      "index": 232,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 177011,
+        "end": 177031
+      }
+    },
+    {
+      "index": 233,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177031,
+        "end": 177032
+      }
+    },
+    {
+      "index": 234,
+      "tag": "p",
+      "attrs": {},
+      "text": "@emmett_shark",
+      "location": {
+        "start": 177032,
+        "end": 177052
+      }
+    },
+    {
+      "index": 235,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177052,
+        "end": 177053
+      }
+    },
+    {
+      "index": 236,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 177053,
+        "end": 177073
+      }
+    },
+    {
+      "index": 237,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177073,
+        "end": 177074
+      }
+    },
+    {
+      "index": 238,
+      "tag": "p",
+      "attrs": {},
+      "text": "@pvme",
+      "location": {
+        "start": 177074,
+        "end": 177086
+      }
+    },
+    {
+      "index": 239,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177086,
+        "end": 177087
+      }
+    },
+    {
+      "index": 240,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 177087,
+        "end": 177107
+      }
+    },
+    {
+      "index": 241,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177107,
+        "end": 177108
+      }
+    },
+    {
+      "index": 242,
+      "tag": "p",
+      "attrs": {},
+      "text": "@oraknight",
+      "location": {
+        "start": 177108,
+        "end": 177125
+      }
+    },
+    {
+      "index": 243,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177125,
+        "end": 177126
+      }
+    },
+    {
+      "index": 244,
+      "tag": "p",
+      "attrs": {},
+      "text": "@basetank",
+      "location": {
+        "start": 177126,
+        "end": 177142
+      }
+    },
+    {
+      "index": 245,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177142,
+        "end": 177143
+      }
+    },
+    {
+      "index": 246,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 177143,
+        "end": 177163
+      }
+    },
+    {
+      "index": 247,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177163,
+        "end": 177164
+      }
+    },
+    {
+      "index": 248,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 177164,
+        "end": 177184
+      }
+    },
+    {
+      "index": 249,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177184,
+        "end": 177185
+      }
+    },
+    {
+      "index": 250,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 177185,
+        "end": 177205
+      }
+    },
+    {
+      "index": 251,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177205,
+        "end": 177206
+      }
+    },
+    {
+      "index": 252,
+      "tag": "p",
+      "attrs": {},
+      "text": "@kukkelis",
+      "location": {
+        "start": 177206,
+        "end": 177222
+      }
+    },
+    {
+      "index": 253,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177222,
+        "end": 177223
+      }
+    },
+    {
+      "index": 254,
+      "tag": "p",
+      "attrs": {},
+      "text": "@alexgrooders3320",
+      "location": {
+        "start": 177223,
+        "end": 177247
+      }
+    },
+    {
+      "index": 255,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177247,
+        "end": 177248
+      }
+    },
+    {
+      "index": 256,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 177248,
+        "end": 177268
+      }
+    },
+    {
+      "index": 257,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177268,
+        "end": 177269
+      }
+    },
+    {
+      "index": 258,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 177269,
+        "end": 177289
+      }
+    },
+    {
+      "index": 259,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177289,
+        "end": 177290
+      }
+    },
+    {
+      "index": 260,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 177290,
+        "end": 177310
+      }
+    },
+    {
+      "index": 261,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177310,
+        "end": 177311
+      }
+    },
+    {
+      "index": 262,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 177311,
+        "end": 177331
+      }
+    },
+    {
+      "index": 263,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177331,
+        "end": 177332
+      }
+    },
+    {
+      "index": 264,
+      "tag": "p",
+      "attrs": {},
+      "text": "@aussieman422",
+      "location": {
+        "start": 177332,
+        "end": 177352
+      }
+    },
+    {
+      "index": 265,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177352,
+        "end": 177353
+      }
+    },
+    {
+      "index": 266,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 177353,
+        "end": 177373
+      }
+    },
+    {
+      "index": 267,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177373,
+        "end": 177374
+      }
+    },
+    {
+      "index": 268,
+      "tag": "p",
+      "attrs": {},
+      "text": "@turtle9491",
+      "location": {
+        "start": 177374,
+        "end": 177392
+      }
+    },
+    {
+      "index": 269,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177392,
+        "end": 177393
+      }
+    },
+    {
+      "index": 270,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 177393,
+        "end": 177413
+      }
+    },
+    {
+      "index": 271,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177413,
+        "end": 177414
+      }
+    },
+    {
+      "index": 272,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 177414,
+        "end": 177434
+      }
+    },
+    {
+      "index": 273,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177434,
+        "end": 177435
+      }
+    },
+    {
+      "index": 274,
+      "tag": "p",
+      "attrs": {},
+      "text": "@kyroh",
+      "location": {
+        "start": 177435,
+        "end": 177448
+      }
+    },
+    {
+      "index": 275,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177448,
+        "end": 177449
+      }
+    },
+    {
+      "index": 276,
+      "tag": "p",
+      "attrs": {},
+      "text": "@deleted_user_a3738c4f4c16",
+      "location": {
+        "start": 177449,
+        "end": 177482
+      }
+    },
+    {
+      "index": 277,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177482,
+        "end": 177483
+      }
+    },
+    {
+      "index": 278,
+      "tag": "p",
+      "attrs": {},
+      "text": "@terpsichore",
+      "location": {
+        "start": 177483,
+        "end": 177502
+      }
+    },
+    {
+      "index": 279,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177502,
+        "end": 177503
+      }
+    },
+    {
+      "index": 280,
+      "tag": "p",
+      "attrs": {},
+      "text": "@diealive",
+      "location": {
+        "start": 177503,
+        "end": 177519
+      }
+    },
+    {
+      "index": 281,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177519,
+        "end": 177520
+      }
+    },
+    {
+      "index": 282,
+      "tag": "p",
+      "attrs": {},
+      "text": "@dming",
+      "location": {
+        "start": 177520,
+        "end": 177533
+      }
+    },
+    {
+      "index": 283,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177533,
+        "end": 177534
+      }
+    },
+    {
+      "index": 284,
+      "tag": "p",
+      "attrs": {},
+      "text": "@pixel.green",
+      "location": {
+        "start": 177534,
+        "end": 177553
+      }
+    },
+    {
+      "index": 285,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177553,
+        "end": 177554
+      }
+    },
+    {
+      "index": 286,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 177554,
+        "end": 177574
+      }
+    },
+    {
+      "index": 287,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177574,
+        "end": 177575
+      }
+    },
+    {
+      "index": 288,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 177575,
+        "end": 177595
+      }
+    },
+    {
+      "index": 289,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177595,
+        "end": 177596
+      }
+    },
+    {
+      "index": 290,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 177596,
+        "end": 177616
+      }
+    },
+    {
+      "index": 291,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177616,
+        "end": 177617
+      }
+    },
+    {
+      "index": 292,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 177617,
+        "end": 177637
+      }
+    },
+    {
+      "index": 293,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177637,
+        "end": 177638
+      }
+    },
+    {
+      "index": 294,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 177638,
+        "end": 177658
+      }
+    },
+    {
+      "index": 295,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177658,
+        "end": 177659
+      }
+    },
+    {
+      "index": 296,
+      "tag": "p",
+      "attrs": {},
+      "text": "@annietheeagle",
+      "location": {
+        "start": 177659,
+        "end": 177680
+      }
+    },
+    {
+      "index": 297,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177680,
+        "end": 177681
+      }
+    },
+    {
+      "index": 298,
+      "tag": "p",
+      "attrs": {},
+      "text": "@bankserino",
+      "location": {
+        "start": 177681,
+        "end": 177699
+      }
+    },
+    {
+      "index": 299,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177699,
+        "end": 177700
+      }
+    },
+    {
+      "index": 300,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 177700,
+        "end": 177720
+      }
+    },
+    {
+      "index": 301,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177720,
+        "end": 177721
+      }
+    },
+    {
+      "index": 302,
+      "tag": "p",
+      "attrs": {},
+      "text": "@miagroves",
+      "location": {
+        "start": 177721,
+        "end": 177738
+      }
+    },
+    {
+      "index": 303,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177738,
+        "end": 177739
+      }
+    },
+    {
+      "index": 304,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 177739,
+        "end": 177759
+      }
+    },
+    {
+      "index": 305,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177759,
+        "end": 177760
+      }
+    },
+    {
+      "index": 306,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 177760,
+        "end": 177780
+      }
+    },
+    {
+      "index": 307,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177780,
+        "end": 177781
+      }
+    },
+    {
+      "index": 308,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 177781,
+        "end": 177801
+      }
+    },
+    {
+      "index": 309,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177801,
+        "end": 177802
+      }
+    },
+    {
+      "index": 310,
+      "tag": "p",
+      "attrs": {},
+      "text": "@finah",
+      "location": {
+        "start": 177802,
+        "end": 177815
+      }
+    },
+    {
+      "index": 311,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177815,
+        "end": 177816
+      }
+    },
+    {
+      "index": 312,
+      "tag": "p",
+      "attrs": {},
+      "text": "@.takyon.",
+      "location": {
+        "start": 177816,
+        "end": 177832
+      }
+    },
+    {
+      "index": 313,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177832,
+        "end": 177833
+      }
+    },
+    {
+      "index": 314,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 177833,
+        "end": 177853
+      }
+    },
+    {
+      "index": 315,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177853,
+        "end": 177854
+      }
+    },
+    {
+      "index": 316,
+      "tag": "p",
+      "attrs": {},
+      "text": "@phatkez",
+      "location": {
+        "start": 177854,
+        "end": 177869
+      }
+    },
+    {
+      "index": 317,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177869,
+        "end": 177870
+      }
+    },
+    {
+      "index": 318,
+      "tag": "p",
+      "attrs": {},
+      "text": "@friggityfrank",
+      "location": {
+        "start": 177870,
+        "end": 177891
+      }
+    },
+    {
+      "index": 319,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177891,
+        "end": 177892
+      }
+    },
+    {
+      "index": 320,
+      "tag": "p",
+      "attrs": {},
+      "text": "@hightdetal",
+      "location": {
+        "start": 177892,
+        "end": 177910
+      }
+    },
+    {
+      "index": 321,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177910,
+        "end": 177911
+      }
+    },
+    {
+      "index": 322,
+      "tag": "p",
+      "attrs": {},
+      "text": "@ekarderif",
+      "location": {
+        "start": 177911,
+        "end": 177928
+      }
+    },
+    {
+      "index": 323,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177928,
+        "end": 177929
+      }
+    },
+    {
+      "index": 324,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 177929,
+        "end": 177949
+      }
+    },
+    {
+      "index": 325,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177949,
+        "end": 177950
+      }
+    },
+    {
+      "index": 326,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 177950,
+        "end": 177970
+      }
+    },
+    {
+      "index": 327,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177970,
+        "end": 177971
+      }
+    },
+    {
+      "index": 328,
+      "tag": "p",
+      "attrs": {},
+      "text": "@w62",
+      "location": {
+        "start": 177971,
+        "end": 177982
+      }
+    },
+    {
+      "index": 329,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177982,
+        "end": 177983
+      }
+    },
+    {
+      "index": 330,
+      "tag": "p",
+      "attrs": {},
+      "text": "@alluneve",
+      "location": {
+        "start": 177983,
+        "end": 177999
+      }
+    },
+    {
+      "index": 331,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177999,
+        "end": 178000
+      }
+    },
+    {
+      "index": 332,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 178000,
+        "end": 178020
+      }
+    },
+    {
+      "index": 333,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178020,
+        "end": 178021
+      }
+    },
+    {
+      "index": 334,
+      "tag": "p",
+      "attrs": {},
+      "text": "@inferium",
+      "location": {
+        "start": 178021,
+        "end": 178037
+      }
+    },
+    {
+      "index": 335,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178037,
+        "end": 178038
+      }
+    },
+    {
+      "index": 336,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 178038,
+        "end": 178058
+      }
+    },
+    {
+      "index": 337,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178058,
+        "end": 178059
+      }
+    },
+    {
+      "index": 338,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 178059,
+        "end": 178079
+      }
+    },
+    {
+      "index": 339,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178079,
+        "end": 178080
+      }
+    },
+    {
+      "index": 340,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 178080,
+        "end": 178100
+      }
+    },
+    {
+      "index": 341,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178100,
+        "end": 178101
+      }
+    },
+    {
+      "index": 342,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 178101,
+        "end": 178121
+      }
+    },
+    {
+      "index": 343,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178121,
+        "end": 178122
+      }
+    },
+    {
+      "index": 344,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 178122,
+        "end": 178142
+      }
+    },
+    {
+      "index": 345,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178142,
+        "end": 178143
+      }
+    },
+    {
+      "index": 346,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 178143,
+        "end": 178163
+      }
+    },
+    {
+      "index": 347,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178163,
+        "end": 178164
+      }
+    },
+    {
+      "index": 348,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 178164,
+        "end": 178184
+      }
+    },
+    {
+      "index": 349,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178184,
+        "end": 178185
+      }
+    },
+    {
+      "index": 350,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 178185,
+        "end": 178205
+      }
+    },
+    {
+      "index": 351,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178205,
+        "end": 178206
+      }
+    },
+    {
+      "index": 352,
+      "tag": "p",
+      "attrs": {},
+      "text": "@sunforged",
+      "location": {
+        "start": 178206,
+        "end": 178223
+      }
+    },
+    {
+      "index": 353,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178223,
+        "end": 178224
+      }
+    },
+    {
+      "index": 354,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 178224,
+        "end": 178244
+      }
+    },
+    {
+      "index": 355,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178244,
+        "end": 178245
+      }
+    },
+    {
+      "index": 356,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 178245,
+        "end": 178265
+      }
+    },
+    {
+      "index": 357,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178265,
+        "end": 178266
+      }
+    },
+    {
+      "index": 358,
+      "tag": "p",
+      "attrs": {},
+      "text": "@ladygoogoogaga",
+      "location": {
+        "start": 178266,
+        "end": 178288
+      }
+    },
+    {
+      "index": 359,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178288,
+        "end": 178289
+      }
+    },
+    {
+      "index": 360,
+      "tag": "p",
+      "attrs": {},
+      "text": "@akritia",
+      "location": {
+        "start": 178289,
+        "end": 178304
+      }
+    },
+    {
+      "index": 361,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178304,
+        "end": 178305
+      }
+    },
+    {
+      "index": 362,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 178305,
+        "end": 178325
+      }
+    },
+    {
+      "index": 363,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178325,
+        "end": 178326
+      }
+    },
+    {
+      "index": 364,
+      "tag": "p",
+      "attrs": {},
+      "text": "@sambanator",
+      "location": {
+        "start": 178326,
+        "end": 178344
+      }
+    },
+    {
+      "index": 365,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178344,
+        "end": 178345
+      }
+    },
+    {
+      "index": 366,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 178345,
+        "end": 178365
+      }
+    },
+    {
+      "index": 367,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178365,
+        "end": 178366
+      }
+    },
+    {
+      "index": 368,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 178366,
+        "end": 178386
+      }
+    },
+    {
+      "index": 369,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178386,
+        "end": 178387
+      }
+    },
+    {
+      "index": 370,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 178387,
+        "end": 178407
+      }
+    },
+    {
+      "index": 371,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178407,
+        "end": 178408
+      }
+    },
+    {
+      "index": 372,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 178408,
+        "end": 178428
+      }
+    },
+    {
+      "index": 373,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178428,
+        "end": 178429
+      }
+    },
+    {
+      "index": 374,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 178429,
+        "end": 178449
+      }
+    },
+    {
+      "index": 375,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178449,
+        "end": 178450
+      }
+    },
+    {
+      "index": 376,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 178450,
+        "end": 178470
+      }
+    },
+    {
+      "index": 377,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178470,
+        "end": 178471
+      }
+    },
+    {
+      "index": 378,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 178471,
+        "end": 178491
+      }
+    },
+    {
+      "index": 379,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178491,
+        "end": 178492
+      }
+    },
+    {
+      "index": 380,
+      "tag": "p",
+      "attrs": {},
+      "text": "@deleted_user_f9d88888270c",
+      "location": {
+        "start": 178492,
+        "end": 178525
+      }
+    },
+    {
+      "index": 381,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178525,
+        "end": 178526
+      }
+    },
+    {
+      "index": 382,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 178526,
+        "end": 178546
+      }
+    },
+    {
+      "index": 383,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178546,
+        "end": 178547
+      }
+    },
+    {
+      "index": 384,
+      "tag": "p",
+      "attrs": {},
+      "text": "@washlyjay",
+      "location": {
+        "start": 178547,
+        "end": 178564
+      }
+    },
+    {
+      "index": 385,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178564,
+        "end": 178565
+      }
+    },
+    {
+      "index": 386,
+      "tag": "p",
+      "attrs": {},
+      "text": "@dr.fishbones",
+      "location": {
+        "start": 178565,
+        "end": 178585
+      }
+    },
+    {
+      "index": 387,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178585,
+        "end": 178586
+      }
+    },
+    {
+      "index": 388,
+      "tag": "p",
+      "attrs": {},
+      "text": "@blockdude",
+      "location": {
+        "start": 178586,
+        "end": 178603
+      }
+    },
+    {
+      "index": 389,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178603,
+        "end": 178604
+      }
+    },
+    {
+      "index": 390,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 178604,
+        "end": 178624
+      }
+    },
+    {
+      "index": 391,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178624,
+        "end": 178625
+      }
+    },
+    {
+      "index": 392,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 178625,
+        "end": 178645
+      }
+    },
+    {
+      "index": 393,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178645,
+        "end": 178646
+      }
+    },
+    {
+      "index": 394,
+      "tag": "p",
+      "attrs": {},
+      "text": "@txj",
+      "location": {
+        "start": 178646,
+        "end": 178657
+      }
+    },
+    {
+      "index": 395,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178657,
+        "end": 178658
+      }
+    },
+    {
+      "index": 396,
+      "tag": "p",
+      "attrs": {},
+      "text": "@codemati",
+      "location": {
+        "start": 178658,
+        "end": 178674
+      }
+    },
+    {
+      "index": 397,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178674,
+        "end": 178675
+      }
+    },
+    {
+      "index": 398,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 178675,
+        "end": 178695
+      }
+    },
+    {
+      "index": 399,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178695,
+        "end": 178696
+      }
+    },
+    {
+      "index": 400,
+      "tag": "p",
+      "attrs": {},
+      "text": "@whimbtw",
+      "location": {
+        "start": 178696,
+        "end": 178711
+      }
+    },
+    {
+      "index": 401,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178711,
+        "end": 178712
+      }
+    },
+    {
+      "index": 402,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 178712,
+        "end": 178732
+      }
+    },
+    {
+      "index": 403,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178732,
+        "end": 178733
+      }
+    },
+    {
+      "index": 404,
+      "tag": "p",
+      "attrs": {},
+      "text": "@.ezee",
+      "location": {
+        "start": 178733,
+        "end": 178746
+      }
+    },
+    {
+      "index": 405,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178746,
+        "end": 178747
+      }
+    },
+    {
+      "index": 406,
+      "tag": "p",
+      "attrs": {},
+      "text": "@ferroric",
+      "location": {
+        "start": 178747,
+        "end": 178763
+      }
+    },
+    {
+      "index": 407,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178763,
+        "end": 178764
+      }
+    },
+    {
+      "index": 408,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 178764,
+        "end": 178784
+      }
+    },
+    {
+      "index": 409,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178784,
+        "end": 178785
+      }
+    },
+    {
+      "index": 410,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 178785,
+        "end": 178805
+      }
+    },
+    {
+      "index": 411,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178805,
+        "end": 178806
+      }
+    },
+    {
+      "index": 412,
+      "tag": "p",
+      "attrs": {},
+      "text": "@sreveryn",
+      "location": {
+        "start": 178806,
+        "end": 178822
+      }
+    },
+    {
+      "index": 413,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178822,
+        "end": 178823
+      }
+    },
+    {
+      "index": 414,
+      "tag": "p",
+      "attrs": {},
+      "text": "@oscar",
+      "location": {
+        "start": 178823,
+        "end": 178836
+      }
+    },
+    {
+      "index": 415,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178836,
+        "end": 178837
+      }
+    },
+    {
+      "index": 416,
+      "tag": "p",
+      "attrs": {},
+      "text": "@stormight",
+      "location": {
+        "start": 178837,
+        "end": 178854
+      }
+    },
+    {
+      "index": 417,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178854,
+        "end": 178855
+      }
+    },
+    {
+      "index": 418,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 178855,
+        "end": 178875
+      }
+    },
+    {
+      "index": 419,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178875,
+        "end": 178876
+      }
+    },
+    {
+      "index": 420,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 178876,
+        "end": 178896
+      }
+    },
+    {
+      "index": 421,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178896,
+        "end": 178897
+      }
+    },
+    {
+      "index": 422,
+      "tag": "p",
+      "attrs": {},
+      "text": "@rcm37",
+      "location": {
+        "start": 178897,
+        "end": 178910
+      }
+    },
+    {
+      "index": 423,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178910,
+        "end": 178911
+      }
+    },
+    {
+      "index": 424,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 178911,
+        "end": 178931
+      }
+    },
+    {
+      "index": 425,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178931,
+        "end": 178932
+      }
+    },
+    {
+      "index": 426,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 178932,
+        "end": 178952
+      }
+    },
+    {
+      "index": 427,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178952,
+        "end": 178953
+      }
+    },
+    {
+      "index": 428,
+      "tag": "p",
+      "attrs": {},
+      "text": "@moxielf",
+      "location": {
+        "start": 178953,
+        "end": 178968
+      }
+    },
+    {
+      "index": 429,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178968,
+        "end": 178969
+      }
+    },
+    {
+      "index": 430,
+      "tag": "p",
+      "attrs": {},
+      "text": "@.orangespice",
+      "location": {
+        "start": 178969,
+        "end": 178989
+      }
+    },
+    {
+      "index": 431,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178989,
+        "end": 178990
+      }
+    },
+    {
+      "index": 432,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 178990,
+        "end": 179010
+      }
+    },
+    {
+      "index": 433,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179010,
+        "end": 179011
+      }
+    },
+    {
+      "index": 434,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 179011,
+        "end": 179031
+      }
+    },
+    {
+      "index": 435,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179031,
+        "end": 179032
+      }
+    },
+    {
+      "index": 436,
+      "tag": "p",
+      "attrs": {},
+      "text": "@epsilon39",
+      "location": {
+        "start": 179032,
+        "end": 179049
+      }
+    },
+    {
+      "index": 437,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179049,
+        "end": 179050
+      }
+    },
+    {
+      "index": 438,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 179050,
+        "end": 179070
+      }
+    },
+    {
+      "index": 439,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179070,
+        "end": 179071
+      }
+    },
+    {
+      "index": 440,
+      "tag": "p",
+      "attrs": {},
+      "text": "@skalshadar",
+      "location": {
+        "start": 179071,
+        "end": 179089
+      }
+    },
+    {
+      "index": 441,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179089,
+        "end": 179090
+      }
+    },
+    {
+      "index": 442,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 179090,
+        "end": 179110
+      }
+    },
+    {
+      "index": 443,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179110,
+        "end": 179111
+      }
+    },
+    {
+      "index": 444,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 179111,
+        "end": 179131
+      }
+    },
+    {
+      "index": 445,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179131,
+        "end": 179132
+      }
+    },
+    {
+      "index": 446,
+      "tag": "p",
+      "attrs": {},
+      "text": "@chrash.",
+      "location": {
+        "start": 179132,
+        "end": 179147
+      }
+    },
+    {
+      "index": 447,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179147,
+        "end": 179148
+      }
+    },
+    {
+      "index": 448,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 179148,
+        "end": 179168
+      }
+    },
+    {
+      "index": 449,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179168,
+        "end": 179169
+      }
+    },
+    {
+      "index": 450,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 179169,
+        "end": 179189
+      }
+    },
+    {
+      "index": 451,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179189,
+        "end": 179190
+      }
+    },
+    {
+      "index": 452,
+      "tag": "p",
+      "attrs": {},
+      "text": "@obelex",
+      "location": {
+        "start": 179190,
+        "end": 179204
+      }
+    },
+    {
+      "index": 453,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179204,
+        "end": 179205
+      }
+    },
+    {
+      "index": 454,
+      "tag": "p",
+      "attrs": {},
+      "text": "@zombunny",
+      "location": {
+        "start": 179205,
+        "end": 179221
+      }
+    },
+    {
+      "index": 455,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179221,
+        "end": 179222
+      }
+    },
+    {
+      "index": 456,
+      "tag": "p",
+      "attrs": {},
+      "text": "@adderinoo",
+      "location": {
+        "start": 179222,
+        "end": 179239
+      }
+    },
+    {
+      "index": 457,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179239,
+        "end": 179240
+      }
+    },
+    {
+      "index": 458,
+      "tag": "p",
+      "attrs": {},
+      "text": "@neonx222",
+      "location": {
+        "start": 179240,
+        "end": 179256
+      }
+    },
+    {
+      "index": 459,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179256,
+        "end": 179257
+      }
+    },
+    {
+      "index": 460,
+      "tag": "p",
+      "attrs": {},
+      "text": "@eusono",
+      "location": {
+        "start": 179257,
+        "end": 179271
+      }
+    },
+    {
+      "index": 461,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179271,
+        "end": 179272
+      }
+    },
+    {
+      "index": 462,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 179272,
+        "end": 179292
+      }
+    },
+    {
+      "index": 463,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179292,
+        "end": 179293
+      }
+    },
+    {
+      "index": 464,
+      "tag": "p",
+      "attrs": {},
+      "text": "@hyperrr",
+      "location": {
+        "start": 179293,
+        "end": 179308
+      }
+    },
+    {
+      "index": 465,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179308,
+        "end": 179309
+      }
+    },
+    {
+      "index": 466,
+      "tag": "p",
+      "attrs": {},
+      "text": "@tinky1",
+      "location": {
+        "start": 179309,
+        "end": 179323
+      }
+    },
+    {
+      "index": 467,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179323,
+        "end": 179324
+      }
+    },
+    {
+      "index": 468,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 179324,
+        "end": 179344
+      }
+    },
+    {
+      "index": 469,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179344,
+        "end": 179345
+      }
+    },
+    {
+      "index": 470,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 179345,
+        "end": 179365
+      }
+    },
+    {
+      "index": 471,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179365,
+        "end": 179366
+      }
+    },
+    {
+      "index": 472,
+      "tag": "p",
+      "attrs": {},
+      "text": "@peterkirk",
+      "location": {
+        "start": 179366,
+        "end": 179383
+      }
+    },
+    {
+      "index": 473,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179383,
+        "end": 179384
+      }
+    },
+    {
+      "index": 474,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 179384,
+        "end": 179404
+      }
+    },
+    {
+      "index": 475,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179404,
+        "end": 179405
+      }
+    },
+    {
+      "index": 476,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 179405,
+        "end": 179425
+      }
+    },
+    {
+      "index": 477,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179425,
+        "end": 179426
+      }
+    },
+    {
+      "index": 478,
+      "tag": "p",
+      "attrs": {},
+      "text": "@achievementshunter",
+      "location": {
+        "start": 179426,
+        "end": 179452
+      }
+    },
+    {
+      "index": 479,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179452,
+        "end": 179453
+      }
+    },
+    {
+      "index": 480,
+      "tag": "p",
+      "attrs": {},
+      "text": "@reisenmoonrabbit",
+      "location": {
+        "start": 179453,
+        "end": 179477
+      }
+    },
+    {
+      "index": 481,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179477,
+        "end": 179478
+      }
+    },
+    {
+      "index": 482,
+      "tag": "p",
+      "attrs": {},
+      "text": "@porfy",
+      "location": {
+        "start": 179478,
+        "end": 179491
+      }
+    },
+    {
+      "index": 483,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179491,
+        "end": 179492
+      }
+    },
+    {
+      "index": 484,
+      "tag": "p",
+      "attrs": {},
+      "text": "@_rolypoly",
+      "location": {
+        "start": 179492,
+        "end": 179509
+      }
+    },
+    {
+      "index": 485,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179509,
+        "end": 179510
+      }
+    },
+    {
+      "index": 486,
+      "tag": "p",
+      "attrs": {},
+      "text": "@markei",
+      "location": {
+        "start": 179510,
+        "end": 179524
+      }
+    },
+    {
+      "index": 487,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179524,
+        "end": 179525
+      }
+    },
+    {
+      "index": 488,
+      "tag": "p",
+      "attrs": {},
+      "text": "@rinswaps",
+      "location": {
+        "start": 179525,
+        "end": 179541
+      }
+    },
+    {
+      "index": 489,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179541,
+        "end": 179542
+      }
+    },
+    {
+      "index": 490,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 179542,
+        "end": 179562
+      }
+    },
+    {
+      "index": 491,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179562,
+        "end": 179563
+      }
+    },
+    {
+      "index": 492,
+      "tag": "p",
+      "attrs": {},
+      "text": "@jibyjib",
+      "location": {
+        "start": 179563,
+        "end": 179578
+      }
+    },
+    {
+      "index": 493,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179578,
+        "end": 179579
+      }
+    },
+    {
+      "index": 494,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 179579,
+        "end": 179599
+      }
+    },
+    {
+      "index": 495,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179599,
+        "end": 179600
+      }
+    },
+    {
+      "index": 496,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 179600,
+        "end": 179620
+      }
+    },
+    {
+      "index": 497,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179620,
+        "end": 179621
+      }
+    },
+    {
+      "index": 498,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 179621,
+        "end": 179641
+      }
+    },
+    {
+      "index": 499,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179641,
+        "end": 179642
+      }
+    },
+    {
+      "index": 500,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 179642,
+        "end": 179662
+      }
+    },
+    {
+      "index": 501,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179662,
+        "end": 179663
+      }
+    },
+    {
+      "index": 502,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 179663,
+        "end": 179683
+      }
+    },
+    {
+      "index": 503,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179683,
+        "end": 179684
+      }
+    },
+    {
+      "index": 504,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 179684,
+        "end": 179704
+      }
+    },
+    {
+      "index": 505,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179704,
+        "end": 179705
+      }
+    },
+    {
+      "index": 506,
+      "tag": "p",
+      "attrs": {},
+      "text": "@Unknown user",
+      "location": {
+        "start": 179705,
+        "end": 179725
+      }
+    },
+    {
+      "index": 507,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179725,
+        "end": 179726
+      }
+    },
+    {
+      "index": 508,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 179726,
+        "end": 179741
+      }
+    },
+    {
+      "index": 509,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n      \n    ",
+      "location": {
+        "start": 179741,
+        "end": 179753
+      }
+    }
+  ]
+}

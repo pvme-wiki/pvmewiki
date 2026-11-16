@@ -1,0 +1,4530 @@
+{
+  "schemaVersion": 1,
+  "id": "pvme-guides--miscellaneous-information--alt1",
+  "sourceURL": "https://pvme.io/pvme-guides/miscellaneous-information/alt1/",
+  "responseURL": "https://pvme.io/pvme-guides/miscellaneous-information/alt1/",
+  "boundary": "First original source content after editor utility; no H1; flagged",
+  "offsets": {
+    "start": 168216,
+    "end": 181693
+  },
+  "text": "Introduction\n​\nUnlike OSRS which has the RuneLite client, RS3 only has its NXT client. In order to add some extra QoL/features, the Alt1 Toolkit was developed by @skillbert. This channel serves as a brief overview about Alt1 and what it's used for, as well as some extra helpful add-ons/plugins developed for it.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAlt1 Download\n\nYou can download Alt1 from the official RuneApps website.\nFor Alt1 support/queries, please visit the RuneApps discord.\nYou can also check out the RuneApps forums.\n\n\n\n\n\n\n\n\n\n​\nIf you have any issues with regard to Alt1, please use the dedicated RuneApps discord server that has a section for player support.\n​\nAlt1 Overview\nWhat Is Alt1\nAlt1 is a 3rd-party program that consists of several application overlays on your screen. They get information by reading your screen, and provide a bunch of QoL/useful features.\n​\nA detailed explanation of Alt1's features can be found on the Alt1 website, but amongst its default features it includes:\n⬥ AFK Warden - the most common use for Alt1, its in-game activity detection overlays\n⬥ Clue Solver - solves all clue puzzles and displays output as an overlay to speed up clue solving\n⬥ DgKey - an overlay of your Dungeoneering  map to keep track of gatestones, teammates, etc.\n⬥ Stats Lookup - look up a player's stats ;stats;, quest points, etc.\n⬥ Item Lookup - quickly find any item's page on the Runescape Wiki\n⬥ D&D Notifications - opt-in for D&D notification alerts\n⬥ XpMeter - track XP/hr rates in real time\n⬥ Droplogger - an alternative to using the endgame RuneMetrics drop log\n​\nHow It Works\n⬥ Alt1 is designed to capture images of the NXT Client and parse them with an OCR (Optical Character Recognition) Library.\n⬥ The captured data is then transformed into pixel data that can be used in Alt1 apps.\n⬥ More information can be found on the forums and in the Alt1 Toolkit discord.\n​\nIs It Safe?\n⬥ Alt1 is essentially a glorified Chromium browser that creates overlays over your game. Every Alt1 app is essentially a webpage.\n⬥ Alt1 does not send any inputs or otherwise directly interact with your client beyond reading the pixels on the screen.\n⬥ It is not a client, therefore you won't get banned for using it.\n​\nAFK Warden\n\nWhat Is AFK Warden\n⬥ This is one of the most commonly used Alt1 apps, so will be covered in some detail here.\n⬥ This reads the pixels on your screen to recognize your character, buff bars, chatbox and more in order to provide AFK alert notifications.\n⬥ It tracks a number of things, including:\n‎ ‎ ‎ ‎• HP  and Prayer  alerts\n‎ ‎ ‎ ‎• Buff timers like  \n‎ ‎ ‎ ‎• Familiar duration \n‎ ‎ ‎ ‎• Loot beams \n‎ ‎ ‎ ‎• AFK lobby timers\n‎ ‎ ‎ ‎• Seren Spirits and Blessings of the Gods\n‎ ‎ ‎ ‎• Character stance (for AFK skilling alerts)\n‎ ‎ ‎ ‎• XP drops, and more.\n​\nClue Solver\n\nWhat Is Clue Solver\n⬥ This is a very useful app that looks at your currently open clue on screen, and tells you how to solve it.\n⬥ It handles all clue steps, including puzzle boxes, scans, compass clues, etc. With the exception of scan clues.\n⬥ Have your clue visible on-screen clearly and click the 'Unlock Any' button to find a solution to your clue that will be displayed on the overlay.\n​\nUseful 3rd-Party Alt1 Apps\nIn addition to the default apps that come with Alt1, there are a number of other useful third-party apps that can be installed, which will briefly be covered here.\n​\nHow to Install Alt1 Apps\n⬥ Alt1 Addons can be installed by going to the correct URL in either your normal browser or the Alt1 in-built browser.\n‎ ‎ ‎ ‎• This will bring up a prompt to add the application to Alt1.\n‎ ‎ ‎ ‎• The list of apps below have the full URL following each one.\n‎ ‎ ‎ ‎• Note that none of these links will work on mobile, as they require Alt1 to be installed.\n​\nCombat Apps\n⬥ Barrows Helper - track killed brothers, solve doors and displays droprates\nalt1://addapp/https://markvsrs.github.io/BarrowsHelperSrc/appconfig.json\n\n​\n⬥ Better AoD - improved minion order tracker over the default Alt1 tracker\nalt1://addapp/https://cgyi4.csb.app/appconfig.json\n\n​\n⬥ Better Buffs Bar - displays buffs in the order you decide on\nalt1://addapp/https://nadyanayme.github.io/better-better-buffs-bars/appconfig.json\n\n​\n⬥ BoLG Tracker - shows BoLG  stacks more clearly\nalt1://addapp/https://holycoil.nl/alt1/bolg/appconfig.json\n\n​\n⬥ Dharok Relic - shows the %DPS boost from Berserker's Fury\nalt1://addapp/https://holycoil.nl/alt1/DharokRelic/appconfig.json\n\n​\n⬥ Igor's Presets - Boss Presets Hub for Multiple bosses\nhttps://github.com/IgorsCC/afkwarden-presets/blob/master/readme.md\n\n​\n⬥ Job Gauges - FFXIV-inspired job gauges for Runescape combat styles. Currently only Necro, Mage, and Range (WIP) is supported.\nalt1://addapp/https://nadyanayme.github.io/job-gauges/dist/appconfig.json\n\n​\n⬥ Rotation Master - Input an ability rotation to be able to display an overlay on your screen for rotational help.\nalt1://addapp/https://ellamental2.github.io/RotationMaster/appconfig.json\n\n​\n⬥ Slayer Tasks - helps decide what  task to pick when using  tickets\nalt1://addapp/https://unlishema.github.io/slayerassistant/appconfig.json\n\n​\n⬥ Vorago Timer - shows Target Cycle (TC) timings for Vorago phases\nalt1://addapp/https://holycoil.nl/alt1/VoragoTag/appconfig.json\n\n​\n⬥ Zamorak Specs - shows the next special attack at Zamorak\nalt1://addapp/https://zerogwafa.github.io/Zamorak-Attack-Tracker/appconfig.json\n\n​\nSkilling Apps\n⬥ Archaeology Mats - tracks excavated Archaeology  mats and calculate artefact restore costs\nalt1://addapp/https://zerogwafa.github.io/ArchMatCounter/appconfig.json\n\n​\n⬥ Components Counter - tracks Invention  components from disassembly / scavenging\nalt1://addapp/https://zerogwafa.github.io/ComponentCounter/appconfig.json\n\n​\n⬥ Croesus Alerts - displays upcoming attacks and other fight information at Croesus\nalt1://addapp/https://raphire.github.io/SusAlert/appconfig.json\n\n​\n⬥ Penguins - shows weekly Penguin locations (pulled from www.w60pengs.com)\nalt1://addapp/https://shaun.us.to/alt1/penguins/appconfig.json\n\n​\n⬥ Seren Spirit Tracker - alerts when a Seren Spirit appears\nalt1://addapp/https://zerogwafa.github.io/SerenTracker/appconfig.json\n\n​\nClue Apps\n⬥ Clue Trainer - An alternative, fully featured clue solver featuring improved puzzle solvers and recommendations for efficient movement \nalt1://addapp/https://cluetrainer.app/appconfig.json\n\n​\n⬥ Bik Book Timer - alerts when to disassemble with Bik book \nalt1://addapp/https://amerryma.github.io/alt1-bik-proc-timer/appconfig.json\n\n​\n⬥ OpenLogger - an open source clue logger that will help keep track of your clues as you open them\nalt1://addapp/https://redx1000.github.io/OpenLogger/appconfig.json\n\n​\n⬥ Catalyst Tracker - tracks clues from Catalyst of alterations displayed in the chat window\nalt1://addapp/https://ibbykay.github.io/CatalystClueTracker/appconfig.json\n\n​\n⬥ Clue Splits - automatically tracks your clue times while doing a clue run, with no input required \nalt1://addapp/https://yongyi781.github.io/clue-split/appconfig.json\n\n​\nMisc. Apps\nNote: Price Check & Trade Alt1 App currently not working; in the process of being updated.\n⬥ Screen Markers - customisable on-screen markers to make clicking easier\nalt1://addapp/https://kosblue.com/nekoapps/apps/ScreenMarkers/appconfig.json\n\n​\n⬥ Quest Helper - shows steps for quests that you pick\nalt1://addapp/https://techpure.dev/RS3QuestBuddy/appconfig.prod.json\n\n​\n⬥ Dungeoneering Helper - Logs your Dungeoneering floor times automatically\nalt1://addapp/https://dghelper.pages.dev/appconfig.json\n\n​\nTroubleshooting\nFor any issues it is preferred to search if someone else has had the same issue or see the FAQ section on the forums, or use the official discord for support.\n​\nLinks to the Alt1 website, Forums and Discord can be found in the pinned messages.\n​\n      \n    ",
+  "normalizedText": "Introduction ​ Unlike OSRS which has the RuneLite client, RS3 only has its NXT client. In order to add some extra QoL/features, the Alt1 Toolkit was developed by @skillbert. This channel serves as a brief overview about Alt1 and what it's used for, as well as some extra helpful add-ons/plugins developed for it. Alt1 Download You can download Alt1 from the official RuneApps website. For Alt1 support/queries, please visit the RuneApps discord. You can also check out the RuneApps forums. ​ If you have any issues with regard to Alt1, please use the dedicated RuneApps discord server that has a section for player support. ​ Alt1 Overview What Is Alt1 Alt1 is a 3rd-party program that consists of several application overlays on your screen. They get information by reading your screen, and provide a bunch of QoL/useful features. ​ A detailed explanation of Alt1's features can be found on the Alt1 website, but amongst its default features it includes: ⬥ AFK Warden - the most common use for Alt1, its in-game activity detection overlays ⬥ Clue Solver - solves all clue puzzles and displays output as an overlay to speed up clue solving ⬥ DgKey - an overlay of your Dungeoneering map to keep track of gatestones, teammates, etc. ⬥ Stats Lookup - look up a player's stats ;stats;, quest points, etc. ⬥ Item Lookup - quickly find any item's page on the Runescape Wiki ⬥ D&D Notifications - opt-in for D&D notification alerts ⬥ XpMeter - track XP/hr rates in real time ⬥ Droplogger - an alternative to using the endgame RuneMetrics drop log ​ How It Works ⬥ Alt1 is designed to capture images of the NXT Client and parse them with an OCR (Optical Character Recognition) Library. ⬥ The captured data is then transformed into pixel data that can be used in Alt1 apps. ⬥ More information can be found on the forums and in the Alt1 Toolkit discord. ​ Is It Safe? ⬥ Alt1 is essentially a glorified Chromium browser that creates overlays over your game. Every Alt1 app is essentially a webpage. ⬥ Alt1 does not send any inputs or otherwise directly interact with your client beyond reading the pixels on the screen. ⬥ It is not a client, therefore you won't get banned for using it. ​ AFK Warden What Is AFK Warden ⬥ This is one of the most commonly used Alt1 apps, so will be covered in some detail here. ⬥ This reads the pixels on your screen to recognize your character, buff bars, chatbox and more in order to provide AFK alert notifications. ⬥ It tracks a number of things, including: ‎ ‎ ‎ ‎• HP and Prayer alerts ‎ ‎ ‎ ‎• Buff timers like ‎ ‎ ‎ ‎• Familiar duration ‎ ‎ ‎ ‎• Loot beams ‎ ‎ ‎ ‎• AFK lobby timers ‎ ‎ ‎ ‎• Seren Spirits and Blessings of the Gods ‎ ‎ ‎ ‎• Character stance (for AFK skilling alerts) ‎ ‎ ‎ ‎• XP drops, and more. ​ Clue Solver What Is Clue Solver ⬥ This is a very useful app that looks at your currently open clue on screen, and tells you how to solve it. ⬥ It handles all clue steps, including puzzle boxes, scans, compass clues, etc. With the exception of scan clues. ⬥ Have your clue visible on-screen clearly and click the 'Unlock Any' button to find a solution to your clue that will be displayed on the overlay. ​ Useful 3rd-Party Alt1 Apps In addition to the default apps that come with Alt1, there are a number of other useful third-party apps that can be installed, which will briefly be covered here. ​ How to Install Alt1 Apps ⬥ Alt1 Addons can be installed by going to the correct URL in either your normal browser or the Alt1 in-built browser. ‎ ‎ ‎ ‎• This will bring up a prompt to add the application to Alt1. ‎ ‎ ‎ ‎• The list of apps below have the full URL following each one. ‎ ‎ ‎ ‎• Note that none of these links will work on mobile, as they require Alt1 to be installed. ​ Combat Apps ⬥ Barrows Helper - track killed brothers, solve doors and displays droprates alt1://addapp/https://markvsrs.github.io/BarrowsHelperSrc/appconfig.json ​ ⬥ Better AoD - improved minion order tracker over the default Alt1 tracker alt1://addapp/https://cgyi4.csb.app/appconfig.json ​ ⬥ Better Buffs Bar - displays buffs in the order you decide on alt1://addapp/https://nadyanayme.github.io/better-better-buffs-bars/appconfig.json ​ ⬥ BoLG Tracker - shows BoLG stacks more clearly alt1://addapp/https://holycoil.nl/alt1/bolg/appconfig.json ​ ⬥ Dharok Relic - shows the %DPS boost from Berserker's Fury alt1://addapp/https://holycoil.nl/alt1/DharokRelic/appconfig.json ​ ⬥ Igor's Presets - Boss Presets Hub for Multiple bosses https://github.com/IgorsCC/afkwarden-presets/blob/master/readme.md ​ ⬥ Job Gauges - FFXIV-inspired job gauges for Runescape combat styles. Currently only Necro, Mage, and Range (WIP) is supported. alt1://addapp/https://nadyanayme.github.io/job-gauges/dist/appconfig.json ​ ⬥ Rotation Master - Input an ability rotation to be able to display an overlay on your screen for rotational help. alt1://addapp/https://ellamental2.github.io/RotationMaster/appconfig.json ​ ⬥ Slayer Tasks - helps decide what task to pick when using tickets alt1://addapp/https://unlishema.github.io/slayerassistant/appconfig.json ​ ⬥ Vorago Timer - shows Target Cycle (TC) timings for Vorago phases alt1://addapp/https://holycoil.nl/alt1/VoragoTag/appconfig.json ​ ⬥ Zamorak Specs - shows the next special attack at Zamorak alt1://addapp/https://zerogwafa.github.io/Zamorak-Attack-Tracker/appconfig.json ​ Skilling Apps ⬥ Archaeology Mats - tracks excavated Archaeology mats and calculate artefact restore costs alt1://addapp/https://zerogwafa.github.io/ArchMatCounter/appconfig.json ​ ⬥ Components Counter - tracks Invention components from disassembly / scavenging alt1://addapp/https://zerogwafa.github.io/ComponentCounter/appconfig.json ​ ⬥ Croesus Alerts - displays upcoming attacks and other fight information at Croesus alt1://addapp/https://raphire.github.io/SusAlert/appconfig.json ​ ⬥ Penguins - shows weekly Penguin locations (pulled from www.w60pengs.com) alt1://addapp/https://shaun.us.to/alt1/penguins/appconfig.json ​ ⬥ Seren Spirit Tracker - alerts when a Seren Spirit appears alt1://addapp/https://zerogwafa.github.io/SerenTracker/appconfig.json ​ Clue Apps ⬥ Clue Trainer - An alternative, fully featured clue solver featuring improved puzzle solvers and recommendations for efficient movement alt1://addapp/https://cluetrainer.app/appconfig.json ​ ⬥ Bik Book Timer - alerts when to disassemble with Bik book alt1://addapp/https://amerryma.github.io/alt1-bik-proc-timer/appconfig.json ​ ⬥ OpenLogger - an open source clue logger that will help keep track of your clues as you open them alt1://addapp/https://redx1000.github.io/OpenLogger/appconfig.json ​ ⬥ Catalyst Tracker - tracks clues from Catalyst of alterations displayed in the chat window alt1://addapp/https://ibbykay.github.io/CatalystClueTracker/appconfig.json ​ ⬥ Clue Splits - automatically tracks your clue times while doing a clue run, with no input required alt1://addapp/https://yongyi781.github.io/clue-split/appconfig.json ​ Misc. Apps Note: Price Check & Trade Alt1 App currently not working; in the process of being updated. ⬥ Screen Markers - customisable on-screen markers to make clicking easier alt1://addapp/https://kosblue.com/nekoapps/apps/ScreenMarkers/appconfig.json ​ ⬥ Quest Helper - shows steps for quests that you pick alt1://addapp/https://techpure.dev/RS3QuestBuddy/appconfig.prod.json ​ ⬥ Dungeoneering Helper - Logs your Dungeoneering floor times automatically alt1://addapp/https://dghelper.pages.dev/appconfig.json ​ Troubleshooting For any issues it is preferred to search if someone else has had the same issue or see the FAQ section on the forums, or use the official discord for support. ​ Links to the Alt1 website, Forums and Discord can be found in the pinned messages. ​",
+  "wordStream": [
+    "Introduction",
+    "​",
+    "Unlike",
+    "OSRS",
+    "which",
+    "has",
+    "the",
+    "RuneLite",
+    "client,",
+    "RS3",
+    "only",
+    "has",
+    "its",
+    "NXT",
+    "client.",
+    "In",
+    "order",
+    "to",
+    "add",
+    "some",
+    "extra",
+    "QoL/features,",
+    "the",
+    "Alt1",
+    "Toolkit",
+    "was",
+    "developed",
+    "by",
+    "@skillbert.",
+    "This",
+    "channel",
+    "serves",
+    "as",
+    "a",
+    "brief",
+    "overview",
+    "about",
+    "Alt1",
+    "and",
+    "what",
+    "it's",
+    "used",
+    "for,",
+    "as",
+    "well",
+    "as",
+    "some",
+    "extra",
+    "helpful",
+    "add-ons/plugins",
+    "developed",
+    "for",
+    "it.",
+    "Alt1",
+    "Download",
+    "You",
+    "can",
+    "download",
+    "Alt1",
+    "from",
+    "the",
+    "official",
+    "RuneApps",
+    "website.",
+    "For",
+    "Alt1",
+    "support/queries,",
+    "please",
+    "visit",
+    "the",
+    "RuneApps",
+    "discord.",
+    "You",
+    "can",
+    "also",
+    "check",
+    "out",
+    "the",
+    "RuneApps",
+    "forums.",
+    "​",
+    "If",
+    "you",
+    "have",
+    "any",
+    "issues",
+    "with",
+    "regard",
+    "to",
+    "Alt1,",
+    "please",
+    "use",
+    "the",
+    "dedicated",
+    "RuneApps",
+    "discord",
+    "server",
+    "that",
+    "has",
+    "a",
+    "section",
+    "for",
+    "player",
+    "support.",
+    "​",
+    "Alt1",
+    "Overview",
+    "What",
+    "Is",
+    "Alt1",
+    "Alt1",
+    "is",
+    "a",
+    "3rd-party",
+    "program",
+    "that",
+    "consists",
+    "of",
+    "several",
+    "application",
+    "overlays",
+    "on",
+    "your",
+    "screen.",
+    "They",
+    "get",
+    "information",
+    "by",
+    "reading",
+    "your",
+    "screen,",
+    "and",
+    "provide",
+    "a",
+    "bunch",
+    "of",
+    "QoL/useful",
+    "features.",
+    "​",
+    "A",
+    "detailed",
+    "explanation",
+    "of",
+    "Alt1's",
+    "features",
+    "can",
+    "be",
+    "found",
+    "on",
+    "the",
+    "Alt1",
+    "website,",
+    "but",
+    "amongst",
+    "its",
+    "default",
+    "features",
+    "it",
+    "includes:",
+    "⬥",
+    "AFK",
+    "Warden",
+    "-",
+    "the",
+    "most",
+    "common",
+    "use",
+    "for",
+    "Alt1,",
+    "its",
+    "in-game",
+    "activity",
+    "detection",
+    "overlays",
+    "⬥",
+    "Clue",
+    "Solver",
+    "-",
+    "solves",
+    "all",
+    "clue",
+    "puzzles",
+    "and",
+    "displays",
+    "output",
+    "as",
+    "an",
+    "overlay",
+    "to",
+    "speed",
+    "up",
+    "clue",
+    "solving",
+    "⬥",
+    "DgKey",
+    "-",
+    "an",
+    "overlay",
+    "of",
+    "your",
+    "Dungeoneering",
+    "map",
+    "to",
+    "keep",
+    "track",
+    "of",
+    "gatestones,",
+    "teammates,",
+    "etc.",
+    "⬥",
+    "Stats",
+    "Lookup",
+    "-",
+    "look",
+    "up",
+    "a",
+    "player's",
+    "stats",
+    ";stats;,",
+    "quest",
+    "points,",
+    "etc.",
+    "⬥",
+    "Item",
+    "Lookup",
+    "-",
+    "quickly",
+    "find",
+    "any",
+    "item's",
+    "page",
+    "on",
+    "the",
+    "Runescape",
+    "Wiki",
+    "⬥",
+    "D&D",
+    "Notifications",
+    "-",
+    "opt-in",
+    "for",
+    "D&D",
+    "notification",
+    "alerts",
+    "⬥",
+    "XpMeter",
+    "-",
+    "track",
+    "XP/hr",
+    "rates",
+    "in",
+    "real",
+    "time",
+    "⬥",
+    "Droplogger",
+    "-",
+    "an",
+    "alternative",
+    "to",
+    "using",
+    "the",
+    "endgame",
+    "RuneMetrics",
+    "drop",
+    "log",
+    "​",
+    "How",
+    "It",
+    "Works",
+    "⬥",
+    "Alt1",
+    "is",
+    "designed",
+    "to",
+    "capture",
+    "images",
+    "of",
+    "the",
+    "NXT",
+    "Client",
+    "and",
+    "parse",
+    "them",
+    "with",
+    "an",
+    "OCR",
+    "(Optical",
+    "Character",
+    "Recognition)",
+    "Library.",
+    "⬥",
+    "The",
+    "captured",
+    "data",
+    "is",
+    "then",
+    "transformed",
+    "into",
+    "pixel",
+    "data",
+    "that",
+    "can",
+    "be",
+    "used",
+    "in",
+    "Alt1",
+    "apps.",
+    "⬥",
+    "More",
+    "information",
+    "can",
+    "be",
+    "found",
+    "on",
+    "the",
+    "forums",
+    "and",
+    "in",
+    "the",
+    "Alt1",
+    "Toolkit",
+    "discord.",
+    "​",
+    "Is",
+    "It",
+    "Safe?",
+    "⬥",
+    "Alt1",
+    "is",
+    "essentially",
+    "a",
+    "glorified",
+    "Chromium",
+    "browser",
+    "that",
+    "creates",
+    "overlays",
+    "over",
+    "your",
+    "game.",
+    "Every",
+    "Alt1",
+    "app",
+    "is",
+    "essentially",
+    "a",
+    "webpage.",
+    "⬥",
+    "Alt1",
+    "does",
+    "not",
+    "send",
+    "any",
+    "inputs",
+    "or",
+    "otherwise",
+    "directly",
+    "interact",
+    "with",
+    "your",
+    "client",
+    "beyond",
+    "reading",
+    "the",
+    "pixels",
+    "on",
+    "the",
+    "screen.",
+    "⬥",
+    "It",
+    "is",
+    "not",
+    "a",
+    "client,",
+    "therefore",
+    "you",
+    "won't",
+    "get",
+    "banned",
+    "for",
+    "using",
+    "it.",
+    "​",
+    "AFK",
+    "Warden",
+    "What",
+    "Is",
+    "AFK",
+    "Warden",
+    "⬥",
+    "This",
+    "is",
+    "one",
+    "of",
+    "the",
+    "most",
+    "commonly",
+    "used",
+    "Alt1",
+    "apps,",
+    "so",
+    "will",
+    "be",
+    "covered",
+    "in",
+    "some",
+    "detail",
+    "here.",
+    "⬥",
+    "This",
+    "reads",
+    "the",
+    "pixels",
+    "on",
+    "your",
+    "screen",
+    "to",
+    "recognize",
+    "your",
+    "character,",
+    "buff",
+    "bars,",
+    "chatbox",
+    "and",
+    "more",
+    "in",
+    "order",
+    "to",
+    "provide",
+    "AFK",
+    "alert",
+    "notifications.",
+    "⬥",
+    "It",
+    "tracks",
+    "a",
+    "number",
+    "of",
+    "things,",
+    "including:",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "HP",
+    "and",
+    "Prayer",
+    "alerts",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Buff",
+    "timers",
+    "like",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Familiar",
+    "duration",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Loot",
+    "beams",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "AFK",
+    "lobby",
+    "timers",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Seren",
+    "Spirits",
+    "and",
+    "Blessings",
+    "of",
+    "the",
+    "Gods",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Character",
+    "stance",
+    "(for",
+    "AFK",
+    "skilling",
+    "alerts)",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "XP",
+    "drops,",
+    "and",
+    "more.",
+    "​",
+    "Clue",
+    "Solver",
+    "What",
+    "Is",
+    "Clue",
+    "Solver",
+    "⬥",
+    "This",
+    "is",
+    "a",
+    "very",
+    "useful",
+    "app",
+    "that",
+    "looks",
+    "at",
+    "your",
+    "currently",
+    "open",
+    "clue",
+    "on",
+    "screen,",
+    "and",
+    "tells",
+    "you",
+    "how",
+    "to",
+    "solve",
+    "it.",
+    "⬥",
+    "It",
+    "handles",
+    "all",
+    "clue",
+    "steps,",
+    "including",
+    "puzzle",
+    "boxes,",
+    "scans,",
+    "compass",
+    "clues,",
+    "etc.",
+    "With",
+    "the",
+    "exception",
+    "of",
+    "scan",
+    "clues.",
+    "⬥",
+    "Have",
+    "your",
+    "clue",
+    "visible",
+    "on-screen",
+    "clearly",
+    "and",
+    "click",
+    "the",
+    "'Unlock",
+    "Any'",
+    "button",
+    "to",
+    "find",
+    "a",
+    "solution",
+    "to",
+    "your",
+    "clue",
+    "that",
+    "will",
+    "be",
+    "displayed",
+    "on",
+    "the",
+    "overlay.",
+    "​",
+    "Useful",
+    "3rd-Party",
+    "Alt1",
+    "Apps",
+    "In",
+    "addition",
+    "to",
+    "the",
+    "default",
+    "apps",
+    "that",
+    "come",
+    "with",
+    "Alt1,",
+    "there",
+    "are",
+    "a",
+    "number",
+    "of",
+    "other",
+    "useful",
+    "third-party",
+    "apps",
+    "that",
+    "can",
+    "be",
+    "installed,",
+    "which",
+    "will",
+    "briefly",
+    "be",
+    "covered",
+    "here.",
+    "​",
+    "How",
+    "to",
+    "Install",
+    "Alt1",
+    "Apps",
+    "⬥",
+    "Alt1",
+    "Addons",
+    "can",
+    "be",
+    "installed",
+    "by",
+    "going",
+    "to",
+    "the",
+    "correct",
+    "URL",
+    "in",
+    "either",
+    "your",
+    "normal",
+    "browser",
+    "or",
+    "the",
+    "Alt1",
+    "in-built",
+    "browser.",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "This",
+    "will",
+    "bring",
+    "up",
+    "a",
+    "prompt",
+    "to",
+    "add",
+    "the",
+    "application",
+    "to",
+    "Alt1.",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "The",
+    "list",
+    "of",
+    "apps",
+    "below",
+    "have",
+    "the",
+    "full",
+    "URL",
+    "following",
+    "each",
+    "one.",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Note",
+    "that",
+    "none",
+    "of",
+    "these",
+    "links",
+    "will",
+    "work",
+    "on",
+    "mobile,",
+    "as",
+    "they",
+    "require",
+    "Alt1",
+    "to",
+    "be",
+    "installed.",
+    "​",
+    "Combat",
+    "Apps",
+    "⬥",
+    "Barrows",
+    "Helper",
+    "-",
+    "track",
+    "killed",
+    "brothers,",
+    "solve",
+    "doors",
+    "and",
+    "displays",
+    "droprates",
+    "alt1://addapp/https://markvsrs.github.io/BarrowsHelperSrc/appconfig.json",
+    "​",
+    "⬥",
+    "Better",
+    "AoD",
+    "-",
+    "improved",
+    "minion",
+    "order",
+    "tracker",
+    "over",
+    "the",
+    "default",
+    "Alt1",
+    "tracker",
+    "alt1://addapp/https://cgyi4.csb.app/appconfig.json",
+    "​",
+    "⬥",
+    "Better",
+    "Buffs",
+    "Bar",
+    "-",
+    "displays",
+    "buffs",
+    "in",
+    "the",
+    "order",
+    "you",
+    "decide",
+    "on",
+    "alt1://addapp/https://nadyanayme.github.io/better-better-buffs-bars/appconfig.json",
+    "​",
+    "⬥",
+    "BoLG",
+    "Tracker",
+    "-",
+    "shows",
+    "BoLG",
+    "stacks",
+    "more",
+    "clearly",
+    "alt1://addapp/https://holycoil.nl/alt1/bolg/appconfig.json",
+    "​",
+    "⬥",
+    "Dharok",
+    "Relic",
+    "-",
+    "shows",
+    "the",
+    "%DPS",
+    "boost",
+    "from",
+    "Berserker's",
+    "Fury",
+    "alt1://addapp/https://holycoil.nl/alt1/DharokRelic/appconfig.json",
+    "​",
+    "⬥",
+    "Igor's",
+    "Presets",
+    "-",
+    "Boss",
+    "Presets",
+    "Hub",
+    "for",
+    "Multiple",
+    "bosses",
+    "https://github.com/IgorsCC/afkwarden-presets/blob/master/readme.md",
+    "​",
+    "⬥",
+    "Job",
+    "Gauges",
+    "-",
+    "FFXIV-inspired",
+    "job",
+    "gauges",
+    "for",
+    "Runescape",
+    "combat",
+    "styles.",
+    "Currently",
+    "only",
+    "Necro,",
+    "Mage,",
+    "and",
+    "Range",
+    "(WIP)",
+    "is",
+    "supported.",
+    "alt1://addapp/https://nadyanayme.github.io/job-gauges/dist/appconfig.json",
+    "​",
+    "⬥",
+    "Rotation",
+    "Master",
+    "-",
+    "Input",
+    "an",
+    "ability",
+    "rotation",
+    "to",
+    "be",
+    "able",
+    "to",
+    "display",
+    "an",
+    "overlay",
+    "on",
+    "your",
+    "screen",
+    "for",
+    "rotational",
+    "help.",
+    "alt1://addapp/https://ellamental2.github.io/RotationMaster/appconfig.json",
+    "​",
+    "⬥",
+    "Slayer",
+    "Tasks",
+    "-",
+    "helps",
+    "decide",
+    "what",
+    "task",
+    "to",
+    "pick",
+    "when",
+    "using",
+    "tickets",
+    "alt1://addapp/https://unlishema.github.io/slayerassistant/appconfig.json",
+    "​",
+    "⬥",
+    "Vorago",
+    "Timer",
+    "-",
+    "shows",
+    "Target",
+    "Cycle",
+    "(TC)",
+    "timings",
+    "for",
+    "Vorago",
+    "phases",
+    "alt1://addapp/https://holycoil.nl/alt1/VoragoTag/appconfig.json",
+    "​",
+    "⬥",
+    "Zamorak",
+    "Specs",
+    "-",
+    "shows",
+    "the",
+    "next",
+    "special",
+    "attack",
+    "at",
+    "Zamorak",
+    "alt1://addapp/https://zerogwafa.github.io/Zamorak-Attack-Tracker/appconfig.json",
+    "​",
+    "Skilling",
+    "Apps",
+    "⬥",
+    "Archaeology",
+    "Mats",
+    "-",
+    "tracks",
+    "excavated",
+    "Archaeology",
+    "mats",
+    "and",
+    "calculate",
+    "artefact",
+    "restore",
+    "costs",
+    "alt1://addapp/https://zerogwafa.github.io/ArchMatCounter/appconfig.json",
+    "​",
+    "⬥",
+    "Components",
+    "Counter",
+    "-",
+    "tracks",
+    "Invention",
+    "components",
+    "from",
+    "disassembly",
+    "/",
+    "scavenging",
+    "alt1://addapp/https://zerogwafa.github.io/ComponentCounter/appconfig.json",
+    "​",
+    "⬥",
+    "Croesus",
+    "Alerts",
+    "-",
+    "displays",
+    "upcoming",
+    "attacks",
+    "and",
+    "other",
+    "fight",
+    "information",
+    "at",
+    "Croesus",
+    "alt1://addapp/https://raphire.github.io/SusAlert/appconfig.json",
+    "​",
+    "⬥",
+    "Penguins",
+    "-",
+    "shows",
+    "weekly",
+    "Penguin",
+    "locations",
+    "(pulled",
+    "from",
+    "www.w60pengs.com)",
+    "alt1://addapp/https://shaun.us.to/alt1/penguins/appconfig.json",
+    "​",
+    "⬥",
+    "Seren",
+    "Spirit",
+    "Tracker",
+    "-",
+    "alerts",
+    "when",
+    "a",
+    "Seren",
+    "Spirit",
+    "appears",
+    "alt1://addapp/https://zerogwafa.github.io/SerenTracker/appconfig.json",
+    "​",
+    "Clue",
+    "Apps",
+    "⬥",
+    "Clue",
+    "Trainer",
+    "-",
+    "An",
+    "alternative,",
+    "fully",
+    "featured",
+    "clue",
+    "solver",
+    "featuring",
+    "improved",
+    "puzzle",
+    "solvers",
+    "and",
+    "recommendations",
+    "for",
+    "efficient",
+    "movement",
+    "alt1://addapp/https://cluetrainer.app/appconfig.json",
+    "​",
+    "⬥",
+    "Bik",
+    "Book",
+    "Timer",
+    "-",
+    "alerts",
+    "when",
+    "to",
+    "disassemble",
+    "with",
+    "Bik",
+    "book",
+    "alt1://addapp/https://amerryma.github.io/alt1-bik-proc-timer/appconfig.json",
+    "​",
+    "⬥",
+    "OpenLogger",
+    "-",
+    "an",
+    "open",
+    "source",
+    "clue",
+    "logger",
+    "that",
+    "will",
+    "help",
+    "keep",
+    "track",
+    "of",
+    "your",
+    "clues",
+    "as",
+    "you",
+    "open",
+    "them",
+    "alt1://addapp/https://redx1000.github.io/OpenLogger/appconfig.json",
+    "​",
+    "⬥",
+    "Catalyst",
+    "Tracker",
+    "-",
+    "tracks",
+    "clues",
+    "from",
+    "Catalyst",
+    "of",
+    "alterations",
+    "displayed",
+    "in",
+    "the",
+    "chat",
+    "window",
+    "alt1://addapp/https://ibbykay.github.io/CatalystClueTracker/appconfig.json",
+    "​",
+    "⬥",
+    "Clue",
+    "Splits",
+    "-",
+    "automatically",
+    "tracks",
+    "your",
+    "clue",
+    "times",
+    "while",
+    "doing",
+    "a",
+    "clue",
+    "run,",
+    "with",
+    "no",
+    "input",
+    "required",
+    "alt1://addapp/https://yongyi781.github.io/clue-split/appconfig.json",
+    "​",
+    "Misc.",
+    "Apps",
+    "Note:",
+    "Price",
+    "Check",
+    "&",
+    "Trade",
+    "Alt1",
+    "App",
+    "currently",
+    "not",
+    "working;",
+    "in",
+    "the",
+    "process",
+    "of",
+    "being",
+    "updated.",
+    "⬥",
+    "Screen",
+    "Markers",
+    "-",
+    "customisable",
+    "on-screen",
+    "markers",
+    "to",
+    "make",
+    "clicking",
+    "easier",
+    "alt1://addapp/https://kosblue.com/nekoapps/apps/ScreenMarkers/appconfig.json",
+    "​",
+    "⬥",
+    "Quest",
+    "Helper",
+    "-",
+    "shows",
+    "steps",
+    "for",
+    "quests",
+    "that",
+    "you",
+    "pick",
+    "alt1://addapp/https://techpure.dev/RS3QuestBuddy/appconfig.prod.json",
+    "​",
+    "⬥",
+    "Dungeoneering",
+    "Helper",
+    "-",
+    "Logs",
+    "your",
+    "Dungeoneering",
+    "floor",
+    "times",
+    "automatically",
+    "alt1://addapp/https://dghelper.pages.dev/appconfig.json",
+    "​",
+    "Troubleshooting",
+    "For",
+    "any",
+    "issues",
+    "it",
+    "is",
+    "preferred",
+    "to",
+    "search",
+    "if",
+    "someone",
+    "else",
+    "has",
+    "had",
+    "the",
+    "same",
+    "issue",
+    "or",
+    "see",
+    "the",
+    "FAQ",
+    "section",
+    "on",
+    "the",
+    "forums,",
+    "or",
+    "use",
+    "the",
+    "official",
+    "discord",
+    "for",
+    "support.",
+    "​",
+    "Links",
+    "to",
+    "the",
+    "Alt1",
+    "website,",
+    "Forums",
+    "and",
+    "Discord",
+    "can",
+    "be",
+    "found",
+    "in",
+    "the",
+    "pinned",
+    "messages.",
+    "​"
+  ],
+  "hashes": {
+    "responseSha256": "a5b388443e3ba3257015fbccef83602de83cf08f820100a6bda5168c3d78be56",
+    "articleSha256": "73d4fafbc2b96bc8239c4ed5463ddeaf141f30071000ad1b8557597ebc6b2a8d",
+    "textSha256": "2523c6939437a5e69bc0f013bc1f1f80c67fa71a3be2dae4f09b32a97662c494",
+    "normalizedTextSha256": "00558c11c443f7d8fc3e44d7a472c7c9b1492f570b8a439c8d48986ed9cfaddf"
+  },
+  "headings": [
+    {
+      "tag": "h2",
+      "text": "Introduction",
+      "attrs": {
+        "id": "introduction"
+      },
+      "location": {
+        "start": 168216,
+        "end": 168266
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "Alt1 Overview",
+      "attrs": {
+        "id": "alt1-overview"
+      },
+      "location": {
+        "start": 169969,
+        "end": 170021
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "What Is Alt1",
+      "attrs": {
+        "id": "what-is-alt1"
+      },
+      "location": {
+        "start": 170022,
+        "end": 170061
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "How It Works",
+      "attrs": {
+        "id": "how-it-works"
+      },
+      "location": {
+        "start": 171326,
+        "end": 171365
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Is It Safe?",
+      "attrs": {
+        "id": "is-it-safe"
+      },
+      "location": {
+        "start": 171692,
+        "end": 171728
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "AFK Warden",
+      "attrs": {
+        "id": "afk-warden"
+      },
+      "location": {
+        "start": 172101,
+        "end": 172147
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "What Is AFK Warden",
+      "attrs": {
+        "id": "what-is-afk-warden"
+      },
+      "location": {
+        "start": 172220,
+        "end": 172271
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "Clue Solver",
+      "attrs": {
+        "id": "clue-solver"
+      },
+      "location": {
+        "start": 173642,
+        "end": 173690
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "What Is Clue Solver",
+      "attrs": {
+        "id": "what-is-clue-solver"
+      },
+      "location": {
+        "start": 173763,
+        "end": 173816
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "Useful 3rd-Party Alt1 Apps",
+      "attrs": {
+        "id": "useful-3rd-party-alt1-apps"
+      },
+      "location": {
+        "start": 174225,
+        "end": 174303
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "How to Install Alt1 Apps",
+      "attrs": {
+        "id": "how-to-install-alt1-apps"
+      },
+      "location": {
+        "start": 174491,
+        "end": 174554
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Combat Apps",
+      "attrs": {
+        "id": "combat-apps"
+      },
+      "location": {
+        "start": 174972,
+        "end": 175009
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Skilling Apps",
+      "attrs": {
+        "id": "skilling-apps"
+      },
+      "location": {
+        "start": 177666,
+        "end": 177707
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Clue Apps",
+      "attrs": {
+        "id": "clue-apps"
+      },
+      "location": {
+        "start": 179031,
+        "end": 179064
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Misc. Apps",
+      "attrs": {
+        "id": "misc-apps"
+      },
+      "location": {
+        "start": 180591,
+        "end": 180625
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "Troubleshooting",
+      "attrs": {
+        "id": "troubleshooting"
+      },
+      "location": {
+        "start": 181337,
+        "end": 181393
+      }
+    }
+  ],
+  "media": [
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "dungeoneering",
+        "class": "d-emoji",
+        "alt": "dungeoneering",
+        "src": "https://cdn.discordapp.com/emojis/1003947795541143632.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 170688,
+        "end": 170819
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/UG5psi4.png"
+      },
+      "text": "",
+      "location": {
+        "start": 172151,
+        "end": 172215
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Constitution",
+        "class": "d-emoji",
+        "alt": "Constitution",
+        "src": "https://cdn.discordapp.com/emojis/689509250887712902.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 172583,
+        "end": 172711
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "prayer",
+        "class": "d-emoji",
+        "alt": "prayer",
+        "src": "https://cdn.discordapp.com/emojis/1005450651347730533.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 172723,
+        "end": 172840
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "elderovlsalve",
+        "class": "d-emoji",
+        "alt": "elderovlsalve",
+        "src": "https://cdn.discordapp.com/emojis/648976643687317532.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 172881,
+        "end": 173011
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "LantaSticks",
+        "class": "d-emoji",
+        "alt": "LantaSticks",
+        "src": "https://cdn.discordapp.com/emojis/565726489404899368.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 173012,
+        "end": 173138
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Summoning",
+        "class": "d-emoji",
+        "alt": "Summoning",
+        "src": "https://cdn.discordapp.com/emojis/583430259064569856.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 173173,
+        "end": 173295
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "coins",
+        "class": "d-emoji",
+        "alt": "coins",
+        "src": "https://cdn.discordapp.com/emojis/698816156961603654.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 173323,
+        "end": 173437
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/EhTPOsI.png"
+      },
+      "text": "",
+      "location": {
+        "start": 173694,
+        "end": 173758
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bolg",
+        "class": "d-emoji",
+        "alt": "bolg",
+        "src": "https://cdn.discordapp.com/emojis/994189289623662702.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 175684,
+        "end": 175796
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "slayer",
+        "class": "d-emoji",
+        "alt": "slayer",
+        "src": "https://cdn.discordapp.com/emojis/797896049548066857.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 176876,
+        "end": 176992
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "slayervip",
+        "class": "d-emoji",
+        "alt": "slayervip",
+        "src": "https://cdn.discordapp.com/emojis/975284344597934120.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 177017,
+        "end": 177139
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "archaeology",
+        "class": "d-emoji",
+        "alt": "archaeology",
+        "src": "https://cdn.discordapp.com/emojis/941211288665739274.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 177778,
+        "end": 177904
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Invention",
+        "class": "d-emoji",
+        "alt": "Invention",
+        "src": "https://cdn.discordapp.com/emojis/689509250946695292.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 178124,
+        "end": 178246
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "cluescroll",
+        "class": "d-emoji",
+        "alt": "cluescroll",
+        "src": "https://cdn.discordapp.com/emojis/1037463867716018206.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 179222,
+        "end": 179347
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "scriptureofbik",
+        "class": "d-emoji",
+        "alt": "scriptureofbik",
+        "src": "https://cdn.discordapp.com/emojis/892342109791735848.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 179526,
+        "end": 179658
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "surge",
+        "class": "d-emoji",
+        "alt": "surge",
+        "src": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 180363,
+        "end": 180477
+      }
+    }
+  ],
+  "links": [
+    {
+      "href": "https://runeapps.org/alt1",
+      "text": "RuneApps website",
+      "attrs": {
+        "title": "",
+        "href": "https://runeapps.org/alt1",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 169300,
+        "end": 169398
+      }
+    },
+    {
+      "href": "https://discord.gg/G3SbcS8",
+      "text": "RuneApps discord",
+      "attrs": {
+        "title": "",
+        "href": "https://discord.gg/G3SbcS8",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 169443,
+        "end": 169542
+      }
+    },
+    {
+      "href": "https://runeapps.org/forums/",
+      "text": "RuneApps forums",
+      "attrs": {
+        "title": "",
+        "href": "https://runeapps.org/forums/",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 169571,
+        "end": 169671
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "h2",
+      "attrs": {
+        "id": "introduction"
+      },
+      "text": "Introduction",
+      "location": {
+        "start": 168216,
+        "end": 168266
+      }
+    },
+    {
+      "index": 1,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168266,
+        "end": 168267
+      }
+    },
+    {
+      "index": 2,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 168267,
+        "end": 168282
+      }
+    },
+    {
+      "index": 3,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168282,
+        "end": 168283
+      }
+    },
+    {
+      "index": 4,
+      "tag": "p",
+      "attrs": {},
+      "text": "Unlike OSRS which has the RuneLite client, RS3 only has its NXT client. In order to add some extra QoL/features, the Alt1 Toolkit was developed by @skillbert. This channel serves as a brief overview about Alt1 and what it's used for, as well as some extra helpful add-ons/plugins developed for it.",
+      "location": {
+        "start": 168283,
+        "end": 168587
+      }
+    },
+    {
+      "index": 5,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168587,
+        "end": 168588
+      }
+    },
+    {
+      "index": 6,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAlt1 Download\n\nYou can download Alt1 from the official RuneApps website.\nFor Alt1 support/queries, please visit the RuneApps discord.\nYou can also check out the RuneApps forums.\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 168588,
+        "end": 169770
+      }
+    },
+    {
+      "index": 7,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 169770,
+        "end": 169772
+      }
+    },
+    {
+      "index": 8,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 169772,
+        "end": 169787
+      }
+    },
+    {
+      "index": 9,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169787,
+        "end": 169788
+      }
+    },
+    {
+      "index": 10,
+      "tag": "p",
+      "attrs": {},
+      "text": "If you have any issues with regard to Alt1, please use the dedicated RuneApps discord server that has a section for player support.",
+      "location": {
+        "start": 169788,
+        "end": 169952
+      }
+    },
+    {
+      "index": 11,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169952,
+        "end": 169953
+      }
+    },
+    {
+      "index": 12,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 169953,
+        "end": 169968
+      }
+    },
+    {
+      "index": 13,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169968,
+        "end": 169969
+      }
+    },
+    {
+      "index": 14,
+      "tag": "h2",
+      "attrs": {
+        "id": "alt1-overview"
+      },
+      "text": "Alt1 Overview",
+      "location": {
+        "start": 169969,
+        "end": 170021
+      }
+    },
+    {
+      "index": 15,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170021,
+        "end": 170022
+      }
+    },
+    {
+      "index": 16,
+      "tag": "h3",
+      "attrs": {
+        "id": "what-is-alt1"
+      },
+      "text": "What Is Alt1",
+      "location": {
+        "start": 170022,
+        "end": 170061
+      }
+    },
+    {
+      "index": 17,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170061,
+        "end": 170062
+      }
+    },
+    {
+      "index": 18,
+      "tag": "p",
+      "attrs": {},
+      "text": "Alt1 is a 3rd-party program that consists of several application overlays on your screen. They get information by reading your screen, and provide a bunch of QoL/useful features.",
+      "location": {
+        "start": 170062,
+        "end": 170247
+      }
+    },
+    {
+      "index": 19,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170247,
+        "end": 170248
+      }
+    },
+    {
+      "index": 20,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 170248,
+        "end": 170263
+      }
+    },
+    {
+      "index": 21,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170263,
+        "end": 170264
+      }
+    },
+    {
+      "index": 22,
+      "tag": "p",
+      "attrs": {},
+      "text": "A detailed explanation of Alt1's features can be found on the Alt1 website, but amongst its default features it includes:",
+      "location": {
+        "start": 170264,
+        "end": 170392
+      }
+    },
+    {
+      "index": 23,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170392,
+        "end": 170393
+      }
+    },
+    {
+      "index": 24,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ AFK Warden - the most common use for Alt1, its in-game activity detection overlays",
+      "location": {
+        "start": 170393,
+        "end": 170501
+      }
+    },
+    {
+      "index": 25,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170501,
+        "end": 170502
+      }
+    },
+    {
+      "index": 26,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Clue Solver - solves all clue puzzles and displays output as an overlay to speed up clue solving",
+      "location": {
+        "start": 170502,
+        "end": 170624
+      }
+    },
+    {
+      "index": 27,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170624,
+        "end": 170625
+      }
+    },
+    {
+      "index": 28,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ DgKey - an overlay of your Dungeoneering  map to keep track of gatestones, teammates, etc.",
+      "location": {
+        "start": 170625,
+        "end": 170872
+      }
+    },
+    {
+      "index": 29,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170872,
+        "end": 170873
+      }
+    },
+    {
+      "index": 30,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Stats Lookup - look up a player's stats ;stats;, quest points, etc.",
+      "location": {
+        "start": 170873,
+        "end": 170966
+      }
+    },
+    {
+      "index": 31,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170966,
+        "end": 170967
+      }
+    },
+    {
+      "index": 32,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Item Lookup - quickly find any item's page on the Runescape Wiki",
+      "location": {
+        "start": 170967,
+        "end": 171057
+      }
+    },
+    {
+      "index": 33,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171057,
+        "end": 171058
+      }
+    },
+    {
+      "index": 34,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ D&D Notifications - opt-in for D&D notification alerts",
+      "location": {
+        "start": 171058,
+        "end": 171146
+      }
+    },
+    {
+      "index": 35,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171146,
+        "end": 171147
+      }
+    },
+    {
+      "index": 36,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ XpMeter - track XP/hr rates in real time",
+      "location": {
+        "start": 171147,
+        "end": 171213
+      }
+    },
+    {
+      "index": 37,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171213,
+        "end": 171214
+      }
+    },
+    {
+      "index": 38,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Droplogger - an alternative to using the endgame RuneMetrics drop log",
+      "location": {
+        "start": 171214,
+        "end": 171309
+      }
+    },
+    {
+      "index": 39,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171309,
+        "end": 171310
+      }
+    },
+    {
+      "index": 40,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 171310,
+        "end": 171325
+      }
+    },
+    {
+      "index": 41,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171325,
+        "end": 171326
+      }
+    },
+    {
+      "index": 42,
+      "tag": "h3",
+      "attrs": {
+        "id": "how-it-works"
+      },
+      "text": "How It Works",
+      "location": {
+        "start": 171326,
+        "end": 171365
+      }
+    },
+    {
+      "index": 43,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171365,
+        "end": 171366
+      }
+    },
+    {
+      "index": 44,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Alt1 is designed to capture images of the NXT Client and parse them with an OCR (Optical Character Recognition) Library.",
+      "location": {
+        "start": 171366,
+        "end": 171495
+      }
+    },
+    {
+      "index": 45,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171495,
+        "end": 171496
+      }
+    },
+    {
+      "index": 46,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ The captured data is then transformed into pixel data that can be used in Alt1 apps.",
+      "location": {
+        "start": 171496,
+        "end": 171589
+      }
+    },
+    {
+      "index": 47,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171589,
+        "end": 171590
+      }
+    },
+    {
+      "index": 48,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ More information can be found on the forums and in the Alt1 Toolkit discord.",
+      "location": {
+        "start": 171590,
+        "end": 171675
+      }
+    },
+    {
+      "index": 49,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171675,
+        "end": 171676
+      }
+    },
+    {
+      "index": 50,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 171676,
+        "end": 171691
+      }
+    },
+    {
+      "index": 51,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171691,
+        "end": 171692
+      }
+    },
+    {
+      "index": 52,
+      "tag": "h3",
+      "attrs": {
+        "id": "is-it-safe"
+      },
+      "text": "Is It Safe?",
+      "location": {
+        "start": 171692,
+        "end": 171728
+      }
+    },
+    {
+      "index": 53,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171728,
+        "end": 171729
+      }
+    },
+    {
+      "index": 54,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Alt1 is essentially a glorified Chromium browser that creates overlays over your game. Every Alt1 app is essentially a webpage.",
+      "location": {
+        "start": 171729,
+        "end": 171865
+      }
+    },
+    {
+      "index": 55,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171865,
+        "end": 171866
+      }
+    },
+    {
+      "index": 56,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Alt1 does not send any inputs or otherwise directly interact with your client beyond reading the pixels on the screen.",
+      "location": {
+        "start": 171866,
+        "end": 171993
+      }
+    },
+    {
+      "index": 57,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171993,
+        "end": 171994
+      }
+    },
+    {
+      "index": 58,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ It is not a client, therefore you won't get banned for using it.",
+      "location": {
+        "start": 171994,
+        "end": 172084
+      }
+    },
+    {
+      "index": 59,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172084,
+        "end": 172085
+      }
+    },
+    {
+      "index": 60,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 172085,
+        "end": 172100
+      }
+    },
+    {
+      "index": 61,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172100,
+        "end": 172101
+      }
+    },
+    {
+      "index": 62,
+      "tag": "h2",
+      "attrs": {
+        "id": "afk-warden"
+      },
+      "text": "AFK Warden",
+      "location": {
+        "start": 172101,
+        "end": 172147
+      }
+    },
+    {
+      "index": 63,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172147,
+        "end": 172148
+      }
+    },
+    {
+      "index": 64,
+      "tag": "p",
+      "attrs": {},
+      "text": "",
+      "location": {
+        "start": 172148,
+        "end": 172219
+      }
+    },
+    {
+      "index": 65,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172219,
+        "end": 172220
+      }
+    },
+    {
+      "index": 66,
+      "tag": "h3",
+      "attrs": {
+        "id": "what-is-afk-warden"
+      },
+      "text": "What Is AFK Warden",
+      "location": {
+        "start": 172220,
+        "end": 172271
+      }
+    },
+    {
+      "index": 67,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172271,
+        "end": 172272
+      }
+    },
+    {
+      "index": 68,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ This is one of the most commonly used Alt1 apps, so will be covered in some detail here.",
+      "location": {
+        "start": 172272,
+        "end": 172369
+      }
+    },
+    {
+      "index": 69,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172369,
+        "end": 172370
+      }
+    },
+    {
+      "index": 70,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ This reads the pixels on your screen to recognize your character, buff bars, chatbox and more in order to provide AFK alert notifications.",
+      "location": {
+        "start": 172370,
+        "end": 172517
+      }
+    },
+    {
+      "index": 71,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172517,
+        "end": 172518
+      }
+    },
+    {
+      "index": 72,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ It tracks a number of things, including:",
+      "location": {
+        "start": 172518,
+        "end": 172567
+      }
+    },
+    {
+      "index": 73,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172567,
+        "end": 172568
+      }
+    },
+    {
+      "index": 74,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• HP  and Prayer  alerts",
+      "location": {
+        "start": 172568,
+        "end": 172851
+      }
+    },
+    {
+      "index": 75,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172851,
+        "end": 172852
+      }
+    },
+    {
+      "index": 76,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Buff timers like  ",
+      "location": {
+        "start": 172852,
+        "end": 173142
+      }
+    },
+    {
+      "index": 77,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173142,
+        "end": 173143
+      }
+    },
+    {
+      "index": 78,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Familiar duration ",
+      "location": {
+        "start": 173143,
+        "end": 173299
+      }
+    },
+    {
+      "index": 79,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173299,
+        "end": 173300
+      }
+    },
+    {
+      "index": 80,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Loot beams ",
+      "location": {
+        "start": 173300,
+        "end": 173441
+      }
+    },
+    {
+      "index": 81,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173441,
+        "end": 173442
+      }
+    },
+    {
+      "index": 82,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• AFK lobby timers",
+      "location": {
+        "start": 173442,
+        "end": 173474
+      }
+    },
+    {
+      "index": 83,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173474,
+        "end": 173475
+      }
+    },
+    {
+      "index": 84,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Seren Spirits and Blessings of the Gods",
+      "location": {
+        "start": 173475,
+        "end": 173530
+      }
+    },
+    {
+      "index": 85,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173530,
+        "end": 173531
+      }
+    },
+    {
+      "index": 86,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Character stance (for AFK skilling alerts)",
+      "location": {
+        "start": 173531,
+        "end": 173589
+      }
+    },
+    {
+      "index": 87,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173589,
+        "end": 173590
+      }
+    },
+    {
+      "index": 88,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• XP drops, and more.",
+      "location": {
+        "start": 173590,
+        "end": 173625
+      }
+    },
+    {
+      "index": 89,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173625,
+        "end": 173626
+      }
+    },
+    {
+      "index": 90,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 173626,
+        "end": 173641
+      }
+    },
+    {
+      "index": 91,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173641,
+        "end": 173642
+      }
+    },
+    {
+      "index": 92,
+      "tag": "h2",
+      "attrs": {
+        "id": "clue-solver"
+      },
+      "text": "Clue Solver",
+      "location": {
+        "start": 173642,
+        "end": 173690
+      }
+    },
+    {
+      "index": 93,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173690,
+        "end": 173691
+      }
+    },
+    {
+      "index": 94,
+      "tag": "p",
+      "attrs": {},
+      "text": "",
+      "location": {
+        "start": 173691,
+        "end": 173762
+      }
+    },
+    {
+      "index": 95,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173762,
+        "end": 173763
+      }
+    },
+    {
+      "index": 96,
+      "tag": "h3",
+      "attrs": {
+        "id": "what-is-clue-solver"
+      },
+      "text": "What Is Clue Solver",
+      "location": {
+        "start": 173763,
+        "end": 173816
+      }
+    },
+    {
+      "index": 97,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173816,
+        "end": 173817
+      }
+    },
+    {
+      "index": 98,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ This is a very useful app that looks at your currently open clue on screen, and tells you how to solve it.",
+      "location": {
+        "start": 173817,
+        "end": 173932
+      }
+    },
+    {
+      "index": 99,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173932,
+        "end": 173933
+      }
+    },
+    {
+      "index": 100,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ It handles all clue steps, including puzzle boxes, scans, compass clues, etc. With the exception of scan clues.",
+      "location": {
+        "start": 173933,
+        "end": 174053
+      }
+    },
+    {
+      "index": 101,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174053,
+        "end": 174054
+      }
+    },
+    {
+      "index": 102,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Have your clue visible on-screen clearly and click the 'Unlock Any' button to find a solution to your clue that will be displayed on the overlay.",
+      "location": {
+        "start": 174054,
+        "end": 174208
+      }
+    },
+    {
+      "index": 103,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174208,
+        "end": 174209
+      }
+    },
+    {
+      "index": 104,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 174209,
+        "end": 174224
+      }
+    },
+    {
+      "index": 105,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174224,
+        "end": 174225
+      }
+    },
+    {
+      "index": 106,
+      "tag": "h2",
+      "attrs": {
+        "id": "useful-3rd-party-alt1-apps"
+      },
+      "text": "Useful 3rd-Party Alt1 Apps",
+      "location": {
+        "start": 174225,
+        "end": 174303
+      }
+    },
+    {
+      "index": 107,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174303,
+        "end": 174304
+      }
+    },
+    {
+      "index": 108,
+      "tag": "p",
+      "attrs": {},
+      "text": "In addition to the default apps that come with Alt1, there are a number of other useful third-party apps that can be installed, which will briefly be covered here.",
+      "location": {
+        "start": 174304,
+        "end": 174474
+      }
+    },
+    {
+      "index": 109,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174474,
+        "end": 174475
+      }
+    },
+    {
+      "index": 110,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 174475,
+        "end": 174490
+      }
+    },
+    {
+      "index": 111,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174490,
+        "end": 174491
+      }
+    },
+    {
+      "index": 112,
+      "tag": "h3",
+      "attrs": {
+        "id": "how-to-install-alt1-apps"
+      },
+      "text": "How to Install Alt1 Apps",
+      "location": {
+        "start": 174491,
+        "end": 174554
+      }
+    },
+    {
+      "index": 113,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174554,
+        "end": 174555
+      }
+    },
+    {
+      "index": 114,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Alt1 Addons can be installed by going to the correct URL in either your normal browser or the Alt1 in-built browser.",
+      "location": {
+        "start": 174555,
+        "end": 174697
+      }
+    },
+    {
+      "index": 115,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174697,
+        "end": 174698
+      }
+    },
+    {
+      "index": 116,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• This will bring up a prompt to add the application to Alt1.",
+      "location": {
+        "start": 174698,
+        "end": 174773
+      }
+    },
+    {
+      "index": 117,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174773,
+        "end": 174774
+      }
+    },
+    {
+      "index": 118,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• The list of apps below have the full URL following each one.",
+      "location": {
+        "start": 174774,
+        "end": 174850
+      }
+    },
+    {
+      "index": 119,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174850,
+        "end": 174851
+      }
+    },
+    {
+      "index": 120,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Note that none of these links will work on mobile, as they require Alt1 to be installed.",
+      "location": {
+        "start": 174851,
+        "end": 174955
+      }
+    },
+    {
+      "index": 121,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174955,
+        "end": 174956
+      }
+    },
+    {
+      "index": 122,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 174956,
+        "end": 174971
+      }
+    },
+    {
+      "index": 123,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174971,
+        "end": 174972
+      }
+    },
+    {
+      "index": 124,
+      "tag": "h3",
+      "attrs": {
+        "id": "combat-apps"
+      },
+      "text": "Combat Apps",
+      "location": {
+        "start": 174972,
+        "end": 175009
+      }
+    },
+    {
+      "index": 125,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175009,
+        "end": 175010
+      }
+    },
+    {
+      "index": 126,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Barrows Helper - track killed brothers, solve doors and displays droprates",
+      "location": {
+        "start": 175010,
+        "end": 175110
+      }
+    },
+    {
+      "index": 127,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175110,
+        "end": 175111
+      }
+    },
+    {
+      "index": 128,
+      "tag": "pre",
+      "attrs": {},
+      "text": "alt1://addapp/https://markvsrs.github.io/BarrowsHelperSrc/appconfig.json\n",
+      "location": {
+        "start": 175111,
+        "end": 175208
+      }
+    },
+    {
+      "index": 129,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175208,
+        "end": 175209
+      }
+    },
+    {
+      "index": 130,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 175209,
+        "end": 175224
+      }
+    },
+    {
+      "index": 131,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175224,
+        "end": 175225
+      }
+    },
+    {
+      "index": 132,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Better AoD - improved minion order tracker over the default Alt1 tracker",
+      "location": {
+        "start": 175225,
+        "end": 175323
+      }
+    },
+    {
+      "index": 133,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175323,
+        "end": 175324
+      }
+    },
+    {
+      "index": 134,
+      "tag": "pre",
+      "attrs": {},
+      "text": "alt1://addapp/https://cgyi4.csb.app/appconfig.json\n",
+      "location": {
+        "start": 175324,
+        "end": 175399
+      }
+    },
+    {
+      "index": 135,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175399,
+        "end": 175400
+      }
+    },
+    {
+      "index": 136,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 175400,
+        "end": 175415
+      }
+    },
+    {
+      "index": 137,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175415,
+        "end": 175416
+      }
+    },
+    {
+      "index": 138,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Better Buffs Bar - displays buffs in the order you decide on",
+      "location": {
+        "start": 175416,
+        "end": 175511
+      }
+    },
+    {
+      "index": 139,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175511,
+        "end": 175512
+      }
+    },
+    {
+      "index": 140,
+      "tag": "pre",
+      "attrs": {},
+      "text": "alt1://addapp/https://nadyanayme.github.io/better-better-buffs-bars/appconfig.json\n",
+      "location": {
+        "start": 175512,
+        "end": 175619
+      }
+    },
+    {
+      "index": 141,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175619,
+        "end": 175620
+      }
+    },
+    {
+      "index": 142,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 175620,
+        "end": 175635
+      }
+    },
+    {
+      "index": 143,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175635,
+        "end": 175636
+      }
+    },
+    {
+      "index": 144,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ BoLG Tracker - shows BoLG  stacks more clearly",
+      "location": {
+        "start": 175636,
+        "end": 175820
+      }
+    },
+    {
+      "index": 145,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175820,
+        "end": 175821
+      }
+    },
+    {
+      "index": 146,
+      "tag": "pre",
+      "attrs": {},
+      "text": "alt1://addapp/https://holycoil.nl/alt1/bolg/appconfig.json\n",
+      "location": {
+        "start": 175821,
+        "end": 175904
+      }
+    },
+    {
+      "index": 147,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175904,
+        "end": 175905
+      }
+    },
+    {
+      "index": 148,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 175905,
+        "end": 175920
+      }
+    },
+    {
+      "index": 149,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175920,
+        "end": 175921
+      }
+    },
+    {
+      "index": 150,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Dharok Relic - shows the %DPS boost from Berserker's Fury",
+      "location": {
+        "start": 175921,
+        "end": 176004
+      }
+    },
+    {
+      "index": 151,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176004,
+        "end": 176005
+      }
+    },
+    {
+      "index": 152,
+      "tag": "pre",
+      "attrs": {},
+      "text": "alt1://addapp/https://holycoil.nl/alt1/DharokRelic/appconfig.json\n",
+      "location": {
+        "start": 176005,
+        "end": 176095
+      }
+    },
+    {
+      "index": 153,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176095,
+        "end": 176096
+      }
+    },
+    {
+      "index": 154,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 176096,
+        "end": 176111
+      }
+    },
+    {
+      "index": 155,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176111,
+        "end": 176112
+      }
+    },
+    {
+      "index": 156,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Igor's Presets - Boss Presets Hub for Multiple bosses",
+      "location": {
+        "start": 176112,
+        "end": 176191
+      }
+    },
+    {
+      "index": 157,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176191,
+        "end": 176192
+      }
+    },
+    {
+      "index": 158,
+      "tag": "pre",
+      "attrs": {},
+      "text": "https://github.com/IgorsCC/afkwarden-presets/blob/master/readme.md\n",
+      "location": {
+        "start": 176192,
+        "end": 176283
+      }
+    },
+    {
+      "index": 159,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176283,
+        "end": 176284
+      }
+    },
+    {
+      "index": 160,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 176284,
+        "end": 176299
+      }
+    },
+    {
+      "index": 161,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176299,
+        "end": 176300
+      }
+    },
+    {
+      "index": 162,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Job Gauges - FFXIV-inspired job gauges for Runescape combat styles. Currently only Necro, Mage, and Range (WIP) is supported.",
+      "location": {
+        "start": 176300,
+        "end": 176451
+      }
+    },
+    {
+      "index": 163,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176451,
+        "end": 176452
+      }
+    },
+    {
+      "index": 164,
+      "tag": "pre",
+      "attrs": {},
+      "text": "alt1://addapp/https://nadyanayme.github.io/job-gauges/dist/appconfig.json\n",
+      "location": {
+        "start": 176452,
+        "end": 176550
+      }
+    },
+    {
+      "index": 165,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176550,
+        "end": 176551
+      }
+    },
+    {
+      "index": 166,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 176551,
+        "end": 176566
+      }
+    },
+    {
+      "index": 167,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176566,
+        "end": 176567
+      }
+    },
+    {
+      "index": 168,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Rotation Master - Input an ability rotation to be able to display an overlay on your screen for rotational help.",
+      "location": {
+        "start": 176567,
+        "end": 176705
+      }
+    },
+    {
+      "index": 169,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176705,
+        "end": 176706
+      }
+    },
+    {
+      "index": 170,
+      "tag": "pre",
+      "attrs": {},
+      "text": "alt1://addapp/https://ellamental2.github.io/RotationMaster/appconfig.json\n",
+      "location": {
+        "start": 176706,
+        "end": 176804
+      }
+    },
+    {
+      "index": 171,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176804,
+        "end": 176805
+      }
+    },
+    {
+      "index": 172,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 176805,
+        "end": 176820
+      }
+    },
+    {
+      "index": 173,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176820,
+        "end": 176821
+      }
+    },
+    {
+      "index": 174,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Slayer Tasks - helps decide what  task to pick when using  tickets",
+      "location": {
+        "start": 176821,
+        "end": 177151
+      }
+    },
+    {
+      "index": 175,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177151,
+        "end": 177152
+      }
+    },
+    {
+      "index": 176,
+      "tag": "pre",
+      "attrs": {},
+      "text": "alt1://addapp/https://unlishema.github.io/slayerassistant/appconfig.json\n",
+      "location": {
+        "start": 177152,
+        "end": 177249
+      }
+    },
+    {
+      "index": 177,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177249,
+        "end": 177250
+      }
+    },
+    {
+      "index": 178,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 177250,
+        "end": 177265
+      }
+    },
+    {
+      "index": 179,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177265,
+        "end": 177266
+      }
+    },
+    {
+      "index": 180,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Vorago Timer - shows Target Cycle (TC) timings for Vorago phases",
+      "location": {
+        "start": 177266,
+        "end": 177356
+      }
+    },
+    {
+      "index": 181,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177356,
+        "end": 177357
+      }
+    },
+    {
+      "index": 182,
+      "tag": "pre",
+      "attrs": {},
+      "text": "alt1://addapp/https://holycoil.nl/alt1/VoragoTag/appconfig.json\n",
+      "location": {
+        "start": 177357,
+        "end": 177445
+      }
+    },
+    {
+      "index": 183,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177445,
+        "end": 177446
+      }
+    },
+    {
+      "index": 184,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 177446,
+        "end": 177461
+      }
+    },
+    {
+      "index": 185,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177461,
+        "end": 177462
+      }
+    },
+    {
+      "index": 186,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Zamorak Specs - shows the next special attack at Zamorak",
+      "location": {
+        "start": 177462,
+        "end": 177544
+      }
+    },
+    {
+      "index": 187,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177544,
+        "end": 177545
+      }
+    },
+    {
+      "index": 188,
+      "tag": "pre",
+      "attrs": {},
+      "text": "alt1://addapp/https://zerogwafa.github.io/Zamorak-Attack-Tracker/appconfig.json\n",
+      "location": {
+        "start": 177545,
+        "end": 177649
+      }
+    },
+    {
+      "index": 189,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177649,
+        "end": 177650
+      }
+    },
+    {
+      "index": 190,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 177650,
+        "end": 177665
+      }
+    },
+    {
+      "index": 191,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177665,
+        "end": 177666
+      }
+    },
+    {
+      "index": 192,
+      "tag": "h3",
+      "attrs": {
+        "id": "skilling-apps"
+      },
+      "text": "Skilling Apps",
+      "location": {
+        "start": 177666,
+        "end": 177707
+      }
+    },
+    {
+      "index": 193,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177707,
+        "end": 177708
+      }
+    },
+    {
+      "index": 194,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Archaeology Mats - tracks excavated Archaeology  mats and calculate artefact restore costs",
+      "location": {
+        "start": 177708,
+        "end": 177950
+      }
+    },
+    {
+      "index": 195,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177950,
+        "end": 177951
+      }
+    },
+    {
+      "index": 196,
+      "tag": "pre",
+      "attrs": {},
+      "text": "alt1://addapp/https://zerogwafa.github.io/ArchMatCounter/appconfig.json\n",
+      "location": {
+        "start": 177951,
+        "end": 178047
+      }
+    },
+    {
+      "index": 197,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178047,
+        "end": 178048
+      }
+    },
+    {
+      "index": 198,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 178048,
+        "end": 178063
+      }
+    },
+    {
+      "index": 199,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178063,
+        "end": 178064
+      }
+    },
+    {
+      "index": 200,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Components Counter - tracks Invention  components from disassembly / scavenging",
+      "location": {
+        "start": 178064,
+        "end": 178291
+      }
+    },
+    {
+      "index": 201,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178291,
+        "end": 178292
+      }
+    },
+    {
+      "index": 202,
+      "tag": "pre",
+      "attrs": {},
+      "text": "alt1://addapp/https://zerogwafa.github.io/ComponentCounter/appconfig.json\n",
+      "location": {
+        "start": 178292,
+        "end": 178390
+      }
+    },
+    {
+      "index": 203,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178390,
+        "end": 178391
+      }
+    },
+    {
+      "index": 204,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 178391,
+        "end": 178406
+      }
+    },
+    {
+      "index": 205,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178406,
+        "end": 178407
+      }
+    },
+    {
+      "index": 206,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Croesus Alerts - displays upcoming attacks and other fight information at Croesus",
+      "location": {
+        "start": 178407,
+        "end": 178514
+      }
+    },
+    {
+      "index": 207,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178514,
+        "end": 178515
+      }
+    },
+    {
+      "index": 208,
+      "tag": "pre",
+      "attrs": {},
+      "text": "alt1://addapp/https://raphire.github.io/SusAlert/appconfig.json\n",
+      "location": {
+        "start": 178515,
+        "end": 178603
+      }
+    },
+    {
+      "index": 209,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178603,
+        "end": 178604
+      }
+    },
+    {
+      "index": 210,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 178604,
+        "end": 178619
+      }
+    },
+    {
+      "index": 211,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178619,
+        "end": 178620
+      }
+    },
+    {
+      "index": 212,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Penguins - shows weekly Penguin locations (pulled from www.w60pengs.com)",
+      "location": {
+        "start": 178620,
+        "end": 178731
+      }
+    },
+    {
+      "index": 213,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178731,
+        "end": 178732
+      }
+    },
+    {
+      "index": 214,
+      "tag": "pre",
+      "attrs": {},
+      "text": "alt1://addapp/https://shaun.us.to/alt1/penguins/appconfig.json\n",
+      "location": {
+        "start": 178732,
+        "end": 178819
+      }
+    },
+    {
+      "index": 215,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178819,
+        "end": 178820
+      }
+    },
+    {
+      "index": 216,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 178820,
+        "end": 178835
+      }
+    },
+    {
+      "index": 217,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178835,
+        "end": 178836
+      }
+    },
+    {
+      "index": 218,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Seren Spirit Tracker - alerts when a Seren Spirit appears",
+      "location": {
+        "start": 178836,
+        "end": 178919
+      }
+    },
+    {
+      "index": 219,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178919,
+        "end": 178920
+      }
+    },
+    {
+      "index": 220,
+      "tag": "pre",
+      "attrs": {},
+      "text": "alt1://addapp/https://zerogwafa.github.io/SerenTracker/appconfig.json\n",
+      "location": {
+        "start": 178920,
+        "end": 179014
+      }
+    },
+    {
+      "index": 221,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179014,
+        "end": 179015
+      }
+    },
+    {
+      "index": 222,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 179015,
+        "end": 179030
+      }
+    },
+    {
+      "index": 223,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179030,
+        "end": 179031
+      }
+    },
+    {
+      "index": 224,
+      "tag": "h3",
+      "attrs": {
+        "id": "clue-apps"
+      },
+      "text": "Clue Apps",
+      "location": {
+        "start": 179031,
+        "end": 179064
+      }
+    },
+    {
+      "index": 225,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179064,
+        "end": 179065
+      }
+    },
+    {
+      "index": 226,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Clue Trainer - An alternative, fully featured clue solver featuring improved puzzle solvers and recommendations for efficient movement ",
+      "location": {
+        "start": 179065,
+        "end": 179351
+      }
+    },
+    {
+      "index": 227,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179351,
+        "end": 179352
+      }
+    },
+    {
+      "index": 228,
+      "tag": "pre",
+      "attrs": {},
+      "text": "alt1://addapp/https://cluetrainer.app/appconfig.json\n",
+      "location": {
+        "start": 179352,
+        "end": 179429
+      }
+    },
+    {
+      "index": 229,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179429,
+        "end": 179430
+      }
+    },
+    {
+      "index": 230,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 179430,
+        "end": 179445
+      }
+    },
+    {
+      "index": 231,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179445,
+        "end": 179446
+      }
+    },
+    {
+      "index": 232,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Bik Book Timer - alerts when to disassemble with Bik book ",
+      "location": {
+        "start": 179446,
+        "end": 179662
+      }
+    },
+    {
+      "index": 233,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179662,
+        "end": 179663
+      }
+    },
+    {
+      "index": 234,
+      "tag": "pre",
+      "attrs": {},
+      "text": "alt1://addapp/https://amerryma.github.io/alt1-bik-proc-timer/appconfig.json\n",
+      "location": {
+        "start": 179663,
+        "end": 179763
+      }
+    },
+    {
+      "index": 235,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179763,
+        "end": 179764
+      }
+    },
+    {
+      "index": 236,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 179764,
+        "end": 179779
+      }
+    },
+    {
+      "index": 237,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179779,
+        "end": 179780
+      }
+    },
+    {
+      "index": 238,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ OpenLogger - an open source clue logger that will help keep track of your clues as you open them",
+      "location": {
+        "start": 179780,
+        "end": 179902
+      }
+    },
+    {
+      "index": 239,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179902,
+        "end": 179903
+      }
+    },
+    {
+      "index": 240,
+      "tag": "pre",
+      "attrs": {},
+      "text": "alt1://addapp/https://redx1000.github.io/OpenLogger/appconfig.json\n",
+      "location": {
+        "start": 179903,
+        "end": 179994
+      }
+    },
+    {
+      "index": 241,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179994,
+        "end": 179995
+      }
+    },
+    {
+      "index": 242,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 179995,
+        "end": 180010
+      }
+    },
+    {
+      "index": 243,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180010,
+        "end": 180011
+      }
+    },
+    {
+      "index": 244,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Catalyst Tracker - tracks clues from Catalyst of alterations displayed in the chat window",
+      "location": {
+        "start": 180011,
+        "end": 180126
+      }
+    },
+    {
+      "index": 245,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180126,
+        "end": 180127
+      }
+    },
+    {
+      "index": 246,
+      "tag": "pre",
+      "attrs": {},
+      "text": "alt1://addapp/https://ibbykay.github.io/CatalystClueTracker/appconfig.json\n",
+      "location": {
+        "start": 180127,
+        "end": 180226
+      }
+    },
+    {
+      "index": 247,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180226,
+        "end": 180227
+      }
+    },
+    {
+      "index": 248,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 180227,
+        "end": 180242
+      }
+    },
+    {
+      "index": 249,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180242,
+        "end": 180243
+      }
+    },
+    {
+      "index": 250,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Clue Splits - automatically tracks your clue times while doing a clue run, with no input required ",
+      "location": {
+        "start": 180243,
+        "end": 180481
+      }
+    },
+    {
+      "index": 251,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180481,
+        "end": 180482
+      }
+    },
+    {
+      "index": 252,
+      "tag": "pre",
+      "attrs": {},
+      "text": "alt1://addapp/https://yongyi781.github.io/clue-split/appconfig.json\n",
+      "location": {
+        "start": 180482,
+        "end": 180574
+      }
+    },
+    {
+      "index": 253,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180574,
+        "end": 180575
+      }
+    },
+    {
+      "index": 254,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 180575,
+        "end": 180590
+      }
+    },
+    {
+      "index": 255,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180590,
+        "end": 180591
+      }
+    },
+    {
+      "index": 256,
+      "tag": "h3",
+      "attrs": {
+        "id": "misc-apps"
+      },
+      "text": "Misc. Apps",
+      "location": {
+        "start": 180591,
+        "end": 180625
+      }
+    },
+    {
+      "index": 257,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180625,
+        "end": 180626
+      }
+    },
+    {
+      "index": 258,
+      "tag": "p",
+      "attrs": {},
+      "text": "Note: Price Check & Trade Alt1 App currently not working; in the process of being updated.",
+      "location": {
+        "start": 180626,
+        "end": 180736
+      }
+    },
+    {
+      "index": 259,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180736,
+        "end": 180737
+      }
+    },
+    {
+      "index": 260,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Screen Markers - customisable on-screen markers to make clicking easier",
+      "location": {
+        "start": 180737,
+        "end": 180834
+      }
+    },
+    {
+      "index": 261,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180834,
+        "end": 180835
+      }
+    },
+    {
+      "index": 262,
+      "tag": "pre",
+      "attrs": {},
+      "text": "alt1://addapp/https://kosblue.com/nekoapps/apps/ScreenMarkers/appconfig.json\n",
+      "location": {
+        "start": 180835,
+        "end": 180936
+      }
+    },
+    {
+      "index": 263,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180936,
+        "end": 180937
+      }
+    },
+    {
+      "index": 264,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 180937,
+        "end": 180952
+      }
+    },
+    {
+      "index": 265,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180952,
+        "end": 180953
+      }
+    },
+    {
+      "index": 266,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Quest Helper - shows steps for quests that you pick",
+      "location": {
+        "start": 180953,
+        "end": 181030
+      }
+    },
+    {
+      "index": 267,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 181030,
+        "end": 181031
+      }
+    },
+    {
+      "index": 268,
+      "tag": "pre",
+      "attrs": {},
+      "text": "alt1://addapp/https://techpure.dev/RS3QuestBuddy/appconfig.prod.json\n",
+      "location": {
+        "start": 181031,
+        "end": 181124
+      }
+    },
+    {
+      "index": 269,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 181124,
+        "end": 181125
+      }
+    },
+    {
+      "index": 270,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 181125,
+        "end": 181140
+      }
+    },
+    {
+      "index": 271,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 181140,
+        "end": 181141
+      }
+    },
+    {
+      "index": 272,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Dungeoneering Helper - Logs your Dungeoneering floor times automatically",
+      "location": {
+        "start": 181141,
+        "end": 181239
+      }
+    },
+    {
+      "index": 273,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 181239,
+        "end": 181240
+      }
+    },
+    {
+      "index": 274,
+      "tag": "pre",
+      "attrs": {},
+      "text": "alt1://addapp/https://dghelper.pages.dev/appconfig.json\n",
+      "location": {
+        "start": 181240,
+        "end": 181320
+      }
+    },
+    {
+      "index": 275,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 181320,
+        "end": 181321
+      }
+    },
+    {
+      "index": 276,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 181321,
+        "end": 181336
+      }
+    },
+    {
+      "index": 277,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 181336,
+        "end": 181337
+      }
+    },
+    {
+      "index": 278,
+      "tag": "h2",
+      "attrs": {
+        "id": "troubleshooting"
+      },
+      "text": "Troubleshooting",
+      "location": {
+        "start": 181337,
+        "end": 181393
+      }
+    },
+    {
+      "index": 279,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 181393,
+        "end": 181394
+      }
+    },
+    {
+      "index": 280,
+      "tag": "p",
+      "attrs": {},
+      "text": "For any issues it is preferred to search if someone else has had the same issue or see the FAQ section on the forums, or use the official discord for support.",
+      "location": {
+        "start": 181394,
+        "end": 181559
+      }
+    },
+    {
+      "index": 281,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 181559,
+        "end": 181560
+      }
+    },
+    {
+      "index": 282,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 181560,
+        "end": 181575
+      }
+    },
+    {
+      "index": 283,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 181575,
+        "end": 181576
+      }
+    },
+    {
+      "index": 284,
+      "tag": "p",
+      "attrs": {},
+      "text": "Links to the Alt1 website, Forums and Discord can be found in the pinned messages.",
+      "location": {
+        "start": 181576,
+        "end": 181665
+      }
+    },
+    {
+      "index": 285,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 181665,
+        "end": 181666
+      }
+    },
+    {
+      "index": 286,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 181666,
+        "end": 181681
+      }
+    },
+    {
+      "index": 287,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n      \n    ",
+      "location": {
+        "start": 181681,
+        "end": 181693
+      }
+    }
+  ]
+}

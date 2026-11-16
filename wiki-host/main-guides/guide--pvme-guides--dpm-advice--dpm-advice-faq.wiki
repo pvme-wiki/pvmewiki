@@ -1,0 +1,911 @@
+__NOTOC__
+<div class="pvme-exact-guide">
+
+<div class="pvme-source-section">
+<h2 id="introduction"><ins><nowiki>Introduction</nowiki></ins></h2>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>In RuneScape PvM, the meta at the time of writing is about pushing out as much damage in as little time as possible. It is important to understand that good and efficient PvM, especially at the higher tiers, is about squeezing out as much damage as possible in between mechanics.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>This channel will cover fundamental terminology, discuss full manual vs. revolution, how to put together a rotation, and common hiccups that players run into while getting into PvM.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="related-channels"><ins><nowiki>Related Channels</nowiki></ins></h2>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>For further information and reading, you can refer to the following resources.</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(0, 153, 255)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Quick Navigation Links</nowiki></u><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>Links to related channels and resources for more information about PvM and DPS.
+</nowiki></div><nowiki>
+</nowiki><div><div><div><u><nowiki>DPM-Advice Channels</nowiki></u><nowiki>
+</nowiki></div><div class="pvme-source-preserve-lines"><nowiki>⬥ </nowiki><span><nowiki>#unknown-channel</nowiki></span><nowiki>
+⬥ </nowiki><span><nowiki>#unknown-channel</nowiki></span><nowiki>
+⬥ </nowiki><span><nowiki>#unknown-channel</nowiki></span><nowiki>
+⬥ </nowiki><span><nowiki>#unknown-channel</nowiki></span><nowiki>
+</nowiki></div></div><div><div><u><nowiki>Misc. Info</nowiki></u><nowiki>
+</nowiki></div><div class="pvme-source-preserve-lines"><nowiki>⬥ </nowiki><span><nowiki>#revolution-bars</nowiki></span><nowiki>
+⬥ </nowiki><span><nowiki>#ability-information</nowiki></span><nowiki>
+⬥ </nowiki><span><nowiki>#mechanics</nowiki></span><nowiki>
+</nowiki></div></div><div><div><u><nowiki>Invention</nowiki></u><nowiki>
+</nowiki></div><div class="pvme-source-preserve-lines"><nowiki>⬥ </nowiki><span><nowiki>#perks</nowiki></span><nowiki>
+⬥ </nowiki><span><nowiki>#perk-information</nowiki></span><nowiki>
+</nowiki></div></div></div><nowiki>
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line"><em><nowiki>Note: If you have any difficulties in using the tools or understanding what the information means, you can always ask in </nowiki><span><nowiki>#pvm-help</nowiki></span></em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="terminology"><ins><nowiki>Terminology</nowiki></ins></h2>
+<nowiki>
+</nowiki>
+
+<div class="pvme-source-mechanic">
+<h3 id="common-abbreviations-in-pvm"><nowiki>Common Abbreviations in PvM</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Ability</nowiki></strong><nowiki> - the combat actions you can perform for each style, unique to EoC.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Basic ability</nowiki></strong><nowiki> - abilities that require no adrenaline to use, such as Sonic Wave </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478063115709972651.png?v=1" alt="sonic" title="sonic" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Threshold</nowiki></strong><nowiki> - abilities that require 50% adren to use, and cost 15% adren, e.g. </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/535541258786177064.png?v=1" alt="reflect" title="reflect" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Enhanced</nowiki></strong><nowiki> - abilities that typically cost adrenaline to use, e.g. </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/535533809978966037.png?v=1" alt="wm" title="wm" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Ultimate</nowiki></strong><nowiki> - powerful abilities that cost 60-100% adrenaline to use, such as Tsunami </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/535533809995874304.png?v=1" alt="tsunami" title="tsunami" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>Special attack</nowiki></strong><nowiki> - some weapons have in-built special attacks, e.g. the Dragon Battleaxe </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/603979368850653216.png?v=1" alt="DBA" title="DBA" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Auto</nowiki></strong><nowiki> – the Basic Attack</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>DPS</nowiki></strong><nowiki> – damage per second, or referring to damage in general</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>DW</nowiki></strong><nowiki> – dual-wield weapons</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>2H</nowiki></strong><nowiki> – two-handed weapons</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Juggling/Swapping</nowiki></strong><nowiki> – generally referring to switching between DW and 2H weapons to gain access to more damaging abilities</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Camping</nowiki></strong><nowiki> – refers to using only one type of weapon - e.g. 2H camping or DW camping</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Rotation</nowiki></strong><nowiki> – refers to the usage of abilities in sequence, and managing ability cooldowns</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Switch</nowiki></strong><nowiki> – refers to a piece of gear worn and used only temporarily for some effect</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Tick</nowiki></strong><nowiki> – a unit of time in which a game action can occur - Runescape runs on 0.6 second ticks</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Lossless</nowiki></strong><nowiki> - meaning no ticks are lost in performing an action</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>GCD</nowiki></strong><nowiki> - global cooldown - an innate cooldown built into every ability that lasts for 3 ticks (1.8 seconds)</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>A full list of abbreviations can be found </nowiki>[https://runescape.wiki/w/Glossary <nowiki>here</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+</div>
+<div class="pvme-source-section">
+<h2 id="combat-modes"><ins><nowiki>Combat Modes</nowiki></ins></h2>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>Runescape combat can vary in how much user input is required during the encounter depending on what ability categories you allow Revolution to use, the categories are:</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Basic</nowiki></strong><nowiki> - also known as &quot;basic&quot; Revolution</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Threshold</nowiki></strong><nowiki> - only affects certain Constitution and Defence abilities like </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/535541258786177064.png?v=1" alt="reflect" title="reflect" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Enhanced</nowiki></strong><nowiki> - also known as Revolution+</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Ultimate</nowiki></strong><nowiki> - also known as Revolution++</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>You can change combat modes by right-clicking the </nowiki><strong><nowiki>yellow cog icon</nowiki></strong><nowiki> on the action bar.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ The settings can also be found at: </nowiki><strong><nowiki>(Press Esc) &gt; Settings &gt; Gameplay &gt; Combat &amp; Action Bar &gt; Combat Mode</nowiki></strong></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><pvme-image src="https://img.pvme.io/images/mcaPwrZJOu.png" alt="" title="" kind="media" /><nowiki>
+</nowiki><strong><nowiki>When Revolution is enabled, a yellow bar will appear around your abilities</nowiki></strong><nowiki>. This indicates which abilities the system has access to.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Abilities outside this box will not be used automatically</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ The bar can be made bigger or smaller by adjusting </nowiki><em><nowiki>Revolution Size</nowiki></em><nowiki> in the settings menu</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="basic-revolution"><ins><nowiki>Basic Revolution</nowiki></ins></h2>
+<nowiki>
+</nowiki>
+
+<div class="pvme-source-mechanic">
+<h3 id="what-is-revo"><nowiki>What is Revo</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>With Basic Revolution (often just called </nowiki><em><nowiki>Revo</nowiki></em><nowiki>), basic abilities are used automatically, but everything else must be used by the player.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>You can still override this with manual inputs</nowiki></strong></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>Newer players may find this combat mode helpful, as it gives some control over your ability rotation but takes away the burden of managing your basic abilities. To enable Revolution, only allow basic abilities to be used by the game automatically:</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><pvme-image src="https://img.pvme.io/images/D5ILK2gQ2Z.png" alt="" title="" kind="media" /><nowiki>
+​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="combat-strategy-with-revo"><nowiki>Combat Strategy with Revo</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>Set up your ability bar properly, can see example bars below. When you reach 100% adrenaline, activate your damage-boosting Ultimate abilites.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ These are Sunshine </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/994921119381463070.png?v=1" alt="sunshine" title="sunshine" kind="icon" /><nowiki> , Death's Swiftness </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/994921434633744455.png?v=1" alt="deathsswift" title="deathsswift" kind="icon" /><nowiki>, Berserk </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/535532854004678657.png?v=1" alt="zerk" title="zerk" kind="icon" /><nowiki>, or Living Death </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1" alt="livingdeath" title="livingdeath" kind="icon" /><nowiki> depending on your combat style</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>From there, use your enhanced abilities, modified ultimate abilities and special attacks as adrenaline and ability cooldowns permit.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Examples include Wild Magic </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/535533809978966037.png?v=1" alt="wm" title="wm" kind="icon" /><nowiki> , Snapshot </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478061855732666439.png?v=1" alt="snapshot" title="snapshot" kind="icon" /><nowiki> , Assault </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/535532855191928842.png?v=1" alt="assault" title="assault" kind="icon" /><nowiki> , etc</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>This simple pattern can be used to achieve a moderate level of DPS with low-medium player input:</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-sequence"><nowiki>⬥ </nowiki><strong><nowiki>Build to 100% → damage-boosting ultimate → enhanced/modified ultimates/special attacks → Repeat</nowiki></strong></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• If you have full adrenaline, but cannot use a damage-boosting ultimate, you can use a couple enhanced abilities while waiting for the cooldown</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="setting-up-a-revolution-bar"><nowiki>Setting Up A Revolution Bar</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Strong basics are prioritised over weaker basics</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ At least one short cooldown ability is placed at the front to help with ability cooldowns</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Enhanced and ultimate abilities can be placed anywhere on the bar − you will be manually activating them, so the order does not matter</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Look at </nowiki><span><nowiki>#revolution-bars</nowiki></span><nowiki> for style-specific revolution bars</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="how-to-approach-using-full-manual"><nowiki>How to Approach Using Full Manual</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><em><nowiki>Note: For a more in-depth guide, you can look at </nowiki><span><nowiki>#revo-to-full-manual</nowiki></span><nowiki>.</nowiki></em></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ It does not matter where you place abilities on your bar with Full Manual, but you may still find it helpful to organize how you set it up</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• e.g. first basic, then enhanced, then ultimate abilities</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Going from Revo to Full Manual can seem intimidating, but the key to success is </nowiki><strong><nowiki>practice, practice, practice</nowiki></strong></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ You can begin with Revo to use your basics, and manually using enhanced and ultimate abilities</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Once comfortable, you can also press your basic abilities, but leave Revo on as a backup (to avoid losing ticks doing nothing)</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Once you feel confident with your keybinds, try turning off Revolution entirely</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="practicing-full-manual"><nowiki>Practicing Full Manual</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>One way to practice is to try attacking a Combat Dummy </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/656844963522281473.png?v=1" alt="dummy" title="dummy" kind="icon" /><nowiki> for a full minute, </nowiki><strong><nowiki>using only basics</nowiki></strong><nowiki>. Your goal is to not lose any ticks between basic abilities, while still using as many high damaging basics as you can.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ This helps you learn about ability cooldowns and get used to pressing inputs</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ After this, you can practice a more realistic rotation including enhanced and ultimate abilities</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>Once you get comfortable at a combat dummy, try it out on a real boss at GWD1 (e.g. K'ril Tustsaroth) or GWD2 (e.g. Vindicta). There is no easy &quot;trick&quot; to skip past the practice. </nowiki><strong><nowiki>It takes time to learn full manual, so don't give up</nowiki></strong><nowiki>! Do not worry if your damage lessens during this process - it is normal have worse DPS while learning full manual.</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+</div>
+<div class="pvme-source-section">
+<h2 id="how-to-build-a-rotation"><ins><nowiki>How to Build a Rotation</nowiki></ins></h2>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><em><strong><nowiki>Note</nowiki></strong><nowiki>: This is just one example for one style. More detailed and style-specific information can be found in their respective channels: </nowiki><span><nowiki>#unknown-channel</nowiki></span><nowiki> / </nowiki><span><nowiki>#unknown-channel</nowiki></span><nowiki> / </nowiki><span><nowiki>#unknown-channel</nowiki></span><nowiki> / </nowiki><span><nowiki>#unknown-channel</nowiki></span><nowiki>.</nowiki></em></p>
+<nowiki>
+</nowiki>
+
+<div class="pvme-source-mechanic">
+<h3 id="factors-to-consider"><nowiki>Factors to Consider</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>A rotation is a general order of abilities we try to follow to maximize our DPS. This is achieved taking into account a number of factors, such as:</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Ability Damage</nowiki></strong><nowiki> - we want to use strong abilities</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Ability Cooldowns</nowiki></strong><nowiki> - we can only use each ability every so often</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>2H/DW reqs</nowiki></strong><nowiki> - some abilities can only be used with two-handed or dual-wield weapons specifically</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>This is a lot to take in, so </nowiki><strong><nowiki>consider the following example</nowiki></strong><nowiki>. We randomly use some of the strong melee basics and see what happens:</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-sequence"><nowiki>⬥ Dismember </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478062910113714297.png?v=1" alt="dismember" title="dismember" kind="icon" /><nowiki> → Greater Fury </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/535532879334080527.png?v=1" alt="gfury" title="gfury" kind="icon" /><nowiki> → Rend </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478166426190741584.png?v=1" alt="rend" title="rend" kind="icon" /><nowiki> → Chaos Roar </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478062908767211640.png?v=1" alt="chaosroar" title="chaosroar" kind="icon" /><nowiki> → Punish </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/535532879439069184.png?v=1" alt="punish" title="punish" kind="icon" /><nowiki> → Adaptive Strike </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478062906057949417.png?v=1" alt="adaptivestrike" title="adaptivestrike" kind="icon" /><nowiki> → ?</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>All the strong basics are now on cooldown and we have to use the Basic Attack </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478062907295010906.png?v=1" alt="meleebasic" title="meleebasic" kind="icon" /><nowiki> , how can this be fixed?</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="rotating-your-basic-abilities"><nowiki>Rotating Your Basic Abilities</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>To avoid running into situations where there are no good abilities to use, we pick a strong basic that has a relatively short cooldown to build around. One ability that immediately comes to mind is </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478062906057949417.png?v=1" alt="adaptivestrike" title="adaptivestrike" kind="icon" /><nowiki> , because:</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ It is not too weak - 140% maximum ability damage</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ It has a short cooldown - 5.4 seconds / 9 ticks, or 3 global cooldowns (GCDs)</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ In other words, </nowiki><strong><nowiki>we can use Adaptive Strike as every 3rd ability</nowiki></strong></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>We also notice Rend </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478166426190741584.png?v=1" alt="rend" title="rend" kind="icon" /><nowiki> :</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ It is one of our strongest basics (165% maximum damage)</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ It has a relatively short cooldown - </nowiki><strong><nowiki>we can use Rend every 6th ability</nowiki></strong></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>Putting it together, we get a rotation:</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-sequence"><nowiki>⬥ [ </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478166426190741584.png?v=1" alt="rend" title="rend" kind="icon" /><nowiki> → </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478062906057949417.png?v=1" alt="adaptivestrike" title="adaptivestrike" kind="icon" /><nowiki> → </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478062907295010906.png?v=1" alt="meleebasic" title="meleebasic" kind="icon" /><nowiki> ] → [ </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478062907295010906.png?v=1" alt="meleebasic" title="meleebasic" kind="icon" /><nowiki> → </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478062906057949417.png?v=1" alt="adaptivestrike" title="adaptivestrike" kind="icon" /><nowiki> → </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478062907295010906.png?v=1" alt="meleebasic" title="meleebasic" kind="icon" /><nowiki> ] → Repeat</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>This rotation, using groups of 3 abilities around Adaptive Strike </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478062906057949417.png?v=1" alt="adaptivestrike" title="adaptivestrike" kind="icon" /><nowiki> , can be indefinitely repeated. This gives us a strong foundation to build adrenaline that we can then consume to use enhanced and ultimate abilities.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ This is just a basic example to show how cooldown management works, the rotation is still </nowiki><strong><nowiki>very bare bones and not optimised</nowiki></strong></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ In a final rotation, abilities like Greater Fury </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/535532879334080527.png?v=1" alt="gfury" title="gfury" kind="icon" /><nowiki> can replace the Basic Attack </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478062907295010906.png?v=1" alt="meleebasic" title="meleebasic" kind="icon" /><nowiki> before strong abilities like Punish </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/535532879439069184.png?v=1" alt="punish" title="punish" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="when-to-use-thresholds-ultimates"><nowiki>When To Use Thresholds / Ultimates</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>We want to use our damage-boosting ultimates ( </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/994921119381463070.png?v=1" alt="sunshine" title="sunshine" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/994921434633744455.png?v=1" alt="deathsswift" title="deathsswift" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/535532854004678657.png?v=1" alt="zerk" title="zerk" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1" alt="livingdeath" title="livingdeath" kind="icon" /><nowiki> ) as often as we can, if the fight will last longer than the duration of the ultimate. Inside the ultimate, the goal is to use as many good enhanced abilities, modified ultimates (like Overpower with an Igneous Kal-Ket </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/959089455640215633.png?v=1" alt="overpowerigneous" title="overpowerigneous" kind="icon" /><nowiki> ) and special attacks </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/537340400273195028.png?v=1" alt="spec" title="spec" kind="icon" /><nowiki> as possible, and minimize the use of the Basic Ability </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478062907295010906.png?v=1" alt="meleebasic" title="meleebasic" kind="icon" /><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ During cooldowns, we will continue to use strong basics</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ After the ultimate ability ends, while waiting for it to come back off cooldown, we can use a few enhanced abilities</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="what-to-use-inside-ultimates"><nowiki>What to Use Inside Ultimates</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>Players have worked out some of the best ways to use abilities inside ultimates. There are rotations available depending on your gear and what abilities you have unlocked. Knowing such information helps plan out ability rotations, and commit them to muscle memory over time with practice.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>For example, using a BiS setup with </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/994189295592161291.png?v=1" alt="vestmentsofhavoctop" title="vestmentsofhavoctop" kind="icon" /><nowiki> we can fit the following abilities within a single Berserk </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/535532854004678657.png?v=1" alt="zerk" title="zerk" kind="icon" /><nowiki> :</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>2x</nowiki></strong><nowiki> Greater Flurry </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/535532879283879977.png?v=1" alt="gflurry" title="gflurry" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>4x</nowiki></strong><nowiki> Overpower </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/535532879334080517.png?v=1" alt="overpower" title="overpower" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><em><nowiki>Note: Many different ultimate rotations for different scenarios can be found in the style-specific </nowiki><span><nowiki>#dpm-advice</nowiki></span><nowiki> channels.</nowiki></em></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+</div>
+<div class="pvme-source-section">
+<h2 id="common-mistakes-and-how-to-fix-them"><ins><nowiki>Common Mistakes and How to Fix Them</nowiki></ins></h2>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>The following sections cover some common mistakes made by players in PvM. It is likely that as you work towards improving your PvM ability, you will need to improve in one or many of these areas. The first step is recognizing what mistakes you're making, then working on the solution. Don't be discouraged if you don't get it right away, some of these issues can be harder to fix than others. Remember, everything just takes practice.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="pvm-checklist"><ins><nowiki>PvM Checklist</nowiki></ins></h2>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>It may seem obvious, but ensuring that you are not missing anything in terms of gear loadout and character buffs can help with avoiding frustration during PvM. Here are some things that you may want to check if you run into difficulties, or to avoid them.</nowiki></p>
+<nowiki>
+</nowiki>
+
+<div class="pvme-source-mechanic">
+<h3 id="checklist"><nowiki>Checklist</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Gear/equipment</nowiki></strong></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• Enough divine charges </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1010485547598356530.png?v=1" alt="divinecharge" title="divinecharge" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• Equipment is repaired </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1388314911742099576.png?v=1" alt="mwmhat" title="mwmhat" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/556582803014418432.png?v=1" alt="elitetectmask" title="elitetectmask" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• Jewellery is charged </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/513190159462825984.png?v=1" alt="RoD" title="RoD" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1010485544188391424.png?v=1" alt="onyx" title="onyx" kind="icon" /><nowiki> / </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/787526151978614824.png?v=1" alt="eof" title="eof" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1010485545480228895.png?v=1" alt="alchemicalhydrixdust" title="alchemicalhydrixdust" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• Rune pouches are filled </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1390439126519644271.png?v=1" alt="graspingpouchpink" title="graspingpouchpink" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/536252658986647589.png?v=1" alt="Airrune" title="Airrune" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• Quivers are filled </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/902209626450296892.png?v=1" alt="pernixsquiver" title="pernixsquiver" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/971025696958853180.png?v=1" alt="fularrow" title="fularrow" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• Nexus is filled </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1179716261681307728.png?v=1" alt="zemouregalsnexus" title="zemouregalsnexus" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1138808701029982319.png?v=1" alt="bonerune" title="bonerune" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• Pocket slots are charged </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/869284342839513108.png?v=1" alt="scriptureofjas" title="scriptureofjas" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/568262896375824385.png?v=1" alt="grim" title="grim" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• Familiar + </nowiki><em><nowiki>scrolls</nowiki></em><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/921410226484301925.png?v=1" alt="kalgpouch" title="kalgpouch" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/841409588954923049.png?v=1" alt="kalgscroll" title="kalgscroll" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Character Buffs</nowiki></strong></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• HP boosts </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/689530593796423724.png?v=1" alt="thermalflask" title="thermalflask" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• Overloads </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/648976643687317532.png?v=1" alt="elderovlsalve" title="elderovlsalve" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• Weapon poison </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/513190158355660812.png?v=1" alt="cinderbanes" title="cinderbanes" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/689525476158472288.png?v=1" alt="weppoison" title="weppoison" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• Correct spellbook </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/543875425055670275.png?v=1" alt="SBS" title="SBS" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/565726489467682816.png?v=1" alt="SBSLunars" title="SBSLunars" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• Incense sticks </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/565726489404899368.png?v=1" alt="LantaSticks" title="LantaSticks" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/565726489136463894.png?v=1" alt="SpiritSticks" title="SpiritSticks" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/565726489341984779.png?v=1" alt="KwuarmSticks" title="KwuarmSticks" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Other</nowiki></strong></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• Action bar switches set up correctly</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• Keybinds set up correctly</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• Quick prayers set up </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1010486261682810891.png?v=1" alt="protectitem" title="protectitem" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/615613924506599497.png?v=1" alt="soulsplit" title="soulsplit" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/513190159416557573.png?v=1" alt="Malevolence" title="Malevolence" kind="icon" /></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="quick-banking-preset"><nowiki>Quick Banking Preset</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>It can be helpful to have a preset dedicated to general PvM setup, for quickly preparing for a bossing hour and to ensure that you don't miss the items on the checklist.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Use the </nowiki><code><nowiki>!banking</nowiki></code><nowiki> ‎command to learn more</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+</div>
+<div class="pvme-source-section">
+<h2 id="cancelling-channelled-abilities-lateearly"><ins><nowiki>Cancelling Channelled Abilities Late/Early</nowiki></ins></h2>
+<nowiki>
+</nowiki>
+
+<div class="pvme-source-mechanic">
+<h3 id="why-channeled-abilities-are-important"><nowiki>Why Channeled Abilities Are Important</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>Most abilities in the game take 1.8 seconds / 3 ticks, or 1 GCD, to cast. </nowiki><em><nowiki>Channeled</nowiki></em><nowiki> abilities take longer than this duration to cast fully. These abilities can be </nowiki><strong><nowiki>cancelled</nowiki></strong><nowiki>, by activating the next ability early. It is important to properly cancel abilities in order to not lose any ticks, or damage potential. The channel bar gives a good indication of how far into a channel you are.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Animations can be unreliable, and longer than the actual hit duration of the ability</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ It can be higher damage-per-tick, or net you more adrenaline, to cancel long channels early</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Some interactions actively discourage cancelling channels, like the Tumeken resplendence </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1400500746377625790.png?v=1" alt="tumekenrobetop" title="tumekenrobetop" kind="icon" /><nowiki> armour set effect</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="channeled-abilities"><nowiki>Channeled Abilities</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><em><nowiki>Note: 2-hit implies that you channel the ability for 2 hits, and so on. How long you channel will depend on your rotations. 3 ticks = 1.8 seconds = 1 GCD.</nowiki></em></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Magic Abilities</nowiki></strong><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/689504724159823906.png?v=1" alt="Magic" title="Magic" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• Concentrated Blast </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1087373968731811880.png?v=1" alt="conc" title="conc" kind="icon" /><nowiki> - 3-hit (3t/1.8s)</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• Greater Concentrated Blast </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/869285393223254107.png?v=1" alt="gconc" title="gconc" kind="icon" /><nowiki> - 3-hit (3t/1.8s)</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• Asphyxiate </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/535533833072672778.png?v=1" alt="asphyx" title="asphyx" kind="icon" /><nowiki> - 2-hit (3t/1.8s), or 4-hit (7t/4.2s)</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• Smoke Tendrils </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/536257336130404372.png?v=1" alt="smoketendrils" title="smoketendrils" kind="icon" /><nowiki> - 4-hit (7t/4.2s)</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Ranged Abilities</nowiki></strong><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/580168050121113623.png?v=1" alt="range" title="range" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• Snipe </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478061857486143498.png?v=1" alt="snipe" title="snipe" kind="icon" /><nowiki> - 1-hit (3t/1.8s)</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• Rapid fire </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/535541270521708566.png?v=1" alt="rapid" title="rapid" kind="icon" /><nowiki> - 8-hit (8t/4.8s)</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Melee Abilities</nowiki></strong><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1" alt="melee" title="melee" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• Assault </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/535532855191928842.png?v=1" alt="assault" title="assault" kind="icon" /><nowiki> - 2-hit (3t/1.8s), or 4-hit (7t/4.2s)</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• Greater Flurry </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/535532879283879977.png?v=1" alt="gflurry" title="gflurry" kind="icon" /><nowiki> - 8-hit (8t/4.8s)</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Necromancy Abilities</nowiki></strong><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1" alt="necromancy" title="necromancy" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• Blood Siphon </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1159434279311380532.png?v=1" alt="bloodsiphon" title="bloodsiphon" kind="icon" /><nowiki> - 5-hit (9t/5.4s)</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+</div>
+<div class="pvme-source-section">
+<h2 id="ability-prioritisation"><ins><nowiki>Ability Prioritisation</nowiki></ins></h2>
+<nowiki>
+</nowiki>
+
+<div class="pvme-source-mechanic">
+<h3 id="why-its-important"><nowiki>Why It's Important</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>As obvious as it may sound, </nowiki><strong><nowiki>using stronger abilities increase your DPS</nowiki></strong><nowiki>, more so than any other gear upgrade. Abilities can be prioritised differently based on the scenario. For example, DoTs, or damage-over-time abilities (e.g. </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1" alt="combust" title="combust" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478063113659093075.png?v=1" alt="corruptionblast" title="corruptionblast" kind="icon" /><nowiki> / </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/535541306294796299.png?v=1" alt="corruptshot" title="corruptshot" kind="icon" /><nowiki> / </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478062910113714297.png?v=1" alt="dismember" title="dismember" kind="icon" /><nowiki> ) have lower priority while under damage-boosting ultimates ( </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/994921119381463070.png?v=1" alt="sunshine" title="sunshine" kind="icon" /><nowiki> / </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/994921434633744455.png?v=1" alt="deathsswift" title="deathsswift" kind="icon" /><nowiki> / </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/535532854004678657.png?v=1" alt="zerk" title="zerk" kind="icon" /><nowiki> ) since their damage doesn't get boosted.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ In other words, </nowiki><strong><nowiki>you should know which abilities are strong in which scenarios</nowiki></strong><nowiki>, and use that to your advantage.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="how-to-fix"><nowiki>How to Fix</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>Read the </nowiki><ins><strong><nowiki>Ability Prioritisation</nowiki></strong></ins><nowiki> sections in the style-specific channels to get an idea of how to prioritise abilities for each style (</nowiki><span><nowiki>#unknown-channel</nowiki></span><nowiki>, </nowiki><span><nowiki>#unknown-channel</nowiki></span><nowiki>, </nowiki><span><nowiki>#unknown-channel</nowiki></span><nowiki>, </nowiki><span><nowiki>#unknown-channel</nowiki></span><nowiki>).</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ For more information, check out the </nowiki><strong><nowiki>Ability Damage Maths</nowiki></strong><nowiki> spreadsheet in </nowiki><span><nowiki>#spreadsheets</nowiki></span></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Also, an explanation of how most abilities work can be found in </nowiki><span><nowiki>#ability-information</nowiki></span></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+</div>
+<div class="pvme-source-section">
+<h2 id="managing-cooldowns"><ins><nowiki>Managing Cooldowns</nowiki></ins></h2>
+<nowiki>
+</nowiki>
+
+<div class="pvme-source-mechanic">
+<h3 id="why-its-important_1"><nowiki>Why It's Important</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>Strong abilities often come with long cooldowns. If you use all your strong abilities at once, you will be forced to use many weak abilities during the cooldown. By contrast, managing the cooldowns lets you use a balance of very strong and moderately strong abilities, and for the most part, </nowiki><strong><nowiki>avoid weak abilities altogether</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="how-to-fix_1"><nowiki>How to Fix</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>Your goal should be to make use of &quot;filler&quot; abilities, ones with decent damage and short cooldowns, in-between your strong abilities in order to &quot;manage&quot; their cooldowns. Managing your cooldowns effectively will translate to a direct DPM increase, as you will be using fewer weak abilities overall. Example filler abilities by style:</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Magic</nowiki></strong><nowiki>: (Greater) Concentrated Blast </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/869285393223254107.png?v=1" alt="gconc" title="gconc" kind="icon" /><nowiki> / </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1087373968731811880.png?v=1" alt="conc" title="conc" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Ranged</nowiki></strong><nowiki>: Piercing Shot </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478061863723073636.png?v=1" alt="piercingshot" title="piercingshot" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Melee</nowiki></strong><nowiki>: Adaptive Strike </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478062906057949417.png?v=1" alt="adaptivestrike" title="adaptivestrike" kind="icon" /><nowiki>, Rend </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478166426190741584.png?v=1" alt="rend" title="rend" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Necromancy</nowiki></strong><nowiki>: Soul Sap </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137809140476031057.png?v=1" alt="soulsap" title="soulsap" kind="icon" /><nowiki>, Touch of Death </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1" alt="touchofdeath" title="touchofdeath" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+</div>
+<div class="pvme-source-section">
+<h2 id="losing-ticks"><ins><nowiki>Losing Ticks</nowiki></ins></h2>
+<nowiki>
+</nowiki>
+
+<div class="pvme-source-mechanic">
+<h3 id="why-its-important-to-be-aware-of-losing-ticks"><nowiki>Why It's Important To Be Aware of Losing Ticks</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>Not using the next ability in the sequence fast enough causes lost ticks, where your character stands still doing nothing. This may be due to slow ability input, or being slow with weapon switches, or forgetting to click a target again while using revo if you stop attacking for any reason. This is similar to not cancelling channeled abilities properly - it can add up to a large amount of wasted DPS potential over time.</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="how-to-fix_2"><nowiki>How to Fix</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>Practice more! Try to anticipate what abilities you will need to use in advance, so that you are prepared to input them as required.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ The setting to automatically trigger the Basic Ability is not advised as it gets in the way more often than not</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+</div>
+<div class="pvme-source-section">
+<h2 id="not-using-invention-perks"><ins><nowiki>Not Using Invention Perks</nowiki></ins></h2>
+<nowiki>
+</nowiki>
+
+<div class="pvme-source-mechanic">
+<h3 id="why-its-important-to-use-perks"><nowiki>Why It's Important To Use Perks</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>Invention perks offer large increases to both your damage and survivability, and are absolutely recommended to be used. The benefits of perks far outweigh the costs of using augmented gear. There are two kinds of perks - the perks that you camp, or </nowiki><em><nowiki>base perks</nowiki></em><nowiki>, and the perks that go on switches, that we'll call </nowiki><em><nowiki>switch perks</nowiki></em><nowiki>. It is strongly recommended to unlock </nowiki><strong><nowiki>Ancient Invention</nowiki></strong><nowiki>, requiring 85 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/689509250946695292.png?v=1" alt="Invention" title="Invention" kind="icon" /><nowiki> Invention (boostable with an extreme invention potion from level 67 and blueprints for gizmos can be bought on the Grand Exchange).</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Ancient invention perks are stronger, and in many cases far easier to get</nowiki></strong><nowiki>, than their normal counterparts</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><em><nowiki>Note: You can get starter perks going </nowiki></em><em><nowiki>as low as level 68 Invention</nowiki></em><em><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/689509250946695292.png?v=1" alt="Invention" title="Invention" kind="icon" /><nowiki> + an Extreme Invention potion. For a detailed list of perks and why they're used, check out </nowiki><span><nowiki>#perks</nowiki></span><nowiki> and </nowiki><span><nowiki>#perk-information</nowiki></span><nowiki>.</nowiki></em></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="base-perks"><nowiki>Base Perks</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>These are the perks you would camp on your weapons and armour. For players beginning their PvM journey, the following starter perks are recommended:</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Weapons</nowiki></strong><nowiki>: Precise 6 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/712073088769982475.png?v=1" alt="p6" title="p6" kind="icon" /><nowiki> + Eruptive 4 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1214416401561952296.png?v=1" alt="er4" title="er4" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Body</nowiki></strong><nowiki>: Biting 3 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/689502516874051590.png?v=1" alt="b3" title="b3" kind="icon" /><nowiki> + Crackling 4 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/712073087662686249.png?v=1" alt="crack4" title="crack4" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Legs</nowiki></strong><nowiki>: Impatient 4 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/712073088204013640.png?v=1" alt="imp4" title="imp4" kind="icon" /><nowiki> + Enhanced Devoted 4 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/712073087507628035.png?v=1" alt="enhdev4" title="enhdev4" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>These perks offer </nowiki><em><nowiki>substantial</nowiki></em><nowiki> DPS increases over no perks at all, boost your adrenaline gains with Impatient </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/712073088204013640.png?v=1" alt="imp4" title="imp4" kind="icon" /><nowiki> and offer large defensive damage mitigation with Enhanced Devoted 4 </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/712073087507628035.png?v=1" alt="enhdev4" title="enhdev4" kind="icon" /><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Not using at least some level of starter invention perks is a large damage and defence loss</nowiki></strong></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="switch-perks"><nowiki>Switch Perks</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>Some invention perks like </nowiki><strong><nowiki>Flanking</nowiki></strong><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/712073088296157185.png?v=1" alt="flank4" title="flank4" kind="icon" /><nowiki> , </nowiki><strong><nowiki>Caroming</nowiki></strong><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/791281588792590336.png?v=1" alt="caroming4" title="caroming4" kind="icon" /><nowiki> and </nowiki><strong><nowiki>Lunging</nowiki></strong><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/736522494315593759.png?v=1" alt="lunge4" title="lunge4" kind="icon" /><nowiki> can </nowiki><em><nowiki>drastically</nowiki></em><nowiki> change how good certain abilities are to use. However, depending on the situation, these perks may not be good to permanently put on your items - in which case, they may end up as switches.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Not using these perks </nowiki><em><nowiki>under the right circumstances</nowiki></em><nowiki> can be significant lost DPS potential</nowiki></strong></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="how-to-fix_3"><nowiki>How to Fix</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Always use augmented, properly perked gear!</nowiki></strong><nowiki> Even the 'starter' invention perks are miles better than no perks at all</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Practice adding in the switches slowly</nowiki></strong><nowiki>, and it will become muscle memory with time</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ With Flanking </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/712073088296157185.png?v=1" alt="flank4" title="flank4" kind="icon" /><nowiki> your basic stun abilities like Impact </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/867678154369400862.png?v=1" alt="impactflank" title="impactflank" kind="icon" /><nowiki> / Binding Shot </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/867678153400647701.png?v=1" alt="bindingshotflank" title="bindingshotflank" kind="icon" /><nowiki> / Backhand </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/867678153854025779.png?v=1" alt="backhandflank" title="backhandflank" kind="icon" /><nowiki> / Soul Strike </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1156683164593430579.png?v=1" alt="soulstrikeflank" title="soulstrikeflank" kind="icon" /><nowiki> become some of your strongest basics, and add more options to your rotations. It also buffs the corresponding enhanced stun abilities</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Caroming </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/791281588792590336.png?v=1" alt="caroming4" title="caroming4" kind="icon" /><nowiki> combined with Greater Chain </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478668630265958471.png?v=1" alt="gchaincaroming" title="gchaincaroming" kind="icon" /><nowiki> can become an exceptionally good way to clear large groups of monsters</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Lunging </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/736522494315593759.png?v=1" alt="lunge4" title="lunge4" kind="icon" /><nowiki> combined with a Masterwork Spear of Annihilation </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/694566917456789554.png?v=1" alt="mwspear" title="mwspear" kind="icon" /><nowiki> makes </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478062910113714297.png?v=1" alt="dismember" title="dismember" kind="icon" /><nowiki> your strongest melee basic ability</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+</div>
+<div class="pvme-source-section">
+<h2 id="incorrect-weapon-switching"><ins><nowiki>Incorrect Weapon Switching</nowiki></ins></h2>
+<nowiki>
+</nowiki>
+
+<div class="pvme-source-mechanic">
+<h3 id="why-its-important_2"><nowiki>Why It’s Important</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Changing your weapon during a channeled ability such as during Rapid Fire </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/535541270521708566.png?v=1" alt="rapid" title="rapid" kind="icon" /><nowiki> will cancel the ability abruptly</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Some abilities and special attacks are tied to your main hand weapon. Changing weapons loses the buff.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• After using Greater Concentrated Blast </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/869285393223254107.png?v=1" alt="gconc" title="gconc" kind="icon" /><nowiki> your next ability must be with the same weapon as well, to use the crit chance buff</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• Some special attacks like ECB spec </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/615618531937222657.png?v=1" alt="ecb" title="ecb" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/537340400273195028.png?v=1" alt="spec" title="spec" kind="icon" /><nowiki> are tied to your main hand weapon as well, and changing weapons loses the buff</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ </nowiki><strong><nowiki>Mistakes like these, and more, can cost significant lost damage potential, and are essential to avoid</nowiki></strong></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="how-to-fix_4"><nowiki>How to Fix</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>Learn when you can and cannot switch weapons, and deliberately practice proper juggling rotations to ensure that you commit the </nowiki><em><nowiki>correct</nowiki></em><nowiki> actions to muscle memory. In the long term, it is easier to learn good habits than to unlearn bad ones.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+</div>
+<div class="pvme-source-section">
+<h2 id="cheaping-out-on-supplies"><ins><nowiki>Cheaping Out On Supplies</nowiki></ins></h2>
+<nowiki>
+</nowiki>
+
+<div class="pvme-source-mechanic">
+<h3 id="why-its-important_3"><nowiki>Why It’s Important</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>It may seem convenient and cost-effective to save on supplies, doing things such as:</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Using normal spells </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/543465115870035999.png?v=1" alt="AirSurge" title="AirSurge" kind="icon" /><nowiki> over ancient spells </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/856635090745950258.png?v=1" alt="exsanguinate" title="exsanguinate" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/856635090783567902.png?v=1" alt="incitefear" title="incitefear" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Using cheap ammo like Araxyte arrows instead of Elder God arrows </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/971025696958853180.png?v=1" alt="fularrow" title="fularrow" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/971025697046925362.png?v=1" alt="wenarrows" title="wenarrows" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Using low tier food instead of </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/565726489363087360.png?v=1" alt="Sailfish" title="Sailfish" kind="icon" /><nowiki> or </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/537336701933060106.png?v=1" alt="sailfishsoup" title="sailfishsoup" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Wearing cheaper alternatives </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/643846959454617610.png?v=1" alt="sirenicmask" title="sirenicmask" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/643846948570267648.png?v=1" alt="sirenicbody" title="sirenicbody" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/643846938537623564.png?v=1" alt="sireniclegs" title="sireniclegs" kind="icon" /><nowiki> instead of better equipment </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1179717359934640168.png?v=1" alt="edracocoif" title="edracocoif" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1179717430436704306.png?v=1" alt="edracolichhauberk" title="edracolichhauberk" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1179717529015427146.png?v=1" alt="edracochaps" title="edracochaps" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Not using perked gear </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/689509250946695292.png?v=1" alt="Invention" title="Invention" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ and the list goes on...</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>It may seem appealing to save money in these little ways, </nowiki><strong><nowiki>but it is not worth it</nowiki></strong><nowiki>. The loss of any one of these upgrades may look small, but </nowiki><strong><nowiki>together they can add up to a large impact on your PvM ability</nowiki></strong><nowiki>. Being able to have more utility spells at hand, to not waste time casting vuln, to do more damage with better ammo/spells, to heal more health quickly, to take less damage with better armour and perks, and so on can make PvM far less tedious and more enjoyable.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><em><nowiki>Note: in some </nowiki></em><em><nowiki>extreme</nowiki></em><em><nowiki> scenarios, it is worth considering cheaper alternatives.</nowiki></em></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="how-to-fix_5"><nowiki>How to Fix</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>Supply costs are the price to pay for the chance to do exciting PvM encounters, and fight fun bosses. Just accept them as a part of PvM. </nowiki><strong><nowiki>Treat it as an incentive to get better at PvM</nowiki></strong><nowiki> - the faster you kill things, the fewer supplies you use and the more money you make.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+      
+    </nowiki>
+
+</div>
+</div>
+</div>
+
+<div class="pvme-source-attribution">[https://pvme.io/pvme-guides/dpm-advice/dpm-advice-faq/ PvME source] · PvME contributors · [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]. AI-assisted formatting; source wording retained.
+</div>

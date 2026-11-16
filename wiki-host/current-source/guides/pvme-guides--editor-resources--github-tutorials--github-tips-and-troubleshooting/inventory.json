@@ -1,0 +1,3512 @@
+{
+  "schemaVersion": 1,
+  "id": "pvme-guides--editor-resources--github-tutorials--github-tips-and-troubleshooting",
+  "sourceURL": "https://pvme.io/pvme-guides/editor-resources/github-tutorials/github-tips-and-troubleshooting/",
+  "responseURL": "https://pvme.io/pvme-guides/editor-resources/github-tutorials/github-tips-and-troubleshooting/",
+  "boundary": "First original source content after editor utility; no H1; flagged",
+  "offsets": {
+    "start": 168755,
+    "end": 178740
+  },
+  "text": "Introduction\nThis guide will go over an assortment of common issues you may encounter while working with GitHub, as well as a few helpful things you can do to streamline your workflow.\nNote: You can always ask any editor or staff for help with GitHub at any time.\n​\nFrequently Used Terminology\n⬥ Repository\n‎ ‎ ‎ ‎• A collection of all the files and folders for a single project, that is tracked and version controlled.\n⬥ Fork\n‎ ‎ ‎ ‎• A copy of an entire repository. A user can fork a repository to get a personal copy.\n⬥ Commit\n‎ ‎ ‎ ‎• Essentially a 'snapshot' of your repository. Think of it like a checkpoint in a video game. Going back to a particular commit shows the entire repository as it was at that point in time. You commit after making your changes, to prepare for a pull request.\n⬥ Pull Request\n‎ ‎ ‎ ‎• A request to merge your changes into the main repository, to be accepted by someone with appropriate permissions.\n​\nCommon Problems\nFailed Checks\n⬥ PvME GitHub is set up to automatically check for valid formatting and styling. There are a number of checks, such as:\n‎ ‎ ‎ ‎• Trailing whitespace - extra space at the end of a line\n‎ ‎ ‎ ‎• Improper spacing around emojis - emojis must be surrounded by a space on either side\n‎ ‎ ‎ ‎• Message length exceeded (too many characters) - messages cannot exceed 2000 characters\n‎ ‎ ‎ ‎• Invalid embed formatting - creates an invalid embed object.\n‎ ‎ ‎ ‎• Invalid commands - any .command: ‎used must be a valid command.\n⬥ Checks failing can be avoided by using the web editor (https://pvme.github.io/guide-editor/) to edit your content before adding it to GitHub, as it runs the same style checks that pull requests use. For more information check out, #unknown-channel.\n⬥ If your pull request fails due to a check, it will inform you. Click on Details on the check to see why it has failed, and what you can do to fix it.\n⬥ Consider the following example:\n\n\n⬥ The bottom red square tells you what the error is. In this case, the message starting at line 108 and ending at line 139 has too many characters.\n⬥ To fix this, click the Edit File option in the following image, to open up editing again to make appropriate changes.\n\n⬥ In this case, we break the single large message into 2 separate messages by hitting Enter, entering a single period . ‎and hitting Enter ‎again. Then commit these changes, and it will update the pull request.\n\n⬥ Your Pull Request should now be error-free once the checks complete again.\n​\nChecks Are Stuck\n⬥ Rarely, the style and syntax checks may get stuck, neither succeeding nor failing. In such an event, usually merging a different minor pull request tends to resolve the issue.\n⬥ Checks can take some time to complete at times, so wait for at least 20-30 minutes before it is considered an issue.\n⬥ In case this occurs, you can contact an editor or staff for assistance.\n​\nYour Branch Is 'X' Commits Behind Master\n⬥ When you make a new fork, your fork will look like this:\n\n⬥ However, after some time it may look something like this:\n\n⬥ This is because changes might have happened to the main repository ('X' commits behind) and it is no longer in-sync with your copy. This may cause issues when making a pull request.\n⬥ To resolved this, the simplest solution is to delete your fork, and make a new fork of the PvME repository.\n⬥ This will give you a fresh, up-to-date copy, and get rid of any lingering issues.\n​\nFor more experienced users: PvME squashes and merges all pull requests. This causes a difference in commit hashes, which is why your branch will be both ahead AND behind in commits after a pull request is accepted. You can clean this up by discarding commits from accepted PRs and syncing your branch to pvme:master. Or by resetting your branch to pvme:master. Or just delete and start over.|\n​\nPull Requests\nMultiple Changes & Updating an Existing Pull Request\n⬥ It is possible to include changes to multiple files within the same Pull Request, and to amend files you have already modified as part of that Pull Request.\n⬥ This can be helpful to reduce the number of PRs being opened, and remove the need of closing a PR and reopening it if a mistake has been made.\n​\nNote: It is assumed you have already forked the repository.\n​\n⬥ Consider the scenario: a pull request has been made, with changes to one file, visible in the Files Changed tab.\n\n​\nModify an Existing File in the Pull Request\nTo make an a change to a file that already contains a change, in the same pull request, do the following.\n⬥ Navigate to your Pull Request, and go to the Files Changed tab.\n⬥ Go to the top right corner of the file you wish to update, click the three dots, then Edit File.\n\n⬥ Make whatever additional changes you like, and then Commit directly to the xxx branch.\n\n⬥ Navigate back to your Pull Request, and the additional change should be included!\n\n​\nAdd a New File to the Pull Request\nTo edit a different file, and include it in the same pull request, do as follows,\n⬥ Navigate to your Pull Request and click on the name of your branch, here:\n‎ ‎ ‎ ‎• You are now looking at the main directory of your own branch, where all files will reside.\n\n⬥ Locate the additional file you would like to change, open it, and then click the edit icon.\n\n⬥ Make whatever changes you like, and then Commit directly to the xxx branch.\n\n⬥ Navigate back to your Pull Request, and the additional file should be included!\n\n​\nHelpful Tips\nFile Split View\n⬥ When opening a Pull Request, it is good practice to look at your changes and see if any mistakes have been made.\n⬥ By default, you will see differences between your changes and the original file in Unified View.\n⬥ Sometimes, especially for larger changes, it can be helpful to use Split View instead.\n⬥ Navigate to your Pull Request, and go to the Files Changed tab.\n‎ ‎ ‎ ‎• By default, you will see unified changes, as shown below:\n\n⬥ Click the settings icon, select Split, and then Apply and reload.\n\n⬥ Congratulations! From now on, your changes will be shown in Split View.\n‎ ‎ ‎ ‎• You can reverse the process to go back to a unified view at any time, if you prefer.\n\n​\nBulk Replacing\n⬥ To bulk replace, either navigate to the Edit menu then select Replace in Files or use the Ctrl+Shift+H keybind to do the same.\n\n⬥ Doing this will open the Search/Replace side menu.\n\n⬥ The search box is where you enter what you want to replace and the replace box is where you enter what you want to replace it with.\n\n⬥ However, most of these results aren't what we're looking for so can be dismissed by hovering over the number to the right and clicking the X to dismiss the whole file or the individual Xs below to dismiss individual matches.\n\n⬥ When you find something you want to replace. you can either right click and click Replace to do it one at a time or you can click the icon to the left of the X to replace all matches in a file.\n\n​\n      \n    ",
+  "normalizedText": "Introduction This guide will go over an assortment of common issues you may encounter while working with GitHub, as well as a few helpful things you can do to streamline your workflow. Note: You can always ask any editor or staff for help with GitHub at any time. ​ Frequently Used Terminology ⬥ Repository ‎ ‎ ‎ ‎• A collection of all the files and folders for a single project, that is tracked and version controlled. ⬥ Fork ‎ ‎ ‎ ‎• A copy of an entire repository. A user can fork a repository to get a personal copy. ⬥ Commit ‎ ‎ ‎ ‎• Essentially a 'snapshot' of your repository. Think of it like a checkpoint in a video game. Going back to a particular commit shows the entire repository as it was at that point in time. You commit after making your changes, to prepare for a pull request. ⬥ Pull Request ‎ ‎ ‎ ‎• A request to merge your changes into the main repository, to be accepted by someone with appropriate permissions. ​ Common Problems Failed Checks ⬥ PvME GitHub is set up to automatically check for valid formatting and styling. There are a number of checks, such as: ‎ ‎ ‎ ‎• Trailing whitespace - extra space at the end of a line ‎ ‎ ‎ ‎• Improper spacing around emojis - emojis must be surrounded by a space on either side ‎ ‎ ‎ ‎• Message length exceeded (too many characters) - messages cannot exceed 2000 characters ‎ ‎ ‎ ‎• Invalid embed formatting - creates an invalid embed object. ‎ ‎ ‎ ‎• Invalid commands - any .command: ‎used must be a valid command. ⬥ Checks failing can be avoided by using the web editor (https://pvme.github.io/guide-editor/) to edit your content before adding it to GitHub, as it runs the same style checks that pull requests use. For more information check out, #unknown-channel. ⬥ If your pull request fails due to a check, it will inform you. Click on Details on the check to see why it has failed, and what you can do to fix it. ⬥ Consider the following example: ⬥ The bottom red square tells you what the error is. In this case, the message starting at line 108 and ending at line 139 has too many characters. ⬥ To fix this, click the Edit File option in the following image, to open up editing again to make appropriate changes. ⬥ In this case, we break the single large message into 2 separate messages by hitting Enter, entering a single period . ‎and hitting Enter ‎again. Then commit these changes, and it will update the pull request. ⬥ Your Pull Request should now be error-free once the checks complete again. ​ Checks Are Stuck ⬥ Rarely, the style and syntax checks may get stuck, neither succeeding nor failing. In such an event, usually merging a different minor pull request tends to resolve the issue. ⬥ Checks can take some time to complete at times, so wait for at least 20-30 minutes before it is considered an issue. ⬥ In case this occurs, you can contact an editor or staff for assistance. ​ Your Branch Is 'X' Commits Behind Master ⬥ When you make a new fork, your fork will look like this: ⬥ However, after some time it may look something like this: ⬥ This is because changes might have happened to the main repository ('X' commits behind) and it is no longer in-sync with your copy. This may cause issues when making a pull request. ⬥ To resolved this, the simplest solution is to delete your fork, and make a new fork of the PvME repository. ⬥ This will give you a fresh, up-to-date copy, and get rid of any lingering issues. ​ For more experienced users: PvME squashes and merges all pull requests. This causes a difference in commit hashes, which is why your branch will be both ahead AND behind in commits after a pull request is accepted. You can clean this up by discarding commits from accepted PRs and syncing your branch to pvme:master. Or by resetting your branch to pvme:master. Or just delete and start over.| ​ Pull Requests Multiple Changes & Updating an Existing Pull Request ⬥ It is possible to include changes to multiple files within the same Pull Request, and to amend files you have already modified as part of that Pull Request. ⬥ This can be helpful to reduce the number of PRs being opened, and remove the need of closing a PR and reopening it if a mistake has been made. ​ Note: It is assumed you have already forked the repository. ​ ⬥ Consider the scenario: a pull request has been made, with changes to one file, visible in the Files Changed tab. ​ Modify an Existing File in the Pull Request To make an a change to a file that already contains a change, in the same pull request, do the following. ⬥ Navigate to your Pull Request, and go to the Files Changed tab. ⬥ Go to the top right corner of the file you wish to update, click the three dots, then Edit File. ⬥ Make whatever additional changes you like, and then Commit directly to the xxx branch. ⬥ Navigate back to your Pull Request, and the additional change should be included! ​ Add a New File to the Pull Request To edit a different file, and include it in the same pull request, do as follows, ⬥ Navigate to your Pull Request and click on the name of your branch, here: ‎ ‎ ‎ ‎• You are now looking at the main directory of your own branch, where all files will reside. ⬥ Locate the additional file you would like to change, open it, and then click the edit icon. ⬥ Make whatever changes you like, and then Commit directly to the xxx branch. ⬥ Navigate back to your Pull Request, and the additional file should be included! ​ Helpful Tips File Split View ⬥ When opening a Pull Request, it is good practice to look at your changes and see if any mistakes have been made. ⬥ By default, you will see differences between your changes and the original file in Unified View. ⬥ Sometimes, especially for larger changes, it can be helpful to use Split View instead. ⬥ Navigate to your Pull Request, and go to the Files Changed tab. ‎ ‎ ‎ ‎• By default, you will see unified changes, as shown below: ⬥ Click the settings icon, select Split, and then Apply and reload. ⬥ Congratulations! From now on, your changes will be shown in Split View. ‎ ‎ ‎ ‎• You can reverse the process to go back to a unified view at any time, if you prefer. ​ Bulk Replacing ⬥ To bulk replace, either navigate to the Edit menu then select Replace in Files or use the Ctrl+Shift+H keybind to do the same. ⬥ Doing this will open the Search/Replace side menu. ⬥ The search box is where you enter what you want to replace and the replace box is where you enter what you want to replace it with. ⬥ However, most of these results aren't what we're looking for so can be dismissed by hovering over the number to the right and clicking the X to dismiss the whole file or the individual Xs below to dismiss individual matches. ⬥ When you find something you want to replace. you can either right click and click Replace to do it one at a time or you can click the icon to the left of the X to replace all matches in a file. ​",
+  "wordStream": [
+    "Introduction",
+    "This",
+    "guide",
+    "will",
+    "go",
+    "over",
+    "an",
+    "assortment",
+    "of",
+    "common",
+    "issues",
+    "you",
+    "may",
+    "encounter",
+    "while",
+    "working",
+    "with",
+    "GitHub,",
+    "as",
+    "well",
+    "as",
+    "a",
+    "few",
+    "helpful",
+    "things",
+    "you",
+    "can",
+    "do",
+    "to",
+    "streamline",
+    "your",
+    "workflow.",
+    "Note:",
+    "You",
+    "can",
+    "always",
+    "ask",
+    "any",
+    "editor",
+    "or",
+    "staff",
+    "for",
+    "help",
+    "with",
+    "GitHub",
+    "at",
+    "any",
+    "time.",
+    "​",
+    "Frequently",
+    "Used",
+    "Terminology",
+    "⬥",
+    "Repository",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "A",
+    "collection",
+    "of",
+    "all",
+    "the",
+    "files",
+    "and",
+    "folders",
+    "for",
+    "a",
+    "single",
+    "project,",
+    "that",
+    "is",
+    "tracked",
+    "and",
+    "version",
+    "controlled.",
+    "⬥",
+    "Fork",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "A",
+    "copy",
+    "of",
+    "an",
+    "entire",
+    "repository.",
+    "A",
+    "user",
+    "can",
+    "fork",
+    "a",
+    "repository",
+    "to",
+    "get",
+    "a",
+    "personal",
+    "copy.",
+    "⬥",
+    "Commit",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Essentially",
+    "a",
+    "'snapshot'",
+    "of",
+    "your",
+    "repository.",
+    "Think",
+    "of",
+    "it",
+    "like",
+    "a",
+    "checkpoint",
+    "in",
+    "a",
+    "video",
+    "game.",
+    "Going",
+    "back",
+    "to",
+    "a",
+    "particular",
+    "commit",
+    "shows",
+    "the",
+    "entire",
+    "repository",
+    "as",
+    "it",
+    "was",
+    "at",
+    "that",
+    "point",
+    "in",
+    "time.",
+    "You",
+    "commit",
+    "after",
+    "making",
+    "your",
+    "changes,",
+    "to",
+    "prepare",
+    "for",
+    "a",
+    "pull",
+    "request.",
+    "⬥",
+    "Pull",
+    "Request",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "A",
+    "request",
+    "to",
+    "merge",
+    "your",
+    "changes",
+    "into",
+    "the",
+    "main",
+    "repository,",
+    "to",
+    "be",
+    "accepted",
+    "by",
+    "someone",
+    "with",
+    "appropriate",
+    "permissions.",
+    "​",
+    "Common",
+    "Problems",
+    "Failed",
+    "Checks",
+    "⬥",
+    "PvME",
+    "GitHub",
+    "is",
+    "set",
+    "up",
+    "to",
+    "automatically",
+    "check",
+    "for",
+    "valid",
+    "formatting",
+    "and",
+    "styling.",
+    "There",
+    "are",
+    "a",
+    "number",
+    "of",
+    "checks,",
+    "such",
+    "as:",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Trailing",
+    "whitespace",
+    "-",
+    "extra",
+    "space",
+    "at",
+    "the",
+    "end",
+    "of",
+    "a",
+    "line",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Improper",
+    "spacing",
+    "around",
+    "emojis",
+    "-",
+    "emojis",
+    "must",
+    "be",
+    "surrounded",
+    "by",
+    "a",
+    "space",
+    "on",
+    "either",
+    "side",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Message",
+    "length",
+    "exceeded",
+    "(too",
+    "many",
+    "characters)",
+    "-",
+    "messages",
+    "cannot",
+    "exceed",
+    "2000",
+    "characters",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Invalid",
+    "embed",
+    "formatting",
+    "-",
+    "creates",
+    "an",
+    "invalid",
+    "embed",
+    "object.",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Invalid",
+    "commands",
+    "-",
+    "any",
+    ".command:",
+    "‎used",
+    "must",
+    "be",
+    "a",
+    "valid",
+    "command.",
+    "⬥",
+    "Checks",
+    "failing",
+    "can",
+    "be",
+    "avoided",
+    "by",
+    "using",
+    "the",
+    "web",
+    "editor",
+    "(https://pvme.github.io/guide-editor/)",
+    "to",
+    "edit",
+    "your",
+    "content",
+    "before",
+    "adding",
+    "it",
+    "to",
+    "GitHub,",
+    "as",
+    "it",
+    "runs",
+    "the",
+    "same",
+    "style",
+    "checks",
+    "that",
+    "pull",
+    "requests",
+    "use.",
+    "For",
+    "more",
+    "information",
+    "check",
+    "out,",
+    "#unknown-channel.",
+    "⬥",
+    "If",
+    "your",
+    "pull",
+    "request",
+    "fails",
+    "due",
+    "to",
+    "a",
+    "check,",
+    "it",
+    "will",
+    "inform",
+    "you.",
+    "Click",
+    "on",
+    "Details",
+    "on",
+    "the",
+    "check",
+    "to",
+    "see",
+    "why",
+    "it",
+    "has",
+    "failed,",
+    "and",
+    "what",
+    "you",
+    "can",
+    "do",
+    "to",
+    "fix",
+    "it.",
+    "⬥",
+    "Consider",
+    "the",
+    "following",
+    "example:",
+    "⬥",
+    "The",
+    "bottom",
+    "red",
+    "square",
+    "tells",
+    "you",
+    "what",
+    "the",
+    "error",
+    "is.",
+    "In",
+    "this",
+    "case,",
+    "the",
+    "message",
+    "starting",
+    "at",
+    "line",
+    "108",
+    "and",
+    "ending",
+    "at",
+    "line",
+    "139",
+    "has",
+    "too",
+    "many",
+    "characters.",
+    "⬥",
+    "To",
+    "fix",
+    "this,",
+    "click",
+    "the",
+    "Edit",
+    "File",
+    "option",
+    "in",
+    "the",
+    "following",
+    "image,",
+    "to",
+    "open",
+    "up",
+    "editing",
+    "again",
+    "to",
+    "make",
+    "appropriate",
+    "changes.",
+    "⬥",
+    "In",
+    "this",
+    "case,",
+    "we",
+    "break",
+    "the",
+    "single",
+    "large",
+    "message",
+    "into",
+    "2",
+    "separate",
+    "messages",
+    "by",
+    "hitting",
+    "Enter,",
+    "entering",
+    "a",
+    "single",
+    "period",
+    ".",
+    "‎and",
+    "hitting",
+    "Enter",
+    "‎again.",
+    "Then",
+    "commit",
+    "these",
+    "changes,",
+    "and",
+    "it",
+    "will",
+    "update",
+    "the",
+    "pull",
+    "request.",
+    "⬥",
+    "Your",
+    "Pull",
+    "Request",
+    "should",
+    "now",
+    "be",
+    "error-free",
+    "once",
+    "the",
+    "checks",
+    "complete",
+    "again.",
+    "​",
+    "Checks",
+    "Are",
+    "Stuck",
+    "⬥",
+    "Rarely,",
+    "the",
+    "style",
+    "and",
+    "syntax",
+    "checks",
+    "may",
+    "get",
+    "stuck,",
+    "neither",
+    "succeeding",
+    "nor",
+    "failing.",
+    "In",
+    "such",
+    "an",
+    "event,",
+    "usually",
+    "merging",
+    "a",
+    "different",
+    "minor",
+    "pull",
+    "request",
+    "tends",
+    "to",
+    "resolve",
+    "the",
+    "issue.",
+    "⬥",
+    "Checks",
+    "can",
+    "take",
+    "some",
+    "time",
+    "to",
+    "complete",
+    "at",
+    "times,",
+    "so",
+    "wait",
+    "for",
+    "at",
+    "least",
+    "20-30",
+    "minutes",
+    "before",
+    "it",
+    "is",
+    "considered",
+    "an",
+    "issue.",
+    "⬥",
+    "In",
+    "case",
+    "this",
+    "occurs,",
+    "you",
+    "can",
+    "contact",
+    "an",
+    "editor",
+    "or",
+    "staff",
+    "for",
+    "assistance.",
+    "​",
+    "Your",
+    "Branch",
+    "Is",
+    "'X'",
+    "Commits",
+    "Behind",
+    "Master",
+    "⬥",
+    "When",
+    "you",
+    "make",
+    "a",
+    "new",
+    "fork,",
+    "your",
+    "fork",
+    "will",
+    "look",
+    "like",
+    "this:",
+    "⬥",
+    "However,",
+    "after",
+    "some",
+    "time",
+    "it",
+    "may",
+    "look",
+    "something",
+    "like",
+    "this:",
+    "⬥",
+    "This",
+    "is",
+    "because",
+    "changes",
+    "might",
+    "have",
+    "happened",
+    "to",
+    "the",
+    "main",
+    "repository",
+    "('X'",
+    "commits",
+    "behind)",
+    "and",
+    "it",
+    "is",
+    "no",
+    "longer",
+    "in-sync",
+    "with",
+    "your",
+    "copy.",
+    "This",
+    "may",
+    "cause",
+    "issues",
+    "when",
+    "making",
+    "a",
+    "pull",
+    "request.",
+    "⬥",
+    "To",
+    "resolved",
+    "this,",
+    "the",
+    "simplest",
+    "solution",
+    "is",
+    "to",
+    "delete",
+    "your",
+    "fork,",
+    "and",
+    "make",
+    "a",
+    "new",
+    "fork",
+    "of",
+    "the",
+    "PvME",
+    "repository.",
+    "⬥",
+    "This",
+    "will",
+    "give",
+    "you",
+    "a",
+    "fresh,",
+    "up-to-date",
+    "copy,",
+    "and",
+    "get",
+    "rid",
+    "of",
+    "any",
+    "lingering",
+    "issues.",
+    "​",
+    "For",
+    "more",
+    "experienced",
+    "users:",
+    "PvME",
+    "squashes",
+    "and",
+    "merges",
+    "all",
+    "pull",
+    "requests.",
+    "This",
+    "causes",
+    "a",
+    "difference",
+    "in",
+    "commit",
+    "hashes,",
+    "which",
+    "is",
+    "why",
+    "your",
+    "branch",
+    "will",
+    "be",
+    "both",
+    "ahead",
+    "AND",
+    "behind",
+    "in",
+    "commits",
+    "after",
+    "a",
+    "pull",
+    "request",
+    "is",
+    "accepted.",
+    "You",
+    "can",
+    "clean",
+    "this",
+    "up",
+    "by",
+    "discarding",
+    "commits",
+    "from",
+    "accepted",
+    "PRs",
+    "and",
+    "syncing",
+    "your",
+    "branch",
+    "to",
+    "pvme:master.",
+    "Or",
+    "by",
+    "resetting",
+    "your",
+    "branch",
+    "to",
+    "pvme:master.",
+    "Or",
+    "just",
+    "delete",
+    "and",
+    "start",
+    "over.|",
+    "​",
+    "Pull",
+    "Requests",
+    "Multiple",
+    "Changes",
+    "&",
+    "Updating",
+    "an",
+    "Existing",
+    "Pull",
+    "Request",
+    "⬥",
+    "It",
+    "is",
+    "possible",
+    "to",
+    "include",
+    "changes",
+    "to",
+    "multiple",
+    "files",
+    "within",
+    "the",
+    "same",
+    "Pull",
+    "Request,",
+    "and",
+    "to",
+    "amend",
+    "files",
+    "you",
+    "have",
+    "already",
+    "modified",
+    "as",
+    "part",
+    "of",
+    "that",
+    "Pull",
+    "Request.",
+    "⬥",
+    "This",
+    "can",
+    "be",
+    "helpful",
+    "to",
+    "reduce",
+    "the",
+    "number",
+    "of",
+    "PRs",
+    "being",
+    "opened,",
+    "and",
+    "remove",
+    "the",
+    "need",
+    "of",
+    "closing",
+    "a",
+    "PR",
+    "and",
+    "reopening",
+    "it",
+    "if",
+    "a",
+    "mistake",
+    "has",
+    "been",
+    "made.",
+    "​",
+    "Note:",
+    "It",
+    "is",
+    "assumed",
+    "you",
+    "have",
+    "already",
+    "forked",
+    "the",
+    "repository.",
+    "​",
+    "⬥",
+    "Consider",
+    "the",
+    "scenario:",
+    "a",
+    "pull",
+    "request",
+    "has",
+    "been",
+    "made,",
+    "with",
+    "changes",
+    "to",
+    "one",
+    "file,",
+    "visible",
+    "in",
+    "the",
+    "Files",
+    "Changed",
+    "tab.",
+    "​",
+    "Modify",
+    "an",
+    "Existing",
+    "File",
+    "in",
+    "the",
+    "Pull",
+    "Request",
+    "To",
+    "make",
+    "an",
+    "a",
+    "change",
+    "to",
+    "a",
+    "file",
+    "that",
+    "already",
+    "contains",
+    "a",
+    "change,",
+    "in",
+    "the",
+    "same",
+    "pull",
+    "request,",
+    "do",
+    "the",
+    "following.",
+    "⬥",
+    "Navigate",
+    "to",
+    "your",
+    "Pull",
+    "Request,",
+    "and",
+    "go",
+    "to",
+    "the",
+    "Files",
+    "Changed",
+    "tab.",
+    "⬥",
+    "Go",
+    "to",
+    "the",
+    "top",
+    "right",
+    "corner",
+    "of",
+    "the",
+    "file",
+    "you",
+    "wish",
+    "to",
+    "update,",
+    "click",
+    "the",
+    "three",
+    "dots,",
+    "then",
+    "Edit",
+    "File.",
+    "⬥",
+    "Make",
+    "whatever",
+    "additional",
+    "changes",
+    "you",
+    "like,",
+    "and",
+    "then",
+    "Commit",
+    "directly",
+    "to",
+    "the",
+    "xxx",
+    "branch.",
+    "⬥",
+    "Navigate",
+    "back",
+    "to",
+    "your",
+    "Pull",
+    "Request,",
+    "and",
+    "the",
+    "additional",
+    "change",
+    "should",
+    "be",
+    "included!",
+    "​",
+    "Add",
+    "a",
+    "New",
+    "File",
+    "to",
+    "the",
+    "Pull",
+    "Request",
+    "To",
+    "edit",
+    "a",
+    "different",
+    "file,",
+    "and",
+    "include",
+    "it",
+    "in",
+    "the",
+    "same",
+    "pull",
+    "request,",
+    "do",
+    "as",
+    "follows,",
+    "⬥",
+    "Navigate",
+    "to",
+    "your",
+    "Pull",
+    "Request",
+    "and",
+    "click",
+    "on",
+    "the",
+    "name",
+    "of",
+    "your",
+    "branch,",
+    "here:",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "You",
+    "are",
+    "now",
+    "looking",
+    "at",
+    "the",
+    "main",
+    "directory",
+    "of",
+    "your",
+    "own",
+    "branch,",
+    "where",
+    "all",
+    "files",
+    "will",
+    "reside.",
+    "⬥",
+    "Locate",
+    "the",
+    "additional",
+    "file",
+    "you",
+    "would",
+    "like",
+    "to",
+    "change,",
+    "open",
+    "it,",
+    "and",
+    "then",
+    "click",
+    "the",
+    "edit",
+    "icon.",
+    "⬥",
+    "Make",
+    "whatever",
+    "changes",
+    "you",
+    "like,",
+    "and",
+    "then",
+    "Commit",
+    "directly",
+    "to",
+    "the",
+    "xxx",
+    "branch.",
+    "⬥",
+    "Navigate",
+    "back",
+    "to",
+    "your",
+    "Pull",
+    "Request,",
+    "and",
+    "the",
+    "additional",
+    "file",
+    "should",
+    "be",
+    "included!",
+    "​",
+    "Helpful",
+    "Tips",
+    "File",
+    "Split",
+    "View",
+    "⬥",
+    "When",
+    "opening",
+    "a",
+    "Pull",
+    "Request,",
+    "it",
+    "is",
+    "good",
+    "practice",
+    "to",
+    "look",
+    "at",
+    "your",
+    "changes",
+    "and",
+    "see",
+    "if",
+    "any",
+    "mistakes",
+    "have",
+    "been",
+    "made.",
+    "⬥",
+    "By",
+    "default,",
+    "you",
+    "will",
+    "see",
+    "differences",
+    "between",
+    "your",
+    "changes",
+    "and",
+    "the",
+    "original",
+    "file",
+    "in",
+    "Unified",
+    "View.",
+    "⬥",
+    "Sometimes,",
+    "especially",
+    "for",
+    "larger",
+    "changes,",
+    "it",
+    "can",
+    "be",
+    "helpful",
+    "to",
+    "use",
+    "Split",
+    "View",
+    "instead.",
+    "⬥",
+    "Navigate",
+    "to",
+    "your",
+    "Pull",
+    "Request,",
+    "and",
+    "go",
+    "to",
+    "the",
+    "Files",
+    "Changed",
+    "tab.",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "By",
+    "default,",
+    "you",
+    "will",
+    "see",
+    "unified",
+    "changes,",
+    "as",
+    "shown",
+    "below:",
+    "⬥",
+    "Click",
+    "the",
+    "settings",
+    "icon,",
+    "select",
+    "Split,",
+    "and",
+    "then",
+    "Apply",
+    "and",
+    "reload.",
+    "⬥",
+    "Congratulations!",
+    "From",
+    "now",
+    "on,",
+    "your",
+    "changes",
+    "will",
+    "be",
+    "shown",
+    "in",
+    "Split",
+    "View.",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "You",
+    "can",
+    "reverse",
+    "the",
+    "process",
+    "to",
+    "go",
+    "back",
+    "to",
+    "a",
+    "unified",
+    "view",
+    "at",
+    "any",
+    "time,",
+    "if",
+    "you",
+    "prefer.",
+    "​",
+    "Bulk",
+    "Replacing",
+    "⬥",
+    "To",
+    "bulk",
+    "replace,",
+    "either",
+    "navigate",
+    "to",
+    "the",
+    "Edit",
+    "menu",
+    "then",
+    "select",
+    "Replace",
+    "in",
+    "Files",
+    "or",
+    "use",
+    "the",
+    "Ctrl+Shift+H",
+    "keybind",
+    "to",
+    "do",
+    "the",
+    "same.",
+    "⬥",
+    "Doing",
+    "this",
+    "will",
+    "open",
+    "the",
+    "Search/Replace",
+    "side",
+    "menu.",
+    "⬥",
+    "The",
+    "search",
+    "box",
+    "is",
+    "where",
+    "you",
+    "enter",
+    "what",
+    "you",
+    "want",
+    "to",
+    "replace",
+    "and",
+    "the",
+    "replace",
+    "box",
+    "is",
+    "where",
+    "you",
+    "enter",
+    "what",
+    "you",
+    "want",
+    "to",
+    "replace",
+    "it",
+    "with.",
+    "⬥",
+    "However,",
+    "most",
+    "of",
+    "these",
+    "results",
+    "aren't",
+    "what",
+    "we're",
+    "looking",
+    "for",
+    "so",
+    "can",
+    "be",
+    "dismissed",
+    "by",
+    "hovering",
+    "over",
+    "the",
+    "number",
+    "to",
+    "the",
+    "right",
+    "and",
+    "clicking",
+    "the",
+    "X",
+    "to",
+    "dismiss",
+    "the",
+    "whole",
+    "file",
+    "or",
+    "the",
+    "individual",
+    "Xs",
+    "below",
+    "to",
+    "dismiss",
+    "individual",
+    "matches.",
+    "⬥",
+    "When",
+    "you",
+    "find",
+    "something",
+    "you",
+    "want",
+    "to",
+    "replace.",
+    "you",
+    "can",
+    "either",
+    "right",
+    "click",
+    "and",
+    "click",
+    "Replace",
+    "to",
+    "do",
+    "it",
+    "one",
+    "at",
+    "a",
+    "time",
+    "or",
+    "you",
+    "can",
+    "click",
+    "the",
+    "icon",
+    "to",
+    "the",
+    "left",
+    "of",
+    "the",
+    "X",
+    "to",
+    "replace",
+    "all",
+    "matches",
+    "in",
+    "a",
+    "file.",
+    "​"
+  ],
+  "hashes": {
+    "responseSha256": "3d4d56893d8b1757b0b938a577bbd87dc0249be736f33165909dde42c2ad401a",
+    "articleSha256": "5b39bacc8fbba9788e64a4aa9b13949630b4b7b2333b3deeeb25e26a03e44753",
+    "textSha256": "3fd8b7946e9af3e23510a9b2acd54704acabc3b873a22d006db9c860c0215aa4",
+    "normalizedTextSha256": "b198666dc3bf684b9bac913e2974126bd87f9c52764e1edf744cbce0e2242403"
+  },
+  "headings": [
+    {
+      "tag": "h2",
+      "text": "Introduction",
+      "attrs": {
+        "id": "introduction"
+      },
+      "location": {
+        "start": 168755,
+        "end": 168805
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "Frequently Used Terminology",
+      "attrs": {
+        "id": "frequently-used-terminology"
+      },
+      "location": {
+        "start": 169096,
+        "end": 169176
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "Common Problems",
+      "attrs": {
+        "id": "common-problems"
+      },
+      "location": {
+        "start": 169992,
+        "end": 170048
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Failed Checks",
+      "attrs": {
+        "id": "failed-checks"
+      },
+      "location": {
+        "start": 170049,
+        "end": 170090
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Checks Are Stuck",
+      "attrs": {
+        "id": "checks-are-stuck"
+      },
+      "location": {
+        "start": 172156,
+        "end": 172203
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Your Branch Is 'X' Commits Behind Master",
+      "attrs": {
+        "id": "your-branch-is-x-commits-behind-master"
+      },
+      "location": {
+        "start": 172612,
+        "end": 172705
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "Pull Requests",
+      "attrs": {
+        "id": "pull-requests"
+      },
+      "location": {
+        "start": 173856,
+        "end": 173908
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Multiple Changes & Updating an Existing Pull Request",
+      "attrs": {
+        "id": "multiple-changes-updating-an-existing-pull-request"
+      },
+      "location": {
+        "start": 173909,
+        "end": 174030
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Modify an Existing File in the Pull Request",
+      "attrs": {
+        "id": "modify-an-existing-file-in-the-pull-request"
+      },
+      "location": {
+        "start": 174678,
+        "end": 174779
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Add a New File to the Pull Request",
+      "attrs": {
+        "id": "add-a-new-file-to-the-pull-request"
+      },
+      "location": {
+        "start": 175506,
+        "end": 175589
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "Helpful Tips",
+      "attrs": {
+        "id": "helpful-tips"
+      },
+      "location": {
+        "start": 176429,
+        "end": 176479
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "File Split View",
+      "attrs": {
+        "id": "file-split-view"
+      },
+      "location": {
+        "start": 176480,
+        "end": 176525
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Bulk Replacing",
+      "attrs": {
+        "id": "bulk-replacing"
+      },
+      "location": {
+        "start": 177519,
+        "end": 177562
+      }
+    }
+  ],
+  "media": [
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/ZxizF57.png"
+      },
+      "text": "",
+      "location": {
+        "start": 171244,
+        "end": 171308
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/qdZjUvf.png"
+      },
+      "text": "",
+      "location": {
+        "start": 171316,
+        "end": 171380
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/WHpF7Wq.png"
+      },
+      "text": "",
+      "location": {
+        "start": 171672,
+        "end": 171736
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/fTIpYv5.png"
+      },
+      "text": "",
+      "location": {
+        "start": 171994,
+        "end": 172058
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/j3kEy55.png"
+      },
+      "text": "",
+      "location": {
+        "start": 172775,
+        "end": 172839
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/ztJQ0wj.png"
+      },
+      "text": "",
+      "location": {
+        "start": 172907,
+        "end": 172971
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/kxvu0O2.png"
+      },
+      "text": "",
+      "location": {
+        "start": 174600,
+        "end": 174664
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/h2i3Rkb.jpg"
+      },
+      "text": "",
+      "location": {
+        "start": 175102,
+        "end": 175166
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/GbkYLNi.png"
+      },
+      "text": "",
+      "location": {
+        "start": 175272,
+        "end": 175336
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/OxtPQXE.png"
+      },
+      "text": "",
+      "location": {
+        "start": 175428,
+        "end": 175492
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/ylNa85w.png"
+      },
+      "text": "",
+      "location": {
+        "start": 175872,
+        "end": 175936
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/kSt0Xpa.png"
+      },
+      "text": "",
+      "location": {
+        "start": 176038,
+        "end": 176102
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/sa6tPYh.png"
+      },
+      "text": "",
+      "location": {
+        "start": 176197,
+        "end": 176261
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/UKnKrfs.png"
+      },
+      "text": "",
+      "location": {
+        "start": 176351,
+        "end": 176415
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/KqtUExJ.png"
+      },
+      "text": "",
+      "location": {
+        "start": 177027,
+        "end": 177091
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/mqNCNlT.png"
+      },
+      "text": "",
+      "location": {
+        "start": 177185,
+        "end": 177249
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/IAz8bya.png"
+      },
+      "text": "",
+      "location": {
+        "start": 177441,
+        "end": 177505
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/avBqR0i.png"
+      },
+      "text": "",
+      "location": {
+        "start": 177736,
+        "end": 177800
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/bLoBXsg.png"
+      },
+      "text": "",
+      "location": {
+        "start": 177878,
+        "end": 177942
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/1aRteP5.png"
+      },
+      "text": "",
+      "location": {
+        "start": 178084,
+        "end": 178148
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/acVwcaR.png"
+      },
+      "text": "",
+      "location": {
+        "start": 178383,
+        "end": 178447
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/wolcMdJ.png"
+      },
+      "text": "",
+      "location": {
+        "start": 178651,
+        "end": 178715
+      }
+    }
+  ],
+  "links": [
+    {
+      "href": "https://pvme.github.io/guide-editor/",
+      "text": "https://pvme.github.io/guide-editor/",
+      "attrs": {
+        "href": "https://pvme.github.io/guide-editor/"
+      },
+      "location": {
+        "start": 170739,
+        "end": 170826
+      }
+    },
+    {
+      "href": "",
+      "text": "#unknown-channel",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 170966,
+        "end": 171018
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "h2",
+      "attrs": {
+        "id": "introduction"
+      },
+      "text": "Introduction",
+      "location": {
+        "start": 168755,
+        "end": 168805
+      }
+    },
+    {
+      "index": 1,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168805,
+        "end": 168806
+      }
+    },
+    {
+      "index": 2,
+      "tag": "p",
+      "attrs": {},
+      "text": "This guide will go over an assortment of common issues you may encounter while working with GitHub, as well as a few helpful things you can do to streamline your workflow.",
+      "location": {
+        "start": 168806,
+        "end": 168984
+      }
+    },
+    {
+      "index": 3,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168984,
+        "end": 168985
+      }
+    },
+    {
+      "index": 4,
+      "tag": "p",
+      "attrs": {},
+      "text": "Note: You can always ask any editor or staff for help with GitHub at any time.",
+      "location": {
+        "start": 168985,
+        "end": 169079
+      }
+    },
+    {
+      "index": 5,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169079,
+        "end": 169080
+      }
+    },
+    {
+      "index": 6,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 169080,
+        "end": 169095
+      }
+    },
+    {
+      "index": 7,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169095,
+        "end": 169096
+      }
+    },
+    {
+      "index": 8,
+      "tag": "h2",
+      "attrs": {
+        "id": "frequently-used-terminology"
+      },
+      "text": "Frequently Used Terminology",
+      "location": {
+        "start": 169096,
+        "end": 169176
+      }
+    },
+    {
+      "index": 9,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169176,
+        "end": 169177
+      }
+    },
+    {
+      "index": 10,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Repository",
+      "location": {
+        "start": 169177,
+        "end": 169213
+      }
+    },
+    {
+      "index": 11,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169213,
+        "end": 169214
+      }
+    },
+    {
+      "index": 12,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• A collection of all the files and folders for a single project, that is tracked and version controlled.",
+      "location": {
+        "start": 169214,
+        "end": 169333
+      }
+    },
+    {
+      "index": 13,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169333,
+        "end": 169334
+      }
+    },
+    {
+      "index": 14,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Fork",
+      "location": {
+        "start": 169334,
+        "end": 169364
+      }
+    },
+    {
+      "index": 15,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169364,
+        "end": 169365
+      }
+    },
+    {
+      "index": 16,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• A copy of an entire repository. A user can fork a repository to get a personal copy.",
+      "location": {
+        "start": 169365,
+        "end": 169483
+      }
+    },
+    {
+      "index": 17,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169483,
+        "end": 169484
+      }
+    },
+    {
+      "index": 18,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Commit",
+      "location": {
+        "start": 169484,
+        "end": 169516
+      }
+    },
+    {
+      "index": 19,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169516,
+        "end": 169517
+      }
+    },
+    {
+      "index": 20,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Essentially a 'snapshot' of your repository. Think of it like a checkpoint in a video game. Going back to a particular commit shows the entire repository as it was at that point in time. You commit after making your changes, to prepare for a pull request.",
+      "location": {
+        "start": 169517,
+        "end": 169788
+      }
+    },
+    {
+      "index": 21,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169788,
+        "end": 169789
+      }
+    },
+    {
+      "index": 22,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Pull Request",
+      "location": {
+        "start": 169789,
+        "end": 169827
+      }
+    },
+    {
+      "index": 23,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169827,
+        "end": 169828
+      }
+    },
+    {
+      "index": 24,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• A request to merge your changes into the main repository, to be accepted by someone with appropriate permissions.",
+      "location": {
+        "start": 169828,
+        "end": 169975
+      }
+    },
+    {
+      "index": 25,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169975,
+        "end": 169976
+      }
+    },
+    {
+      "index": 26,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 169976,
+        "end": 169991
+      }
+    },
+    {
+      "index": 27,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169991,
+        "end": 169992
+      }
+    },
+    {
+      "index": 28,
+      "tag": "h2",
+      "attrs": {
+        "id": "common-problems"
+      },
+      "text": "Common Problems",
+      "location": {
+        "start": 169992,
+        "end": 170048
+      }
+    },
+    {
+      "index": 29,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170048,
+        "end": 170049
+      }
+    },
+    {
+      "index": 30,
+      "tag": "h3",
+      "attrs": {
+        "id": "failed-checks"
+      },
+      "text": "Failed Checks",
+      "location": {
+        "start": 170049,
+        "end": 170090
+      }
+    },
+    {
+      "index": 31,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170090,
+        "end": 170091
+      }
+    },
+    {
+      "index": 32,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ PvME GitHub is set up to automatically check for valid formatting and styling. There are a number of checks, such as:",
+      "location": {
+        "start": 170091,
+        "end": 170217
+      }
+    },
+    {
+      "index": 33,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170217,
+        "end": 170218
+      }
+    },
+    {
+      "index": 34,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Trailing whitespace - extra space at the end of a line",
+      "location": {
+        "start": 170218,
+        "end": 170288
+      }
+    },
+    {
+      "index": 35,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170288,
+        "end": 170289
+      }
+    },
+    {
+      "index": 36,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Improper spacing around emojis - emojis must be surrounded by a space on either side",
+      "location": {
+        "start": 170289,
+        "end": 170389
+      }
+    },
+    {
+      "index": 37,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170389,
+        "end": 170390
+      }
+    },
+    {
+      "index": 38,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Message length exceeded (too many characters) - messages cannot exceed 2000 characters",
+      "location": {
+        "start": 170390,
+        "end": 170492
+      }
+    },
+    {
+      "index": 39,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170492,
+        "end": 170493
+      }
+    },
+    {
+      "index": 40,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Invalid embed formatting - creates an invalid embed object.",
+      "location": {
+        "start": 170493,
+        "end": 170568
+      }
+    },
+    {
+      "index": 41,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170568,
+        "end": 170569
+      }
+    },
+    {
+      "index": 42,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Invalid commands - any .command: ‎used must be a valid command.",
+      "location": {
+        "start": 170569,
+        "end": 170661
+      }
+    },
+    {
+      "index": 43,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170661,
+        "end": 170662
+      }
+    },
+    {
+      "index": 44,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Checks failing can be avoided by using the web editor (https://pvme.github.io/guide-editor/) to edit your content before adding it to GitHub, as it runs the same style checks that pull requests use. For more information check out, #unknown-channel.",
+      "location": {
+        "start": 170662,
+        "end": 171023
+      }
+    },
+    {
+      "index": 45,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171023,
+        "end": 171024
+      }
+    },
+    {
+      "index": 46,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ If your pull request fails due to a check, it will inform you. Click on Details on the check to see why it has failed, and what you can do to fix it.",
+      "location": {
+        "start": 171024,
+        "end": 171199
+      }
+    },
+    {
+      "index": 47,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171199,
+        "end": 171200
+      }
+    },
+    {
+      "index": 48,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Consider the following example:",
+      "location": {
+        "start": 171200,
+        "end": 171240
+      }
+    },
+    {
+      "index": 49,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171240,
+        "end": 171241
+      }
+    },
+    {
+      "index": 50,
+      "tag": "p",
+      "attrs": {},
+      "text": "",
+      "location": {
+        "start": 171241,
+        "end": 171312
+      }
+    },
+    {
+      "index": 51,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171312,
+        "end": 171313
+      }
+    },
+    {
+      "index": 52,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n⬥ The bottom red square tells you what the error is. In this case, the message starting at line 108 and ending at line 139 has too many characters.",
+      "location": {
+        "start": 171313,
+        "end": 171532
+      }
+    },
+    {
+      "index": 53,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171532,
+        "end": 171533
+      }
+    },
+    {
+      "index": 54,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ To fix this, click the Edit File option in the following image, to open up editing again to make appropriate changes.",
+      "location": {
+        "start": 171533,
+        "end": 171668
+      }
+    },
+    {
+      "index": 55,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171668,
+        "end": 171669
+      }
+    },
+    {
+      "index": 56,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n⬥ In this case, we break the single large message into 2 separate messages by hitting Enter, entering a single period . ‎and hitting Enter ‎again. Then commit these changes, and it will update the pull request.",
+      "location": {
+        "start": 171669,
+        "end": 171990
+      }
+    },
+    {
+      "index": 57,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171990,
+        "end": 171991
+      }
+    },
+    {
+      "index": 58,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n⬥ Your Pull Request should now be error-free once the checks complete again.",
+      "location": {
+        "start": 171991,
+        "end": 172139
+      }
+    },
+    {
+      "index": 59,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172139,
+        "end": 172140
+      }
+    },
+    {
+      "index": 60,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 172140,
+        "end": 172155
+      }
+    },
+    {
+      "index": 61,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172155,
+        "end": 172156
+      }
+    },
+    {
+      "index": 62,
+      "tag": "h3",
+      "attrs": {
+        "id": "checks-are-stuck"
+      },
+      "text": "Checks Are Stuck",
+      "location": {
+        "start": 172156,
+        "end": 172203
+      }
+    },
+    {
+      "index": 63,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172203,
+        "end": 172204
+      }
+    },
+    {
+      "index": 64,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Rarely, the style and syntax checks may get stuck, neither succeeding nor failing. In such an event, usually merging a different minor pull request tends to resolve the issue.",
+      "location": {
+        "start": 172204,
+        "end": 172388
+      }
+    },
+    {
+      "index": 65,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172388,
+        "end": 172389
+      }
+    },
+    {
+      "index": 66,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Checks can take some time to complete at times, so wait for at least 20-30 minutes before it is considered an issue.",
+      "location": {
+        "start": 172389,
+        "end": 172514
+      }
+    },
+    {
+      "index": 67,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172514,
+        "end": 172515
+      }
+    },
+    {
+      "index": 68,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ In case this occurs, you can contact an editor or staff for assistance.",
+      "location": {
+        "start": 172515,
+        "end": 172595
+      }
+    },
+    {
+      "index": 69,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172595,
+        "end": 172596
+      }
+    },
+    {
+      "index": 70,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 172596,
+        "end": 172611
+      }
+    },
+    {
+      "index": 71,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172611,
+        "end": 172612
+      }
+    },
+    {
+      "index": 72,
+      "tag": "h3",
+      "attrs": {
+        "id": "your-branch-is-x-commits-behind-master"
+      },
+      "text": "Your Branch Is 'X' Commits Behind Master",
+      "location": {
+        "start": 172612,
+        "end": 172705
+      }
+    },
+    {
+      "index": 73,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172705,
+        "end": 172706
+      }
+    },
+    {
+      "index": 74,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ When you make a new fork, your fork will look like this:",
+      "location": {
+        "start": 172706,
+        "end": 172771
+      }
+    },
+    {
+      "index": 75,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172771,
+        "end": 172772
+      }
+    },
+    {
+      "index": 76,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n⬥ However, after some time it may look something like this:",
+      "location": {
+        "start": 172772,
+        "end": 172903
+      }
+    },
+    {
+      "index": 77,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172903,
+        "end": 172904
+      }
+    },
+    {
+      "index": 78,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n⬥ This is because changes might have happened to the main repository ('X' commits behind) and it is no longer in-sync with your copy. This may cause issues when making a pull request.",
+      "location": {
+        "start": 172904,
+        "end": 173172
+      }
+    },
+    {
+      "index": 79,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173172,
+        "end": 173173
+      }
+    },
+    {
+      "index": 80,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ To resolved this, the simplest solution is to delete your fork, and make a new fork of the PvME repository.",
+      "location": {
+        "start": 173173,
+        "end": 173306
+      }
+    },
+    {
+      "index": 81,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173306,
+        "end": 173307
+      }
+    },
+    {
+      "index": 82,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ This will give you a fresh, up-to-date copy, and get rid of any lingering issues.",
+      "location": {
+        "start": 173307,
+        "end": 173397
+      }
+    },
+    {
+      "index": 83,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173397,
+        "end": 173398
+      }
+    },
+    {
+      "index": 84,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 173398,
+        "end": 173413
+      }
+    },
+    {
+      "index": 85,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173413,
+        "end": 173414
+      }
+    },
+    {
+      "index": 86,
+      "tag": "p",
+      "attrs": {},
+      "text": "For more experienced users: PvME squashes and merges all pull requests. This causes a difference in commit hashes, which is why your branch will be both ahead AND behind in commits after a pull request is accepted. You can clean this up by discarding commits from accepted PRs and syncing your branch to pvme:master. Or by resetting your branch to pvme:master. Or just delete and start over.|",
+      "location": {
+        "start": 173414,
+        "end": 173839
+      }
+    },
+    {
+      "index": 87,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173839,
+        "end": 173840
+      }
+    },
+    {
+      "index": 88,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 173840,
+        "end": 173855
+      }
+    },
+    {
+      "index": 89,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173855,
+        "end": 173856
+      }
+    },
+    {
+      "index": 90,
+      "tag": "h2",
+      "attrs": {
+        "id": "pull-requests"
+      },
+      "text": "Pull Requests",
+      "location": {
+        "start": 173856,
+        "end": 173908
+      }
+    },
+    {
+      "index": 91,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173908,
+        "end": 173909
+      }
+    },
+    {
+      "index": 92,
+      "tag": "h3",
+      "attrs": {
+        "id": "multiple-changes-updating-an-existing-pull-request"
+      },
+      "text": "Multiple Changes & Updating an Existing Pull Request",
+      "location": {
+        "start": 173909,
+        "end": 174030
+      }
+    },
+    {
+      "index": 93,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174030,
+        "end": 174031
+      }
+    },
+    {
+      "index": 94,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ It is possible to include changes to multiple files within the same Pull Request, and to amend files you have already modified as part of that Pull Request.",
+      "location": {
+        "start": 174031,
+        "end": 174196
+      }
+    },
+    {
+      "index": 95,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174196,
+        "end": 174197
+      }
+    },
+    {
+      "index": 96,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ This can be helpful to reduce the number of PRs being opened, and remove the need of closing a PR and reopening it if a mistake has been made.",
+      "location": {
+        "start": 174197,
+        "end": 174348
+      }
+    },
+    {
+      "index": 97,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174348,
+        "end": 174349
+      }
+    },
+    {
+      "index": 98,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 174349,
+        "end": 174364
+      }
+    },
+    {
+      "index": 99,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174364,
+        "end": 174365
+      }
+    },
+    {
+      "index": 100,
+      "tag": "p",
+      "attrs": {},
+      "text": "Note: It is assumed you have already forked the repository.",
+      "location": {
+        "start": 174365,
+        "end": 174440
+      }
+    },
+    {
+      "index": 101,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174440,
+        "end": 174441
+      }
+    },
+    {
+      "index": 102,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 174441,
+        "end": 174456
+      }
+    },
+    {
+      "index": 103,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174456,
+        "end": 174457
+      }
+    },
+    {
+      "index": 104,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Consider the scenario: a pull request has been made, with changes to one file, visible in the Files Changed tab.",
+      "location": {
+        "start": 174457,
+        "end": 174596
+      }
+    },
+    {
+      "index": 105,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174596,
+        "end": 174597
+      }
+    },
+    {
+      "index": 106,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n​",
+      "location": {
+        "start": 174597,
+        "end": 174677
+      }
+    },
+    {
+      "index": 107,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174677,
+        "end": 174678
+      }
+    },
+    {
+      "index": 108,
+      "tag": "h3",
+      "attrs": {
+        "id": "modify-an-existing-file-in-the-pull-request"
+      },
+      "text": "Modify an Existing File in the Pull Request",
+      "location": {
+        "start": 174678,
+        "end": 174779
+      }
+    },
+    {
+      "index": 109,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174779,
+        "end": 174780
+      }
+    },
+    {
+      "index": 110,
+      "tag": "p",
+      "attrs": {},
+      "text": "To make an a change to a file that already contains a change, in the same pull request, do the following.",
+      "location": {
+        "start": 174780,
+        "end": 174901
+      }
+    },
+    {
+      "index": 111,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174901,
+        "end": 174902
+      }
+    },
+    {
+      "index": 112,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Navigate to your Pull Request, and go to the Files Changed tab.",
+      "location": {
+        "start": 174902,
+        "end": 174983
+      }
+    },
+    {
+      "index": 113,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174983,
+        "end": 174984
+      }
+    },
+    {
+      "index": 114,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Go to the top right corner of the file you wish to update, click the three dots, then Edit File.",
+      "location": {
+        "start": 174984,
+        "end": 175098
+      }
+    },
+    {
+      "index": 115,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175098,
+        "end": 175099
+      }
+    },
+    {
+      "index": 116,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n⬥ Make whatever additional changes you like, and then Commit directly to the xxx branch.",
+      "location": {
+        "start": 175099,
+        "end": 175268
+      }
+    },
+    {
+      "index": 117,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175268,
+        "end": 175269
+      }
+    },
+    {
+      "index": 118,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n⬥ Navigate back to your Pull Request, and the additional change should be included!",
+      "location": {
+        "start": 175269,
+        "end": 175424
+      }
+    },
+    {
+      "index": 119,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175424,
+        "end": 175425
+      }
+    },
+    {
+      "index": 120,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n​",
+      "location": {
+        "start": 175425,
+        "end": 175505
+      }
+    },
+    {
+      "index": 121,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175505,
+        "end": 175506
+      }
+    },
+    {
+      "index": 122,
+      "tag": "h3",
+      "attrs": {
+        "id": "add-a-new-file-to-the-pull-request"
+      },
+      "text": "Add a New File to the Pull Request",
+      "location": {
+        "start": 175506,
+        "end": 175589
+      }
+    },
+    {
+      "index": 123,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175589,
+        "end": 175590
+      }
+    },
+    {
+      "index": 124,
+      "tag": "p",
+      "attrs": {},
+      "text": "To edit a different file, and include it in the same pull request, do as follows,",
+      "location": {
+        "start": 175590,
+        "end": 175678
+      }
+    },
+    {
+      "index": 125,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175678,
+        "end": 175679
+      }
+    },
+    {
+      "index": 126,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Navigate to your Pull Request and click on the name of your branch, here:",
+      "location": {
+        "start": 175679,
+        "end": 175761
+      }
+    },
+    {
+      "index": 127,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175761,
+        "end": 175762
+      }
+    },
+    {
+      "index": 128,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• You are now looking at the main directory of your own branch, where all files will reside.",
+      "location": {
+        "start": 175762,
+        "end": 175868
+      }
+    },
+    {
+      "index": 129,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175868,
+        "end": 175869
+      }
+    },
+    {
+      "index": 130,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n⬥ Locate the additional file you would like to change, open it, and then click the edit icon.",
+      "location": {
+        "start": 175869,
+        "end": 176034
+      }
+    },
+    {
+      "index": 131,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176034,
+        "end": 176035
+      }
+    },
+    {
+      "index": 132,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n⬥ Make whatever changes you like, and then Commit directly to the xxx branch.",
+      "location": {
+        "start": 176035,
+        "end": 176193
+      }
+    },
+    {
+      "index": 133,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176193,
+        "end": 176194
+      }
+    },
+    {
+      "index": 134,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n⬥ Navigate back to your Pull Request, and the additional file should be included!",
+      "location": {
+        "start": 176194,
+        "end": 176347
+      }
+    },
+    {
+      "index": 135,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176347,
+        "end": 176348
+      }
+    },
+    {
+      "index": 136,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n​",
+      "location": {
+        "start": 176348,
+        "end": 176428
+      }
+    },
+    {
+      "index": 137,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176428,
+        "end": 176429
+      }
+    },
+    {
+      "index": 138,
+      "tag": "h2",
+      "attrs": {
+        "id": "helpful-tips"
+      },
+      "text": "Helpful Tips",
+      "location": {
+        "start": 176429,
+        "end": 176479
+      }
+    },
+    {
+      "index": 139,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176479,
+        "end": 176480
+      }
+    },
+    {
+      "index": 140,
+      "tag": "h3",
+      "attrs": {
+        "id": "file-split-view"
+      },
+      "text": "File Split View",
+      "location": {
+        "start": 176480,
+        "end": 176525
+      }
+    },
+    {
+      "index": 141,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176525,
+        "end": 176526
+      }
+    },
+    {
+      "index": 142,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ When opening a Pull Request, it is good practice to look at your changes and see if any mistakes have been made.",
+      "location": {
+        "start": 176526,
+        "end": 176647
+      }
+    },
+    {
+      "index": 143,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176647,
+        "end": 176648
+      }
+    },
+    {
+      "index": 144,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ By default, you will see differences between your changes and the original file in Unified View.",
+      "location": {
+        "start": 176648,
+        "end": 176762
+      }
+    },
+    {
+      "index": 145,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176762,
+        "end": 176763
+      }
+    },
+    {
+      "index": 146,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Sometimes, especially for larger changes, it can be helpful to use Split View instead.",
+      "location": {
+        "start": 176763,
+        "end": 176867
+      }
+    },
+    {
+      "index": 147,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176867,
+        "end": 176868
+      }
+    },
+    {
+      "index": 148,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Navigate to your Pull Request, and go to the Files Changed tab.",
+      "location": {
+        "start": 176868,
+        "end": 176949
+      }
+    },
+    {
+      "index": 149,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176949,
+        "end": 176950
+      }
+    },
+    {
+      "index": 150,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• By default, you will see unified changes, as shown below:",
+      "location": {
+        "start": 176950,
+        "end": 177023
+      }
+    },
+    {
+      "index": 151,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177023,
+        "end": 177024
+      }
+    },
+    {
+      "index": 152,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n⬥ Click the settings icon, select Split, and then Apply and reload.",
+      "location": {
+        "start": 177024,
+        "end": 177181
+      }
+    },
+    {
+      "index": 153,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177181,
+        "end": 177182
+      }
+    },
+    {
+      "index": 154,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n⬥ Congratulations! From now on, your changes will be shown in Split View.",
+      "location": {
+        "start": 177182,
+        "end": 177336
+      }
+    },
+    {
+      "index": 155,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177336,
+        "end": 177337
+      }
+    },
+    {
+      "index": 156,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• You can reverse the process to go back to a unified view at any time, if you prefer.",
+      "location": {
+        "start": 177337,
+        "end": 177437
+      }
+    },
+    {
+      "index": 157,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177437,
+        "end": 177438
+      }
+    },
+    {
+      "index": 158,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n​",
+      "location": {
+        "start": 177438,
+        "end": 177518
+      }
+    },
+    {
+      "index": 159,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177518,
+        "end": 177519
+      }
+    },
+    {
+      "index": 160,
+      "tag": "h3",
+      "attrs": {
+        "id": "bulk-replacing"
+      },
+      "text": "Bulk Replacing",
+      "location": {
+        "start": 177519,
+        "end": 177562
+      }
+    },
+    {
+      "index": 161,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177562,
+        "end": 177563
+      }
+    },
+    {
+      "index": 162,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ To bulk replace, either navigate to the Edit menu then select Replace in Files or use the Ctrl+Shift+H keybind to do the same.",
+      "location": {
+        "start": 177563,
+        "end": 177732
+      }
+    },
+    {
+      "index": 163,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177732,
+        "end": 177733
+      }
+    },
+    {
+      "index": 164,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n⬥ Doing this will open the Search/Replace side menu.",
+      "location": {
+        "start": 177733,
+        "end": 177874
+      }
+    },
+    {
+      "index": 165,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177874,
+        "end": 177875
+      }
+    },
+    {
+      "index": 166,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n⬥ The search box is where you enter what you want to replace and the replace box is where you enter what you want to replace it with.",
+      "location": {
+        "start": 177875,
+        "end": 178080
+      }
+    },
+    {
+      "index": 167,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178080,
+        "end": 178081
+      }
+    },
+    {
+      "index": 168,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n⬥ However, most of these results aren't what we're looking for so can be dismissed by hovering over the number to the right and clicking the X to dismiss the whole file or the individual Xs below to dismiss individual matches.",
+      "location": {
+        "start": 178081,
+        "end": 178379
+      }
+    },
+    {
+      "index": 169,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178379,
+        "end": 178380
+      }
+    },
+    {
+      "index": 170,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n⬥ When you find something you want to replace. you can either right click and click Replace to do it one at a time or you can click the icon to the left of the X to replace all matches in a file.",
+      "location": {
+        "start": 178380,
+        "end": 178647
+      }
+    },
+    {
+      "index": 171,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178647,
+        "end": 178648
+      }
+    },
+    {
+      "index": 172,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n​",
+      "location": {
+        "start": 178648,
+        "end": 178728
+      }
+    },
+    {
+      "index": 173,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n      \n    ",
+      "location": {
+        "start": 178728,
+        "end": 178740
+      }
+    }
+  ]
+}

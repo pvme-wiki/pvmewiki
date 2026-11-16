@@ -6,6 +6,28 @@ const { createVisualReader } = require('./visual-reader.js');
 const presets = require('./presets.json');
 const actionBars = require('./action-bars.json');
 const amascutAssets = require('./amascut-assets.json');
+const historyFeedUrl = 'https://pvme.sanji3.dev/data/guide-history.json';
+let historyFeed;
+function loadGuideHistory() {
+    if (!historyFeed) historyFeed = (async () => {
+        const key = 'pvme-guide-history-v1';
+        try {
+            const cached = JSON.parse(sessionStorage.getItem(key));
+            if (cached && Date.now() - cached.fetchedAt >= 0 && Date.now() - cached.fetchedAt < 900000 && cached.data?.schemaVersion === 1 && cached.data.guides) return cached.data;
+        } catch (_) {}
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 10000);
+        try {
+            const response = await fetch(historyFeedUrl, { credentials: 'omit', referrerPolicy: 'no-referrer', signal: controller.signal });
+            if (!response.ok) throw new Error('Source history unavailable');
+            const data = await response.json();
+            if (data.schemaVersion !== 1 || !data.guides || typeof data.guides !== 'object') throw new Error('Invalid source history');
+            try { sessionStorage.setItem(key, JSON.stringify({ fetchedAt: Date.now(), data })); } catch (_) {}
+            return data;
+        } finally { clearTimeout(timeout); }
+    })();
+    return historyFeed;
+}
 function enhance() {
     if (mw.config.get('wgAction') !== 'view' || document.querySelector('.ve-active, .ve-activating')) return;
     const title = mw.config.get('wgPageName').replace(/_/g, ' ');
@@ -13,6 +35,21 @@ function enhance() {
     const content = document.querySelector('#mw-content-text');
     const article = content && content.querySelector('.mw-parser-output');
     if (!page || !article || document.getElementById('pvme-reader-tools')) return;
+    function syncNativeTitle() {
+        if (document.querySelector('.ve-active, .ve-activating')) return;
+        const sourceHeading = document.querySelector('#mw-content-text .mw-parser-output h1.pvme-source-title');
+        const heading = document.getElementById('firstHeading');
+        if (sourceHeading && heading) heading.replaceChildren(...Array.from(sourceHeading.childNodes, node => node.cloneNode(true)));
+    }
+    if (page.nativeLayout || article.querySelector('.pvme-exact-guide')) {
+        syncNativeTitle();
+        // Keep the editable source H1 intact, including after a native editor save.
+        const titleObserver = new MutationObserver(syncNativeTitle);
+        titleObserver.observe(content, { childList: true, subtree: true, characterData: true });
+        titleObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+        titleObserver.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+        window.addEventListener('pagehide', () => titleObserver.disconnect(), { once: true });
+    }
     function element(tag, text, cls) {
         const node = document.createElement(tag);
         if (text) node.textContent = text;
@@ -50,8 +87,33 @@ function enhance() {
     tools.append(actions);
     let sourceFooter;
     if (page.source) {
+        const badge = element('a', 'Checking source date…', 'pvme-freshness pvme-freshness-unknown');
+        badge.href = 'https://pvme.sanji3.dev/about/guide-history/';
+        badge.setAttribute('aria-label', 'Source update history');
+        tools.append(badge);
+        let historyRecord;
+        function refreshBadge() {
+            const date = historyRecord?.date;
+            const day = typeof date === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(date) ? Date.parse(date + 'T00:00:00Z') : NaN;
+            const today = Date.parse(new Date().toISOString().slice(0, 10) + 'T00:00:00Z');
+            const days = (today - day) / 86400000;
+            const valid = historyRecord?.status === 'upstream-content-change' && Number.isFinite(day) && new Date(day).toISOString().slice(0, 10) === date && days >= 0;
+            badge.className = 'pvme-freshness pvme-freshness-' + (valid ? days <= 30 ? 'recent' : days >= 180 ? 'older' : 'known' : 'unknown');
+            badge.textContent = valid ? days + (days === 1 ? ' day' : ' days') + ' since source update' : 'Source date unverified';
+            badge.title = valid ? 'Last known PvME content change: ' + date + '. Source history, not game verification. Data from pvme.sanji3.dev.' : 'No verified source-change date from pvme.sanji3.dev.';
+            badge.setAttribute('aria-label', badge.textContent + '. ' + badge.title);
+            badge.href = valid && /^[a-f\d]{40}$/i.test(historyRecord.commit || '') ? 'https://github.com/pvme/pvme-guides/commit/' + historyRecord.commit : 'https://pvme.sanji3.dev/about/guide-history/';
+            badge.dataset.sourceDate = valid ? date : '';
+        }
+        loadGuideHistory().then(data => {
+            const sourcePath = new URL(page.source).pathname;
+            historyRecord = data.guides[sourcePath];
+            refreshBadge();
+        }).catch(() => { refreshBadge(); badge.title = 'Could not load source history from pvme.sanji3.dev. Reload to try again.'; badge.setAttribute('aria-label', badge.textContent + '. ' + badge.title); });
+        const ageTimer = setInterval(() => { if (!document.hidden) refreshBadge(); }, 60000);
+        window.addEventListener('pagehide', () => clearInterval(ageTimer), { once: true });
         const sourceDetails = element('details', '', 'pvme-reader-source');
-        sourceDetails.append(element('summary', 'Source and export'));
+        sourceDetails.append(element('summary', 'Source'));
         const provenance = element('p', 'PvME contributors. CC BY-NC-SA 4.0. ', 'pvme-reader-provenance');
         const source = element('a', 'Original guide'); source.href = page.source;
         provenance.append(source, document.createTextNode(' | Imported ' + page.retrieved + '. '));
@@ -59,16 +121,21 @@ function enhance() {
         if (page.historyUrl) { const history = element('a', 'Source revision'); history.href = page.historyUrl; provenance.append(history); }
         sourceDetails.append(provenance);
         const exportArea = element('div', '', 'pvme-reader-export');
-        const copy = element('button', 'Copy for RuneScape Wiki');
+        const copy = element('button', 'Copy to wiki', 'pvme-reader-copy');
         copy.type = 'button';
+        copy.title = 'Copy this page as RuneScape Wiki wikitext';
+        copy.setAttribute('aria-label', 'Copy to RuneScape Wiki');
+        actions.prepend(copy);
         const status = element('p', 'Copy the latest published revision as wikitext.', 'pvme-reader-provenance');
         status.setAttribute('role', 'status'); status.setAttribute('aria-live', 'polite');
         const fallback = element('textarea');
         fallback.readOnly = true;
         fallback.setAttribute('aria-label', 'RuneScape Wiki wikitext');
         const manual = element('details'); manual.hidden = true;
+        exportArea.hidden = true;
         manual.append(element('summary', 'Copy manually'), fallback);
         copy.addEventListener('click', async () => {
+            exportArea.hidden = false;
             copy.disabled = true; manual.hidden = true; manual.open = false; fallback.value = '';
             status.textContent = 'Loading wikitext...';
             try {
@@ -77,7 +144,7 @@ function enhance() {
                 const published = result.query?.pages?.[0];
                 const revision = published?.revisions?.[0];
                 if (published?.title !== title || !revision?.slots?.main || revision.slots.main.contentmodel !== 'wikitext') throw new Error('Could not load the published wikitext.');
-                const exported = convertRevision(revision.slots.main.content, { title, revisionId: revision.revid,
+                const exported = convertRevision(revision.slots.main.content, { title, displayTitle: page.nativeTitle || document.getElementById('firstHeading')?.textContent.trim(), revisionId: revision.revid,
                     timestamp: revision.timestamp, source: page.source,
                     revisionUrl: new URL(mw.util.getUrl(title, { oldid: revision.revid }), location.origin).href }, registry, actionBars, amascutAssets);
                 fallback.value = exported.text;
@@ -95,9 +162,9 @@ function enhance() {
                 status.textContent = 'Copy failed. ' + (error instanceof Error ? error.message : 'Could not load the published wikitext.');
             } finally { copy.disabled = false; }
         });
-        exportArea.append(copy, status, manual); sourceDetails.append(exportArea);
+        exportArea.append(status, manual); tools.append(exportArea);
         sourceFooter = element('aside', '', 'pvme-reader-tools');
-        sourceFooter.setAttribute('aria-label', 'Source and export');
+        sourceFooter.setAttribute('aria-label', 'Source');
         sourceFooter.append(sourceDetails);
         content.after(sourceFooter);
     }
@@ -141,7 +208,7 @@ function enhance() {
     content.before(tools);
     // Native template layouts own their article presentation and remain editable.
     // Keep only the shared navigation; skip legacy heuristics and cloned readers.
-    if (page.nativeLayout) return;
+    if (page.nativeLayout || article.querySelector('.pvme-exact-guide')) return;
     // Classes and accessible labels only: no original text, links or node order change.
     article.classList.add('pvme-legacy-reader');
     for (const heading of article.querySelectorAll('h2,h3,h4')) {

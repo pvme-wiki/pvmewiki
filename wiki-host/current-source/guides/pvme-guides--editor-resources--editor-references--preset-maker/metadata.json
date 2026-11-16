@@ -1,0 +1,365 @@
+{
+  "schemaVersion": 1,
+  "captureVersion": 2,
+  "id": "pvme-guides--editor-resources--editor-references--preset-maker",
+  "sourceURL": "https://pvme.io/pvme-guides/editor-resources/editor-references/preset-maker/",
+  "officialURL": "https://pvme.io/pvme-guides/editor-resources/editor-references/preset-maker/",
+  "responseURL": "https://pvme.io/pvme-guides/editor-resources/editor-references/preset-maker/",
+  "status": "captured",
+  "statusCode": 200,
+  "retrievedAt": "2026-11-16T00:26:49.217Z",
+  "sitemapLastmod": "2026-11-15",
+  "sitemapSha256": "7166472554d36bfc69a7e14f7298264c0f9bfac00dc9034e5bfd0fba58a14b07",
+  "kind": "guide",
+  "audience": "editor",
+  "title": "PvME/Contributing/Preset Maker",
+  "titleStatus": "existing-exact-url",
+  "baselineId": "pvme-guides--editor-resources--editor-references--preset-maker",
+  "sourceTitle": "Introduction",
+  "sourceH1": null,
+  "discovery": "official-sitemap",
+  "directory": "guides/pvme-guides--editor-resources--editor-references--preset-maker",
+  "sourceSha256": "60f86cdf8d6a367bba830dacd7809fe32dd003f8e6587f967538dab6d25c0cbf",
+  "bodySha256": "60f86cdf8d6a367bba830dacd7809fe32dd003f8e6587f967538dab6d25c0cbf",
+  "normalizedTextSha256": "3daaddea588d7c158f19ebd10cf2057caa8ede1b92266b2ca29d25e01f967177",
+  "parser": "parse5 8.1.1; entities 9.0.0; sourceCodeLocationInfo",
+  "headers": {
+    "accept-ranges": "bytes",
+    "access-control-allow-origin": "*",
+    "age": "0",
+    "cache-control": "max-age=600",
+    "connection": "keep-alive",
+    "content-encoding": "gzip",
+    "content-length": "15661",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Mon, 16 Nov 2026 00:26:49 GMT",
+    "etag": "W/\"6afa1a34-29879\"",
+    "expires": "Mon, 16 Nov 2026 00:36:49 GMT",
+    "last-modified": "Sun, 15 Nov 2026 20:46:44 GMT",
+    "server": "GitHub.com",
+    "strict-transport-security": "max-age=31556952",
+    "vary": "Accept-Encoding",
+    "via": "1.1 varnish",
+    "x-cache": "MISS",
+    "x-cache-hits": "0",
+    "x-fastly-request-id": "c0b875a026ea3b0275a4d377076064097324c5fc",
+    "x-github-edge-region": "iad",
+    "x-github-request-id": "3752:B6E4:3E5718B:444166A:6AFA4DC9",
+    "x-origin-cache": "HIT",
+    "x-proxy-cache": "MISS",
+    "x-served-by": "cache-iad-khef600037-IAD",
+    "x-timer": "S1794788810.690626,VS0,VE23"
+  },
+  "hashes": {
+    "responseSha256": "ad6ee825f2e38b18d1b314fc833c2a5b96a4234adac3f35d320f52ce79866061",
+    "articleSha256": "60f86cdf8d6a367bba830dacd7809fe32dd003f8e6587f967538dab6d25c0cbf",
+    "textSha256": "822aab813f3995545d4623cd9f628681b8819410df72ef656fb691bcecaf4dc1",
+    "normalizedTextSha256": "3daaddea588d7c158f19ebd10cf2057caa8ede1b92266b2ca29d25e01f967177"
+  },
+  "counts": {
+    "bytes": 170105,
+    "articleBytes": 4269,
+    "nodes": 166,
+    "topLevelNodes": 72,
+    "words": 410,
+    "images": 6,
+    "videos": 5,
+    "sources": 5,
+    "links": 5
+  },
+  "tags": {
+    "h2": 4,
+    "ins": 4,
+    "p": 27,
+    "strong": 12,
+    "a": 5,
+    "img": 6,
+    "video": 5,
+    "source": 5
+  },
+  "mediaHosts": {
+    "img.pvme.io": 8,
+    "cdn.discordapp.com": 3
+  },
+  "patterns": [
+    "no-direct-h1-start-at-first-source-content-after-editor-utility",
+    "linked-preset-content-external-to-html"
+  ],
+  "media": [
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/kWUpaX5GjO.png"
+      },
+      "text": "",
+      "location": {
+        "start": 165130,
+        "end": 165197
+      }
+    },
+    {
+      "tag": "video",
+      "attrs": {
+        "class": "media",
+        "loop": "",
+        "muted": "",
+        "controls": ""
+      },
+      "text": "",
+      "location": {
+        "start": 165797,
+        "end": 165902
+      }
+    },
+    {
+      "tag": "source",
+      "attrs": {
+        "src": "https://img.pvme.io/images/Tih0Kzi13s.mp4"
+      },
+      "text": "",
+      "location": {
+        "start": 165838,
+        "end": 165894
+      }
+    },
+    {
+      "tag": "video",
+      "attrs": {
+        "class": "media",
+        "loop": "",
+        "muted": "",
+        "controls": ""
+      },
+      "text": "",
+      "location": {
+        "start": 165988,
+        "end": 166093
+      }
+    },
+    {
+      "tag": "source",
+      "attrs": {
+        "src": "https://img.pvme.io/images/JyXbC3krgg.mp4"
+      },
+      "text": "",
+      "location": {
+        "start": 166029,
+        "end": 166085
+      }
+    },
+    {
+      "tag": "video",
+      "attrs": {
+        "class": "media",
+        "loop": "",
+        "muted": "",
+        "controls": ""
+      },
+      "text": "",
+      "location": {
+        "start": 166442,
+        "end": 166547
+      }
+    },
+    {
+      "tag": "source",
+      "attrs": {
+        "src": "https://img.pvme.io/images/nQO9WEgEZZ.mp4"
+      },
+      "text": "",
+      "location": {
+        "start": 166483,
+        "end": 166539
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/a1xc1Ca.png"
+      },
+      "text": "",
+      "location": {
+        "start": 166742,
+        "end": 166806
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "blueblubber",
+        "class": "d-emoji",
+        "alt": "blueblubber",
+        "src": "https://cdn.discordapp.com/emojis/689530593742291033.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 166989,
+        "end": 167115
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "spiritualprayer",
+        "class": "d-emoji",
+        "alt": "spiritualprayer",
+        "src": "https://cdn.discordapp.com/emojis/651079281882955787.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 167116,
+        "end": 167250
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "portentofrestorationx",
+        "class": "d-emoji",
+        "alt": "portentofrestorationx",
+        "src": "https://cdn.discordapp.com/emojis/974503666352525312.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 167251,
+        "end": 167397
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/8GQfprD.png"
+      },
+      "text": "",
+      "location": {
+        "start": 167405,
+        "end": 167469
+      }
+    },
+    {
+      "tag": "video",
+      "attrs": {
+        "class": "media",
+        "loop": "",
+        "muted": "",
+        "controls": ""
+      },
+      "text": "",
+      "location": {
+        "start": 167599,
+        "end": 167704
+      }
+    },
+    {
+      "tag": "source",
+      "attrs": {
+        "src": "https://img.pvme.io/images/dYhrbS86tW.mp4"
+      },
+      "text": "",
+      "location": {
+        "start": 167640,
+        "end": 167696
+      }
+    },
+    {
+      "tag": "video",
+      "attrs": {
+        "class": "media",
+        "loop": "",
+        "muted": "",
+        "controls": ""
+      },
+      "text": "",
+      "location": {
+        "start": 168199,
+        "end": 168304
+      }
+    },
+    {
+      "tag": "source",
+      "attrs": {
+        "src": "https://img.pvme.io/images/c9abKcCH9l.mp4"
+      },
+      "text": "",
+      "location": {
+        "start": 168240,
+        "end": 168296
+      }
+    }
+  ],
+  "links": [
+    {
+      "href": "",
+      "text": "#unknown-channel",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 164456,
+        "end": 164508
+      }
+    },
+    {
+      "href": "https://pvme.github.io/preset-maker/",
+      "text": "https://pvme.github.io/preset-maker/",
+      "attrs": {
+        "href": "https://pvme.github.io/preset-maker/"
+      },
+      "location": {
+        "start": 164646,
+        "end": 164733
+      }
+    },
+    {
+      "href": "",
+      "text": "#editors-chat",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 164811,
+        "end": 164860
+      }
+    },
+    {
+      "href": "",
+      "text": "#guide-media-upload-and-request",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 166319,
+        "end": 166386
+      }
+    },
+    {
+      "href": "",
+      "text": "#bot-test",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 166391,
+        "end": 166436
+      }
+    }
+  ],
+  "files": {
+    "source": "guides/pvme-guides--editor-resources--editor-references--preset-maker/source.json",
+    "inventory": "guides/pvme-guides--editor-resources--editor-references--preset-maker/inventory.json",
+    "article": "guides/pvme-guides--editor-resources--editor-references--preset-maker/article.html",
+    "response": "guides/pvme-guides--editor-resources--editor-references--preset-maker/response.html",
+    "metadata": "guides/pvme-guides--editor-resources--editor-references--preset-maker/metadata.json"
+  },
+  "limitations": [
+    "Exact HTTP article preserved, not dynamic preset/item/API data or image/video-only information.",
+    "No media availability, browser layout, semantic equivalence or live wiki revision parity claim."
+  ]
+}

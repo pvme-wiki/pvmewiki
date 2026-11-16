@@ -1,0 +1,795 @@
+[
+  {
+    "nodeName": "h1",
+    "tag": "h1",
+    "attrs": {
+      "id": "how-the-site-works"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 165964,
+      "end": 166015
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "How The Site Works",
+        "location": {
+          "start": 165992,
+          "end": 166010
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 166015,
+      "end": 166016
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 166016,
+      "end": 166113
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "Full process on ",
+        "location": {
+          "start": 166019,
+          "end": 166035
+        }
+      },
+      {
+        "nodeName": "a",
+        "tag": "a",
+        "attrs": {
+          "href": "https://github.com/pvme/pvme.github.io"
+        },
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 166035,
+          "end": 166094
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Github",
+            "location": {
+              "start": 166084,
+              "end": 166090
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": ", and in short:",
+        "location": {
+          "start": 166094,
+          "end": 166109
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 166113,
+      "end": 166114
+    }
+  },
+  {
+    "nodeName": "ol",
+    "tag": "ol",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 166114,
+      "end": 166450
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 166118,
+          "end": 166119
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 166119,
+          "end": 166246
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Gather the ",
+            "location": {
+              "start": 166123,
+              "end": 166134
+            }
+          },
+          {
+            "nodeName": "code",
+            "tag": "code",
+            "attrs": {},
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "location": {
+              "start": 166134,
+              "end": 166151
+            },
+            "children": [
+              {
+                "nodeName": "#text",
+                "text": ".txt",
+                "location": {
+                  "start": 166140,
+                  "end": 166144
+                }
+              }
+            ]
+          },
+          {
+            "nodeName": "#text",
+            "text": " guides from the ",
+            "location": {
+              "start": 166151,
+              "end": 166168
+            }
+          },
+          {
+            "nodeName": "a",
+            "tag": "a",
+            "attrs": {
+              "href": "https://github.com/pvme/pvme-guides"
+            },
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "location": {
+              "start": 166168,
+              "end": 166240
+            },
+            "children": [
+              {
+                "nodeName": "#text",
+                "text": "pvme-guides repository",
+                "location": {
+                  "start": 166214,
+                  "end": 166236
+                }
+              }
+            ]
+          },
+          {
+            "nodeName": "#text",
+            "text": ".",
+            "location": {
+              "start": 166240,
+              "end": 166241
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 166246,
+          "end": 166247
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 166247,
+          "end": 166304
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Format ",
+            "location": {
+              "start": 166251,
+              "end": 166258
+            }
+          },
+          {
+            "nodeName": "code",
+            "tag": "code",
+            "attrs": {},
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "location": {
+              "start": 166258,
+              "end": 166275
+            },
+            "children": [
+              {
+                "nodeName": "#text",
+                "text": ".txt",
+                "location": {
+                  "start": 166264,
+                  "end": 166268
+                }
+              }
+            ]
+          },
+          {
+            "nodeName": "#text",
+            "text": " -> ",
+            "location": {
+              "start": 166275,
+              "end": 166282
+            }
+          },
+          {
+            "nodeName": "code",
+            "tag": "code",
+            "attrs": {},
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "location": {
+              "start": 166282,
+              "end": 166298
+            },
+            "children": [
+              {
+                "nodeName": "#text",
+                "text": ".md",
+                "location": {
+                  "start": 166288,
+                  "end": 166291
+                }
+              }
+            ]
+          },
+          {
+            "nodeName": "#text",
+            "text": ".",
+            "location": {
+              "start": 166298,
+              "end": 166299
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 166304,
+          "end": 166305
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 166305,
+          "end": 166444
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Build the website from the ",
+            "location": {
+              "start": 166309,
+              "end": 166336
+            }
+          },
+          {
+            "nodeName": "code",
+            "tag": "code",
+            "attrs": {},
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "location": {
+              "start": 166336,
+              "end": 166352
+            },
+            "children": [
+              {
+                "nodeName": "#text",
+                "text": ".md",
+                "location": {
+                  "start": 166342,
+                  "end": 166345
+                }
+              }
+            ]
+          },
+          {
+            "nodeName": "#text",
+            "text": " files using ",
+            "location": {
+              "start": 166352,
+              "end": 166365
+            }
+          },
+          {
+            "nodeName": "a",
+            "tag": "a",
+            "attrs": {
+              "href": "https://squidfunk.github.io/mkdocs-material"
+            },
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "location": {
+              "start": 166365,
+              "end": 166438
+            },
+            "children": [
+              {
+                "nodeName": "#text",
+                "text": "MKDocs Material",
+                "location": {
+                  "start": 166419,
+                  "end": 166434
+                }
+              }
+            ]
+          },
+          {
+            "nodeName": "#text",
+            "text": ".",
+            "location": {
+              "start": 166438,
+              "end": 166439
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 166444,
+          "end": 166445
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 166450,
+      "end": 166451
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "limitations"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 166451,
+      "end": 166488
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "Limitations",
+        "location": {
+          "start": 166472,
+          "end": 166483
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 166488,
+      "end": 166489
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 166489,
+      "end": 166593
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "First and foremost, the guides on the website are always up-to-date with the PvME Discord Server.",
+        "location": {
+          "start": 166492,
+          "end": 166589
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 166593,
+      "end": 166594
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 166594,
+      "end": 166743
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "This is because both are using the ",
+        "location": {
+          "start": 166597,
+          "end": 166632
+        }
+      },
+      {
+        "nodeName": "code",
+        "tag": "code",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 166632,
+          "end": 166649
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": ".txt",
+            "location": {
+              "start": 166638,
+              "end": 166642
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": " guides from the ",
+        "location": {
+          "start": 166649,
+          "end": 166666
+        }
+      },
+      {
+        "nodeName": "a",
+        "tag": "a",
+        "attrs": {
+          "href": "https://github.com/pvme/pvme-guides"
+        },
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 166666,
+          "end": 166738
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "pvme-guides repository",
+            "location": {
+              "start": 166712,
+              "end": 166734
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": ".",
+        "location": {
+          "start": 166738,
+          "end": 166739
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 166743,
+      "end": 166744
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 166744,
+      "end": 166887
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "With that being said, the ",
+        "location": {
+          "start": 166747,
+          "end": 166773
+        }
+      },
+      {
+        "nodeName": "code",
+        "tag": "code",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 166773,
+          "end": 166790
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": ".txt",
+            "location": {
+              "start": 166779,
+              "end": 166783
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": " formatting is primarily aimed at Discord which can lead to some content showing incorrectly:",
+        "location": {
+          "start": 166790,
+          "end": 166883
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 166887,
+      "end": 166888
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 166888,
+      "end": 167046
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 166892,
+          "end": 166893
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 166893,
+          "end": 166997
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "References to social Discord exclusive channels (",
+            "location": {
+              "start": 166897,
+              "end": 166946
+            }
+          },
+          {
+            "nodeName": "a",
+            "tag": "a",
+            "attrs": {
+              "href": "",
+              "class": "inactiveLink"
+            },
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "location": {
+              "start": 166946,
+              "end": 166991
+            },
+            "children": [
+              {
+                "nodeName": "#text",
+                "text": "#pvm-help",
+                "location": {
+                  "start": 166978,
+                  "end": 166987
+                }
+              }
+            ]
+          },
+          {
+            "nodeName": "#text",
+            "text": ")",
+            "location": {
+              "start": 166991,
+              "end": 166992
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 166997,
+          "end": 166998
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 166998,
+          "end": 167040
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Mentions of ",
+            "location": {
+              "start": 167002,
+              "end": 167014
+            }
+          },
+          {
+            "nodeName": "code",
+            "tag": "code",
+            "attrs": {},
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "location": {
+              "start": 167014,
+              "end": 167035
+            },
+            "children": [
+              {
+                "nodeName": "#text",
+                "text": "$linkmsg",
+                "location": {
+                  "start": 167020,
+                  "end": 167028
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 167040,
+          "end": 167041
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 167046,
+      "end": 167047
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 167047,
+      "end": 167153
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "I try to stay ahead of this by adding formatting rules that exclude or change Discord-only content.",
+        "location": {
+          "start": 167050,
+          "end": 167149
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 167153,
+      "end": 167154
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 167154,
+      "end": 167319
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "If you find any formatting issues, please message me on Discord (Pleb#0025) or create an issue on ",
+        "location": {
+          "start": 167157,
+          "end": 167255
+        }
+      },
+      {
+        "nodeName": "a",
+        "tag": "a",
+        "attrs": {
+          "href": "https://github.com/pvme/pvme.github.io"
+        },
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 167255,
+          "end": 167314
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Github",
+            "location": {
+              "start": 167304,
+              "end": 167310
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": ".",
+        "location": {
+          "start": 167314,
+          "end": 167315
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n      \n    ",
+    "location": {
+      "start": 167319,
+      "end": 167331
+    }
+  }
+]

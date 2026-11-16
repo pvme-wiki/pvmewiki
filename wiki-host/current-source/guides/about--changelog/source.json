@@ -1,0 +1,5369 @@
+[
+  {
+    "nodeName": "h1",
+    "tag": "h1",
+    "attrs": {
+      "id": "changelog"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 179012,
+      "end": 179045
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "Changelog",
+        "location": {
+          "start": 179031,
+          "end": 179040
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 179045,
+      "end": 179046
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 179046,
+      "end": 179077
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "Updates for the website.",
+        "location": {
+          "start": 179049,
+          "end": 179073
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 179077,
+      "end": 179078
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 179078,
+      "end": 179231
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "For bugs or feature requests, message me on Discord (Pleb#0025) or create an issue on ",
+        "location": {
+          "start": 179081,
+          "end": 179167
+        }
+      },
+      {
+        "nodeName": "a",
+        "tag": "a",
+        "attrs": {
+          "href": "https://github.com/pvme/pvme.github.io"
+        },
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 179167,
+          "end": 179226
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Github",
+            "location": {
+              "start": 179216,
+              "end": 179222
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": ".",
+        "location": {
+          "start": 179226,
+          "end": 179227
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 179231,
+      "end": 179232
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "november-28-2025"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 179232,
+      "end": 179280
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "November 28, 2025",
+        "location": {
+          "start": 179258,
+          "end": 179275
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 179280,
+      "end": 179281
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 179281,
+      "end": 179469
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 179285,
+          "end": 179286
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 179286,
+          "end": 179336
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Support rendering preset maker embed urls",
+            "location": {
+              "start": 179290,
+              "end": 179331
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 179336,
+          "end": 179337
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 179337,
+          "end": 179365
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Updated depedencies",
+            "location": {
+              "start": 179341,
+              "end": 179360
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 179365,
+          "end": 179366
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 179366,
+          "end": 179430
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Bugfix: empty ",
+            "location": {
+              "start": 179370,
+              "end": 179384
+            }
+          },
+          {
+            "nodeName": "code",
+            "tag": "code",
+            "attrs": {},
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "location": {
+              "start": 179384,
+              "end": 179397
+            },
+            "children": []
+          },
+          {
+            "nodeName": "#text",
+            "text": " for ",
+            "location": {
+              "start": 179397,
+              "end": 179402
+            }
+          },
+          {
+            "nodeName": "code",
+            "tag": "code",
+            "attrs": {},
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "location": {
+              "start": 179402,
+              "end": 179425
+            },
+            "children": [
+              {
+                "nodeName": "#text",
+                "text": "#pvme-help",
+                "location": {
+                  "start": 179408,
+                  "end": 179418
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 179430,
+          "end": 179431
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 179431,
+          "end": 179463
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Removed \"Testing\" guide",
+            "location": {
+              "start": 179435,
+              "end": 179458
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 179463,
+          "end": 179464
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 179469,
+      "end": 179470
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "november-30-2024"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 179470,
+      "end": 179518
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "November 30, 2024",
+        "location": {
+          "start": 179496,
+          "end": 179513
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 179518,
+      "end": 179519
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 179519,
+      "end": 179635
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 179523,
+          "end": 179524
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 179524,
+          "end": 179629
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "unlinked social channel and forum names now always up to date (support new channels.json format)",
+            "location": {
+              "start": 179528,
+              "end": 179624
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 179629,
+          "end": 179630
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 179635,
+      "end": 179636
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "november-23-2024"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 179636,
+      "end": 179684
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "November 23, 2024",
+        "location": {
+          "start": 179662,
+          "end": 179679
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 179684,
+      "end": 179685
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 179685,
+      "end": 179820
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 179689,
+          "end": 179690
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 179690,
+          "end": 179759
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Updated various #unknown-channel to show actual channel name",
+            "location": {
+              "start": 179694,
+              "end": 179754
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 179759,
+          "end": 179760
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 179760,
+          "end": 179814
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "youtube.com/live show embed preview correctly",
+            "location": {
+              "start": 179764,
+              "end": 179809
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 179814,
+          "end": 179815
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 179820,
+      "end": 179821
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "july-4-2024"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 179821,
+      "end": 179859
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "July 4, 2024",
+        "location": {
+          "start": 179842,
+          "end": 179854
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 179859,
+      "end": 179860
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 179860,
+      "end": 179956
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 179864,
+          "end": 179865
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 179865,
+          "end": 179950
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Added support for pvme spreadsheet cell alias (prices shown correctly again)",
+            "location": {
+              "start": 179869,
+              "end": 179945
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 179950,
+          "end": 179951
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 179956,
+      "end": 179957
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "june-28-2024"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 179957,
+      "end": 179997
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "June 28, 2024",
+        "location": {
+          "start": 179979,
+          "end": 179992
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 179997,
+      "end": 179998
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 179998,
+      "end": 180082
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 180002,
+          "end": 180003
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 180003,
+          "end": 180042
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Added \"edit this guide\" button",
+            "location": {
+              "start": 180007,
+              "end": 180037
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 180042,
+          "end": 180043
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 180043,
+          "end": 180076
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Change #user -> @user",
+            "location": {
+              "start": 180047,
+              "end": 180071
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 180076,
+          "end": 180077
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 180082,
+      "end": 180083
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "june-15-2024"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 180083,
+      "end": 180123
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "June 15, 2024",
+        "location": {
+          "start": 180105,
+          "end": 180118
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 180123,
+      "end": 180124
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 180124,
+      "end": 180199
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 180128,
+          "end": 180129
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 180129,
+          "end": 180193
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Fixed issue with duplicate titles and improved headings",
+            "location": {
+              "start": 180133,
+              "end": 180188
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 180193,
+          "end": 180194
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 180199,
+      "end": 180200
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "may-3-2024"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 180200,
+      "end": 180236
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "May 3, 2024",
+        "location": {
+          "start": 180220,
+          "end": 180231
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 180236,
+      "end": 180237
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 180237,
+      "end": 180312
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 180241,
+          "end": 180242
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 180242,
+          "end": 180306
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Updated mkdocs and other dependencies to latest version",
+            "location": {
+              "start": 180246,
+              "end": 180301
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 180306,
+          "end": 180307
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 180312,
+      "end": 180313
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "april-2-2024"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 180313,
+      "end": 180353
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "April 2, 2024",
+        "location": {
+          "start": 180335,
+          "end": 180348
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 180353,
+      "end": 180354
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 180354,
+      "end": 180432
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 180358,
+          "end": 180359
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 180359,
+          "end": 180426
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Fixed markdown links with )) not being formatted correctly",
+            "location": {
+              "start": 180363,
+              "end": 180421
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 180426,
+          "end": 180427
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 180432,
+      "end": 180433
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "november-9-2023"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 180433,
+      "end": 180479
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "November 9, 2023",
+        "location": {
+          "start": 180458,
+          "end": 180474
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 180479,
+      "end": 180480
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 180480,
+      "end": 180542
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 180484,
+          "end": 180485
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 180485,
+          "end": 180513
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Updated social card",
+            "location": {
+              "start": 180489,
+              "end": 180508
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 180513,
+          "end": 180514
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 180514,
+          "end": 180536
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "New PVME logo",
+            "location": {
+              "start": 180518,
+              "end": 180531
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 180536,
+          "end": 180537
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 180542,
+      "end": 180543
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "april-16-2023"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 180543,
+      "end": 180585
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "April 16, 2023",
+        "location": {
+          "start": 180566,
+          "end": 180580
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 180585,
+      "end": 180586
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 180586,
+      "end": 180691
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 180590,
+          "end": 180591
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 180591,
+          "end": 180685
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Urls and other formatting now disabled when text is in ",
+            "location": {
+              "start": 180595,
+              "end": 180650
+            }
+          },
+          {
+            "nodeName": "code",
+            "tag": "code",
+            "attrs": {},
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "location": {
+              "start": 180650,
+              "end": 180680
+            },
+            "children": [
+              {
+                "nodeName": "#text",
+                "text": "inline code field",
+                "location": {
+                  "start": 180656,
+                  "end": 180673
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 180685,
+          "end": 180686
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 180691,
+      "end": 180692
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "april-6-2023"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 180692,
+      "end": 180732
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "April 6, 2023",
+        "location": {
+          "start": 180714,
+          "end": 180727
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 180732,
+      "end": 180733
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 180733,
+      "end": 180900
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 180737,
+          "end": 180738
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 180738,
+          "end": 180791
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Added \"Editor Info\" and \"Mastery\" categories",
+            "location": {
+              "start": 180742,
+              "end": 180786
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 180791,
+          "end": 180792
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 180792,
+          "end": 180813
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Updated logo",
+            "location": {
+              "start": 180796,
+              "end": 180808
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 180813,
+          "end": 180814
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 180814,
+          "end": 180894
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Fixed some roles that weren't rendered because of a different ID length",
+            "location": {
+              "start": 180818,
+              "end": 180889
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 180894,
+          "end": 180895
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 180900,
+      "end": 180901
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "november-13-2022"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 180901,
+      "end": 180950
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "November, 13, 2022",
+        "location": {
+          "start": 180927,
+          "end": 180945
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 180950,
+      "end": 180951
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 180951,
+      "end": 181137
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 180955,
+          "end": 180956
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 180956,
+          "end": 181029
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Reorganized about and home page (improves navigation on mobile).",
+            "location": {
+              "start": 180960,
+              "end": 181024
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 181029,
+          "end": 181030
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 181030,
+          "end": 181059
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Better alias support",
+            "location": {
+              "start": 181034,
+              "end": 181054
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 181059,
+          "end": 181060
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 181060,
+          "end": 181106
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Alias for forums/words/extra channels",
+            "location": {
+              "start": 181064,
+              "end": 181101
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 181106,
+          "end": 181107
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 181107,
+          "end": 181131
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Category emojis",
+            "location": {
+              "start": 181111,
+              "end": 181126
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 181131,
+          "end": 181132
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 181137,
+      "end": 181138
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "november-5-2022"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 181138,
+      "end": 181185
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "November, 5, 2022",
+        "location": {
+          "start": 181163,
+          "end": 181180
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 181185,
+      "end": 181186
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 181186,
+      "end": 181541
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 181190,
+          "end": 181191
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 181191,
+          "end": 181428
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "New site structure:",
+            "location": {
+              "start": 181195,
+              "end": 181214
+            }
+          },
+          {
+            "nodeName": "ul",
+            "tag": "ul",
+            "attrs": {},
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "location": {
+              "start": 181214,
+              "end": 181422
+            },
+            "children": [
+              {
+                "nodeName": "#text",
+                "text": "\n",
+                "location": {
+                  "start": 181218,
+                  "end": 181219
+                }
+              },
+              {
+                "nodeName": "li",
+                "tag": "li",
+                "attrs": {},
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "location": {
+                  "start": 181219,
+                  "end": 181266
+                },
+                "children": [
+                  {
+                    "nodeName": "#text",
+                    "text": "Categories now on the top of the page.",
+                    "location": {
+                      "start": 181223,
+                      "end": 181261
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeName": "#text",
+                "text": "\n",
+                "location": {
+                  "start": 181266,
+                  "end": 181267
+                }
+              },
+              {
+                "nodeName": "li",
+                "tag": "li",
+                "attrs": {},
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "location": {
+                  "start": 181267,
+                  "end": 181298
+                },
+                "children": [
+                  {
+                    "nodeName": "#text",
+                    "text": "Added category aliases",
+                    "location": {
+                      "start": 181271,
+                      "end": 181293
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeName": "#text",
+                "text": "\n",
+                "location": {
+                  "start": 181298,
+                  "end": 181299
+                }
+              },
+              {
+                "nodeName": "li",
+                "tag": "li",
+                "attrs": {},
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "location": {
+                  "start": 181299,
+                  "end": 181328
+                },
+                "children": [
+                  {
+                    "nodeName": "#text",
+                    "text": "Updated \"about\" page",
+                    "location": {
+                      "start": 181303,
+                      "end": 181323
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeName": "#text",
+                "text": "\n",
+                "location": {
+                  "start": 181328,
+                  "end": 181329
+                }
+              },
+              {
+                "nodeName": "li",
+                "tag": "li",
+                "attrs": {},
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "location": {
+                  "start": 181329,
+                  "end": 181369
+                },
+                "children": [
+                  {
+                    "nodeName": "#text",
+                    "text": "Added \"how the site works\" page",
+                    "location": {
+                      "start": 181333,
+                      "end": 181364
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeName": "#text",
+                "text": "\n",
+                "location": {
+                  "start": 181369,
+                  "end": 181370
+                }
+              },
+              {
+                "nodeName": "li",
+                "tag": "li",
+                "attrs": {},
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "location": {
+                  "start": 181370,
+                  "end": 181416
+                },
+                "children": [
+                  {
+                    "nodeName": "#text",
+                    "text": "Included changelog to the site itself",
+                    "location": {
+                      "start": 181374,
+                      "end": 181411
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeName": "#text",
+                "text": "\n",
+                "location": {
+                  "start": 181416,
+                  "end": 181417
+                }
+              }
+            ]
+          },
+          {
+            "nodeName": "#text",
+            "text": "\n",
+            "location": {
+              "start": 181422,
+              "end": 181423
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 181428,
+          "end": 181429
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 181429,
+          "end": 181535
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Generated pages are now appended to mkdocs.yaml ",
+            "location": {
+              "start": 181433,
+              "end": 181481
+            }
+          },
+          {
+            "nodeName": "code",
+            "tag": "code",
+            "attrs": {},
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "location": {
+              "start": 181481,
+              "end": 181497
+            },
+            "children": [
+              {
+                "nodeName": "#text",
+                "text": "nav",
+                "location": {
+                  "start": 181487,
+                  "end": 181490
+                }
+              }
+            ]
+          },
+          {
+            "nodeName": "#text",
+            "text": " instead of fully overwriting it.",
+            "location": {
+              "start": 181497,
+              "end": 181530
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 181535,
+          "end": 181536
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 181541,
+      "end": 181542
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "november-1-2022"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 181542,
+      "end": 181589
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "November, 1, 2022",
+        "location": {
+          "start": 181567,
+          "end": 181584
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 181589,
+      "end": 181590
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 181590,
+      "end": 181797
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 181594,
+          "end": 181595
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 181595,
+          "end": 181697
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Moved ",
+            "location": {
+              "start": 181599,
+              "end": 181605
+            }
+          },
+          {
+            "nodeName": "code",
+            "tag": "code",
+            "attrs": {},
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "location": {
+              "start": 181605,
+              "end": 181633
+            },
+            "children": [
+              {
+                "nodeName": "#text",
+                "text": "\"(Courtesy of)\"",
+                "location": {
+                  "start": 181611,
+                  "end": 181626
+                }
+              }
+            ]
+          },
+          {
+            "nodeName": "#text",
+            "text": " to the line below headings to clean up the ToC on the side",
+            "location": {
+              "start": 181633,
+              "end": 181692
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 181697,
+          "end": 181698
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 181698,
+          "end": 181715
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "New logo",
+            "location": {
+              "start": 181702,
+              "end": 181710
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 181715,
+          "end": 181716
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 181716,
+          "end": 181791
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Removed various mentions of ToC in pins (only relevant to Discord)",
+            "location": {
+              "start": 181720,
+              "end": 181786
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 181791,
+          "end": 181792
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 181797,
+      "end": 181798
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "november-1-2022_1"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 181798,
+      "end": 181847
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "November, 1, 2022",
+        "location": {
+          "start": 181825,
+          "end": 181842
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 181847,
+      "end": 181848
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 181848,
+      "end": 181894
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 181852,
+          "end": 181853
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 181853,
+          "end": 181888
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Fixed some broken headings",
+            "location": {
+              "start": 181857,
+              "end": 181883
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 181888,
+          "end": 181889
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 181894,
+      "end": 181895
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "october-30-2022"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 181895,
+      "end": 181942
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "October, 30, 2022",
+        "location": {
+          "start": 181920,
+          "end": 181937
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 181942,
+      "end": 181943
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 181943,
+      "end": 182278
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 181947,
+          "end": 181948
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 181948,
+          "end": 182196
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Implemented new site generation",
+            "location": {
+              "start": 181952,
+              "end": 181983
+            }
+          },
+          {
+            "nodeName": "ul",
+            "tag": "ul",
+            "attrs": {},
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "location": {
+              "start": 181983,
+              "end": 182190
+            },
+            "children": [
+              {
+                "nodeName": "#text",
+                "text": "\n",
+                "location": {
+                  "start": 181987,
+                  "end": 181988
+                }
+              },
+              {
+                "nodeName": "li",
+                "tag": "li",
+                "attrs": {},
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "location": {
+                  "start": 181988,
+                  "end": 182041
+                },
+                "children": [
+                  {
+                    "nodeName": "#text",
+                    "text": "By default, guides are sorted alphabetically",
+                    "location": {
+                      "start": 181992,
+                      "end": 182036
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeName": "#text",
+                "text": "\n",
+                "location": {
+                  "start": 182041,
+                  "end": 182042
+                }
+              },
+              {
+                "nodeName": "li",
+                "tag": "li",
+                "attrs": {},
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "location": {
+                  "start": 182042,
+                  "end": 182184
+                },
+                "children": [
+                  {
+                    "nodeName": "#text",
+                    "text": "All guides will be included, even when the ",
+                    "location": {
+                      "start": 182046,
+                      "end": 182089
+                    }
+                  },
+                  {
+                    "nodeName": "a",
+                    "tag": "a",
+                    "attrs": {
+                      "href": "https://github.com/pvme/pvme-guides"
+                    },
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "location": {
+                      "start": 182089,
+                      "end": 182161
+                    },
+                    "children": [
+                      {
+                        "nodeName": "#text",
+                        "text": "pvme-guides repository",
+                        "location": {
+                          "start": 182135,
+                          "end": 182157
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "nodeName": "#text",
+                    "text": " structure changes",
+                    "location": {
+                      "start": 182161,
+                      "end": 182179
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeName": "#text",
+                "text": "\n",
+                "location": {
+                  "start": 182184,
+                  "end": 182185
+                }
+              }
+            ]
+          },
+          {
+            "nodeName": "#text",
+            "text": "\n",
+            "location": {
+              "start": 182190,
+              "end": 182191
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 182196,
+          "end": 182197
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 182197,
+          "end": 182272
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Fixed remaining broken links (will continue to work in the future)",
+            "location": {
+              "start": 182201,
+              "end": 182267
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 182272,
+          "end": 182273
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 182278,
+      "end": 182279
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "september-6-2022"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 182279,
+      "end": 182328
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "September, 6, 2022",
+        "location": {
+          "start": 182305,
+          "end": 182323
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 182328,
+      "end": 182329
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 182329,
+      "end": 183075
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 182333,
+          "end": 182334
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 182334,
+          "end": 182369
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Finished formatter rewrite",
+            "location": {
+              "start": 182338,
+              "end": 182364
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 182369,
+          "end": 182370
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 182370,
+          "end": 182729
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Embed changes",
+            "location": {
+              "start": 182374,
+              "end": 182387
+            }
+          },
+          {
+            "nodeName": "ul",
+            "tag": "ul",
+            "attrs": {},
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "location": {
+              "start": 182387,
+              "end": 182723
+            },
+            "children": [
+              {
+                "nodeName": "#text",
+                "text": "\n",
+                "location": {
+                  "start": 182391,
+                  "end": 182392
+                }
+              },
+              {
+                "nodeName": "li",
+                "tag": "li",
+                "attrs": {},
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "location": {
+                  "start": 182392,
+                  "end": 182474
+                },
+                "children": [
+                  {
+                    "nodeName": "#text",
+                    "text": "increased max width (if content fits on discord, it will fit on the site)",
+                    "location": {
+                      "start": 182396,
+                      "end": 182469
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeName": "#text",
+                "text": "\n",
+                "location": {
+                  "start": 182474,
+                  "end": 182475
+                }
+              },
+              {
+                "nodeName": "li",
+                "tag": "li",
+                "attrs": {},
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "location": {
+                  "start": 182475,
+                  "end": 182552
+                },
+                "children": [
+                  {
+                    "nodeName": "#text",
+                    "text": "fixed inline code formatting (correct font so width matches discord)",
+                    "location": {
+                      "start": 182479,
+                      "end": 182547
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeName": "#text",
+                "text": "\n",
+                "location": {
+                  "start": 182552,
+                  "end": 182553
+                }
+              },
+              {
+                "nodeName": "li",
+                "tag": "li",
+                "attrs": {},
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "location": {
+                  "start": 182553,
+                  "end": 182590
+                },
+                "children": [
+                  {
+                    "nodeName": "#text",
+                    "text": "darkened background slightly",
+                    "location": {
+                      "start": 182557,
+                      "end": 182585
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeName": "#text",
+                "text": "\n",
+                "location": {
+                  "start": 182590,
+                  "end": 182591
+                }
+              },
+              {
+                "nodeName": "li",
+                "tag": "li",
+                "attrs": {},
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "location": {
+                  "start": 182591,
+                  "end": 182669
+                },
+                "children": [
+                  {
+                    "nodeName": "#text",
+                    "text": "changed description font color to match that of the rest of the embed",
+                    "location": {
+                      "start": 182595,
+                      "end": 182664
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeName": "#text",
+                "text": "\n",
+                "location": {
+                  "start": 182669,
+                  "end": 182670
+                }
+              },
+              {
+                "nodeName": "li",
+                "tag": "li",
+                "attrs": {},
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "location": {
+                  "start": 182670,
+                  "end": 182717
+                },
+                "children": [
+                  {
+                    "nodeName": "#text",
+                    "text": "light mode looks the same as dark mode",
+                    "location": {
+                      "start": 182674,
+                      "end": 182712
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeName": "#text",
+                "text": "\n",
+                "location": {
+                  "start": 182717,
+                  "end": 182718
+                }
+              }
+            ]
+          },
+          {
+            "nodeName": "#text",
+            "text": "\n",
+            "location": {
+              "start": 182723,
+              "end": 182724
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 182729,
+          "end": 182730
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 182730,
+          "end": 182956
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Attachment url changes (videos/images)",
+            "location": {
+              "start": 182734,
+              "end": 182772
+            }
+          },
+          {
+            "nodeName": "ul",
+            "tag": "ul",
+            "attrs": {},
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "location": {
+              "start": 182772,
+              "end": 182950
+            },
+            "children": [
+              {
+                "nodeName": "#text",
+                "text": "\n",
+                "location": {
+                  "start": 182776,
+                  "end": 182777
+                }
+              },
+              {
+                "nodeName": "li",
+                "tag": "li",
+                "attrs": {},
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "location": {
+                  "start": 182777,
+                  "end": 182835
+                },
+                "children": [
+                  {
+                    "nodeName": "#text",
+                    "text": "removed autoplay option to improve page load time",
+                    "location": {
+                      "start": 182781,
+                      "end": 182830
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeName": "#text",
+                "text": "\n",
+                "location": {
+                  "start": 182835,
+                  "end": 182836
+                }
+              },
+              {
+                "nodeName": "li",
+                "tag": "li",
+                "attrs": {},
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "location": {
+                  "start": 182836,
+                  "end": 182885
+                },
+                "children": [
+                  {
+                    "nodeName": "#text",
+                    "text": "all videos have the same control options",
+                    "location": {
+                      "start": 182840,
+                      "end": 182880
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeName": "#text",
+                "text": "\n",
+                "location": {
+                  "start": 182885,
+                  "end": 182886
+                }
+              },
+              {
+                "nodeName": "li",
+                "tag": "li",
+                "attrs": {},
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "location": {
+                  "start": 182886,
+                  "end": 182944
+                },
+                "children": [
+                  {
+                    "nodeName": "#text",
+                    "text": "added more known url regexes to reduce build time",
+                    "location": {
+                      "start": 182890,
+                      "end": 182939
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeName": "#text",
+                "text": "\n",
+                "location": {
+                  "start": 182944,
+                  "end": 182945
+                }
+              }
+            ]
+          },
+          {
+            "nodeName": "#text",
+            "text": "\n",
+            "location": {
+              "start": 182950,
+              "end": 182951
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 182956,
+          "end": 182957
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 182957,
+          "end": 183069
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "bugfix with incorrect channel urls: ",
+            "location": {
+              "start": 182961,
+              "end": 182997
+            }
+          },
+          {
+            "nodeName": "a",
+            "tag": "a",
+            "attrs": {
+              "href": "https://github.com/pvme/pvme.github.io/issues/9"
+            },
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "location": {
+              "start": 182997,
+              "end": 183064
+            },
+            "children": [
+              {
+                "nodeName": "#text",
+                "text": "issue",
+                "location": {
+                  "start": 183055,
+                  "end": 183060
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 183069,
+          "end": 183070
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 183075,
+      "end": 183076
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "september-1-2022"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 183076,
+      "end": 183125
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "September, 1, 2022",
+        "location": {
+          "start": 183102,
+          "end": 183120
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 183125,
+      "end": 183126
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 183126,
+      "end": 183187
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 183130,
+          "end": 183131
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 183131,
+          "end": 183181
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Code blocks in embeds now shown correctly",
+            "location": {
+              "start": 183135,
+              "end": 183176
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 183181,
+          "end": 183182
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 183187,
+      "end": 183188
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "august-31-2022"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 183188,
+      "end": 183233
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "August, 31, 2022",
+        "location": {
+          "start": 183212,
+          "end": 183228
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 183233,
+      "end": 183234
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 183234,
+      "end": 183289
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 183238,
+          "end": 183239
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 183239,
+          "end": 183283
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Empty lines are now shown correctly",
+            "location": {
+              "start": 183243,
+              "end": 183278
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 183283,
+          "end": 183284
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 183289,
+      "end": 183290
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "august-30-2022"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 183290,
+      "end": 183335
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "August, 30, 2022",
+        "location": {
+          "start": 183314,
+          "end": 183330
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 183335,
+      "end": 183336
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 183336,
+      "end": 183569
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 183340,
+          "end": 183341
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 183341,
+          "end": 183506
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "PVME settings are now all obtained from pvme-settings and will be kept up to date mostly automatically and otherwise more frequently (users is still manual)",
+            "location": {
+              "start": 183345,
+              "end": 183501
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 183506,
+          "end": 183507
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 183507,
+          "end": 183563
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Various refactoring for PVME settings migration",
+            "location": {
+              "start": 183511,
+              "end": 183558
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 183563,
+          "end": 183564
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 183569,
+      "end": 183570
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "august-15-2022"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 183570,
+      "end": 183615
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "August, 15, 2022",
+        "location": {
+          "start": 183594,
+          "end": 183610
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 183615,
+      "end": 183616
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 183616,
+      "end": 183674
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 183620,
+          "end": 183621
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 183621,
+          "end": 183668
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Prices now updated correctly in embeds",
+            "location": {
+              "start": 183625,
+              "end": 183663
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 183668,
+          "end": 183669
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 183674,
+      "end": 183675
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "july-4-2022"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 183675,
+      "end": 183714
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "July, 4, 2022",
+        "location": {
+          "start": 183696,
+          "end": 183709
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 183714,
+      "end": 183715
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 183715,
+      "end": 183757
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 183719,
+          "end": 183720
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 183720,
+          "end": 183751
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "added Zamorak category",
+            "location": {
+              "start": 183724,
+              "end": 183746
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 183751,
+          "end": 183752
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 183757,
+      "end": 183758
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "june-20-2022"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 183758,
+      "end": 183799
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "June, 20, 2022",
+        "location": {
+          "start": 183780,
+          "end": 183794
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 183799,
+      "end": 183800
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 183800,
+      "end": 183829
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "Thanks to emmet-shark:",
+        "location": {
+          "start": 183803,
+          "end": 183825
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 183829,
+      "end": 183830
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 183830,
+      "end": 184120
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 183834,
+          "end": 183835
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 183835,
+          "end": 183977
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Added new category structure and guide names. The guide structure and names now always match the category + channel names in Discord ",
+            "location": {
+              "start": 183839,
+              "end": 183972
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 183977,
+          "end": 183978
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 183978,
+          "end": 184002
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Reduced spacing",
+            "location": {
+              "start": 183982,
+              "end": 183997
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 184002,
+          "end": 184003
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 184003,
+          "end": 184114
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "embed fixes",
+            "location": {
+              "start": 184007,
+              "end": 184018
+            }
+          },
+          {
+            "nodeName": "ul",
+            "tag": "ul",
+            "attrs": {},
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "location": {
+              "start": 184018,
+              "end": 184108
+            },
+            "children": [
+              {
+                "nodeName": "#text",
+                "text": "\n",
+                "location": {
+                  "start": 184022,
+                  "end": 184023
+                }
+              },
+              {
+                "nodeName": "li",
+                "tag": "li",
+                "attrs": {},
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "location": {
+                  "start": 184023,
+                  "end": 184055
+                },
+                "children": [
+                  {
+                    "nodeName": "#text",
+                    "text": "fix links inside embeds",
+                    "location": {
+                      "start": 184027,
+                      "end": 184050
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeName": "#text",
+                "text": "\n",
+                "location": {
+                  "start": 184055,
+                  "end": 184056
+                }
+              },
+              {
+                "nodeName": "li",
+                "tag": "li",
+                "attrs": {},
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "location": {
+                  "start": 184056,
+                  "end": 184102
+                },
+                "children": [
+                  {
+                    "nodeName": "#text",
+                    "text": "remove nonexistent footer embed icons",
+                    "location": {
+                      "start": 184060,
+                      "end": 184097
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeName": "#text",
+                "text": "\n",
+                "location": {
+                  "start": 184102,
+                  "end": 184103
+                }
+              }
+            ]
+          },
+          {
+            "nodeName": "#text",
+            "text": "\n",
+            "location": {
+              "start": 184108,
+              "end": 184109
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 184114,
+          "end": 184115
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 184120,
+      "end": 184121
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "june-15-2022"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 184121,
+      "end": 184162
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "June, 15, 2022",
+        "location": {
+          "start": 184143,
+          "end": 184157
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 184162,
+      "end": 184163
+    }
+  },
+  {
+    "nodeName": "p",
+    "tag": "p",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 184163,
+      "end": 184192
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "Thanks to emmet-shark:",
+        "location": {
+          "start": 184166,
+          "end": 184188
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 184192,
+      "end": 184193
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 184193,
+      "end": 184313
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 184197,
+          "end": 184198
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 184198,
+          "end": 184262
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Removed unnecessary ToC embed at the bottom of the page",
+            "location": {
+              "start": 184202,
+              "end": 184257
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 184262,
+          "end": 184263
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 184263,
+          "end": 184307
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Fixed a bunch of non-clickable urls",
+            "location": {
+              "start": 184267,
+              "end": 184302
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 184307,
+          "end": 184308
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 184313,
+      "end": 184314
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "august-9-2021"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 184314,
+      "end": 184357
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "August, 9, 2021",
+        "location": {
+          "start": 184337,
+          "end": 184352
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 184357,
+      "end": 184358
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 184358,
+      "end": 184454
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 184362,
+          "end": 184363
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 184363,
+          "end": 184404
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Updated invalid Discord channels",
+            "location": {
+              "start": 184367,
+              "end": 184399
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 184404,
+          "end": 184405
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 184405,
+          "end": 184448
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Added invite link url to home page",
+            "location": {
+              "start": 184409,
+              "end": 184443
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 184448,
+          "end": 184449
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 184454,
+      "end": 184455
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "august-6-2021"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 184455,
+      "end": 184498
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "August, 6, 2021",
+        "location": {
+          "start": 184478,
+          "end": 184493
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 184498,
+      "end": 184499
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 184499,
+      "end": 184719
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 184503,
+          "end": 184504
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 184504,
+          "end": 184572
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Added invalid discord channels as non-clickable links (WiP)",
+            "location": {
+              "start": 184508,
+              "end": 184567
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 184572,
+          "end": 184573
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 184573,
+          "end": 184606
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Added search suggestions",
+            "location": {
+              "start": 184577,
+              "end": 184601
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 184606,
+          "end": 184607
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 184607,
+          "end": 184641
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Added search highlighting",
+            "location": {
+              "start": 184611,
+              "end": 184636
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 184641,
+          "end": 184642
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 184642,
+          "end": 184677
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Added \"back to top\" button",
+            "location": {
+              "start": 184646,
+              "end": 184672
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 184677,
+          "end": 184678
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 184678,
+          "end": 184713
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Updated channels and users",
+            "location": {
+              "start": 184682,
+              "end": 184708
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 184713,
+          "end": 184714
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 184719,
+      "end": 184720
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "july-7-2021"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 184720,
+      "end": 184759
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "July, 7, 2021",
+        "location": {
+          "start": 184741,
+          "end": 184754
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 184759,
+      "end": 184760
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 184760,
+      "end": 184803
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 184764,
+          "end": 184765
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 184765,
+          "end": 184797
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Updated users and roles",
+            "location": {
+              "start": 184769,
+              "end": 184792
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 184797,
+          "end": 184798
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 184803,
+      "end": 184804
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "june-30-2021"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 184804,
+      "end": 184845
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "June, 30, 2021",
+        "location": {
+          "start": 184826,
+          "end": 184840
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 184845,
+      "end": 184846
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 184846,
+      "end": 184907
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 184850,
+          "end": 184851
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 184851,
+          "end": 184901
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Added Solak category and updated channels",
+            "location": {
+              "start": 184855,
+              "end": 184896
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 184901,
+          "end": 184902
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 184907,
+      "end": 184908
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "june-25-2021"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 184908,
+      "end": 184949
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "June, 25, 2021",
+        "location": {
+          "start": 184930,
+          "end": 184944
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 184949,
+      "end": 184950
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 184950,
+      "end": 185027
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 184954,
+          "end": 184955
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 184955,
+          "end": 185021
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Fixed bug with imgur.mp4 and imgur.jpg not being rendered",
+            "location": {
+              "start": 184959,
+              "end": 185016
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 185021,
+          "end": 185022
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 185027,
+      "end": 185028
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "june-10-2021"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 185028,
+      "end": 185069
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "June, 10, 2021",
+        "location": {
+          "start": 185050,
+          "end": 185064
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 185069,
+      "end": 185070
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 185070,
+      "end": 185220
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 185074,
+          "end": 185075
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 185075,
+          "end": 185214
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Added support for discord embeds ",
+            "location": {
+              "start": 185079,
+              "end": 185112
+            }
+          },
+          {
+            "nodeName": "a",
+            "tag": "a",
+            "attrs": {
+              "href": "https://pvme.io/pvme-guides/vorago/vorago-trio-hm/#safe-phases-10-11"
+            },
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "location": {
+              "start": 185112,
+              "end": 185209
+            },
+            "children": [
+              {
+                "nodeName": "#text",
+                "text": "vorago-trio-hm",
+                "location": {
+                  "start": 185191,
+                  "end": 185205
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 185214,
+          "end": 185215
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 185220,
+      "end": 185221
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "may-20-2021"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 185221,
+      "end": 185259
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "May 20, 2021",
+        "location": {
+          "start": 185242,
+          "end": 185254
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 185259,
+      "end": 185260
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 185260,
+      "end": 185412
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 185264,
+          "end": 185265
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 185265,
+          "end": 185300
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "fixed broken channel links",
+            "location": {
+              "start": 185269,
+              "end": 185295
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 185300,
+          "end": 185301
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 185301,
+          "end": 185346
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "updated missing roles/channels/users",
+            "location": {
+              "start": 185305,
+              "end": 185341
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 185346,
+          "end": 185347
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 185347,
+          "end": 185374
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "bugfix imgur links",
+            "location": {
+              "start": 185351,
+              "end": 185369
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 185374,
+          "end": 185375
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 185375,
+          "end": 185406
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "light/dark mode switch",
+            "location": {
+              "start": 185379,
+              "end": 185401
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 185406,
+          "end": 185407
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 185412,
+      "end": 185413
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "april-16-2021"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 185413,
+      "end": 185455
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "April 16, 2021",
+        "location": {
+          "start": 185436,
+          "end": 185450
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 185455,
+      "end": 185456
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 185456,
+      "end": 185529
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 185460,
+          "end": 185461
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 185461,
+          "end": 185523
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Added new categories (same structure as PVME Discord)",
+            "location": {
+              "start": 185465,
+              "end": 185518
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 185523,
+          "end": 185524
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 185529,
+      "end": 185530
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "march-22-2021"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 185530,
+      "end": 185572
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "March 22, 2021",
+        "location": {
+          "start": 185553,
+          "end": 185567
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 185572,
+      "end": 185573
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 185573,
+      "end": 185722
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 185577,
+          "end": 185578
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 185578,
+          "end": 185637
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Added support for emojis (standard discord emojis)",
+            "location": {
+              "start": 185582,
+              "end": 185632
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 185637,
+          "end": 185638
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 185638,
+          "end": 185683
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Updated missing roles/channels/users",
+            "location": {
+              "start": 185642,
+              "end": 185678
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 185683,
+          "end": 185684
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 185684,
+          "end": 185716
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Removed note for survey",
+            "location": {
+              "start": 185688,
+              "end": 185711
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 185716,
+          "end": 185717
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 185722,
+      "end": 185723
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "march-15-2021"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 185723,
+      "end": 185765
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "March 15, 2021",
+        "location": {
+          "start": 185746,
+          "end": 185760
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 185765,
+      "end": 185766
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 185766,
+      "end": 185853
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 185770,
+          "end": 185771
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 185771,
+          "end": 185816
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Updated missing roles/channels/users",
+            "location": {
+              "start": 185775,
+              "end": 185811
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 185816,
+          "end": 185817
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 185817,
+          "end": 185847
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Added note for survey",
+            "location": {
+              "start": 185821,
+              "end": 185842
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 185847,
+          "end": 185848
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 185853,
+      "end": 185854
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "january-9-2021"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 185854,
+      "end": 185898
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "January 9, 2021",
+        "location": {
+          "start": 185878,
+          "end": 185893
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 185898,
+      "end": 185899
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 185899,
+      "end": 186012
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 185903,
+          "end": 185904
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 185904,
+          "end": 185932
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Added colored roles",
+            "location": {
+              "start": 185908,
+              "end": 185927
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 185932,
+          "end": 185933
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 185933,
+          "end": 185971
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Updated missing Discord links",
+            "location": {
+              "start": 185937,
+              "end": 185966
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 185971,
+          "end": 185972
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 185972,
+          "end": 186006
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Added WiP Slayer Category",
+            "location": {
+              "start": 185976,
+              "end": 186001
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 186006,
+          "end": 186007
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 186012,
+      "end": 186013
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "january-4-2021"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 186013,
+      "end": 186057
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "January 4, 2021",
+        "location": {
+          "start": 186037,
+          "end": 186052
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 186057,
+      "end": 186058
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 186058,
+      "end": 186185
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 186062,
+          "end": 186063
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 186063,
+          "end": 186179
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Added, and enabled by default, debug logging to quickly check missing Discord links (check daily build log)",
+            "location": {
+              "start": 186067,
+              "end": 186174
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 186179,
+          "end": 186180
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 186185,
+      "end": 186186
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "december-18-2020"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 186186,
+      "end": 186234
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "December 18, 2020",
+        "location": {
+          "start": 186212,
+          "end": 186229
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 186234,
+      "end": 186235
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 186235,
+      "end": 186326
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 186239,
+          "end": 186240
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 186240,
+          "end": 186320
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "\"last updated on\" only on \"Home\" page (since the page is updated daily)",
+            "location": {
+              "start": 186244,
+              "end": 186315
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 186320,
+          "end": 186321
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 186326,
+      "end": 186327
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "december-17-2020"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 186327,
+      "end": 186375
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "December 17, 2020",
+        "location": {
+          "start": 186353,
+          "end": 186370
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 186375,
+      "end": 186376
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 186376,
+      "end": 186469
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 186380,
+          "end": 186381
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 186381,
+          "end": 186438
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Added support for ",
+            "location": {
+              "start": 186385,
+              "end": 186403
+            }
+          },
+          {
+            "nodeName": "del",
+            "tag": "del",
+            "attrs": {},
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "location": {
+              "start": 186403,
+              "end": 186428
+            },
+            "children": [
+              {
+                "nodeName": "#text",
+                "text": "strike-through",
+                "location": {
+                  "start": 186408,
+                  "end": 186422
+                }
+              }
+            ]
+          },
+          {
+            "nodeName": "#text",
+            "text": " text",
+            "location": {
+              "start": 186428,
+              "end": 186433
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 186438,
+          "end": 186439
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 186439,
+          "end": 186463
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Added changelog",
+            "location": {
+              "start": 186443,
+              "end": 186458
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 186463,
+          "end": 186464
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 186469,
+      "end": 186470
+    }
+  },
+  {
+    "nodeName": "h2",
+    "tag": "h2",
+    "attrs": {
+      "id": "december-16-2020"
+    },
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 186470,
+      "end": 186518
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "December 16, 2020",
+        "location": {
+          "start": 186496,
+          "end": 186513
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n",
+    "location": {
+      "start": 186518,
+      "end": 186519
+    }
+  },
+  {
+    "nodeName": "ul",
+    "tag": "ul",
+    "attrs": {},
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "location": {
+      "start": 186519,
+      "end": 186554
+    },
+    "children": [
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 186523,
+          "end": 186524
+        }
+      },
+      {
+        "nodeName": "li",
+        "tag": "li",
+        "attrs": {},
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "location": {
+          "start": 186524,
+          "end": 186548
+        },
+        "children": [
+          {
+            "nodeName": "#text",
+            "text": "Initial release",
+            "location": {
+              "start": 186528,
+              "end": 186543
+            }
+          }
+        ]
+      },
+      {
+        "nodeName": "#text",
+        "text": "\n",
+        "location": {
+          "start": 186548,
+          "end": 186549
+        }
+      }
+    ]
+  },
+  {
+    "nodeName": "#text",
+    "text": "\n      \n    ",
+    "location": {
+      "start": 186554,
+      "end": 186566
+    }
+  }
+]

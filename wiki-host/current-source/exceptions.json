@@ -1,0 +1,4996 @@
+{
+  "exceptions": [
+    {
+      "id": "pvme-guides--get-involved--making-suggestions",
+      "sourceURL": "https://pvme.io/pvme-guides/get-involved/making-suggestions/",
+      "unknownTags": [
+        {
+          "tag": "id:customize",
+          "attrs": {},
+          "location": {
+            "start": 165387,
+            "end": 165425
+          }
+        }
+      ],
+      "rawTextMarkup": [],
+      "rawVsParsedMedia": null
+    },
+    {
+      "id": "pvme-guides--getting-started--how-to-use-pvme",
+      "sourceURL": "https://pvme.io/pvme-guides/getting-started/how-to-use-pvme/",
+      "unknownTags": [
+        {
+          "tag": "id:customize",
+          "attrs": {},
+          "location": {
+            "start": 167010,
+            "end": 167048
+          }
+        },
+        {
+          "tag": "boss",
+          "attrs": {},
+          "location": {
+            "start": 171699,
+            "end": 180649
+          }
+        }
+      ],
+      "rawTextMarkup": [
+        {
+          "tag": "style",
+          "characters": 8935,
+          "location": {
+            "start": 171707,
+            "end": 171707
+          },
+          "note": "Raw-text node contains apparent later guide markup; do not silently drop it or claim rendered information parity."
+        }
+      ],
+      "rawVsParsedMedia": {
+        "rawMarkupOccurrences": {
+          "img": 28
+        },
+        "parsedNodes": {},
+        "tags": [
+          "img"
+        ],
+        "note": "Raw lexical counts can also include code examples. This flags review, not automatic repair."
+      }
+    }
+  ],
+  "headingImages": [
+    {
+      "id": "pvme-guides--afk--afk-blood-reavers",
+      "attrs": {
+        "title": "reaverpouch",
+        "class": "d-emoji",
+        "alt": "reaverpouch",
+        "src": "https://cdn.discordapp.com/emojis/839903693837959228.png?v=1"
+      },
+      "location": {
+        "start": 167706,
+        "end": 167832
+      }
+    },
+    {
+      "id": "pvme-guides--dpm-advice--dpm-advice-mage",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "location": {
+        "start": 171045,
+        "end": 171159
+      }
+    },
+    {
+      "id": "pvme-guides--dpm-advice--dpm-advice-melee",
+      "attrs": {
+        "title": "melee",
+        "class": "d-emoji",
+        "alt": "melee",
+        "src": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1"
+      },
+      "location": {
+        "start": 168654,
+        "end": 168769
+      }
+    },
+    {
+      "id": "pvme-guides--dpm-advice--dpm-advice-necro",
+      "attrs": {
+        "title": "necromancy",
+        "class": "d-emoji",
+        "alt": "necromancy",
+        "src": "https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1"
+      },
+      "location": {
+        "start": 169452,
+        "end": 169577
+      }
+    },
+    {
+      "id": "pvme-guides--dpm-advice--dpm-advice-range",
+      "attrs": {
+        "title": "range",
+        "class": "d-emoji",
+        "alt": "range",
+        "src": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1"
+      },
+      "location": {
+        "start": 170619,
+        "end": 170733
+      }
+    },
+    {
+      "id": "pvme-guides--getting-started--early-moneymaking-ideas",
+      "attrs": {
+        "title": "coins",
+        "class": "d-emoji",
+        "alt": "coins",
+        "src": "https://cdn.discordapp.com/emojis/698816156961603654.png?v=1"
+      },
+      "location": {
+        "start": 167464,
+        "end": 167578
+      }
+    },
+    {
+      "id": "pvme-guides--invention-and-perks--invention-basics",
+      "attrs": {
+        "title": "Invention",
+        "class": "d-emoji",
+        "alt": "Invention",
+        "src": "https://cdn.discordapp.com/emojis/689509250946695292.png?v=1"
+      },
+      "location": {
+        "start": 177444,
+        "end": 177566
+      }
+    },
+    {
+      "id": "pvme-guides--new-to-pvm--early-magic-upgrades",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "location": {
+        "start": 167945,
+        "end": 168059
+      }
+    },
+    {
+      "id": "pvme-guides--new-to-pvm--early-melee-upgrades",
+      "attrs": {
+        "title": "melee",
+        "class": "d-emoji",
+        "alt": "melee",
+        "src": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1"
+      },
+      "location": {
+        "start": 167953,
+        "end": 168068
+      }
+    },
+    {
+      "id": "pvme-guides--new-to-pvm--early-necromancy-upgrades",
+      "attrs": {
+        "title": "necromancy",
+        "class": "d-emoji",
+        "alt": "necromancy",
+        "src": "https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1"
+      },
+      "location": {
+        "start": 171016,
+        "end": 171141
+      }
+    },
+    {
+      "id": "pvme-guides--new-to-pvm--early-ranged-upgrades",
+      "attrs": {
+        "title": "range",
+        "class": "d-emoji",
+        "alt": "range",
+        "src": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1"
+      },
+      "location": {
+        "start": 167972,
+        "end": 168086
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--amascut--amascut-1000-2000-necromancy",
+      "attrs": {
+        "title": "necromancy",
+        "class": "d-emoji",
+        "alt": "necromancy",
+        "src": "https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1"
+      },
+      "location": {
+        "start": 164116,
+        "end": 164241
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--amascut--amascut-1000-magic-melee-base",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "location": {
+        "start": 164156,
+        "end": 164270
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--amascut--amascut-1000-magic-melee-base",
+      "attrs": {
+        "title": "melee",
+        "class": "d-emoji",
+        "alt": "melee",
+        "src": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1"
+      },
+      "location": {
+        "start": 164271,
+        "end": 164386
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--amascut--amascut-1000-magic-melee-dps",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "location": {
+        "start": 164149,
+        "end": 164263
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--amascut--amascut-1000-magic-melee-dps",
+      "attrs": {
+        "title": "melee",
+        "class": "d-emoji",
+        "alt": "melee",
+        "src": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1"
+      },
+      "location": {
+        "start": 164264,
+        "end": 164379
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--amascut--amascut-1000-ranged-melee-dps",
+      "attrs": {
+        "title": "range",
+        "class": "d-emoji",
+        "alt": "range",
+        "src": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1"
+      },
+      "location": {
+        "start": 164157,
+        "end": 164271
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--amascut--amascut-1000-ranged-melee-dps",
+      "attrs": {
+        "title": "melee",
+        "class": "d-emoji",
+        "alt": "melee",
+        "src": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1"
+      },
+      "location": {
+        "start": 164272,
+        "end": 164387
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--amascut--amascut-2000-magic-melee-base",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "location": {
+        "start": 164151,
+        "end": 164265
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--amascut--amascut-2000-magic-melee-base",
+      "attrs": {
+        "title": "melee",
+        "class": "d-emoji",
+        "alt": "melee",
+        "src": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1"
+      },
+      "location": {
+        "start": 164266,
+        "end": 164381
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--amascut--amascut-2000-ranged-melee-dps",
+      "attrs": {
+        "title": "range",
+        "class": "d-emoji",
+        "alt": "range",
+        "src": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1"
+      },
+      "location": {
+        "start": 164142,
+        "end": 164256
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--amascut--amascut-2000-ranged-melee-dps",
+      "attrs": {
+        "title": "melee",
+        "class": "d-emoji",
+        "alt": "melee",
+        "src": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1"
+      },
+      "location": {
+        "start": 164257,
+        "end": 164372
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--angel-of-death-7s--mechanics",
+      "attrs": {
+        "title": "aod",
+        "class": "d-emoji",
+        "alt": "aod",
+        "src": "https://cdn.discordapp.com/emojis/580167371365548042.png?v=1"
+      },
+      "location": {
+        "start": 179921,
+        "end": 180031
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--necro_duo_trio_basic",
+      "attrs": {
+        "title": "aod",
+        "class": "d-emoji",
+        "alt": "aod",
+        "src": "https://cdn.discordapp.com/emojis/580167371365548042.png?v=1"
+      },
+      "location": {
+        "start": 164732,
+        "end": 164842
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--necro_solo_basic",
+      "attrs": {
+        "title": "aod",
+        "class": "d-emoji",
+        "alt": "aod",
+        "src": "https://cdn.discordapp.com/emojis/580167371365548042.png?v=1"
+      },
+      "location": {
+        "start": 164681,
+        "end": 164791
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--arch-glacor--high-enrage-arch-glacor-necromancy",
+      "attrs": {
+        "title": "necromancy",
+        "class": "d-emoji",
+        "alt": "necromancy",
+        "src": "https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1"
+      },
+      "location": {
+        "start": 163183,
+        "end": 163308
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--ed1-temple-of-aminishi--ed1-melee-ranged",
+      "attrs": {
+        "title": "melee",
+        "class": "d-emoji",
+        "alt": "melee",
+        "src": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1"
+      },
+      "location": {
+        "start": 173897,
+        "end": 174012
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--ed1-temple-of-aminishi--ed1-melee-ranged",
+      "attrs": {
+        "title": "ranged",
+        "class": "d-emoji",
+        "alt": "ranged",
+        "src": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1"
+      },
+      "location": {
+        "start": 174013,
+        "end": 174129
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--ed1-temple-of-aminishi--ed1-ranged",
+      "attrs": {
+        "title": "ranged",
+        "class": "d-emoji",
+        "alt": "ranged",
+        "src": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1"
+      },
+      "location": {
+        "start": 173730,
+        "end": 173846
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--ed2-dragonkin-laboratory--ed2-necromancy",
+      "attrs": {
+        "title": "necromancy",
+        "class": "d-emoji",
+        "alt": "necromancy",
+        "src": "https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1"
+      },
+      "location": {
+        "start": 173222,
+        "end": 173347
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--ed2-dragonkin-laboratory--ed2-ranged",
+      "attrs": {
+        "title": "ranged",
+        "class": "d-emoji",
+        "alt": "ranged",
+        "src": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1"
+      },
+      "location": {
+        "start": 167297,
+        "end": 167413
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--ed3-shadow-reef--melee-magic-hybrid",
+      "attrs": {
+        "title": "melee",
+        "class": "d-emoji",
+        "alt": "melee",
+        "src": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1"
+      },
+      "location": {
+        "start": 176908,
+        "end": 177023
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--ed3-shadow-reef--melee-magic-hybrid",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "location": {
+        "start": 177024,
+        "end": 177138
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--ghrazi-blood-knights--gbk-duo-100-ranged-melee",
+      "attrs": {
+        "title": "ranged",
+        "class": "d-emoji",
+        "alt": "ranged",
+        "src": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1"
+      },
+      "location": {
+        "start": 163950,
+        "end": 164066
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--ghrazi-blood-knights--gbk-duo-100-ranged-melee",
+      "attrs": {
+        "title": "melee",
+        "class": "d-emoji",
+        "alt": "melee",
+        "src": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1"
+      },
+      "location": {
+        "start": 164067,
+        "end": 164182
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--ghrazi-blood-knights--gbk-solo-100-ranged-melee",
+      "attrs": {
+        "title": "ranged",
+        "class": "d-emoji",
+        "alt": "ranged",
+        "src": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1"
+      },
+      "location": {
+        "start": 163947,
+        "end": 164063
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--ghrazi-blood-knights--gbk-solo-100-ranged-melee",
+      "attrs": {
+        "title": "melee",
+        "class": "d-emoji",
+        "alt": "melee",
+        "src": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1"
+      },
+      "location": {
+        "start": 164064,
+        "end": 164179
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--sanctum--sanctum-hm-solo-melee",
+      "attrs": {
+        "title": "melee",
+        "class": "d-emoji",
+        "alt": "melee",
+        "src": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1"
+      },
+      "location": {
+        "start": 171056,
+        "end": 171171
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--sanctum--sanctum-hm-solo-necromancy",
+      "attrs": {
+        "title": "necromancy",
+        "class": "d-emoji",
+        "alt": "necromancy",
+        "src": "https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1"
+      },
+      "location": {
+        "start": 177317,
+        "end": 177442
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--telos--magic-fsoa",
+      "attrs": {
+        "title": "soa",
+        "class": "d-emoji",
+        "alt": "soa",
+        "src": "https://cdn.discordapp.com/emojis/869284271595069451.png?v=1"
+      },
+      "location": {
+        "start": 165011,
+        "end": 165121
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--telos--ranged-bolg",
+      "attrs": {
+        "title": "bolg",
+        "class": "d-emoji",
+        "alt": "bolg",
+        "src": "https://cdn.discordapp.com/emojis/994189289623662702.png?v=1"
+      },
+      "location": {
+        "start": 165915,
+        "end": 166027
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--vorago--introductory-necro-solo-vorago-guide",
+      "attrs": {
+        "title": "necromancy",
+        "class": "d-emoji",
+        "alt": "necromancy",
+        "src": "https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1"
+      },
+      "location": {
+        "start": 167988,
+        "end": 168113
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--zamorak--zamorak-1000-ranged-melee-group",
+      "attrs": {
+        "title": "range",
+        "class": "d-emoji",
+        "alt": "range",
+        "src": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1"
+      },
+      "location": {
+        "start": 169230,
+        "end": 169344
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--zamorak--zamorak-1000-ranged-melee-group",
+      "attrs": {
+        "title": "melee",
+        "class": "d-emoji",
+        "alt": "melee",
+        "src": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1"
+      },
+      "location": {
+        "start": 169345,
+        "end": 169460
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--zamorak--zamorak-1000-ranged-melee-solo",
+      "attrs": {
+        "title": "range",
+        "class": "d-emoji",
+        "alt": "range",
+        "src": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1"
+      },
+      "location": {
+        "start": 166078,
+        "end": 166192
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--zamorak--zamorak-1000-ranged-melee-solo",
+      "attrs": {
+        "title": "melee",
+        "class": "d-emoji",
+        "alt": "melee",
+        "src": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1"
+      },
+      "location": {
+        "start": 166193,
+        "end": 166308
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--zamorak--zamorak-2000-ranged-melee-group",
+      "attrs": {
+        "title": "range",
+        "class": "d-emoji",
+        "alt": "range",
+        "src": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1"
+      },
+      "location": {
+        "start": 166396,
+        "end": 166510
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--zamorak--zamorak-2000-ranged-melee-group",
+      "attrs": {
+        "title": "melee",
+        "class": "d-emoji",
+        "alt": "melee",
+        "src": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1"
+      },
+      "location": {
+        "start": 166511,
+        "end": 166626
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--automatons",
+      "attrs": {
+        "title": "automaton",
+        "class": "d-emoji",
+        "alt": "automaton",
+        "src": "https://cdn.discordapp.com/emojis/1004107269820133477.png?v=1"
+      },
+      "location": {
+        "start": 171500,
+        "end": 171623
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--celestial-dragons",
+      "attrs": {
+        "title": "celestialdragon",
+        "class": "d-emoji",
+        "alt": "celestialdragon",
+        "src": "https://cdn.discordapp.com/emojis/1027212539441975296.png?v=1"
+      },
+      "location": {
+        "start": 165476,
+        "end": 165611
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--tormented-demons",
+      "attrs": {
+        "title": "mostwantedcardtormenteddemon",
+        "class": "d-emoji",
+        "alt": "mostwantedcardtormenteddemon",
+        "src": "https://cdn.discordapp.com/emojis/1005877321212907561.png?v=1"
+      },
+      "location": {
+        "start": 167540,
+        "end": 167701
+      }
+    },
+    {
+      "id": "pvme-guides--upgrading-info--upgrade-order--magic",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "location": {
+        "start": 165545,
+        "end": 165659
+      }
+    },
+    {
+      "id": "pvme-guides--upgrading-info--upgrade-order--melee",
+      "attrs": {
+        "title": "melee",
+        "class": "d-emoji",
+        "alt": "melee",
+        "src": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1"
+      },
+      "location": {
+        "start": 165542,
+        "end": 165657
+      }
+    },
+    {
+      "id": "pvme-guides--upgrading-info--upgrade-order--necromancy",
+      "attrs": {
+        "title": "necromancy",
+        "class": "d-emoji",
+        "alt": "necromancy",
+        "src": "https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1"
+      },
+      "location": {
+        "start": 165953,
+        "end": 166078
+      }
+    }
+  ],
+  "presetLinks": [
+    {
+      "id": "pvme-guides--afk--afk-arch-glacor",
+      "href": "https://presets.pvme.io/?id=e54f8126-5a67-4af2-b282-a975cb12b9b5",
+      "text": "Melee (0 Mech)",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=e54f8126-5a67-4af2-b282-a975cb12b9b5"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-arch-glacor",
+      "href": "https://presets.pvme.io/?id=7a639b95-b6d7-4e7e-999c-0ed474704733",
+      "text": "Melee (2 Mech)",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=7a639b95-b6d7-4e7e-999c-0ed474704733"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-arch-glacor",
+      "href": "https://presets.pvme.io/?id=vLCQDFIDnEBmlFNaodoA",
+      "text": "Necromancy (T90)",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=vLCQDFIDnEBmlFNaodoA"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-arch-glacor",
+      "href": "https://presets.pvme.io/?id=gwoolHpQwuAr9Qd0wgil",
+      "text": "Necromancy (T95-T100)",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=gwoolHpQwuAr9Qd0wgil"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-blood-reavers",
+      "href": "https://presets.pvme.io/?id=3m2Mi55EI1NlbyBzyNaC",
+      "text": "Ranged preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=3m2Mi55EI1NlbyBzyNaC"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-blood-reavers",
+      "href": "https://presets.pvme.io/?id=ZcWKKyaPc7mDxPgU1aiD",
+      "text": "Necromancy preset (500+ pouches/hour)",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=ZcWKKyaPc7mDxPgU1aiD"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-chaos-elemental",
+      "href": "https://presets.pvme.io/?id=q2qftJyQ5gw13025ua6x",
+      "text": "Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=q2qftJyQ5gw13025ua6x"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-chaos-elemental",
+      "href": "https://presets.pvme.io/?id=Enj6WIJGLResVfXCTE7i",
+      "text": "Melee preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=Enj6WIJGLResVfXCTE7i"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-chaos-elemental",
+      "href": "https://presets.pvme.io/?id=5u3OF4Jb9zXCG92zF6tI",
+      "text": "Ranged preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=5u3OF4Jb9zXCG92zF6tI"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-chaos-elemental",
+      "href": "https://presets.pvme.io/?id=l5ctFI8ZkMyX3sxk8LiC",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=l5ctFI8ZkMyX3sxk8LiC"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-corporeal-beast",
+      "href": "https://presets.pvme.io?id=7399de7e-0dda-4b40-a177-389c1504f72f",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=7399de7e-0dda-4b40-a177-389c1504f72f"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-corporeal-beast",
+      "href": "https://presets.pvme.io/?id=xCFgfUoCqJC7AdulrFOR",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=xCFgfUoCqJC7AdulrFOR"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-dagannoth-kings",
+      "href": "https://presets.pvme.io?id=0dc04d39-e424-49e1-a321-c88de0cdeff7",
+      "text": "Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=0dc04d39-e424-49e1-a321-c88de0cdeff7"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-dagannoth-kings",
+      "href": "https://presets.pvme.io?id=9959bbe3-491c-483c-8c3e-688b729b3766",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=9959bbe3-491c-483c-8c3e-688b729b3766"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-dagannoth-kings",
+      "href": "https://presets.pvme.io?id=3dfae707-4605-414b-865a-2fb6aa5cb77c",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=3dfae707-4605-414b-865a-2fb6aa5cb77c"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-general-graardor",
+      "href": "https://presets.pvme.io?id=8b0b6e6d-8fcf-46c9-a651-aa550e050d4f",
+      "text": "Melee preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=8b0b6e6d-8fcf-46c9-a651-aa550e050d4f"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-gregorovic",
+      "href": "https://presets.pvme.io?id=65acda2e-4ea9-4159-b31a-5d70507a0896",
+      "text": "Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=65acda2e-4ea9-4159-b31a-5d70507a0896"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-gregorovic",
+      "href": "https://presets.pvme.io?id=a74bed12-55f2-42bb-a51a-c48271773d93",
+      "text": "Melee preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=a74bed12-55f2-42bb-a51a-c48271773d93"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-gregorovic",
+      "href": "https://presets.pvme.io/?id=odLhz84ZQ3PE5lQ3x9z5",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=odLhz84ZQ3PE5lQ3x9z5"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-gregorovic",
+      "href": "https://presets.pvme.io?id=0e53518f-59f8-468e-a324-02971950a5dc",
+      "text": "Ranged preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=0e53518f-59f8-468e-a324-02971950a5dc"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-gwd1",
+      "href": "https://presets.pvme.io?id=1df551be-8d55-4fa1-87e3-2e801ab62d28",
+      "text": "Necromancy AFK preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=1df551be-8d55-4fa1-87e3-2e801ab62d28"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-gwd1",
+      "href": "https://presets.pvme.io?id=2c73d446-37f3-420d-9b8d-db0f3a19c09f",
+      "text": "Ranged AFK preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=2c73d446-37f3-420d-9b8d-db0f3a19c09f"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-gwd1",
+      "href": "https://presets.pvme.io?id=e2f94a22-20cd-41b7-b1b2-da3de2e098b9",
+      "text": "Magic AFK preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=e2f94a22-20cd-41b7-b1b2-da3de2e098b9"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-helwyr-hardmode",
+      "href": "https://pvme.io/preset-maker-storage/embeds/f2daa4c7-df9c-4012-b562-8ca45162c89a/7x4/?v=c2656131b02b61cf7f47def2c4ed42951b1f2e3241a8d05639b585679b205dfb",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://pvme.io/preset-maker-storage/embeds/f2daa4c7-df9c-4012-b562-8ca45162c89a/7x4/?v=c2656131b02b61cf7f47def2c4ed42951b1f2e3241a8d05639b585679b205dfb"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-helwyr",
+      "href": "https://pvme.io/preset-maker-storage/embeds/e3a37560-fc55-4256-bdef-ddc3f29ed68c/7x4/?v=27705e176bd97c21932fe4d8693ffe56fc7c1a680ff4624bbaeba61e5ce280a7",
+      "text": "Melee preset",
+      "attrs": {
+        "href": "https://pvme.io/preset-maker-storage/embeds/e3a37560-fc55-4256-bdef-ddc3f29ed68c/7x4/?v=27705e176bd97c21932fe4d8693ffe56fc7c1a680ff4624bbaeba61e5ce280a7"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-helwyr",
+      "href": "https://presets.pvme.io?id=wtL4XmM2Aupi2k6lwxyT",
+      "text": "Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=wtL4XmM2Aupi2k6lwxyT"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-helwyr",
+      "href": "https://presets.pvme.io?id=0de55906-3ae2-4a1a-819c-fce77ac67761",
+      "text": "Ranged preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=0de55906-3ae2-4a1a-819c-fce77ac67761"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-helwyr",
+      "href": "https://pvme.io/preset-maker-storage/embeds/d9349c44-0f6b-4300-8a3b-66d637c6df08/7x4/?v=2ca7b599f2177e25b0f196be4fa069bfbe842394f9a401a5992f937774719365",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://pvme.io/preset-maker-storage/embeds/d9349c44-0f6b-4300-8a3b-66d637c6df08/7x4/?v=2ca7b599f2177e25b0f196be4fa069bfbe842394f9a401a5992f937774719365"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-hermod",
+      "href": "https://presets.pvme.io/?id=o1KmzTMjk0bFgBX4XkYu",
+      "text": "Necromancy - Low-level",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=o1KmzTMjk0bFgBX4XkYu"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-hermod",
+      "href": "https://presets.pvme.io/?id=qkkKruNMoSgfdr7aFWra",
+      "text": "Necromancy - High-level",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=qkkKruNMoSgfdr7aFWra"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-ivar-king-of-bones",
+      "href": "https://presets.pvme.io?id=cfb1d1dd-2f09-4ac2-8705-1898b433f32c",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=cfb1d1dd-2f09-4ac2-8705-1898b433f32c"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-ivar-king-of-bones",
+      "href": "https://presets.pvme.io?id=0606f38c-6dcf-434e-a1d3-08f42f2ed8a0",
+      "text": "Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=0606f38c-6dcf-434e-a1d3-08f42f2ed8a0"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-kalphite-queen",
+      "href": "https://presets.pvme.io/?id=oPxjh552GcS1Qi2bvVmr",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=oPxjh552GcS1Qi2bvVmr"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-kbd",
+      "href": "https://presets.pvme.io?id=6893c002-d70d-4b03-be39-48a63b22775b",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=6893c002-d70d-4b03-be39-48a63b22775b"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-kerapac",
+      "href": "https://presets.pvme.io?id=d3cbb3bf-b1a0-44bc-9363-c084258391aa",
+      "text": "Ranged preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=d3cbb3bf-b1a0-44bc-9363-c084258391aa"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-kerapac",
+      "href": "https://presets.pvme.io?id=8ea7ad0e-6de3-419a-8371-393f19649205",
+      "text": "Melee preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=8ea7ad0e-6de3-419a-8371-393f19649205"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-kree-arra",
+      "href": "https://presets.pvme.io/?id=BUw90PHF2YKKhPkkiwLG",
+      "text": "Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=BUw90PHF2YKKhPkkiwLG"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-orikalka",
+      "href": "https://presets.pvme.io?id=449dd2fa-a1b9-449a-8982-1defe1da32a0",
+      "text": "Tumeken's",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=449dd2fa-a1b9-449a-8982-1defe1da32a0"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-osseous",
+      "href": "https://presets.pvme.io?id=b3cdcb63-4d00-4cc7-9974-31e8cb51c402",
+      "text": "Necromancy - Death Dealer Robes",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=b3cdcb63-4d00-4cc7-9974-31e8cb51c402"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-osseous",
+      "href": "https://presets.pvme.io/?id=be3fcda4-cf1c-4055-b583-3b371a59fc3c",
+      "text": "Necromancy - Robes of the First Necromancer",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=be3fcda4-cf1c-4055-b583-3b371a59fc3c"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-pthentraken",
+      "href": "https://presets.pvme.io?id=f36726d8-0754-48c0-98b9-1cb4cee1e204",
+      "text": "Ranged preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=f36726d8-0754-48c0-98b9-1cb4cee1e204"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-rathis",
+      "href": "https://presets.pvme.io/?id=a091ea8d-31a1-43ca-8378-0ebba776213a",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=a091ea8d-31a1-43ca-8378-0ebba776213a"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-silverquill-the-dreadhog",
+      "href": "https://presets.pvme.io?id=d69259a3-099b-409b-909e-929d25d455f5",
+      "text": "Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=d69259a3-099b-409b-909e-929d25d455f5"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-silverquill-the-dreadhog",
+      "href": "https://presets.pvme.io?id=5f05a640-ea4b-4c0e-928b-bb1c79830005",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=5f05a640-ea4b-4c0e-928b-bb1c79830005"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-silverquill-the-dreadhog",
+      "href": "https://presets.pvme.io?id=4d2336a9-fdec-4e32-b315-61418960cc75",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=4d2336a9-fdec-4e32-b315-61418960cc75"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-silverquill-the-dreadhog",
+      "href": "https://presets.pvme.io/?id=9aa5c068-3f19-425e-9f80-d9056cb7ef37",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=9aa5c068-3f19-425e-9f80-d9056cb7ef37"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-twin-furies",
+      "href": "https://presets.pvme.io/?id=453958d8-fed2-4f95-a07a-17750b2d3659",
+      "text": "Melee - Vestments",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=453958d8-fed2-4f95-a07a-17750b2d3659"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-twin-furies",
+      "href": "https://presets.pvme.io?id=72e89604-5863-446d-bb52-d290bdbf75f8",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=72e89604-5863-446d-bb52-d290bdbf75f8"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-twin-furies",
+      "href": "https://presets.pvme.io?id=f8e3eb9f-fe4c-413f-9c39-66ac5e7a0452",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=f8e3eb9f-fe4c-413f-9c39-66ac5e7a0452"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-twin-furies",
+      "href": "https://presets.pvme.io?id=KvYOp8M9Ws3S5PexyXpt",
+      "text": "Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=KvYOp8M9Ws3S5PexyXpt"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-vindicta-hardmode",
+      "href": "https://presets.pvme.io?id=be6652c3-8176-4510-947e-4893d4b458db",
+      "text": "AFK Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=be6652c3-8176-4510-947e-4893d4b458db"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-vindicta",
+      "href": "https://presets.pvme.io?id=f1afb793-4915-46d4-b894-ea24b5150a6c",
+      "text": "Magic Preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=f1afb793-4915-46d4-b894-ea24b5150a6c"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-vindicta",
+      "href": "https://presets.pvme.io?id=6aae7bd1-39f8-4b07-925e-e440fdee6c98",
+      "text": "Melee preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=6aae7bd1-39f8-4b07-925e-e440fdee6c98"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-vindicta",
+      "href": "https://presets.pvme.io/?id=WhBqVCp537kwnLYvJWu4",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=WhBqVCp537kwnLYvJWu4"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--afk-vindicta",
+      "href": "https://presets.pvme.io?id=8f8f1a6a-2ada-4f9a-bb4e-71a56609656e",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=8f8f1a6a-2ada-4f9a-bb4e-71a56609656e"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--low-effort-ghrazi-blood-knights-nm",
+      "href": "https://pvme.io/preset-maker-storage/embeds/34ecc423-58fc-4bdb-bde2-e178681738a5/7x4/?v=bd3686808953b685dc392c1e5a45466c6209930ddbc5b1faa698d500ea509004",
+      "text": "Melee preset",
+      "attrs": {
+        "href": "https://pvme.io/preset-maker-storage/embeds/34ecc423-58fc-4bdb-bde2-e178681738a5/7x4/?v=bd3686808953b685dc392c1e5a45466c6209930ddbc5b1faa698d500ea509004"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--low-effort-helwyr-hardmode",
+      "href": "https://presets.pvme.io/?id=UCC8bbJXtWooe1Pdoydc",
+      "text": "Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=UCC8bbJXtWooe1Pdoydc"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--low-effort-helwyr-hardmode",
+      "href": "https://presets.pvme.io/?id=3PAH9i5rPpLCl6gBMoE8",
+      "text": "Necromancy Deathwarden",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=3PAH9i5rPpLCl6gBMoE8"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--low-effort-helwyr-hardmode",
+      "href": "https://presets.pvme.io/?id=cx1x3YPD4fAzMZy8qAHm",
+      "text": "Necromancy TFN",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=cx1x3YPD4fAzMZy8qAHm"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--low-effort-kerapac",
+      "href": "https://presets.pvme.io?id=db19c899-40e3-4373-96b2-6f1ca78fc398",
+      "text": "Low Effort Safe",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=db19c899-40e3-4373-96b2-6f1ca78fc398"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--low-effort-kerapac",
+      "href": "https://presets.pvme.io?id=1be73c06-d0a8-49c2-a5de-a44b8b644bd2",
+      "text": "Melee - Dual Wield",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=1be73c06-d0a8-49c2-a5de-a44b8b644bd2"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--low-effort-kerapac",
+      "href": "https://presets.pvme.io?id=32f0b99e-77c2-4b62-980e-1db898439b84",
+      "text": "Melee - Ek-ZekKil",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=32f0b99e-77c2-4b62-980e-1db898439b84"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--low-effort-kerapac",
+      "href": "https://presets.pvme.io?id=ee56929d-c410-4b31-a904-3366c4a60e66",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=ee56929d-c410-4b31-a904-3366c4a60e66"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--low-effort-magister",
+      "href": "https://presets.pvme.io?id=c9baa602-65bc-46f4-bbf8-00c79ee86277",
+      "text": "Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=c9baa602-65bc-46f4-bbf8-00c79ee86277"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--low-effort-magister",
+      "href": "https://presets.pvme.io/?id=RitWQU29gdVw9gjX3PhD",
+      "text": "Necromancy - T90 preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=RitWQU29gdVw9gjX3PhD"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--low-effort-magister",
+      "href": "https://presets.pvme.io?id=2fd8aac8-df98-4e1d-8e17-1adda5152ca3",
+      "text": "Necromancy - T95 preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=2fd8aac8-df98-4e1d-8e17-1adda5152ca3"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--low-effort-pthentraken",
+      "href": "https://presets.pvme.io/?id=w3hLw4PwFlkDMRTgMYMg",
+      "text": "Ranged preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=w3hLw4PwFlkDMRTgMYMg"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--low-effort-raksha",
+      "href": "https://presets.pvme.io?id=33c193a5-e5ca-41e9-a8e4-f17491dc7961",
+      "text": "Melee preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=33c193a5-e5ca-41e9-a8e4-f17491dc7961"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--low-effort-raksha",
+      "href": "https://presets.pvme.io?id=4a73ab75-4df3-4be0-bda5-0a8069da99a6",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=4a73ab75-4df3-4be0-bda5-0a8069da99a6"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--low-effort-rasial",
+      "href": "https://presets.pvme.io?id=2cae567e-4902-4dc7-83da-fe1eca8e3076",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=2cae567e-4902-4dc7-83da-fe1eca8e3076"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--low-effort-twin-furies-hardmode",
+      "href": "https://presets.pvme.io/?id=BLoWoFuGnnvkDCNYybyc",
+      "text": "Necromancy - T95",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=BLoWoFuGnnvkDCNYybyc"
+      }
+    },
+    {
+      "id": "pvme-guides--afk--low-effort-vorkath",
+      "href": "https://presets.pvme.io?id=729edc31-1ce7-4c2e-bdb8-3b4ec995411f",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=729edc31-1ce7-4c2e-bdb8-3b4ec995411f"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--amascut-basic",
+      "href": "https://presets.pvme.io/?id=c9915f48-ad2f-4a74-bc28-de538d40826e",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=c9915f48-ad2f-4a74-bc28-de538d40826e"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--amascut-basic",
+      "href": "https://presets.pvme.io/?id=nfm2UnsVqmKfaFDf2Z9X",
+      "text": "Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=nfm2UnsVqmKfaFDf2Z9X"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--aod-basic",
+      "href": "https://presets.pvme.io/?id=Lj2waJhs0SImEsqh5pvz",
+      "text": "Magic - Base",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=Lj2waJhs0SImEsqh5pvz"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--aod-basic",
+      "href": "https://presets.pvme.io/?id=CW3XSEgocYfMXaeuJhsg",
+      "text": "Magic - Minion Tank/Free",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=CW3XSEgocYfMXaeuJhsg"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--aod-basic",
+      "href": "https://presets.pvme.io/?id=3cR7YuriJ87X3XZB1GLF",
+      "text": "Ranged - Any",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=3cR7YuriJ87X3XZB1GLF"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--aod-basic",
+      "href": "https://presets.pvme.io/?id=rrnzbHyfsRpyQ1UBZAW6",
+      "text": "Melee - Minion Tank/Free",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=rrnzbHyfsRpyQ1UBZAW6"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--aod-basic",
+      "href": "https://presets.pvme.io/?id=E2RrdIw8D2PW2AYYFOHL",
+      "text": "Necromancy - Minion Tank/Free/Hammer",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=E2RrdIw8D2PW2AYYFOHL"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--araxxor-basic",
+      "href": "https://presets.pvme.io/?id=36ec3ebe-379d-4350-a3ff-ce7a88f7525a",
+      "text": "Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=36ec3ebe-379d-4350-a3ff-ce7a88f7525a"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--araxxor-basic",
+      "href": "https://presets.pvme.io/?id=50e03e24-37ad-4be8-abf5-a4bb22c0aa09",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=50e03e24-37ad-4be8-abf5-a4bb22c0aa09"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--araxxor-basic",
+      "href": "https://presets.pvme.io/?id=de7d0a00-3300-4607-ad6f-0c98f839c560",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=de7d0a00-3300-4607-ad6f-0c98f839c560"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--araxxor-basic",
+      "href": "https://presets.pvme.io/?id=0d30907b-8f74-4b10-9335-335d98008918",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=0d30907b-8f74-4b10-9335-335d98008918"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--arch-glacor-basic",
+      "href": "https://presets.pvme.io/?id=JcJmj9NbUDRmzDhkYOZ1",
+      "text": "Example Preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=JcJmj9NbUDRmzDhkYOZ1"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--arch-glacor-basic",
+      "href": "https://presets.pvme.io/?id=rPkAfi2w9CZJYxyKK7V0",
+      "text": "Example Preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=rPkAfi2w9CZJYxyKK7V0"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--arch-glacor-basic",
+      "href": "https://presets.pvme.io/?id=MhE8Umpw79WhIYuJPIz9",
+      "text": "Example Preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=MhE8Umpw79WhIYuJPIz9"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--arch-glacor-basic",
+      "href": "https://presets.pvme.io/?id=CYtiJmWEAZwOVNam77oN",
+      "text": "Example Preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=CYtiJmWEAZwOVNam77oN"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--barrows-basic",
+      "href": "https://presets.pvme.io/?id=Nu2xIB4Lkofr2T9XkjOu",
+      "text": "Magic - Mid-level",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=Nu2xIB4Lkofr2T9XkjOu"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--barrows-basic",
+      "href": "https://presets.pvme.io/?id=K7fbsgueiX8Z1w9smbiN",
+      "text": "Magic - Entry-level",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=K7fbsgueiX8Z1w9smbiN"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--bm-basic",
+      "href": "https://presets.pvme.io/?id=wS6HzuD6XGWKxV7WepbL",
+      "text": "Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=wS6HzuD6XGWKxV7WepbL"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--bm-basic",
+      "href": "https://presets.pvme.io/?id=EJIixTCYEnCWExL1Iuen",
+      "text": "Ranged preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=EJIixTCYEnCWExL1Iuen"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--bm-basic",
+      "href": "https://presets.pvme.io/?id=hibLsTuugMU261lTFUjH",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=hibLsTuugMU261lTFUjH"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--chaos-elemental-basic",
+      "href": "https://presets.pvme.io/?id=aYihp5v5prjLizw4mZiC",
+      "text": "Basic Ranged Preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=aYihp5v5prjLizw4mZiC"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--chaos-elemental-basic",
+      "href": "https://presets.pvme.io/?id=vg8oUa5bKInp1QL6BNuu",
+      "text": "Basic Necromancy Preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=vg8oUa5bKInp1QL6BNuu"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--ed1-basic",
+      "href": "https://presets.pvme.io/?id=GsbuR3CBDvwpdHQz6KPL",
+      "text": "Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=GsbuR3CBDvwpdHQz6KPL"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--ed1-basic",
+      "href": "https://presets.pvme.io/?id=o9Fo2OzlWJKMHazAaOSS",
+      "text": "Melee preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=o9Fo2OzlWJKMHazAaOSS"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--ed1-basic",
+      "href": "https://presets.pvme.io/?id=JYNxXhY5s0cZfQKbgUYb",
+      "text": "Ranged preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=JYNxXhY5s0cZfQKbgUYb"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--ed2-basic",
+      "href": "https://presets.pvme.io/?id=xpnlmMZjX5UXZIbvLzzp",
+      "text": "Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=xpnlmMZjX5UXZIbvLzzp"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--ed2-basic",
+      "href": "https://presets.pvme.io/?id=K8HHmIT1LBvEbQstfwF5",
+      "text": "Ranged preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=K8HHmIT1LBvEbQstfwF5"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--ed3-basic",
+      "href": "https://presets.pvme.io/?id=KRtm6B0sipwNBi1vPqQv",
+      "text": "Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=KRtm6B0sipwNBi1vPqQv"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--ed3-basic",
+      "href": "https://presets.pvme.io/?id=03bAqOnWvTYSMEuZqC1M",
+      "text": "Melee preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=03bAqOnWvTYSMEuZqC1M"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--ed3-basic",
+      "href": "https://presets.pvme.io/?id=Ps87rZmMIyMRugzgJRRt",
+      "text": "Ranged preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=Ps87rZmMIyMRugzgJRRt"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--giant-mole-basic",
+      "href": "https://presets.pvme.io/?id=aZpSCcQFoRf9I3PoO7JE",
+      "text": "Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=aZpSCcQFoRf9I3PoO7JE"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--giant-mole-basic",
+      "href": "https://presets.pvme.io/?id=ViQQNzWIjQiyLnjHu8kW",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=ViQQNzWIjQiyLnjHu8kW"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--gregorovic-basic",
+      "href": "https://presets.pvme.io/?id=36ec3ebe-379d-4350-a3ff-ce7a88f7525a",
+      "text": "Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=36ec3ebe-379d-4350-a3ff-ce7a88f7525a"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--gregorovic-basic",
+      "href": "https://presets.pvme.io/?id=50e03e24-37ad-4be8-abf5-a4bb22c0aa09",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=50e03e24-37ad-4be8-abf5-a4bb22c0aa09"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--gregorovic-basic",
+      "href": "https://presets.pvme.io/?id=de7d0a00-3300-4607-ad6f-0c98f839c560",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=de7d0a00-3300-4607-ad6f-0c98f839c560"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--gregorovic-basic",
+      "href": "https://presets.pvme.io/?id=0d30907b-8f74-4b10-9335-335d98008918",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=0d30907b-8f74-4b10-9335-335d98008918"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--helwyr-basic",
+      "href": "https://presets.pvme.io/?id=36ec3ebe-379d-4350-a3ff-ce7a88f7525a",
+      "text": "Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=36ec3ebe-379d-4350-a3ff-ce7a88f7525a"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--helwyr-basic",
+      "href": "https://presets.pvme.io/?id=50e03e24-37ad-4be8-abf5-a4bb22c0aa09",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=50e03e24-37ad-4be8-abf5-a4bb22c0aa09"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--helwyr-basic",
+      "href": "https://presets.pvme.io/?id=de7d0a00-3300-4607-ad6f-0c98f839c560",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=de7d0a00-3300-4607-ad6f-0c98f839c560"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--helwyr-basic",
+      "href": "https://presets.pvme.io/?id=0d30907b-8f74-4b10-9335-335d98008918",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=0d30907b-8f74-4b10-9335-335d98008918"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--kbd-basic",
+      "href": "https://presets.pvme.io/?id=huMj1Vo3XAJi6BhZkzgu",
+      "text": "Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=huMj1Vo3XAJi6BhZkzgu"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--kbd-basic",
+      "href": "https://presets.pvme.io/?id=B0zo7I1FcF8bpWtHgBf6",
+      "text": "Melee preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=B0zo7I1FcF8bpWtHgBf6"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--kbd-basic",
+      "href": "https://presets.pvme.io/?id=T1falNlWgx10W6x21LjH",
+      "text": "Ranged preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=T1falNlWgx10W6x21LjH"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--kbd-basic",
+      "href": "https://presets.pvme.io/?id=zNOontl68LmQpELThf5v",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=zNOontl68LmQpELThf5v"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--kerapac-hm-basic",
+      "href": "https://presets.pvme.io/?id=r3MoH4bAzq0LpS6ZfAro",
+      "text": "Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=r3MoH4bAzq0LpS6ZfAro"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--kerapac-hm-basic",
+      "href": "https://presets.pvme.io/?id=zIW5ctjjvzeEjwkhdzGD",
+      "text": "Ranged preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=zIW5ctjjvzeEjwkhdzGD"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--nex-basic",
+      "href": "https://presets.pvme.io/?id=IazpBk7RWF0MhY3Y5x0O",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=IazpBk7RWF0MhY3Y5x0O"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--raksha-basic",
+      "href": "https://presets.pvme.io/?id=8tHDhZfEj1qjSLlYnxlU",
+      "text": "Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=8tHDhZfEj1qjSLlYnxlU"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--raksha-basic",
+      "href": "https://presets.pvme.io/?id=nbcWVE1htdRe9esuOac6",
+      "text": "Ranged preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=nbcWVE1htdRe9esuOac6"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--rise-of-the-six-basic",
+      "href": "https://presets.pvme.io/?id=pmFdFBCEsQgOGqBVVDBQ",
+      "text": "Ranged preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=pmFdFBCEsQgOGqBVVDBQ"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--rise-of-the-six-basic",
+      "href": "https://presets.pvme.io/?id=KVD8GZMr7eb8REIakJdv",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=KVD8GZMr7eb8REIakJdv"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--solak-basic",
+      "href": "https://presets.pvme.io/?id=d0Xvf3aqRMg3ot8FsO5S",
+      "text": "Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=d0Xvf3aqRMg3ot8FsO5S"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--solak-basic",
+      "href": "https://presets.pvme.io/?id=CdctKobsOgdb24snUVkE",
+      "text": "Melee preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=CdctKobsOgdb24snUVkE"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--solak-basic",
+      "href": "https://presets.pvme.io/?id=LHW4UPqeU5nGVxRNopLG",
+      "text": "Ranged preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=LHW4UPqeU5nGVxRNopLG"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--solak-basic",
+      "href": "https://presets.pvme.io/?id=JCCwlzEhxz4xTkI6lXx3",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=JCCwlzEhxz4xTkI6lXx3"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--telos-basic",
+      "href": "https://presets.pvme.io/?id=uCYUF3PdRTGiEaTRnXMF",
+      "text": "Magic - Statius's Warhammer",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=uCYUF3PdRTGiEaTRnXMF"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--telos-basic",
+      "href": "https://presets.pvme.io/?id=pi3Mt9McC4EVfYjOGCNZ",
+      "text": "Magic - No Statius's Warhammer",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=pi3Mt9McC4EVfYjOGCNZ"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--twin-furies-basic",
+      "href": "https://presets.pvme.io/?id=36ec3ebe-379d-4350-a3ff-ce7a88f7525a",
+      "text": "Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=36ec3ebe-379d-4350-a3ff-ce7a88f7525a"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--twin-furies-basic",
+      "href": "https://presets.pvme.io/?id=50e03e24-37ad-4be8-abf5-a4bb22c0aa09",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=50e03e24-37ad-4be8-abf5-a4bb22c0aa09"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--twin-furies-basic",
+      "href": "https://presets.pvme.io/?id=de7d0a00-3300-4607-ad6f-0c98f839c560",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=de7d0a00-3300-4607-ad6f-0c98f839c560"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--twin-furies-basic",
+      "href": "https://presets.pvme.io/?id=0d30907b-8f74-4b10-9335-335d98008918",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=0d30907b-8f74-4b10-9335-335d98008918"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--tzkal-zuk-basic",
+      "href": "https://presets.pvme.io/?id=ru5v5obHbrBemcQ6POw5",
+      "text": "Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=ru5v5obHbrBemcQ6POw5"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--tzkal-zuk-basic",
+      "href": "https://presets.pvme.io/?id=pj8d55HpwtpAQB5ntbwJ",
+      "text": "Melee preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=pj8d55HpwtpAQB5ntbwJ"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--tzkal-zuk-basic",
+      "href": "https://presets.pvme.io/?id=TWVxCyP8YycMd9j3Ssqg",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=TWVxCyP8YycMd9j3Ssqg"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--tzkal-zuk-basic",
+      "href": "https://presets.pvme.io/?id=siYYnSaV9o68CPmFsp21",
+      "text": "Ranged preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=siYYnSaV9o68CPmFsp21"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--vindicta-basic",
+      "href": "https://presets.pvme.io/?id=36ec3ebe-379d-4350-a3ff-ce7a88f7525a",
+      "text": "Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=36ec3ebe-379d-4350-a3ff-ce7a88f7525a"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--vindicta-basic",
+      "href": "https://presets.pvme.io/?id=50e03e24-37ad-4be8-abf5-a4bb22c0aa09",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=50e03e24-37ad-4be8-abf5-a4bb22c0aa09"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--vindicta-basic",
+      "href": "https://presets.pvme.io/?id=de7d0a00-3300-4607-ad6f-0c98f839c560",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=de7d0a00-3300-4607-ad6f-0c98f839c560"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--vindicta-basic",
+      "href": "https://presets.pvme.io/?id=0d30907b-8f74-4b10-9335-335d98008918",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=0d30907b-8f74-4b10-9335-335d98008918"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--zamorak-basic",
+      "href": "https://presets.pvme.io/?id=a9d531e0-ad8d-42e8-a85a-e393004b47a4",
+      "text": "Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=a9d531e0-ad8d-42e8-a85a-e393004b47a4"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--zamorak-basic",
+      "href": "https://presets.pvme.io/?id=7d877ee6-32f4-4e68-8a2d-06319b1d7280",
+      "text": "Melee preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=7d877ee6-32f4-4e68-8a2d-06319b1d7280"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--zamorak-basic",
+      "href": "https://presets.pvme.io/?id=4a794fbc-ddfb-416f-bb44-1470bde9552a",
+      "text": "Ranged preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=4a794fbc-ddfb-416f-bb44-1470bde9552a"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--zamorak-basic",
+      "href": "https://presets.pvme.io/?id=3562f2bb-c205-4665-aee3-91c32e22328b",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=3562f2bb-c205-4665-aee3-91c32e22328b"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--vorago-basic--duo_ceilings_combined",
+      "href": "https://presets.pvme.io/?id=2opcg6A6333zNZuab83G",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=2opcg6A6333zNZuab83G"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--vorago-basic--duo_ceilings_combined",
+      "href": "https://presets.pvme.io/?id=1NTfAoxaT6b57ltNVDNX",
+      "text": "Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=1NTfAoxaT6b57ltNVDNX"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--vorago-basic--duo_ceilings_combined",
+      "href": "https://presets.pvme.io/?id=oKY60D6b8jvdBHqseyHj",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=oKY60D6b8jvdBHqseyHj"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--vorago-basic--duo_gb_combined",
+      "href": "https://presets.pvme.io/?id=2opcg6A6333zNZuab83G",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=2opcg6A6333zNZuab83G"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--vorago-basic--duo_gb_combined",
+      "href": "https://presets.pvme.io/?id=1NTfAoxaT6b57ltNVDNX",
+      "text": "Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=1NTfAoxaT6b57ltNVDNX"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--vorago-basic--duo_gb_combined",
+      "href": "https://presets.pvme.io/?id=oKY60D6b8jvdBHqseyHj",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=oKY60D6b8jvdBHqseyHj"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--vorago-basic--duo_pb_combined",
+      "href": "https://presets.pvme.io/?id=2opcg6A6333zNZuab83G",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=2opcg6A6333zNZuab83G"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--vorago-basic--duo_pb_combined",
+      "href": "https://presets.pvme.io/?id=1NTfAoxaT6b57ltNVDNX",
+      "text": "Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=1NTfAoxaT6b57ltNVDNX"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--vorago-basic--duo_pb_combined",
+      "href": "https://presets.pvme.io/?id=oKY60D6b8jvdBHqseyHj",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=oKY60D6b8jvdBHqseyHj"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--vorago-basic--duo_scop_combined",
+      "href": "https://presets.pvme.io/?id=2opcg6A6333zNZuab83G",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=2opcg6A6333zNZuab83G"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--vorago-basic--duo_scop_combined",
+      "href": "https://presets.pvme.io/?id=1NTfAoxaT6b57ltNVDNX",
+      "text": "Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=1NTfAoxaT6b57ltNVDNX"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--vorago-basic--duo_scop_combined",
+      "href": "https://presets.pvme.io/?id=oKY60D6b8jvdBHqseyHj",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=oKY60D6b8jvdBHqseyHj"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--vorago-basic--duo_ts_combined",
+      "href": "https://presets.pvme.io/?id=2opcg6A6333zNZuab83G",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=2opcg6A6333zNZuab83G"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--vorago-basic--duo_ts_combined",
+      "href": "https://presets.pvme.io/?id=1NTfAoxaT6b57ltNVDNX",
+      "text": "Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=1NTfAoxaT6b57ltNVDNX"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--vorago-basic--duo_ts_combined",
+      "href": "https://presets.pvme.io/?id=oKY60D6b8jvdBHqseyHj",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=oKY60D6b8jvdBHqseyHj"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--vorago-basic--duo_vit_combined",
+      "href": "https://presets.pvme.io/?id=Ptk4BlYo3OuUkiRRreK8",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=Ptk4BlYo3OuUkiRRreK8"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--vorago-basic--duo_vit_combined",
+      "href": "https://presets.pvme.io/?id=6hgD1ErTzdDnbh1WUjBK",
+      "text": "Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=6hgD1ErTzdDnbh1WUjBK"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--vorago-basic--duo_vit_combined",
+      "href": "https://presets.pvme.io/?id=2e5ydkylK7zMGmzAS82x",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=2e5ydkylK7zMGmzAS82x"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--vorago-basic--vorago-basic",
+      "href": "https://presets.pvme.io/?id=Ptk4BlYo3OuUkiRRreK8",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=Ptk4BlYo3OuUkiRRreK8"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--vorago-basic--vorago-basic",
+      "href": "https://presets.pvme.io/?id=6hgD1ErTzdDnbh1WUjBK",
+      "text": "Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=6hgD1ErTzdDnbh1WUjBK"
+      }
+    },
+    {
+      "id": "pvme-guides--basic-guides--vorago-basic--vorago-basic",
+      "href": "https://presets.pvme.io/?id=2e5ydkylK7zMGmzAS82x",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=2e5ydkylK7zMGmzAS82x"
+      }
+    },
+    {
+      "id": "pvme-guides--combat-achievements--ambassador-ca",
+      "href": "https://presets.pvme.io?id=0fc38273-c8e0-41dc-bf0e-99424f7291ab",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=0fc38273-c8e0-41dc-bf0e-99424f7291ab"
+      }
+    },
+    {
+      "id": "pvme-guides--combat-achievements--ambassador-ca",
+      "href": "https://presets.pvme.io/?id=gDyMc9YFI3LF3NKV3FPu",
+      "text": "Master Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=gDyMc9YFI3LF3NKV3FPu"
+      }
+    },
+    {
+      "id": "pvme-guides--combat-achievements--ambassador-ca",
+      "href": "https://presets.pvme.io/?id=avk8OUhiEi57zrSap4Pv",
+      "text": "Grandmaster Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=avk8OUhiEi57zrSap4Pv"
+      }
+    },
+    {
+      "id": "pvme-guides--combat-achievements--aod-ca",
+      "href": "https://presets.pvme.io?id=8365aa1b-b4a7-4fe0-8b15-a12e7488dd8c",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=8365aa1b-b4a7-4fe0-8b15-a12e7488dd8c"
+      }
+    },
+    {
+      "id": "pvme-guides--combat-achievements--aod-ca",
+      "href": "https://presets.pvme.io?id=73661080-7868-4dd4-babd-49c825092f05",
+      "text": "Necromancy Base",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=73661080-7868-4dd4-babd-49c825092f05"
+      }
+    },
+    {
+      "id": "pvme-guides--combat-achievements--aod-ca",
+      "href": "https://presets.pvme.io?id=11e64db3-5a8f-4c43-84f4-b3bf62ef6a19",
+      "text": "Melee-Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=11e64db3-5a8f-4c43-84f4-b3bf62ef6a19"
+      }
+    },
+    {
+      "id": "pvme-guides--combat-achievements--aod-ca",
+      "href": "https://presets.pvme.io?id=535b3b39-b0bf-4770-952c-703e57cef478",
+      "text": "Melee-Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=535b3b39-b0bf-4770-952c-703e57cef478"
+      }
+    },
+    {
+      "id": "pvme-guides--combat-achievements--araxxor-ca",
+      "href": "https://presets.pvme.io/?id=rv8rzdWUI38k3LFjV9U0",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=rv8rzdWUI38k3LFjV9U0"
+      }
+    },
+    {
+      "id": "pvme-guides--combat-achievements--araxxor-ca",
+      "href": "https://presets.pvme.io/?id=FbwshAMQoKLB7tVrlbv8",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=FbwshAMQoKLB7tVrlbv8"
+      }
+    },
+    {
+      "id": "pvme-guides--combat-achievements--beastmaster-ca",
+      "href": "https://presets.pvme.io/?id=NIzAHOaz1Yhro3gfpmLc",
+      "text": "Grandmaster Speed Killer",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=NIzAHOaz1Yhro3gfpmLc"
+      }
+    },
+    {
+      "id": "pvme-guides--combat-achievements--black-stone-dragon-ca",
+      "href": "https://presets.pvme.io/?id=87efYB8PIuEQE29aDFt9",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=87efYB8PIuEQE29aDFt9"
+      }
+    },
+    {
+      "id": "pvme-guides--combat-achievements--black-stone-dragon-ca",
+      "href": "https://presets.pvme.io/?id=YRTHHium4p1S5luvOYsb",
+      "text": "Range Melee Hybrid",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=YRTHHium4p1S5luvOYsb"
+      }
+    },
+    {
+      "id": "pvme-guides--combat-achievements--black-stone-dragon-ca",
+      "href": "https://presets.pvme.io/?id=4f53138f-d23b-4683-ba5b-5748c1b1ae69",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=4f53138f-d23b-4683-ba5b-5748c1b1ae69"
+      }
+    },
+    {
+      "id": "pvme-guides--combat-achievements--magister-ca",
+      "href": "https://presets.pvme.io?id=1e6c1644-1c19-404e-9635-4f6cf089258d",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=1e6c1644-1c19-404e-9635-4f6cf089258d"
+      }
+    },
+    {
+      "id": "pvme-guides--combat-achievements--magister-ca",
+      "href": "https://presets.pvme.io?id=8aca7673-48b3-482b-ab8b-b78e64047eb2",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=8aca7673-48b3-482b-ab8b-b78e64047eb2"
+      }
+    },
+    {
+      "id": "pvme-guides--combat-achievements--magister-ca",
+      "href": "https://presets.pvme.io?id=f80fd2a8-96d5-4a6a-ae64-6d78b472dfb5",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=f80fd2a8-96d5-4a6a-ae64-6d78b472dfb5"
+      }
+    },
+    {
+      "id": "pvme-guides--combat-achievements--rasial-ca",
+      "href": "https://presets.pvme.io/?id=IdcNE9rzLNb07bjRkls5",
+      "text": "Connection Lost",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=IdcNE9rzLNb07bjRkls5"
+      }
+    },
+    {
+      "id": "pvme-guides--combat-achievements--rasial-ca",
+      "href": "https://presets.pvme.io?id=4d75453c-1edf-42dc-86c5-28f678633704",
+      "text": "Master Speed Killer",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=4d75453c-1edf-42dc-86c5-28f678633704"
+      }
+    },
+    {
+      "id": "pvme-guides--combat-achievements--seiryu-ca",
+      "href": "https://presets.pvme.io?id=81d8bf4c-143d-4bc2-9f06-fdce73980e89",
+      "text": "Range Melee Hybrid",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=81d8bf4c-143d-4bc2-9f06-fdce73980e89"
+      }
+    },
+    {
+      "id": "pvme-guides--combat-achievements--seiryu-ca",
+      "href": "https://presets.pvme.io?id=14a0bfba-1426-4a00-bd7b-56eda223a13a",
+      "text": "Melee Camp",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=14a0bfba-1426-4a00-bd7b-56eda223a13a"
+      }
+    },
+    {
+      "id": "pvme-guides--combat-achievements--telos-ca",
+      "href": "https://presets.pvme.io?id=73aa05b7-d87f-4079-b8a5-07ee0275b522",
+      "text": "Melee Grandmaster Speed Killer",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=73aa05b7-d87f-4079-b8a5-07ee0275b522"
+      }
+    },
+    {
+      "id": "pvme-guides--combat-achievements--telos-ca",
+      "href": "https://presets.pvme.io?id=5f7097ba-a6cf-49de-97f8-ffa70a6573ee",
+      "text": "Ranged Grandmaster Speed Killer",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=5f7097ba-a6cf-49de-97f8-ffa70a6573ee"
+      }
+    },
+    {
+      "id": "pvme-guides--combat-achievements--vorago-ca",
+      "href": "https://presets.pvme.io?id=4165a4ce-06f8-4dc0-880f-c38fdfa51afc",
+      "text": "Melee Preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=4165a4ce-06f8-4dc0-880f-c38fdfa51afc"
+      }
+    },
+    {
+      "id": "pvme-guides--combat-achievements--vorkath-ca",
+      "href": "https://presets.pvme.io?id=c2520edc-fbc9-41e2-92f9-947cd6c1a851",
+      "text": "Magic/Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=c2520edc-fbc9-41e2-92f9-947cd6c1a851"
+      }
+    },
+    {
+      "id": "pvme-guides--combat-achievements--vorkath-ca",
+      "href": "https://presets.pvme.io/?id=n3P9OYgySOM5k05NTVCi",
+      "text": "Melee/Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=n3P9OYgySOM5k05NTVCi"
+      }
+    },
+    {
+      "id": "pvme-guides--combat-achievements--zuk-ca",
+      "href": "https://presets.pvme.io/?id=snnRqsGBVSDGGqtq90o9",
+      "text": "Necromancy | Ful of Energy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=snnRqsGBVSDGGqtq90o9"
+      }
+    },
+    {
+      "id": "pvme-guides--editor-resources--intro-to-editing-continued",
+      "href": "https://pvme.io/preset-maker/",
+      "text": "Preset Maker",
+      "attrs": {
+        "href": "https://pvme.io/preset-maker/"
+      }
+    },
+    {
+      "id": "pvme-guides--editor-resources--intro-to-editing-continued",
+      "href": "https://pvme.io/preset-maker/",
+      "text": "Preset Maker",
+      "attrs": {
+        "href": "https://pvme.io/preset-maker/"
+      }
+    },
+    {
+      "id": "pvme-guides--editor-resources--editor-references--icon-creation",
+      "href": "https://pvme.github.io/preset-maker/",
+      "text": "https://pvme.github.io/preset-maker/",
+      "attrs": {
+        "href": "https://pvme.github.io/preset-maker/"
+      }
+    },
+    {
+      "id": "pvme-guides--editor-resources--editor-references--preset-maker",
+      "href": "https://pvme.github.io/preset-maker/",
+      "text": "https://pvme.github.io/preset-maker/",
+      "attrs": {
+        "href": "https://pvme.github.io/preset-maker/"
+      }
+    },
+    {
+      "id": "pvme-guides--editor-resources--editor-references--style-guide",
+      "href": "https://presets.pvme.io?id=presetID",
+      "text": "https://presets.pvme.io?id=presetID",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=presetID"
+      }
+    },
+    {
+      "id": "pvme-guides--getting-started--early-moneymaking-ideas",
+      "href": "https://presets.pvme.io/?id=DcerXrWgcHb2RLhlzlb1",
+      "text": "preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=DcerXrWgcHb2RLhlzlb1"
+      }
+    },
+    {
+      "id": "pvme-guides--getting-started--interface-guide",
+      "href": "https://presets.pvme.io/?id=7a3eaf08-a1ce-4a89-b3ec-ee94efcffa29",
+      "text": "Dyanne",
+      "attrs": {
+        "title": "",
+        "href": "https://presets.pvme.io/?id=7a3eaf08-a1ce-4a89-b3ec-ee94efcffa29",
+        "target": "_blank",
+        "rel": "noreferrer"
+      }
+    },
+    {
+      "id": "pvme-guides--getting-started--interface-guide",
+      "href": "https://presets.pvme.io/?id=2a258b96-3929-47f3-adc6-92a8d6f8a95a",
+      "text": "hikaru nara",
+      "attrs": {
+        "title": "",
+        "href": "https://presets.pvme.io/?id=2a258b96-3929-47f3-adc6-92a8d6f8a95a",
+        "target": "_blank",
+        "rel": "noreferrer"
+      }
+    },
+    {
+      "id": "pvme-guides--getting-started--interface-guide",
+      "href": "https://presets.pvme.io/?id=ad56e52f-0cd0-4173-9caf-a4cf1e04170e",
+      "text": "basic preset",
+      "attrs": {
+        "title": "",
+        "href": "https://presets.pvme.io/?id=ad56e52f-0cd0-4173-9caf-a4cf1e04170e",
+        "target": "_blank",
+        "rel": "noreferrer"
+      }
+    },
+    {
+      "id": "pvme-guides--invention-and-perks--scavenging-farming",
+      "href": "https://presets.pvme.io?id=341f5dbf-3053-4ef8-b105-fa569b5c3dae",
+      "text": "Magic (Seasingers)",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=341f5dbf-3053-4ef8-b105-fa569b5c3dae"
+      }
+    },
+    {
+      "id": "pvme-guides--invention-and-perks--scavenging-farming",
+      "href": "https://presets.pvme.io?id=fcd0d19b-462e-426f-bc31-52750efd33a1",
+      "text": "Magic (Power Armour)",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=fcd0d19b-462e-426f-bc31-52750efd33a1"
+      }
+    },
+    {
+      "id": "pvme-guides--invention-and-perks--scavenging-farming",
+      "href": "https://presets.pvme.io?id=c1bd0b1a-2882-4890-a531-addca9a7e0eb",
+      "text": "Melee (Tetsu)",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=c1bd0b1a-2882-4890-a531-addca9a7e0eb"
+      }
+    },
+    {
+      "id": "pvme-guides--invention-and-perks--scavenging-farming",
+      "href": "https://presets.pvme.io?id=d5bea91c-d176-4252-af29-62c1e824f64c",
+      "text": "Melee (Power Armour)",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=d5bea91c-d176-4252-af29-62c1e824f64c"
+      }
+    },
+    {
+      "id": "pvme-guides--invention-and-perks--scavenging-farming",
+      "href": "https://presets.pvme.io/?id=c7w8rckczkiN1xj48NSH",
+      "text": "Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=c7w8rckczkiN1xj48NSH"
+      }
+    },
+    {
+      "id": "pvme-guides--invention-and-perks--scavenging-farming",
+      "href": "https://presets.pvme.io?id=8zGAnOvcVP0qygB8mdHG",
+      "text": "Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=8zGAnOvcVP0qygB8mdHG"
+      }
+    },
+    {
+      "id": "pvme-guides--one-tick-guides--basic-one-ticks",
+      "href": "https://presets.pvme.io/?id=cc5793e3-afa6-449d-bd36-b31b535f7c49",
+      "text": "Melee preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=cc5793e3-afa6-449d-bd36-b31b535f7c49"
+      }
+    },
+    {
+      "id": "pvme-guides--one-tick-guides--basic-one-ticks",
+      "href": "https://presets.pvme.io/?id=uOclPKFh7UzUHRlLnT6S",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=uOclPKFh7UzUHRlLnT6S"
+      }
+    },
+    {
+      "id": "pvme-guides--one-tick-guides--legiones",
+      "href": "https://presets.pvme.io/?id=HK6RglCdwLR1tbLtBZ2w",
+      "text": "Ranged - Basic",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=HK6RglCdwLR1tbLtBZ2w"
+      }
+    },
+    {
+      "id": "pvme-guides--one-tick-guides--rise-of-the-six",
+      "href": "https://presets.pvme.io/?id=SX3hOCa4jOiUwcxYoe7T",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=SX3hOCa4jOiUwcxYoe7T"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--barrows",
+      "href": "https://presets.pvme.io?id=ca2b614a-96ff-4c1f-a697-a2c32e5a09d0",
+      "text": "Necromancy Preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=ca2b614a-96ff-4c1f-a697-a2c32e5a09d0"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--barrows",
+      "href": "https://presets.pvme.io?id=975a86d0-7991-44e1-b727-39b55ddd5184",
+      "text": "Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=975a86d0-7991-44e1-b727-39b55ddd5184"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--barrows",
+      "href": "https://presets.pvme.io/?id=f8b11b61-e287-4af8-91e7-4b2abd910e1c",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=f8b11b61-e287-4af8-91e7-4b2abd910e1c"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--barrows",
+      "href": "https://presets.pvme.io?id=16ce5427-f56f-42b5-a3a9-85e81d402e55",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=16ce5427-f56f-42b5-a3a9-85e81d402e55"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--corporeal-beast",
+      "href": "https://presets.pvme.io?id=42e1a4d3-a7a9-48d7-a0b1-bed2f0ed7220",
+      "text": "T90 Necro",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=42e1a4d3-a7a9-48d7-a0b1-bed2f0ed7220"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--corporeal-beast",
+      "href": "https://presets.pvme.io?id=268429f8-a7ef-465f-bdbe-d584df89265e",
+      "text": "T95-T100 Necro",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=268429f8-a7ef-465f-bdbe-d584df89265e"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--corporeal-beast",
+      "href": "https://presets.pvme.io?id=231411fd-cccc-4346-a902-714e7c5e00d2",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=231411fd-cccc-4346-a902-714e7c5e00d2"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--dagannoth-kings",
+      "href": "https://presets.pvme.io/?id=WVderdEaRP6HcbMphACG",
+      "text": "Low-level",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=WVderdEaRP6HcbMphACG"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--dagannoth-kings",
+      "href": "https://presets.pvme.io/?id=BaFDdRaZawclqmjb8h6c",
+      "text": "High-level",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=BaFDdRaZawclqmjb8h6c"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--fight-kiln",
+      "href": "https://presets.pvme.io/?id=AToCog7o6tN7tyjnbfpN",
+      "text": "All styles",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=AToCog7o6tN7tyjnbfpN"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--flesh-hatcher-mhekarnahz",
+      "href": "https://presets.pvme.io?id=f4ac2925-6760-42e7-850f-dd93326142ce",
+      "text": "Melee - Resetting",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=f4ac2925-6760-42e7-850f-dd93326142ce"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--flesh-hatcher-mhekarnahz",
+      "href": "https://presets.pvme.io?id=2ef43c03-f77f-4f85-a540-35c645e1a28d",
+      "text": "Ranged - Instance Camp",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=2ef43c03-f77f-4f85-a540-35c645e1a28d"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--flesh-hatcher-mhekarnahz",
+      "href": "https://presets.pvme.io?id=b75930d4-76fd-4282-aae4-6ac34dbe162f",
+      "text": "Magic - Instance Camp",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=b75930d4-76fd-4282-aae4-6ac34dbe162f"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--flesh-hatcher-mhekarnahz",
+      "href": "https://presets.pvme.io?id=84b49ef8-1cdd-42f1-ba72-eec54ff0f8c1",
+      "text": "Melee - Instance Camp",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=84b49ef8-1cdd-42f1-ba72-eec54ff0f8c1"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--gate-of-elidinis",
+      "href": "https://presets.pvme.io/?id=HBljJAqqGZ7w4Vd0MQjy",
+      "text": "Basic Preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=HBljJAqqGZ7w4Vd0MQjy"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--gate-of-elidinis",
+      "href": "https://presets.pvme.io/?id=4luWv5kmbbkNzzqsoKEl",
+      "text": "Advanced Preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=4luWv5kmbbkNzzqsoKEl"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--giant-mole-hm",
+      "href": "https://presets.pvme.io?id=4e88b073-182b-477d-80f9-91bd54b5c79f",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=4e88b073-182b-477d-80f9-91bd54b5c79f"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--hermod",
+      "href": "https://presets.pvme.io/?id=BsEi4iGWqO8sBAge4j3j",
+      "text": "T90 Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=BsEi4iGWqO8sBAge4j3j"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--hermod",
+      "href": "https://presets.pvme.io/?id=pDaRDMzjF6EjSCVKFjd7",
+      "text": "T95 Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=pDaRDMzjF6EjSCVKFjd7"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--kalphite-queen",
+      "href": "https://presets.pvme.io/?id=yVhCon0PlnX2U48y3sJe",
+      "text": "Melee / Ranged Hybrid",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=yVhCon0PlnX2U48y3sJe"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--legiones",
+      "href": "https://presets.pvme.io/?id=T525rjywtBafR4mVL7PS",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=T525rjywtBafR4mVL7PS"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--magister",
+      "href": "https://presets.pvme.io/?id=63Rg03RoI4WfdDdZ54u9",
+      "text": "Melee (Basic)",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=63Rg03RoI4WfdDdZ54u9"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--magister",
+      "href": "https://presets.pvme.io/?id=2g18YuJ2ILHGi5do476M",
+      "text": "Melee (Advanced)",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=2g18YuJ2ILHGi5do476M"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--queen-black-dragon",
+      "href": "https://presets.pvme.io/?id=5qeONiK3mTiH18UBWxrL",
+      "text": "Ranged | Basic",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=5qeONiK3mTiH18UBWxrL"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--queen-black-dragon",
+      "href": "https://presets.pvme.io/?id=8905598c-eb45-4bcd-b9e8-7c733d1a5453",
+      "text": "Ranged | Advanced",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=8905598c-eb45-4bcd-b9e8-7c733d1a5453"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--rasial",
+      "href": "https://presets.pvme.io?id=b76b6c80-4fea-4108-b8bb-a8d5e57d763a",
+      "text": "T90 Equilibrium",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=b76b6c80-4fea-4108-b8bb-a8d5e57d763a"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--rasial",
+      "href": "https://presets.pvme.io?id=806eee99-0df5-439d-8225-c9f5e0736998",
+      "text": "Equilibrium (Advanced)",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=806eee99-0df5-439d-8225-c9f5e0736998"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--yakamaru",
+      "href": "https://presets.pvme.io/?id=yk1Gpp9iDn0X0xX21oSQ",
+      "text": "Magic | Basic DPS / Free",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=yk1Gpp9iDn0X0xX21oSQ"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--yakamaru",
+      "href": "https://presets.pvme.io/?id=SZME3sjYOMDBby7M6LGA",
+      "text": "Melee | Basic DPS / Free",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=SZME3sjYOMDBby7M6LGA"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--yakamaru",
+      "href": "https://presets.pvme.io/?id=i5WO2DTuiWD1z0BNGMK9",
+      "text": "Ranged | Basic DPS / Free",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=i5WO2DTuiWD1z0BNGMK9"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--yakamaru",
+      "href": "https://presets.pvme.io/?id=0qcPZuWuWeO2UqVkKHy4",
+      "text": "Magic | Tank",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=0qcPZuWuWeO2UqVkKHy4"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--amascut--amascut-1000-2000-necromancy",
+      "href": "https://presets.pvme.io?id=d5c25c74-3c0e-41d9-a6c8-d720e9fb4318",
+      "text": "Necromancy Preset Example",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=d5c25c74-3c0e-41d9-a6c8-d720e9fb4318"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--amascut--amascut-1000-magic-melee-base",
+      "href": "https://presets.pvme.io?id=9c3d5b31-af53-448b-992e-d731597dea8e",
+      "text": "Magic First Preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=9c3d5b31-af53-448b-992e-d731597dea8e"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--amascut--amascut-1000-magic-melee-base",
+      "href": "https://presets.pvme.io?id=33dd8f5a-2cda-40cc-8ae8-3a0ddff97956",
+      "text": "Melee First Preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=33dd8f5a-2cda-40cc-8ae8-3a0ddff97956"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--amascut--amascut-1000-magic-melee-dps",
+      "href": "https://presets.pvme.io?id=0ec73011-6621-4ac4-b4dc-cfc2640bb4e2",
+      "text": "Magic-Melee Preset Example",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=0ec73011-6621-4ac4-b4dc-cfc2640bb4e2"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--amascut--amascut-1000-ranged-melee-dps",
+      "href": "https://presets.pvme.io/?id=23bac451-4a97-4d49-8ee9-2e3ed2bc1464",
+      "text": "Range - Melee Preset Example",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=23bac451-4a97-4d49-8ee9-2e3ed2bc1464"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--amascut--amascut-2000-magic-melee-base",
+      "href": "https://presets.pvme.io?id=687f62a6-0b1d-43e9-b577-1f41d177ab24",
+      "text": "Magic-Melee Preset Example",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=687f62a6-0b1d-43e9-b577-1f41d177ab24"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--amascut--amascut-2000-ranged-melee-dps",
+      "href": "https://presets.pvme.io/?id=23bac451-4a97-4d49-8ee9-2e3ed2bc1464",
+      "text": "Range - Melee Preset Example",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=23bac451-4a97-4d49-8ee9-2e3ed2bc1464"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--angel-of-death-7s--mage-base",
+      "href": "https://presets.pvme.io/?id=g36RHfQihw9RfoCmb7w2",
+      "text": "Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=g36RHfQihw9RfoCmb7w2"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--angel-of-death-7s--mage-melee-base",
+      "href": "https://presets.pvme.io/?id=TF2Gt8tZWhnfL569hd89",
+      "text": "Magic / Melee Hybrid preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=TF2Gt8tZWhnfL569hd89"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--angel-of-death-7s--mage-melee-minion-tank",
+      "href": "https://presets.pvme.io?id=d6c5595e-226f-4fc8-bd3a-a879f16030fe",
+      "text": "Magic / Melee preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=d6c5595e-226f-4fc8-bd3a-a879f16030fe"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--angel-of-death-7s--mage-minion-tank",
+      "href": "https://presets.pvme.io/?id=AENJgw5xtKjK1FH4SO5N",
+      "text": "Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=AENJgw5xtKjK1FH4SO5N"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--angel-of-death-7s--mage-range-base",
+      "href": "https://presets.pvme.io/?id=itEivqAZtQ741dKvOh1s",
+      "text": "Magic / Ranged preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=itEivqAZtQ741dKvOh1s"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--angel-of-death-7s--mage-range-minion-tank",
+      "href": "https://presets.pvme.io/?id=Y1lOit5n5BrPgLCGTQch",
+      "text": "Magic / Ranged preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=Y1lOit5n5BrPgLCGTQch"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--angel-of-death-7s--melee-minion-tank",
+      "href": "https://presets.pvme.io/?id=Gs2VPyBThwSforFv8Q4y",
+      "text": "Melee preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=Gs2VPyBThwSforFv8Q4y"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--angel-of-death-7s--melee-ranged-base",
+      "href": "https://presets.pvme.io?id=4cf6321f-3e5a-4c43-a1e2-41b57333655e",
+      "text": "Ranged / Melee preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=4cf6321f-3e5a-4c43-a1e2-41b57333655e"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--angel-of-death-7s--melee-ranged-minion-tank",
+      "href": "https://presets.pvme.io?id=8d62afdc-71b0-4205-adc3-588a4522015a",
+      "text": "Melee-Ranged Hybrid",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=8d62afdc-71b0-4205-adc3-588a4522015a"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--angel-of-death-7s--necromancy-base",
+      "href": "https://presets.pvme.io/?id=Wzsd2bwxG0FUNPS36RA2",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=Wzsd2bwxG0FUNPS36RA2"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--angel-of-death-7s--necromancy-hamm",
+      "href": "https://presets.pvme.io/?id=qeD1svk1xe4ZHSDj2pPz",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=qeD1svk1xe4ZHSDj2pPz"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--angel-of-death-7s--necromancy-minion-tank-free",
+      "href": "https://presets.pvme.io/?id=uw5ZYQ6qjoxJ6HTkEN9C",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=uw5ZYQ6qjoxJ6HTkEN9C"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--necro_base_with_rangers",
+      "href": "https://presets.pvme.io/?id=EZblg4fsfM8Fiqy4byvR",
+      "text": "Necromancy - Base with rangers",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=EZblg4fsfM8Fiqy4byvR"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--necro_duo_trio_basic",
+      "href": "https://presets.pvme.io/?id=rCepvqR0quPCbcRKqfDq",
+      "text": "Advanced Preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=rCepvqR0quPCbcRKqfDq"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--necro_duo_trio_basic",
+      "href": "https://presets.pvme.io/?id=yWAydOcln6bSkHBcYk7b",
+      "text": "Basic Preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=yWAydOcln6bSkHBcYk7b"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--necro_solo_basic",
+      "href": "https://presets.pvme.io/?id=3BH84d4IKg46ErA6Zzh2",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=3BH84d4IKg46ErA6Zzh2"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--ranged_mt_no_prebuild",
+      "href": "https://presets.pvme.io/?id=NkT9XP8Jz7fbtkaMGbYb",
+      "text": "Ranged preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=NkT9XP8Jz7fbtkaMGbYb"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--aod-solo-hybrid-ranged-melee",
+      "href": "https://presets.pvme.io?id=2d04a378-b5d9-4bf6-a7e4-7436fad11534",
+      "text": "Hybrid Melee-Range",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=2d04a378-b5d9-4bf6-a7e4-7436fad11534"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-base",
+      "href": "https://presets.pvme.io?id=4ff260d3-32e1-4cf8-b112-85a7c0e27004",
+      "text": "Hybrid Base",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=4ff260d3-32e1-4cf8-b112-85a7c0e27004"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--angel-of-death-small-teams--magic-melee-hybrid-dps",
+      "href": "https://presets.pvme.io?id=63c7e6fa-3f25-4f1b-95fc-dd85f79e7f03",
+      "text": "Hybrid DPS",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=63c7e6fa-3f25-4f1b-95fc-dd85f79e7f03"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--araxxor--araxxor-melee",
+      "href": "https://presets.pvme.io/?id=Me4GasJMYFjNy4aK0ScA",
+      "text": "Melee preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=Me4GasJMYFjNy4aK0ScA"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--araxxor--araxxor-necromancy",
+      "href": "https://presets.pvme.io/?id=Ae9Q2oND5zxYU4ILNbI5",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=Ae9Q2oND5zxYU4ILNbI5"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--arch-glacor--high-enrage-arch-glacor-hybrid-melee-magic",
+      "href": "https://presets.pvme.io?id=d094d086-73a3-4f45-9bd9-1fbadc4758af",
+      "text": "Melee / Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=d094d086-73a3-4f45-9bd9-1fbadc4758af"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--arch-glacor--high-enrage-arch-glacor-hybrid-melee-ranged",
+      "href": "https://presets.pvme.io?id=ab514507-02c9-4919-8805-0a0d6e20203a",
+      "text": "Melee / Ranged preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=ab514507-02c9-4919-8805-0a0d6e20203a"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--arch-glacor--high-enrage-arch-glacor-necromancy",
+      "href": "https://presets.pvme.io/?id=ecA3h6GIy9XZPdeXBjwt",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=ecA3h6GIy9XZPdeXBjwt"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--beastmaster-durzag--duo-bm",
+      "href": "https://presets.pvme.io/?id=0VJPdrObhSrzvPodd6zW",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=0VJPdrObhSrzvPodd6zW"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--beastmaster-durzag--duo-bm",
+      "href": "https://presets.pvme.io/?id=XpeodVMvtcqHuv5jlqj3",
+      "text": "Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=XpeodVMvtcqHuv5jlqj3"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--croesus--croesus-1mid-4man",
+      "href": "https://presets.pvme.io/?id=lbrLp9wBulBs86QaLjRU",
+      "text": "Woodcutting preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=lbrLp9wBulBs86QaLjRU"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--croesus--croesus-1mid-4man",
+      "href": "https://presets.pvme.io/?id=aIInfO23Rq94qbXh6cEJ",
+      "text": "Hunting preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=aIInfO23Rq94qbXh6cEJ"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--croesus--croesus-1mid-4man",
+      "href": "https://presets.pvme.io/?id=BuEvFIdVGY5RrzxRNz9P",
+      "text": "Fishing preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=BuEvFIdVGY5RrzxRNz9P"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--croesus--croesus-1mid-4man",
+      "href": "https://presets.pvme.io/?id=snvi0Eh24fk0z9Cpf2LP",
+      "text": "Mining preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=snvi0Eh24fk0z9Cpf2LP"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--croesus--croesus-duo",
+      "href": "https://presets.pvme.io/?id=LfwibkU7GkrN79GslHLj",
+      "text": "Woodcutting / Hunter preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=LfwibkU7GkrN79GslHLj"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--croesus--croesus-duo",
+      "href": "https://presets.pvme.io/?id=fmmGaeuFAqCsZNp2wY8w",
+      "text": "Fishing / Mining preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=fmmGaeuFAqCsZNp2wY8w"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--croesus--croesus",
+      "href": "https://presets.pvme.io/?id=ZqHNsw0CmOHZiF7lPpFH",
+      "text": "Woodcutting preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=ZqHNsw0CmOHZiF7lPpFH"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--croesus--croesus",
+      "href": "https://presets.pvme.io/?id=pysi2plNLpoM0QEUGRbN",
+      "text": "Hunter preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=pysi2plNLpoM0QEUGRbN"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--croesus--croesus",
+      "href": "https://presets.pvme.io/?id=sWGRXhUPNBCywDkQkobX",
+      "text": "Mining preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=sWGRXhUPNBCywDkQkobX"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--croesus--croesus",
+      "href": "https://presets.pvme.io/?id=Drw64zexoihAWOmc0gEY",
+      "text": "Fishing preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=Drw64zexoihAWOmc0gEY"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--ed1-temple-of-aminishi--ed1-melee-ranged",
+      "href": "https://presets.pvme.io?id=6b5a1831-66c2-4082-ad68-5a9370195e00",
+      "text": "Melee/Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=6b5a1831-66c2-4082-ad68-5a9370195e00"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--ed1-temple-of-aminishi--ed1-ranged",
+      "href": "https://presets.pvme.io/?id=918b353d-27bc-447d-9069-eeb40aeb850a",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=918b353d-27bc-447d-9069-eeb40aeb850a"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--ed2-dragonkin-laboratory--ed2-necromancy",
+      "href": "https://presets.pvme.io/?id=T5h73UIw6BNPgSWI3YT2",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=T5h73UIw6BNPgSWI3YT2"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--ed2-dragonkin-laboratory--ed2-ranged",
+      "href": "https://presets.pvme.io?id=e8a23587-a7fc-48bc-91ed-603a3f69ba83",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=e8a23587-a7fc-48bc-91ed-603a3f69ba83"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--ed3-shadow-reef--melee-magic-hybrid",
+      "href": "https://presets.pvme.io?id=30721de3-7b71-463e-995c-b90e22eea38f",
+      "text": "Melee-Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=30721de3-7b71-463e-995c-b90e22eea38f"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--ed3-shadow-reef--necromancy",
+      "href": "https://presets.pvme.io/?id=orZ7YYqxdZsLgFPK9xlY",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=orZ7YYqxdZsLgFPK9xlY"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--ghrazi-blood-knights--gbk-duo-100-ranged-melee",
+      "href": "https://pvme.io/preset-maker-storage/embeds/a4ac0f53-d82a-4c16-8713-7b7854a872f9/7x4/?v=b7addc6940f0e411a1a8712db1747bd3340981de65e56fde1be827322037857f",
+      "text": "Ranged-Melee Preset Example",
+      "attrs": {
+        "href": "https://pvme.io/preset-maker-storage/embeds/a4ac0f53-d82a-4c16-8713-7b7854a872f9/7x4/?v=b7addc6940f0e411a1a8712db1747bd3340981de65e56fde1be827322037857f"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--ghrazi-blood-knights--gbk-solo-100-ranged-melee",
+      "href": "https://pvme.io/preset-maker-storage/embeds/42d7f30c-7b23-41d9-a4df-0f151f2184e7/7x4/?v=4860f3095f2e8be30254a4ac5ab5a3b19c0c21e8ea9a24727405836e9e5895a3",
+      "text": "Ranged-Melee Preset Example",
+      "attrs": {
+        "href": "https://pvme.io/preset-maker-storage/embeds/42d7f30c-7b23-41d9-a4df-0f151f2184e7/7x4/?v=4860f3095f2e8be30254a4ac5ab5a3b19c0c21e8ea9a24727405836e9e5895a3"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--gregorovic--gregorovic-rots",
+      "href": "https://presets.pvme.io?id=Goyk9abT0gLIBvXKLPUW",
+      "text": "Melee preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=Goyk9abT0gLIBvXKLPUW"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--gregorovic--gregorovic-rots",
+      "href": "https://presets.pvme.io?id=748634c8-eaf0-4303-a46a-4bd9640d465e",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=748634c8-eaf0-4303-a46a-4bd9640d465e"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--gregorovic--gregorovic-rots",
+      "href": "https://presets.pvme.io?id=0171ae57-37e0-475e-b5c3-530b3e6430e2",
+      "text": "Ranged preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=0171ae57-37e0-475e-b5c3-530b3e6430e2"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--helwyr--helwyr-rots",
+      "href": "https://presets.pvme.io?id=Goyk9abT0gLIBvXKLPUW",
+      "text": "Melee preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=Goyk9abT0gLIBvXKLPUW"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--helwyr--helwyr-rots",
+      "href": "https://presets.pvme.io?id=ir5qh5mOzqGlniaPL55m",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=ir5qh5mOzqGlniaPL55m"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--helwyr--helwyr-rots",
+      "href": "https://presets.pvme.io?id=0171ae57-37e0-475e-b5c3-530b3e6430e2",
+      "text": "Ranged preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=0171ae57-37e0-475e-b5c3-530b3e6430e2"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--kalphite-king--solo-necromancy",
+      "href": "https://presets.pvme.io/?id=fhekIZ1Hli0uiCogPGTo",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=fhekIZ1Hli0uiCogPGTo"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--kalphite-king--solo-ranged",
+      "href": "https://presets.pvme.io?id=c6459333-cf59-48bf-a9c3-e5258185a5f8",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=c6459333-cf59-48bf-a9c3-e5258185a5f8"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--kerapac--duo-hard-mode",
+      "href": "https://presets.pvme.io/?id=Uc4x8Rydn8KpB1tIYHFk",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=Uc4x8Rydn8KpB1tIYHFk"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-magic-melee-hybrid",
+      "href": "https://presets.pvme.io?id=43ecd334-cee0-436f-af4b-5588ff47381f",
+      "text": "Magic-Melee Hybrid",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=43ecd334-cee0-436f-af4b-5588ff47381f"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-melee-ranged-hybrid",
+      "href": "https://presets.pvme.io?id=5c485c72-b4e1-4167-ae6d-c24d8f1988da",
+      "text": "Melee-Ranged Hybrid",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=5c485c72-b4e1-4167-ae6d-c24d8f1988da"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-melee",
+      "href": "https://presets.pvme.io?id=041d38d5-1566-4f4e-9fa1-35db24ba99ac",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=041d38d5-1566-4f4e-9fa1-35db24ba99ac"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-necromancy",
+      "href": "https://presets.pvme.io/?id=QpaFNZ40x5eE0dExdBPR",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=QpaFNZ40x5eE0dExdBPR"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--kerapac--solo-hard-mode-ranged",
+      "href": "https://presets.pvme.io?id=a7fe1641-aa2c-46ee-879b-c248b550cc5d",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=a7fe1641-aa2c-46ee-879b-c248b550cc5d"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--nex--nex-solo-bolg",
+      "href": "https://presets.pvme.io?id=271ab9d3-3a6f-4c5f-bc03-e3fadd435b2e",
+      "text": "Ranged Nex (BoLG)",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=271ab9d3-3a6f-4c5f-bc03-e3fadd435b2e"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--nex--nex-solo-melee",
+      "href": "https://presets.pvme.io?id=57ad5549-0627-4b0d-98d6-331313a6a09a",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=57ad5549-0627-4b0d-98d6-331313a6a09a"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--nex--nex-solo-necromancy",
+      "href": "https://presets.pvme.io/?id=CCLGb0GsoU7oEaTO7VvJ",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=CCLGb0GsoU7oEaTO7VvJ"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--raksha--mage-melee-hybrid",
+      "href": "https://presets.pvme.io?id=d6864245-5879-45e7-9ad0-b88c0b3deb60",
+      "text": "Magic-Melee Hybrid",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=d6864245-5879-45e7-9ad0-b88c0b3deb60"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--raksha--magic",
+      "href": "https://presets.pvme.io?id=6c664144-91f7-4cba-a579-d4f006cfc2de",
+      "text": "Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=6c664144-91f7-4cba-a579-d4f006cfc2de"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--raksha--melee-ranged-hybrid",
+      "href": "https://presets.pvme.io?id=afa3c45f-89b5-459a-bd6b-ea2e8539a110",
+      "text": "Melee-Ranged Hybrid",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=afa3c45f-89b5-459a-bd6b-ea2e8539a110"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--raksha--melee",
+      "href": "https://presets.pvme.io?id=cb8c0c06-d6e7-4049-a099-c9213fab2a2f",
+      "text": "Melee - Method 1",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=cb8c0c06-d6e7-4049-a099-c9213fab2a2f"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--raksha--melee",
+      "href": "https://presets.pvme.io?id=df25803e-8a81-483d-98e2-01bd372a23fb",
+      "text": "Melee - Method 2",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=df25803e-8a81-483d-98e2-01bd372a23fb"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--raksha--necromancy",
+      "href": "https://presets.pvme.io/?id=KC4ZRVh0Ei6hsKxzoZUP",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=KC4ZRVh0Ei6hsKxzoZUP"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--raksha--ranged",
+      "href": "https://presets.pvme.io?id=6f6b6ce6-520d-41fd-a2fd-f83a2d25668f",
+      "text": "Ranged - Method 1",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=6f6b6ce6-520d-41fd-a2fd-f83a2d25668f"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--raksha--ranged",
+      "href": "https://presets.pvme.io/?id=6a65e72a-250c-4ab0-94dc-ac35e9a2952b",
+      "text": "Ranged - Method 2",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=6a65e72a-250c-4ab0-94dc-ac35e9a2952b"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--rex-matriarchs--orikalka-basic",
+      "href": "https://presets.pvme.io?id=a9149f4d-fbbb-4cb8-87c7-da567c880499",
+      "text": "Example Preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=a9149f4d-fbbb-4cb8-87c7-da567c880499"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--rex-matriarchs--osseous-basic",
+      "href": "https://presets.pvme.io?id=d50b1a3c-f1f3-4fb0-8f48-43f548f10f64",
+      "text": "Example Preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=d50b1a3c-f1f3-4fb0-8f48-43f548f10f64"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--rex-matriarchs--pthentraken-basic",
+      "href": "https://presets.pvme.io?id=f42b63a2-7262-41e3-a740-780f54ee8add",
+      "text": "Example Preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=f42b63a2-7262-41e3-a740-780f54ee8add"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--rex-matriarchs--rathis-basic",
+      "href": "https://presets.pvme.io?id=3bff65d4-55ad-401d-b23c-70d50230353d",
+      "text": "Example Preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=3bff65d4-55ad-401d-b23c-70d50230353d"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--rex-matriarchs--rex-rotations",
+      "href": "https://presets.pvme.io?id=j9LSOzS9FecS0eY1hoCh",
+      "text": "Orikalka/Pthentraken Preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=j9LSOzS9FecS0eY1hoCh"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--rex-matriarchs--rex-rotations",
+      "href": "https://presets.pvme.io?id=ZkjU34SQqrS98xoJbvDr",
+      "text": "Orikalka/Rathis Preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=ZkjU34SQqrS98xoJbvDr"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--rex-matriarchs--rex-rotations",
+      "href": "https://presets.pvme.io?id=GNdGZ7K1XMXRgrpMrBkU",
+      "text": "Rathis/Pthentraken Preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=GNdGZ7K1XMXRgrpMrBkU"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--rex-matriarchs--rex-rotations",
+      "href": "https://presets.pvme.io/?id=qhBiUaM4XYwtCTOgntLZ",
+      "text": "Orikalka",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=qhBiUaM4XYwtCTOgntLZ"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--rex-matriarchs--rex-rotations",
+      "href": "https://presets.pvme.io?id=nRMSdlne9qU1egI9Bb1o",
+      "text": "Rathis",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=nRMSdlne9qU1egI9Bb1o"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--rex-matriarchs--rex-rotations",
+      "href": "https://presets.pvme.io/?id=O067jI2g4XQ5T8ii10cF",
+      "text": "Pthentraken",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=O067jI2g4XQ5T8ii10cF"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--rex-matriarchs--rex-rotations",
+      "href": "https://presets.pvme.io/?id=HgySggpatAWYi8yf9zB0",
+      "text": "Osseous",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=HgySggpatAWYi8yf9zB0"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--rise-of-the-six--rise-of-the-six-4man-and-duo",
+      "href": "https://presets.pvme.io/?id=UCJZ9T8Se54mm98Qsd1O",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=UCJZ9T8Se54mm98Qsd1O"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--rise-of-the-six--rise-of-the-six-4man-and-duo",
+      "href": "https://presets.pvme.io?id=7b6beea2-829b-4f5c-b0f8-41fc0919c6e6",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=7b6beea2-829b-4f5c-b0f8-41fc0919c6e6"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--rise-of-the-six--rise-of-the-six-solo",
+      "href": "https://presets.pvme.io?id=7b6beea2-829b-4f5c-b0f8-41fc0919c6e6",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=7b6beea2-829b-4f5c-b0f8-41fc0919c6e6"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--rise-of-the-six--rise-of-the-six-solo",
+      "href": "https://presets.pvme.io/?id=IK4CADWSd1foOoS2yixr",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=IK4CADWSd1foOoS2yixr"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--rise-of-the-six--rise-of-the-six-solo",
+      "href": "https://presets.pvme.io?id=eb9f68f1-02bb-47d6-8376-78b1c3a53094",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=eb9f68f1-02bb-47d6-8376-78b1c3a53094"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--sanctum--sanctum-hm-solo-magic-melee",
+      "href": "https://presets.pvme.io/?id=92bcaf47-eb1e-4d23-9a3b-34d2fe0dc98a",
+      "text": "Magic-Melee Hybrid",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=92bcaf47-eb1e-4d23-9a3b-34d2fe0dc98a"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--sanctum--sanctum-hm-solo-melee-ranged-hybrid",
+      "href": "https://presets.pvme.io?id=f8b20b54-accf-488a-a2d9-2c8eaeafdda0",
+      "text": "Melee-Ranged Hybrid",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=f8b20b54-accf-488a-a2d9-2c8eaeafdda0"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--sanctum--sanctum-hm-solo-melee",
+      "href": "https://presets.pvme.io?id=e083987e-ab15-4c38-89f0-1ceeba5ede64",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=e083987e-ab15-4c38-89f0-1ceeba5ede64"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--sanctum--sanctum-hm-solo-necromancy",
+      "href": "https://presets.pvme.io/?id=dheRHSwmrOZ6roOnYldI",
+      "text": "Necromancy t95 / t100 preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=dheRHSwmrOZ6roOnYldI"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--sanctum--sanctum-hm-solo-ranged",
+      "href": "https://presets.pvme.io/?id=743d5462-197f-48df-b8ce-480125474786",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=743d5462-197f-48df-b8ce-480125474786"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--solak--4-to-5-magic-hybrid",
+      "href": "https://presets.pvme.io/?id=BosZhz3IohAiiPlA7Hcb",
+      "text": "Magic / Melee Hybrid",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=BosZhz3IohAiiPlA7Hcb"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--solak--duo-melee-ranged-hybrid",
+      "href": "https://presets.pvme.io?id=b4c5b45a-cb52-4f04-afb1-500fdf17cf75",
+      "text": "Melee-Ranged Hybrid",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=b4c5b45a-cb52-4f04-afb1-500fdf17cf75"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--solak--necromancy-solo",
+      "href": "https://presets.pvme.io/?id=oPrfSUYvrHKVBzsZ0jTh",
+      "text": "Preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=oPrfSUYvrHKVBzsZ0jTh"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--solak--solo-magic-hybrid",
+      "href": "https://presets.pvme.io/?id=25a476eb-10a4-4706-b6d7-93b0b140f77e",
+      "text": "Melee/Mage",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=25a476eb-10a4-4706-b6d7-93b0b140f77e"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--solak--solo-melee-ranged-hybrid",
+      "href": "https://presets.pvme.io/?id=f010e217-4314-40c4-9266-26d6e307e1fd",
+      "text": "Melee-Ranged Hybrid",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=f010e217-4314-40c4-9266-26d6e307e1fd"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--telos--magic-fsoa",
+      "href": "https://presets.pvme.io?id=3bf33b25-2dd9-4bd4-81b1-902e8a8d87c9",
+      "text": "Magic (FSoA)",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=3bf33b25-2dd9-4bd4-81b1-902e8a8d87c9"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--telos--melee",
+      "href": "https://presets.pvme.io?id=b99608b2-8131-4629-b155-256445e36415",
+      "text": "Melee Telos",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=b99608b2-8131-4629-b155-256445e36415"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--telos--necromancy",
+      "href": "https://presets.pvme.io/?id=FNRVoyCSDDRe5kLTrbNz",
+      "text": "Equilibrium Necromancy Safe Push Preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=FNRVoyCSDDRe5kLTrbNz"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--telos--necromancy",
+      "href": "https://presets.pvme.io/?id=fnoGMlYMutXfmU4gA5Y8",
+      "text": "Equilibrium Necromancy Fast 2449 Farming Preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=fnoGMlYMutXfmU4gA5Y8"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--telos--ranged-bolg",
+      "href": "https://pvme.io/preset-maker-storage/embeds/1b7b20ac-c2c4-48cf-ae37-7c00c78086b4/7x4/?v=ad28f209df597011464232ac9355b0b6272f706b91c59b0247d9ed1f42448402",
+      "text": "Ranged - BoLG",
+      "attrs": {
+        "href": "https://pvme.io/preset-maker-storage/embeds/1b7b20ac-c2c4-48cf-ae37-7c00c78086b4/7x4/?v=ad28f209df597011464232ac9355b0b6272f706b91c59b0247d9ed1f42448402"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--twin-furies--twin-furies-rots",
+      "href": "https://presets.pvme.io?id=Goyk9abT0gLIBvXKLPUW",
+      "text": "Melee preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=Goyk9abT0gLIBvXKLPUW"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--twin-furies--twin-furies-rots",
+      "href": "https://presets.pvme.io?id=ir5qh5mOzqGlniaPL55m",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=ir5qh5mOzqGlniaPL55m"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--twin-furies--twin-furies-rots",
+      "href": "https://presets.pvme.io?id=0171ae57-37e0-475e-b5c3-530b3e6430e2",
+      "text": "Ranged preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=0171ae57-37e0-475e-b5c3-530b3e6430e2"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-melee-ranged",
+      "href": "https://presets.pvme.io?id=b6bbf927-136b-4b7d-8045-2c785fa55f01",
+      "text": "Melee/Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=b6bbf927-136b-4b7d-8045-2c785fa55f01"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--tzkal-zuk--hm-zuk-necro",
+      "href": "https://presets.pvme.io/?id=DBJShaNHiFWgvpriGLPM",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=DBJShaNHiFWgvpriGLPM"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--vindicta--vindicta-rots",
+      "href": "https://presets.pvme.io?id=Goyk9abT0gLIBvXKLPUW",
+      "text": "Melee preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=Goyk9abT0gLIBvXKLPUW"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--vindicta--vindicta-rots",
+      "href": "https://presets.pvme.io?id=ir5qh5mOzqGlniaPL55m",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=ir5qh5mOzqGlniaPL55m"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--vindicta--vindicta-rots",
+      "href": "https://presets.pvme.io?id=0171ae57-37e0-475e-b5c3-530b3e6430e2",
+      "text": "Ranged preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=0171ae57-37e0-475e-b5c3-530b3e6430e2"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--vorago--introductory-necro-solo-vorago-guide",
+      "href": "https://presets.pvme.io/?id=JT2uCyVCKDj7Tx8C7mN2",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=JT2uCyVCKDj7Tx8C7mN2"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview",
+      "href": "https://presets.pvme.io/?id=JdkIDmzO3yRvDY8losgL",
+      "text": "Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=JdkIDmzO3yRvDY8losgL"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview",
+      "href": "https://presets.pvme.io/?id=ltTxKZTkowjIhwdm0ULU",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=ltTxKZTkowjIhwdm0ULU"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview",
+      "href": "https://presets.pvme.io/?id=YSPh9XkAiF2t73Oyvrzk",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=YSPh9XkAiF2t73Oyvrzk"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--vorago-hm--solo-hard-mode-necromancy",
+      "href": "https://presets.pvme.io/?id=sQePEP7yubFEk1PffUFb",
+      "text": "Solo HM Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=sQePEP7yubFEk1PffUFb"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--vorkath--mage-melee-hmvork",
+      "href": "https://presets.pvme.io?id=acffac82-93c0-4aaa-9887-1d3945b820d6",
+      "text": "Hybrid Hardmode Vorkath Preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=acffac82-93c0-4aaa-9887-1d3945b820d6"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--vorkath--melee-ranged-hmvork",
+      "href": "https://presets.pvme.io?id=a4fbf3cf-c0f9-4778-b709-b2b1b987c0bd",
+      "text": "Hybrid Hard Mode Vorkath Preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=a4fbf3cf-c0f9-4778-b709-b2b1b987c0bd"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--vorkath--melee-vorkath",
+      "href": "https://presets.pvme.io?id=3d8cabf4-4985-47c2-93ce-27465be6aca5",
+      "text": "Method 1",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=3d8cabf4-4985-47c2-93ce-27465be6aca5"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--vorkath--melee-vorkath",
+      "href": "https://presets.pvme.io?id=5ad255b1-85e1-4f24-849b-9b626401d820",
+      "text": "Method 2",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=5ad255b1-85e1-4f24-849b-9b626401d820"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--vorkath--necro-vorkath",
+      "href": "https://presets.pvme.io/?id=8boQLxDki0lwAHlarYDh",
+      "text": "Normal mode Vorkath Skip preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=8boQLxDki0lwAHlarYDh"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--vorkath--necro-vorkath",
+      "href": "https://presets.pvme.io?id=ba006a52-703b-4f49-abd7-20fd5a6fa45a",
+      "text": "Hardmode Vorkath Preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=ba006a52-703b-4f49-abd7-20fd5a6fa45a"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--vorkath--ranged-hm",
+      "href": "https://presets.pvme.io?id=4f7f5e4b-d10d-4a6b-9d08-d18e844b4bbf",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=4f7f5e4b-d10d-4a6b-9d08-d18e844b4bbf"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--zamorak--zamorak-1000-ranged-melee-group",
+      "href": "https://presets.pvme.io?id=64f8364c-2a27-4dfd-b907-1230f1b7d80d",
+      "text": "Ranged-Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=64f8364c-2a27-4dfd-b907-1230f1b7d80d"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--zamorak--zamorak-1000-ranged-melee-solo",
+      "href": "https://presets.pvme.io?id=6eb60b81-67a2-40f9-8a12-3b79f0d819bd",
+      "text": "Ranged-Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=6eb60b81-67a2-40f9-8a12-3b79f0d819bd"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--zamorak--zamorak-2000-ranged-melee-group",
+      "href": "https://presets.pvme.io/?id=92ce878a-d5e5-427f-8fdf-9fddc3665e9e",
+      "text": "Ranged-Melee(base)",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=92ce878a-d5e5-427f-8fdf-9fddc3665e9e"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--zamorak--zamorak-2000-ranged-melee-group",
+      "href": "https://presets.pvme.io/?id=44e4118d-85e2-46e3-b518-1e80b079f64e",
+      "text": "Ranged-Melee(dps)",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=44e4118d-85e2-46e3-b518-1e80b079f64e"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--zamorak--zamorak-900-4000-solo",
+      "href": "https://presets.pvme.io/?id=6f073a09-a4ee-49b8-b5a1-fd33ad8ceb32",
+      "text": "Magic / Melee Hybrid",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=6f073a09-a4ee-49b8-b5a1-fd33ad8ceb32"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--zamorak--zamorak-dungeon",
+      "href": "https://presets.pvme.io/?id=jihSy8LySUQfmUMB5Kwq",
+      "text": "Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=jihSy8LySUQfmUMB5Kwq"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--zamorak--zamorak-dungeon",
+      "href": "https://presets.pvme.io/?id=JhS4g9ARMslHRoDn4HKt",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=JhS4g9ARMslHRoDn4HKt"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--zamorak--zamorak-dungeon",
+      "href": "https://presets.pvme.io/?id=lGc5Op2pA5RIc1cCppuB",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=lGc5Op2pA5RIc1cCppuB"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--zamorak--zamorak-necro-500",
+      "href": "https://presets.pvme.io/?id=ZmjzW3mXYxIeR9KSPnyp",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=ZmjzW3mXYxIeR9KSPnyp"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--zamorak--zamorak-ranged-500",
+      "href": "https://presets.pvme.io?id=2f37e9db-203f-4430-95c9-37fdf177b784",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=2f37e9db-203f-4430-95c9-37fdf177b784"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--zamorak--zamorak",
+      "href": "https://presets.pvme.io/?id=dc2b2947-f705-4bdd-a557-27783697454e",
+      "text": "Hybrid",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=dc2b2947-f705-4bdd-a557-27783697454e"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--zamorak--zamorak",
+      "href": "https://presets.pvme.io/?id=3da02410-dd19-42de-87b7-ea3ead262b81",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=3da02410-dd19-42de-87b7-ea3ead262b81"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--zamorak--zamorak",
+      "href": "https://presets.pvme.io/?id=6958cd6e-91eb-4a07-ad9b-789e7bdcc42d",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=6958cd6e-91eb-4a07-ad9b-789e7bdcc42d"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--zamorak--zamorak",
+      "href": "https://presets.pvme.io/?id=b0545387-32d0-4d6f-815b-04416fe0c04b",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=b0545387-32d0-4d6f-815b-04416fe0c04b"
+      }
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--zamorak--zamorak",
+      "href": "https://presets.pvme.io/?id=9c8ce868-3e1f-4b76-8b4a-da0b8fb174ac",
+      "text": "Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=9c8ce868-3e1f-4b76-8b4a-da0b8fb174ac"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--abyssal-beasts",
+      "href": "https://presets.pvme.io?id=0cbb704a-2bb5-4a6d-821b-654e72e8db78",
+      "text": "Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=0cbb704a-2bb5-4a6d-821b-654e72e8db78"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--abyssal-beasts",
+      "href": "https://presets.pvme.io?id=76f30b37-a3e5-4578-a195-39742b9b6069",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=76f30b37-a3e5-4578-a195-39742b9b6069"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--abyssal-beasts",
+      "href": "https://presets.pvme.io?id=6475b8b3-a334-4d3f-9052-0378d25262ca",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=6475b8b3-a334-4d3f-9052-0378d25262ca"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--abyssal-beasts",
+      "href": "https://presets.pvme.io?id=6c4b1dd9-e862-4161-9451-97a5ac80a4b7",
+      "text": "Range",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=6c4b1dd9-e862-4161-9451-97a5ac80a4b7"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--abyssal-demons",
+      "href": "https://presets.pvme.io?id=3d7dcda0-91e8-4076-be93-d7801a17e768",
+      "text": "Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=3d7dcda0-91e8-4076-be93-d7801a17e768"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--abyssal-demons",
+      "href": "https://presets.pvme.io?id=575cd94f-e734-4043-bbbd-8037fe7cd01b",
+      "text": "Melee preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=575cd94f-e734-4043-bbbd-8037fe7cd01b"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--abyssal-demons",
+      "href": "https://presets.pvme.io?id=875ece5a-7771-4510-ab8d-62290712e9b3",
+      "text": "Ranged preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=875ece5a-7771-4510-ab8d-62290712e9b3"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--abyssal-demons",
+      "href": "https://presets.pvme.io?id=4baf42c0-98aa-4354-b1c4-8454727d5d84",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=4baf42c0-98aa-4354-b1c4-8454727d5d84"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--abyssal-lords",
+      "href": "https://presets.pvme.io?id=3df6878a-e484-4588-b56f-599e670add45",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=3df6878a-e484-4588-b56f-599e670add45"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--abyssal-lords",
+      "href": "https://presets.pvme.io?id=dab8a60f-d8ea-4231-abda-353f9e86ffdf",
+      "text": "Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=dab8a60f-d8ea-4231-abda-353f9e86ffdf"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--abyssal-lords",
+      "href": "https://presets.pvme.io?id=d86ea8c8-6e35-4023-a0d6-7f3834f3502d",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=d86ea8c8-6e35-4023-a0d6-7f3834f3502d"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--abyssal-savages",
+      "href": "https://presets.pvme.io?id=e199ca7b-d123-404d-8d58-a4aa1be0aa82",
+      "text": "Melee preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=e199ca7b-d123-404d-8d58-a4aa1be0aa82"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--abyssal-savages",
+      "href": "https://presets.pvme.io?id=7e71f54b-00ae-4ed5-b175-35a54c84da9e",
+      "text": "Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=7e71f54b-00ae-4ed5-b175-35a54c84da9e"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--abyssal-savages",
+      "href": "https://presets.pvme.io?id=c84999a9-fb0f-46e8-b0e0-3b4d48d6ab6e",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=c84999a9-fb0f-46e8-b0e0-3b4d48d6ab6e"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--acheron-mammoths",
+      "href": "https://presets.pvme.io?id=429f11b1-df4e-4f1a-aa34-f6c37dc7a151",
+      "text": "Melee - Active",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=429f11b1-df4e-4f1a-aa34-f6c37dc7a151"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--acheron-mammoths",
+      "href": "https://presets.pvme.io?id=9e6db227-52fa-4fd3-8f18-db16d54f37f1",
+      "text": "Melee - Low Effort",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=9e6db227-52fa-4fd3-8f18-db16d54f37f1"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--armoured-phantoms",
+      "href": "https://presets.pvme.io?id=c3759de6-9d9e-4e7a-a854-d48bccfce253",
+      "text": "AFK Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=c3759de6-9d9e-4e7a-a854-d48bccfce253"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--armoured-phantoms",
+      "href": "https://presets.pvme.io?id=2d8f9b32-350d-4bef-acc2-3212dab2630c",
+      "text": "AFK Melee Medium Level",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=2d8f9b32-350d-4bef-acc2-3212dab2630c"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--armoured-phantoms",
+      "href": "https://presets.pvme.io?id=314c257b-6bfa-47db-99c8-dd28ce32de94",
+      "text": "AFK Melee High Level",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=314c257b-6bfa-47db-99c8-dd28ce32de94"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--armoured-phantoms",
+      "href": "https://presets.pvme.io?id=0e9e2f43-a362-464d-84b4-e6aaba65930e",
+      "text": "AFK Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=0e9e2f43-a362-464d-84b4-e6aaba65930e"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--armoured-phantoms",
+      "href": "https://presets.pvme.io?id=998ad5f5-01f5-45a5-b1c3-e99af715a75f",
+      "text": "Melee - Active",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=998ad5f5-01f5-45a5-b1c3-e99af715a75f"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--automatons",
+      "href": "https://presets.pvme.io/?id=FfUPssuxy0TuwCiFD6wZ",
+      "text": "Necromancy AFK",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=FfUPssuxy0TuwCiFD6wZ"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--automatons",
+      "href": "https://presets.pvme.io/?id=oET3XG9uw4Gy2MhviFVn",
+      "text": "Melee AFK",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=oET3XG9uw4Gy2MhviFVn"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--automatons",
+      "href": "https://presets.pvme.io?id=fd00e978-9cd4-4c4e-a762-ebb679bbdfd5",
+      "text": "Ranged AFK",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=fd00e978-9cd4-4c4e-a762-ebb679bbdfd5"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--automatons",
+      "href": "https://presets.pvme.io/?id=VIecuUejyqJSqZ9c8u7L",
+      "text": "AFK Generators",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=VIecuUejyqJSqZ9c8u7L"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--automatons",
+      "href": "https://presets.pvme.io/?id=iHoOX3BKzYrLGl8uPAb0",
+      "text": "AFK Guardians",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=iHoOX3BKzYrLGl8uPAb0"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--berserkers-and-ash-lords",
+      "href": "https://presets.pvme.io/?id=xOESeIBUXTomu0czCDdw",
+      "text": "Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=xOESeIBUXTomu0czCDdw"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--berserkers-and-ash-lords",
+      "href": "https://presets.pvme.io?id=a9c1ce6b-f046-430e-a601-5ac813f5a3cc",
+      "text": "Ranged preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=a9c1ce6b-f046-430e-a601-5ac813f5a3cc"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--camel-warriors",
+      "href": "https://presets.pvme.io/?id=IaEAq8JYt0E4KufUW910",
+      "text": "Melee - Active",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=IaEAq8JYt0E4KufUW910"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--camel-warriors",
+      "href": "https://presets.pvme.io?id=9b25a62c-dd22-4055-bfc3-bb0541bdefb3",
+      "text": "Melee - AFK",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=9b25a62c-dd22-4055-bfc3-bb0541bdefb3"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--capsarius",
+      "href": "https://presets.pvme.io?id=9023abcc-de44-469f-afd6-49f9ca0be436",
+      "text": "Legacy Ranged preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=9023abcc-de44-469f-afd6-49f9ca0be436"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--celestial-dragons",
+      "href": "https://presets.pvme.io/?id=gmY7VtwCu66FgPJ7HcPx",
+      "text": "Ranged preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=gmY7VtwCu66FgPJ7HcPx"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--crystal-shapeshifters",
+      "href": "https://presets.pvme.io?id=7a9b1030-6118-40db-9041-8a70ee8bc87b",
+      "text": "Melee preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=7a9b1030-6118-40db-9041-8a70ee8bc87b"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--crystal-shapeshifters",
+      "href": "https://presets.pvme.io?id=c69fc0df-eddd-43e1-94b3-b5588d036cc5",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=c69fc0df-eddd-43e1-94b3-b5588d036cc5"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--crystal-shapeshifters",
+      "href": "https://presets.pvme.io?id=9b19be1f-cd14-4376-808f-7a2b564e210b",
+      "text": "Melee preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=9b19be1f-cd14-4376-808f-7a2b564e210b"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--crystal-shapeshifters",
+      "href": "https://presets.pvme.io?id=05dde51b-53d9-4ce9-a313-f6c11d936b7b",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=05dde51b-53d9-4ce9-a313-f6c11d936b7b"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--dinosaurs",
+      "href": "https://presets.pvme.io?id=51882ae9-509d-4e67-be76-59f676e6a71c",
+      "text": "Melee preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=51882ae9-509d-4e67-be76-59f676e6a71c"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--dinosaurs",
+      "href": "https://presets.pvme.io/?id=MopjYBuvJUpsaspbD93p",
+      "text": "Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=MopjYBuvJUpsaspbD93p"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--dinosaurs",
+      "href": "https://presets.pvme.io?id=758cb45a-c742-4df1-92fb-ac1698546b93",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=758cb45a-c742-4df1-92fb-ac1698546b93"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--dinosaurs",
+      "href": "https://presets.pvme.io/?id=N1yeCIBMIEm8BgJvhRZN",
+      "text": "Melee preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=N1yeCIBMIEm8BgJvhRZN"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--dinosaurs",
+      "href": "https://presets.pvme.io/?id=fu9akCKqeq84DP1a5xGi",
+      "text": "Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=fu9akCKqeq84DP1a5xGi"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--dinosaurs",
+      "href": "https://presets.pvme.io/?id=9mYyxkdP3FCGVGtk3hbS",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=9mYyxkdP3FCGVGtk3hbS"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--edimmu",
+      "href": "https://presets.pvme.io/?id=1QskhDlXvb7BMjnvTpfW",
+      "text": "Ranged - Active",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=1QskhDlXvb7BMjnvTpfW"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--edimmu",
+      "href": "https://presets.pvme.io/?id=VOyUgsYbqFqGu37RvZRq",
+      "text": "Magic - AFK",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=VOyUgsYbqFqGu37RvZRq"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--edimmu",
+      "href": "https://presets.pvme.io?id=4cda6b15-4066-49da-984d-48f9e94bf6ff",
+      "text": "Necromancy - AFK",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=4cda6b15-4066-49da-984d-48f9e94bf6ff"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--elite-profane-scabarites",
+      "href": "https://presets.pvme.io?id=72c94344-5d06-4fd9-8b69-c187a32610cd",
+      "text": "Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=72c94344-5d06-4fd9-8b69-c187a32610cd"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--elite-profane-scabarites",
+      "href": "https://presets.pvme.io?id=d575871a-bd6f-4fc1-842e-4c50b6fcdd3f",
+      "text": "Melee preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=d575871a-bd6f-4fc1-842e-4c50b6fcdd3f"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--elite-profane-scabarites",
+      "href": "https://presets.pvme.io/?id=KvlhiUI1Ha94ZwCTcd3q",
+      "text": "Melee preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=KvlhiUI1Ha94ZwCTcd3q"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--elite-profane-scabarites",
+      "href": "https://presets.pvme.io?id=54f148fb-f6c4-4329-b825-5429ac84affb",
+      "text": "Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=54f148fb-f6c4-4329-b825-5429ac84affb"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--gemstone-dragons",
+      "href": "https://presets.pvme.io/?id=JENrK716aS3O2cnOgjwt",
+      "text": "Magic - AFK",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=JENrK716aS3O2cnOgjwt"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--gemstone-dragons",
+      "href": "https://presets.pvme.io/?id=xNa3WY3MubHwZaeGKZVT",
+      "text": "Ranged - AFK",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=xNa3WY3MubHwZaeGKZVT"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--gemstone-dragons",
+      "href": "https://presets.pvme.io/?id=6OLKe4r0Er7VteVwWvrV",
+      "text": "Necromancy - AFK",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=6OLKe4r0Er7VteVwWvrV"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--gemstone-dragons",
+      "href": "https://presets.pvme.io/?id=K5jspa32jbcOHy8e1ABE",
+      "text": "Magic - AFK",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=K5jspa32jbcOHy8e1ABE"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--gemstone-dragons",
+      "href": "https://presets.pvme.io/?id=BXILwai1zEjDGHiy79cV",
+      "text": "Necromancy - AFK",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=BXILwai1zEjDGHiy79cV"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--gemstone-dragons",
+      "href": "https://presets.pvme.io/?id=jaVosn01D6sfAv49ug0D",
+      "text": "Ranged - Active",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=jaVosn01D6sfAv49ug0D"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--gemstone-dragons",
+      "href": "https://presets.pvme.io/?id=NLreN8ulgusPv6aEghtP",
+      "text": "Magic - AFK",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=NLreN8ulgusPv6aEghtP"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--gemstone-dragons",
+      "href": "https://presets.pvme.io/?id=mpJhpP6WmbJsa0ih1AdH",
+      "text": "Necromancy - AFK",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=mpJhpP6WmbJsa0ih1AdH"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--glacors",
+      "href": "https://presets.pvme.io?id=7230797f-23bc-4ea6-b91f-0298a5fb7feb",
+      "text": "AFK Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=7230797f-23bc-4ea6-b91f-0298a5fb7feb"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--kalgerion-demons",
+      "href": "https://presets.pvme.io/?id=TBtqoqHcvRYHFG3y4iYT",
+      "text": "Necromancy - Low Effort",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=TBtqoqHcvRYHFG3y4iYT"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--lava-strykewyrms",
+      "href": "https://presets.pvme.io/?id=hkE9wpk2HmcXTeGsfxPD",
+      "text": "Active Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=hkE9wpk2HmcXTeGsfxPD"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--lava-strykewyrms",
+      "href": "https://presets.pvme.io/?id=f9O1xbSTbl11Gzy2VTlR",
+      "text": "Active Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=f9O1xbSTbl11Gzy2VTlR"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--living-wyverns",
+      "href": "https://presets.pvme.io?id=49b35267-1149-4cbc-aab8-ff36440b64ad",
+      "text": "AFK Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=49b35267-1149-4cbc-aab8-ff36440b64ad"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--living-wyverns",
+      "href": "https://presets.pvme.io?id=f22c8357-3337-4550-a00d-7af8d9ceeee3",
+      "text": "Active/AFK Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=f22c8357-3337-4550-a00d-7af8d9ceeee3"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--lost-grove-creatures",
+      "href": "https://presets.pvme.io?id=9415c01f-cf22-46f1-89e2-75ad68110bb7",
+      "text": "Moss Golems - AFK Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=9415c01f-cf22-46f1-89e2-75ad68110bb7"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--lost-grove-creatures",
+      "href": "https://presets.pvme.io?id=6f69cdbc-db00-46e1-baaf-8ebe80e07438",
+      "text": "Moss Golems - AFK Necro",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=6f69cdbc-db00-46e1-baaf-8ebe80e07438"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--lost-grove-creatures",
+      "href": "https://presets.pvme.io?id=8c20dd51-5e4a-4920-aa5a-bf32a6a7d3fa",
+      "text": "AFK Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=8c20dd51-5e4a-4920-aa5a-bf32a6a7d3fa"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--lost-grove-creatures",
+      "href": "https://presets.pvme.io?id=3f874d6e-c2b4-40fa-af53-243c549158a0",
+      "text": "AFK Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=3f874d6e-c2b4-40fa-af53-243c549158a0"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--lost-grove-creatures",
+      "href": "https://presets.pvme.io/?id=HoNORwBeCegjNLuutFQJ",
+      "text": "Bulbous Crawlers - AFK Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=HoNORwBeCegjNLuutFQJ"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--lost-grove-creatures",
+      "href": "https://presets.pvme.io/?id=Zv3INjzacSvTIshqzvg2",
+      "text": "Bulbous Crawlers - AFK Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=Zv3INjzacSvTIshqzvg2"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--metal-dragons",
+      "href": "https://presets.pvme.io/?id=a5MVeBuXRpQmSnwDYSS0",
+      "text": "AFK Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=a5MVeBuXRpQmSnwDYSS0"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--metal-dragons",
+      "href": "https://presets.pvme.io/?id=9YAjVWTEtCakVmPgqplj",
+      "text": "AFK Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=9YAjVWTEtCakVmPgqplj"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--metal-dragons",
+      "href": "https://presets.pvme.io?id=2f53ca65-bac5-40ba-b75b-eb6214e4d854",
+      "text": "AFK Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=2f53ca65-bac5-40ba-b75b-eb6214e4d854"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--nightmare-creatures",
+      "href": "https://presets.pvme.io?id=1fa650e2-e5a1-469c-8f0d-f6e4db082009",
+      "text": "Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=1fa650e2-e5a1-469c-8f0d-f6e4db082009"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--nightmare-creatures",
+      "href": "https://presets.pvme.io?id=6f695c76-9198-4509-af81-41981f9e4b01",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=6f695c76-9198-4509-af81-41981f9e4b01"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--nightmare-creatures",
+      "href": "https://presets.pvme.io/?id=LZ3XnphDAFyHQqQWAy4D",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=LZ3XnphDAFyHQqQWAy4D"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--nihils",
+      "href": "https://presets.pvme.io/?id=0BUcOGXcnqpjDNocpL0Z",
+      "text": "Low effort Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=0BUcOGXcnqpjDNocpL0Z"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--nihils",
+      "href": "https://presets.pvme.io/?id=caAj2jaWsxNWFUEWn8md",
+      "text": "Active Magic (Soul Gathering)",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=caAj2jaWsxNWFUEWn8md"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--nihils",
+      "href": "https://presets.pvme.io/?id=q7fGOb0BeX1VgOsu5JPB",
+      "text": "AFK Magic (PoSD)",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=q7fGOb0BeX1VgOsu5JPB"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--nodon-dragonkin",
+      "href": "https://presets.pvme.io/?id=SugYp7of9AkMugcesLsW",
+      "text": "AFK Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=SugYp7of9AkMugcesLsW"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--nodon-dragonkin",
+      "href": "https://presets.pvme.io?id=da5eed06-ae42-45b1-8d63-3fceb5f64971",
+      "text": "AFK Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=da5eed06-ae42-45b1-8d63-3fceb5f64971"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--nodon-dragonkin",
+      "href": "https://presets.pvme.io/?id=K4RhZpTZVHa0TRM0e4Uy",
+      "text": "AFK Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=K4RhZpTZVHa0TRM0e4Uy"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--nodon-dragonkin",
+      "href": "https://presets.pvme.io/?id=3M9OxsGpxtvYxpFDOTYz",
+      "text": "AFK Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=3M9OxsGpxtvYxpFDOTYz"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--overview-of-slayer",
+      "href": "https://presets.pvme.io/?id=G8a7S4ZjIWspR9f9ozZY",
+      "text": "Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=G8a7S4ZjIWspR9f9ozZY"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--overview-of-slayer",
+      "href": "https://presets.pvme.io/?id=uv6fuVGjCwKfxrYxrvlY",
+      "text": "Melee preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=uv6fuVGjCwKfxrYxrvlY"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--overview-of-slayer",
+      "href": "https://presets.pvme.io?id=b0acc1f2-7fe0-42e7-9844-a7851b28eb24",
+      "text": "Ranged preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=b0acc1f2-7fe0-42e7-9844-a7851b28eb24"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--overview-of-slayer",
+      "href": "https://presets.pvme.io?id=3e5e5dc0-a3ab-473a-9d78-b59d73c92177",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=3e5e5dc0-a3ab-473a-9d78-b59d73c92177"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--profane-scabarites",
+      "href": "https://presets.pvme.io/?id=Bh7moSg88JTHsUCEwD8g",
+      "text": "Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=Bh7moSg88JTHsUCEwD8g"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--ravenous-strigoi",
+      "href": "https://pvme.io/preset-maker-storage/embeds/8d473469-a681-445f-8aeb-24ad7d1462d9/7x4/?v=483eeb55cc5085fe6cd116f3ca19ef02ad0bdd85e2bfa6527c6b5fecf380cede",
+      "text": "Necro",
+      "attrs": {
+        "href": "https://pvme.io/preset-maker-storage/embeds/8d473469-a681-445f-8aeb-24ad7d1462d9/7x4/?v=483eeb55cc5085fe6cd116f3ca19ef02ad0bdd85e2bfa6527c6b5fecf380cede"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--ravenous-strigoi",
+      "href": "https://pvme.io/preset-maker-storage/embeds/1b2c54b8-78aa-475d-9805-445197cf9d87/7x4/?v=6a833b7aa8272e4ee6f02ec6248143ba45daf59f36e68f902ed4f2be3f72fcda",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://pvme.io/preset-maker-storage/embeds/1b2c54b8-78aa-475d-9805-445197cf9d87/7x4/?v=6a833b7aa8272e4ee6f02ec6248143ba45daf59f36e68f902ed4f2be3f72fcda"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--ravenous-strigoi",
+      "href": "https://presets.pvme.io?id=0a772bb4-8ab7-48c4-83ee-dd0786342fa6",
+      "text": "Magic / Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=0a772bb4-8ab7-48c4-83ee-dd0786342fa6"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--revenants",
+      "href": "https://presets.pvme.io?id=bd9925ea-3f24-4e2f-bad8-0f77ab241a65",
+      "text": "Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=bd9925ea-3f24-4e2f-bad8-0f77ab241a65"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--revenants",
+      "href": "https://presets.pvme.io?id=bd9925ea-3f24-4e2f-bad8-0f77ab241a65",
+      "text": "Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=bd9925ea-3f24-4e2f-bad8-0f77ab241a65"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--ripper-demon",
+      "href": "https://presets.pvme.io?id=15e7b07c-4b4f-40ab-9fdc-04a9a1baab8f",
+      "text": "Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=15e7b07c-4b4f-40ab-9fdc-04a9a1baab8f"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--ripper-demon",
+      "href": "https://presets.pvme.io?id=29a3659c-fee8-45e0-a3f7-5aecdee2f2ae",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=29a3659c-fee8-45e0-a3f7-5aecdee2f2ae"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--risen-ghosts",
+      "href": "https://presets.pvme.io?id=a7QpzWFVYhjffS70HzPi",
+      "text": "Magic preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=a7QpzWFVYhjffS70HzPi"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--risen-ghosts",
+      "href": "https://presets.pvme.io?id=9262b540-449f-4953-ada2-3c1398980eaa",
+      "text": "Necromancy preset",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=9262b540-449f-4953-ada2-3c1398980eaa"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--sanguine-crawlers",
+      "href": "https://presets.pvme.io/?id=8cbe8dae-8899-4640-9f22-92e163937b07",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=8cbe8dae-8899-4640-9f22-92e163937b07"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--sanguine-werewolves",
+      "href": "https://pvme.io/preset-maker-storage/embeds/7e7e4454-406d-4530-8f30-4e9b9e89399e/7x4/?v=4dc4f75bb35eb060b6a368bbe5213e767ac4ac664642216fbca31bf256df00b5",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://pvme.io/preset-maker-storage/embeds/7e7e4454-406d-4530-8f30-4e9b9e89399e/7x4/?v=4dc4f75bb35eb060b6a368bbe5213e767ac4ac664642216fbca31bf256df00b5"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--sanguine-werewolves",
+      "href": "https://presets.pvme.io?id=cc655135-8162-4979-97f0-2bf81afe98aa",
+      "text": "Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=cc655135-8162-4979-97f0-2bf81afe98aa"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--sanguine-werewolves",
+      "href": "https://pvme.io/preset-maker-storage/embeds/66b221e9-1f03-438a-ac94-6246ebd4777b/7x4/?v=57bc8e63fb1fe7c8cb01fdfa7d1cf28f3abfabbdf26d959f2d58d926125ab542",
+      "text": "Necro",
+      "attrs": {
+        "href": "https://pvme.io/preset-maker-storage/embeds/66b221e9-1f03-438a-ac94-6246ebd4777b/7x4/?v=57bc8e63fb1fe7c8cb01fdfa7d1cf28f3abfabbdf26d959f2d58d926125ab542"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--sanguine-werewolves",
+      "href": "https://pvme.io/preset-maker-storage/embeds/861e4f45-8c62-40d4-94cc-56d4a339e863/7x4/?v=58db0b7bc60369f1b6139246dcae584880811f933e42d10e9fd8e6c5c8a3578c",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://pvme.io/preset-maker-storage/embeds/861e4f45-8c62-40d4-94cc-56d4a339e863/7x4/?v=58db0b7bc60369f1b6139246dcae584880811f933e42d10e9fd8e6c5c8a3578c"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--sanguine-werewolves",
+      "href": "https://pvme.io/preset-maker-storage/embeds/f129de28-531d-4676-ba3b-8f1a1dd03c96/7x4/?v=c140d0d76e58feb5dd07ebdf2925f0ce8a2f0dace00d98bf5ea9f325da500130",
+      "text": "High Level Melee",
+      "attrs": {
+        "href": "https://pvme.io/preset-maker-storage/embeds/f129de28-531d-4676-ba3b-8f1a1dd03c96/7x4/?v=c140d0d76e58feb5dd07ebdf2925f0ce8a2f0dace00d98bf5ea9f325da500130"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--slayer-point-farming",
+      "href": "https://presets.pvme.io/?id=d6whBtns6jFiz3bUW4Ct",
+      "text": "Low-level Magic camp",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=d6whBtns6jFiz3bUW4Ct"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--slayer-point-farming",
+      "href": "https://presets.pvme.io/?id=cLt3Q6IWW5L8jSziWDUB",
+      "text": "High-level Hybrid",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=cLt3Q6IWW5L8jSziWDUB"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--soul-devourers",
+      "href": "https://presets.pvme.io?id=cbdf17d8-14ca-48c6-8622-b900d026027b",
+      "text": "AFK Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=cbdf17d8-14ca-48c6-8622-b900d026027b"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--soul-devourers",
+      "href": "https://presets.pvme.io?id=03a855b9-816d-40a2-a9f3-403b0eff7688",
+      "text": "AFK Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=03a855b9-816d-40a2-a9f3-403b0eff7688"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--soul-devourers",
+      "href": "https://presets.pvme.io?id=df854d77-76e8-4ff9-a16a-ed3333cc7040",
+      "text": "AFK Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=df854d77-76e8-4ff9-a16a-ed3333cc7040"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--soul-devourers",
+      "href": "https://presets.pvme.io?id=bca2966f-a889-4856-87e0-fecf9165c93f",
+      "text": "AFK Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=bca2966f-a889-4856-87e0-fecf9165c93f"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--soul-devourers",
+      "href": "https://presets.pvme.io?id=9dc20455-40d8-4548-83e5-6a08513913ea",
+      "text": "AFK Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=9dc20455-40d8-4548-83e5-6a08513913ea"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--soul-devourers",
+      "href": "https://presets.pvme.io?id=e1e28078-9ac1-4778-92b2-1ad6aee6ae23",
+      "text": "AFK Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=e1e28078-9ac1-4778-92b2-1ad6aee6ae23"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--soul-devourers",
+      "href": "https://presets.pvme.io?id=54675c4e-dee2-4dcf-8a9a-cd9178c23a17",
+      "text": "AFK Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=54675c4e-dee2-4dcf-8a9a-cd9178c23a17"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--soul-devourers",
+      "href": "https://presets.pvme.io?id=0e689050-bd5d-4843-87b7-0d67c380b48a",
+      "text": "AFK Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=0e689050-bd5d-4843-87b7-0d67c380b48a"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--soul-devourers",
+      "href": "https://presets.pvme.io?id=fcbbddd5-55e1-4d85-b8ad-b03570325103",
+      "text": "AFK Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=fcbbddd5-55e1-4d85-b8ad-b03570325103"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--soulgazers",
+      "href": "https://presets.pvme.io?id=a0f06969-1567-4ec6-9ae2-ce348b2bbeda",
+      "text": "Necromancy - Sunken Pyramid",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=a0f06969-1567-4ec6-9ae2-ce348b2bbeda"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--soulgazers",
+      "href": "https://presets.pvme.io?id=fb246308-6181-43ab-851e-c31caec61f3d",
+      "text": "Necromancy - Wilderness",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=fb246308-6181-43ab-851e-c31caec61f3d"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--soulgazers",
+      "href": "https://presets.pvme.io/?id=pODx8KbWN6mGZu9eWCiW",
+      "text": "Magic - Sunken Pyramid",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=pODx8KbWN6mGZu9eWCiW"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--spiritual-warriors",
+      "href": "https://presets.pvme.io/?id=l8ENoGbUVvKoUYXGKP1X",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=l8ENoGbUVvKoUYXGKP1X"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--spiritual-warriors",
+      "href": "https://presets.pvme.io?id=a9a3a18d-fe08-486d-8f09-628cf1cb3ad6",
+      "text": "Magic (Alternative)",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=a9a3a18d-fe08-486d-8f09-628cf1cb3ad6"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--spiritual-warriors",
+      "href": "https://presets.pvme.io?id=94de33d3-7969-4808-ac20-6f6f7fc819df",
+      "text": "Magic (Best in Slot)",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=94de33d3-7969-4808-ac20-6f6f7fc819df"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--tormented-demons",
+      "href": "https://presets.pvme.io?id=1f0d8087-b39e-4569-9db2-97919222cc1c",
+      "text": "Preset breakdown",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=1f0d8087-b39e-4569-9db2-97919222cc1c"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--tormented-demons",
+      "href": "https://presets.pvme.io?id=d6cfc438-3742-46fa-8f12-3ac57371ab2c",
+      "text": "Preset breakdown",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=d6cfc438-3742-46fa-8f12-3ac57371ab2c"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--vile-blooms",
+      "href": "https://pvme.io/preset-maker-storage/embeds/bf8f6fe5-3b18-41d2-a237-687dcd6be430/7x4/?v=67dceae3288938c792b1f15eb836745a52d95b7f09919f36184fd614f502149b",
+      "text": "Devil's Snare - AFK Ranged",
+      "attrs": {
+        "href": "https://pvme.io/preset-maker-storage/embeds/bf8f6fe5-3b18-41d2-a237-687dcd6be430/7x4/?v=67dceae3288938c792b1f15eb836745a52d95b7f09919f36184fd614f502149b"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--vile-blooms",
+      "href": "https://pvme.io/preset-maker-storage/embeds/c26de7d1-7c02-4d8b-8b81-bf65428458b1/7x4/?v=701cd5e1945bd6d13152fa9a82553f050ed86d72f0a33fdc366d763d12758f4e",
+      "text": "Devil's Snare - AFK Necromancy",
+      "attrs": {
+        "href": "https://pvme.io/preset-maker-storage/embeds/c26de7d1-7c02-4d8b-8b81-bf65428458b1/7x4/?v=701cd5e1945bd6d13152fa9a82553f050ed86d72f0a33fdc366d763d12758f4e"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--vile-blooms",
+      "href": "https://pvme.io/preset-maker-storage/embeds/cb91761e-92b6-4db5-8189-376645ba7b24/7x4/?v=7a0d110c7e832393602453927fbfc51cb3684eb7a2e88abedf992a8b4351269c",
+      "text": "Devil's Snare - AFK High Level Magic",
+      "attrs": {
+        "href": "https://pvme.io/preset-maker-storage/embeds/cb91761e-92b6-4db5-8189-376645ba7b24/7x4/?v=7a0d110c7e832393602453927fbfc51cb3684eb7a2e88abedf992a8b4351269c"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--vile-blooms",
+      "href": "https://pvme.io/preset-maker-storage/embeds/91ec9665-ff47-4b66-9dce-9f94efca632d/7x4/?v=2ce48af388d27006f2f364b865eab8600c9232d2661129eda9c5390bbe0907e7",
+      "text": "Devil's Snare - AFK Low Level Magic",
+      "attrs": {
+        "href": "https://pvme.io/preset-maker-storage/embeds/91ec9665-ff47-4b66-9dce-9f94efca632d/7x4/?v=2ce48af388d27006f2f364b865eab8600c9232d2661129eda9c5390bbe0907e7"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--vile-blooms",
+      "href": "https://pvme.io/preset-maker-storage/embeds/127555f2-9ec4-466d-9c4c-d1a325788fdf/7x4/?v=cc76d637121c6da36b2a61f0a8fbd00264b448d2fc8157847c3b7dfb8bd8bba0",
+      "text": "Luminous Snaggler - AFK High Level Necromancy",
+      "attrs": {
+        "href": "https://pvme.io/preset-maker-storage/embeds/127555f2-9ec4-466d-9c4c-d1a325788fdf/7x4/?v=cc76d637121c6da36b2a61f0a8fbd00264b448d2fc8157847c3b7dfb8bd8bba0"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--vile-blooms",
+      "href": "https://pvme.io/preset-maker-storage/embeds/e7e0baab-0b3b-40dc-bf05-10ad83268c0b/7x4/?v=a9b505bcf2b5cd9996cd670792fe05440df9126c13346b5c481f1421bee100f4",
+      "text": "Luminous Snaggler - AFK Low Level Necromancy",
+      "attrs": {
+        "href": "https://pvme.io/preset-maker-storage/embeds/e7e0baab-0b3b-40dc-bf05-10ad83268c0b/7x4/?v=a9b505bcf2b5cd9996cd670792fe05440df9126c13346b5c481f1421bee100f4"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--vile-blooms",
+      "href": "https://pvme.io/preset-maker-storage/embeds/23121068-a68b-48d2-849a-a2416d83b440/7x4/?v=b3b70957ccf46f4b6a2a6b5261f50b7a0ac65408443bc68c36e36f4cecca9271",
+      "text": "Luminous Snaggler - AFK Ranged",
+      "attrs": {
+        "href": "https://pvme.io/preset-maker-storage/embeds/23121068-a68b-48d2-849a-a2416d83b440/7x4/?v=b3b70957ccf46f4b6a2a6b5261f50b7a0ac65408443bc68c36e36f4cecca9271"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--vile-blooms",
+      "href": "https://pvme.io/preset-maker-storage/embeds/fca9dbc7-23b4-4a56-ae4f-9d8f3974b1ca/7x4/?v=46c7e40c9957394a643ae408cb879bf1b038bbc00bc02090515157d25db680c7",
+      "text": "Luminous Snaggler - AFK High Level Magic",
+      "attrs": {
+        "href": "https://pvme.io/preset-maker-storage/embeds/fca9dbc7-23b4-4a56-ae4f-9d8f3974b1ca/7x4/?v=46c7e40c9957394a643ae408cb879bf1b038bbc00bc02090515157d25db680c7"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--vile-blooms",
+      "href": "https://pvme.io/preset-maker-storage/embeds/37ab2ab3-624b-45ea-856d-6383509873e0/7x4/?v=39615996a6d4b48be7f4e78e14607ec6b6b689dd09c79341c8dcc0b8b88b06a9",
+      "text": "Luminous Snaggler - AFK Low Level Magic",
+      "attrs": {
+        "href": "https://pvme.io/preset-maker-storage/embeds/37ab2ab3-624b-45ea-856d-6383509873e0/7x4/?v=39615996a6d4b48be7f4e78e14607ec6b6b689dd09c79341c8dcc0b8b88b06a9"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--vile-blooms",
+      "href": "https://pvme.io/preset-maker-storage/embeds/a1bb2c5f-bf01-456a-9ca8-c0a2687d26ce/7x4/?v=db0116f54929bab62ddeb5dfdfb99755bf248677fae67a9a6084d201b1ddbb8b",
+      "text": "Lampenflora - AFK Ranged",
+      "attrs": {
+        "href": "https://pvme.io/preset-maker-storage/embeds/a1bb2c5f-bf01-456a-9ca8-c0a2687d26ce/7x4/?v=db0116f54929bab62ddeb5dfdfb99755bf248677fae67a9a6084d201b1ddbb8b"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--vile-blooms",
+      "href": "https://pvme.io/preset-maker-storage/embeds/9ccd7d27-befb-4a82-94e6-f691ce6feca3/7x4/?v=2f6b8b3f81684f362a22bd512c7d94f82b354e1205e1c498211f56377b737778",
+      "text": "Lampenflora - AFK Magic",
+      "attrs": {
+        "href": "https://pvme.io/preset-maker-storage/embeds/9ccd7d27-befb-4a82-94e6-f691ce6feca3/7x4/?v=2f6b8b3f81684f362a22bd512c7d94f82b354e1205e1c498211f56377b737778"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--vile-blooms",
+      "href": "https://pvme.io/preset-maker-storage/embeds/f64f352b-0ba1-42a0-97c8-07b8fdf83593/7x4/?v=6b691c5a806636a986e60be81a319809255aadef26f759630cc2b46f3d7a012f",
+      "text": "Liverworts - AFK Ranged",
+      "attrs": {
+        "href": "https://pvme.io/preset-maker-storage/embeds/f64f352b-0ba1-42a0-97c8-07b8fdf83593/7x4/?v=6b691c5a806636a986e60be81a319809255aadef26f759630cc2b46f3d7a012f"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--vile-blooms",
+      "href": "https://pvme.io/preset-maker-storage/embeds/07b56295-bdf8-4030-93a6-c81031eb3d27/7x4/?v=d86ed991d08563bba4b59058c5734b4e28ed63db854ccc6c83e21fad954f29f4",
+      "text": "Liverworts - AFK Magic",
+      "attrs": {
+        "href": "https://pvme.io/preset-maker-storage/embeds/07b56295-bdf8-4030-93a6-c81031eb3d27/7x4/?v=d86ed991d08563bba4b59058c5734b4e28ed63db854ccc6c83e21fad954f29f4"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--vile-blooms",
+      "href": "https://pvme.io/preset-maker-storage/embeds/e306fd12-fc61-44ab-be8f-90222bd10599/7x4/?v=552231505ab3fb85dc14318ae959c92b248bd7b37d2b4b53faaa4b15d371a67c",
+      "text": "Liverworts - AFK Necromancy",
+      "attrs": {
+        "href": "https://pvme.io/preset-maker-storage/embeds/e306fd12-fc61-44ab-be8f-90222bd10599/7x4/?v=552231505ab3fb85dc14318ae959c92b248bd7b37d2b4b53faaa4b15d371a67c"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--vyres",
+      "href": "https://presets.pvme.io?id=4d3fd553-8bbf-4cbf-9d7f-aec9cfc9860b",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=4d3fd553-8bbf-4cbf-9d7f-aec9cfc9860b"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--vyres",
+      "href": "https://presets.pvme.io?id=93a2ccab-ef5a-4976-ac23-c3c16188334a",
+      "text": "Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=93a2ccab-ef5a-4976-ac23-c3c16188334a"
+      }
+    },
+    {
+      "id": "pvme-guides--slayer--vyres",
+      "href": "https://presets.pvme.io?id=cf5618dd-ef78-4729-af37-1425bccb69ee",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=cf5618dd-ef78-4729-af37-1425bccb69ee"
+      }
+    },
+    {
+      "id": "pvme-guides--upgrading-info--armour-and-weapons",
+      "href": "https://presets.pvme.io/?id=7a3eaf08-a1ce-4a89-b3ec-ee94efcffa29",
+      "text": "Dyanne",
+      "attrs": {
+        "title": "",
+        "href": "https://presets.pvme.io/?id=7a3eaf08-a1ce-4a89-b3ec-ee94efcffa29",
+        "target": "_blank",
+        "rel": "noreferrer"
+      }
+    },
+    {
+      "id": "pvme-guides--upgrading-info--armour-and-weapons",
+      "href": "https://presets.pvme.io/?id=2a258b96-3929-47f3-adc6-92a8d6f8a95a",
+      "text": "hikaru nara",
+      "attrs": {
+        "title": "",
+        "href": "https://presets.pvme.io/?id=2a258b96-3929-47f3-adc6-92a8d6f8a95a",
+        "target": "_blank",
+        "rel": "noreferrer"
+      }
+    },
+    {
+      "id": "pvme-guides--upgrading-info--armour-and-weapons",
+      "href": "https://presets.pvme.io/?id=ad56e52f-0cd0-4173-9caf-a4cf1e04170e",
+      "text": "basic preset",
+      "attrs": {
+        "title": "",
+        "href": "https://presets.pvme.io/?id=ad56e52f-0cd0-4173-9caf-a4cf1e04170e",
+        "target": "_blank",
+        "rel": "noreferrer"
+      }
+    }
+  ],
+  "limitation": "Source inventory only. No render, HTTP media availability or dynamic preset payload checks."
+}

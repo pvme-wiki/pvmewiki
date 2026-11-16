@@ -1,0 +1,132 @@
+__NOTOC__
+<div class="pvme-exact-guide">
+
+<div class="pvme-source-section">
+<h2 id="introduction"><ins><nowiki>Introduction</nowiki></ins></h2>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>The </nowiki><strong><nowiki>PvME Preset Maker</nowiki></strong><nowiki> is a website used for creating presets in the standard PVME format. It is the preferred way to display presets in guides.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><strong><nowiki>This guide only covers how to use the tool. For full preset formatting, please see </nowiki><span><nowiki>#unknown-channel</nowiki></span><nowiki> or reference any of the other guides in PvME where presets are used.</nowiki></strong></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>The Preset Maker can be found here: </nowiki>[https://pvme.github.io/preset-maker/ <nowiki>https://pvme.github.io/preset-maker/</nowiki>]</p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>If a desired item is not available, request for it in </nowiki><span><nowiki>#editors-chat</nowiki></span></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section" data-gear="true">
+<h2 id="preset-maker-layout"><ins><nowiki>Preset Maker Layout</nowiki></ins></h2>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ When you open the Preset Maker, you'll see the following layout.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• Make sure to create a New Preset by clicking the New Preset button if making a new preset.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><pvme-image src="https://img.pvme.io/images/kWUpaX5GjO.png" alt="" title="" kind="media" /><nowiki>
+⬥ There are </nowiki><strong><nowiki>2 buttons</nowiki></strong><nowiki> shown at the top right.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>IMPORT JSON</nowiki></strong><nowiki> - Allows you to import preset items and notes via an uploaded JSON file.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• </nowiki><strong><nowiki>EXPORT JSON</nowiki></strong><nowiki> - Allows you to export preset items and notes as a downloaded JSON file.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ The </nowiki><strong><nowiki>GENERATE SHAREABLE LINK</nowiki></strong><nowiki> button produces a link to use in guides which saves all items and notes.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ The </nowiki><strong><nowiki>SAVE NEW PRESET</nowiki></strong><nowiki> buttons saves the displayed preset and breakdown which can be loaded when the website is opened again on the same browser.</nowiki></p>
+<nowiki>
+</nowiki>
+<pvme-video src="https://img.pvme.io/images/Tih0Kzi13s.mp4" controls="1" loop="1" muted="1" type="video/mp4" />
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ The </nowiki><strong><nowiki>RESET</nowiki></strong><nowiki> button erases all data in the displayed preset.</nowiki></p>
+<nowiki>
+</nowiki>
+<pvme-video src="https://img.pvme.io/images/JyXbC3krgg.mp4" controls="1" loop="1" muted="1" type="video/mp4" />
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ The </nowiki><strong><nowiki>COPY IMAGE TO CLIPBOARD</nowiki></strong><nowiki> and </nowiki><strong><nowiki>COPY BREAKDOWN TO CLIPBOARD</nowiki></strong><nowiki> buttons copies the preset and breakdown as images respectively.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• This facilitates fast uploading of images to </nowiki><span><nowiki>#guide-media-upload-and-request</nowiki></span><nowiki>, or </nowiki><span><nowiki>#bot-test</nowiki></span><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki>
+<pvme-video src="https://img.pvme.io/images/nQO9WEgEZZ.mp4" controls="1" loop="1" muted="1" type="video/mp4" />
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section" data-gear="true">
+<h2 id="creating-a-preset"><ins><nowiki>Creating a Preset</nowiki></ins></h2>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Click on an slot in the preset interface. Use the search bar to find the desired item to assign it with.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><pvme-image src="https://img.pvme.io/images/a1xc1Ca.png" alt="" title="" kind="media" /><nowiki>
+⬥ Your last 5 unique entries will be displayed in the </nowiki><strong><nowiki>Recent Items:</nowiki></strong><nowiki> section.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• This speeds up filling multiple inventory slots with the same item e.g. </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/689530593742291033.png?v=1" alt="blueblubber" title="blueblubber" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/651079281882955787.png?v=1" alt="spiritualprayer" title="spiritualprayer" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/974503666352525312.png?v=1" alt="portentofrestorationx" title="portentofrestorationx" kind="icon" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><pvme-image src="https://img.pvme.io/images/8GQfprD.png" alt="" title="" kind="media" /></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ You can also use the multi-select feature by holding [SHIFT] when selecting the slots, as shown in the video below:</nowiki></p>
+<nowiki>
+</nowiki>
+<pvme-video src="https://img.pvme.io/images/dYhrbS86tW.mp4" controls="1" loop="1" muted="1" type="video/mp4" />
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section" data-gear="true">
+<h2 id="adding-preset-to-guide"><ins><nowiki>Adding Preset to Guide</nowiki></ins></h2>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ After you are finished with the preset and breakdown, upload to cloud by the Menu dropdown (wait for the green confirmation message), then generate the </nowiki><strong><nowiki>shareable link</nowiki></strong><nowiki> (wait for the green confirmation message) and paste the result in the link section of the preset embed.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-detail"><nowiki>‎ ‎ ‎ ‎• Click on the link in the guide editor to check that it is working. It may take a bit to load.</nowiki></p>
+<nowiki>
+</nowiki>
+<pvme-video src="https://img.pvme.io/images/c9abKcCH9l.mp4" controls="1" loop="1" muted="1" type="video/mp4" />
+<nowiki>
+      
+    </nowiki>
+
+</div>
+</div>
+
+<div class="pvme-source-attribution">[https://pvme.io/pvme-guides/editor-resources/editor-references/preset-maker/ PvME source] · PvME contributors · [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]. AI-assisted formatting; source wording retained.
+</div>

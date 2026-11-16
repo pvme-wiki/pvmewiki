@@ -1,0 +1,537 @@
+{
+  "schemaVersion": 1,
+  "captureVersion": 2,
+  "id": "pvme-guides--editor-resources--editor-references--icon-creation",
+  "sourceURL": "https://pvme.io/pvme-guides/editor-resources/editor-references/icon-creation/",
+  "officialURL": "https://pvme.io/pvme-guides/editor-resources/editor-references/icon-creation/",
+  "responseURL": "https://pvme.io/pvme-guides/editor-resources/editor-references/icon-creation/",
+  "status": "captured",
+  "statusCode": 200,
+  "retrievedAt": "2026-11-16T00:26:49.164Z",
+  "sitemapLastmod": "2026-11-15",
+  "sitemapSha256": "7166472554d36bfc69a7e14f7298264c0f9bfac00dc9034e5bfd0fba58a14b07",
+  "kind": "guide",
+  "audience": "editor",
+  "title": "PvME/Contributing/Icon Creation",
+  "titleStatus": "existing-exact-url",
+  "baselineId": "pvme-guides--editor-resources--editor-references--icon-creation",
+  "sourceTitle": "Introduction",
+  "sourceH1": null,
+  "discovery": "official-sitemap",
+  "directory": "guides/pvme-guides--editor-resources--editor-references--icon-creation",
+  "sourceSha256": "5b1ed09729f6b05bcc8ade117f278d04bc1fedd882a1232234fdde2d73355531",
+  "bodySha256": "5b1ed09729f6b05bcc8ade117f278d04bc1fedd882a1232234fdde2d73355531",
+  "normalizedTextSha256": "bb373596c88bff00f0a332420b41ef26782c7587518f3378e837af3f73a80809",
+  "parser": "parse5 8.1.1; entities 9.0.0; sourceCodeLocationInfo",
+  "headers": {
+    "accept-ranges": "bytes",
+    "access-control-allow-origin": "*",
+    "age": "0",
+    "cache-control": "max-age=600",
+    "connection": "keep-alive",
+    "content-encoding": "gzip",
+    "content-length": "18914",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Mon, 16 Nov 2026 00:26:49 GMT",
+    "etag": "W/\"6afa1a34-2c9e4\"",
+    "expires": "Mon, 16 Nov 2026 00:36:49 GMT",
+    "last-modified": "Sun, 15 Nov 2026 20:46:44 GMT",
+    "server": "GitHub.com",
+    "strict-transport-security": "max-age=31556952",
+    "vary": "Accept-Encoding",
+    "via": "1.1 varnish",
+    "x-cache": "MISS",
+    "x-cache-hits": "0",
+    "x-fastly-request-id": "30580ae944d166c3d3ceeb4b79d5ab59c53c10c4",
+    "x-github-edge-region": "iad",
+    "x-github-request-id": "BB60:27D1F1:3CCEF85:42BAA5F:6AFA4DC9",
+    "x-origin-cache": "HIT",
+    "x-proxy-cache": "MISS",
+    "x-served-by": "cache-iad-kcgs7200027-IAD",
+    "x-timer": "S1794788810.639693,VS0,VE37"
+  },
+  "hashes": {
+    "responseSha256": "f85fcca434367a92a82dd7238d2490c889f8764608b3ea9315e36935ec3340c8",
+    "articleSha256": "5b1ed09729f6b05bcc8ade117f278d04bc1fedd882a1232234fdde2d73355531",
+    "textSha256": "517ed1d999f43bd6ac31aa64afd86ed1494942807d91b0c4103016e3a9e713c5",
+    "normalizedTextSha256": "bb373596c88bff00f0a332420b41ef26782c7587518f3378e837af3f73a80809"
+  },
+  "counts": {
+    "bytes": 182756,
+    "articleBytes": 15522,
+    "nodes": 780,
+    "topLevelNodes": 234,
+    "words": 1373,
+    "images": 6,
+    "videos": 0,
+    "sources": 0,
+    "links": 21
+  },
+  "tags": {
+    "h2": 8,
+    "ins": 8,
+    "p": 111,
+    "ol": 8,
+    "li": 22,
+    "a": 21,
+    "div": 30,
+    "u": 5,
+    "strong": 58,
+    "img": 6,
+    "iframe": 6,
+    "code": 12,
+    "pre": 3
+  },
+  "mediaHosts": {
+    "img.pvme.io": 6,
+    "www.youtube.com": 6
+  },
+  "patterns": [
+    "no-direct-h1-start-at-first-source-content-after-editor-utility",
+    "source-tag:iframe",
+    "source-tag:pre",
+    "linked-preset-content-external-to-html"
+  ],
+  "media": [
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/tHGKxIrkby.png"
+      },
+      "text": "",
+      "location": {
+        "start": 169288,
+        "end": 169355
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/Yv2AN2KqdH.png"
+      },
+      "text": "",
+      "location": {
+        "start": 169481,
+        "end": 169548
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/ZlC9E1hWBh.png"
+      },
+      "text": "",
+      "location": {
+        "start": 169723,
+        "end": 169790
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/TgSLjZRTq9.png"
+      },
+      "text": "",
+      "location": {
+        "start": 170463,
+        "end": 170530
+      }
+    },
+    {
+      "tag": "iframe",
+      "attrs": {
+        "class": "media",
+        "width": "560",
+        "height": "315",
+        "src": "https://www.youtube.com/embed/PG19o3AzfCc",
+        "frameborder": "0",
+        "allow": "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+        "allowfullscreen": ""
+      },
+      "text": "",
+      "location": {
+        "start": 171408,
+        "end": 171624
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/0nBdPW5cuc.png"
+      },
+      "text": "",
+      "location": {
+        "start": 171975,
+        "end": 172042
+      }
+    },
+    {
+      "tag": "iframe",
+      "attrs": {
+        "class": "media",
+        "width": "560",
+        "height": "315",
+        "src": "https://www.youtube.com/embed/81FjnkxgNoQ",
+        "frameborder": "0",
+        "allow": "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+        "allowfullscreen": ""
+      },
+      "text": "",
+      "location": {
+        "start": 172534,
+        "end": 172750
+      }
+    },
+    {
+      "tag": "iframe",
+      "attrs": {
+        "class": "media",
+        "width": "560",
+        "height": "315",
+        "src": "https://www.youtube.com/embed/ZjdWPbp4YUo",
+        "frameborder": "0",
+        "allow": "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+        "allowfullscreen": ""
+      },
+      "text": "",
+      "location": {
+        "start": 174155,
+        "end": 174371
+      }
+    },
+    {
+      "tag": "iframe",
+      "attrs": {
+        "class": "media",
+        "width": "560",
+        "height": "315",
+        "src": "https://www.youtube.com/embed/9oiHOuCO89U",
+        "frameborder": "0",
+        "allow": "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+        "allowfullscreen": ""
+      },
+      "text": "",
+      "location": {
+        "start": 175393,
+        "end": 175609
+      }
+    },
+    {
+      "tag": "iframe",
+      "attrs": {
+        "class": "media",
+        "width": "560",
+        "height": "315",
+        "src": "https://www.youtube.com/embed/MCmgf2WiOeY",
+        "frameborder": "0",
+        "allow": "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+        "allowfullscreen": ""
+      },
+      "text": "",
+      "location": {
+        "start": 177027,
+        "end": 177243
+      }
+    },
+    {
+      "tag": "iframe",
+      "attrs": {
+        "class": "media",
+        "width": "560",
+        "height": "315",
+        "src": "https://www.youtube.com/embed/yM61GooZZco",
+        "frameborder": "0",
+        "allow": "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+        "allowfullscreen": ""
+      },
+      "text": "",
+      "location": {
+        "start": 177702,
+        "end": 177918
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/MmKQxc25gA.png"
+      },
+      "text": "",
+      "location": {
+        "start": 178625,
+        "end": 178692
+      }
+    }
+  ],
+  "links": [
+    {
+      "href": "https://pvme.io/pvme-settings/#emojis",
+      "text": "https://pvme.io/pvme-settings/#emojis",
+      "attrs": {
+        "href": "https://pvme.io/pvme-settings/#emojis"
+      },
+      "location": {
+        "start": 165673,
+        "end": 165762
+      }
+    },
+    {
+      "href": "https://pvme.github.io/preset-maker/",
+      "text": "https://pvme.github.io/preset-maker/",
+      "attrs": {
+        "href": "https://pvme.github.io/preset-maker/"
+      },
+      "location": {
+        "start": 165814,
+        "end": 165901
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/XspEfnR9K5.png",
+      "text": "System > Display > Scale",
+      "attrs": {
+        "title": "",
+        "href": "https://img.pvme.io/images/XspEfnR9K5.png",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 166937,
+        "end": 167065
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/4wusRQznyv.png",
+      "text": "Settings > Graphics > Interface Scaling",
+      "attrs": {
+        "title": "",
+        "href": "https://img.pvme.io/images/4wusRQznyv.png",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 167138,
+        "end": 167281
+      }
+    },
+    {
+      "href": "https://www.getpaint.net/download.html#download",
+      "text": "Paint.net",
+      "attrs": {
+        "title": "",
+        "href": "https://www.getpaint.net/download.html#download",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 167444,
+        "end": 167557
+      }
+    },
+    {
+      "href": "https://www.python.org/downloads/",
+      "text": "Python",
+      "attrs": {
+        "title": "",
+        "href": "https://www.python.org/downloads/",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 167758,
+        "end": 167854
+      }
+    },
+    {
+      "href": "https://www.getpaint.net/download.html#download",
+      "text": "Paint.net",
+      "attrs": {
+        "title": "",
+        "href": "https://www.getpaint.net/download.html#download",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 167891,
+        "end": 168004
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/DneowCezKn.png",
+      "text": "look clear when zoomed in",
+      "attrs": {
+        "title": "",
+        "href": "https://img.pvme.io/images/DneowCezKn.png",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 168297,
+        "end": 168420
+      }
+    },
+    {
+      "href": "https://drive.google.com/file/d/1lLI6X3hAx-IebShGFe1jxbCZgGOzJ60-/view?usp=sharing",
+      "text": "https://drive.google.com/file/d/1lLI6X3hAx-IebShGFe1jxbCZgGOzJ60-/view?usp=sharing",
+      "attrs": {
+        "href": "https://drive.google.com/file/d/1lLI6X3hAx-IebShGFe1jxbCZgGOzJ60-/view?usp=sharing"
+      },
+      "location": {
+        "start": 170843,
+        "end": 171022
+      }
+    },
+    {
+      "href": "https://youtu.be/PG19o3AzfCc",
+      "text": "https://youtu.be/PG19o3AzfCc",
+      "attrs": {
+        "href": "https://youtu.be/PG19o3AzfCc"
+      },
+      "location": {
+        "start": 171332,
+        "end": 171403
+      }
+    },
+    {
+      "href": "https://youtu.be/81FjnkxgNoQ",
+      "text": "https://youtu.be/81FjnkxgNoQ",
+      "attrs": {
+        "href": "https://youtu.be/81FjnkxgNoQ"
+      },
+      "location": {
+        "start": 172458,
+        "end": 172529
+      }
+    },
+    {
+      "href": "https://youtu.be/ZjdWPbp4YUo",
+      "text": "https://youtu.be/ZjdWPbp4YUo",
+      "attrs": {
+        "href": "https://youtu.be/ZjdWPbp4YUo"
+      },
+      "location": {
+        "start": 174079,
+        "end": 174150
+      }
+    },
+    {
+      "href": "",
+      "text": "#guide-media-upload-and-request",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 174923,
+        "end": 174990
+      }
+    },
+    {
+      "href": "https://youtu.be/9oiHOuCO89U",
+      "text": "https://youtu.be/9oiHOuCO89U",
+      "attrs": {
+        "href": "https://youtu.be/9oiHOuCO89U"
+      },
+      "location": {
+        "start": 175317,
+        "end": 175388
+      }
+    },
+    {
+      "href": "https://youtu.be/MCmgf2WiOeY",
+      "text": "https://youtu.be/MCmgf2WiOeY",
+      "attrs": {
+        "href": "https://youtu.be/MCmgf2WiOeY"
+      },
+      "location": {
+        "start": 176951,
+        "end": 177022
+      }
+    },
+    {
+      "href": "https://youtu.be/yM61GooZZco",
+      "text": "https://youtu.be/yM61GooZZco",
+      "attrs": {
+        "href": "https://youtu.be/yM61GooZZco"
+      },
+      "location": {
+        "start": 177626,
+        "end": 177697
+      }
+    },
+    {
+      "href": "https://imgur.com/CCfr7dG",
+      "text": "https://imgur.com/CCfr7dG",
+      "attrs": {
+        "href": "https://imgur.com/CCfr7dG"
+      },
+      "location": {
+        "start": 178312,
+        "end": 178377
+      }
+    },
+    {
+      "href": "https://imgur.com/ypnZCL3",
+      "text": "https://imgur.com/ypnZCL3",
+      "attrs": {
+        "href": "https://imgur.com/ypnZCL3"
+      },
+      "location": {
+        "start": 178379,
+        "end": 178444
+      }
+    },
+    {
+      "href": "",
+      "text": "#guide-media-upload-and-request",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 178870,
+        "end": 178937
+      }
+    },
+    {
+      "href": "",
+      "text": "#unknown",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 179028,
+        "end": 179072
+      }
+    },
+    {
+      "href": "",
+      "text": "#unknown",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 180694,
+        "end": 180738
+      }
+    }
+  ],
+  "files": {
+    "source": "guides/pvme-guides--editor-resources--editor-references--icon-creation/source.json",
+    "inventory": "guides/pvme-guides--editor-resources--editor-references--icon-creation/inventory.json",
+    "article": "guides/pvme-guides--editor-resources--editor-references--icon-creation/article.html",
+    "response": "guides/pvme-guides--editor-resources--editor-references--icon-creation/response.html",
+    "metadata": "guides/pvme-guides--editor-resources--editor-references--icon-creation/metadata.json"
+  },
+  "limitations": [
+    "Exact HTTP article preserved, not dynamic preset/item/API data or image/video-only information.",
+    "No media availability, browser layout, semantic equivalence or live wiki revision parity claim."
+  ]
+}

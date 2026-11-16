@@ -1,0 +1,2117 @@
+{
+  "schemaVersion": 1,
+  "id": "pvme-guides--editor-resources--editor-references--map-generation",
+  "sourceURL": "https://pvme.io/pvme-guides/editor-resources/editor-references/map-generation/",
+  "responseURL": "https://pvme.io/pvme-guides/editor-resources/editor-references/map-generation/",
+  "boundary": "First original source content after editor utility; no H1; flagged",
+  "offsets": {
+    "start": 166546,
+    "end": 173360
+  },
+  "text": "Introduction\nThis channel will cover creating tile-based maps for our guides, such as the below examples:\n\n​\nMethod 1: Creating using web app\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLink to the tool\n⬥ https://pvme.io/tilemap-maker\nFinding problems?\n⬥ If you have any issues, contact Nick (@neonx222)\n⬥ Do not sit struggling alone!\n\n\n\n\n\n\n\n\n​\nMethod 2: Creating via coding\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLink to the tool\n⬥ Map Generator on Google Colab\nFinding problems?\n⬥ If you have any issues, contact Chrash (@chrash.)\n⬥ Do not sit struggling alone!\n\n\n\n\n\n\n\n\n​\nStep 1\n1.1 Run the first code section by clicking the first play button\n\n​\nStep 2\n2.1. Scroll down to the second code section and edit the variables between the two lines of #########​\n\nNotes:\n‎ ‎ ‎ ‎a. Check #unknown first for already created maps and variables sets to save you time\n‎ ‎ ‎ ‎b. You can find map chunks by visiting https://mejrs.github.io/\n‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Turn on the grid layer by hovering over the icon in the bottom-right\n‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ If you struggle to find a specific area the RS Wiki has a page listing common locations - simply replace the -1 ‎in the mej URL to the corresponding map ID\n​\n2.2. If unsure about the coloured tile markings, enter a number around where you think for player/cannon etc, then tweak and re-run the code\n​\n2.3. Choose how many tiles to trim off each side of the image (left,upper,right,bottom)\n​\n2.4. Select which legend to use from the listed options\n​\n2.5. Remove the # ‎from any lines you have set (any lines with a # ‎will not be executed)\n\n​\nStep 3\n3.1. Run the main code\n\n3.2. Wait for the code to execute - you can track its progress at the bottom of your browser\n\n​\nStep 4\n4.1. Scroll to the very bottom of the page to view your created map and right click > save ‎when happy, or scroll back up and tweak the variables if it's not right\n​\nReal example\nThe objective: make a player position map for the new Osseous AFK guide.\n​\nFirst we find the Rex Matriarch arena (we've had to scroll across Mej's map to find it):\n\n​\nNext, we add map gridlines on so we know which map chunks to reference:\n\n​\nNow we want to reduce the map to just the Osseous arena (highlighted by the yellow box), which crosses multiple map chunks.\n\n​\nFirst we set the x and y values to be of the top tile (63,153)\nmej_x = 63\nmej_y = 153\n\n​\nNext let's make it so 2 tiles are shown vertically\nmej_height = 2\nmej_width = 1\n\n​\nIf we ran the code now, it would give us this:\n\n​\nLet's trim off the sides and press the run button to check our map:\nleft = 1\nupper = 43\nright = 21\nlower = 43\n\n​\n\n​\nIt's almost there! Let's cut off some of that excess map, put a coloured tile for the player position, and set the legend to show just 'player position':\n\n​\nNow let's hit the run button again... we did it!\n\n​\n      \n    ",
+  "normalizedText": "Introduction This channel will cover creating tile-based maps for our guides, such as the below examples: ​ Method 1: Creating using web app Link to the tool ⬥ https://pvme.io/tilemap-maker Finding problems? ⬥ If you have any issues, contact Nick (@neonx222) ⬥ Do not sit struggling alone! ​ Method 2: Creating via coding Link to the tool ⬥ Map Generator on Google Colab Finding problems? ⬥ If you have any issues, contact Chrash (@chrash.) ⬥ Do not sit struggling alone! ​ Step 1 1.1 Run the first code section by clicking the first play button ​ Step 2 2.1. Scroll down to the second code section and edit the variables between the two lines of #########​ Notes: ‎ ‎ ‎ ‎a. Check #unknown first for already created maps and variables sets to save you time ‎ ‎ ‎ ‎b. You can find map chunks by visiting https://mejrs.github.io/ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Turn on the grid layer by hovering over the icon in the bottom-right ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ If you struggle to find a specific area the RS Wiki has a page listing common locations - simply replace the -1 ‎in the mej URL to the corresponding map ID ​ 2.2. If unsure about the coloured tile markings, enter a number around where you think for player/cannon etc, then tweak and re-run the code ​ 2.3. Choose how many tiles to trim off each side of the image (left,upper,right,bottom) ​ 2.4. Select which legend to use from the listed options ​ 2.5. Remove the # ‎from any lines you have set (any lines with a # ‎will not be executed) ​ Step 3 3.1. Run the main code 3.2. Wait for the code to execute - you can track its progress at the bottom of your browser ​ Step 4 4.1. Scroll to the very bottom of the page to view your created map and right click > save ‎when happy, or scroll back up and tweak the variables if it's not right ​ Real example The objective: make a player position map for the new Osseous AFK guide. ​ First we find the Rex Matriarch arena (we've had to scroll across Mej's map to find it): ​ Next, we add map gridlines on so we know which map chunks to reference: ​ Now we want to reduce the map to just the Osseous arena (highlighted by the yellow box), which crosses multiple map chunks. ​ First we set the x and y values to be of the top tile (63,153) mej_x = 63 mej_y = 153 ​ Next let's make it so 2 tiles are shown vertically mej_height = 2 mej_width = 1 ​ If we ran the code now, it would give us this: ​ Let's trim off the sides and press the run button to check our map: left = 1 upper = 43 right = 21 lower = 43 ​ ​ It's almost there! Let's cut off some of that excess map, put a coloured tile for the player position, and set the legend to show just 'player position': ​ Now let's hit the run button again... we did it! ​",
+  "wordStream": [
+    "Introduction",
+    "This",
+    "channel",
+    "will",
+    "cover",
+    "creating",
+    "tile-based",
+    "maps",
+    "for",
+    "our",
+    "guides,",
+    "such",
+    "as",
+    "the",
+    "below",
+    "examples:",
+    "​",
+    "Method",
+    "1:",
+    "Creating",
+    "using",
+    "web",
+    "app",
+    "Link",
+    "to",
+    "the",
+    "tool",
+    "⬥",
+    "https://pvme.io/tilemap-maker",
+    "Finding",
+    "problems?",
+    "⬥",
+    "If",
+    "you",
+    "have",
+    "any",
+    "issues,",
+    "contact",
+    "Nick",
+    "(@neonx222)",
+    "⬥",
+    "Do",
+    "not",
+    "sit",
+    "struggling",
+    "alone!",
+    "​",
+    "Method",
+    "2:",
+    "Creating",
+    "via",
+    "coding",
+    "Link",
+    "to",
+    "the",
+    "tool",
+    "⬥",
+    "Map",
+    "Generator",
+    "on",
+    "Google",
+    "Colab",
+    "Finding",
+    "problems?",
+    "⬥",
+    "If",
+    "you",
+    "have",
+    "any",
+    "issues,",
+    "contact",
+    "Chrash",
+    "(@chrash.)",
+    "⬥",
+    "Do",
+    "not",
+    "sit",
+    "struggling",
+    "alone!",
+    "​",
+    "Step",
+    "1",
+    "1.1",
+    "Run",
+    "the",
+    "first",
+    "code",
+    "section",
+    "by",
+    "clicking",
+    "the",
+    "first",
+    "play",
+    "button",
+    "​",
+    "Step",
+    "2",
+    "2.1.",
+    "Scroll",
+    "down",
+    "to",
+    "the",
+    "second",
+    "code",
+    "section",
+    "and",
+    "edit",
+    "the",
+    "variables",
+    "between",
+    "the",
+    "two",
+    "lines",
+    "of",
+    "#########​",
+    "Notes:",
+    "‎",
+    "‎",
+    "‎",
+    "‎a.",
+    "Check",
+    "#unknown",
+    "first",
+    "for",
+    "already",
+    "created",
+    "maps",
+    "and",
+    "variables",
+    "sets",
+    "to",
+    "save",
+    "you",
+    "time",
+    "‎",
+    "‎",
+    "‎",
+    "‎b.",
+    "You",
+    "can",
+    "find",
+    "map",
+    "chunks",
+    "by",
+    "visiting",
+    "https://mejrs.github.io/",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎⬩",
+    "Turn",
+    "on",
+    "the",
+    "grid",
+    "layer",
+    "by",
+    "hovering",
+    "over",
+    "the",
+    "icon",
+    "in",
+    "the",
+    "bottom-right",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎⬩",
+    "If",
+    "you",
+    "struggle",
+    "to",
+    "find",
+    "a",
+    "specific",
+    "area",
+    "the",
+    "RS",
+    "Wiki",
+    "has",
+    "a",
+    "page",
+    "listing",
+    "common",
+    "locations",
+    "-",
+    "simply",
+    "replace",
+    "the",
+    "-1",
+    "‎in",
+    "the",
+    "mej",
+    "URL",
+    "to",
+    "the",
+    "corresponding",
+    "map",
+    "ID",
+    "​",
+    "2.2.",
+    "If",
+    "unsure",
+    "about",
+    "the",
+    "coloured",
+    "tile",
+    "markings,",
+    "enter",
+    "a",
+    "number",
+    "around",
+    "where",
+    "you",
+    "think",
+    "for",
+    "player/cannon",
+    "etc,",
+    "then",
+    "tweak",
+    "and",
+    "re-run",
+    "the",
+    "code",
+    "​",
+    "2.3.",
+    "Choose",
+    "how",
+    "many",
+    "tiles",
+    "to",
+    "trim",
+    "off",
+    "each",
+    "side",
+    "of",
+    "the",
+    "image",
+    "(left,upper,right,bottom)",
+    "​",
+    "2.4.",
+    "Select",
+    "which",
+    "legend",
+    "to",
+    "use",
+    "from",
+    "the",
+    "listed",
+    "options",
+    "​",
+    "2.5.",
+    "Remove",
+    "the",
+    "#",
+    "‎from",
+    "any",
+    "lines",
+    "you",
+    "have",
+    "set",
+    "(any",
+    "lines",
+    "with",
+    "a",
+    "#",
+    "‎will",
+    "not",
+    "be",
+    "executed)",
+    "​",
+    "Step",
+    "3",
+    "3.1.",
+    "Run",
+    "the",
+    "main",
+    "code",
+    "3.2.",
+    "Wait",
+    "for",
+    "the",
+    "code",
+    "to",
+    "execute",
+    "-",
+    "you",
+    "can",
+    "track",
+    "its",
+    "progress",
+    "at",
+    "the",
+    "bottom",
+    "of",
+    "your",
+    "browser",
+    "​",
+    "Step",
+    "4",
+    "4.1.",
+    "Scroll",
+    "to",
+    "the",
+    "very",
+    "bottom",
+    "of",
+    "the",
+    "page",
+    "to",
+    "view",
+    "your",
+    "created",
+    "map",
+    "and",
+    "right",
+    "click",
+    ">",
+    "save",
+    "‎when",
+    "happy,",
+    "or",
+    "scroll",
+    "back",
+    "up",
+    "and",
+    "tweak",
+    "the",
+    "variables",
+    "if",
+    "it's",
+    "not",
+    "right",
+    "​",
+    "Real",
+    "example",
+    "The",
+    "objective:",
+    "make",
+    "a",
+    "player",
+    "position",
+    "map",
+    "for",
+    "the",
+    "new",
+    "Osseous",
+    "AFK",
+    "guide.",
+    "​",
+    "First",
+    "we",
+    "find",
+    "the",
+    "Rex",
+    "Matriarch",
+    "arena",
+    "(we've",
+    "had",
+    "to",
+    "scroll",
+    "across",
+    "Mej's",
+    "map",
+    "to",
+    "find",
+    "it):",
+    "​",
+    "Next,",
+    "we",
+    "add",
+    "map",
+    "gridlines",
+    "on",
+    "so",
+    "we",
+    "know",
+    "which",
+    "map",
+    "chunks",
+    "to",
+    "reference:",
+    "​",
+    "Now",
+    "we",
+    "want",
+    "to",
+    "reduce",
+    "the",
+    "map",
+    "to",
+    "just",
+    "the",
+    "Osseous",
+    "arena",
+    "(highlighted",
+    "by",
+    "the",
+    "yellow",
+    "box),",
+    "which",
+    "crosses",
+    "multiple",
+    "map",
+    "chunks.",
+    "​",
+    "First",
+    "we",
+    "set",
+    "the",
+    "x",
+    "and",
+    "y",
+    "values",
+    "to",
+    "be",
+    "of",
+    "the",
+    "top",
+    "tile",
+    "(63,153)",
+    "mej_x",
+    "=",
+    "63",
+    "mej_y",
+    "=",
+    "153",
+    "​",
+    "Next",
+    "let's",
+    "make",
+    "it",
+    "so",
+    "2",
+    "tiles",
+    "are",
+    "shown",
+    "vertically",
+    "mej_height",
+    "=",
+    "2",
+    "mej_width",
+    "=",
+    "1",
+    "​",
+    "If",
+    "we",
+    "ran",
+    "the",
+    "code",
+    "now,",
+    "it",
+    "would",
+    "give",
+    "us",
+    "this:",
+    "​",
+    "Let's",
+    "trim",
+    "off",
+    "the",
+    "sides",
+    "and",
+    "press",
+    "the",
+    "run",
+    "button",
+    "to",
+    "check",
+    "our",
+    "map:",
+    "left",
+    "=",
+    "1",
+    "upper",
+    "=",
+    "43",
+    "right",
+    "=",
+    "21",
+    "lower",
+    "=",
+    "43",
+    "​",
+    "​",
+    "It's",
+    "almost",
+    "there!",
+    "Let's",
+    "cut",
+    "off",
+    "some",
+    "of",
+    "that",
+    "excess",
+    "map,",
+    "put",
+    "a",
+    "coloured",
+    "tile",
+    "for",
+    "the",
+    "player",
+    "position,",
+    "and",
+    "set",
+    "the",
+    "legend",
+    "to",
+    "show",
+    "just",
+    "'player",
+    "position':",
+    "​",
+    "Now",
+    "let's",
+    "hit",
+    "the",
+    "run",
+    "button",
+    "again...",
+    "we",
+    "did",
+    "it!",
+    "​"
+  ],
+  "hashes": {
+    "responseSha256": "75c568cb7f570c5689badd22b87f13bccf09d2e987def8845170da9b7381179f",
+    "articleSha256": "50ccf8486cf525a00d7df72a4722bf5b0ff5f9f1e911edc1e98db6e14921bf33",
+    "textSha256": "39bbb06aaaecbbd637c4abab635764cddfd01d8c0436f7c75b2501aee226a2ba",
+    "normalizedTextSha256": "14a20bcf66f38d93e4dfa8ea1494c649bbaedb597ee7dc29c94a56958cc9c4ff"
+  },
+  "headings": [
+    {
+      "tag": "h2",
+      "text": "Introduction",
+      "attrs": {
+        "id": "introduction"
+      },
+      "location": {
+        "start": 166546,
+        "end": 166596
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "Method 1: Creating using web app",
+      "attrs": {
+        "id": "method-1-creating-using-web-app"
+      },
+      "location": {
+        "start": 166781,
+        "end": 166870
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "Method 2: Creating via coding",
+      "attrs": {
+        "id": "method-2-creating-via-coding"
+      },
+      "location": {
+        "start": 168027,
+        "end": 168110
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Step 1",
+      "attrs": {
+        "id": "step-1"
+      },
+      "location": {
+        "start": 169366,
+        "end": 169393
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Step 2",
+      "attrs": {
+        "id": "step-2"
+      },
+      "location": {
+        "start": 169550,
+        "end": 169577
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Step 3",
+      "attrs": {
+        "id": "step-3"
+      },
+      "location": {
+        "start": 170998,
+        "end": 171025
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Step 4",
+      "attrs": {
+        "id": "step-4"
+      },
+      "location": {
+        "start": 171308,
+        "end": 171335
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "Real example",
+      "attrs": {
+        "id": "real-example"
+      },
+      "location": {
+        "start": 171539,
+        "end": 171589
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "The objective: make a player position map for the new Osseous AFK guide.",
+      "attrs": {
+        "id": "the-objective-make-a-player-position-map-for-the-new-osseous-afk-guide"
+      },
+      "location": {
+        "start": 171590,
+        "end": 171747
+      }
+    }
+  ],
+  "media": [
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/8tY6vB0VH7.png"
+      },
+      "text": "",
+      "location": {
+        "start": 166700,
+        "end": 166767
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/iSHbmxoSrX.png"
+      },
+      "text": "",
+      "location": {
+        "start": 169469,
+        "end": 169536
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/fCvNMZwNGs.png"
+      },
+      "text": "",
+      "location": {
+        "start": 169711,
+        "end": 169778
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/88RSQ8Bnvb.png"
+      },
+      "text": "",
+      "location": {
+        "start": 170917,
+        "end": 170984
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/hN8YQKzJWk.png"
+      },
+      "text": "",
+      "location": {
+        "start": 171059,
+        "end": 171126
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/JOBeROCphO.png"
+      },
+      "text": "",
+      "location": {
+        "start": 171227,
+        "end": 171294
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/4bOVcYUEIk.png"
+      },
+      "text": "",
+      "location": {
+        "start": 171863,
+        "end": 171930
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/XwdQIAu7uv.png"
+      },
+      "text": "",
+      "location": {
+        "start": 172026,
+        "end": 172093
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/EJXkK2pB4r.png"
+      },
+      "text": "",
+      "location": {
+        "start": 172241,
+        "end": 172308
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/UDpjeF4nPZ.png"
+      },
+      "text": "",
+      "location": {
+        "start": 172641,
+        "end": 172708
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/xb7wjGpZut.png"
+      },
+      "text": "",
+      "location": {
+        "start": 172883,
+        "end": 172950
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/A76Rk7HV0P.png"
+      },
+      "text": "",
+      "location": {
+        "start": 173128,
+        "end": 173195
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/Dys4yLDFqW.png"
+      },
+      "text": "",
+      "location": {
+        "start": 173268,
+        "end": 173335
+      }
+    }
+  ],
+  "links": [
+    {
+      "href": "https://pvme.io/tilemap-maker",
+      "text": "https://pvme.io/tilemap-maker",
+      "attrs": {
+        "href": "https://pvme.io/tilemap-maker"
+      },
+      "location": {
+        "start": 167606,
+        "end": 167679
+      }
+    },
+    {
+      "href": "https://colab.research.google.com/drive/1OfiHQwIhKCfCJxgHCjXNiteoMJqVX6Yr?usp=sharing",
+      "text": "Map Generator on Google Colab",
+      "attrs": {
+        "title": "",
+        "href": "https://colab.research.google.com/drive/1OfiHQwIhKCfCJxgHCjXNiteoMJqVX6Yr?usp=sharing",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 168846,
+        "end": 169017
+      }
+    },
+    {
+      "href": "",
+      "text": "#unknown",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 169825,
+        "end": 169869
+      }
+    },
+    {
+      "href": "https://mejrs.github.io/",
+      "text": "https://mejrs.github.io/",
+      "attrs": {
+        "href": "https://mejrs.github.io/"
+      },
+      "location": {
+        "start": 169990,
+        "end": 170053
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/RuneScape:Map/mapIDs",
+      "text": "page listing common locations",
+      "attrs": {
+        "href": "https://runescape.wiki/w/RuneScape:Map/mapIDs"
+      },
+      "location": {
+        "start": 170246,
+        "end": 170335
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "h2",
+      "attrs": {
+        "id": "introduction"
+      },
+      "text": "Introduction",
+      "location": {
+        "start": 166546,
+        "end": 166596
+      }
+    },
+    {
+      "index": 1,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166596,
+        "end": 166597
+      }
+    },
+    {
+      "index": 2,
+      "tag": "p",
+      "attrs": {},
+      "text": "This channel will cover creating tile-based maps for our guides, such as the below examples:",
+      "location": {
+        "start": 166597,
+        "end": 166696
+      }
+    },
+    {
+      "index": 3,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166696,
+        "end": 166697
+      }
+    },
+    {
+      "index": 4,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n​",
+      "location": {
+        "start": 166697,
+        "end": 166780
+      }
+    },
+    {
+      "index": 5,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166780,
+        "end": 166781
+      }
+    },
+    {
+      "index": 6,
+      "tag": "h2",
+      "attrs": {
+        "id": "method-1-creating-using-web-app"
+      },
+      "text": "Method 1: Creating using web app",
+      "location": {
+        "start": 166781,
+        "end": 166870
+      }
+    },
+    {
+      "index": 7,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166870,
+        "end": 166871
+      }
+    },
+    {
+      "index": 8,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLink to the tool\n⬥ https://pvme.io/tilemap-maker\nFinding problems?\n⬥ If you have any issues, contact Nick (@neonx222)\n⬥ Do not sit struggling alone!\n\n\n\n\n\n\n",
+      "location": {
+        "start": 166871,
+        "end": 168009
+      }
+    },
+    {
+      "index": 9,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 168009,
+        "end": 168011
+      }
+    },
+    {
+      "index": 10,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 168011,
+        "end": 168026
+      }
+    },
+    {
+      "index": 11,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168026,
+        "end": 168027
+      }
+    },
+    {
+      "index": 12,
+      "tag": "h2",
+      "attrs": {
+        "id": "method-2-creating-via-coding"
+      },
+      "text": "Method 2: Creating via coding",
+      "location": {
+        "start": 168027,
+        "end": 168110
+      }
+    },
+    {
+      "index": 13,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168110,
+        "end": 168111
+      }
+    },
+    {
+      "index": 14,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLink to the tool\n⬥ Map Generator on Google Colab\nFinding problems?\n⬥ If you have any issues, contact Chrash (@chrash.)\n⬥ Do not sit struggling alone!\n\n\n\n\n\n\n",
+      "location": {
+        "start": 168111,
+        "end": 169348
+      }
+    },
+    {
+      "index": 15,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 169348,
+        "end": 169350
+      }
+    },
+    {
+      "index": 16,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 169350,
+        "end": 169365
+      }
+    },
+    {
+      "index": 17,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169365,
+        "end": 169366
+      }
+    },
+    {
+      "index": 18,
+      "tag": "h3",
+      "attrs": {
+        "id": "step-1"
+      },
+      "text": "Step 1",
+      "location": {
+        "start": 169366,
+        "end": 169393
+      }
+    },
+    {
+      "index": 19,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169393,
+        "end": 169394
+      }
+    },
+    {
+      "index": 20,
+      "tag": "p",
+      "attrs": {},
+      "text": "1.1 Run the first code section by clicking the first play button",
+      "location": {
+        "start": 169394,
+        "end": 169465
+      }
+    },
+    {
+      "index": 21,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169465,
+        "end": 169466
+      }
+    },
+    {
+      "index": 22,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n​",
+      "location": {
+        "start": 169466,
+        "end": 169549
+      }
+    },
+    {
+      "index": 23,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169549,
+        "end": 169550
+      }
+    },
+    {
+      "index": 24,
+      "tag": "h3",
+      "attrs": {
+        "id": "step-2"
+      },
+      "text": "Step 2",
+      "location": {
+        "start": 169550,
+        "end": 169577
+      }
+    },
+    {
+      "index": 25,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169577,
+        "end": 169578
+      }
+    },
+    {
+      "index": 26,
+      "tag": "p",
+      "attrs": {},
+      "text": "2.1. Scroll down to the second code section and edit the variables between the two lines of #########​",
+      "location": {
+        "start": 169578,
+        "end": 169707
+      }
+    },
+    {
+      "index": 27,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169707,
+        "end": 169708
+      }
+    },
+    {
+      "index": 28,
+      "tag": "p",
+      "attrs": {},
+      "text": "",
+      "location": {
+        "start": 169708,
+        "end": 169782
+      }
+    },
+    {
+      "index": 29,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169782,
+        "end": 169783
+      }
+    },
+    {
+      "index": 30,
+      "tag": "p",
+      "attrs": {},
+      "text": "Notes:",
+      "location": {
+        "start": 169783,
+        "end": 169805
+      }
+    },
+    {
+      "index": 31,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169805,
+        "end": 169806
+      }
+    },
+    {
+      "index": 32,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎a. Check #unknown first for already created maps and variables sets to save you time",
+      "location": {
+        "start": 169806,
+        "end": 169940
+      }
+    },
+    {
+      "index": 33,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169940,
+        "end": 169941
+      }
+    },
+    {
+      "index": 34,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎b. You can find map chunks by visiting https://mejrs.github.io/",
+      "location": {
+        "start": 169941,
+        "end": 170057
+      }
+    },
+    {
+      "index": 35,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170057,
+        "end": 170058
+      }
+    },
+    {
+      "index": 36,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Turn on the grid layer by hovering over the icon in the bottom-right",
+      "location": {
+        "start": 170058,
+        "end": 170167
+      }
+    },
+    {
+      "index": 37,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170167,
+        "end": 170168
+      }
+    },
+    {
+      "index": 38,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ If you struggle to find a specific area the RS Wiki has a page listing common locations - simply replace the -1 ‎in the mej URL to the corresponding map ID",
+      "location": {
+        "start": 170168,
+        "end": 170420
+      }
+    },
+    {
+      "index": 39,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170420,
+        "end": 170421
+      }
+    },
+    {
+      "index": 40,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 170421,
+        "end": 170436
+      }
+    },
+    {
+      "index": 41,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170436,
+        "end": 170437
+      }
+    },
+    {
+      "index": 42,
+      "tag": "p",
+      "attrs": {},
+      "text": "2.2. If unsure about the coloured tile markings, enter a number around where you think for player/cannon etc, then tweak and re-run the code",
+      "location": {
+        "start": 170437,
+        "end": 170584
+      }
+    },
+    {
+      "index": 43,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170584,
+        "end": 170585
+      }
+    },
+    {
+      "index": 44,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 170585,
+        "end": 170600
+      }
+    },
+    {
+      "index": 45,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170600,
+        "end": 170601
+      }
+    },
+    {
+      "index": 46,
+      "tag": "p",
+      "attrs": {},
+      "text": "2.3. Choose how many tiles to trim off each side of the image (left,upper,right,bottom)",
+      "location": {
+        "start": 170601,
+        "end": 170695
+      }
+    },
+    {
+      "index": 47,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170695,
+        "end": 170696
+      }
+    },
+    {
+      "index": 48,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 170696,
+        "end": 170711
+      }
+    },
+    {
+      "index": 49,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170711,
+        "end": 170712
+      }
+    },
+    {
+      "index": 50,
+      "tag": "p",
+      "attrs": {},
+      "text": "2.4. Select which legend to use from the listed options",
+      "location": {
+        "start": 170712,
+        "end": 170774
+      }
+    },
+    {
+      "index": 51,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170774,
+        "end": 170775
+      }
+    },
+    {
+      "index": 52,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 170775,
+        "end": 170790
+      }
+    },
+    {
+      "index": 53,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170790,
+        "end": 170791
+      }
+    },
+    {
+      "index": 54,
+      "tag": "p",
+      "attrs": {},
+      "text": "2.5. Remove the # ‎from any lines you have set (any lines with a # ‎will not be executed)",
+      "location": {
+        "start": 170791,
+        "end": 170913
+      }
+    },
+    {
+      "index": 55,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170913,
+        "end": 170914
+      }
+    },
+    {
+      "index": 56,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n​",
+      "location": {
+        "start": 170914,
+        "end": 170997
+      }
+    },
+    {
+      "index": 57,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170997,
+        "end": 170998
+      }
+    },
+    {
+      "index": 58,
+      "tag": "h3",
+      "attrs": {
+        "id": "step-3"
+      },
+      "text": "Step 3",
+      "location": {
+        "start": 170998,
+        "end": 171025
+      }
+    },
+    {
+      "index": 59,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171025,
+        "end": 171026
+      }
+    },
+    {
+      "index": 60,
+      "tag": "p",
+      "attrs": {},
+      "text": "3.1. Run the main code",
+      "location": {
+        "start": 171026,
+        "end": 171055
+      }
+    },
+    {
+      "index": 61,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171055,
+        "end": 171056
+      }
+    },
+    {
+      "index": 62,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n3.2. Wait for the code to execute - you can track its progress at the bottom of your browser",
+      "location": {
+        "start": 171056,
+        "end": 171223
+      }
+    },
+    {
+      "index": 63,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171223,
+        "end": 171224
+      }
+    },
+    {
+      "index": 64,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n​",
+      "location": {
+        "start": 171224,
+        "end": 171307
+      }
+    },
+    {
+      "index": 65,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171307,
+        "end": 171308
+      }
+    },
+    {
+      "index": 66,
+      "tag": "h3",
+      "attrs": {
+        "id": "step-4"
+      },
+      "text": "Step 4",
+      "location": {
+        "start": 171308,
+        "end": 171335
+      }
+    },
+    {
+      "index": 67,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171335,
+        "end": 171336
+      }
+    },
+    {
+      "index": 68,
+      "tag": "p",
+      "attrs": {},
+      "text": "4.1. Scroll to the very bottom of the page to view your created map and right click > save ‎when happy, or scroll back up and tweak the variables if it's not right",
+      "location": {
+        "start": 171336,
+        "end": 171522
+      }
+    },
+    {
+      "index": 69,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171522,
+        "end": 171523
+      }
+    },
+    {
+      "index": 70,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 171523,
+        "end": 171538
+      }
+    },
+    {
+      "index": 71,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171538,
+        "end": 171539
+      }
+    },
+    {
+      "index": 72,
+      "tag": "h2",
+      "attrs": {
+        "id": "real-example"
+      },
+      "text": "Real example",
+      "location": {
+        "start": 171539,
+        "end": 171589
+      }
+    },
+    {
+      "index": 73,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171589,
+        "end": 171590
+      }
+    },
+    {
+      "index": 74,
+      "tag": "h3",
+      "attrs": {
+        "id": "the-objective-make-a-player-position-map-for-the-new-osseous-afk-guide"
+      },
+      "text": "The objective: make a player position map for the new Osseous AFK guide.",
+      "location": {
+        "start": 171590,
+        "end": 171747
+      }
+    },
+    {
+      "index": 75,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171747,
+        "end": 171748
+      }
+    },
+    {
+      "index": 76,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 171748,
+        "end": 171763
+      }
+    },
+    {
+      "index": 77,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171763,
+        "end": 171764
+      }
+    },
+    {
+      "index": 78,
+      "tag": "p",
+      "attrs": {},
+      "text": "First we find the Rex Matriarch arena (we've had to scroll across Mej's map to find it):",
+      "location": {
+        "start": 171764,
+        "end": 171859
+      }
+    },
+    {
+      "index": 79,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171859,
+        "end": 171860
+      }
+    },
+    {
+      "index": 80,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n​",
+      "location": {
+        "start": 171860,
+        "end": 171943
+      }
+    },
+    {
+      "index": 81,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171943,
+        "end": 171944
+      }
+    },
+    {
+      "index": 82,
+      "tag": "p",
+      "attrs": {},
+      "text": "Next, we add map gridlines on so we know which map chunks to reference:",
+      "location": {
+        "start": 171944,
+        "end": 172022
+      }
+    },
+    {
+      "index": 83,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172022,
+        "end": 172023
+      }
+    },
+    {
+      "index": 84,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n​",
+      "location": {
+        "start": 172023,
+        "end": 172106
+      }
+    },
+    {
+      "index": 85,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172106,
+        "end": 172107
+      }
+    },
+    {
+      "index": 86,
+      "tag": "p",
+      "attrs": {},
+      "text": "Now we want to reduce the map to just the Osseous arena (highlighted by the yellow box), which crosses multiple map chunks.",
+      "location": {
+        "start": 172107,
+        "end": 172237
+      }
+    },
+    {
+      "index": 87,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172237,
+        "end": 172238
+      }
+    },
+    {
+      "index": 88,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n​",
+      "location": {
+        "start": 172238,
+        "end": 172321
+      }
+    },
+    {
+      "index": 89,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172321,
+        "end": 172322
+      }
+    },
+    {
+      "index": 90,
+      "tag": "p",
+      "attrs": {},
+      "text": "First we set the x and y values to be of the top tile (63,153)",
+      "location": {
+        "start": 172322,
+        "end": 172391
+      }
+    },
+    {
+      "index": 91,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172391,
+        "end": 172392
+      }
+    },
+    {
+      "index": 92,
+      "tag": "pre",
+      "attrs": {},
+      "text": "mej_x = 63\nmej_y = 153\n",
+      "location": {
+        "start": 172392,
+        "end": 172439
+      }
+    },
+    {
+      "index": 93,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172439,
+        "end": 172440
+      }
+    },
+    {
+      "index": 94,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 172440,
+        "end": 172455
+      }
+    },
+    {
+      "index": 95,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172455,
+        "end": 172456
+      }
+    },
+    {
+      "index": 96,
+      "tag": "p",
+      "attrs": {},
+      "text": "Next let's make it so 2 tiles are shown vertically",
+      "location": {
+        "start": 172456,
+        "end": 172513
+      }
+    },
+    {
+      "index": 97,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172513,
+        "end": 172514
+      }
+    },
+    {
+      "index": 98,
+      "tag": "pre",
+      "attrs": {},
+      "text": "mej_height = 2\nmej_width = 1\n",
+      "location": {
+        "start": 172514,
+        "end": 172567
+      }
+    },
+    {
+      "index": 99,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172567,
+        "end": 172568
+      }
+    },
+    {
+      "index": 100,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 172568,
+        "end": 172583
+      }
+    },
+    {
+      "index": 101,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172583,
+        "end": 172584
+      }
+    },
+    {
+      "index": 102,
+      "tag": "p",
+      "attrs": {},
+      "text": "If we ran the code now, it would give us this:",
+      "location": {
+        "start": 172584,
+        "end": 172637
+      }
+    },
+    {
+      "index": 103,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172637,
+        "end": 172638
+      }
+    },
+    {
+      "index": 104,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n​",
+      "location": {
+        "start": 172638,
+        "end": 172721
+      }
+    },
+    {
+      "index": 105,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172721,
+        "end": 172722
+      }
+    },
+    {
+      "index": 106,
+      "tag": "p",
+      "attrs": {},
+      "text": "Let's trim off the sides and press the run button to check our map:",
+      "location": {
+        "start": 172722,
+        "end": 172796
+      }
+    },
+    {
+      "index": 107,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172796,
+        "end": 172797
+      }
+    },
+    {
+      "index": 108,
+      "tag": "pre",
+      "attrs": {},
+      "text": "left = 1\nupper = 43\nright = 21\nlower = 43\n",
+      "location": {
+        "start": 172797,
+        "end": 172863
+      }
+    },
+    {
+      "index": 109,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172863,
+        "end": 172864
+      }
+    },
+    {
+      "index": 110,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 172864,
+        "end": 172879
+      }
+    },
+    {
+      "index": 111,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172879,
+        "end": 172880
+      }
+    },
+    {
+      "index": 112,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n​",
+      "location": {
+        "start": 172880,
+        "end": 172963
+      }
+    },
+    {
+      "index": 113,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172963,
+        "end": 172964
+      }
+    },
+    {
+      "index": 114,
+      "tag": "p",
+      "attrs": {},
+      "text": "It's almost there! Let's cut off some of that excess map, put a coloured tile for the player position, and set the legend to show just 'player position':",
+      "location": {
+        "start": 172964,
+        "end": 173124
+      }
+    },
+    {
+      "index": 115,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173124,
+        "end": 173125
+      }
+    },
+    {
+      "index": 116,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n​",
+      "location": {
+        "start": 173125,
+        "end": 173208
+      }
+    },
+    {
+      "index": 117,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173208,
+        "end": 173209
+      }
+    },
+    {
+      "index": 118,
+      "tag": "p",
+      "attrs": {},
+      "text": "Now let's hit the run button again... we did it!",
+      "location": {
+        "start": 173209,
+        "end": 173264
+      }
+    },
+    {
+      "index": 119,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173264,
+        "end": 173265
+      }
+    },
+    {
+      "index": 120,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n​",
+      "location": {
+        "start": 173265,
+        "end": 173348
+      }
+    },
+    {
+      "index": 121,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n      \n    ",
+      "location": {
+        "start": 173348,
+        "end": 173360
+      }
+    }
+  ]
+}

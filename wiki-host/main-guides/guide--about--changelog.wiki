@@ -1,0 +1,515 @@
+__NOTOC__
+<div class="pvme-exact-guide">
+<h1 id="changelog" class="pvme-source-title"><nowiki>Changelog</nowiki></h1>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>Updates for the website.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>For bugs or feature requests, message me on Discord (Pleb#0025) or create an issue on </nowiki>[https://github.com/pvme/pvme.github.io <nowiki>Github</nowiki>]<nowiki>.</nowiki></p>
+<nowiki>
+</nowiki>
+
+<div class="pvme-source-section">
+<h2 id="november-28-2025"><nowiki>November 28, 2025</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>Support rendering preset maker embed urls</nowiki></li><nowiki>
+</nowiki><li><nowiki>Updated depedencies</nowiki></li><nowiki>
+</nowiki><li><nowiki>Bugfix: empty </nowiki><code></code><nowiki> for </nowiki><code><nowiki>#pvme-help</nowiki></code></li><nowiki>
+</nowiki><li><nowiki>Removed &quot;Testing&quot; guide</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="november-30-2024"><nowiki>November 30, 2024</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>unlinked social channel and forum names now always up to date (support new channels.json format)</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="november-23-2024"><nowiki>November 23, 2024</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>Updated various #unknown-channel to show actual channel name</nowiki></li><nowiki>
+</nowiki><li><nowiki>youtube.com/live show embed preview correctly</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="july-4-2024"><nowiki>July 4, 2024</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>Added support for pvme spreadsheet cell alias (prices shown correctly again)</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="june-28-2024"><nowiki>June 28, 2024</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>Added &quot;edit this guide&quot; button</nowiki></li><nowiki>
+</nowiki><li><nowiki>Change #user -&gt; @user</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="june-15-2024"><nowiki>June 15, 2024</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>Fixed issue with duplicate titles and improved headings</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="may-3-2024"><nowiki>May 3, 2024</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>Updated mkdocs and other dependencies to latest version</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="april-2-2024"><nowiki>April 2, 2024</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>Fixed markdown links with )) not being formatted correctly</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="november-9-2023"><nowiki>November 9, 2023</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>Updated social card</nowiki></li><nowiki>
+</nowiki><li><nowiki>New PVME logo</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="april-16-2023"><nowiki>April 16, 2023</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>Urls and other formatting now disabled when text is in </nowiki><code><nowiki>inline code field</nowiki></code></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="april-6-2023"><nowiki>April 6, 2023</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>Added &quot;Editor Info&quot; and &quot;Mastery&quot; categories</nowiki></li><nowiki>
+</nowiki><li><nowiki>Updated logo</nowiki></li><nowiki>
+</nowiki><li><nowiki>Fixed some roles that weren't rendered because of a different ID length</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="november-13-2022"><nowiki>November, 13, 2022</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>Reorganized about and home page (improves navigation on mobile).</nowiki></li><nowiki>
+</nowiki><li><nowiki>Better alias support</nowiki></li><nowiki>
+</nowiki><li><nowiki>Alias for forums/words/extra channels</nowiki></li><nowiki>
+</nowiki><li><nowiki>Category emojis</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="november-5-2022"><nowiki>November, 5, 2022</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>New site structure:</nowiki><ul><nowiki>
+</nowiki><li><nowiki>Categories now on the top of the page.</nowiki></li><nowiki>
+</nowiki><li><nowiki>Added category aliases</nowiki></li><nowiki>
+</nowiki><li><nowiki>Updated &quot;about&quot; page</nowiki></li><nowiki>
+</nowiki><li><nowiki>Added &quot;how the site works&quot; page</nowiki></li><nowiki>
+</nowiki><li><nowiki>Included changelog to the site itself</nowiki></li><nowiki>
+</nowiki></ul><nowiki>
+</nowiki></li><nowiki>
+</nowiki><li><nowiki>Generated pages are now appended to mkdocs.yaml </nowiki><code><nowiki>nav</nowiki></code><nowiki> instead of fully overwriting it.</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="november-1-2022"><nowiki>November, 1, 2022</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>Moved </nowiki><code><nowiki>&quot;(Courtesy of)&quot;</nowiki></code><nowiki> to the line below headings to clean up the ToC on the side</nowiki></li><nowiki>
+</nowiki><li><nowiki>New logo</nowiki></li><nowiki>
+</nowiki><li><nowiki>Removed various mentions of ToC in pins (only relevant to Discord)</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="november-1-2022_1"><nowiki>November, 1, 2022</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>Fixed some broken headings</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="october-30-2022"><nowiki>October, 30, 2022</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>Implemented new site generation</nowiki><ul><nowiki>
+</nowiki><li><nowiki>By default, guides are sorted alphabetically</nowiki></li><nowiki>
+</nowiki><li><nowiki>All guides will be included, even when the </nowiki>[https://github.com/pvme/pvme-guides <nowiki>pvme-guides repository</nowiki>]<nowiki> structure changes</nowiki></li><nowiki>
+</nowiki></ul><nowiki>
+</nowiki></li><nowiki>
+</nowiki><li><nowiki>Fixed remaining broken links (will continue to work in the future)</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="september-6-2022"><nowiki>September, 6, 2022</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>Finished formatter rewrite</nowiki></li><nowiki>
+</nowiki><li><nowiki>Embed changes</nowiki><ul><nowiki>
+</nowiki><li><nowiki>increased max width (if content fits on discord, it will fit on the site)</nowiki></li><nowiki>
+</nowiki><li><nowiki>fixed inline code formatting (correct font so width matches discord)</nowiki></li><nowiki>
+</nowiki><li><nowiki>darkened background slightly</nowiki></li><nowiki>
+</nowiki><li><nowiki>changed description font color to match that of the rest of the embed</nowiki></li><nowiki>
+</nowiki><li><nowiki>light mode looks the same as dark mode</nowiki></li><nowiki>
+</nowiki></ul><nowiki>
+</nowiki></li><nowiki>
+</nowiki><li><nowiki>Attachment url changes (videos/images)</nowiki><ul><nowiki>
+</nowiki><li><nowiki>removed autoplay option to improve page load time</nowiki></li><nowiki>
+</nowiki><li><nowiki>all videos have the same control options</nowiki></li><nowiki>
+</nowiki><li><nowiki>added more known url regexes to reduce build time</nowiki></li><nowiki>
+</nowiki></ul><nowiki>
+</nowiki></li><nowiki>
+</nowiki><li><nowiki>bugfix with incorrect channel urls: </nowiki>[https://github.com/pvme/pvme.github.io/issues/9 <nowiki>issue</nowiki>]</li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="september-1-2022"><nowiki>September, 1, 2022</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>Code blocks in embeds now shown correctly</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="august-31-2022"><nowiki>August, 31, 2022</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>Empty lines are now shown correctly</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="august-30-2022"><nowiki>August, 30, 2022</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>PVME settings are now all obtained from pvme-settings and will be kept up to date mostly automatically and otherwise more frequently (users is still manual)</nowiki></li><nowiki>
+</nowiki><li><nowiki>Various refactoring for PVME settings migration</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="august-15-2022"><nowiki>August, 15, 2022</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>Prices now updated correctly in embeds</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="july-4-2022"><nowiki>July, 4, 2022</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>added Zamorak category</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="june-20-2022"><nowiki>June, 20, 2022</nowiki></h2>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>Thanks to emmet-shark:</nowiki></p>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>Added new category structure and guide names. The guide structure and names now always match the category + channel names in Discord </nowiki></li><nowiki>
+</nowiki><li><nowiki>Reduced spacing</nowiki></li><nowiki>
+</nowiki><li><nowiki>embed fixes</nowiki><ul><nowiki>
+</nowiki><li><nowiki>fix links inside embeds</nowiki></li><nowiki>
+</nowiki><li><nowiki>remove nonexistent footer embed icons</nowiki></li><nowiki>
+</nowiki></ul><nowiki>
+</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="june-15-2022"><nowiki>June, 15, 2022</nowiki></h2>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>Thanks to emmet-shark:</nowiki></p>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>Removed unnecessary ToC embed at the bottom of the page</nowiki></li><nowiki>
+</nowiki><li><nowiki>Fixed a bunch of non-clickable urls</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="august-9-2021"><nowiki>August, 9, 2021</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>Updated invalid Discord channels</nowiki></li><nowiki>
+</nowiki><li><nowiki>Added invite link url to home page</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="august-6-2021"><nowiki>August, 6, 2021</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>Added invalid discord channels as non-clickable links (WiP)</nowiki></li><nowiki>
+</nowiki><li><nowiki>Added search suggestions</nowiki></li><nowiki>
+</nowiki><li><nowiki>Added search highlighting</nowiki></li><nowiki>
+</nowiki><li><nowiki>Added &quot;back to top&quot; button</nowiki></li><nowiki>
+</nowiki><li><nowiki>Updated channels and users</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="july-7-2021"><nowiki>July, 7, 2021</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>Updated users and roles</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="june-30-2021"><nowiki>June, 30, 2021</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>Added Solak category and updated channels</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="june-25-2021"><nowiki>June, 25, 2021</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>Fixed bug with imgur.mp4 and imgur.jpg not being rendered</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="june-10-2021"><nowiki>June, 10, 2021</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>Added support for discord embeds </nowiki>[https://pvme.io/pvme-guides/vorago/vorago-trio-hm/#safe-phases-10-11 <nowiki>vorago-trio-hm</nowiki>]</li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="may-20-2021"><nowiki>May 20, 2021</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>fixed broken channel links</nowiki></li><nowiki>
+</nowiki><li><nowiki>updated missing roles/channels/users</nowiki></li><nowiki>
+</nowiki><li><nowiki>bugfix imgur links</nowiki></li><nowiki>
+</nowiki><li><nowiki>light/dark mode switch</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="april-16-2021"><nowiki>April 16, 2021</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>Added new categories (same structure as PVME Discord)</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="march-22-2021"><nowiki>March 22, 2021</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>Added support for emojis (standard discord emojis)</nowiki></li><nowiki>
+</nowiki><li><nowiki>Updated missing roles/channels/users</nowiki></li><nowiki>
+</nowiki><li><nowiki>Removed note for survey</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="march-15-2021"><nowiki>March 15, 2021</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>Updated missing roles/channels/users</nowiki></li><nowiki>
+</nowiki><li><nowiki>Added note for survey</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="january-9-2021"><nowiki>January 9, 2021</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>Added colored roles</nowiki></li><nowiki>
+</nowiki><li><nowiki>Updated missing Discord links</nowiki></li><nowiki>
+</nowiki><li><nowiki>Added WiP Slayer Category</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="january-4-2021"><nowiki>January 4, 2021</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>Added, and enabled by default, debug logging to quickly check missing Discord links (check daily build log)</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="december-18-2020"><nowiki>December 18, 2020</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>&quot;last updated on&quot; only on &quot;Home&quot; page (since the page is updated daily)</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="december-17-2020"><nowiki>December 17, 2020</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>Added support for </nowiki><del><nowiki>strike-through</nowiki></del><nowiki> text</nowiki></li><nowiki>
+</nowiki><li><nowiki>Added changelog</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="december-16-2020"><nowiki>December 16, 2020</nowiki></h2>
+<nowiki>
+</nowiki>
+<ul><nowiki>
+</nowiki><li><nowiki>Initial release</nowiki></li><nowiki>
+</nowiki></ul>
+<nowiki>
+      
+    </nowiki>
+
+</div>
+</div>
+
+<div class="pvme-source-attribution">[https://pvme.io/about/changelog/ PvME source] · PvME contributors · [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]. AI-assisted formatting; source wording retained.
+</div>

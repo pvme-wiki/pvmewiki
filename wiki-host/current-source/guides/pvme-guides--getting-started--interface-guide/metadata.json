@@ -1,0 +1,1928 @@
+{
+  "schemaVersion": 1,
+  "captureVersion": 2,
+  "id": "pvme-guides--getting-started--interface-guide",
+  "sourceURL": "https://pvme.io/pvme-guides/getting-started/interface-guide/",
+  "officialURL": "https://pvme.io/pvme-guides/getting-started/interface-guide/",
+  "responseURL": "https://pvme.io/pvme-guides/getting-started/interface-guide/",
+  "status": "captured",
+  "statusCode": 200,
+  "retrievedAt": "2026-11-16T00:26:49.461Z",
+  "sitemapLastmod": "2026-11-15",
+  "sitemapSha256": "7166472554d36bfc69a7e14f7298264c0f9bfac00dc9034e5bfd0fba58a14b07",
+  "kind": "guide",
+  "audience": "player",
+  "title": "PvME/Getting started/Interface Guide",
+  "titleStatus": "existing-exact-url",
+  "baselineId": "interface-guide",
+  "sourceTitle": "Interface Guide",
+  "sourceH1": "Interface Guide",
+  "discovery": "official-sitemap",
+  "directory": "guides/pvme-guides--getting-started--interface-guide",
+  "sourceSha256": "9e420dd79b33964d64c3825c90746bac0857c172cad550b6d3c3f99084026d2d",
+  "bodySha256": "9e420dd79b33964d64c3825c90746bac0857c172cad550b6d3c3f99084026d2d",
+  "normalizedTextSha256": "a29eb5944ec132d6306285075f7c90da4631c7bbfdcb3a04818fe2205624da79",
+  "parser": "parse5 8.1.1; entities 9.0.0; sourceCodeLocationInfo",
+  "headers": {
+    "accept-ranges": "bytes",
+    "access-control-allow-origin": "*",
+    "age": "0",
+    "cache-control": "max-age=600",
+    "connection": "keep-alive",
+    "content-encoding": "gzip",
+    "content-length": "31146",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Mon, 16 Nov 2026 00:26:49 GMT",
+    "etag": "W/\"6afa1a34-38bde\"",
+    "expires": "Mon, 16 Nov 2026 00:36:49 GMT",
+    "last-modified": "Sun, 15 Nov 2026 20:46:44 GMT",
+    "server": "GitHub.com",
+    "strict-transport-security": "max-age=31556952",
+    "vary": "Accept-Encoding",
+    "via": "1.1 varnish",
+    "x-cache": "MISS",
+    "x-cache-hits": "0",
+    "x-fastly-request-id": "9baa509ebf3f1ed4c3f33f00f91e608a2122a184",
+    "x-github-edge-region": "iad",
+    "x-github-request-id": "ACD0:1F9EE8:3EEF3F3:44DA00E:6AFA4DC9",
+    "x-origin-cache": "HIT",
+    "x-proxy-cache": "MISS",
+    "x-served-by": "cache-iad-khef600037-IAD",
+    "x-timer": "S1794788810.888142,VS0,VE24"
+  },
+  "hashes": {
+    "responseSha256": "eb9985c47fd5c331ed3f0243b11d99331785dff8dda90ced79aed5dbc50d10e4",
+    "articleSha256": "9e420dd79b33964d64c3825c90746bac0857c172cad550b6d3c3f99084026d2d",
+    "textSha256": "1ab12073480997721bcec7c04d1a01cf8bc45d3e11386632aedf69a1fdcc2ec4",
+    "normalizedTextSha256": "a29eb5944ec132d6306285075f7c90da4631c7bbfdcb3a04818fe2205624da79"
+  },
+  "counts": {
+    "bytes": 232414,
+    "articleBytes": 54557,
+    "nodes": 1971,
+    "topLevelNodes": 732,
+    "words": 5122,
+    "images": 106,
+    "videos": 2,
+    "sources": 2,
+    "links": 22
+  },
+  "tags": {
+    "h1": 1,
+    "h2": 8,
+    "ins": 12,
+    "p": 325,
+    "h3": 26,
+    "img": 106,
+    "strong": 142,
+    "em": 30,
+    "code": 13,
+    "div": 68,
+    "u": 8,
+    "a": 22,
+    "video": 2,
+    "source": 2,
+    "iframe": 1
+  },
+  "mediaHosts": {
+    "img.pvme.io": 20,
+    "cdn.discordapp.com": 88,
+    "www.youtube.com": 1
+  },
+  "patterns": [
+    "source-tag:iframe",
+    "linked-preset-content-external-to-html"
+  ],
+  "media": [
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/HZkDZaJlB1.png"
+      },
+      "text": "",
+      "location": {
+        "start": 177114,
+        "end": 177181
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/FrZsV7CK9v.png"
+      },
+      "text": "",
+      "location": {
+        "start": 181539,
+        "end": 181606
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/k0HRt49m43.png"
+      },
+      "text": "",
+      "location": {
+        "start": 182390,
+        "end": 182457
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/QOrNAqUyhw.png"
+      },
+      "text": "",
+      "location": {
+        "start": 183505,
+        "end": 183572
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/WuJJI2A86q.png"
+      },
+      "text": "",
+      "location": {
+        "start": 183580,
+        "end": 183647
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/Uou11B31Yd.png"
+      },
+      "text": "",
+      "location": {
+        "start": 184267,
+        "end": 184334
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/N0jNtGN6yJ.png"
+      },
+      "text": "",
+      "location": {
+        "start": 184549,
+        "end": 184616
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/NDTcpCE9c7.png"
+      },
+      "text": "",
+      "location": {
+        "start": 185541,
+        "end": 185608
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/KCOF2ENQFZ.png"
+      },
+      "text": "",
+      "location": {
+        "start": 186129,
+        "end": 186196
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/iWprrL4oGa.png"
+      },
+      "text": "",
+      "location": {
+        "start": 189909,
+        "end": 189976
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/0Tc2b2mJPN.png"
+      },
+      "text": "",
+      "location": {
+        "start": 200397,
+        "end": 200464
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/2AATN75VNi.png"
+      },
+      "text": "",
+      "location": {
+        "start": 201234,
+        "end": 201301
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/prulhUMfss.png"
+      },
+      "text": "",
+      "location": {
+        "start": 203037,
+        "end": 203104
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/DEayN1PfPr.png"
+      },
+      "text": "",
+      "location": {
+        "start": 203616,
+        "end": 203683
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/7Nrz4BVCCq.png"
+      },
+      "text": "",
+      "location": {
+        "start": 204984,
+        "end": 205051
+      }
+    },
+    {
+      "tag": "video",
+      "attrs": {
+        "class": "media",
+        "loop": "",
+        "muted": "",
+        "controls": ""
+      },
+      "text": "",
+      "location": {
+        "start": 205645,
+        "end": 205750
+      }
+    },
+    {
+      "tag": "source",
+      "attrs": {
+        "src": "https://img.pvme.io/images/CAcj8vQaZO.mp4"
+      },
+      "text": "",
+      "location": {
+        "start": 205686,
+        "end": 205742
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "sbslunars",
+        "class": "d-emoji",
+        "alt": "sbslunars",
+        "src": "https://cdn.discordapp.com/emojis/565726489467682816.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 207260,
+        "end": 207382
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "disrupt",
+        "class": "d-emoji",
+        "alt": "disrupt",
+        "src": "https://cdn.discordapp.com/emojis/535614336207552523.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 207403,
+        "end": 207521
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "lengmh",
+        "class": "d-emoji",
+        "alt": "lengmh",
+        "src": "https://cdn.discordapp.com/emojis/883134308146098227.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 207547,
+        "end": 207663
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "lengoh",
+        "class": "d-emoji",
+        "alt": "lengoh",
+        "src": "https://cdn.discordapp.com/emojis/883134308070604870.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 207674,
+        "end": 207790
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "sailfish",
+        "class": "d-emoji",
+        "alt": "sailfish",
+        "src": "https://cdn.discordapp.com/emojis/565726489363087360.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 207818,
+        "end": 207938
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "blueblubber",
+        "class": "d-emoji",
+        "alt": "blueblubber",
+        "src": "https://cdn.discordapp.com/emojis/689530593742291033.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 207949,
+        "end": 208075
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "brew",
+        "class": "d-emoji",
+        "alt": "brew",
+        "src": "https://cdn.discordapp.com/emojis/565726489400573962.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 208093,
+        "end": 208205
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "roarofawakening",
+        "class": "d-emoji",
+        "alt": "roarofawakening",
+        "src": "https://cdn.discordapp.com/emojis/1266417538045317121.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 208234,
+        "end": 208369
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "odetodeceit",
+        "class": "d-emoji",
+        "alt": "odetodeceit",
+        "src": "https://cdn.discordapp.com/emojis/1266417683058917517.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 208370,
+        "end": 208497
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "ingen",
+        "class": "d-emoji",
+        "alt": "ingen",
+        "src": "https://cdn.discordapp.com/emojis/641339234111848463.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 208506,
+        "end": 208620
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "spec",
+        "class": "d-emoji",
+        "alt": "spec",
+        "src": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 208637,
+        "end": 208749
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "omniguard",
+        "class": "d-emoji",
+        "alt": "omniguard",
+        "src": "https://cdn.discordapp.com/emojis/1138809234922934282.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 208762,
+        "end": 208885
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magmatemptest",
+        "class": "d-emoji",
+        "alt": "magmatemptest",
+        "src": "https://cdn.discordapp.com/emojis/1478063454173532242.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 211345,
+        "end": 211476
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "affliction",
+        "class": "d-emoji",
+        "alt": "affliction",
+        "src": "https://cdn.discordapp.com/emojis/513190158468907008.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 211477,
+        "end": 211601
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "fsoa",
+        "class": "d-emoji",
+        "alt": "fsoa",
+        "src": "https://cdn.discordapp.com/emojis/869284271595069451.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 211602,
+        "end": 211714
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "roarofawakening",
+        "class": "d-emoji",
+        "alt": "roarofawakening",
+        "src": "https://cdn.discordapp.com/emojis/1266417538045317121.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 211715,
+        "end": 211850
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "odetodeceit",
+        "class": "d-emoji",
+        "alt": "odetodeceit",
+        "src": "https://cdn.discordapp.com/emojis/1266417683058917517.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 211851,
+        "end": 211978
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "devo",
+        "class": "d-emoji",
+        "alt": "devo",
+        "src": "https://cdn.discordapp.com/emojis/513190158728953857.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 212077,
+        "end": 212189
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "anti",
+        "class": "d-emoji",
+        "alt": "anti",
+        "src": "https://cdn.discordapp.com/emojis/535541306475151390.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 212190,
+        "end": 212302
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "freedom",
+        "class": "d-emoji",
+        "alt": "freedom",
+        "src": "https://cdn.discordapp.com/emojis/535541258240786434.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 212303,
+        "end": 212421
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "reflect",
+        "class": "d-emoji",
+        "alt": "reflect",
+        "src": "https://cdn.discordapp.com/emojis/535541258786177064.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 212422,
+        "end": 212540
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "cade",
+        "class": "d-emoji",
+        "alt": "cade",
+        "src": "https://cdn.discordapp.com/emojis/535541306353778689.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 212541,
+        "end": 212653
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "sbslunars",
+        "class": "d-emoji",
+        "alt": "sbslunars",
+        "src": "https://cdn.discordapp.com/emojis/565726489467682816.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 212704,
+        "end": 212826
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "venggroup",
+        "class": "d-emoji",
+        "alt": "venggroup",
+        "src": "https://cdn.discordapp.com/emojis/1009570755836641331.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 212827,
+        "end": 212950
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "disrupt",
+        "class": "d-emoji",
+        "alt": "disrupt",
+        "src": "https://cdn.discordapp.com/emojis/535614336207552523.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 212951,
+        "end": 213069
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "cept",
+        "class": "d-emoji",
+        "alt": "cept",
+        "src": "https://cdn.discordapp.com/emojis/543478434509357098.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 213070,
+        "end": 213182
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "shielddome",
+        "class": "d-emoji",
+        "alt": "shielddome",
+        "src": "https://cdn.discordapp.com/emojis/537341954392850442.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 213183,
+        "end": 213307
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deflectmage",
+        "class": "d-emoji",
+        "alt": "deflectmage",
+        "src": "https://cdn.discordapp.com/emojis/544195487926845462.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 213351,
+        "end": 213477
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deflectrange",
+        "class": "d-emoji",
+        "alt": "deflectrange",
+        "src": "https://cdn.discordapp.com/emojis/544195488317046812.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 213478,
+        "end": 213606
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deflectmelee",
+        "class": "d-emoji",
+        "alt": "deflectmelee",
+        "src": "https://cdn.discordapp.com/emojis/544195488447201300.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 213607,
+        "end": 213735
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deflectnecromancy",
+        "class": "d-emoji",
+        "alt": "deflectnecromancy",
+        "src": "https://cdn.discordapp.com/emojis/1137809111178813471.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 213736,
+        "end": 213875
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulsplit",
+        "class": "d-emoji",
+        "alt": "soulsplit",
+        "src": "https://cdn.discordapp.com/emojis/615613924506599497.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 213876,
+        "end": 213998
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "limitless",
+        "class": "d-emoji",
+        "alt": "limitless",
+        "src": "https://cdn.discordapp.com/emojis/641339233638023179.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 214024,
+        "end": 214146
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "demonslayer",
+        "class": "d-emoji",
+        "alt": "demonslayer",
+        "src": "https://cdn.discordapp.com/emojis/641339921675845633.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 214147,
+        "end": 214273
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "ingen",
+        "class": "d-emoji",
+        "alt": "ingen",
+        "src": "https://cdn.discordapp.com/emojis/641339234111848463.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 214274,
+        "end": 214388
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "eofspec",
+        "class": "d-emoji",
+        "alt": "eofspec",
+        "src": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 214389,
+        "end": 214508
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "darkness",
+        "class": "d-emoji",
+        "alt": "darkness",
+        "src": "https://cdn.discordapp.com/emojis/1137809209782698024.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 214519,
+        "end": 214640
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "penanceaspect",
+        "class": "d-emoji",
+        "alt": "penanceaspect",
+        "src": "https://cdn.discordapp.com/emojis/1494069332584693810.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 214641,
+        "end": 214772
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/q0H8z0u6gw.png"
+      },
+      "text": "",
+      "location": {
+        "start": 214780,
+        "end": 214847
+      }
+    },
+    {
+      "tag": "iframe",
+      "attrs": {
+        "class": "media",
+        "width": "560",
+        "height": "315",
+        "src": "https://www.youtube.com/embed/zn_y-_2giZg",
+        "frameborder": "0",
+        "allow": "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+        "allowfullscreen": ""
+      },
+      "text": "",
+      "location": {
+        "start": 215161,
+        "end": 215377
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/4WLm6Y71Up.png"
+      },
+      "text": "",
+      "location": {
+        "start": 218203,
+        "end": 218270
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/WvBCI8Rzrf.png"
+      },
+      "text": "",
+      "location": {
+        "start": 218278,
+        "end": 218345
+      }
+    },
+    {
+      "tag": "video",
+      "attrs": {
+        "class": "media",
+        "loop": "",
+        "muted": "",
+        "controls": ""
+      },
+      "text": "",
+      "location": {
+        "start": 219944,
+        "end": 220049
+      }
+    },
+    {
+      "tag": "source",
+      "attrs": {
+        "src": "https://img.pvme.io/images/pDdD6tAO9B.mp4"
+      },
+      "text": "",
+      "location": {
+        "start": 219985,
+        "end": 220041
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "kalgpouch",
+        "class": "d-emoji",
+        "alt": "kalgpouch",
+        "src": "https://cdn.discordapp.com/emojis/921410226484301925.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 220477,
+        "end": 220599
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "kalgscroll",
+        "class": "d-emoji",
+        "alt": "kalgscroll",
+        "src": "https://cdn.discordapp.com/emojis/841409588954923049.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 220600,
+        "end": 220724
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "ripperpouch",
+        "class": "d-emoji",
+        "alt": "ripperpouch",
+        "src": "https://cdn.discordapp.com/emojis/703581275453128714.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 220725,
+        "end": 220851
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "ripperscroll",
+        "class": "d-emoji",
+        "alt": "ripperscroll",
+        "src": "https://cdn.discordapp.com/emojis/703581275155464203.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 220852,
+        "end": 220980
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "mammothpouch",
+        "class": "d-emoji",
+        "alt": "mammothpouch",
+        "src": "https://cdn.discordapp.com/emojis/1499293961364308059.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 220981,
+        "end": 221110
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "mammothscroll",
+        "class": "d-emoji",
+        "alt": "mammothscroll",
+        "src": "https://cdn.discordapp.com/emojis/1032540070332346388.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 221111,
+        "end": 221242
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "elderovlsalve",
+        "class": "d-emoji",
+        "alt": "elderovlsalve",
+        "src": "https://cdn.discordapp.com/emojis/648976643687317532.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 221289,
+        "end": 221419
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "weppoison",
+        "class": "d-emoji",
+        "alt": "weppoison",
+        "src": "https://cdn.discordapp.com/emojis/689525476158472288.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 221435,
+        "end": 221557
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "summoningrenewal",
+        "class": "d-emoji",
+        "alt": "summoningrenewal",
+        "src": "https://cdn.discordapp.com/emojis/854475161809190913.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 221578,
+        "end": 221714
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "thermalflask",
+        "class": "d-emoji",
+        "alt": "thermalflask",
+        "src": "https://cdn.discordapp.com/emojis/689530593796423724.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 221730,
+        "end": 221858
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "temporalanomaly",
+        "class": "d-emoji",
+        "alt": "temporalanomaly",
+        "src": "https://cdn.discordapp.com/emojis/1357545000577011782.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 221900,
+        "end": 222035
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "graspingpouchpink",
+        "class": "d-emoji",
+        "alt": "graspingpouchpink",
+        "src": "https://cdn.discordapp.com/emojis/1390439126519644271.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 222037,
+        "end": 222176
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "graspingpouchblue",
+        "class": "d-emoji",
+        "alt": "graspingpouchblue",
+        "src": "https://cdn.discordapp.com/emojis/1390439129275306164.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 222177,
+        "end": 222316
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "graspingpouchblack",
+        "class": "d-emoji",
+        "alt": "graspingpouchblack",
+        "src": "https://cdn.discordapp.com/emojis/1390439136875253810.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 222317,
+        "end": 222458
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathwardennexus",
+        "class": "d-emoji",
+        "alt": "deathwardennexus",
+        "src": "https://cdn.discordapp.com/emojis/1179716442816532540.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 222459,
+        "end": 222596
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "SpiritSticks",
+        "class": "d-emoji",
+        "alt": "SpiritSticks",
+        "src": "https://cdn.discordapp.com/emojis/565726489136463894.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 222642,
+        "end": 222770
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "LantaSticks",
+        "class": "d-emoji",
+        "alt": "LantaSticks",
+        "src": "https://cdn.discordapp.com/emojis/565726489404899368.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 222783,
+        "end": 222909
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "KwuarmSticks",
+        "class": "d-emoji",
+        "alt": "KwuarmSticks",
+        "src": "https://cdn.discordapp.com/emojis/565726489341984779.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 222919,
+        "end": 223047
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "divinecharge",
+        "class": "d-emoji",
+        "alt": "divinecharge",
+        "src": "https://cdn.discordapp.com/emojis/1010485547598356530.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 223079,
+        "end": 223208
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "powderofpenance",
+        "class": "d-emoji",
+        "alt": "powderofpenance",
+        "src": "https://cdn.discordapp.com/emojis/928221126360969226.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 223243,
+        "end": 223377
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "powderofitemprotection",
+        "class": "d-emoji",
+        "alt": "powderofitemprotection",
+        "src": "https://cdn.discordapp.com/emojis/1043953716908269598.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 223396,
+        "end": 223545
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "powderofprotection",
+        "class": "d-emoji",
+        "alt": "powderofprotection",
+        "src": "https://cdn.discordapp.com/emojis/933079947419983912.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 223559,
+        "end": 223699
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "grim",
+        "class": "d-emoji",
+        "alt": "grim",
+        "src": "https://cdn.discordapp.com/emojis/568262896375824385.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 223745,
+        "end": 223857
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "grimpage",
+        "class": "d-emoji",
+        "alt": "grimpage",
+        "src": "https://cdn.discordapp.com/emojis/643168594493964298.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 223858,
+        "end": 223978
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "scriptureofful",
+        "class": "d-emoji",
+        "alt": "scriptureofful",
+        "src": "https://cdn.discordapp.com/emojis/902209626412560395.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 223979,
+        "end": 224111
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "manuscriptofful",
+        "class": "d-emoji",
+        "alt": "manuscriptofful",
+        "src": "https://cdn.discordapp.com/emojis/869284373898334238.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 224112,
+        "end": 224246
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magiccape",
+        "class": "d-emoji",
+        "alt": "magiccape",
+        "src": "https://cdn.discordapp.com/emojis/1043953726341267606.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 224274,
+        "end": 224397
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "archcape",
+        "class": "d-emoji",
+        "alt": "archcape",
+        "src": "https://cdn.discordapp.com/emojis/1043953724441231431.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 224431,
+        "end": 224552
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "slayermastercape",
+        "class": "d-emoji",
+        "alt": "slayermastercape",
+        "src": "https://cdn.discordapp.com/emojis/975284344123953164.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 224581,
+        "end": 224717
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "grimgem",
+        "class": "d-emoji",
+        "alt": "grimgem",
+        "src": "https://cdn.discordapp.com/emojis/1043953720628621352.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 224743,
+        "end": 224862
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "blessedflask",
+        "class": "d-emoji",
+        "alt": "blessedflask",
+        "src": "https://cdn.discordapp.com/emojis/659122178704408598.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 224946,
+        "end": 225074
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "extremeprayer",
+        "class": "d-emoji",
+        "alt": "extremeprayer",
+        "src": "https://cdn.discordapp.com/emojis/1102897785881235606.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 225075,
+        "end": 225206
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "LotD",
+        "class": "d-emoji",
+        "alt": "LotD",
+        "src": "https://cdn.discordapp.com/emojis/566453486913323042.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 225243,
+        "end": 225355
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "gote",
+        "class": "d-emoji",
+        "alt": "gote",
+        "src": "https://cdn.discordapp.com/emojis/900765150678749204.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 225391,
+        "end": 225503
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "vestmentsofhavoctop",
+        "class": "d-emoji",
+        "alt": "vestmentsofhavoctop",
+        "src": "https://cdn.discordapp.com/emojis/994189295592161291.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 225539,
+        "end": 225681
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "dba",
+        "class": "d-emoji",
+        "alt": "dba",
+        "src": "https://cdn.discordapp.com/emojis/603979368850653216.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 225715,
+        "end": 225825
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "vitalitytotem",
+        "class": "d-emoji",
+        "alt": "vitalitytotem",
+        "src": "https://cdn.discordapp.com/emojis/643507594811670538.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 225893,
+        "end": 226023
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "wardentop80",
+        "class": "d-emoji",
+        "alt": "wardentop80",
+        "src": "https://cdn.discordapp.com/emojis/1142784247543894056.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 226158,
+        "end": 226285
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "cryptbloomtop",
+        "class": "d-emoji",
+        "alt": "cryptbloomtop",
+        "src": "https://cdn.discordapp.com/emojis/1334336168363561041.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 226286,
+        "end": 226417
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "achtotempestbody",
+        "class": "d-emoji",
+        "alt": "achtotempestbody",
+        "src": "https://cdn.discordapp.com/emojis/583428622094958612.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 226418,
+        "end": 226554
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "merciless",
+        "class": "d-emoji",
+        "alt": "merciless",
+        "src": "https://cdn.discordapp.com/emojis/1102553021457645579.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 226590,
+        "end": 226713
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "vengeful",
+        "class": "d-emoji",
+        "alt": "vengeful",
+        "src": "https://cdn.discordapp.com/emojis/1102553026415313006.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 226714,
+        "end": 226835
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "malevkite",
+        "class": "d-emoji",
+        "alt": "malevkite",
+        "src": "https://cdn.discordapp.com/emojis/1102553024536252466.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 226836,
+        "end": 226959
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "reefcape",
+        "class": "d-emoji",
+        "alt": "reefcape",
+        "src": "https://cdn.discordapp.com/emojis/839906296290476033.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 226993,
+        "end": 227113
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "CeremonialMask",
+        "class": "d-emoji",
+        "alt": "CeremonialMask",
+        "src": "https://cdn.discordapp.com/emojis/580177522629804062.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 227246,
+        "end": 227378
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "CeremonialTop",
+        "class": "d-emoji",
+        "alt": "CeremonialTop",
+        "src": "https://cdn.discordapp.com/emojis/580177522441060363.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 227379,
+        "end": 227509
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "CeremonialLegs",
+        "class": "d-emoji",
+        "alt": "CeremonialLegs",
+        "src": "https://cdn.discordapp.com/emojis/580177522533335051.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 227510,
+        "end": 227642
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "CeremonialGloves",
+        "class": "d-emoji",
+        "alt": "CeremonialGloves",
+        "src": "https://cdn.discordapp.com/emojis/580177522633736214.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 227643,
+        "end": 227779
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "CeremonialBoots",
+        "class": "d-emoji",
+        "alt": "CeremonialBoots",
+        "src": "https://cdn.discordapp.com/emojis/580177522575147018.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 227780,
+        "end": 227914
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "coins",
+        "class": "d-emoji",
+        "alt": "coins",
+        "src": "https://cdn.discordapp.com/emojis/698816156961603654.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 227924,
+        "end": 228038
+      }
+    }
+  ],
+  "links": [
+    {
+      "href": "https://img.pvme.io/images/bdILpQ7vjW.png",
+      "text": "Dyanne",
+      "attrs": {
+        "title": "",
+        "href": "https://img.pvme.io/images/bdILpQ7vjW.png",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 187531,
+        "end": 187635
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/B0bNRGzvDH.png",
+      "text": "HighAlch4GP",
+      "attrs": {
+        "title": "",
+        "href": "https://img.pvme.io/images/B0bNRGzvDH.png",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 187638,
+        "end": 187747
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/YlZnpaFJtE.png",
+      "text": "ToG Baam",
+      "attrs": {
+        "title": "",
+        "href": "https://img.pvme.io/images/YlZnpaFJtE.png",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 187750,
+        "end": 187856
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/xAAbHkt1jM.png",
+      "text": "akritia",
+      "attrs": {
+        "title": "",
+        "href": "https://img.pvme.io/images/xAAbHkt1jM.png",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 187859,
+        "end": 187964
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/H8DPdDKay0.png",
+      "text": "mionee",
+      "attrs": {
+        "title": "",
+        "href": "https://img.pvme.io/images/H8DPdDKay0.png",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 188125,
+        "end": 188229
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/AKEZViZzRQ.png",
+      "text": "So True",
+      "attrs": {
+        "title": "",
+        "href": "https://img.pvme.io/images/AKEZViZzRQ.png",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 188232,
+        "end": 188337
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/Sige4yiatI.png",
+      "text": "hikaru nara",
+      "attrs": {
+        "title": "",
+        "href": "https://img.pvme.io/images/Sige4yiatI.png",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 188347,
+        "end": 188456
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/4T65awNK39.png",
+      "text": "I O",
+      "attrs": {
+        "title": "",
+        "href": "https://img.pvme.io/images/4T65awNK39.png",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 188459,
+        "end": 188560
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/8YFlWEzT79.png",
+      "text": "Evil Lucario",
+      "attrs": {
+        "title": "",
+        "href": "https://img.pvme.io/images/8YFlWEzT79.png",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 188563,
+        "end": 188673
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/dKvOunlhMU.png",
+      "text": "Gwinna",
+      "attrs": {
+        "title": "",
+        "href": "https://img.pvme.io/images/dKvOunlhMU.png",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 188683,
+        "end": 188787
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/fvlzKBfqxw.jpg",
+      "text": "chi pa pa",
+      "attrs": {
+        "title": "",
+        "href": "https://img.pvme.io/images/fvlzKBfqxw.jpg",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 188946,
+        "end": 189053
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/dU6w1jLWIl.png",
+      "text": "clay head (1366x768)",
+      "attrs": {
+        "title": "",
+        "href": "https://img.pvme.io/images/dU6w1jLWIl.png",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 189217,
+        "end": 189335
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/EpCyboBJKS.png",
+      "text": "Gwinna (1920x1200)",
+      "attrs": {
+        "title": "",
+        "href": "https://img.pvme.io/images/EpCyboBJKS.png",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 189338,
+        "end": 189454
+      }
+    },
+    {
+      "href": "https://github.com/PixlOne/logiops",
+      "text": "https://github.com/PixlOne/logiops",
+      "attrs": {
+        "href": "https://github.com/PixlOne/logiops"
+      },
+      "location": {
+        "start": 210146,
+        "end": 210229
+      }
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=zn_y-_2giZg",
+      "text": "https://www.youtube.com/watch?v=zn_y-_2giZg",
+      "attrs": {
+        "href": "https://www.youtube.com/watch?v=zn_y-_2giZg"
+      },
+      "location": {
+        "start": 215039,
+        "end": 215140
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/ZOY0yf077m.png",
+      "text": "Rcm37",
+      "attrs": {
+        "title": "",
+        "href": "https://img.pvme.io/images/ZOY0yf077m.png",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 217306,
+        "end": 217409
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/NWc14PQIxU.png",
+      "text": "P U P",
+      "attrs": {
+        "title": "",
+        "href": "https://img.pvme.io/images/NWc14PQIxU.png",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 217422,
+        "end": 217525
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/IyzWjKvkRa.png",
+      "text": "Mionee",
+      "attrs": {
+        "title": "",
+        "href": "https://img.pvme.io/images/IyzWjKvkRa.png",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 217538,
+        "end": 217642
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/2zinXDLziN.png",
+      "text": "Dyanne",
+      "attrs": {
+        "title": "",
+        "href": "https://img.pvme.io/images/2zinXDLziN.png",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 217655,
+        "end": 217759
+      }
+    },
+    {
+      "href": "https://presets.pvme.io/?id=7a3eaf08-a1ce-4a89-b3ec-ee94efcffa29",
+      "text": "Dyanne",
+      "attrs": {
+        "title": "",
+        "href": "https://presets.pvme.io/?id=7a3eaf08-a1ce-4a89-b3ec-ee94efcffa29",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 228926,
+        "end": 229053
+      }
+    },
+    {
+      "href": "https://presets.pvme.io/?id=2a258b96-3929-47f3-adc6-92a8d6f8a95a",
+      "text": "hikaru nara",
+      "attrs": {
+        "title": "",
+        "href": "https://presets.pvme.io/?id=2a258b96-3929-47f3-adc6-92a8d6f8a95a",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 229055,
+        "end": 229187
+      }
+    },
+    {
+      "href": "https://presets.pvme.io/?id=ad56e52f-0cd0-4173-9caf-a4cf1e04170e",
+      "text": "basic preset",
+      "attrs": {
+        "title": "",
+        "href": "https://presets.pvme.io/?id=ad56e52f-0cd0-4173-9caf-a4cf1e04170e",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 229189,
+        "end": 229322
+      }
+    }
+  ],
+  "files": {
+    "source": "guides/pvme-guides--getting-started--interface-guide/source.json",
+    "inventory": "guides/pvme-guides--getting-started--interface-guide/inventory.json",
+    "article": "guides/pvme-guides--getting-started--interface-guide/article.html",
+    "response": "guides/pvme-guides--getting-started--interface-guide/response.html",
+    "metadata": "guides/pvme-guides--getting-started--interface-guide/metadata.json"
+  },
+  "limitations": [
+    "Exact HTTP article preserved, not dynamic preset/item/API data or image/video-only information.",
+    "No media availability, browser layout, semantic equivalence or live wiki revision parity claim."
+  ]
+}

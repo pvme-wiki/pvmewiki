@@ -1,0 +1,800 @@
+{
+  "schemaVersion": 1,
+  "captureVersion": 2,
+  "id": "pvme-guides--basic-guides--araxxor-basic",
+  "sourceURL": "https://pvme.io/pvme-guides/basic-guides/araxxor-basic/",
+  "officialURL": "https://pvme.io/pvme-guides/basic-guides/araxxor-basic/",
+  "responseURL": "https://pvme.io/pvme-guides/basic-guides/araxxor-basic/",
+  "status": "captured",
+  "statusCode": 200,
+  "retrievedAt": "2026-11-16T00:26:48.015Z",
+  "sitemapLastmod": "2026-11-15",
+  "sitemapSha256": "7166472554d36bfc69a7e14f7298264c0f9bfac00dc9034e5bfd0fba58a14b07",
+  "kind": "guide",
+  "audience": "player",
+  "title": "PvME/Araxxor/Overview",
+  "titleStatus": "existing-exact-url",
+  "baselineId": "araxxor",
+  "sourceTitle": "Araxxor - Basic Guide",
+  "sourceH1": "Araxxor - Basic Guide",
+  "discovery": "official-sitemap",
+  "directory": "guides/pvme-guides--basic-guides--araxxor-basic",
+  "sourceSha256": "004bf173378a3f66a7c4b350e2ee29e924b42792b54b232d0e14210b403c2019",
+  "bodySha256": "004bf173378a3f66a7c4b350e2ee29e924b42792b54b232d0e14210b403c2019",
+  "normalizedTextSha256": "b5a4be25da5fbcd5e4e0cf24434f0bd5cf4be6ce69c2ac3ea7bc7754fb368cff",
+  "parser": "parse5 8.1.1; entities 9.0.0; sourceCodeLocationInfo",
+  "headers": {
+    "accept-ranges": "bytes",
+    "access-control-allow-origin": "*",
+    "age": "0",
+    "cache-control": "max-age=600",
+    "connection": "keep-alive",
+    "content-encoding": "gzip",
+    "content-length": "17895",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Mon, 16 Nov 2026 00:26:48 GMT",
+    "etag": "W/\"6afa1a34-2c094\"",
+    "expires": "Mon, 16 Nov 2026 00:36:48 GMT",
+    "last-modified": "Sun, 15 Nov 2026 20:46:44 GMT",
+    "server": "GitHub.com",
+    "strict-transport-security": "max-age=31556952",
+    "vary": "Accept-Encoding",
+    "via": "1.1 varnish",
+    "x-cache": "MISS",
+    "x-cache-hits": "0",
+    "x-fastly-request-id": "664508ec6912f85fbdb4e23142f91e21c5be3d94",
+    "x-github-edge-region": "iad",
+    "x-github-request-id": "1BD8:2E3C9B:3EEBA6E:44D5953:6AFA4DC8",
+    "x-origin-cache": "HIT",
+    "x-proxy-cache": "MISS",
+    "x-served-by": "cache-iad-khef600063-IAD",
+    "x-timer": "S1794788808.467489,VS0,VE41"
+  },
+  "hashes": {
+    "responseSha256": "7f353a63e2bbdbeed0783b67fd73fa3c6b3e6ac57e46399b950e4b34fbdd2f9c",
+    "articleSha256": "004bf173378a3f66a7c4b350e2ee29e924b42792b54b232d0e14210b403c2019",
+    "textSha256": "d0e6daa8c95d4e150542bceb2c175bab73f18e1e2a9bc54aa7fcf375186ebcd5",
+    "normalizedTextSha256": "b5a4be25da5fbcd5e4e0cf24434f0bd5cf4be6ce69c2ac3ea7bc7754fb368cff"
+  },
+  "counts": {
+    "bytes": 180372,
+    "articleBytes": 11554,
+    "nodes": 566,
+    "topLevelNodes": 262,
+    "words": 815,
+    "images": 31,
+    "videos": 0,
+    "sources": 0,
+    "links": 24
+  },
+  "tags": {
+    "h1": 1,
+    "p": 116,
+    "img": 31,
+    "h2": 4,
+    "ins": 14,
+    "a": 24,
+    "em": 3,
+    "h3": 10,
+    "strong": 22
+  },
+  "mediaHosts": {
+    "img.pvme.io": 1,
+    "cdn.discordapp.com": 29,
+    "firebasestorage.googleapis.com": 1
+  },
+  "patterns": [
+    "linked-preset-content-external-to-html"
+  ],
+  "media": [
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/w4CtXQCKIY.png"
+      },
+      "text": "",
+      "location": {
+        "start": 167180,
+        "end": 167247
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 167772,
+        "end": 167886
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "range",
+        "class": "d-emoji",
+        "alt": "range",
+        "src": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 167981,
+        "end": 168095
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "melee",
+        "class": "d-emoji",
+        "alt": "melee",
+        "src": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 168191,
+        "end": 168306
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necromancy",
+        "class": "d-emoji",
+        "alt": "necromancy",
+        "src": "https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 168401,
+        "end": 168526
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://firebasestorage.googleapis.com/v0/b/preset-images/o/images%2F0d30907b-8f74-4b10-9335-335d98008918.png?alt=media"
+      },
+      "text": "",
+      "location": {
+        "start": 168633,
+        "end": 168778
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulsplit",
+        "class": "d-emoji",
+        "alt": "soulsplit",
+        "src": "https://cdn.discordapp.com/emojis/615613924506599497.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 169404,
+        "end": 169526
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "pheromone",
+        "class": "d-emoji",
+        "alt": "pheromone",
+        "src": "https://cdn.discordapp.com/emojis/643122483641188372.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 169799,
+        "end": 169921
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "melee",
+        "class": "d-emoji",
+        "alt": "melee",
+        "src": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 170515,
+        "end": 170630
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "range",
+        "class": "d-emoji",
+        "alt": "range",
+        "src": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 170639,
+        "end": 170753
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 170763,
+        "end": 170877
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "pheromone",
+        "class": "d-emoji",
+        "alt": "pheromone",
+        "src": "https://cdn.discordapp.com/emojis/643122483641188372.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 171214,
+        "end": 171336
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "soulsplit",
+        "class": "d-emoji",
+        "alt": "soulsplit",
+        "src": "https://cdn.discordapp.com/emojis/615613924506599497.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 171783,
+        "end": 171905
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "anti",
+        "class": "d-emoji",
+        "alt": "anti",
+        "src": "https://cdn.discordapp.com/emojis/535541306475151390.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 172383,
+        "end": 172495
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "freedom",
+        "class": "d-emoji",
+        "alt": "freedom",
+        "src": "https://cdn.discordapp.com/emojis/535541258240786434.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 172499,
+        "end": 172617
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "anti",
+        "class": "d-emoji",
+        "alt": "anti",
+        "src": "https://cdn.discordapp.com/emojis/535541306475151390.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 173029,
+        "end": 173141
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "freedom",
+        "class": "d-emoji",
+        "alt": "freedom",
+        "src": "https://cdn.discordapp.com/emojis/535541258240786434.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 173145,
+        "end": 173263
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "res",
+        "class": "d-emoji",
+        "alt": "res",
+        "src": "https://cdn.discordapp.com/emojis/535541258844635148.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 173638,
+        "end": 173748
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "disrupt",
+        "class": "d-emoji",
+        "alt": "disrupt",
+        "src": "https://cdn.discordapp.com/emojis/535614336207552523.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 173793,
+        "end": 173911
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "reflect",
+        "class": "d-emoji",
+        "alt": "reflect",
+        "src": "https://cdn.discordapp.com/emojis/535541258786177064.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 173915,
+        "end": 174033
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "surge",
+        "class": "d-emoji",
+        "alt": "surge",
+        "src": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 175394,
+        "end": 175508
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "dive",
+        "class": "d-emoji",
+        "alt": "dive",
+        "src": "https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 175512,
+        "end": 175625
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "surge",
+        "class": "d-emoji",
+        "alt": "surge",
+        "src": "https://cdn.discordapp.com/emojis/535533810004262912.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 176030,
+        "end": 176144
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "dive",
+        "class": "d-emoji",
+        "alt": "dive",
+        "src": "https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 176148,
+        "end": 176261
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 176486,
+        "end": 176600
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "range",
+        "class": "d-emoji",
+        "alt": "range",
+        "src": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 176612,
+        "end": 176726
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deflectmage",
+        "class": "d-emoji",
+        "alt": "deflectmage",
+        "src": "https://cdn.discordapp.com/emojis/544195487926845462.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 176952,
+        "end": 177078
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deflectrange",
+        "class": "d-emoji",
+        "alt": "deflectrange",
+        "src": "https://cdn.discordapp.com/emojis/544195488317046812.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 177081,
+        "end": 177209
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 177466,
+        "end": 177580
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "melee",
+        "class": "d-emoji",
+        "alt": "melee",
+        "src": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 177814,
+        "end": 177929
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "range",
+        "class": "d-emoji",
+        "alt": "range",
+        "src": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 178163,
+        "end": 178277
+      }
+    }
+  ],
+  "links": [
+    {
+      "href": "",
+      "text": "#unknown-channel",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 167514,
+        "end": 167566
+      }
+    },
+    {
+      "href": "",
+      "text": "#upgrade-order",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 167711,
+        "end": 167761
+      }
+    },
+    {
+      "href": "https://presets.pvme.io/?id=36ec3ebe-379d-4350-a3ff-ce7a88f7525a",
+      "text": "Magic",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=36ec3ebe-379d-4350-a3ff-ce7a88f7525a"
+      },
+      "location": {
+        "start": 167887,
+        "end": 167971
+      }
+    },
+    {
+      "href": "https://presets.pvme.io/?id=50e03e24-37ad-4be8-abf5-a4bb22c0aa09",
+      "text": "Ranged",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=50e03e24-37ad-4be8-abf5-a4bb22c0aa09"
+      },
+      "location": {
+        "start": 168096,
+        "end": 168181
+      }
+    },
+    {
+      "href": "https://presets.pvme.io/?id=de7d0a00-3300-4607-ad6f-0c98f839c560",
+      "text": "Melee",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=de7d0a00-3300-4607-ad6f-0c98f839c560"
+      },
+      "location": {
+        "start": 168307,
+        "end": 168391
+      }
+    },
+    {
+      "href": "https://presets.pvme.io/?id=0d30907b-8f74-4b10-9335-335d98008918",
+      "text": "Necromancy",
+      "attrs": {
+        "href": "https://presets.pvme.io/?id=0d30907b-8f74-4b10-9335-335d98008918"
+      },
+      "location": {
+        "start": 168527,
+        "end": 168616
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/War's_Blessing_3",
+      "text": "War's Blessing 3",
+      "attrs": {
+        "href": "https://runescape.wiki/w/War's_Blessing_3"
+      },
+      "location": {
+        "start": 169305,
+        "end": 169377
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Araxyte_pheromone",
+      "text": "Araxyte pheromone",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Araxyte_pheromone"
+      },
+      "location": {
+        "start": 171139,
+        "end": 171213
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/A2rkoT1.gif",
+      "text": "(Example)",
+      "attrs": {
+        "href": "https://img.pvme.io/images/A2rkoT1.gif"
+      },
+      "location": {
+        "start": 172079,
+        "end": 172141
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/QfbT4nH.gif",
+      "text": "(Example)",
+      "attrs": {
+        "href": "https://img.pvme.io/images/QfbT4nH.gif"
+      },
+      "location": {
+        "start": 172742,
+        "end": 172804
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/2gfprsH.gif",
+      "text": "(Example)",
+      "attrs": {
+        "href": "https://img.pvme.io/images/2gfprsH.gif"
+      },
+      "location": {
+        "start": 173371,
+        "end": 173433
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/FXooXiP.gif",
+      "text": "(Example)",
+      "attrs": {
+        "href": "https://img.pvme.io/images/FXooXiP.gif"
+      },
+      "location": {
+        "start": 174110,
+        "end": 174172
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/J5SMqvv.gif",
+      "text": "(Example)",
+      "attrs": {
+        "href": "https://img.pvme.io/images/J5SMqvv.gif"
+      },
+      "location": {
+        "start": 174532,
+        "end": 174594
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/mYTxw9X.gif",
+      "text": "(Example)",
+      "attrs": {
+        "href": "https://img.pvme.io/images/mYTxw9X.gif"
+      },
+      "location": {
+        "start": 175111,
+        "end": 175173
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/XXnmQsO.gif",
+      "text": "(Example)",
+      "attrs": {
+        "href": "https://img.pvme.io/images/XXnmQsO.gif"
+      },
+      "location": {
+        "start": 175730,
+        "end": 175792
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/76WZHlY.gif",
+      "text": "(Example)",
+      "attrs": {
+        "href": "https://img.pvme.io/images/76WZHlY.gif"
+      },
+      "location": {
+        "start": 176362,
+        "end": 176424
+      }
+    },
+    {
+      "href": "https://youtu.be/yJFOWlzbtuE",
+      "text": "2:52 Top Path",
+      "attrs": {
+        "href": "https://youtu.be/yJFOWlzbtuE"
+      },
+      "location": {
+        "start": 177596,
+        "end": 177652
+      }
+    },
+    {
+      "href": "https://youtu.be/RRN25Boy9jc",
+      "text": "3:38 Middle Path",
+      "attrs": {
+        "href": "https://youtu.be/RRN25Boy9jc"
+      },
+      "location": {
+        "start": 177662,
+        "end": 177721
+      }
+    },
+    {
+      "href": "https://youtu.be/i-0Js_wJLX0",
+      "text": "3:22 Bottom Path",
+      "attrs": {
+        "href": "https://youtu.be/i-0Js_wJLX0"
+      },
+      "location": {
+        "start": 177731,
+        "end": 177790
+      }
+    },
+    {
+      "href": "https://youtu.be/pMHgkRT-u64",
+      "text": "2:55 Top Path",
+      "attrs": {
+        "href": "https://youtu.be/pMHgkRT-u64"
+      },
+      "location": {
+        "start": 177945,
+        "end": 178001
+      }
+    },
+    {
+      "href": "https://youtu.be/dOVU9P5TdVs",
+      "text": "3:22 Middle Path",
+      "attrs": {
+        "href": "https://youtu.be/dOVU9P5TdVs"
+      },
+      "location": {
+        "start": 178011,
+        "end": 178070
+      }
+    },
+    {
+      "href": "https://youtu.be/By2-7DhwOIc",
+      "text": "3:20 Bottom Path",
+      "attrs": {
+        "href": "https://youtu.be/By2-7DhwOIc"
+      },
+      "location": {
+        "start": 178080,
+        "end": 178139
+      }
+    },
+    {
+      "href": "https://youtu.be/FtabpPPrXmw",
+      "text": "4:30 Top Path",
+      "attrs": {
+        "href": "https://youtu.be/FtabpPPrXmw"
+      },
+      "location": {
+        "start": 178294,
+        "end": 178350
+      }
+    },
+    {
+      "href": "https://youtu.be/nlAEwOdtTPE",
+      "text": "3:38 Bottom Path",
+      "attrs": {
+        "href": "https://youtu.be/nlAEwOdtTPE"
+      },
+      "location": {
+        "start": 178360,
+        "end": 178419
+      }
+    }
+  ],
+  "files": {
+    "source": "guides/pvme-guides--basic-guides--araxxor-basic/source.json",
+    "inventory": "guides/pvme-guides--basic-guides--araxxor-basic/inventory.json",
+    "article": "guides/pvme-guides--basic-guides--araxxor-basic/article.html",
+    "response": "guides/pvme-guides--basic-guides--araxxor-basic/response.html",
+    "metadata": "guides/pvme-guides--basic-guides--araxxor-basic/metadata.json"
+  },
+  "limitations": [
+    "Exact HTTP article preserved, not dynamic preset/item/API data or image/video-only information.",
+    "No media availability, browser layout, semantic equivalence or live wiki revision parity claim."
+  ]
+}

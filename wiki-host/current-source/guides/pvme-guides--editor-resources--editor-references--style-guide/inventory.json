@@ -1,0 +1,5402 @@
+{
+  "schemaVersion": 1,
+  "id": "pvme-guides--editor-resources--editor-references--style-guide",
+  "sourceURL": "https://pvme.io/pvme-guides/editor-resources/editor-references/style-guide/",
+  "responseURL": "https://pvme.io/pvme-guides/editor-resources/editor-references/style-guide/",
+  "boundary": "Direct article H1 onward through article-inner end",
+  "offsets": {
+    "start": 168148,
+    "end": 183489
+  },
+  "text": "PvME Style Guide\nConsistency makes guides easier to read and maintain. This guide covers formatting, structure, and PvME-specific conventions.\n​\nSections & Templates\n⬥ We have various types of guides, each of which has a unique structure and sections within\n⬥ Most templates you will require can be found on the Guide Editor:\n\n​\nLanguage & Formatting\n⬥ Use UK English (e.g. armour, not armour; defence, not defense)\n⬥ Date format: 22nd July 2013\n⬥ Do not end lines with blank space (this is referred to as \"trailing whitespace\")\n​\nStyling & Punctuation\nAlways end full sentences with a full stop / period\n⬥ Exceptions:\n‎ ‎ ‎ ‎• bullet points should not end in a full stop\n‎ ‎ ‎ ‎• Any sentence ending in an emoji should not end in a full stop 🚀\n​\n⬥ Text styles:\n‎ ‎ ‎ ‎• **Bold** ‎– Key items or emphases\n‎ ‎ ‎ ‎• *Italic* ‎– Inline notes or footnotes\n‎ ‎ ‎ ‎• __Underline__ ‎– Optional emphasis\n​\nEmojis\n⬥ Spacing: Emojis require a space before and after:\n❌ Detonate<:deto:123> is a spell.\n❌ Spellbook Swap <:SBS:543875425055670275>is a spell.\n✅ Spellbook Swap <:SBS:543875425055670275> is a spell.\n\n​\n⬥ There are a few exceptions where spaces are not needed:\n‎ ‎ ‎ ‎• Letter prefixes (r, s, _)\n‎ ‎ ‎ ‎• Punctuation/backslash/backtick prefixes\n‎ ‎ ‎ ‎• Trailing punctuation or underscore\n‎ ‎ ‎ ‎• Inside backticks (embeds)\n‎ ‎ ‎ ‎• Invisible characters\n‎ ‎ ‎ ‎• Allowed examples:\nr<:emoji:1> <:emoji:7>. \"… <:emoji:4> …\" <:emoji:7>! `…<:emoji:11>…` <emoji:73>\\n\\u00a0\n\n​\nNotes\n⬥ Use sparingly to highlight key info\n⬥ Put notes below their related content\n⬥ For a single note, show it in-line and italic:\n*Note: This is a note.*\n\n⬥ For multiple notes, show as bullets and italic:\n*Notes:*\n⬥ *This is a note*\n⬥ *This is another note*\n\n​\nHeadings\n⬥ Headings represent sections and sub-sections\n​\n⬥ Always put a . ‎on the line before any heading (ignore the backslash \\ ‎in the below example)\n<End of previous section>\n\n\\.\n## __Section 2__\nThis is the new section\n\n​\n⬥ Use # ‎and underline the title\n⬥ Use ## ‎/ ### ‎and underline level 1 and 2 headings\n⬥ Level 3 headings:\n‎ ‎ ‎ ‎• Discord doesn't allow #### ‎for level 3 headings\n‎ ‎ ‎ ‎• Therefore remove the underline to distinguish\n​\n# Title\n## __Section 1__\n### __Sub-section 1.1__\n### Sub-sub-section 1.1.1\n\n## __Section 2__\n\n## __Section 3__\n### __Sub-section 3.1__\n\n​\n⬥ Headings should be capitalised following the Oxford style:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n✅ Capitalise\n⬥ First and last word\n⬥ Nouns\n⬥ Pronouns\n⬥ Verbs\n⬥ Adjectives\n⬥ Adverbs\n⬥ Any word over four letters\n❌ Don’t capitalise\n⬥ Articles (a, an, the)\n⬥ Prepositions (to, on, in, for, with, etc.)\n⬥ Conjunctions (and, but, or, nor, etc.)\n\n\n\n\n\n\n\n\n​\nLists\n⬥ Bulleted lists use different characters depending on the level\n‎ ‎ ‎ ‎• Level 2 bullets should be indented 4 spaces\n‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Level 3 bullets should be indented 8 spaces\n​\n1) Numbered Lists follow the same rules with indentation\n‎ ‎ ‎ ‎a) Level 2 should use letters\n‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Level 3 should be bullets\n​\n⬥ Where visually dense, you may add line breaks between list items (like above this bullet)\n​\nLinks and Embedded Content\n⬥ Only use content from https://runescape.wiki/, https://www.youtube.com/ ‎or https://img.pvme.io/ ‎(via #guide-media-upload-and-request)\n⬥ Add angled brackets <> ‎around links to prevent them showing inline\n‎ ‎ ‎ ‎• For example, [Greater Fury](<https://runescape.wiki/w/Greater_Fury>)​\n​\nUseful Markdown & GitHub Syntax\n⬥ ‎`code` ‎ ‎for inline code\n⬥ .img:<url> ‎for images\n⬥ .tag:sectionName ‎for ToC section targets\n‎ ‎ ‎ ‎• $linkmsg_sectionName$ ‎for linking to that section\n​\nFilenames\n⬥ Filenames should follow these naming patterns:\n‎ ‎ ‎ ‎• Basic guides: {bossName}-basic.txt​\n‎ ‎ ‎ ‎• Combat Achievements: {bossName}-ca.txt​\n‎ ‎ ‎ ‎• Commands: {commandName}.txt​\n‎ ‎ ‎ ‎• DPM Advice: dpm-advice-{style}.txt​\n‎ ‎ ‎ ‎• One-tick guides: {bossName}-one-tick.txt​\n‎ ‎ ‎ ‎• Full Boss guides: {bossName}-{difficulty}-{style}.txt​\n‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ {difficulty} ‎is optional; either hm ‎or nm​\n‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ {style} ‎is optional; either ranged, magic, melee, necromancy, hybrid​\n‎ ‎ ‎ ‎• Slayer: {monsterName}.txt​\n​\n⬥ If not listed above, hyphenate the title:\n‎ ‎ ‎ ‎• e.g., interface-guide.txt​\n​\n⬥ These naming patterns should also apply if the file is inside the boss folder, e.g. /sanctum/sanctum-hm-ranged.txt​\n​\nPresets\n⬥ Create and link to presets in our Preset Maker tool (#unknown-channel)\n⬥ Multiple presets may be created for different situations\n⬥ Links to presets should be in the following pattern:\n‎ ‎ ‎ ‎• {Combat style} - {Basic/Advanced/Tier}​\n‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ e.g., Necromancy - Basic / Necromancy - T95/100\n‎ ‎ ‎ ‎• Only the last link should be shown - the rest should be hidden by wrapping the link in <>:\n‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ e.g., https://presets.pvme.io?id=presetID\n⬥ Avoid dyed gear or overpriced items which do not feature in #upgrade-order\n⬥ Be consistent with:\n‎ ‎ ‎ ‎• Rune pouch colours (#armour-and-weapons)\n‎ ‎ ‎ ‎• EoF emojis (#eof-specs)\n​\nUsing Notes in Presets\n⬥ Notes relating to specific preset gear/items should be added to the Preset Maker\n‎ ‎ ‎ ‎• Do not add notes to the guide, for example below the Preset image\n​\n⬥ Add a note for any non-standard gear or niche items\n⬥ Add a note on any gear where perks differ from standard ones listed in #perks\n​\n⬥ For AFK guides, notes may be added to the Mandatory AFK Requirements ‎embed for:\n‎ ‎ ‎ ‎• Required ability unlocks (including  Talent Tree)\n‎ ‎ ‎ ‎• Mandatory gear/items differing from those listed in #unknown-channel\n​\nRotations\n⬥ Use full emoji codes, e.g., <:emoji:ID>​\n​\n⬥ Use + ‎to combine same-tick actions, e.g.,  + \n​\n⬥ Use → ‎to separate ticks and GCDs, e.g.,  → \n​\n⬥ Use () ‎for:\n‎ ‎ ‎ ‎• Target cycle (tc)\n‎ ‎ ‎ ‎• Auto attacks (auto)\n‎ ‎ ‎ ‎• Waiting (2t) - ticks are from previous action\n‎ ‎ ‎ ‎• Channel durations (3 hit)\n‎ ‎ ‎ ‎• Weapon types (DW) / (2H)\n‎ ‎ ‎ ‎• Autocasting ()\n​\n⬥ Include non-ability actions, e.g.,      \n​\n⬥ Use s ‎and r ‎to represent stall & release, e.g.:\n‎ ‎ ‎ ‎• s<ability> → r<ability> + <nextability>​\n​\n⬥ Use  and  properly, e.g.:\n‎ ‎ ‎ ‎• Weapon specs: <:sgb> <:spec> ‎ \n‎ ‎ ‎ ‎• EOF specs: <:sgb> <:eofspec> ‎ \n​\n⬥ Show ammo swaps before and after abilities, e.g.:\n‎ ‎ ‎ ‎• Single ammo switch:  →    → etc.\n‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Includes off-style abilities:   → etc.\n‎ ‎ ‎ ‎• Multiple ammo switch (like \"wensporing\"):  →     → etc.\n​\n⬥ 0-tick abilities should follow this pattern:\n‎ ‎ ‎ ‎•   (0tick)\n‎ ‎ ‎ ‎• Add a note pointing to the !0tick ‎command\n​\nTable of Contents (ToC)\n⬥ Each guide ends with a pinned ToC section\n⬥ ToC is always within a Discord embed\n⬥ Must be pinned – add .pin:delete ‎under it\n⬥ The easiest way to create a ToC is to add a .tag: ‎after all relevant headings, then auto-generate your ToC using the Table of Contents ‎feature on the Guide Editor (see image below)\n‎ ‎ ‎ ‎• If using this method, you should check the words displayed as they may be abbreviated\n\n​\nExample:\n      \n    ",
+  "normalizedText": "PvME Style Guide Consistency makes guides easier to read and maintain. This guide covers formatting, structure, and PvME-specific conventions. ​ Sections & Templates ⬥ We have various types of guides, each of which has a unique structure and sections within ⬥ Most templates you will require can be found on the Guide Editor: ​ Language & Formatting ⬥ Use UK English (e.g. armour, not armour; defence, not defense) ⬥ Date format: 22nd July 2013 ⬥ Do not end lines with blank space (this is referred to as \"trailing whitespace\") ​ Styling & Punctuation Always end full sentences with a full stop / period ⬥ Exceptions: ‎ ‎ ‎ ‎• bullet points should not end in a full stop ‎ ‎ ‎ ‎• Any sentence ending in an emoji should not end in a full stop 🚀 ​ ⬥ Text styles: ‎ ‎ ‎ ‎• **Bold** ‎– Key items or emphases ‎ ‎ ‎ ‎• *Italic* ‎– Inline notes or footnotes ‎ ‎ ‎ ‎• __Underline__ ‎– Optional emphasis ​ Emojis ⬥ Spacing: Emojis require a space before and after: ❌ Detonate<:deto:123> is a spell. ❌ Spellbook Swap <:SBS:543875425055670275>is a spell. ✅ Spellbook Swap <:SBS:543875425055670275> is a spell. ​ ⬥ There are a few exceptions where spaces are not needed: ‎ ‎ ‎ ‎• Letter prefixes (r, s, _) ‎ ‎ ‎ ‎• Punctuation/backslash/backtick prefixes ‎ ‎ ‎ ‎• Trailing punctuation or underscore ‎ ‎ ‎ ‎• Inside backticks (embeds) ‎ ‎ ‎ ‎• Invisible characters ‎ ‎ ‎ ‎• Allowed examples: r<:emoji:1> <:emoji:7>. \"… <:emoji:4> …\" <:emoji:7>! `…<:emoji:11>…` <emoji:73>\\n\\u00a0 ​ Notes ⬥ Use sparingly to highlight key info ⬥ Put notes below their related content ⬥ For a single note, show it in-line and italic: *Note: This is a note.* ⬥ For multiple notes, show as bullets and italic: *Notes:* ⬥ *This is a note* ⬥ *This is another note* ​ Headings ⬥ Headings represent sections and sub-sections ​ ⬥ Always put a . ‎on the line before any heading (ignore the backslash \\ ‎in the below example) <End of previous section> \\. ## __Section 2__ This is the new section ​ ⬥ Use # ‎and underline the title ⬥ Use ## ‎/ ### ‎and underline level 1 and 2 headings ⬥ Level 3 headings: ‎ ‎ ‎ ‎• Discord doesn't allow #### ‎for level 3 headings ‎ ‎ ‎ ‎• Therefore remove the underline to distinguish ​ # Title ## __Section 1__ ### __Sub-section 1.1__ ### Sub-sub-section 1.1.1 ## __Section 2__ ## __Section 3__ ### __Sub-section 3.1__ ​ ⬥ Headings should be capitalised following the Oxford style: ✅ Capitalise ⬥ First and last word ⬥ Nouns ⬥ Pronouns ⬥ Verbs ⬥ Adjectives ⬥ Adverbs ⬥ Any word over four letters ❌ Don’t capitalise ⬥ Articles (a, an, the) ⬥ Prepositions (to, on, in, for, with, etc.) ⬥ Conjunctions (and, but, or, nor, etc.) ​ Lists ⬥ Bulleted lists use different characters depending on the level ‎ ‎ ‎ ‎• Level 2 bullets should be indented 4 spaces ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Level 3 bullets should be indented 8 spaces ​ 1) Numbered Lists follow the same rules with indentation ‎ ‎ ‎ ‎a) Level 2 should use letters ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Level 3 should be bullets ​ ⬥ Where visually dense, you may add line breaks between list items (like above this bullet) ​ Links and Embedded Content ⬥ Only use content from https://runescape.wiki/, https://www.youtube.com/ ‎or https://img.pvme.io/ ‎(via #guide-media-upload-and-request) ⬥ Add angled brackets <> ‎around links to prevent them showing inline ‎ ‎ ‎ ‎• For example, [Greater Fury](<https://runescape.wiki/w/Greater_Fury>)​ ​ Useful Markdown & GitHub Syntax ⬥ ‎`code` ‎ ‎for inline code ⬥ .img:<url> ‎for images ⬥ .tag:sectionName ‎for ToC section targets ‎ ‎ ‎ ‎• $linkmsg_sectionName$ ‎for linking to that section ​ Filenames ⬥ Filenames should follow these naming patterns: ‎ ‎ ‎ ‎• Basic guides: {bossName}-basic.txt​ ‎ ‎ ‎ ‎• Combat Achievements: {bossName}-ca.txt​ ‎ ‎ ‎ ‎• Commands: {commandName}.txt​ ‎ ‎ ‎ ‎• DPM Advice: dpm-advice-{style}.txt​ ‎ ‎ ‎ ‎• One-tick guides: {bossName}-one-tick.txt​ ‎ ‎ ‎ ‎• Full Boss guides: {bossName}-{difficulty}-{style}.txt​ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ {difficulty} ‎is optional; either hm ‎or nm​ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ {style} ‎is optional; either ranged, magic, melee, necromancy, hybrid​ ‎ ‎ ‎ ‎• Slayer: {monsterName}.txt​ ​ ⬥ If not listed above, hyphenate the title: ‎ ‎ ‎ ‎• e.g., interface-guide.txt​ ​ ⬥ These naming patterns should also apply if the file is inside the boss folder, e.g. /sanctum/sanctum-hm-ranged.txt​ ​ Presets ⬥ Create and link to presets in our Preset Maker tool (#unknown-channel) ⬥ Multiple presets may be created for different situations ⬥ Links to presets should be in the following pattern: ‎ ‎ ‎ ‎• {Combat style} - {Basic/Advanced/Tier}​ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ e.g., Necromancy - Basic / Necromancy - T95/100 ‎ ‎ ‎ ‎• Only the last link should be shown - the rest should be hidden by wrapping the link in <>: ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ e.g., https://presets.pvme.io?id=presetID ⬥ Avoid dyed gear or overpriced items which do not feature in #upgrade-order ⬥ Be consistent with: ‎ ‎ ‎ ‎• Rune pouch colours (#armour-and-weapons) ‎ ‎ ‎ ‎• EoF emojis (#eof-specs) ​ Using Notes in Presets ⬥ Notes relating to specific preset gear/items should be added to the Preset Maker ‎ ‎ ‎ ‎• Do not add notes to the guide, for example below the Preset image ​ ⬥ Add a note for any non-standard gear or niche items ⬥ Add a note on any gear where perks differ from standard ones listed in #perks ​ ⬥ For AFK guides, notes may be added to the Mandatory AFK Requirements ‎embed for: ‎ ‎ ‎ ‎• Required ability unlocks (including Talent Tree) ‎ ‎ ‎ ‎• Mandatory gear/items differing from those listed in #unknown-channel ​ Rotations ⬥ Use full emoji codes, e.g., <:emoji:ID>​ ​ ⬥ Use + ‎to combine same-tick actions, e.g., + ​ ⬥ Use → ‎to separate ticks and GCDs, e.g., → ​ ⬥ Use () ‎for: ‎ ‎ ‎ ‎• Target cycle (tc) ‎ ‎ ‎ ‎• Auto attacks (auto) ‎ ‎ ‎ ‎• Waiting (2t) - ticks are from previous action ‎ ‎ ‎ ‎• Channel durations (3 hit) ‎ ‎ ‎ ‎• Weapon types (DW) / (2H) ‎ ‎ ‎ ‎• Autocasting () ​ ⬥ Include non-ability actions, e.g., ​ ⬥ Use s ‎and r ‎to represent stall & release, e.g.: ‎ ‎ ‎ ‎• s<ability> → r<ability> + <nextability>​ ​ ⬥ Use and properly, e.g.: ‎ ‎ ‎ ‎• Weapon specs: <:sgb> <:spec> ‎ ‎ ‎ ‎ ‎• EOF specs: <:sgb> <:eofspec> ‎ ​ ⬥ Show ammo swaps before and after abilities, e.g.: ‎ ‎ ‎ ‎• Single ammo switch: → → etc. ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Includes off-style abilities: → etc. ‎ ‎ ‎ ‎• Multiple ammo switch (like \"wensporing\"): → → etc. ​ ⬥ 0-tick abilities should follow this pattern: ‎ ‎ ‎ ‎• (0tick) ‎ ‎ ‎ ‎• Add a note pointing to the !0tick ‎command ​ Table of Contents (ToC) ⬥ Each guide ends with a pinned ToC section ⬥ ToC is always within a Discord embed ⬥ Must be pinned – add .pin:delete ‎under it ⬥ The easiest way to create a ToC is to add a .tag: ‎after all relevant headings, then auto-generate your ToC using the Table of Contents ‎feature on the Guide Editor (see image below) ‎ ‎ ‎ ‎• If using this method, you should check the words displayed as they may be abbreviated ​ Example:",
+  "wordStream": [
+    "PvME",
+    "Style",
+    "Guide",
+    "Consistency",
+    "makes",
+    "guides",
+    "easier",
+    "to",
+    "read",
+    "and",
+    "maintain.",
+    "This",
+    "guide",
+    "covers",
+    "formatting,",
+    "structure,",
+    "and",
+    "PvME-specific",
+    "conventions.",
+    "​",
+    "Sections",
+    "&",
+    "Templates",
+    "⬥",
+    "We",
+    "have",
+    "various",
+    "types",
+    "of",
+    "guides,",
+    "each",
+    "of",
+    "which",
+    "has",
+    "a",
+    "unique",
+    "structure",
+    "and",
+    "sections",
+    "within",
+    "⬥",
+    "Most",
+    "templates",
+    "you",
+    "will",
+    "require",
+    "can",
+    "be",
+    "found",
+    "on",
+    "the",
+    "Guide",
+    "Editor:",
+    "​",
+    "Language",
+    "&",
+    "Formatting",
+    "⬥",
+    "Use",
+    "UK",
+    "English",
+    "(e.g.",
+    "armour,",
+    "not",
+    "armour;",
+    "defence,",
+    "not",
+    "defense)",
+    "⬥",
+    "Date",
+    "format:",
+    "22nd",
+    "July",
+    "2013",
+    "⬥",
+    "Do",
+    "not",
+    "end",
+    "lines",
+    "with",
+    "blank",
+    "space",
+    "(this",
+    "is",
+    "referred",
+    "to",
+    "as",
+    "\"trailing",
+    "whitespace\")",
+    "​",
+    "Styling",
+    "&",
+    "Punctuation",
+    "Always",
+    "end",
+    "full",
+    "sentences",
+    "with",
+    "a",
+    "full",
+    "stop",
+    "/",
+    "period",
+    "⬥",
+    "Exceptions:",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "bullet",
+    "points",
+    "should",
+    "not",
+    "end",
+    "in",
+    "a",
+    "full",
+    "stop",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Any",
+    "sentence",
+    "ending",
+    "in",
+    "an",
+    "emoji",
+    "should",
+    "not",
+    "end",
+    "in",
+    "a",
+    "full",
+    "stop",
+    "🚀",
+    "​",
+    "⬥",
+    "Text",
+    "styles:",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "**Bold**",
+    "‎–",
+    "Key",
+    "items",
+    "or",
+    "emphases",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "*Italic*",
+    "‎–",
+    "Inline",
+    "notes",
+    "or",
+    "footnotes",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "__Underline__",
+    "‎–",
+    "Optional",
+    "emphasis",
+    "​",
+    "Emojis",
+    "⬥",
+    "Spacing:",
+    "Emojis",
+    "require",
+    "a",
+    "space",
+    "before",
+    "and",
+    "after:",
+    "❌",
+    "Detonate<:deto:123>",
+    "is",
+    "a",
+    "spell.",
+    "❌",
+    "Spellbook",
+    "Swap",
+    "<:SBS:543875425055670275>is",
+    "a",
+    "spell.",
+    "✅",
+    "Spellbook",
+    "Swap",
+    "<:SBS:543875425055670275>",
+    "is",
+    "a",
+    "spell.",
+    "​",
+    "⬥",
+    "There",
+    "are",
+    "a",
+    "few",
+    "exceptions",
+    "where",
+    "spaces",
+    "are",
+    "not",
+    "needed:",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Letter",
+    "prefixes",
+    "(r,",
+    "s,",
+    "_)",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Punctuation/backslash/backtick",
+    "prefixes",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Trailing",
+    "punctuation",
+    "or",
+    "underscore",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Inside",
+    "backticks",
+    "(embeds)",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Invisible",
+    "characters",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Allowed",
+    "examples:",
+    "r<:emoji:1>",
+    "<:emoji:7>.",
+    "\"…",
+    "<:emoji:4>",
+    "…\"",
+    "<:emoji:7>!",
+    "`…<:emoji:11>…`",
+    "<emoji:73>\\n\\u00a0",
+    "​",
+    "Notes",
+    "⬥",
+    "Use",
+    "sparingly",
+    "to",
+    "highlight",
+    "key",
+    "info",
+    "⬥",
+    "Put",
+    "notes",
+    "below",
+    "their",
+    "related",
+    "content",
+    "⬥",
+    "For",
+    "a",
+    "single",
+    "note,",
+    "show",
+    "it",
+    "in-line",
+    "and",
+    "italic:",
+    "*Note:",
+    "This",
+    "is",
+    "a",
+    "note.*",
+    "⬥",
+    "For",
+    "multiple",
+    "notes,",
+    "show",
+    "as",
+    "bullets",
+    "and",
+    "italic:",
+    "*Notes:*",
+    "⬥",
+    "*This",
+    "is",
+    "a",
+    "note*",
+    "⬥",
+    "*This",
+    "is",
+    "another",
+    "note*",
+    "​",
+    "Headings",
+    "⬥",
+    "Headings",
+    "represent",
+    "sections",
+    "and",
+    "sub-sections",
+    "​",
+    "⬥",
+    "Always",
+    "put",
+    "a",
+    ".",
+    "‎on",
+    "the",
+    "line",
+    "before",
+    "any",
+    "heading",
+    "(ignore",
+    "the",
+    "backslash",
+    "\\",
+    "‎in",
+    "the",
+    "below",
+    "example)",
+    "<End",
+    "of",
+    "previous",
+    "section>",
+    "\\.",
+    "##",
+    "__Section",
+    "2__",
+    "This",
+    "is",
+    "the",
+    "new",
+    "section",
+    "​",
+    "⬥",
+    "Use",
+    "#",
+    "‎and",
+    "underline",
+    "the",
+    "title",
+    "⬥",
+    "Use",
+    "##",
+    "‎/",
+    "###",
+    "‎and",
+    "underline",
+    "level",
+    "1",
+    "and",
+    "2",
+    "headings",
+    "⬥",
+    "Level",
+    "3",
+    "headings:",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Discord",
+    "doesn't",
+    "allow",
+    "####",
+    "‎for",
+    "level",
+    "3",
+    "headings",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Therefore",
+    "remove",
+    "the",
+    "underline",
+    "to",
+    "distinguish",
+    "​",
+    "#",
+    "Title",
+    "##",
+    "__Section",
+    "1__",
+    "###",
+    "__Sub-section",
+    "1.1__",
+    "###",
+    "Sub-sub-section",
+    "1.1.1",
+    "##",
+    "__Section",
+    "2__",
+    "##",
+    "__Section",
+    "3__",
+    "###",
+    "__Sub-section",
+    "3.1__",
+    "​",
+    "⬥",
+    "Headings",
+    "should",
+    "be",
+    "capitalised",
+    "following",
+    "the",
+    "Oxford",
+    "style:",
+    "✅",
+    "Capitalise",
+    "⬥",
+    "First",
+    "and",
+    "last",
+    "word",
+    "⬥",
+    "Nouns",
+    "⬥",
+    "Pronouns",
+    "⬥",
+    "Verbs",
+    "⬥",
+    "Adjectives",
+    "⬥",
+    "Adverbs",
+    "⬥",
+    "Any",
+    "word",
+    "over",
+    "four",
+    "letters",
+    "❌",
+    "Don’t",
+    "capitalise",
+    "⬥",
+    "Articles",
+    "(a,",
+    "an,",
+    "the)",
+    "⬥",
+    "Prepositions",
+    "(to,",
+    "on,",
+    "in,",
+    "for,",
+    "with,",
+    "etc.)",
+    "⬥",
+    "Conjunctions",
+    "(and,",
+    "but,",
+    "or,",
+    "nor,",
+    "etc.)",
+    "​",
+    "Lists",
+    "⬥",
+    "Bulleted",
+    "lists",
+    "use",
+    "different",
+    "characters",
+    "depending",
+    "on",
+    "the",
+    "level",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Level",
+    "2",
+    "bullets",
+    "should",
+    "be",
+    "indented",
+    "4",
+    "spaces",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎⬩",
+    "Level",
+    "3",
+    "bullets",
+    "should",
+    "be",
+    "indented",
+    "8",
+    "spaces",
+    "​",
+    "1)",
+    "Numbered",
+    "Lists",
+    "follow",
+    "the",
+    "same",
+    "rules",
+    "with",
+    "indentation",
+    "‎",
+    "‎",
+    "‎",
+    "‎a)",
+    "Level",
+    "2",
+    "should",
+    "use",
+    "letters",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎⬩",
+    "Level",
+    "3",
+    "should",
+    "be",
+    "bullets",
+    "​",
+    "⬥",
+    "Where",
+    "visually",
+    "dense,",
+    "you",
+    "may",
+    "add",
+    "line",
+    "breaks",
+    "between",
+    "list",
+    "items",
+    "(like",
+    "above",
+    "this",
+    "bullet)",
+    "​",
+    "Links",
+    "and",
+    "Embedded",
+    "Content",
+    "⬥",
+    "Only",
+    "use",
+    "content",
+    "from",
+    "https://runescape.wiki/,",
+    "https://www.youtube.com/",
+    "‎or",
+    "https://img.pvme.io/",
+    "‎(via",
+    "#guide-media-upload-and-request)",
+    "⬥",
+    "Add",
+    "angled",
+    "brackets",
+    "<>",
+    "‎around",
+    "links",
+    "to",
+    "prevent",
+    "them",
+    "showing",
+    "inline",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "For",
+    "example,",
+    "[Greater",
+    "Fury](<https://runescape.wiki/w/Greater_Fury>)​",
+    "​",
+    "Useful",
+    "Markdown",
+    "&",
+    "GitHub",
+    "Syntax",
+    "⬥",
+    "‎`code`",
+    "‎",
+    "‎for",
+    "inline",
+    "code",
+    "⬥",
+    ".img:<url>",
+    "‎for",
+    "images",
+    "⬥",
+    ".tag:sectionName",
+    "‎for",
+    "ToC",
+    "section",
+    "targets",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "$linkmsg_sectionName$",
+    "‎for",
+    "linking",
+    "to",
+    "that",
+    "section",
+    "​",
+    "Filenames",
+    "⬥",
+    "Filenames",
+    "should",
+    "follow",
+    "these",
+    "naming",
+    "patterns:",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Basic",
+    "guides:",
+    "{bossName}-basic.txt​",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Combat",
+    "Achievements:",
+    "{bossName}-ca.txt​",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Commands:",
+    "{commandName}.txt​",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "DPM",
+    "Advice:",
+    "dpm-advice-{style}.txt​",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "One-tick",
+    "guides:",
+    "{bossName}-one-tick.txt​",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Full",
+    "Boss",
+    "guides:",
+    "{bossName}-{difficulty}-{style}.txt​",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎⬩",
+    "{difficulty}",
+    "‎is",
+    "optional;",
+    "either",
+    "hm",
+    "‎or",
+    "nm​",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎⬩",
+    "{style}",
+    "‎is",
+    "optional;",
+    "either",
+    "ranged,",
+    "magic,",
+    "melee,",
+    "necromancy,",
+    "hybrid​",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Slayer:",
+    "{monsterName}.txt​",
+    "​",
+    "⬥",
+    "If",
+    "not",
+    "listed",
+    "above,",
+    "hyphenate",
+    "the",
+    "title:",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "e.g.,",
+    "interface-guide.txt​",
+    "​",
+    "⬥",
+    "These",
+    "naming",
+    "patterns",
+    "should",
+    "also",
+    "apply",
+    "if",
+    "the",
+    "file",
+    "is",
+    "inside",
+    "the",
+    "boss",
+    "folder,",
+    "e.g.",
+    "/sanctum/sanctum-hm-ranged.txt​",
+    "​",
+    "Presets",
+    "⬥",
+    "Create",
+    "and",
+    "link",
+    "to",
+    "presets",
+    "in",
+    "our",
+    "Preset",
+    "Maker",
+    "tool",
+    "(#unknown-channel)",
+    "⬥",
+    "Multiple",
+    "presets",
+    "may",
+    "be",
+    "created",
+    "for",
+    "different",
+    "situations",
+    "⬥",
+    "Links",
+    "to",
+    "presets",
+    "should",
+    "be",
+    "in",
+    "the",
+    "following",
+    "pattern:",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "{Combat",
+    "style}",
+    "-",
+    "{Basic/Advanced/Tier}​",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎⬩",
+    "e.g.,",
+    "Necromancy",
+    "-",
+    "Basic",
+    "/",
+    "Necromancy",
+    "-",
+    "T95/100",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Only",
+    "the",
+    "last",
+    "link",
+    "should",
+    "be",
+    "shown",
+    "-",
+    "the",
+    "rest",
+    "should",
+    "be",
+    "hidden",
+    "by",
+    "wrapping",
+    "the",
+    "link",
+    "in",
+    "<>:",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎⬩",
+    "e.g.,",
+    "https://presets.pvme.io?id=presetID",
+    "⬥",
+    "Avoid",
+    "dyed",
+    "gear",
+    "or",
+    "overpriced",
+    "items",
+    "which",
+    "do",
+    "not",
+    "feature",
+    "in",
+    "#upgrade-order",
+    "⬥",
+    "Be",
+    "consistent",
+    "with:",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Rune",
+    "pouch",
+    "colours",
+    "(#armour-and-weapons)",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "EoF",
+    "emojis",
+    "(#eof-specs)",
+    "​",
+    "Using",
+    "Notes",
+    "in",
+    "Presets",
+    "⬥",
+    "Notes",
+    "relating",
+    "to",
+    "specific",
+    "preset",
+    "gear/items",
+    "should",
+    "be",
+    "added",
+    "to",
+    "the",
+    "Preset",
+    "Maker",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Do",
+    "not",
+    "add",
+    "notes",
+    "to",
+    "the",
+    "guide,",
+    "for",
+    "example",
+    "below",
+    "the",
+    "Preset",
+    "image",
+    "​",
+    "⬥",
+    "Add",
+    "a",
+    "note",
+    "for",
+    "any",
+    "non-standard",
+    "gear",
+    "or",
+    "niche",
+    "items",
+    "⬥",
+    "Add",
+    "a",
+    "note",
+    "on",
+    "any",
+    "gear",
+    "where",
+    "perks",
+    "differ",
+    "from",
+    "standard",
+    "ones",
+    "listed",
+    "in",
+    "#perks",
+    "​",
+    "⬥",
+    "For",
+    "AFK",
+    "guides,",
+    "notes",
+    "may",
+    "be",
+    "added",
+    "to",
+    "the",
+    "Mandatory",
+    "AFK",
+    "Requirements",
+    "‎embed",
+    "for:",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Required",
+    "ability",
+    "unlocks",
+    "(including",
+    "Talent",
+    "Tree)",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Mandatory",
+    "gear/items",
+    "differing",
+    "from",
+    "those",
+    "listed",
+    "in",
+    "#unknown-channel",
+    "​",
+    "Rotations",
+    "⬥",
+    "Use",
+    "full",
+    "emoji",
+    "codes,",
+    "e.g.,",
+    "<:emoji:ID>​",
+    "​",
+    "⬥",
+    "Use",
+    "+",
+    "‎to",
+    "combine",
+    "same-tick",
+    "actions,",
+    "e.g.,",
+    "+",
+    "​",
+    "⬥",
+    "Use",
+    "→",
+    "‎to",
+    "separate",
+    "ticks",
+    "and",
+    "GCDs,",
+    "e.g.,",
+    "→",
+    "​",
+    "⬥",
+    "Use",
+    "()",
+    "‎for:",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Target",
+    "cycle",
+    "(tc)",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Auto",
+    "attacks",
+    "(auto)",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Waiting",
+    "(2t)",
+    "-",
+    "ticks",
+    "are",
+    "from",
+    "previous",
+    "action",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Channel",
+    "durations",
+    "(3",
+    "hit)",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Weapon",
+    "types",
+    "(DW)",
+    "/",
+    "(2H)",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Autocasting",
+    "()",
+    "​",
+    "⬥",
+    "Include",
+    "non-ability",
+    "actions,",
+    "e.g.,",
+    "​",
+    "⬥",
+    "Use",
+    "s",
+    "‎and",
+    "r",
+    "‎to",
+    "represent",
+    "stall",
+    "&",
+    "release,",
+    "e.g.:",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "s<ability>",
+    "→",
+    "r<ability>",
+    "+",
+    "<nextability>​",
+    "​",
+    "⬥",
+    "Use",
+    "and",
+    "properly,",
+    "e.g.:",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Weapon",
+    "specs:",
+    "<:sgb>",
+    "<:spec>",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "EOF",
+    "specs:",
+    "<:sgb>",
+    "<:eofspec>",
+    "‎",
+    "​",
+    "⬥",
+    "Show",
+    "ammo",
+    "swaps",
+    "before",
+    "and",
+    "after",
+    "abilities,",
+    "e.g.:",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Single",
+    "ammo",
+    "switch:",
+    "→",
+    "→",
+    "etc.",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎⬩",
+    "Includes",
+    "off-style",
+    "abilities:",
+    "→",
+    "etc.",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Multiple",
+    "ammo",
+    "switch",
+    "(like",
+    "\"wensporing\"):",
+    "→",
+    "→",
+    "etc.",
+    "​",
+    "⬥",
+    "0-tick",
+    "abilities",
+    "should",
+    "follow",
+    "this",
+    "pattern:",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "(0tick)",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Add",
+    "a",
+    "note",
+    "pointing",
+    "to",
+    "the",
+    "!0tick",
+    "‎command",
+    "​",
+    "Table",
+    "of",
+    "Contents",
+    "(ToC)",
+    "⬥",
+    "Each",
+    "guide",
+    "ends",
+    "with",
+    "a",
+    "pinned",
+    "ToC",
+    "section",
+    "⬥",
+    "ToC",
+    "is",
+    "always",
+    "within",
+    "a",
+    "Discord",
+    "embed",
+    "⬥",
+    "Must",
+    "be",
+    "pinned",
+    "–",
+    "add",
+    ".pin:delete",
+    "‎under",
+    "it",
+    "⬥",
+    "The",
+    "easiest",
+    "way",
+    "to",
+    "create",
+    "a",
+    "ToC",
+    "is",
+    "to",
+    "add",
+    "a",
+    ".tag:",
+    "‎after",
+    "all",
+    "relevant",
+    "headings,",
+    "then",
+    "auto-generate",
+    "your",
+    "ToC",
+    "using",
+    "the",
+    "Table",
+    "of",
+    "Contents",
+    "‎feature",
+    "on",
+    "the",
+    "Guide",
+    "Editor",
+    "(see",
+    "image",
+    "below)",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "If",
+    "using",
+    "this",
+    "method,",
+    "you",
+    "should",
+    "check",
+    "the",
+    "words",
+    "displayed",
+    "as",
+    "they",
+    "may",
+    "be",
+    "abbreviated",
+    "​",
+    "Example:"
+  ],
+  "hashes": {
+    "responseSha256": "9534d24911383a2ce8355d210017014065b28e06fd2e15c40137b3c70bd6abf7",
+    "articleSha256": "fe487bb7f5a42542e2d5555b9d79dd479d55b19a4bf401c0e684493970b1ea63",
+    "textSha256": "4a3a91da3e7ce3778e249723146bb9ea3a11f1028e7de445ee3b50dafab14d39",
+    "normalizedTextSha256": "e9433405ef1d27d77286582277a4b94c8960a6c540783c6d13705d5abbe335af"
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "PvME Style Guide",
+      "attrs": {
+        "id": "pvme-style-guide"
+      },
+      "location": {
+        "start": 168148,
+        "end": 168195
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "Sections & Templates",
+      "attrs": {
+        "id": "sections-templates"
+      },
+      "location": {
+        "start": 168345,
+        "end": 168413
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "Language & Formatting",
+      "attrs": {
+        "id": "language-formatting"
+      },
+      "location": {
+        "start": 168716,
+        "end": 168786
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Styling & Punctuation",
+      "attrs": {
+        "id": "styling-punctuation"
+      },
+      "location": {
+        "start": 169002,
+        "end": 169072
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Emojis",
+      "attrs": {
+        "id": "emojis"
+      },
+      "location": {
+        "start": 169564,
+        "end": 169602
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Notes",
+      "attrs": {
+        "id": "notes"
+      },
+      "location": {
+        "start": 170456,
+        "end": 170492
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Headings",
+      "attrs": {
+        "id": "headings"
+      },
+      "location": {
+        "start": 170850,
+        "end": 170892
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Lists",
+      "attrs": {
+        "id": "lists"
+      },
+      "location": {
+        "start": 173007,
+        "end": 173043
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Links and Embedded Content",
+      "attrs": {
+        "id": "links-and-embedded-content"
+      },
+      "location": {
+        "start": 173549,
+        "end": 173627
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Useful Markdown & GitHub Syntax",
+      "attrs": {
+        "id": "useful-markdown-github-syntax"
+      },
+      "location": {
+        "start": 174072,
+        "end": 174162
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "Filenames",
+      "attrs": {
+        "id": "filenames"
+      },
+      "location": {
+        "start": 174423,
+        "end": 174467
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "Presets",
+      "attrs": {
+        "id": "presets"
+      },
+      "location": {
+        "start": 175643,
+        "end": 175683
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Using Notes in Presets",
+      "attrs": {
+        "id": "using-notes-in-presets"
+      },
+      "location": {
+        "start": 176684,
+        "end": 176754
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "Rotations",
+      "attrs": {
+        "id": "rotations"
+      },
+      "location": {
+        "start": 177574,
+        "end": 177618
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "Table of Contents (ToC)",
+      "attrs": {
+        "id": "table-of-contents-toc"
+      },
+      "location": {
+        "start": 182781,
+        "end": 182851
+      }
+    }
+  ],
+  "media": [
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/By04eu9tkH.png"
+      },
+      "text": "",
+      "location": {
+        "start": 168635,
+        "end": 168702
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "necromancy",
+        "class": "d-emoji",
+        "alt": "necromancy",
+        "src": "https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 177294,
+        "end": 177419
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "vulnbomb",
+        "class": "d-emoji",
+        "alt": "vulnbomb",
+        "src": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 177865,
+        "end": 177985
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathskulls",
+        "class": "d-emoji",
+        "alt": "deathskulls",
+        "src": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 177988,
+        "end": 178115
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "rapid",
+        "class": "d-emoji",
+        "alt": "rapid",
+        "src": "https://cdn.discordapp.com/emojis/535541270521708566.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 178195,
+        "end": 178309
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "snap",
+        "class": "d-emoji",
+        "alt": "snap",
+        "src": "https://cdn.discordapp.com/emojis/535534127131394088.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 178312,
+        "end": 178424
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "exsanguinate",
+        "class": "d-emoji",
+        "alt": "exsanguinate",
+        "src": "https://cdn.discordapp.com/emojis/856635090745950258.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 178720,
+        "end": 178848
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "vulnbomb",
+        "class": "d-emoji",
+        "alt": "vulnbomb",
+        "src": "https://cdn.discordapp.com/emojis/655341074235129858.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 178910,
+        "end": 179030
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "adrenrenewal",
+        "class": "d-emoji",
+        "alt": "adrenrenewal",
+        "src": "https://cdn.discordapp.com/emojis/736298121704767538.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 179031,
+        "end": 179159
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "undeadslayer",
+        "class": "d-emoji",
+        "alt": "undeadslayer",
+        "src": "https://cdn.discordapp.com/emojis/641339922019516416.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 179160,
+        "end": 179288
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "dragonslayer",
+        "class": "d-emoji",
+        "alt": "dragonslayer",
+        "src": "https://cdn.discordapp.com/emojis/641339921814126594.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 179289,
+        "end": 179417
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "demonslayer",
+        "class": "d-emoji",
+        "alt": "demonslayer",
+        "src": "https://cdn.discordapp.com/emojis/641339921675845633.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 179418,
+        "end": 179544
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "nip",
+        "class": "d-emoji",
+        "alt": "nip",
+        "src": "https://cdn.discordapp.com/emojis/537336877900890135.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 179545,
+        "end": 179655
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "spec",
+        "class": "d-emoji",
+        "alt": "spec",
+        "src": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 179885,
+        "end": 179997
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "eofspec",
+        "class": "d-emoji",
+        "alt": "eofspec",
+        "src": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 180002,
+        "end": 180121
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "sgb",
+        "class": "d-emoji",
+        "alt": "sgb",
+        "src": "https://cdn.discordapp.com/emojis/626466665848242186.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 180209,
+        "end": 180319
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "spec",
+        "class": "d-emoji",
+        "alt": "spec",
+        "src": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 180320,
+        "end": 180432
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "sgb",
+        "class": "d-emoji",
+        "alt": "sgb",
+        "src": "https://cdn.discordapp.com/emojis/626466665848242186.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 180504,
+        "end": 180614
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "eofspec",
+        "class": "d-emoji",
+        "alt": "eofspec",
+        "src": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 180615,
+        "end": 180734
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "gricocaroming",
+        "class": "d-emoji",
+        "alt": "gricocaroming",
+        "src": "https://cdn.discordapp.com/emojis/867678153966878740.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 180846,
+        "end": 180976
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "fularrow",
+        "class": "d-emoji",
+        "alt": "fularrow",
+        "src": "https://cdn.discordapp.com/emojis/971025696958853180.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 180979,
+        "end": 181099
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "sgb",
+        "class": "d-emoji",
+        "alt": "sgb",
+        "src": "https://cdn.discordapp.com/emojis/626466665848242186.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 181100,
+        "end": 181210
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "eofspec",
+        "class": "d-emoji",
+        "alt": "eofspec",
+        "src": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 181211,
+        "end": 181330
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "hydrixbakri",
+        "class": "d-emoji",
+        "alt": "hydrixbakri",
+        "src": "https://cdn.discordapp.com/emojis/550834403136503822.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 181392,
+        "end": 181518
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "gricocaroming",
+        "class": "d-emoji",
+        "alt": "gricocaroming",
+        "src": "https://cdn.discordapp.com/emojis/867678153966878740.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 181519,
+        "end": 181649
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "gricocaroming",
+        "class": "d-emoji",
+        "alt": "gricocaroming",
+        "src": "https://cdn.discordapp.com/emojis/867678153966878740.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 181715,
+        "end": 181845
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "wenarrow",
+        "class": "d-emoji",
+        "alt": "wenarrow",
+        "src": "https://cdn.discordapp.com/emojis/971025697046925362.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 181848,
+        "end": 181968
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "dbow",
+        "class": "d-emoji",
+        "alt": "dbow",
+        "src": "https://cdn.discordapp.com/emojis/643848618553507843.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 181969,
+        "end": 182081
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "eofspec",
+        "class": "d-emoji",
+        "alt": "eofspec",
+        "src": "https://cdn.discordapp.com/emojis/1257438999794946099.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182082,
+        "end": 182201
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deathsporearrows",
+        "class": "d-emoji",
+        "alt": "deathsporearrows",
+        "src": "https://cdn.discordapp.com/emojis/900758234527301642.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182202,
+        "end": 182338
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "roarofawakening",
+        "class": "d-emoji",
+        "alt": "roarofawakening",
+        "src": "https://cdn.discordapp.com/emojis/1266417538045317121.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182432,
+        "end": 182567
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "spec",
+        "class": "d-emoji",
+        "alt": "spec",
+        "src": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182568,
+        "end": 182680
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/mhO3jajZIa.png"
+      },
+      "text": "",
+      "location": {
+        "start": 183381,
+        "end": 183448
+      }
+    }
+  ],
+  "links": [
+    {
+      "href": "https://pvme.io/guide-editor/",
+      "text": "Guide Editor",
+      "attrs": {
+        "href": "https://pvme.io/guide-editor/"
+      },
+      "location": {
+        "start": 168570,
+        "end": 168626
+      }
+    },
+    {
+      "href": "",
+      "text": "#guide-media-upload-and-request",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 173775,
+        "end": 173842
+      }
+    },
+    {
+      "href": "",
+      "text": "#unknown-channel",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 175742,
+        "end": 175794
+      }
+    },
+    {
+      "href": "#",
+      "text": "Necromancy - Basic",
+      "attrs": {
+        "href": "#"
+      },
+      "location": {
+        "start": 176030,
+        "end": 176064
+      }
+    },
+    {
+      "href": "#",
+      "text": "Necromancy - T95/100",
+      "attrs": {
+        "href": "#"
+      },
+      "location": {
+        "start": 176067,
+        "end": 176103
+      }
+    },
+    {
+      "href": "https://presets.pvme.io?id=presetID",
+      "text": "https://presets.pvme.io?id=presetID",
+      "attrs": {
+        "href": "https://presets.pvme.io?id=presetID"
+      },
+      "location": {
+        "start": 176260,
+        "end": 176345
+      }
+    },
+    {
+      "href": "",
+      "text": "#upgrade-order",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 176415,
+        "end": 176465
+      }
+    },
+    {
+      "href": "",
+      "text": "#armour-and-weapons",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 176531,
+        "end": 176586
+      }
+    },
+    {
+      "href": "",
+      "text": "#eof-specs",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 176616,
+        "end": 176662
+      }
+    },
+    {
+      "href": "",
+      "text": "#perks",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 177080,
+        "end": 177122
+      }
+    },
+    {
+      "href": "",
+      "text": "#unknown-channel",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 177501,
+        "end": 177553
+      }
+    },
+    {
+      "href": "https://raw.githubusercontent.com/pvme/pvme-settings/master/emojis/emojis.json",
+      "text": "full emoji codes",
+      "attrs": {
+        "href": "https://raw.githubusercontent.com/pvme/pvme-settings/master/emojis/emojis.json"
+      },
+      "location": {
+        "start": 177628,
+        "end": 177737
+      }
+    },
+    {
+      "href": "https://pvme.io/guide-editor/",
+      "text": "Guide Editor",
+      "attrs": {
+        "href": "https://pvme.io/guide-editor/"
+      },
+      "location": {
+        "start": 183197,
+        "end": 183253
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "h1",
+      "attrs": {
+        "id": "pvme-style-guide"
+      },
+      "text": "PvME Style Guide",
+      "location": {
+        "start": 168148,
+        "end": 168195
+      }
+    },
+    {
+      "index": 1,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168195,
+        "end": 168196
+      }
+    },
+    {
+      "index": 2,
+      "tag": "p",
+      "attrs": {},
+      "text": "Consistency makes guides easier to read and maintain. This guide covers formatting, structure, and PvME-specific conventions.",
+      "location": {
+        "start": 168196,
+        "end": 168328
+      }
+    },
+    {
+      "index": 3,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168328,
+        "end": 168329
+      }
+    },
+    {
+      "index": 4,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 168329,
+        "end": 168344
+      }
+    },
+    {
+      "index": 5,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168344,
+        "end": 168345
+      }
+    },
+    {
+      "index": 6,
+      "tag": "h2",
+      "attrs": {
+        "id": "sections-templates"
+      },
+      "text": "Sections & Templates",
+      "location": {
+        "start": 168345,
+        "end": 168413
+      }
+    },
+    {
+      "index": 7,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168413,
+        "end": 168414
+      }
+    },
+    {
+      "index": 8,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ We have various types of guides, each of which has a unique structure and sections within",
+      "location": {
+        "start": 168414,
+        "end": 168512
+      }
+    },
+    {
+      "index": 9,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168512,
+        "end": 168513
+      }
+    },
+    {
+      "index": 10,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Most templates you will require can be found on the Guide Editor:",
+      "location": {
+        "start": 168513,
+        "end": 168631
+      }
+    },
+    {
+      "index": 11,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168631,
+        "end": 168632
+      }
+    },
+    {
+      "index": 12,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n​",
+      "location": {
+        "start": 168632,
+        "end": 168715
+      }
+    },
+    {
+      "index": 13,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168715,
+        "end": 168716
+      }
+    },
+    {
+      "index": 14,
+      "tag": "h2",
+      "attrs": {
+        "id": "language-formatting"
+      },
+      "text": "Language & Formatting",
+      "location": {
+        "start": 168716,
+        "end": 168786
+      }
+    },
+    {
+      "index": 15,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168786,
+        "end": 168787
+      }
+    },
+    {
+      "index": 16,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Use UK English (e.g. armour, not armour; defence, not defense)",
+      "location": {
+        "start": 168787,
+        "end": 168858
+      }
+    },
+    {
+      "index": 17,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168858,
+        "end": 168859
+      }
+    },
+    {
+      "index": 18,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Date format: 22nd July 2013",
+      "location": {
+        "start": 168859,
+        "end": 168895
+      }
+    },
+    {
+      "index": 19,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168895,
+        "end": 168896
+      }
+    },
+    {
+      "index": 20,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Do not end lines with blank space (this is referred to as \"trailing whitespace\")",
+      "location": {
+        "start": 168896,
+        "end": 168985
+      }
+    },
+    {
+      "index": 21,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168985,
+        "end": 168986
+      }
+    },
+    {
+      "index": 22,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 168986,
+        "end": 169001
+      }
+    },
+    {
+      "index": 23,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169001,
+        "end": 169002
+      }
+    },
+    {
+      "index": 24,
+      "tag": "h3",
+      "attrs": {
+        "id": "styling-punctuation"
+      },
+      "text": "Styling & Punctuation",
+      "location": {
+        "start": 169002,
+        "end": 169072
+      }
+    },
+    {
+      "index": 25,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169072,
+        "end": 169073
+      }
+    },
+    {
+      "index": 26,
+      "tag": "p",
+      "attrs": {},
+      "text": "Always end full sentences with a full stop / period",
+      "location": {
+        "start": 169073,
+        "end": 169131
+      }
+    },
+    {
+      "index": 27,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169131,
+        "end": 169132
+      }
+    },
+    {
+      "index": 28,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Exceptions:",
+      "location": {
+        "start": 169132,
+        "end": 169152
+      }
+    },
+    {
+      "index": 29,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169152,
+        "end": 169153
+      }
+    },
+    {
+      "index": 30,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• bullet points should not end in a full stop",
+      "location": {
+        "start": 169153,
+        "end": 169223
+      }
+    },
+    {
+      "index": 31,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169223,
+        "end": 169224
+      }
+    },
+    {
+      "index": 32,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Any sentence ending in an emoji should not end in a full stop 🚀",
+      "location": {
+        "start": 169224,
+        "end": 169315
+      }
+    },
+    {
+      "index": 33,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169315,
+        "end": 169316
+      }
+    },
+    {
+      "index": 34,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 169316,
+        "end": 169331
+      }
+    },
+    {
+      "index": 35,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169331,
+        "end": 169332
+      }
+    },
+    {
+      "index": 36,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Text styles:",
+      "location": {
+        "start": 169332,
+        "end": 169353
+      }
+    },
+    {
+      "index": 37,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169353,
+        "end": 169354
+      }
+    },
+    {
+      "index": 38,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• **Bold** ‎– Key items or emphases",
+      "location": {
+        "start": 169354,
+        "end": 169416
+      }
+    },
+    {
+      "index": 39,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169416,
+        "end": 169417
+      }
+    },
+    {
+      "index": 40,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• *Italic* ‎– Inline notes or footnotes",
+      "location": {
+        "start": 169417,
+        "end": 169483
+      }
+    },
+    {
+      "index": 41,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169483,
+        "end": 169484
+      }
+    },
+    {
+      "index": 42,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• __Underline__ ‎– Optional emphasis",
+      "location": {
+        "start": 169484,
+        "end": 169547
+      }
+    },
+    {
+      "index": 43,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169547,
+        "end": 169548
+      }
+    },
+    {
+      "index": 44,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 169548,
+        "end": 169563
+      }
+    },
+    {
+      "index": 45,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169563,
+        "end": 169564
+      }
+    },
+    {
+      "index": 46,
+      "tag": "h3",
+      "attrs": {
+        "id": "emojis"
+      },
+      "text": "Emojis",
+      "location": {
+        "start": 169564,
+        "end": 169602
+      }
+    },
+    {
+      "index": 47,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169602,
+        "end": 169603
+      }
+    },
+    {
+      "index": 48,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Spacing: Emojis require a space before and after:",
+      "location": {
+        "start": 169603,
+        "end": 169695
+      }
+    },
+    {
+      "index": 49,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169695,
+        "end": 169696
+      }
+    },
+    {
+      "index": 50,
+      "tag": "pre",
+      "attrs": {},
+      "text": "❌ Detonate<:deto:123> is a spell.\n❌ Spellbook Swap <:SBS:543875425055670275>is a spell.\n✅ Spellbook Swap <:SBS:543875425055670275> is a spell.\n",
+      "location": {
+        "start": 169696,
+        "end": 169881
+      }
+    },
+    {
+      "index": 51,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169881,
+        "end": 169882
+      }
+    },
+    {
+      "index": 52,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 169882,
+        "end": 169897
+      }
+    },
+    {
+      "index": 53,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169897,
+        "end": 169898
+      }
+    },
+    {
+      "index": 54,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ There are a few exceptions where spaces are not needed:",
+      "location": {
+        "start": 169898,
+        "end": 169979
+      }
+    },
+    {
+      "index": 55,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169979,
+        "end": 169980
+      }
+    },
+    {
+      "index": 56,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Letter prefixes (r, s, _)",
+      "location": {
+        "start": 169980,
+        "end": 170060
+      }
+    },
+    {
+      "index": 57,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170060,
+        "end": 170061
+      }
+    },
+    {
+      "index": 58,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Punctuation/backslash/backtick prefixes",
+      "location": {
+        "start": 170061,
+        "end": 170116
+      }
+    },
+    {
+      "index": 59,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170116,
+        "end": 170117
+      }
+    },
+    {
+      "index": 60,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Trailing punctuation or underscore",
+      "location": {
+        "start": 170117,
+        "end": 170167
+      }
+    },
+    {
+      "index": 61,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170167,
+        "end": 170168
+      }
+    },
+    {
+      "index": 62,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Inside backticks (embeds)",
+      "location": {
+        "start": 170168,
+        "end": 170209
+      }
+    },
+    {
+      "index": 63,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170209,
+        "end": 170210
+      }
+    },
+    {
+      "index": 64,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Invisible characters",
+      "location": {
+        "start": 170210,
+        "end": 170246
+      }
+    },
+    {
+      "index": 65,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170246,
+        "end": 170247
+      }
+    },
+    {
+      "index": 66,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Allowed examples:",
+      "location": {
+        "start": 170247,
+        "end": 170280
+      }
+    },
+    {
+      "index": 67,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170280,
+        "end": 170281
+      }
+    },
+    {
+      "index": 68,
+      "tag": "pre",
+      "attrs": {},
+      "text": "r<:emoji:1> <:emoji:7>. \"… <:emoji:4> …\" <:emoji:7>! `…<:emoji:11>…` <emoji:73>\\n\\u00a0\n",
+      "location": {
+        "start": 170281,
+        "end": 170439
+      }
+    },
+    {
+      "index": 69,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170439,
+        "end": 170440
+      }
+    },
+    {
+      "index": 70,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 170440,
+        "end": 170455
+      }
+    },
+    {
+      "index": 71,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170455,
+        "end": 170456
+      }
+    },
+    {
+      "index": 72,
+      "tag": "h3",
+      "attrs": {
+        "id": "notes"
+      },
+      "text": "Notes",
+      "location": {
+        "start": 170456,
+        "end": 170492
+      }
+    },
+    {
+      "index": 73,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170492,
+        "end": 170493
+      }
+    },
+    {
+      "index": 74,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Use sparingly to highlight key info",
+      "location": {
+        "start": 170493,
+        "end": 170537
+      }
+    },
+    {
+      "index": 75,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170537,
+        "end": 170538
+      }
+    },
+    {
+      "index": 76,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Put notes below their related content",
+      "location": {
+        "start": 170538,
+        "end": 170593
+      }
+    },
+    {
+      "index": 77,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170593,
+        "end": 170594
+      }
+    },
+    {
+      "index": 78,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ For a single note, show it in-line and italic:",
+      "location": {
+        "start": 170594,
+        "end": 170649
+      }
+    },
+    {
+      "index": 79,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170649,
+        "end": 170650
+      }
+    },
+    {
+      "index": 80,
+      "tag": "pre",
+      "attrs": {},
+      "text": "*Note: This is a note.*\n",
+      "location": {
+        "start": 170650,
+        "end": 170698
+      }
+    },
+    {
+      "index": 81,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170698,
+        "end": 170699
+      }
+    },
+    {
+      "index": 82,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ For multiple notes, show as bullets and italic:",
+      "location": {
+        "start": 170699,
+        "end": 170755
+      }
+    },
+    {
+      "index": 83,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170755,
+        "end": 170756
+      }
+    },
+    {
+      "index": 84,
+      "tag": "pre",
+      "attrs": {},
+      "text": "*Notes:*\n⬥ *This is a note*\n⬥ *This is another note*\n",
+      "location": {
+        "start": 170756,
+        "end": 170833
+      }
+    },
+    {
+      "index": 85,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170833,
+        "end": 170834
+      }
+    },
+    {
+      "index": 86,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 170834,
+        "end": 170849
+      }
+    },
+    {
+      "index": 87,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170849,
+        "end": 170850
+      }
+    },
+    {
+      "index": 88,
+      "tag": "h3",
+      "attrs": {
+        "id": "headings"
+      },
+      "text": "Headings",
+      "location": {
+        "start": 170850,
+        "end": 170892
+      }
+    },
+    {
+      "index": 89,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170892,
+        "end": 170893
+      }
+    },
+    {
+      "index": 90,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Headings represent sections and sub-sections",
+      "location": {
+        "start": 170893,
+        "end": 170946
+      }
+    },
+    {
+      "index": 91,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170946,
+        "end": 170947
+      }
+    },
+    {
+      "index": 92,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 170947,
+        "end": 170962
+      }
+    },
+    {
+      "index": 93,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170962,
+        "end": 170963
+      }
+    },
+    {
+      "index": 94,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Always put a . ‎on the line before any heading (ignore the backslash \\ ‎in the below example)",
+      "location": {
+        "start": 170963,
+        "end": 171091
+      }
+    },
+    {
+      "index": 95,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171091,
+        "end": 171092
+      }
+    },
+    {
+      "index": 96,
+      "tag": "pre",
+      "attrs": {},
+      "text": "<End of previous section>\n\n\\.\n## __Section 2__\nThis is the new section\n",
+      "location": {
+        "start": 171092,
+        "end": 171193
+      }
+    },
+    {
+      "index": 97,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171193,
+        "end": 171194
+      }
+    },
+    {
+      "index": 98,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 171194,
+        "end": 171209
+      }
+    },
+    {
+      "index": 99,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171209,
+        "end": 171210
+      }
+    },
+    {
+      "index": 100,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Use # ‎and underline the title",
+      "location": {
+        "start": 171210,
+        "end": 171262
+      }
+    },
+    {
+      "index": 101,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171262,
+        "end": 171263
+      }
+    },
+    {
+      "index": 102,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Use ## ‎/ ### ‎and underline level 1 and 2 headings",
+      "location": {
+        "start": 171263,
+        "end": 171349
+      }
+    },
+    {
+      "index": 103,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171349,
+        "end": 171350
+      }
+    },
+    {
+      "index": 104,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Level 3 headings:",
+      "location": {
+        "start": 171350,
+        "end": 171376
+      }
+    },
+    {
+      "index": 105,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171376,
+        "end": 171377
+      }
+    },
+    {
+      "index": 106,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Discord doesn't allow #### ‎for level 3 headings",
+      "location": {
+        "start": 171377,
+        "end": 171454
+      }
+    },
+    {
+      "index": 107,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171454,
+        "end": 171455
+      }
+    },
+    {
+      "index": 108,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Therefore remove the underline to distinguish",
+      "location": {
+        "start": 171455,
+        "end": 171516
+      }
+    },
+    {
+      "index": 109,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171516,
+        "end": 171517
+      }
+    },
+    {
+      "index": 110,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 171517,
+        "end": 171532
+      }
+    },
+    {
+      "index": 111,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171532,
+        "end": 171533
+      }
+    },
+    {
+      "index": 112,
+      "tag": "pre",
+      "attrs": {},
+      "text": "# Title\n## __Section 1__\n### __Sub-section 1.1__\n### Sub-sub-section 1.1.1\n\n## __Section 2__\n\n## __Section 3__\n### __Sub-section 3.1__\n",
+      "location": {
+        "start": 171533,
+        "end": 171692
+      }
+    },
+    {
+      "index": 113,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171692,
+        "end": 171693
+      }
+    },
+    {
+      "index": 114,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 171693,
+        "end": 171708
+      }
+    },
+    {
+      "index": 115,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171708,
+        "end": 171709
+      }
+    },
+    {
+      "index": 116,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Headings should be capitalised following the Oxford style:",
+      "location": {
+        "start": 171709,
+        "end": 171776
+      }
+    },
+    {
+      "index": 117,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171776,
+        "end": 171777
+      }
+    },
+    {
+      "index": 118,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n✅ Capitalise\n⬥ First and last word\n⬥ Nouns\n⬥ Pronouns\n⬥ Verbs\n⬥ Adjectives\n⬥ Adverbs\n⬥ Any word over four letters\n❌ Don’t capitalise\n⬥ Articles (a, an, the)\n⬥ Prepositions (to, on, in, for, with, etc.)\n⬥ Conjunctions (and, but, or, nor, etc.)\n\n\n\n\n\n\n",
+      "location": {
+        "start": 171777,
+        "end": 172989
+      }
+    },
+    {
+      "index": 119,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 172989,
+        "end": 172991
+      }
+    },
+    {
+      "index": 120,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 172991,
+        "end": 173006
+      }
+    },
+    {
+      "index": 121,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173006,
+        "end": 173007
+      }
+    },
+    {
+      "index": 122,
+      "tag": "h3",
+      "attrs": {
+        "id": "lists"
+      },
+      "text": "Lists",
+      "location": {
+        "start": 173007,
+        "end": 173043
+      }
+    },
+    {
+      "index": 123,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173043,
+        "end": 173044
+      }
+    },
+    {
+      "index": 124,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Bulleted lists use different characters depending on the level",
+      "location": {
+        "start": 173044,
+        "end": 173115
+      }
+    },
+    {
+      "index": 125,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173115,
+        "end": 173116
+      }
+    },
+    {
+      "index": 126,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Level 2 bullets should be indented 4 spaces",
+      "location": {
+        "start": 173116,
+        "end": 173175
+      }
+    },
+    {
+      "index": 127,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173175,
+        "end": 173176
+      }
+    },
+    {
+      "index": 128,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Level 3 bullets should be indented 8 spaces",
+      "location": {
+        "start": 173176,
+        "end": 173243
+      }
+    },
+    {
+      "index": 129,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173243,
+        "end": 173244
+      }
+    },
+    {
+      "index": 130,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 173244,
+        "end": 173259
+      }
+    },
+    {
+      "index": 131,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173259,
+        "end": 173260
+      }
+    },
+    {
+      "index": 132,
+      "tag": "p",
+      "attrs": {},
+      "text": "1) Numbered Lists follow the same rules with indentation",
+      "location": {
+        "start": 173260,
+        "end": 173323
+      }
+    },
+    {
+      "index": 133,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173323,
+        "end": 173324
+      }
+    },
+    {
+      "index": 134,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎a) Level 2 should use letters",
+      "location": {
+        "start": 173324,
+        "end": 173367
+      }
+    },
+    {
+      "index": 135,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173367,
+        "end": 173368
+      }
+    },
+    {
+      "index": 136,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Level 3 should be bullets",
+      "location": {
+        "start": 173368,
+        "end": 173417
+      }
+    },
+    {
+      "index": 137,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173417,
+        "end": 173418
+      }
+    },
+    {
+      "index": 138,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 173418,
+        "end": 173433
+      }
+    },
+    {
+      "index": 139,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173433,
+        "end": 173434
+      }
+    },
+    {
+      "index": 140,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Where visually dense, you may add line breaks between list items (like above this bullet)",
+      "location": {
+        "start": 173434,
+        "end": 173532
+      }
+    },
+    {
+      "index": 141,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173532,
+        "end": 173533
+      }
+    },
+    {
+      "index": 142,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 173533,
+        "end": 173548
+      }
+    },
+    {
+      "index": 143,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173548,
+        "end": 173549
+      }
+    },
+    {
+      "index": 144,
+      "tag": "h3",
+      "attrs": {
+        "id": "links-and-embedded-content"
+      },
+      "text": "Links and Embedded Content",
+      "location": {
+        "start": 173549,
+        "end": 173627
+      }
+    },
+    {
+      "index": 145,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173627,
+        "end": 173628
+      }
+    },
+    {
+      "index": 146,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Only use content from https://runescape.wiki/, https://www.youtube.com/ ‎or https://img.pvme.io/ ‎(via #guide-media-upload-and-request)",
+      "location": {
+        "start": 173628,
+        "end": 173847
+      }
+    },
+    {
+      "index": 147,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173847,
+        "end": 173848
+      }
+    },
+    {
+      "index": 148,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Add angled brackets <> ‎around links to prevent them showing inline",
+      "location": {
+        "start": 173848,
+        "end": 173943
+      }
+    },
+    {
+      "index": 149,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173943,
+        "end": 173944
+      }
+    },
+    {
+      "index": 150,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• For example, [Greater Fury](<https://runescape.wiki/w/Greater_Fury>)​",
+      "location": {
+        "start": 173944,
+        "end": 174055
+      }
+    },
+    {
+      "index": 151,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174055,
+        "end": 174056
+      }
+    },
+    {
+      "index": 152,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 174056,
+        "end": 174071
+      }
+    },
+    {
+      "index": 153,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174071,
+        "end": 174072
+      }
+    },
+    {
+      "index": 154,
+      "tag": "h3",
+      "attrs": {
+        "id": "useful-markdown-github-syntax"
+      },
+      "text": "Useful Markdown & GitHub Syntax",
+      "location": {
+        "start": 174072,
+        "end": 174162
+      }
+    },
+    {
+      "index": 155,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174162,
+        "end": 174163
+      }
+    },
+    {
+      "index": 156,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ ‎`code` ‎ ‎for inline code",
+      "location": {
+        "start": 174163,
+        "end": 174211
+      }
+    },
+    {
+      "index": 157,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174211,
+        "end": 174212
+      }
+    },
+    {
+      "index": 158,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ .img:<url> ‎for images",
+      "location": {
+        "start": 174212,
+        "end": 174262
+      }
+    },
+    {
+      "index": 159,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174262,
+        "end": 174263
+      }
+    },
+    {
+      "index": 160,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ .tag:sectionName ‎for ToC section targets",
+      "location": {
+        "start": 174263,
+        "end": 174326
+      }
+    },
+    {
+      "index": 161,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174326,
+        "end": 174327
+      }
+    },
+    {
+      "index": 162,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• $linkmsg_sectionName$ ‎for linking to that section",
+      "location": {
+        "start": 174327,
+        "end": 174406
+      }
+    },
+    {
+      "index": 163,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174406,
+        "end": 174407
+      }
+    },
+    {
+      "index": 164,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 174407,
+        "end": 174422
+      }
+    },
+    {
+      "index": 165,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174422,
+        "end": 174423
+      }
+    },
+    {
+      "index": 166,
+      "tag": "h2",
+      "attrs": {
+        "id": "filenames"
+      },
+      "text": "Filenames",
+      "location": {
+        "start": 174423,
+        "end": 174467
+      }
+    },
+    {
+      "index": 167,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174467,
+        "end": 174468
+      }
+    },
+    {
+      "index": 168,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Filenames should follow these naming patterns:",
+      "location": {
+        "start": 174468,
+        "end": 174523
+      }
+    },
+    {
+      "index": 169,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174523,
+        "end": 174524
+      }
+    },
+    {
+      "index": 170,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Basic guides: {bossName}-basic.txt​",
+      "location": {
+        "start": 174524,
+        "end": 174595
+      }
+    },
+    {
+      "index": 171,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174595,
+        "end": 174596
+      }
+    },
+    {
+      "index": 172,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Combat Achievements: {bossName}-ca.txt​",
+      "location": {
+        "start": 174596,
+        "end": 174671
+      }
+    },
+    {
+      "index": 173,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174671,
+        "end": 174672
+      }
+    },
+    {
+      "index": 174,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Commands: {commandName}.txt​",
+      "location": {
+        "start": 174672,
+        "end": 174736
+      }
+    },
+    {
+      "index": 175,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174736,
+        "end": 174737
+      }
+    },
+    {
+      "index": 176,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• DPM Advice: dpm-advice-{style}.txt​",
+      "location": {
+        "start": 174737,
+        "end": 174808
+      }
+    },
+    {
+      "index": 177,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174808,
+        "end": 174809
+      }
+    },
+    {
+      "index": 178,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• One-tick guides: {bossName}-one-tick.txt​",
+      "location": {
+        "start": 174809,
+        "end": 174886
+      }
+    },
+    {
+      "index": 179,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174886,
+        "end": 174887
+      }
+    },
+    {
+      "index": 180,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Full Boss guides: {bossName}-{difficulty}-{style}.txt​",
+      "location": {
+        "start": 174887,
+        "end": 174977
+      }
+    },
+    {
+      "index": 181,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174977,
+        "end": 174978
+      }
+    },
+    {
+      "index": 182,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ {difficulty} ‎is optional; either hm ‎or nm​",
+      "location": {
+        "start": 174978,
+        "end": 175092
+      }
+    },
+    {
+      "index": 183,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175092,
+        "end": 175093
+      }
+    },
+    {
+      "index": 184,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ {style} ‎is optional; either ranged, magic, melee, necromancy, hybrid​",
+      "location": {
+        "start": 175093,
+        "end": 175272
+      }
+    },
+    {
+      "index": 185,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175272,
+        "end": 175273
+      }
+    },
+    {
+      "index": 186,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Slayer: {monsterName}.txt​",
+      "location": {
+        "start": 175273,
+        "end": 175335
+      }
+    },
+    {
+      "index": 187,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175335,
+        "end": 175336
+      }
+    },
+    {
+      "index": 188,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 175336,
+        "end": 175351
+      }
+    },
+    {
+      "index": 189,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175351,
+        "end": 175352
+      }
+    },
+    {
+      "index": 190,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ If not listed above, hyphenate the title:",
+      "location": {
+        "start": 175352,
+        "end": 175402
+      }
+    },
+    {
+      "index": 191,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175402,
+        "end": 175403
+      }
+    },
+    {
+      "index": 192,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• e.g., interface-guide.txt​",
+      "location": {
+        "start": 175403,
+        "end": 175465
+      }
+    },
+    {
+      "index": 193,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175465,
+        "end": 175466
+      }
+    },
+    {
+      "index": 194,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 175466,
+        "end": 175481
+      }
+    },
+    {
+      "index": 195,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175481,
+        "end": 175482
+      }
+    },
+    {
+      "index": 196,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ These naming patterns should also apply if the file is inside the boss folder, e.g. /sanctum/sanctum-hm-ranged.txt​",
+      "location": {
+        "start": 175482,
+        "end": 175626
+      }
+    },
+    {
+      "index": 197,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175626,
+        "end": 175627
+      }
+    },
+    {
+      "index": 198,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 175627,
+        "end": 175642
+      }
+    },
+    {
+      "index": 199,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175642,
+        "end": 175643
+      }
+    },
+    {
+      "index": 200,
+      "tag": "h2",
+      "attrs": {
+        "id": "presets"
+      },
+      "text": "Presets",
+      "location": {
+        "start": 175643,
+        "end": 175683
+      }
+    },
+    {
+      "index": 201,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175683,
+        "end": 175684
+      }
+    },
+    {
+      "index": 202,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Create and link to presets in our Preset Maker tool (#unknown-channel)",
+      "location": {
+        "start": 175684,
+        "end": 175799
+      }
+    },
+    {
+      "index": 203,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175799,
+        "end": 175800
+      }
+    },
+    {
+      "index": 204,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Multiple presets may be created for different situations",
+      "location": {
+        "start": 175800,
+        "end": 175865
+      }
+    },
+    {
+      "index": 205,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175865,
+        "end": 175866
+      }
+    },
+    {
+      "index": 206,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Links to presets should be in the following pattern:",
+      "location": {
+        "start": 175866,
+        "end": 175927
+      }
+    },
+    {
+      "index": 207,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175927,
+        "end": 175928
+      }
+    },
+    {
+      "index": 208,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• {Combat style} - {Basic/Advanced/Tier}​",
+      "location": {
+        "start": 175928,
+        "end": 176003
+      }
+    },
+    {
+      "index": 209,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176003,
+        "end": 176004
+      }
+    },
+    {
+      "index": 210,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ e.g., Necromancy - Basic / Necromancy - T95/100",
+      "location": {
+        "start": 176004,
+        "end": 176107
+      }
+    },
+    {
+      "index": 211,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176107,
+        "end": 176108
+      }
+    },
+    {
+      "index": 212,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Only the last link should be shown - the rest should be hidden by wrapping the link in <>:",
+      "location": {
+        "start": 176108,
+        "end": 176233
+      }
+    },
+    {
+      "index": 213,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176233,
+        "end": 176234
+      }
+    },
+    {
+      "index": 214,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ e.g., https://presets.pvme.io?id=presetID",
+      "location": {
+        "start": 176234,
+        "end": 176349
+      }
+    },
+    {
+      "index": 215,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176349,
+        "end": 176350
+      }
+    },
+    {
+      "index": 216,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Avoid dyed gear or overpriced items which do not feature in #upgrade-order",
+      "location": {
+        "start": 176350,
+        "end": 176469
+      }
+    },
+    {
+      "index": 217,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176469,
+        "end": 176470
+      }
+    },
+    {
+      "index": 218,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Be consistent with:",
+      "location": {
+        "start": 176470,
+        "end": 176498
+      }
+    },
+    {
+      "index": 219,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176498,
+        "end": 176499
+      }
+    },
+    {
+      "index": 220,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Rune pouch colours (#armour-and-weapons)",
+      "location": {
+        "start": 176499,
+        "end": 176591
+      }
+    },
+    {
+      "index": 221,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176591,
+        "end": 176592
+      }
+    },
+    {
+      "index": 222,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• EoF emojis (#eof-specs)",
+      "location": {
+        "start": 176592,
+        "end": 176667
+      }
+    },
+    {
+      "index": 223,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176667,
+        "end": 176668
+      }
+    },
+    {
+      "index": 224,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 176668,
+        "end": 176683
+      }
+    },
+    {
+      "index": 225,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176683,
+        "end": 176684
+      }
+    },
+    {
+      "index": 226,
+      "tag": "h3",
+      "attrs": {
+        "id": "using-notes-in-presets"
+      },
+      "text": "Using Notes in Presets",
+      "location": {
+        "start": 176684,
+        "end": 176754
+      }
+    },
+    {
+      "index": 227,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176754,
+        "end": 176755
+      }
+    },
+    {
+      "index": 228,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Notes relating to specific preset gear/items should be added to the Preset Maker",
+      "location": {
+        "start": 176755,
+        "end": 176844
+      }
+    },
+    {
+      "index": 229,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176844,
+        "end": 176845
+      }
+    },
+    {
+      "index": 230,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Do not add notes to the guide, for example below the Preset image",
+      "location": {
+        "start": 176845,
+        "end": 176926
+      }
+    },
+    {
+      "index": 231,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176926,
+        "end": 176927
+      }
+    },
+    {
+      "index": 232,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 176927,
+        "end": 176942
+      }
+    },
+    {
+      "index": 233,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176942,
+        "end": 176943
+      }
+    },
+    {
+      "index": 234,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Add a note for any non-standard gear or niche items",
+      "location": {
+        "start": 176943,
+        "end": 177003
+      }
+    },
+    {
+      "index": 235,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177003,
+        "end": 177004
+      }
+    },
+    {
+      "index": 236,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Add a note on any gear where perks differ from standard ones listed in #perks",
+      "location": {
+        "start": 177004,
+        "end": 177126
+      }
+    },
+    {
+      "index": 237,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177126,
+        "end": 177127
+      }
+    },
+    {
+      "index": 238,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 177127,
+        "end": 177142
+      }
+    },
+    {
+      "index": 239,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177142,
+        "end": 177143
+      }
+    },
+    {
+      "index": 240,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ For AFK guides, notes may be added to the Mandatory AFK Requirements ‎embed for:",
+      "location": {
+        "start": 177143,
+        "end": 177245
+      }
+    },
+    {
+      "index": 241,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177245,
+        "end": 177246
+      }
+    },
+    {
+      "index": 242,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Required ability unlocks (including  Talent Tree)",
+      "location": {
+        "start": 177246,
+        "end": 177436
+      }
+    },
+    {
+      "index": 243,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177436,
+        "end": 177437
+      }
+    },
+    {
+      "index": 244,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Mandatory gear/items differing from those listed in #unknown-channel",
+      "location": {
+        "start": 177437,
+        "end": 177557
+      }
+    },
+    {
+      "index": 245,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177557,
+        "end": 177558
+      }
+    },
+    {
+      "index": 246,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 177558,
+        "end": 177573
+      }
+    },
+    {
+      "index": 247,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177573,
+        "end": 177574
+      }
+    },
+    {
+      "index": 248,
+      "tag": "h2",
+      "attrs": {
+        "id": "rotations"
+      },
+      "text": "Rotations",
+      "location": {
+        "start": 177574,
+        "end": 177618
+      }
+    },
+    {
+      "index": 249,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177618,
+        "end": 177619
+      }
+    },
+    {
+      "index": 250,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Use full emoji codes, e.g., <:emoji:ID>​",
+      "location": {
+        "start": 177619,
+        "end": 177787
+      }
+    },
+    {
+      "index": 251,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177787,
+        "end": 177788
+      }
+    },
+    {
+      "index": 252,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 177788,
+        "end": 177803
+      }
+    },
+    {
+      "index": 253,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177803,
+        "end": 177804
+      }
+    },
+    {
+      "index": 254,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Use + ‎to combine same-tick actions, e.g.,  + ",
+      "location": {
+        "start": 177804,
+        "end": 178119
+      }
+    },
+    {
+      "index": 255,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178119,
+        "end": 178120
+      }
+    },
+    {
+      "index": 256,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 178120,
+        "end": 178135
+      }
+    },
+    {
+      "index": 257,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178135,
+        "end": 178136
+      }
+    },
+    {
+      "index": 258,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Use → ‎to separate ticks and GCDs, e.g.,  → ",
+      "location": {
+        "start": 178136,
+        "end": 178428
+      }
+    },
+    {
+      "index": 259,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178428,
+        "end": 178429
+      }
+    },
+    {
+      "index": 260,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 178429,
+        "end": 178444
+      }
+    },
+    {
+      "index": 261,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178444,
+        "end": 178445
+      }
+    },
+    {
+      "index": 262,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Use () ‎for:",
+      "location": {
+        "start": 178445,
+        "end": 178479
+      }
+    },
+    {
+      "index": 263,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178479,
+        "end": 178480
+      }
+    },
+    {
+      "index": 264,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Target cycle (tc)",
+      "location": {
+        "start": 178480,
+        "end": 178513
+      }
+    },
+    {
+      "index": 265,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178513,
+        "end": 178514
+      }
+    },
+    {
+      "index": 266,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Auto attacks (auto)",
+      "location": {
+        "start": 178514,
+        "end": 178549
+      }
+    },
+    {
+      "index": 267,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178549,
+        "end": 178550
+      }
+    },
+    {
+      "index": 268,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Waiting (2t) - ticks are from previous action",
+      "location": {
+        "start": 178550,
+        "end": 178611
+      }
+    },
+    {
+      "index": 269,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178611,
+        "end": 178612
+      }
+    },
+    {
+      "index": 270,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Channel durations (3 hit)",
+      "location": {
+        "start": 178612,
+        "end": 178653
+      }
+    },
+    {
+      "index": 271,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178653,
+        "end": 178654
+      }
+    },
+    {
+      "index": 272,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Weapon types (DW) / (2H)",
+      "location": {
+        "start": 178654,
+        "end": 178694
+      }
+    },
+    {
+      "index": 273,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178694,
+        "end": 178695
+      }
+    },
+    {
+      "index": 274,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Autocasting ()",
+      "location": {
+        "start": 178695,
+        "end": 178853
+      }
+    },
+    {
+      "index": 275,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178853,
+        "end": 178854
+      }
+    },
+    {
+      "index": 276,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 178854,
+        "end": 178869
+      }
+    },
+    {
+      "index": 277,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178869,
+        "end": 178870
+      }
+    },
+    {
+      "index": 278,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Include non-ability actions, e.g.,      ",
+      "location": {
+        "start": 178870,
+        "end": 179659
+      }
+    },
+    {
+      "index": 279,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179659,
+        "end": 179660
+      }
+    },
+    {
+      "index": 280,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 179660,
+        "end": 179675
+      }
+    },
+    {
+      "index": 281,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179675,
+        "end": 179676
+      }
+    },
+    {
+      "index": 282,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Use s ‎and r ‎to represent stall & release, e.g.:",
+      "location": {
+        "start": 179676,
+        "end": 179764
+      }
+    },
+    {
+      "index": 283,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179764,
+        "end": 179765
+      }
+    },
+    {
+      "index": 284,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• s<ability> → r<ability> + <nextability>​",
+      "location": {
+        "start": 179765,
+        "end": 179859
+      }
+    },
+    {
+      "index": 285,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179859,
+        "end": 179860
+      }
+    },
+    {
+      "index": 286,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 179860,
+        "end": 179875
+      }
+    },
+    {
+      "index": 287,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179875,
+        "end": 179876
+      }
+    },
+    {
+      "index": 288,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Use  and  properly, e.g.:",
+      "location": {
+        "start": 179876,
+        "end": 180141
+      }
+    },
+    {
+      "index": 289,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180141,
+        "end": 180142
+      }
+    },
+    {
+      "index": 290,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Weapon specs: <:sgb> <:spec> ‎ ",
+      "location": {
+        "start": 180142,
+        "end": 180436
+      }
+    },
+    {
+      "index": 291,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180436,
+        "end": 180437
+      }
+    },
+    {
+      "index": 292,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• EOF specs: <:sgb> <:eofspec> ‎ ",
+      "location": {
+        "start": 180437,
+        "end": 180738
+      }
+    },
+    {
+      "index": 293,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180738,
+        "end": 180739
+      }
+    },
+    {
+      "index": 294,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 180739,
+        "end": 180754
+      }
+    },
+    {
+      "index": 295,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180754,
+        "end": 180755
+      }
+    },
+    {
+      "index": 296,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Show ammo swaps before and after abilities, e.g.:",
+      "location": {
+        "start": 180755,
+        "end": 180813
+      }
+    },
+    {
+      "index": 297,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180813,
+        "end": 180814
+      }
+    },
+    {
+      "index": 298,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Single ammo switch:  →    → etc.",
+      "location": {
+        "start": 180814,
+        "end": 181341
+      }
+    },
+    {
+      "index": 299,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 181341,
+        "end": 181342
+      }
+    },
+    {
+      "index": 300,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎⬩ Includes off-style abilities:   → etc.",
+      "location": {
+        "start": 181342,
+        "end": 181660
+      }
+    },
+    {
+      "index": 301,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 181660,
+        "end": 181661
+      }
+    },
+    {
+      "index": 302,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Multiple ammo switch (like \"wensporing\"):  →     → etc.",
+      "location": {
+        "start": 181661,
+        "end": 182349
+      }
+    },
+    {
+      "index": 303,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 182349,
+        "end": 182350
+      }
+    },
+    {
+      "index": 304,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 182350,
+        "end": 182365
+      }
+    },
+    {
+      "index": 305,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 182365,
+        "end": 182366
+      }
+    },
+    {
+      "index": 306,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ 0-tick abilities should follow this pattern:",
+      "location": {
+        "start": 182366,
+        "end": 182419
+      }
+    },
+    {
+      "index": 307,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 182419,
+        "end": 182420
+      }
+    },
+    {
+      "index": 308,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎•   (0tick)",
+      "location": {
+        "start": 182420,
+        "end": 182692
+      }
+    },
+    {
+      "index": 309,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 182692,
+        "end": 182693
+      }
+    },
+    {
+      "index": 310,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Add a note pointing to the !0tick ‎command",
+      "location": {
+        "start": 182693,
+        "end": 182764
+      }
+    },
+    {
+      "index": 311,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 182764,
+        "end": 182765
+      }
+    },
+    {
+      "index": 312,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 182765,
+        "end": 182780
+      }
+    },
+    {
+      "index": 313,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 182780,
+        "end": 182781
+      }
+    },
+    {
+      "index": 314,
+      "tag": "h2",
+      "attrs": {
+        "id": "table-of-contents-toc"
+      },
+      "text": "Table of Contents (ToC)",
+      "location": {
+        "start": 182781,
+        "end": 182851
+      }
+    },
+    {
+      "index": 315,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 182851,
+        "end": 182852
+      }
+    },
+    {
+      "index": 316,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Each guide ends with a pinned ToC section",
+      "location": {
+        "start": 182852,
+        "end": 182902
+      }
+    },
+    {
+      "index": 317,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 182902,
+        "end": 182903
+      }
+    },
+    {
+      "index": 318,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ ToC is always within a Discord embed",
+      "location": {
+        "start": 182903,
+        "end": 182948
+      }
+    },
+    {
+      "index": 319,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 182948,
+        "end": 182949
+      }
+    },
+    {
+      "index": 320,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Must be pinned – add .pin:delete ‎under it",
+      "location": {
+        "start": 182949,
+        "end": 183013
+      }
+    },
+    {
+      "index": 321,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 183013,
+        "end": 183014
+      }
+    },
+    {
+      "index": 322,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ The easiest way to create a ToC is to add a .tag: ‎after all relevant headings, then auto-generate your ToC using the Table of Contents ‎feature on the Guide Editor (see image below)",
+      "location": {
+        "start": 183014,
+        "end": 183275
+      }
+    },
+    {
+      "index": 323,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 183275,
+        "end": 183276
+      }
+    },
+    {
+      "index": 324,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• If using this method, you should check the words displayed as they may be abbreviated",
+      "location": {
+        "start": 183276,
+        "end": 183377
+      }
+    },
+    {
+      "index": 325,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 183377,
+        "end": 183378
+      }
+    },
+    {
+      "index": 326,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n​",
+      "location": {
+        "start": 183378,
+        "end": 183461
+      }
+    },
+    {
+      "index": 327,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 183461,
+        "end": 183462
+      }
+    },
+    {
+      "index": 328,
+      "tag": "p",
+      "attrs": {},
+      "text": "Example:",
+      "location": {
+        "start": 183462,
+        "end": 183477
+      }
+    },
+    {
+      "index": 329,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n      \n    ",
+      "location": {
+        "start": 183477,
+        "end": 183489
+      }
+    }
+  ]
+}

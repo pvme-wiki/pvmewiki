@@ -1,0 +1,1643 @@
+{
+  "schemaVersion": 1,
+  "captureVersion": 2,
+  "id": "pvme-guides--new-to-pvm--early-magic-upgrades",
+  "sourceURL": "https://pvme.io/pvme-guides/new-to-pvm/early-magic-upgrades/",
+  "officialURL": "https://pvme.io/pvme-guides/new-to-pvm/early-magic-upgrades/",
+  "responseURL": "https://pvme.io/pvme-guides/new-to-pvm/early-magic-upgrades/",
+  "status": "captured",
+  "statusCode": 200,
+  "retrievedAt": "2026-11-16T00:26:50.098Z",
+  "sitemapLastmod": "2026-11-15",
+  "sitemapSha256": "7166472554d36bfc69a7e14f7298264c0f9bfac00dc9034e5bfd0fba58a14b07",
+  "kind": "guide",
+  "audience": "player",
+  "title": "PvME/Combat foundations/Early Magic Upgrades",
+  "titleStatus": "existing-exact-url",
+  "baselineId": "pvme-guides--new-to-pvm--early-magic-upgrades",
+  "sourceTitle": "Magic  Upgrade Order & Ability Bars",
+  "sourceH1": "Magic  Upgrade Order & Ability Bars",
+  "discovery": "official-sitemap",
+  "directory": "guides/pvme-guides--new-to-pvm--early-magic-upgrades",
+  "sourceSha256": "32bd1df2b6d6bbe716171b14ae1755c21db17d6cbb5c3909cccfb9e60007d081",
+  "bodySha256": "32bd1df2b6d6bbe716171b14ae1755c21db17d6cbb5c3909cccfb9e60007d081",
+  "normalizedTextSha256": "13a3c5a3d0be4dc532ae58266f5de0157a6a256f099eb9b5c0d31474418dd366",
+  "parser": "parse5 8.1.1; entities 9.0.0; sourceCodeLocationInfo",
+  "headers": {
+    "accept-ranges": "bytes",
+    "access-control-allow-origin": "*",
+    "age": "0",
+    "cache-control": "max-age=600",
+    "connection": "keep-alive",
+    "content-encoding": "gzip",
+    "content-length": "18519",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Mon, 16 Nov 2026 00:26:50 GMT",
+    "etag": "W/\"6afa1a34-2e067\"",
+    "expires": "Mon, 16 Nov 2026 00:36:50 GMT",
+    "last-modified": "Sun, 15 Nov 2026 20:46:44 GMT",
+    "server": "GitHub.com",
+    "strict-transport-security": "max-age=31556952",
+    "vary": "Accept-Encoding",
+    "via": "1.1 varnish",
+    "x-cache": "MISS",
+    "x-cache-hits": "0",
+    "x-fastly-request-id": "ddcdf03a5541d182a953e90577e8636be15ee19a",
+    "x-github-edge-region": "iad",
+    "x-github-request-id": "6548:1DF22C:51F6392:584910A:6AFA4DCA",
+    "x-origin-cache": "HIT",
+    "x-proxy-cache": "MISS",
+    "x-served-by": "cache-iad-khef600037-IAD",
+    "x-timer": "S1794788811.522194,VS0,VE23"
+  },
+  "hashes": {
+    "responseSha256": "cff1b905c377641a0d22fc28f21fc37cf323d9010f72a6fb3842769866b03d6f",
+    "articleSha256": "32bd1df2b6d6bbe716171b14ae1755c21db17d6cbb5c3909cccfb9e60007d081",
+    "textSha256": "95e289817ec152fc38f622fb8ee2318bf5876316eeac3ca68367dc0ee54d24b1",
+    "normalizedTextSha256": "13a3c5a3d0be4dc532ae58266f5de0157a6a256f099eb9b5c0d31474418dd366"
+  },
+  "counts": {
+    "bytes": 188519,
+    "articleBytes": 18925,
+    "nodes": 612,
+    "topLevelNodes": 224,
+    "words": 1091,
+    "images": 78,
+    "videos": 0,
+    "sources": 0,
+    "links": 42
+  },
+  "tags": {
+    "h1": 1,
+    "img": 78,
+    "h2": 5,
+    "ins": 5,
+    "p": 97,
+    "strong": 11,
+    "h3": 9,
+    "a": 42,
+    "em": 3
+  },
+  "mediaHosts": {
+    "cdn.discordapp.com": 72,
+    "img.pvme.io": 6
+  },
+  "patterns": [],
+  "media": [
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 167945,
+        "end": 168059
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 168524,
+        "end": 168638
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 168676,
+        "end": 168790
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "airrune",
+        "class": "d-emoji",
+        "alt": "airrune",
+        "src": "https://cdn.discordapp.com/emojis/536252658986647589.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 169000,
+        "end": 169118
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 169130,
+        "end": 169244
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "airrune",
+        "class": "d-emoji",
+        "alt": "airrune",
+        "src": "https://cdn.discordapp.com/emojis/536252658986647589.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 169453,
+        "end": 169571
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "waterrune",
+        "class": "d-emoji",
+        "alt": "waterrune",
+        "src": "https://cdn.discordapp.com/emojis/536252660165115905.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 169572,
+        "end": 169694
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "earthrune",
+        "class": "d-emoji",
+        "alt": "earthrune",
+        "src": "https://cdn.discordapp.com/emojis/536252659808731137.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 169695,
+        "end": 169817
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "firerune",
+        "class": "d-emoji",
+        "alt": "firerune",
+        "src": "https://cdn.discordapp.com/emojis/536252659850674186.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 169818,
+        "end": 169938
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 169988,
+        "end": 170102
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 170146,
+        "end": 170260
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "defence",
+        "class": "d-emoji",
+        "alt": "defence",
+        "src": "https://cdn.discordapp.com/emojis/689509250979987525.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 170346,
+        "end": 170464
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "defence",
+        "class": "d-emoji",
+        "alt": "defence",
+        "src": "https://cdn.discordapp.com/emojis/689509250979987525.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 170624,
+        "end": 170742
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "defence",
+        "class": "d-emoji",
+        "alt": "defence",
+        "src": "https://cdn.discordapp.com/emojis/689509250979987525.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 171152,
+        "end": 171270
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 171366,
+        "end": 171480
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 171629,
+        "end": 171743
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/5JhxQueXvB.png"
+      },
+      "text": "",
+      "location": {
+        "start": 171752,
+        "end": 171819
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 171840,
+        "end": 171954
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "omni",
+        "class": "d-emoji",
+        "alt": "omni",
+        "src": "https://cdn.discordapp.com/emojis/535533809664262179.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 171959,
+        "end": 172071
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 172114,
+        "end": 172228
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deep",
+        "class": "d-emoji",
+        "alt": "deep",
+        "src": "https://cdn.discordapp.com/emojis/535533833139912724.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 172233,
+        "end": 172345
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 172403,
+        "end": 172517
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/AK8b1bEJyh.png"
+      },
+      "text": "",
+      "location": {
+        "start": 172564,
+        "end": 172631
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 172691,
+        "end": 172805
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 173174,
+        "end": 173288
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 173329,
+        "end": 173443
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "airrune",
+        "class": "d-emoji",
+        "alt": "airrune",
+        "src": "https://cdn.discordapp.com/emojis/536252658986647589.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 173575,
+        "end": 173693
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "waterrune",
+        "class": "d-emoji",
+        "alt": "waterrune",
+        "src": "https://cdn.discordapp.com/emojis/536252660165115905.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 173696,
+        "end": 173818
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "earthrune",
+        "class": "d-emoji",
+        "alt": "earthrune",
+        "src": "https://cdn.discordapp.com/emojis/536252659808731137.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 173821,
+        "end": 173943
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "firerune",
+        "class": "d-emoji",
+        "alt": "firerune",
+        "src": "https://cdn.discordapp.com/emojis/536252659850674186.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 173946,
+        "end": 174066
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 174079,
+        "end": 174193
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 174289,
+        "end": 174403
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "defence",
+        "class": "d-emoji",
+        "alt": "defence",
+        "src": "https://cdn.discordapp.com/emojis/689509250979987525.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 174947,
+        "end": 175065
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "defence",
+        "class": "d-emoji",
+        "alt": "defence",
+        "src": "https://cdn.discordapp.com/emojis/689509250979987525.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 175092,
+        "end": 175210
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "defence",
+        "class": "d-emoji",
+        "alt": "defence",
+        "src": "https://cdn.discordapp.com/emojis/689509250979987525.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 175464,
+        "end": 175582
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "defence",
+        "class": "d-emoji",
+        "alt": "defence",
+        "src": "https://cdn.discordapp.com/emojis/689509250979987525.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 176584,
+        "end": 176702
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 176784,
+        "end": 176898
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 176933,
+        "end": 177047
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/AK8b1bEJyh.png"
+      },
+      "text": "",
+      "location": {
+        "start": 177056,
+        "end": 177123
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 177145,
+        "end": 177259
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deto",
+        "class": "d-emoji",
+        "alt": "deto",
+        "src": "https://cdn.discordapp.com/emojis/535533833358016512.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 177276,
+        "end": 177388
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 177410,
+        "end": 177524
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "chain",
+        "class": "d-emoji",
+        "alt": "chain",
+        "src": "https://cdn.discordapp.com/emojis/1257440203401068566.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 177529,
+        "end": 177644
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 177702,
+        "end": 177816
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/s4fWdNNQ0C.png"
+      },
+      "text": "",
+      "location": {
+        "start": 177863,
+        "end": 177930
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 177992,
+        "end": 178106
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "salveamulet",
+        "class": "d-emoji",
+        "alt": "salveamulet",
+        "src": "https://cdn.discordapp.com/emojis/797899945730244648.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 178401,
+        "end": 178527
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 178589,
+        "end": 178703
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 178744,
+        "end": 178858
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "gstaff",
+        "class": "d-emoji",
+        "alt": "gstaff",
+        "src": "https://cdn.discordapp.com/emojis/513203008608141314.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 178924,
+        "end": 179040
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "gstaff",
+        "class": "d-emoji",
+        "alt": "gstaff",
+        "src": "https://cdn.discordapp.com/emojis/513203008608141314.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 179093,
+        "end": 179209
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 179341,
+        "end": 179455
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "agility",
+        "class": "d-emoji",
+        "alt": "agility",
+        "src": "https://cdn.discordapp.com/emojis/1039864819760758844.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 179692,
+        "end": 179811
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "defence",
+        "class": "d-emoji",
+        "alt": "defence",
+        "src": "https://cdn.discordapp.com/emojis/689509250979987525.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 179976,
+        "end": 180094
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "defence",
+        "class": "d-emoji",
+        "alt": "defence",
+        "src": "https://cdn.discordapp.com/emojis/689509250979987525.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 180445,
+        "end": 180563
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "salveamulet",
+        "class": "d-emoji",
+        "alt": "salveamulet",
+        "src": "https://cdn.discordapp.com/emojis/797899945730244648.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 180801,
+        "end": 180927
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "zarosbook",
+        "class": "d-emoji",
+        "alt": "zarosbook",
+        "src": "https://cdn.discordapp.com/emojis/574290439461404682.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 181003,
+        "end": 181125
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "guthixbook",
+        "class": "d-emoji",
+        "alt": "guthixbook",
+        "src": "https://cdn.discordapp.com/emojis/574290439356809216.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 181126,
+        "end": 181250
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "zambook",
+        "class": "d-emoji",
+        "alt": "zambook",
+        "src": "https://cdn.discordapp.com/emojis/574290439461404672.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 181251,
+        "end": 181369
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "armabook",
+        "class": "d-emoji",
+        "alt": "armabook",
+        "src": "https://cdn.discordapp.com/emojis/513190159051915264.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 181370,
+        "end": 181490
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bandosbook",
+        "class": "d-emoji",
+        "alt": "bandosbook",
+        "src": "https://cdn.discordapp.com/emojis/574290439473987628.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 181491,
+        "end": 181615
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "sarabook",
+        "class": "d-emoji",
+        "alt": "sarabook",
+        "src": "https://cdn.discordapp.com/emojis/574290439482638346.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 181616,
+        "end": 181736
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 181946,
+        "end": 182060
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182079,
+        "end": 182193
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/s4fWdNNQ0C.png"
+      },
+      "text": "",
+      "location": {
+        "start": 182202,
+        "end": 182269
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182284,
+        "end": 182398
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "wm",
+        "class": "d-emoji",
+        "alt": "wm",
+        "src": "https://cdn.discordapp.com/emojis/535533809978966037.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182403,
+        "end": 182511
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "deep",
+        "class": "d-emoji",
+        "alt": "deep",
+        "src": "https://cdn.discordapp.com/emojis/535533833139912724.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182545,
+        "end": 182657
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182693,
+        "end": 182807
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/JAH1UXIfr4.png"
+      },
+      "text": "",
+      "location": {
+        "start": 182854,
+        "end": 182921
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182983,
+        "end": 183097
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "salveamulet",
+        "class": "d-emoji",
+        "alt": "salveamulet",
+        "src": "https://cdn.discordapp.com/emojis/797899945730244648.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 183275,
+        "end": 183401
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "salveamulet",
+        "class": "d-emoji",
+        "alt": "salveamulet",
+        "src": "https://cdn.discordapp.com/emojis/797899945730244648.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 183798,
+        "end": 183924
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "spec",
+        "class": "d-emoji",
+        "alt": "spec",
+        "src": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 184384,
+        "end": 184496
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "gstaff",
+        "class": "d-emoji",
+        "alt": "gstaff",
+        "src": "https://cdn.discordapp.com/emojis/513203008608141314.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 184566,
+        "end": 184682
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "spec",
+        "class": "d-emoji",
+        "alt": "spec",
+        "src": "https://cdn.discordapp.com/emojis/537340400273195028.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 184788,
+        "end": 184900
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "constitution",
+        "class": "d-emoji",
+        "alt": "constitution",
+        "src": "https://cdn.discordapp.com/emojis/689509250887712902.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 185042,
+        "end": 185170
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "magic",
+        "class": "d-emoji",
+        "alt": "magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 185261,
+        "end": 185375
+      }
+    }
+  ],
+  "links": [
+    {
+      "href": "https://runescape.wiki/w/Caitlin%27s_staff",
+      "text": "Caitlin's staff",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Caitlin%27s_staff"
+      },
+      "location": {
+        "start": 168791,
+        "end": 168863
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/The_Blood_Pact/Quick_guide",
+      "text": "Blood Pact",
+      "attrs": {
+        "href": "https://runescape.wiki/w/The_Blood_Pact/Quick_guide"
+      },
+      "location": {
+        "start": 168900,
+        "end": 168976
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Mindspike",
+      "text": "Mindspike",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Mindspike"
+      },
+      "location": {
+        "start": 169245,
+        "end": 169303
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Gudrik",
+      "text": "Gudrik",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Gudrik"
+      },
+      "location": {
+        "start": 169350,
+        "end": 169402
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Gudrik",
+      "text": "Gudrik",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Gudrik"
+      },
+      "location": {
+        "start": 170544,
+        "end": 170596
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Spellstorm_drape",
+      "text": "Spellstorm drape",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Spellstorm_drape"
+      },
+      "location": {
+        "start": 170795,
+        "end": 170867
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Silverhawk_boots",
+      "text": "Silverhawk boots",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Silverhawk_boots"
+      },
+      "location": {
+        "start": 170905,
+        "end": 170977
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Ghostly_troll_thrower",
+      "text": "Ghostly Troll Thrower",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Ghostly_troll_thrower"
+      },
+      "location": {
+        "start": 172816,
+        "end": 172898
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Lumbridge_Catacombs#Monsters",
+      "text": "Lumbridge Catacombs",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Lumbridge_Catacombs#Monsters"
+      },
+      "location": {
+        "start": 172940,
+        "end": 173027
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/The_Blood_Pact/Quick_guide",
+      "text": "Blood Pact quest",
+      "attrs": {
+        "href": "https://runescape.wiki/w/The_Blood_Pact/Quick_guide"
+      },
+      "location": {
+        "start": 173038,
+        "end": 173120
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Ancient_staff",
+      "text": "Ancient staff",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Ancient_staff"
+      },
+      "location": {
+        "start": 174404,
+        "end": 174470
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Iban%27s_staff",
+      "text": "Iban's staff",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Iban%27s_staff"
+      },
+      "location": {
+        "start": 174485,
+        "end": 174551
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Desert_Treasure/Quick_guide",
+      "text": "Desert Treasure",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Desert_Treasure/Quick_guide"
+      },
+      "location": {
+        "start": 174658,
+        "end": 174740
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Underground_Pass/Quick_guide",
+      "text": "Underground Pass",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Underground_Pass/Quick_guide"
+      },
+      "location": {
+        "start": 174803,
+        "end": 174887
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Lunar_equipment",
+      "text": "Lunar equipment",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Lunar_equipment"
+      },
+      "location": {
+        "start": 175211,
+        "end": 175281
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Lunar_Diplomacy/Quick_guide",
+      "text": "Lunar Diplomacy",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Lunar_Diplomacy/Quick_guide"
+      },
+      "location": {
+        "start": 175369,
+        "end": 175451
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Skeletal_armour",
+      "text": "Skeletal armour",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Skeletal_armour"
+      },
+      "location": {
+        "start": 175583,
+        "end": 175653
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/The_Fremennik_Trials/Quick_guide",
+      "text": "The Fremennik Trials",
+      "attrs": {
+        "href": "https://runescape.wiki/w/The_Fremennik_Trials/Quick_guide"
+      },
+      "location": {
+        "start": 175753,
+        "end": 175845
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Cape_of_legends",
+      "text": "Cape of legends",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Cape_of_legends"
+      },
+      "location": {
+        "start": 175890,
+        "end": 175960
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Legends%27_Quest/Quick_guide",
+      "text": "Legends Quest",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Legends%27_Quest/Quick_guide"
+      },
+      "location": {
+        "start": 176023,
+        "end": 176104
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Explorer%27s_ring_3",
+      "text": "Explorer's ring 3",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Explorer%27s_ring_3"
+      },
+      "location": {
+        "start": 176145,
+        "end": 176221
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Medium_Lumbridge_achievements",
+      "text": "medium Lumbridge achievements",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Medium_Lumbridge_achievements"
+      },
+      "location": {
+        "start": 176302,
+        "end": 176400
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Silverhawk_boots",
+      "text": "Silverhawk boots",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Silverhawk_boots"
+      },
+      "location": {
+        "start": 176410,
+        "end": 176482
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Ghostly_troll_thrower",
+      "text": "Ghostly Troll Thrower",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Ghostly_troll_thrower"
+      },
+      "location": {
+        "start": 178117,
+        "end": 178199
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Dragith_Nurn#Monster",
+      "text": "Dragith Nurn",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Dragith_Nurn#Monster"
+      },
+      "location": {
+        "start": 178234,
+        "end": 178306
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/The_Blood_Pact/Quick_guide",
+      "text": "Blood Pact quest",
+      "attrs": {
+        "href": "https://runescape.wiki/w/The_Blood_Pact/Quick_guide"
+      },
+      "location": {
+        "start": 178317,
+        "end": 178399
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Guthix_staff",
+      "text": "Guthix staff",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Guthix_staff"
+      },
+      "location": {
+        "start": 178859,
+        "end": 178923
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Mage_Arena",
+      "text": "Mage Arena",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Mage_Arena"
+      },
+      "location": {
+        "start": 179226,
+        "end": 179286
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Crystal_staff",
+      "text": "Crystal staff",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Crystal_staff"
+      },
+      "location": {
+        "start": 179456,
+        "end": 179522
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Crystal_wand",
+      "text": "Crystal wand",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Crystal_wand"
+      },
+      "location": {
+        "start": 179526,
+        "end": 179590
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Crystal_orb",
+      "text": "Crystal orb",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Crystal_orb"
+      },
+      "location": {
+        "start": 179597,
+        "end": 179659
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/roving_elves/Quick_guide",
+      "text": "Roving Elves",
+      "attrs": {
+        "href": "https://runescape.wiki/w/roving_elves/Quick_guide"
+      },
+      "location": {
+        "start": 179840,
+        "end": 179916
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Superior_skeletal_armour",
+      "text": "Superior Skeletal armour",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Superior_skeletal_armour"
+      },
+      "location": {
+        "start": 180095,
+        "end": 180183
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Fremennik_equipment_patch",
+      "text": "Fremennik equipment patches",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Fremennik_equipment_patch"
+      },
+      "location": {
+        "start": 180217,
+        "end": 180309
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Salve_amulet_(e)",
+      "text": "Salve amulet(e)",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Salve_amulet_(e)"
+      },
+      "location": {
+        "start": 180729,
+        "end": 180800
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Horror_from_the_Deep/Quick_guide",
+      "text": "Horror from the Deep",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Horror_from_the_Deep/Quick_guide"
+      },
+      "location": {
+        "start": 181786,
+        "end": 181878
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Dragith_Nurn#Monster",
+      "text": "Dragith Nurn",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Dragith_Nurn#Monster"
+      },
+      "location": {
+        "start": 183108,
+        "end": 183180
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/The_Blood_Pact/Quick_guide",
+      "text": "Blood Pact quest",
+      "attrs": {
+        "href": "https://runescape.wiki/w/The_Blood_Pact/Quick_guide"
+      },
+      "location": {
+        "start": 183191,
+        "end": 183273
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Abyss/Combat_training",
+      "text": "The Abyss Monsters",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Abyss/Combat_training"
+      },
+      "location": {
+        "start": 183420,
+        "end": 183499
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Enter_the_Abyss_(miniquest)/Quick_guide",
+      "text": "Enter the Abyss miniquest",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Enter_the_Abyss_(miniquest)/Quick_guide"
+      },
+      "location": {
+        "start": 183506,
+        "end": 183610
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Armoured_zombie",
+      "text": "Armoured Zombies",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Armoured_zombie"
+      },
+      "location": {
+        "start": 183622,
+        "end": 183693
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Defender_of_Varrock/Quick_guide",
+      "text": "Defender of Varrock quest",
+      "attrs": {
+        "href": "https://runescape.wiki/w/Defender_of_Varrock/Quick_guide"
+      },
+      "location": {
+        "start": 183700,
+        "end": 183796
+      }
+    }
+  ],
+  "files": {
+    "source": "guides/pvme-guides--new-to-pvm--early-magic-upgrades/source.json",
+    "inventory": "guides/pvme-guides--new-to-pvm--early-magic-upgrades/inventory.json",
+    "article": "guides/pvme-guides--new-to-pvm--early-magic-upgrades/article.html",
+    "response": "guides/pvme-guides--new-to-pvm--early-magic-upgrades/response.html",
+    "metadata": "guides/pvme-guides--new-to-pvm--early-magic-upgrades/metadata.json"
+  },
+  "limitations": [
+    "Exact HTTP article preserved, not dynamic preset/item/API data or image/video-only information.",
+    "No media availability, browser layout, semantic equivalence or live wiki revision parity claim."
+  ]
+}

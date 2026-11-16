@@ -1,0 +1,4323 @@
+{
+  "schemaVersion": 1,
+  "id": "pvme-guides--editor-resources--editor-references--icon-creation",
+  "sourceURL": "https://pvme.io/pvme-guides/editor-resources/editor-references/icon-creation/",
+  "responseURL": "https://pvme.io/pvme-guides/editor-resources/editor-references/icon-creation/",
+  "boundary": "First original source content after editor utility; no H1; flagged",
+  "offsets": {
+    "start": 165525,
+    "end": 180781
+  },
+  "text": "Introduction\nThis channel will cover creating and editing:\n\n\nEmojis used in PvME's guides - https://pvme.io/pvme-settings/#emojis\n\n\nIcons used in the Preset Maker - https://pvme.github.io/preset-maker/\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRequirements\n\nTake note of these before you start.\n\nInterface scaling\n⬥ Ensure both system and RuneScape interface scaling are set to 100%.\n    • System display scaling can be found under System > Display > Scale for Windows users.\n    • RuneScape interface scaling can be found under Settings > Graphics > Interface Scaling.\n​\nManual emoji creation/Image editing\n⬥ Paint.net or better image editing software downloaded.\n​\nEmoji/icon creation by script\n⬥ Python installed.\n⬥ Internet connection.\n⬥ Paint.net is still highly recommended to manually edit or make icons where the script fails.\n​\nRaw input picture requirements\n⬥ In game interfaces MUST have 0% transparency.\n⬥ Must look clear when zoomed in (affected by interface scaling)​\n\n\n\n\n\n\n\n\nIcon formatting\nEvery icon consists of 4 parts:\n\n\nThe main item - Colour varies, never contains the same shade as the outline and shadow.\n\n\nThe outline - A black border that immediately surrounds the main item (RGB value 0,0,2).\n\n\nThe shadow - A black border that appears bottom-right of the outline where applicable (RGB value 0,0,1).\n\n\n(Only for stackable items) The number (RGB value 255,255,0).\n\n\n‎ ‎ ‎ ‎a. Numbers have their own shadows.\n​\nImage showing different regions selected:\n\nPreset icons are extracted from inventory slots pictures (38x34) and contains all icon parts.\n\nEmojis are extracted from bank pictures and have shadows and numbers removed. They are also cropped to size.\n\nRSWiki icons\n⬥ All preset icons should be made via the script or manually, and not based on RSWiki icons.\n‎ ‎ ‎ ‎• Emojis can be made from RSWiki icons based on conditions below.\n​\n⬥ The source of the icon determines whether you can use the RSWiki icon as an emoji.\n‎ ‎ ‎ ‎• Icons which are prepared by users and accurately reflects how they appear in the game can be used.\n‎ ‎ ‎ ‎• If the icon is prepared by a bot. It is most likely a Java icon which do not reflect how the icon looks like in the live game.\n\nIcon creation (script)\nCurrently, the script only works for screen grabs of the inventory section when banking or of the GE buy interface.\n​\nSetting up\n⬥ Download the script here: https://drive.google.com/file/d/1lLI6X3hAx-IebShGFe1jxbCZgGOzJ60-/view?usp=sharing\n⬥ Move the script to a desired directory.\n⬥ Run the script to set up the folders required.\n‎ ‎ ‎ ‎• Let the script to install the Pillow Python package if not installed (required for Python to manipulate images).\n‎ ‎ ‎ ‎• DO NOT RENAME THE CREATED FOLDERS.\nhttps://youtu.be/PG19o3AzfCc\n\n\nMaking icons/emojis\n⬥ Take screen grabs of items from the inventory section of the banking interface (example below) and save it in \"Inventory screengrabs\" as a .png file.\n‎ ‎ ‎ ‎• To make emojis instead of preset icons: add a \"_emoji\" suffix to the name of the screengrab.\n\n⬥ Navigate back and run \"Make icon.py\"\n‎ ‎ ‎ ‎• Check that the quantities printed in the terminal are correct.\n⬥ Check \"Generated emojis\" for emojis and \"Generated preset icons\" for preset icons.\n⬥ Use \"Archive images.py\" to archive all images after they have been added.\n⬥ Example video of basic/icon creation:\nhttps://youtu.be/81FjnkxgNoQ\n\n\nIcon creation (manual)\n⬥ Take a screen grab of an item from an opaque bank interface (for emojis) or opaque inventory slot (for preset icons)\n‎ ‎ ‎ ‎• Your bank background should be uniformly coloured to facilitate background removal.\n‎ ‎ ‎ ‎• Items on the Grand Exchange and preset interface have their outlines removed and cannot be used as a source for emojis.\n​\nManual icon creation\n\n\nOpen the item you want to make an icon of in Paint.net, crop it as nicely as possible.\n\n\nZoom in and crop the inventory slot exactly using rectangle select (this should give you a 38x34 area).\n\n\nUse the crop to selection option under Image.\n\n\n‎ ‎ ‎ ‎a. Shortcut: Ctrl + Shift + X.\n\nSelect the Magic Wand and Rectangle select/Lasso select tools to select and delete regions until the background is completely removed.\n\n‎ ‎ ‎ ‎a. Use Shift + Click with the Magic Wand on 0% tolerance on the background to quickly select chunks of regions.\nhttps://youtu.be/ZjdWPbp4YUo\n\n\nManual emoji creation\n\n\nOpen the item you want to make an icon of in Paint.net, crop it as nicely as possible.\n\n\nSelect the Magic Wand tool on 0% tolerance and use Shift + Click followed by Delete on the background.\n\n\nRepeat the previous step for shadow and number pixels.\n\n\nIf removing number pixels, ensure that the number or its shadow do not cover the icon.\n\n\n‎ ‎ ‎ ‎a. Post in #guide-media-upload-and-request if there is no way to get the complete unnumbered icon or visit the Image stacking section below.\n\nUse the Magic Wand again to select the transparent background, press Ctrl + I followed by Ctrl + Shift + X to crop the image to size\n\nhttps://youtu.be/9oiHOuCO89U\n\n\nImage stacking\nIf you're trying to emoji-fy a stackable item (check if icon is available on wiki first) and cannot get a whole icon due to the number partially covering it, you can stack multiple incomplete images (made by removing different numbers) to form a complete image.\n​\n⬥ The most efficient quantities you can use for stacking are not yet known, but generally:\n‎ ‎ ‎ ‎• Items without varying icons based on quantity (e.g. teleport tabs), use quantities 1, 7 and 9.\n‎ ‎ ‎ ‎• Items with varying icons throughout numbers 1-5 (e.g. Bakriminel bolts), use quantities 11, 44, 77 and 99.\n‎ ‎ ‎ ‎• Items with varying icons throughout 1-1000 (e.g. congealed blood), use numbers 1111, 2222, 7777 and 9999.\n​\nStacking with the script\n\n\nSave an image consisting multiple inventories with different quantities of the same item(s) you want stacked.\n\n\nRun \"Make icon.py\" to generate the incomplete emojis.\n\n\nCreate respective folders starting with \"stack\" followed by the item name and sort the incomplete emojis into their respective folders.\n\n\nRun \"Stack.py\" to create the stacked icons.\n\n\nhttps://youtu.be/MCmgf2WiOeY\n\n\nManual stacking\n\n\nHave images consisting different quantities of the item(s) you want stacked open in different windows.\n\n\nCarry out removal of background, shadows, and quantities.\n\n\nPaste the incomplete emojis onto different layers and merge them to get the complete emoji(s).\n\n\nhttps://youtu.be/yM61GooZZco\n\n\nKnown issues\n⬥ Currently, there is not a standardised method for auras and other icons (e.g. buffs, debuffs).\n⬥ If your inventory slots (from the banking interface) are not completely uniform, the script will not be able to recognise them as inventory slots.\n⬥ The script uses the complete frames of the inventory slot to identify them: https://imgur.com/CCfr7dG, https://imgur.com/ypnZCL3.\n‎ ‎ ‎ ‎• If an item has its shadow and/or outline invading the inventory slot, the frame will not be recognised and the item will not be extracted.\nExamples:\n\nSubmitting completed icons\nPreset icons - Upload the icon to https://img.pvme.io/ ‎(via #guide-media-upload-and-request), copy the item link, and fill in this template for each item to submit via pasting it to #unknown:\nname:\nimage:\nslot:\nlabel:\nbreakdownNotes:\nwikiLink:\n\n\nFields explanations:\n⬥ name: ‎The item name as displayed on the RSWiki.\n⬥ image: ‎The raw https://img.pvme.io/ ‎link.\n⬥ slot: ‎Numbers 0 to 13 which decides where the item can be equipped.\nINVENTORY = 0\nHELM = 1\nBODY = 2\nLEGS = 3\nMH_WEAPON = 4\nOH_WEAPON = 5\nGLOVES = 6\nBOOTS = 7\nAURA = 8\nAMMO = 9\nNECKLACE = 10\nRING = 11\nCAPE = 12\nPOCKET = 13\n⬥ label: ‎The name: ‎of the item with all lower-case and no spacing OR an acceptable abbreviation.\n⬥ breakdownNotes: ‎Default text that appears in item breakdown when an item is picked. This is usually left blank.\n⬥ wikiLink: ‎Link to the item on RSWiki.\n‎ ‎ ‎ ‎• Make sure the link is valid.\n​\nExamples:\nname: Abyssal scourge\nimage: https://img.pvme.io/images/Moh9yya.png\nslot: 4\nlabel: abyssalscourge\nbreakdownNotes:\nwikiLink: https://runescape.wiki/w/Abyssal_scourge\n\n​\nname: Black stone arrows\nimage: https://img.pvme.io/images/uBbMQoy.png\nslot: 9\nlabel: bsa100\nbreakdownNotes:\nwikiLink: https://runescape.wiki/w/Black_stone_arrows\n\nEmojis - Once done creating the emoji(s), use Ctrl + A + Ctrl + C to copy the cropped image (if made manually) or drag and drop saved emojis into #unknown along with the item names.\n      \n    ",
+  "normalizedText": "Introduction This channel will cover creating and editing: Emojis used in PvME's guides - https://pvme.io/pvme-settings/#emojis Icons used in the Preset Maker - https://pvme.github.io/preset-maker/ ​ Requirements Take note of these before you start. Interface scaling ⬥ Ensure both system and RuneScape interface scaling are set to 100%. • System display scaling can be found under System > Display > Scale for Windows users. • RuneScape interface scaling can be found under Settings > Graphics > Interface Scaling. ​ Manual emoji creation/Image editing ⬥ Paint.net or better image editing software downloaded. ​ Emoji/icon creation by script ⬥ Python installed. ⬥ Internet connection. ⬥ Paint.net is still highly recommended to manually edit or make icons where the script fails. ​ Raw input picture requirements ⬥ In game interfaces MUST have 0% transparency. ⬥ Must look clear when zoomed in (affected by interface scaling)​ Icon formatting Every icon consists of 4 parts: The main item - Colour varies, never contains the same shade as the outline and shadow. The outline - A black border that immediately surrounds the main item (RGB value 0,0,2). The shadow - A black border that appears bottom-right of the outline where applicable (RGB value 0,0,1). (Only for stackable items) The number (RGB value 255,255,0). ‎ ‎ ‎ ‎a. Numbers have their own shadows. ​ Image showing different regions selected: Preset icons are extracted from inventory slots pictures (38x34) and contains all icon parts. Emojis are extracted from bank pictures and have shadows and numbers removed. They are also cropped to size. RSWiki icons ⬥ All preset icons should be made via the script or manually, and not based on RSWiki icons. ‎ ‎ ‎ ‎• Emojis can be made from RSWiki icons based on conditions below. ​ ⬥ The source of the icon determines whether you can use the RSWiki icon as an emoji. ‎ ‎ ‎ ‎• Icons which are prepared by users and accurately reflects how they appear in the game can be used. ‎ ‎ ‎ ‎• If the icon is prepared by a bot. It is most likely a Java icon which do not reflect how the icon looks like in the live game. Icon creation (script) Currently, the script only works for screen grabs of the inventory section when banking or of the GE buy interface. ​ Setting up ⬥ Download the script here: https://drive.google.com/file/d/1lLI6X3hAx-IebShGFe1jxbCZgGOzJ60-/view?usp=sharing ⬥ Move the script to a desired directory. ⬥ Run the script to set up the folders required. ‎ ‎ ‎ ‎• Let the script to install the Pillow Python package if not installed (required for Python to manipulate images). ‎ ‎ ‎ ‎• DO NOT RENAME THE CREATED FOLDERS. https://youtu.be/PG19o3AzfCc Making icons/emojis ⬥ Take screen grabs of items from the inventory section of the banking interface (example below) and save it in \"Inventory screengrabs\" as a .png file. ‎ ‎ ‎ ‎• To make emojis instead of preset icons: add a \"_emoji\" suffix to the name of the screengrab. ⬥ Navigate back and run \"Make icon.py\" ‎ ‎ ‎ ‎• Check that the quantities printed in the terminal are correct. ⬥ Check \"Generated emojis\" for emojis and \"Generated preset icons\" for preset icons. ⬥ Use \"Archive images.py\" to archive all images after they have been added. ⬥ Example video of basic/icon creation: https://youtu.be/81FjnkxgNoQ Icon creation (manual) ⬥ Take a screen grab of an item from an opaque bank interface (for emojis) or opaque inventory slot (for preset icons) ‎ ‎ ‎ ‎• Your bank background should be uniformly coloured to facilitate background removal. ‎ ‎ ‎ ‎• Items on the Grand Exchange and preset interface have their outlines removed and cannot be used as a source for emojis. ​ Manual icon creation Open the item you want to make an icon of in Paint.net, crop it as nicely as possible. Zoom in and crop the inventory slot exactly using rectangle select (this should give you a 38x34 area). Use the crop to selection option under Image. ‎ ‎ ‎ ‎a. Shortcut: Ctrl + Shift + X. Select the Magic Wand and Rectangle select/Lasso select tools to select and delete regions until the background is completely removed. ‎ ‎ ‎ ‎a. Use Shift + Click with the Magic Wand on 0% tolerance on the background to quickly select chunks of regions. https://youtu.be/ZjdWPbp4YUo Manual emoji creation Open the item you want to make an icon of in Paint.net, crop it as nicely as possible. Select the Magic Wand tool on 0% tolerance and use Shift + Click followed by Delete on the background. Repeat the previous step for shadow and number pixels. If removing number pixels, ensure that the number or its shadow do not cover the icon. ‎ ‎ ‎ ‎a. Post in #guide-media-upload-and-request if there is no way to get the complete unnumbered icon or visit the Image stacking section below. Use the Magic Wand again to select the transparent background, press Ctrl + I followed by Ctrl + Shift + X to crop the image to size https://youtu.be/9oiHOuCO89U Image stacking If you're trying to emoji-fy a stackable item (check if icon is available on wiki first) and cannot get a whole icon due to the number partially covering it, you can stack multiple incomplete images (made by removing different numbers) to form a complete image. ​ ⬥ The most efficient quantities you can use for stacking are not yet known, but generally: ‎ ‎ ‎ ‎• Items without varying icons based on quantity (e.g. teleport tabs), use quantities 1, 7 and 9. ‎ ‎ ‎ ‎• Items with varying icons throughout numbers 1-5 (e.g. Bakriminel bolts), use quantities 11, 44, 77 and 99. ‎ ‎ ‎ ‎• Items with varying icons throughout 1-1000 (e.g. congealed blood), use numbers 1111, 2222, 7777 and 9999. ​ Stacking with the script Save an image consisting multiple inventories with different quantities of the same item(s) you want stacked. Run \"Make icon.py\" to generate the incomplete emojis. Create respective folders starting with \"stack\" followed by the item name and sort the incomplete emojis into their respective folders. Run \"Stack.py\" to create the stacked icons. https://youtu.be/MCmgf2WiOeY Manual stacking Have images consisting different quantities of the item(s) you want stacked open in different windows. Carry out removal of background, shadows, and quantities. Paste the incomplete emojis onto different layers and merge them to get the complete emoji(s). https://youtu.be/yM61GooZZco Known issues ⬥ Currently, there is not a standardised method for auras and other icons (e.g. buffs, debuffs). ⬥ If your inventory slots (from the banking interface) are not completely uniform, the script will not be able to recognise them as inventory slots. ⬥ The script uses the complete frames of the inventory slot to identify them: https://imgur.com/CCfr7dG, https://imgur.com/ypnZCL3. ‎ ‎ ‎ ‎• If an item has its shadow and/or outline invading the inventory slot, the frame will not be recognised and the item will not be extracted. Examples: Submitting completed icons Preset icons - Upload the icon to https://img.pvme.io/ ‎(via #guide-media-upload-and-request), copy the item link, and fill in this template for each item to submit via pasting it to #unknown: name: image: slot: label: breakdownNotes: wikiLink: Fields explanations: ⬥ name: ‎The item name as displayed on the RSWiki. ⬥ image: ‎The raw https://img.pvme.io/ ‎link. ⬥ slot: ‎Numbers 0 to 13 which decides where the item can be equipped. INVENTORY = 0 HELM = 1 BODY = 2 LEGS = 3 MH_WEAPON = 4 OH_WEAPON = 5 GLOVES = 6 BOOTS = 7 AURA = 8 AMMO = 9 NECKLACE = 10 RING = 11 CAPE = 12 POCKET = 13 ⬥ label: ‎The name: ‎of the item with all lower-case and no spacing OR an acceptable abbreviation. ⬥ breakdownNotes: ‎Default text that appears in item breakdown when an item is picked. This is usually left blank. ⬥ wikiLink: ‎Link to the item on RSWiki. ‎ ‎ ‎ ‎• Make sure the link is valid. ​ Examples: name: Abyssal scourge image: https://img.pvme.io/images/Moh9yya.png slot: 4 label: abyssalscourge breakdownNotes: wikiLink: https://runescape.wiki/w/Abyssal_scourge ​ name: Black stone arrows image: https://img.pvme.io/images/uBbMQoy.png slot: 9 label: bsa100 breakdownNotes: wikiLink: https://runescape.wiki/w/Black_stone_arrows Emojis - Once done creating the emoji(s), use Ctrl + A + Ctrl + C to copy the cropped image (if made manually) or drag and drop saved emojis into #unknown along with the item names.",
+  "wordStream": [
+    "Introduction",
+    "This",
+    "channel",
+    "will",
+    "cover",
+    "creating",
+    "and",
+    "editing:",
+    "Emojis",
+    "used",
+    "in",
+    "PvME's",
+    "guides",
+    "-",
+    "https://pvme.io/pvme-settings/#emojis",
+    "Icons",
+    "used",
+    "in",
+    "the",
+    "Preset",
+    "Maker",
+    "-",
+    "https://pvme.github.io/preset-maker/",
+    "​",
+    "Requirements",
+    "Take",
+    "note",
+    "of",
+    "these",
+    "before",
+    "you",
+    "start.",
+    "Interface",
+    "scaling",
+    "⬥",
+    "Ensure",
+    "both",
+    "system",
+    "and",
+    "RuneScape",
+    "interface",
+    "scaling",
+    "are",
+    "set",
+    "to",
+    "100%.",
+    "•",
+    "System",
+    "display",
+    "scaling",
+    "can",
+    "be",
+    "found",
+    "under",
+    "System",
+    ">",
+    "Display",
+    ">",
+    "Scale",
+    "for",
+    "Windows",
+    "users.",
+    "•",
+    "RuneScape",
+    "interface",
+    "scaling",
+    "can",
+    "be",
+    "found",
+    "under",
+    "Settings",
+    ">",
+    "Graphics",
+    ">",
+    "Interface",
+    "Scaling.",
+    "​",
+    "Manual",
+    "emoji",
+    "creation/Image",
+    "editing",
+    "⬥",
+    "Paint.net",
+    "or",
+    "better",
+    "image",
+    "editing",
+    "software",
+    "downloaded.",
+    "​",
+    "Emoji/icon",
+    "creation",
+    "by",
+    "script",
+    "⬥",
+    "Python",
+    "installed.",
+    "⬥",
+    "Internet",
+    "connection.",
+    "⬥",
+    "Paint.net",
+    "is",
+    "still",
+    "highly",
+    "recommended",
+    "to",
+    "manually",
+    "edit",
+    "or",
+    "make",
+    "icons",
+    "where",
+    "the",
+    "script",
+    "fails.",
+    "​",
+    "Raw",
+    "input",
+    "picture",
+    "requirements",
+    "⬥",
+    "In",
+    "game",
+    "interfaces",
+    "MUST",
+    "have",
+    "0%",
+    "transparency.",
+    "⬥",
+    "Must",
+    "look",
+    "clear",
+    "when",
+    "zoomed",
+    "in",
+    "(affected",
+    "by",
+    "interface",
+    "scaling)​",
+    "Icon",
+    "formatting",
+    "Every",
+    "icon",
+    "consists",
+    "of",
+    "4",
+    "parts:",
+    "The",
+    "main",
+    "item",
+    "-",
+    "Colour",
+    "varies,",
+    "never",
+    "contains",
+    "the",
+    "same",
+    "shade",
+    "as",
+    "the",
+    "outline",
+    "and",
+    "shadow.",
+    "The",
+    "outline",
+    "-",
+    "A",
+    "black",
+    "border",
+    "that",
+    "immediately",
+    "surrounds",
+    "the",
+    "main",
+    "item",
+    "(RGB",
+    "value",
+    "0,0,2).",
+    "The",
+    "shadow",
+    "-",
+    "A",
+    "black",
+    "border",
+    "that",
+    "appears",
+    "bottom-right",
+    "of",
+    "the",
+    "outline",
+    "where",
+    "applicable",
+    "(RGB",
+    "value",
+    "0,0,1).",
+    "(Only",
+    "for",
+    "stackable",
+    "items)",
+    "The",
+    "number",
+    "(RGB",
+    "value",
+    "255,255,0).",
+    "‎",
+    "‎",
+    "‎",
+    "‎a.",
+    "Numbers",
+    "have",
+    "their",
+    "own",
+    "shadows.",
+    "​",
+    "Image",
+    "showing",
+    "different",
+    "regions",
+    "selected:",
+    "Preset",
+    "icons",
+    "are",
+    "extracted",
+    "from",
+    "inventory",
+    "slots",
+    "pictures",
+    "(38x34)",
+    "and",
+    "contains",
+    "all",
+    "icon",
+    "parts.",
+    "Emojis",
+    "are",
+    "extracted",
+    "from",
+    "bank",
+    "pictures",
+    "and",
+    "have",
+    "shadows",
+    "and",
+    "numbers",
+    "removed.",
+    "They",
+    "are",
+    "also",
+    "cropped",
+    "to",
+    "size.",
+    "RSWiki",
+    "icons",
+    "⬥",
+    "All",
+    "preset",
+    "icons",
+    "should",
+    "be",
+    "made",
+    "via",
+    "the",
+    "script",
+    "or",
+    "manually,",
+    "and",
+    "not",
+    "based",
+    "on",
+    "RSWiki",
+    "icons.",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Emojis",
+    "can",
+    "be",
+    "made",
+    "from",
+    "RSWiki",
+    "icons",
+    "based",
+    "on",
+    "conditions",
+    "below.",
+    "​",
+    "⬥",
+    "The",
+    "source",
+    "of",
+    "the",
+    "icon",
+    "determines",
+    "whether",
+    "you",
+    "can",
+    "use",
+    "the",
+    "RSWiki",
+    "icon",
+    "as",
+    "an",
+    "emoji.",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Icons",
+    "which",
+    "are",
+    "prepared",
+    "by",
+    "users",
+    "and",
+    "accurately",
+    "reflects",
+    "how",
+    "they",
+    "appear",
+    "in",
+    "the",
+    "game",
+    "can",
+    "be",
+    "used.",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "If",
+    "the",
+    "icon",
+    "is",
+    "prepared",
+    "by",
+    "a",
+    "bot.",
+    "It",
+    "is",
+    "most",
+    "likely",
+    "a",
+    "Java",
+    "icon",
+    "which",
+    "do",
+    "not",
+    "reflect",
+    "how",
+    "the",
+    "icon",
+    "looks",
+    "like",
+    "in",
+    "the",
+    "live",
+    "game.",
+    "Icon",
+    "creation",
+    "(script)",
+    "Currently,",
+    "the",
+    "script",
+    "only",
+    "works",
+    "for",
+    "screen",
+    "grabs",
+    "of",
+    "the",
+    "inventory",
+    "section",
+    "when",
+    "banking",
+    "or",
+    "of",
+    "the",
+    "GE",
+    "buy",
+    "interface.",
+    "​",
+    "Setting",
+    "up",
+    "⬥",
+    "Download",
+    "the",
+    "script",
+    "here:",
+    "https://drive.google.com/file/d/1lLI6X3hAx-IebShGFe1jxbCZgGOzJ60-/view?usp=sharing",
+    "⬥",
+    "Move",
+    "the",
+    "script",
+    "to",
+    "a",
+    "desired",
+    "directory.",
+    "⬥",
+    "Run",
+    "the",
+    "script",
+    "to",
+    "set",
+    "up",
+    "the",
+    "folders",
+    "required.",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Let",
+    "the",
+    "script",
+    "to",
+    "install",
+    "the",
+    "Pillow",
+    "Python",
+    "package",
+    "if",
+    "not",
+    "installed",
+    "(required",
+    "for",
+    "Python",
+    "to",
+    "manipulate",
+    "images).",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "DO",
+    "NOT",
+    "RENAME",
+    "THE",
+    "CREATED",
+    "FOLDERS.",
+    "https://youtu.be/PG19o3AzfCc",
+    "Making",
+    "icons/emojis",
+    "⬥",
+    "Take",
+    "screen",
+    "grabs",
+    "of",
+    "items",
+    "from",
+    "the",
+    "inventory",
+    "section",
+    "of",
+    "the",
+    "banking",
+    "interface",
+    "(example",
+    "below)",
+    "and",
+    "save",
+    "it",
+    "in",
+    "\"Inventory",
+    "screengrabs\"",
+    "as",
+    "a",
+    ".png",
+    "file.",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "To",
+    "make",
+    "emojis",
+    "instead",
+    "of",
+    "preset",
+    "icons:",
+    "add",
+    "a",
+    "\"_emoji\"",
+    "suffix",
+    "to",
+    "the",
+    "name",
+    "of",
+    "the",
+    "screengrab.",
+    "⬥",
+    "Navigate",
+    "back",
+    "and",
+    "run",
+    "\"Make",
+    "icon.py\"",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Check",
+    "that",
+    "the",
+    "quantities",
+    "printed",
+    "in",
+    "the",
+    "terminal",
+    "are",
+    "correct.",
+    "⬥",
+    "Check",
+    "\"Generated",
+    "emojis\"",
+    "for",
+    "emojis",
+    "and",
+    "\"Generated",
+    "preset",
+    "icons\"",
+    "for",
+    "preset",
+    "icons.",
+    "⬥",
+    "Use",
+    "\"Archive",
+    "images.py\"",
+    "to",
+    "archive",
+    "all",
+    "images",
+    "after",
+    "they",
+    "have",
+    "been",
+    "added.",
+    "⬥",
+    "Example",
+    "video",
+    "of",
+    "basic/icon",
+    "creation:",
+    "https://youtu.be/81FjnkxgNoQ",
+    "Icon",
+    "creation",
+    "(manual)",
+    "⬥",
+    "Take",
+    "a",
+    "screen",
+    "grab",
+    "of",
+    "an",
+    "item",
+    "from",
+    "an",
+    "opaque",
+    "bank",
+    "interface",
+    "(for",
+    "emojis)",
+    "or",
+    "opaque",
+    "inventory",
+    "slot",
+    "(for",
+    "preset",
+    "icons)",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Your",
+    "bank",
+    "background",
+    "should",
+    "be",
+    "uniformly",
+    "coloured",
+    "to",
+    "facilitate",
+    "background",
+    "removal.",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Items",
+    "on",
+    "the",
+    "Grand",
+    "Exchange",
+    "and",
+    "preset",
+    "interface",
+    "have",
+    "their",
+    "outlines",
+    "removed",
+    "and",
+    "cannot",
+    "be",
+    "used",
+    "as",
+    "a",
+    "source",
+    "for",
+    "emojis.",
+    "​",
+    "Manual",
+    "icon",
+    "creation",
+    "Open",
+    "the",
+    "item",
+    "you",
+    "want",
+    "to",
+    "make",
+    "an",
+    "icon",
+    "of",
+    "in",
+    "Paint.net,",
+    "crop",
+    "it",
+    "as",
+    "nicely",
+    "as",
+    "possible.",
+    "Zoom",
+    "in",
+    "and",
+    "crop",
+    "the",
+    "inventory",
+    "slot",
+    "exactly",
+    "using",
+    "rectangle",
+    "select",
+    "(this",
+    "should",
+    "give",
+    "you",
+    "a",
+    "38x34",
+    "area).",
+    "Use",
+    "the",
+    "crop",
+    "to",
+    "selection",
+    "option",
+    "under",
+    "Image.",
+    "‎",
+    "‎",
+    "‎",
+    "‎a.",
+    "Shortcut:",
+    "Ctrl",
+    "+",
+    "Shift",
+    "+",
+    "X.",
+    "Select",
+    "the",
+    "Magic",
+    "Wand",
+    "and",
+    "Rectangle",
+    "select/Lasso",
+    "select",
+    "tools",
+    "to",
+    "select",
+    "and",
+    "delete",
+    "regions",
+    "until",
+    "the",
+    "background",
+    "is",
+    "completely",
+    "removed.",
+    "‎",
+    "‎",
+    "‎",
+    "‎a.",
+    "Use",
+    "Shift",
+    "+",
+    "Click",
+    "with",
+    "the",
+    "Magic",
+    "Wand",
+    "on",
+    "0%",
+    "tolerance",
+    "on",
+    "the",
+    "background",
+    "to",
+    "quickly",
+    "select",
+    "chunks",
+    "of",
+    "regions.",
+    "https://youtu.be/ZjdWPbp4YUo",
+    "Manual",
+    "emoji",
+    "creation",
+    "Open",
+    "the",
+    "item",
+    "you",
+    "want",
+    "to",
+    "make",
+    "an",
+    "icon",
+    "of",
+    "in",
+    "Paint.net,",
+    "crop",
+    "it",
+    "as",
+    "nicely",
+    "as",
+    "possible.",
+    "Select",
+    "the",
+    "Magic",
+    "Wand",
+    "tool",
+    "on",
+    "0%",
+    "tolerance",
+    "and",
+    "use",
+    "Shift",
+    "+",
+    "Click",
+    "followed",
+    "by",
+    "Delete",
+    "on",
+    "the",
+    "background.",
+    "Repeat",
+    "the",
+    "previous",
+    "step",
+    "for",
+    "shadow",
+    "and",
+    "number",
+    "pixels.",
+    "If",
+    "removing",
+    "number",
+    "pixels,",
+    "ensure",
+    "that",
+    "the",
+    "number",
+    "or",
+    "its",
+    "shadow",
+    "do",
+    "not",
+    "cover",
+    "the",
+    "icon.",
+    "‎",
+    "‎",
+    "‎",
+    "‎a.",
+    "Post",
+    "in",
+    "#guide-media-upload-and-request",
+    "if",
+    "there",
+    "is",
+    "no",
+    "way",
+    "to",
+    "get",
+    "the",
+    "complete",
+    "unnumbered",
+    "icon",
+    "or",
+    "visit",
+    "the",
+    "Image",
+    "stacking",
+    "section",
+    "below.",
+    "Use",
+    "the",
+    "Magic",
+    "Wand",
+    "again",
+    "to",
+    "select",
+    "the",
+    "transparent",
+    "background,",
+    "press",
+    "Ctrl",
+    "+",
+    "I",
+    "followed",
+    "by",
+    "Ctrl",
+    "+",
+    "Shift",
+    "+",
+    "X",
+    "to",
+    "crop",
+    "the",
+    "image",
+    "to",
+    "size",
+    "https://youtu.be/9oiHOuCO89U",
+    "Image",
+    "stacking",
+    "If",
+    "you're",
+    "trying",
+    "to",
+    "emoji-fy",
+    "a",
+    "stackable",
+    "item",
+    "(check",
+    "if",
+    "icon",
+    "is",
+    "available",
+    "on",
+    "wiki",
+    "first)",
+    "and",
+    "cannot",
+    "get",
+    "a",
+    "whole",
+    "icon",
+    "due",
+    "to",
+    "the",
+    "number",
+    "partially",
+    "covering",
+    "it,",
+    "you",
+    "can",
+    "stack",
+    "multiple",
+    "incomplete",
+    "images",
+    "(made",
+    "by",
+    "removing",
+    "different",
+    "numbers)",
+    "to",
+    "form",
+    "a",
+    "complete",
+    "image.",
+    "​",
+    "⬥",
+    "The",
+    "most",
+    "efficient",
+    "quantities",
+    "you",
+    "can",
+    "use",
+    "for",
+    "stacking",
+    "are",
+    "not",
+    "yet",
+    "known,",
+    "but",
+    "generally:",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Items",
+    "without",
+    "varying",
+    "icons",
+    "based",
+    "on",
+    "quantity",
+    "(e.g.",
+    "teleport",
+    "tabs),",
+    "use",
+    "quantities",
+    "1,",
+    "7",
+    "and",
+    "9.",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Items",
+    "with",
+    "varying",
+    "icons",
+    "throughout",
+    "numbers",
+    "1-5",
+    "(e.g.",
+    "Bakriminel",
+    "bolts),",
+    "use",
+    "quantities",
+    "11,",
+    "44,",
+    "77",
+    "and",
+    "99.",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Items",
+    "with",
+    "varying",
+    "icons",
+    "throughout",
+    "1-1000",
+    "(e.g.",
+    "congealed",
+    "blood),",
+    "use",
+    "numbers",
+    "1111,",
+    "2222,",
+    "7777",
+    "and",
+    "9999.",
+    "​",
+    "Stacking",
+    "with",
+    "the",
+    "script",
+    "Save",
+    "an",
+    "image",
+    "consisting",
+    "multiple",
+    "inventories",
+    "with",
+    "different",
+    "quantities",
+    "of",
+    "the",
+    "same",
+    "item(s)",
+    "you",
+    "want",
+    "stacked.",
+    "Run",
+    "\"Make",
+    "icon.py\"",
+    "to",
+    "generate",
+    "the",
+    "incomplete",
+    "emojis.",
+    "Create",
+    "respective",
+    "folders",
+    "starting",
+    "with",
+    "\"stack\"",
+    "followed",
+    "by",
+    "the",
+    "item",
+    "name",
+    "and",
+    "sort",
+    "the",
+    "incomplete",
+    "emojis",
+    "into",
+    "their",
+    "respective",
+    "folders.",
+    "Run",
+    "\"Stack.py\"",
+    "to",
+    "create",
+    "the",
+    "stacked",
+    "icons.",
+    "https://youtu.be/MCmgf2WiOeY",
+    "Manual",
+    "stacking",
+    "Have",
+    "images",
+    "consisting",
+    "different",
+    "quantities",
+    "of",
+    "the",
+    "item(s)",
+    "you",
+    "want",
+    "stacked",
+    "open",
+    "in",
+    "different",
+    "windows.",
+    "Carry",
+    "out",
+    "removal",
+    "of",
+    "background,",
+    "shadows,",
+    "and",
+    "quantities.",
+    "Paste",
+    "the",
+    "incomplete",
+    "emojis",
+    "onto",
+    "different",
+    "layers",
+    "and",
+    "merge",
+    "them",
+    "to",
+    "get",
+    "the",
+    "complete",
+    "emoji(s).",
+    "https://youtu.be/yM61GooZZco",
+    "Known",
+    "issues",
+    "⬥",
+    "Currently,",
+    "there",
+    "is",
+    "not",
+    "a",
+    "standardised",
+    "method",
+    "for",
+    "auras",
+    "and",
+    "other",
+    "icons",
+    "(e.g.",
+    "buffs,",
+    "debuffs).",
+    "⬥",
+    "If",
+    "your",
+    "inventory",
+    "slots",
+    "(from",
+    "the",
+    "banking",
+    "interface)",
+    "are",
+    "not",
+    "completely",
+    "uniform,",
+    "the",
+    "script",
+    "will",
+    "not",
+    "be",
+    "able",
+    "to",
+    "recognise",
+    "them",
+    "as",
+    "inventory",
+    "slots.",
+    "⬥",
+    "The",
+    "script",
+    "uses",
+    "the",
+    "complete",
+    "frames",
+    "of",
+    "the",
+    "inventory",
+    "slot",
+    "to",
+    "identify",
+    "them:",
+    "https://imgur.com/CCfr7dG,",
+    "https://imgur.com/ypnZCL3.",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "If",
+    "an",
+    "item",
+    "has",
+    "its",
+    "shadow",
+    "and/or",
+    "outline",
+    "invading",
+    "the",
+    "inventory",
+    "slot,",
+    "the",
+    "frame",
+    "will",
+    "not",
+    "be",
+    "recognised",
+    "and",
+    "the",
+    "item",
+    "will",
+    "not",
+    "be",
+    "extracted.",
+    "Examples:",
+    "Submitting",
+    "completed",
+    "icons",
+    "Preset",
+    "icons",
+    "-",
+    "Upload",
+    "the",
+    "icon",
+    "to",
+    "https://img.pvme.io/",
+    "‎(via",
+    "#guide-media-upload-and-request),",
+    "copy",
+    "the",
+    "item",
+    "link,",
+    "and",
+    "fill",
+    "in",
+    "this",
+    "template",
+    "for",
+    "each",
+    "item",
+    "to",
+    "submit",
+    "via",
+    "pasting",
+    "it",
+    "to",
+    "#unknown:",
+    "name:",
+    "image:",
+    "slot:",
+    "label:",
+    "breakdownNotes:",
+    "wikiLink:",
+    "Fields",
+    "explanations:",
+    "⬥",
+    "name:",
+    "‎The",
+    "item",
+    "name",
+    "as",
+    "displayed",
+    "on",
+    "the",
+    "RSWiki.",
+    "⬥",
+    "image:",
+    "‎The",
+    "raw",
+    "https://img.pvme.io/",
+    "‎link.",
+    "⬥",
+    "slot:",
+    "‎Numbers",
+    "0",
+    "to",
+    "13",
+    "which",
+    "decides",
+    "where",
+    "the",
+    "item",
+    "can",
+    "be",
+    "equipped.",
+    "INVENTORY",
+    "=",
+    "0",
+    "HELM",
+    "=",
+    "1",
+    "BODY",
+    "=",
+    "2",
+    "LEGS",
+    "=",
+    "3",
+    "MH_WEAPON",
+    "=",
+    "4",
+    "OH_WEAPON",
+    "=",
+    "5",
+    "GLOVES",
+    "=",
+    "6",
+    "BOOTS",
+    "=",
+    "7",
+    "AURA",
+    "=",
+    "8",
+    "AMMO",
+    "=",
+    "9",
+    "NECKLACE",
+    "=",
+    "10",
+    "RING",
+    "=",
+    "11",
+    "CAPE",
+    "=",
+    "12",
+    "POCKET",
+    "=",
+    "13",
+    "⬥",
+    "label:",
+    "‎The",
+    "name:",
+    "‎of",
+    "the",
+    "item",
+    "with",
+    "all",
+    "lower-case",
+    "and",
+    "no",
+    "spacing",
+    "OR",
+    "an",
+    "acceptable",
+    "abbreviation.",
+    "⬥",
+    "breakdownNotes:",
+    "‎Default",
+    "text",
+    "that",
+    "appears",
+    "in",
+    "item",
+    "breakdown",
+    "when",
+    "an",
+    "item",
+    "is",
+    "picked.",
+    "This",
+    "is",
+    "usually",
+    "left",
+    "blank.",
+    "⬥",
+    "wikiLink:",
+    "‎Link",
+    "to",
+    "the",
+    "item",
+    "on",
+    "RSWiki.",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Make",
+    "sure",
+    "the",
+    "link",
+    "is",
+    "valid.",
+    "​",
+    "Examples:",
+    "name:",
+    "Abyssal",
+    "scourge",
+    "image:",
+    "https://img.pvme.io/images/Moh9yya.png",
+    "slot:",
+    "4",
+    "label:",
+    "abyssalscourge",
+    "breakdownNotes:",
+    "wikiLink:",
+    "https://runescape.wiki/w/Abyssal_scourge",
+    "​",
+    "name:",
+    "Black",
+    "stone",
+    "arrows",
+    "image:",
+    "https://img.pvme.io/images/uBbMQoy.png",
+    "slot:",
+    "9",
+    "label:",
+    "bsa100",
+    "breakdownNotes:",
+    "wikiLink:",
+    "https://runescape.wiki/w/Black_stone_arrows",
+    "Emojis",
+    "-",
+    "Once",
+    "done",
+    "creating",
+    "the",
+    "emoji(s),",
+    "use",
+    "Ctrl",
+    "+",
+    "A",
+    "+",
+    "Ctrl",
+    "+",
+    "C",
+    "to",
+    "copy",
+    "the",
+    "cropped",
+    "image",
+    "(if",
+    "made",
+    "manually)",
+    "or",
+    "drag",
+    "and",
+    "drop",
+    "saved",
+    "emojis",
+    "into",
+    "#unknown",
+    "along",
+    "with",
+    "the",
+    "item",
+    "names."
+  ],
+  "hashes": {
+    "responseSha256": "f85fcca434367a92a82dd7238d2490c889f8764608b3ea9315e36935ec3340c8",
+    "articleSha256": "5b1ed09729f6b05bcc8ade117f278d04bc1fedd882a1232234fdde2d73355531",
+    "textSha256": "517ed1d999f43bd6ac31aa64afd86ed1494942807d91b0c4103016e3a9e713c5",
+    "normalizedTextSha256": "bb373596c88bff00f0a332420b41ef26782c7587518f3378e837af3f73a80809"
+  },
+  "headings": [
+    {
+      "tag": "h2",
+      "text": "Introduction",
+      "attrs": {
+        "id": "introduction"
+      },
+      "location": {
+        "start": 165525,
+        "end": 165575
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "Icon formatting",
+      "attrs": {
+        "id": "icon-formatting"
+      },
+      "location": {
+        "start": 168564,
+        "end": 168620
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "RSWiki icons",
+      "attrs": {
+        "id": "rswiki-icons"
+      },
+      "location": {
+        "start": 169795,
+        "end": 169845
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "Icon creation (script)",
+      "attrs": {
+        "id": "icon-creation-script"
+      },
+      "location": {
+        "start": 170535,
+        "end": 170603
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "Icon creation (manual)",
+      "attrs": {
+        "id": "icon-creation-manual"
+      },
+      "location": {
+        "start": 172752,
+        "end": 172820
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "Image stacking",
+      "attrs": {
+        "id": "image-stacking"
+      },
+      "location": {
+        "start": 175611,
+        "end": 175665
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "Known issues",
+      "attrs": {
+        "id": "known-issues"
+      },
+      "location": {
+        "start": 177920,
+        "end": 177970
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "Submitting completed icons",
+      "attrs": {
+        "id": "submitting-completed-icons"
+      },
+      "location": {
+        "start": 178697,
+        "end": 178775
+      }
+    }
+  ],
+  "media": [
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/tHGKxIrkby.png"
+      },
+      "text": "",
+      "location": {
+        "start": 169288,
+        "end": 169355
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/Yv2AN2KqdH.png"
+      },
+      "text": "",
+      "location": {
+        "start": 169481,
+        "end": 169548
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/ZlC9E1hWBh.png"
+      },
+      "text": "",
+      "location": {
+        "start": 169723,
+        "end": 169790
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/TgSLjZRTq9.png"
+      },
+      "text": "",
+      "location": {
+        "start": 170463,
+        "end": 170530
+      }
+    },
+    {
+      "tag": "iframe",
+      "attrs": {
+        "class": "media",
+        "width": "560",
+        "height": "315",
+        "src": "https://www.youtube.com/embed/PG19o3AzfCc",
+        "frameborder": "0",
+        "allow": "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+        "allowfullscreen": ""
+      },
+      "text": "",
+      "location": {
+        "start": 171408,
+        "end": 171624
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/0nBdPW5cuc.png"
+      },
+      "text": "",
+      "location": {
+        "start": 171975,
+        "end": 172042
+      }
+    },
+    {
+      "tag": "iframe",
+      "attrs": {
+        "class": "media",
+        "width": "560",
+        "height": "315",
+        "src": "https://www.youtube.com/embed/81FjnkxgNoQ",
+        "frameborder": "0",
+        "allow": "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+        "allowfullscreen": ""
+      },
+      "text": "",
+      "location": {
+        "start": 172534,
+        "end": 172750
+      }
+    },
+    {
+      "tag": "iframe",
+      "attrs": {
+        "class": "media",
+        "width": "560",
+        "height": "315",
+        "src": "https://www.youtube.com/embed/ZjdWPbp4YUo",
+        "frameborder": "0",
+        "allow": "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+        "allowfullscreen": ""
+      },
+      "text": "",
+      "location": {
+        "start": 174155,
+        "end": 174371
+      }
+    },
+    {
+      "tag": "iframe",
+      "attrs": {
+        "class": "media",
+        "width": "560",
+        "height": "315",
+        "src": "https://www.youtube.com/embed/9oiHOuCO89U",
+        "frameborder": "0",
+        "allow": "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+        "allowfullscreen": ""
+      },
+      "text": "",
+      "location": {
+        "start": 175393,
+        "end": 175609
+      }
+    },
+    {
+      "tag": "iframe",
+      "attrs": {
+        "class": "media",
+        "width": "560",
+        "height": "315",
+        "src": "https://www.youtube.com/embed/MCmgf2WiOeY",
+        "frameborder": "0",
+        "allow": "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+        "allowfullscreen": ""
+      },
+      "text": "",
+      "location": {
+        "start": 177027,
+        "end": 177243
+      }
+    },
+    {
+      "tag": "iframe",
+      "attrs": {
+        "class": "media",
+        "width": "560",
+        "height": "315",
+        "src": "https://www.youtube.com/embed/yM61GooZZco",
+        "frameborder": "0",
+        "allow": "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+        "allowfullscreen": ""
+      },
+      "text": "",
+      "location": {
+        "start": 177702,
+        "end": 177918
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "class": "media",
+        "src": "https://img.pvme.io/images/MmKQxc25gA.png"
+      },
+      "text": "",
+      "location": {
+        "start": 178625,
+        "end": 178692
+      }
+    }
+  ],
+  "links": [
+    {
+      "href": "https://pvme.io/pvme-settings/#emojis",
+      "text": "https://pvme.io/pvme-settings/#emojis",
+      "attrs": {
+        "href": "https://pvme.io/pvme-settings/#emojis"
+      },
+      "location": {
+        "start": 165673,
+        "end": 165762
+      }
+    },
+    {
+      "href": "https://pvme.github.io/preset-maker/",
+      "text": "https://pvme.github.io/preset-maker/",
+      "attrs": {
+        "href": "https://pvme.github.io/preset-maker/"
+      },
+      "location": {
+        "start": 165814,
+        "end": 165901
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/XspEfnR9K5.png",
+      "text": "System > Display > Scale",
+      "attrs": {
+        "title": "",
+        "href": "https://img.pvme.io/images/XspEfnR9K5.png",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 166937,
+        "end": 167065
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/4wusRQznyv.png",
+      "text": "Settings > Graphics > Interface Scaling",
+      "attrs": {
+        "title": "",
+        "href": "https://img.pvme.io/images/4wusRQznyv.png",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 167138,
+        "end": 167281
+      }
+    },
+    {
+      "href": "https://www.getpaint.net/download.html#download",
+      "text": "Paint.net",
+      "attrs": {
+        "title": "",
+        "href": "https://www.getpaint.net/download.html#download",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 167444,
+        "end": 167557
+      }
+    },
+    {
+      "href": "https://www.python.org/downloads/",
+      "text": "Python",
+      "attrs": {
+        "title": "",
+        "href": "https://www.python.org/downloads/",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 167758,
+        "end": 167854
+      }
+    },
+    {
+      "href": "https://www.getpaint.net/download.html#download",
+      "text": "Paint.net",
+      "attrs": {
+        "title": "",
+        "href": "https://www.getpaint.net/download.html#download",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 167891,
+        "end": 168004
+      }
+    },
+    {
+      "href": "https://img.pvme.io/images/DneowCezKn.png",
+      "text": "look clear when zoomed in",
+      "attrs": {
+        "title": "",
+        "href": "https://img.pvme.io/images/DneowCezKn.png",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 168297,
+        "end": 168420
+      }
+    },
+    {
+      "href": "https://drive.google.com/file/d/1lLI6X3hAx-IebShGFe1jxbCZgGOzJ60-/view?usp=sharing",
+      "text": "https://drive.google.com/file/d/1lLI6X3hAx-IebShGFe1jxbCZgGOzJ60-/view?usp=sharing",
+      "attrs": {
+        "href": "https://drive.google.com/file/d/1lLI6X3hAx-IebShGFe1jxbCZgGOzJ60-/view?usp=sharing"
+      },
+      "location": {
+        "start": 170843,
+        "end": 171022
+      }
+    },
+    {
+      "href": "https://youtu.be/PG19o3AzfCc",
+      "text": "https://youtu.be/PG19o3AzfCc",
+      "attrs": {
+        "href": "https://youtu.be/PG19o3AzfCc"
+      },
+      "location": {
+        "start": 171332,
+        "end": 171403
+      }
+    },
+    {
+      "href": "https://youtu.be/81FjnkxgNoQ",
+      "text": "https://youtu.be/81FjnkxgNoQ",
+      "attrs": {
+        "href": "https://youtu.be/81FjnkxgNoQ"
+      },
+      "location": {
+        "start": 172458,
+        "end": 172529
+      }
+    },
+    {
+      "href": "https://youtu.be/ZjdWPbp4YUo",
+      "text": "https://youtu.be/ZjdWPbp4YUo",
+      "attrs": {
+        "href": "https://youtu.be/ZjdWPbp4YUo"
+      },
+      "location": {
+        "start": 174079,
+        "end": 174150
+      }
+    },
+    {
+      "href": "",
+      "text": "#guide-media-upload-and-request",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 174923,
+        "end": 174990
+      }
+    },
+    {
+      "href": "https://youtu.be/9oiHOuCO89U",
+      "text": "https://youtu.be/9oiHOuCO89U",
+      "attrs": {
+        "href": "https://youtu.be/9oiHOuCO89U"
+      },
+      "location": {
+        "start": 175317,
+        "end": 175388
+      }
+    },
+    {
+      "href": "https://youtu.be/MCmgf2WiOeY",
+      "text": "https://youtu.be/MCmgf2WiOeY",
+      "attrs": {
+        "href": "https://youtu.be/MCmgf2WiOeY"
+      },
+      "location": {
+        "start": 176951,
+        "end": 177022
+      }
+    },
+    {
+      "href": "https://youtu.be/yM61GooZZco",
+      "text": "https://youtu.be/yM61GooZZco",
+      "attrs": {
+        "href": "https://youtu.be/yM61GooZZco"
+      },
+      "location": {
+        "start": 177626,
+        "end": 177697
+      }
+    },
+    {
+      "href": "https://imgur.com/CCfr7dG",
+      "text": "https://imgur.com/CCfr7dG",
+      "attrs": {
+        "href": "https://imgur.com/CCfr7dG"
+      },
+      "location": {
+        "start": 178312,
+        "end": 178377
+      }
+    },
+    {
+      "href": "https://imgur.com/ypnZCL3",
+      "text": "https://imgur.com/ypnZCL3",
+      "attrs": {
+        "href": "https://imgur.com/ypnZCL3"
+      },
+      "location": {
+        "start": 178379,
+        "end": 178444
+      }
+    },
+    {
+      "href": "",
+      "text": "#guide-media-upload-and-request",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 178870,
+        "end": 178937
+      }
+    },
+    {
+      "href": "",
+      "text": "#unknown",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 179028,
+        "end": 179072
+      }
+    },
+    {
+      "href": "",
+      "text": "#unknown",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 180694,
+        "end": 180738
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "h2",
+      "attrs": {
+        "id": "introduction"
+      },
+      "text": "Introduction",
+      "location": {
+        "start": 165525,
+        "end": 165575
+      }
+    },
+    {
+      "index": 1,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 165575,
+        "end": 165576
+      }
+    },
+    {
+      "index": 2,
+      "tag": "p",
+      "attrs": {},
+      "text": "This channel will cover creating and editing:",
+      "location": {
+        "start": 165576,
+        "end": 165628
+      }
+    },
+    {
+      "index": 3,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 165628,
+        "end": 165629
+      }
+    },
+    {
+      "index": 4,
+      "tag": "ol",
+      "attrs": {},
+      "text": "\n\nEmojis used in PvME's guides - https://pvme.io/pvme-settings/#emojis\n\n\nIcons used in the Preset Maker - https://pvme.github.io/preset-maker/\n\n",
+      "location": {
+        "start": 165629,
+        "end": 165917
+      }
+    },
+    {
+      "index": 5,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 165917,
+        "end": 165918
+      }
+    },
+    {
+      "index": 6,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 165918,
+        "end": 165933
+      }
+    },
+    {
+      "index": 7,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 165933,
+        "end": 165934
+      }
+    },
+    {
+      "index": 8,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRequirements\n\nTake note of these before you start.\n\nInterface scaling\n⬥ Ensure both system and RuneScape interface scaling are set to 100%.\n    • System display scaling can be found under System > Display > Scale for Windows users.\n    • RuneScape interface scaling can be found under Settings > Graphics > Interface Scaling.\n​\nManual emoji creation/Image editing\n⬥ Paint.net or better image editing software downloaded.\n​\nEmoji/icon creation by script\n⬥ Python installed.\n⬥ Internet connection.\n⬥ Paint.net is still highly recommended to manually edit or make icons where the script fails.\n​\nRaw input picture requirements\n⬥ In game interfaces MUST have 0% transparency.\n⬥ Must look clear when zoomed in (affected by interface scaling)​\n\n\n\n\n\n\n",
+      "location": {
+        "start": 165934,
+        "end": 168562
+      }
+    },
+    {
+      "index": 9,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 168562,
+        "end": 168564
+      }
+    },
+    {
+      "index": 10,
+      "tag": "h2",
+      "attrs": {
+        "id": "icon-formatting"
+      },
+      "text": "Icon formatting",
+      "location": {
+        "start": 168564,
+        "end": 168620
+      }
+    },
+    {
+      "index": 11,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168620,
+        "end": 168621
+      }
+    },
+    {
+      "index": 12,
+      "tag": "p",
+      "attrs": {},
+      "text": "Every icon consists of 4 parts:",
+      "location": {
+        "start": 168621,
+        "end": 168659
+      }
+    },
+    {
+      "index": 13,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168659,
+        "end": 168660
+      }
+    },
+    {
+      "index": 14,
+      "tag": "ol",
+      "attrs": {},
+      "text": "\n\nThe main item - Colour varies, never contains the same shade as the outline and shadow.\n\n\nThe outline - A black border that immediately surrounds the main item (RGB value 0,0,2).\n\n\nThe shadow - A black border that appears bottom-right of the outline where applicable (RGB value 0,0,1).\n\n\n(Only for stackable items) The number (RGB value 255,255,0).\n\n",
+      "location": {
+        "start": 168660,
+        "end": 169170
+      }
+    },
+    {
+      "index": 15,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169170,
+        "end": 169171
+      }
+    },
+    {
+      "index": 16,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎a. Numbers have their own shadows.",
+      "location": {
+        "start": 169171,
+        "end": 169219
+      }
+    },
+    {
+      "index": 17,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169219,
+        "end": 169220
+      }
+    },
+    {
+      "index": 18,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 169220,
+        "end": 169235
+      }
+    },
+    {
+      "index": 19,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169235,
+        "end": 169236
+      }
+    },
+    {
+      "index": 20,
+      "tag": "p",
+      "attrs": {},
+      "text": "Image showing different regions selected:",
+      "location": {
+        "start": 169236,
+        "end": 169284
+      }
+    },
+    {
+      "index": 21,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169284,
+        "end": 169285
+      }
+    },
+    {
+      "index": 22,
+      "tag": "p",
+      "attrs": {},
+      "text": "",
+      "location": {
+        "start": 169285,
+        "end": 169359
+      }
+    },
+    {
+      "index": 23,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169359,
+        "end": 169360
+      }
+    },
+    {
+      "index": 24,
+      "tag": "p",
+      "attrs": {},
+      "text": "Preset icons are extracted from inventory slots pictures (38x34) and contains all icon parts.",
+      "location": {
+        "start": 169360,
+        "end": 169477
+      }
+    },
+    {
+      "index": 25,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169477,
+        "end": 169478
+      }
+    },
+    {
+      "index": 26,
+      "tag": "p",
+      "attrs": {},
+      "text": "",
+      "location": {
+        "start": 169478,
+        "end": 169552
+      }
+    },
+    {
+      "index": 27,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169552,
+        "end": 169553
+      }
+    },
+    {
+      "index": 28,
+      "tag": "p",
+      "attrs": {},
+      "text": "Emojis are extracted from bank pictures and have shadows and numbers removed. They are also cropped to size.",
+      "location": {
+        "start": 169553,
+        "end": 169719
+      }
+    },
+    {
+      "index": 29,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169719,
+        "end": 169720
+      }
+    },
+    {
+      "index": 30,
+      "tag": "p",
+      "attrs": {},
+      "text": "",
+      "location": {
+        "start": 169720,
+        "end": 169794
+      }
+    },
+    {
+      "index": 31,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169794,
+        "end": 169795
+      }
+    },
+    {
+      "index": 32,
+      "tag": "h2",
+      "attrs": {
+        "id": "rswiki-icons"
+      },
+      "text": "RSWiki icons",
+      "location": {
+        "start": 169795,
+        "end": 169845
+      }
+    },
+    {
+      "index": 33,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169845,
+        "end": 169846
+      }
+    },
+    {
+      "index": 34,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ All preset icons should be made via the script or manually, and not based on RSWiki icons.",
+      "location": {
+        "start": 169846,
+        "end": 169962
+      }
+    },
+    {
+      "index": 35,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169962,
+        "end": 169963
+      }
+    },
+    {
+      "index": 36,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Emojis can be made from RSWiki icons based on conditions below.",
+      "location": {
+        "start": 169963,
+        "end": 170042
+      }
+    },
+    {
+      "index": 37,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170042,
+        "end": 170043
+      }
+    },
+    {
+      "index": 38,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 170043,
+        "end": 170058
+      }
+    },
+    {
+      "index": 39,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170058,
+        "end": 170059
+      }
+    },
+    {
+      "index": 40,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ The source of the icon determines whether you can use the RSWiki icon as an emoji.",
+      "location": {
+        "start": 170059,
+        "end": 170167
+      }
+    },
+    {
+      "index": 41,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170167,
+        "end": 170168
+      }
+    },
+    {
+      "index": 42,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Icons which are prepared by users and accurately reflects how they appear in the game can be used.",
+      "location": {
+        "start": 170168,
+        "end": 170299
+      }
+    },
+    {
+      "index": 43,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170299,
+        "end": 170300
+      }
+    },
+    {
+      "index": 44,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• If the icon is prepared by a bot. It is most likely a Java icon which do not reflect how the icon looks like in the live game.",
+      "location": {
+        "start": 170300,
+        "end": 170459
+      }
+    },
+    {
+      "index": 45,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170459,
+        "end": 170460
+      }
+    },
+    {
+      "index": 46,
+      "tag": "p",
+      "attrs": {},
+      "text": "",
+      "location": {
+        "start": 170460,
+        "end": 170534
+      }
+    },
+    {
+      "index": 47,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170534,
+        "end": 170535
+      }
+    },
+    {
+      "index": 48,
+      "tag": "h2",
+      "attrs": {
+        "id": "icon-creation-script"
+      },
+      "text": "Icon creation (script)",
+      "location": {
+        "start": 170535,
+        "end": 170603
+      }
+    },
+    {
+      "index": 49,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170603,
+        "end": 170604
+      }
+    },
+    {
+      "index": 50,
+      "tag": "p",
+      "attrs": {},
+      "text": "Currently, the script only works for screen grabs of the inventory section when banking or of the GE buy interface.",
+      "location": {
+        "start": 170604,
+        "end": 170760
+      }
+    },
+    {
+      "index": 51,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170760,
+        "end": 170761
+      }
+    },
+    {
+      "index": 52,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 170761,
+        "end": 170776
+      }
+    },
+    {
+      "index": 53,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170776,
+        "end": 170777
+      }
+    },
+    {
+      "index": 54,
+      "tag": "p",
+      "attrs": {},
+      "text": "Setting up",
+      "location": {
+        "start": 170777,
+        "end": 170811
+      }
+    },
+    {
+      "index": 55,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 170811,
+        "end": 170812
+      }
+    },
+    {
+      "index": 56,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Download the script here: https://drive.google.com/file/d/1lLI6X3hAx-IebShGFe1jxbCZgGOzJ60-/view?usp=sharing",
+      "location": {
+        "start": 170812,
+        "end": 171026
+      }
+    },
+    {
+      "index": 57,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171026,
+        "end": 171027
+      }
+    },
+    {
+      "index": 58,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Move the script to a desired directory.",
+      "location": {
+        "start": 171027,
+        "end": 171075
+      }
+    },
+    {
+      "index": 59,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171075,
+        "end": 171076
+      }
+    },
+    {
+      "index": 60,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Run the script to set up the folders required.",
+      "location": {
+        "start": 171076,
+        "end": 171131
+      }
+    },
+    {
+      "index": 61,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171131,
+        "end": 171132
+      }
+    },
+    {
+      "index": 62,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Let the script to install the Pillow Python package if not installed (required for Python to manipulate images).",
+      "location": {
+        "start": 171132,
+        "end": 171277
+      }
+    },
+    {
+      "index": 63,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171277,
+        "end": 171278
+      }
+    },
+    {
+      "index": 64,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• DO NOT RENAME THE CREATED FOLDERS.",
+      "location": {
+        "start": 171278,
+        "end": 171328
+      }
+    },
+    {
+      "index": 65,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171328,
+        "end": 171329
+      }
+    },
+    {
+      "index": 66,
+      "tag": "p",
+      "attrs": {},
+      "text": "https://youtu.be/PG19o3AzfCc",
+      "location": {
+        "start": 171329,
+        "end": 171407
+      }
+    },
+    {
+      "index": 67,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171407,
+        "end": 171408
+      }
+    },
+    {
+      "index": 68,
+      "tag": "iframe",
+      "attrs": {
+        "class": "media",
+        "width": "560",
+        "height": "315",
+        "src": "https://www.youtube.com/embed/PG19o3AzfCc",
+        "frameborder": "0",
+        "allow": "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+        "allowfullscreen": ""
+      },
+      "text": "",
+      "location": {
+        "start": 171408,
+        "end": 171624
+      }
+    },
+    {
+      "index": 69,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 171624,
+        "end": 171626
+      }
+    },
+    {
+      "index": 70,
+      "tag": "p",
+      "attrs": {},
+      "text": "Making icons/emojis",
+      "location": {
+        "start": 171626,
+        "end": 171669
+      }
+    },
+    {
+      "index": 71,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171669,
+        "end": 171670
+      }
+    },
+    {
+      "index": 72,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Take screen grabs of items from the inventory section of the banking interface (example below) and save it in \"Inventory screengrabs\" as a .png file.",
+      "location": {
+        "start": 171670,
+        "end": 171862
+      }
+    },
+    {
+      "index": 73,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171862,
+        "end": 171863
+      }
+    },
+    {
+      "index": 74,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• To make emojis instead of preset icons: add a \"_emoji\" suffix to the name of the screengrab.",
+      "location": {
+        "start": 171863,
+        "end": 171971
+      }
+    },
+    {
+      "index": 75,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171971,
+        "end": 171972
+      }
+    },
+    {
+      "index": 76,
+      "tag": "p",
+      "attrs": {},
+      "text": "\n⬥ Navigate back and run \"Make icon.py\"",
+      "location": {
+        "start": 171972,
+        "end": 172102
+      }
+    },
+    {
+      "index": 77,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172102,
+        "end": 172103
+      }
+    },
+    {
+      "index": 78,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Check that the quantities printed in the terminal are correct.",
+      "location": {
+        "start": 172103,
+        "end": 172181
+      }
+    },
+    {
+      "index": 79,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172181,
+        "end": 172182
+      }
+    },
+    {
+      "index": 80,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Check \"Generated emojis\" for emojis and \"Generated preset icons\" for preset icons.",
+      "location": {
+        "start": 172182,
+        "end": 172307
+      }
+    },
+    {
+      "index": 81,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172307,
+        "end": 172308
+      }
+    },
+    {
+      "index": 82,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Use \"Archive images.py\" to archive all images after they have been added.",
+      "location": {
+        "start": 172308,
+        "end": 172407
+      }
+    },
+    {
+      "index": 83,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172407,
+        "end": 172408
+      }
+    },
+    {
+      "index": 84,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Example video of basic/icon creation:",
+      "location": {
+        "start": 172408,
+        "end": 172454
+      }
+    },
+    {
+      "index": 85,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172454,
+        "end": 172455
+      }
+    },
+    {
+      "index": 86,
+      "tag": "p",
+      "attrs": {},
+      "text": "https://youtu.be/81FjnkxgNoQ",
+      "location": {
+        "start": 172455,
+        "end": 172533
+      }
+    },
+    {
+      "index": 87,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172533,
+        "end": 172534
+      }
+    },
+    {
+      "index": 88,
+      "tag": "iframe",
+      "attrs": {
+        "class": "media",
+        "width": "560",
+        "height": "315",
+        "src": "https://www.youtube.com/embed/81FjnkxgNoQ",
+        "frameborder": "0",
+        "allow": "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+        "allowfullscreen": ""
+      },
+      "text": "",
+      "location": {
+        "start": 172534,
+        "end": 172750
+      }
+    },
+    {
+      "index": 89,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 172750,
+        "end": 172752
+      }
+    },
+    {
+      "index": 90,
+      "tag": "h2",
+      "attrs": {
+        "id": "icon-creation-manual"
+      },
+      "text": "Icon creation (manual)",
+      "location": {
+        "start": 172752,
+        "end": 172820
+      }
+    },
+    {
+      "index": 91,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172820,
+        "end": 172821
+      }
+    },
+    {
+      "index": 92,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Take a screen grab of an item from an opaque bank interface (for emojis) or opaque inventory slot (for preset icons)",
+      "location": {
+        "start": 172821,
+        "end": 172980
+      }
+    },
+    {
+      "index": 93,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172980,
+        "end": 172981
+      }
+    },
+    {
+      "index": 94,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Your bank background should be uniformly coloured to facilitate background removal.",
+      "location": {
+        "start": 172981,
+        "end": 173080
+      }
+    },
+    {
+      "index": 95,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173080,
+        "end": 173081
+      }
+    },
+    {
+      "index": 96,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Items on the Grand Exchange and preset interface have their outlines removed and cannot be used as a source for emojis.",
+      "location": {
+        "start": 173081,
+        "end": 173250
+      }
+    },
+    {
+      "index": 97,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173250,
+        "end": 173251
+      }
+    },
+    {
+      "index": 98,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 173251,
+        "end": 173266
+      }
+    },
+    {
+      "index": 99,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173266,
+        "end": 173267
+      }
+    },
+    {
+      "index": 100,
+      "tag": "p",
+      "attrs": {},
+      "text": "Manual icon creation",
+      "location": {
+        "start": 173267,
+        "end": 173311
+      }
+    },
+    {
+      "index": 101,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173311,
+        "end": 173312
+      }
+    },
+    {
+      "index": 102,
+      "tag": "ol",
+      "attrs": {},
+      "text": "\n\nOpen the item you want to make an icon of in Paint.net, crop it as nicely as possible.\n\n\nZoom in and crop the inventory slot exactly using rectangle select (this should give you a 38x34 area).\n\n\nUse the crop to selection option under Image.\n\n",
+      "location": {
+        "start": 173312,
+        "end": 173647
+      }
+    },
+    {
+      "index": 103,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173647,
+        "end": 173648
+      }
+    },
+    {
+      "index": 104,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎a. Shortcut: Ctrl + Shift + X.",
+      "location": {
+        "start": 173648,
+        "end": 173709
+      }
+    },
+    {
+      "index": 105,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173709,
+        "end": 173710
+      }
+    },
+    {
+      "index": 106,
+      "tag": "ol",
+      "attrs": {},
+      "text": "\nSelect the Magic Wand and Rectangle select/Lasso select tools to select and delete regions until the background is completely removed.\n",
+      "location": {
+        "start": 173710,
+        "end": 173915
+      }
+    },
+    {
+      "index": 107,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173915,
+        "end": 173916
+      }
+    },
+    {
+      "index": 108,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎a. Use Shift + Click with the Magic Wand on 0% tolerance on the background to quickly select chunks of regions.",
+      "location": {
+        "start": 173916,
+        "end": 174075
+      }
+    },
+    {
+      "index": 109,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174075,
+        "end": 174076
+      }
+    },
+    {
+      "index": 110,
+      "tag": "p",
+      "attrs": {},
+      "text": "https://youtu.be/ZjdWPbp4YUo",
+      "location": {
+        "start": 174076,
+        "end": 174154
+      }
+    },
+    {
+      "index": 111,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174154,
+        "end": 174155
+      }
+    },
+    {
+      "index": 112,
+      "tag": "iframe",
+      "attrs": {
+        "class": "media",
+        "width": "560",
+        "height": "315",
+        "src": "https://www.youtube.com/embed/ZjdWPbp4YUo",
+        "frameborder": "0",
+        "allow": "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+        "allowfullscreen": ""
+      },
+      "text": "",
+      "location": {
+        "start": 174155,
+        "end": 174371
+      }
+    },
+    {
+      "index": 113,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 174371,
+        "end": 174373
+      }
+    },
+    {
+      "index": 114,
+      "tag": "p",
+      "attrs": {},
+      "text": "Manual emoji creation",
+      "location": {
+        "start": 174373,
+        "end": 174418
+      }
+    },
+    {
+      "index": 115,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174418,
+        "end": 174419
+      }
+    },
+    {
+      "index": 116,
+      "tag": "ol",
+      "attrs": {},
+      "text": "\n\nOpen the item you want to make an icon of in Paint.net, crop it as nicely as possible.\n\n\nSelect the Magic Wand tool on 0% tolerance and use Shift + Click followed by Delete on the background.\n\n\nRepeat the previous step for shadow and number pixels.\n\n\nIf removing number pixels, ensure that the number or its shadow do not cover the icon.\n\n",
+      "location": {
+        "start": 174419,
+        "end": 174901
+      }
+    },
+    {
+      "index": 117,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174901,
+        "end": 174902
+      }
+    },
+    {
+      "index": 118,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎a. Post in #guide-media-upload-and-request if there is no way to get the complete unnumbered icon or visit the Image stacking section below.",
+      "location": {
+        "start": 174902,
+        "end": 175109
+      }
+    },
+    {
+      "index": 119,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175109,
+        "end": 175110
+      }
+    },
+    {
+      "index": 120,
+      "tag": "ol",
+      "attrs": {},
+      "text": "\nUse the Magic Wand again to select the transparent background, press Ctrl + I followed by Ctrl + Shift + X to crop the image to size\n",
+      "location": {
+        "start": 175110,
+        "end": 175313
+      }
+    },
+    {
+      "index": 121,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175313,
+        "end": 175314
+      }
+    },
+    {
+      "index": 122,
+      "tag": "p",
+      "attrs": {},
+      "text": "https://youtu.be/9oiHOuCO89U",
+      "location": {
+        "start": 175314,
+        "end": 175392
+      }
+    },
+    {
+      "index": 123,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175392,
+        "end": 175393
+      }
+    },
+    {
+      "index": 124,
+      "tag": "iframe",
+      "attrs": {
+        "class": "media",
+        "width": "560",
+        "height": "315",
+        "src": "https://www.youtube.com/embed/9oiHOuCO89U",
+        "frameborder": "0",
+        "allow": "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+        "allowfullscreen": ""
+      },
+      "text": "",
+      "location": {
+        "start": 175393,
+        "end": 175609
+      }
+    },
+    {
+      "index": 125,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 175609,
+        "end": 175611
+      }
+    },
+    {
+      "index": 126,
+      "tag": "h2",
+      "attrs": {
+        "id": "image-stacking"
+      },
+      "text": "Image stacking",
+      "location": {
+        "start": 175611,
+        "end": 175665
+      }
+    },
+    {
+      "index": 127,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175665,
+        "end": 175666
+      }
+    },
+    {
+      "index": 128,
+      "tag": "p",
+      "attrs": {},
+      "text": "If you're trying to emoji-fy a stackable item (check if icon is available on wiki first) and cannot get a whole icon due to the number partially covering it, you can stack multiple incomplete images (made by removing different numbers) to form a complete image.",
+      "location": {
+        "start": 175666,
+        "end": 175951
+      }
+    },
+    {
+      "index": 129,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175951,
+        "end": 175952
+      }
+    },
+    {
+      "index": 130,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 175952,
+        "end": 175967
+      }
+    },
+    {
+      "index": 131,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 175967,
+        "end": 175968
+      }
+    },
+    {
+      "index": 132,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ The most efficient quantities you can use for stacking are not yet known, but generally:",
+      "location": {
+        "start": 175968,
+        "end": 176065
+      }
+    },
+    {
+      "index": 133,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176065,
+        "end": 176066
+      }
+    },
+    {
+      "index": 134,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Items without varying icons based on quantity (e.g. teleport tabs), use quantities 1, 7 and 9.",
+      "location": {
+        "start": 176066,
+        "end": 176176
+      }
+    },
+    {
+      "index": 135,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176176,
+        "end": 176177
+      }
+    },
+    {
+      "index": 136,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Items with varying icons throughout numbers 1-5 (e.g. Bakriminel bolts), use quantities 11, 44, 77 and 99.",
+      "location": {
+        "start": 176177,
+        "end": 176299
+      }
+    },
+    {
+      "index": 137,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176299,
+        "end": 176300
+      }
+    },
+    {
+      "index": 138,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Items with varying icons throughout 1-1000 (e.g. congealed blood), use numbers 1111, 2222, 7777 and 9999.",
+      "location": {
+        "start": 176300,
+        "end": 176421
+      }
+    },
+    {
+      "index": 139,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176421,
+        "end": 176422
+      }
+    },
+    {
+      "index": 140,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 176422,
+        "end": 176437
+      }
+    },
+    {
+      "index": 141,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176437,
+        "end": 176438
+      }
+    },
+    {
+      "index": 142,
+      "tag": "p",
+      "attrs": {},
+      "text": "Stacking with the script",
+      "location": {
+        "start": 176438,
+        "end": 176486
+      }
+    },
+    {
+      "index": 143,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176486,
+        "end": 176487
+      }
+    },
+    {
+      "index": 144,
+      "tag": "ol",
+      "attrs": {},
+      "text": "\n\nSave an image consisting multiple inventories with different quantities of the same item(s) you want stacked.\n\n\nRun \"Make icon.py\" to generate the incomplete emojis.\n\n\nCreate respective folders starting with \"stack\" followed by the item name and sort the incomplete emojis into their respective folders.\n\n\nRun \"Stack.py\" to create the stacked icons.\n\n",
+      "location": {
+        "start": 176487,
+        "end": 176947
+      }
+    },
+    {
+      "index": 145,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176947,
+        "end": 176948
+      }
+    },
+    {
+      "index": 146,
+      "tag": "p",
+      "attrs": {},
+      "text": "https://youtu.be/MCmgf2WiOeY",
+      "location": {
+        "start": 176948,
+        "end": 177026
+      }
+    },
+    {
+      "index": 147,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177026,
+        "end": 177027
+      }
+    },
+    {
+      "index": 148,
+      "tag": "iframe",
+      "attrs": {
+        "class": "media",
+        "width": "560",
+        "height": "315",
+        "src": "https://www.youtube.com/embed/MCmgf2WiOeY",
+        "frameborder": "0",
+        "allow": "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+        "allowfullscreen": ""
+      },
+      "text": "",
+      "location": {
+        "start": 177027,
+        "end": 177243
+      }
+    },
+    {
+      "index": 149,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 177243,
+        "end": 177245
+      }
+    },
+    {
+      "index": 150,
+      "tag": "p",
+      "attrs": {},
+      "text": "Manual stacking",
+      "location": {
+        "start": 177245,
+        "end": 177284
+      }
+    },
+    {
+      "index": 151,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177284,
+        "end": 177285
+      }
+    },
+    {
+      "index": 152,
+      "tag": "ol",
+      "attrs": {},
+      "text": "\n\nHave images consisting different quantities of the item(s) you want stacked open in different windows.\n\n\nCarry out removal of background, shadows, and quantities.\n\n\nPaste the incomplete emojis onto different layers and merge them to get the complete emoji(s).\n\n",
+      "location": {
+        "start": 177285,
+        "end": 177622
+      }
+    },
+    {
+      "index": 153,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177622,
+        "end": 177623
+      }
+    },
+    {
+      "index": 154,
+      "tag": "p",
+      "attrs": {},
+      "text": "https://youtu.be/yM61GooZZco",
+      "location": {
+        "start": 177623,
+        "end": 177701
+      }
+    },
+    {
+      "index": 155,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177701,
+        "end": 177702
+      }
+    },
+    {
+      "index": 156,
+      "tag": "iframe",
+      "attrs": {
+        "class": "media",
+        "width": "560",
+        "height": "315",
+        "src": "https://www.youtube.com/embed/yM61GooZZco",
+        "frameborder": "0",
+        "allow": "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+        "allowfullscreen": ""
+      },
+      "text": "",
+      "location": {
+        "start": 177702,
+        "end": 177918
+      }
+    },
+    {
+      "index": 157,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 177918,
+        "end": 177920
+      }
+    },
+    {
+      "index": 158,
+      "tag": "h2",
+      "attrs": {
+        "id": "known-issues"
+      },
+      "text": "Known issues",
+      "location": {
+        "start": 177920,
+        "end": 177970
+      }
+    },
+    {
+      "index": 159,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177970,
+        "end": 177971
+      }
+    },
+    {
+      "index": 160,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Currently, there is not a standardised method for auras and other icons (e.g. buffs, debuffs).",
+      "location": {
+        "start": 177971,
+        "end": 178074
+      }
+    },
+    {
+      "index": 161,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178074,
+        "end": 178075
+      }
+    },
+    {
+      "index": 162,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ If your inventory slots (from the banking interface) are not completely uniform, the script will not be able to recognise them as inventory slots.",
+      "location": {
+        "start": 178075,
+        "end": 178230
+      }
+    },
+    {
+      "index": 163,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178230,
+        "end": 178231
+      }
+    },
+    {
+      "index": 164,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ The script uses the complete frames of the inventory slot to identify them: https://imgur.com/CCfr7dG, https://imgur.com/ypnZCL3.",
+      "location": {
+        "start": 178231,
+        "end": 178449
+      }
+    },
+    {
+      "index": 165,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178449,
+        "end": 178450
+      }
+    },
+    {
+      "index": 166,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• If an item has its shadow and/or outline invading the inventory slot, the frame will not be recognised and the item will not be extracted.",
+      "location": {
+        "start": 178450,
+        "end": 178604
+      }
+    },
+    {
+      "index": 167,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178604,
+        "end": 178605
+      }
+    },
+    {
+      "index": 168,
+      "tag": "p",
+      "attrs": {},
+      "text": "Examples:",
+      "location": {
+        "start": 178605,
+        "end": 178621
+      }
+    },
+    {
+      "index": 169,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178621,
+        "end": 178622
+      }
+    },
+    {
+      "index": 170,
+      "tag": "p",
+      "attrs": {},
+      "text": "",
+      "location": {
+        "start": 178622,
+        "end": 178696
+      }
+    },
+    {
+      "index": 171,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178696,
+        "end": 178697
+      }
+    },
+    {
+      "index": 172,
+      "tag": "h2",
+      "attrs": {
+        "id": "submitting-completed-icons"
+      },
+      "text": "Submitting completed icons",
+      "location": {
+        "start": 178697,
+        "end": 178775
+      }
+    },
+    {
+      "index": 173,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 178775,
+        "end": 178776
+      }
+    },
+    {
+      "index": 174,
+      "tag": "p",
+      "attrs": {},
+      "text": "Preset icons - Upload the icon to https://img.pvme.io/ ‎(via #guide-media-upload-and-request), copy the item link, and fill in this template for each item to submit via pasting it to #unknown:",
+      "location": {
+        "start": 178776,
+        "end": 179077
+      }
+    },
+    {
+      "index": 175,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179077,
+        "end": 179078
+      }
+    },
+    {
+      "index": 176,
+      "tag": "pre",
+      "attrs": {},
+      "text": "name:\nimage:\nslot:\nlabel:\nbreakdownNotes:\nwikiLink:\n\n",
+      "location": {
+        "start": 179078,
+        "end": 179155
+      }
+    },
+    {
+      "index": 177,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179155,
+        "end": 179156
+      }
+    },
+    {
+      "index": 178,
+      "tag": "p",
+      "attrs": {},
+      "text": "Fields explanations:",
+      "location": {
+        "start": 179156,
+        "end": 179183
+      }
+    },
+    {
+      "index": 179,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179183,
+        "end": 179184
+      }
+    },
+    {
+      "index": 180,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ name: ‎The item name as displayed on the RSWiki.",
+      "location": {
+        "start": 179184,
+        "end": 179271
+      }
+    },
+    {
+      "index": 181,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179271,
+        "end": 179272
+      }
+    },
+    {
+      "index": 182,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ image: ‎The raw https://img.pvme.io/ ‎link.",
+      "location": {
+        "start": 179272,
+        "end": 179350
+      }
+    },
+    {
+      "index": 183,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179350,
+        "end": 179351
+      }
+    },
+    {
+      "index": 184,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ slot: ‎Numbers 0 to 13 which decides where the item can be equipped.",
+      "location": {
+        "start": 179351,
+        "end": 179441
+      }
+    },
+    {
+      "index": 185,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179441,
+        "end": 179442
+      }
+    },
+    {
+      "index": 186,
+      "tag": "p",
+      "attrs": {},
+      "text": "INVENTORY = 0",
+      "location": {
+        "start": 179442,
+        "end": 179462
+      }
+    },
+    {
+      "index": 187,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179462,
+        "end": 179463
+      }
+    },
+    {
+      "index": 188,
+      "tag": "p",
+      "attrs": {},
+      "text": "HELM = 1",
+      "location": {
+        "start": 179463,
+        "end": 179478
+      }
+    },
+    {
+      "index": 189,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179478,
+        "end": 179479
+      }
+    },
+    {
+      "index": 190,
+      "tag": "p",
+      "attrs": {},
+      "text": "BODY = 2",
+      "location": {
+        "start": 179479,
+        "end": 179494
+      }
+    },
+    {
+      "index": 191,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179494,
+        "end": 179495
+      }
+    },
+    {
+      "index": 192,
+      "tag": "p",
+      "attrs": {},
+      "text": "LEGS = 3",
+      "location": {
+        "start": 179495,
+        "end": 179510
+      }
+    },
+    {
+      "index": 193,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179510,
+        "end": 179511
+      }
+    },
+    {
+      "index": 194,
+      "tag": "p",
+      "attrs": {},
+      "text": "MH_WEAPON = 4",
+      "location": {
+        "start": 179511,
+        "end": 179531
+      }
+    },
+    {
+      "index": 195,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179531,
+        "end": 179532
+      }
+    },
+    {
+      "index": 196,
+      "tag": "p",
+      "attrs": {},
+      "text": "OH_WEAPON = 5",
+      "location": {
+        "start": 179532,
+        "end": 179552
+      }
+    },
+    {
+      "index": 197,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179552,
+        "end": 179553
+      }
+    },
+    {
+      "index": 198,
+      "tag": "p",
+      "attrs": {},
+      "text": "GLOVES = 6",
+      "location": {
+        "start": 179553,
+        "end": 179570
+      }
+    },
+    {
+      "index": 199,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179570,
+        "end": 179571
+      }
+    },
+    {
+      "index": 200,
+      "tag": "p",
+      "attrs": {},
+      "text": "BOOTS = 7",
+      "location": {
+        "start": 179571,
+        "end": 179587
+      }
+    },
+    {
+      "index": 201,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179587,
+        "end": 179588
+      }
+    },
+    {
+      "index": 202,
+      "tag": "p",
+      "attrs": {},
+      "text": "AURA = 8",
+      "location": {
+        "start": 179588,
+        "end": 179603
+      }
+    },
+    {
+      "index": 203,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179603,
+        "end": 179604
+      }
+    },
+    {
+      "index": 204,
+      "tag": "p",
+      "attrs": {},
+      "text": "AMMO = 9",
+      "location": {
+        "start": 179604,
+        "end": 179619
+      }
+    },
+    {
+      "index": 205,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179619,
+        "end": 179620
+      }
+    },
+    {
+      "index": 206,
+      "tag": "p",
+      "attrs": {},
+      "text": "NECKLACE = 10",
+      "location": {
+        "start": 179620,
+        "end": 179640
+      }
+    },
+    {
+      "index": 207,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179640,
+        "end": 179641
+      }
+    },
+    {
+      "index": 208,
+      "tag": "p",
+      "attrs": {},
+      "text": "RING = 11",
+      "location": {
+        "start": 179641,
+        "end": 179657
+      }
+    },
+    {
+      "index": 209,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179657,
+        "end": 179658
+      }
+    },
+    {
+      "index": 210,
+      "tag": "p",
+      "attrs": {},
+      "text": "CAPE = 12",
+      "location": {
+        "start": 179658,
+        "end": 179674
+      }
+    },
+    {
+      "index": 211,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179674,
+        "end": 179675
+      }
+    },
+    {
+      "index": 212,
+      "tag": "p",
+      "attrs": {},
+      "text": "POCKET = 13",
+      "location": {
+        "start": 179675,
+        "end": 179693
+      }
+    },
+    {
+      "index": 213,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179693,
+        "end": 179694
+      }
+    },
+    {
+      "index": 214,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ label: ‎The name: ‎of the item with all lower-case and no spacing OR an acceptable abbreviation.",
+      "location": {
+        "start": 179694,
+        "end": 179825
+      }
+    },
+    {
+      "index": 215,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179825,
+        "end": 179826
+      }
+    },
+    {
+      "index": 216,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ breakdownNotes: ‎Default text that appears in item breakdown when an item is picked. This is usually left blank.",
+      "location": {
+        "start": 179826,
+        "end": 179960
+      }
+    },
+    {
+      "index": 217,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179960,
+        "end": 179961
+      }
+    },
+    {
+      "index": 218,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ wikiLink: ‎Link to the item on RSWiki.",
+      "location": {
+        "start": 179961,
+        "end": 180021
+      }
+    },
+    {
+      "index": 219,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180021,
+        "end": 180022
+      }
+    },
+    {
+      "index": 220,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Make sure the link is valid.",
+      "location": {
+        "start": 180022,
+        "end": 180066
+      }
+    },
+    {
+      "index": 221,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180066,
+        "end": 180067
+      }
+    },
+    {
+      "index": 222,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 180067,
+        "end": 180082
+      }
+    },
+    {
+      "index": 223,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180082,
+        "end": 180083
+      }
+    },
+    {
+      "index": 224,
+      "tag": "p",
+      "attrs": {},
+      "text": "Examples:",
+      "location": {
+        "start": 180083,
+        "end": 180099
+      }
+    },
+    {
+      "index": 225,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180099,
+        "end": 180100
+      }
+    },
+    {
+      "index": 226,
+      "tag": "pre",
+      "attrs": {},
+      "text": "name: Abyssal scourge\nimage: https://img.pvme.io/images/Moh9yya.png\nslot: 4\nlabel: abyssalscourge\nbreakdownNotes:\nwikiLink: https://runescape.wiki/w/Abyssal_scourge\n",
+      "location": {
+        "start": 180100,
+        "end": 180289
+      }
+    },
+    {
+      "index": 227,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180289,
+        "end": 180290
+      }
+    },
+    {
+      "index": 228,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 180290,
+        "end": 180305
+      }
+    },
+    {
+      "index": 229,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180305,
+        "end": 180306
+      }
+    },
+    {
+      "index": 230,
+      "tag": "pre",
+      "attrs": {},
+      "text": "name: Black stone arrows\nimage: https://img.pvme.io/images/uBbMQoy.png\nslot: 9\nlabel: bsa100\nbreakdownNotes:\nwikiLink: https://runescape.wiki/w/Black_stone_arrows\n",
+      "location": {
+        "start": 180306,
+        "end": 180493
+      }
+    },
+    {
+      "index": 231,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 180493,
+        "end": 180494
+      }
+    },
+    {
+      "index": 232,
+      "tag": "p",
+      "attrs": {},
+      "text": "Emojis - Once done creating the emoji(s), use Ctrl + A + Ctrl + C to copy the cropped image (if made manually) or drag and drop saved emojis into #unknown along with the item names.",
+      "location": {
+        "start": 180494,
+        "end": 180769
+      }
+    },
+    {
+      "index": 233,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n      \n    ",
+      "location": {
+        "start": 180769,
+        "end": 180781
+      }
+    }
+  ]
+}

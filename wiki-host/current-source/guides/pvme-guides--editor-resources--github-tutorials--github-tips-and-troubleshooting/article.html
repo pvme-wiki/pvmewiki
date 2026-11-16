@@ -1,0 +1,110 @@
+<h2 id="introduction"><ins>Introduction</ins></h2>
+<p>This guide will go over an assortment of common issues you may encounter while working with GitHub, as well as a few helpful things you can do to streamline your workflow.</p>
+<p><em>Note: You can always ask any editor or staff for help with GitHub at any time.</em></p>
+<p>&#x200b;</p>
+<h2 id="frequently-used-terminology"><ins>Frequently Used Terminology</ins></h2>
+<p>⬥ <strong>Repository</strong></p>
+<p>‎ ‎ ‎ ‎• A collection of all the files and folders for a single project, that is tracked and version controlled.</p>
+<p>⬥ <strong>Fork</strong></p>
+<p>‎ ‎ ‎ ‎• A <em>copy</em> of an entire repository. A user can <em>fork</em> a repository to get a personal copy.</p>
+<p>⬥ <strong>Commit</strong></p>
+<p>‎ ‎ ‎ ‎• Essentially a 'snapshot' of your repository. Think of it like a checkpoint in a video game. Going back to a particular commit shows the entire repository as it was at that point in time. You commit after making your changes, to prepare for a pull request.</p>
+<p>⬥ <strong>Pull Request</strong></p>
+<p>‎ ‎ ‎ ‎• A request to merge <em>your changes</em> into the <em>main repository</em>, to be accepted by someone with appropriate permissions.</p>
+<p>&#x200b;</p>
+<h2 id="common-problems"><ins>Common Problems</ins></h2>
+<h3 id="failed-checks">Failed Checks</h3>
+<p>⬥ PvME GitHub is set up to automatically check for valid formatting and styling. There are a number of checks, such as:</p>
+<p>‎ ‎ ‎ ‎• Trailing whitespace - extra space at the end of a line</p>
+<p>‎ ‎ ‎ ‎• Improper spacing around emojis - emojis must be surrounded by a space on either side</p>
+<p>‎ ‎ ‎ ‎• Message length exceeded (too many characters) - messages cannot exceed 2000 characters</p>
+<p>‎ ‎ ‎ ‎• Invalid embed formatting - creates an invalid embed object.</p>
+<p>‎ ‎ ‎ ‎• Invalid commands - any <code>.command:</code> ‎used must be a valid command.</p>
+<p>⬥ Checks failing can be avoided by using the <strong>web editor</strong> (<a href="https://pvme.github.io/guide-editor/">https://pvme.github.io/guide-editor/</a>) to edit your content before adding it to GitHub, as it runs the same style checks that pull requests use. For more information check out, <a href="" class="inactiveLink">#unknown-channel</a>.</p>
+<p>⬥ If your pull request fails due to a check, it will inform you. Click on <strong>Details</strong> on the check to see why it has failed, and what you can do to fix it.</p>
+<p>⬥ Consider the following example:</p>
+<p><img class="media" src="https://img.pvme.io/images/ZxizF57.png"></p>
+<p><img class="media" src="https://img.pvme.io/images/qdZjUvf.png">
+⬥ The bottom red square tells you what the error is. In this case, the message starting at line 108 and ending at line 139 has too many characters.</p>
+<p>⬥ To fix this, click the <em>Edit File</em> option in the following image, to open up editing again to make appropriate changes.</p>
+<p><img class="media" src="https://img.pvme.io/images/WHpF7Wq.png">
+⬥ In this case, we break the single large message into 2 separate messages by hitting <code>Enter</code>, entering a single period <code>.</code> ‎and hitting <code>Enter</code> ‎again. Then commit these changes, and it will update the pull request.</p>
+<p><img class="media" src="https://img.pvme.io/images/fTIpYv5.png">
+⬥ Your Pull Request should now be error-free once the checks complete again.</p>
+<p>&#x200b;</p>
+<h3 id="checks-are-stuck">Checks Are Stuck</h3>
+<p>⬥ Rarely, the style and syntax checks may get stuck, neither succeeding nor failing. In such an event, usually merging a different minor pull request tends to resolve the issue.</p>
+<p>⬥ Checks can take some time to complete at times, so wait for at least 20-30 minutes before it is considered an issue.</p>
+<p>⬥ In case this occurs, you can contact an editor or staff for assistance.</p>
+<p>&#x200b;</p>
+<h3 id="your-branch-is-x-commits-behind-master">Your Branch Is 'X' Commits Behind Master</h3>
+<p>⬥ When you make a new fork, your fork will look like this:</p>
+<p><img class="media" src="https://img.pvme.io/images/j3kEy55.png">
+⬥ However, after some time it may look something like this:</p>
+<p><img class="media" src="https://img.pvme.io/images/ztJQ0wj.png">
+⬥ This is because changes might have happened to the main repository (<code>'X' commits behind</code>) and it is no longer in-sync with your copy. This may cause issues when making a pull request.</p>
+<p>⬥ To resolved this, <strong>the simplest solution is to delete your fork, and make a new fork of the PvME repository</strong>.</p>
+<p>⬥ This will give you a fresh, up-to-date copy, and get rid of any lingering issues.</p>
+<p>&#x200b;</p>
+<p><em><strong>For more experienced users</strong>: PvME squashes and merges all pull requests. This causes a difference in commit hashes, which is why your branch will be both ahead AND behind in commits after a pull request is accepted. You can clean this up by discarding commits from accepted PRs and syncing your branch to pvme:master. Or by resetting your branch to pvme:master. Or just delete and start over.|</em></p>
+<p>&#x200b;</p>
+<h2 id="pull-requests"><ins>Pull Requests</ins></h2>
+<h3 id="multiple-changes-updating-an-existing-pull-request">Multiple Changes &amp; Updating an Existing Pull Request</h3>
+<p>⬥ It is possible to include changes to multiple files within the same Pull Request, and to amend files you have already modified as part of that Pull Request.</p>
+<p>⬥ This can be helpful to reduce the number of PRs being opened, and remove the need of closing a PR and reopening it if a mistake has been made.</p>
+<p>&#x200b;</p>
+<p><em>Note: It is assumed you have already forked the repository.</em></p>
+<p>&#x200b;</p>
+<p>⬥ Consider the scenario: a pull request has been made, with changes to <em>one</em> file, visible in the <em>Files Changed</em> tab.</p>
+<p><img class="media" src="https://img.pvme.io/images/kxvu0O2.png">
+&#x200b;</p>
+<h3 id="modify-an-existing-file-in-the-pull-request">Modify an Existing File in the Pull Request</h3>
+<p>To make an a change to a file that already contains a change, <em>in the same pull request</em>, do the following.</p>
+<p>⬥ Navigate to your Pull Request, and go to the <em>Files Changed</em> tab.</p>
+<p>⬥ Go to the top right corner of the file you wish to update, click the three dots, then <em>Edit File</em>.</p>
+<p><img class="media" src="https://img.pvme.io/images/h2i3Rkb.jpg">
+⬥ Make whatever additional changes you like, and then <em>Commit directly to the xxx branch</em>.</p>
+<p><img class="media" src="https://img.pvme.io/images/GbkYLNi.png">
+⬥ Navigate back to your Pull Request, and the additional change should be included!</p>
+<p><img class="media" src="https://img.pvme.io/images/OxtPQXE.png">
+&#x200b;</p>
+<h3 id="add-a-new-file-to-the-pull-request">Add a New File to the Pull Request</h3>
+<p>To edit a different file, and include it in the same pull request, do as follows,</p>
+<p>⬥ Navigate to your Pull Request and click on the name of your branch, here:</p>
+<p>‎ ‎ ‎ ‎• You are now looking at the main directory of your own branch, where all files will reside.</p>
+<p><img class="media" src="https://img.pvme.io/images/ylNa85w.png">
+⬥ Locate the additional file you would like to change, open it, and then click the edit icon.</p>
+<p><img class="media" src="https://img.pvme.io/images/kSt0Xpa.png">
+⬥ Make whatever changes you like, and then <em>Commit directly to the xxx branch</em>.</p>
+<p><img class="media" src="https://img.pvme.io/images/sa6tPYh.png">
+⬥ Navigate back to your Pull Request, and the additional file should be included!</p>
+<p><img class="media" src="https://img.pvme.io/images/UKnKrfs.png">
+&#x200b;</p>
+<h2 id="helpful-tips"><ins>Helpful Tips</ins></h2>
+<h3 id="file-split-view">File Split View</h3>
+<p>⬥ When opening a Pull Request, it is good practice to look at your changes and see if any mistakes have been made.</p>
+<p>⬥ By default, you will see differences between your changes and the original file in <em>Unified View</em>.</p>
+<p>⬥ Sometimes, especially for larger changes, it can be helpful to use <em>Split View</em> instead.</p>
+<p>⬥ Navigate to your Pull Request, and go to the <em>Files Changed</em> tab.</p>
+<p>‎ ‎ ‎ ‎• By default, you will see unified changes, as shown below:</p>
+<p><img class="media" src="https://img.pvme.io/images/KqtUExJ.png">
+⬥ Click the settings icon, select <em>Split</em>, and then <em>Apply and reload</em>.</p>
+<p><img class="media" src="https://img.pvme.io/images/mqNCNlT.png">
+⬥ Congratulations! From now on, your changes will be shown in <em>Split View</em>.</p>
+<p>‎ ‎ ‎ ‎• You can reverse the process to go back to a unified view at any time, if you prefer.</p>
+<p><img class="media" src="https://img.pvme.io/images/IAz8bya.png">
+&#x200b;</p>
+<h3 id="bulk-replacing">Bulk Replacing</h3>
+<p>⬥ To bulk replace, either navigate to the <strong>Edit</strong> menu then select <strong>Replace in Files</strong> or use the Ctrl+Shift+H keybind to do the same.</p>
+<p><img class="media" src="https://img.pvme.io/images/avBqR0i.png">
+⬥ Doing this will open the <strong>Search/Replace</strong> side menu.</p>
+<p><img class="media" src="https://img.pvme.io/images/bLoBXsg.png">
+⬥ The search box is where you enter what you want to replace and the replace box is where you enter what you want to replace it with.</p>
+<p><img class="media" src="https://img.pvme.io/images/1aRteP5.png">
+⬥ However, most of these results aren't what we're looking for so can be dismissed by hovering over the number to the right and clicking the X to dismiss the whole file or the individual Xs below to dismiss individual matches.</p>
+<p><img class="media" src="https://img.pvme.io/images/acVwcaR.png">
+⬥ When you find something you want to replace. you can either right click and click Replace to do it one at a time or you can click the icon to the left of the X to replace all matches in a file.</p>
+<p><img class="media" src="https://img.pvme.io/images/wolcMdJ.png">
+&#x200b;</p>
+      
+    

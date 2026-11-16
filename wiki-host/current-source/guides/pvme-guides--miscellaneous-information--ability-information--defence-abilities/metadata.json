@@ -1,0 +1,832 @@
+{
+  "schemaVersion": 1,
+  "captureVersion": 2,
+  "id": "pvme-guides--miscellaneous-information--ability-information--defence-abilities",
+  "sourceURL": "https://pvme.io/pvme-guides/miscellaneous-information/ability-information/defence-abilities/",
+  "officialURL": "https://pvme.io/pvme-guides/miscellaneous-information/ability-information/defence-abilities/",
+  "responseURL": "https://pvme.io/pvme-guides/miscellaneous-information/ability-information/defence-abilities/",
+  "status": "captured",
+  "statusCode": 200,
+  "retrievedAt": "2026-11-16T00:26:49.807Z",
+  "sitemapLastmod": "2026-11-15",
+  "sitemapSha256": "7166472554d36bfc69a7e14f7298264c0f9bfac00dc9034e5bfd0fba58a14b07",
+  "kind": "guide",
+  "audience": "player",
+  "title": "PvME/Combat reference/Defence Abilities",
+  "titleStatus": "existing-exact-url",
+  "baselineId": "pvme-guides--miscellaneous-information--ability-information--defence-abilities",
+  "sourceTitle": "Introduction",
+  "sourceH1": null,
+  "discovery": "official-sitemap",
+  "directory": "guides/pvme-guides--miscellaneous-information--ability-information--defence-abilities",
+  "sourceSha256": "99343a35a7c5b395a56e723b520e29ee5debe425a544d7ffc95cd68d55b0f404",
+  "bodySha256": "99343a35a7c5b395a56e723b520e29ee5debe425a544d7ffc95cd68d55b0f404",
+  "normalizedTextSha256": "aba6cddc9d18a55392f9ffde86ca79dab65d5b1131b295b8d7d30e2b2038cda2",
+  "parser": "parse5 8.1.1; entities 9.0.0; sourceCodeLocationInfo",
+  "headers": {
+    "accept-ranges": "bytes",
+    "access-control-allow-origin": "*",
+    "age": "0",
+    "cache-control": "max-age=600",
+    "connection": "keep-alive",
+    "content-encoding": "gzip",
+    "content-length": "18102",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Mon, 16 Nov 2026 00:26:50 GMT",
+    "etag": "W/\"6afa1a34-2f4ac\"",
+    "expires": "Mon, 16 Nov 2026 00:36:50 GMT",
+    "last-modified": "Sun, 15 Nov 2026 20:46:44 GMT",
+    "server": "GitHub.com",
+    "strict-transport-security": "max-age=31556952",
+    "vary": "Accept-Encoding",
+    "via": "1.1 varnish",
+    "x-cache": "MISS",
+    "x-cache-hits": "0",
+    "x-fastly-request-id": "471f21b0f362e5c4ab523a2585989feaf4a0933d",
+    "x-github-edge-region": "iad",
+    "x-github-request-id": "13F0:63DFA:298123D:3281389:6AFA4DCA",
+    "x-origin-cache": "HIT",
+    "x-proxy-cache": "MISS",
+    "x-served-by": "cache-iad-kiad7000190-IAD",
+    "x-timer": "S1794788810.233323,VS0,VE28"
+  },
+  "hashes": {
+    "responseSha256": "764575bce4eadfe97e6e894babe902ad2fdcf2f15c96c427d0d16521d9db81ee",
+    "articleSha256": "99343a35a7c5b395a56e723b520e29ee5debe425a544d7ffc95cd68d55b0f404",
+    "textSha256": "d212c3bef9686227ca69c5471537dfd623be8f61a1cd9fd9ccb365e20802df75",
+    "normalizedTextSha256": "aba6cddc9d18a55392f9ffde86ca79dab65d5b1131b295b8d7d30e2b2038cda2"
+  },
+  "counts": {
+    "bytes": 193708,
+    "articleBytes": 27061,
+    "nodes": 1124,
+    "topLevelNodes": 110,
+    "words": 929,
+    "images": 31,
+    "videos": 0,
+    "sources": 0,
+    "links": 25
+  },
+  "tags": {
+    "h2": 2,
+    "ins": 3,
+    "p": 30,
+    "em": 3,
+    "strong": 4,
+    "img": 31,
+    "div": 353,
+    "u": 25,
+    "a": 25,
+    "h3": 4,
+    "span": 9
+  },
+  "mediaHosts": {
+    "cdn.discordapp.com": 31
+  },
+  "patterns": [
+    "no-direct-h1-start-at-first-source-content-after-editor-utility"
+  ],
+  "media": [
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Vuln",
+        "class": "d-emoji",
+        "alt": "Vuln",
+        "src": "https://cdn.discordapp.com/emojis/537349530551582720.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 165594,
+        "end": 165706
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Enfeeble",
+        "class": "d-emoji",
+        "alt": "Enfeeble",
+        "src": "https://cdn.discordapp.com/emojis/567727986409734145.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 165719,
+        "end": 165839
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "smokecloud",
+        "class": "d-emoji",
+        "alt": "smokecloud",
+        "src": "https://cdn.discordapp.com/emojis/856635090641879050.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 165855,
+        "end": 165979
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "defence",
+        "class": "d-emoji",
+        "alt": "defence",
+        "src": "https://cdn.discordapp.com/emojis/689509250979987525.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 168095,
+        "end": 168213
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "defence",
+        "class": "d-emoji",
+        "alt": "defence",
+        "src": "https://cdn.discordapp.com/emojis/689509250979987525.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 169015,
+        "end": 169133
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "anti",
+        "class": "d-emoji",
+        "alt": "anti",
+        "src": "https://cdn.discordapp.com/emojis/535541306475151390.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 170091,
+        "end": 170203
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bash",
+        "class": "d-emoji",
+        "alt": "bash",
+        "src": "https://cdn.discordapp.com/emojis/535541306546716692.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 171092,
+        "end": 171204
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "cease",
+        "class": "d-emoji",
+        "alt": "cease",
+        "src": "https://cdn.discordapp.com/emojis/864235458464186418.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 172182,
+        "end": 172296
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "divert",
+        "class": "d-emoji",
+        "alt": "divert",
+        "src": "https://cdn.discordapp.com/emojis/787904334377648130.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 173300,
+        "end": 173416
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "res",
+        "class": "d-emoji",
+        "alt": "res",
+        "src": "https://cdn.discordapp.com/emojis/535541258844635148.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 173531,
+        "end": 173641
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "nat",
+        "class": "d-emoji",
+        "alt": "nat",
+        "src": "https://cdn.discordapp.com/emojis/535541258131865633.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 173708,
+        "end": 173818
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "freedom",
+        "class": "d-emoji",
+        "alt": "freedom",
+        "src": "https://cdn.discordapp.com/emojis/535541258240786434.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 174835,
+        "end": 174953
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "prep",
+        "class": "d-emoji",
+        "alt": "prep",
+        "src": "https://cdn.discordapp.com/emojis/535541258546970624.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 175897,
+        "end": 176009
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "res",
+        "class": "d-emoji",
+        "alt": "res",
+        "src": "https://cdn.discordapp.com/emojis/535541258844635148.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 176139,
+        "end": 176249
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "divert",
+        "class": "d-emoji",
+        "alt": "divert",
+        "src": "https://cdn.discordapp.com/emojis/787904334377648130.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 176252,
+        "end": 176368
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "voke",
+        "class": "d-emoji",
+        "alt": "voke",
+        "src": "https://cdn.discordapp.com/emojis/535541259465392143.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 177285,
+        "end": 177397
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "voke",
+        "class": "d-emoji",
+        "alt": "voke",
+        "src": "https://cdn.discordapp.com/emojis/535541259465392143.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 177559,
+        "end": 177671
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "res",
+        "class": "d-emoji",
+        "alt": "res",
+        "src": "https://cdn.discordapp.com/emojis/535541258844635148.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 178476,
+        "end": 178586
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "divert",
+        "class": "d-emoji",
+        "alt": "divert",
+        "src": "https://cdn.discordapp.com/emojis/787904334377648130.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 178699,
+        "end": 178815
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "debil",
+        "class": "d-emoji",
+        "alt": "debil",
+        "src": "https://cdn.discordapp.com/emojis/535541278264393729.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 179793,
+        "end": 179907
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "devo",
+        "class": "d-emoji",
+        "alt": "devo",
+        "src": "https://cdn.discordapp.com/emojis/513190158728953857.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 181047,
+        "end": 181159
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "reflect",
+        "class": "d-emoji",
+        "alt": "reflect",
+        "src": "https://cdn.discordapp.com/emojis/535541258786177064.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182112,
+        "end": 182230
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "revenge",
+        "class": "d-emoji",
+        "alt": "revenge",
+        "src": "https://cdn.discordapp.com/emojis/535541259645878302.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 183277,
+        "end": 183395
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "cade",
+        "class": "d-emoji",
+        "alt": "cade",
+        "src": "https://cdn.discordapp.com/emojis/535541306353778689.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 184576,
+        "end": 184688
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "malletops",
+        "class": "d-emoji",
+        "alt": "malletops",
+        "src": "https://cdn.discordapp.com/emojis/690136117374484508.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 184872,
+        "end": 184994
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "immort",
+        "class": "d-emoji",
+        "alt": "immort",
+        "src": "https://cdn.discordapp.com/emojis/535541258538582017.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 186128,
+        "end": 186244
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "nat",
+        "class": "d-emoji",
+        "alt": "nat",
+        "src": "https://cdn.discordapp.com/emojis/535541258131865633.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 187431,
+        "end": 187541
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "rejuvenate",
+        "class": "d-emoji",
+        "alt": "rejuvenate",
+        "src": "https://cdn.discordapp.com/emojis/535541258873995284.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 188410,
+        "end": 188534
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "excal",
+        "class": "d-emoji",
+        "alt": "excal",
+        "src": "https://cdn.discordapp.com/emojis/641337999170207763.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 188703,
+        "end": 188817
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "defence",
+        "class": "d-emoji",
+        "alt": "defence",
+        "src": "https://cdn.discordapp.com/emojis/689509250979987525.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 189688,
+        "end": 189806
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "defence",
+        "class": "d-emoji",
+        "alt": "defence",
+        "src": "https://cdn.discordapp.com/emojis/689509250979987525.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 189836,
+        "end": 189954
+      }
+    }
+  ],
+  "links": [
+    {
+      "href": "https://tools.runescape.wiki/rs-rot/",
+      "text": "click here",
+      "attrs": {
+        "title": "",
+        "href": "https://tools.runescape.wiki/rs-rot/",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 166868,
+        "end": 166971
+      }
+    },
+    {
+      "href": "https://docs.google.com/spreadsheets/d/1rK7u17JN6I-vf3dKBKg6tm9IPWje9EWSe_r8KPdsxoc/edit?usp=sharing",
+      "text": "click here",
+      "attrs": {
+        "title": "",
+        "href": "https://docs.google.com/spreadsheets/d/1rK7u17JN6I-vf3dKBKg6tm9IPWje9EWSe_r8KPdsxoc/edit?usp=sharing",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 167229,
+        "end": 167396
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Invigorating",
+      "text": "click here",
+      "attrs": {
+        "title": "",
+        "href": "https://runescape.wiki/w/Invigorating",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 167649,
+        "end": 167753
+      }
+    },
+    {
+      "href": "",
+      "text": "#pvm-help",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 167993,
+        "end": 168038
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Combat/Divert",
+      "text": "Divert calculator",
+      "attrs": {
+        "title": "",
+        "href": "https://runescape.wiki/w/Calculator:Combat/Divert",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 173826,
+        "end": 173949
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Debilitate#Duration",
+      "text": "here",
+      "attrs": {
+        "title": "",
+        "href": "https://runescape.wiki/w/Debilitate#Duration",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 180161,
+        "end": 180266
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Calculator:Combat/Barricade",
+      "text": "here",
+      "attrs": {
+        "title": "",
+        "href": "https://runescape.wiki/w/Calculator:Combat/Barricade",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 185066,
+        "end": 185179
+      }
+    },
+    {
+      "href": "$linkmsg_intro$",
+      "text": "here",
+      "attrs": {
+        "href": "$linkmsg_intro$"
+      },
+      "location": {
+        "start": 190119,
+        "end": 190153
+      }
+    },
+    {
+      "href": "$linkmsg_defaultdefence$",
+      "text": "Default Auto",
+      "attrs": {
+        "href": "$linkmsg_defaultdefence$"
+      },
+      "location": {
+        "start": 190340,
+        "end": 190391
+      }
+    },
+    {
+      "href": "$linkmsg_anticipate$",
+      "text": "Anticipate",
+      "attrs": {
+        "href": "$linkmsg_anticipate$"
+      },
+      "location": {
+        "start": 190394,
+        "end": 190439
+      }
+    },
+    {
+      "href": "$linkmsg_bash$",
+      "text": "Bash",
+      "attrs": {
+        "href": "$linkmsg_bash$"
+      },
+      "location": {
+        "start": 190442,
+        "end": 190475
+      }
+    },
+    {
+      "href": "$linkmsg_cease$",
+      "text": "Cease",
+      "attrs": {
+        "href": "$linkmsg_cease$"
+      },
+      "location": {
+        "start": 190478,
+        "end": 190513
+      }
+    },
+    {
+      "href": "$linkmsg_bestability$",
+      "text": "Divert",
+      "attrs": {
+        "href": "$linkmsg_bestability$"
+      },
+      "location": {
+        "start": 190516,
+        "end": 190558
+      }
+    },
+    {
+      "href": "$linkmsg_freedom$",
+      "text": "Freedom",
+      "attrs": {
+        "href": "$linkmsg_freedom$"
+      },
+      "location": {
+        "start": 190723,
+        "end": 190762
+      }
+    },
+    {
+      "href": "$linkmsg_preparation$",
+      "text": "Preparation",
+      "attrs": {
+        "href": "$linkmsg_preparation$"
+      },
+      "location": {
+        "start": 190765,
+        "end": 190812
+      }
+    },
+    {
+      "href": "$linkmsg_provoke$",
+      "text": "Provoke",
+      "attrs": {
+        "href": "$linkmsg_provoke$"
+      },
+      "location": {
+        "start": 190815,
+        "end": 190854
+      }
+    },
+    {
+      "href": "$linkmsg_resonance$",
+      "text": "Resonance",
+      "attrs": {
+        "href": "$linkmsg_resonance$"
+      },
+      "location": {
+        "start": 190857,
+        "end": 190900
+      }
+    },
+    {
+      "href": "$linkmsg_debilitate$",
+      "text": "Debilitate",
+      "attrs": {
+        "href": "$linkmsg_debilitate$"
+      },
+      "location": {
+        "start": 191054,
+        "end": 191099
+      }
+    },
+    {
+      "href": "$linkmsg_devotion$",
+      "text": "Devotion",
+      "attrs": {
+        "href": "$linkmsg_devotion$"
+      },
+      "location": {
+        "start": 191102,
+        "end": 191143
+      }
+    },
+    {
+      "href": "$linkmsg_reflect$",
+      "text": "Reflect",
+      "attrs": {
+        "href": "$linkmsg_reflect$"
+      },
+      "location": {
+        "start": 191146,
+        "end": 191185
+      }
+    },
+    {
+      "href": "$linkmsg_revenge$",
+      "text": "Revenge",
+      "attrs": {
+        "href": "$linkmsg_revenge$"
+      },
+      "location": {
+        "start": 191188,
+        "end": 191227
+      }
+    },
+    {
+      "href": "$linkmsg_barricade$",
+      "text": "Barricade",
+      "attrs": {
+        "href": "$linkmsg_barricade$"
+      },
+      "location": {
+        "start": 191380,
+        "end": 191423
+      }
+    },
+    {
+      "href": "$linkmsg_immortality$",
+      "text": "Immortality",
+      "attrs": {
+        "href": "$linkmsg_immortality$"
+      },
+      "location": {
+        "start": 191426,
+        "end": 191473
+      }
+    },
+    {
+      "href": "$linkmsg_naturalinstinct$",
+      "text": "Natural Instinct",
+      "attrs": {
+        "href": "$linkmsg_naturalinstinct$"
+      },
+      "location": {
+        "start": 191476,
+        "end": 191532
+      }
+    },
+    {
+      "href": "$linkmsg_rejuvenate$",
+      "text": "Rejuvenate",
+      "attrs": {
+        "href": "$linkmsg_rejuvenate$"
+      },
+      "location": {
+        "start": 191535,
+        "end": 191580
+      }
+    }
+  ],
+  "files": {
+    "source": "guides/pvme-guides--miscellaneous-information--ability-information--defence-abilities/source.json",
+    "inventory": "guides/pvme-guides--miscellaneous-information--ability-information--defence-abilities/inventory.json",
+    "article": "guides/pvme-guides--miscellaneous-information--ability-information--defence-abilities/article.html",
+    "response": "guides/pvme-guides--miscellaneous-information--ability-information--defence-abilities/response.html",
+    "metadata": "guides/pvme-guides--miscellaneous-information--ability-information--defence-abilities/metadata.json"
+  },
+  "limitations": [
+    "Exact HTTP article preserved, not dynamic preset/item/API data or image/video-only information.",
+    "No media availability, browser layout, semantic equivalence or live wiki revision parity claim."
+  ]
+}

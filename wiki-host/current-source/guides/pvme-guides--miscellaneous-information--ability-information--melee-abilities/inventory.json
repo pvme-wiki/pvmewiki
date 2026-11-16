@@ -1,0 +1,5481 @@
+{
+  "schemaVersion": 1,
+  "id": "pvme-guides--miscellaneous-information--ability-information--melee-abilities",
+  "sourceURL": "https://pvme.io/pvme-guides/miscellaneous-information/ability-information/melee-abilities/",
+  "responseURL": "https://pvme.io/pvme-guides/miscellaneous-information/ability-information/melee-abilities/",
+  "boundary": "First original source content after editor utility; no H1; flagged",
+  "offsets": {
+    "start": 165418,
+    "end": 215144
+  },
+  "text": "Introduction\nNote: Use the Table of Contents present at the bottom of the channel, or in the pinned comments, to quickly navigate through this channel and find the information you are looking for.\n​\nSome general notes:\n⬥ The game runs on an internal tick system: 1t (tick) = 0.6s (seconds).\n⬥ The minimum time between abilities is called the global cooldown: 1 gcd = 3t = 1.8s.\n⬥ Auto attacks will only give adrenaline if they hit (splash = no adrenaline gain).\n‎ ‎ ‎ ‎• Debuff spells like Vuln  or Enfeeble  or Smoke Cloud  do not give adrenaline.\n⬥ Some useful sheets and resources are given below.\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAbility Damage Maths\nTo calculate your ability hit damage in detail, click here.\nThis is affected by factors such as your gear and other boosts.\nAbility Hit Timings\nTo see detailed breakdowns on ability hit timings, click here.\nThis refers to when hitsplats appear on your target.\nAuto-attack Adren Gain\nTo see adrenaline gained with different auto attacks, click here.\n\n\n\n\n\n\n\n\nNote: If you have any difficulties in using the tools or understanding what the information means, you can always ask in #pvm-help.\n​\nMelee \nThis section covers basic abilities, enhanced abilities, ultimate abilities, utility abilities and special attacks for Melee.\n​\nBasic Abilities\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAttack \n\n⬥ Cooldown: 0t (0s)\n⬥ Generates 1  Bloodlust stack\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAdaptive Strike \n\n⬥ Cooldown: 9t (5.4s)\n⬥ Generates 1  Bloodlust stack\n⬥ Generates 12 Adrenaline\n⬥ Depends on weapon used:\n    • 2H: AoE in a cone of attack direction, hitting up to 9 targets, inclusive of main\n    • DW: 2 hits on target\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRend \n\n⬥ Cooldown: 17t (10.2s)\n⬥ Generates 2  Bloodlust stacks\n⬥ Affected by Gloves of Passage , details in #armour-and-weapons\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFury \n\n⬥ Cooldown: 25t (15s)\n⬥ Generates 1  Bloodlust stack\n⬥ Next melee attack has +25% increased crit chance\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGreater Fury \n\n⬥ Cooldown: 25t (15s)\n⬥ Generates 1  Bloodlust stack\n⬥ Next non-bleed melee hit within 15s is guaranteed to crit\n    • Only affects first hit of a combo ability\n    • Is applied only to 1 target in AoE\n    • Bleeds do not consume buff\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBackhand \n\n⬥ Cooldown: 25t (15s)\n    • Charges: 2\n⬥ Generates 1  Bloodlust stack\n⬥ Stuns for 3t (1.8s)\n⬥ It is affected by \n    • Increases Max by 40% per  rank\n    • Increases Minimum by 8% per  rank\n    • No longer stuns or binds\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPunish \n\n⬥ Cooldown: 40t (24s)\n⬥ Generates 1  Bloodlust stack\n⬥ Damage boosted by 2.5x when target is <50% health\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBarge \n\n⬥ Cooldown: 34t (20.4s)\n⬥ Generates 1  Bloodlust stack\n⬥ It is a Mobility ability:\n    • Will move you to Melee Distance\n⬥ It is affected by Mobile \n    • Reduces cooldown to 17t (10.2s)\n⬥ Binds for 11t (6.6s)\n⬥ Clears Bound debuff\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGreater Barge \n\n⬥ Cooldown: 34t (20.4s)\n⬥ Generates 1  Bloodlust stack\n⬥ All normal  things apply\n⬥ It has additional effects:\n    • Every tick (0.6s) since the player stopped attacking their target,  gains +7% to its max range and +5% to its min, capping at 10t (6s) for a total of 100% and 20%. Damage range go from 75%-95% to 125%-165%\n    • After 8t (4.8s) pass since you stopped attacking, when you , if you cast  /  /  within 10t (6s), it will convert the first one done into a damage over time\n⬥ For details on how to use it, use !gbarge\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nChaos Roar \n\n⬥ Cooldown: 100t (60s)\n⬥ Unlocked using a Chaos Roar ability codex \n⬥ Next Melee ability within 7.2s does 1.75x damage\n    • So, it doubles all hits of bleeds (e.g. ) and multi-hit attacks (e.g. )\n    • Channels have multiple casts, so only doubles the first cast (e.g  hit 1)\n\n\n\n\n\n\n\n\n\n​\nEnhanced Abilities\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAssault \n\n⬥ Cooldown: 10t (6s)\n⬥ Adrenaline Cost: 25%\n⬥ Channelled ability, can move while channelling\n⬥ Bloodlust Assault (consumes 4  Bloodlust)\n    • Increases damage from 140% AVG/hit to 180% AVG/hit\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHurricane \n\n⬥ Cooldown: 34t (20.4s)\n⬥ Adrenaline Cost: 25%\n⬥ It is an AoE hitting up to 10 targets, inclusive of main:\n    • 3x3 with player as centre\n    • 5x5 with player as centre with Halberd-type weapon\n⬥ Reduces the cooldown of Hurricane  by 3s for each enemy hit\n⬥ Bloodlust Hurricane (consumes 4  Bloodlust)\n    • Third AoE hitting up to 10 targets, inclusive of main\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFlurry \n\n⬥ Cooldown: 34t (20.4s)\n⬥ Adrenaline Cost: 25%\n⬥ Channelled Ability, can move while channelling\n⬥ Stuns and Binds the target for 6t (3.6s)\n⬥ It is an AoE:\n    • 3x3 with player as centre\n⬥ Bloodlust Flurry (consumes 4  Bloodlust)\n    • Deals 1% increased damage per % hp target is missing up to 65%\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGreater Flurry \n\n⬥ Cooldown: 34t (20.4s)\n⬥ Adrenaline Cost: 25%\n⬥ All normal  things apply\n⬥ Each hit extends  by 1t/hit (0.6s/hit) for up to 8t (4.8s)\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDismember \n\n⬥ Cooldown: 40t (24s)\n⬥ Adrenaline Cost: 0%\n⬥ It is a damage over time:\n    • Not affected by  \n⬥ Can be extended:\n    • Strength skillcape  passive adds 3 hits\n    • Masterwork Spear of Annihilation  adds 50% more hits\n⬥ It is affected by \n    • Max hit increases by 10% + 3% per  rank\n⬥ Can be recast 2 additional times within 24s of previous cast:\n    • 1st cast: Hits every 2t (1.2s) for 8 (11  , 15  +  ) times, heals for 4% of damage\n    • 2nd cast: Hits every 3t (1.8s) for 6 (9  , 12  +  ) times, heals for 6% of damage\n    • 3rd cast: Hits every 3t (1.8s) for 7 (10  , 13  +  ) times, heals for 12% of damage\n\n\n\n\n\n\n\n\n\n​\nSpecial Attacks\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEk-Zekkil \n\n⬥ Cooldown: 100t (60s)\n⬥ Adrenaline Cost: 50% (45% with )\n⬥ Marks target as Flamebound Rival, then deals damage\n    • Only applicable to one target at a time\n        ⬩ Effects only apply to Flamebound Rival\n⬥ If wielding the Ek-Zekkil, fighting your Flamebound Rival will grant:\n    • 12% increased damage dealt on attacks (except bleeds)\n    • 12% reduced damage taken (from Flamebound Rival)\n    • Igneous Showdown an additional 3 (simultaneous) hits\n        ⬩ Refunds 15% adrenaline\n⬥ Switching to Ek-ZekKil will reapply Flamebound Rival to initial target\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nZaros Godsword \n\n⬥ Cooldown: 100t (60s)\n⬥ Adrenaline Cost: 50% (45% with )\n⬥ On cast buff\n⬥ 7x7 area (enemy you cast spec on takes damage every 3t (1.8s) while in it)\n⬥ Increases damage by 25% from t0→34t (35t/21s duration)\n    • Buff starts t1 for autos, t2 for everything\n⬥ Does not incur the auto cooldown, but will still attempt to force an auto\n⬥ Can take weapon off and retain spec effect\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDragon Battleaxe \n\n⬥ Adrenaline Cost: 100% (90% with )\n⬥ Drains 10% (rounded down) of your , , , and  levels and gain a  level boost of 10 + 1 level for every 4 drained from your other stats\n⬥ Boosts damage by 1.2 (stacks with  for a 1.25 * 1.2 = 1.5 boost), or 1.1 when using , making it a 2 * 1.1 = 2.2 boost\n⬥ Multiplicative 10% reduction to hitchance debuff\n⬥ These effects lasts 1 minute\n⬥ Can take weapon off and retain spec effect\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVaranus's Mercy \n\n⬥ Adrenaline Cost: 50% (45% with )\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDragon Claws \n\n⬥ Adrenaline Cost: 50% (45% with )\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStatius's Warhammer \n\n⬥ Adrenaline Cost: 35% (31.5% with )\n⬥ Applies an affinity and  reduction:\n    • +5 affinity\n    • Reduces  level by 30% of base\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDragon Scimitar \n\n⬥ Adrenaline Cost: 25% (22.5% with )\n⬥ Increases accuracy with slash weapons by 25% for 100t (60s)\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGranite Maul \n\n⬥ Adrenaline Cost: 50% (45% with )\n⬥ Can be used during the GCD\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDark Shard of Leng \n\n⬥ Cooldown: 25t (15s)\n⬥ Adrenaline Cost: 30% (27% with )\n⬥ It is an AoE\n⬥ Consumes all  stacks\n⬥ For every stack consumed\n    • Adrenaline Cost is reduced by 12%\n    • Each hit increased by 18-22%\n\n\n\n\n\n\n\n\n\n​\nUltimate Abilities\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOverpower \n\n⬥ Cooldown: 50t (30s)\n⬥ Adrenaline Cost: 60%\n⬥ Affected by the Igneous Kal-Ket  and the Igneous Kal-Zuk :\n    • The ability has two hits.\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPulverise \n\n⬥ Cooldown: 100t (60s)\n⬥ Adrenaline Cost: 60%\n⬥ Applies Pulverised debuff to target\n    • Reduces damage dealt by target by 25%\n    • If target dies with debuff, you gain 50% adrenaline\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBerserk \n\n⬥ Cooldown: 100t (60s)\n⬥ Adrenaline Cost: 100%\n⬥ It is an on cast buff\n⬥ It increases damage by 75% from t0→t33 (34t/20.4s duration)\n⬥ Wearing 3+ pieces of Vestments  extends the duration from t0→t33 (34t/20.4s) to t0→t43 (44t/26.6s)\n⬥ It increases damage taken by 25%\n⬥ Maximum Bloodlust  increased by 4\n⬥ Basic attacks and basic abilities generate 2x Bloodlust \n⬥ Overpower  cooldown reduced to 15t (9s)\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMeteor Strike \n\n⬥ Cooldown: 100t (60s)\n⬥ Adrenaline Cost: 60%\n⬥ It is an AoE hitting up to 9 targets, inclusive of main:\n    • 3x3 with player as centre\n    • 5x5 with player as centre with Halberd-type weapon\n⬥ Provides an Adrenaline buff for the next 30s:\n    • Melee basic abilities generate 1.5x Adrenaline\n    • Generate 4.5% every 1t you have a Melee weapon equipped\n    • This buff is applied on release of the ability\n\n\n\n\n\n\n\n\n\n​\nUtility Abilities\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBladed Dive \n\n⬥ Cooldown: 34t (20.4s)\n⬥ It is a Mobility ability:\n    • If you use it on a tile, it will  you to that tile\n    • If you use it on a target it will  you some point at Melee Distance of the target (the movement is accounted 1t later than had you clicked a tile)\n⬥ It is affected by Mobile \n    • Reduces cooldown to 17t (10.2s)\n⬥ It is an AoE:\n    • Hits 3x3 around where you land if used on a target\n    • This becomes 5x5 with  Halberd \n⬥ If you use it on a target and it dies within 10t (6s), the cooldown ends\n\n\n\n\n\n\n\n\n\n​\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Melee Ability Index \n\n⬥ Click the links to quickly navigate to that ability's information.\n⬥ General notes can be found in the introduction here.\n\nBasic (1/2)\n⬥ Attack\n⬥ Adaptive Strike\n⬥ Rend\n⬥ Fury\n⬥ G. Fury\nBasic (2/2)\n⬥ Backhand\n⬥ Punish\n⬥ Barge\n⬥ G. Barge\n⬥ Chaos Roar\nEnhanced\n⬥ Assault\n⬥ Hurricane\n⬥ Flurry\n⬥ G. Flurry\n⬥ Dismember\nSpecial Attacks (1/2)\n⬥ Ek-Zekkil\n⬥ Zaros Godsword\n⬥ D. Battleaxe\n⬥ Varanus's Mercy\n⬥ D. Scimitar\nSpecial Attacks (2/2)\n⬥ D. Claws\n⬥ Stat. Warhammer\n⬥ Granite Maul\n⬥ Dark Shard of Leng\nUltimate\n⬥ Overpower\n⬥ Pulverize\n⬥ Berserk\n⬥ Meteor Strike\nUtility\n⬥ Bladed Dive\n\n\n\n\n\n\n\n\n​\n      \n    ",
+  "normalizedText": "Introduction Note: Use the Table of Contents present at the bottom of the channel, or in the pinned comments, to quickly navigate through this channel and find the information you are looking for. ​ Some general notes: ⬥ The game runs on an internal tick system: 1t (tick) = 0.6s (seconds). ⬥ The minimum time between abilities is called the global cooldown: 1 gcd = 3t = 1.8s. ⬥ Auto attacks will only give adrenaline if they hit (splash = no adrenaline gain). ‎ ‎ ‎ ‎• Debuff spells like Vuln or Enfeeble or Smoke Cloud do not give adrenaline. ⬥ Some useful sheets and resources are given below. ​ Ability Damage Maths To calculate your ability hit damage in detail, click here. This is affected by factors such as your gear and other boosts. Ability Hit Timings To see detailed breakdowns on ability hit timings, click here. This refers to when hitsplats appear on your target. Auto-attack Adren Gain To see adrenaline gained with different auto attacks, click here. Note: If you have any difficulties in using the tools or understanding what the information means, you can always ask in #pvm-help. ​ Melee This section covers basic abilities, enhanced abilities, ultimate abilities, utility abilities and special attacks for Melee. ​ Basic Abilities Attack ⬥ Cooldown: 0t (0s) ⬥ Generates 1 Bloodlust stack ​ Adaptive Strike ⬥ Cooldown: 9t (5.4s) ⬥ Generates 1 Bloodlust stack ⬥ Generates 12 Adrenaline ⬥ Depends on weapon used: • 2H: AoE in a cone of attack direction, hitting up to 9 targets, inclusive of main • DW: 2 hits on target ​ Rend ⬥ Cooldown: 17t (10.2s) ⬥ Generates 2 Bloodlust stacks ⬥ Affected by Gloves of Passage , details in #armour-and-weapons ​ Fury ⬥ Cooldown: 25t (15s) ⬥ Generates 1 Bloodlust stack ⬥ Next melee attack has +25% increased crit chance ​ Greater Fury ⬥ Cooldown: 25t (15s) ⬥ Generates 1 Bloodlust stack ⬥ Next non-bleed melee hit within 15s is guaranteed to crit • Only affects first hit of a combo ability • Is applied only to 1 target in AoE • Bleeds do not consume buff ​ Backhand ⬥ Cooldown: 25t (15s) • Charges: 2 ⬥ Generates 1 Bloodlust stack ⬥ Stuns for 3t (1.8s) ⬥ It is affected by • Increases Max by 40% per rank • Increases Minimum by 8% per rank • No longer stuns or binds ​ Punish ⬥ Cooldown: 40t (24s) ⬥ Generates 1 Bloodlust stack ⬥ Damage boosted by 2.5x when target is <50% health ​ Barge ⬥ Cooldown: 34t (20.4s) ⬥ Generates 1 Bloodlust stack ⬥ It is a Mobility ability: • Will move you to Melee Distance ⬥ It is affected by Mobile • Reduces cooldown to 17t (10.2s) ⬥ Binds for 11t (6.6s) ⬥ Clears Bound debuff ​ Greater Barge ⬥ Cooldown: 34t (20.4s) ⬥ Generates 1 Bloodlust stack ⬥ All normal things apply ⬥ It has additional effects: • Every tick (0.6s) since the player stopped attacking their target, gains +7% to its max range and +5% to its min, capping at 10t (6s) for a total of 100% and 20%. Damage range go from 75%-95% to 125%-165% • After 8t (4.8s) pass since you stopped attacking, when you , if you cast / / within 10t (6s), it will convert the first one done into a damage over time ⬥ For details on how to use it, use !gbarge ​ Chaos Roar ⬥ Cooldown: 100t (60s) ⬥ Unlocked using a Chaos Roar ability codex ⬥ Next Melee ability within 7.2s does 1.75x damage • So, it doubles all hits of bleeds (e.g. ) and multi-hit attacks (e.g. ) • Channels have multiple casts, so only doubles the first cast (e.g hit 1) ​ Enhanced Abilities Assault ⬥ Cooldown: 10t (6s) ⬥ Adrenaline Cost: 25% ⬥ Channelled ability, can move while channelling ⬥ Bloodlust Assault (consumes 4 Bloodlust) • Increases damage from 140% AVG/hit to 180% AVG/hit ​ Hurricane ⬥ Cooldown: 34t (20.4s) ⬥ Adrenaline Cost: 25% ⬥ It is an AoE hitting up to 10 targets, inclusive of main: • 3x3 with player as centre • 5x5 with player as centre with Halberd-type weapon ⬥ Reduces the cooldown of Hurricane by 3s for each enemy hit ⬥ Bloodlust Hurricane (consumes 4 Bloodlust) • Third AoE hitting up to 10 targets, inclusive of main ​ Flurry ⬥ Cooldown: 34t (20.4s) ⬥ Adrenaline Cost: 25% ⬥ Channelled Ability, can move while channelling ⬥ Stuns and Binds the target for 6t (3.6s) ⬥ It is an AoE: • 3x3 with player as centre ⬥ Bloodlust Flurry (consumes 4 Bloodlust) • Deals 1% increased damage per % hp target is missing up to 65% ​ Greater Flurry ⬥ Cooldown: 34t (20.4s) ⬥ Adrenaline Cost: 25% ⬥ All normal things apply ⬥ Each hit extends by 1t/hit (0.6s/hit) for up to 8t (4.8s) ​ Dismember ⬥ Cooldown: 40t (24s) ⬥ Adrenaline Cost: 0% ⬥ It is a damage over time: • Not affected by ⬥ Can be extended: • Strength skillcape passive adds 3 hits • Masterwork Spear of Annihilation adds 50% more hits ⬥ It is affected by • Max hit increases by 10% + 3% per rank ⬥ Can be recast 2 additional times within 24s of previous cast: • 1st cast: Hits every 2t (1.2s) for 8 (11 , 15 + ) times, heals for 4% of damage • 2nd cast: Hits every 3t (1.8s) for 6 (9 , 12 + ) times, heals for 6% of damage • 3rd cast: Hits every 3t (1.8s) for 7 (10 , 13 + ) times, heals for 12% of damage ​ Special Attacks Ek-Zekkil ⬥ Cooldown: 100t (60s) ⬥ Adrenaline Cost: 50% (45% with ) ⬥ Marks target as Flamebound Rival, then deals damage • Only applicable to one target at a time ⬩ Effects only apply to Flamebound Rival ⬥ If wielding the Ek-Zekkil, fighting your Flamebound Rival will grant: • 12% increased damage dealt on attacks (except bleeds) • 12% reduced damage taken (from Flamebound Rival) • Igneous Showdown an additional 3 (simultaneous) hits ⬩ Refunds 15% adrenaline ⬥ Switching to Ek-ZekKil will reapply Flamebound Rival to initial target ​ Zaros Godsword ⬥ Cooldown: 100t (60s) ⬥ Adrenaline Cost: 50% (45% with ) ⬥ On cast buff ⬥ 7x7 area (enemy you cast spec on takes damage every 3t (1.8s) while in it) ⬥ Increases damage by 25% from t0→34t (35t/21s duration) • Buff starts t1 for autos, t2 for everything ⬥ Does not incur the auto cooldown, but will still attempt to force an auto ⬥ Can take weapon off and retain spec effect ​ Dragon Battleaxe ⬥ Adrenaline Cost: 100% (90% with ) ⬥ Drains 10% (rounded down) of your , , , and levels and gain a level boost of 10 + 1 level for every 4 drained from your other stats ⬥ Boosts damage by 1.2 (stacks with for a 1.25 * 1.2 = 1.5 boost), or 1.1 when using , making it a 2 * 1.1 = 2.2 boost ⬥ Multiplicative 10% reduction to hitchance debuff ⬥ These effects lasts 1 minute ⬥ Can take weapon off and retain spec effect ​ Varanus's Mercy ⬥ Adrenaline Cost: 50% (45% with ) ​ Dragon Claws ⬥ Adrenaline Cost: 50% (45% with ) ​ Statius's Warhammer ⬥ Adrenaline Cost: 35% (31.5% with ) ⬥ Applies an affinity and reduction: • +5 affinity • Reduces level by 30% of base ​ Dragon Scimitar ⬥ Adrenaline Cost: 25% (22.5% with ) ⬥ Increases accuracy with slash weapons by 25% for 100t (60s) ​ Granite Maul ⬥ Adrenaline Cost: 50% (45% with ) ⬥ Can be used during the GCD ​ Dark Shard of Leng ⬥ Cooldown: 25t (15s) ⬥ Adrenaline Cost: 30% (27% with ) ⬥ It is an AoE ⬥ Consumes all stacks ⬥ For every stack consumed • Adrenaline Cost is reduced by 12% • Each hit increased by 18-22% ​ Ultimate Abilities Overpower ⬥ Cooldown: 50t (30s) ⬥ Adrenaline Cost: 60% ⬥ Affected by the Igneous Kal-Ket and the Igneous Kal-Zuk : • The ability has two hits. ​ Pulverise ⬥ Cooldown: 100t (60s) ⬥ Adrenaline Cost: 60% ⬥ Applies Pulverised debuff to target • Reduces damage dealt by target by 25% • If target dies with debuff, you gain 50% adrenaline ​ Berserk ⬥ Cooldown: 100t (60s) ⬥ Adrenaline Cost: 100% ⬥ It is an on cast buff ⬥ It increases damage by 75% from t0→t33 (34t/20.4s duration) ⬥ Wearing 3+ pieces of Vestments extends the duration from t0→t33 (34t/20.4s) to t0→t43 (44t/26.6s) ⬥ It increases damage taken by 25% ⬥ Maximum Bloodlust increased by 4 ⬥ Basic attacks and basic abilities generate 2x Bloodlust ⬥ Overpower cooldown reduced to 15t (9s) ​ Meteor Strike ⬥ Cooldown: 100t (60s) ⬥ Adrenaline Cost: 60% ⬥ It is an AoE hitting up to 9 targets, inclusive of main: • 3x3 with player as centre • 5x5 with player as centre with Halberd-type weapon ⬥ Provides an Adrenaline buff for the next 30s: • Melee basic abilities generate 1.5x Adrenaline • Generate 4.5% every 1t you have a Melee weapon equipped • This buff is applied on release of the ability ​ Utility Abilities Bladed Dive ⬥ Cooldown: 34t (20.4s) ⬥ It is a Mobility ability: • If you use it on a tile, it will you to that tile • If you use it on a target it will you some point at Melee Distance of the target (the movement is accounted 1t later than had you clicked a tile) ⬥ It is affected by Mobile • Reduces cooldown to 17t (10.2s) ⬥ It is an AoE: • Hits 3x3 around where you land if used on a target • This becomes 5x5 with Halberd ⬥ If you use it on a target and it dies within 10t (6s), the cooldown ends ​ Melee Ability Index ⬥ Click the links to quickly navigate to that ability's information. ⬥ General notes can be found in the introduction here. Basic (1/2) ⬥ Attack ⬥ Adaptive Strike ⬥ Rend ⬥ Fury ⬥ G. Fury Basic (2/2) ⬥ Backhand ⬥ Punish ⬥ Barge ⬥ G. Barge ⬥ Chaos Roar Enhanced ⬥ Assault ⬥ Hurricane ⬥ Flurry ⬥ G. Flurry ⬥ Dismember Special Attacks (1/2) ⬥ Ek-Zekkil ⬥ Zaros Godsword ⬥ D. Battleaxe ⬥ Varanus's Mercy ⬥ D. Scimitar Special Attacks (2/2) ⬥ D. Claws ⬥ Stat. Warhammer ⬥ Granite Maul ⬥ Dark Shard of Leng Ultimate ⬥ Overpower ⬥ Pulverize ⬥ Berserk ⬥ Meteor Strike Utility ⬥ Bladed Dive ​",
+  "wordStream": [
+    "Introduction",
+    "Note:",
+    "Use",
+    "the",
+    "Table",
+    "of",
+    "Contents",
+    "present",
+    "at",
+    "the",
+    "bottom",
+    "of",
+    "the",
+    "channel,",
+    "or",
+    "in",
+    "the",
+    "pinned",
+    "comments,",
+    "to",
+    "quickly",
+    "navigate",
+    "through",
+    "this",
+    "channel",
+    "and",
+    "find",
+    "the",
+    "information",
+    "you",
+    "are",
+    "looking",
+    "for.",
+    "​",
+    "Some",
+    "general",
+    "notes:",
+    "⬥",
+    "The",
+    "game",
+    "runs",
+    "on",
+    "an",
+    "internal",
+    "tick",
+    "system:",
+    "1t",
+    "(tick)",
+    "=",
+    "0.6s",
+    "(seconds).",
+    "⬥",
+    "The",
+    "minimum",
+    "time",
+    "between",
+    "abilities",
+    "is",
+    "called",
+    "the",
+    "global",
+    "cooldown:",
+    "1",
+    "gcd",
+    "=",
+    "3t",
+    "=",
+    "1.8s.",
+    "⬥",
+    "Auto",
+    "attacks",
+    "will",
+    "only",
+    "give",
+    "adrenaline",
+    "if",
+    "they",
+    "hit",
+    "(splash",
+    "=",
+    "no",
+    "adrenaline",
+    "gain).",
+    "‎",
+    "‎",
+    "‎",
+    "‎•",
+    "Debuff",
+    "spells",
+    "like",
+    "Vuln",
+    "or",
+    "Enfeeble",
+    "or",
+    "Smoke",
+    "Cloud",
+    "do",
+    "not",
+    "give",
+    "adrenaline.",
+    "⬥",
+    "Some",
+    "useful",
+    "sheets",
+    "and",
+    "resources",
+    "are",
+    "given",
+    "below.",
+    "​",
+    "Ability",
+    "Damage",
+    "Maths",
+    "To",
+    "calculate",
+    "your",
+    "ability",
+    "hit",
+    "damage",
+    "in",
+    "detail,",
+    "click",
+    "here.",
+    "This",
+    "is",
+    "affected",
+    "by",
+    "factors",
+    "such",
+    "as",
+    "your",
+    "gear",
+    "and",
+    "other",
+    "boosts.",
+    "Ability",
+    "Hit",
+    "Timings",
+    "To",
+    "see",
+    "detailed",
+    "breakdowns",
+    "on",
+    "ability",
+    "hit",
+    "timings,",
+    "click",
+    "here.",
+    "This",
+    "refers",
+    "to",
+    "when",
+    "hitsplats",
+    "appear",
+    "on",
+    "your",
+    "target.",
+    "Auto-attack",
+    "Adren",
+    "Gain",
+    "To",
+    "see",
+    "adrenaline",
+    "gained",
+    "with",
+    "different",
+    "auto",
+    "attacks,",
+    "click",
+    "here.",
+    "Note:",
+    "If",
+    "you",
+    "have",
+    "any",
+    "difficulties",
+    "in",
+    "using",
+    "the",
+    "tools",
+    "or",
+    "understanding",
+    "what",
+    "the",
+    "information",
+    "means,",
+    "you",
+    "can",
+    "always",
+    "ask",
+    "in",
+    "#pvm-help.",
+    "​",
+    "Melee",
+    "This",
+    "section",
+    "covers",
+    "basic",
+    "abilities,",
+    "enhanced",
+    "abilities,",
+    "ultimate",
+    "abilities,",
+    "utility",
+    "abilities",
+    "and",
+    "special",
+    "attacks",
+    "for",
+    "Melee.",
+    "​",
+    "Basic",
+    "Abilities",
+    "Attack",
+    "⬥",
+    "Cooldown:",
+    "0t",
+    "(0s)",
+    "⬥",
+    "Generates",
+    "1",
+    "Bloodlust",
+    "stack",
+    "​",
+    "Adaptive",
+    "Strike",
+    "⬥",
+    "Cooldown:",
+    "9t",
+    "(5.4s)",
+    "⬥",
+    "Generates",
+    "1",
+    "Bloodlust",
+    "stack",
+    "⬥",
+    "Generates",
+    "12",
+    "Adrenaline",
+    "⬥",
+    "Depends",
+    "on",
+    "weapon",
+    "used:",
+    "•",
+    "2H:",
+    "AoE",
+    "in",
+    "a",
+    "cone",
+    "of",
+    "attack",
+    "direction,",
+    "hitting",
+    "up",
+    "to",
+    "9",
+    "targets,",
+    "inclusive",
+    "of",
+    "main",
+    "•",
+    "DW:",
+    "2",
+    "hits",
+    "on",
+    "target",
+    "​",
+    "Rend",
+    "⬥",
+    "Cooldown:",
+    "17t",
+    "(10.2s)",
+    "⬥",
+    "Generates",
+    "2",
+    "Bloodlust",
+    "stacks",
+    "⬥",
+    "Affected",
+    "by",
+    "Gloves",
+    "of",
+    "Passage",
+    ",",
+    "details",
+    "in",
+    "#armour-and-weapons",
+    "​",
+    "Fury",
+    "⬥",
+    "Cooldown:",
+    "25t",
+    "(15s)",
+    "⬥",
+    "Generates",
+    "1",
+    "Bloodlust",
+    "stack",
+    "⬥",
+    "Next",
+    "melee",
+    "attack",
+    "has",
+    "+25%",
+    "increased",
+    "crit",
+    "chance",
+    "​",
+    "Greater",
+    "Fury",
+    "⬥",
+    "Cooldown:",
+    "25t",
+    "(15s)",
+    "⬥",
+    "Generates",
+    "1",
+    "Bloodlust",
+    "stack",
+    "⬥",
+    "Next",
+    "non-bleed",
+    "melee",
+    "hit",
+    "within",
+    "15s",
+    "is",
+    "guaranteed",
+    "to",
+    "crit",
+    "•",
+    "Only",
+    "affects",
+    "first",
+    "hit",
+    "of",
+    "a",
+    "combo",
+    "ability",
+    "•",
+    "Is",
+    "applied",
+    "only",
+    "to",
+    "1",
+    "target",
+    "in",
+    "AoE",
+    "•",
+    "Bleeds",
+    "do",
+    "not",
+    "consume",
+    "buff",
+    "​",
+    "Backhand",
+    "⬥",
+    "Cooldown:",
+    "25t",
+    "(15s)",
+    "•",
+    "Charges:",
+    "2",
+    "⬥",
+    "Generates",
+    "1",
+    "Bloodlust",
+    "stack",
+    "⬥",
+    "Stuns",
+    "for",
+    "3t",
+    "(1.8s)",
+    "⬥",
+    "It",
+    "is",
+    "affected",
+    "by",
+    "•",
+    "Increases",
+    "Max",
+    "by",
+    "40%",
+    "per",
+    "rank",
+    "•",
+    "Increases",
+    "Minimum",
+    "by",
+    "8%",
+    "per",
+    "rank",
+    "•",
+    "No",
+    "longer",
+    "stuns",
+    "or",
+    "binds",
+    "​",
+    "Punish",
+    "⬥",
+    "Cooldown:",
+    "40t",
+    "(24s)",
+    "⬥",
+    "Generates",
+    "1",
+    "Bloodlust",
+    "stack",
+    "⬥",
+    "Damage",
+    "boosted",
+    "by",
+    "2.5x",
+    "when",
+    "target",
+    "is",
+    "<50%",
+    "health",
+    "​",
+    "Barge",
+    "⬥",
+    "Cooldown:",
+    "34t",
+    "(20.4s)",
+    "⬥",
+    "Generates",
+    "1",
+    "Bloodlust",
+    "stack",
+    "⬥",
+    "It",
+    "is",
+    "a",
+    "Mobility",
+    "ability:",
+    "•",
+    "Will",
+    "move",
+    "you",
+    "to",
+    "Melee",
+    "Distance",
+    "⬥",
+    "It",
+    "is",
+    "affected",
+    "by",
+    "Mobile",
+    "•",
+    "Reduces",
+    "cooldown",
+    "to",
+    "17t",
+    "(10.2s)",
+    "⬥",
+    "Binds",
+    "for",
+    "11t",
+    "(6.6s)",
+    "⬥",
+    "Clears",
+    "Bound",
+    "debuff",
+    "​",
+    "Greater",
+    "Barge",
+    "⬥",
+    "Cooldown:",
+    "34t",
+    "(20.4s)",
+    "⬥",
+    "Generates",
+    "1",
+    "Bloodlust",
+    "stack",
+    "⬥",
+    "All",
+    "normal",
+    "things",
+    "apply",
+    "⬥",
+    "It",
+    "has",
+    "additional",
+    "effects:",
+    "•",
+    "Every",
+    "tick",
+    "(0.6s)",
+    "since",
+    "the",
+    "player",
+    "stopped",
+    "attacking",
+    "their",
+    "target,",
+    "gains",
+    "+7%",
+    "to",
+    "its",
+    "max",
+    "range",
+    "and",
+    "+5%",
+    "to",
+    "its",
+    "min,",
+    "capping",
+    "at",
+    "10t",
+    "(6s)",
+    "for",
+    "a",
+    "total",
+    "of",
+    "100%",
+    "and",
+    "20%.",
+    "Damage",
+    "range",
+    "go",
+    "from",
+    "75%-95%",
+    "to",
+    "125%-165%",
+    "•",
+    "After",
+    "8t",
+    "(4.8s)",
+    "pass",
+    "since",
+    "you",
+    "stopped",
+    "attacking,",
+    "when",
+    "you",
+    ",",
+    "if",
+    "you",
+    "cast",
+    "/",
+    "/",
+    "within",
+    "10t",
+    "(6s),",
+    "it",
+    "will",
+    "convert",
+    "the",
+    "first",
+    "one",
+    "done",
+    "into",
+    "a",
+    "damage",
+    "over",
+    "time",
+    "⬥",
+    "For",
+    "details",
+    "on",
+    "how",
+    "to",
+    "use",
+    "it,",
+    "use",
+    "!gbarge",
+    "​",
+    "Chaos",
+    "Roar",
+    "⬥",
+    "Cooldown:",
+    "100t",
+    "(60s)",
+    "⬥",
+    "Unlocked",
+    "using",
+    "a",
+    "Chaos",
+    "Roar",
+    "ability",
+    "codex",
+    "⬥",
+    "Next",
+    "Melee",
+    "ability",
+    "within",
+    "7.2s",
+    "does",
+    "1.75x",
+    "damage",
+    "•",
+    "So,",
+    "it",
+    "doubles",
+    "all",
+    "hits",
+    "of",
+    "bleeds",
+    "(e.g.",
+    ")",
+    "and",
+    "multi-hit",
+    "attacks",
+    "(e.g.",
+    ")",
+    "•",
+    "Channels",
+    "have",
+    "multiple",
+    "casts,",
+    "so",
+    "only",
+    "doubles",
+    "the",
+    "first",
+    "cast",
+    "(e.g",
+    "hit",
+    "1)",
+    "​",
+    "Enhanced",
+    "Abilities",
+    "Assault",
+    "⬥",
+    "Cooldown:",
+    "10t",
+    "(6s)",
+    "⬥",
+    "Adrenaline",
+    "Cost:",
+    "25%",
+    "⬥",
+    "Channelled",
+    "ability,",
+    "can",
+    "move",
+    "while",
+    "channelling",
+    "⬥",
+    "Bloodlust",
+    "Assault",
+    "(consumes",
+    "4",
+    "Bloodlust)",
+    "•",
+    "Increases",
+    "damage",
+    "from",
+    "140%",
+    "AVG/hit",
+    "to",
+    "180%",
+    "AVG/hit",
+    "​",
+    "Hurricane",
+    "⬥",
+    "Cooldown:",
+    "34t",
+    "(20.4s)",
+    "⬥",
+    "Adrenaline",
+    "Cost:",
+    "25%",
+    "⬥",
+    "It",
+    "is",
+    "an",
+    "AoE",
+    "hitting",
+    "up",
+    "to",
+    "10",
+    "targets,",
+    "inclusive",
+    "of",
+    "main:",
+    "•",
+    "3x3",
+    "with",
+    "player",
+    "as",
+    "centre",
+    "•",
+    "5x5",
+    "with",
+    "player",
+    "as",
+    "centre",
+    "with",
+    "Halberd-type",
+    "weapon",
+    "⬥",
+    "Reduces",
+    "the",
+    "cooldown",
+    "of",
+    "Hurricane",
+    "by",
+    "3s",
+    "for",
+    "each",
+    "enemy",
+    "hit",
+    "⬥",
+    "Bloodlust",
+    "Hurricane",
+    "(consumes",
+    "4",
+    "Bloodlust)",
+    "•",
+    "Third",
+    "AoE",
+    "hitting",
+    "up",
+    "to",
+    "10",
+    "targets,",
+    "inclusive",
+    "of",
+    "main",
+    "​",
+    "Flurry",
+    "⬥",
+    "Cooldown:",
+    "34t",
+    "(20.4s)",
+    "⬥",
+    "Adrenaline",
+    "Cost:",
+    "25%",
+    "⬥",
+    "Channelled",
+    "Ability,",
+    "can",
+    "move",
+    "while",
+    "channelling",
+    "⬥",
+    "Stuns",
+    "and",
+    "Binds",
+    "the",
+    "target",
+    "for",
+    "6t",
+    "(3.6s)",
+    "⬥",
+    "It",
+    "is",
+    "an",
+    "AoE:",
+    "•",
+    "3x3",
+    "with",
+    "player",
+    "as",
+    "centre",
+    "⬥",
+    "Bloodlust",
+    "Flurry",
+    "(consumes",
+    "4",
+    "Bloodlust)",
+    "•",
+    "Deals",
+    "1%",
+    "increased",
+    "damage",
+    "per",
+    "%",
+    "hp",
+    "target",
+    "is",
+    "missing",
+    "up",
+    "to",
+    "65%",
+    "​",
+    "Greater",
+    "Flurry",
+    "⬥",
+    "Cooldown:",
+    "34t",
+    "(20.4s)",
+    "⬥",
+    "Adrenaline",
+    "Cost:",
+    "25%",
+    "⬥",
+    "All",
+    "normal",
+    "things",
+    "apply",
+    "⬥",
+    "Each",
+    "hit",
+    "extends",
+    "by",
+    "1t/hit",
+    "(0.6s/hit)",
+    "for",
+    "up",
+    "to",
+    "8t",
+    "(4.8s)",
+    "​",
+    "Dismember",
+    "⬥",
+    "Cooldown:",
+    "40t",
+    "(24s)",
+    "⬥",
+    "Adrenaline",
+    "Cost:",
+    "0%",
+    "⬥",
+    "It",
+    "is",
+    "a",
+    "damage",
+    "over",
+    "time:",
+    "•",
+    "Not",
+    "affected",
+    "by",
+    "⬥",
+    "Can",
+    "be",
+    "extended:",
+    "•",
+    "Strength",
+    "skillcape",
+    "passive",
+    "adds",
+    "3",
+    "hits",
+    "•",
+    "Masterwork",
+    "Spear",
+    "of",
+    "Annihilation",
+    "adds",
+    "50%",
+    "more",
+    "hits",
+    "⬥",
+    "It",
+    "is",
+    "affected",
+    "by",
+    "•",
+    "Max",
+    "hit",
+    "increases",
+    "by",
+    "10%",
+    "+",
+    "3%",
+    "per",
+    "rank",
+    "⬥",
+    "Can",
+    "be",
+    "recast",
+    "2",
+    "additional",
+    "times",
+    "within",
+    "24s",
+    "of",
+    "previous",
+    "cast:",
+    "•",
+    "1st",
+    "cast:",
+    "Hits",
+    "every",
+    "2t",
+    "(1.2s)",
+    "for",
+    "8",
+    "(11",
+    ",",
+    "15",
+    "+",
+    ")",
+    "times,",
+    "heals",
+    "for",
+    "4%",
+    "of",
+    "damage",
+    "•",
+    "2nd",
+    "cast:",
+    "Hits",
+    "every",
+    "3t",
+    "(1.8s)",
+    "for",
+    "6",
+    "(9",
+    ",",
+    "12",
+    "+",
+    ")",
+    "times,",
+    "heals",
+    "for",
+    "6%",
+    "of",
+    "damage",
+    "•",
+    "3rd",
+    "cast:",
+    "Hits",
+    "every",
+    "3t",
+    "(1.8s)",
+    "for",
+    "7",
+    "(10",
+    ",",
+    "13",
+    "+",
+    ")",
+    "times,",
+    "heals",
+    "for",
+    "12%",
+    "of",
+    "damage",
+    "​",
+    "Special",
+    "Attacks",
+    "Ek-Zekkil",
+    "⬥",
+    "Cooldown:",
+    "100t",
+    "(60s)",
+    "⬥",
+    "Adrenaline",
+    "Cost:",
+    "50%",
+    "(45%",
+    "with",
+    ")",
+    "⬥",
+    "Marks",
+    "target",
+    "as",
+    "Flamebound",
+    "Rival,",
+    "then",
+    "deals",
+    "damage",
+    "•",
+    "Only",
+    "applicable",
+    "to",
+    "one",
+    "target",
+    "at",
+    "a",
+    "time",
+    "⬩",
+    "Effects",
+    "only",
+    "apply",
+    "to",
+    "Flamebound",
+    "Rival",
+    "⬥",
+    "If",
+    "wielding",
+    "the",
+    "Ek-Zekkil,",
+    "fighting",
+    "your",
+    "Flamebound",
+    "Rival",
+    "will",
+    "grant:",
+    "•",
+    "12%",
+    "increased",
+    "damage",
+    "dealt",
+    "on",
+    "attacks",
+    "(except",
+    "bleeds)",
+    "•",
+    "12%",
+    "reduced",
+    "damage",
+    "taken",
+    "(from",
+    "Flamebound",
+    "Rival)",
+    "•",
+    "Igneous",
+    "Showdown",
+    "an",
+    "additional",
+    "3",
+    "(simultaneous)",
+    "hits",
+    "⬩",
+    "Refunds",
+    "15%",
+    "adrenaline",
+    "⬥",
+    "Switching",
+    "to",
+    "Ek-ZekKil",
+    "will",
+    "reapply",
+    "Flamebound",
+    "Rival",
+    "to",
+    "initial",
+    "target",
+    "​",
+    "Zaros",
+    "Godsword",
+    "⬥",
+    "Cooldown:",
+    "100t",
+    "(60s)",
+    "⬥",
+    "Adrenaline",
+    "Cost:",
+    "50%",
+    "(45%",
+    "with",
+    ")",
+    "⬥",
+    "On",
+    "cast",
+    "buff",
+    "⬥",
+    "7x7",
+    "area",
+    "(enemy",
+    "you",
+    "cast",
+    "spec",
+    "on",
+    "takes",
+    "damage",
+    "every",
+    "3t",
+    "(1.8s)",
+    "while",
+    "in",
+    "it)",
+    "⬥",
+    "Increases",
+    "damage",
+    "by",
+    "25%",
+    "from",
+    "t0→34t",
+    "(35t/21s",
+    "duration)",
+    "•",
+    "Buff",
+    "starts",
+    "t1",
+    "for",
+    "autos,",
+    "t2",
+    "for",
+    "everything",
+    "⬥",
+    "Does",
+    "not",
+    "incur",
+    "the",
+    "auto",
+    "cooldown,",
+    "but",
+    "will",
+    "still",
+    "attempt",
+    "to",
+    "force",
+    "an",
+    "auto",
+    "⬥",
+    "Can",
+    "take",
+    "weapon",
+    "off",
+    "and",
+    "retain",
+    "spec",
+    "effect",
+    "​",
+    "Dragon",
+    "Battleaxe",
+    "⬥",
+    "Adrenaline",
+    "Cost:",
+    "100%",
+    "(90%",
+    "with",
+    ")",
+    "⬥",
+    "Drains",
+    "10%",
+    "(rounded",
+    "down)",
+    "of",
+    "your",
+    ",",
+    ",",
+    ",",
+    "and",
+    "levels",
+    "and",
+    "gain",
+    "a",
+    "level",
+    "boost",
+    "of",
+    "10",
+    "+",
+    "1",
+    "level",
+    "for",
+    "every",
+    "4",
+    "drained",
+    "from",
+    "your",
+    "other",
+    "stats",
+    "⬥",
+    "Boosts",
+    "damage",
+    "by",
+    "1.2",
+    "(stacks",
+    "with",
+    "for",
+    "a",
+    "1.25",
+    "*",
+    "1.2",
+    "=",
+    "1.5",
+    "boost),",
+    "or",
+    "1.1",
+    "when",
+    "using",
+    ",",
+    "making",
+    "it",
+    "a",
+    "2",
+    "*",
+    "1.1",
+    "=",
+    "2.2",
+    "boost",
+    "⬥",
+    "Multiplicative",
+    "10%",
+    "reduction",
+    "to",
+    "hitchance",
+    "debuff",
+    "⬥",
+    "These",
+    "effects",
+    "lasts",
+    "1",
+    "minute",
+    "⬥",
+    "Can",
+    "take",
+    "weapon",
+    "off",
+    "and",
+    "retain",
+    "spec",
+    "effect",
+    "​",
+    "Varanus's",
+    "Mercy",
+    "⬥",
+    "Adrenaline",
+    "Cost:",
+    "50%",
+    "(45%",
+    "with",
+    ")",
+    "​",
+    "Dragon",
+    "Claws",
+    "⬥",
+    "Adrenaline",
+    "Cost:",
+    "50%",
+    "(45%",
+    "with",
+    ")",
+    "​",
+    "Statius's",
+    "Warhammer",
+    "⬥",
+    "Adrenaline",
+    "Cost:",
+    "35%",
+    "(31.5%",
+    "with",
+    ")",
+    "⬥",
+    "Applies",
+    "an",
+    "affinity",
+    "and",
+    "reduction:",
+    "•",
+    "+5",
+    "affinity",
+    "•",
+    "Reduces",
+    "level",
+    "by",
+    "30%",
+    "of",
+    "base",
+    "​",
+    "Dragon",
+    "Scimitar",
+    "⬥",
+    "Adrenaline",
+    "Cost:",
+    "25%",
+    "(22.5%",
+    "with",
+    ")",
+    "⬥",
+    "Increases",
+    "accuracy",
+    "with",
+    "slash",
+    "weapons",
+    "by",
+    "25%",
+    "for",
+    "100t",
+    "(60s)",
+    "​",
+    "Granite",
+    "Maul",
+    "⬥",
+    "Adrenaline",
+    "Cost:",
+    "50%",
+    "(45%",
+    "with",
+    ")",
+    "⬥",
+    "Can",
+    "be",
+    "used",
+    "during",
+    "the",
+    "GCD",
+    "​",
+    "Dark",
+    "Shard",
+    "of",
+    "Leng",
+    "⬥",
+    "Cooldown:",
+    "25t",
+    "(15s)",
+    "⬥",
+    "Adrenaline",
+    "Cost:",
+    "30%",
+    "(27%",
+    "with",
+    ")",
+    "⬥",
+    "It",
+    "is",
+    "an",
+    "AoE",
+    "⬥",
+    "Consumes",
+    "all",
+    "stacks",
+    "⬥",
+    "For",
+    "every",
+    "stack",
+    "consumed",
+    "•",
+    "Adrenaline",
+    "Cost",
+    "is",
+    "reduced",
+    "by",
+    "12%",
+    "•",
+    "Each",
+    "hit",
+    "increased",
+    "by",
+    "18-22%",
+    "​",
+    "Ultimate",
+    "Abilities",
+    "Overpower",
+    "⬥",
+    "Cooldown:",
+    "50t",
+    "(30s)",
+    "⬥",
+    "Adrenaline",
+    "Cost:",
+    "60%",
+    "⬥",
+    "Affected",
+    "by",
+    "the",
+    "Igneous",
+    "Kal-Ket",
+    "and",
+    "the",
+    "Igneous",
+    "Kal-Zuk",
+    ":",
+    "•",
+    "The",
+    "ability",
+    "has",
+    "two",
+    "hits.",
+    "​",
+    "Pulverise",
+    "⬥",
+    "Cooldown:",
+    "100t",
+    "(60s)",
+    "⬥",
+    "Adrenaline",
+    "Cost:",
+    "60%",
+    "⬥",
+    "Applies",
+    "Pulverised",
+    "debuff",
+    "to",
+    "target",
+    "•",
+    "Reduces",
+    "damage",
+    "dealt",
+    "by",
+    "target",
+    "by",
+    "25%",
+    "•",
+    "If",
+    "target",
+    "dies",
+    "with",
+    "debuff,",
+    "you",
+    "gain",
+    "50%",
+    "adrenaline",
+    "​",
+    "Berserk",
+    "⬥",
+    "Cooldown:",
+    "100t",
+    "(60s)",
+    "⬥",
+    "Adrenaline",
+    "Cost:",
+    "100%",
+    "⬥",
+    "It",
+    "is",
+    "an",
+    "on",
+    "cast",
+    "buff",
+    "⬥",
+    "It",
+    "increases",
+    "damage",
+    "by",
+    "75%",
+    "from",
+    "t0→t33",
+    "(34t/20.4s",
+    "duration)",
+    "⬥",
+    "Wearing",
+    "3+",
+    "pieces",
+    "of",
+    "Vestments",
+    "extends",
+    "the",
+    "duration",
+    "from",
+    "t0→t33",
+    "(34t/20.4s)",
+    "to",
+    "t0→t43",
+    "(44t/26.6s)",
+    "⬥",
+    "It",
+    "increases",
+    "damage",
+    "taken",
+    "by",
+    "25%",
+    "⬥",
+    "Maximum",
+    "Bloodlust",
+    "increased",
+    "by",
+    "4",
+    "⬥",
+    "Basic",
+    "attacks",
+    "and",
+    "basic",
+    "abilities",
+    "generate",
+    "2x",
+    "Bloodlust",
+    "⬥",
+    "Overpower",
+    "cooldown",
+    "reduced",
+    "to",
+    "15t",
+    "(9s)",
+    "​",
+    "Meteor",
+    "Strike",
+    "⬥",
+    "Cooldown:",
+    "100t",
+    "(60s)",
+    "⬥",
+    "Adrenaline",
+    "Cost:",
+    "60%",
+    "⬥",
+    "It",
+    "is",
+    "an",
+    "AoE",
+    "hitting",
+    "up",
+    "to",
+    "9",
+    "targets,",
+    "inclusive",
+    "of",
+    "main:",
+    "•",
+    "3x3",
+    "with",
+    "player",
+    "as",
+    "centre",
+    "•",
+    "5x5",
+    "with",
+    "player",
+    "as",
+    "centre",
+    "with",
+    "Halberd-type",
+    "weapon",
+    "⬥",
+    "Provides",
+    "an",
+    "Adrenaline",
+    "buff",
+    "for",
+    "the",
+    "next",
+    "30s:",
+    "•",
+    "Melee",
+    "basic",
+    "abilities",
+    "generate",
+    "1.5x",
+    "Adrenaline",
+    "•",
+    "Generate",
+    "4.5%",
+    "every",
+    "1t",
+    "you",
+    "have",
+    "a",
+    "Melee",
+    "weapon",
+    "equipped",
+    "•",
+    "This",
+    "buff",
+    "is",
+    "applied",
+    "on",
+    "release",
+    "of",
+    "the",
+    "ability",
+    "​",
+    "Utility",
+    "Abilities",
+    "Bladed",
+    "Dive",
+    "⬥",
+    "Cooldown:",
+    "34t",
+    "(20.4s)",
+    "⬥",
+    "It",
+    "is",
+    "a",
+    "Mobility",
+    "ability:",
+    "•",
+    "If",
+    "you",
+    "use",
+    "it",
+    "on",
+    "a",
+    "tile,",
+    "it",
+    "will",
+    "you",
+    "to",
+    "that",
+    "tile",
+    "•",
+    "If",
+    "you",
+    "use",
+    "it",
+    "on",
+    "a",
+    "target",
+    "it",
+    "will",
+    "you",
+    "some",
+    "point",
+    "at",
+    "Melee",
+    "Distance",
+    "of",
+    "the",
+    "target",
+    "(the",
+    "movement",
+    "is",
+    "accounted",
+    "1t",
+    "later",
+    "than",
+    "had",
+    "you",
+    "clicked",
+    "a",
+    "tile)",
+    "⬥",
+    "It",
+    "is",
+    "affected",
+    "by",
+    "Mobile",
+    "•",
+    "Reduces",
+    "cooldown",
+    "to",
+    "17t",
+    "(10.2s)",
+    "⬥",
+    "It",
+    "is",
+    "an",
+    "AoE:",
+    "•",
+    "Hits",
+    "3x3",
+    "around",
+    "where",
+    "you",
+    "land",
+    "if",
+    "used",
+    "on",
+    "a",
+    "target",
+    "•",
+    "This",
+    "becomes",
+    "5x5",
+    "with",
+    "Halberd",
+    "⬥",
+    "If",
+    "you",
+    "use",
+    "it",
+    "on",
+    "a",
+    "target",
+    "and",
+    "it",
+    "dies",
+    "within",
+    "10t",
+    "(6s),",
+    "the",
+    "cooldown",
+    "ends",
+    "​",
+    "Melee",
+    "Ability",
+    "Index",
+    "⬥",
+    "Click",
+    "the",
+    "links",
+    "to",
+    "quickly",
+    "navigate",
+    "to",
+    "that",
+    "ability's",
+    "information.",
+    "⬥",
+    "General",
+    "notes",
+    "can",
+    "be",
+    "found",
+    "in",
+    "the",
+    "introduction",
+    "here.",
+    "Basic",
+    "(1/2)",
+    "⬥",
+    "Attack",
+    "⬥",
+    "Adaptive",
+    "Strike",
+    "⬥",
+    "Rend",
+    "⬥",
+    "Fury",
+    "⬥",
+    "G.",
+    "Fury",
+    "Basic",
+    "(2/2)",
+    "⬥",
+    "Backhand",
+    "⬥",
+    "Punish",
+    "⬥",
+    "Barge",
+    "⬥",
+    "G.",
+    "Barge",
+    "⬥",
+    "Chaos",
+    "Roar",
+    "Enhanced",
+    "⬥",
+    "Assault",
+    "⬥",
+    "Hurricane",
+    "⬥",
+    "Flurry",
+    "⬥",
+    "G.",
+    "Flurry",
+    "⬥",
+    "Dismember",
+    "Special",
+    "Attacks",
+    "(1/2)",
+    "⬥",
+    "Ek-Zekkil",
+    "⬥",
+    "Zaros",
+    "Godsword",
+    "⬥",
+    "D.",
+    "Battleaxe",
+    "⬥",
+    "Varanus's",
+    "Mercy",
+    "⬥",
+    "D.",
+    "Scimitar",
+    "Special",
+    "Attacks",
+    "(2/2)",
+    "⬥",
+    "D.",
+    "Claws",
+    "⬥",
+    "Stat.",
+    "Warhammer",
+    "⬥",
+    "Granite",
+    "Maul",
+    "⬥",
+    "Dark",
+    "Shard",
+    "of",
+    "Leng",
+    "Ultimate",
+    "⬥",
+    "Overpower",
+    "⬥",
+    "Pulverize",
+    "⬥",
+    "Berserk",
+    "⬥",
+    "Meteor",
+    "Strike",
+    "Utility",
+    "⬥",
+    "Bladed",
+    "Dive",
+    "​"
+  ],
+  "hashes": {
+    "responseSha256": "0728d4a93caeceea1ba79333b9283ad5eabef1207ae07fd95478c63ca235cb83",
+    "articleSha256": "6b44d29297ecd533fb07542d2f4e4ab2e619647ea6837a4903b0347277a4d6a3",
+    "textSha256": "751d19c91124e10ac86b630fed786cc565f79c7655ddcb34a9b55c32f03e6d2a",
+    "normalizedTextSha256": "86e85dee2bab638ed67d37c054fdec3475581a3962a220a9ef297a3fe28a6212"
+  },
+  "headings": [
+    {
+      "tag": "h2",
+      "text": "Introduction",
+      "attrs": {
+        "id": "introduction"
+      },
+      "location": {
+        "start": 165418,
+        "end": 165468
+      }
+    },
+    {
+      "tag": "h2",
+      "text": "Melee ",
+      "attrs": {
+        "id": "melee"
+      },
+      "location": {
+        "start": 168550,
+        "end": 168702
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Basic Abilities",
+      "attrs": {
+        "id": "basic-abilities"
+      },
+      "location": {
+        "start": 168852,
+        "end": 168897
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Enhanced Abilities",
+      "attrs": {
+        "id": "enhanced-abilities"
+      },
+      "location": {
+        "start": 182990,
+        "end": 183041
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Special Attacks",
+      "attrs": {
+        "id": "special-attacks"
+      },
+      "location": {
+        "start": 191530,
+        "end": 191575
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Ultimate Abilities",
+      "attrs": {
+        "id": "ultimate-abilities"
+      },
+      "location": {
+        "start": 203989,
+        "end": 204040
+      }
+    },
+    {
+      "tag": "h3",
+      "text": "Utility Abilities",
+      "attrs": {
+        "id": "utility-abilities"
+      },
+      "location": {
+        "start": 209574,
+        "end": 209623
+      }
+    }
+  ],
+  "media": [
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Vuln",
+        "class": "d-emoji",
+        "alt": "Vuln",
+        "src": "https://cdn.discordapp.com/emojis/537349530551582720.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 166074,
+        "end": 166186
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Enfeeble",
+        "class": "d-emoji",
+        "alt": "Enfeeble",
+        "src": "https://cdn.discordapp.com/emojis/567727986409734145.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 166199,
+        "end": 166319
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "smokecloud",
+        "class": "d-emoji",
+        "alt": "smokecloud",
+        "src": "https://cdn.discordapp.com/emojis/856635090641879050.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 166335,
+        "end": 166459
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "melee",
+        "class": "d-emoji",
+        "alt": "melee",
+        "src": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 168576,
+        "end": 168691
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "meleebasic",
+        "class": "d-emoji",
+        "alt": "meleebasic",
+        "src": "https://cdn.discordapp.com/emojis/1478062907295010906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 169517,
+        "end": 169642
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bloodlust",
+        "class": "d-emoji",
+        "alt": "bloodlust",
+        "src": "https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 169723,
+        "end": 169846
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "adaptivestrike",
+        "class": "d-emoji",
+        "alt": "adaptivestrike",
+        "src": "https://cdn.discordapp.com/emojis/1478062906057949417.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 170606,
+        "end": 170739
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bloodlust",
+        "class": "d-emoji",
+        "alt": "bloodlust",
+        "src": "https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 170822,
+        "end": 170945
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "rend",
+        "class": "d-emoji",
+        "alt": "rend",
+        "src": "https://cdn.discordapp.com/emojis/1478166426190741584.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 171861,
+        "end": 171974
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bloodlust",
+        "class": "d-emoji",
+        "alt": "bloodlust",
+        "src": "https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 172059,
+        "end": 172182
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Glovesofpassage",
+        "class": "d-emoji",
+        "alt": "Glovesofpassage",
+        "src": "https://cdn.discordapp.com/emojis/556588694862037012.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 172232,
+        "end": 172366
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "fury",
+        "class": "d-emoji",
+        "alt": "fury",
+        "src": "https://cdn.discordapp.com/emojis/535532879510372352.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 173167,
+        "end": 173279
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bloodlust",
+        "class": "d-emoji",
+        "alt": "bloodlust",
+        "src": "https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 173362,
+        "end": 173485
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "gfury",
+        "class": "d-emoji",
+        "alt": "gfury",
+        "src": "https://cdn.discordapp.com/emojis/535532879334080527.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 174293,
+        "end": 174407
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bloodlust",
+        "class": "d-emoji",
+        "alt": "bloodlust",
+        "src": "https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 174490,
+        "end": 174613
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "backhand",
+        "class": "d-emoji",
+        "alt": "backhand",
+        "src": "https://cdn.discordapp.com/emojis/535532854302605333.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 175548,
+        "end": 175668
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bloodlust",
+        "class": "d-emoji",
+        "alt": "bloodlust",
+        "src": "https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 175768,
+        "end": 175891
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "flankicon",
+        "class": "d-emoji",
+        "alt": "flankicon",
+        "src": "https://cdn.discordapp.com/emojis/841419289755385866.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 175950,
+        "end": 176072
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "flankicon",
+        "class": "d-emoji",
+        "alt": "flankicon",
+        "src": "https://cdn.discordapp.com/emojis/841419289755385866.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 176104,
+        "end": 176226
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "flankicon",
+        "class": "d-emoji",
+        "alt": "flankicon",
+        "src": "https://cdn.discordapp.com/emojis/841419289755385866.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 176266,
+        "end": 176388
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "punish",
+        "class": "d-emoji",
+        "alt": "punish",
+        "src": "https://cdn.discordapp.com/emojis/535532879439069184.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 177159,
+        "end": 177275
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bloodlust",
+        "class": "d-emoji",
+        "alt": "bloodlust",
+        "src": "https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 177358,
+        "end": 177481
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "barge",
+        "class": "d-emoji",
+        "alt": "barge",
+        "src": "https://cdn.discordapp.com/emojis/535532853916860437.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 178286,
+        "end": 178400
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bloodlust",
+        "class": "d-emoji",
+        "alt": "bloodlust",
+        "src": "https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 178485,
+        "end": 178608
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "mob",
+        "class": "d-emoji",
+        "alt": "mob",
+        "src": "https://cdn.discordapp.com/emojis/689501908628799488.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 178718,
+        "end": 178828
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "gbarge",
+        "class": "d-emoji",
+        "alt": "gbarge",
+        "src": "https://cdn.discordapp.com/emojis/535532879250456578.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 179653,
+        "end": 179769
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bloodlust",
+        "class": "d-emoji",
+        "alt": "bloodlust",
+        "src": "https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 179854,
+        "end": 179977
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "barge",
+        "class": "d-emoji",
+        "alt": "barge",
+        "src": "https://cdn.discordapp.com/emojis/535532853916860437.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 180007,
+        "end": 180121
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "gbarge",
+        "class": "d-emoji",
+        "alt": "gbarge",
+        "src": "https://cdn.discordapp.com/emojis/535532879250456578.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 180237,
+        "end": 180353
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "gbarge",
+        "class": "d-emoji",
+        "alt": "gbarge",
+        "src": "https://cdn.discordapp.com/emojis/535532879250456578.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 180557,
+        "end": 180673
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "flurry",
+        "class": "d-emoji",
+        "alt": "flurry",
+        "src": "https://cdn.discordapp.com/emojis/864492981763702834.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 180687,
+        "end": 180803
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "gflurry",
+        "class": "d-emoji",
+        "alt": "gflurry",
+        "src": "https://cdn.discordapp.com/emojis/535532879283879977.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 180806,
+        "end": 180924
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "assault",
+        "class": "d-emoji",
+        "alt": "assault",
+        "src": "https://cdn.discordapp.com/emojis/535532855191928842.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 180927,
+        "end": 181045
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "chaosroar",
+        "class": "d-emoji",
+        "alt": "chaosroar",
+        "src": "https://cdn.discordapp.com/emojis/1478062908767211640.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 181943,
+        "end": 182066
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "chaosroarcodex",
+        "class": "d-emoji",
+        "alt": "chaosroarcodex",
+        "src": "https://cdn.discordapp.com/emojis/994189286960287764.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182180,
+        "end": 182312
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "dismember",
+        "class": "d-emoji",
+        "alt": "dismember",
+        "src": "https://cdn.discordapp.com/emojis/1478062910113714297.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182410,
+        "end": 182533
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "cane",
+        "class": "d-emoji",
+        "alt": "cane",
+        "src": "https://cdn.discordapp.com/emojis/535532878969438210.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182563,
+        "end": 182675
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "assault",
+        "class": "d-emoji",
+        "alt": "assault",
+        "src": "https://cdn.discordapp.com/emojis/535532855191928842.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 182749,
+        "end": 182867
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "assault",
+        "class": "d-emoji",
+        "alt": "assault",
+        "src": "https://cdn.discordapp.com/emojis/535532855191928842.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 183662,
+        "end": 183780
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bloodlust",
+        "class": "d-emoji",
+        "alt": "bloodlust",
+        "src": "https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 183952,
+        "end": 184075
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "cane",
+        "class": "d-emoji",
+        "alt": "cane",
+        "src": "https://cdn.discordapp.com/emojis/535532878969438210.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 184881,
+        "end": 184993
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "cane",
+        "class": "d-emoji",
+        "alt": "cane",
+        "src": "https://cdn.discordapp.com/emojis/535532878969438210.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 185272,
+        "end": 185384
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bloodlust",
+        "class": "d-emoji",
+        "alt": "bloodlust",
+        "src": "https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 185444,
+        "end": 185567
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "flurry",
+        "class": "d-emoji",
+        "alt": "flurry",
+        "src": "https://cdn.discordapp.com/emojis/864492981763702834.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 186373,
+        "end": 186489
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bloodlust",
+        "class": "d-emoji",
+        "alt": "bloodlust",
+        "src": "https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 186754,
+        "end": 186877
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "gflurry",
+        "class": "d-emoji",
+        "alt": "gflurry",
+        "src": "https://cdn.discordapp.com/emojis/535532879283879977.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 187700,
+        "end": 187818
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "flurry",
+        "class": "d-emoji",
+        "alt": "flurry",
+        "src": "https://cdn.discordapp.com/emojis/864492981763702834.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 187925,
+        "end": 188041
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "zerk",
+        "class": "d-emoji",
+        "alt": "zerk",
+        "src": "https://cdn.discordapp.com/emojis/535532854004678657.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 188074,
+        "end": 188186
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "dismember",
+        "class": "d-emoji",
+        "alt": "dismember",
+        "src": "https://cdn.discordapp.com/emojis/1478062910113714297.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 188965,
+        "end": 189088
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "precise",
+        "class": "d-emoji",
+        "alt": "precise",
+        "src": "https://cdn.discordapp.com/emojis/1005204971886743572.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 189229,
+        "end": 189348
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "strcape",
+        "class": "d-emoji",
+        "alt": "strcape",
+        "src": "https://cdn.discordapp.com/emojis/1172654837616353320.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 189394,
+        "end": 189513
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "mwspear",
+        "class": "d-emoji",
+        "alt": "mwspear",
+        "src": "https://cdn.discordapp.com/emojis/694566917456789554.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 189573,
+        "end": 189691
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "lunging",
+        "class": "d-emoji",
+        "alt": "lunging",
+        "src": "https://cdn.discordapp.com/emojis/1009423860875153559.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 189731,
+        "end": 189850
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "lunging",
+        "class": "d-emoji",
+        "alt": "lunging",
+        "src": "https://cdn.discordapp.com/emojis/1009423860875153559.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 189891,
+        "end": 190010
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "strcape",
+        "class": "d-emoji",
+        "alt": "strcape",
+        "src": "https://cdn.discordapp.com/emojis/1172654837616353320.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 190127,
+        "end": 190246
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "strcape",
+        "class": "d-emoji",
+        "alt": "strcape",
+        "src": "https://cdn.discordapp.com/emojis/1172654837616353320.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 190252,
+        "end": 190371
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "mwspear",
+        "class": "d-emoji",
+        "alt": "mwspear",
+        "src": "https://cdn.discordapp.com/emojis/694566917456789554.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 190374,
+        "end": 190492
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "strcape",
+        "class": "d-emoji",
+        "alt": "strcape",
+        "src": "https://cdn.discordapp.com/emojis/1172654837616353320.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 190571,
+        "end": 190690
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "strcape",
+        "class": "d-emoji",
+        "alt": "strcape",
+        "src": "https://cdn.discordapp.com/emojis/1172654837616353320.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 190696,
+        "end": 190815
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "mwspear",
+        "class": "d-emoji",
+        "alt": "mwspear",
+        "src": "https://cdn.discordapp.com/emojis/694566917456789554.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 190818,
+        "end": 190936
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "strcape",
+        "class": "d-emoji",
+        "alt": "strcape",
+        "src": "https://cdn.discordapp.com/emojis/1172654837616353320.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 191016,
+        "end": 191135
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "strcape",
+        "class": "d-emoji",
+        "alt": "strcape",
+        "src": "https://cdn.discordapp.com/emojis/1172654837616353320.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 191141,
+        "end": 191260
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "mwspear",
+        "class": "d-emoji",
+        "alt": "mwspear",
+        "src": "https://cdn.discordapp.com/emojis/694566917456789554.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 191263,
+        "end": 191381
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "ezk",
+        "class": "d-emoji",
+        "alt": "ezk",
+        "src": "https://cdn.discordapp.com/emojis/903244090953588787.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 192198,
+        "end": 192308
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "rov",
+        "class": "d-emoji",
+        "alt": "rov",
+        "src": "https://cdn.discordapp.com/emojis/513201065877831680.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 192411,
+        "end": 192521
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "zgs",
+        "class": "d-emoji",
+        "alt": "zgs",
+        "src": "https://cdn.discordapp.com/emojis/626465964325601290.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 193766,
+        "end": 193876
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "rov",
+        "class": "d-emoji",
+        "alt": "rov",
+        "src": "https://cdn.discordapp.com/emojis/513201065877831680.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 193979,
+        "end": 194089
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "DBA",
+        "class": "d-emoji",
+        "alt": "DBA",
+        "src": "https://cdn.discordapp.com/emojis/603979368850653216.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 195155,
+        "end": 195265
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "rov",
+        "class": "d-emoji",
+        "alt": "rov",
+        "src": "https://cdn.discordapp.com/emojis/513201065877831680.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 195346,
+        "end": 195456
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Attack",
+        "class": "d-emoji",
+        "alt": "Attack",
+        "src": "https://cdn.discordapp.com/emojis/689509250472476758.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 195494,
+        "end": 195610
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "range",
+        "class": "d-emoji",
+        "alt": "range",
+        "src": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 195612,
+        "end": 195726
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Magic",
+        "class": "d-emoji",
+        "alt": "Magic",
+        "src": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 195728,
+        "end": 195842
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Defence",
+        "class": "d-emoji",
+        "alt": "Defence",
+        "src": "https://cdn.discordapp.com/emojis/689509250979987525.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 195848,
+        "end": 195966
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Strength",
+        "class": "d-emoji",
+        "alt": "Strength",
+        "src": "https://cdn.discordapp.com/emojis/689509250879324165.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 195985,
+        "end": 196105
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "zgs",
+        "class": "d-emoji",
+        "alt": "zgs",
+        "src": "https://cdn.discordapp.com/emojis/626465964325601290.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 196255,
+        "end": 196365
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "zerk",
+        "class": "d-emoji",
+        "alt": "zerk",
+        "src": "https://cdn.discordapp.com/emojis/535532854004678657.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 196502,
+        "end": 196614
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "varanussmercy",
+        "class": "d-emoji",
+        "alt": "varanussmercy",
+        "src": "https://cdn.discordapp.com/emojis/1448697873603498045.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 197562,
+        "end": 197693
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "rov",
+        "class": "d-emoji",
+        "alt": "rov",
+        "src": "https://cdn.discordapp.com/emojis/513201065877831680.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 197773,
+        "end": 197883
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "dragonclaw",
+        "class": "d-emoji",
+        "alt": "dragonclaw",
+        "src": "https://cdn.discordapp.com/emojis/779048041088024606.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 198625,
+        "end": 198749
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "rov",
+        "class": "d-emoji",
+        "alt": "rov",
+        "src": "https://cdn.discordapp.com/emojis/513201065877831680.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 198829,
+        "end": 198939
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "swh",
+        "class": "d-emoji",
+        "alt": "swh",
+        "src": "https://cdn.discordapp.com/emojis/641670143197446182.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 199688,
+        "end": 199798
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "rov",
+        "class": "d-emoji",
+        "alt": "rov",
+        "src": "https://cdn.discordapp.com/emojis/513201065877831680.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 199880,
+        "end": 199990
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Defence",
+        "class": "d-emoji",
+        "alt": "Defence",
+        "src": "https://cdn.discordapp.com/emojis/689509250979987525.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 200018,
+        "end": 200136
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Defence",
+        "class": "d-emoji",
+        "alt": "Defence",
+        "src": "https://cdn.discordapp.com/emojis/689509250979987525.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 200180,
+        "end": 200298
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "dragonscimitar",
+        "class": "d-emoji",
+        "alt": "dragonscimitar",
+        "src": "https://cdn.discordapp.com/emojis/1048592044731400252.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 201063,
+        "end": 201196
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "rov",
+        "class": "d-emoji",
+        "alt": "rov",
+        "src": "https://cdn.discordapp.com/emojis/513201065877831680.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 201278,
+        "end": 201388
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "gmaul",
+        "class": "d-emoji",
+        "alt": "gmaul",
+        "src": "https://cdn.discordapp.com/emojis/796989663051120640.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 202192,
+        "end": 202306
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "rov",
+        "class": "d-emoji",
+        "alt": "rov",
+        "src": "https://cdn.discordapp.com/emojis/513201065877831680.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 202386,
+        "end": 202496
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "lengmh",
+        "class": "d-emoji",
+        "alt": "lengmh",
+        "src": "https://cdn.discordapp.com/emojis/883134308146098227.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 203273,
+        "end": 203389
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "rov",
+        "class": "d-emoji",
+        "alt": "rov",
+        "src": "https://cdn.discordapp.com/emojis/513201065877831680.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 203491,
+        "end": 203601
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "primordialice",
+        "class": "d-emoji",
+        "alt": "primordialice",
+        "src": "https://cdn.discordapp.com/emojis/1219291285358120990.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 203633,
+        "end": 203764
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "overpower",
+        "class": "d-emoji",
+        "alt": "overpower",
+        "src": "https://cdn.discordapp.com/emojis/535532879334080517.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 204663,
+        "end": 204785
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "igneouskalket",
+        "class": "d-emoji",
+        "alt": "igneouskalket",
+        "src": "https://cdn.discordapp.com/emojis/902209626404192316.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 204911,
+        "end": 205041
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "igneouskalzuk",
+        "class": "d-emoji",
+        "alt": "igneouskalzuk",
+        "src": "https://cdn.discordapp.com/emojis/902209626479685734.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 205066,
+        "end": 205196
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "pulverise",
+        "class": "d-emoji",
+        "alt": "pulverise",
+        "src": "https://cdn.discordapp.com/emojis/535532879053062146.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 205967,
+        "end": 206089
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "zerk",
+        "class": "d-emoji",
+        "alt": "zerk",
+        "src": "https://cdn.discordapp.com/emojis/535532854004678657.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 207057,
+        "end": 207169
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "vestmentsofhavoctop",
+        "class": "d-emoji",
+        "alt": "vestmentsofhavoctop",
+        "src": "https://cdn.discordapp.com/emojis/994189295592161291.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 207382,
+        "end": 207524
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bloodlust",
+        "class": "d-emoji",
+        "alt": "bloodlust",
+        "src": "https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 207647,
+        "end": 207770
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bloodlust",
+        "class": "d-emoji",
+        "alt": "bloodlust",
+        "src": "https://cdn.discordapp.com/emojis/1478080383554945044.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 207844,
+        "end": 207967
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "overpower",
+        "class": "d-emoji",
+        "alt": "overpower",
+        "src": "https://cdn.discordapp.com/emojis/535532879334080517.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 207980,
+        "end": 208102
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "meteorstrike",
+        "class": "d-emoji",
+        "alt": "meteorstrike",
+        "src": "https://cdn.discordapp.com/emojis/1478070401702821938.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 208873,
+        "end": 209002
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bd",
+        "class": "d-emoji",
+        "alt": "bd",
+        "src": "https://cdn.discordapp.com/emojis/535532854281764884.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 210248,
+        "end": 210356
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bd",
+        "class": "d-emoji",
+        "alt": "bd",
+        "src": "https://cdn.discordapp.com/emojis/535532854281764884.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 210494,
+        "end": 210602
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bd",
+        "class": "d-emoji",
+        "alt": "bd",
+        "src": "https://cdn.discordapp.com/emojis/535532854281764884.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 210660,
+        "end": 210768
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "mob",
+        "class": "d-emoji",
+        "alt": "mob",
+        "src": "https://cdn.discordapp.com/emojis/689501908628799488.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 210908,
+        "end": 211018
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "Laceration",
+        "class": "d-emoji",
+        "alt": "Laceration",
+        "src": "https://cdn.discordapp.com/emojis/602581988599398400.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 211158,
+        "end": 211282
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "bd",
+        "class": "d-emoji",
+        "alt": "bd",
+        "src": "https://cdn.discordapp.com/emojis/535532854281764884.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 211291,
+        "end": 211399
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "melee",
+        "class": "d-emoji",
+        "alt": "melee",
+        "src": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 212195,
+        "end": 212310
+      }
+    },
+    {
+      "tag": "img",
+      "attrs": {
+        "title": "melee",
+        "class": "d-emoji",
+        "alt": "melee",
+        "src": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1"
+      },
+      "text": "",
+      "location": {
+        "start": 212338,
+        "end": 212453
+      }
+    }
+  ],
+  "links": [
+    {
+      "href": "https://tools.runescape.wiki/rs-rot/melee",
+      "text": "click here",
+      "attrs": {
+        "title": "",
+        "href": "https://tools.runescape.wiki/rs-rot/melee",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 167348,
+        "end": 167456
+      }
+    },
+    {
+      "href": "https://docs.google.com/spreadsheets/d/1rK7u17JN6I-vf3dKBKg6tm9IPWje9EWSe_r8KPdsxoc/edit?usp=sharing",
+      "text": "click here",
+      "attrs": {
+        "title": "",
+        "href": "https://docs.google.com/spreadsheets/d/1rK7u17JN6I-vf3dKBKg6tm9IPWje9EWSe_r8KPdsxoc/edit?usp=sharing",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 167714,
+        "end": 167881
+      }
+    },
+    {
+      "href": "https://runescape.wiki/w/Invigorating",
+      "text": "click here",
+      "attrs": {
+        "title": "",
+        "href": "https://runescape.wiki/w/Invigorating",
+        "target": "_blank",
+        "rel": "noreferrer"
+      },
+      "location": {
+        "start": 168134,
+        "end": 168238
+      }
+    },
+    {
+      "href": "",
+      "text": "#pvm-help",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 168478,
+        "end": 168523
+      }
+    },
+    {
+      "href": "",
+      "text": "#armour-and-weapons",
+      "attrs": {
+        "href": "",
+        "class": "inactiveLink"
+      },
+      "location": {
+        "start": 172379,
+        "end": 172434
+      }
+    },
+    {
+      "href": "$linkmsg_intro$",
+      "text": "here",
+      "attrs": {
+        "href": "$linkmsg_intro$"
+      },
+      "location": {
+        "start": 212618,
+        "end": 212652
+      }
+    },
+    {
+      "href": "$linkmsg_meleeauto$",
+      "text": "Attack",
+      "attrs": {
+        "href": "$linkmsg_meleeauto$"
+      },
+      "location": {
+        "start": 212829,
+        "end": 212869
+      }
+    },
+    {
+      "href": "$linkmsg_adaptive$",
+      "text": "Adaptive Strike",
+      "attrs": {
+        "href": "$linkmsg_adaptive$"
+      },
+      "location": {
+        "start": 212872,
+        "end": 212920
+      }
+    },
+    {
+      "href": "$linkmsg_rend$",
+      "text": "Rend",
+      "attrs": {
+        "href": "$linkmsg_rend$"
+      },
+      "location": {
+        "start": 212923,
+        "end": 212956
+      }
+    },
+    {
+      "href": "$linkmsg_fury$",
+      "text": "Fury",
+      "attrs": {
+        "href": "$linkmsg_fury$"
+      },
+      "location": {
+        "start": 212959,
+        "end": 212992
+      }
+    },
+    {
+      "href": "$linkmsg_gfury$",
+      "text": "G. Fury",
+      "attrs": {
+        "href": "$linkmsg_gfury$"
+      },
+      "location": {
+        "start": 212995,
+        "end": 213032
+      }
+    },
+    {
+      "href": "$linkmsg_backhand$",
+      "text": "Backhand",
+      "attrs": {
+        "href": "$linkmsg_backhand$"
+      },
+      "location": {
+        "start": 213187,
+        "end": 213228
+      }
+    },
+    {
+      "href": "$linkmsg_punish$",
+      "text": "Punish",
+      "attrs": {
+        "href": "$linkmsg_punish$"
+      },
+      "location": {
+        "start": 213231,
+        "end": 213268
+      }
+    },
+    {
+      "href": "$linkmsg_barge$",
+      "text": "Barge",
+      "attrs": {
+        "href": "$linkmsg_barge$"
+      },
+      "location": {
+        "start": 213271,
+        "end": 213306
+      }
+    },
+    {
+      "href": "$linkmsg_gbarge$",
+      "text": "G. Barge",
+      "attrs": {
+        "href": "$linkmsg_gbarge$"
+      },
+      "location": {
+        "start": 213309,
+        "end": 213348
+      }
+    },
+    {
+      "href": "$linkmsg_chaosroar$",
+      "text": "Chaos Roar",
+      "attrs": {
+        "href": "$linkmsg_chaosroar$"
+      },
+      "location": {
+        "start": 213351,
+        "end": 213395
+      }
+    },
+    {
+      "href": "$linkmsg_assault$",
+      "text": "Assault",
+      "attrs": {
+        "href": "$linkmsg_assault$"
+      },
+      "location": {
+        "start": 213547,
+        "end": 213586
+      }
+    },
+    {
+      "href": "$linkmsg_hurricane$",
+      "text": "Hurricane",
+      "attrs": {
+        "href": "$linkmsg_hurricane$"
+      },
+      "location": {
+        "start": 213589,
+        "end": 213632
+      }
+    },
+    {
+      "href": "$linkmsg_flurry$",
+      "text": "Flurry",
+      "attrs": {
+        "href": "$linkmsg_flurry$"
+      },
+      "location": {
+        "start": 213635,
+        "end": 213672
+      }
+    },
+    {
+      "href": "$linkmsg_gflurry$",
+      "text": "G. Flurry",
+      "attrs": {
+        "href": "$linkmsg_gflurry$"
+      },
+      "location": {
+        "start": 213675,
+        "end": 213716
+      }
+    },
+    {
+      "href": "$linkmsg_dismember$",
+      "text": "Dismember",
+      "attrs": {
+        "href": "$linkmsg_dismember$"
+      },
+      "location": {
+        "start": 213719,
+        "end": 213762
+      }
+    },
+    {
+      "href": "$linkmsg_ezk$",
+      "text": "Ek-Zekkil",
+      "attrs": {
+        "href": "$linkmsg_ezk$"
+      },
+      "location": {
+        "start": 213927,
+        "end": 213964
+      }
+    },
+    {
+      "href": "$linkmsg_zgs$",
+      "text": "Zaros Godsword",
+      "attrs": {
+        "href": "$linkmsg_zgs$"
+      },
+      "location": {
+        "start": 213967,
+        "end": 214009
+      }
+    },
+    {
+      "href": "$linkmsg_dba$",
+      "text": "D. Battleaxe",
+      "attrs": {
+        "href": "$linkmsg_dba$"
+      },
+      "location": {
+        "start": 214012,
+        "end": 214052
+      }
+    },
+    {
+      "href": "$linkmsg_vmercy$",
+      "text": "Varanus's Mercy",
+      "attrs": {
+        "href": "$linkmsg_vmercy$"
+      },
+      "location": {
+        "start": 214055,
+        "end": 214101
+      }
+    },
+    {
+      "href": "$linkmsg_dscim$",
+      "text": "D. Scimitar",
+      "attrs": {
+        "href": "$linkmsg_dscim$"
+      },
+      "location": {
+        "start": 214104,
+        "end": 214145
+      }
+    },
+    {
+      "href": "$linkmsg_dclaws$",
+      "text": "D. Claws",
+      "attrs": {
+        "href": "$linkmsg_dclaws$"
+      },
+      "location": {
+        "start": 214310,
+        "end": 214349
+      }
+    },
+    {
+      "href": "$linkmsg_swh$",
+      "text": "Stat. Warhammer",
+      "attrs": {
+        "href": "$linkmsg_swh$"
+      },
+      "location": {
+        "start": 214352,
+        "end": 214395
+      }
+    },
+    {
+      "href": "$linkmsg_gmaul$",
+      "text": "Granite Maul",
+      "attrs": {
+        "href": "$linkmsg_gmaul$"
+      },
+      "location": {
+        "start": 214398,
+        "end": 214440
+      }
+    },
+    {
+      "href": "$linkmsg_leng$",
+      "text": "Dark Shard of Leng",
+      "attrs": {
+        "href": "$linkmsg_leng$"
+      },
+      "location": {
+        "start": 214443,
+        "end": 214490
+      }
+    },
+    {
+      "href": "$linkmsg_overpower$",
+      "text": "Overpower",
+      "attrs": {
+        "href": "$linkmsg_overpower$"
+      },
+      "location": {
+        "start": 214642,
+        "end": 214685
+      }
+    },
+    {
+      "href": "$linkmsg_pulverize$",
+      "text": "Pulverize",
+      "attrs": {
+        "href": "$linkmsg_pulverize$"
+      },
+      "location": {
+        "start": 214688,
+        "end": 214731
+      }
+    },
+    {
+      "href": "$linkmsg_zerk$",
+      "text": "Berserk",
+      "attrs": {
+        "href": "$linkmsg_zerk$"
+      },
+      "location": {
+        "start": 214734,
+        "end": 214770
+      }
+    },
+    {
+      "href": "$linkmsg_meteor$",
+      "text": "Meteor Strike",
+      "attrs": {
+        "href": "$linkmsg_meteor$"
+      },
+      "location": {
+        "start": 214773,
+        "end": 214817
+      }
+    },
+    {
+      "href": "$linkmsg_bd$",
+      "text": "Bladed Dive",
+      "attrs": {
+        "href": "$linkmsg_bd$"
+      },
+      "location": {
+        "start": 214968,
+        "end": 215006
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "h2",
+      "attrs": {
+        "id": "introduction"
+      },
+      "text": "Introduction",
+      "location": {
+        "start": 165418,
+        "end": 165468
+      }
+    },
+    {
+      "index": 1,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 165468,
+        "end": 165469
+      }
+    },
+    {
+      "index": 2,
+      "tag": "p",
+      "attrs": {},
+      "text": "Note: Use the Table of Contents present at the bottom of the channel, or in the pinned comments, to quickly navigate through this channel and find the information you are looking for.",
+      "location": {
+        "start": 165469,
+        "end": 165696
+      }
+    },
+    {
+      "index": 3,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 165696,
+        "end": 165697
+      }
+    },
+    {
+      "index": 4,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 165697,
+        "end": 165712
+      }
+    },
+    {
+      "index": 5,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 165712,
+        "end": 165713
+      }
+    },
+    {
+      "index": 6,
+      "tag": "p",
+      "attrs": {},
+      "text": "Some general notes:",
+      "location": {
+        "start": 165713,
+        "end": 165739
+      }
+    },
+    {
+      "index": 7,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 165739,
+        "end": 165740
+      }
+    },
+    {
+      "index": 8,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ The game runs on an internal tick system: 1t (tick) = 0.6s (seconds).",
+      "location": {
+        "start": 165740,
+        "end": 165835
+      }
+    },
+    {
+      "index": 9,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 165835,
+        "end": 165836
+      }
+    },
+    {
+      "index": 10,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ The minimum time between abilities is called the global cooldown: 1 gcd = 3t = 1.8s.",
+      "location": {
+        "start": 165836,
+        "end": 165946
+      }
+    },
+    {
+      "index": 11,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 165946,
+        "end": 165947
+      }
+    },
+    {
+      "index": 12,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Auto attacks will only give adrenaline if they hit (splash = no adrenaline gain).",
+      "location": {
+        "start": 165947,
+        "end": 166037
+      }
+    },
+    {
+      "index": 13,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166037,
+        "end": 166038
+      }
+    },
+    {
+      "index": 14,
+      "tag": "p",
+      "attrs": {},
+      "text": "‎ ‎ ‎ ‎• Debuff spells like Vuln  or Enfeeble  or Smoke Cloud  do not give adrenaline.",
+      "location": {
+        "start": 166038,
+        "end": 166487
+      }
+    },
+    {
+      "index": 15,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166487,
+        "end": 166488
+      }
+    },
+    {
+      "index": 16,
+      "tag": "p",
+      "attrs": {},
+      "text": "⬥ Some useful sheets and resources are given below.",
+      "location": {
+        "start": 166488,
+        "end": 166546
+      }
+    },
+    {
+      "index": 17,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166546,
+        "end": 166547
+      }
+    },
+    {
+      "index": 18,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 166547,
+        "end": 166562
+      }
+    },
+    {
+      "index": 19,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 166562,
+        "end": 166563
+      }
+    },
+    {
+      "index": 20,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAbility Damage Maths\nTo calculate your ability hit damage in detail, click here.\nThis is affected by factors such as your gear and other boosts.\nAbility Hit Timings\nTo see detailed breakdowns on ability hit timings, click here.\nThis refers to when hitsplats appear on your target.\nAuto-attack Adren Gain\nTo see adrenaline gained with different auto attacks, click here.\n\n\n\n\n\n\n",
+      "location": {
+        "start": 166563,
+        "end": 168348
+      }
+    },
+    {
+      "index": 21,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 168348,
+        "end": 168350
+      }
+    },
+    {
+      "index": 22,
+      "tag": "p",
+      "attrs": {},
+      "text": "Note: If you have any difficulties in using the tools or understanding what the information means, you can always ask in #pvm-help.",
+      "location": {
+        "start": 168350,
+        "end": 168533
+      }
+    },
+    {
+      "index": 23,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168533,
+        "end": 168534
+      }
+    },
+    {
+      "index": 24,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 168534,
+        "end": 168549
+      }
+    },
+    {
+      "index": 25,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168549,
+        "end": 168550
+      }
+    },
+    {
+      "index": 26,
+      "tag": "h2",
+      "attrs": {
+        "id": "melee"
+      },
+      "text": "Melee ",
+      "location": {
+        "start": 168550,
+        "end": 168702
+      }
+    },
+    {
+      "index": 27,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168702,
+        "end": 168703
+      }
+    },
+    {
+      "index": 28,
+      "tag": "p",
+      "attrs": {},
+      "text": "This section covers basic abilities, enhanced abilities, ultimate abilities, utility abilities and special attacks for Melee.",
+      "location": {
+        "start": 168703,
+        "end": 168835
+      }
+    },
+    {
+      "index": 29,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168835,
+        "end": 168836
+      }
+    },
+    {
+      "index": 30,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 168836,
+        "end": 168851
+      }
+    },
+    {
+      "index": 31,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168851,
+        "end": 168852
+      }
+    },
+    {
+      "index": 32,
+      "tag": "h3",
+      "attrs": {
+        "id": "basic-abilities"
+      },
+      "text": "Basic Abilities",
+      "location": {
+        "start": 168852,
+        "end": 168897
+      }
+    },
+    {
+      "index": 33,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 168897,
+        "end": 168898
+      }
+    },
+    {
+      "index": 34,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAttack \n\n⬥ Cooldown: 0t (0s)\n⬥ Generates 1  Bloodlust stack\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 168898,
+        "end": 169960
+      }
+    },
+    {
+      "index": 35,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 169960,
+        "end": 169962
+      }
+    },
+    {
+      "index": 36,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 169962,
+        "end": 169977
+      }
+    },
+    {
+      "index": 37,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 169977,
+        "end": 169978
+      }
+    },
+    {
+      "index": 38,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAdaptive Strike \n\n⬥ Cooldown: 9t (5.4s)\n⬥ Generates 1  Bloodlust stack\n⬥ Generates 12 Adrenaline\n⬥ Depends on weapon used:\n    • 2H: AoE in a cone of attack direction, hitting up to 9 targets, inclusive of main\n    • DW: 2 hits on target\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 169978,
+        "end": 171226
+      }
+    },
+    {
+      "index": 39,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 171226,
+        "end": 171228
+      }
+    },
+    {
+      "index": 40,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 171228,
+        "end": 171243
+      }
+    },
+    {
+      "index": 41,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 171243,
+        "end": 171244
+      }
+    },
+    {
+      "index": 42,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRend \n\n⬥ Cooldown: 17t (10.2s)\n⬥ Generates 2  Bloodlust stacks\n⬥ Affected by Gloves of Passage , details in #armour-and-weapons\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 171244,
+        "end": 172532
+      }
+    },
+    {
+      "index": 43,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 172532,
+        "end": 172534
+      }
+    },
+    {
+      "index": 44,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 172534,
+        "end": 172549
+      }
+    },
+    {
+      "index": 45,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 172549,
+        "end": 172550
+      }
+    },
+    {
+      "index": 46,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFury \n\n⬥ Cooldown: 25t (15s)\n⬥ Generates 1  Bloodlust stack\n⬥ Next melee attack has +25% increased crit chance\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 172550,
+        "end": 173650
+      }
+    },
+    {
+      "index": 47,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 173650,
+        "end": 173652
+      }
+    },
+    {
+      "index": 48,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 173652,
+        "end": 173667
+      }
+    },
+    {
+      "index": 49,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 173667,
+        "end": 173668
+      }
+    },
+    {
+      "index": 50,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGreater Fury \n\n⬥ Cooldown: 25t (15s)\n⬥ Generates 1  Bloodlust stack\n⬥ Next non-bleed melee hit within 15s is guaranteed to crit\n    • Only affects first hit of a combo ability\n    • Is applied only to 1 target in AoE\n    • Bleeds do not consume buff\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 173668,
+        "end": 174909
+      }
+    },
+    {
+      "index": 51,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 174909,
+        "end": 174911
+      }
+    },
+    {
+      "index": 52,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 174911,
+        "end": 174926
+      }
+    },
+    {
+      "index": 53,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 174926,
+        "end": 174927
+      }
+    },
+    {
+      "index": 54,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBackhand \n\n⬥ Cooldown: 25t (15s)\n    • Charges: 2\n⬥ Generates 1  Bloodlust stack\n⬥ Stuns for 3t (1.8s)\n⬥ It is affected by \n    • Increases Max by 40% per  rank\n    • Increases Minimum by 8% per  rank\n    • No longer stuns or binds\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 174927,
+        "end": 176522
+      }
+    },
+    {
+      "index": 55,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 176522,
+        "end": 176524
+      }
+    },
+    {
+      "index": 56,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 176524,
+        "end": 176539
+      }
+    },
+    {
+      "index": 57,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 176539,
+        "end": 176540
+      }
+    },
+    {
+      "index": 58,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPunish \n\n⬥ Cooldown: 40t (24s)\n⬥ Generates 1  Bloodlust stack\n⬥ Damage boosted by 2.5x when target is <50% health\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 176540,
+        "end": 177650
+      }
+    },
+    {
+      "index": 59,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 177650,
+        "end": 177652
+      }
+    },
+    {
+      "index": 60,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 177652,
+        "end": 177667
+      }
+    },
+    {
+      "index": 61,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 177667,
+        "end": 177668
+      }
+    },
+    {
+      "index": 62,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBarge \n\n⬥ Cooldown: 34t (20.4s)\n⬥ Generates 1  Bloodlust stack\n⬥ It is a Mobility ability:\n    • Will move you to Melee Distance\n⬥ It is affected by Mobile \n    • Reduces cooldown to 17t (10.2s)\n⬥ Binds for 11t (6.6s)\n⬥ Clears Bound debuff\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 177668,
+        "end": 179009
+      }
+    },
+    {
+      "index": 63,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 179009,
+        "end": 179011
+      }
+    },
+    {
+      "index": 64,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 179011,
+        "end": 179026
+      }
+    },
+    {
+      "index": 65,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 179026,
+        "end": 179027
+      }
+    },
+    {
+      "index": 66,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGreater Barge \n\n⬥ Cooldown: 34t (20.4s)\n⬥ Generates 1  Bloodlust stack\n⬥ All normal  things apply\n⬥ It has additional effects:\n    • Every tick (0.6s) since the player stopped attacking their target,  gains +7% to its max range and +5% to its min, capping at 10t (6s) for a total of 100% and 20%. Damage range go from 75%-95% to 125%-165%\n    • After 8t (4.8s) pass since you stopped attacking, when you , if you cast  /  /  within 10t (6s), it will convert the first one done into a damage over time\n⬥ For details on how to use it, use !gbarge\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 179027,
+        "end": 181302
+      }
+    },
+    {
+      "index": 67,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 181302,
+        "end": 181304
+      }
+    },
+    {
+      "index": 68,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 181304,
+        "end": 181319
+      }
+    },
+    {
+      "index": 69,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 181319,
+        "end": 181320
+      }
+    },
+    {
+      "index": 70,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nChaos Roar \n\n⬥ Cooldown: 100t (60s)\n⬥ Unlocked using a Chaos Roar ability codex \n⬥ Next Melee ability within 7.2s does 1.75x damage\n    • So, it doubles all hits of bleeds (e.g. ) and multi-hit attacks (e.g. )\n    • Channels have multiple casts, so only doubles the first cast (e.g  hit 1)\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 181320,
+        "end": 182972
+      }
+    },
+    {
+      "index": 71,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 182972,
+        "end": 182974
+      }
+    },
+    {
+      "index": 72,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 182974,
+        "end": 182989
+      }
+    },
+    {
+      "index": 73,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 182989,
+        "end": 182990
+      }
+    },
+    {
+      "index": 74,
+      "tag": "h3",
+      "attrs": {
+        "id": "enhanced-abilities"
+      },
+      "text": "Enhanced Abilities",
+      "location": {
+        "start": 182990,
+        "end": 183041
+      }
+    },
+    {
+      "index": 75,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 183041,
+        "end": 183042
+      }
+    },
+    {
+      "index": 76,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAssault \n\n⬥ Cooldown: 10t (6s)\n⬥ Adrenaline Cost: 25%\n⬥ Channelled ability, can move while channelling\n⬥ Bloodlust Assault (consumes 4  Bloodlust)\n    • Increases damage from 140% AVG/hit to 180% AVG/hit\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 183042,
+        "end": 184241
+      }
+    },
+    {
+      "index": 77,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 184241,
+        "end": 184243
+      }
+    },
+    {
+      "index": 78,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 184243,
+        "end": 184258
+      }
+    },
+    {
+      "index": 79,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 184258,
+        "end": 184259
+      }
+    },
+    {
+      "index": 80,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHurricane \n\n⬥ Cooldown: 34t (20.4s)\n⬥ Adrenaline Cost: 25%\n⬥ It is an AoE hitting up to 10 targets, inclusive of main:\n    • 3x3 with player as centre\n    • 5x5 with player as centre with Halberd-type weapon\n⬥ Reduces the cooldown of Hurricane  by 3s for each enemy hit\n⬥ Bloodlust Hurricane (consumes 4  Bloodlust)\n    • Third AoE hitting up to 10 targets, inclusive of main\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 184259,
+        "end": 185736
+      }
+    },
+    {
+      "index": 81,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 185736,
+        "end": 185738
+      }
+    },
+    {
+      "index": 82,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 185738,
+        "end": 185753
+      }
+    },
+    {
+      "index": 83,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 185753,
+        "end": 185754
+      }
+    },
+    {
+      "index": 84,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFlurry \n\n⬥ Cooldown: 34t (20.4s)\n⬥ Adrenaline Cost: 25%\n⬥ Channelled Ability, can move while channelling\n⬥ Stuns and Binds the target for 6t (3.6s)\n⬥ It is an AoE:\n    • 3x3 with player as centre\n⬥ Bloodlust Flurry (consumes 4  Bloodlust)\n    • Deals 1% increased damage per % hp target is missing up to 65%\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 185754,
+        "end": 187055
+      }
+    },
+    {
+      "index": 85,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 187055,
+        "end": 187057
+      }
+    },
+    {
+      "index": 86,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 187057,
+        "end": 187072
+      }
+    },
+    {
+      "index": 87,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 187072,
+        "end": 187073
+      }
+    },
+    {
+      "index": 88,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGreater Flurry \n\n⬥ Cooldown: 34t (20.4s)\n⬥ Adrenaline Cost: 25%\n⬥ All normal  things apply\n⬥ Each hit extends  by 1t/hit (0.6s/hit) for up to 8t (4.8s)\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 187073,
+        "end": 188325
+      }
+    },
+    {
+      "index": 89,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 188325,
+        "end": 188327
+      }
+    },
+    {
+      "index": 90,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 188327,
+        "end": 188342
+      }
+    },
+    {
+      "index": 91,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 188342,
+        "end": 188343
+      }
+    },
+    {
+      "index": 92,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDismember \n\n⬥ Cooldown: 40t (24s)\n⬥ Adrenaline Cost: 0%\n⬥ It is a damage over time:\n    • Not affected by  \n⬥ Can be extended:\n    • Strength skillcape  passive adds 3 hits\n    • Masterwork Spear of Annihilation  adds 50% more hits\n⬥ It is affected by \n    • Max hit increases by 10% + 3% per  rank\n⬥ Can be recast 2 additional times within 24s of previous cast:\n    • 1st cast: Hits every 2t (1.2s) for 8 (11  , 15  +  ) times, heals for 4% of damage\n    • 2nd cast: Hits every 3t (1.8s) for 6 (9  , 12  +  ) times, heals for 6% of damage\n    • 3rd cast: Hits every 3t (1.8s) for 7 (10  , 13  +  ) times, heals for 12% of damage\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 188343,
+        "end": 191512
+      }
+    },
+    {
+      "index": 93,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 191512,
+        "end": 191514
+      }
+    },
+    {
+      "index": 94,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 191514,
+        "end": 191529
+      }
+    },
+    {
+      "index": 95,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 191529,
+        "end": 191530
+      }
+    },
+    {
+      "index": 96,
+      "tag": "h3",
+      "attrs": {
+        "id": "special-attacks"
+      },
+      "text": "Special Attacks",
+      "location": {
+        "start": 191530,
+        "end": 191575
+      }
+    },
+    {
+      "index": 97,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 191575,
+        "end": 191576
+      }
+    },
+    {
+      "index": 98,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEk-Zekkil \n\n⬥ Cooldown: 100t (60s)\n⬥ Adrenaline Cost: 50% (45% with )\n⬥ Marks target as Flamebound Rival, then deals damage\n    • Only applicable to one target at a time\n        ⬩ Effects only apply to Flamebound Rival\n⬥ If wielding the Ek-Zekkil, fighting your Flamebound Rival will grant:\n    • 12% increased damage dealt on attacks (except bleeds)\n    • 12% reduced damage taken (from Flamebound Rival)\n    • Igneous Showdown an additional 3 (simultaneous) hits\n        ⬩ Refunds 15% adrenaline\n⬥ Switching to Ek-ZekKil will reapply Flamebound Rival to initial target\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 191576,
+        "end": 193121
+      }
+    },
+    {
+      "index": 99,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 193121,
+        "end": 193123
+      }
+    },
+    {
+      "index": 100,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 193123,
+        "end": 193138
+      }
+    },
+    {
+      "index": 101,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 193138,
+        "end": 193139
+      }
+    },
+    {
+      "index": 102,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nZaros Godsword \n\n⬥ Cooldown: 100t (60s)\n⬥ Adrenaline Cost: 50% (45% with )\n⬥ On cast buff\n⬥ 7x7 area (enemy you cast spec on takes damage every 3t (1.8s) while in it)\n⬥ Increases damage by 25% from t0→34t (35t/21s duration)\n    • Buff starts t1 for autos, t2 for everything\n⬥ Does not incur the auto cooldown, but will still attempt to force an auto\n⬥ Can take weapon off and retain spec effect\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 193139,
+        "end": 194508
+      }
+    },
+    {
+      "index": 103,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 194508,
+        "end": 194510
+      }
+    },
+    {
+      "index": 104,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 194510,
+        "end": 194525
+      }
+    },
+    {
+      "index": 105,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 194525,
+        "end": 194526
+      }
+    },
+    {
+      "index": 106,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDragon Battleaxe \n\n⬥ Adrenaline Cost: 100% (90% with )\n⬥ Drains 10% (rounded down) of your , , , and  levels and gain a  level boost of 10 + 1 level for every 4 drained from your other stats\n⬥ Boosts damage by 1.2 (stacks with  for a 1.25 * 1.2 = 1.5 boost), or 1.1 when using , making it a 2 * 1.1 = 2.2 boost\n⬥ Multiplicative 10% reduction to hitchance debuff\n⬥ These effects lasts 1 minute\n⬥ Can take weapon off and retain spec effect\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 194526,
+        "end": 196916
+      }
+    },
+    {
+      "index": 107,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 196916,
+        "end": 196918
+      }
+    },
+    {
+      "index": 108,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 196918,
+        "end": 196933
+      }
+    },
+    {
+      "index": 109,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 196933,
+        "end": 196934
+      }
+    },
+    {
+      "index": 110,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVaranus's Mercy \n\n⬥ Adrenaline Cost: 50% (45% with )\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 196934,
+        "end": 197982
+      }
+    },
+    {
+      "index": 111,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 197982,
+        "end": 197984
+      }
+    },
+    {
+      "index": 112,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 197984,
+        "end": 197999
+      }
+    },
+    {
+      "index": 113,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 197999,
+        "end": 198000
+      }
+    },
+    {
+      "index": 114,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDragon Claws \n\n⬥ Adrenaline Cost: 50% (45% with )\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 198000,
+        "end": 199038
+      }
+    },
+    {
+      "index": 115,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 199038,
+        "end": 199040
+      }
+    },
+    {
+      "index": 116,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 199040,
+        "end": 199055
+      }
+    },
+    {
+      "index": 117,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 199055,
+        "end": 199056
+      }
+    },
+    {
+      "index": 118,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStatius's Warhammer \n\n⬥ Adrenaline Cost: 35% (31.5% with )\n⬥ Applies an affinity and  reduction:\n    • +5 affinity\n    • Reduces  level by 30% of base\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 199056,
+        "end": 200417
+      }
+    },
+    {
+      "index": 119,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 200417,
+        "end": 200419
+      }
+    },
+    {
+      "index": 120,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 200419,
+        "end": 200434
+      }
+    },
+    {
+      "index": 121,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 200434,
+        "end": 200435
+      }
+    },
+    {
+      "index": 122,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDragon Scimitar \n\n⬥ Adrenaline Cost: 25% (22.5% with )\n⬥ Increases accuracy with slash weapons by 25% for 100t (60s)\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 200435,
+        "end": 201549
+      }
+    },
+    {
+      "index": 123,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 201549,
+        "end": 201551
+      }
+    },
+    {
+      "index": 124,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 201551,
+        "end": 201566
+      }
+    },
+    {
+      "index": 125,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 201566,
+        "end": 201567
+      }
+    },
+    {
+      "index": 126,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGranite Maul \n\n⬥ Adrenaline Cost: 50% (45% with )\n⬥ Can be used during the GCD\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 201567,
+        "end": 202624
+      }
+    },
+    {
+      "index": 127,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 202624,
+        "end": 202626
+      }
+    },
+    {
+      "index": 128,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 202626,
+        "end": 202641
+      }
+    },
+    {
+      "index": 129,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 202641,
+        "end": 202642
+      }
+    },
+    {
+      "index": 130,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDark Shard of Leng \n\n⬥ Cooldown: 25t (15s)\n⬥ Adrenaline Cost: 30% (27% with )\n⬥ It is an AoE\n⬥ Consumes all  stacks\n⬥ For every stack consumed\n    • Adrenaline Cost is reduced by 12%\n    • Each hit increased by 18-22%\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 202642,
+        "end": 203971
+      }
+    },
+    {
+      "index": 131,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 203971,
+        "end": 203973
+      }
+    },
+    {
+      "index": 132,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 203973,
+        "end": 203988
+      }
+    },
+    {
+      "index": 133,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 203988,
+        "end": 203989
+      }
+    },
+    {
+      "index": 134,
+      "tag": "h3",
+      "attrs": {
+        "id": "ultimate-abilities"
+      },
+      "text": "Ultimate Abilities",
+      "location": {
+        "start": 203989,
+        "end": 204040
+      }
+    },
+    {
+      "index": 135,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 204040,
+        "end": 204041
+      }
+    },
+    {
+      "index": 136,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOverpower \n\n⬥ Cooldown: 50t (30s)\n⬥ Adrenaline Cost: 60%\n⬥ Affected by the Igneous Kal-Ket  and the Igneous Kal-Zuk :\n    • The ability has two hits.\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 204041,
+        "end": 205327
+      }
+    },
+    {
+      "index": 137,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 205327,
+        "end": 205329
+      }
+    },
+    {
+      "index": 138,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 205329,
+        "end": 205344
+      }
+    },
+    {
+      "index": 139,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 205344,
+        "end": 205345
+      }
+    },
+    {
+      "index": 140,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPulverise \n\n⬥ Cooldown: 100t (60s)\n⬥ Adrenaline Cost: 60%\n⬥ Applies Pulverised debuff to target\n    • Reduces damage dealt by target by 25%\n    • If target dies with debuff, you gain 50% adrenaline\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 205345,
+        "end": 206419
+      }
+    },
+    {
+      "index": 141,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 206419,
+        "end": 206421
+      }
+    },
+    {
+      "index": 142,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 206421,
+        "end": 206436
+      }
+    },
+    {
+      "index": 143,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 206436,
+        "end": 206437
+      }
+    },
+    {
+      "index": 144,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBerserk \n\n⬥ Cooldown: 100t (60s)\n⬥ Adrenaline Cost: 100%\n⬥ It is an on cast buff\n⬥ It increases damage by 75% from t0→t33 (34t/20.4s duration)\n⬥ Wearing 3+ pieces of Vestments  extends the duration from t0→t33 (34t/20.4s) to t0→t43 (44t/26.6s)\n⬥ It increases damage taken by 25%\n⬥ Maximum Bloodlust  increased by 4\n⬥ Basic attacks and basic abilities generate 2x Bloodlust \n⬥ Overpower  cooldown reduced to 15t (9s)\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 206437,
+        "end": 208229
+      }
+    },
+    {
+      "index": 145,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 208229,
+        "end": 208231
+      }
+    },
+    {
+      "index": 146,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 208231,
+        "end": 208246
+      }
+    },
+    {
+      "index": 147,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 208246,
+        "end": 208247
+      }
+    },
+    {
+      "index": 148,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMeteor Strike \n\n⬥ Cooldown: 100t (60s)\n⬥ Adrenaline Cost: 60%\n⬥ It is an AoE hitting up to 9 targets, inclusive of main:\n    • 3x3 with player as centre\n    • 5x5 with player as centre with Halberd-type weapon\n⬥ Provides an Adrenaline buff for the next 30s:\n    • Melee basic abilities generate 1.5x Adrenaline\n    • Generate 4.5% every 1t you have a Melee weapon equipped\n    • This buff is applied on release of the ability\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 208247,
+        "end": 209556
+      }
+    },
+    {
+      "index": 149,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 209556,
+        "end": 209558
+      }
+    },
+    {
+      "index": 150,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 209558,
+        "end": 209573
+      }
+    },
+    {
+      "index": 151,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 209573,
+        "end": 209574
+      }
+    },
+    {
+      "index": 152,
+      "tag": "h3",
+      "attrs": {
+        "id": "utility-abilities"
+      },
+      "text": "Utility Abilities",
+      "location": {
+        "start": 209574,
+        "end": 209623
+      }
+    },
+    {
+      "index": 153,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 209623,
+        "end": 209624
+      }
+    },
+    {
+      "index": 154,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBladed Dive \n\n⬥ Cooldown: 34t (20.4s)\n⬥ It is a Mobility ability:\n    • If you use it on a tile, it will  you to that tile\n    • If you use it on a target it will  you some point at Melee Distance of the target (the movement is accounted 1t later than had you clicked a tile)\n⬥ It is affected by Mobile \n    • Reduces cooldown to 17t (10.2s)\n⬥ It is an AoE:\n    • Hits 3x3 around where you land if used on a target\n    • This becomes 5x5 with  Halberd \n⬥ If you use it on a target and it dies within 10t (6s), the cooldown ends\n\n\n\n\n\n\n\n",
+      "location": {
+        "start": 209624,
+        "end": 211572
+      }
+    },
+    {
+      "index": 155,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 211572,
+        "end": 211574
+      }
+    },
+    {
+      "index": 156,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 211574,
+        "end": 211589
+      }
+    },
+    {
+      "index": 157,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n",
+      "location": {
+        "start": 211589,
+        "end": 211590
+      }
+    },
+    {
+      "index": 158,
+      "tag": "div",
+      "attrs": {
+        "class": "flex-vertical whitney theme-dark"
+      },
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Melee Ability Index \n\n⬥ Click the links to quickly navigate to that ability's information.\n⬥ General notes can be found in the introduction here.\n\nBasic (1/2)\n⬥ Attack\n⬥ Adaptive Strike\n⬥ Rend\n⬥ Fury\n⬥ G. Fury\nBasic (2/2)\n⬥ Backhand\n⬥ Punish\n⬥ Barge\n⬥ G. Barge\n⬥ Chaos Roar\nEnhanced\n⬥ Assault\n⬥ Hurricane\n⬥ Flurry\n⬥ G. Flurry\n⬥ Dismember\nSpecial Attacks (1/2)\n⬥ Ek-Zekkil\n⬥ Zaros Godsword\n⬥ D. Battleaxe\n⬥ Varanus's Mercy\n⬥ D. Scimitar\nSpecial Attacks (2/2)\n⬥ D. Claws\n⬥ Stat. Warhammer\n⬥ Granite Maul\n⬥ Dark Shard of Leng\nUltimate\n⬥ Overpower\n⬥ Pulverize\n⬥ Berserk\n⬥ Meteor Strike\nUtility\n⬥ Bladed Dive\n\n\n\n\n\n\n",
+      "location": {
+        "start": 211590,
+        "end": 215115
+      }
+    },
+    {
+      "index": 159,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n\n",
+      "location": {
+        "start": 215115,
+        "end": 215117
+      }
+    },
+    {
+      "index": 160,
+      "tag": "p",
+      "attrs": {},
+      "text": "​",
+      "location": {
+        "start": 215117,
+        "end": 215132
+      }
+    },
+    {
+      "index": 161,
+      "tag": "#text",
+      "attrs": {},
+      "text": "\n      \n    ",
+      "location": {
+        "start": 215132,
+        "end": 215144
+      }
+    }
+  ]
+}

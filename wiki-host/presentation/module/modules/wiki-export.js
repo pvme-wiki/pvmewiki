@@ -7,10 +7,49 @@ function convertRevision(source, metadata, registry, actionBars = {}, visualCont
     if (/[\uF000\uF001]/.test(source)) throw new Error('This revision contains unsupported reserved characters.');
     const held = [];
     const hold = text => '\uF000' + (held.push(text) - 1) + '\uF001';
-    const restore = text => text.replace(/\uF000(\d+)\uF001/g, (_, id) => held[Number(id)]);
+    const restore = text => {
+        // Held lists may contain previously held literal text or media links.
+        let previous;
+        do { previous = text; text = text.replace(/\uF000(\d+)\uF001/g, (_, id) => held[Number(id)]); } while (text !== previous && /\uF000\d+\uF001/.test(text));
+        return text;
+    };
     const plain = text => restore(text).replace(/<\/?nowiki>/g, '').replace(/'''|''/g, '').trim();
-    let body = source.replace(/\r\n?/g, '\n').replace(/<nowiki>([\s\S]*?)<\/nowiki>/gi, match => hold(match));
-    const amascut = visualContent.guide === metadata.title ? visualContent : {};
+    let body = source.replace(/\r\n?/g, '\n').replace(/<nowiki>[\s\S]*?<\/nowiki>|<pre\b[^>]*>[\s\S]*?<\/pre>/gi, match => hold(match));
+    const hasSourceHeading = /<h1\b[^>]*\bclass\s*=\s*["'][^"']*\bpvme-source-title\b/i.test(body);
+    const mediaReferences = [];
+    const decodeAttribute = value => value.replace(/&(#x[\da-f]+|#\d+|amp|quot|apos|lt|gt);/gi, (entity, name) => {
+        const named = { amp: '&', quot: '"', apos: "'", lt: '<', gt: '>' };
+        if (name[0] !== '#') return named[name.toLowerCase()] || entity;
+        const code = name[1].toLowerCase() === 'x' ? parseInt(name.slice(2), 16) : Number(name.slice(1));
+        return code > 0 && code <= 0x10ffff && !(code >= 0xd800 && code <= 0xdfff) ? String.fromCodePoint(code) : entity;
+    });
+    // Native source media has no assumed destination File title. Keep every URL
+    // in its original position and make the transfer limitation explicit.
+    body = body.replace(/<pvme-(image|video|embed)\b([^>]*?)\s*\/\s*>/gi, (_, kind, attributes) => {
+        const args = {};
+        for (const attribute of attributes.matchAll(/([\w-]+)\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s"'=<>`]+))/g)) {
+            const key = attribute[1].toLowerCase();
+            if (Object.hasOwn(args, key)) throw new Error('Duplicate source media attribute: ' + key + '.');
+            args[key] = decodeAttribute(attribute[2] ?? attribute[3] ?? attribute[4]);
+        }
+        const url = new URL(args.src || '');
+        // This emits a link, never an executable embed or a remote image fetch.
+        if (!['https:', 'http:'].includes(url.protocol) || !url.hostname || url.username || url.password) throw new Error('Unsupported source media URL.');
+        mediaReferences.push(kind.toLowerCase());
+        const label = args.alt || args.title || (kind.toLowerCase() === 'image' ? 'Image' : 'Video');
+        const literal = '<nowiki>' + label.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</nowiki>';
+        let reference = '[' + url.href.replace(/\[/g, '%5B').replace(/\]/g, '%5D') + ' ' + literal + ']';
+        if (args.poster) {
+            const poster = new URL(args.poster);
+            if (!['https:', 'http:'].includes(poster.protocol) || !poster.hostname || poster.username || poster.password) throw new Error('Unsupported video poster URL.');
+            reference += ' [' + poster.href.replace(/\[/g, '%5B').replace(/\]/g, '%5D') + ' Video poster]';
+        }
+        return hold(reference);
+    });
+    body = body.replace(/^\s*__NOTOC__\s*$/gm, '');
+    // Native pages already contain their published media. Do not reintroduce
+    // historical preset supplements from the retired cloned reader.
+    const amascut = !mediaReferences.length && visualContent.guide === metadata.title ? visualContent : {};
     // A current revision must still link this exact preset. Never add removed setups.
     const sourcePresets = Object.entries(amascut.presets || {}).filter(([url]) => body.includes('[' + url + ' '));
     if (/\{\{|<!--/.test(body)) throw new Error('Templates or comments must be converted before this page can be copied.');
@@ -25,15 +64,17 @@ function convertRevision(source, metadata, registry, actionBars = {}, visualCont
             if (stack.at(-1).tag !== name) throw new Error('Unbalanced list markup.');
             stack.pop();
         } else {
-            if (/\b(?:start|type|reversed|value)\b/i.test(tag[3])) throw new Error('Custom list numbering cannot be copied yet.');
             const parent = stack.at(-1).tag;
             if ((name === 'li' && !['ol', 'ul'].includes(parent)) || (name !== 'li' && ['ol', 'ul'].includes(parent))) throw new Error('Malformed list structure.');
-            const node = { tag: name, children: [] }; stack.at(-1).children.push(node); stack.push(node);
+            const node = { tag: name, children: [], opening: token, custom: /\b(?:start|type|reversed|value)\s*(?:=|\s|$)/i.test(tag[3]) }; stack.at(-1).children.push(node); stack.push(node);
         }
     }
     if (stack.length !== 1) throw new Error('Unbalanced list markup.');
     const layoutWhitespace = text => plain(text).trim() === '';
+    const hasCustomNumbering = list => list.custom || list.children.some(child => typeof child !== 'string' && hasCustomNumbering(child));
+    const originalList = list => list.opening + list.children.map(child => typeof child === 'string' ? child : originalList(child)).join('') + '</' + list.tag + '>';
     function renderList(list, prefix = '') {
+        if (hasCustomNumbering(list)) return '\n' + hold(originalList(list)) + '\n';
         const marker = prefix + (list.tag === 'ol' ? '#' : '*');
         return list.children.map(item => {
             if (typeof item === 'string') { if (!layoutWhitespace(item)) throw new Error('Text outside a list item needs review.'); return ''; }
@@ -103,6 +144,10 @@ function convertRevision(source, metadata, registry, actionBars = {}, visualCont
             return !close && id ? '<span id="' + id.replace(/"/g, '&quot;') + '"></span>' : '';
         }
         if (name === 'code') return close ? '</code>' : '<code>';
+        if (['kbd', 'sub', 'sup', 'small'].includes(name)) return close ? '</' + name + '>' : '<' + name + '>';
+        if (name === 'details') return '\n\n';
+        if (name === 'summary') return close ? "'''\n\n" : "\n\n'''";
+        if (name === 'colgroup' || name === 'col') return '';
         if (name === 'del' || name === 's') return close ? '</s>' : '<s>';
         if (name === 'div' || name === 'p') return '\n\n' + (close ? '' : ':'.repeat(quoteDepth));
         if (name === 'br') return '<br />';
@@ -122,6 +167,7 @@ function convertRevision(source, metadata, registry, actionBars = {}, visualCont
     body = restore(body.replace(/\n[ \t]*\n(?:[ \t]*\n)+/g, '\n\n').replace(/^\n+/, '').trimEnd());
     if (!body) throw new Error('No guide body was produced.');
     const visualGaps = [];
+    if (mediaReferences.length) visualGaps.push('Images, videos and embeds remain linked. RuneScape Wiki files have not been assigned.');
     if (amascut.guide) {
         visualGaps.push('Images remain linked. RuneScape Wiki file names have not been checked.');
         const literal = value => '<nowiki>' + String(value).replace(/<\/nowiki>/gi, '&lt;/nowiki&gt;') + '</nowiki>';
@@ -141,7 +187,7 @@ function convertRevision(source, metadata, registry, actionBars = {}, visualCont
     }
     const revisionUrl = new URL(metadata.revisionUrl);
     if ((revisionUrl.protocol !== 'https:' && !(revisionUrl.protocol === 'http:' && ['127.0.0.1', 'localhost'].includes(revisionUrl.hostname))) || revisionUrl.username || revisionUrl.password) throw new Error('A public revision permalink is required.');
-    const heading = "'''" + metadata.title.split('/').pop().replace(/'/g, '&#39;') + "'''\n\n";
+    const heading = hasSourceHeading ? '' : "'''<nowiki>" + String(metadata.displayTitle || metadata.title.split('/').pop()).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;') + "</nowiki>'''\n\n";
     const attribution = '\n\n== Source ==\n\n' +
         'Copied from [' + revisionUrl.href + ' revision ' + metadata.revisionId + '] (' + metadata.timestamp + ').\n\n' +
         'PvME contributors; [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]. ' +

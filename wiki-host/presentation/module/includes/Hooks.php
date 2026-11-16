@@ -13,11 +13,15 @@ final class Hooks {
     public static function onParserFirstCallInit(Parser $parser): void {
         $parser->setHook('pvme-image', [self::class, 'renderSourceImage']);
         $parser->setHook('pvme-video', [self::class, 'renderSourceVideo']);
+        $parser->setHook('pvme-embed', [self::class, 'renderSourceEmbed']);
     }
 
     private static function sourceUrl(string $url): string {
         $parts = parse_url($url);
-        $hosts = ['img.pvme.io', 'pvme.io', 'cdn.discordapp.com', 'firebasestorage.googleapis.com'];
+        static $hosts;
+        if ($hosts === null) {
+            $hosts = json_decode(file_get_contents(dirname(__DIR__) . '/modules/source-media-hosts.json'), true);
+        }
         if (!$parts || ($parts['scheme'] ?? '') !== 'https' || !in_array($parts['host'] ?? '', $hosts, true)
             || isset($parts['user']) || isset($parts['pass'])) {
             return '';
@@ -40,10 +44,22 @@ final class Hooks {
         $src = self::sourceUrl($args['src'] ?? '');
         if ($src === '') { return ''; }
         return Html::rawElement('video', [
-            'class' => 'pvme-source-video', 'controls' => true, 'playsinline' => true,
-            'preload' => 'none', 'loop' => true, 'muted' => true,
+            'class' => 'pvme-source-video', 'controls' => ($args['controls'] ?? '1') === '1', 'playsinline' => true,
+            'preload' => 'none', 'loop' => ($args['loop'] ?? '1') === '1', 'muted' => ($args['muted'] ?? '1') === '1',
             'poster' => self::sourceUrl($args['poster'] ?? '') ?: null
-        ], Html::element('source', ['src' => $src, 'type' => 'video/mp4']));
+        ], Html::element('source', ['src' => $src, 'type' => $args['type'] ?? 'video/mp4']));
+    }
+
+    public static function renderSourceEmbed(?string $input, array $args, Parser $parser, PPFrame $frame): string {
+        $src = self::sourceUrl($args['src'] ?? '');
+        if ($src === '' || parse_url($src, PHP_URL_HOST) !== 'www.youtube.com') { return ''; }
+        return Html::rawElement('iframe', [
+            'class' => 'pvme-source-embed', 'src' => $src, 'title' => $args['title'] ?? '',
+            'loading' => 'lazy', 'referrerpolicy' => 'no-referrer',
+            'allowfullscreen' => ($args['allowfullscreen'] ?? '1') === '1',
+            'allow' => 'accelerometer; encrypted-media; gyroscope; picture-in-picture',
+            'sandbox' => 'allow-scripts allow-same-origin allow-presentation'
+        ], '');
     }
 
     public static function onBeforePageDisplay(OutputPage $out, Skin $skin): void {
@@ -63,9 +79,9 @@ final class Hooks {
         // Keep browser zoom available and let the skin's responsive layout work.
         $out->addMeta('viewport', 'width=device-width, initial-scale=1');
         // New module names also invalidate pre-release browser stylesheet caches.
-        $out->addModuleStyles(['ext.pvmePresentation.styles.v3']);
+        $out->addModuleStyles(['ext.pvmePresentation.styles.v4']);
         if ($out->getContext()->getActionName() === 'view') {
-            $out->addModules(['ext.pvmePresentation.reader.v3']);
+            $out->addModules(['ext.pvmePresentation.reader.v4']);
         }
         if ($key !== 'PvME' && $out->getContext()->getActionName() === 'view') {
             $browserTitle = $out->getHTMLTitle();
@@ -78,7 +94,14 @@ final class Hooks {
             if ($key === 'PvME/Amascut/Overview') {
                 $label = 'Amascut, the Devourer';
             }
-            if ($label !== '') {
+            static $headings;
+            if ($headings === null) {
+                $headings = json_decode(file_get_contents(dirname(__DIR__) . '/modules/native-headings.json'), true);
+            }
+            if (isset($headings[$key]) && $headings[$key]['html'] !== '') {
+                $out->setPageTitle($headings[$key]['html']);
+                $out->setHTMLTitle($browserTitle);
+            } elseif ($label !== '') {
                 // setPageTitle receives an HTML fragment; preserve the canonical Title.
                 $out->setPageTitle(htmlspecialchars($label, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'));
                 $out->setHTMLTitle($browserTitle);

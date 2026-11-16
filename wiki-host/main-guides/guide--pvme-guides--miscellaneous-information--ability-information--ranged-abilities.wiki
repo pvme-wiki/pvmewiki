@@ -1,0 +1,1066 @@
+__NOTOC__
+<div class="pvme-exact-guide">
+
+<div class="pvme-source-section">
+<h2 id="introduction"><ins><nowiki>Introduction</nowiki></ins></h2>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><em><nowiki>Note: Use the </nowiki><ins><strong><nowiki>Table of Contents</nowiki></strong></ins><nowiki> present at the bottom of the channel, or in the pinned comments, to quickly navigate through this channel and find the information you are looking for.</nowiki></em></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>Some general notes:</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ The game runs on an internal tick system: </nowiki><strong><nowiki>1t (tick) = 0.6s (seconds)</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ The minimum time between abilities is called the global cooldown: </nowiki><strong><nowiki>1 gcd = 3t = 1.8s</nowiki></strong><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Debuff spells like Vuln </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/537349530551582720.png?v=1" alt="Vuln" title="Vuln" kind="icon" /><nowiki> or Enfeeble </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/567727986409734145.png?v=1" alt="Enfeeble" title="Enfeeble" kind="icon" /><nowiki> or Smoke Cloud </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/856635090641879050.png?v=1" alt="smokecloud" title="smokecloud" kind="icon" /><nowiki> do not give adrenaline.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>⬥ Some useful sheets and resources are given below.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(0, 153, 255)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+
+
+</nowiki><div><div><div><u><nowiki>Ability Damage Maths</nowiki></u><nowiki>
+</nowiki></div><div class="pvme-source-preserve-lines"><nowiki>To calculate your ability hit damage in detail, </nowiki>[https://tools.runescape.wiki/rs-rot/ranged <nowiki>click here</nowiki>]<nowiki>.
+This is affected by factors such as your gear and other boosts.
+</nowiki></div></div><div><div><u><nowiki>Ability Hit Timings</nowiki></u><nowiki>
+</nowiki></div><div class="pvme-source-preserve-lines"><nowiki>To see detailed breakdowns on ability hit timings, </nowiki>[https://docs.google.com/spreadsheets/d/1rK7u17JN6I-vf3dKBKg6tm9IPWje9EWSe_r8KPdsxoc/edit?usp=sharing <nowiki>click here</nowiki>]<nowiki>.
+This refers to when hitsplats appear on your target.
+</nowiki></div></div><div><div><u><nowiki>Auto-attack Adren Gain</nowiki></u><nowiki>
+</nowiki></div><div class="pvme-source-preserve-lines"><nowiki>To see adrenaline gained with different auto attacks, </nowiki>[https://runescape.wiki/w/Invigorating <nowiki>click here</nowiki>]<nowiki>.
+</nowiki></div></div></div><nowiki>
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line"><em><nowiki>Note: If you have any difficulties in using the tools or understanding what the information means, you can always ask in </nowiki><span><nowiki>#pvm-help</nowiki></span></em><nowiki>.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-section">
+<h2 id="ranged"><ins><nowiki>Ranged </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/580168050121113623.png?v=1" alt="range" title="range" kind="icon" /></ins></h2>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line"><nowiki>This section covers basic abilities, enhanced abilities, ultimate abilities, utility abilities and special attacks for Ranged.</nowiki></p>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+<div class="pvme-source-mechanic">
+<h3 id="basic-abilities"><nowiki>Basic Abilities</nowiki></h3>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(46, 204, 113)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Ranged</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478061858622537809.png?v=1" alt="ranged_basic" title="ranged_basic" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 0t (0s)
+⬥ Affected by Fleeting Boots </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/789813993480388640.png?v=1" alt="fleetingboots" title="fleetingboots" kind="icon" /><nowiki>
+    • Applies the cooldown reduction effect of </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478061863723073636.png?v=1" alt="piercing_shot" title="piercing_shot" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(46, 204, 113)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Piercing Shot</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478061863723073636.png?v=1" alt="piercing_shot" title="piercing_shot" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 5t (3s)
+⬥ Fires 2 hits
+⬥ Reduces cooldown of Snipe by 4t (2.4s) per hit, 8t total (4.8s)
+⬥ Affected by Fleeting Boots </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/789813993480388640.png?v=1" alt="fleetingboots" title="fleetingboots" kind="icon" /><nowiki>
+    • Reduces cooldown of </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478061857486143498.png?v=1" alt="snipe" title="snipe" kind="icon" /><nowiki> by additional 2t (1.2s) per hit, 4t (2.4s) extra, 12t (7.2s) total
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(46, 204, 113)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Binding Shot</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/535541306563231790.png?v=1" alt="bindingshot" title="bindingshot" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 25t (15s)
+    • Charges: 2
+⬥ Stuns for 2t (1.2s) and binds for 16t (9.6s)
+⬥ It is affected by </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/841419289755385866.png?v=1" alt="flankicon" title="flankicon" kind="icon" /><nowiki>:
+    • Increases Max by 40% per </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/841419289755385866.png?v=1" alt="flankicon" title="flankicon" kind="icon" /><nowiki> rank
+    • Increases Minimum by 8% per </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/841419289755385866.png?v=1" alt="flankicon" title="flankicon" kind="icon" /><nowiki> Rank
+    • No longer stuns or binds
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(46, 204, 113)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Galeshot</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478061864943616122.png?v=1" alt="imbue_gales" title="imbue_gales" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 34t (20.4s)
+⬥ Applies Searing Winds to self for 10t (6s)
+⬥ Searing Winds:
+    • Ranged attacks deal 20% damage with each hit
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(46, 204, 113)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Ricochet</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478061867288100885.png?v=1" alt="ricochet" title="ricochet" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 17t (10.2s)
+⬥ It is an AoE:
+    • Hits within a 5 square radius from SW tile of initial target
+    • Hits 3 targets, inclusive of main
+    • Main target hit an additional 15-20% for each enemy that cannot be found
+    • Does not hit things on initial target's SW tile
+⬥ It is affected by Caroming </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/791281588792590336.png?v=1" alt="caroming4" title="caroming4" kind="icon" /><nowiki>
+    • Ricochet hits 4% bonus damage per Caroming rank
+⬥ Not affected by Chinchompas </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/641669268722810881.png?v=1" alt="mechchin" title="mechchin" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(46, 204, 113)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Greater Ricochet</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/787904334812807238.png?v=1" alt="grico" title="grico" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 17t (10.2s)
+⬥ It is an AoE:
+    • Hits within a 5 square radius from SW tile of initial target
+    • Hits 7 targets, inclusive of main
+    • Main target hit an additional 15-20% (4-6% after 2 hits) for each enemy that cannot be found
+    • Does not hit things on initial target's SW tile
+⬥ It is affected by Caroming </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/791281588792590336.png?v=1" alt="caroming4" title="caroming4" kind="icon" /><nowiki>
+    • Ricochet hits 4% bonus damage per Caroming rank
+⬥ Not affected by Chinchompas </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/641669268722810881.png?v=1" alt="mechchin" title="mechchin" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="enhanced-abilities"><nowiki>Enhanced Abilities</nowiki></h3>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(46, 204, 113)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Snap Shot</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478061855732666439.png?v=1" alt="snapshot" title="snapshot" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 0t (0s)
+⬥ Adrenaline Cost: 25%
+⬥ Two separate, strong hits
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(46, 204, 113)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Snipe</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478061857486143498.png?v=1" alt="snipe" title="snipe" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 100t (60s)
+⬥ Adrenaline Cost: 0%
+⬥ It is a channeled ability
+⬥ It is affected by Nightmare Gauntlets </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/513190159441723392.png?v=1" alt="NMG" title="NMG" kind="icon" /><nowiki>, details in </nowiki><span><nowiki>#armour-and-weapons</nowiki></span><nowiki>
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(46, 204, 113)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Bombardment</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/535541306391265284.png?v=1" alt="bombard" title="bombard" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 9t (5.4ss)
+⬥ Adrenaline Cost: 25%
+⬥ It is an AoE:
+    • 5x5 with target's true centre (SW tile) as centre
+    • Up to 9 targets
+⬥ Not affected by Chinchompas </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/641669268722810881.png?v=1" alt="mechchin" title="mechchin" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(46, 204, 113)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Rapid Fire</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/535541270521708566.png?v=1" alt="rapid" title="rapid" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 34t (20.4s)
+⬥ Adrenaline Cost: 25%
+⬥ 8 hits
+⬥ Binds for 10t (6s)
+⬥ Channelled ability
+⬥ Each attack extends the duration of Searing Winds by 1t (0.6s)
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(46, 204, 113)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Shadow Tendrils</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/642713547142332416.png?v=1" alt="shadowtend" title="shadowtend" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 75t (45s)
+⬥ Adrenaline Cost: 0%
+⬥ Calculates damage on activation
+⬥ Deals self-damage to the player
+⬥ Extends the duration of Shadow Imbue by 3.6s
+⬥ Guaranteed to crit
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(46, 204, 113)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Corruption Shot</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/535541306294796299.png?v=1" alt="corruptshot" title="corruptshot" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 25t (15s)
+⬥ Adrenaline Cost: 20%
+⬥ It is a DoT:
+    • Not affected by </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1005204971886743572.png?v=1" alt="precise" title="precise" kind="icon" /><nowiki> or </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1214364892895907941.png?v=1" alt="eruptive" title="eruptive" kind="icon" /><nowiki>
+    • Hits every 2t (1.2s), for a total of 5 times
+⬥ It is an AoE:
+    • Spreads to targets within 2 tiles each hit, up to 5 additional targets
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(46, 204, 113)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Imbue: Shadows</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478061866193518744.png?v=1" alt="imbue_shadows" title="imbue_shadows" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 100t (60s)
+⬥ Adrenaline Cost: 40%
+⬥ Applies Shadow Imbued to self for 50t (30s)
+⬥ Shadow Imbued:
+    • Ranged attacks against your target generate 5% adrenaline for each hit
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="special-attacks"><nowiki>Special Attacks</nowiki></h3>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(46, 204, 113)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Dark Bow</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/643848618553507843.png?v=1" alt="dbow" title="dbow" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Adrenaline Cost: 65% (58.5% with </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/513201065877831680.png?v=1" alt="rov" title="rov" kind="icon" /><nowiki>)
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(46, 204, 113)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Zamorak Bow</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1215929540908679208.png?v=1" alt="zammybow" title="zammybow" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Adrenaline Cost: 40% (36% with </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/513201065877831680.png?v=1" alt="rov" title="rov" kind="icon" /><nowiki>)
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(46, 204, 113)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Gloomfire Bow</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1446178203608809472.png?v=1" alt="gloomfirebow" title="gloomfirebow" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Adrenaline Cost: 65% (58.5% with </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/513201065877831680.png?v=1" alt="rov" title="rov" kind="icon" /><nowiki>)
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(46, 204, 113)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Seren Godbow</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/626466665848242186.png?v=1" alt="sgb" title="sgb" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 50t (30s)
+⬥ Adrenaline Cost: 30% (27% with </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/513201065877831680.png?v=1" alt="rov" title="rov" kind="icon" /><nowiki>)
+⬥ To see how use the special attack, use </nowiki><code><nowiki>!sgb</nowiki></code><nowiki> in </nowiki><span><nowiki>#bot-commands</nowiki></span><nowiki>
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(46, 204, 113)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Eldritch Crossbow</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/615618531937222657.png?v=1" alt="ecb" title="ecb" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Special Attack: Split Soul
+⬥ Adrenaline Cost: 25% (22.5% with </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/513201065877831680.png?v=1" alt="rov" title="rov" kind="icon" /><nowiki>)
+    • Lasts 25t (t0-t24)
+    • Anything </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/615613924506599497.png?v=1" alt="soulsplit" title="soulsplit" kind="icon" /><nowiki> would have healed whilst spec is active instead deals Blight damage equal to 4 * </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/615613924506599497.png?v=1" alt="soulsplit" title="soulsplit" kind="icon" /><nowiki> heal amount
+    • To get the Split Soul damage both the </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/615613924506599497.png?v=1" alt="soulsplit" title="soulsplit" kind="icon" /><nowiki> heal and the hit of the ability must occur within the duration of the special
+    • Special attack is lost if main hand weapon is switched while active
+    • Blight damage is affected a second time by Vulnerability </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/537349530551582720.png?v=1" alt="Vuln" title="Vuln" kind="icon" /><nowiki>, X Slayer sigils </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/641339921675845633.png?v=1" alt="demonslayer" title="demonslayer" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/641339921814126594.png?v=1" alt="dragonslayer" title="dragonslayer" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/641339922019516416.png?v=1" alt="undeadslayer" title="undeadslayer" kind="icon" /><nowiki>, the NopeNopeNope PoF perk, and X Slayer perks </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/689502804720615441.png?v=1" alt="undeadslayerperk" title="undeadslayerperk" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/689502842653900818.png?v=1" alt="demonslayerperk" title="demonslayerperk" kind="icon" /><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/689502927731163170.png?v=1" alt="dragonslayerperk" title="dragonslayerperk" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(46, 204, 113)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Bow of the Last Guardian</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/994189289623662702.png?v=1" alt="bolg" title="bolg" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Special Attack: Balance by Force
+⬥ Adrenaline Cost: 30% (27% with </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/513201065877831680.png?v=1" alt="rov" title="rov" kind="icon" /><nowiki>)
+    • Lasts 50t (t0-t49)
+    • While active, the number of stacks needed to trigger the passive effect is lowered to 4
+    • If 3 or more </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1006119102814887957.png?v=1" alt="perfectequilibrium" title="perfectequilibrium" kind="icon" /><nowiki> stacks when used the passive effect will trigger
+    • For more info on how to use the special attack, use </nowiki><code><nowiki>!bolg</nowiki></code><nowiki> in </nowiki><span><nowiki>#bot-commands</nowiki></span><nowiki>
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="ultimate-abilities"><nowiki>Ultimate Abilities</nowiki></h3>
+<nowiki>
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(46, 204, 113)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Deadshot</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/1478061860371828929.png?v=1" alt="deadshot" title="deadshot" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 50t (30s)
+⬥ Adrenaline Cost: 60%
+⬥ Fires 4 hits
+⬥ Affected by the Igneous Kal-Xil </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/902209626404171786.png?v=1" alt="igneouskalxil" title="igneouskalxil" kind="icon" /><nowiki> and Igneous Kal-Zuk </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/902209626479685734.png?v=1" alt="igneouskalzuk" title="igneouskalzuk" kind="icon" /><nowiki>
+    • Adrenaline cost becomes 60%
+    • Fires 8 hits
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(46, 204, 113)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Death's Swiftness</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/994921434633744455.png?v=1" alt="deathsswift" title="deathsswift" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 100t (60s)
+⬥ It is an on cast buff
+⬥ Increases damage by 50% from t0→t51 (52t/31.2s duration); buff starts t1
+⬥ It has a 7x7 buff radius
+⬥ It does not incur the auto cooldown
+⬥ Planted Feet </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/689501925770919981.png?v=1" alt="pf" title="pf" kind="icon" /><nowiki> increases duration to t0→t64 (65t/39s)
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(46, 204, 113)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Greater Death's Swiftness</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/994644354536837121.png?v=1" alt="gdeathsswift" title="gdeathsswift" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 100t (60s)
+⬥ Duration becomes t0→t64 (65t/39s duration); buff starts t1
+    • Using </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/689501925770919981.png?v=1" alt="pf" title="pf" kind="icon" /><nowiki> does not extend this further
+⬥ </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/994644354536837121.png?v=1" alt="gdeathsswift" title="gdeathsswift" kind="icon" /><nowiki> retains the DoT effect of </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/994921434633744455.png?v=1" alt="deathsswift" title="deathsswift" kind="icon" /><nowiki>
+    • Using </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/689501925770919981.png?v=1" alt="pf" title="pf" kind="icon" /><nowiki> will cancel this
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+
+</div>
+<div class="pvme-source-mechanic">
+<h3 id="utility-abilities"><nowiki>Utility Abilities</nowiki></h3>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(46, 204, 113)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><u><nowiki>Escape</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/535541258832052231.png?v=1" alt="escape" title="escape" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Cooldown: 34t (20.4s)
+⬥ It is a Mobility ability:
+    • For </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/580168050121113623.png?v=1" alt="range" title="range" kind="icon" /><nowiki>: moves you back (weapon attack range - 1) tiles
+    • For non-</nowiki><pvme-image src="https://cdn.discordapp.com/emojis/580168050121113623.png?v=1" alt="range" title="range" kind="icon" /><nowiki>: moves you back 7 tiles
+⬥ It is affected by Mobile </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/689501908628799488.png?v=1" alt="mob" title="mob" kind="icon" /><nowiki>
+    • Reduces cooldown to 17t (10.2s)
+⬥ Can be upgraded with a Double Escape codex: </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/602561894443778115.png?v=1" alt="escapecodex" title="escapecodex" kind="icon" /><nowiki>
+    • Gives you a second </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/535541258832052231.png?v=1" alt="escape" title="escape" kind="icon" /><nowiki> on its own 34t (17t </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/689501908628799488.png?v=1" alt="mob" title="mob" kind="icon" /><nowiki>) internal cooldown that is used after the first
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+</nowiki>
+<div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><nowiki>
+</nowiki><div style="background-color: rgb(46, 204, 113)"></div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+</nowiki><div><nowiki>
+
+</nowiki><div><pvme-image src="https://cdn.discordapp.com/emojis/580168050121113623.png?v=1" alt="range" title="range" kind="icon" /><nowiki> </nowiki><u><nowiki>Ranged Ability Index</nowiki></u><nowiki> </nowiki><pvme-image src="https://cdn.discordapp.com/emojis/580168050121113623.png?v=1" alt="range" title="range" kind="icon" /><nowiki>
+</nowiki></div><nowiki>
+</nowiki><div class="pvme-source-preserve-lines"><nowiki>⬥ Click the links to quickly navigate to that ability's information.
+⬥ General notes can be found in the introduction </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/ranged-abilities/$linkmsg_intro$ <nowiki>here</nowiki>]<nowiki>.
+</nowiki></div><nowiki>
+</nowiki><div><div><div><u><nowiki>Basic</nowiki></u><nowiki>
+</nowiki></div><div class="pvme-source-preserve-lines"><nowiki>⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/ranged-abilities/$linkmsg_rangeauto$ <nowiki>Ranged</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/ranged-abilities/$linkmsg_piercing$ <nowiki>Piercing Shot</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/ranged-abilities/$linkmsg_binding$ <nowiki>Binding Shot</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/ranged-abilities/$linkmsg_galeshot$ <nowiki>Galeshot</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/ranged-abilities/$linkmsg_ricochet$ <nowiki>Ricochet</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/ranged-abilities/$linkmsg_grico$ <nowiki>G. Ricochet</nowiki>]<nowiki>
+</nowiki></div></div><div><div><u><nowiki>Enhanced</nowiki></u><nowiki>
+</nowiki></div><div class="pvme-source-preserve-lines"><nowiki>⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/ranged-abilities/$linkmsg_snap$ <nowiki>Snapshot</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/ranged-abilities/$linkmsg_snipe$ <nowiki>Snipe</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/ranged-abilities/$linkmsg_bmbard$ <nowiki>Bombard</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/ranged-abilities/$linkmsg_rapid$ <nowiki>Rapid Fire</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/ranged-abilities/$linkmsg_shadowtendril$ <nowiki>Shadow Tendrils</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/ranged-abilities/$linkmsg_corrshot$ <nowiki>Corr. Shot</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/ranged-abilities/$linkmsg_imbueshadows$ <nowiki>Imbue: Shadows</nowiki>]<nowiki>
+</nowiki></div></div><div><div><u><nowiki>Special Attacks</nowiki></u><nowiki>
+</nowiki></div><div class="pvme-source-preserve-lines"><nowiki>⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/ranged-abilities/$linkmsg_dbow$ <nowiki>Dark Bow</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/ranged-abilities/$linkmsg_zbow$ <nowiki>Zamorak Bow</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/ranged-abilities/$linkmsg_gloomfire$ <nowiki>Gloomfire Bow</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/ranged-abilities/$linkmsg_sgb$ <nowiki>Seren Godbow</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/ranged-abilities/$linkmsg_ecb$ <nowiki>Eldritch Crossbow</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/ranged-abilities/$linkmsg_bolg$ <nowiki>Bow of the Last Guardian</nowiki>]<nowiki>
+</nowiki></div></div><div><div><u><nowiki>Ultimate</nowiki></u><nowiki>
+</nowiki></div><div class="pvme-source-preserve-lines"><nowiki>⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/ranged-abilities/$linkmsg_deadshot$ <nowiki>Deadshot</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/ranged-abilities/$linkmsg_ds$ <nowiki>Death's Swiftness</nowiki>]<nowiki>
+⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/ranged-abilities/$linkmsg_greaterds$ <nowiki>G. Death's Swiftness</nowiki>]<nowiki>
+</nowiki></div></div><div><div><u><nowiki>Utility</nowiki></u><nowiki>
+</nowiki></div><div class="pvme-source-preserve-lines"><nowiki>⬥ </nowiki>[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/ranged-abilities/$linkmsg_escape$ <nowiki>Escape</nowiki>]<nowiki>
+</nowiki></div></div></div><nowiki>
+</nowiki></div><nowiki>
+
+</nowiki></div><nowiki>
+
+
+</nowiki></div></div></div></div></div></div></div></div></div></div></div></div>
+<nowiki>
+
+</nowiki>
+<p class="pvme-source-line pvme-source-spacer"><nowiki>​</nowiki></p>
+<nowiki>
+      
+    </nowiki>
+
+</div>
+</div>
+</div>
+
+<div class="pvme-source-attribution">[https://pvme.io/pvme-guides/miscellaneous-information/ability-information/ranged-abilities/ PvME source] · PvME contributors · [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]. AI-assisted formatting; source wording retained.
+</div>
