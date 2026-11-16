@@ -775,6 +775,9 @@ body.pvme-presentation {
 @media (prefers-reduced-motion: reduce) {
     .pvme-presentation { scroll-behavior: auto; }
 }
+.pvme-presentation .pvme-other-guides { margin: 0 0 1.5em; padding: .8em 1em; border: 1px solid #c5d2d0; border-radius: 5px; background: #f5f8f7; }
+.pvme-presentation .pvme-other-guides ul { display: flex; flex-wrap: wrap; gap: .5em 1.5em; margin: .5em 0 0; padding: 0; list-style: none; }
+.pvme-presentation .pvme-other-guides li { margin: 0; max-width: 100%; overflow-wrap: anywhere; }
 @media print {
     .pvme-presentation :is(.pvme-reader-tools, .pvme-reader-toggle, #pvme-reader-update-notice) { display: none; }
     .pvme-presentation :where(.mw-parser-output, .pvme-visual-content) { padding: 0; }

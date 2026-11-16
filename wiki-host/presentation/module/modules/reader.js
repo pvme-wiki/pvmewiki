@@ -32,10 +32,13 @@ function enhance() {
     if (mw.config.get('wgAction') !== 'view' || document.querySelector('.ve-active, .ve-activating')) return;
     const title = mw.config.get('wgPageName').replace(/_/g, ' ');
     const page = registry.pages[title];
+    const guideTitle = page?.overview || title;
+    const sourcePage = registry.pages[guideTitle] || page;
     const content = document.querySelector('#mw-content-text');
     const article = content && content.querySelector('.mw-parser-output');
     if (!page || !article || document.getElementById('pvme-reader-tools')) return;
     function syncNativeTitle() {
+        if (page.overview) return;
         if (document.querySelector('.ve-active, .ve-activating')) return;
         const sourceHeading = document.querySelector('#mw-content-text .mw-parser-output h1.pvme-source-title');
         const heading = document.getElementById('firstHeading');
@@ -77,16 +80,16 @@ function enhance() {
     // Reuse the skin's edit destination and wording, including protected pages.
     const nativeEdit = document.querySelector('#ca-edit a, #ca-viewsource a');
     if (nativeEdit) {
-        const edit = element('a', nativeEdit.textContent.trim(), 'pvme-reader-edit');
-        edit.href = nativeEdit.href;
+        const edit = element('a', page.overview ? nativeEdit.textContent.trim() === 'View source' ? 'View overview source' : 'Edit overview' : nativeEdit.textContent.trim(), 'pvme-reader-edit');
+        edit.href = page.overview ? mw.util.getUrl(guideTitle, { action: 'edit' }) : nativeEdit.href;
         actions.append(edit);
     }
-    const historyLink = link(title, 'History');
-    historyLink.href = mw.util.getUrl(title, { action: 'history' });
+    const historyLink = link(guideTitle, page.overview ? 'Overview history' : 'History');
+    historyLink.href = mw.util.getUrl(guideTitle, { action: 'history' });
     actions.append(historyLink);
     tools.append(actions);
     let sourceFooter;
-    if (page.source) {
+    if (sourcePage.source) {
         const badge = element('a', 'Checking source date…', 'pvme-freshness pvme-freshness-unknown');
         badge.href = 'https://pvme.sanji3.dev/about/guide-history/';
         badge.setAttribute('aria-label', 'Source update history');
@@ -106,7 +109,7 @@ function enhance() {
             badge.dataset.sourceDate = valid ? date : '';
         }
         loadGuideHistory().then(data => {
-            const sourcePath = new URL(page.source).pathname;
+            const sourcePath = new URL(sourcePage.source).pathname;
             historyRecord = data.guides[sourcePath];
             refreshBadge();
         }).catch(() => { refreshBadge(); badge.title = 'Could not load source history from pvme.sanji3.dev. Reload to try again.'; badge.setAttribute('aria-label', badge.textContent + '. ' + badge.title); });
@@ -115,10 +118,10 @@ function enhance() {
         const sourceDetails = element('details', '', 'pvme-reader-source');
         sourceDetails.append(element('summary', 'Source'));
         const provenance = element('p', 'PvME contributors. CC BY-NC-SA 4.0. ', 'pvme-reader-provenance');
-        const source = element('a', 'Original guide'); source.href = page.source;
-        provenance.append(source, document.createTextNode(' | Imported ' + page.retrieved + '. '));
-        if (page.date) provenance.append(document.createTextNode('Last source edit: ' + page.date + '. '));
-        if (page.historyUrl) { const history = element('a', 'Source revision'); history.href = page.historyUrl; provenance.append(history); }
+        const source = element('a', 'Original guide'); source.href = sourcePage.source;
+        provenance.append(source, document.createTextNode(' | Imported ' + sourcePage.retrieved + '. '));
+        if (sourcePage.date) provenance.append(document.createTextNode('Last source edit: ' + sourcePage.date + '. '));
+        if (sourcePage.historyUrl) { const history = element('a', 'Source revision'); history.href = sourcePage.historyUrl; provenance.append(history); }
         sourceDetails.append(provenance);
         const exportArea = element('div', '', 'pvme-reader-export');
         const copy = element('button', 'Copy to wiki', 'pvme-reader-copy');
@@ -139,14 +142,14 @@ function enhance() {
             copy.disabled = true; manual.hidden = true; manual.open = false; fallback.value = '';
             status.textContent = 'Loading wikitext...';
             try {
-                const result = await new mw.Api().get({ action: 'query', prop: 'revisions', titles: title,
+                const result = await new mw.Api().get({ action: 'query', prop: 'revisions', titles: guideTitle,
                     rvprop: 'ids|timestamp|content', rvslots: 'main', formatversion: 2 });
                 const published = result.query?.pages?.[0];
                 const revision = published?.revisions?.[0];
-                if (published?.title !== title || !revision?.slots?.main || revision.slots.main.contentmodel !== 'wikitext') throw new Error('Could not load the published wikitext.');
-                const exported = convertRevision(revision.slots.main.content, { title, displayTitle: page.nativeTitle || document.getElementById('firstHeading')?.textContent.trim(), revisionId: revision.revid,
-                    timestamp: revision.timestamp, source: page.source,
-                    revisionUrl: new URL(mw.util.getUrl(title, { oldid: revision.revid }), location.origin).href }, registry, actionBars, amascutAssets);
+                if (published?.title !== guideTitle || !revision?.slots?.main || revision.slots.main.contentmodel !== 'wikitext') throw new Error('Could not load the published wikitext.');
+                const exported = convertRevision(revision.slots.main.content, { title: guideTitle, displayTitle: sourcePage.nativeTitle || document.getElementById('firstHeading')?.textContent.trim(), revisionId: revision.revid,
+                    timestamp: revision.timestamp, source: sourcePage.source,
+                    revisionUrl: new URL(mw.util.getUrl(guideTitle, { oldid: revision.revid }), location.origin).href }, registry, actionBars, amascutAssets);
                 fallback.value = exported.text;
                 manual.hidden = false;
                 try {
@@ -180,7 +183,7 @@ function enhance() {
         }
         jumps.append(list); tools.append(jumps);
     }
-    if (page.children.length) {
+    if (page.children.length && !page.overview) {
         const directory = element('details', '', 'pvme-reader-directory');
         directory.open = page.children.length <= 12;
         directory.append(element('summary', 'Pages (' + page.children.length + ')'));

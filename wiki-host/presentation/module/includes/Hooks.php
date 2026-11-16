@@ -79,9 +79,9 @@ final class Hooks {
         // Keep browser zoom available and let the skin's responsive layout work.
         $out->addMeta('viewport', 'width=device-width, initial-scale=1');
         // New module names also invalidate pre-release browser stylesheet caches.
-        $out->addModuleStyles(['ext.pvmePresentation.styles.v4']);
+        $out->addModuleStyles(['ext.pvmePresentation.styles.v5']);
         if ($out->getContext()->getActionName() === 'view') {
-            $out->addModules(['ext.pvmePresentation.reader.v4']);
+            $out->addModules(['ext.pvmePresentation.reader.v5']);
         }
         if ($key !== 'PvME' && $out->getContext()->getActionName() === 'view') {
             $browserTitle = $out->getHTMLTitle();
