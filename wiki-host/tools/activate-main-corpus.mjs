@@ -14,7 +14,7 @@ const selected=plan.pages.filter(p=>passed.get(p.id)?.wikitextSha256===p.sha256)
 const entries=new Map(old.pages.map(p=>[p.title,p]));
 for(const p of selected){
  const before=baselines.get(p.title);if(!before)throw new Error('Missing captured baseline: '+p.title);
- entries.set(p.title,{title:p.title,file:p.file,baselineSha256:before.sha256,sha256:p.sha256,summary:'AI-assisted additive formatting; current PvME source words, order and media preserved'});
+ entries.set(p.title,{title:p.title,file:p.file,baselineSha256:before.sha256,sha256:p.sha256,summary:'Update guide formatting; preserve current PvME source content'});
 }
 fs.writeFileSync(path.join(directory,'manifest.json'),JSON.stringify({pages:[...entries.values()]},null,2)+'\n');
 const result={activatedAt:new Date().toISOString(),compiled:plan.pages.length,parserAudited:audit.completed,parserPassed:audit.passed,activated:selected.length,guides:selected.filter(p=>new URL(p.source).pathname.startsWith('/pvme-guides/')).length,siteInformation:selected.filter(p=>p.kind==='site-information').length,pages:selected.map(p=>({id:p.id,title:p.title,source:p.source,sha256:p.sha256}))};

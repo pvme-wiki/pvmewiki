@@ -91,7 +91,7 @@ export function renderSourceGuide({nodes,sourceURL,sourceTitle,additions=[]}){
  }
  if(mechanic)body+='\n</div>';if(section)body+='\n</div>';body+='\n</div>\n';
  if(emittedAdditions.size!==new Set(additions.map(a=>a.afterLink)).size)throw new Error('An inline preview has no matching source link: '+sourceURL);
- body+='\n<div class="pvme-source-attribution">['+sourceURL+' PvME source] · PvME contributors · [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]. AI-assisted formatting; source wording retained.\n</div>';
+ body+='\n<div class="pvme-source-attribution">['+sourceURL+' PvME source] · PvME contributors · [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0].\n</div>';
  body=body.trimEnd();
  const headingText=heading?sourceText(heading):sourceTitle||'';
  const bodyText=normalText(nodes.map(sourceText).join(''));

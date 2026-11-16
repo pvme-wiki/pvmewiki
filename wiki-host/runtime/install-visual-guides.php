@@ -29,7 +29,7 @@ try {
             continue;
         }
         run(['php', 'maintenance/run.php', 'edit', '--createonly',
-            '--summary=AI-assisted, source-attributed Amascut picture guide; native editable templates', $page['title']], $text);
+            '--summary=Update Amascut guide templates; retain PvME attribution', $page['title']], $text);
         $revision = scalar($conn, 'SELECT page_latest FROM mediawiki.page WHERE page_namespace = $1 AND page_title = $2', [$page['namespace'], $page['dbkey']]);
         if ((int)$revision < 1) {
             throw new RuntimeException('Visual guide publication did not produce a revision');

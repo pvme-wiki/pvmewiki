@@ -2,6 +2,7 @@
 // Read-only presentation: generated navigation stays outside the editable article.
 const registry = require('./navigation.json');
 const { convertRevision } = require('./wiki-export.js');
+const wikiMediaResolver = require('./wiki-media-resolver.json');
 const { createVisualReader } = require('./visual-reader.js');
 const presets = require('./presets.json');
 const actionBars = require('./action-bars.json');
@@ -148,9 +149,14 @@ function enhance() {
                 if (published?.title !== guideTitle || !revision?.slots?.main || revision.slots.main.contentmodel !== 'wikitext') throw new Error('Could not load the published wikitext.');
                 const exported = convertRevision(revision.slots.main.content, { title: guideTitle, displayTitle: sourcePage.nativeTitle || document.getElementById('firstHeading')?.textContent.trim(), revisionId: revision.revid,
                     timestamp: revision.timestamp, source: sourcePage.source,
-                    revisionUrl: new URL(mw.util.getUrl(guideTitle, { oldid: revision.revid }), location.origin).href }, registry, actionBars, amascutAssets);
+                    revisionUrl: new URL(mw.util.getUrl(guideTitle, { oldid: revision.revid }), location.origin).href }, registry, actionBars, amascutAssets, wikiMediaResolver);
                 fallback.value = exported.text;
                 manual.hidden = false;
+                if (!exported.readyToPublish) {
+                    manual.open = true;
+                    status.textContent = 'Export incomplete: ' + exported.unresolvedAssets.length + ' media assets still need an inline rendering route. No incomplete export was copied.';
+                    return;
+                }
                 try {
                     if (!navigator.clipboard?.writeText) throw new Error('Clipboard unavailable');
                     await navigator.clipboard.writeText(exported.text);
@@ -160,6 +166,7 @@ function enhance() {
                     status.textContent = 'Clipboard unavailable. Copy revision ' + revision.revid + ' from the box below.';
                 }
                 if (exported.visualGaps.length) status.textContent += ' ' + exported.visualGaps.join(' ');
+                if (exported.mediaNotices?.length) status.textContent += ' ' + exported.mediaNotices.join(' ');
             } catch (error) {
                 status.textContent = 'Copy failed. ' + (error instanceof Error ? error.message : 'Could not load the published wikitext.');
             } finally { copy.disabled = false; }

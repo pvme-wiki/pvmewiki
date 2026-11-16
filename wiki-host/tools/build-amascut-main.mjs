@@ -68,7 +68,7 @@ if(mechanicOpen)body+='\n</div>';
 if(sectionOpen)body+='\n</div>';
 body+='\n</div>\n';
 // Attribution is outside the exact-source article and does not replace its credits.
-body+='\n<div class="pvme-source-attribution">[https://pvme.io/pvme-guides/basic-guides/amascut-basic/ PvME source] · PvME contributors · [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]. AI-assisted formatting; source wording retained.\n</div>\n';
+body+='\n<div class="pvme-source-attribution">[https://pvme.io/pvme-guides/basic-guides/amascut-basic/ PvME source] · PvME contributors · [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0].\n</div>\n';
 const title=source.find(n=>n.tag==='h1');
 const baseline=fs.readFileSync(path.join(directory,'amascut-before.wiki'),'utf8');
 // Match MediaWiki's pre-save removal of trailing whitespace for idempotence.
@@ -78,5 +78,5 @@ const report={source:'https://pvme.io/pvme-guides/basic-guides/amascut-basic/',c
 fs.writeFileSync(path.join(directory,'amascut-parity.json'),JSON.stringify(report,null,2)+'\n');
 const redirect='#REDIRECT [[PvME/Amascut/Overview]]';
 fs.writeFileSync(path.join(directory,'amascut-picture-redirect.wiki'),redirect);
-fs.writeFileSync(path.join(directory,'manifest.json'),JSON.stringify({pages:[{title:'PvME/Amascut/Overview',file:'amascut-main.wiki',baselineSha256:report.baselineSha256,sha256:report.wikitextSha256,summary:'AI-assisted additive presentation; exact current PvME wording, images and videos preserved'},{title:'PvME/Amascut/Picture guide',file:'amascut-picture-redirect.wiki',baselineSha256:hash(fs.readFileSync(path.join(directory,'amascut-picture-before.wiki'),'utf8')),sha256:hash(redirect),summary:'AI-assisted navigation: use the complete verbatim-source main guide'}]},null,2)+'\n');
+fs.writeFileSync(path.join(directory,'manifest.json'),JSON.stringify({pages:[{title:'PvME/Amascut/Overview',file:'amascut-main.wiki',baselineSha256:report.baselineSha256,sha256:report.wikitextSha256,summary:'Preserve current PvME source wording, images and videos'},{title:'PvME/Amascut/Picture guide',file:'amascut-picture-redirect.wiki',baselineSha256:hash(fs.readFileSync(path.join(directory,'amascut-picture-before.wiki'),'utf8')),sha256:hash(redirect),summary:'Use the complete main guide'}]},null,2)+'\n');
 console.log(JSON.stringify({title:'PvME/Amascut/Overview',sourceNodes:source.length,images:report.sourceImages,videos:report.sourceVideos,bytes:Buffer.byteLength(body),sourceTextSha256:report.sourceTextSha256}));
