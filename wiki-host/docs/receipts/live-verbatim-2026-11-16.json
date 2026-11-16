@@ -1,0 +1,136 @@
+{
+  "measured": "2026-11-16T19:45:03.000Z",
+  "command": "node wiki-host/tools/measure-live-verbatim.mjs",
+  "site": "https://pvmewiki.sanji3.dev/api.php",
+  "mediawiki": "MediaWiki 1.43.11",
+  "normalisation": "Link 4 compares text exactly first. A page that differs is compared again with runs of HTML whitespace (space, tab, LF, FF, CR) collapsed to one space and the ends trimmed, and then once more with non-breaking spaces in French-spacing positions read as spaces. Each page records the first comparison it passed. Nothing else is normalised.",
+  "savedRevisions": {
+    "compared": "sha256 of each saved revision against the packaged file",
+    "checked": 374,
+    "identical": 374,
+    "changed": 0,
+    "missing": 0,
+    "changedPages": []
+  },
+  "renderedPages": {
+    "compared": "rendered .pvme-exact-guide text, media and links against the same saved revision, in order; <pre> blocks character for character",
+    "checked": 329,
+    "textMatch": {
+      "exact": 0,
+      "equal after collapsing HTML whitespace": 307,
+      "equal after collapsing HTML whitespace, except spaces the parser made non-breaking": 22,
+      "different": 0
+    },
+    "nonBreakingSpaces": {
+      "count": 43,
+      "guides": 22
+    },
+    "identical": 307,
+    "media": 34449,
+    "links": 3498,
+    "additions": 200,
+    "preBlocksExact": 42,
+    "unexplained": [],
+    "withNonBreakingSpaces": [
+      {
+        "title": "PvME/Combat reference/Melee Abilities",
+        "nonBreakingSpaces": 1
+      },
+      {
+        "title": "PvME/Damage rotations/Damage rotations FAQ",
+        "nonBreakingSpaces": 3
+      },
+      {
+        "title": "PvME/Gear upgrades/Armour And Weapons",
+        "nonBreakingSpaces": 1
+      },
+      {
+        "title": "PvME/Getting started/Interface Guide",
+        "nonBreakingSpaces": 1
+      },
+      {
+        "title": "PvME/Getting started/Noncombat Skilling Guides",
+        "nonBreakingSpaces": 1
+      },
+      {
+        "title": "PvME/Learning to boss/Mid Game Combat",
+        "nonBreakingSpaces": 1
+      },
+      {
+        "title": "PvME/Nex: Angel of Death/Angel Of Death 7s — Mage Melee Minion Tank",
+        "nonBreakingSpaces": 1
+      },
+      {
+        "title": "PvME/Slayer/Acheron Mammoths",
+        "nonBreakingSpaces": 2
+      },
+      {
+        "title": "PvME/Slayer/Armoured Phantoms",
+        "nonBreakingSpaces": 2
+      },
+      {
+        "title": "PvME/Slayer/Camel Warriors",
+        "nonBreakingSpaces": 1
+      },
+      {
+        "title": "PvME/Slayer/Dinosaurs",
+        "nonBreakingSpaces": 3
+      },
+      {
+        "title": "PvME/Slayer/Edimmu",
+        "nonBreakingSpaces": 2
+      },
+      {
+        "title": "PvME/Slayer/Lava Strykewyrms",
+        "nonBreakingSpaces": 2
+      },
+      {
+        "title": "PvME/Slayer/Living Wyverns",
+        "nonBreakingSpaces": 2
+      },
+      {
+        "title": "PvME/Slayer/Lost Grove Creatures",
+        "nonBreakingSpaces": 6
+      },
+      {
+        "title": "PvME/Slayer/Nihils",
+        "nonBreakingSpaces": 3
+      },
+      {
+        "title": "PvME/Solak/Solak — 4 To 5 Magic Hybrid",
+        "nonBreakingSpaces": 1
+      },
+      {
+        "title": "PvME/Solak/Solak — Mechanics",
+        "nonBreakingSpaces": 2
+      },
+      {
+        "title": "PvME/Temple of Aminishi/Ed1 Temple Of Aminishi — ED1 Melee Ranged",
+        "nonBreakingSpaces": 1
+      },
+      {
+        "title": "PvME/Vorkath/Necro Vorkath",
+        "nonBreakingSpaces": 1
+      },
+      {
+        "title": "PvME/Website/about/shortcuts",
+        "nonBreakingSpaces": 5
+      },
+      {
+        "title": "PvME/Zamorak/Zamorak",
+        "nonBreakingSpaces": 1
+      }
+    ]
+  },
+  "reader": {
+    "compared": "article markup before and after the reader ran in jsdom",
+    "guides": 329,
+    "guidesUnchanged": 329,
+    "seedPages": 14,
+    "seedPagesWithinRule": 14,
+    "seedAttributesAdded": {
+      "class": 14
+    },
+    "exceptions": []
+  }
+}
