@@ -23,6 +23,9 @@ npm test
 | `export-refusals.test.mjs` | every refusal message ([Export to RuneScape Wiki](Export-to-RuneScape-Wiki#fail-closed-rules)) |
 | `export-corpus.test.mjs` | the exporter over every page in `main-guides/manifest.json` with the shipped catalogue |
 | `reader-*.test.mjs`, `source-freshness.test.mjs` | the reader in jsdom on hand-written pages |
+| `verbatim-compile.test.mjs` | the capture against its recorded hashes; every compiled guide against its capture: text, media and links, exactly and in order ([Verbatim guarantee](Verbatim-guarantee)) |
+| `verbatim-reader.test.mjs` | the reader over all 329 captured guides and three seed index pages: the article is unchanged |
+| `verbatim-export.test.mjs` | every guide's export holds each of its passages once, in order |
 
 `tests/support/browser.mjs` runs the ResourceLoader files inside a jsdom window with
 small stand-ins for `mw.config`, `mw.util.getUrl`, `mw.Api`, `mw.loader.using`,
@@ -30,6 +33,9 @@ small stand-ins for `mw.config`, `mw.util.getUrl`, `mw.Api`, `mw.loader.using`,
 navigation registry. Setting `PVME_MODULES_DIR` points the suite at another copy of
 `presentation/module/modules/`, which is how a deliberately broken copy can be tested
 (`tests/support/modules.mjs`).
+
+`node wiki-host/tools/verify-verbatim.mjs` runs the same verbatim checks outside the test
+runner, prints one table and writes `docs/receipts/verbatim-local.json`.
 
 `export-corpus.test.mjs` pins corpus facts as constants: 329 guides, 44 landing pages and
 one redirect in the manifest, every guide exporting with zero unresolved media, and the
@@ -175,3 +181,8 @@ production parser renders or what production has saved
 ([Content pipeline](Content-pipeline#audits-and-activation)). They send read-only
 requests to `https://pvmewiki.sanji3.dev`. They are content audits, run when content
 changes, not part of the test suite.
+
+`tools/measure-live-verbatim.mjs` measures links 3 to 5 of the
+[Verbatim guarantee](Verbatim-guarantee) on the live wiki and writes a dated
+`docs/receipts/live-verbatim-<date>.json`. It replaces the text comparison of
+`main-guides/parser-audit/`, whose recorded hashes predate the current compiled pages.

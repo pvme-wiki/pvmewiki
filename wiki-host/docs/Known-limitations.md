@@ -73,27 +73,34 @@ a test pins the behaviour, it says so.
     `build-render-exceptions.mjs` needs a pvme-guides clone at a fixed location two
     directories above the repository root.
 
+16. **The wiki's parser makes some spaces non-breaking.** MediaWiki's French-spacing rule
+    (`Sanitizer::armorFrenchSpaces`) turns the space before `?`, `:`, `;`, `!` or `%`
+    into U+00A0 when it renders a page, inside `<nowiki>` too. On 2026-11-16 that was 43
+    spaces in 22 guides. The saved text and the words are unchanged; text copied from
+    the rendered page differs in those places
+    ([Verbatim guarantee](Verbatim-guarantee#open-finding)).
+
 ## Runtime
 
-16. **`install-visual-guides.php` validates entries inside its publish loop.** An entry
+17. **`install-visual-guides.php` validates entries inside its publish loop.** An entry
     with a bad file name or namespace stops the script only when the loop reaches it,
     so pages for earlier entries may already be published.
-17. **Any failed publication stops the container.** A refused save in
+18. **Any failed publication stops the container.** A refused save in
     `install-main-guides.php` calls `fatalError`, and `start.sh` runs with `set -e`. That
     script takes no advisory lock; it relies on MediaWiki's compare-and-swap, so of two
     containers starting at once, the one that loses a save race fails to start.
-18. **Existing databases are never upgraded.** `UseExisting` does not run `update.php`.
+19. **Existing databases are never upgraded.** `UseExisting` does not run `update.php`.
     A MediaWiki version bump that needs schema changes must be applied by hand.
-19. **`MW_BOOTSTRAP` must never be set on the service.** `LocalSettings.php` disables
+20. **`MW_BOOTSTRAP` must never be set on the service.** `LocalSettings.php` disables
     Moderation whenever it is `1`, in any process. Only the runtime's own maintenance
     processes should see it.
-20. **The health check counts pages; it does not check packaged content.** `health.php`
+21. **The health check counts pages; it does not check packaged content.** `health.php`
     requires at least 381 mainspace pages and a ready marker. It says nothing about
     whether packaged guides were published or preserved.
 
 ## Repository
 
-21. **The prototype directories at the repository root are unmaintained here.**
+22. **The prototype directories at the repository root are unmaintained here.**
     `editor/`, `server/`, `scripts/`, `src/`, `api/`, `reader/`, `content/`, `imported/`
     and `docs/` belong to an earlier reader prototype. They are not built, tested or
     deployed from this branch, and their documentation describes that prototype. The

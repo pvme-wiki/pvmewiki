@@ -356,7 +356,24 @@ details > .dbody.full { max-width: none; }
 .rq.x { background: var(--stop-bg); color: var(--stop); }
 .foot { margin-top: 36px; font-size: 12.5px; color: var(--ink-3); border-top: 1px solid var(--line); padding-top: 12px; max-width: 1280px; margin-inline: auto; }
 
+/* verbatim guarantee: the promise and its receipts */
+.promise { border: 1px solid var(--line); border-radius: 8px; background: var(--surface); padding: 14px; gap: 12px; border-left: 8px solid var(--line-2); border-image: repeating-linear-gradient(135deg, var(--hatch) 0 2px, var(--sunk) 2px 5px) 0 0 0 8 / 0 0 0 8px; }
+.promise-text { display: grid; gap: 6px; max-width: 78ch; }
+.promise-text h2 { margin-top: 0; }
+.receipts { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+.receipts li { background: var(--surface); min-width: 0; }
+.receipts a { display: grid; gap: 5px; align-content: start; justify-items: start; height: 100%; padding: 10px 12px; text-decoration: none; color: var(--ink); }
+.receipts a:hover { background: var(--accent-bg); }
+.receipts .k { font: 600 11px var(--f-mono); color: var(--ink-3); letter-spacing: 0.05em; }
+.receipts b { font-family: var(--f-display); font-size: 15px; font-weight: 600; }
+.receipts .what { font-size: 13px; color: var(--ink-2); }
+.st.warn { background: var(--warn-bg); color: var(--warn); } .st.warn::before { content: "!"; font-weight: 700; }
+details > summary .st { margin-left: 6px; vertical-align: 1px; white-space: normal; }
+.kv .cmdwrap { grid-template-columns: minmax(0, 1fr); }
+svg .el.warn { fill: var(--warn); font-weight: 600; }
+
 @media (max-width: 1080px) {
+  .receipts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .pipe { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .stage:nth-child(2)::after { display: none; }
   .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -380,7 +397,7 @@ details > .dbody.full { max-width: none; }
   .lede { font-size: 16px; }
 }
 @media (max-width: 600px) {
-  .pipe, .steps { grid-template-columns: minmax(0, 1fr); }
+  .pipe, .steps, .receipts { grid-template-columns: minmax(0, 1fr); }
   .stage::after { display: none; }
   .step { border-right: 0; border-bottom: 1px solid var(--line); }
   .step:last-child { border-bottom: 0; }
@@ -422,6 +439,8 @@ details > .dbody.full { max-width: none; }
 
 <div class="frame">
 <nav class="rail" aria-label="Views">
+  <div class="grp">Guide text</div>
+  <a href="#verbatim">Verbatim guarantee</a>
   <div class="grp">Overview</div>
   <a href="#map">System map</a>
   <a href="#files">Files and contracts</a>
@@ -441,12 +460,252 @@ details > .dbody.full { max-width: none; }
 
 <main id="main">
 
+<!-- ============================== VERBATIM ============================== -->
+<section class="view" id="v-verbatim" data-view="verbatim" data-title="Verbatim guarantee" hidden>
+  <div class="head">
+    <div class="tags"><span class="ph dev">dev machine</span><span class="ph req">each request</span><span class="ph browser">browser</span></div>
+    <h1>Verbatim guarantee</h1>
+    <p class="lede">Every word of a PvME guide on this wiki is the word pvme.io published, in the same order: nothing is reworded, summarised, reordered or left out. Everything this project adds sits outside the guide text, and every addition is counted on this page.</p>
+  </div>
+
+  <div class="callout warn" id="vfinding">
+    <b>Open finding: the wiki's parser turns 43 spaces into non-breaking spaces</b>
+    <p>On 22 of 329 guides, MediaWiki's French-spacing rule (<code>Sanitizer::armorFrenchSpaces</code>) replaces the space before <code>? : ; ! %</code> with a non-breaking space when it renders the page. The saved text and the words are unchanged and the page looks the same, but text copied from the rendered page carries U+00A0 in those places. This project did not choose it and does not yet prevent it. Measured 2026-11-16.</p>
+  </div>
+
+  <figure>
+    <div class="scroll wide">
+    <svg viewBox="0 0 1124 536" role="img" aria-label="The verbatim chain. pvme.io to the capture, checked by hashes. Capture to the compiled wiki page, checked text, media and links. Compiled page to the saved revision on the wiki. Saved revision to the rendered page. Rendered page to the reader's browser. Saved revision to the Copy to wiki export, then pasted by hand into RuneScape Wiki, which is not checked. Each arrow shows how many pages were compared and how many were identical.">
+      <defs>
+        <marker id="ahv" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="mk" d="M0 0 L10 5 L0 10 z"/></marker>
+        <pattern id="hatchv" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect class="hatchbg" width="7" height="7"/><line class="hl" x1="0" y1="0" x2="0" y2="7"/></pattern>
+      </defs>
+      <rect class="zone" x="8" y="8" width="1108" height="520" rx="6"/>
+      <text class="zl" x="20" y="32">WHERE A GUIDE'S WORDS TRAVEL · EACH ARROW IS ONE CHECK</text>
+
+      <!-- row A -->
+      <a class="hit" href="#verbatim" data-goto="verbatim:vr-1" aria-label="pvme.io: open receipt 1">
+        <rect class="ext" x="24" y="56" width="186" height="176" rx="10"/>
+        <text class="tb" x="38" y="80">pvme.io</text>
+        <text class="ts" x="38" y="97">the guide as published</text>
+        <rect class="vrb" style="fill:url(#hatchv)" x="38" y="110" width="158" height="74" rx="3"/>
+        <rect class="n" x="46" y="132" width="110" height="28" rx="3"/>
+        <text class="ts" x="54" y="151" style="fill:var(--ink)">guide text</text>
+        <text class="ts" x="38" y="214">captured 2026-11-16</text>
+      </a>
+      <a class="hit" href="#verbatim" data-goto="verbatim:vr-1" aria-label="Capture: open receipt 1">
+        <rect class="n" x="318" y="56" width="186" height="176" rx="6"/>
+        <text class="tb" x="332" y="80">Capture</text>
+        <text class="tm" x="332" y="97">current-source/</text>
+        <rect class="vrb" style="fill:url(#hatchv)" x="332" y="110" width="158" height="74" rx="3"/>
+        <rect class="n" x="340" y="132" width="132" height="28" rx="3"/>
+        <text class="ts" x="348" y="151" style="fill:var(--ink)">saved HTML bytes</text>
+        <text class="ts" x="332" y="214">330 pages</text>
+      </a>
+      <a class="hit" href="#verbatim" data-goto="verbatim:vr-2" aria-label="Compiled wiki page: open receipt 2">
+        <rect class="n" x="612" y="56" width="186" height="176" rx="6"/>
+        <text class="tb" x="626" y="80">Compiled wiki page</text>
+        <text class="tm" x="626" y="97">main-guides/*.wiki</text>
+        <rect class="vrb" style="fill:url(#hatchv)" x="626" y="110" width="158" height="56" rx="3"/>
+        <rect class="n" x="634" y="124" width="140" height="28" rx="3"/>
+        <text class="ts" x="642" y="143" style="fill:var(--ink)">text in &lt;nowiki&gt;</text>
+        <rect class="added" x="626" y="172" width="158" height="34" rx="3"/>
+        <text class="ts" x="636" y="193" style="fill:var(--ink)">attribution · 200 pictures</text>
+        <text class="ts" x="626" y="222">329 guides</text>
+      </a>
+      <a class="hit" href="#verbatim" data-goto="verbatim:vr-3" aria-label="Saved revision on the wiki: open receipt 3">
+        <path class="db" d="M906 66 A88 10 0 0 1 1082 66 V222 A88 10 0 0 1 906 222 Z"/>
+        <path class="db" d="M906 66 A88 10 0 0 0 1082 66" fill="none"/>
+        <text class="tb" x="920" y="96">Saved revision</text>
+        <text class="ts" x="920" y="113">on pvmewiki.sanji3.dev</text>
+        <rect class="vrb" style="fill:url(#hatchv)" x="920" y="124" width="148" height="46" rx="3"/>
+        <rect class="n" x="928" y="134" width="120" height="26" rx="3"/>
+        <text class="ts" x="936" y="152" style="fill:var(--ink)">packaged bytes</text>
+        <text class="ts" x="920" y="192">community edits land here</text>
+        <text class="ts" x="920" y="208">redeploys keep them (7)</text>
+      </a>
+
+      <!-- row A edges -->
+      <line class="e acc" x1="212" y1="144" x2="314" y2="144" marker-end="url(#ahv)"/>
+      <text class="el acc" x="263" y="128" text-anchor="middle">1 · 330/330</text>
+      <text class="el" x="263" y="166" text-anchor="middle">hashes match</text>
+      <line class="e acc" x1="506" y1="144" x2="608" y2="144" marker-end="url(#ahv)"/>
+      <text class="el acc" x="557" y="128" text-anchor="middle">2 · 329/329</text>
+      <text class="el" x="557" y="166" text-anchor="middle">text, media,</text>
+      <text class="el" x="557" y="181" text-anchor="middle">links exact</text>
+      <line class="e acc" x1="800" y1="144" x2="902" y2="144" marker-end="url(#ahv)"/>
+      <text class="el acc" x="851" y="128" text-anchor="middle">3 · 374/374</text>
+      <text class="el" x="851" y="166" text-anchor="middle">same bytes</text>
+      <text class="el" x="851" y="181" text-anchor="middle">2026-11-16</text>
+
+      <!-- A3 down to B3 -->
+      <line class="e" x1="994" y1="232" x2="994" y2="306" marker-end="url(#ahv)"/>
+      <text class="el warn" x="984" y="256" text-anchor="end">4 · 329/329 words</text>
+      <text class="el" x="984" y="272" text-anchor="end">43 spaces made</text>
+      <text class="el" x="984" y="288" text-anchor="end">non-breaking</text>
+
+      <!-- row B -->
+      <a class="hit" href="#verbatim" data-goto="verbatim:vr-4" aria-label="Rendered page: open receipt 4">
+        <rect class="n" x="906" y="308" width="196" height="160" rx="6"/>
+        <text class="tb" x="920" y="332">Rendered page</text>
+        <text class="ts" x="920" y="349">MediaWiki 1.43 parser</text>
+        <rect class="vrb" style="fill:url(#hatchv)" x="920" y="360" width="168" height="58" rx="3"/>
+        <rect class="n" x="928" y="375" width="140" height="28" rx="3"/>
+        <text class="ts" x="936" y="394" style="fill:var(--ink)">guide text as HTML</text>
+        <text class="ts" x="920" y="440">34,449 media, 3,498 links</text>
+        <text class="ts" x="920" y="456">in order</text>
+      </a>
+      <line class="e acc" x1="904" y1="388" x2="806" y2="388" marker-end="url(#ahv)"/>
+      <text class="el acc" x="855" y="372" text-anchor="middle">5 · reader</text>
+      <text class="el" x="855" y="410" text-anchor="middle">329/329 live</text>
+      <text class="el" x="855" y="425" text-anchor="middle">unchanged</text>
+      <a class="hit" href="#verbatim" data-goto="verbatim:vr-5" aria-label="Reader's browser: open receipt 5">
+        <rect class="n" x="612" y="308" width="192" height="160" rx="6"/>
+        <text class="tb" x="626" y="332">Reader's browser</text>
+        <rect class="added" x="626" y="342" width="164" height="26" rx="3"/>
+        <text class="ts" x="636" y="360" style="fill:var(--ink)">navigation · Copy to wiki</text>
+        <rect class="vrb" style="fill:url(#hatchv)" x="626" y="374" width="164" height="50" rx="3"/>
+        <rect class="n" x="634" y="386" width="128" height="26" rx="3"/>
+        <text class="ts" x="642" y="404" style="fill:var(--ink)">article, untouched</text>
+        <rect class="added" x="626" y="430" width="164" height="26" rx="3"/>
+        <text class="ts" x="636" y="448" style="fill:var(--ink)">Source footer</text>
+      </a>
+      <line class="e acc" x1="610" y1="388" x2="512" y2="388" marker-end="url(#ahv)"/>
+      <text class="el acc" x="561" y="372" text-anchor="middle">6 · 329/329</text>
+      <text class="el" x="561" y="410" text-anchor="middle">70,469 passages,</text>
+      <text class="el" x="561" y="425" text-anchor="middle">each once, in order</text>
+      <a class="hit" href="#verbatim" data-goto="verbatim:vr-6" aria-label="Copy to wiki export: open receipt 6">
+        <rect class="n" x="318" y="308" width="192" height="160" rx="6"/>
+        <text class="tb" x="332" y="332">Copy to wiki text</text>
+        <rect class="added" x="332" y="342" width="164" height="26" rx="3"/>
+        <text class="ts" x="342" y="360" style="fill:var(--ink)">title · Contents · labels</text>
+        <rect class="vrb" style="fill:url(#hatchv)" x="332" y="374" width="164" height="50" rx="3"/>
+        <rect class="n" x="340" y="386" width="128" height="26" rx="3"/>
+        <text class="ts" x="348" y="404" style="fill:var(--ink)">guide passages</text>
+        <rect class="added" x="332" y="430" width="164" height="26" rx="3"/>
+        <text class="ts" x="342" y="448" style="fill:var(--ink)">Source section</text>
+      </a>
+      <line class="e dash" x1="316" y1="388" x2="218" y2="388" marker-end="url(#ahv)"/>
+      <text class="el" x="267" y="372" text-anchor="middle">pasted by hand</text>
+      <text class="el" x="267" y="410" text-anchor="middle">not checked</text>
+      <rect class="ext" x="24" y="348" width="192" height="80" rx="40"/>
+      <text x="120" y="384" text-anchor="middle" class="ts" style="fill:var(--ink)">runescape.wiki</text>
+      <text x="120" y="401" text-anchor="middle" class="ts">its own rendering</text>
+
+      <!-- links 7 and 8 -->
+      <a class="hit" href="#verbatim" data-goto="verbatim:vr-7" aria-label="Redeploys keep edits: open receipt 7">
+        <rect class="n2" x="24" y="482" width="530" height="32" rx="4"/>
+        <text class="tm" x="36" y="503">7 · redeploys never overwrite an edited page · 7 cases pass</text>
+      </a>
+      <a class="hit" href="#verbatim" data-goto="verbatim:vr-8" aria-label="Seed corpus: open receipt 8">
+        <rect class="n2" x="566" y="482" width="536" height="32" rx="4"/>
+        <text class="tm" x="578" y="503">8 · seed corpus: 381 frozen pages match their pinned hashes</text>
+      </a>
+    </svg>
+    </div>
+    <div class="scrollhint">Scroll sideways to see the whole chain, or use the list below it.</div>
+    <figcaption>Read left to right along the top, then right to left along the bottom. Hatched areas are guide text; dashed areas are what this project adds. Each arrow is one check; select a box to open its receipt below.</figcaption>
+    <div class="legend">
+      <span><i class="vb"></i> guide text, verbatim</span>
+      <span><i class="ad"></i> added presentation</span>
+      <span><i class="st ok">identical</i></span>
+      <span><i class="st warn">open finding</i></span>
+    </div>
+  </figure>
+
+  <div class="zones" aria-label="The chain as a list">
+    <div class="zcard"><ul>
+      <li><a href="#verbatim" data-goto="verbatim:vr-1">1 pvme.io to capture</a>: 330 of 330 pages match their recorded hashes.</li>
+      <li><a href="#verbatim" data-goto="verbatim:vr-2">2 capture to compiled page</a>: 329 of 329 guides identical in text, media and links.</li>
+      <li><a href="#verbatim" data-goto="verbatim:vr-3">3 compiled page to live wiki</a>: 374 of 374 pages saved byte for byte, 2026-11-16.</li>
+      <li><a href="#verbatim" data-goto="verbatim:vr-4">4 saved to rendered page</a>: words identical on 329 of 329; 43 spaces made non-breaking.</li>
+      <li><a href="#verbatim" data-goto="verbatim:vr-5">5 reader script</a>: the article is unchanged on 329 of 329 live guides.</li>
+      <li><a href="#verbatim" data-goto="verbatim:vr-6">6 Copy to wiki</a>: 329 of 329 exports hold every passage once, in order.</li>
+      <li><a href="#verbatim" data-goto="verbatim:vr-7">7 redeploys</a> and <a href="#verbatim" data-goto="verbatim:vr-8">8 seed corpus</a>: 7 cases; 381 pages.</li>
+    </ul></div>
+  </div>
+
+  <section class="block" id="vreceipts">
+    <h2>Receipts</h2>
+    <p>One per link. Text is compared character for character unless the receipt names a rule. Each opens to the exact command, test and file.</p>
+    <details id="vr-1"><summary>1 · pvme.io to the capture <span class="st ok">330 of 330 consistent</span></summary><div class="dbody"><dl class="kv"><dt>Compared</dt><dd>each saved <code>response.html</code> against its recorded SHA-256; <code>article.html</code> against its recorded slice of the response and <code>sourceSha256</code>; the tree the compiler reads (<code>source.json</code>) against a fresh jsdom parse of <code>article.html</code>; the 2 hand-checked copies against their recorded hashes</dd><dt>Rule</dt><dd>exact bytes</dd><dt>Kind</dt><dd>test in <code>npm test</code>; local command</dd><dt>Run</dt><dd><div class="cmdwrap"><button type="button" data-copy="vc1">Copy</button><pre class="cmdblock" id="vc1">cd wiki-host &amp;&amp; node --test tests/verbatim-compile.test.mjs</pre></div></dd><dt>Test</dt><dd><i>all 330 captured pvme.io pages match the hashes and offsets recorded when they were captured</i></dd><dt>Read</dt><dd><code class="cp">wiki-host/tools/lib/verbatim-checks.mjs</code> (<code>checkCapture</code>), <code class="cp">wiki-host/current-source/manifest.json</code></dd><dt>Limit</dt><dd>Shows the capture is consistent with itself, made 2026-11-16. Only a new capture can compare against pvme.io again.</dd></dl></div></details>
+    <details id="vr-2"><summary>2 · capture to the compiled wiki page <span class="st ok">329 of 329 identical</span></summary><div class="dbody"><dl class="kv"><dt>Compared</dt><dd>all text, character for character (1,795,358 characters); every image, video and embed: address, alt, title (34,449); every link with an address: address and words (3,498); all in order. Any character outside a <code>&lt;nowiki&gt;</code> or <code>&lt;pre&gt;</code> span that is not markup is reported.</dd><dt>Rule</dt><dd>exact: no whitespace, case, punctuation or Unicode normalisation</dd><dt>Independent</dt><dd>does not use the compiler: reads <code>article.html</code> with jsdom instead of <code>source.json</code>, and reads the compiled page as MediaWiki does</dd><dt>Kind</dt><dd>test in <code>npm test</code>; local command</dd><dt>Run</dt><dd><div class="cmdwrap"><button type="button" data-copy="vc2">Copy</button><pre class="cmdblock" id="vc2">cd wiki-host &amp;&amp; node --test tests/verbatim-compile.test.mjs</pre></div></dd><dt>Tests</dt><dd><i>every one of the 329 wiki guides has the same text as its pvme.io capture, character for character and in the same order</i>; <i>every image, video and embed from pvme.io is in the wiki guide, in the same order, with the same address and the same alt and title text</i>; <i>every working link from pvme.io is in the wiki guide, in the same order, with the same address and the same words</i>; <i>the only words a wiki guide adds are the attribution line under the guide</i>; damaged copies of one guide (changed word, dropped, repeated and swapped paragraphs) are found</dd><dt>Read</dt><dd><code class="cp">wiki-host/tools/lib/source-article.mjs</code>, <code class="cp">wiki-host/tools/lib/compiled-guide.mjs</code></dd></dl></div></details>
+    <details id="vr-3"><summary>3 · compiled page to the live wiki <span class="st ok">374 of 374 identical, 2026-11-16</span></summary><div class="dbody"><dl class="kv"><dt>Compared</dt><dd>SHA-256 of the latest saved revision against the packaged file, for every page in <code>main-guides/manifest.json</code></dd><dt>Result</dt><dd>374 identical, 0 changed by a community edit, 0 missing. A community edit shows here with its revision id; that is expected.</dd><dt>Kind</dt><dd>live measurement, dated 2026-11-16</dd><dt>Run</dt><dd><div class="cmdwrap"><button type="button" data-copy="vc3">Copy</button><pre class="cmdblock" id="vc3">node wiki-host/tools/measure-live-verbatim.mjs</pre></div></dd><dt>Read</dt><dd><code class="cp">wiki-host/docs/receipts/live-verbatim-2026-11-16.json</code> (<code>savedRevisions</code>)</dd></dl></div></details>
+    <details id="vr-4"><summary>4 · saved revision to the rendered page <span class="st warn">43 spaces made non-breaking</span></summary><div class="dbody"><dl class="kv"><dt>Compared</dt><dd>the text inside <code>.pvme-exact-guide</code> in the parser's output (<code>action=parse</code>, MediaWiki 1.43.11) against the guide text of the same revision; media, links and the added pictures in order; <code>&lt;pre&gt;</code> blocks character for character</dd><dt>Rule</dt><dd>exact first; then runs of HTML whitespace (space, tab, LF, FF, CR) collapsed to one space; then non-breaking spaces in French-spacing positions read as spaces</dd><dt>Result</dt><dd>exact: 0 (MediaWiki turns newlines between blocks into empty paragraphs); equal after collapsing whitespace: 307; equal once non-breaking spaces are read as spaces: 22 guides, 43 spaces; different in any other way: 0. Media 34,449 and links 3,498 in order; 200 added pictures present; 42 <code>&lt;pre&gt;</code> blocks exact.</dd><dt>Kind</dt><dd>live measurement, dated 2026-11-16</dd><dt>Run</dt><dd><div class="cmdwrap"><button type="button" data-copy="vc4">Copy</button><pre class="cmdblock" id="vc4">node wiki-host/tools/measure-live-verbatim.mjs</pre></div></dd><dt>Read</dt><dd><code class="cp">wiki-host/docs/receipts/live-verbatim-2026-11-16.json</code> (<code>renderedPages</code>, <code>withNonBreakingSpaces</code>)</dd><dt>Replaces</dt><dd><code>main-guides/parser-audit/summary.json</code>: its hashes match none of the 329 current compiled pages, and its text check collapsed every Unicode space, which hides the non-breaking spaces</dd></dl></div></details>
+    <details id="vr-5"><summary>5 · rendered page to the reader's browser <span class="st ok">article unchanged on 329 of 329 live guides</span></summary><div class="dbody"><dl class="kv"><dt>Compared</dt><dd>the article's markup before and after the real reader script runs in jsdom. On a guide it must be byte for byte the same; on a seed-format index page only <code>class</code>, <code>title</code>, <code>aria-*</code> and <code>data-*</code> attributes may be added.</dd><dt>Result</dt><dd>tests: 6 of 6 pass, covering all 329 captured guides and three seed index pages. Live, 2026-11-16: 329 of 329 rendered guides unchanged; 14 of 14 seed index pages within the rule (one class added to each).</dd><dt>Kind</dt><dd>test in <code>npm test</code>; live measurement, dated 2026-11-16</dd><dt>Run</dt><dd><div class="cmdwrap"><button type="button" data-copy="vc5">Copy</button><pre class="cmdblock" id="vc5">cd wiki-host &amp;&amp; node --test tests/verbatim-reader.test.mjs</pre></div></dd><dt>Tests</dt><dd><i>on every one of the 329 guides, the reader leaves the article byte for byte as it was</i>; <i>the guide title shown at the top of the page is a copy of the guide's own heading, word for word</i></dd><dt>Read</dt><dd><code class="cp">wiki-host/presentation/module/modules/reader/</code>, <code class="cp">wiki-host/tools/lib/article-changes.mjs</code></dd></dl></div></details>
+    <details id="vr-6"><summary>6 · saved revision to the Copy to wiki text <span class="st ok">329 of 329 identical</span></summary><div class="dbody"><dl class="kv"><dt>Compared</dt><dd>with the exporter's own parts removed (title line, Contents box, media labels, file links, Source section), the export's <code>&lt;nowiki&gt;</code> and <code>&lt;pre&gt;</code> spans against the guide's own: 70,469 passages, each once, in order; nothing else in the export may read as words</dd><dt>Closes</dt><dd>the gap in <code>export-corpus.test.mjs</code>, which would not catch a passage that appears twice</dd><dt>Kind</dt><dd>test in <code>npm test</code>; local command</dd><dt>Run</dt><dd><div class="cmdwrap"><button type="button" data-copy="vc6">Copy</button><pre class="cmdblock" id="vc6">cd wiki-host &amp;&amp; node --test tests/verbatim-export.test.mjs</pre></div></dd><dt>Test</dt><dd><i>the Copy to wiki text of all 329 guides holds each of the 70469 guide passages exactly once, in the original order</i></dd><dt>Read</dt><dd><code class="cp">wiki-host/tools/lib/verbatim-checks.mjs</code> (<code>splitExport</code>)</dd></dl></div></details>
+    <details id="vr-7"><summary>7 · redeploys never overwrite edits <span class="st ok">7 of 7 cases pass</span></summary><div class="dbody"><dl class="kv"><dt>Compared</dt><dd>the publication decision for every combination of recorded baseline and current page: a page edited or deleted since the baseline, or a new guide whose page exists, is preserved</dd><dt>Kind</dt><dd>PHP test</dd><dt>Run</dt><dd><div class="cmdwrap"><button type="button" data-copy="vc7">Copy</button><pre class="cmdblock" id="vc7">cd wiki-host &amp;&amp; php tests/runtime-main-guide-publication.php</pre></div></dd><dt>Read</dt><dd><code class="cp">wiki-host/runtime/lib/MainGuidePublication.php</code>, <code class="cp">wiki-host/runtime/install-main-guides.php</code></dd><dt>Limit</dt><dd>the picture guide is created with MediaWiki's <code>edit.php --createonly</code>; that is exercised only when booting the image</dd></dl></div></details>
+    <details id="vr-8"><summary>8 · the seed corpus <span class="st ok">381 of 381 match</span></summary><div class="dbody"><dl class="kv"><dt>Compared</dt><dd>the frozen pages against their recorded SHA-256, size and <code>SHA256SUMS</code>; 42 code blocks against the snapshot in <code>editor/content/</code>; 1,468 line-preserving containers; 1,401 internal links</dd><dt>Kind</dt><dd>local command</dd><dt>Run</dt><dd><div class="cmdwrap"><button type="button" data-copy="vc8">Copy</button><pre class="cmdblock" id="vc8">node wiki-host/tools/verify-corpus.mjs</pre></div></dd><dt>Limit</dt><dd>the seed pages' prose is not compared with the snapshot</dd></dl></div></details>
+  </section>
+
+  <section class="block">
+    <h2>Run them yourself</h2>
+    <p>The first command regenerates every local receipt in about 20 seconds and needs no network. The second measures the live wiki, read-only, and writes a new dated report; it takes about half an hour on the free host.</p>
+    <div class="cmdwrap">
+      <button type="button" data-copy="vcmd">Copy</button>
+<pre class="cmdblock" id="vcmd">cd wiki-host &amp;&amp; npm ci &amp;&amp; cd ..
+node wiki-host/tools/verify-verbatim.mjs          <span class="c"># links 1, 2, 5, 6, 7, 8</span>
+node wiki-host/tools/measure-live-verbatim.mjs    <span class="c"># links 3, 4, 5 against the live wiki</span></pre>
+    </div>
+  </section>
+
+  <section class="block" id="vdeviations">
+    <h2>Every deliberate deviation</h2>
+    <p>Each is counted by the checks above. None changes a word of guide text.</p>
+    <div class="tw"><table>
+      <thead><tr><th>Deviation</th><th>Count</th><th>Why</th><th>Where to check</th></tr></thead>
+      <tbody>
+        <tr><td>Hand-checked copy used instead of the raw capture</td><td class="nm">2 guides</td><td>Authors typed placeholders: <code>&lt;id:customize&gt;</code> in both and <code>&lt;Boss&gt; (&lt;Style&gt;)</code> in <i>How to use PvME</i>. A browser reads them as HTML: <code>&lt;Style&gt;</code> starts a style element that hides the rest of that guide. The copy escapes exactly those characters, confirmed in the authored file at the pinned upstream revision. On pvme.io a browser shows 2,431 characters and 0 of its 28 images; the wiki shows 6,485 characters and 28 images, all from pvme.io's own HTML. Only the listed replacements differ.</td><td><code class="cp">wiki-host/current-source/build-render-exceptions.mjs</code></td></tr>
+        <tr><td>Links without an address kept as words</td><td class="nm">636 in 209 guides</td><td>pvme.io shows Discord channel mentions such as <code>#pvm-help</code> as links with an empty address. The words stay; there is nothing to link to.</td><td><code class="cp">wiki-host/docs/receipts/verbatim-local.json</code></td></tr>
+        <tr><td>Preset pictures added beside preset links</td><td class="nm">200 in 99 guides</td><td>The preview of a linked preset from pvme.io's preset tool, placed after the link and marked <code>data-pvme-addition="preset"</code>; not counted as guide media.</td><td><code class="cp">wiki-host/preset-previews/manifest.json</code></td></tr>
+        <tr><td>Attribution line under the guide</td><td class="nm">329 guides</td><td><code>PvME source · PvME contributors · CC BY-NC-SA 4.0.</code>, below the guide wrapper: the only words a compiled page adds.</td><td><code class="cp">wiki-host/tools/lib/compiled-guide.mjs</code></td></tr>
+        <tr><td>Page heading taken from the guide</td><td class="nm">329 guides</td><td>The guide's own h1 on 296; the first heading on 31 without an h1; the page name on 2 with no heading. The in-article h1 is hidden in read view and copied into the heading.</td><td><code class="cp">wiki-host/presentation/module/modules/reader/native-title.js</code></td></tr>
+        <tr><td>Formatting</td><td class="nm">all guides</td><td>Sections and mechanics wrapped in styled blocks; classes on paragraphs; source <code>class</code>, <code>target</code>, <code>rel</code> and most inline styles dropped; markup inside the 42 <code>&lt;pre&gt;</code> blocks reduced to its unchanged text.</td><td><code class="cp">wiki-host/tools/source-wikitext.mjs</code></td></tr>
+        <tr><td>Reader additions around the article</td><td class="nm">every view</td><td>Navigation bar, Copy to wiki, freshness badge, other-guides list and Source footer, all outside the article.</td><td><code class="cp">wiki-host/presentation/module/modules/reader/</code></td></tr>
+        <tr><td>Labels on seed-format index pages</td><td class="nm">0 live, 2026-11-16</td><td>The stylesheet can show an icon name in place of a bare icon URL; the text stays in the page. The live seed pages have no such links.</td><td><code class="cp">wiki-host/presentation/module/modules/reader/index-page-styling.js</code></td></tr>
+        <tr><td>Copy to wiki additions</td><td class="nm">every export</td><td>Title line (pages without an h1), Contents box, media labels (<code>Image source</code>, <code>Video source</code>, <code>Watch clip</code>, <code>Unresolved image</code>), RuneScape Wiki file names, Source section.</td><td><code class="cp">wiki-host/presentation/module/modules/export/</code></td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="block" id="vnotproven">
+    <h2>What this does not prove</h2>
+    <ul class="check">
+      <li><b>That pvme.io still serves what was captured.</b> The capture is from 2026-11-16. It keeps each page from its h1 to the end of the article (296 pages); 33 pages have no h1 and are flagged. Text outside that boundary is not compared.</li>
+      <li><b>That media files are unchanged.</b> Images, videos and embeds are compared by address, alt and title, not by their bytes.</li>
+      <li><b>What a real browser shows.</b> The reader is checked in jsdom, and the stylesheets are not checked for hiding guide text. The known hiding rules are the in-article h1 (copied into the heading) and the seed-page labels.</li>
+      <li><b>Line breaks after rendering.</b> Link 4 collapses whitespace, so a line break moved inside a line-preserving block would not show; <code>&lt;pre&gt;</code> blocks are compared exactly.</li>
+      <li><b>What RuneScape Wiki shows after pasting.</b> Nothing checks the destination.</li>
+      <li><b>The seed corpus prose.</b> Link 8 compares hashes and code blocks, not prose against the snapshot.</li>
+      <li><b>Anything after 2026-11-16 on the live wiki.</b> Links 3 to 5 are a measurement on that day. Community edits are expected and are not checked for wording.</li>
+    </ul>
+  </section>
+</section>
+
 <!-- ============================== MAP ============================== -->
 <section class="view" id="v-map" data-view="map" data-title="System map">
   <div class="head">
     <h1>PvME Wiki</h1>
     <p class="lede">A MediaWiki site that hosts PvME's RuneScape 3 bossing guides as editable, attributed pages. It is one Docker image and one PostgreSQL database: the image is replaceable, and the database is the only copy of everything people do on the wiki.</p>
   </div>
+
+  <section class="block promise" id="vhero" aria-labelledby="vhero-h">
+    <div class="promise-text">
+      <h2 id="vhero-h">Guide text is verbatim</h2>
+      <p>Every word of a PvME guide on this wiki is the word pvme.io published, in the same order: nothing is reworded, summarised, reordered or left out. Everything this project adds sits outside the guide text, and every addition is counted.</p>
+    </div>
+    <ol class="receipts">
+      <li><a href="#verbatim" data-goto="verbatim:vr-1"><span class="k">1</span><b>pvme.io to capture</b><span class="st ok">330 of 330</span><span class="what">pages match their recorded hashes</span></a></li>
+      <li><a href="#verbatim" data-goto="verbatim:vr-2"><span class="k">2</span><b>capture to wiki page</b><span class="st ok">329 of 329</span><span class="what">guides: same text, media, links, in order</span></a></li>
+      <li><a href="#verbatim" data-goto="verbatim:vr-3"><span class="k">3</span><b>packaged to live wiki</b><span class="st ok">374 of 374</span><span class="what">pages saved byte for byte, 2026-11-16</span></a></li>
+      <li><a href="#verbatim" data-goto="verbatim:vr-4"><span class="k">4</span><b>saved to rendered</b><span class="st warn">43 spaces</span><span class="what">made non-breaking by the parser; words identical on 329 of 329</span></a></li>
+      <li><a href="#verbatim" data-goto="verbatim:vr-5"><span class="k">5</span><b>reader script</b><span class="st ok">329 of 329</span><span class="what">live guides: article unchanged</span></a></li>
+      <li><a href="#verbatim" data-goto="verbatim:vr-6"><span class="k">6</span><b>Copy to wiki</b><span class="st ok">329 of 329</span><span class="what">70,469 passages, each once, in order</span></a></li>
+      <li><a href="#verbatim" data-goto="verbatim:vr-7"><span class="k">7</span><b>redeploys</b><span class="st ok">7 of 7</span><span class="what">cases: edited pages are kept</span></a></li>
+      <li><a href="#verbatim" data-goto="verbatim:vr-8"><span class="k">8</span><b>seed corpus</b><span class="st ok">381 of 381</span><span class="what">frozen pages match their hashes</span></a></li>
+    </ol>
+    <p class="small muted">Rerun every local check: <code class="cp">node wiki-host/tools/verify-verbatim.mjs</code>. <a href="#verbatim">The receipts, the deviations and what is not proven</a>.</p>
+  </section>
 
   <figure>
     <div class="scroll wide" id="mapscroll">
@@ -649,6 +908,7 @@ details > .dbody.full { max-width: none; }
     <section class="block">
       <h2>I want to...</h2>
       <div class="tasks">
+        <a class="task" href="#verbatim"><span>check that guide text is unchanged</span><span class="to">verbatim</span></a>
         <a class="task" href="#startup" data-goto="startup:decide"><span>find out why the container refused to start</span><span class="to">startup</span></a>
         <a class="task" href="#operate" data-goto="operate:smoke"><span>check that a deploy went right</span><span class="to">deploy</span></a>
         <a class="task" href="#startup" data-goto="startup:step3"><span>know why a packaged guide was not published</span><span class="to">startup</span></a>
@@ -668,7 +928,7 @@ details > .dbody.full { max-width: none; }
         <div class="rule"><b>The database is the asset; the image is replaceable.</b><p>PostgreSQL holds the only copy of community edits, accounts and moderation state. A redeploy never undoes anything in it; only a backup does.</p></div>
         <div class="rule"><b>Startup refuses instead of repairing.</b><p>Two of seven database states start the wiki. Every other state stops the container with one line on stderr, because a wrong guess could destroy edits that exist nowhere else.</p></div>
         <div class="rule"><b>No runtime script overwrites a changed page.</b><p>Packaged guides are written only onto pages still at their recorded baseline; the picture guide only onto missing pages.</p></div>
-        <div class="rule"><b>Guide text is verbatim; presentation is additive.</b><p>The reader adds around the saved article and never rewrites it (root <code class="cp">AGENTS.md</code>).</p></div>
+        <div class="rule"><b>Guide text is verbatim; presentation is additive.</b><p>The reader adds around the saved article and never rewrites it (root <code class="cp">AGENTS.md</code>). Every link from pvme.io to the pasted text is checked: <a href="#verbatim">Verbatim guarantee</a>.</p></div>
         <div class="rule"><b>The exporter fails closed.</b><p>It throws on anything it cannot reproduce exactly, and Copy to wiki copies nothing while any media lacks a verified route.</p></div>
       </div>
     </section>
@@ -1483,6 +1743,7 @@ WikiExport    {wikitext, media, unresolvedMedia, layout}</pre>
       <tbody>
         <tr><td>exporter output for given input, byte for byte</td><td class="c yes">✓</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td></tr>
         <tr><td>every shipped guide exports completely with the shipped catalogue</td><td class="c yes">✓</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td></tr>
+        <tr><td>guide text, media and links identical from capture to compiled page and export</td><td class="c yes">✓</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td></tr>
         <tr><td>reader DOM behaviour and messages (in jsdom)</td><td class="c yes">✓</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td></tr>
         <tr><td>runtime validation, startup decision, publication guard, release id</td><td class="c nope">·</td><td class="c yes">✓</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td></tr>
         <tr><td>hook handlers' output (against stand-ins)</td><td class="c nope">·</td><td class="c yes">✓</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td></tr>
@@ -1514,6 +1775,7 @@ npm test</div>
         <tr><td><code>export-refusals.test.mjs</code></td><td>every refusal message</td></tr>
         <tr><td><code>export-corpus.test.mjs</code></td><td>every page in <code>main-guides/manifest.json</code>; pins 329 guides, 44 landing pages, one redirect, zero unresolved media</td></tr>
         <tr><td><code>reader-*.test.mjs</code>, <code>source-freshness.test.mjs</code></td><td>the reader in jsdom on hand-written pages</td></tr>
+        <tr><td><code>verbatim-*.test.mjs</code></td><td>the capture, every compiled guide, the reader over every captured guide, and every export, against the <a href="#verbatim">verbatim chain</a></td></tr>
       </tbody></table></div>
     </div>
     <div class="layer">
@@ -1544,7 +1806,7 @@ python3 wiki-host/tools/verify-xml.py</div>
       <p class="small">Expect <span class="msg okm">PvME wiki ready: imported 381 mainspace pages</span>, the picture guide lines, one line per packaged page, then Apache; <code>/healthz.php</code> answers <code>ready</code>. <code>docker restart</code> must then log <span class="msg okm">PvME wiki ready: existing verified corpus</span>. Pointing <code>MW_DATABASE_URL</code> at a database with any table shows the <code>NotEmpty</code> refusal.</p>
     </div>
   </div>
-  <p class="sub">Content audits (<code>tools/audit-main-corpus.mjs</code>, <code>tools/audit-overview-landings.mjs</code>, <code>tools/audit-published-main-corpus.mjs</code>) send read-only requests to <code>https://pvmewiki.sanji3.dev</code>. They run when content changes and are not part of the test suite.</p>
+  <p class="sub">Content audits (<code>tools/audit-main-corpus.mjs</code>, <code>tools/audit-overview-landings.mjs</code>, <code>tools/audit-published-main-corpus.mjs</code>) send read-only requests to <code>https://pvmewiki.sanji3.dev</code>. They run when content changes and are not part of the test suite. <code>tools/measure-live-verbatim.mjs</code> measures links 3 to 5 of the <a href="#verbatim">verbatim chain</a> on the live wiki and writes a dated report.</p>
 </section>
 
 <!-- ============================== LIMITS ============================== -->
@@ -1554,10 +1816,10 @@ python3 wiki-host/tools/verify-xml.py</div>
     <p class="lede">What is imperfect, each with the code where you can confirm it. None is hidden by the tests; where a test pins the behaviour, the item says so.</p>
   </div>
   <div class="filters" role="group" aria-label="Filter limitations">
-    <button type="button" class="chipbtn" data-limf="all" aria-pressed="true">All<span class="ct">21</span></button>
+    <button type="button" class="chipbtn" data-limf="all" aria-pressed="true">All<span class="ct">22</span></button>
     <button type="button" class="chipbtn" data-limf="exporter" aria-pressed="false">Exporter<span class="ct">7</span></button>
     <button type="button" class="chipbtn" data-limf="reader" aria-pressed="false">Reader<span class="ct">4</span></button>
-    <button type="button" class="chipbtn" data-limf="data" aria-pressed="false">Data and content<span class="ct">4</span></button>
+    <button type="button" class="chipbtn" data-limf="data" aria-pressed="false">Data and content<span class="ct">5</span></button>
     <button type="button" class="chipbtn" data-limf="runtime" aria-pressed="false">Runtime<span class="ct">5</span></button>
     <button type="button" class="chipbtn" data-limf="repo" aria-pressed="false">Repository<span class="ct">1</span></button>
     <button type="button" class="chipbtn" id="pinonly" aria-pressed="false">Pinned by a test</button>
@@ -1580,12 +1842,13 @@ python3 wiki-host/tools/verify-xml.py</div>
     <article class="limit" data-area="data" data-pin="0"><span class="no">13</span><h3>A fresh database does not reproduce production</h3><p>Packaged pages are published only onto pages still at their recorded baseline, and those baselines are production text. On a fresh install the compiled guides are preserved as seed text. Only a database backup reproduces production.</p><div class="meta"><span class="area">Data and content</span><code class="cp">wiki-host/runtime/install-main-guides.php</code></div></article>
     <article class="limit" data-area="data" data-pin="0"><span class="no">14</span><h3>On a fresh install the picture guide is replaced at once</h3><p>Step 2 creates <code>PvME/Amascut/Picture guide</code>; step 3 replaces it with the redirect to the Amascut overview, because the new page matches the redirect's baseline. The picture guide stays in the page history, and the four templates remain.</p><div class="meta"><span class="area">Data and content</span><code class="cp">wiki-host/main-guides/amascut-picture-redirect.wiki</code></div></article>
     <article class="limit" data-area="data" data-pin="0"><span class="no">15</span><h3>Content cannot be rebuilt offline from Git alone</h3><p>The capture is of the live pvme.io site, the media maps query RuneScape Wiki, and the audits and baselines read the production wiki. The seed build reads <code>editor/content/</code>, and <code>build-render-exceptions.mjs</code> needs a pvme-guides clone two directories above the repository root.</p><div class="meta"><span class="area">Data and content</span><code class="cp">wiki-host/current-source/build-render-exceptions.mjs</code></div></article>
-    <article class="limit" data-area="runtime" data-pin="0"><span class="no">16</span><h3><code>install-visual-guides.php</code> validates entries inside its publish loop</h3><p>An entry with a bad file name or namespace stops the script only when the loop reaches it, so pages for earlier entries may already be published.</p><div class="meta"><span class="area">Runtime</span><code class="cp">wiki-host/runtime/install-visual-guides.php</code></div></article>
-    <article class="limit" data-area="runtime" data-pin="0"><span class="no">17</span><h3>Any failed publication stops the container</h3><p>A refused save calls <code>fatalError</code>, and <code>start.sh</code> runs with <code>set -e</code>. The script takes no advisory lock and relies on compare-and-swap, so of two containers starting at once, the one that loses a save race fails to start.</p><div class="meta"><span class="area">Runtime</span><code class="cp">wiki-host/runtime/install-main-guides.php</code></div></article>
-    <article class="limit" data-area="runtime" data-pin="0"><span class="no">18</span><h3>Existing databases are never upgraded</h3><p><code>UseExisting</code> does not run <code>update.php</code>. A MediaWiki version bump that needs schema changes must be applied by hand.</p><div class="meta"><span class="area">Runtime</span><code class="cp">wiki-host/runtime/bootstrap.php</code></div></article>
-    <article class="limit" data-area="runtime" data-pin="0"><span class="no">19</span><h3><code>MW_BOOTSTRAP</code> must never be set on the service</h3><p><code>LocalSettings.php</code> disables Moderation whenever it is <code>1</code>, in any process. Only the runtime's own maintenance processes should see it.</p><div class="meta"><span class="area">Runtime</span><code class="cp">wiki-host/LocalSettings.php</code></div></article>
-    <article class="limit" data-area="runtime" data-pin="0"><span class="no">20</span><h3>The health check counts pages; it does not check packaged content</h3><p><code>health.php</code> requires at least 381 mainspace pages and a ready marker. It says nothing about whether packaged guides were published or preserved.</p><div class="meta"><span class="area">Runtime</span><code class="cp">wiki-host/runtime/health.php</code></div></article>
-    <article class="limit" data-area="repo" data-pin="0"><span class="no">21</span><h3>The prototype directories at the repository root are unmaintained here</h3><p><code>editor/</code>, <code>server/</code>, <code>scripts/</code>, <code>src/</code>, <code>api/</code>, <code>reader/</code>, <code>content/</code>, <code>imported/</code> and <code>docs/</code> belong to an earlier reader prototype. They are not built, tested or deployed, and their docs describe that prototype. The seed build still reads <code>editor/content/</code>.</p><div class="meta"><span class="area">Repository</span><code class="cp">README.md</code></div></article>
+    <article class="limit" data-area="data" data-pin="0"><span class="no">16</span><h3>The wiki's parser makes some spaces non-breaking</h3><p>MediaWiki's French-spacing rule (<code>Sanitizer::armorFrenchSpaces</code>) turns the space before <code>? : ; ! %</code> into U+00A0 when it renders a page, inside <code>&lt;nowiki&gt;</code> too: 43 spaces in 22 guides on 2026-11-16. The saved text and the words are unchanged; text copied from the rendered page differs in those places (<a href="#verbatim">Verbatim guarantee</a>).</p><div class="meta"><span class="area">Data and content</span><code class="cp">wiki-host/docs/receipts/live-verbatim-2026-11-16.json</code></div></article>
+    <article class="limit" data-area="runtime" data-pin="0"><span class="no">17</span><h3><code>install-visual-guides.php</code> validates entries inside its publish loop</h3><p>An entry with a bad file name or namespace stops the script only when the loop reaches it, so pages for earlier entries may already be published.</p><div class="meta"><span class="area">Runtime</span><code class="cp">wiki-host/runtime/install-visual-guides.php</code></div></article>
+    <article class="limit" data-area="runtime" data-pin="0"><span class="no">18</span><h3>Any failed publication stops the container</h3><p>A refused save calls <code>fatalError</code>, and <code>start.sh</code> runs with <code>set -e</code>. The script takes no advisory lock and relies on compare-and-swap, so of two containers starting at once, the one that loses a save race fails to start.</p><div class="meta"><span class="area">Runtime</span><code class="cp">wiki-host/runtime/install-main-guides.php</code></div></article>
+    <article class="limit" data-area="runtime" data-pin="0"><span class="no">19</span><h3>Existing databases are never upgraded</h3><p><code>UseExisting</code> does not run <code>update.php</code>. A MediaWiki version bump that needs schema changes must be applied by hand.</p><div class="meta"><span class="area">Runtime</span><code class="cp">wiki-host/runtime/bootstrap.php</code></div></article>
+    <article class="limit" data-area="runtime" data-pin="0"><span class="no">20</span><h3><code>MW_BOOTSTRAP</code> must never be set on the service</h3><p><code>LocalSettings.php</code> disables Moderation whenever it is <code>1</code>, in any process. Only the runtime's own maintenance processes should see it.</p><div class="meta"><span class="area">Runtime</span><code class="cp">wiki-host/LocalSettings.php</code></div></article>
+    <article class="limit" data-area="runtime" data-pin="0"><span class="no">21</span><h3>The health check counts pages; it does not check packaged content</h3><p><code>health.php</code> requires at least 381 mainspace pages and a ready marker. It says nothing about whether packaged guides were published or preserved.</p><div class="meta"><span class="area">Runtime</span><code class="cp">wiki-host/runtime/health.php</code></div></article>
+    <article class="limit" data-area="repo" data-pin="0"><span class="no">22</span><h3>The prototype directories at the repository root are unmaintained here</h3><p><code>editor/</code>, <code>server/</code>, <code>scripts/</code>, <code>src/</code>, <code>api/</code>, <code>reader/</code>, <code>content/</code>, <code>imported/</code> and <code>docs/</code> belong to an earlier reader prototype. They are not built, tested or deployed, and their docs describe that prototype. The seed build still reads <code>editor/content/</code>.</p><div class="meta"><span class="area">Repository</span><code class="cp">README.md</code></div></article>
   </div>
   <p class="none muted" id="limnone" hidden>No limitation matches. Clear the word filter or pick another area.</p>
 </section>
@@ -1720,7 +1983,7 @@ python3 wiki-host/tools/verify-xml.py</div>
       var ok = (limArea === 'all' || it.dataset.area === limArea) && (!pinOnly || it.dataset.pin === '1') && (!q || it.textContent.toLowerCase().indexOf(q) !== -1);
       it.hidden = !ok; if (ok) n++;
     });
-    document.getElementById('limcount').textContent = n + ' of 21 shown';
+    document.getElementById('limcount').textContent = n + ' of 22 shown';
     document.getElementById('limnone').hidden = n !== 0;
   }
   chipGroup('data-limf', function (v) { limArea = v; limFilter(); });

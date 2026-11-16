@@ -6,6 +6,26 @@ PvME (pvme.io) as editable wiki pages, with attribution. It is served at
 converts the page's latest saved revision into wikitext for RuneScape Wiki
 (runescape.wiki).
 
+## Verbatim guarantee
+
+Every word of a PvME guide on this wiki is the word pvme.io published, in the same order:
+nothing is reworded, summarised, reordered or left out. Everything this project adds sits
+outside the guide text, and every addition is counted.
+
+| Check | Result |
+| --- | --- |
+| captured pvme.io pages consistent with their recorded hashes | 330 of 330 |
+| compiled guides with the capture's exact text, media and links, in order | 329 of 329 |
+| live wiki pages saved byte for byte as packaged, 2026-11-16 | 374 of 374 |
+| rendered guides with the same words, media and links, 2026-11-16 | 329 of 329; 43 spaces made non-breaking by the parser in 22 guides (open finding) |
+| guides whose article the reader script leaves byte for byte unchanged | 329 of 329 |
+| Copy to wiki exports holding every guide passage once, in order | 329 of 329 (70,469 passages) |
+
+Reproduce with `node wiki-host/tools/verify-verbatim.mjs` (no network) and
+`node wiki-host/tools/measure-live-verbatim.mjs` (the live wiki, read-only). The
+[Verbatim guarantee](Verbatim-guarantee) page has every check, every deliberate
+deviation and what is not proven.
+
 The same material is available as a [visual guide](https://pvme-wiki.github.io/pvmewiki/) with a system map,
 decision flows and searchable tables.
 
@@ -64,6 +84,7 @@ flowchart LR
 
 | If you want to | Read |
 | --- | --- |
+| check that guide text is unchanged | [Verbatim guarantee](Verbatim-guarantee) |
 | understand how the parts fit | [Architecture](Architecture) |
 | know what happens when the container starts | [Container startup](Container-startup) |
 | build, deploy, roll back or back up | [Deployment](Deployment) |

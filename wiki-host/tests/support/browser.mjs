@@ -110,6 +110,8 @@ function revisionsResponse(revisions, params) {
  * @property {Window} window
  * @property {Document} document
  * @property {string} initialBodyHtml body markup before the reader ran
+ * @property {string} initialArticleHtml the .mw-parser-output element's markup before
+ *     the reader ran
  * @property {Object[]} apiRequests params of every mw.Api().get call
  * @property {string[]} loadedModules names passed to mw.loader.using
  * @property {{text: string, method: string}[]} clipboardWrites text that reached the clipboard
@@ -139,6 +141,7 @@ export async function openReaderPage(options) {
         window.document.documentElement.classList.add(rootClass);
     }
     const initialBodyHtml = window.document.body.innerHTML;
+    const initialArticleHtml = window.document.querySelector('.mw-parser-output').outerHTML;
     const requireFile = createWindowRequire(window, {
         'navigation.json': registry,
         'wiki-media-resolver.json': catalogue,
@@ -220,6 +223,7 @@ export async function openReaderPage(options) {
         window,
         document: window.document,
         initialBodyHtml,
+        initialArticleHtml,
         apiRequests,
         loadedModules,
         clipboardWrites,

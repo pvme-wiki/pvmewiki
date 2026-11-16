@@ -3,6 +3,32 @@
 The product: a Docker image that runs MediaWiki for PvME's guides, plus the tools that
 produce its content. Documentation is in [docs/](docs/Home.md).
 
+## Verbatim guarantee
+
+Every word of a PvME guide on this wiki is the word pvme.io published, in the same order:
+nothing is reworded, summarised, reordered or left out. Everything this project adds sits
+outside the guide text, and every addition is counted.
+
+| Check | Result |
+| --- | --- |
+| captured pvme.io pages consistent with their recorded hashes | 330 of 330 |
+| compiled guides with the capture's exact text, media and links, in order | 329 of 329 |
+| live wiki pages saved byte for byte as packaged, 2026-11-16 | 374 of 374 |
+| rendered guides with the same words, media and links, 2026-11-16 | 329 of 329; 43 spaces made non-breaking by the parser in 22 guides (open finding) |
+| guides whose article the reader script leaves byte for byte unchanged | 329 of 329 |
+| Copy to wiki exports holding every guide passage once, in order | 329 of 329 (70,469 passages) |
+
+From the repository root:
+
+```sh
+cd wiki-host && npm ci && cd ..
+node wiki-host/tools/verify-verbatim.mjs        # every local check; no network
+node wiki-host/tools/measure-live-verbatim.mjs  # the live wiki, read-only
+```
+
+Every check, every deliberate deviation and what is not proven:
+[Verbatim guarantee](docs/Verbatim-guarantee.md).
+
 ## Directory map
 
 | Path | Holds | In the image |
@@ -36,14 +62,14 @@ produce its content. Documentation is in [docs/](docs/Home.md).
   authored in `tools/build-amascut-pictures.mjs`. Created only when missing.
 
 Guide text is verbatim PvME source material; presentation is additive only (root
-`AGENTS.md`).
+`AGENTS.md`). The checks are in [Verbatim guarantee](docs/Verbatim-guarantee.md).
 
 ## Quick commands
 
 From this directory:
 
 ```sh
-npm ci && npm test          # reader and exporter tests
+npm ci && npm test          # reader, exporter and verbatim tests
 php tests/presentation.php  # one of the PHP tests; see docs/Testing.md for all
 ```
 
@@ -55,6 +81,7 @@ docker build -t pvmewiki:local wiki-host
 
 ## Documentation
 
+- [Verbatim guarantee](docs/Verbatim-guarantee.md)
 - [Home](docs/Home.md) and [Architecture](docs/Architecture.md)
 - [Container startup](docs/Container-startup.md) and [Deployment](docs/Deployment.md)
 - [Reader](docs/Reader.md) and [Export to RuneScape Wiki](docs/Export-to-RuneScape-Wiki.md)
