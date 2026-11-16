@@ -26,6 +26,15 @@ for(const p of selected){
   const nodes=JSON.parse(fs.readFileSync(treePath));
   const title=titleOverrides[p.id]||p.title;
   const converted=renderSourceGuide({nodes,sourceURL:p.sourceURL,sourceTitle:p.sourceH1||p.sourceTitle,additions:additionsFor(p)});
+  for(const link of converted.links){
+   if(!link.href)continue;const url=new URL(link.href);
+   const concrete=(url.hostname==='presets.pvme.io'&&url.searchParams.get('id')&&url.searchParams.get('id')!=='presetID')||(url.hostname==='pvme.io'&&url.pathname.startsWith('/preset-maker-storage/embeds/'));
+   if(!concrete)continue;
+   const ref=previews.pages.find(x=>x.id===p.id)?.references.find(r=>r.link===link.href);
+   if(!ref?.passed)throw new Error('Concrete preset lacks a verified official preview: '+link.href);
+   const original=ref.originalImages?.some(i=>i.passed&&converted.media.some(m=>m.tag==='img'&&m.src===i.src));
+   if(!original&&!additionsFor(p).some(a=>a.afterLink===link.href&&a.src===ref.src))throw new Error('Concrete preset lacks an inline image: '+link.href);
+  }
   const filename='guide--'+p.id+'.wiki';
   fs.writeFileSync(path.join(out,filename),converted.wikitext);
   const parent=title.slice(0,title.lastIndexOf('/'));

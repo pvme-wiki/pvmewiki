@@ -14,11 +14,13 @@ export function renderSourceGuide({nodes,sourceURL,sourceTitle,additions=[]}){
  const absolute=url=>new URL(url,sourceURL).href;
  function rememberURL(url){const resolved=absolute(url);mediaHosts.add(new URL(resolved).hostname);return resolved;}
  function attrsString(attrs){return Object.entries(attrs).filter(([,v])=>v!==undefined&&v!==null).map(([k,v])=>' '+k+'="'+escape(v)+'"').join('');}
- function render(n,inHeading=false){
+ function render(n,inHeading=false,pendingImages=null){
   if(n.text!==undefined)return inHeading?escape(n.text):'<nowiki>'+escape(n.text)+'</nowiki>';
   if(!n.tag)return '';
   const a=n.attrs||{};
-  const children=()=> (n.children||[]).map(c=>render(c,inHeading)).join('');
+  const previewBlock=['p','li','td','th','div'].includes(n.tag);
+  const imagesAfter=previewBlock?[]:pendingImages;
+  const children=()=> (n.children||[]).map(c=>render(c,inHeading,imagesAfter)).join('');
   if(n.tag==='script'||n.tag==='style')throw new Error('Non-guide executable/style node in '+sourceURL);
   if(n.tag==='img'){
    if(!a.src)throw new Error('Source image without src in '+sourceURL);
@@ -47,7 +49,7 @@ export function renderSourceGuide({nodes,sourceURL,sourceTitle,additions=[]}){
    const label=children();
    if(!label.trim())throw new Error('Empty source link needs explicit mapping: '+sourceURL);
    let result='['+absolute(href).replaceAll('[','%5B').replaceAll(']','%5D')+' '+label+']';
-   for(const extra of additions){if(absolute(href)===extra.afterLink&&!emittedAdditions.has(extra.afterLink)){result+='<pvme-image'+attrsString({src:rememberURL(extra.src),alt:extra.alt||'',kind:'addition'})+' />';emittedAdditions.add(extra.afterLink);}}
+   for(const extra of additions){if(absolute(href)===extra.afterLink&&!emittedAdditions.has(extra.afterLink)){const image='<pvme-image'+attrsString({src:rememberURL(extra.src),alt:extra.alt||'',kind:'addition'})+' />';if(pendingImages)pendingImages.push(image);else result+=image;emittedAdditions.add(extra.afterLink);}}
    return result;
   }
   if(n.tag==='pre')return '<pre'+attrsString(a.id?{id:a.id}:{})+'>'+escape(sourceText(n))+'</pre>';
@@ -66,6 +68,7 @@ export function renderSourceGuide({nodes,sourceURL,sourceTitle,additions=[]}){
   if(classes.length)outAttrs.class=classes.join(' ');
   if(a.style){const parts=a.style.split(';').map(s=>s.trim()).filter(s=>/^(?:color|background-color|text-align|vertical-align|white-space)\s*:/i.test(s)&&!/(?:url|expression|var)\s*\(/i.test(s));if(parts.length)outAttrs.style=parts.join(';');}
   let content=children();
+  if(previewBlock)content+=imagesAfter.join('');
   return '<'+n.tag+attrsString(outAttrs)+'>'+content+(voidTags.has(n.tag)?'':'</'+n.tag+'>');
  }
  // The source H1 remains the native wiki page heading, including its icons/links.
@@ -87,6 +90,7 @@ export function renderSourceGuide({nodes,sourceURL,sourceTitle,additions=[]}){
   body+=render(n)+'\n';
  }
  if(mechanic)body+='\n</div>';if(section)body+='\n</div>';body+='\n</div>\n';
+ if(emittedAdditions.size!==new Set(additions.map(a=>a.afterLink)).size)throw new Error('An inline preview has no matching source link: '+sourceURL);
  body+='\n<div class="pvme-source-attribution">['+sourceURL+' PvME source] · PvME contributors · [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]. AI-assisted formatting; source wording retained.\n</div>';
  body=body.trimEnd();
  const headingText=heading?sourceText(heading):sourceTitle||'';

@@ -36,6 +36,12 @@ The complete release is live on deployment `dep-dbt58ami0phs73enrd6g`, code comm
 
 ## Published result
 
+### Inline preset coverage
+
+The full corpus now inventories every concrete source preset reference in `../preset-previews/manifest.json`. `../preset-previews/coverage.json` covers all 325 current guides: 522 real preset references, zero missing inline previews, and all 323 original gear-section images available. 322 references retain working original inline images; 200 use additional official PvME previews across 99 guides, including Amascut's existing extra preview. The incremental release adds 199 previews on 98 other guides. Every original word and all original media remain in order. Added previews sit below the complete original source line so its style icon and notes remain attached to the label. No generated artwork is used.
+
+The compiler requires verified coverage for concrete preset links and the renderer refuses unmatched additions. Full source text/media parser parity, additional preview URL/alt/order, copy export and saved production revision hashes are audited separately. The literal `presetID` authoring example and generic editor/directory links remain unchanged.
+
 Published [main guide revision 389](https://pvmewiki.sanji3.dev/index.php?title=PvME/Amascut/Overview&oldid=389) and [summary-route redirect revision 390](https://pvmewiki.sanji3.dev/index.php?title=PvME/Amascut/Picture_guide&oldid=390). The final deployment `dep-dbt4n4ff3r2c73bu1jl0`, commit `640679b420baaf13b1b792013210e687f2293adf`, is live and recognised both existing published revisions without writing them again.
 
 `production-audit.json` and `production-audit-result.json` retain the live DOM comparison: exact ordered source text matches hash `4bd6fec673a9e1ef525aeaf57f697ba09b0c0954818f67b7a07a36f08210fccf`; all 194 original image URLs/alt/title values, six video URLs and five active link URLs/labels match in order. Whitespace layout alone is normalised. The source H1 is retained as the native page heading. The additional Necromancy preview is recorded separately.

@@ -3,7 +3,14 @@ import path from 'node:path';
 import {fileURLToPath,pathToFileURL} from 'node:url';
 import {sha256,sourceText} from './source-wikitext.mjs';
 const host=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const plan=JSON.parse(fs.readFileSync(path.join(host,'main-guides/corpus-plan.json')));
+const capture=JSON.parse(fs.readFileSync(path.join(host,'current-source/manifest.json')));
+const currentPages=capture.pages.filter(p=>p.kind!=='site-home').map(p=>{
+ const directory=path.join(host,'current-source',p.directory);const repaired=path.join(directory,'render-source.json');
+ const nodes=JSON.parse(fs.readFileSync(fs.existsSync(repaired)?repaired:path.join(directory,'source.json')));const links=[],media=[];
+ function walk(n){if(n.tag==='a'&&n.attrs?.href)links.push({href:new URL(n.attrs.href,p.sourceURL).href,text:sourceText(n)});if(n.tag==='img')media.push({tag:'img',src:new URL(n.attrs.src,p.sourceURL).href});for(const c of n.children||[])walk(c);}
+ nodes.forEach(walk);return {id:p.id,title:p.title,source:p.sourceURL,links,media};
+});
+const plan={pages:currentPages,counts:{guides:currentPages.filter(p=>new URL(p.source).pathname.startsWith('/pvme-guides/')).length}};
 const out=path.join(host,'preset-previews');fs.mkdirSync(out,{recursive:true});
 const {parse}=await import(pathToFileURL(path.join(host,'current-source/.dependencies/node_modules/parse5/dist/index.js')).href);
 const find=(n,p,r=[])=>{if(p(n))r.push(n);for(const c of n.childNodes||[])find(c,p,r);return r;};

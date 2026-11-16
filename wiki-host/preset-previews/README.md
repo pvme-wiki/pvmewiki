@@ -1,0 +1,13 @@
+# Inline source gear and preset previews
+
+All original guide words, order, links and images remain unchanged. Concrete source-linked presets must have a working inline image. Existing source images are retained; a missing preview is added below the complete original line containing its unchanged source link using the image published by the official PvME embed page. The original label, style icons and any following notes remain together. No artwork or preset reconstruction is generated.
+
+`capture-preset-previews.mjs` inventories the full corpus, resolves official embed metadata, saves the original embed HTML and its hash, and checks image HTTP status and MIME type. `source-image-checks.json` records availability of existing ID-matched source preset images. `manifest.json` ties each added image to its original link, guide, official embed and retrieval evidence. Matching existing inline images are preserved without duplicate additions.
+
+The current inventory covers 522 concrete preset references from 477 distinct embed pages. 322 references already have working original inline images. Another 200 source-backed previews are represented as additive images across 99 guides, including the previously published Amascut Necromancy preview. This release therefore adds 199 previews to 98 other guides. The literal `presetID` example in contributor documentation is preserved unchanged. Generic editor homepages and preset-directory links are navigation, not individual presets.
+
+`audit-gear-coverage.mjs` records all 325 current guides in `coverage.json`, checks each concrete preset has an existing image or an addition, and checks availability of the 323 original non-icon images under source gear/preset/equipment/inventory/familiar/relic headings. All 323 respond as images. Source text and all 34,220 original images, 93 videos and 136 embeds are separately compared through MediaWiki by `audit-main-corpus.mjs`. Its added-preview check verifies every new URL and alt value in rendered order.
+
+The compiler refuses concrete preset links without recorded verified coverage, and the renderer refuses additions without a matching unchanged source link. Images are native editable `pvme-image` tags and participate in Copy to wiki export. Runtime publication uses saved-revision hash guards to preserve community edits.
+
+To refresh after capturing changed source: run `node wiki-host/tools/capture-preset-previews.mjs` directly against the current captures, rebuild using `node wiki-host/tools/build-main-corpus.mjs`, then run `node wiki-host/tools/audit-gear-coverage.mjs` and the parser parity audit. These are publication-content audits; no test suite is added or run.

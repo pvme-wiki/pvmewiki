@@ -4,7 +4,7 @@ import {fileURLToPath} from 'node:url';
 import {sha256} from './source-wikitext.mjs';
 
 const directory=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../main-guides');
-const plan=JSON.parse(fs.readFileSync(path.join(directory,'corpus-plan.json')));
+const plan=JSON.parse(fs.readFileSync(process.env.PVME_AUDIT_PLAN||path.join(directory,'corpus-plan.json')));
 const results=[];
 for(let i=0;i<plan.pages.length;i+=20){
  const chunk=plan.pages.slice(i,i+20);
