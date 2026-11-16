@@ -1,0 +1,34 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+const dir=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../copy-button-ports');
+const original=JSON.parse(fs.readFileSync(path.join(dir,'namespace-hub-original.json'))).query.pages[0];
+const progress=JSON.parse(fs.readFileSync(path.join(dir,'remaining-saved-revisions.json')));
+if(progress.length!==9||progress.some(p=>!p.sourceTextMatches||p.sourceTextSha256!==p.expectedSourceTextSha256))throw Error('Nine complete saved guide proofs required');
+const pilot=JSON.parse(fs.readFileSync(path.join(dir,'vorago-saved-proof.json')));
+const api=async args=>{
+ const response=await fetch('https://runescape.wiki/api.php?'+new URLSearchParams({action:'query',format:'json',formatversion:'2',...args}));
+ if(!response.ok)throw Error('Wiki API HTTP '+response.status);
+ const data=await response.json();if(data.error)throw Error(data.error.info);return data;
+};
+const listing=await api({list:'allpages',apnamespace:'2',apprefix:'Mo rs/PvME',aplimit:'500'});
+if(listing.continue)throw Error('Namespace inventory requires pagination');
+const pages=listing.query.allpages;
+const guides=pages.filter(p=>p.title.startsWith('User:Mo rs/PvME/')&&!pages.some(child=>child.title.startsWith(p.title+'/')));
+const data=await api({prop:'revisions',rvprop:'ids|timestamp|user|comment',titles:guides.map(p=>p.title).join('|')});
+const latest=await api({prop:'revisions',rvprop:'ids',titles:'User:Mo rs/PvME'});
+if(latest.query.pages[0].revisions[0].revid!==original.revisions[0].revid)throw Error('Hub changed since capture; review the new revision before replacing it');
+const records=data.query.pages.map(p=>{
+ const revision=p.revisions[0];
+ const proof=progress.find(r=>r.target===p.title)||(p.title==='User:Mo rs/PvME/Vorago/Vorago — Overview'?pilot:null);
+ const url='https://runescape.wiki/w/'+encodeURI(p.title.replace(/ /g,'_'))+'?oldid='+revision.revid;
+ if(proof&&Number(new URL(proof.permalink).searchParams.get('oldid'))!==revision.revid)throw Error('Guide revision changed since proof: '+p.title);
+ const status=proof?'Verbatim source; gear, presets and icons inline':p.title.includes('/Barrows brothers/')?'Earlier port; preset checks pending':'Earlier port';
+ return {title:p.title,label:p.title.replace('User:Mo rs/PvME/','').replaceAll('/',' / '),revision:revision.revid,timestamp:revision.timestamp,permalink:url,status,verifiedThisPass:!!proof};
+}).sort((a,b)=>a.label.localeCompare(b.label));
+if(records.length!==15||records.filter(r=>r.verifiedThisPass).length!==10)throw Error('Unexpected guide inventory; review before writing the hub');
+const tableClass=original.revisions[0].slots.main.content.match(/\{\| class="([^"]+)"/)[1];
+const text='{| class="'+tableClass+'"\n|+ Ported PvME guides ('+records.length+')\n! Guide !! Saved revision !! Status\n'+records.map(r=>'|-\n| [['+r.title+'|'+r.label+']] || ['+r.permalink+' '+r.revision+'] || '+r.status).join('\n')+'\n|}\n';
+fs.writeFileSync(path.join(dir,'namespace-hub-replacement.wiki'),text);
+fs.writeFileSync(path.join(dir,'namespace-hub-inventory.json'),JSON.stringify({captured:new Date().toISOString(),baseRevision:original.revisions[0].revid,guideCount:records.length,verifiedThisPass:10,pages:records},null,2)+'\n');
+console.log(JSON.stringify({guides:records.length,verifiedThisPass:10,tableClass,characters:text.length}));
