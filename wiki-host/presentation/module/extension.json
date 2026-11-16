@@ -12,9 +12,17 @@
   "AutoloadNamespaces": {
     "MediaWiki\\Extension\\PvmePresentation\\": "includes/"
   },
+  "HookHandlers": {
+    "sourceMediaTags": {
+      "factory": "MediaWiki\\Extension\\PvmePresentation\\SourceMediaTags::newFromModuleFiles"
+    },
+    "guidePageDisplay": {
+      "factory": "MediaWiki\\Extension\\PvmePresentation\\GuidePageDisplay::newFromModuleFiles"
+    }
+  },
   "Hooks": {
-    "ParserFirstCallInit": "MediaWiki\\Extension\\PvmePresentation\\Hooks::onParserFirstCallInit",
-    "BeforePageDisplay": "MediaWiki\\Extension\\PvmePresentation\\Hooks::onBeforePageDisplay"
+    "ParserFirstCallInit": "sourceMediaTags",
+    "BeforePageDisplay": "guidePageDisplay"
   },
   "ResourceFileModulePaths": {
     "localBasePath": "",
