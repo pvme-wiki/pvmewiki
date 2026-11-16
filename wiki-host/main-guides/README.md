@@ -14,7 +14,25 @@ The article retains all 194 original images, six original videos, both preset li
 
 Text sizes inherit Vector's article size. Neither this guide nor picture templates lock instruction text to root-relative sizes. The actual Small/Standard/Large controls must be checked on the live page after deployment.
 
-The wider corpus rollout is paused pending completion of this Amascut main-guide pass. Inventory work is saved, but no bulk editorial rewrites or broad guide publication is authorised by this release.
+The Amascut main-guide pass was completed before the user approved extending this presentation to all current guides in the coordinated frontend chat. Guide words remain immutable throughout the wider rollout.
+
+## Current-source corpus release
+
+`tools/build-main-corpus.mjs` now uses `current-source/manifest.json` and `tools/source-wikitext.mjs` to compile all 325 current official guide URLs and four About articles. The official homepage is captured privately; the native wiki hub remains the directory. Three additional upstream-only candidates return HTTP 404 and are recorded in the discovery inventory rather than represented as current website guides.
+
+The complete original source H1, including its images and links, is stored in editable wikitext. The frontend displays its children in the native wiki heading and hides the redundant body H1 only in read view. Source content remains complete for editing and export.
+
+`parser-audit/summary.json` records 329 of 329 successful comparisons through the production MediaWiki parser: exact ordered decoded text after whitespace normalization, original image URLs/alt/title/order, video URLs/flags/order, embed URLs/order, and active link URLs/labels/order. No words or punctuation are normalized away. The renderer retains 34,220 original images, 93 videos and 136 YouTube embeds across these articles. Two documented malformed-placeholder repairs restore literal authored characters and swallowed source elements; raw captures remain unchanged.
+
+`tools/audit-published-main-corpus.mjs` records actual saved revision IDs, permanent links and content hashes in `published-revisions.json`. Published content must match the parser-audited compiled content exactly. Baseline and concurrent-revision checks preserve community changes instead of overwriting them.
+
+The prominent Copy to wiki control exports the current saved revision. Images, videos and embeds become linked media references in their original positions; RuneScape Wiki File titles are not invented. Freshness badges use the live `pvme.sanji3.dev/data/guide-history.json` feed and describe meaningful source changes, never import dates or game-accuracy verification. Unknown dates remain unverified.
+
+`amascut-live-revision.json` verifies revision 391 against the current compiled article, including the source H1. The original source article retains all 194 images, six videos, five active links and every source word; the extra Necromancy preset preview is separate. Browser verification confirmed current-revision copy and functional 14px/20px text controls.
+
+The complete release is live on deployment `dep-dbt58ami0phs73enrd6g`, code commit `1986b1268e4a6d52cc613280767b39bb883995bf`, finished 16 November 2026 at 00:57:40 UTC (15 November in New York). `published-revisions.json`, captured at 00:58:13 UTC, confirms all 329 saved pages match their audited compiled hashes: 325 guide routes, four About articles, zero missing pages and zero mismatches. The first batch saved 80 articles; the final batch saved the remaining 249. Every saved revision has a permanent link in the report.
+
+`export-audit.json` records the separate full-corpus converter audit: 329 successful exports, all 70,427 original literal text nodes found in order, and all 34,449 inventoried media URLs present. The browser confirmed live revision 652 copy on the complex Vorago article, retaining its YouTube URL and five source videos. Amascut phone proof is saved in `proof/amascut-phone-current.jpg`; its 390×844 viewport has no horizontal overflow and a 44px-high copy button. `proof/amascut-gear-current.jpg` shows both loading preset images. Temporary viewport overrides and the initial Small text preference were restored.
 
 ## Published result
 

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "completed-publication-content-audit",
+  "inputs": "wiki-host/main-guides/corpus-plan.json and its 329 compiled wikitext files",
+  "converter": "wiki-host/presentation/module/modules/wiki-export.js:convertRevision",
+  "provenance": "Recorded from the completed read-only full-corpus conversion audit in the frontend chat. The audit was not rerun to create this artifact.",
+  "pages": 329,
+  "converted": 329,
+  "conversionFailures": [],
+  "compiledFileSha256Mismatches": [],
+  "sourceLiteralTextNodes": 70427,
+  "missingLiteralTextNodes": 0,
+  "literalTextComparison": "Each nonempty original <nowiki> node was found byte-for-byte in the converted output, in source order, independently for every page.",
+  "sourceMediaEntries": 34449,
+  "missingMediaURLs": 0,
+  "mediaComparison": "Every corpus-plan media entry's src URL was present in the converted page. This export check measures URL coverage; the separate parser audit measures rendered media order and attributes.",
+  "limitations": [
+    "Images, videos and embeds are portable external references; no RuneScape Wiki File titles or imports are invented.",
+    "This artifact records compiled-source export coverage, not a live publication or current-game accuracy review.",
+    "No synthetic test cases or test suite were written or run."
+  ],
+  "passed": true
+}
