@@ -1,9 +1,9 @@
 {
   "name": "PvmePresentation",
-  "version": "0.5.0",
+  "version": "1.0.0",
   "author": "PvME Wiki contributors",
-  "url": "https://github.com/pvme-wiki/pvme",
-  "description": "Scoped presentation styles for the standalone PvME guide corpus.",
+  "url": "https://github.com/pvme-wiki/pvmewiki",
+  "description": "Guide navigation, source attribution and RuneScape Wiki export for the PvME guide pages.",
   "license-name": "GPL-2.0-or-later",
   "type": "other",
   "requires": {
@@ -21,24 +21,37 @@
     "remoteExtPath": "PvmePresentation"
   },
   "ResourceModules": {
-    "ext.pvmePresentation.reader.v5": {
+    "ext.pvmePresentation.reader": {
       "packageFiles": [
-        "modules/reader.js",
-        "modules/navigation.json",
-        "modules/wiki-export.js",
-        "modules/wiki-media-resolver.json",
-        "modules/visual-reader.js",
-        "modules/presets.json",
-        "modules/action-bars.json",
-        "modules/amascut-visuals.js",
-        "modules/amascut-assets.json"
+        "modules/reader/index.js",
+        "modules/reader/dom.js",
+        "modules/reader/page.js",
+        "modules/reader/native-title.js",
+        "modules/reader/toolbar.js",
+        "modules/reader/source-freshness.js",
+        "modules/reader/source-footer.js",
+        "modules/reader/copy-to-wiki.js",
+        "modules/reader/index-page-styling.js",
+        "modules/navigation.json"
       ],
       "dependencies": [
         "mediawiki.util",
         "mediawiki.api"
       ]
     },
-    "ext.pvmePresentation.styles.v5": {
+    "ext.pvmePresentation.wikiExport": {
+      "packageFiles": [
+        "modules/export/index.js",
+        "modules/export/export-revision.js",
+        "modules/export/published-markup.js",
+        "modules/export/media-routes.js",
+        "modules/export/media-markup.js",
+        "modules/export/render-guide.js",
+        "modules/export/wikitext.js",
+        "modules/wiki-media-resolver.json"
+      ]
+    },
+    "ext.pvmePresentation.styles": {
       "styles": [
         "modules/presentation.css",
         "modules/amascut-pictures.css",
