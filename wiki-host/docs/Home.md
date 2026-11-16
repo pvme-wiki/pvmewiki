@@ -6,6 +6,9 @@ PvME (pvme.io) as editable wiki pages, with attribution. It is served at
 converts the page's latest saved revision into wikitext for RuneScape Wiki
 (runescape.wiki).
 
+The same material is available as a [visual guide](https://pvme-wiki.github.io/pvmewiki/) with a system map,
+decision flows and searchable tables.
+
 Everything described here lives in `wiki-host/`. The rest of the repository is an
 earlier reader prototype and is not part of this system.
 

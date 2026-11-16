@@ -19,9 +19,9 @@ cannot be sure the output carries the whole guide, it refuses.
 
 | Stage | File | What it does |
 | --- | --- | --- |
+| Check the catalogue | `media-routes.js` | `createMediaRouter(catalogue)` runs first and refuses a catalogue whose `targetWiki` is not RuneScape Wiki. |
 | Parse | `published-markup.js` | `parsePublishedMarkup(wikitext)` turns the revision into an element tree. Every `<nowiki>` and `<pre>` span is swapped for a placeholder first, so guide text can never be read as a tag or a template. |
-| Route media | `media-routes.js` | `createMediaRouter(catalogue).routeFor(kind, url)` returns a `MediaRoute` for each image, video and embed. |
-| Render | `render-guide.js`, `media-markup.js` | `renderGuide(root, router)` writes each element with inline styles, because RuneScape Wiki does not have this wiki's stylesheet. Text nodes are emitted untouched. |
+| Render | `render-guide.js`, `media-markup.js`, `media-routes.js` | `renderGuide(root, router)` writes each element with inline styles, because RuneScape Wiki does not have this wiki's stylesheet. Text nodes are emitted untouched. For each image, video and embed it asks `router.routeFor(kind, url)` for a `MediaRoute` and writes the markup for that route. |
 | Assemble | `export-revision.js` | Adds a title block and contents box when the revision has no level-1 heading, a warning box when media is unresolved, and a `== Source ==` section linking the exact revision permalink, its timestamp, the licence and the original PvME guide. |
 
 `exportRevision` returns `{wikitext, media, unresolvedMedia, layout}`. `media` lists
@@ -77,7 +77,8 @@ shape is in [Architecture](Architecture#key-contracts).
 
 1. A **verified** entry naming a wiki file gives `{mode: 'file'}`, written as
    `[[File:...|...|link=<original URL>]]`.
-2. An image on an approved host gives `{mode: 'external-image'}`. Approved hosts are the
+2. An image gives `{mode: 'external-image'}` when it has a verified entry in that mode,
+   whatever its host, or when it is on an approved host. Approved hosts are the
    catalogue's `externalImagePolicies` plus one built-in policy: PNG files under
    `https://img.pvme.io/images/`. A catalogue entry may name a mirror URL instead; then
    the mirror's host must be approved, and `originalSha256` must equal `hostedSha256`.

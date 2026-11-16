@@ -1,0 +1,1800 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>
+/* Base reset this page was written against. */
+:root { color-scheme: light; padding-block: env(safe-area-inset-top, 0px) env(safe-area-inset-bottom, 0px); }
+body { margin: 0; font: 14px system-ui, sans-serif; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+</style>
+<title>PvME Wiki Docs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+/* Layout: operator console. Sticky header with search, left rail of views (a strip on phones),
+   one view at a time; every view leads with a sentence and a picture, detail below or folded. */
+:root {
+  --bg: #f2f4f6; --surface: #ffffff; --sunk: #e7ebef; --zone: #eaeef2;
+  --ink: #131a23; --ink-2: #495664; --ink-3: #6a7685;
+  --line: #d2d9e0; --line-2: #a7b2bd;
+  --accent: #0a6570; --accent-bg: #d9eeee; --accent-ink: #064a52;
+  --p-dev: #6a46a8; --p-build: #6b6a00; --p-start: #a35300; --p-req: #1d5fb0; --p-browser: #3a7a1c;
+  --ok: #17734c; --ok-bg: #dcf1e6; --stop: #b0261e; --stop-bg: #fae3e1; --warn: #8a5a00; --warn-bg: #f7ecd5;
+  --hatch: #b9c3cd;
+  --f-display: "IBM Plex Sans Condensed", "Arial Narrow", system-ui, sans-serif;
+  --f-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --hh: 58px;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0f141a; --surface: #161d25; --sunk: #0b0f14; --zone: #131a21;
+  --ink: #e3e8ee; --ink-2: #a2afbc; --ink-3: #7f8c99;
+  --line: #29333e; --line-2: #45525f;
+  --accent: #5cc2cb; --accent-bg: #123a3f; --accent-ink: #9fe2e8;
+  --p-dev: #b79ef2; --p-build: #c8c05a; --p-start: #f0a34c; --p-req: #80b2f2; --p-browser: #9ccf74;
+  --ok: #5fd29c; --ok-bg: #12332a; --stop: #ff8f86; --stop-bg: #3a1a19; --warn: #e8bf6a; --warn-bg: #33280f;
+  --hatch: #34404c;
+  color-scheme: dark;
+} }
+:root[data-theme="dark"] {
+  --bg: #0f141a; --surface: #161d25; --sunk: #0b0f14; --zone: #131a21;
+  --ink: #e3e8ee; --ink-2: #a2afbc; --ink-3: #7f8c99;
+  --line: #29333e; --line-2: #45525f;
+  --accent: #5cc2cb; --accent-bg: #123a3f; --accent-ink: #9fe2e8;
+  --p-dev: #b79ef2; --p-build: #c8c05a; --p-start: #f0a34c; --p-req: #80b2f2; --p-browser: #9ccf74;
+  --ok: #5fd29c; --ok-bg: #12332a; --stop: #ff8f86; --stop-bg: #3a1a19; --warn: #e8bf6a; --warn-bg: #33280f;
+  --hatch: #34404c;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink);
+  font: 15px/1.55 var(--f-body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 48px;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--bg); }
+a { color: var(--accent); text-underline-offset: 2px; }
+a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px;
+}
+h1, h2, h3 { font-family: var(--f-display); text-wrap: balance; margin: 0; line-height: 1.2; }
+h1 { font-size: 30px; font-weight: 700; letter-spacing: -0.01em; }
+h2 { font-size: 21px; font-weight: 600; margin-top: 8px; }
+h3 { font-size: 16.5px; font-weight: 600; }
+p { margin: 0; }
+code, .mono { font-family: var(--f-mono); font-size: 0.86em; }
+code { background: var(--sunk); padding: 1px 5px; border-radius: 3px; overflow-wrap: anywhere; }
+pre { margin: 0; }
+.muted { color: var(--ink-2); }
+.small { font-size: 13px; }
+
+/* header */
+.top {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20;
+  background: var(--bg); border-bottom: 1px solid var(--line);
+  display: flex; align-items: center; gap: 16px; min-height: var(--hh);
+  max-width: 1280px; margin: 0 auto;
+}
+.brand { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; min-width: 0; }
+.brand b { font-family: var(--f-display); font-size: 19px; font-weight: 700; letter-spacing: 0.01em; }
+.brand span { font-family: var(--f-mono); font-size: 12.5px; color: var(--ink-2); }
+.search { position: relative; margin-left: auto; width: min(420px, 100%); }
+.search input {
+  width: 100%; font: 14px var(--f-body); color: var(--ink); background: var(--surface);
+  border: 1px solid var(--line-2); border-radius: 6px; padding: 8px 34px 8px 10px;
+}
+.search kbd { position: absolute; right: 8px; top: 7px; font: 12px var(--f-mono); color: var(--ink-3); border: 1px solid var(--line); border-radius: 4px; padding: 0 5px; background: var(--sunk); }
+.results {
+  position: absolute; right: 0; top: calc(100% + 6px); width: min(560px, calc(100vw - 32px));
+  max-height: 65vh; overflow: auto; background: var(--surface); border: 1px solid var(--line-2);
+  border-radius: 8px; box-shadow: 0 10px 30px rgb(0 0 0 / 0.18); padding: 6px;
+}
+.results button {
+  display: block; width: 100%; text-align: left; background: none; border: 0; color: var(--ink);
+  padding: 8px 10px; border-radius: 5px; cursor: pointer; font: 13.5px/1.4 var(--f-body);
+}
+.results button:hover, .results button.on { background: var(--accent-bg); }
+.results .rv { font: 600 11px var(--f-mono); text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); display: block; }
+.results mark { background: var(--warn-bg); color: inherit; padding: 0 1px; }
+.results .none { padding: 10px; color: var(--ink-2); font-size: 13.5px; }
+
+/* frame */
+.frame { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 212px minmax(0, 1fr); gap: 36px; padding-top: 24px; }
+.rail { position: sticky; top: calc(env(safe-area-inset-top, 0px) + var(--hh) + 20px); align-self: start; max-height: calc(100vh - var(--hh) - 40px); overflow: auto; }
+.rail .grp { font: 600 11px var(--f-mono); text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-3); margin: 16px 0 4px 10px; }
+.rail .grp:first-child { margin-top: 0; }
+.rail a {
+  display: flex; align-items: center; gap: 8px; text-decoration: none; color: var(--ink-2);
+  padding: 6px 10px; border-radius: 5px; font-size: 14.5px; border-left: 3px solid transparent;
+}
+.rail a:hover { background: var(--sunk); color: var(--ink); }
+.rail a[aria-current="page"] { color: var(--ink); background: var(--surface); border-left-color: var(--accent); font-weight: 600; }
+main { min-width: 0; }
+.view { display: grid; gap: 28px; min-width: 0; }
+.lede { font-size: 17px; line-height: 1.5; max-width: 68ch; color: var(--ink); }
+.head { display: grid; gap: 10px; }
+.head .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+section.block { display: grid; gap: 12px; min-width: 0; }
+section.block > p, .prose { max-width: 70ch; }
+.sub { font-size: 14px; color: var(--ink-2); max-width: 72ch; }
+
+/* vocabulary chips */
+.ph { display: inline-flex; align-items: center; gap: 5px; font: 600 10.5px/1 var(--f-mono); text-transform: uppercase; letter-spacing: 0.07em; padding: 4px 6px 3px; border-radius: 3px; border: 1px solid currentColor; white-space: nowrap; vertical-align: 1px; }
+.ph::before { content: ""; width: 7px; height: 7px; border-radius: 1px; background: currentColor; }
+.ph.dev { color: var(--p-dev); } .ph.build { color: var(--p-build); } .ph.start { color: var(--p-start); }
+.ph.req { color: var(--p-req); } .ph.browser { color: var(--p-browser); }
+.ship { display: inline-flex; align-items: center; gap: 5px; font: 500 11px/1 var(--f-mono); padding: 3px 6px; border-radius: 3px; white-space: nowrap; vertical-align: 1px; }
+.ship.in { background: var(--ink); color: var(--bg); }
+.ship.out { border: 1px dashed var(--line-2); color: var(--ink-2); }
+.tag { display: inline-flex; align-items: center; gap: 4px; font: 500 11px/1 var(--f-mono); padding: 3px 6px; border-radius: 3px; background: var(--sunk); color: var(--ink-2); white-space: nowrap; vertical-align: 1px; }
+.tag.net { background: var(--warn-bg); color: var(--warn); }
+.tag.db { background: var(--accent-bg); color: var(--accent-ink); }
+.st { display: inline-flex; align-items: center; gap: 5px; font: 600 11.5px/1 var(--f-body); padding: 4px 8px; border-radius: 20px; white-space: nowrap; }
+.st.ok { background: var(--ok-bg); color: var(--ok); } .st.ok::before { content: "\2713"; }
+.st.stop { background: var(--stop-bg); color: var(--stop); } .st.stop::before { content: "\25A0"; font-size: 9px; }
+.vb { display: inline-block; width: 22px; height: 12px; border: 1px solid var(--line-2); vertical-align: -1px; background: repeating-linear-gradient(135deg, var(--hatch) 0 2px, transparent 2px 5px); }
+.ad { display: inline-block; width: 22px; height: 12px; border: 1.5px dashed var(--accent); background: var(--accent-bg); vertical-align: -1px; }
+
+/* copyable paths */
+code.cp { cursor: copy; border: 1px solid transparent; }
+code.cp:hover { border-color: var(--line-2); }
+code.cp::after { content: ""; display: inline-block; width: 9px; height: 10px; margin-left: 5px; vertical-align: -1px; border: 1.3px solid var(--ink-3); border-radius: 2px; box-shadow: 2px -2px 0 -1px var(--sunk), 2px -2px 0 0 var(--ink-3); opacity: 0.65; }
+.toast { position: fixed; z-index: 40; right: max(16px, env(safe-area-inset-right, 0px)); bottom: max(16px, env(safe-area-inset-bottom, 0px)); background: var(--ink); color: var(--bg); font: 13px var(--f-body); padding: 8px 12px; border-radius: 6px; max-width: calc(100vw - 32px); overflow-wrap: anywhere; }
+
+/* tables */
+.tw { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; vertical-align: top; padding: 9px 12px; border-bottom: 1px solid var(--line); }
+tbody tr:last-child td { border-bottom: 0; }
+th { font: 600 11px var(--f-mono); text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-3); background: var(--zone); white-space: nowrap; }
+td.nm { white-space: nowrap; }
+.msg { font-family: var(--f-mono); font-size: 12.5px; background: var(--sunk); padding: 2px 6px; border-radius: 3px; overflow-wrap: anywhere; display: inline; line-height: 1.7; }
+.msg.err { background: var(--stop-bg); color: var(--stop); }
+.msg.okm { background: var(--ok-bg); color: var(--ok); }
+tr.flash td, .flash { animation: flash 1.6s ease-out 1; }
+@keyframes flash { 0%, 40% { background: var(--warn-bg); } 100% { background: transparent; } }
+@media (prefers-reduced-motion: reduce) { tr.flash td, .flash { animation: none; outline: 2px solid var(--warn); } }
+
+/* figures */
+figure { margin: 0; display: grid; gap: 8px; min-width: 0; }
+figcaption { font-size: 13.5px; color: var(--ink-2); max-width: 78ch; }
+.scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+.scroll svg { display: block; width: 100%; height: auto; }
+.scroll.wide svg { min-width: 980px; }
+.scrollhint { display: none; font: 12px var(--f-mono); color: var(--ink-3); }
+svg { color: var(--ink-2); font-family: var(--f-body); }
+svg text { fill: var(--ink); font-size: 13px; }
+svg .ts { fill: var(--ink-2); font-size: 11.5px; }
+svg .tm { font-family: var(--f-mono); font-size: 11.5px; fill: var(--ink); }
+svg .tb { font-weight: 600; font-size: 13.5px; }
+svg .zl { font: 600 11px var(--f-mono); letter-spacing: 0.07em; fill: var(--ink-2); }
+svg .zone { fill: var(--zone); stroke: var(--line); }
+svg .n { fill: var(--surface); stroke: var(--line-2); stroke-width: 1.2; }
+svg .n2 { fill: var(--sunk); stroke: var(--line); }
+svg .ext { fill: var(--surface); stroke: var(--line-2); stroke-dasharray: 4 3; }
+svg .img { fill: none; stroke: var(--p-build); stroke-width: 1.5; }
+svg .e { fill: none; stroke: var(--ink-2); stroke-width: 1.4; }
+svg .e.dash { stroke-dasharray: 5 4; }
+svg .e.acc { stroke: var(--accent); stroke-width: 2; }
+svg .el { fill: var(--ink-2); font-size: 11.5px; paint-order: stroke; stroke: var(--zone); stroke-width: 4px; stroke-linejoin: round; }
+svg .el.onsurf { stroke: var(--surface); }
+svg .el.acc { fill: var(--accent); font-weight: 600; }
+svg .added { fill: var(--accent-bg); stroke: var(--accent); stroke-dasharray: 4 3; stroke-width: 1.3; }
+svg .vrb { fill: url(#hatch); stroke: var(--line-2); }
+svg .hl { stroke: var(--hatch); stroke-width: 2; }
+svg .hatchbg { fill: var(--sunk); }
+svg .db { fill: var(--surface); stroke: var(--accent); stroke-width: 1.5; }
+svg .stripe-dev { fill: var(--p-dev); } svg .stripe-build { fill: var(--p-build); } svg .stripe-start { fill: var(--p-start); }
+svg .stripe-req { fill: var(--p-req); } svg .stripe-browser { fill: var(--p-browser); }
+svg .mk { fill: var(--ink-2); } svg .mk.acc { fill: var(--accent); }
+svg a.hit { cursor: pointer; }
+svg a.hit:hover .n, svg a.hit:focus-visible .n, svg a.hit:hover .db, svg a.hit:focus-visible .db { stroke: var(--accent); stroke-width: 2.4; }
+svg a.hit:focus { outline: none; }
+svg .life { stroke: var(--line-2); stroke-dasharray: 3 4; }
+svg .bar { fill: var(--accent-bg); stroke: var(--accent); }
+svg .frm { fill: none; stroke: var(--line-2); }
+svg .frmt { fill: var(--zone); stroke: var(--line-2); }
+svg .stopt { fill: var(--stop); font-weight: 600; }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 13px; color: var(--ink-2); align-items: center; }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+
+/* map page */
+.twocol { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 28px; }
+.tasks { display: grid; gap: 2px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); padding: 6px; }
+.task { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; align-items: baseline; text-decoration: none; color: var(--ink); padding: 8px 10px; border-radius: 5px; }
+.task:hover { background: var(--accent-bg); }
+.task .to { font: 12px var(--f-mono); color: var(--accent); white-space: nowrap; }
+.rules { display: grid; gap: 10px; }
+.rule { border-left: 3px solid var(--line-2); padding: 2px 0 2px 12px; }
+.rule b { display: block; font-family: var(--f-display); font-size: 15.5px; }
+.rule p { font-size: 14px; color: var(--ink-2); }
+.zones { display: none; gap: 10px; }
+.zcard { border: 1px solid var(--line); border-radius: 8px; background: var(--surface); padding: 12px; display: grid; gap: 6px; }
+.zcard ul { margin: 0; padding-left: 18px; font-size: 14px; }
+
+/* step strip */
+.steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); overflow: hidden; }
+.step { padding: 14px; display: grid; gap: 6px; align-content: start; border-right: 1px solid var(--line); position: relative; min-width: 0; }
+.step:last-child { border-right: 0; }
+.step .k { font: 600 11px var(--f-mono); color: var(--ink-3); letter-spacing: 0.05em; }
+.step h3 { font-family: var(--f-mono); font-size: 13.5px; overflow-wrap: anywhere; }
+.step p { font-size: 13.5px; color: var(--ink-2); }
+.step .tags { display: flex; flex-wrap: wrap; gap: 4px; }
+.step.final { background: var(--zone); }
+
+/* decision flow */
+.flow { display: grid; gap: 0; counter-reset: q; }
+.pre { border: 1px solid var(--line); border-radius: 8px; background: var(--zone); padding: 12px 14px; display: grid; gap: 6px; font-size: 14px; }
+.qrow { display: grid; grid-template-columns: minmax(0, 0.9fr) 56px minmax(0, 1.4fr); align-items: center; }
+.q { border: 1.5px solid var(--ink-2); border-radius: 8px; background: var(--surface); padding: 10px 12px; font-size: 14px; position: relative; }
+.q::before { counter-increment: q; content: "Q" counter(q); font: 600 11px var(--f-mono); color: var(--ink-3); display: block; }
+.arm { height: 2px; background: var(--ink-2); position: relative; margin: 0 6px; }
+.arm::after { content: ""; position: absolute; right: -2px; top: -5px; border: 6px solid transparent; border-left: 8px solid var(--ink-2); border-right: 0; }
+.arm span { position: absolute; left: 50%; transform: translate(-50%, -120%); font: 600 11px var(--f-mono); color: var(--ink-2); background: var(--bg); padding: 0 3px; }
+.outs { display: grid; gap: 6px; }
+.oc { border: 1px solid var(--line); border-radius: 8px; background: var(--surface); padding: 9px 12px; display: grid; gap: 4px; font-size: 13.5px; cursor: pointer; }
+.oc.go { border-color: var(--ok); }
+.oc.no { border-left: 4px solid var(--stop); }
+.oc .ttl { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-weight: 600; }
+.oc .ttl code { background: none; padding: 0; font-weight: 600; font-size: 13px; }
+.oc .cond { color: var(--ink-2); font-size: 12.5px; }
+.down { height: 26px; margin-left: 28px; border-left: 2px solid var(--ink-2); position: relative; }
+.down span { position: absolute; left: 8px; top: 4px; font: 600 11px var(--f-mono); color: var(--ink-2); }
+
+/* pipeline (exporter) */
+.pipe { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.stage { border: 1px solid var(--line); border-radius: 8px; background: var(--surface); padding: 12px; display: grid; gap: 8px; align-content: start; position: relative; min-width: 0; }
+.stage:not(:last-child)::after { content: ""; position: absolute; right: -13px; top: 22px; border: 6px solid transparent; border-left: 9px solid var(--ink-2); border-right: 0; }
+.stage h3 { font-size: 15px; }
+.stage .fn { font: 12px var(--f-mono); color: var(--ink-2); overflow-wrap: anywhere; }
+.stage ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 5px; }
+.stage li { font-size: 12.5px; padding-left: 14px; position: relative; color: var(--ink); overflow-wrap: anywhere; }
+.stage li::before { content: ""; position: absolute; left: 0; top: 6px; width: 7px; height: 7px; background: var(--stop); border-radius: 1px; }
+.stage .out { font-size: 12.5px; color: var(--ink-2); border-top: 1px dashed var(--line); padding-top: 6px; }
+
+/* filters */
+.filters { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.chipbtn { font: 500 13px var(--f-body); color: var(--ink-2); background: var(--surface); border: 1px solid var(--line-2); border-radius: 20px; padding: 5px 12px; cursor: pointer; }
+.chipbtn[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.chipbtn .ct { font: 11px var(--f-mono); opacity: 0.75; margin-left: 4px; }
+.finput { font: 14px var(--f-body); color: var(--ink); background: var(--surface); border: 1px solid var(--line-2); border-radius: 6px; padding: 6px 10px; min-width: 0; width: min(280px, 100%); }
+
+/* limitations */
+.lims { display: grid; gap: 8px; }
+.limit { border: 1px solid var(--line); border-radius: 8px; background: var(--surface); padding: 12px 14px; display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 4px 10px; }
+.limit .no { font: 600 13px var(--f-mono); color: var(--ink-3); padding-top: 1px; }
+.limit h3 { font-family: var(--f-body); font-size: 15px; font-weight: 600; }
+.limit p { font-size: 14px; color: var(--ink-2); grid-column: 2; max-width: 80ch; }
+.limit .meta { grid-column: 2; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 12.5px; }
+.limit .area { font: 600 10.5px var(--f-mono); text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-3); }
+.pin { font: 600 11px var(--f-mono); color: var(--ok); }
+.countline { font: 12.5px var(--f-mono); color: var(--ink-3); }
+
+/* lanes (content pipeline) */
+.lane { border: 1px solid var(--line); border-radius: 8px; background: var(--zone); padding: 12px; display: grid; gap: 10px; min-width: 0; }
+.lane > header { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: baseline; }
+.lane > header h3 { font-size: 16px; }
+.chain { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 0; row-gap: 12px; }
+.pair { display: flex; align-items: center; min-width: 0; }
+.nd .ship { justify-self: start; }
+.nd { background: var(--surface); border: 1px solid var(--line-2); border-radius: 7px; padding: 8px 10px; display: grid; gap: 5px; align-content: start; min-width: 0; max-width: 260px; font-size: 12.5px; }
+.nd.file { border-radius: 2px 12px 2px 2px; background: var(--surface); border-style: solid; }
+.nd.file.shipped { border-color: var(--ink); box-shadow: inset 0 3px 0 var(--ink); }
+.nd.src { border-style: dashed; background: transparent; }
+.nd .nm { font: 600 12px var(--f-mono); overflow-wrap: anywhere; color: var(--ink); }
+.nd .tg { display: flex; flex-wrap: wrap; gap: 4px; }
+.nd .d { color: var(--ink-2); }
+.ar { display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 0 6px; min-width: 44px; font: 10.5px var(--f-mono); color: var(--ink-3); text-align: center; }
+.ar::before { content: "\2192"; font: 18px var(--f-body); color: var(--ink-2); line-height: 1; }
+.stack { display: grid; gap: 6px; align-content: start; }
+
+/* reader anatomy */
+.anat { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 20px; align-items: start; }
+.page { border: 1px solid var(--line-2); border-radius: 8px; background: var(--surface); padding: 12px; display: grid; gap: 8px; font-size: 13px; }
+.page .chrome { display: flex; gap: 6px; align-items: center; color: var(--ink-3); font: 11px var(--f-mono); }
+.page .chrome i { width: 8px; height: 8px; border-radius: 50%; background: var(--line-2); display: inline-block; }
+.rg { border-radius: 4px; padding: 8px 10px; display: grid; gap: 3px; }
+.rg b { font-size: 12.5px; }
+.rg span { color: var(--ink-2); font-size: 12px; }
+.rg.added { background: var(--accent-bg); border: 1.5px dashed var(--accent); }
+.rg.changed { border: 1.5px solid var(--warn); background: var(--warn-bg); }
+.rg.verb { border: 1px solid var(--line-2); background: repeating-linear-gradient(135deg, var(--hatch) 0 2px, transparent 2px 7px), var(--sunk); min-height: 120px; align-content: center; }
+.rg.verb b, .rg.verb span { background: var(--surface); justify-self: start; padding: 1px 5px; border-radius: 3px; }
+.navparts { display: flex; flex-wrap: wrap; gap: 4px; }
+.navparts em { font-style: normal; font: 11px var(--f-mono); background: var(--surface); border: 1px solid var(--line); border-radius: 3px; padding: 1px 5px; color: var(--ink); }
+
+/* tests grid */
+.grid-cov td.c, .grid-cov th.c { text-align: center; width: 92px; }
+.yes { color: var(--ok); font-weight: 700; }
+.nope { color: var(--ink-3); }
+tr.gap td { background: var(--stop-bg); }
+tr.gap td:first-child { color: var(--stop); font-weight: 600; }
+.layers { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.layer { border: 1px solid var(--line); border-radius: 8px; background: var(--surface); padding: 14px; display: grid; gap: 10px; align-content: start; min-width: 0; }
+.layer .cmd { font: 12.5px/1.6 var(--f-mono); background: var(--sunk); border-radius: 5px; padding: 8px 10px; overflow-x: auto; white-space: pre; }
+.pd { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 10px; font-size: 13.5px; }
+.pd div { display: grid; gap: 4px; align-content: start; }
+.pd h4 { margin: 0; font: 600 11px var(--f-mono); text-transform: uppercase; letter-spacing: 0.06em; }
+.pd .p h4 { color: var(--ok); } .pd .n h4 { color: var(--stop); }
+.pd ul { margin: 0; padding-left: 16px; color: var(--ink-2); }
+
+/* misc */
+details { border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+details > summary { cursor: pointer; padding: 10px 14px; font-weight: 600; font-size: 14.5px; list-style-position: outside; margin-left: 18px; padding-left: 4px; }
+details > .dbody { padding: 0 16px 14px; display: grid; gap: 10px; font-size: 14px; max-width: 80ch; }
+details > .dbody.full { max-width: none; }
+.dbody ol, .dbody ul { margin: 0; padding-left: 20px; display: grid; gap: 4px; }
+.cmdblock { font: 12.5px/1.65 var(--f-mono); background: var(--sunk); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; overflow-x: auto; white-space: pre; color: var(--ink); }
+.cmdblock .c { color: var(--ink-3); }
+.cmdwrap { display: grid; gap: 4px; position: relative; }
+.cmdwrap button { justify-self: end; font: 12px var(--f-body); background: var(--surface); color: var(--ink-2); border: 1px solid var(--line-2); border-radius: 5px; padding: 3px 10px; cursor: pointer; }
+.callout { border: 1px solid var(--accent); background: var(--accent-bg); border-radius: 8px; padding: 12px 14px; display: grid; gap: 6px; font-size: 14px; max-width: 86ch; }
+.callout b { font-family: var(--f-display); font-size: 15.5px; }
+.callout.warn { border-color: var(--warn); background: var(--warn-bg); }
+.check { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); counter-reset: ck; }
+.check li { padding: 10px 14px 10px 44px; border-bottom: 1px solid var(--line); position: relative; font-size: 14px; counter-increment: ck; }
+.check li:last-child { border-bottom: 0; }
+.check.conds li::before { content: "\2713"; border-color: var(--ok); color: var(--ok); font-size: 12px; }
+.check li::before { content: counter(ck); position: absolute; left: 14px; top: 10px; width: 20px; height: 20px; border: 1.5px solid var(--ink-2); border-radius: 50%; font: 600 11px/17px var(--f-mono); text-align: center; color: var(--ink-2); }
+.split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 14px; }
+.panel { border: 1px solid var(--line); border-radius: 8px; background: var(--surface); padding: 12px 14px; display: grid; gap: 6px; align-content: start; font-size: 14px; }
+.panel h3 { font-size: 15px; }
+.panel ul { margin: 0; padding-left: 18px; display: grid; gap: 3px; color: var(--ink-2); }
+.kv { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 6px 14px; font-size: 14px; }
+.kv dt { font-family: var(--f-mono); font-size: 12.5px; color: var(--ink-2); padding-top: 2px; }
+.kv dd { margin: 0; min-width: 0; }
+.tls { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.rq { font: 600 11px var(--f-mono); text-transform: uppercase; letter-spacing: 0.05em; padding: 3px 6px; border-radius: 3px; white-space: nowrap; }
+.rq.y { background: var(--ink); color: var(--bg); }
+.rq.n { border: 1px solid var(--line-2); color: var(--ink-2); }
+.rq.x { background: var(--stop-bg); color: var(--stop); }
+.foot { margin-top: 36px; font-size: 12.5px; color: var(--ink-3); border-top: 1px solid var(--line); padding-top: 12px; max-width: 1280px; margin-inline: auto; }
+
+@media (max-width: 1080px) {
+  .pipe { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .stage:nth-child(2)::after { display: none; }
+  .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .step:nth-child(2) { border-right: 0; }
+  .step:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+}
+@media (max-width: 880px) {
+  :root { --hh: auto; }
+  .top { position: static; flex-wrap: wrap; padding-block: 10px; gap: 10px; }
+  .search { width: 100%; }
+  .search kbd { display: none; }
+  .frame { grid-template-columns: minmax(0, 1fr); gap: 18px; padding-top: 0; }
+  .rail { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 15; max-height: none; background: var(--bg); display: flex; gap: 2px; overflow-x: auto; padding: 8px 0; border-bottom: 1px solid var(--line); scrollbar-width: thin; }
+  .rail .grp { display: none; }
+  .rail a { white-space: nowrap; border-left: 0; border-bottom: 3px solid transparent; border-radius: 4px 4px 0 0; padding: 6px 10px; font-size: 14px; }
+  .rail a[aria-current="page"] { border-bottom-color: var(--accent); }
+  .twocol, .anat, .split, .layers, .tls { grid-template-columns: minmax(0, 1fr); }
+  .zones { display: grid; }
+  .scrollhint { display: block; }
+  h1 { font-size: 25px; }
+  .lede { font-size: 16px; }
+}
+@media (max-width: 600px) {
+  .pipe, .steps { grid-template-columns: minmax(0, 1fr); }
+  .stage::after { display: none; }
+  .step { border-right: 0; border-bottom: 1px solid var(--line); }
+  .step:last-child { border-bottom: 0; }
+  .qrow { grid-template-columns: minmax(0, 1fr); }
+  .arm { width: 2px; height: 30px; margin: 0 0 0 28px; }
+  .arm::after { right: auto; left: -5px; top: auto; bottom: -2px; border: 6px solid transparent; border-top: 8px solid var(--ink-2); border-bottom: 0; }
+  .arm span { left: 10px; top: 50%; transform: translateY(-50%); }
+  .pd { grid-template-columns: minmax(0, 1fr); }
+  .chain { flex-direction: column; align-items: stretch; }
+  .pair { flex-direction: column; align-items: stretch; }
+  .ar { flex-direction: row; gap: 8px; min-width: 0; padding: 4px 0 4px 14px; justify-content: flex-start; }
+  .ar::before { content: "\2193"; }
+  .nd { max-width: none; }
+  th, td { padding: 8px 10px; }
+  .kv { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+  .kv dd { margin-bottom: 8px; }
+  .tw table.stk, .tw table.stk tbody, .tw table.stk tr, .tw table.stk td { display: block; width: auto; }
+  .tw table.stk thead { display: none; }
+  .tw table.stk tr { padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  .tw table.stk tbody tr:last-child { border-bottom: 0; }
+  .tw table.stk td { border: 0; padding: 2px 0; }
+  .tw table.stk td.nm { white-space: normal; }
+  .tw table.stk td[data-label]::before { content: attr(data-label); display: block; font: 600 10px var(--f-mono); text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-3); margin-top: 6px; }
+  .tw table.stk td:first-child::before { margin-top: 0; }
+  .tw table.stk tr[hidden] { display: none; }
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="brand"><b>PvME Wiki Docs</b><span>pvmewiki.sanji3.dev</span></div>
+  <div class="search" role="search">
+    <input id="q" type="search" autocomplete="off" spellcheck="false" placeholder="Search, or paste a log line or error" aria-label="Search these docs" aria-controls="results" aria-expanded="false">
+    <kbd>/</kbd>
+    <div id="results" class="results" role="listbox" hidden></div>
+  </div>
+</header>
+
+<div class="frame">
+<nav class="rail" aria-label="Views">
+  <div class="grp">Overview</div>
+  <a href="#map">System map</a>
+  <a href="#files">Files and contracts</a>
+  <div class="grp">Operate</div>
+  <a href="#startup">Container startup</a>
+  <a href="#operate">Deploy and recover</a>
+  <a href="#config">Configuration</a>
+  <div class="grp">In the browser</div>
+  <a href="#reader">Reader</a>
+  <a href="#copy">Copy to wiki</a>
+  <a href="#exporter">Exporter</a>
+  <div class="grp">Content and quality</div>
+  <a href="#content">Content pipeline</a>
+  <a href="#tests">Tests</a>
+  <a href="#limits">Known limitations</a>
+</nav>
+
+<main id="main">
+
+<!-- ============================== MAP ============================== -->
+<section class="view" id="v-map" data-view="map" data-title="System map">
+  <div class="head">
+    <h1>PvME Wiki</h1>
+    <p class="lede">A MediaWiki site that hosts PvME's RuneScape 3 bossing guides as editable, attributed pages. It is one Docker image and one PostgreSQL database: the image is replaceable, and the database is the only copy of everything people do on the wiki.</p>
+  </div>
+
+  <figure>
+    <div class="scroll wide" id="mapscroll">
+    <svg viewBox="0 0 1124 620" role="img" aria-label="System map. Content tools on a developer machine produce files committed to Git; the Docker image ships them; at container start three PHP steps install or verify the database and publish packaged pages; Apache and MediaWiki then serve guide pages whose reader code runs in the browser; Copy to wiki loads the exporter, reads the latest revision and writes wikitext to the clipboard for pasting into RuneScape Wiki by hand.">
+      <defs>
+        <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="mk" d="M0 0 L10 5 L0 10 z"/></marker>
+        <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect class="hatchbg" width="7" height="7"/><line class="hl" x1="0" y1="0" x2="0" y2="7"/></pattern>
+      </defs>
+      <!-- zones -->
+      <rect class="zone" x="8" y="8" width="236" height="604" rx="6"/>
+      <rect class="stripe-dev" x="8" y="8" width="236" height="4" rx="2"/>
+      <text class="zl" x="20" y="32">DEVELOPER MACHINE · BY HAND</text>
+      <rect class="zone" x="256" y="8" width="250" height="604" rx="6"/>
+      <rect class="stripe-build" x="256" y="8" width="250" height="4" rx="2"/>
+      <text class="zl" x="268" y="32">GIT → DOCKER IMAGE</text>
+      <rect class="zone" x="518" y="8" width="312" height="604" rx="6"/>
+      <rect class="stripe-start" x="518" y="8" width="156" height="4"/>
+      <rect class="stripe-req" x="674" y="8" width="156" height="4"/>
+      <text class="zl" x="530" y="32">SERVER · STARTUP, THEN REQUESTS</text>
+      <rect class="zone" x="842" y="8" width="274" height="604" rx="6"/>
+      <rect class="stripe-browser" x="842" y="8" width="274" height="4" rx="2"/>
+      <text class="zl" x="854" y="32">READER'S BROWSER</text>
+
+      <!-- Z1 -->
+      <rect class="ext" x="24" y="52" width="96" height="30" rx="15"/><text x="72" y="71" text-anchor="middle" class="ts">pvme.io</text>
+      <rect class="ext" x="128" y="52" width="104" height="30" rx="15"/><text x="180" y="71" text-anchor="middle" class="ts">runescape.wiki</text>
+      <line class="e" x1="72" y1="82" x2="72" y2="128" marker-end="url(#ah)"/><text class="el" x="78" y="110">GET</text>
+      <line class="e" x1="180" y1="82" x2="180" y2="128" marker-end="url(#ah)"/><text class="el" x="186" y="110">GET</text>
+      <a class="hit" href="#content" aria-label="Content tools: open Content pipeline">
+        <rect class="n" x="24" y="130" width="208" height="186" rx="6"/>
+        <text class="tb" x="36" y="152">Content tools</text>
+        <text class="ts" x="36" y="169">Node scripts; output is files</text>
+        <text class="tm" x="36" y="194">capture.mjs</text>
+        <text class="tm" x="36" y="212">build-main-corpus.mjs</text>
+        <text class="tm" x="36" y="230">audit-* · activate-*</text>
+        <text class="tm" x="36" y="248">build-media-catalogue.mjs</text>
+        <text class="tm" x="36" y="266">build-amascut-pictures.mjs</text>
+        <text class="tm" x="36" y="284">build-corpus.mjs (seed)</text>
+        <text class="ts" x="36" y="305">audits read production, read-only</text>
+      </a>
+      <text class="ts" x="24" y="350">Nothing is generated at build</text>
+      <text class="ts" x="24" y="366">or run time; the tools run</text>
+      <text class="ts" x="24" y="382">before a commit.</text>
+
+      <!-- Z1 -> Z2 -->
+      <line class="e" x1="232" y1="214" x2="268" y2="214" marker-end="url(#ah)"/><text class="el" x="250" y="205" text-anchor="middle">Git</text>
+
+      <!-- Z2 image -->
+      <rect class="img" x="270" y="48" width="222" height="510" rx="7"/>
+      <text class="tb" x="282" y="68">Docker image</text>
+      <text class="ts" x="282" y="85">mediawiki:1.43.11 + this repo</text>
+      <a class="hit" href="#content" aria-label="Seed corpus: open Content pipeline">
+        <rect class="n" x="282" y="98" width="198" height="48" rx="5"/>
+        <text class="tm" x="294" y="118" font-weight="600">corpus/</text>
+        <text class="ts" x="294" y="136">seed: 381 pages, frozen</text>
+      </a>
+      <a class="hit" href="#content" aria-label="Packaged guides: open Content pipeline">
+        <rect class="n" x="282" y="156" width="198" height="48" rx="5"/>
+        <text class="tm" x="294" y="176" font-weight="600">main-guides/</text>
+        <text class="ts" x="294" y="194">packaged guides + manifest</text>
+      </a>
+      <a class="hit" href="#content" aria-label="Picture guide: open Content pipeline">
+        <rect class="n" x="282" y="214" width="198" height="48" rx="5"/>
+        <text class="tm" x="294" y="234" font-weight="600">visual-guides/</text>
+        <text class="ts" x="294" y="252">picture guide + 4 templates</text>
+      </a>
+      <a class="hit" href="#startup" aria-label="Runtime scripts: open Container startup">
+        <rect class="n" x="282" y="272" width="198" height="62" rx="5"/>
+        <text class="tm" x="294" y="292" font-weight="600">runtime/</text>
+        <text class="ts" x="294" y="309">start.sh + 3 PHP steps</text>
+        <text class="ts" x="294" y="325">health.php · wiki.conf</text>
+      </a>
+      <a class="hit" href="#files" aria-label="PvmePresentation extension: open Files and contracts">
+        <rect class="n" x="282" y="344" width="198" height="86" rx="5"/>
+        <text class="tm" x="294" y="364" font-weight="600">presentation/module/</text>
+        <text class="ts" x="294" y="381">PvmePresentation extension</text>
+        <text class="ts" x="294" y="397">2 PHP hooks · 3 JS modules</text>
+        <text class="ts" x="294" y="413">navigation.json · media catalogue</text>
+      </a>
+      <a class="hit" href="#config" aria-label="LocalSettings: open Configuration">
+        <rect class="n" x="282" y="440" width="198" height="48" rx="5"/>
+        <text class="tm" x="294" y="460" font-weight="600">LocalSettings.php</text>
+        <text class="ts" x="294" y="478">settings from env vars</text>
+      </a>
+      <text class="ts" x="282" y="512">allow-list: .dockerignore</text>
+      <text class="ts" x="282" y="530">nothing is written back to Git</text>
+
+      <!-- content read by startup -->
+      <path class="e" d="M480 122 H490 V238 H480 M490 150 H532" marker-end="url(#ah)"/>
+      <text class="el" x="511" y="143" text-anchor="middle">read</text>
+      <!-- runtime runs startup -->
+      <path class="e" d="M480 303 H507 V205 H532" marker-end="url(#ah)"/>
+      <text class="el" x="520" y="199" text-anchor="middle">runs</text>
+
+      <!-- Z3 startup -->
+      <a class="hit" href="#startup" aria-label="Container start: open Container startup">
+        <rect class="n" x="534" y="48" width="280" height="176" rx="6"/>
+        <text class="tb" x="546" y="68">Container start</text>
+        <text class="ts" x="546" y="85">once, before Apache · set -eu</text>
+        <rect class="n2" x="546" y="96" width="256" height="30" rx="4"/><text class="tm" x="556" y="116">1  bootstrap.php</text>
+        <rect class="n2" x="546" y="132" width="256" height="30" rx="4"/><text class="tm" x="556" y="152">2  install-visual-guides.php</text>
+        <rect class="n2" x="546" y="168" width="256" height="30" rx="4"/><text class="tm" x="556" y="188">3  install-main-guides.php</text>
+        <text class="ts" x="546" y="215">any non-zero exit stops the container</text>
+      </a>
+      <line class="e" x1="690" y1="224" x2="690" y2="260" marker-end="url(#ah)"/><text class="el" x="698" y="247">exec Apache</text>
+      <!-- startup -> DB lane -->
+      <path class="e" d="M550 224 V490 H572" marker-end="url(#ah)"/>
+      <text class="el" x="544" y="360" text-anchor="middle" transform="rotate(-90 544 360)">install · import · publish</text>
+
+      <a class="hit" href="#reader" aria-label="Apache and MediaWiki: open Reader">
+        <rect class="n" x="566" y="262" width="248" height="86" rx="6"/>
+        <text class="tb" x="578" y="283">Apache + MediaWiki 1.43</text>
+        <text class="ts" x="578" y="301">every request · web edits moderated</text>
+        <text class="ts" x="578" y="318">PvmePresentation hooks</text>
+        <text class="tm" x="578" y="337">load-&lt;id&gt;.php → load.php</text>
+      </a>
+      <a class="hit" href="#operate" aria-label="Health endpoint: open Deploy and recover">
+        <rect class="n" x="566" y="362" width="122" height="46" rx="5"/>
+        <text class="tm" x="576" y="381">/healthz.php</text>
+        <text class="ts" x="576" y="399">ready or not ready</text>
+      </a>
+      <line class="e" x1="626" y1="408" x2="626" y2="430" marker-end="url(#ah)"/><text class="el" x="632" y="424">reads</text>
+      <line class="e" x1="770" y1="350" x2="770" y2="432" marker-start="url(#ah)" marker-end="url(#ah)"/><text class="el" x="764" y="400" text-anchor="end">reads, writes</text>
+
+      <a class="hit" href="#operate" aria-label="PostgreSQL: open Deploy and recover, backups">
+        <path class="db" d="M572 444 A118 12 0 0 1 808 444 V560 A118 12 0 0 1 572 560 Z"/>
+        <path class="db" d="M572 444 A118 12 0 0 0 808 444" fill="none"/>
+        <text class="tb" x="690" y="482" text-anchor="middle">PostgreSQL</text>
+        <text class="ts" x="690" y="501" text-anchor="middle">the only copy of edits,</text>
+        <text class="ts" x="690" y="517" text-anchor="middle">accounts and moderation state</text>
+        <text class="tm" x="690" y="540" text-anchor="middle">public.pvmewiki_bootstrap</text>
+      </a>
+
+      <!-- Z3 -> Z4 -->
+      <line class="e" x1="814" y1="292" x2="854" y2="292" marker-end="url(#ah)"/>
+      <text class="el" x="836" y="284" text-anchor="middle">HTML</text>
+      <text class="el" x="836" y="308" text-anchor="middle">+ JS</text>
+
+      <!-- Z4 -->
+      <rect class="ext" x="856" y="52" width="170" height="30" rx="15"/><text x="941" y="71" text-anchor="middle" class="ts">pvme.sanji3.dev feed</text>
+      <line class="e" x1="930" y1="230" x2="930" y2="84" marker-end="url(#ah)"/><text class="el" x="936" y="150">GET guide-history.json</text>
+      <text class="el" x="936" y="166">(freshness badge)</text>
+      <a class="hit" href="#reader" aria-label="Guide page: open Reader">
+        <rect class="n" x="856" y="232" width="246" height="200" rx="6"/>
+        <text class="tb" x="868" y="252">Guide page</text>
+        <text class="ts" x="868" y="268">PvME or PvME/... · view action</text>
+        <rect class="added" x="868" y="278" width="222" height="38" rx="3"/>
+        <text class="ts" x="878" y="294" style="fill:var(--ink)">navigation bar · Copy to wiki</text>
+        <text class="ts" x="878" y="309">added by the reader</text>
+        <rect class="vrb" x="868" y="322" width="222" height="66" rx="3"/>
+        <rect class="n" x="876" y="336" width="168" height="38" rx="3"/>
+        <text class="ts" x="884" y="352" style="fill:var(--ink)">article: saved guide text</text>
+        <text class="ts" x="884" y="367">never rewritten</text>
+        <rect class="added" x="868" y="394" width="222" height="28" rx="3"/>
+        <text class="ts" x="878" y="413" style="fill:var(--ink)">Source footer</text>
+      </a>
+      <line class="e" x1="930" y1="432" x2="930" y2="468" marker-end="url(#ah)"/><text class="el" x="936" y="455">click</text>
+      <a class="hit" href="#exporter" aria-label="Exporter module: open Exporter">
+        <rect class="n" x="856" y="470" width="246" height="56" rx="6"/>
+        <text class="tb" x="868" y="491">Exporter module</text>
+        <text class="ts" x="868" y="509">loaded on first Copy to wiki click</text>
+      </a>
+      <path class="e" d="M856 498 H838 V332 H816" marker-end="url(#ah)"/>
+      <text class="el" x="847" y="414" text-anchor="middle" transform="rotate(-90 847 414)">revision + module</text>
+      <a class="hit" href="#copy" aria-label="Clipboard: open Copy to wiki">
+        <rect class="n" x="856" y="548" width="104" height="40" rx="5"/>
+        <text x="908" y="573" text-anchor="middle" class="ts" style="fill:var(--ink)">clipboard</text>
+      </a>
+      <line class="e" x1="908" y1="526" x2="908" y2="546" marker-end="url(#ah)"/>
+      <rect class="ext" x="978" y="548" width="124" height="40" rx="20"/>
+      <text x="1040" y="565" text-anchor="middle" class="ts" style="fill:var(--ink)">runescape.wiki</text>
+      <text x="1040" y="580" text-anchor="middle" class="ts">pasted by hand</text>
+      <line class="e dash" x1="960" y1="568" x2="976" y2="568" marker-end="url(#ah)"/>
+    </svg>
+    </div>
+    <div class="scrollhint">Scroll sideways to see the whole map, or use the list below it.</div>
+    <figcaption>Left to right: who produces content, what the image carries, what runs on the server, and what runs in the reader's browser. Every box opens its view. The only arrows into PostgreSQL come from startup (once per container start) and from MediaWiki serving requests; nothing from the image or the tools writes community data. Dashed outlines are other sites.</figcaption>
+    <div class="legend">
+      <span><i class="ph dev">dev machine</i></span>
+      <span><i class="ph build">image build</i></span>
+      <span><i class="ph start">container start</i></span>
+      <span><i class="ph req">each request</i></span>
+      <span><i class="ph browser">browser</i></span>
+      <span><i class="vb"></i> guide text, verbatim</span>
+      <span><i class="ad"></i> added presentation</span>
+      <span><i class="ship in">in image</i> <i class="ship out">not in image</i></span>
+      <span><i class="tag db">DB</i> touches the database</span>
+      <span><i class="tag net">net</i> network access</span>
+    </div>
+  </figure>
+
+  <div class="zones" aria-label="The map as a list">
+    <div class="zcard"><span class="ph dev">dev machine</span><ul><li><a href="#content">Content tools</a>: capture pvme.io, compile to wikitext, audit, activate, build the media catalogue. Output is files committed to Git.</li></ul></div>
+    <div class="zcard"><span class="ph build">image</span><ul><li><a href="#content">Seed corpus</a> (381 pages), <a href="#content">packaged guides</a>, picture guide</li><li><a href="#startup">runtime/</a>: start.sh and three PHP steps</li><li><a href="#files">PvmePresentation</a> extension and its data files</li><li><a href="#config">LocalSettings.php</a>, read from env vars</li></ul></div>
+    <div class="zcard"><span class="ph start">container start</span> <span class="ph req">each request</span><ul><li><a href="#startup">bootstrap → picture guide → packaged guides</a>, then Apache</li><li>MediaWiki reads and writes <a href="#operate">PostgreSQL</a>, the only copy of community data</li><li><a href="#operate">/healthz.php</a> answers ready or not ready</li></ul></div>
+    <div class="zcard"><span class="ph browser">browser</span><ul><li><a href="#reader">Reader</a> adds navigation and a Source footer around the untouched article</li><li><a href="#copy">Copy to wiki</a> loads the <a href="#exporter">exporter</a> and writes wikitext to the clipboard</li></ul></div>
+  </div>
+
+  <div class="twocol">
+    <section class="block">
+      <h2>I want to...</h2>
+      <div class="tasks">
+        <a class="task" href="#startup" data-goto="startup:decide"><span>find out why the container refused to start</span><span class="to">startup</span></a>
+        <a class="task" href="#operate" data-goto="operate:smoke"><span>check that a deploy went right</span><span class="to">deploy</span></a>
+        <a class="task" href="#startup" data-goto="startup:step3"><span>know why a packaged guide was not published</span><span class="to">startup</span></a>
+        <a class="task" href="#config"><span>set up the service's environment</span><span class="to">config</span></a>
+        <a class="task" href="#operate" data-goto="operate:rollback"><span>roll back, back up or restore</span><span class="to">deploy</span></a>
+        <a class="task" href="#exporter" data-goto="exporter:refusals"><span>understand why Copy to wiki refused a guide</span><span class="to">exporter</span></a>
+        <a class="task" href="#reader"><span>change what the browser shows around a guide</span><span class="to">reader</span></a>
+        <a class="task" href="#content"><span>update guide content</span><span class="to">content</span></a>
+        <a class="task" href="#files"><span>find who writes or reads a data file</span><span class="to">files</span></a>
+        <a class="task" href="#tests"><span>run the tests, and know what they prove</span><span class="to">tests</span></a>
+        <a class="task" href="#limits"><span>see what is imperfect</span><span class="to">limits</span></a>
+      </div>
+    </section>
+    <section class="block">
+      <h2>What the design holds to</h2>
+      <div class="rules">
+        <div class="rule"><b>The database is the asset; the image is replaceable.</b><p>PostgreSQL holds the only copy of community edits, accounts and moderation state. A redeploy never undoes anything in it; only a backup does.</p></div>
+        <div class="rule"><b>Startup refuses instead of repairing.</b><p>Two of seven database states start the wiki. Every other state stops the container with one line on stderr, because a wrong guess could destroy edits that exist nowhere else.</p></div>
+        <div class="rule"><b>No runtime script overwrites a changed page.</b><p>Packaged guides are written only onto pages still at their recorded baseline; the picture guide only onto missing pages.</p></div>
+        <div class="rule"><b>Guide text is verbatim; presentation is additive.</b><p>The reader adds around the saved article and never rewrites it (root <code class="cp">AGENTS.md</code>).</p></div>
+        <div class="rule"><b>The exporter fails closed.</b><p>It throws on anything it cannot reproduce exactly, and Copy to wiki copies nothing while any media lacks a verified route.</p></div>
+      </div>
+    </section>
+  </div>
+  <p class="sub">Everything here lives in <code class="cp">wiki-host/</code>. The other top-level directories belong to an earlier reader prototype and are not built, tested or deployed; the one link is that <code class="cp">wiki-host/tools/build-corpus.mjs</code> reads guide snapshots from <code class="cp">editor/content/</code>.</p>
+</section>
+
+<!-- ============================== STARTUP ============================== -->
+<section class="view" id="v-startup" data-view="startup" data-title="Container startup" hidden>
+  <div class="head">
+    <div class="tags"><span class="ph start">container start</span><span class="tag db">DB reads and writes</span></div>
+    <h1>Container startup</h1>
+    <p class="lede"><code class="cp">wiki-host/runtime/start.sh</code> runs three PHP steps, then Apache. It uses <code>set -eu</code>, so any step that exits non-zero stops the container before it serves a request. Each step logs one line per decision to stdout and failures as one line on stderr, never a URL, password or raw database error.</p>
+  </div>
+
+  <div class="steps" aria-label="Startup sequence">
+    <div class="step"><span class="k">STEP 1</span><h3>bootstrap.php</h3><p>Validates config and the seed corpus, connects with TLS, takes a lock, decides what to do with the database. Installs and imports only into an empty database.</p><div class="tags"><span class="tag db">DB</span><span class="tag">advisory lock</span></div></div>
+    <div class="step"><span class="k">STEP 2</span><h3>install-visual-guides.php</h3><p>Creates the picture guide and its four templates only where the page does not exist.</p><div class="tags"><span class="tag db">DB</span><span class="tag">own lock</span><span class="tag">edit --createonly</span></div></div>
+    <div class="step"><span class="k">STEP 3</span><h3>install-main-guides.php</h3><p>Publishes each packaged page only if nobody changed it since its recorded baseline.</p><div class="tags"><span class="tag db">DB</span><span class="tag">no lock; compare-and-swap</span></div></div>
+    <div class="step final"><span class="k">THEN</span><h3>exec apache2-foreground</h3><p>Serves requests on port 80. Its environment has no <code>MW_BOOTSTRAP</code>, so web edits stay moderated.</p><div class="tags"><span class="ph req">each request</span></div></div>
+  </div>
+
+  <section class="block" id="decide">
+    <h2>Step 1: what the database contains decides what happens</h2>
+    <p class="sub">Follow the questions from the top. The answer is a <code>StartupDecision</code> from <code class="cp">wiki-host/runtime/lib/StartupDecision.php</code>; the message is exactly what the log shows. Click an outcome to jump to its row in the table below.</p>
+    <div class="pre"><b>Before any question</b><span>Settings path overrides, <code>MW_SERVER</code>, <code>MW_DATABASE_URL</code>, the three secrets and the seed corpus checksums are checked without the database. Then a TLS connection is opened and confirmed through <code>pg_stat_ssl</code>, the bootstrap advisory lock is taken, and one <code>DatabaseSnapshot</code> is read (marker rows, table count, mainspace titles). A failure here also starts with <span class="msg err">PvME wiki bootstrap blocked:</span> (<a href="#startup" data-goto="startup:prechecks">messages</a>).</span></div>
+    <div class="flow" style="margin-top:14px">
+      <div class="qrow"><div class="q">Does the marker table <code>public.pvmewiki_bootstrap</code> exist?</div><div class="arm"><span>no</span></div>
+        <div class="outs">
+          <div class="oc go" data-row="r-fresh" tabindex="0"><div class="ttl"><span class="st ok">starts</span><code>InstallFresh</code></div><div class="cond">and the database has no tables at all</div><span class="msg okm">PvME wiki ready: imported 381 mainspace pages</span></div>
+          <div class="oc no" data-row="r-notempty" tabindex="0"><div class="ttl"><span class="st stop">refuses</span><code>NotEmpty</code></div><div class="cond">and the database has some tables</div><span class="msg err">PvME wiki bootstrap blocked: Existing database is not an empty PvME wiki database</span></div>
+        </div></div>
+      <div class="down"><span>yes</span></div>
+      <div class="qrow"><div class="q">Does it hold exactly one row?</div><div class="arm"><span>no</span></div>
+        <div class="outs"><div class="oc no" data-row="r-marker" tabindex="0"><div class="ttl"><span class="st stop">refuses</span><code>UnrecognizedMarker</code></div><span class="msg err">PvME wiki bootstrap blocked: Unrecognized bootstrap marker</span></div></div></div>
+      <div class="down"><span>yes</span></div>
+      <div class="qrow"><div class="q">Is the row <code>ready</code>, for this image's <code>pages.xml</code> digest, with <code>page_count</code> 381?</div><div class="arm"><span>no</span></div>
+        <div class="outs"><div class="oc no" data-row="r-mismatch" tabindex="0"><div class="ttl"><span class="st stop">refuses</span><code>IncompleteOrMismatched</code></div><div class="cond">an install that never finished, or a release that changed <code>corpus/</code></div><span class="msg err">PvME wiki bootstrap blocked: Incomplete bootstrap or corpus version mismatch; manual recovery required</span></div></div></div>
+      <div class="down"><span>yes</span></div>
+      <div class="qrow"><div class="q">Does MediaWiki's page table exist?</div><div class="arm"><span>no</span></div>
+        <div class="outs"><div class="oc no" data-row="r-pagetable" tabindex="0"><div class="ttl"><span class="st stop">refuses</span><code>PageTableMissing</code></div><span class="msg err">PvME wiki bootstrap blocked: MediaWiki page table missing</span></div></div></div>
+      <div class="down"><span>yes</span></div>
+      <div class="qrow"><div class="q">Is every seed title present in the main namespace?</div><div class="arm"><span>no</span></div>
+        <div class="outs"><div class="oc no" data-row="r-titles" tabindex="0"><div class="ttl"><span class="st stop">refuses</span><code>SeedTitlesDiffer</code></div><div class="cond">pages created later are fine; only a missing seed title blocks</div><span class="msg err">PvME wiki bootstrap blocked: Imported page titles or count differ from the corpus</span></div></div></div>
+      <div class="down"><span>yes</span></div>
+      <div class="outs" style="max-width:640px"><div class="oc go" data-row="r-existing" tabindex="0"><div class="ttl"><span class="st ok">starts</span><code>UseExisting</code></div><div class="cond">activates the packaged settings; does not run <code>update.php</code></div><span class="msg okm">PvME wiki ready: existing verified corpus</span></div></div>
+    </div>
+  </section>
+
+  <section class="block" id="outcomes">
+    <h3>The seven outcomes, as a lookup table</h3>
+    <div class="tw"><table>
+      <thead><tr><th>Decision</th><th>Database state</th><th>Log line</th><th>What to do</th></tr></thead>
+      <tbody>
+        <tr id="r-fresh"><td class="nm"><code>InstallFresh</code><br><span class="st ok">starts</span></td><td>no marker table, no tables at all</td><td><span class="msg okm">PvME wiki ready: imported 381 mainspace pages</span></td><td>Nothing. See the fresh install steps below.</td></tr>
+        <tr id="r-existing"><td class="nm"><code>UseExisting</code><br><span class="st ok">starts</span></td><td>marker ready for this corpus, every seed page present</td><td><span class="msg okm">PvME wiki ready: existing verified corpus</span></td><td>Nothing. This is the expected line after every deploy.</td></tr>
+        <tr id="r-notempty"><td class="nm"><code>NotEmpty</code><br><span class="st stop">refuses</span></td><td>no marker table, some tables</td><td><span class="msg err">PvME wiki bootstrap blocked: Existing database is not an empty PvME wiki database</span></td><td>Manual. The docs name two possibilities: another application's database, or a partly restored backup.</td></tr>
+        <tr id="r-marker"><td class="nm"><code>UnrecognizedMarker</code><br><span class="st stop">refuses</span></td><td>marker table without exactly one row</td><td><span class="msg err">PvME wiki bootstrap blocked: Unrecognized bootstrap marker</span></td><td>Manual recovery; restore a backup.</td></tr>
+        <tr id="r-mismatch"><td class="nm"><code>IncompleteOrMismatched</code><br><span class="st stop">refuses</span></td><td>marker <code>installing</code>, or for another corpus digest or page count</td><td><span class="msg err">PvME wiki bootstrap blocked: Incomplete bootstrap or corpus version mismatch; manual recovery required</span></td><td>If the database never held community data (a failed first install), recreate it empty and restart. Otherwise restore a backup. A release that changed <code>corpus/</code> also lands here.</td></tr>
+        <tr id="r-pagetable"><td class="nm"><code>PageTableMissing</code><br><span class="st stop">refuses</span></td><td>marker ready, MediaWiki page table missing</td><td><span class="msg err">PvME wiki bootstrap blocked: MediaWiki page table missing</span></td><td>Manual recovery; restore a backup.</td></tr>
+        <tr id="r-titles"><td class="nm"><code>SeedTitlesDiffer</code><br><span class="st stop">refuses</span></td><td>marker ready, a seed page missing</td><td><span class="msg err">PvME wiki bootstrap blocked: Imported page titles or count differ from the corpus</span></td><td>Manual recovery; restore a backup.</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <details id="prechecks">
+    <summary>Messages that stop step 1 before or outside the decision</summary>
+    <div class="dbody full">
+      <p>Each is printed after <span class="msg err">PvME wiki bootstrap blocked:</span>. Sources: <code class="cp">wiki-host/runtime/lib/RuntimeConfig.php</code>, <code class="cp">wiki-host/runtime/lib/RuntimeSettings.php</code>, <code class="cp">wiki-host/runtime/lib/SeedCorpus.php</code>, <code class="cp">wiki-host/runtime/lib/WikiDatabase.php</code>, <code class="cp">wiki-host/runtime/bootstrap.php</code>.</p>
+      <div class="tw"><table>
+        <thead><tr><th>Message</th><th>Checked</th></tr></thead>
+        <tbody>
+          <tr><td><span class="msg err">Unsupported MediaWiki settings path override</span></td><td><code>MW_INSTALL_PATH</code> or <code>MW_CONFIG_FILE</code> points elsewhere</td></tr>
+          <tr><td><span class="msg err">MW_SERVER is required</span> · <span class="msg err">MW_SERVER must be an HTTPS origin</span></td><td><code>MW_SERVER</code></td></tr>
+          <tr><td><span class="msg err">MW_DATABASE_URL is required</span> · <span class="msg err">MW_DATABASE_URL must be a PostgreSQL URL</span> · <span class="msg err">MW_DATABASE_URL is missing a required component</span> · <span class="msg err">MW_DATABASE_URL query and fragment are unsupported</span> · <span class="msg err">Invalid database name in MW_DATABASE_URL</span></td><td><code>MW_DATABASE_URL</code></td></tr>
+          <tr><td><span class="msg err">Private TLS is limited to a Render private database host</span></td><td><code>MW_ALLOW_RENDER_PRIVATE_TLS=true</code> without Render or its private host (<a href="#config">TLS modes</a>)</td></tr>
+          <tr><td><span class="msg err">MW_SECRET_KEY is required</span> · <span class="msg err">MW_UPGRADE_KEY is required</span> · <span class="msg err">MW_ADMIN_PASSWORD is required</span></td><td>the three secrets, unset or empty</td></tr>
+          <tr><td><span class="msg err">Required corpus file missing</span> · <span class="msg err">Corpus checksum mismatch</span> · <span class="msg err">XML and manifest titles differ</span> · <span class="msg err">Manifest page count mismatch</span></td><td>the seed corpus in the image (<code>SeedCorpus::load</code>)</td></tr>
+          <tr><td><span class="msg err">PostgreSQL connection failed</span> · <span class="msg err">PostgreSQL connection is not encrypted</span> · <span class="msg err">Database query failed during bootstrap</span></td><td>connection, TLS check through <code>pg_stat_ssl</code>, snapshot queries</td></tr>
+          <tr><td><span class="msg err">MediaWiki maintenance command failed: &lt;script&gt;</span> · <span class="msg err">Unexpected pages in newly installed wiki</span> · <span class="msg err">Installer Main Page is not a single sample revision</span></td><td>during a fresh install; the marker stays <code>installing</code>, so the next start is <code>IncompleteOrMismatched</code></td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </details>
+
+  <details>
+    <summary>Why startup refuses instead of repairing</summary>
+    <div class="dbody">
+      <p>The marker says <code>installing</code> for the whole install. If any step fails, the next start sees <code>IncompleteOrMismatched</code> and stops: it does not retry the import, drop tables or run the installer again.</p>
+      <p>A database that is not empty and not marked could be another application's database or a partly restored backup. A database marked for a different corpus digest may hold years of edits on top of an older seed. Any automatic repair would have to guess, and a wrong guess destroys community edits that exist nowhere else. Stopping costs an outage; guessing can cost the data.</p>
+      <p>For the same reason <code>UseExisting</code> does not run MediaWiki's <code>update.php</code>. A base image upgrade that needs schema changes is run by hand after a backup.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Fresh install, step by step (<code>installFresh()</code>)</summary>
+    <div class="dbody">
+      <ol>
+        <li>Create the marker table with one <code>installing</code> row.</li>
+        <li>Run MediaWiki's <code>install</code> maintenance script. The admin and database passwords are passed in mode 0600 files in a private temporary directory, never in argv. The installer's own <code>LocalSettings.php</code> is discarded.</li>
+        <li>Copy the packaged <code>LocalSettings.php</code> into place (<code>RuntimeSettings::activate</code>, an atomic rename that replaces a symlink rather than following it).</li>
+        <li>Run <code>update --quick</code>, delete the installer's sample <code>Main_Page</code> (only while it is the sole mainspace page with one revision), and <code>importDump</code> the seed XML.</li>
+        <li>Check that the mainspace titles are exactly the seed titles, set <code>MediaWiki:Mainpage</code> to <code>PvME</code>, and mark the row <code>ready</code>.</li>
+      </ol>
+      <p>The admin account is named <code>Admin</code>.</p>
+      <div class="tw"><table>
+        <thead><tr><th>Marker column</th><th>Type</th><th>Meaning</th></tr></thead>
+        <tbody>
+          <tr><td><code>corpus_sha256</code></td><td>text</td><td>SHA-256 of <code>corpus/pages.xml</code> the database was bootstrapped from</td></tr>
+          <tr><td><code>page_count</code></td><td>integer</td><td><code>SeedCorpus::PAGE_COUNT</code> at install time</td></tr>
+          <tr><td><code>state</code></td><td>text</td><td><code>installing</code> from the start of an install, <code>ready</code> once the import is verified</td></tr>
+        </tbody>
+      </table></div>
+      <p class="small muted">Defined in <code class="cp">wiki-host/runtime/lib/BootstrapMarker.php</code>.</p>
+    </div>
+  </details>
+
+  <section class="block">
+    <h2>Step 2: picture guide pages</h2>
+    <p><code class="cp">wiki-host/runtime/install-visual-guides.php</code> takes its own advisory lock and, for each entry in <code>visual-guides/manifest.json</code>, runs <code>edit --createonly</code> only when the page does not exist. An existing page is left alone, whoever wrote it.</p>
+    <div class="tw"><table>
+      <thead><tr><th>Page</th><th>Log line</th></tr></thead>
+      <tbody>
+        <tr><td>does not exist</td><td><span class="msg okm">Published editable visual page: &lt;title&gt;</span></td></tr>
+        <tr><td>exists</td><td><span class="msg">Preserved existing editable page: &lt;title&gt;</span></td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="block" id="step3">
+    <h2>Step 3: packaged guides</h2>
+    <p>For each entry in <code>main-guides/manifest.json</code>, <code class="cp">wiki-host/runtime/install-main-guides.php</code> checks the file's SHA-256 against the manifest, reads the page's current text and asks <code>MainGuidePublication::decide</code>. <code>baselineSha256</code> is the hash of the text the packaged page was prepared against, so community edits made after it always win.</p>
+    <div class="tw"><table>
+      <thead><tr><th>Current page text</th><th>Decision</th><th>Log line</th></tr></thead>
+      <tbody>
+        <tr><td>equals the packaged text</td><td><code>AlreadyPublished</code></td><td><span class="msg">Main guide already published: &lt;title&gt;</span></td></tr>
+        <tr><td>equals <code>baselineSha256</code>, or no page and no baseline</td><td><code>Publish</code></td><td><span class="msg okm">Published exact-source main guide: &lt;title&gt; revision &lt;id&gt;</span></td></tr>
+        <tr><td>anything else, including a deleted page</td><td><code>PreserveEdited</code></td><td><span class="msg">Preserved changed main guide; publication needs merge: &lt;title&gt;</span><br><span class="small muted">A community edit blocked the update. Merging is manual work.</span></td></tr>
+        <tr><td>an edit lands between the read and the save</td><td>save fails (<code>grabParentRevision</code> compare-and-swap)</td><td><span class="msg err">Conditional main guide publication refused; existing edits retained</span><br><span class="small muted">Fatal: the container stops.</span></td></tr>
+        <tr><td>file hash differs from the manifest</td><td>fatal</td><td><span class="msg err">Main guide source hash mismatch</span></td></tr>
+      </tbody>
+    </table></div>
+    <div class="callout warn"><b>A fresh database does not reproduce production</b><span>The shipped baselines record production page text (<code class="cp">wiki-host/tools/activate-main-corpus.mjs</code> reads them from <code>main-guides/corpus-baselines.json</code> and <code>published-revisions.json</code>). On a fresh database most compiled guides do not match their baseline, so they are preserved as seed text rather than published. Only a backup reproduces production.</span></div>
+  </section>
+
+  <section class="block">
+    <h2>Health endpoint</h2>
+    <p><code>/healthz.php</code> (<code class="cp">wiki-host/runtime/health.php</code>) answers <span class="msg okm">200 ready</span> only when all of these hold; otherwise <span class="msg err">503 not ready</span>, without saying why. It sends <code>Cache-Control: no-store</code>.</p>
+    <ul class="check conds">
+      <li>the settings paths and <code>MW_SERVER</code> are valid</li>
+      <li>the active <code>LocalSettings.php</code> is a regular file identical to the packaged one</li>
+      <li>the marker row for the packaged XML digest is <code>ready</code></li>
+      <li>there are at least 381 mainspace pages</li>
+    </ul>
+    <p class="sub">It counts pages; it does not check whether packaged guides were published or preserved.</p>
+  </section>
+
+  <details>
+    <summary>Moderation during startup</summary>
+    <div class="dbody">
+      <p>New user edits go through the Moderation extension. The runtime scripts set <code>MW_BOOTSTRAP=1</code> in their own environment (<code>RuntimeConfig::bypassModerationInMaintenance</code>) so the maintenance processes they start can save without the review queue. <code>LocalSettings.php</code> sets <code>$wgModerationEnable = !RuntimeConfig::moderationBypassed()</code>. Apache is started by <code>start.sh</code>, whose environment does not have the variable, so web edits stay moderated. Never set <code>MW_BOOTSTRAP</code> on the service.</p>
+    </div>
+  </details>
+</section>
+
+<!-- ============================== OPERATE ============================== -->
+<section class="view" id="v-operate" data-view="operate" data-title="Deploy and recover" hidden>
+  <div class="head">
+    <div class="tags"><span class="ph build">image build</span><span class="ph start">container start</span><span class="tag db">DB</span></div>
+    <h1>Deploy and recover</h1>
+    <p class="lede">Deploys on Render are started by hand. A redeploy replaces code, settings and packaged files; it never undoes anything in the database. Only a tested backup can do that.</p>
+  </div>
+
+  <section class="block">
+    <h2>Before a deploy</h2>
+    <ol class="check">
+      <li>On a clean checkout of the commit, run every check in <a href="#tests">Tests</a>: <code>npm test</code>, the PHP tests, the corpus verifiers.</li>
+      <li>Build the image locally and boot it against a throwaway TLS PostgreSQL. Expect <code>ready</code> from <code>/healthz.php</code>.</li>
+      <li>If the release changes <code>corpus/</code>, production will refuse to start (<a href="#startup" data-goto="startup:r-mismatch"><code>IncompleteOrMismatched</code></a>). Do not deploy it without a written migration plan.</li>
+      <li>If the release changes the MediaWiki base image, plan to run <code>update.php</code> by hand; startup never runs it on an existing database.</li>
+      <li>Take and test-restore a backup when the release touches anything that writes to the database: a base image change, new packaged pages, manual recovery.</li>
+      <li>Start a manual deploy of the commit.</li>
+    </ol>
+  </section>
+
+  <section class="block" id="smoke">
+    <h2>After a deploy</h2>
+    <div class="cmdwrap"><button type="button" data-copy="smoke-cmd">Copy commands</button>
+<pre class="cmdblock" id="smoke-cmd">curl -s -i https://pvmewiki.sanji3.dev/healthz.php            <span class="c"># 200, body "ready"</span>
+curl -s https://pvmewiki.sanji3.dev/wiki/PvME | grep -o 'load-[0-9a-f]\{16\}\.php' | sort -u</pre></div>
+    <div class="tw"><table>
+      <thead><tr><th>Check</th><th>Expect</th><th>If not</th></tr></thead>
+      <tbody>
+        <tr><td><code>/healthz.php</code></td><td><span class="msg okm">200</span> body <code>ready</code></td><td><code>503 not ready</code> gives no reason; read the deploy log.</td></tr>
+        <tr><td>deploy log, step 1</td><td><span class="msg okm">PvME wiki ready: existing verified corpus</span></td><td>Look the line up in the <a href="#startup" data-goto="startup:outcomes">startup outcomes</a>.</td></tr>
+        <tr><td>deploy log, step 3</td><td>one line per packaged page</td><td>Each <span class="msg">Preserved changed main guide; publication needs merge</span> is a page where a community edit blocked a packaged update; decide by hand whether to merge.</td></tr>
+        <tr><td>the <code>load-&lt;id&gt;.php</code> path</td><td>differs from the previous release whenever any <code>.js</code>, <code>.json</code> or <code>.css</code> under <code>presentation/module/modules/</code> changed</td><td>Readers may run the previous module list.</td></tr>
+        <tr><td>one guide and one boss landing page</td><td>navigation bar, Other guides list and Source footer appear</td><td>See <a href="#reader">Reader</a>, when it runs.</td></tr>
+        <tr><td>Copy to wiki on one guide</td><td>paste into RuneScape Wiki's source editor preview; do not save</td><td>See <a href="#copy">Copy to wiki</a> outcomes.</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="block" id="rollback">
+    <h2>Rollback and backups</h2>
+    <div class="split">
+      <div class="panel"><h3>Redeploying an earlier commit replaces</h3><ul><li>code and settings</li><li>packaged files in the image</li></ul></div>
+      <div class="panel"><h3>It does not undo</h3><ul><li>pages a newer image published; the runtime never deletes or reverts a page</li><li>any edit, account or moderation state</li><li>and an earlier image with a different seed corpus is refused at startup</li></ul></div>
+    </div>
+    <p>Back up before every change that can write to the database, and test that the backup restores. Use PostgreSQL client tools of the server's major version or newer.</p>
+    <div class="cmdwrap"><button type="button" data-copy="backup-cmd">Copy commands</button>
+<pre class="cmdblock" id="backup-cmd">pg_dump --format=custom --no-owner --dbname="$MW_DATABASE_URL" --file=pvmewiki.dump
+<span class="c"># restore into a new, empty database, never over the live one:</span>
+pg_restore --no-owner --dbname="$RESTORE_URL" pvmewiki.dump</pre></div>
+    <p class="sub">A restore is proven when the image boots against the restored database, logs <span class="msg okm">PvME wiki ready: existing verified corpus</span> and <code>/healthz.php</code> answers <code>ready</code>. Keep dumps outside the repository; they contain account data. The seed corpus in Git recreates an empty wiki with the imported guides; it cannot restore anything people did afterwards.</p>
+  </section>
+
+  <section class="block">
+    <h2>What the image is built from</h2>
+    <p>The build context is <code class="cp">wiki-host/</code>, not the repository root: <code>docker build -t pvmewiki:local wiki-host</code>. <code class="cp">wiki-host/.dockerignore</code> is an allow-list.</p>
+    <div class="split">
+      <div class="panel"><h3><span class="ship in">in image</span></h3><ul>
+        <li><code>LocalSettings.php</code>, <code>runtime/</code>, <code>presentation/module/</code>, <code>visual-guides/</code></li>
+        <li><code>main-guides/manifest.json</code> and <code>main-guides/*.wiki</code></li>
+        <li><code>corpus/pages.xml</code>, <code>corpus/manifest.json</code>, <code>corpus/SHA256SUMS</code></li></ul></div>
+      <div class="panel"><h3>The <code class="cp">wiki-host/Dockerfile</code> fails the build if</h3><ul>
+        <li>the Moderation clone's <code>HEAD</code> is not the pinned commit</li>
+        <li>Vector, VisualEditor, WikiEditor or TemplateData is missing from the base image</li>
+        <li><code>php -l</code> fails on any copied PHP file</li>
+        <li>a file named in <code>main-guides/manifest.json</code> is missing (manifest and <code>.dockerignore</code> drifted)</li></ul></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Render Blueprint</h2>
+    <dl class="kv">
+      <dt>file</dt><dd><code class="cp">wiki-host/render.yaml</code>: one Docker web service</dd>
+      <dt>dockerContext</dt><dd><code>./wiki-host</code>, with <code>dockerfilePath: ./wiki-host/Dockerfile</code></dd>
+      <dt>autoDeployTrigger</dt><dd><code>off</code>: every deploy is started by hand</dd>
+      <dt>healthCheckPath</dt><dd><code>/healthz.php</code></dd>
+      <dt>MW_DATABASE_URL</dt><dd>by reference from an existing Render PostgreSQL database; the Blueprint does not create one</dd>
+      <dt>sync: false</dt><dd><code>MW_SECRET_KEY</code>, <code>MW_UPGRADE_KEY</code>, <code>MW_ADMIN_PASSWORD</code>, <code>MW_SERVER</code>: values entered in the dashboard, never in Git</dd>
+      <dt>plan</dt><dd>free. A free-tier managed database can have an expiry date; track it and move the data before it lapses.</dd>
+    </dl>
+    <p class="sub">Applying the Blueprint and pointing DNS at the service are separate manual steps.</p>
+  </section>
+
+  <details>
+    <summary>Why the release id is in the load path</summary>
+    <div class="dbody">
+      <p><code>LocalSettings.php</code> sets <code>$wgLoadScript</code> to <code>/load-&lt;id&gt;.php</code>, where <code>&lt;id&gt;</code> is 16 hex digits of a hash over every <code>.js</code>, <code>.json</code> and <code>.css</code> file in the extension's <code>modules/</code> directory (<code class="cp">wiki-host/runtime/lib/PresentationRelease.php</code>). <code class="cp">wiki-host/runtime/wiki.conf</code> rewrites that path to <code>load.php</code>.</p>
+      <p>Browsers cache ResourceLoader's startup response under its URL; with an unversioned <code>load.php</code> a reader could keep the previous release's module list. A query parameter does not work because ResourceLoader appends its own query string. A path changes with every release and stays cacheable between releases.</p>
+    </div>
+  </details>
+</section>
+
+<!-- ============================== CONFIG ============================== -->
+<section class="view" id="v-config" data-view="config" data-title="Configuration" hidden>
+  <div class="head">
+    <div class="tags"><span class="ph start">container start</span><span class="ph req">each request</span></div>
+    <h1>Configuration</h1>
+    <p class="lede">The service is configured only through environment variables, validated before the database is touched. Values belong in the platform's secret store; this page lists names and rules, never values.</p>
+  </div>
+  <div class="filters" role="group" aria-label="Filter variables">
+    <button type="button" class="chipbtn" data-envf="all" aria-pressed="true">All</button>
+    <button type="button" class="chipbtn" data-envf="y" aria-pressed="false">Required</button>
+    <button type="button" class="chipbtn" data-envf="n" aria-pressed="false">Optional</button>
+    <button type="button" class="chipbtn" data-envf="x" aria-pressed="false">Must not be set</button>
+  </div>
+  <div class="tw"><table id="envtable">
+    <thead><tr><th>Variable</th><th>Required</th><th>Rule</th><th>Read at</th></tr></thead>
+    <tbody>
+      <tr data-req="y"><td class="nm"><code>MW_DATABASE_URL</code></td><td><span class="rq y">yes</span></td><td><code>postgresql://</code> or <code>postgres://</code> with host, user, password and database name; no query string or fragment; port defaults to 5432</td><td><span class="ph start">start</span> <span class="ph req">request</span></td></tr>
+      <tr data-req="y"><td class="nm"><code>MW_SERVER</code></td><td><span class="rq y">yes</span></td><td>exactly <code>https://host</code> or <code>https://host:port</code>; no path, credentials, query or fragment</td><td><span class="ph start">start</span> <span class="ph req">request</span></td></tr>
+      <tr data-req="y"><td class="nm"><code>MW_SECRET_KEY</code></td><td><span class="rq y">yes</span></td><td>non-empty</td><td><span class="ph start">start</span> <span class="ph req">request</span></td></tr>
+      <tr data-req="y"><td class="nm"><code>MW_UPGRADE_KEY</code></td><td><span class="rq y">yes</span></td><td>non-empty</td><td><span class="ph start">start</span> <span class="ph req">request</span></td></tr>
+      <tr data-req="y"><td class="nm"><code>MW_ADMIN_PASSWORD</code></td><td><span class="rq y">yes</span></td><td>non-empty; used only by a fresh install</td><td><span class="ph start">start</span></td></tr>
+      <tr data-req="n"><td class="nm"><code>MW_ALLOW_RENDER_PRIVATE_TLS</code></td><td><span class="rq n">no</span></td><td>only <code>true</code> has an effect; see TLS modes below</td><td><span class="ph start">start</span> <span class="ph req">request</span></td></tr>
+      <tr data-req="n"><td class="nm"><code>RENDER</code></td><td><span class="rq n">no</span></td><td>set by Render; checked when private TLS is requested</td><td><span class="ph start">start</span> <span class="ph req">request</span></td></tr>
+      <tr data-req="n"><td class="nm"><code>MW_PRESENTATION_ENABLED</code></td><td><span class="rq n">no</span></td><td><code>false</code> skips loading PvmePresentation (<code>LocalSettings.php</code>)</td><td><span class="ph req">request</span></td></tr>
+      <tr data-req="n"><td class="nm"><code>MW_INSTALL_PATH</code>, <code>MW_CONFIG_FILE</code></td><td><span class="rq n">no</span></td><td>unset, or pointing at <code>/var/www/html</code> and its <code>LocalSettings.php</code>; anything else is refused</td><td><span class="ph start">start</span> <span class="small muted">and health</span></td></tr>
+      <tr data-req="x"><td class="nm"><code>MW_BOOTSTRAP</code></td><td><span class="rq x">never</span></td><td>internal; if set for the service, web edits skip moderation</td><td><span class="ph req">request</span></td></tr>
+      <tr data-req="n"><td class="nm"><code>PORT</code></td><td><span class="rq n">no</span></td><td>set to <code>80</code> in <code>render.yaml</code> for the platform; this code does not read it</td><td><span class="small muted">not read</span></td></tr>
+    </tbody>
+  </table></div>
+  <p class="sub">Validation: <code class="cp">wiki-host/runtime/lib/RuntimeConfig.php</code> and <code class="cp">wiki-host/runtime/lib/RuntimeSettings.php</code>. "Request" means <code class="cp">wiki-host/LocalSettings.php</code> reads it on every MediaWiki request. The exact refusal messages are under <a href="#startup" data-goto="startup:prechecks">startup</a>.</p>
+
+  <section class="block">
+    <h2>TLS modes</h2>
+    <p>The runtime refuses unencrypted connections. Which mode applies depends on three facts:</p>
+    <div class="tls">
+      <div class="panel"><h3><code>verify-full</code> <span class="small muted">default</span></h3><p>Every connection verifies the server certificate against <code>/etc/ssl/certs/ca-certificates.crt</code> (<code>RuntimePaths::CA_BUNDLE</code>).</p></div>
+      <div class="panel"><h3><code>require</code></h3><p>Encrypted, without certificate verification, for Render's internal network. Only when all three hold: <code>MW_ALLOW_RENDER_PRIVATE_TLS=true</code>, <code>RENDER=true</code>, and the database host matches <code>RENDER_PRIVATE_HOST</code> in <code>RuntimeConfig.php</code>.</p></div>
+      <div class="panel"><h3><span class="st stop">refused</span></h3><p><code>MW_ALLOW_RENDER_PRIVATE_TLS=true</code> with any other host stops startup with <span class="msg err">Private TLS is limited to a Render private database host</span>.</p></div>
+    </div>
+    <p class="sub">The runtime's own connections pass the mode explicitly and then check <code>pg_stat_ssl</code>. MediaWiki's database layer maps its setting only to <code>require</code>, so <code>LocalSettings.php</code> and the installer get the mode through <code>PGSSLMODE</code> and <code>PGSSLROOTCERT</code> (<code>DatabaseConfig::exportTlsEnvironment</code>).</p>
+  </section>
+</section>
+
+<!-- ============================== READER ============================== -->
+<section class="view" id="v-reader" data-view="reader" data-title="Reader" hidden>
+  <div class="head">
+    <div class="tags"><span class="ph browser">browser</span><span class="ph req">each request</span><span class="ship in">in image</span></div>
+    <h1>Reader</h1>
+    <p class="lede">Browser code that adds navigation, attribution and the Copy to wiki button around a guide. It never changes the saved article: everything it inserts sits outside <code>.mw-parser-output</code>, so it is never part of a revision and never reaches an editor.</p>
+  </div>
+
+  <figure>
+    <div class="anat">
+      <div class="page" role="img" aria-label="A guide page: an added navigation bar and Other guides list above, a heading copied cosmetically, the verbatim article in the middle, and an added Source footer below.">
+        <div class="chrome"><i></i><i></i><i></i> pvmewiki.sanji3.dev/wiki/PvME/...</div>
+        <div class="rg changed"><b>#firstHeading</b><span>shows the guide's own heading (cosmetic)</span></div>
+        <div class="rg added"><b>Navigation bar</b><div class="navparts"><em>breadcrumbs</em><em>edit · history</em><em>contents</em><em>child pages</em><em>Copy to wiki</em><em>freshness badge</em></div></div>
+        <div class="rg added"><b>Other guides for the same boss</b></div>
+        <div class="rg verb"><b>.mw-parser-output</b><span>the saved revision, exactly as stored</span></div>
+        <div class="rg added"><b>Source footer</b><span>licence · original guide · import date · upstream revision</span></div>
+      </div>
+      <div class="tw"><table>
+        <thead><tr><th>Region</th><th>Code</th></tr></thead>
+        <tbody>
+          <tr><td>Navigation bar, contents, child-page list, Other guides</td><td><code>toolbar.js</code>, <code>page.js</code></td></tr>
+          <tr><td>Copy to wiki button and status panel</td><td><code>copy-to-wiki.js</code></td></tr>
+          <tr><td>Source freshness badge</td><td><code>source-freshness.js</code></td></tr>
+          <tr><td>Source footer</td><td><code>source-footer.js</code></td></tr>
+          <tr><td>Heading copied into <code>#firstHeading</code></td><td><code>native-title.js</code>, server-side <code>GuidePageDisplay</code></td></tr>
+          <tr><td>Seed index pages: CSS classes, <code>title</code> attributes, ARIA labels only</td><td><code>index-page-styling.js</code></td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <figcaption><span class="vb"></span> verbatim guide text &nbsp; <span class="ad"></span> added by the reader &nbsp; amber: changed cosmetically. All files are in <code class="cp">wiki-host/presentation/module/modules/reader/</code>; styles in <code class="cp">wiki-host/presentation/module/modules/styles/</code>. Copy to wiki, the freshness badge and the Source footer appear only when the registry entry has a <code>source</code> URL.</figcaption>
+  </figure>
+
+  <section class="block">
+    <h2>When it runs, and when it does nothing</h2>
+    <div class="split">
+      <div class="panel"><h3>Loaded by the server</h3><p><code>GuidePageDisplay</code> (on <code>BeforePageDisplay</code>) loads the module only on the <code>view</code> action of a main-namespace page titled <code>PvME</code> or <code>PvME/...</code>.</p></div>
+      <div class="panel"><h3><code>enhancePage()</code> returns early when</h3><ul><li>VisualEditor is open or opening (<code>.ve-active</code>, <code>.ve-activating</code>)</li><li>the page has no entry in <code>modules/navigation.json</code></li><li>there is no <code>.mw-parser-output</code>, or the toolbar already exists</li></ul></div>
+    </div>
+    <p class="sub">A new page gets no navigation, heading or Copy to wiki until <code>navigation.json</code> is rebuilt and a new image deployed. The registry is a static file (<a href="#limits">limitation 12</a>).</p>
+  </section>
+
+  <section class="block">
+    <h2>What it changes</h2>
+    <div class="split">
+      <div class="panel"><h3>Page heading</h3><p>Compiled guides store their heading as <code>&lt;h1 class="pvme-source-title"&gt;</code> inside the article. The stylesheet hides it in read view and <code>native-title.js</code> copies its child nodes into <code>#firstHeading</code>. A <code>MutationObserver</code> repeats the copy after a VisualEditor save. The server sets the same heading first, so the page is right before the script runs; the browser tab title is unchanged.</p></div>
+      <div class="panel"><h3>Seed index pages</h3><p>Pages still in the seed format (no <code>nativeLayout</code>) gain CSS classes, <code>title</code> attributes and ARIA labels only. Text, links and element order are untouched.</p></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Boss landing pages</h2>
+    <p>A landing page (registry entry with <code>overview</code>) transcludes the boss's overview guide with <code>{{:...}}</code>. The edit and history links and Copy to wiki point at that overview guide, because that is the text on screen (<code>pageActions</code> in <code>toolbar.js</code>, <code>findPage</code> in <code>page.js</code>).</p>
+  </section>
+
+  <section class="block">
+    <h2>Source freshness badge</h2>
+    <dl class="kv">
+      <dt>fetches</dt><dd><code>https://pvme.sanji3.dev/data/guide-history.json</code>, a feed published by a separate site, with credentials and referrer omitted</dd>
+      <dt>timeout</dt><dd>ten seconds</dd>
+      <dt>cache</dt><dd><code>sessionStorage</code>, 15 minutes</dd>
+      <dt>shows</dt><dd>days since the last upstream content change, linked to the upstream commit. It describes source history only, not whether a guide is still correct in game.</dd>
+      <dt>on failure</dt><dd>a missing, malformed or future date shows <span class="msg">Source date unverified</span></dd>
+    </dl>
+  </section>
+</section>
+
+<!-- ============================== COPY ============================== -->
+<section class="view" id="v-copy" data-view="copy" data-title="Copy to wiki" hidden>
+  <div class="head">
+    <div class="tags"><span class="ph browser">browser</span><span class="tag">reads this wiki's API only</span></div>
+    <h1>Copy to wiki</h1>
+    <p class="lede">One click reads the guide's latest saved revision from this wiki, converts it in the browser and puts RuneScape Wiki wikitext on the clipboard. Nothing is saved on either wiki and nothing is sent anywhere else.</p>
+  </div>
+  <div class="callout"><b>Why the clipboard write starts before the fetch finishes</b><span>Browsers allow a clipboard write only while handling the click. Fetching the revision and loading the exporter takes longer than that window. So the handler starts <code>navigator.clipboard.write()</code> immediately with a <code>ClipboardItem</code> whose content is a promise, which resolves when the export is ready (<code>writeToClipboardWhenReady</code> in <code class="cp">wiki-host/presentation/module/modules/reader/copy-to-wiki.js</code>).</span></div>
+
+  <figure>
+    <div class="scroll wide">
+    <svg viewBox="0 0 980 690" role="img" aria-label="Sequence: the click starts the revision fetch, the exporter module load and a clipboard write together; when both arrive the exporter converts the revision; unresolved media rejects the copy; otherwise the pending clipboard item resolves with the wikitext; if the browser refuses, writeText is tried, then a selected text area.">
+      <defs>
+        <marker id="sq" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="mk" d="M0 0 L10 5 L0 10 z"/></marker>
+        <marker id="sqa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="mk acc" d="M0 0 L10 5 L0 10 z"/></marker>
+      </defs>
+      <rect x="0" y="0" width="980" height="690" style="fill:var(--surface)"/>
+      <!-- lane heads -->
+      <g>
+        <rect class="n2" x="10" y="16" width="120" height="44" rx="5"/><text class="tb" x="70" y="43" text-anchor="middle">Person</text>
+        <rect class="n2" x="165" y="16" width="150" height="44" rx="5"/><text class="tb" x="240" y="36" text-anchor="middle">Click handler</text><text class="ts" x="240" y="52" text-anchor="middle">copy-to-wiki.js</text>
+        <rect class="n2" x="350" y="16" width="140" height="44" rx="5"/><text class="tb" x="420" y="36" text-anchor="middle">Clipboard</text><text class="ts" x="420" y="52" text-anchor="middle">navigator.clipboard</text>
+        <rect class="n2" x="520" y="16" width="140" height="44" rx="5"/><text class="tb" x="590" y="36" text-anchor="middle">Wiki API</text><text class="ts" x="590" y="52" text-anchor="middle">this wiki only</text>
+        <rect class="n2" x="690" y="16" width="140" height="44" rx="5"/><text class="tb" x="760" y="36" text-anchor="middle">ResourceLoader</text><text class="ts" x="760" y="52" text-anchor="middle">mw.loader</text>
+        <rect class="n2" x="850" y="16" width="120" height="44" rx="5"/><text class="tb" x="910" y="36" text-anchor="middle">Exporter</text><text class="ts" x="910" y="52" text-anchor="middle">exportRevision</text>
+      </g>
+      <line class="life" x1="70" y1="60" x2="70" y2="680"/>
+      <line class="life" x1="240" y1="60" x2="240" y2="680"/>
+      <line class="life" x1="420" y1="60" x2="420" y2="680"/>
+      <line class="life" x1="590" y1="60" x2="590" y2="680"/>
+      <line class="life" x1="760" y1="60" x2="760" y2="680"/>
+      <line class="life" x1="910" y1="60" x2="910" y2="680"/>
+      <!-- pending clipboard item -->
+      <rect class="bar" x="415" y="214" width="10" height="290"/>
+
+      <line class="e" x1="70" y1="96" x2="238" y2="96" marker-end="url(#sq)"/><text class="el onsurf" x="154" y="89" text-anchor="middle">click Copy to wiki</text>
+      <text class="ts" x="248" y="120">status: Preparing copy…</text>
+      <line class="e" x1="240" y1="150" x2="588" y2="150" marker-end="url(#sq)"/><text class="el onsurf" x="414" y="143" text-anchor="middle">action=query&amp;prop=revisions (latest)</text>
+      <line class="e" x1="240" y1="180" x2="758" y2="180" marker-end="url(#sq)"/><text class="el onsurf" x="500" y="173" text-anchor="middle">mw.loader.using(ext.pvmePresentation.wikiExport)</text>
+      <text class="ts" x="232" y="168" text-anchor="end">Promise.all,</text><text class="ts" x="232" y="182" text-anchor="end">started together</text>
+      <line class="e acc" x1="240" y1="214" x2="413" y2="214" marker-end="url(#sqa)"/><text class="el onsurf acc" x="326" y="207" text-anchor="middle">clipboard.write(item)</text>
+      <text class="ts" x="432" y="210" style="fill:var(--accent)">same click: the item's content is a promise,</text>
+      <text class="ts" x="432" y="225" style="fill:var(--accent)">so the browser accepts the gesture now</text>
+
+      <line class="e dash" x1="590" y1="262" x2="242" y2="262" marker-end="url(#sq)"/><text class="el onsurf" x="500" y="255" text-anchor="middle">latest revision wikitext</text>
+      <line class="e dash" x1="760" y1="292" x2="242" y2="292" marker-end="url(#sq)"/><text class="el onsurf" x="640" y="285" text-anchor="middle">exporter + 1 MB media catalogue</text>
+      <line class="e" x1="240" y1="326" x2="908" y2="326" marker-end="url(#sq)"/><text class="el onsurf" x="700" y="319" text-anchor="middle">exportRevision(revision, catalogue)</text>
+      <line class="e dash" x1="910" y1="356" x2="242" y2="356" marker-end="url(#sq)"/><text class="el onsurf" x="700" y="349" text-anchor="middle">{wikitext, media, unresolvedMedia}  or throws</text>
+
+      <rect class="frm" x="150" y="372" width="820" height="58" rx="4"/>
+      <rect class="frmt" x="150" y="372" width="250" height="18"/>
+      <text class="ts" x="158" y="385">if it throws or unresolvedMedia is not empty</text>
+      <text class="ts" x="436" y="410"><tspan class="stopt">nothing is copied:</tspan> the promise rejects and the status shows the reason</text>
+      <text class="ts" x="436" y="424">(unresolved media: a count; any other error: one generic message)</text>
+
+      <line class="e acc" x1="240" y1="456" x2="413" y2="456" marker-end="url(#sqa)"/><text class="el onsurf acc" x="326" y="449" text-anchor="middle">promise resolves</text>
+      <line class="e dash" x1="420" y1="496" x2="242" y2="496" marker-end="url(#sq)"/><text class="el onsurf" x="330" y="489" text-anchor="middle">accepted or refused</text>
+
+      <rect class="frm" x="150" y="518" width="820" height="98" rx="4"/>
+      <rect class="frmt" x="150" y="518" width="250" height="18"/>
+      <text class="ts" x="158" y="531">if refused, or no ClipboardItem support</text>
+      <line class="e" x1="240" y1="556" x2="413" y2="556" marker-end="url(#sq)"/><text class="el onsurf" x="326" y="549" text-anchor="middle">writeText(wikitext)</text>
+      <text class="ts" x="250" y="584">still refused: the full wikitext opens in a read-only text area,</text>
+      <text class="ts" x="250" y="600">selected, with a Copy wikitext button for a second attempt</text>
+
+      <line class="e dash" x1="240" y1="650" x2="72" y2="650" marker-end="url(#sq)"/><text class="el onsurf" x="156" y="643" text-anchor="middle">status message</text>
+    </svg>
+    </div>
+    <div class="scrollhint">Scroll sideways to follow the sequence.</div>
+    <figcaption>The shaded bar on the Clipboard lane is the pending write: it is opened during the click and filled only when the export succeeds. The exporter is a separate module because its media catalogue is about 1 MB; loading it on every page view would cost every reader for a feature few use.</figcaption>
+  </figure>
+
+  <section class="block">
+    <h2>What the person sees</h2>
+    <div class="tw"><table>
+      <thead><tr><th>When</th><th>Status text, exactly</th></tr></thead>
+      <tbody>
+        <tr><td>copied</td><td><span class="msg okm">Copied revision &lt;id&gt;. Paste it into the wiki source editor.</span></td></tr>
+        <tr><td>media without a verified route</td><td><span class="msg err">This guide needs &lt;n&gt; more image or video links for RuneScape Wiki. Nothing was copied.</span></td></tr>
+        <tr><td>any other error, including an exporter refusal</td><td><span class="msg err">Couldn’t load this guide. Try Copy to wiki again.</span><br><span class="small muted">The exporter's own message is not shown; a retry cannot help (<a href="#limits">limitation 4</a>).</span></td></tr>
+        <tr><td>clipboard blocked on the first try</td><td><span class="msg">Your browser blocked the clipboard. Click Copy wikitext below to try again.</span></td></tr>
+        <tr><td>Copy wikitext succeeds</td><td><span class="msg okm">Copied. Paste it into the wiki source editor.</span></td></tr>
+        <tr><td>Copy wikitext blocked too</td><td><span class="msg">Your browser blocked the clipboard. The complete wikitext is selected below; press Ctrl+C or Command+C.</span></td></tr>
+        <tr><td>appended when the guide has linked videos</td><td><span class="msg">&lt;n&gt; original video clips open in the source player; RuneScape Wiki cannot play these hosts inline.</span></td></tr>
+      </tbody>
+    </table></div>
+    <p class="sub">Use RuneScape Wiki's preview before saving anything there, and follow that wiki's own policies on guide content and licensing. The promise-based clipboard path is tested only against jsdom stand-ins, not on a physical iPhone (<a href="#limits">limitation 8</a>).</p>
+  </section>
+</section>
+
+<!-- ============================== EXPORTER ============================== -->
+<section class="view" id="v-exporter" data-view="exporter" data-title="Exporter" hidden>
+  <div class="head">
+    <div class="tags"><span class="ph browser">browser</span><span class="tag">pure: no requests, no globals</span><span class="ship in">in image</span></div>
+    <h1>Exporter</h1>
+    <p class="lede"><code>exportRevision(revision, mediaCatalogue)</code> turns one saved revision into wikitext that renders the same guide on RuneScape Wiki. It may restyle guide text but never drop, reorder or reword it, so whenever it cannot be sure the output carries the whole guide, it throws.</p>
+  </div>
+
+  <figure>
+    <div class="pipe">
+      <div class="stage"><h3>Set up routes</h3><div class="fn">createMediaRouter(catalogue)<br>media-routes.js</div><ul><li data-stage="route">catalogue <code>targetWiki</code> is not runescape.wiki</li></ul><div class="out">a router that maps each media URL to a route</div></div>
+      <div class="stage"><h3>Parse</h3><div class="fn">parsePublishedMarkup(wikitext)<br>published-markup.js</div><ul><li>empty revision</li><li>reserved placeholder characters</li><li><code>{{</code> outside <code>&lt;nowiki&gt;</code></li><li>duplicate attribute</li><li>closing tag on a void or media tag</li><li>unbalanced closing tag</li><li>unclosed containers</li></ul><div class="out"><code>&lt;nowiki&gt;</code> and <code>&lt;pre&gt;</code> spans become placeholders first, so guide text is never read as a tag or template</div></div>
+      <div class="stage"><h3>Render and route media</h3><div class="fn">renderGuide(root, router)<br>render-guide.js · media-markup.js</div><ul><li>tag not in <code>ALLOWED_TAGS</code></li><li>media or link URL not plain http(s), or with credentials</li><li>broken verified catalogue entry</li><li>mirror without matching hashes</li></ul><div class="out">inline styles, because RuneScape Wiki lacks this wiki's stylesheet; text nodes emitted untouched</div></div>
+      <div class="stage"><h3>Assemble</h3><div class="fn">exportRevision<br>export-revision.js</div><ul><li>no guide body produced</li><li>permalink not public</li></ul><div class="out">title block and <code>{{ToC}}</code> if no level-1 heading; warning box if media is unresolved; <code>== Source ==</code> section with permalink, timestamp, licence, original guide</div></div>
+    </div>
+    <figcaption>Red marks are refusal points, in the order the code meets them. All files are in <code class="cp">wiki-host/presentation/module/modules/export/</code>. Output: <code>{wikitext, media, unresolvedMedia, layout}</code>. The caller decides what to do with unresolved media; Copy to wiki refuses to copy.</figcaption>
+  </figure>
+
+  <section class="block" id="refusals">
+    <h2>Refusal messages</h2>
+    <p class="sub">Each throws an <code>Error</code> whose message is meant for the person who clicked Copy, though Copy to wiki currently shows a generic message instead. <code class="cp">wiki-host/tests/export-refusals.test.mjs</code> pins every one except the permalink rule, which <code class="cp">wiki-host/tests/export-content.test.mjs</code> pins. Tag and attribute names in messages stand for whatever was found.</p>
+    <div class="filters" role="group" aria-label="Filter refusals by stage">
+      <button type="button" class="chipbtn" data-stagef="all" aria-pressed="true">All<span class="ct">14</span></button>
+      <button type="button" class="chipbtn" data-stagef="parse" aria-pressed="false">Parse<span class="ct">7</span></button>
+      <button type="button" class="chipbtn" data-stagef="render" aria-pressed="false">Render and routes<span class="ct">5</span></button>
+      <button type="button" class="chipbtn" data-stagef="assemble" aria-pressed="false">Assemble<span class="ct">2</span></button>
+    </div>
+    <div class="tw"><table id="reftable">
+      <thead><tr><th>Input</th><th>Message</th><th>Why</th></tr></thead>
+      <tbody>
+        <tr data-stage="parse"><td>empty revision</td><td><span class="msg err">The published guide is empty.</span></td><td>nothing to export</td></tr>
+        <tr data-stage="parse"><td>the placeholder characters in the source</td><td><span class="msg err">The revision contains reserved export characters.</span></td><td>they would corrupt literal protection</td></tr>
+        <tr data-stage="parse"><td><code>{{</code> outside <code>&lt;nowiki&gt;</code></td><td><span class="msg err">Source templates need an explicit portable mapping before this guide can be exported.</span></td><td>a template here is a different page, or no page, on RuneScape Wiki</td></tr>
+        <tr data-stage="parse"><td>a duplicate attribute</td><td><span class="msg err">Duplicate HTML attribute: id.</span></td><td>which value wins is ambiguous</td></tr>
+        <tr data-stage="parse"><td>a closing tag on a void or media tag</td><td><span class="msg err">Unexpected closing media/void tag: pvme-image.</span></td><td>the tree would be guessed</td></tr>
+        <tr data-stage="parse"><td>a closing tag that does not match</td><td><span class="msg err">Unbalanced published HTML: div.</span></td><td>the tree would be guessed</td></tr>
+        <tr data-stage="parse"><td>an element left open</td><td><span class="msg err">The published HTML has unclosed containers.</span></td><td>the tree would be guessed</td></tr>
+        <tr data-stage="render"><td>a catalogue for a different wiki</td><td><span class="msg err">The asset resolver targets a different wiki.</span></td><td>the routes would be wrong (checked first, when the router is built)</td></tr>
+        <tr data-stage="render"><td>a tag not in <code>ALLOWED_TAGS</code></td><td><span class="msg err">Unsupported published HTML &lt;script&gt;.</span></td><td>RuneScape Wiki may strip it, taking its text with it</td></tr>
+        <tr data-stage="render"><td>a media or link URL that is not plain http(s), or carries credentials</td><td><span class="msg err">Unsupported media URL.</span></td><td>it could not be a safe link target</td></tr>
+        <tr data-stage="render"><td>a verified file entry with an invalid <code>File:</code> title, or empty <code>wikitext</code></td><td><span class="msg err">Invalid verified File title for &lt;url&gt;</span> <span class="msg err">Invalid verified media wikitext for &lt;url&gt;</span></td><td>a broken catalogue entry must not produce broken markup</td></tr>
+        <tr data-stage="render"><td>a mirrored image without a verified route and matching hashes</td><td><span class="msg err">A hosted image must have a verified destination route and identical original bytes.</span></td><td>a mirror must be byte-identical to the original</td></tr>
+        <tr data-stage="assemble"><td>a revision that renders to nothing</td><td><span class="msg err">No guide body was produced.</span></td><td>nothing to export</td></tr>
+        <tr data-stage="assemble"><td>a non-public permalink</td><td><span class="msg err">A public revision permalink is required.</span></td><td>the Source section is published on another site</td></tr>
+      </tbody>
+    </table></div>
+    <p class="sub">Two inputs fail with less helpful messages: a media tag without <code>src</code> surfaces the URL parser's <code>Invalid URL</code>, and an unsafe link <code>href</code> is reported as <code>Unsupported media URL.</code> (<a href="#limits">limitations 1 and 2</a>).</p>
+  </section>
+
+  <section class="block">
+    <h2>Media routes: how each image, video and embed reaches RuneScape Wiki</h2>
+    <p class="sub">RuneScape Wiki shows an image only if it is an existing File page or an external URL on a host in its <code>MediaWiki:External_image_whitelist</code>; videos and embeds need native markup or a link. <code>routeFor(kind, url)</code> in <code class="cp">wiki-host/presentation/module/modules/export/media-routes.js</code> takes the first rule that matches, reading the catalogue <code class="cp">wiki-host/presentation/module/modules/wiki-media-resolver.json</code>.</p>
+    <div class="tw"><table>
+      <thead><tr><th>Order</th><th>When</th><th>Route</th><th>Written as</th></tr></thead>
+      <tbody>
+        <tr><td class="mono">1</td><td>a <b>verified</b> entry names a wiki file (<code>mode</code> <code>file</code> or <code>wiki-file</code>, or no mode and a <code>fileTitle</code>)</td><td><code>{mode: 'file', fileName}</code></td><td><code>[[File:...|...|link=&lt;original URL&gt;]]</code>; a bad title throws</td></tr>
+        <tr><td class="mono">2</td><td>an image, and either a verified entry with <code>mode: 'external-image'</code> or a URL on an approved host</td><td><code>{mode: 'external-image', imageUrl}</code></td><td>inline external image. A mirror <code>imageUrl</code> must be on an approved host with <code>originalSha256</code> equal to <code>hostedSha256</code>, and keeps a link to the original</td></tr>
+        <tr><td class="mono">3</td><td>a verified entry with <code>mode: 'wikitext'</code></td><td><code>{mode: 'wikitext', wikitext}</code></td><td>the entry's native markup, for example a YouTube tag</td></tr>
+        <tr><td class="mono">4</td><td>a video or embed with a verified <code>mode: 'linked-video'</code> entry</td><td><code>{mode: 'linked-video'}</code></td><td>a link to the original clip (its poster image is dropped, <a href="#limits">limitation 5</a>)</td></tr>
+        <tr><td class="mono">5</td><td>anything else</td><td><code>{mode: null, reason}</code></td><td>a dashed link to the original so the preview shows where it was; reported in <code>unresolvedMedia</code></td></tr>
+      </tbody>
+    </table></div>
+    <div class="split">
+      <div class="panel"><h3>Approved image hosts</h3><p>The catalogue's <code>externalImagePolicies</code>, plus one built-in policy: PNG files under <code>https://img.pvme.io/images/</code>, with no query string.</p></div>
+      <div class="panel"><h3>What "verified" means</h3><p><code>isVerified</code> counts an entry or host policy only when <code>verified === true</code> and its <code>verification</code> has a non-empty <code>method</code>, a parseable <code>checkedAt</code> date and an <code>evidenceUrl</code> on <code>https://runescape.wiki/</code>. It checks that the record is well formed, not that the evidence is still true.</p></div>
+    </div>
+    <p class="sub">Unresolved reasons, exactly: <span class="msg">Destination mapping has not been verified.</span> (an entry exists), <span class="msg">No verified inline-image route or wiki File mapping.</span> (image), <span class="msg">No verified destination video/embed mapping.</span> (video or embed).</p>
+  </section>
+
+  <details>
+    <summary>What else the exporter copies or filters</summary>
+    <div class="dbody">
+      <ul>
+        <li>Author-set <code>style</code> attributes are filtered to a short list of properties, and any value containing <code>url(</code>, <code>expression(</code>, <code>var(</code>, <code>&lt;</code> or <code>&gt;</code> is dropped (<code>copiedStyle</code> in <code>render-guide.js</code>).</li>
+        <li>Only a fixed set of attributes is copied.</li>
+        <li>The attribution block this wiki adds (<code>div.pvme-source-attribution</code>) is left out, because the export writes its own Source section.</li>
+        <li>The output contains one template call of its own: the contents box uses RuneScape Wiki's <code>{{ToC}}</code> (<code>TABLE_OF_CONTENTS</code> in <code>render-guide.js</code>).</li>
+        <li>Bare text outside <code>&lt;nowiki&gt;</code> loses its newlines (<a href="#limits">limitation 3</a>). No packaged guide is affected.</li>
+      </ul>
+    </div>
+  </details>
+</section>
+
+<!-- ============================== CONTENT ============================== -->
+<section class="view" id="v-content" data-view="content" data-title="Content pipeline" hidden>
+  <div class="head">
+    <div class="tags"><span class="ph dev">dev machine</span></div>
+    <h1>Content pipeline</h1>
+    <p class="lede">Content reaches the image as files committed to Git. Node scripts produce those files by hand on a developer machine; nothing is generated at build or run time. Each script's header comment is its full contract.</p>
+  </div>
+
+  <div class="callout"><b>The content rule</b><span>From the root <code class="cp">AGENTS.md</code>: guide content is verbatim source material. Every source word, its order, gear note, rotation, caption, warning, link and visual must survive unchanged. Formatting, navigation and source-backed visual grouping may be added; guide text may not be rewritten, summarised, substituted, omitted or reordered. The audits exist to check exactly that.</span></div>
+
+  <section class="block">
+    <h2>Three kinds of content, three install rules</h2>
+    <div class="tw"><table>
+      <thead><tr><th>Kind</th><th>In the image</th><th>Installed by</th><th>Overwrites an existing page</th></tr></thead>
+      <tbody>
+        <tr><td><b>Seed corpus</b>: 381 attributed pages, one revision each (323 guides, 45 boss indexes, 12 group indexes, the <code>PvME</code> hub)</td><td><code class="cp">wiki-host/corpus/</code></td><td><code>bootstrap.php</code>, into an empty database only</td><td>never</td></tr>
+        <tr><td><b>Packaged guides</b>: compiled current guides, boss landing pages, one redirect</td><td><code class="cp">wiki-host/main-guides/</code></td><td><code>install-main-guides.php</code>, every start</td><td>only a page still at its recorded baseline</td></tr>
+        <tr><td><b>Picture guide</b>: one guide page and four templates</td><td><code class="cp">wiki-host/visual-guides/</code></td><td><code>install-visual-guides.php</code>, every start</td><td>never</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="block">
+    <h2>Scripts and the files they produce</h2>
+    <div class="legend">
+      <span><i class="nd" style="padding:2px 8px;display:inline-block">script</i></span>
+      <span><i class="nd file" style="padding:2px 8px;display:inline-block">file</i></span>
+      <span><i class="nd file shipped" style="padding:2px 8px;display:inline-block">file in image</i></span>
+      <span><i class="nd src" style="padding:2px 8px;display:inline-block">outside input</i></span>
+      <span><i class="tag net">net</i> network access</span>
+      <span><i class="tag">rerun</i> what a second run does</span>
+    </div>
+
+    <div class="lane">
+      <header><h3>Current guides from pvme.io</h3><span class="sub">compiled, audited, then activated into the manifest</span></header>
+      <div class="chain">
+        <div class="nd src"><span class="nm">pvme.io</span><span class="d">live site</span></div>
+        <div class="ar">1</div>
+        <div class="stack">
+          <div class="nd"><span class="nm">current-source/bootstrap.mjs</span><div class="tg"><span class="tag net">net: registry.npmjs.org</span><span class="tag">rerun: same files</span></div><span class="d">parse5 into <code>.dependencies/</code>, integrity-checked</span></div>
+          <div class="nd"><span class="nm">current-source/capture.mjs [--refresh]</span><div class="tg"><span class="tag net">net: pvme.io</span><span class="tag">rerun: resumes</span></div><span class="d">writes <code>guides/&lt;id&gt;/</code>, <code>manifest.json</code>, <code>sitemap.xml</code></span></div>
+        </div>
+        <div class="ar">2 to 4</div>
+        <div class="stack">
+          <div class="nd"><span class="nm">current-source/crosscheck.mjs</span><div class="tg"><span class="tag net">net: pvme.io</span><span class="tag">rerun: yes</span></div><span class="d">against <code>upstream-pin/manifest.json</code></span></div>
+          <div class="nd"><span class="nm">current-source/build-render-exceptions.mjs</span><div class="tg"><span class="tag">no network</span><span class="tag">rerun: yes</span></div><span class="d">repairs two guides; needs a pvme-guides clone two directories above the repo root</span></div>
+        </div>
+        <div class="ar">5</div>
+        <div class="nd"><span class="nm">tools/capture-preset-previews.mjs</span><div class="tg"><span class="tag net">net: pvme.io GET, HEAD</span><span class="tag">rerun: cached per preset</span></div><span class="d">writes <code>preset-previews/</code> <span class="ship out">not in image</span></span></div>
+        <div class="ar">6</div>
+        <div class="nd"><span class="nm">tools/build-main-corpus.mjs</span><div class="tg"><span class="tag">no network</span><span class="tag">rerun: reproduces</span></div><span class="d">uses <code>tools/source-wikitext.mjs</code>; runs <code>build-overview-landings.mjs</code> last</span></div>
+        <div class="ar">writes</div>
+        <div class="stack">
+          <div class="nd file shipped"><span class="nm">main-guides/guide--*.wiki, landing--*.wiki</span><span class="ship in">in image</span></div>
+          <div class="nd file shipped"><span class="nm">navigation.json, native-headings.json, source-media-hosts.json</span><span class="ship in">in image</span></div>
+        </div>
+      </div>
+      <div class="chain">
+        <div class="nd file"><span class="nm">compiled guides</span><span class="d">from step 6</span></div>
+        <div class="ar">audit</div>
+        <div class="stack">
+          <div class="nd"><span class="nm">tools/audit-gear-coverage.mjs</span><div class="tg"><span class="tag net">net: HEAD pictures</span></div></div>
+          <div class="nd"><span class="nm">tools/audit-main-corpus.mjs [--refresh]</span><div class="tg"><span class="tag net">net: POST action=parse, production</span><span class="tag">saves nothing</span></div><span class="d">text, media and links, in order, against the source</span></div>
+          <div class="nd"><span class="nm">tools/capture-wiki-baselines.mjs</span><div class="tg"><span class="tag net">net: read-only API</span></div><span class="d">writes <code>main-guides/corpus-baselines.json</code></span></div>
+        </div>
+        <div class="ar">activate</div>
+        <div class="nd"><span class="nm">tools/activate-main-corpus.mjs [limit]</span><div class="tg"><span class="tag">no network</span></div><span class="d">adds audited pages with their baselines</span></div>
+        <div class="ar">writes</div>
+        <div class="nd file shipped"><span class="nm">main-guides/manifest.json</span><span class="ship in">in image</span><span class="d">what step 3 of startup publishes</span></div>
+        <div class="ar">after deploy</div>
+        <div class="nd"><span class="nm">tools/audit-published-main-corpus.mjs</span><div class="tg"><span class="tag net">net: read-only API</span></div><span class="d">writes <code>published-revisions.json</code></span></div>
+      </div>
+      <p class="sub">Landings: <code>tools/audit-overview-landings.mjs [--activate | --verify-saved]</code> renders each landing with the production parser; <code>--activate</code> adds them to the manifest when all pass. A rerun of the landing build rewrites the <code>generated</code> timestamp in <code>overview-landings.json</code>.</p>
+    </div>
+
+    <div class="lane">
+      <header><h3>Media catalogue</h3><span class="sub">what lets the exporter show media on RuneScape Wiki</span></header>
+      <div class="chain">
+        <div class="nd src"><span class="nm">runescape.wiki API</span><span class="d">prop=imageinfo</span></div>
+        <div class="ar"></div>
+        <div class="nd"><span class="nm">media-catalogue/corpus-native-build.mjs</span><div class="tg"><span class="tag net">net: runescape.wiki</span></div><span class="d">emoji icons to existing files</span></div>
+        <div class="ar"></div>
+        <div class="nd"><span class="nm">media-catalogue/build-corpus-media-inventory.mjs</span><div class="tg"><span class="tag">no network; saved answers</span></div></div>
+        <div class="ar"></div>
+        <div class="nd"><span class="nm">tools/build-media-catalogue.mjs</span><div class="tg"><span class="tag">no network</span><span class="tag">rerun: unchanged</span></div><span class="d">exports every guide; exits 1 and leaves the catalogue untouched if any is incomplete</span></div>
+        <div class="ar">only if clean</div>
+        <div class="nd file shipped"><span class="nm">wiki-media-resolver.json</span><span class="ship in">in image</span></div>
+      </div>
+    </div>
+
+    <div class="split">
+      <div class="lane">
+        <header><h3>Seed corpus</h3><span class="sub">frozen</span></header>
+        <div class="chain">
+          <div class="nd src"><span class="nm">editor/content/</span><span class="d">prototype snapshots</span></div>
+          <div class="ar"></div>
+          <div class="nd"><span class="nm">tools/build-corpus.mjs</span><div class="tg"><span class="tag">no network</span><span class="tag">rerun: byte for byte</span></div></div>
+          <div class="ar"></div>
+          <div class="nd file shipped"><span class="nm">corpus/pages.xml, manifest.json, SHA256SUMS</span><span class="ship in">in image</span></div>
+        </div>
+        <p class="sub">Checked by <code>tools/verify-corpus.mjs</code> and <code>tools/verify-xml.py</code>, both read-only. Changing the seed changes the marker digest and production refuses to start.</p>
+      </div>
+      <div class="lane">
+        <header><h3>Picture guide</h3><span class="sub">authored in the script</span></header>
+        <div class="chain">
+          <div class="nd"><span class="nm">tools/build-amascut-pictures.mjs</span><div class="tg"><span class="tag">no inputs, no network</span><span class="tag">rerun: same files</span></div></div>
+          <div class="ar"></div>
+          <div class="nd file shipped"><span class="nm">visual-guides/*.wiki, manifest.json</span><span class="ship in">in image</span></div>
+        </div>
+        <p class="sub">Adapted from the attributed PvME basic guide at its <code>SOURCE_REVISION</code>. The templates carry TemplateData; the picture symbols are code-drawn SVG files in <code>presentation/module/modules/</code>.</p>
+      </div>
+    </div>
+    <p class="sub">Commands run from the repository root, for example <code>node wiki-host/tools/build-main-corpus.mjs</code>; every script resolves paths from its own location. Paths above are relative to <code class="cp">wiki-host/</code>; the three JSON data files are in <code class="cp">wiki-host/presentation/module/modules/</code>.</p>
+  </section>
+
+  <details>
+    <summary>How guide text is protected during compilation</summary>
+    <div class="dbody">
+      <p><code class="cp">wiki-host/tools/source-wikitext.mjs</code> XML-escapes text nodes and wraps them in <code>&lt;nowiki&gt;</code>, so MediaWiki never reinterprets guide prose; the one exception is text inside the guide's own <code>h1</code> title, which is escaped only. Media become <code>&lt;pvme-image&gt;</code>, <code>&lt;pvme-video&gt;</code> and <code>&lt;pvme-embed&gt;</code> tags. Preset previews are marked <code>kind="addition"</code> so they can never be mistaken for, or replace, source media.</p>
+      <p>Step 4 repairs two captured guides whose authors wrote literal placeholders such as <code>&lt;Boss&gt; (&lt;Style&gt;)</code>; an HTML parser reads <code>&lt;Style&gt;</code> as a stylesheet and swallows the rest of the guide. It escapes each placeholder only where its exact context appears in both the capture and the authored file at the pinned revision. Run it again whenever step 2 fetched either page.</p>
+    </div>
+  </details>
+
+  <div class="callout warn"><b>The registry and catalogue are static</b><span><code>navigation.json</code>, <code>native-headings.json</code>, <code>source-media-hosts.json</code> and the media catalogue are committed files. The running wiki does not update them when someone creates, moves or deletes a page. Content also cannot be rebuilt offline from Git alone: the capture, the media maps and the audits all read live sites (<a href="#limits">limitations 12 and 15</a>).</span></div>
+</section>
+
+<!-- ============================== FILES ============================== -->
+<section class="view" id="v-files" data-view="files" data-title="Files and contracts" hidden>
+  <div class="head">
+    <h1>Files and contracts</h1>
+    <p class="lede">Who writes each data file the image ships, who reads it at runtime, and the shapes the code agrees on. If you change a writer, this table names the reader that will notice.</p>
+  </div>
+
+  <section class="block">
+    <h2>Data files: writer → file → reader</h2>
+    <div class="tw"><table>
+      <thead><tr><th>Written by <span class="ph dev">dev</span></th><th>File</th><th>Read by</th></tr></thead>
+      <tbody>
+        <tr><td><code>tools/build-corpus.mjs</code></td><td><code>corpus/pages.xml</code>, <code>corpus/manifest.json</code>, <code>corpus/SHA256SUMS</code> <span class="ship in">in image</span></td><td><span class="ph start">start</span> <code>runtime/lib/SeedCorpus.php</code>; <code>tools/verify-corpus.mjs</code>, <code>tools/verify-xml.py</code></td></tr>
+        <tr><td><code>tools/build-amascut-pictures.mjs</code></td><td><code>visual-guides/*.wiki</code>, <code>visual-guides/manifest.json</code> <span class="ship in">in image</span></td><td><span class="ph start">start</span> <code>runtime/install-visual-guides.php</code></td></tr>
+        <tr><td><code>tools/build-main-corpus.mjs</code></td><td><code>main-guides/guide--*.wiki</code> <span class="ship in">in image</span></td><td><span class="ph start">start</span> <code>runtime/install-main-guides.php</code></td></tr>
+        <tr><td><code>tools/build-overview-landings.mjs</code> (also run by <code>build-main-corpus.mjs</code>)</td><td><code>main-guides/landing--*.wiki</code> <span class="ship in">in image</span></td><td><span class="ph start">start</span> <code>runtime/install-main-guides.php</code></td></tr>
+        <tr><td><code>tools/activate-main-corpus.mjs</code>, <code>tools/audit-overview-landings.mjs --activate</code></td><td><code>main-guides/manifest.json</code> <span class="ship in">in image</span></td><td><span class="ph start">start</span> <code>runtime/install-main-guides.php</code>; <span class="ph build">build</span> the Dockerfile file check</td></tr>
+        <tr><td><code>tools/build-main-corpus.mjs</code>, <code>tools/build-overview-landings.mjs</code> (existing entries kept)</td><td><code>modules/navigation.json</code> <span class="ship in">in image</span></td><td><span class="ph browser">browser</span> reader module</td></tr>
+        <tr><td>the same two tools</td><td><code>modules/native-headings.json</code> <span class="ship in">in image</span></td><td><span class="ph req">request</span> <code>GuidePageDisplay</code></td></tr>
+        <tr><td><code>tools/build-main-corpus.mjs</code></td><td><code>modules/source-media-hosts.json</code> <span class="ship in">in image</span></td><td><span class="ph req">request</span> <code>SourceMediaTags</code></td></tr>
+        <tr><td><code>tools/build-media-catalogue.mjs</code></td><td><code>modules/wiki-media-resolver.json</code> <span class="ship in">in image</span></td><td><span class="ph browser">browser</span> exporter module</td></tr>
+      </tbody>
+    </table></div>
+    <p class="sub">Paths are under <code class="cp">wiki-host/</code>; <code>modules/</code> means <code class="cp">wiki-host/presentation/module/modules/</code>. Every other file under <code>wiki-host/</code> is a tool input or report and is not in the image.</p>
+  </section>
+
+  <section class="block">
+    <h2>PvmePresentation extension</h2>
+    <p class="sub">Declared in <code class="cp">wiki-host/presentation/module/extension.json</code>.</p>
+    <div class="split">
+      <div class="panel"><h3><code>SourceMediaTags</code> <span class="ph req">request</span></h3><p>On <code>ParserFirstCallInit</code>, registers <code>&lt;pvme-image&gt;</code>, <code>&lt;pvme-video&gt;</code> and <code>&lt;pvme-embed&gt;</code>. A tag renders only when its URL is <code>https</code>, has no credentials and its host is in <code>modules/source-media-hosts.json</code>; anything else renders as an empty string. Embeds are further limited to <code>www.youtube.com</code>.</p></div>
+      <div class="panel"><h3><code>GuidePageDisplay</code> <span class="ph req">request</span></h3><p>On <code>BeforePageDisplay</code>, acts only on main-namespace pages titled <code>PvME</code> or <code>PvME/...</code>: body classes, a responsive viewport meta tag and the style module; on <code>view</code> also the reader module and the guide's own heading from <code>modules/native-headings.json</code>.</p></div>
+    </div>
+    <div class="tw"><table>
+      <thead><tr><th>ResourceLoader module</th><th>Contents</th><th>Loaded</th></tr></thead>
+      <tbody>
+        <tr><td><code>ext.pvmePresentation.styles</code></td><td><code>modules/styles/*.css</code></td><td>every action on a PvME page</td></tr>
+        <tr><td><code>ext.pvmePresentation.reader</code></td><td><code>modules/reader/*.js</code>, <code>modules/navigation.json</code></td><td><code>view</code> action on a PvME page</td></tr>
+        <tr><td><code>ext.pvmePresentation.wikiExport</code></td><td><code>modules/export/*.js</code>, <code>modules/wiki-media-resolver.json</code></td><td>first click on Copy to wiki</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="block">
+    <h2>Runtime library, one class per file</h2>
+    <div class="tw"><table>
+      <thead><tr><th>File in <code>wiki-host/runtime/lib/</code></th><th>Holds</th></tr></thead>
+      <tbody>
+        <tr><td><code>StartupDecision.php</code></td><td>enum of the seven startup outcomes and their refusal messages</td></tr>
+        <tr><td><code>DatabaseSnapshot.php</code></td><td>the three facts the decision reads, captured once under a lock</td></tr>
+        <tr><td><code>BootstrapMarker.php</code></td><td>the one-row <code>public.pvmewiki_bootstrap</code> table</td></tr>
+        <tr><td><code>SeedCorpus.php</code></td><td>loads and checksum-verifies the seed; <code>PAGE_COUNT = 381</code></td></tr>
+        <tr><td><code>MainGuidePublication.php</code></td><td>enum deciding whether one packaged page is written</td></tr>
+        <tr><td><code>RuntimeConfig.php</code>, <code>DatabaseConfig.php</code></td><td>environment variable validation and TLS mode</td></tr>
+        <tr><td><code>RuntimeSettings.php</code></td><td>installs and checks the active <code>LocalSettings.php</code></td></tr>
+        <tr><td><code>PresentationRelease.php</code></td><td>the release id in the ResourceLoader URL</td></tr>
+        <tr><td><code>WikiDatabase.php</code>, <code>AdvisoryLock.php</code></td><td>the connection, its few queries, the lock keys</td></tr>
+        <tr><td><code>MaintenanceCommand.php</code></td><td>runs <code>maintenance/run.php</code> as a child process, output discarded</td></tr>
+        <tr><td><code>RuntimePaths.php</code></td><td>where the Dockerfile puts each file</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <details>
+    <summary>Key contracts, quoted from the code</summary>
+    <div class="dbody full">
+      <p><code>exportRevision(revision, mediaCatalogue)</code> in <code class="cp">wiki-host/presentation/module/modules/export/export-revision.js</code>: takes a <code>GuideRevision</code>, returns a <code>WikiExport</code>, throws <code>Error</code> on markup it cannot reproduce.</p>
+<pre class="cmdblock">GuideRevision {wikitext, title, displayTitle?, revisionId, timestamp, permalink, sourceUrl?}
+WikiExport    {wikitext, media, unresolvedMedia, layout}</pre>
+      <p><code>MediaRoute</code>, the result of <code>routeFor(kind, url)</code> in <code class="cp">wiki-host/presentation/module/modules/export/media-routes.js</code>:</p>
+<pre class="cmdblock">{mode: 'file', fileName}           // an existing RuneScape Wiki File page
+{mode: 'external-image', imageUrl} // an image host RuneScape Wiki renders inline
+{mode: 'wikitext', wikitext}       // native markup, for example a YouTube tag
+{mode: 'linked-video'}             // a link to the original video
+{mode: null, reason}               // unresolved</pre>
+      <p>Media catalogue entry (<code>CatalogueEntry</code>), one value of <code>wiki-media-resolver.json</code> <code>assets</code>, keyed by source media URL:</p>
+<pre class="cmdblock">{mode?: 'file'|'wiki-file'|'external-image'|'wikitext'|'linked-video',
+ verified: boolean, verification: {method, checkedAt, evidenceUrl},
+ fileTitle?, imageUrl?, originalSha256?, hostedSha256?, wikitext?, width?, badge?}</pre>
+      <p>Navigation registry entry (<code>RegistryEntry</code> in <code class="cp">wiki-host/presentation/module/modules/reader/page.js</code>), one value of <code>navigation.json</code> <code>pages</code>, keyed by page title. The file also has <code>labels</code> and <code>wikiTitles</code>; the browser does not use <code>wikiTitles</code>.</p>
+<pre class="cmdblock">{parents: string[], children: string[], kind?: 'boss-index', overview?: string,
+ source?: string, retrieved?: string, date?: string|null, historyUrl?: string|null,
+ nativeTitle?: string, nativeLayout?: boolean}</pre>
+      <p><code>StartupDecision::for(DatabaseSnapshot $db, SeedCorpus $corpus): self</code> is pure; <code>refusal(): ?string</code> is null for the two starting outcomes. <code>MainGuidePublication::decide(string $sourceSha256, ?string $baselineSha256, ?string $currentSha256): self</code> returns <code>AlreadyPublished</code>, <code>Publish</code> or <code>PreserveEdited</code>.</p>
+      <div class="tw"><table>
+        <thead><tr><th>Manifest</th><th>Shape</th><th>Read by</th></tr></thead>
+        <tbody>
+          <tr><td><code>wiki-host/corpus/manifest.json</code></td><td><code>{schemaVersion, sourceCommit, license, counts, pages: [{id, title, kind, file, sha256, bytes, provenance}]}</code></td><td><code>SeedCorpus</code> (titles must equal <code>pages.xml</code>)</td></tr>
+          <tr><td><code>wiki-host/visual-guides/manifest.json</code></td><td><code>{sourceRevision, pages: [{title, namespace, dbkey, file}]}</code></td><td><code>install-visual-guides.php</code></td></tr>
+          <tr><td><code>wiki-host/main-guides/manifest.json</code></td><td><code>{pages: [{title, file, baselineSha256, sha256, summary}]}</code></td><td><code>install-main-guides.php</code>, the Dockerfile file check</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </details>
+
+  <details>
+    <summary>Directory map of <code>wiki-host/</code></summary>
+    <div class="dbody full">
+      <div class="tw"><table>
+        <thead><tr><th>Path</th><th>Holds</th><th>Image</th></tr></thead>
+        <tbody>
+          <tr><td><code>Dockerfile</code></td><td>the image build; the context is this directory</td><td>builds it</td></tr>
+          <tr><td><code>.dockerignore</code></td><td>allow-list of what the image receives</td><td><span class="ship out">no</span></td></tr>
+          <tr><td><code>LocalSettings.php</code></td><td>MediaWiki settings, read from environment variables</td><td><span class="ship in">yes</span></td></tr>
+          <tr><td><code>render.yaml</code></td><td>Render Blueprint for the web service</td><td><span class="ship out">no</span></td></tr>
+          <tr><td><code>package.json</code></td><td>Node test runner and its one dependency, jsdom</td><td><span class="ship out">no</span></td></tr>
+          <tr><td><code>runtime/</code></td><td>startup scripts, health endpoint, Apache config, <code>lib/</code></td><td><span class="ship in">yes</span></td></tr>
+          <tr><td><code>presentation/module/</code></td><td>the PvmePresentation extension: PHP hooks, browser modules, styles, data files</td><td><span class="ship in">yes</span></td></tr>
+          <tr><td><code>corpus/</code></td><td>seed corpus plus page files and inputs</td><td><span class="ship in">3 files</span></td></tr>
+          <tr><td><code>main-guides/</code></td><td>packaged guide pages, their manifest, audit reports</td><td><span class="ship in">manifest + *.wiki</span></td></tr>
+          <tr><td><code>visual-guides/</code></td><td>the Amascut picture guide, four templates and their manifest</td><td><span class="ship in">yes</span></td></tr>
+          <tr><td><code>current-source/</code></td><td>capture of pvme.io and the scripts that make it</td><td><span class="ship out">no</span></td></tr>
+          <tr><td><code>preset-previews/</code></td><td>cached preset embed pages and picture checks used by the compiler</td><td><span class="ship out">no</span></td></tr>
+          <tr><td><code>media-catalogue/</code></td><td>inputs, builders and reports for the media catalogue</td><td><span class="ship out">no</span></td></tr>
+          <tr><td><code>upstream-pin/</code></td><td>the pinned pvme-guides revision and its file inventory</td><td><span class="ship out">no</span></td></tr>
+          <tr><td><code>tools/</code></td><td>content build, verification and audit scripts; helpers in <code>tools/lib/</code></td><td><span class="ship out">no</span></td></tr>
+          <tr><td><code>tests/</code></td><td>Node and PHP tests</td><td><span class="ship out">no</span></td></tr>
+          <tr><td><code>docs/</code></td><td>the text docs, also publishable as the GitHub wiki</td><td><span class="ship out">no</span></td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </details>
+
+  <details>
+    <summary>Licensing and attribution</summary>
+    <div class="dbody">
+      <ul>
+        <li>Guide text comes from PvME (pvme.io) and pvme-guides, licensed CC BY-NC-SA 4.0. The licence text is in <code class="cp">wiki-host/corpus/LICENSE-CC-BY-NC-SA-4.0.txt</code>; the wiki's page licence is set to the same in <code>wiki-host/LocalSettings.php</code>.</li>
+        <li>The seed manifest records each guide's source and provenance, and the reader shows a Source footer with the original guide, import date and upstream revision.</li>
+        <li>The repository holds no copies of the guides' media files; pages load them from their original hosts, and uploads are disabled.</li>
+        <li>PvmePresentation declares <code>GPL-2.0-or-later</code>. There is no repository-wide licence file for the remaining code. This is not an official PvME or Jagex product.</li>
+      </ul>
+    </div>
+  </details>
+</section>
+
+<!-- ============================== TESTS ============================== -->
+<section class="view" id="v-tests" data-view="tests" data-title="Tests" hidden>
+  <div class="head">
+    <h1>Tests</h1>
+    <p class="lede">Four layers, fastest first, plus content audits against production. Each layer proves something specific. The grid shows which concerns each layer covers, and the shaded rows are concerns no layer covers.</p>
+  </div>
+
+  <figure>
+    <div class="tw"><table class="grid-cov">
+      <thead><tr><th>Concern</th><th class="c">JS</th><th class="c">PHP</th><th class="c">Verifiers</th><th class="c">Boot image</th><th class="c">Prod audits</th></tr></thead>
+      <tbody>
+        <tr><td>exporter output for given input, byte for byte</td><td class="c yes">✓</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td></tr>
+        <tr><td>every shipped guide exports completely with the shipped catalogue</td><td class="c yes">✓</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td></tr>
+        <tr><td>reader DOM behaviour and messages (in jsdom)</td><td class="c yes">✓</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td></tr>
+        <tr><td>runtime validation, startup decision, publication guard, release id</td><td class="c nope">·</td><td class="c yes">✓</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td></tr>
+        <tr><td>hook handlers' output (against stand-ins)</td><td class="c nope">·</td><td class="c yes">✓</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td></tr>
+        <tr><td>seed corpus integrity</td><td class="c nope">·</td><td class="c nope">·</td><td class="c yes">✓</td><td class="c nope">·</td><td class="c nope">·</td></tr>
+        <tr><td>image builds; every shipped PHP file lints</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td><td class="c yes">✓</td><td class="c nope">·</td></tr>
+        <tr><td>install, import and publish against a real TLS database; health turns ready</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td><td class="c yes">✓</td><td class="c nope">·</td></tr>
+        <tr><td>compiled content matches what the production parser renders or saved</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td><td class="c yes">✓</td></tr>
+        <tr class="gap"><td>behaviour in a real browser on a real MediaWiki page</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td></tr>
+        <tr class="gap"><td>the system clipboard receives the text</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td></tr>
+        <tr class="gap"><td>how RuneScape Wiki renders the output</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td></tr>
+        <tr class="gap"><td>the catalogue's verification evidence is true</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td></tr>
+        <tr class="gap"><td>Render's <code>require</code> TLS mode; edits through the browser</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td></tr>
+        <tr class="gap"><td>the production database's contents</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td><td class="c nope">·</td></tr>
+      </tbody>
+    </table></div>
+    <figcaption>Built from each layer's stated "proves" and "does not prove". The PHP stand-ins in <code class="cp">wiki-host/tests/presentation-mediawiki-stand-ins.php</code> imitate only the methods the extension calls, so the installer, <code>importDump</code>, Moderation and Apache are exercised only by booting the image.</figcaption>
+  </figure>
+
+  <div class="layers">
+    <div class="layer">
+      <h3>JavaScript: reader and exporter</h3>
+<div class="cmd">cd wiki-host
+npm ci
+npm test</div>
+      <p class="small"><code>npm test</code> runs <code>node --test "tests/*.test.mjs"</code>; the only dependency is jsdom. <code class="cp">wiki-host/tests/support/browser.mjs</code> runs the ResourceLoader files in jsdom with stand-ins for <code>mw.*</code>, <code>fetch</code> and the clipboard. <code>PVME_MODULES_DIR</code> points the suite at another copy of the modules, for testing a deliberately broken copy.</p>
+      <div class="tw"><table><tbody>
+        <tr><td><code>export-content.test.mjs</code></td><td>exact output for text, headings, lists, tables, styles, the Source section</td></tr>
+        <tr><td><code>export-media.test.mjs</code></td><td>each media route; how unresolved media is reported</td></tr>
+        <tr><td><code>export-refusals.test.mjs</code></td><td>every refusal message</td></tr>
+        <tr><td><code>export-corpus.test.mjs</code></td><td>every page in <code>main-guides/manifest.json</code>; pins 329 guides, 44 landing pages, one redirect, zero unresolved media</td></tr>
+        <tr><td><code>reader-*.test.mjs</code>, <code>source-freshness.test.mjs</code></td><td>the reader in jsdom on hand-written pages</td></tr>
+      </tbody></table></div>
+    </div>
+    <div class="layer">
+      <h3>PHP: runtime and extension</h3>
+<div class="cmd">cd wiki-host
+php tests/bootstrap-corpus.php
+php tests/runtime-config.php
+php tests/runtime-settings.php
+php tests/runtime-main-guide-publication.php
+php tests/runtime-presentation-release.php
+php tests/presentation.php</div>
+      <p class="small">One file at a time; each prints one line and exits 0. Needs PHP 8.3 or newer with <code>pgsql</code>; production runs PHP 8.3.</p>
+      <p class="small"><code class="cp">wiki-host/tests/bootstrap-startup-decision.php</code> runs <code>StartupDecision</code> against a real PostgreSQL server without MediaWiki. It needs <code>PVME_TEST_PG_ADMIN</code> for a throwaway server; it creates and drops databases, so never point it at a real wiki. On macOS, if <code>pg_ctl</code> says the postmaster "became multithreaded during startup", export <code>LC_ALL=en_US.UTF-8</code> first.</p>
+    </div>
+    <div class="layer">
+      <h3>Seed corpus verifiers</h3>
+<div class="cmd">node wiki-host/tools/verify-corpus.mjs
+python3 wiki-host/tools/verify-xml.py</div>
+      <p class="small">From the repository root. Both are read-only and print one summary line. They need the prototype's <code>editor/content/</code>. <code>verify-corpus.mjs</code> checks hashes, counts, that every internal link and fragment resolves inside the corpus, and that no page uses templates or files; <code>verify-xml.py</code> checks the XML that <code>importDump</code> will store.</p>
+    </div>
+    <div class="layer">
+      <h3>Booting the image locally</h3>
+<div class="cmd">docker build -t pvmewiki:local wiki-host
+<span class="muted"># then a throwaway TLS PostgreSQL named "db",
+# the test CA copied over the container's CA bundle,
+# and the five required variables (full steps in
+# wiki-host/docs/Testing.md)</span></div>
+      <p class="small">Expect <span class="msg okm">PvME wiki ready: imported 381 mainspace pages</span>, the picture guide lines, one line per packaged page, then Apache; <code>/healthz.php</code> answers <code>ready</code>. <code>docker restart</code> must then log <span class="msg okm">PvME wiki ready: existing verified corpus</span>. Pointing <code>MW_DATABASE_URL</code> at a database with any table shows the <code>NotEmpty</code> refusal.</p>
+    </div>
+  </div>
+  <p class="sub">Content audits (<code>tools/audit-main-corpus.mjs</code>, <code>tools/audit-overview-landings.mjs</code>, <code>tools/audit-published-main-corpus.mjs</code>) send read-only requests to <code>https://pvmewiki.sanji3.dev</code>. They run when content changes and are not part of the test suite.</p>
+</section>
+
+<!-- ============================== LIMITS ============================== -->
+<section class="view" id="v-limits" data-view="limits" data-title="Known limitations" hidden>
+  <div class="head">
+    <h1>Known limitations</h1>
+    <p class="lede">What is imperfect, each with the code where you can confirm it. None is hidden by the tests; where a test pins the behaviour, the item says so.</p>
+  </div>
+  <div class="filters" role="group" aria-label="Filter limitations">
+    <button type="button" class="chipbtn" data-limf="all" aria-pressed="true">All<span class="ct">21</span></button>
+    <button type="button" class="chipbtn" data-limf="exporter" aria-pressed="false">Exporter<span class="ct">7</span></button>
+    <button type="button" class="chipbtn" data-limf="reader" aria-pressed="false">Reader<span class="ct">4</span></button>
+    <button type="button" class="chipbtn" data-limf="data" aria-pressed="false">Data and content<span class="ct">4</span></button>
+    <button type="button" class="chipbtn" data-limf="runtime" aria-pressed="false">Runtime<span class="ct">5</span></button>
+    <button type="button" class="chipbtn" data-limf="repo" aria-pressed="false">Repository<span class="ct">1</span></button>
+    <button type="button" class="chipbtn" id="pinonly" aria-pressed="false">Pinned by a test</button>
+    <input class="finput" id="limq" type="search" placeholder="Filter by word" aria-label="Filter limitations by word">
+  </div>
+  <p class="countline" id="limcount" aria-live="polite"></p>
+  <div class="lims" id="lims">
+    <article class="limit" data-area="exporter" data-pin="1"><span class="no">1</span><h3>A media tag without <code>src</code> gets the URL parser's raw message</h3><p><code>media-markup.js</code> calls <code>requireWebUrl(attributes.src || '')</code>, and <code>new URL('')</code> throws <code>Invalid URL</code>. The person sees the generic failure (item 4); a developer sees a message that does not name the tag.</p><div class="meta"><span class="area">Exporter</span><span class="pin">pinned as a known defect</span><code class="cp">wiki-host/tests/export-refusals.test.mjs</code></div></article>
+    <article class="limit" data-area="exporter" data-pin="1"><span class="no">2</span><h3>An unsafe link <code>href</code> is refused as "Unsupported media URL."</h3><p>Links and media share <code>requireWebUrl</code> in <code>media-routes.js</code>, so a <code>javascript:</code> link is reported as a media problem.</p><div class="meta"><span class="area">Exporter</span><span class="pin">pinned</span><code class="cp">wiki-host/tests/export-refusals.test.mjs</code></div></article>
+    <article class="limit" data-area="exporter" data-pin="0"><span class="no">3</span><h3>Bare text outside <code>&lt;nowiki&gt;</code> loses its newlines</h3><p><code>toTextNode</code> in <code>published-markup.js</code> drops every newline outside protected spans. A community edit that types plain text over two lines exports with the words joined. No packaged guide is affected: the compiler wraps all guide text in <code>&lt;nowiki&gt;</code>.</p><div class="meta"><span class="area">Exporter</span><code class="cp">wiki-host/presentation/module/modules/export/published-markup.js</code></div></article>
+    <article class="limit" data-area="exporter" data-pin="0"><span class="no">4</span><h3>Copy to wiki shows one generic message for every refusal</h3><p>Only unresolved media gets its own message. Every other error, including a template or an unbalanced tag, becomes "Couldn’t load this guide. Try Copy to wiki again.", which suggests a retry that cannot help.</p><div class="meta"><span class="area">Exporter</span><code class="cp">wiki-host/presentation/module/modules/reader/copy-to-wiki.js</code></div></article>
+    <article class="limit" data-area="exporter" data-pin="0"><span class="no">5</span><h3>A linked video's poster image is dropped</h3><p><code>write()</code> returns early for <code>linked-video</code> and unresolved routes, before the code that emits the poster.</p><div class="meta"><span class="area">Exporter</span><code class="cp">wiki-host/presentation/module/modules/export/media-markup.js</code></div></article>
+    <article class="limit" data-area="exporter" data-pin="1"><span class="no">6</span><h3>Boss landing pages are not exportable themselves</h3><p>A landing transcludes its overview with <code>{{:...}}</code>, which the exporter refuses. Copy to wiki on a landing exports the overview guide instead (<code>findPage</code> in <code>reader/page.js</code>).</p><div class="meta"><span class="area">Exporter</span><span class="pin">refusal pinned for every landing</span><code class="cp">wiki-host/tests/export-corpus.test.mjs</code></div></article>
+    <article class="limit" data-area="exporter" data-pin="0"><span class="no">7</span><h3>"Verified" means a well-formed record, not a re-check</h3><p>The exporter cannot confirm that a catalogue entry's evidence is still true on RuneScape Wiki; a file renamed or deleted there breaks the export silently.</p><div class="meta"><span class="area">Exporter</span><code class="cp">wiki-host/presentation/module/modules/export/media-routes.js</code></div></article>
+    <article class="limit" data-area="reader" data-pin="0"><span class="no">8</span><h3>Clipboard writing has not been checked on a physical iPhone</h3><p>The promise-based <code>ClipboardItem</code> path is tested only against jsdom stand-ins. The manual-copy text area is the fallback.</p><div class="meta"><span class="area">Reader</span><code class="cp">wiki-host/tests/support/browser.mjs</code></div></article>
+    <article class="limit" data-area="reader" data-pin="0"><span class="no">9</span><h3>The freshness badge depends on another site</h3><p>Every guide view requests <code>https://pvme.sanji3.dev/data/guide-history.json</code> from the reader's browser, cached 15 minutes per tab. When that site is down the badge says the date is unverified. The wiki does not produce the feed.</p><div class="meta"><span class="area">Reader</span><code class="cp">wiki-host/presentation/module/modules/reader/source-freshness.js</code></div></article>
+    <article class="limit" data-area="reader" data-pin="0"><span class="no">10</span><h3><code>native-headings.json</code> is read on every page view</h3><p><code>GuidePageDisplay</code> is built by <code>newFromModuleFiles()</code>, which reads and decodes the file on every request that runs <code>BeforePageDisplay</code>, including pages outside <code>PvME/</code>.</p><div class="meta"><span class="area">Reader</span><code class="cp">wiki-host/presentation/module/includes/</code></div></article>
+    <article class="limit" data-area="reader" data-pin="0"><span class="no">11</span><h3><code>navigation.json</code> ships data the browser does not use</h3><p>Its <code>wikiTitles</code> map is read only by <code>media-catalogue/corpus-native-build.mjs</code>, but the whole file is part of the reader module.</p><div class="meta"><span class="area">Reader</span><code class="cp">wiki-host/presentation/module/modules/navigation.json</code></div></article>
+    <article class="limit" data-area="data" data-pin="0"><span class="no">12</span><h3>The navigation registry and media catalogue are static</h3><p>A page created, moved or deleted on the wiki gets no navigation, heading or Copy to wiki until the scripts are rerun and a new image is deployed.</p><div class="meta"><span class="area">Data and content</span><code class="cp">wiki-host/tools/build-main-corpus.mjs</code></div></article>
+    <article class="limit" data-area="data" data-pin="0"><span class="no">13</span><h3>A fresh database does not reproduce production</h3><p>Packaged pages are published only onto pages still at their recorded baseline, and those baselines are production text. On a fresh install the compiled guides are preserved as seed text. Only a database backup reproduces production.</p><div class="meta"><span class="area">Data and content</span><code class="cp">wiki-host/runtime/install-main-guides.php</code></div></article>
+    <article class="limit" data-area="data" data-pin="0"><span class="no">14</span><h3>On a fresh install the picture guide is replaced at once</h3><p>Step 2 creates <code>PvME/Amascut/Picture guide</code>; step 3 replaces it with the redirect to the Amascut overview, because the new page matches the redirect's baseline. The picture guide stays in the page history, and the four templates remain.</p><div class="meta"><span class="area">Data and content</span><code class="cp">wiki-host/main-guides/amascut-picture-redirect.wiki</code></div></article>
+    <article class="limit" data-area="data" data-pin="0"><span class="no">15</span><h3>Content cannot be rebuilt offline from Git alone</h3><p>The capture is of the live pvme.io site, the media maps query RuneScape Wiki, and the audits and baselines read the production wiki. The seed build reads <code>editor/content/</code>, and <code>build-render-exceptions.mjs</code> needs a pvme-guides clone two directories above the repository root.</p><div class="meta"><span class="area">Data and content</span><code class="cp">wiki-host/current-source/build-render-exceptions.mjs</code></div></article>
+    <article class="limit" data-area="runtime" data-pin="0"><span class="no">16</span><h3><code>install-visual-guides.php</code> validates entries inside its publish loop</h3><p>An entry with a bad file name or namespace stops the script only when the loop reaches it, so pages for earlier entries may already be published.</p><div class="meta"><span class="area">Runtime</span><code class="cp">wiki-host/runtime/install-visual-guides.php</code></div></article>
+    <article class="limit" data-area="runtime" data-pin="0"><span class="no">17</span><h3>Any failed publication stops the container</h3><p>A refused save calls <code>fatalError</code>, and <code>start.sh</code> runs with <code>set -e</code>. The script takes no advisory lock and relies on compare-and-swap, so of two containers starting at once, the one that loses a save race fails to start.</p><div class="meta"><span class="area">Runtime</span><code class="cp">wiki-host/runtime/install-main-guides.php</code></div></article>
+    <article class="limit" data-area="runtime" data-pin="0"><span class="no">18</span><h3>Existing databases are never upgraded</h3><p><code>UseExisting</code> does not run <code>update.php</code>. A MediaWiki version bump that needs schema changes must be applied by hand.</p><div class="meta"><span class="area">Runtime</span><code class="cp">wiki-host/runtime/bootstrap.php</code></div></article>
+    <article class="limit" data-area="runtime" data-pin="0"><span class="no">19</span><h3><code>MW_BOOTSTRAP</code> must never be set on the service</h3><p><code>LocalSettings.php</code> disables Moderation whenever it is <code>1</code>, in any process. Only the runtime's own maintenance processes should see it.</p><div class="meta"><span class="area">Runtime</span><code class="cp">wiki-host/LocalSettings.php</code></div></article>
+    <article class="limit" data-area="runtime" data-pin="0"><span class="no">20</span><h3>The health check counts pages; it does not check packaged content</h3><p><code>health.php</code> requires at least 381 mainspace pages and a ready marker. It says nothing about whether packaged guides were published or preserved.</p><div class="meta"><span class="area">Runtime</span><code class="cp">wiki-host/runtime/health.php</code></div></article>
+    <article class="limit" data-area="repo" data-pin="0"><span class="no">21</span><h3>The prototype directories at the repository root are unmaintained here</h3><p><code>editor/</code>, <code>server/</code>, <code>scripts/</code>, <code>src/</code>, <code>api/</code>, <code>reader/</code>, <code>content/</code>, <code>imported/</code> and <code>docs/</code> belong to an earlier reader prototype. They are not built, tested or deployed, and their docs describe that prototype. The seed build still reads <code>editor/content/</code>.</p><div class="meta"><span class="area">Repository</span><code class="cp">README.md</code></div></article>
+  </div>
+  <p class="none muted" id="limnone" hidden>No limitation matches. Clear the word filter or pick another area.</p>
+</section>
+
+</main>
+</div>
+<p class="foot">Built from <code>wiki-host/docs/</code>, <code>README.md</code> and <code>wiki-host/README.md</code>, with messages and constants checked against the code they quote. Click any path to copy it.</p>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script>
+(function () {
+  'use strict';
+  var views = {};
+  document.querySelectorAll('.view').forEach(function (v) { views[v.dataset.view] = v; });
+  var navLinks = document.querySelectorAll('.rail a');
+  var current = null;
+
+  function show(name) {
+    if (!views[name]) name = 'map';
+    if (current === name) return false;
+    Object.keys(views).forEach(function (k) { views[k].hidden = k !== name; });
+    navLinks.forEach(function (a) {
+      if (a.getAttribute('href') === '#' + name) {
+        a.setAttribute('aria-current', 'page');
+        if (a.scrollIntoView && window.matchMedia('(max-width: 880px)').matches) {
+          a.scrollIntoView({ block: 'nearest', inline: 'center' });
+        }
+      } else { a.removeAttribute('aria-current'); }
+    });
+    document.title = name === 'map' ? 'PvME Wiki Docs' : views[name].dataset.title + ' · PvME Wiki Docs';
+    current = name;
+    return true;
+  }
+  function fromHash() { return (location.hash || '').replace(/^#/, ''); }
+  function route() { if (show(fromHash())) window.scrollTo(0, 0); }
+  window.addEventListener('hashchange', route);
+  route();
+
+  function reveal(el) {
+    if (!el) return;
+    var d = el.closest('details');
+    while (d) { d.open = true; d = d.parentElement && d.parentElement.closest('details'); }
+    var row = el.tagName === 'TR' ? el : null;
+    el.scrollIntoView({ block: 'center' });
+    var target = row || el;
+    target.classList.remove('flash');
+    void target.offsetWidth;
+    target.classList.add('flash');
+    setTimeout(function () { target.classList.remove('flash'); }, 1700);
+  }
+  function goto(view, el) {
+    if (current !== view) { location.hash = view; show(view); }
+    requestAnimationFrame(function () { requestAnimationFrame(function () { reveal(el); }); });
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest('[data-goto]');
+    if (!a) return;
+    var parts = a.dataset.goto.split(':');
+    var el = document.getElementById(parts[1]);
+    if (!el) return;
+    e.preventDefault();
+    goto(parts[0], el);
+  });
+  document.querySelectorAll('.oc[data-row]').forEach(function (oc) {
+    function go() { reveal(document.getElementById(oc.dataset.row)); }
+    oc.addEventListener('click', go);
+    oc.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } });
+    oc.setAttribute('role', 'button');
+  });
+
+  /* copy */
+  var toast = document.getElementById('toast'), tt;
+  function say(msg) { toast.textContent = msg; toast.hidden = false; clearTimeout(tt); tt = setTimeout(function () { toast.hidden = true; }, 1800); }
+  function selectText(el) { try { var r = document.createRange(); r.selectNodeContents(el); var s = getSelection(); s.removeAllRanges(); s.addRange(r); } catch (_) {} }
+  function copy(text, el) {
+    var done = function () { say('Copied ' + (text.length > 60 ? text.slice(0, 57) + '...' : text)); };
+    var fail = function () { selectText(el); say('Copy blocked: the text is selected, press Ctrl+C or Command+C'); };
+    try { navigator.clipboard.writeText(text).then(done, fail); } catch (_) { fail(); }
+  }
+  document.querySelectorAll('code.cp').forEach(function (c) {
+    c.tabIndex = 0; c.setAttribute('role', 'button'); c.title = 'Copy path';
+    c.setAttribute('aria-label', 'Copy path ' + c.textContent);
+  });
+  document.addEventListener('click', function (e) {
+    var c = e.target.closest('code.cp');
+    if (c) { copy(c.textContent, c); return; }
+    var b = e.target.closest('button[data-copy]');
+    if (b) { var pre = document.getElementById(b.dataset.copy); copy(pre.textContent, pre); }
+  });
+  document.addEventListener('keydown', function (e) {
+    var c = e.target.closest && e.target.closest('code.cp');
+    if (c && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); copy(c.textContent, c); }
+  });
+
+  /* keep each arrow with the node it points at, so a wrapped chain never ends on an arrow */
+  document.querySelectorAll('.chain > .ar').forEach(function (ar) {
+    var next = ar.nextElementSibling; if (!next) return;
+    var pair = document.createElement('div'); pair.className = 'pair';
+    ar.parentNode.insertBefore(pair, ar); pair.appendChild(ar); pair.appendChild(next);
+  });
+
+  /* phone: tables with headers become labelled cards */
+  document.querySelectorAll('.tw table:not(.grid-cov)').forEach(function (t) {
+    var heads = t.tHead ? [].map.call(t.tHead.rows[0].cells, function (c) { return c.textContent.trim(); }) : null;
+    if (!heads) return;
+    t.classList.add('stk');
+    [].forEach.call(t.tBodies[0].rows, function (r) { [].forEach.call(r.cells, function (c, i) { if (heads[i]) c.setAttribute('data-label', heads[i]); }); });
+  });
+
+  /* chip filter helper */
+  function chipGroup(attr, onPick) {
+    var btns = document.querySelectorAll('[' + attr + ']');
+    btns.forEach(function (b) {
+      b.addEventListener('click', function () {
+        btns.forEach(function (o) { o.setAttribute('aria-pressed', String(o === b)); });
+        onPick(b.getAttribute(attr));
+      });
+    });
+  }
+  chipGroup('data-envf', function (v) {
+    document.querySelectorAll('#envtable tbody tr').forEach(function (tr) { tr.hidden = v !== 'all' && tr.dataset.req !== v; });
+  });
+  chipGroup('data-stagef', function (v) {
+    document.querySelectorAll('#reftable tbody tr').forEach(function (tr) { tr.hidden = v !== 'all' && tr.dataset.stage !== v; });
+  });
+
+  /* limitations */
+  var limArea = 'all', pinOnly = false, limQ = document.getElementById('limq');
+  function limFilter() {
+    var q = limQ.value.trim().toLowerCase(), n = 0;
+    document.querySelectorAll('#lims .limit').forEach(function (it) {
+      var ok = (limArea === 'all' || it.dataset.area === limArea) && (!pinOnly || it.dataset.pin === '1') && (!q || it.textContent.toLowerCase().indexOf(q) !== -1);
+      it.hidden = !ok; if (ok) n++;
+    });
+    document.getElementById('limcount').textContent = n + ' of 21 shown';
+    document.getElementById('limnone').hidden = n !== 0;
+  }
+  chipGroup('data-limf', function (v) { limArea = v; limFilter(); });
+  var pinBtn = document.getElementById('pinonly');
+  pinBtn.addEventListener('click', function () { pinOnly = !pinOnly; pinBtn.setAttribute('aria-pressed', String(pinOnly)); limFilter(); });
+  limQ.addEventListener('input', limFilter);
+  limFilter();
+
+  /* search */
+  var index = [];
+  Object.keys(views).forEach(function (k) {
+    var v = views[k];
+    v.querySelectorAll('h1, h2, h3, tbody tr, .limit, .task, .oc, .stage, .nd, .rule, .panel, .callout, details > summary, .check li, .kv dd').forEach(function (el) {
+      if (el.closest('.limit') && el !== el.closest('.limit')) return;
+      if (el.closest('.oc') && el !== el.closest('.oc')) return;
+      var text = el.textContent.replace(/\s+/g, ' ').trim();
+      if (!text) return;
+      var title;
+      if (el.tagName === 'TR') title = el.cells[0].textContent.replace(/\s+/g, ' ').trim();
+      else if (el.classList.contains('limit')) title = el.querySelector('h3').textContent;
+      else if (el.tagName === 'DD') title = el.previousElementSibling.textContent;
+      else if (el.querySelector && el.querySelector('h3, b, .nm, .ttl')) title = el.querySelector('h3, b, .nm, .ttl').textContent.replace(/\s+/g, ' ').trim();
+      else title = text.slice(0, 80);
+      var target = el.tagName === 'SUMMARY' ? el.parentElement : el;
+      index.push({ view: k, vt: v.dataset.title, title: title, text: text, lower: text.toLowerCase(), el: target, heading: /^H[123]$/.test(el.tagName) });
+    });
+  });
+  var q = document.getElementById('q'), box = document.getElementById('results'), hits = [], sel = -1;
+  function esc(s) { return s.replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function norm(s) { return s.toLowerCase().replace(/^pvme wiki bootstrap blocked:\s*/, '').replace(/[<>]/g, ' ').replace(/\s+/g, ' ').trim(); }
+  function search() {
+    var raw = q.value.trim();
+    if (raw.length < 2) { box.hidden = true; q.setAttribute('aria-expanded', 'false'); return; }
+    var needle = norm(raw), words = needle.split(' ').filter(Boolean);
+    hits = index.map(function (it) {
+      var score = 0;
+      if (it.lower.indexOf(needle) !== -1) score += 10;
+      words.forEach(function (w) { if (it.lower.indexOf(w) !== -1) score += 1; else score -= 3; });
+      if (it.heading) score += 1;
+      if (it.el.tagName === 'TR' || it.el.classList.contains('limit')) score += 1;
+      return { it: it, score: score };
+    }).filter(function (h) { return h.score > 0; }).sort(function (a, b) { return b.score - a.score; }).slice(0, 24);
+    sel = -1;
+    if (!hits.length) { box.innerHTML = '<div class="none">Nothing matches. Try one distinctive word from the message.</div>'; }
+    else {
+      box.innerHTML = hits.map(function (h, i) {
+        var t = h.it.text, at = t.toLowerCase().indexOf(words[0] || ''), start = Math.max(0, at - 40);
+        var snip = (start > 0 ? '...' : '') + t.slice(start, start + 140) + (t.length > start + 140 ? '...' : '');
+        var html = esc(snip);
+        words.forEach(function (w) { if (w.length > 1) html = html.replace(new RegExp('(' + esc(w).replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'ig'), '<mark>$1</mark>'); });
+        return '<button type="button" role="option" data-i="' + i + '"><span class="rv">' + esc(h.it.vt) + '</span>' + html + '</button>';
+      }).join('');
+    }
+    box.hidden = false; q.setAttribute('aria-expanded', 'true');
+  }
+  function pick(i) { var h = hits[i]; if (!h) return; box.hidden = true; q.setAttribute('aria-expanded', 'false'); goto(h.it.view, h.it.el); }
+  q.addEventListener('input', search);
+  q.addEventListener('focus', search);
+  q.addEventListener('keydown', function (e) {
+    var btns = box.querySelectorAll('button');
+    if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+      if (!btns.length) return; e.preventDefault();
+      sel = (sel + (e.key === 'ArrowDown' ? 1 : -1) + btns.length) % btns.length;
+      btns.forEach(function (b, i) { b.classList.toggle('on', i === sel); });
+      btns[sel].scrollIntoView({ block: 'nearest' });
+    } else if (e.key === 'Enter') { e.preventDefault(); pick(sel < 0 ? 0 : sel); }
+    else if (e.key === 'Escape') { q.value = ''; box.hidden = true; q.setAttribute('aria-expanded', 'false'); }
+  });
+  box.addEventListener('click', function (e) { var b = e.target.closest('button[data-i]'); if (b) pick(+b.dataset.i); });
+  document.addEventListener('click', function (e) { if (!e.target.closest('.search')) { box.hidden = true; q.setAttribute('aria-expanded', 'false'); } });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === '/' && !/INPUT|TEXTAREA/.test(document.activeElement.tagName)) { e.preventDefault(); q.focus(); q.select(); }
+  });
+})();
+</script>
+</body>
+</html>

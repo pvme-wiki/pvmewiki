@@ -47,7 +47,10 @@ Booting the image needs a PostgreSQL server with TLS; the steps are in
 
 ## Documentation
 
-Start at [wiki-host/docs/Home.md](wiki-host/docs/Home.md). The same pages can be
+The [visual guide](https://pvme-wiki.github.io/pvmewiki/) shows the system as a map with decision flows and
+searchable reference tables; its source is `wiki-host/docs/visual/index.html`.
+
+The written pages start at [wiki-host/docs/Home.md](wiki-host/docs/Home.md). The same pages can be
 published as this repository's GitHub wiki. [wiki-host/README.md](wiki-host/README.md)
 maps the product directory, and
 [Known limitations](wiki-host/docs/Known-limitations.md) lists what is imperfect.
