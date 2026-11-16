@@ -6,6 +6,8 @@ const host=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const directory=path.join(host,'main-guides');
 const navFile=path.join(host,'presentation/module/modules/navigation.json');
 const nav=JSON.parse(fs.readFileSync(navFile));
+const headingsFile=path.join(host,'presentation/module/modules/native-headings.json');
+const headings=JSON.parse(fs.readFileSync(headingsFile));
 const seed=JSON.parse(fs.readFileSync(path.join(host,'corpus/manifest.json')));
 const publishedFile=path.join(directory,'overview-landings-published.json');
 const published=new Map((fs.existsSync(publishedFile)?JSON.parse(fs.readFileSync(publishedFile)).results:[]).filter(p=>p.matches).map(p=>[p.title,p]));
@@ -29,8 +31,10 @@ for(const index of seed.pages.filter(p=>p.kind==='boss-index')){
  const file='landing--'+index.id+'.wiki';
  fs.writeFileSync(path.join(directory,file),text);
  entry.overview=overview;entry.nativeLayout=true;
+ if(headings[overview.replaceAll(' ','_')])headings[index.title.replaceAll(' ','_')]=headings[overview.replaceAll(' ','_')];
  pages.push({title:index.title,file,sha256:sha256(text),baselineSha256:published.get(index.title)?.sha256||index.sha256,overview,otherGuides:others});
 }
 fs.writeFileSync(navFile,JSON.stringify(nav,null,2)+'\n');
+fs.writeFileSync(headingsFile,JSON.stringify(headings,null,2)+'\n');
 fs.writeFileSync(path.join(directory,'overview-landings.json'),JSON.stringify({generated:new Date().toISOString(),pages,unchanged},null,2)+'\n');
 console.log(JSON.stringify({landings:pages.length,otherGuideLinks:pages.reduce((n,p)=>n+p.otherGuides.length,0),unchanged}));

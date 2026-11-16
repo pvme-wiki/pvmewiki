@@ -38,7 +38,6 @@ function enhance() {
     const article = content && content.querySelector('.mw-parser-output');
     if (!page || !article || document.getElementById('pvme-reader-tools')) return;
     function syncNativeTitle() {
-        if (page.overview) return;
         if (document.querySelector('.ve-active, .ve-activating')) return;
         const sourceHeading = document.querySelector('#mw-content-text .mw-parser-output h1.pvme-source-title');
         const heading = document.getElementById('firstHeading');
