@@ -22,7 +22,9 @@
  * the other guides are still written.
  *
  * Safe to rerun: with unchanged inputs every file is reproduced byte for byte,
- * except the `generated` timestamp in overview-landings.json.
+ * except overview-landings.json. Its `generated` timestamp changes, and once
+ * overview-landings-published.json exists its `baselineSha256` values are the
+ * published hashes instead of the seed hashes.
  *
  * Usage: node wiki-host/tools/build-main-corpus.mjs
  */

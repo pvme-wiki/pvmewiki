@@ -1,31 +1,62 @@
-# Standalone PvME Wiki
+# wiki-host
 
-This directory supplies an editable MediaWiki service independently of the existing Vercel reader. Supply its canonical HTTPS origin through the required `MW_SERVER` Render setting; no deployment hostname or default runtime origin is stored here. The XML envelope uses a reserved non-resolving example origin solely as import metadata. See [README-runtime.md](README-runtime.md) for secret settings and startup behavior. Nothing here provisions a database or deploys the service automatically.
+The product: a Docker image that runs MediaWiki for PvME's guides, plus the tools that
+produce its content. Documentation is in [docs/](docs/Home.md).
 
-## Corpus and provenance
+## Directory map
 
-The live current-source edition contains **325 guide articles and four About pages**. Its import plan and provenance are in [main-guides](main-guides/); presentation and RuneScape Wiki export coverage are documented in [copy-button-ports](copy-button-ports/). The 381-page bootstrap described below is an immutable earlier seed, not the current guide count. Preserve both the seed and subsequent community revisions.
+| Path | Holds | In the image |
+| --- | --- | --- |
+| `Dockerfile` | the image build; the context is this directory | builds it |
+| `.dockerignore` | allow-list of what the image receives | no |
+| `LocalSettings.php` | MediaWiki settings, read from environment variables | yes |
+| `render.yaml` | Render Blueprint for the web service | no |
+| `package.json` | Node test runner and its one dependency, jsdom | no |
+| `runtime/` | startup scripts, health endpoint, Apache config, `lib/` | yes |
+| `presentation/module/` | the PvmePresentation extension: PHP hooks, browser modules, styles, data files | yes |
+| `corpus/` | seed corpus: `pages.xml`, `manifest.json`, `SHA256SUMS`, plus page files and inputs | the three named files |
+| `main-guides/` | packaged guide pages (`*.wiki`), their `manifest.json`, audit reports | `manifest.json` and `*.wiki` |
+| `visual-guides/` | the Amascut picture guide, four templates and their manifest | yes |
+| `current-source/` | capture of pvme.io and the scripts that make it | no |
+| `preset-previews/` | cached preset embed pages and picture checks used by the compiler | no |
+| `media-catalogue/` | inputs, builders and reports for the RuneScape Wiki media catalogue | no |
+| `upstream-pin/` | the pinned pvme-guides revision and its file inventory | no |
+| `tools/` | content build, verification and audit scripts; shared helpers in `tools/lib/` | no |
+| `tests/` | Node and PHP tests | no |
+| `docs/` | these docs, also publishable as the GitHub wiki | no |
 
-`corpus/pages.xml` contains exactly **381 mainspace pages**: **323 guides, 45 boss indexes, 12 group indexes and the PvME hub**. Each page has one attributed initial revision. This is a new standalone edition, not a claim to reproduce upstream revision history inside MediaWiki.
+## Three kinds of content
 
-The guide bodies come from the repository's versioned `editor/content/*.json` AST documents at app snapshot **074a9438f79d10fba75735791be0030734db8b5e**. The 381-title navigation allowlist was recovered from the prior first-party corpus conversion. Its original `User:Mo rs/PvME` destinations are retargeted to `PvME` mainspace paths. The four newer support/guide additions and 282 archive/navigation/test packets are excluded.
+- **Seed corpus** (`corpus/`): 381 attributed pages imported once into an empty
+  database. It is fixed; changing it makes an existing wiki refuse to start.
+- **Packaged guides** (`main-guides/`): the current pvme.io guides compiled to wikitext,
+  boss landing pages and one redirect. Published at every start, but only onto pages
+  that nobody has edited since the recorded baseline.
+- **Picture guide templates** (`visual-guides/`): one guide page and four templates
+  authored in `tools/build-amascut-pictures.mjs`. Created only when missing.
 
-Each guide's manifest entry preserves the exact source document SHA256, original retrieval metadata and credited source URL. It also links the upstream file's Git history. The source snapshot remains available at the pinned app commit; subsequent upstream changes are not silently incorporated. Upstream history is preserved by those links and the Git-tracked source documents, rather than fabricated as imported author revisions. A renamed upstream path can still have valid historical commits.
+Guide text is verbatim PvME source material; presentation is additive only (root
+`AGENTS.md`).
 
-PvME contributors license the guide text under **Creative Commons Attribution–NonCommercial–ShareAlike 4.0 International**. See [LICENSE-CC-BY-NC-SA-4.0.txt](corpus/LICENSE-CC-BY-NC-SA-4.0.txt), [upstream license](https://github.com/pvme/pvme-guides/blob/master/LICENSE) and each page's attribution section. Formatting, internal navigation and MediaWiki packaging were adapted for this standalone edition. RuneScape and third-party media remain credited external links under their owners' terms; no image/video files are copied into this package.
+## Quick commands
 
-The converter emits semantic MediaWiki-supported HTML and literal text, normal internal wiki links and external media links. It does not depend on RuneScape Wiki bespoke templates, modules or files. Cross-guide links preserve source section fragments and explicit heading IDs, with every local target and anchor checked. Media inside an existing link becomes its alt text plus a separate source-media link, avoiding nested link markup.
-
-## Reproduce and verify
-
-From the repository root, with Node 24:
+From this directory:
 
 ```sh
-node wiki-host/tools/build-corpus.mjs
-node wiki-host/tools/verify-corpus.mjs
-python wiki-host/tools/verify-xml.py
+npm ci && npm test          # reader and exporter tests
+php tests/presentation.php  # one of the PHP tests; see docs/Testing.md for all
 ```
 
-The verifier checks exact kind counts and title allowlist, page/source/checksum hashes, normalized title uniqueness, all local link targets, no unresolved template dependencies, and no system home paths. `SHA256SUMS` covers the XML, manifest, pages and navigation inputs. XML must additionally parse as export-0.11 with exactly one revision and namespace 0 for each page. This source verification does not replace an actual MediaWiki/PostgreSQL integration run.
+From the repository root:
 
-Do not import this dump into an existing wiki. Startup accepts only a blank installation or a completed matching bootstrap marker, and refuses unrecognized or partial databases. Database backups and Render secrets are managed outside Git.
+```sh
+docker build -t pvmewiki:local wiki-host
+```
+
+## Documentation
+
+- [Home](docs/Home.md) and [Architecture](docs/Architecture.md)
+- [Container startup](docs/Container-startup.md) and [Deployment](docs/Deployment.md)
+- [Reader](docs/Reader.md) and [Export to RuneScape Wiki](docs/Export-to-RuneScape-Wiki.md)
+- [Content pipeline](docs/Content-pipeline.md) and [Testing](docs/Testing.md)
+- [Known limitations](docs/Known-limitations.md)

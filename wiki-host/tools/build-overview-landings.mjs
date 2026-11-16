@@ -14,8 +14,10 @@
  *   wiki-host/main-guides/overview-landings.json
  *   navigation.json and native-headings.json, updated in place
  *
- * Safe to rerun: a second run writes the same files, except the `generated`
- * timestamp in overview-landings.json.
+ * Safe to rerun: a second run writes the same files, except
+ * overview-landings.json: its `generated` timestamp changes, and once
+ * overview-landings-published.json exists its `baselineSha256` values are the
+ * published hashes instead of the seed hashes.
  *
  * Usage: node wiki-host/tools/build-overview-landings.mjs
  */

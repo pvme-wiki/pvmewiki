@@ -1,0 +1,1 @@
+Unchanged snapshots of PvME's emoji metadata, read by `../corpus-native-build.mjs`: `official-emoji-labels.json` (the official label of each emoji, used to find the matching RuneScape Wiki file) and `emojis_v2.json` (the upstream emoji catalogue with categories and asset ids). They are metadata, not images.

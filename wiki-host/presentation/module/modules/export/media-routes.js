@@ -5,7 +5,7 @@
  *
  * RuneScape Wiki cannot hotlink arbitrary hosts, so every source media URL
  * needs a route that somebody has checked on the destination wiki. The media
- * catalogue (data/runescape-wiki-media.json) records those checks. A URL with
+ * catalogue (modules/wiki-media-resolver.json) records those checks. A URL with
  * no verified entry is reported as unresolved and never guessed at.
  *
  * @typedef {Object} Verification
