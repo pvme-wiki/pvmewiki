@@ -13,6 +13,11 @@ const text=n=>n.nodeName==='#text'?n.value:(n.childNodes||[]).map(text).join('')
 async function api(params){const r=await fetch('https://pvmewiki.sanji3.dev/api.php',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams({...params,format:'json',formatversion:'2'}),signal:AbortSignal.timeout(90000)});if(!r.ok)throw Error('Wiki API HTTP '+r.status);const data=await r.json();if(data.error)throw Error(data.error.info);return data;}
 const baseline=new Map();
 for(let i=0;i<landings.pages.length;i+=20){const data=await api({action:'query',prop:'revisions',rvprop:'ids|timestamp|user|comment|content',rvslots:'main',titles:landings.pages.slice(i,i+20).map(p=>p.title).join('|')});for(const p of data.query.pages){const r=p.revisions?.[0];baseline.set(p.title,{revision:r?.revid,sha256:r?sha256(r.slots.main.content):null,user:r?.user,comment:r?.comment});}}
+if(process.argv.includes('--verify-saved')){
+ const results=landings.pages.map(p=>({title:p.title,overview:p.overview,...baseline.get(p.title),expectedSha256:p.sha256,matches:baseline.get(p.title)?.sha256===p.sha256,permalink:'https://pvmewiki.sanji3.dev/index.php?title='+encodeURIComponent(p.title)+'&oldid='+baseline.get(p.title)?.revision}));
+ const report={captured:new Date().toISOString(),pages:results.length,matches:results.filter(p=>p.matches).length,failed:results.filter(p=>!p.matches).length,results};
+ fs.writeFileSync(path.join(directory,'overview-landings-published.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify({...report,results:results.filter(p=>!p.matches)}));if(report.failed)process.exitCode=1;process.exit();
+}
 const results=[];let cursor=0;
 async function worker(){while(cursor<landings.pages.length){const p=landings.pages[cursor++],expected=source.get(p.overview),before=baseline.get(p.title);let result={title:p.title,overview:p.overview,wikitextSha256:p.sha256,baseline:before};try{
  const wikitext=fs.readFileSync(path.join(directory,p.file),'utf8');if(sha256(wikitext)!==p.sha256)throw Error('Landing content hash mismatch');
