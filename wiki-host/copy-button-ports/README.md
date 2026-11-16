@@ -6,7 +6,9 @@ The live exporter covers **all 325 current guides**, with **34,420 inline image 
 
 The latest [five random long-guide previews](verification/five-long-previews/README.md) passed: **24,528 source words**, **3,048 literal source nodes** unchanged and in order, and **773/773 inline images loaded**. These were native RuneScape Wiki previews using the actual live Copy button. **Nothing was saved.** Original MP4 clips retain source-player links where the destination cannot embed them.
 
-The existing RuneScape Wiki hub still lists **15 saved guides**, at [revision 37281573](https://runescape.wiki/w/User:Mo_rs/PvME?oldid=37281573). The five older ports have not been upgraded, and bulk publication remains stopped. Their [prepared exports](prepared/older-five/README.md) are unpublished drafts.
+Following explicit publication authorization, the five long guides were copied again using the actual live Chrome buttons, previewed with all 773 images loaded, and saved. Each fresh copy matched the previously verified output byte for byte. A read-only audit confirms each saved revision matches that output apart from edge whitespace. The [publication evidence](verification/five-long-publication/README.md) records all links and the table backup.
+
+The RuneScape Wiki hub now lists **20 saved guides**, at [revision 37281592](https://runescape.wiki/w/User:Mo_rs/PvME?oldid=37281592). All 15 prior rows are preserved. The five older ports have not been upgraded, and bulk publication remains stopped. Their [prepared exports](prepared/older-five/README.md) are unpublished drafts.
 
 ## Earlier pilot and publication history
 

@@ -2,7 +2,7 @@
 
 The current site is the [standalone editable MediaWiki](https://pvmewiki.sanji3.dev), maintained on this repository's default `wiki` branch. Its current-source corpus contains 325 guide articles and four About pages. Guide wording and order remain unchanged; presentation and navigation are additive.
 
-See [the wiki runtime documentation](wiki-host/README.md) and [Copy to wiki coverage and verification](wiki-host/copy-button-ports/README.md). The copy exporter covers all 325 guides. The latest five long-guide checks were unsaved RuneScape Wiki previews; the stopped bulk publication has not resumed.
+See [the wiki runtime documentation](wiki-host/README.md) and [Copy to wiki coverage and verification](wiki-host/copy-button-ports/README.md). The copy exporter covers all 325 guides. The five verified long guides have been published to the user's namespace after fresh live-button copies, bringing the guide table to 20 entries. Bulk corpus publication remains stopped.
 
 ## Earlier reader prototype
 
