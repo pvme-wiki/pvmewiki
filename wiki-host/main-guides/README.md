@@ -15,3 +15,11 @@ The article retains all 194 original images, six original videos, both preset li
 Text sizes inherit Vector's article size. Neither this guide nor picture templates lock instruction text to root-relative sizes. The actual Small/Standard/Large controls must be checked on the live page after deployment.
 
 The wider corpus rollout is paused pending completion of this Amascut main-guide pass. Inventory work is saved, but no bulk editorial rewrites or broad guide publication is authorised by this release.
+
+## Published result
+
+Published [main guide revision 389](https://pvmewiki.sanji3.dev/index.php?title=PvME/Amascut/Overview&oldid=389) and [summary-route redirect revision 390](https://pvmewiki.sanji3.dev/index.php?title=PvME/Amascut/Picture_guide&oldid=390). The final deployment `dep-dbt4n4ff3r2c73bu1jl0`, commit `640679b420baaf13b1b792013210e687f2293adf`, is live and recognised both existing published revisions without writing them again.
+
+`production-audit.json` and `production-audit-result.json` retain the live DOM comparison: exact ordered source text matches hash `4bd6fec673a9e1ef525aeaf57f697ba09b0c0954818f67b7a07a36f08210fccf`; all 194 original image URLs/alt/title values, six video URLs and five active link URLs/labels match in order. Whitespace layout alone is normalised. The source H1 is retained as the native page heading. The additional Necromancy preview is recorded separately.
+
+`text-controls.json` records actual live control results: Small 14px, Standard 16px, Large 20px. The initial Small setting was restored. A 390×844 phone viewport had no horizontal overflow in the guide, images, cards or video elements. Original video controls, looping and muted behaviour are retained. Browser proof screenshots are in `proof/`.
