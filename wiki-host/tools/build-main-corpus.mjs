@@ -14,7 +14,9 @@ const titleOverrides={
  'pvme-guides--rs3-full-boss-guides--ghrazi-blood-knights--gbk-solo-100-ranged-melee':'PvME/Ghrazi blood knights/Solo 100% ranged-melee'
 };
 const selected=capture.pages.filter(p=>p.kind!=='site-home');
-const additionsFor=p=>p.id==='pvme-guides--basic-guides--amascut-basic'?[{afterLink:'https://presets.pvme.io/?id=c9915f48-ad2f-4a74-bc28-de538d40826e',src:'https://pvme.io/preset-maker-storage/embeds/images/cba8d6dd68abecd4861b4e0eed8cbb75ccdc217835961584c9d68464ed4c4352.webp',alt:'Amascut Basic - Necromancy'}]:[];
+const previews=JSON.parse(fs.readFileSync(path.join(host,'preset-previews/manifest.json')));
+if(previews.failures.length)throw new Error('Unresolved official preset previews');
+const additionsFor=p=>previews.pages.find(x=>x.id===p.id)?.additions||[];
 for(const p of selected){
  try{
   if(p.status!=='captured')throw new Error('Current source not captured');

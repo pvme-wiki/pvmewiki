@@ -5,6 +5,8 @@ const directory=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../ma
 const plan=JSON.parse(fs.readFileSync(path.join(directory,'corpus-plan.json')));
 const audit=JSON.parse(fs.readFileSync(path.join(directory,'parser-audit/summary.json')));
 const baselines=new Map(JSON.parse(fs.readFileSync(path.join(directory,'corpus-baselines.json'))).pages.map(p=>[p.title,p]));
+const published=JSON.parse(fs.readFileSync(path.join(directory,'published-revisions.json')));
+for(const p of published.pages){if(p.matches)baselines.set(p.title,p);}
 const old=JSON.parse(fs.readFileSync(path.join(directory,'manifest.json')));
 const passed=new Map(audit.pages.filter(p=>p.passed).map(p=>[p.id,p]));
 const limit=Number(process.argv[2]||Infinity);

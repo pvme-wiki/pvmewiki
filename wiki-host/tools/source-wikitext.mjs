@@ -10,7 +10,7 @@ const voidTags=new Set(['br','hr','col']);
 export function renderSourceGuide({nodes,sourceURL,sourceTitle,additions=[]}){
  const heading=nodes.find(n=>n.tag==='h1');
  const media=[],links=[],unwrappedTags=new Set(),mediaHosts=new Set();
- let currentMechanic='';
+ let currentMechanic='';const emittedAdditions=new Set();
  const absolute=url=>new URL(url,sourceURL).href;
  function rememberURL(url){const resolved=absolute(url);mediaHosts.add(new URL(resolved).hostname);return resolved;}
  function attrsString(attrs){return Object.entries(attrs).filter(([,v])=>v!==undefined&&v!==null).map(([k,v])=>' '+k+'="'+escape(v)+'"').join('');}
@@ -46,7 +46,9 @@ export function renderSourceGuide({nodes,sourceURL,sourceTitle,additions=[]}){
    if(inHeading)return '<a'+attrsString({href:absolute(href)})+'>'+children()+'</a>';
    const label=children();
    if(!label.trim())throw new Error('Empty source link needs explicit mapping: '+sourceURL);
-   return '['+absolute(href).replaceAll('[','%5B').replaceAll(']','%5D')+' '+label+']';
+   let result='['+absolute(href).replaceAll('[','%5B').replaceAll(']','%5D')+' '+label+']';
+   for(const extra of additions){if(absolute(href)===extra.afterLink&&!emittedAdditions.has(extra.afterLink)){result+='<pvme-image'+attrsString({src:rememberURL(extra.src),alt:extra.alt||'',kind:'addition'})+' />';emittedAdditions.add(extra.afterLink);}}
+   return result;
   }
   if(n.tag==='pre')return '<pre'+attrsString(a.id?{id:a.id}:{})+'>'+escape(sourceText(n))+'</pre>';
   if(!semanticTags.has(n.tag)){unwrappedTags.add(n.tag);return children();}
@@ -64,7 +66,6 @@ export function renderSourceGuide({nodes,sourceURL,sourceTitle,additions=[]}){
   if(classes.length)outAttrs.class=classes.join(' ');
   if(a.style){const parts=a.style.split(';').map(s=>s.trim()).filter(s=>/^(?:color|background-color|text-align|vertical-align|white-space)\s*:/i.test(s)&&!/(?:url|expression|var)\s*\(/i.test(s));if(parts.length)outAttrs.style=parts.join(';');}
   let content=children();
-  for(const extra of additions){if(n.tag==='p'&&(n.children||[]).some(c=>c.tag==='a'&&absolute(c.attrs?.href||'')===extra.afterLink))content+='<pvme-image'+attrsString({src:rememberURL(extra.src),alt:extra.alt||'',kind:'addition'})+' />';}
   return '<'+n.tag+attrsString(outAttrs)+'>'+content+(voidTags.has(n.tag)?'':'</'+n.tag+'>');
  }
  // The source H1 remains the native wiki page heading, including its icons/links.
