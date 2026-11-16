@@ -1,26 +1,66 @@
-import fs from 'node:fs';
+/**
+ * Confirms that every page in the corpus plan is saved on the production wiki
+ * exactly as compiled, and records each saved revision.
+ *
+ * Reads: main-guides/corpus-plan.json (or the file named by PVME_AUDIT_PLAN) and
+ *     the latest revision of each page from https://pvmewiki.sanji3.dev/api.php.
+ * Writes: main-guides/published-revisions.json, which build-media-catalogue.mjs
+ *     and activate-main-corpus.mjs read.
+ * Network: read-only API queries (action=query) sent as POST; nothing is edited.
+ * Exits with code 1 when any page is missing or differs from the plan.
+ */
 import path from 'node:path';
-import {fileURLToPath} from 'node:url';
-import {sha256} from './source-wikitext.mjs';
+import { isPvmeGuide } from './lib/corpus-plan.mjs';
+import { HOST_DIR, readJson, writeJson } from './lib/files.mjs';
+import { TITLES_PER_QUERY, latestRevisions, permalink } from './lib/pvme-wiki-api.mjs';
+import { sha256 } from './lib/text.mjs';
 
-const directory=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../main-guides');
-const plan=JSON.parse(fs.readFileSync(process.env.PVME_AUDIT_PLAN||path.join(directory,'corpus-plan.json')));
-const results=[];
-for(let i=0;i<plan.pages.length;i+=20){
- const chunk=plan.pages.slice(i,i+20);
- const params=new URLSearchParams({action:'query',prop:'revisions',rvprop:'ids|timestamp|user|comment|content',rvslots:'main',titles:chunk.map(p=>p.title).join('|'),format:'json',formatversion:'2'});
- const response=await fetch('https://pvmewiki.sanji3.dev/api.php',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:params,signal:AbortSignal.timeout(90000)});
- if(!response.ok)throw new Error('Wiki API HTTP '+response.status);
- const data=await response.json();if(data.error)throw new Error(data.error.info);
- const pages=new Map(data.query.pages.map(p=>[p.title,p]));
- for(const expected of chunk){
-  const page=pages.get(expected.title);const revision=page?.revisions?.[0];
-  const hash=revision?sha256(revision.slots.main.content):null;
-  results.push({title:expected.title,source:expected.source,kind:expected.kind,revision:revision?.revid??null,timestamp:revision?.timestamp??null,user:revision?.user??null,comment:revision?.comment??null,sha256:hash,expectedSha256:expected.sha256,matches:hash===expected.sha256,permalink:revision?'https://pvmewiki.sanji3.dev/index.php?title='+encodeURIComponent(expected.title)+'&oldid='+revision.revid:null});
- }
- console.log(JSON.stringify({checked:results.length,total:plan.pages.length}));
+const MAIN_GUIDES = path.join(HOST_DIR, 'main-guides');
+const planFile = process.env.PVME_AUDIT_PLAN || path.join(MAIN_GUIDES, 'corpus-plan.json');
+
+function compareWithPlan(expected, page) {
+    const revision = page?.revisions?.[0];
+    const hash = revision ? sha256(revision.slots.main.content) : null;
+    return {
+        title: expected.title,
+        source: expected.source,
+        kind: expected.kind,
+        revision: revision?.revid ?? null,
+        timestamp: revision?.timestamp ?? null,
+        user: revision?.user ?? null,
+        comment: revision?.comment ?? null,
+        sha256: hash,
+        expectedSha256: expected.sha256,
+        matches: hash === expected.sha256,
+        permalink: revision ? permalink(expected.title, revision.revid) : null,
+    };
 }
-const report={captured:new Date().toISOString(),total:results.length,guides:results.filter(p=>new URL(p.source).pathname.startsWith('/pvme-guides/')).length,siteInformation:results.filter(p=>p.kind==='site-information').length,matches:results.filter(p=>p.matches).length,missing:results.filter(p=>p.revision===null).length,mismatches:results.filter(p=>!p.matches).length,pages:results};
-fs.writeFileSync(path.join(directory,'published-revisions.json'),JSON.stringify(report,null,2)+'\n');
-console.log(JSON.stringify({...report,pages:results.filter(p=>!p.matches)}));
-if(report.mismatches)process.exitCode=1;
+
+const plan = readJson(planFile);
+const results = [];
+for (let start = 0; start < plan.pages.length; start += TITLES_PER_QUERY) {
+    const chunk = plan.pages.slice(start, start + TITLES_PER_QUERY);
+    const saved = await latestRevisions(chunk.map((page) => page.title));
+    const savedByTitle = new Map(saved.map((page) => [page.title, page]));
+    for (const expected of chunk) {
+        results.push(compareWithPlan(expected, savedByTitle.get(expected.title)));
+    }
+    console.log(JSON.stringify({ checked: results.length, total: plan.pages.length }));
+}
+
+const report = {
+    captured: new Date().toISOString(),
+    total: results.length,
+    guides: results.filter(isPvmeGuide).length,
+    siteInformation: results.filter((result) => result.kind === 'site-information').length,
+    matches: results.filter((result) => result.matches).length,
+    missing: results.filter((result) => result.revision === null).length,
+    mismatches: results.filter((result) => !result.matches).length,
+    pages: results,
+};
+const outputFile = path.join(MAIN_GUIDES, 'published-revisions.json');
+writeJson(outputFile, report);
+console.log(JSON.stringify({ ...report, pages: results.filter((result) => !result.matches) }));
+if (report.mismatches) {
+    process.exitCode = 1;
+}

@@ -1,58 +1,241 @@
+/**
+ * Renders every compiled guide through the production wiki's parser and checks
+ * that the result still carries the source exactly: the same text, images,
+ * videos, embeds and links in the same order, plus the planned preset previews.
+ *
+ * Usage: node tools/audit-main-corpus.mjs [--refresh]
+ *     Results are cached per page and reused while the page's compiled hash is
+ *     unchanged and it passed; --refresh re-renders every page.
+ *
+ * Reads: main-guides/corpus-plan.json, main-guides/*.wiki, the source tree of a
+ *     failing page (current-source/), parse5 from current-source/.dependencies/
+ *     (run current-source/bootstrap.mjs first), and
+ *     https://pvmewiki.sanji3.dev/api.php (action=parse).
+ * Writes: main-guides/parser-audit/<id>.json per page and summary.json after
+ *     every page; for a failing page also <id>.html (the rendered HTML) and
+ *     <id>-actual.json; <id>-transport.html when the API answers with non-JSON.
+ * Network: action=parse sent as POST because the request carries the whole
+ *     guide. It renders a preview and saves nothing.
+ * Exits with code 1 when any page fails.
+ */
 import fs from 'node:fs';
 import path from 'node:path';
-import {fileURLToPath,pathToFileURL} from 'node:url';
-import {normalText,sha256} from './source-wikitext.mjs';
-const host=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const directory=path.join(host,'main-guides');
-const plan=JSON.parse(fs.readFileSync(path.join(directory,'corpus-plan.json')));
-const {parseFragment}=await import(pathToFileURL(path.join(host,'current-source/.dependencies/node_modules/parse5/dist/index.js')).href);
-const out=path.join(directory,'parser-audit');fs.mkdirSync(out,{recursive:true});
-const attrs=n=>Object.fromEntries((n.attrs||[]).map(a=>[a.name,a.value]));
-const find=(n,p,result=[])=>{if(p(n))result.push(n);for(const c of n.childNodes||[])find(c,p,result);return result;};
-const text=n=>n.nodeName==='#text'?n.value:(n.childNodes||[]).map(text).join('');
-const urlNormal=s=>s.replace(/%5b/gi,'[').replace(/%5d/gi,']');
-const entries=[];let cursor=0,done=0;
-function checkpoint(){fs.writeFileSync(path.join(out,'summary.json'),JSON.stringify({updated:new Date().toISOString(),total:plan.pages.length,completed:entries.length,passed:entries.filter(e=>e.passed).length,failed:entries.filter(e=>!e.passed).length,pages:entries},null,2)+'\n');}
-async function audit(p){
- const resultFile=path.join(out,p.id+'.json');
- if(fs.existsSync(resultFile)&&!process.argv.includes('--refresh')){
-  const prior=JSON.parse(fs.readFileSync(resultFile));if(prior.wikitextSha256===p.sha256&&prior.passed&&(!(p.additions||[]).length||prior.addedPreviewCoverageMatch))return prior;
- }
- const source=fs.readFileSync(path.join(directory,p.file),'utf8');if(sha256(source)!==p.sha256)throw new Error('Compiled source hash mismatch');
- const response=await fetch('https://pvmewiki.sanji3.dev/api.php',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams({action:'parse',format:'json',formatversion:'2',title:p.title,text:source,prop:'text|sections',disableeditsection:'1'}),signal:AbortSignal.timeout(120000)});
- const wire=await response.text();let data;
- try{data=JSON.parse(wire);}catch{
-  fs.writeFileSync(path.join(out,p.id+'-transport.html'),wire);
-  throw new Error('Parser transport HTTP '+response.status+' returned '+(response.headers.get('content-type')||'unknown content type'));
- }
- if(data.error)throw new Error(data.error.info);
- const dom=parseFragment(data.parse.text);
- const root=find(dom,n=>(attrs(n).class||'').split(/\s+/).includes('pvme-exact-guide'))[0];
- if(!root)throw new Error('Native exact article missing from parser result');
- const words=normalText(text(root));
- const images=find(root,n=>n.tagName==='img'&&!attrs(n)['data-pvme-addition']).map(n=>{const a=attrs(n);return {src:a.src,alt:a.alt||'',title:a.title||''};});
- const addedImages=find(root,n=>n.tagName==='img'&&attrs(n)['data-pvme-addition']).map(n=>attrs(n));
- const videos=find(root,n=>n.tagName==='video').map(n=>({attrs:attrs(n),sources:find(n,c=>c.tagName==='source').map(c=>attrs(c).src)}));
- const embeds=find(root,n=>n.tagName==='iframe').map(n=>attrs(n).src);
- const links=find(root,n=>n.tagName==='a').map(n=>({href:attrs(n).href,text:text(n)}));
- const expectedImages=p.media.filter(m=>m.tag==='img'),expectedVideos=p.media.filter(m=>m.tag==='video'),expectedEmbeds=p.media.filter(m=>m.tag==='iframe'),expectedLinks=p.links.filter(l=>l.href);
- const result={id:p.id,title:p.title,source:p.source,sourceSha256:p.sourceSha256,wikitextSha256:p.sha256,actualTextSha256:sha256(words),expectedTextSha256:p.bodyTextSha256,textMatches:sha256(words)===p.bodyTextSha256,images:images.length,expectedImages:expectedImages.length,imageOrderAndAttributesMatch:images.length===expectedImages.length&&expectedImages.every((m,i)=>['src','alt','title'].every(k=>(m[k]||'')===(images[i][k]||''))),videos:videos.length,videoOrderAndFlagsMatch:videos.length===expectedVideos.length&&expectedVideos.every((m,i)=>videos[i].sources[0]===m.src&&['controls','muted','loop'].every(k=>(videos[i].attrs[k]!==undefined)===m[k])),embeds:embeds.length,embedOrderMatches:embeds.length===expectedEmbeds.length&&expectedEmbeds.every((m,i)=>m.src===embeds[i]),links:links.length,expectedLinks:expectedLinks.length,activeLinkOrderAndLabelsMatch:links.length===expectedLinks.length&&expectedLinks.every((l,i)=>urlNormal(l.href)===urlNormal(links[i].href||'')&&l.text===links[i].text),sections:data.parse.sections.length};
- result.addedPreviews=addedImages.length;result.expectedAddedPreviews=(p.additions||[]).length;
- result.addedPreviewCoverageMatch=addedImages.length===(p.additions||[]).length&&(p.additions||[]).every((a,i)=>a.src===addedImages[i]?.src&&(a.alt||'')===(addedImages[i]?.alt||''));
- result.passed=result.textMatches&&result.imageOrderAndAttributesMatch&&result.videoOrderAndFlagsMatch&&result.embedOrderMatches&&result.activeLinkOrderAndLabelsMatch&&result.addedPreviewCoverageMatch;
- if(!result.passed){
-  fs.writeFileSync(path.join(out,p.id+'.html'),data.parse.text);
-  const nodes=JSON.parse(fs.readFileSync(path.join(host,p.sourceTree)));
-  const sourceText=n=>n.text!==undefined?n.text:(n.children||[]).map(sourceText).join('');
-  const expected=normalText(nodes.map(sourceText).join(''));
-  let i=0;while(i<Math.max(expected.length,words.length)&&expected[i]===words[i])i++;
-  result.firstTextDifference=expected===words?null:{offset:i,expected:expected.slice(Math.max(0,i-80),i+160),actual:words.slice(Math.max(0,i-80),i+160)};
-  result.firstLinkDifference=expectedLinks.find((l,i)=>!links[i]||urlNormal(l.href)!==urlNormal(links[i].href||'')||l.text!==links[i].text)||null;
-  fs.writeFileSync(path.join(out,p.id+'-actual.json'),JSON.stringify({images,videos,embeds,links,words},null,2));
- }
- fs.writeFileSync(resultFile,JSON.stringify(result,null,2)+'\n');return result;
+import { forEachConcurrently } from './lib/concurrency.mjs';
+import { HOST_DIR as HOST, readJson, writeJson } from './lib/files.mjs';
+import {
+    guideRoot, sameAdditions, sameEmbeds, sameImages, sameLink, sameLinks, sameVideos,
+} from './lib/guide-parity.mjs';
+import { attributes, findAll, loadParse5, textContent } from './lib/html-tree.mjs';
+import { WIKI_API } from './lib/pvme-wiki-api.mjs';
+import { sha256 } from './lib/text.mjs';
+import { normalText, sourceText } from './source-wikitext.mjs';
+
+const MAIN_GUIDES = path.join(HOST, 'main-guides');
+const OUT = path.join(MAIN_GUIDES, 'parser-audit');
+const WORKERS = 2;
+const PARSE_TIMEOUT_MS = 120000;
+const PROGRESS_EVERY = 10;
+const DIFF_CONTEXT_BEFORE = 80;
+const DIFF_CONTEXT_AFTER = 160;
+
+const refresh = process.argv.includes('--refresh');
+const plan = readJson(path.join(MAIN_GUIDES, 'corpus-plan.json'));
+const { parseFragment } = await loadParse5(HOST);
+
+const writeOut = (file, text) => fs.writeFileSync(path.join(OUT, file), text);
+
+function reusableResult(page) {
+    const file = path.join(OUT, page.id + '.json');
+    if (!fs.existsSync(file) || refresh) {
+        return null;
+    }
+    const prior = readJson(file);
+    const additionsChecked = !(page.additions || []).length || prior.addedPreviewCoverageMatch;
+    return prior.wikitextSha256 === page.sha256 && prior.passed && additionsChecked ? prior : null;
 }
-async function worker(){while(cursor<plan.pages.length){const p=plan.pages[cursor++];let r;try{r=await audit(p);}catch(error){r={id:p.id,title:p.title,wikitextSha256:p.sha256,passed:false,error:error.message};}entries.push(r);done++;checkpoint();if(done%10===0||!r.passed)console.log(JSON.stringify({completed:done,total:plan.pages.length,passed:entries.filter(e=>e.passed).length,failed:entries.filter(e=>!e.passed).length,...(!r.passed?{issue:r}: {})}));}}
-await Promise.all([worker(),worker()]);
-checkpoint();console.log(JSON.stringify({completed:entries.length,passed:entries.filter(e=>e.passed).length,failed:entries.filter(e=>!e.passed).length}));
-if(entries.some(e=>!e.passed))process.exitCode=1;
+
+/** @return {Promise<{text: string, sections: Object[]}>} the API's `parse` result */
+async function renderWithWiki(page, wikitext) {
+    const response = await fetch(WIKI_API, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams({
+            action: 'parse',
+            format: 'json',
+            formatversion: '2',
+            title: page.title,
+            text: wikitext,
+            prop: 'text|sections',
+            disableeditsection: '1',
+        }),
+        signal: AbortSignal.timeout(PARSE_TIMEOUT_MS),
+    });
+    const body = await response.text();
+    let data;
+    try {
+        data = JSON.parse(body);
+    } catch {
+        writeOut(page.id + '-transport.html', body);
+        const type = response.headers.get('content-type') || 'unknown content type';
+        throw new Error('Parser transport HTTP ' + response.status + ' returned ' + type);
+    }
+    if (data.error) {
+        throw new Error(data.error.info);
+    }
+    return data.parse;
+}
+
+/** Everything the audit compares, read from the rendered guide body. */
+function inventoryOf(html) {
+    const root = guideRoot(parseFragment(html));
+    if (!root) {
+        throw new Error('Native exact article missing from parser result');
+    }
+    const byTag = (tag) => findAll(root, (node) => node.tagName === tag);
+    const isAddition = (node) => attributes(node)['data-pvme-addition'];
+    const images = byTag('img').filter((node) => !isAddition(node)).map((node) => {
+        const { src, alt, title } = attributes(node);
+        return { src, alt: alt || '', title: title || '' };
+    });
+    return {
+        words: normalText(textContent(root)),
+        images,
+        addedImages: byTag('img').filter(isAddition).map(attributes),
+        videos: byTag('video').map((node) => ({
+            attrs: attributes(node),
+            sources: findAll(node, (child) => child.tagName === 'source')
+                .map((child) => attributes(child).src),
+        })),
+        embeds: byTag('iframe').map((node) => attributes(node).src),
+        links: byTag('a').map((node) => ({ href: attributes(node).href, text: textContent(node) })),
+    };
+}
+
+function compareWithPlan(page, rendered, sectionCount) {
+    const expectedMedia = (tag) => page.media.filter((media) => media.tag === tag);
+    const expectedImages = expectedMedia('img');
+    const expectedVideos = expectedMedia('video');
+    const expectedEmbeds = expectedMedia('iframe');
+    const expectedLinks = page.links.filter((link) => link.href);
+    const additions = page.additions || [];
+    const actualTextSha256 = sha256(rendered.words);
+    const result = {
+        id: page.id,
+        title: page.title,
+        source: page.source,
+        sourceSha256: page.sourceSha256,
+        wikitextSha256: page.sha256,
+        actualTextSha256,
+        expectedTextSha256: page.bodyTextSha256,
+        textMatches: actualTextSha256 === page.bodyTextSha256,
+        images: rendered.images.length,
+        expectedImages: expectedImages.length,
+        imageOrderAndAttributesMatch: sameImages(expectedImages, rendered.images),
+        videos: rendered.videos.length,
+        videoOrderAndFlagsMatch: sameVideos(expectedVideos, rendered.videos),
+        embeds: rendered.embeds.length,
+        embedOrderMatches: sameEmbeds(expectedEmbeds, rendered.embeds),
+        links: rendered.links.length,
+        expectedLinks: expectedLinks.length,
+        activeLinkOrderAndLabelsMatch: sameLinks(expectedLinks, rendered.links),
+        sections: sectionCount,
+        addedPreviews: rendered.addedImages.length,
+        expectedAddedPreviews: additions.length,
+        addedPreviewCoverageMatch: sameAdditions(additions, rendered.addedImages),
+    };
+    result.passed = result.textMatches && result.imageOrderAndAttributesMatch &&
+        result.videoOrderAndFlagsMatch && result.embedOrderMatches &&
+        result.activeLinkOrderAndLabelsMatch && result.addedPreviewCoverageMatch;
+    return result;
+}
+
+/** Where the rendered text first departs from the source text, with context. */
+function firstTextDifference(page, words) {
+    const nodes = readJson(path.join(HOST, page.sourceTree));
+    const expected = normalText(nodes.map(sourceText).join(''));
+    if (expected === words) {
+        return null;
+    }
+    let offset = 0;
+    while (offset < Math.max(expected.length, words.length) && expected[offset] === words[offset]) {
+        offset++;
+    }
+    const around = (text) =>
+        text.slice(Math.max(0, offset - DIFF_CONTEXT_BEFORE), offset + DIFF_CONTEXT_AFTER);
+    return { offset, expected: around(expected), actual: around(words) };
+}
+
+function recordFailureEvidence(page, result, rendered, html) {
+    writeOut(page.id + '.html', html);
+    const expectedLinks = page.links.filter((link) => link.href);
+    result.firstTextDifference = firstTextDifference(page, rendered.words);
+    result.firstLinkDifference = expectedLinks.find((link, index) =>
+        !rendered.links[index] || !sameLink(link, rendered.links[index])) || null;
+    const { images, videos, embeds, links, words } = rendered;
+    const actual = { images, videos, embeds, links, words };
+    writeOut(page.id + '-actual.json', JSON.stringify(actual, null, 2));
+}
+
+async function auditPage(page) {
+    const prior = reusableResult(page);
+    if (prior) {
+        return prior;
+    }
+    const wikitext = fs.readFileSync(path.join(MAIN_GUIDES, page.file), 'utf8');
+    if (sha256(wikitext) !== page.sha256) {
+        throw new Error('Compiled source hash mismatch');
+    }
+    const parsed = await renderWithWiki(page, wikitext);
+    const rendered = inventoryOf(parsed.text);
+    const result = compareWithPlan(page, rendered, parsed.sections.length);
+    if (!result.passed) {
+        recordFailureEvidence(page, result, rendered, parsed.text);
+    }
+    writeJson(path.join(OUT, page.id + '.json'), result);
+    return result;
+}
+
+const entries = [];
+const counts = () => ({
+    passed: entries.filter((entry) => entry.passed).length,
+    failed: entries.filter((entry) => !entry.passed).length,
+});
+
+function writeSummary() {
+    const summary = {
+        updated: new Date().toISOString(),
+        total: plan.pages.length,
+        completed: entries.length,
+        ...counts(),
+        pages: entries,
+    };
+    writeJson(path.join(OUT, 'summary.json'), summary);
+}
+
+fs.mkdirSync(OUT, { recursive: true });
+await forEachConcurrently(plan.pages, WORKERS, async (page) => {
+    let result;
+    try {
+        result = await auditPage(page);
+    } catch (error) {
+        result = {
+            id: page.id, title: page.title, wikitextSha256: page.sha256, passed: false,
+            error: error.message,
+        };
+    }
+    entries.push(result);
+    writeSummary();
+    if (entries.length % PROGRESS_EVERY === 0 || !result.passed) {
+        console.log(JSON.stringify({
+            completed: entries.length,
+            total: plan.pages.length,
+            ...counts(),
+            ...(!result.passed ? { issue: result } : {}),
+        }));
+    }
+});
+writeSummary();
+console.log(JSON.stringify({ completed: entries.length, ...counts() }));
+if (entries.some((entry) => !entry.passed)) {
+    process.exitCode = 1;
+}
