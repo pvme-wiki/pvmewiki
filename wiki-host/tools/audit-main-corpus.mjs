@@ -20,7 +20,12 @@ async function audit(p){
  }
  const source=fs.readFileSync(path.join(directory,p.file),'utf8');if(sha256(source)!==p.sha256)throw new Error('Compiled source hash mismatch');
  const response=await fetch('https://pvmewiki.sanji3.dev/api.php',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams({action:'parse',format:'json',formatversion:'2',title:p.title,text:source,prop:'text|sections',disableeditsection:'1'}),signal:AbortSignal.timeout(120000)});
- const data=await response.json();if(data.error)throw new Error(data.error.info);
+ const wire=await response.text();let data;
+ try{data=JSON.parse(wire);}catch{
+  fs.writeFileSync(path.join(out,p.id+'-transport.html'),wire);
+  throw new Error('Parser transport HTTP '+response.status+' returned '+(response.headers.get('content-type')||'unknown content type'));
+ }
+ if(data.error)throw new Error(data.error.info);
  const dom=parseFragment(data.parse.text);
  const root=find(dom,n=>(attrs(n).class||'').split(/\s+/).includes('pvme-exact-guide'))[0];
  if(!root)throw new Error('Native exact article missing from parser result');

@@ -34,7 +34,8 @@ for(const p of selected){
    const index=navigation.pages[parent]||navigation.pages.PvME;
    if(!index.children.includes(title))index.children.push(title);
   }
-  Object.assign(item,{source:p.sourceURL,retrieved:p.retrievedAt.slice(0,10),nativeTitle:converted.heading,nativeLayout:true});
+  const retrievedDate=new Intl.DateTimeFormat('en-CA',{timeZone:'America/New_York',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(p.retrievedAt));
+  Object.assign(item,{source:p.sourceURL,retrieved:retrievedDate,nativeTitle:converted.heading,nativeLayout:true});
   headings[title.replaceAll(' ','_')]={text:converted.heading,html:converted.headingHTML};
   converted.mediaHosts.forEach(h=>hosts.add(h));
   pages.push({id:p.id,title,kind:p.kind,source:p.sourceURL,retrieved:p.retrievedAt,sourceSha256:p.sourceSha256,sourceTree:path.relative(host,treePath).replaceAll('\\','/'),file:filename,sha256:converted.wikitextSha256,nativeTitle:converted.heading,sourceHeadingPresent:nodes.some(n=>n.tag==='h1'),bodyTextSha256:converted.bodyTextSha256,sourceTextSha256:converted.sourceTextSha256,media:converted.media,links:converted.links,unwrappedTags:converted.unwrappedTags,additions:additionsFor(p),sourceNodeCount:nodes.length});

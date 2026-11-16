@@ -55,10 +55,10 @@ final class Hooks {
         if ($src === '' || parse_url($src, PHP_URL_HOST) !== 'www.youtube.com') { return ''; }
         return Html::rawElement('iframe', [
             'class' => 'pvme-source-embed', 'src' => $src, 'title' => $args['title'] ?? '',
-            'loading' => 'lazy', 'referrerpolicy' => 'no-referrer',
+            'loading' => 'lazy', 'referrerpolicy' => 'strict-origin-when-cross-origin',
             'allowfullscreen' => ($args['allowfullscreen'] ?? '1') === '1',
-            'allow' => 'accelerometer; encrypted-media; gyroscope; picture-in-picture',
-            'sandbox' => 'allow-scripts allow-same-origin allow-presentation'
+            'allow' => 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture',
+            'sandbox' => 'allow-scripts allow-same-origin allow-presentation allow-popups'
         ], '');
     }
 
