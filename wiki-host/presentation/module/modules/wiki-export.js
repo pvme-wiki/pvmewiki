@@ -122,7 +122,8 @@ function convertRevision(source, metadata, registry = {}, actionBars = {}, visua
             output = '[[File:' + file + '|' + (isIcon ? width + 'x' + width + 'px' : 'frameless|' + width + 'px') + '|link=' + linkUrl(url) + '|alt=' + literal(label) + (args.title ? '|' + literal(args.title) : '') + ']]';
             mode = 'file';
         } else if (kind === 'image' && (verification(entry) && entry.mode === 'external-image' || externalPolicy(url))) {
-            output = url;
+            output = entry?.imageUrl ? safeUrl(entry.imageUrl) : url;
+            if (output !== url && (!verification(entry) || !externalPolicy(output) || !/^[a-f0-9]{64}$/.test(entry.originalSha256 || '') || entry.originalSha256 !== entry.hostedSha256)) throw new Error('A hosted image must have a verified destination route and identical original bytes.');
             mode = 'external-image';
         } else if (verification(entry) && entry.mode === 'wikitext') {
             if (typeof entry.wikitext !== 'string' || !entry.wikitext.trim() || /[\uF000\uF001]|<\/?(?:script|style)\b/i.test(entry.wikitext)) throw new Error('Invalid verified media wikitext for ' + url);
@@ -142,7 +143,9 @@ function convertRevision(source, metadata, registry = {}, actionBars = {}, visua
         noteAsset(url, kind, args, true, mode);
         const rank = isIcon && mode === 'file' && /^\d{1,2}$/.test(String(entry?.badge ?? '')) ? String(entry.badge) : '';
         const rankBadge = rank ? '<span class="pvme-export-media-meta pvme-export-rank" style="position:absolute;bottom:0;right:0;min-width:0.8em;padding:0 0.1em;border:1px solid #111;border-radius:2px;background-color:#fff;color:#111;font-size:0.65em;font-weight:700;line-height:1.1;text-align:center;">' + rank + '</span>' : '';
-        const rendered = '<' + wrapper + ' style="' + wrapperStyle + (rank ? 'position:relative;' : '') + '"' + (args.title || args.alt ? ' title="' + escape(args.title || args.alt) + '"' : '') + '>' + output + rankBadge + '</' + wrapper + '>';
+        const mirrored = mode === 'external-image' && entry?.imageUrl && entry.imageUrl !== url;
+        const originalImageLink = mirrored ? '<span class="pvme-export-media-meta" style="' + (isIcon ? 'position:absolute;top:0;left:0;width:100%;height:100%;font-size:0;line-height:1;' : 'display:block;font-size:0.85em;') + '">[' + linkUrl(url) + ' ' + (isIcon ? '<span style="display:block;width:100%;height:100%;">Image source</span>' : 'Image source') + ']</span>' : '';
+        const rendered = '<' + wrapper + ' style="' + wrapperStyle + (rank || mirrored && isIcon ? 'position:relative;' : '') + '"' + (args.title || args.alt ? ' title="' + escape(args.title || args.alt) + '"' : '') + '>' + output + rankBadge + originalImageLink + '</' + wrapper + '>';
         if (args.poster) {
             const poster = media({tag:'pvme-image',attrs:{src:args.poster,alt:'',title:args.title || '',kind:'media'},children:[]}, context);
             return rendered + poster;

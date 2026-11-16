@@ -1,0 +1,983 @@
+{
+  "createdAt": "2026-11-16T03:06:11.749Z",
+  "indices": [
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "baseResolver": "vorago-asset-resolver.json",
+  "newNativeMappings": [
+    {
+      "url": "https://cdn.discordapp.com/emojis/1096130867279171706.png?v=1",
+      "fileTitle": "File:Melee icon.png",
+      "sourceLabel": "Melee",
+      "sourceAlt": "melee",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/580168050121113623.png?v=1",
+      "fileTitle": "File:Ranged.png",
+      "sourceLabel": "Ranged",
+      "sourceAlt": "ranged",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/689504724159823906.png?v=1",
+      "fileTitle": "File:Magic.png",
+      "sourceLabel": "Magic",
+      "sourceAlt": "magic",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/537341748180025365.png?v=1",
+      "fileTitle": "File:Fortitude.png",
+      "sourceLabel": "Fortitude",
+      "sourceAlt": "fortitude",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/537336701933060106.png?v=1",
+      "fileTitle": "File:Sailfish soup.png",
+      "sourceLabel": "Sailfish soup",
+      "sourceAlt": "sailfishsoup",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/535541258546970624.png?v=1",
+      "fileTitle": "File:Preparation.png",
+      "sourceLabel": "Preparation",
+      "sourceAlt": "prep",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/736298121704767538.png?v=1",
+      "fileTitle": "File:Adrenaline renewal potion (4).png",
+      "sourceLabel": "Adrenaline renewal",
+      "sourceAlt": "adrenrenewal",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/535532854004678657.png?v=1",
+      "fileTitle": "File:Berserk.png",
+      "sourceLabel": "Berserk",
+      "sourceAlt": "berserk",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/615613924506599497.png?v=1",
+      "fileTitle": "File:Soul Split.png",
+      "sourceLabel": "Soulsplit",
+      "sourceAlt": "soulsplit",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/641669268722810881.png?v=1",
+      "fileTitle": "File:Mechanised chinchompa.png",
+      "sourceLabel": "Mechanised chinchompa",
+      "sourceAlt": "mechchin",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1257440278512537740.png?v=1",
+      "fileTitle": "File:Greater Chain.png",
+      "sourceLabel": "OLDGreater chain",
+      "sourceAlt": "gchain",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/736524968174682132.png?v=1",
+      "fileTitle": "File:Maul of omens.png",
+      "sourceLabel": "Maul of Omens",
+      "sourceAlt": "maul",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/921410226484301925.png?v=1",
+      "fileTitle": "File:Binding contract (kal'gerion demon).png",
+      "sourceLabel": "Kal'gerion demon pouch",
+      "sourceAlt": "kalgpouch",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/841409588954923049.png?v=1",
+      "fileTitle": "File:Kal'gerion Demon scroll (Crit-i-Kal).png",
+      "sourceLabel": "Kal'gerion Demon scroll (Crit-i-Kal)",
+      "sourceAlt": "kalgscroll",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1137809209782698024.png?v=1",
+      "fileTitle": "File:Darkness icon.png",
+      "sourceLabel": "Darkness",
+      "sourceAlt": "darkness",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1266417538045317121.png?v=1",
+      "fileTitle": "File:Roar of Awakening.png",
+      "sourceLabel": "Roar of Awakening",
+      "sourceAlt": "roarofawakening",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1478063117211668584.png?v=1",
+      "fileTitle": "File:Greater Sonic Wave.png",
+      "sourceLabel": "gsonic",
+      "sourceAlt": "gsonic",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/994644352871714836.png?v=1",
+      "fileTitle": "File:Greater Sunshine.png",
+      "sourceLabel": "Greater Sunshine",
+      "sourceAlt": "gsunshine",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1478063111104757760.png?v=1",
+      "fileTitle": "File:Greater Concentrated Blast.png",
+      "sourceLabel": "gconc",
+      "sourceAlt": "gconc",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/535533809995874304.png?v=1",
+      "fileTitle": "File:Tsunami.png",
+      "sourceLabel": "Tsunami",
+      "sourceAlt": "tsunami",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1478063122345361562.png?v=1",
+      "fileTitle": "File:Runic Charge.png",
+      "sourceLabel": "runic_charge",
+      "sourceAlt": "runic_charge",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/535533809664262179.png?v=1",
+      "fileTitle": "File:Omnipower.png",
+      "sourceLabel": "Omnipower",
+      "sourceAlt": "omni",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1451134746280329357.png?v=1",
+      "fileTitle": "File:Legatus's Emberstaff.png",
+      "sourceLabel": "Legatus's Emberstaff",
+      "sourceAlt": "legatusemberstaff",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/536257336130404372.png?v=1",
+      "fileTitle": "File:Smoke Tendrils.png",
+      "sourceLabel": "Smoke tendrils",
+      "sourceAlt": "smoketendrils",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1478063107908702482.png?v=1",
+      "fileTitle": "File:Combust.png",
+      "sourceLabel": "combust",
+      "sourceAlt": "combust",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/643505653079343144.png?v=1",
+      "fileTitle": "File:Vampyrism aura.png",
+      "sourceLabel": "Vampyrism aura",
+      "sourceAlt": "vamp",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/535532879506309150.png?v=1",
+      "fileTitle": "File:Quake.png",
+      "sourceLabel": "Quake",
+      "sourceAlt": "quake",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/791281588792590336.png?v=1",
+      "fileTitle": "File:Caroming.png",
+      "sourceLabel": "Caroming4",
+      "sourceAlt": "caroming4",
+      "badge": "4"
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/535532879330148352.png?v=1",
+      "fileTitle": "File:Destroy.png",
+      "sourceLabel": "Destroy",
+      "sourceAlt": "destroy",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/535541270521708566.png?v=1",
+      "fileTitle": "File:Rapid Fire.png",
+      "sourceLabel": "Rapid fire",
+      "sourceAlt": "rapid",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/642713547142332416.png?v=1",
+      "fileTitle": "File:Shadow Tendrils.png",
+      "sourceLabel": "Shadow tendrils",
+      "sourceAlt": "shadowtend",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/841419289755385866.png?v=1",
+      "fileTitle": "File:Flanking.png",
+      "sourceLabel": "Flanking icon",
+      "sourceAlt": "flankicon",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/641337999170207763.png?v=1",
+      "fileTitle": "File:Augmented enhanced Excalibur.png",
+      "sourceLabel": "Augmented enhanced Excalibur",
+      "sourceAlt": "excal",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/544195488317046812.png?v=1",
+      "fileTitle": "File:Deflect Ranged.png",
+      "sourceLabel": "Deflect missiles",
+      "sourceAlt": "DeflectRange",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/881962727705280512.png?v=1",
+      "fileTitle": "File:Armadyl battlestaff.png",
+      "sourceLabel": "Armadyl battlestaff",
+      "sourceAlt": "armadylbattlestaff",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/641339233638023179.png?v=1",
+      "fileTitle": "File:Limitless.png",
+      "sourceLabel": "Limitless",
+      "sourceAlt": "limitless",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/513201065907322880.png?v=1",
+      "fileTitle": "File:Sacrifice.png",
+      "sourceLabel": "Sacrifice",
+      "sourceAlt": "Sacrifice",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/535541306475151390.png?v=1",
+      "fileTitle": "File:Anticipation.png",
+      "sourceLabel": "Anticipate",
+      "sourceAlt": "anti",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/864492981763702834.png?v=1",
+      "fileTitle": "File:Flurry.png",
+      "sourceLabel": "Flurry",
+      "sourceAlt": "flurry",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/535541306391265284.png?v=1",
+      "fileTitle": "File:Bombard.png",
+      "sourceLabel": "Bombard",
+      "sourceAlt": "bombard",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/537340400185245701.png?v=1",
+      "fileTitle": "File:Ice Barrage icon.png",
+      "sourceLabel": "Barrage (ice)",
+      "sourceAlt": "icebarrage",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/994644354536837121.png?v=1",
+      "fileTitle": "File:Greater Death's Swiftness.png",
+      "sourceLabel": "Greater Death's Swiftness",
+      "sourceAlt": "gdeathsswift",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/603979368850653216.png?v=1",
+      "fileTitle": "File:Dragon battleaxe.png",
+      "sourceLabel": "Dragon battleaxe",
+      "sourceAlt": "dba",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/902209626412560395.png?v=1",
+      "fileTitle": "File:Scripture of Ful.png",
+      "sourceLabel": "Scripture of Ful",
+      "sourceAlt": "scriptureofful",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/994189289623662702.png?v=1",
+      "fileTitle": "File:Bow of the Last Guardian.png",
+      "sourceLabel": "Bow of the Last Guardian",
+      "sourceAlt": "bolg",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1478061864943616122.png?v=1",
+      "fileTitle": "File:Galeshot.png",
+      "sourceLabel": "galeshot",
+      "sourceAlt": "galeshot",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1478061860371828929.png?v=1",
+      "fileTitle": "File:Deadshot.png",
+      "sourceLabel": "deadshot",
+      "sourceAlt": "deadshot",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/641339922019516416.png?v=1",
+      "fileTitle": "File:Undead Slayer (ability).png",
+      "sourceLabel": "Undead slayer ability",
+      "sourceAlt": "undeadslayer",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1446178203608809472.png?v=1",
+      "fileTitle": "File:Gloomfire bow.png",
+      "sourceLabel": "Gloomfire bow",
+      "sourceAlt": "gloomfirebow",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1478061857486143498.png?v=1",
+      "fileTitle": "File:Snipe.png",
+      "sourceLabel": "snipe",
+      "sourceAlt": "snipe",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1478061863723073636.png?v=1",
+      "fileTitle": "File:Piercing Shot.png",
+      "sourceLabel": "piercingshot",
+      "sourceAlt": "piercingshot",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1478070401702821938.png?v=1",
+      "fileTitle": "File:Meteor Strike.png",
+      "sourceLabel": "meteorstrike",
+      "sourceAlt": "meteorstrike",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/787904334377648130.png?v=1",
+      "fileTitle": "File:Divert.png",
+      "sourceLabel": "Divert",
+      "sourceAlt": "divert",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/796989662983094275.png?v=1",
+      "fileTitle": "File:Annihilation.png",
+      "sourceLabel": "Annihilation",
+      "sourceAlt": "annihilation",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1478062910113714297.png?v=1",
+      "fileTitle": "File:Dismember.png",
+      "sourceLabel": "dismember",
+      "sourceAlt": "dismember",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1478062906057949417.png?v=1",
+      "fileTitle": "File:Adaptive Strike.png",
+      "sourceLabel": "adaptivestrike",
+      "sourceAlt": "adaptivestrike",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1478062908767211640.png?v=1",
+      "fileTitle": "File:Chaos Roar.png",
+      "sourceLabel": "chaosroar",
+      "sourceAlt": "chaosroar",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/535532879334080517.png?v=1",
+      "fileTitle": "File:Overpower.png",
+      "sourceLabel": "Overpower",
+      "sourceAlt": "overpower",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/535532879439069184.png?v=1",
+      "fileTitle": "File:Punish.png",
+      "sourceLabel": "Punish",
+      "sourceAlt": "punish",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/883134308146098227.png?v=1",
+      "fileTitle": "File:Dark Shard of Leng.png",
+      "sourceLabel": "Dark Shard of Leng",
+      "sourceAlt": "lengmh",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1219291285358120990.png?v=1",
+      "fileTitle": "File:Primordial Ice.png",
+      "sourceLabel": "Primordial Ice",
+      "sourceAlt": "primordialice",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1478166426190741584.png?v=1",
+      "fileTitle": "File:Rend.png",
+      "sourceLabel": "Rend",
+      "sourceAlt": "rend",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/796989663051120640.png?v=1",
+      "fileTitle": "File:Granite maul.png",
+      "sourceLabel": "Granite maul",
+      "sourceAlt": "gmaul",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/712073088589627505.png?v=1",
+      "fileTitle": "File:Equilibrium.png",
+      "sourceLabel": "Equilibrium4",
+      "sourceAlt": "eq4",
+      "badge": "4"
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/712073087809617931.png?v=1",
+      "fileTitle": "File:Biting.png",
+      "sourceLabel": "Biting4",
+      "sourceAlt": "biting4",
+      "badge": "4"
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1448070604937891921.png?v=1",
+      "fileTitle": "File:Am-hej.png",
+      "sourceLabel": "Am-hej",
+      "sourceAlt": "amhej",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/689509250979987525.png?v=1",
+      "fileTitle": "File:Defence.png",
+      "sourceLabel": "Defence",
+      "sourceAlt": "defence",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1402610315480535050.png?v=1",
+      "fileTitle": "File:Corruption (status).png",
+      "sourceLabel": "Corruption (status)",
+      "sourceAlt": "corruption",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1049378668197195808.png?v=1",
+      "fileTitle": "File:Dive.png",
+      "sourceLabel": "Dive",
+      "sourceAlt": "dive",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/535541258538582017.png?v=1",
+      "fileTitle": "File:Immortality.png",
+      "sourceLabel": "Immortality",
+      "sourceAlt": "immort",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1402579857648390224.png?v=1",
+      "fileTitle": "File:Apmeken's Burden.png",
+      "sourceLabel": "Apmeken's Burden (status)",
+      "sourceAlt": "apmekensburden",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1402583151322071091.png?v=1",
+      "fileTitle": "File:Modesty.png",
+      "sourceLabel": "Modesty (status)",
+      "sourceAlt": "modesty",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1166094935066423348.png?v=1",
+      "fileTitle": "File:Conjure Undead Army.png",
+      "sourceLabel": "Conjure Undead Army",
+      "sourceAlt": "conjurearmy",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1137809121983336548.png?v=1",
+      "fileTitle": "File:Invoke Death icon.png",
+      "sourceLabel": "Invoke Death",
+      "sourceAlt": "invokedeath",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1402585055297273896.png?v=1",
+      "fileTitle": "File:Healing in Strength.png",
+      "sourceLabel": "Healing in Strength (status)",
+      "sourceAlt": "healinginstrength",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/655341074306301964.png?v=1",
+      "fileTitle": "File:Sticky bomb.png",
+      "sourceLabel": "Sticky bomb",
+      "sourceAlt": "stickybomb",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1402585081624924210.png?v=1",
+      "fileTitle": "File:Carapace (status).png",
+      "sourceLabel": "Carapace (status)",
+      "sourceAlt": "carapace",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1159433682403201044.png?v=1",
+      "fileTitle": "File:Bloat.png",
+      "sourceLabel": "Bloat",
+      "sourceAlt": "bloat",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1478063106914779166.png?v=1",
+      "fileTitle": "File:Greater Chain.png",
+      "sourceLabel": "gchain",
+      "sourceAlt": "gchain",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/892342109431029761.png?v=1",
+      "fileTitle": "File:Prism of Salvation icon.png",
+      "sourceLabel": "Prism of Salvation",
+      "sourceAlt": "prismofsalvation",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1402585098527965275.png?v=1",
+      "fileTitle": "File:Interceptor.png",
+      "sourceLabel": "Interceptor (status)",
+      "sourceAlt": "interceptor",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1148995625896120460.png?v=1",
+      "fileTitle": "File:Necromancy.png",
+      "sourceLabel": "Necromancy",
+      "sourceAlt": "necromancy",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1139452791878856805.png?v=1",
+      "fileTitle": "File:Necrosis.png",
+      "sourceLabel": "Necrosis",
+      "sourceAlt": "necrosis",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1139453152169558046.png?v=1",
+      "fileTitle": "File:Residual Soul.png",
+      "sourceLabel": "Residual Soul",
+      "sourceAlt": "residualsoul",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1159434908486357072.png?v=1",
+      "fileTitle": "File:Living Death.png",
+      "sourceLabel": "Living Death",
+      "sourceAlt": "livingdeath",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1137809175980810380.png?v=1",
+      "fileTitle": "File:Touch of Death.png",
+      "sourceLabel": "Touch of Death",
+      "sourceAlt": "touchofdeath",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1138809234922934282.png?v=1",
+      "fileTitle": "File:Omni guard.png",
+      "sourceLabel": "Omni guard",
+      "sourceAlt": "omniguard",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1159434801938432010.png?v=1",
+      "fileTitle": "File:Finger of Death.png",
+      "sourceLabel": "Finger of Death",
+      "sourceAlt": "fingerofdeath",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1138809243143766118.png?v=1",
+      "fileTitle": "File:Death guard (tier 90).png",
+      "sourceLabel": "Death guard (tier 90)",
+      "sourceAlt": "deathguard90",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/535532879053062146.png?v=1",
+      "fileTitle": "File:Pulverise.png",
+      "sourceLabel": "Pulverise",
+      "sourceAlt": "pulverise",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1137809172335951933.png?v=1",
+      "fileTitle": "File:Threads of Fate icon.png",
+      "sourceLabel": "Threads of Fate",
+      "sourceAlt": "threadsoffate",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1159435029592686642.png?v=1",
+      "fileTitle": "File:Volley of Souls.png",
+      "sourceLabel": "Volley of Souls",
+      "sourceAlt": "volleyofsouls",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1403076345084379337.png?v=1",
+      "fileTitle": "File:Shadow Link.png",
+      "sourceLabel": "Shadow Link (status)",
+      "sourceAlt": "shadowlink",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1159434663903899728.png?v=1",
+      "fileTitle": "File:Death Skulls.png",
+      "sourceLabel": "Death Skulls",
+      "sourceAlt": "deathskulls",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/864235458464186418.png?v=1",
+      "fileTitle": "File:Cease.png",
+      "sourceLabel": "Cease",
+      "sourceAlt": "cease",
+      "badge": null
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/974504834394898522.png?v=1",
+      "fileTitle": "File:Turtling.png",
+      "sourceLabel": "Turtling 3",
+      "sourceAlt": "turtling3",
+      "badge": "3"
+    }
+  ],
+  "unresolvedIcons": [
+    {
+      "url": "https://cdn.discordapp.com/emojis/959089455640215633.png?v=1",
+      "alt": "overpowerigneous",
+      "name": "Overpower igneous",
+      "canonical": "Overpower igneous",
+      "candidate": "File:Overpower igneous.png",
+      "reason": "No verified unambiguous native equivalent; mirror exact original PNG rather than flattening compound/status distinction."
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/994921597813137518.png?v=1",
+      "alt": "deathsswiftpf",
+      "name": "OLD Death's swiftness planted feet",
+      "canonical": "OLD Death's swiftness planted feet",
+      "candidate": "File:OLD Death's swiftness planted feet.png",
+      "reason": "No verified unambiguous native equivalent; mirror exact original PNG rather than flattening compound/status distinction."
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/959089455283728386.png?v=1",
+      "alt": "deadshotigneous",
+      "name": "OLD Deadshot igneous",
+      "canonical": "OLD Deadshot igneous",
+      "candidate": "File:OLD Deadshot igneous.png",
+      "reason": "No verified unambiguous native equivalent; mirror exact original PNG rather than flattening compound/status distinction."
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/994921595489488927.png?v=1",
+      "alt": "sunshinepf",
+      "name": "OLDSunshine planted feet",
+      "canonical": "OLDSunshine planted feet",
+      "candidate": "File:OLDSunshine planted feet.png",
+      "reason": "No verified unambiguous native equivalent; mirror exact original PNG rather than flattening compound/status distinction."
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1179505745654448208.png?v=1",
+      "alt": "omnipowerigneous",
+      "name": "Omnipower igneous",
+      "canonical": "Omnipower igneous",
+      "candidate": "File:Omnipower igneous.png",
+      "reason": "No verified unambiguous native equivalent; mirror exact original PNG rather than flattening compound/status distinction."
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/535541258425204770.png?v=1",
+      "alt": "snipe",
+      "name": "OLDSnipe",
+      "canonical": "OLDSnipe",
+      "candidate": "File:OLDSnipe.png",
+      "reason": "No verified unambiguous native equivalent; mirror exact original PNG rather than flattening compound/status distinction."
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/958989794757730307.png?v=1",
+      "alt": "tsunamiincite",
+      "name": "Tsunami incite",
+      "canonical": "Tsunami incite",
+      "candidate": "File:Tsunami incite.png",
+      "reason": "No verified unambiguous native equivalent; mirror exact original PNG rather than flattening compound/status distinction."
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/867678153668820992.png?v=1",
+      "alt": "bdmobile",
+      "name": "Bladed dive mobile",
+      "canonical": "Bladed dive mobile",
+      "candidate": "File:Bladed dive mobile.png",
+      "reason": "No verified unambiguous native equivalent; mirror exact original PNG rather than flattening compound/status distinction."
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/867678153798975498.png?v=1",
+      "alt": "surgemobile",
+      "name": "Surge mobile",
+      "canonical": "Surge mobile",
+      "candidate": "File:Surge mobile.png",
+      "reason": "No verified unambiguous native equivalent; mirror exact original PNG rather than flattening compound/status distinction."
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/841419289428492369.png?v=1",
+      "alt": "stunicon",
+      "name": "Stun",
+      "canonical": "Stun",
+      "candidate": "File:Stun.png",
+      "reason": "No verified unambiguous native equivalent; mirror exact original PNG rather than flattening compound/status distinction."
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/867678153635004447.png?v=1",
+      "alt": "ricocaroming",
+      "name": "OLD Ricochet caroming",
+      "canonical": "OLD Ricochet caroming",
+      "candidate": "File:OLD Ricochet caroming.png",
+      "reason": "No verified unambiguous native equivalent; mirror exact original PNG rather than flattening compound/status distinction."
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/867678153962684426.png?v=1",
+      "alt": "chaincaroming",
+      "name": "OLDChain caroming",
+      "canonical": "OLDChain caroming",
+      "candidate": "File:OLDChain caroming.png",
+      "reason": "No verified unambiguous native equivalent; mirror exact original PNG rather than flattening compound/status distinction."
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/867678153882861568.png?v=1",
+      "alt": "gchaincaroming",
+      "name": "OLDGreater chain caroming",
+      "canonical": "OLDGreater chain caroming",
+      "candidate": "File:OLDGreater chain caroming.png",
+      "reason": "No verified unambiguous native equivalent; mirror exact original PNG rather than flattening compound/status distinction."
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1478061866193518744.png?v=1",
+      "alt": "imbueshadows",
+      "name": "imbueshadows",
+      "canonical": "imbueshadows",
+      "candidate": "File:imbueshadows.png",
+      "reason": "No verified unambiguous native equivalent; mirror exact original PNG rather than flattening compound/status distinction."
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1176968204883603497.png?v=1",
+      "alt": "ballista",
+      "name": "ballista",
+      "canonical": "Ballista",
+      "candidate": "File:Ballista.png",
+      "reason": "No verified unambiguous native equivalent; mirror exact original PNG rather than flattening compound/status distinction."
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/944649693500154006.png?v=1",
+      "alt": "poisonicon",
+      "name": "Poison icon",
+      "canonical": "Poison icon",
+      "candidate": "File:Poison icon.png",
+      "reason": "No verified unambiguous native equivalent; mirror exact original PNG rather than flattening compound/status distinction."
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1104794644497309809.png?v=1",
+      "alt": "instakill",
+      "name": "Instant kill",
+      "canonical": "Hitsplat",
+      "candidate": "File:Hitsplat.png",
+      "reason": "No verified unambiguous native equivalent; mirror exact original PNG rather than flattening compound/status distinction."
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1",
+      "alt": "necrobasic",
+      "name": "Necromancy Basic",
+      "canonical": "Necromancy Basic",
+      "candidate": "File:Necromancy Basic.png",
+      "reason": "No verified unambiguous native equivalent; mirror exact original PNG rather than flattening compound/status distinction."
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/1478062907295010906.png?v=1",
+      "alt": "meleebasic",
+      "name": "meleebasic",
+      "canonical": "meleebasic",
+      "candidate": "File:meleebasic.png",
+      "reason": "No verified unambiguous native equivalent; mirror exact original PNG rather than flattening compound/status distinction."
+    },
+    {
+      "url": "https://cdn.discordapp.com/emojis/867678153883516958.png?v=1",
+      "alt": "cadeturtling",
+      "name": "Barricade turtling",
+      "canonical": "Barricade turtling",
+      "candidate": "File:Barricade turtling.png",
+      "reason": "No verified unambiguous native equivalent; mirror exact original PNG rather than flattening compound/status distinction."
+    }
+  ],
+  "unsupportedImageHosts": [
+    "https://firebasestorage.googleapis.com/v0/b/preset-images/o/images%2FYSPh9XkAiF2t73Oyvrzk.png?alt=media",
+    "https://pvme.io/preset-maker-storage/embeds/images/d833298801121bf3978c3f8b3a1ad837c6f11d7c1b2a262b499595e04ab31159.webp",
+    "https://pvme.io/preset-maker-storage/embeds/images/15153113caa2eba84672faafbf2064dfb3f13652663dddb56c1ead54b55d3a9e.webp",
+    "https://firebasestorage.googleapis.com/v0/b/preset-images/o/images%2F6c664144-91f7-4cba-a579-d4f006cfc2de.png?alt=media",
+    "https://firebasestorage.googleapis.com/v0/b/preset-images/o/images%2FJYNxXhY5s0cZfQKbgUYb.png?alt=media",
+    "https://pvme.io/preset-maker-storage/embeds/images/147593425b908b4139794d92ff1f4b3103faf0d1b240aa0d5c60836e49fdb0b9.webp",
+    "https://pvme.io/preset-maker-storage/embeds/images/5927064d5168df8c31b913d6b4e8b7335942b09da6993ceda68804f96e13779f.webp",
+    "https://firebasestorage.googleapis.com/v0/b/preset-images/o/images%2Fa4fbf3cf-c0f9-4778-b709-b2b1b987c0bd.png?alt=media",
+    "https://firebasestorage.googleapis.com/v0/b/preset-images/o/images%2Fnfm2UnsVqmKfaFDf2Z9X.png?alt=media",
+    "https://pvme.io/preset-maker-storage/embeds/images/cba8d6dd68abecd4861b4e0eed8cbb75ccdc217835961584c9d68464ed4c4352.webp"
+  ],
+  "pages": [
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--vorago-hm--hard-mode-overview",
+      "title": "PvME/Vorago/Vorago Hm — Hard Mode Overview",
+      "imageOccurrences": 266,
+      "uniqueImages": 69,
+      "resolvedUniqueImages": 66,
+      "unresolvedUniqueImages": [
+        "https://firebasestorage.googleapis.com/v0/b/preset-images/o/images%2FYSPh9XkAiF2t73Oyvrzk.png?alt=media",
+        "https://pvme.io/preset-maker-storage/embeds/images/d833298801121bf3978c3f8b3a1ad837c6f11d7c1b2a262b499595e04ab31159.webp",
+        "https://pvme.io/preset-maker-storage/embeds/images/15153113caa2eba84672faafbf2064dfb3f13652663dddb56c1ead54b55d3a9e.webp"
+      ],
+      "youtubeEmbeds": [
+        "https://www.youtube.com/embed/MG00fhlSnKA"
+      ],
+      "originalLinkedMP4s": [
+        "https://img.pvme.io/images/JycYCl7.mp4",
+        "https://img.pvme.io/images/lQr0FfS.mp4",
+        "https://img.pvme.io/images/wwtUZ8w.mp4",
+        "https://img.pvme.io/images/uJP5zV5.mp4",
+        "https://img.pvme.io/images/3X7xQ5k.mp4"
+      ]
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--raksha--magic",
+      "title": "PvME/Raksha/Raksha — Magic",
+      "imageOccurrences": 56,
+      "uniqueImages": 26,
+      "resolvedUniqueImages": 25,
+      "unresolvedUniqueImages": [
+        "https://firebasestorage.googleapis.com/v0/b/preset-images/o/images%2F6c664144-91f7-4cba-a579-d4f006cfc2de.png?alt=media"
+      ],
+      "youtubeEmbeds": [
+        "https://www.youtube.com/embed/T_ITmcOqKsk"
+      ],
+      "originalLinkedMP4s": []
+    },
+    {
+      "id": "pvme-guides--basic-guides--ed1-basic",
+      "title": "PvME/Temple of Aminishi/ED1 Overview",
+      "imageOccurrences": 218,
+      "uniqueImages": 85,
+      "resolvedUniqueImages": 69,
+      "unresolvedUniqueImages": [
+        "https://firebasestorage.googleapis.com/v0/b/preset-images/o/images%2FJYNxXhY5s0cZfQKbgUYb.png?alt=media",
+        "https://cdn.discordapp.com/emojis/959089455640215633.png?v=1",
+        "https://cdn.discordapp.com/emojis/994921597813137518.png?v=1",
+        "https://cdn.discordapp.com/emojis/959089455283728386.png?v=1",
+        "https://cdn.discordapp.com/emojis/994921595489488927.png?v=1",
+        "https://cdn.discordapp.com/emojis/1179505745654448208.png?v=1",
+        "https://cdn.discordapp.com/emojis/535541258425204770.png?v=1",
+        "https://cdn.discordapp.com/emojis/958989794757730307.png?v=1",
+        "https://cdn.discordapp.com/emojis/867678153668820992.png?v=1",
+        "https://cdn.discordapp.com/emojis/867678153798975498.png?v=1",
+        "https://cdn.discordapp.com/emojis/841419289428492369.png?v=1",
+        "https://cdn.discordapp.com/emojis/867678153635004447.png?v=1",
+        "https://cdn.discordapp.com/emojis/867678153962684426.png?v=1",
+        "https://cdn.discordapp.com/emojis/867678153882861568.png?v=1",
+        "https://pvme.io/preset-maker-storage/embeds/images/147593425b908b4139794d92ff1f4b3103faf0d1b240aa0d5c60836e49fdb0b9.webp",
+        "https://pvme.io/preset-maker-storage/embeds/images/5927064d5168df8c31b913d6b4e8b7335942b09da6993ceda68804f96e13779f.webp"
+      ],
+      "youtubeEmbeds": [],
+      "originalLinkedMP4s": [
+        "https://img.pvme.io/images/j5yD1xR.mp4",
+        "https://img.pvme.io/images/OSdmLyz.mp4",
+        "https://img.pvme.io/images/ktXTzON.mp4",
+        "https://img.pvme.io/images/rwE2Ei3.mp4",
+        "https://img.pvme.io/images/WoaCM1c.mp4",
+        "https://img.pvme.io/images/9JmjLtG.mp4",
+        "https://img.pvme.io/images/8htV7Pg.mp4",
+        "https://img.pvme.io/images/6IQ9MAJ.mp4"
+      ]
+    },
+    {
+      "id": "pvme-guides--rs3-full-boss-guides--vorkath--melee-ranged-hmvork",
+      "title": "PvME/Vorkath/Vorkath — Melee Ranged Hmvork",
+      "imageOccurrences": 102,
+      "uniqueImages": 45,
+      "resolvedUniqueImages": 42,
+      "unresolvedUniqueImages": [
+        "https://firebasestorage.googleapis.com/v0/b/preset-images/o/images%2Fa4fbf3cf-c0f9-4778-b709-b2b1b987c0bd.png?alt=media",
+        "https://cdn.discordapp.com/emojis/1478061866193518744.png?v=1",
+        "https://cdn.discordapp.com/emojis/1176968204883603497.png?v=1"
+      ],
+      "youtubeEmbeds": [],
+      "originalLinkedMP4s": []
+    },
+    {
+      "id": "pvme-guides--basic-guides--amascut-basic",
+      "title": "PvME/Amascut/Overview",
+      "imageOccurrences": 195,
+      "uniqueImages": 77,
+      "resolvedUniqueImages": 67,
+      "unresolvedUniqueImages": [
+        "https://cdn.discordapp.com/emojis/841419289428492369.png?v=1",
+        "https://cdn.discordapp.com/emojis/944649693500154006.png?v=1",
+        "https://firebasestorage.googleapis.com/v0/b/preset-images/o/images%2Fnfm2UnsVqmKfaFDf2Z9X.png?alt=media",
+        "https://cdn.discordapp.com/emojis/1104794644497309809.png?v=1",
+        "https://cdn.discordapp.com/emojis/1179505745654448208.png?v=1",
+        "https://cdn.discordapp.com/emojis/1482849360462086244.png?v=1",
+        "https://cdn.discordapp.com/emojis/1478062907295010906.png?v=1",
+        "https://cdn.discordapp.com/emojis/958989794757730307.png?v=1",
+        "https://cdn.discordapp.com/emojis/867678153883516958.png?v=1",
+        "https://pvme.io/preset-maker-storage/embeds/images/cba8d6dd68abecd4861b4e0eed8cbb75ccdc217835961584c9d68464ed4c4352.webp"
+      ],
+      "youtubeEmbeds": [],
+      "originalLinkedMP4s": [
+        "https://img.pvme.io/images/ZO7c5iux5L.mp4",
+        "https://img.pvme.io/images/DTnk2wbbf4.mp4",
+        "https://img.pvme.io/images/SH08p0rCVi.mp4",
+        "https://img.pvme.io/images/TH3J0tKcHR.mp4",
+        "https://img.pvme.io/images/r6hPuPjueK.mp4",
+        "https://img.pvme.io/images/JKyDStksJE.mp4"
+      ]
+    }
+  ],
+  "notes": [
+    "Native files verified by official source labels plus current RuneScape Wiki imageinfo metadata; semantic equivalents, not byte-identical claims.",
+    "Source original img.pvme.io PNG URLs retained through already-verified allowed host.",
+    "Compound/mobile/igneous/rank-modified unresolved icons are not flattened to generic bases. Root can mirror exact original bytes.",
+    "Preset Firebase/WEBP images left unresolved for root exact-byte hosting; no substitutions/uploads.",
+    "Original MP4s use explicit original-player links because inline host is blocked; native YouTube syntax reused from verified pilot.",
+    "No shared exporter/resolver changed; no tests/browser/publish/deploy."
+  ]
+}
