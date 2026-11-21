@@ -1,0 +1,151 @@
+﻿This guide covers the mechanics of [[Amascut, the Devourer]] in normal mode. PvME published it as an early guide and based parts of it on footage of a two-player encounter. Some details may be inaccurate, and numbers may vary with team size.
+
+==Combat stats==
+{| class="wikitable"
+! Stat !! Value
+|-
+| [[Life points]] || 4,000,000
+|-
+| Size || 3 × 3
+|-
+| [[Defence]] || 95
+|-
+| Armour rating || 2,765
+|-
+| [[Affinity]] || 55 against all styles
+|-
+| Immunities || [[Poison]] and [[stun]]s. Most of her mobs can be poisoned and stunned.
+|-
+| [[Slayer]] creature || No
+|}
+
+==Mechanics==
+===Auto-attacks===
+* Amascut attacks all players with [[Magic]] using her left hand.
+* With her right hand, she uses a [[Melee]] area-of-effect attack on the tank. It ricochets as [[Ranged]] attacks on the other players, with a range of 10 tiles.
+* Amascut rapidly swipes at the tank three times with Melee or Magic. The style matches her last auto-attack. For example, a Magic auto-attack is followed by three Magic swipes.
+** The next auto-attacks depend on the tank's protection or deflect prayer on the first swipe. If the tank uses the wrong prayer, the next auto-attacks use the same style as the swipes.
+* After three auto-attacks, Amascut starts a new mechanic at 100% adrenaline.
+
+===Mobs===
+{| class="wikitable"
+! Mob !! Life points !! Behaviour
+|-
+| [[Gatekeeper gorilla akh]] || 45,000 || Kill it to use the gateway. It can be stunned and bound.
+|-
+| [[Feline akh]] || 7,500 || Targets players carrying a fragment of Tumeken. It can be stunned and bound.
+|-
+| [[Volatile scarab akh]] || 2,000 || Stun it to make it vulnerable to damage. It explodes if left alone. Stand within one tile of its burrow to prevent it from spawning.
+|-
+| [[Modest crocodile demon]] || 15,000 || Has [[Modesty]]. At full adrenaline, it uses a Magic attack that removes 20% adrenaline and reduces the target's adrenaline gain by 50%.
+|-
+| [[Chainwarden mage akh]] || 30,000 || Protects the chains beyond the gateways. Each chain has 15,000 life points.
+|-
+| [[Explosive scarab akh]] || 5,000 || Kill it and throw it to remove Carapace. Its body expires after a short time.
+|-
+| [[Lightstealer salawa akh]] || 15,000 || Drains the charge of Tumeken's fragments and reduces reform progress. It can be stunned and bound.
+|}
+
+===Buffs and debuffs===
+;Corruption
+:The tank gains one stack of Corruption per hit received, increasing damage taken. Soulfire waves and shockwaves also give stacks. Corruption caps at 15 stacks and expires approximately 15 seconds after the last stack was applied.
+;[[Apmeken's Burden]]
+:Amascut applies the debuff early in phase 2. It deals damage and adds a stack every 1.8 seconds. The damage increases with each hit and kills the player instantly at eight stacks. Players can pass the debuff to a teammate.
+;[[Modesty]]
+:Reflects non-basic attacks, including threshold and ultimate abilities, adrenaline-costing Necromancy abilities, weapon special attacks, [[Volley of Souls]], and extra hits from the [[Bow of the Last Guardian]] and [[Fractured Staff of Armadyl]]. Basic abilities, auto-attacks, conjure damage, [[Aftershock]] 4, [[Crackling]] 4 and poison are exempt.
+;Healing through Strength
+:Mobs can have this effect during phase 4. Any damage they deal heals Amascut for approximately 30% of the damage dealt.
+;[[Carapace]]
+:Multiple mobs can have this effect during phase 4. They are immune to damage until an explosive scarab is thrown at them.
+;[[Interceptor]]
+:Blocking Amascut's altar strike in phase 5 applies Interceptor. A second strike kills the player instantly.
+
+==Phase 1==
+Phase 1 starts at 4,000,000 life points. The attack order is 3 Magic auto-attacks → [[#Triple Tap|Triple Tap]] → swipes → 2 auto-attacks → [[#Summon Scarabs|Summon Scarabs]] → 1 auto-attack → swipes → 1 auto-attack → [[#Crushing Soul|Crushing Soul]] → 2 auto-attacks → swipes → [[#Empowered Eruption|Empowered Eruption]] → 3 auto-attacks → Triple Tap → swipes → 2 auto-attacks → phase 2.
+
+===Triple Tap===
+Amascut says ''“Grovel”'', ''“pathetic”'' or ''“weak”'' and launches three projectiles at the tank. The projectiles hit two ticks apart. Green indicates Ranged, blue indicates Magic, and red indicates Melee.
+
+{| class="wikitable"
+! Voice line !! First hit !! Second hit !! Third hit
+|-
+| ''“Grovel”'' || Magic || Melee || Ranged
+|-
+| ''“Pathetic”'' || Melee || Ranged || Magic
+|-
+| ''“Weak”'' || Ranged || Magic || Melee
+|}
+
+===Summon Scarabs===
+Amascut says ''“Tear them apart”'' and summons volatile scarab akhs. Stun them to make them vulnerable to damage. They explode and deal typeless damage if left alone.
+
+===Crushing Soul===
+Amascut says ''“Bend the knee”'' and deals heavy typeless damage with defensive penetration to the tank. Teammates within a 3 × 3 area around the base tank can share the damage. A damage dealer in the group can use {{plink|Provoke}} so nearby teammates share the hit, then the base tank can provoke Amascut back.
+
+===Empowered Eruption===
+Amascut gives a voice line and changes the colour of the arena. Every player takes three hits of the corresponding style.
+
+{| class="wikitable"
+! Voice line !! Arena colour !! Combat style
+|-
+| ''“Your soul is weak”'' || Blue || Magic
+|-
+| ''“All strength withers”'' || Red || Melee
+|-
+| ''“I will not suffer this.”'' || Green || Ranged
+|}
+
+===Empowered auto-attack===
+On the same tick as the third rapid swipe, Amascut deals an additional hit to the tank using the other style. Three Melee swipes are followed by a Magic hit, and three Magic swipes are followed by a Melee hit.
+
+===Tank pull===
+When the player holding aggression moves too far away, Amascut says ''“You dare to turn your back on me?”'' and pulls them in front of her. This stuns and binds them for three seconds, gives Amascut adrenaline, and may replace an auto-attack.
+
+==Phase 2==
+Phase 2 starts at 2,800,000 life points. Everyone dies instantly if the 200-second destruction timer ends.
+
+===Opening the gateways===
+* Kill the two gatekeeper gorilla akhs. They can stun players and can be stunned or bound.
+* Amascut marks one player with Apmeken's Burden. To transfer the escalating bleed and reset its damage, stand next to a teammate.
+* Modest crocodile demons spawn at the northern entrances. They deal heavy damage, reflect non-basic ability damage, and reduce adrenaline gain by 50% when their adrenaline bar fills. Feline akhs spawn as the phase progresses.
+
+===Freeing Apmeken and Crondis===
+# After the gatekeepers die, enter the west and east gateways to free the Echoes of [[Apmeken]] and [[Crondis]]. Each area contains a chainwarden mage akh with 30,000 life points and three chains with 15,000 life points each.
+# Each time a chain is destroyed, the corresponding statue turns from green to yellow. A player in the main arena must then cleanse it to destroy the chain permanently. Clicking the statue early deals damage. The chain respawns if nobody cleanses the statue within approximately 12 seconds.
+# Once all three chains have been destroyed and cleansed, the player inside can free the god and receive a fragment of [[Tumeken]] with a 30-second timer. Two more modest crocodile demons spawn after Crondis's blessing.
+# Bring the blessing to its corresponding statue to stun Amascut for 25 seconds. [[Surge]] and [[Dive]] are unavailable during the stun. [[Prism of Salvation]] and [[Barge]] still work. The two stuns stack, and phase 3 begins when they end.
+
+==Phase 3==
+Phase 3 starts at 2,000,000 life points and uses mechanics similar to phase 1. The attack order is 33% adrenaline without an auto-attack → swipes → 1 auto-attack → Triple Tap → 2 auto-attacks → swipes → Summon Scarabs → 3 auto-attacks of the same style → Crushing Soul → swipes → 2 auto-attacks → Empowered Eruption → 1 auto-attack → swipes → 1 auto-attack → Triple Tap → 2 auto-attacks → swipes → phase 4.
+
+==Phase 4==
+Phase 4 starts at 1,200,000 life points. Enter the west and east gateways to free the Echoes of [[Het]] and [[Scabaras]]. The phase works similarly to phase 2, with the following changes.
+
+* Modest crocodile demons do not spawn.
+* Every non-scarab mob has Carapace and is immune to damage. Kill explosive scarabs, pick them up, and throw them at mobs or through the gateways to remove Carapace. Remove the gorillas' Carapace and kill them. Each gateway needs four scarabs, one for the chainwarden and one for each of the three chains.
+* Scarab throws have unlimited range. Each living scarab heals Amascut for 100 life points every 1.2 seconds. Exploding scarabs deal minor typeless damage to everyone in the arena.
+
+==Phase 5==
+Phase 5 starts at 600,000 life points.
+
+===Charging the fragments===
+Amascut says ''“Tumekens heart. Delivered to me by these mortals”''. Four fragments shoot out of each statue, and Tumeken appears in the centre. Soul obelisks appear to the west and east. Keep them below full health to prevent them from damaging everyone.
+
+* Have one or more players channel energy from a statue to a fragment.
+* Have another player stand on the green line to intercept Amascut's attack. Two hits in a row kill that player instantly, so rotate interceptors.
+* Lightstealer salawa akhs spawn from the stairs and drain charge if they reach a fragment.
+
+===Protecting Tumeken===
+After fully charging a fragment, select '''Reform Tumeken''' in the centre to make Amascut attackable again. She attacks the reformed Tumeken four times while saying ''“I AM”'', ''“THE GOD”'', ''“OF.”'' and ''“DESTRUCTION”''.
+
+* The player Tumeken calls with ''“(name) shield us from her shadow…”'' must intercept the attack. If they miss it, the attack hits everyone for possibly double damage.
+* After the four attacks, charge another fragment. Each lightstealer salawa akh that explodes on Tumeken removes four reform progress.
+* Amascut dies at zero life points, regardless of reform progress.
+
+==Example kill==
+* [https://youtu.be/7l7vz2ie3XM Duo Amascut NM talkthrough]
+
+<youtube width=560 height=315>https://www.youtube.com/watch?v=7l7vz2ie3XM</youtube>
+
+==Source==
+Adapted from [https://pvme.io/pvme-guides/rs3-full-boss-guides/amascut/amascut-nm-mechanics/ ''Amascut the Devourer, Normal Mode''] by PvME contributors under [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]. Formatting and wording have been adapted for the wiki. [https://img.pvme.io/images/EFlnaJbrvr.png Original guide banner].

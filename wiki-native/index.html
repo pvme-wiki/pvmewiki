@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="normal mode mechanics for amascut, adapted for the runescape wiki">
+    <meta property="og:description" content="normal mode mechanics for amascut, adapted for the runescape wiki">
+    <meta property="og:title" content="Amascut, the Devourer (normal mode)">
+    <meta name="build-commit" content="<!--COMMIT-->">
+    <title>Amascut, the Devourer (normal mode)</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/<!--STYLE-->">
+    <script src="/<!--SCRIPT-->" defer></script>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Amascut, the Devourer <span>(normal mode)</span></h1>
+            <div class="actions">
+                <button type="button" id="copy" hidden>copy to wiki native</button>
+                <details id="source">
+                    <summary>view wikitext</summary>
+                    <label for="wikitext">RuneScape Wiki source</label>
+                    <textarea id="wikitext" readonly rows="10"><!--WIKITEXT--></textarea>
+                    <a href="/amascut-normal-mode.wiki" download>download wikitext</a>
+                </details>
+            </div>
+            <p id="copy-status" role="status"></p>
+        </header>
+        <article aria-label="normal mode mechanics">
+            <!--ARTICLE-->
+        </article>
+    </main>
+</body>
+</html>
