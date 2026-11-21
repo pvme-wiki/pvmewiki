@@ -7,8 +7,8 @@ const dist = new URL('./dist/', import.meta.url);
 const read = name => readFile(new URL(name, import.meta.url), 'utf8');
 const escapeHtml = value => value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
 
-const [draft, page, css, js, icon] = await Promise.all([
-    read(sourceFile), read('index.html'), read('article.css'), read('copy.js'), read('favicon.svg')
+const [draft, page, comparison, css, js, icon] = await Promise.all([
+    read(sourceFile), read('index.html'), read('compare.html'), read('article.css'), read('copy.js'), read('favicon.svg')
 ]);
 const wikitext = draft.replace(/^\uFEFF/, '').replaceAll('\r\n', '\n');
 const body = new URLSearchParams({
@@ -47,11 +47,12 @@ const sections = {
     SCRIPT: assets.js,
     COMMIT: escapeHtml(process.env.VERCEL_GIT_COMMIT_SHA ?? 'local')
 };
-const html = page.replace(/<!--([A-Z]+)-->/g, (marker, name) => sections[name] ?? marker);
+const renderPage = template => template.replace(/<!--([A-Z]+)-->/g, (marker, name) => sections[name] ?? marker);
 
 await mkdir(new URL('assets/', dist), { recursive: true });
 await Promise.all([
-    writeFile(new URL('index.html', dist), html),
+    writeFile(new URL('index.html', dist), renderPage(page)),
+    writeFile(new URL('compare.html', dist), renderPage(comparison)),
     writeFile(new URL(sourceFile, dist), wikitext),
     writeFile(new URL('favicon.svg', dist), icon),
     writeFile(new URL(assets.css, dist), css),

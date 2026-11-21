@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="the original and wiki-native normal mode Amascut guides side by side">
+    <meta property="og:description" content="the original and wiki-native normal mode Amascut guides side by side">
+    <meta property="og:title" content="Amascut guide comparison">
+    <meta name="build-commit" content="<!--COMMIT-->">
+    <title>Amascut guide comparison</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/<!--STYLE-->">
+</head>
+<body>
+    <main class="comparison">
+        <header>
+            <a href="/">back to guide</a>
+            <h1>compare Amascut renders</h1>
+        </header>
+        <div class="comparison-panels">
+            <section aria-labelledby="original-heading">
+                <h2 id="original-heading"><a href="https://pvmewiki.sanji3.dev/wiki/PvME/Amascut/Amascut_Nm_Mechanics#phase-2-2800k-apmeken-and-crondis">original PvME-styled guide</a></h2>
+                <iframe title="original PvME-styled guide" src="https://pvmewiki.sanji3.dev/wiki/PvME/Amascut/Amascut_Nm_Mechanics#phase-2-2800k-apmeken-and-crondis"></iframe>
+            </section>
+            <section aria-labelledby="native-heading">
+                <h2 id="native-heading"><a href="/#Phase_2">wiki-native guide</a></h2>
+                <iframe id="native-guide" title="wiki-native guide" src="/"></iframe>
+            </section>
+        </div>
+    </main>
+    <script>
+        const nativeGuide = document.querySelector('#native-guide');
+        const showPhaseTwo = () => {
+            const heading = nativeGuide.contentDocument?.getElementById('Phase_2');
+            if (heading) {
+                const pane = nativeGuide.contentWindow;
+                pane.scrollTo(0, heading.getBoundingClientRect().top + pane.scrollY - 16);
+            }
+        };
+        nativeGuide.addEventListener('load', showPhaseTwo);
+        showPhaseTwo();
+    </script>
+</body>
+</html>
