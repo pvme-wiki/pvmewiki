@@ -95,6 +95,37 @@ article li + li, article dd { margin-top: .25rem; }
 article dt { margin-top: .7rem; font-weight: 700; }
 article dd { margin-inline-start: 1rem; }
 .mw-headline, article [id] { scroll-margin-top: 1rem; }
+.mw-heading { clear: both; }
+
+.mw-halign-right[typeof="mw:File/Thumb"] {
+    display: table;
+    float: right;
+    max-width: 100%;
+    min-width: 8rem;
+    margin: .3rem 0 1rem 1rem;
+    border: 1px solid #bac0c5;
+    background: #f6f7f8;
+    text-align: center;
+}
+
+.mw-file-description { display: block; }
+.mw-file-description img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-inline: auto;
+}
+
+.mw-halign-right figcaption {
+    display: table-caption;
+    caption-side: bottom;
+    padding: .35rem .5rem;
+    border: 1px solid #bac0c5;
+    border-top: 0;
+    background: #f6f7f8;
+    text-align: start;
+    font-size: .875rem;
+}
 
 .toc {
     border: 1px solid #c3c9cc;
@@ -138,6 +169,13 @@ article dd { margin-inline-start: 1rem; }
 
 @media (min-width: 42rem) {
     .toc > ul { columns: 2; column-gap: 2rem; }
+}
+
+@media (max-width: 42rem) {
+    .mw-halign-right[typeof="mw:File/Thumb"] {
+        float: none;
+        margin: .6rem auto 1rem;
+    }
 }
 
 @media (max-width: 30rem) {
