@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: pvmewiki2
+    repo: https://github.com/pvme-wiki/pvmewiki
+    branch: wiki-native
+    runtime: docker
+    plan: free
+    region: virginia
+    dockerContext: ./wiki-native
+    dockerfilePath: ./wiki-native/Dockerfile
+    autoDeployTrigger: off
+    healthCheckPath: /healthz.php
+    domains:
+      - pvmewiki2.sanji3.dev

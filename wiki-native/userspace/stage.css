@@ -1,0 +1,40 @@
+.stage-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .5rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.stage-nav form {
+    display: flex;
+    flex: 1 1 18rem;
+    align-items: center;
+    gap: .5rem;
+}
+
+.stage-nav input {
+    flex: 1 1 8rem;
+    min-width: 0;
+    max-width: 16rem;
+    min-height: 2.75rem;
+    padding: .35rem .5rem;
+    border: 1px solid #858e95;
+    font: inherit;
+}
+
+article { overflow-wrap: anywhere; }
+article img { max-width: 100%; height: auto; vertical-align: middle; }
+article .mw-parser-output { display: flow-root; }
+article video { max-width: 100%; }
+article pre { overflow: auto; }
+article footer, main > footer {
+    margin-top: 1.5rem;
+    padding-top: .55rem;
+    border-top: 1px solid #a5abb1;
+}
+
+@media (max-width: 42rem) {
+    .stage-nav form { flex-basis: 100%; }
+    article { overflow-x: auto; }
+}
