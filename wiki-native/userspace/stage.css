@@ -28,6 +28,17 @@ article img { max-width: 100%; height: auto; vertical-align: middle; }
 article .mw-parser-output { display: flow-root; }
 article video { max-width: 100%; }
 article pre { overflow: auto; }
+article ul.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+    margin: .5rem 0;
+    padding: 0;
+    list-style: none;
+}
+article .gallerybox { margin: 0; }
+article .gallerytext { padding: .25rem 0; font-size: .875rem; }
+
 article footer, main > footer {
     margin-top: 1.5rem;
     padding-top: .55rem;

@@ -1,7 +1,7 @@
 import { readFile, writeFile } from 'node:fs/promises';
 
 export const sourceRoot = 'User:Mo rs/PvME';
-export const targetRoot = 'User:Mo rs/pvme-wiki-native';
+export const targetRoot = 'User:Mo rs/PvME-wiki-native';
 export const goldenTitle = sourceRoot + '/Amascut/Amascut Nm Mechanics';
 const sourceSite = 'https://pvmewiki.sanji3.dev';
 const stageSite = 'https://pvmewiki2.sanji3.dev';
